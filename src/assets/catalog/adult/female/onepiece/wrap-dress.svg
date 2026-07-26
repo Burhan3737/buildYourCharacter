@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Dress" data-family="wrap-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: diagonal crossover bodice tied at the waist (closure)
+       + three-quarter sleeves over a knee-length skirt (shoulder/hem) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-wrap-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C2506B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3A53)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-wrap-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9E3A53)"/>
+      <stop offset="1" stop-color="var(--c1, #C2506B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-wrap-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C2506B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3A53)"/>
+    </linearGradient>
+    <pattern id="adult-female-onepiece-wrap-dress__petals" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="5" r="2.6" fill="var(--c3, #F5D9C4)"/>
+      <circle cx="5" cy="12" r="2.6" fill="var(--c3, #F5D9C4)"/>
+      <circle cx="15" cy="12" r="2.6" fill="var(--c3, #F5D9C4)"/>
+    </pattern>
+    <clipPath id="adult-female-onepiece-wrap-dress__clip">
+      <path d="M196 154 h-32 q-24 0 -24 24 l-2 88 l-18 176 q66 22 132 0 l-18 -176 L214 268 Z"/>
+      <path d="M204 154 h32 q24 0 24 24 l2 88 l6 60 q-40 14 -80 2 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves ending above the wrist -->
+    <path d="M114 172 q0-18 17-18 h12 q17 0 17 18 v96 q0 12 -17 12 h-12 q-17 0 -17-12 Z"
+          fill="url(#adult-female-onepiece-wrap-dress__sleeve)"/>
+    <path d="M286 172 q0-18 -17-18 h-12 q-17 0 -17 18 v96 q0 12 17 12 h12 q17 0 17-12 Z"
+          fill="url(#adult-female-onepiece-wrap-dress__sleeve)"/>
+    <!-- under panel, going in first from the right shoulder -->
+    <path d="M204 154 h32 q24 0 24 24 l2 88 l6 60 q-40 14 -80 2 Z"
+          fill="url(#adult-female-onepiece-wrap-dress__under)"/>
+    <!-- over panel crossing diagonally, carrying the knee-length skirt -->
+    <path d="M196 154 h-32 q-24 0 -24 24 l-2 88 l-18 176 q66 22 132 0 l-18 -176 L214 268 Z"
+          fill="url(#adult-female-onepiece-wrap-dress__over)"/>
+    <!-- small floral print over the whole dress -->
+    <g clip-path="url(#adult-female-onepiece-wrap-dress__clip)">
+      <rect x="112" y="150" width="176" height="300"
+            fill="url(#adult-female-onepiece-wrap-dress__petals)" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- the wrap edge, bound in a contrasting value -->
+  <path d="M170 154 L216 266" stroke="var(--c3, #F5D9C4)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 154 L206 210" stroke="var(--c3, #F5D9C4)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- tie belt knotted at the side of the waist -->
+  <rect x="142" y="262" width="112" height="16" rx="7" fill="var(--c3, #F5D9C4)"/>
+  <path d="M238 276 q16 16 18 40 M248 274 q14 18 14 40" stroke="var(--c3, #F5D9C4)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M156 182 q42 14 80 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 366 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

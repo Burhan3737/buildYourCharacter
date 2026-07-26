@@ -1,93 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="EVA Space Suit" data-family="astronaut" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs web-runner: heavily padded segmented volume, not a skin-close suit (volume)
+       + inflated barrel shoulders over a soft neck ring (shoulder) -->
   <defs>
     <linearGradient id="adult-female-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
+      <stop offset="0" stop-color="var(--c1, #EFF1F7)"/>
+      <stop offset="1" stop-color="var(--c2, #C6CDDD)"/>
     </linearGradient>
-    <linearGradient id="adult-female-costume-astronaut__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
-    </linearGradient>
-    <linearGradient id="adult-female-costume-astronaut__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
+    <linearGradient id="adult-female-costume-astronaut__seg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFF1F7)"/>
+      <stop offset="1" stop-color="var(--c2, #C6CDDD)"/>
     </linearGradient>
     <linearGradient id="adult-female-costume-astronaut__boot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #9AA6C4)"/>
-      <stop offset="1" stop-color="var(--c2, #8391B3)"/>
+      <stop offset="0" stop-color="var(--c2, #C6CDDD)"/>
+      <stop offset="1" stop-color="var(--c3, #E8825F)"/>
     </linearGradient>
   </defs>
 
-  <!-- padded suit mass -->
   <g class="sp-shadow">
-    <rect x="160" y="340" width="38" height="212" rx="19" fill="url(#adult-female-costume-astronaut__leg)"/>
-    <rect x="202" y="340" width="38" height="212" rx="19" fill="url(#adult-female-costume-astronaut__leg)"/>
-    <rect x="146" y="290" width="108" height="58" rx="27" fill="url(#adult-female-costume-astronaut__body)"/>
-    <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <!-- inflated legs, bellied out at the thigh and gathered at the ankle -->
+    <path d="M156 336 q48 14 88 0 q6 46 -2 92 q-8 48 -6 108 q-38 16 -72 0
+             q2 -60 -6 -108 q-8 -46 -2 -92 Z"
           fill="url(#adult-female-costume-astronaut__body)"/>
-    <rect x="114" y="160" width="36" height="158" rx="18" fill="url(#adult-female-costume-astronaut__sleeve)"/>
-    <rect x="250" y="160" width="36" height="158" rx="18" fill="url(#adult-female-costume-astronaut__sleeve)"/>
+    <!-- padded arm segments, each arm one bellied tube -->
+    <path d="M108 186 q4 -34 30 -34 q26 0 30 34 q6 60 -2 122 q-28 14 -56 0 q-8 -62 -2 -122 Z"
+          fill="url(#adult-female-costume-astronaut__seg)"/>
+    <path d="M292 186 q-4 -34 -30 -34 q-26 0 -30 34 q-6 60 2 122 q28 14 56 0 q8 -62 2 -122 Z"
+          fill="url(#adult-female-costume-astronaut__seg)"/>
+    <!-- bulky barrel torso -->
+    <path d="M200 148 h34 q34 0 38 38 q6 52 4 100 q-2 34 -30 40 q-46 10 -92 0
+             q-28 -6 -30 -40 q-2 -48 4 -100 q4 -38 38 -38 Z"
+          fill="url(#adult-female-costume-astronaut__body)"/>
   </g>
 
-  <!-- neck ring: the top of the piece, no helmet -->
-  <rect x="176" y="148" width="48" height="14" rx="7" fill="var(--c3, #F4A79B)"/>
-
-  <!-- ribbed bands across the arms -->
-  <g fill="var(--c2, #9AA6C4)">
-    <rect x="114" y="200" width="36" height="7" rx="3.5"/>
-    <rect x="114" y="220" width="36" height="7" rx="3.5"/>
-    <rect x="114" y="240" width="36" height="7" rx="3.5"/>
-    <rect x="114" y="260" width="36" height="7" rx="3.5"/>
-    <rect x="250" y="200" width="36" height="7" rx="3.5"/>
-    <rect x="250" y="220" width="36" height="7" rx="3.5"/>
-    <rect x="250" y="240" width="36" height="7" rx="3.5"/>
-    <rect x="250" y="260" width="36" height="7" rx="3.5"/>
-    <!-- ribbed bands across the legs -->
-    <rect x="160" y="380" width="38" height="8" rx="4"/>
-    <rect x="160" y="406" width="38" height="8" rx="4"/>
-    <rect x="160" y="432" width="38" height="8" rx="4"/>
-    <rect x="160" y="458" width="38" height="8" rx="4"/>
-    <rect x="202" y="380" width="38" height="8" rx="4"/>
-    <rect x="202" y="406" width="38" height="8" rx="4"/>
-    <rect x="202" y="432" width="38" height="8" rx="4"/>
-    <rect x="202" y="458" width="38" height="8" rx="4"/>
+  <!-- soft neck ring, the top of the piece: no helmet -->
+  <rect x="174" y="148" width="52" height="16" rx="8" fill="var(--c3, #E8825F)"/>
+  <!-- ribbed joint segments at the elbows -->
+  <g fill="var(--c2, #C6CDDD)">
+    <path d="M108 236 q30 12 60 0 l1 10 q-31 12 -62 0 Z"/>
+    <path d="M108 254 q30 12 60 0 l1 10 q-31 12 -62 0 Z"/>
+    <path d="M232 236 q30 12 60 0 l1 10 q-31 12 -62 0 Z"/>
+    <path d="M232 254 q30 12 60 0 l1 10 q-31 12 -62 0 Z"/>
   </g>
-
+  <!-- ribbed joint segments at the knees -->
+  <g fill="var(--c2, #C6CDDD)">
+    <path d="M154 420 q46 14 92 0 l0 12 q-46 14 -92 0 Z"/>
+    <path d="M154 442 q46 14 92 0 l0 12 q-46 14 -92 0 Z"/>
+  </g>
   <!-- chest control panel -->
-  <rect x="176" y="200" width="48" height="40" rx="10" fill="var(--c2, #9AA6C4)"/>
-  <rect x="182" y="206" width="36" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.45"/>
-  <g fill="var(--c3, #F4A79B)">
-    <circle cx="188" cy="230" r="4.5"/>
-    <circle cx="200" cy="230" r="4.5"/>
-    <circle cx="212" cy="230" r="4.5"/>
+  <rect x="172" y="196" width="56" height="46" rx="10" fill="var(--c3, #E8825F)"/>
+  <rect x="178" y="203" width="44" height="14" rx="6" fill="#FFFFFF" fill-opacity="0.5"/>
+  <g fill="var(--c2, #C6CDDD)">
+    <circle cx="186" cy="230" r="5"/><circle cx="200" cy="230" r="5"/><circle cx="214" cy="230" r="5"/>
   </g>
-
-  <!-- original insignia: an abstract circle and sweeping arc -->
-  <circle cx="240" cy="190" r="10" fill="var(--c3, #F4A79B)"/>
-  <path d="M224 204 q16 -28 34 -8" stroke="var(--c3, #F4A79B)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- shoulder flash -->
-  <rect x="115" y="172" width="34" height="22" rx="10" fill="var(--c3, #F4A79B)"/>
-
   <!-- wide waist ring -->
-  <rect x="140" y="292" width="120" height="16" rx="8" fill="var(--c2, #9AA6C4)"/>
-
-  <!-- gloves and chunky boots -->
+  <rect x="140" y="286" width="120" height="18" rx="9" fill="var(--c3, #E8825F)"/>
+  <!-- gloves and hard boots -->
   <g class="sp-shadow">
-    <rect x="112" y="300" width="38" height="18" rx="9" fill="var(--c2, #9AA6C4)"/>
-    <rect x="250" y="300" width="38" height="18" rx="9" fill="var(--c2, #9AA6C4)"/>
-    <circle cx="131" cy="332" r="18" fill="url(#adult-female-costume-astronaut__body)"/>
-    <circle cx="269" cy="332" r="18" fill="url(#adult-female-costume-astronaut__body)"/>
-    <rect x="158" y="486" width="40" height="70" rx="18" fill="url(#adult-female-costume-astronaut__boot)"/>
-    <rect x="202" y="486" width="40" height="70" rx="18" fill="url(#adult-female-costume-astronaut__boot)"/>
-    <rect x="154" y="530" width="50" height="40" rx="18" fill="url(#adult-female-costume-astronaut__boot)"/>
-    <rect x="196" y="530" width="50" height="40" rx="18" fill="url(#adult-female-costume-astronaut__boot)"/>
+    <path d="M112 306 q28 14 54 0 l2 16 q-29 14 -58 0 Z" fill="var(--c3, #E8825F)"/>
+    <path d="M234 306 q28 14 54 0 l2 16 q-29 14 -58 0 Z" fill="var(--c3, #E8825F)"/>
+    <path d="M148 512 q52 16 104 0 q6 32 0 58 h-104 q-6 -26 0 -58 Z"
+          fill="url(#adult-female-costume-astronaut__boot)"/>
   </g>
-
-  <!-- house highlight -->
-  <path d="M150 172 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M150 542 h100" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 178 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

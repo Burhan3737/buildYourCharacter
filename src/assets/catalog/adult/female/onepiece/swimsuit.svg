@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: hem stops at the hip with a high-cut leg (hem)
+       + skin-close single piece, no skirt or ruffle at all (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E2557E)"/>
+      <stop offset="1" stop-color="var(--c2, #BE3F65)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-swimsuit__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E2557E)"/>
+      <stop offset="1" stop-color="var(--c2, #BE3F65)"/>
+    </linearGradient>
+    <pattern id="adult-female-onepiece-swimsuit__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="3.2" fill="var(--c3, #F7E3A1)"/>
+    </pattern>
+    <clipPath id="adult-female-onepiece-swimsuit__clip">
+      <path d="M158 184 q42 22 84 0 q10 4 10 18 v78 q0 24 -22 30 q-16 22 -30 22
+               q-14 0 -30 -22 q-22 -6 -22 -30 v-78 q0-14 10-18 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- shoulder straps -->
+    <path d="M170 190 L162 152 q0-4 5-4 h9 q5 0 5 4 L188 188 Z"
+          fill="url(#adult-female-onepiece-swimsuit__strap)"/>
+    <path d="M230 190 L238 152 q0-4 -5-4 h-9 q-5 0 -5 4 L212 188 Z"
+          fill="url(#adult-female-onepiece-swimsuit__strap)"/>
+    <!-- close-fitting body: scoop neck, waist nipped, high-cut leg openings at the hip -->
+    <path d="M158 184 q42 22 84 0 q10 4 10 18 v78 q0 24 -22 30 q-16 22 -30 22
+             q-14 0 -30 -22 q-22 -6 -22 -30 v-78 q0-14 10-18 Z"
+          fill="url(#adult-female-onepiece-swimsuit__body)"/>
+    <!-- spot print, clipped to the body -->
+    <g clip-path="url(#adult-female-onepiece-swimsuit__clip)">
+      <rect x="140" y="180" width="120" height="150"
+            fill="url(#adult-female-onepiece-swimsuit__dots)" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- contrast-bound neckline and leg openings -->
+  <path d="M158 186 q42 22 84 0" stroke="var(--c3, #F7E3A1)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 288 q14 24 32 32" stroke="var(--c3, #F7E3A1)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 288 q-14 24 -32 32" stroke="var(--c3, #F7E3A1)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- waist seam -->
+  <path d="M156 252 q44 12 88 0" stroke="var(--c2, #BE3F65)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M162 204 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

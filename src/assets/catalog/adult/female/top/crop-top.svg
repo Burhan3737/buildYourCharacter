@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs the slot: hem cropped above the natural waist at y250, midriff bare (hem)
+       + fitted volume with a nipped body (volume). Short set-in sleeves, closed.
+       Tools: pattern (16px heart scatter painted through c3) + trim (hem band and neck bind). -->
+  <defs>
+    <linearGradient id="adult-female-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA648)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA648)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E86A8A)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA648)"/>
+    </linearGradient>
+    <pattern id="adult-female-top-crop-top__hearts" patternUnits="userSpaceOnUse"
+             x="4" y="150" width="16" height="16">
+      <path d="M8 13 C2 9 2 4 5 4 C7 4 8 6 8 6 C8 6 9 4 11 4 C14 4 14 9 8 13 Z"
+            fill="var(--c3, #E86A8A)"/>
+    </pattern>
+    <clipPath id="adult-female-top-crop-top__clip">
+      <path d="M158 146 H242 C258 148 264 168 262 196 C263 216 260 224 258 236 C216 250 184 250 142 236 C140 224 137 216 138 196 C136 168 142 148 158 146 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short set-in cap sleeves -->
+    <path d="M156 152 C132 156 118 168 116 190 C114 206 116 216 122 226 C134 232 146 230 152 224 C148 200 150 174 156 152 Z"
+          fill="url(#adult-female-top-crop-top__sleeve)"/>
+    <path d="M244 152 C268 156 282 168 284 190 C286 206 284 216 278 226 C266 232 254 230 248 224 C252 200 250 174 244 152 Z"
+          fill="url(#adult-female-top-crop-top__sleeve)"/>
+    <!-- cropped, fitted body: hem at y250, well above the natural waist -->
+    <path d="M158 146 H242 C258 148 264 168 262 196 C263 216 260 224 258 236 C216 250 184 250 142 236 C140 224 137 216 138 196 C136 168 142 148 158 146 Z"
+          fill="url(#adult-female-top-crop-top__body)"/>
+  </g>
+  <!-- heart scatter, clipped to the body -->
+  <g clip-path="url(#adult-female-top-crop-top__clip)">
+    <rect x="130" y="146" width="140" height="110" fill="url(#adult-female-top-crop-top__hearts)" opacity="0.85"/>
+  </g>
+  <!-- cropped hem band -->
+  <path d="M140 226 C184 240 216 240 260 226 L258 240 C216 254 184 254 142 240 Z"
+        fill="url(#adult-female-top-crop-top__band)"/>
+  <!-- neck bind -->
+  <path d="M176 143 q24 26 48 0 q4 5 2 11 q-28 26 -52 0 q-2-6 2-11 z" fill="var(--c3, #E86A8A)"/>
+  <path d="M183 147 q17 20 34 0 q-5 18 -17 18 q-12 0 -17-18 z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M156 176 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

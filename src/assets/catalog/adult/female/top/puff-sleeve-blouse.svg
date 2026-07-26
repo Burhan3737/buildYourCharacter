@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: puff sleeve — balloon volume ballooning out to x104/x296 at the shoulder
+       and gathering into a tight cuff (shoulder) + narrow body ending at the waist, y292 (hem).
+       Tools: trim (gathered cuff bands, neck frill) + structural (gather lines, shoulder ruching). -->
+  <defs>
+    <linearGradient id="adult-female-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBC7A4)"/>
+      <stop offset="1" stop-color="var(--c2, #E0A47E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBC7A4)"/>
+      <stop offset="1" stop-color="var(--c2, #E0A47E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-puff-sleeve-blouse__frill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFF6EC)"/>
+      <stop offset="1" stop-color="var(--c2, #E0A47E)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- balloon puff sleeves -->
+    <path d="M158 152 C126 154 106 170 104 194 C104 212 112 226 126 230 C136 234 148 232 154 226 C150 202 152 176 158 152 Z"
+          fill="url(#adult-female-top-puff-sleeve-blouse__puff)"/>
+    <path d="M242 152 C274 154 294 170 296 194 C296 212 288 226 274 230 C264 234 252 232 246 226 C250 202 248 176 242 152 Z"
+          fill="url(#adult-female-top-puff-sleeve-blouse__puff)"/>
+    <!-- narrow body, hem at the waist y292 -->
+    <path d="M172 150 Q152 154 146 176 T138 232 Q140 262 146 292 Q200 304 254 292 Q260 262 262 232 T254 176 Q248 154 228 150 Z"
+          fill="url(#adult-female-top-puff-sleeve-blouse__body)"/>
+  </g>
+  <!-- tight gathered cuffs -->
+  <path d="M114 222 q20 12 42 4 l-2 20 q-22 8 -42-4 z" fill="url(#adult-female-top-puff-sleeve-blouse__frill)"/>
+  <path d="M286 222 q-20 12 -42 4 l2 20 q22 8 42-4 z" fill="url(#adult-female-top-puff-sleeve-blouse__frill)"/>
+  <!-- gathers running into the cuff -->
+  <path d="M122 200 l4 24 M136 194 l2 30 M150 194 l0 30 M278 200 l-4 24 M264 194 l-2 30 M250 194 l0 30"
+        stroke="var(--c2, #E0A47E)" stroke-opacity="0.42" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- shoulder ruching where the puff meets the body -->
+  <path d="M160 156 q-4 16 -4 30 M240 156 q4 16 4 30"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- neck frill -->
+  <path d="M172 148 Q186 140 200 148 Q214 140 228 148 Q222 162 200 162 Q178 162 172 148 Z"
+        fill="url(#adult-female-top-puff-sleeve-blouse__frill)"/>
+  <path d="M182 148 Q200 160 218 148 Q212 168 200 168 Q188 168 182 148 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- waist gather -->
+  <path d="M150 282 Q200 294 250 282" stroke="var(--c2, #E0A47E)" stroke-opacity="0.5"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M162 190 q38 16 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

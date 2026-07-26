@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight Armour" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: a loose tabard hanging open at the sides over the body (volume)
+       + rounded pauldrons standing proud of the shoulder line (shoulder) -->
+  <defs>
+    <linearGradient id="adult-female-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A9B2BF)"/>
+      <stop offset="1" stop-color="var(--c2, #848E9C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B6FB0)"/>
+      <stop offset="1" stop-color="var(--c1, #3B588E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-knight__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A9B2BF)"/>
+      <stop offset="1" stop-color="var(--c3, #6E7684)"/>
+    </linearGradient>
+    <pattern id="adult-female-costume-knight__mailring" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="13" height="13">
+      <circle cx="6.5" cy="6.5" r="3.6" fill="none" stroke="var(--c3, #6E7684)" stroke-width="1.8"/>
+    </pattern>
+    <clipPath id="adult-female-costume-knight__clip">
+      <path d="M146 178 q0-26 26-26 h56 q26 0 26 26 v122 q0 26 -26 26 h-56 q-26 0 -26-26 Z"/>
+      <rect x="116" y="176" width="32" height="150" rx="15"/>
+      <rect x="252" y="176" width="32" height="150" rx="15"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- mail sleeves and mail leggings -->
+    <rect x="116" y="176" width="32" height="150" rx="15" fill="url(#adult-female-costume-knight__mail)"/>
+    <rect x="252" y="176" width="32" height="150" rx="15" fill="url(#adult-female-costume-knight__mail)"/>
+    <rect x="163" y="336" width="36" height="216" rx="14" fill="url(#adult-female-costume-knight__mail)"/>
+    <rect x="201" y="336" width="36" height="216" rx="14" fill="url(#adult-female-costume-knight__mail)"/>
+    <!-- mail body -->
+    <path d="M146 178 q0-26 26-26 h56 q26 0 26 26 v122 q0 26 -26 26 h-56 q-26 0 -26-26 Z"
+          fill="url(#adult-female-costume-knight__mail)"/>
+    <!-- mail rings over the body and sleeves -->
+    <g clip-path="url(#adult-female-costume-knight__clip)">
+      <rect x="112" y="148" width="176" height="182"
+            fill="url(#adult-female-costume-knight__mailring)" opacity="0.5"/>
+    </g>
+    <!-- the tabard: a straight panel hanging front only, open at both sides -->
+    <path d="M172 154 h56 v186 l-28 22 l-28 -22 Z"
+          fill="url(#adult-female-costume-knight__tabard)"/>
+    <!-- rounded pauldrons standing proud of the shoulders -->
+    <path d="M112 178 q0-30 30-30 q16 0 20 14 q-4 22 -6 34 q-24 6 -44 -18 Z"
+          fill="url(#adult-female-costume-knight__plate)"/>
+    <path d="M288 178 q0-30 -30-30 q-16 0 -20 14 q4 22 6 34 q24 6 44 -18 Z"
+          fill="url(#adult-female-costume-knight__plate)"/>
+  </g>
+
+  <!-- pauldron ridges -->
+  <path d="M118 174 q22 -18 42 -8 M282 174 q-22 -18 -42 -8" stroke="#FFFFFF"
+        stroke-opacity="0.34" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- belt over the tabard -->
+  <rect x="148" y="288" width="104" height="20" rx="8" fill="var(--c3, #6E7684)"/>
+  <rect x="190" y="284" width="22" height="28" rx="7" fill="var(--c1, #4B6FB0)"/>
+  <!-- tabard edge banding, no emblem -->
+  <path d="M176 158 v178 M224 158 v178" stroke="var(--c3, #6E7684)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- knee cops and greaves -->
+  <path d="M163 424 h36 v26 h-36 Z M201 424 h36 v26 h-36 Z" fill="var(--c3, #6E7684)"/>
+  <!-- sabatons -->
+  <path d="M152 536 h50 l-4 34 h-46 Z M198 536 h50 l-4 34 h-46 Z"
+        fill="url(#adult-female-costume-knight__plate)"/>
+  <!-- highlight -->
+  <path d="M180 176 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

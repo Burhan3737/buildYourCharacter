@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Heels" data-family="heels" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a narrow almond toe drawn to a point (toe shape) + the shoe body
+       tilted so the heel rides ~14px clear of the ground on a slim 10px column, only the
+       column touching y=570 at the back (sole depth) + no visible fastening at all
+       (fastening). surface tools: trim (topline binding + metal heel tip) + structural
+       detail (vamp seam) + a patent highlight arc. -->
+  <defs>
+    <linearGradient id="adult-female-shoes-heels__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #322C46)"/>
+      <stop offset="1" stop-color="var(--c2, #1F1B2E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-heels__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #1F1B2E)"/>
+      <stop offset="1" stop-color="var(--c2, #1F1B2E)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tilted pumps: pointed toe down on the ground line, heel lifted on a slim column -->
+  <g class="sp-shadow">
+    <path d="M206 562
+             C206 554 198 548 187 545
+             L171 540
+             C159 537 151 540 151 549
+             L151 553
+             C151 557 155 559 160 560
+             L196 570
+             C203 572 206 569 206 562
+             Z"
+          fill="url(#adult-female-shoes-heels__body)"/>
+    <path d="M152 554 L162 556 L163 567
+             C163 570 161 571 158 571
+             L156 571
+             C153 571 152 569 152 566 Z"
+          fill="url(#adult-female-shoes-heels__column)"/>
+    <path d="M192 562
+             C192 554 200 548 211 545
+             L227 540
+             C239 537 247 540 247 549
+             L247 553
+             C247 557 243 559 238 560
+             L202 570
+             C195 572 192 569 192 562
+             Z"
+          fill="url(#adult-female-shoes-heels__body)"/>
+    <path d="M246 554 L236 556 L235 567
+             C235 570 237 571 240 571
+             L242 571
+             C245 571 246 569 246 566 Z"
+          fill="url(#adult-female-shoes-heels__column)"/>
+  </g>
+
+  <!-- topline binding along the throat -->
+  <path d="M154 542 C164 537 172 545 186 549 q12 4 18 12"
+        stroke="var(--c3, #E4C273)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M244 542 C234 537 226 545 212 549 q-12 4 -18 12"
+        stroke="var(--c3, #E4C273)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+
+  <!-- metal heel tips on the ground line -->
+  <rect x="152" y="565" width="11" height="6" rx="2.5" fill="var(--c3, #E4C273)"/>
+  <rect x="235" y="565" width="11" height="6" rx="2.5" fill="var(--c3, #E4C273)"/>
+
+  <!-- vamp seams -->
+  <path d="M186 552 q8 5 12 11" stroke="var(--c2, #1F1B2E)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 552 q-8 5 -12 11" stroke="var(--c2, #1F1B2E)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- patent sheen along the vamp -->
+  <path d="M162 552 q20 3 36 11" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 552 q-20 3 -36 11" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

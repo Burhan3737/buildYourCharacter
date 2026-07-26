@@ -1,77 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Web Runner Suit" data-family="web-runner" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs astronaut: skin-close fitted suit with a nipped waist (volume)
+       + a raised standing collar and no shoulder bulk at all (shoulder) -->
   <defs>
     <linearGradient id="adult-female-costume-web-runner__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+      <stop offset="0" stop-color="var(--c1, #3FBFB6)"/>
+      <stop offset="1" stop-color="var(--c2, #2C8B85)"/>
     </linearGradient>
-    <linearGradient id="adult-female-costume-web-runner__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
-    </linearGradient>
-    <linearGradient id="adult-female-costume-web-runner__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+    <linearGradient id="adult-female-costume-web-runner__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3FBFB6)"/>
+      <stop offset="1" stop-color="var(--c2, #2C8B85)"/>
     </linearGradient>
     <linearGradient id="adult-female-costume-web-runner__boot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c3, #3E4549)"/>
-      <stop offset="1" stop-color="var(--c3, #2A3033)"/>
+      <stop offset="0" stop-color="var(--c3, #39424A)"/>
+      <stop offset="1" stop-color="var(--c3, #262D33)"/>
     </linearGradient>
-    <clipPath id="adult-female-costume-web-runner__torsoclip">
-      <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"/>
+    <pattern id="adult-female-costume-web-runner__lattice" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none"
+            stroke="var(--c3, #39424A)" stroke-width="2" stroke-opacity="0.7"/>
+    </pattern>
+    <clipPath id="adult-female-costume-web-runner__clip">
+      <path d="M170 150 h60 q22 2 24 24 q2 26 -6 48 q-8 22 -6 44 q2 20 8 40
+               q-50 18 -100 0 q6 -20 8 -40 q2 -22 -6 -44 q-8 -22 -6 -48 q2 -22 24 -24 Z"/>
+      <path d="M162 328 q38 12 76 0 q4 108 0 216 q-38 12 -76 0 q-4 -108 0 -216 Z"/>
     </clipPath>
   </defs>
 
-  <!-- suit mass: legs, hips, torso, sleeves -->
   <g class="sp-shadow">
-    <rect x="162" y="340" width="36" height="212" rx="18" fill="url(#adult-female-costume-web-runner__leg)"/>
-    <rect x="202" y="340" width="36" height="212" rx="18" fill="url(#adult-female-costume-web-runner__leg)"/>
-    <rect x="146" y="292" width="108" height="54" rx="26" fill="url(#adult-female-costume-web-runner__body)"/>
-    <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <!-- close-fitting legs, drawn as one narrow sheath split at the centre -->
+    <path d="M162 328 q38 12 76 0 q4 108 0 216 q-38 12 -76 0 q-4 -108 0 -216 Z"
+          fill="url(#adult-female-costume-web-runner__limb)"/>
+    <!-- skin-close sleeves -->
+    <path d="M118 166 q0-14 13-14 h10 q13 0 13 14 q4 76 0 152 q-18 8 -36 0 q-4 -76 0 -152 Z"
+          fill="url(#adult-female-costume-web-runner__limb)"/>
+    <path d="M282 166 q0-14 -13-14 h-10 q-13 0 -13 14 q-4 76 0 152 q18 8 36 0 q4 -76 0 -152 Z"
+          fill="url(#adult-female-costume-web-runner__limb)"/>
+    <!-- fitted torso, nipped at the waist and flaring over the hip -->
+    <path d="M170 150 h60 q22 2 24 24 q2 26 -6 48 q-8 22 -6 44 q2 20 8 40
+             q-50 18 -100 0 q6 -20 8 -40 q2 -22 -6 -44 q-8 -22 -6 -48 q2 -22 24 -24 Z"
           fill="url(#adult-female-costume-web-runner__body)"/>
-    <rect x="114" y="160" width="34" height="158" rx="17" fill="url(#adult-female-costume-web-runner__sleeve)"/>
-    <rect x="252" y="160" width="34" height="158" rx="17" fill="url(#adult-female-costume-web-runner__sleeve)"/>
+    <!-- geometric lattice over torso and legs -->
+    <g clip-path="url(#adult-female-costume-web-runner__clip)">
+      <rect x="140" y="146" width="120" height="400"
+            fill="url(#adult-female-costume-web-runner__lattice)" opacity="0.65"/>
+    </g>
   </g>
 
-  <!-- outer arm panels -->
-  <rect x="115" y="182" width="11" height="114" rx="5.5" fill="var(--c2, #5A6F81)"/>
-  <rect x="274" y="182" width="11" height="114" rx="5.5" fill="var(--c2, #5A6F81)"/>
-  <!-- outer leg panels -->
-  <rect x="164" y="356" width="11" height="170" rx="5.5" fill="var(--c2, #5A6F81)"/>
-  <rect x="225" y="356" width="11" height="170" rx="5.5" fill="var(--c2, #5A6F81)"/>
-
-  <!-- abstract diamond lattice: two families of straight parallel lines -->
-  <g clip-path="url(#adult-female-costume-web-runner__torsoclip)" fill="none" stroke="var(--c3, #3E4549)"
-     stroke-width="2" stroke-opacity="0.55" stroke-linecap="round">
-    <path d="M250 150 L262 162 M230 150 L262 182 M210 150 L262 202
-             M190 150 L262 222 M170 150 L262 242 M150 150 L262 262
-             M138 158 L262 282 M138 178 L262 302 M138 198 L256 316
-             M138 218 L236 316 M138 238 L216 316 M138 258 L196 316
-             M138 278 L176 316 M138 298 L156 316 M138 162 L150 150
-             M138 182 L170 150 M138 202 L190 150 M138 222 L210 150
-             M138 242 L230 150 M138 262 L250 150 M138 282 L262 158
-             M138 302 L262 178 M144 316 L262 198 M164 316 L262 218
-             M184 316 L262 238 M204 316 L262 258 M224 316 L262 278
-             M244 316 L262 298"/>
-  </g>
-
-  <!-- gloves and boots -->
+  <!-- raised standing collar, below the shoulder line -->
+  <path d="M176 150 h48 v18 q-24 10 -48 0 Z" fill="var(--c3, #39424A)"/>
+  <!-- contrast side panels -->
+  <path d="M152 200 q6 44 4 90 l-10 -4 q-2 -46 -6 -88 Z" fill="var(--c3, #39424A)"/>
+  <path d="M248 200 q-6 44 -4 90 l10 -4 q2 -46 6 -88 Z" fill="var(--c3, #39424A)"/>
+  <!-- waist band -->
+  <path d="M156 292 q44 14 88 0 l0 14 q-44 14 -88 0 Z" fill="var(--c3, #39424A)"/>
+  <!-- gloves and low boots -->
   <g class="sp-shadow">
-    <rect x="114" y="298" width="34" height="20" rx="10" fill="var(--c3, #343A3D)"/>
-    <rect x="252" y="298" width="34" height="20" rx="10" fill="var(--c3, #343A3D)"/>
-    <circle cx="131" cy="332" r="18" fill="var(--c3, #343A3D)"/>
-    <circle cx="269" cy="332" r="18" fill="var(--c3, #343A3D)"/>
-    <rect x="162" y="498" width="36" height="56" rx="16" fill="url(#adult-female-costume-web-runner__boot)"/>
-    <rect x="202" y="498" width="36" height="56" rx="16" fill="url(#adult-female-costume-web-runner__boot)"/>
-    <rect x="154" y="534" width="48" height="36" rx="16" fill="url(#adult-female-costume-web-runner__boot)"/>
-    <rect x="198" y="534" width="48" height="36" rx="16" fill="url(#adult-female-costume-web-runner__boot)"/>
+    <path d="M116 308 q22 10 42 0 l1 16 q-22 10 -44 0 Z" fill="var(--c3, #39424A)"/>
+    <path d="M242 308 q22 10 42 0 l1 16 q-22 10 -44 0 Z" fill="var(--c3, #39424A)"/>
+    <path d="M158 508 q42 14 84 0 q4 32 0 62 h-84 q-4 -30 0 -62 Z"
+          fill="url(#adult-female-costume-web-runner__boot)"/>
   </g>
-  <!-- boot cuffs -->
-  <rect x="158" y="492" width="40" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
-  <rect x="202" y="492" width="40" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
-
-  <!-- house highlight -->
-  <path d="M150 172 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <!-- highlight -->
+  <path d="M164 174 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

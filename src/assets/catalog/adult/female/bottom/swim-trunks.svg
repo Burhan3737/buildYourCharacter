@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a gathered elasticated waist scalloping the top edge (rise) + a
+       mid-thigh leg finished with a short side split (leg length / hem treatment) -->
+  <defs>
+    <linearGradient id="adult-female-bottom-swim-trunks__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FA8B8)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8494)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FA8B8)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8494)"/>
+    </linearGradient>
+    <pattern id="adult-female-bottom-swim-trunks__waves" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M-2 6 q4.5 -5 9 0 q4.5 5 9 0 q4.5 -5 9 0" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.75" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M-2 15 q4.5 -5 9 0 q4.5 5 9 0 q4.5 -5 9 0" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.4" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-female-bottom-swim-trunks__clip">
+      <path d="M146 296 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0
+               q6 -8 12 0 q6 8 12 0 q6 -8 12 0 V336 q0 14 -14 14 H160 q-14 0 -14 -14 Z"/>
+      <path d="M157 344 H199 V422 H174 V406 H157 Z"/>
+      <path d="M243 344 H201 V422 H226 V406 H243 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: a gathered scallop-topped hip block and two mid-thigh legs, each notched
+       by a short side split -->
+  <g class="sp-shadow">
+    <path d="M146 296 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0
+             q6 -8 12 0 q6 8 12 0 q6 -8 12 0 V336 q0 14 -14 14 H160 q-14 0 -14 -14 Z"
+          fill="url(#adult-female-bottom-swim-trunks__hip)"/>
+    <path d="M157 344 H199 V422 H174 V406 H157 Z"
+          fill="url(#adult-female-bottom-swim-trunks__leg)"/>
+    <path d="M243 344 H201 V422 H226 V406 H243 Z"
+          fill="url(#adult-female-bottom-swim-trunks__leg)"/>
+  </g>
+
+  <!-- wave pattern clipped to the trunks -->
+  <g clip-path="url(#adult-female-bottom-swim-trunks__clip)">
+    <rect x="140" y="286" width="120" height="140" fill="url(#adult-female-bottom-swim-trunks__waves)"/>
+  </g>
+
+  <!-- elasticated gathered waist -->
+  <path d="M146 296 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0 q6 -8 12 0 q6 8 12 0
+           q6 -8 12 0 q6 8 12 0 q6 -8 12 0 V312 H146 Z" fill="var(--c2, #3B8494)"/>
+  <path d="M156 300 v10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 300 v10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 300 v10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 300 v10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- front tie -->
+  <path d="M192 314 q-4 12 -10 18" stroke="var(--c3, #F7C873)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 314 q4 12 10 18" stroke="var(--c3, #F7C873)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="313" r="5.5" fill="var(--c3, #F7C873)"/>
+
+  <!-- split edges and hem band -->
+  <path d="M174 406 V422" stroke="var(--c2, #3B8494)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 406 V422" stroke="var(--c2, #3B8494)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 418 H197" stroke="var(--c2, #3B8494)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 418 H224" stroke="var(--c2, #3B8494)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M162 326 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

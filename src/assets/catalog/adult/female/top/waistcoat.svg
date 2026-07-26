@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: sleeveless with a covered shoulder and bare arms (shoulder)
+       + button front under a deep V, hem coming to a point at centre front (closure/hem).
+       Tools: trim (contrast front edge binding) + structural (four-button line, welt pockets). -->
+  <defs>
+    <linearGradient id="adult-female-top-waistcoat__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6A9E)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5180)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-waistcoat__edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0E4C8)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5180)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- left front, deep V edge and a hem point at centre -->
+    <path d="M186 148 H160 C142 152 138 168 138 190 L136 256 C140 282 146 300 154 312 L198 326 L200 252 L172 190 Z"
+          fill="url(#adult-female-top-waistcoat__panel)"/>
+    <!-- right front -->
+    <path d="M214 148 H240 C258 152 262 168 262 190 L264 256 C260 282 254 300 246 312 L202 326 L200 252 L228 190 Z"
+          fill="url(#adult-female-top-waistcoat__panel)"/>
+  </g>
+  <!-- contrast binding along the V and the pointed hem -->
+  <path d="M186 148 L172 190 L200 252 L198 326 L192 320 L194 254 L166 192 L180 148 Z"
+        fill="url(#adult-female-top-waistcoat__edge)"/>
+  <path d="M214 148 L228 190 L200 252 L202 326 L208 320 L206 254 L234 192 L220 148 Z"
+        fill="url(#adult-female-top-waistcoat__edge)"/>
+  <!-- four-button line -->
+  <circle cx="200" cy="258" r="4.5" fill="var(--c3, #F0E4C8)"/>
+  <circle cx="200" cy="278" r="4.5" fill="var(--c3, #F0E4C8)"/>
+  <circle cx="200" cy="298" r="4.5" fill="var(--c3, #F0E4C8)"/>
+  <circle cx="200" cy="316" r="4.5" fill="var(--c3, #F0E4C8)"/>
+  <!-- welt pockets -->
+  <path d="M150 274 h30 v9 h-30 z" fill="var(--c2, #6E5180)"/>
+  <path d="M220 274 h30 v9 h-30 z" fill="var(--c2, #6E5180)"/>
+  <!-- shoulder seams -->
+  <path d="M160 152 q-8 18 -10 38 M240 152 q8 18 10 38"
+        stroke="var(--c2, #6E5180)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- armhole shading -->
+  <path d="M142 176 q-4 44 0 88 M258 176 q4 44 0 88"
+        stroke="var(--c2, #6E5180)" stroke-opacity="0.4" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 182 q14 10 26 12 M222 194 q14-2 26-12"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mary Janes" data-family="mary-janes" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: low-cut flat with a scooped throat, no shaft at all (shaft height) +
+       a single instep strap on a small buckle (fastening) + one thin flat sole (sole depth).
+       surface tools: trim (instep strap + contrast sole welt) + structural detail
+       (buckle with pin, toe-cap seam). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-mary-janes__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9B4F7E)"/>
+      <stop offset="1" stop-color="var(--c2, #7A3B62)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-mary-janes__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9B4F7E)"/>
+      <stop offset="1" stop-color="var(--c2, #7A3B62)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- low flats: heel counter at the outer edge, round toe box toward the centre -->
+  <g class="sp-shadow">
+    <path d="M151 542
+             C151 536 156 533 162 534
+             C169 535 171 546 179 547
+             C189 548 195 540 201 546
+             C204 549 204 556 202 560
+             L202 562
+             C202 566 199 568 194 568
+             L157 568
+             C152 568 150 565 150 559
+             Z"
+          fill="url(#adult-female-shoes-mary-janes__shoe)"/>
+    <path d="M247 542
+             C247 536 242 533 236 534
+             C229 535 227 546 219 547
+             C209 548 203 540 197 546
+             C194 549 194 556 196 560
+             L196 562
+             C196 566 199 568 204 568
+             L241 568
+             C246 568 248 565 248 559
+             Z"
+          fill="url(#adult-female-shoes-mary-janes__shoe)"/>
+  </g>
+
+  <!-- thin soles with a light welt edge -->
+  <rect x="149" y="562" width="54" height="8" rx="4" fill="var(--c2, #7A3B62)"/>
+  <rect x="195" y="562" width="54" height="8" rx="4" fill="var(--c2, #7A3B62)"/>
+  <rect x="151" y="563" width="50" height="3" rx="1.5" fill="var(--c3, #F0CE7A)"/>
+  <rect x="197" y="563" width="50" height="3" rx="1.5" fill="var(--c3, #F0CE7A)"/>
+
+  <!-- single instep straps across the throat -->
+  <rect x="153" y="538" width="46" height="10" rx="5"
+        fill="url(#adult-female-shoes-mary-janes__strap)"/>
+  <rect x="199" y="538" width="46" height="10" rx="5"
+        fill="url(#adult-female-shoes-mary-janes__strap)"/>
+
+  <!-- small buckles with a pin -->
+  <rect x="184" y="536" width="12" height="14" rx="3" fill="var(--c3, #F0CE7A)"/>
+  <rect x="187" y="539" width="6" height="8" rx="2" fill="var(--c2, #7A3B62)"/>
+  <rect x="202" y="536" width="12" height="14" rx="3" fill="var(--c3, #F0CE7A)"/>
+  <rect x="205" y="539" width="6" height="8" rx="2" fill="var(--c2, #7A3B62)"/>
+
+  <!-- toe-cap seam -->
+  <path d="M186 552 q7 6 12 2" stroke="var(--c2, #7A3B62)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 552 q-7 6 -12 2" stroke="var(--c2, #7A3B62)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- patent sheen -->
+  <path d="M157 556 q18 6 34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241 556 q-18 6 -34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

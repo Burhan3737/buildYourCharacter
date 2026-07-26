@@ -1,57 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo Pants" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: relaxed wide leg, wider again than the jeans (leg width) + soft
+       barrel hem falling over the shoe on a full-length natural rise (hem treatment) -->
   <defs>
-    <linearGradient id="adult-female-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7FA98C)"/>
-      <stop offset="1" stop-color="var(--c2, #6D9178)"/>
+    <linearGradient id="adult-female-bottom-cargo__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7C54)"/>
     </linearGradient>
-    <linearGradient id="adult-female-bottom-cargo__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7FA98C)"/>
-      <stop offset="1" stop-color="var(--c2, #6D9178)"/>
+    <linearGradient id="adult-female-bottom-cargo__twill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9A6B)"/>
+      <stop offset="0.55" stop-color="var(--c1, #8A9A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7C54)"/>
     </linearGradient>
   </defs>
 
-  <!-- wide utility trousers: hip block plus both legs, one shadow group -->
+  <!-- major forms: two relaxed wide legs that round out into a barrel hem, plus a low
+       square-cornered seat block -->
   <g class="sp-shadow">
-    <path d="M160 336 H198 V536 q0 12 -12 12 H172 q-12 0 -12 -12 Z"
-          fill="url(#adult-female-bottom-cargo__leg)"/>
-    <path d="M240 336 H202 V536 q0 12 12 12 H228 q12 0 12 -12 Z"
-          fill="url(#adult-female-bottom-cargo__leg)"/>
-    <rect x="146" y="291" width="108" height="60" rx="22"
-          fill="url(#adult-female-bottom-cargo__hip)"/>
+    <path d="M152 345 H198 V524 C198 541 189 546 175 546 C160 546 153 540 153 524 L152 345 Z"
+          fill="url(#adult-female-bottom-cargo__twill)"/>
+    <path d="M248 345 H202 V524 C202 541 211 546 225 546 C240 546 247 540 247 524 L248 345 Z"
+          fill="url(#adult-female-bottom-cargo__twill)"/>
+    <path d="M146 289 H254 V328 Q254 349 234 349 H166 Q146 349 146 328 Z"
+          fill="url(#adult-female-bottom-cargo__seat)"/>
   </g>
 
-  <!-- waistband and belt loops -->
-  <rect x="146" y="291" width="108" height="20" rx="9" fill="var(--c2, #6D9178)"/>
-  <rect x="164" y="289" width="7" height="25" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="196" y="289" width="8" height="25" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="229" y="289" width="7" height="25" rx="3" fill="var(--c3, #55735F)"/>
+  <!-- webbing waistband and belt loops -->
+  <path d="M146 289 H254 V310 H146 Z" fill="var(--c2, #6E7C54)"/>
+  <rect x="163" y="287" width="8" height="27" rx="3" fill="var(--c3, #47523A)"/>
+  <rect x="196" y="287" width="9" height="27" rx="3" fill="var(--c3, #47523A)"/>
+  <rect x="230" y="287" width="8" height="27" rx="3" fill="var(--c3, #47523A)"/>
 
-  <!-- thigh patch pockets -->
-  <rect x="162" y="404" width="34" height="46" rx="8" fill="var(--c2, #6D9178)"/>
-  <rect x="204" y="404" width="34" height="46" rx="8" fill="var(--c2, #6D9178)"/>
-  <!-- pocket flaps -->
-  <rect x="160" y="396" width="38" height="16" rx="7" fill="var(--c3, #55735F)"/>
-  <rect x="202" y="396" width="38" height="16" rx="7" fill="var(--c3, #55735F)"/>
-  <circle cx="179" cy="414" r="4" fill="var(--c3, #55735F)"/>
-  <circle cx="221" cy="414" r="4" fill="var(--c3, #55735F)"/>
+  <!-- flapped thigh patch pockets -->
+  <rect x="156" y="398" width="40" height="54" rx="9" fill="var(--c2, #6E7C54)"/>
+  <rect x="205" y="398" width="40" height="54" rx="9" fill="var(--c2, #6E7C54)"/>
+  <rect x="153" y="390" width="46" height="18" rx="8" fill="var(--c3, #47523A)"/>
+  <rect x="202" y="390" width="46" height="18" rx="8" fill="var(--c3, #47523A)"/>
+  <circle cx="176" cy="410" r="4.5" fill="var(--c3, #47523A)"/>
+  <circle cx="225" cy="410" r="4.5" fill="var(--c3, #47523A)"/>
+  <path d="M162 424 H190" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M211 424 H239" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
 
   <!-- knee seams -->
-  <path d="M164 476 H194" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <path d="M155 480 H197" stroke="var(--c3, #47523A)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M206 476 H236" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <path d="M155 490 H197" stroke="var(--c3, #47523A)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 480 H245" stroke="var(--c3, #47523A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 490 H245" stroke="var(--c3, #47523A)" stroke-opacity="0.5" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
   <!-- centre seam -->
-  <path d="M200 314 v28" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <path d="M200 312 v34" stroke="var(--c3, #47523A)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
-  <!-- soft upper highlight -->
-  <path d="M162 324 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- soft upper highlight and wide-leg fall -->
+  <path d="M160 324 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M168 356 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M164 356 q-4 90 -3 160" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="7"
         fill="none" stroke-linecap="round"/>
-  <path d="M232 356 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M236 356 q4 90 3 160" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

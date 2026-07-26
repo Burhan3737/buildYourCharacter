@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs the slot: draped — ONE trapezoid of cloth with no sleeve division at all
+       (shoulder) + flared to mid-thigh, y370 (hem/volume).
+       Tools: pattern (20px chevron painted through c3) + trim (fringe and neck binding). -->
+  <defs>
+    <linearGradient id="adult-female-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9765C)"/>
+      <stop offset="1" stop-color="var(--c2, #A85B44)"/>
+    </linearGradient>
+    <pattern id="adult-female-top-poncho__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="150" width="20" height="20">
+      <path d="M-2 12 L10 2 L22 12 L22 17 L10 7 L-2 17 Z" fill="var(--c3, #F3D9A8)"/>
+    </pattern>
+    <clipPath id="adult-female-top-poncho__clip">
+      <path d="M174 144 Q200 152 226 144 L282 352 Q200 376 118 352 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- one trapezoid of cloth from shoulder to mid-thigh -->
+    <path d="M174 144 Q200 152 226 144 L282 352 Q200 376 118 352 Z"
+          fill="url(#adult-female-top-poncho__cloth)"/>
+  </g>
+  <!-- chevron weave, clipped to the cloth -->
+  <g clip-path="url(#adult-female-top-poncho__clip)">
+    <rect x="110" y="196" width="180" height="60" fill="url(#adult-female-top-poncho__chevron)" opacity="0.9"/>
+    <rect x="110" y="288" width="180" height="60" fill="url(#adult-female-top-poncho__chevron)" opacity="0.9"/>
+  </g>
+  <!-- neck opening -->
+  <path d="M180 142 Q200 154 220 142 Q216 168 200 168 Q184 168 180 142 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- neck binding -->
+  <path d="M174 140 Q200 152 226 142 L228 150 Q200 162 172 150 Z" fill="var(--c3, #F3D9A8)"/>
+  <!-- fringe at the hem -->
+  <g clip-path="url(#adult-female-top-poncho__clip)">
+    <path d="M124 352 v26 M138 358 v26 M152 362 v26 M166 366 v26 M180 369 v26 M194 371 v26 M208 371 v26 M222 369 v26 M236 366 v26 M250 362 v26 M264 358 v26 M278 352 v26"
+          stroke="var(--c3, #F3D9A8)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M120 350 Q200 374 280 350 L282 362 Q200 386 118 362 Z" fill="var(--c2, #A85B44)"/>
+  <!-- drape folds -->
+  <path d="M160 190 L142 348 M240 190 L258 348"
+        stroke="var(--c2, #A85B44)" stroke-opacity="0.42" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M164 178 Q200 194 236 178" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

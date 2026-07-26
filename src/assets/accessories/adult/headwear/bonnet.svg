@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bonnet" data-family="bonnet" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes: soft gathered bag with a wide puffed crown (crown shape)
+       + elasticated hem gripping to the nape, no brim (fastening/drape) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-bonnet__satin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C78FC4)"/>
+      <stop offset="1" stop-color="var(--c2, #A66FA4)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-bonnet__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A66FA4)"/>
+      <stop offset="1" stop-color="var(--c3, #86558A)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- puffed gathered bag, wider than the skull and soft at the top -->
+    <path d="M200 8
+             C252 8 276 40 272 78
+             C270 100 250 116 226 120
+             Q200 124 174 120
+             C150 116 130 100 128 78
+             C124 40 148 8 200 8 Z"
+          fill="url(#accessories-adult-headwear-bonnet__satin)"/>
+    <!-- elasticated hem band gripping round to the nape -->
+    <path d="M130 92 Q200 124 270 92 Q268 112 200 130 Q132 112 130 92 Z"
+          fill="url(#accessories-adult-headwear-bonnet__band)"/>
+  </g>
+  <!-- gathers radiating from the crown -->
+  <path d="M168 26 Q158 62 148 92 M200 16 Q198 58 198 100 M232 26 Q242 62 252 92"
+        stroke="#3B2A22" stroke-opacity="0.1" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- ruched elastic ticks on the band -->
+  <path d="M150 102 v10 M172 110 v10 M200 114 v10 M228 110 v10 M250 102 v10"
+        stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- satin sheen -->
+  <path d="M156 34 Q200 14 244 34" stroke="#FFFFFF" stroke-opacity="0.33" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

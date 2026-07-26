@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hijab" data-family="hijab" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes: draped scarf covering hair, ears and neck (coverage)
+       + soft pinned drape under the chin instead of a brim (fastening/drape) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-hijab__drape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6477C2)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-hijab__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6477C2)"/>
+      <stop offset="1" stop-color="var(--c3, #4F62A8)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- the scarf: over the crown, past both ears, closing under the chin at the neck -->
+    <path d="M200 16
+             C244 16 264 46 264 92
+             C264 122 258 146 250 162
+             Q226 170 200 170 Q174 170 150 162
+             C142 146 136 122 136 92
+             C136 46 156 16 200 16 Z"
+          fill="url(#accessories-adult-headwear-hijab__drape)"/>
+    <!-- the face opening, cut as a soft oval of skin -->
+    <path d="M200 40 C232 40 244 66 244 96 C244 128 226 150 200 150
+             C174 150 156 128 156 96 C156 66 168 40 200 40 Z"
+          fill="var(--skin1, #F7D2B0)"/>
+    <!-- the under-scarf edge framing the face -->
+    <path d="M200 34 C236 34 250 62 250 96 C250 106 249 114 247 122
+             C245 106 244 92 240 78 C232 52 220 44 200 44
+             C180 44 168 52 160 78 C156 92 155 106 153 122
+             C151 114 150 106 150 96 C150 62 164 34 200 34 Z"
+          fill="url(#accessories-adult-headwear-hijab__under)"/>
+  </g>
+  <!-- the fold where the drape crosses under the chin -->
+  <path d="M158 150 Q200 168 242 150" stroke="var(--c3, #4F62A8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- small pin -->
+  <circle cx="238" cy="140" r="3.6" fill="var(--c3, #4F62A8)"/>
+  <!-- soft drape folds down the side -->
+  <path d="M146 106 Q152 134 156 156 M254 106 Q248 134 244 156"
+        stroke="#3B2A22" stroke-opacity="0.1" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M166 40 Q200 22 234 40" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

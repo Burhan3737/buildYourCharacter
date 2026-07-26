@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic Scrubs" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: short set-in sleeves ending above the elbow (shoulder)
+       + a soft V-neck tunic stopping at the hip over separate drawstring trousers (hem) -->
+  <defs>
+    <linearGradient id="adult-female-costume-medic__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="1" stop-color="var(--c2, #3B837C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-medic__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="1" stop-color="var(--c2, #3B837C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-medic__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="1" stop-color="var(--c2, #3B837C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft drawstring trousers, slightly loose through the leg -->
+    <path d="M156 318 h44 v212 q-4 12 -14 12 h-18 q-12 0 -14 -12 Z"
+          fill="url(#adult-female-costume-medic__trouser)"/>
+    <path d="M244 318 h-44 v212 q4 12 14 12 h18 q12 0 14 -12 Z"
+          fill="url(#adult-female-costume-medic__trouser)"/>
+    <!-- short set-in sleeves, ending above the elbow -->
+    <path d="M116 168 q0-16 16-16 h16 q16 0 16 16 v56 q-24 10 -48 0 Z"
+          fill="url(#adult-female-costume-medic__sleeve)"/>
+    <path d="M284 168 q0-16 -16-16 h-16 q-16 0 -16 16 v56 q24 10 48 0 Z"
+          fill="url(#adult-female-costume-medic__sleeve)"/>
+    <!-- V-neck tunic, straight to the hip with side vents -->
+    <path d="M172 152 L200 200 L228 152 h12 q22 0 22 24 v130 q-12 6 -22 4 v-18
+             h-80 v18 q-10 2 -22 -4 v-130 q0-24 22-24 Z"
+          fill="url(#adult-female-costume-medic__tunic)"/>
+  </g>
+
+  <!-- V-neck bind -->
+  <path d="M172 154 L200 202 L228 154" stroke="var(--c3, #E9EDF2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- chest patch pocket -->
+  <path d="M212 214 h34 v30 q0 6 -6 6 h-22 q-6 0 -6 -6 Z" fill="var(--c2, #3B837C)"/>
+  <path d="M218 226 h22" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- hip pocket -->
+  <path d="M152 262 h36 v28 q0 6 -6 6 h-24 q-6 0 -6 -6 Z" fill="var(--c2, #3B837C)"/>
+  <!-- lanyard, hanging from the neck -->
+  <path d="M186 156 q4 46 12 76 M214 156 q-4 46 -12 76" stroke="var(--c3, #E9EDF2)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="190" y="230" width="20" height="28" rx="4" fill="var(--c3, #E9EDF2)"/>
+  <path d="M194 240 h12 M194 248 h8" stroke="var(--c2, #3B837C)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- drawstring at the waist -->
+  <path d="M180 320 q20 8 40 0" stroke="var(--c3, #E9EDF2)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M192 322 v18 M208 322 v18" stroke="var(--c3, #E9EDF2)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 184 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

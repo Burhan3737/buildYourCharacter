@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6E8F5C)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6E8F5C)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="adult-female-eyes-hooded__clip-l">
+      <path d="M162 100 Q178 94 195 99 Q193 112 178 113 Q165 112 162 100 Z"/>
+    </clipPath>
+    <clipPath id="adult-female-eyes-hooded__clip-r">
+      <path d="M238 100 Q222 94 205 99 Q207 112 222 113 Q235 112 238 100 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- aperture -->
+  <g class="sp-shadow">
+    <path d="M162 100 Q178 94 195 99 Q193 112 178 113 Q165 112 162 100 Z"
+          fill="url(#adult-female-eyes-hooded__sclera)"/>
+    <path d="M238 100 Q222 94 205 99 Q207 112 222 113 Q235 112 238 100 Z"
+          fill="url(#adult-female-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#adult-female-eyes-hooded__clip-l)">
+    <circle cx="178" cy="104" r="9.4" fill="#3B2A22"/>
+    <circle cx="178" cy="104" r="9.4" fill="url(#adult-female-eyes-hooded__iris)"/>
+    <circle cx="178" cy="104" r="4.3" fill="#3B2A22"/>
+    <circle cx="174.6" cy="101.4" r="2.7" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-female-eyes-hooded__clip-r)">
+    <circle cx="222" cy="104" r="9.4" fill="#3B2A22"/>
+    <circle cx="222" cy="104" r="9.4" fill="url(#adult-female-eyes-hooded__iris)"/>
+    <circle cx="222" cy="104" r="4.3" fill="#3B2A22"/>
+    <circle cx="218.6" cy="101.4" r="2.7" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line: only a short strip of lid is visible below the hood -->
+  <path d="M161 99.5 Q178 93 196 98.5" stroke="#3B2A22" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M239 99.5 Q222 93 204 98.5" stroke="#3B2A22" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the hood: a heavy fold of skin dropping over the outer half of the crease -->
+  <path d="M158 92 Q172 82 190 86 Q198 88 196 93 Q186 89 175 90 Q165 91 159 96 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M242 92 Q228 82 210 86 Q202 88 204 93 Q214 89 225 90 Q235 91 241 96 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M158.5 94.5 Q172 84.5 191 88.5" stroke="#3B2A22" stroke-opacity="0.26"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M241.5 94.5 Q228 84.5 209 88.5" stroke="#3B2A22" stroke-opacity="0.26"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash hint -->
+  <path d="M167 112.5 Q178 116 189 113" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 112.5 Q222 116 211 113" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

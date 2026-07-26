@@ -1,34 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tee" data-family="tee" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: short set-in sleeve (shoulder) + straight hip-length body with a gently
+       curved hem (hem/volume). The plain baseline: waist-shaped body, narrow shoulder seam,
+       small contrast crew bind. Tools: trim (neck bind) + structural (shoulder seams, creases). -->
   <defs>
     <linearGradient id="adult-female-top-tee__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DE8D80)"/>
+      <stop offset="1" stop-color="var(--c2, #D98A7C)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DE8D80)"/>
+      <stop offset="1" stop-color="var(--c2, #D98A7C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-tee__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFF1E6)"/>
+      <stop offset="1" stop-color="var(--c2, #D98A7C)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <!-- short sleeves, shoulder anchor y160 down to y228 -->
-    <rect x="114" y="160" width="34" height="68" rx="17" fill="url(#adult-female-top-tee__sleeve)"/>
-    <rect x="252" y="160" width="34" height="68" rx="17" fill="url(#adult-female-top-tee__sleeve)"/>
-    <!-- body, hem at y318 -->
-    <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <!-- short set-in sleeves, cap y158 falling to a hem at y232 -->
+    <path d="M148 158 q-30 4 -32 30 q-2 26 4 42 q16 8 30 2 q-8-38 -2-74 z"
+          fill="url(#adult-female-top-tee__sleeve)"/>
+    <path d="M252 158 q30 4 32 30 q2 26 -4 42 q-16 8 -30 2 q8-38 2-74 z"
+          fill="url(#adult-female-top-tee__sleeve)"/>
+    <!-- waist-shaped body, widest at y208, hem curving from y312 to y319 at centre -->
+    <path d="M144 162 q8-16 28-16 h56 q20 0 28 16 q10 20 8 46 q-2 24 -2 44 q0 26 -4 60 q-58 14 -116 0 q-4-34 -4-60 q0-20 -2-44 q-2-26 8-46 z"
           fill="url(#adult-female-top-tee__body)"/>
   </g>
-  <!-- crew neckband -->
-  <path d="M176 145 q24 34 48 0 z" fill="var(--c2, #DE8D80)"/>
+  <!-- contrast crew bind -->
+  <path d="M174 143 q26 32 52 0 q4 6 0 12 q-30 26 -56 0 q-4-6 4-12 z"
+        fill="url(#adult-female-top-tee__bind)"/>
   <!-- neck opening -->
-  <path d="M185 148 q15 20 30 0 z" fill="var(--skin2, #E7B892)"/>
-  <!-- sleeve hem creases -->
-  <path d="M118 220 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+  <path d="M180 147 q20 26 40 0 q-4 20 -20 20 q-16 0 -20-20 z" fill="var(--skin2, #E7B892)"/>
+  <!-- set-in shoulder seams -->
+  <path d="M150 162 q5 16 3 34" stroke="var(--c2, #D98A7C)" stroke-opacity="0.8" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M256 220 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+  <path d="M250 162 q-5 16 -3 34" stroke="var(--c2, #D98A7C)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- sleeve hem creases -->
+  <path d="M120 220 q14 7 28 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 220 q14 7 28 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
         fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M150 174 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M152 184 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

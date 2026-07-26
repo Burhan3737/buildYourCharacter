@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bumble Bee Suit" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: two rounded wing forms standing out past the shoulders (shoulder/sleeve)
+       + a swollen plush abdomen that balloons out at the hip and pinches at the knee (volume). -->
+  <defs>
+    <linearGradient id="adult-female-costume-bee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #E0AF56)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-bee__abdomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D8A54C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-bee__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #DFAD55)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-bee__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A2C)"/>
+      <stop offset="1" stop-color="var(--c2, #33271D)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCEFF7)"/>
+      <stop offset="1" stop-color="var(--c3, #B6D9E8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- rounded translucent wings behind the shoulders -->
+    <path d="M148 158 q-52 -12 -76 26 q-24 38 -6 70 q18 32 54 18 q36 -14 40 -62 q4 -34 -12 -52 z"
+          fill="url(#adult-female-costume-bee__wing)" fill-opacity="0.85"/>
+    <path d="M252 158 q52 -12 76 26 q24 38 6 70 q-18 32 -54 18 q-36 -14 -40 -62 q-4 -34 12 -52 z"
+          fill="url(#adult-female-costume-bee__wing)" fill-opacity="0.85"/>
+    <!-- plush striped abdomen: the big rounded lower mass -->
+    <path d="M138 278 q62 -18 124 0 q18 60 4 116 q-14 56 -66 56 q-52 0 -66 -56 q-14 -56 4 -116 z"
+          fill="url(#adult-female-costume-bee__abdomen)"/>
+    <!-- rounded banded thorax -->
+    <path d="M146 184 q0 -36 34 -36 h40 q34 0 34 36 q6 50 -4 100 q-30 12 -50 12 q-20 0 -50 -12
+             q-10 -50 -4 -100 z"
+          fill="url(#adult-female-costume-bee__body)"/>
+    <!-- plush rounded sleeves -->
+    <path d="M112 178 q0 -20 20 -20 q20 0 20 20 v112 q0 22 -20 22 q-20 0 -20 -22 z"
+          fill="url(#adult-female-costume-bee__sleeve)"/>
+    <path d="M248 178 q0 -20 20 -20 q20 0 20 20 v112 q0 22 -20 22 q-20 0 -20 -22 z"
+          fill="url(#adult-female-costume-bee__sleeve)"/>
+    <!-- short chunky legs below the abdomen -->
+    <path d="M162 424 q20 -8 40 0 v104 q0 20 -20 20 q-20 0 -20 -20 z"
+          fill="url(#adult-female-costume-bee__band)"/>
+    <path d="M198 424 q20 -8 40 0 v104 q0 20 -20 20 q-20 0 -20 -20 z"
+          fill="url(#adult-female-costume-bee__band)"/>
+    <!-- rounded booties -->
+    <path d="M150 534 q26 -12 54 0 q10 16 0 32 q-27 8 -54 0 q-10 -16 0 -32 z"
+          fill="url(#adult-female-costume-bee__band)"/>
+    <path d="M196 534 q26 -12 54 0 q10 16 0 32 q-27 8 -54 0 q-10 -16 0 -32 z"
+          fill="url(#adult-female-costume-bee__band)"/>
+  </g>
+
+  <!-- panel blocking: the bands are real blocking, drawn as filled belts across the abdomen -->
+  <path d="M133 306 h134 q2 12 3 24 h-140 q1 -12 3 -24 z" fill="url(#adult-female-costume-bee__band)"/>
+  <path d="M137 352 h126 q-1 13 -3 25 h-120 q-2 -12 -3 -25 z" fill="url(#adult-female-costume-bee__band)"/>
+  <path d="M146 398 h108 q-5 14 -12 24 h-84 q-7 -10 -12 -24 z" fill="url(#adult-female-costume-bee__band)"/>
+  <!-- thorax band -->
+  <path d="M147 222 h106 q1 13 1 26 h-108 q0 -13 1 -26 z" fill="url(#adult-female-costume-bee__band)"/>
+
+  <!-- trim: fuzzy collar ruff and cuff rings -->
+  <path d="M164 148 h72 q-4 24 -36 24 q-32 0 -36 -24 z" fill="var(--c2, #4A3A2C)" fill-opacity="0.9"/>
+  <rect x="112" y="288" width="40" height="16" rx="8" fill="var(--c2, #4A3A2C)"/>
+  <rect x="248" y="288" width="40" height="16" rx="8" fill="var(--c2, #4A3A2C)"/>
+
+  <!-- wing veining -->
+  <g stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M138 176 q-40 12 -52 48"/>
+    <path d="M144 202 q-38 14 -46 46"/>
+    <path d="M262 176 q40 12 52 48"/>
+    <path d="M256 202 q38 14 46 46"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 176 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: half placket under a flat knit collar (closure) + curved shirttail hem,
+       side seams rising to y300 while the centre drops to y316 (hem).
+       Tools: trim (knit collar, placket band, sleeve cuff bands) + structural (two buttons, side vents). -->
+  <defs>
+    <linearGradient id="adult-female-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-polo__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FDF6E7)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8B)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short set-in sleeves with a squared knit hem -->
+    <path d="M150 154 q-34 2 -36 34 v34 q0 8 8 8 h26 q8 0 8-8 v-60 q0-8 -6-8 z"
+          fill="url(#adult-female-top-polo__sleeve)"/>
+    <path d="M250 154 q34 2 36 34 v34 q0 8 -8 8 h-26 q-8 0 -8-8 v-60 q0-8 6-8 z"
+          fill="url(#adult-female-top-polo__sleeve)"/>
+    <!-- body with a curved shirttail: side seams rise to y300, centre falls to y316 -->
+    <path d="M142 164 C144 150 156 146 174 146 L226 146 C244 146 256 150 258 164 L262 228 L258 300 C232 322 168 322 142 300 L138 228 Z"
+          fill="url(#adult-female-top-polo__body)"/>
+  </g>
+  <!-- half placket band -->
+  <path d="M190 148 h20 v54 q0 6 -10 6 q-10 0 -10-6 z" fill="url(#adult-female-top-polo__collar)"/>
+  <!-- flat knit collar -->
+  <path d="M168 144 L200 158 L232 144 L240 156 L204 178 L200 176 L196 178 L160 156 Z"
+        fill="url(#adult-female-top-polo__collar)"/>
+  <path d="M184 146 q16 12 32 0 q-8 12 -16 12 q-8 0 -16-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- two placket buttons -->
+  <circle cx="200" cy="172" r="4" fill="var(--c2, #4E9C8B)"/>
+  <circle cx="200" cy="194" r="4" fill="var(--c2, #4E9C8B)"/>
+  <!-- sleeve cuff bands -->
+  <path d="M114 214 h44 v12 h-44 z" fill="var(--c3, #FDF6E7)" opacity="0.9"/>
+  <path d="M242 214 h44 v12 h-44 z" fill="var(--c3, #FDF6E7)" opacity="0.9"/>
+  <!-- side vents at the rising seam -->
+  <path d="M146 288 v18 M254 288 v18" stroke="var(--c2, #4E9C8B)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 190 q22 12 40 6 M208 196 q22 6 40-6"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

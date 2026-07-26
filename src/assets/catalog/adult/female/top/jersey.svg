@@ -1,42 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sports Jersey" data-family="jersey" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: short RAGLAN sleeves seamed neck-to-underarm as their own major forms
+       (shoulder) + squared boxy body with a flat hip hem (volume).
+       Tools: panel blocking (raglan panels painted through c2) + trim (V-neck bind, contrast cuffs). -->
   <defs>
     <linearGradient id="adult-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6274C6)"/>
+      <stop offset="1" stop-color="var(--c2, #5E6FBE)"/>
     </linearGradient>
-    <linearGradient id="adult-female-top-jersey__shade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    <linearGradient id="adult-female-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5E6FBE)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
     </linearGradient>
-    <clipPath id="adult-female-top-jersey__clip">
-      <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"/>
-    </clipPath>
+    <linearGradient id="adult-female-top-jersey__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #5E6FBE)"/>
+    </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <!-- body, hem at y318 -->
-    <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <!-- boxy body, squared shoulders, flat hem at y316 -->
+    <path d="M160 148 h80 q24 6 24 30 v112 q0 26 -2 26 h-124 q-2 0 -2-26 v-112 q0-24 24-30 z"
           fill="url(#adult-female-top-jersey__body)"/>
-    <!-- raglan shoulder yokes -->
-    <path d="M186 150 L136 198 v-18 q0-32 34-32 z" fill="var(--c2, #6274C6)"/>
-    <path d="M214 150 L264 198 v-18 q0-32 -34-32 z" fill="var(--c2, #6274C6)"/>
-    <!-- raglan short sleeves -->
-    <rect x="114" y="160" width="34" height="74" rx="17" fill="var(--c2, #6274C6)"/>
-    <rect x="252" y="160" width="34" height="74" rx="17" fill="var(--c2, #6274C6)"/>
-    <!-- vertical shading over the sleeves -->
-    <rect x="114" y="160" width="34" height="74" rx="17" fill="url(#adult-female-top-jersey__shade)"/>
-    <rect x="252" y="160" width="34" height="74" rx="17" fill="url(#adult-female-top-jersey__shade)"/>
+    <!-- raglan panels: one form each, seamed from the neck to the underarm and on into the sleeve -->
+    <path d="M186 148 L148 182 q-34 8 -34 38 v14 q18 12 38 4 q-2-32 6-52 z"
+          fill="url(#adult-female-top-jersey__raglan)"/>
+    <path d="M214 148 L252 182 q34 8 34 38 v14 q-18 12 -38 4 q2-32 -6-52 z"
+          fill="url(#adult-female-top-jersey__raglan)"/>
   </g>
-  <!-- accent side stripes, clipped to the body -->
-  <g clip-path="url(#adult-female-top-jersey__clip)">
-    <rect x="140" y="196" width="10" height="128" fill="var(--c3, #F7C873)"/>
-    <rect x="250" y="196" width="10" height="128" fill="var(--c3, #F7C873)"/>
-  </g>
-  <!-- contrast V-neck yoke -->
-  <path d="M175 146 L200 192 L225 146 z" fill="var(--c3, #F7C873)"/>
-  <path d="M186 146 L200 174 L214 146 z" fill="var(--skin2, #E7B892)"/>
+  <!-- contrast sleeve cuffs -->
+  <path d="M114 224 q20 12 40 4 l-2 14 q-20 8 -38-4 z" fill="url(#adult-female-top-jersey__trim)"/>
+  <path d="M286 224 q-20 12 -40 4 l2 14 q20 8 38-4 z" fill="url(#adult-female-top-jersey__trim)"/>
+  <!-- V-neck bind -->
+  <path d="M176 146 L200 194 L224 146 l12 2 L200 208 L164 148 z" fill="var(--c3, #F7C873)"/>
+  <path d="M182 147 L200 186 L218 147 z" fill="var(--skin2, #E7B892)"/>
+  <!-- squared hem band -->
+  <path d="M138 300 h124 v12 h-124 z" fill="var(--c3, #F7C873)" opacity="0.85"/>
   <!-- highlight -->
-  <path d="M152 202 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M154 224 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

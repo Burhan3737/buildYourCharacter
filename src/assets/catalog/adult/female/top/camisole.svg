@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: narrow 8px spaghetti straps over a straight-across scalloped neckline —
+       NOT the scooped, 16px-strapped tank (shoulder) + a narrow column body dipping past the hip
+       to y330 (hem/volume). Tools: trim (lace-look scallop bands at neckline and hem)
+       + structural (side seams and a centre gather). -->
+  <defs>
+    <linearGradient id="adult-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3C4CE)"/>
+      <stop offset="1" stop-color="var(--c2, #D6A0AD)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3C4CE)"/>
+      <stop offset="1" stop-color="var(--c2, #D6A0AD)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- 8px spaghetti straps -->
+    <rect x="170" y="142" width="8" height="52" rx="4" fill="url(#adult-female-top-camisole__strap)"/>
+    <rect x="222" y="142" width="8" height="52" rx="4" fill="url(#adult-female-top-camisole__strap)"/>
+    <!-- narrow column body, straight-across neckline at y186, hem dipping to y330 -->
+    <path d="M142 190 C168 182 232 182 258 190 C262 222 264 252 262 282 C258 302 254 316 248 324 C216 336 184 336 152 324 C146 316 142 302 138 282 C136 252 138 222 142 190 Z"
+          fill="url(#adult-female-top-camisole__body)"/>
+  </g>
+  <!-- scalloped lace band along the straight neckline -->
+  <path d="M142 190 C168 182 232 182 258 190 L259 200 C232 192 168 192 141 200 Z" fill="var(--c3, #8E5F72)"/>
+  <path d="M148 200 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 a7 7 0 0 0 14 0 l0-6 h-98 z"
+        fill="var(--c3, #8E5F72)" opacity="0.85"/>
+  <!-- scalloped lace band at the hem -->
+  <path d="M140 306 C176 320 224 320 260 306 L258 318 C224 332 176 332 142 318 Z" fill="var(--c3, #8E5F72)" opacity="0.85"/>
+  <!-- centre gather -->
+  <path d="M200 196 v22" stroke="var(--c2, #D6A0AD)" stroke-opacity="0.6" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M188 204 q12 10 24 0" stroke="var(--c2, #D6A0AD)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- side seams -->
+  <path d="M156 214 q-4 52 -2 100 M244 214 q4 52 2 100"
+        stroke="var(--c2, #D6A0AD)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 222 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

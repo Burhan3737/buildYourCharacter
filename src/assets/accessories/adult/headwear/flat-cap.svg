@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flat Cap" data-family="flat-cap" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: low crown pulled forward and asymmetric (crown shape) + short stiff front peak (brim) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-flat-cap__crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A99177)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7460)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-headwear-flat-cap__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="8" height="8" fill="var(--c3, #6B5A48)"/>
+      <rect x="8" y="8" width="8" height="8" fill="var(--c3, #6B5A48)"/>
+    </pattern>
+    <clipPath id="accessories-adult-headwear-flat-cap__clip">
+      <path d="M148 78 C144 46 166 32 202 32 C238 32 254 46 250 78 Q200 86 148 78 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short stiff peak, forward and slightly to the left -->
+    <path d="M150 74 Q126 78 128 88 Q152 94 186 88 Q176 78 168 74 Z"
+          fill="var(--c2, #8B7460)"/>
+    <!-- low rounded crown, pulled forward over the peak -->
+    <path d="M148 78 C144 46 166 32 202 32 C238 32 254 46 250 78 Q200 86 148 78 Z"
+          fill="url(#accessories-adult-headwear-flat-cap__crown)"/>
+    <!-- houndstooth-ish check over the crown -->
+    <g clip-path="url(#accessories-adult-headwear-flat-cap__clip)">
+      <rect x="140" y="28" width="120" height="60"
+            fill="url(#accessories-adult-headwear-flat-cap__check)" opacity="0.34"/>
+    </g>
+  </g>
+  <!-- the folded front edge of the crown lying over the peak -->
+  <path d="M146 76 Q200 86 252 76" stroke="var(--c2, #8B7460)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- button at the crown seam -->
+  <circle cx="202" cy="34" r="3.4" fill="var(--c3, #6B5A48)"/>
+  <!-- highlight -->
+  <path d="M172 44 Q204 34 236 46" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

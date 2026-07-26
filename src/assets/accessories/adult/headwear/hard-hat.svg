@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hard Hat" data-family="hard-hat" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rigid high-domed shell with a central ridge (crown shape)
+       + short stiff all-round lip plus a chin strap (fastening/drape) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-hard-hat__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2B33C)"/>
+      <stop offset="1" stop-color="var(--c2, #D2942A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-hard-hat__lip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D2942A)"/>
+      <stop offset="1" stop-color="var(--c1, #F2B33C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short stiff lip running all the way round, front peak a little longer -->
+    <path d="M142 70 H258 Q262 84 250 88 Q200 96 150 88 Q138 84 142 70 Z"
+          fill="url(#accessories-adult-headwear-hard-hat__lip)"/>
+    <!-- rigid dome -->
+    <path d="M150 72 C150 30 170 18 200 18 C230 18 250 30 250 72 Z"
+          fill="url(#accessories-adult-headwear-hard-hat__shell)"/>
+    <!-- central reinforcing ridge -->
+    <path d="M192 72 C192 32 194 22 200 18 C206 22 208 32 208 72 Z"
+          fill="var(--c2, #D2942A)"/>
+  </g>
+  <!-- side ribs -->
+  <path d="M172 70 Q170 40 182 24 M228 70 Q230 40 218 24"
+        stroke="#3B2A22" stroke-opacity="0.13" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- chin strap -->
+  <path d="M152 84 Q156 118 200 124 Q244 118 248 84" stroke="var(--c3, #3B2A22)"
+        stroke-opacity="0.75" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="192" y="118" width="16" height="8" rx="3" fill="var(--c3, #3B2A22)" fill-opacity="0.8"/>
+  <!-- highlight -->
+  <path d="M164 38 Q200 24 236 38" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

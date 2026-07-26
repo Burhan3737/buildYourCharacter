@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Dress" data-family="maxi-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: narrow column falling straight to the ankle (hem)
+       + no flare and no waist seam below the bodice (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-maxi-dress__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E5A8C)"/>
+      <stop offset="1" stop-color="var(--c2, #2B4269)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-maxi-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E5A8C)"/>
+      <stop offset="1" stop-color="var(--c2, #2B4269)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow shoulder straps set close to the neck -->
+    <path d="M178 188 L174 152 q0-4 4-4 h8 q4 0 4 4 L194 186 Z"
+          fill="url(#adult-female-onepiece-maxi-dress__strap)"/>
+    <path d="M222 188 L226 152 q0-4 -4-4 h-8 q-4 0 -4 4 L206 186 Z"
+          fill="url(#adult-female-onepiece-maxi-dress__strap)"/>
+    <!-- one narrow column: fitted bodice running straight to the ankle -->
+    <path d="M152 190 q48 20 96 0 q8 6 8 18 v58 q0 12 -4 22 l6 246 q-58 16 -116 0 l6-246
+             q-4-10 -4-22 v-58 q0-12 8-18 Z"
+          fill="url(#adult-female-onepiece-maxi-dress__column)"/>
+  </g>
+
+  <!-- contrast-bound straight neckline -->
+  <path d="M152 192 q48 20 96 0" stroke="var(--c3, #DFAF5E)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- narrow empire waist band -->
+  <rect x="148" y="262" width="104" height="12" rx="5" fill="var(--c3, #DFAF5E)"/>
+  <!-- long centre-front drape folds -->
+  <path d="M178 288 q-4 118 -6 232 M222 288 q4 118 6 232" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ankle hem band -->
+  <path d="M146 520 q54 16 108 0" stroke="var(--c3, #DFAF5E)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M160 208 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 320 v190" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

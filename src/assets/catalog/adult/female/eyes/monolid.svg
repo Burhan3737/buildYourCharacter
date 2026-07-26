@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-female-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #4A3327)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #4A3327)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="adult-female-eyes-monolid__clip-l">
+      <path d="M160 101 Q178 92 196 101 Q188 112 178 112 Q168 112 160 101 Z"/>
+    </clipPath>
+    <clipPath id="adult-female-eyes-monolid__clip-r">
+      <path d="M240 101 Q222 92 204 101 Q212 112 222 112 Q232 112 240 101 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- smooth single-fold lid: a long, shallow, evenly-weighted aperture with no crease -->
+  <g class="sp-shadow">
+    <path d="M160 101 Q178 92 196 101 Q188 112 178 112 Q168 112 160 101 Z"
+          fill="url(#adult-female-eyes-monolid__sclera)"/>
+    <path d="M240 101 Q222 92 204 101 Q212 112 222 112 Q232 112 240 101 Z"
+          fill="url(#adult-female-eyes-monolid__sclera)"/>
+  </g>
+
+  <g clip-path="url(#adult-female-eyes-monolid__clip-l)">
+    <circle cx="178" cy="103" r="9" fill="#3B2A22"/>
+    <circle cx="178" cy="103" r="9" fill="url(#adult-female-eyes-monolid__iris)"/>
+    <circle cx="178" cy="103" r="4.2" fill="#3B2A22"/>
+    <circle cx="174.8" cy="100.4" r="2.6" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-female-eyes-monolid__clip-r)">
+    <circle cx="222" cy="103" r="9" fill="#3B2A22"/>
+    <circle cx="222" cy="103" r="9" fill="url(#adult-female-eyes-monolid__iris)"/>
+    <circle cx="222" cy="103" r="4.2" fill="#3B2A22"/>
+    <circle cx="218.8" cy="100.4" r="2.6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- wide flat lash line, even weight end to end, no crease drawn above it -->
+  <path d="M158.5 100.5 Q178 90.5 197.5 100.5" stroke="#3B2A22" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241.5 100.5 Q222 90.5 202.5 100.5" stroke="#3B2A22" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- smooth lid plane above the lash line, no fold -->
+  <path d="M161 93 Q178 85 195 93" stroke="#3B2A22" stroke-opacity="0.1" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M239 93 Q222 85 205 93" stroke="#3B2A22" stroke-opacity="0.1" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash hint -->
+  <path d="M165 111.5 Q178 115 191 111.5" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 111.5 Q222 115 209 111.5" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

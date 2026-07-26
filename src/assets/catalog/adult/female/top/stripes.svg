@@ -1,42 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Breton Stripes" data-family="stripes" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-name="Boat-Neck Top" data-family="stripes" data-slot="top"
+     data-layer="top" data-colors="c3,c1,c2" data-hides="">
+  <!-- axes vs the slot: dropped shoulder with a wide shallow boat neckline (shoulder) + boxy
+       volume, body carried wide out over the arm (volume). Legacy key, real garment: the
+       boat-neck long-sleeve top. The breton banding is its SURFACE, not its identity.
+       Tools: pattern (18px breton band painted through c3) + trim (contrast neckband). -->
   <defs>
     <linearGradient id="adult-female-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
-      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+      <stop offset="1" stop-color="var(--c2, #D9D1BE)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
-      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+      <stop offset="1" stop-color="var(--c2, #D9D1BE)"/>
     </linearGradient>
+    <pattern id="adult-female-top-stripes__breton" patternUnits="userSpaceOnUse"
+             x="0" y="140" width="18" height="18">
+      <rect x="0" y="0" width="18" height="9" fill="var(--c3, #3B5AA8)"/>
+      <rect x="0" y="13" width="18" height="3" fill="var(--c3, #3B5AA8)"/>
+    </pattern>
     <clipPath id="adult-female-top-stripes__clip">
-      <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"/>
-      <rect x="114" y="160" width="34" height="158" rx="17"/>
-      <rect x="252" y="160" width="34" height="158" rx="17"/>
+      <path d="M168 142 q32 15 64 0 q20 3 32 16 q6 18 4 44 q-4 38 -2 74 q1 22 2 42 q-68 14 -136 0 q1-20 2-42 q2-36 -2-74 q-2-26 4-44 q12-13 32-16 z"/>
+      <path d="M136 176 q-22 6 -22 30 v112 q18 8 36 0 v-116 q0-22 -14-26 z"/>
+      <path d="M264 176 q22 6 22 30 v112 q-18 8 -36 0 v-116 q0-22 14-26 z"/>
     </clipPath>
   </defs>
   <g class="sp-shadow">
-    <!-- long sleeves -->
-    <rect x="114" y="160" width="34" height="158" rx="17" fill="url(#adult-female-top-stripes__sleeve)"/>
-    <rect x="252" y="160" width="34" height="158" rx="17" fill="url(#adult-female-top-stripes__sleeve)"/>
-    <!-- body, hem at y318 -->
-    <path d="M136 180 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <!-- long sleeves hanging from the dropped shoulder line at y176 -->
+    <path d="M136 176 q-22 6 -22 30 v112 q18 8 36 0 v-116 q0-22 -14-26 z"
+          fill="url(#adult-female-top-stripes__sleeve)"/>
+    <path d="M264 176 q22 6 22 30 v112 q-18 8 -36 0 v-116 q0-22 14-26 z"
+          fill="url(#adult-female-top-stripes__sleeve)"/>
+    <!-- boxy body, boat neckline y142 spanning x168-232, shoulder dropped out to x132/268 -->
+    <path d="M168 142 q32 15 64 0 q20 3 32 16 q6 18 4 44 q-4 38 -2 74 q1 22 2 42 q-68 14 -136 0 q1-20 2-42 q2-36 -2-74 q-2-26 4-44 q12-13 32-16 z"
           fill="url(#adult-female-top-stripes__body)"/>
   </g>
-  <!-- breton bands, clipped to the garment silhouette -->
+  <!-- breton banding, clipped to the garment -->
   <g clip-path="url(#adult-female-top-stripes__clip)">
-    <rect x="106" y="186" width="188" height="14" fill="var(--c3, #7E90DC)"/>
-    <rect x="106" y="214" width="188" height="14" fill="var(--c3, #7E90DC)"/>
-    <rect x="106" y="242" width="188" height="14" fill="var(--c3, #7E90DC)"/>
-    <rect x="106" y="270" width="188" height="14" fill="var(--c3, #7E90DC)"/>
-    <rect x="106" y="298" width="188" height="14" fill="var(--c3, #7E90DC)"/>
+    <rect x="106" y="140" width="188" height="196" fill="url(#adult-female-top-stripes__breton)" opacity="0.9"/>
   </g>
   <!-- boat neckband -->
-  <path d="M168 143 q32 34 64 0 z" fill="var(--c2, #DFD8C7)"/>
+  <path d="M166 140 q34 18 68 0 q4 5 2 11 q-36 19 -72 0 q-2-6 2-11 z" fill="var(--c3, #3B5AA8)"/>
   <!-- neck opening -->
-  <path d="M177 146 q23 20 46 0 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M172 144 q28 15 56 0 q-10 16 -28 16 q-18 0 -28-16 z" fill="var(--skin2, #E7B892)"/>
+  <!-- cuff folds -->
+  <path d="M118 306 q16 7 32 0 M250 306 q16 7 32 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4" fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M150 172 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M150 168 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

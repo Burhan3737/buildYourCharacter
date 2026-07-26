@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: open front — two knit panels with a wide V gap showing the layer beneath
+       (closure) + hem falling past the hip to y336 (hem).
+       Tools: panel blocking (front bands down each panel edge) + structural (two patch pockets). -->
+  <defs>
+    <linearGradient id="adult-female-top-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3D3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #C4B08C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3D3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #C4B08C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-cardigan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8C7A5C)"/>
+      <stop offset="1" stop-color="var(--c2, #C4B08C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- soft long sleeves -->
+    <path d="M150 154 C126 160 116 178 116 202 L116 306 C118 320 126 326 138 324 C150 322 156 314 156 300 L156 196 Z"
+          fill="url(#adult-female-top-cardigan__sleeve)"/>
+    <path d="M250 154 C274 160 284 178 284 202 L284 306 C282 320 274 326 262 324 C250 322 244 314 244 300 L244 196 Z"
+          fill="url(#adult-female-top-cardigan__sleeve)"/>
+    <!-- left front panel, inner edge falling away to a wide V -->
+    <path d="M188 150 H166 C144 154 136 170 136 196 L134 270 C136 302 138 322 142 334 C160 340 178 340 194 336 L170 244 Z"
+          fill="url(#adult-female-top-cardigan__panel)"/>
+    <!-- right front panel -->
+    <path d="M212 150 H234 C256 154 264 170 264 196 L266 270 C264 302 262 322 258 334 C240 340 222 340 206 336 L230 244 Z"
+          fill="url(#adult-female-top-cardigan__panel)"/>
+  </g>
+  <!-- flat bands down each front edge -->
+  <path d="M188 150 L170 244 L194 336 L202 334 L180 244 L196 150 Z" fill="url(#adult-female-top-cardigan__band)"/>
+  <path d="M212 150 L230 244 L206 336 L198 334 L220 244 L204 150 Z" fill="url(#adult-female-top-cardigan__band)"/>
+  <!-- buttons on the left band -->
+  <circle cx="188" cy="268" r="4" fill="var(--c3, #8C7A5C)"/>
+  <circle cx="192" cy="304" r="4" fill="var(--c3, #8C7A5C)"/>
+  <!-- patch pockets -->
+  <path d="M146 262 h34 v34 q0 6 -6 6 h-22 q-6 0 -6-6 z" fill="var(--c2, #C4B08C)"/>
+  <path d="M220 262 h34 v34 q0 6 -6 6 h-22 q-6 0 -6-6 z" fill="var(--c2, #C4B08C)"/>
+  <path d="M148 270 h30 M222 270 h30" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- knit rows -->
+  <path d="M142 196 q22 8 44 4 M214 200 q22 4 44-4 M140 226 q24 8 44 4 M216 230 q22 4 44-4"
+        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cuff folds -->
+  <path d="M118 306 q19 8 38 0 M246 306 q19 8 38 0"
+        stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 178 q18 10 34 6 M216 184 q18 4 34-6"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

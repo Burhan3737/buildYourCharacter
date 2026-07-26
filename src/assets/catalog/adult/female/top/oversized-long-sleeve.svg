@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: dropped/oversized shoulder with sleeves running past the wrist to y352
+       (shoulder) + very boxy body falling to mid-thigh, y380 (hem/volume).
+       Tools: panel blocking (contrast lower band painted through c3) + structural (side splits, seam). -->
+  <defs>
+    <linearGradient id="adult-female-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8C08A)"/>
+      <stop offset="1" stop-color="var(--c2, #86A067)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-oversized-long-sleeve__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8C08A)"/>
+      <stop offset="1" stop-color="var(--c2, #86A067)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-oversized-long-sleeve__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1F5E4)"/>
+      <stop offset="1" stop-color="var(--c2, #86A067)"/>
+    </linearGradient>
+    <clipPath id="adult-female-top-oversized-long-sleeve__clip">
+      <path d="M160 152 C176 144 224 144 240 152 C266 158 274 172 272 196 L274 300 C272 340 270 360 268 380 C224 392 176 392 132 380 C130 360 128 340 126 300 L128 196 C126 172 134 158 160 152 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- oversized sleeves running past the wrist -->
+    <path d="M144 158 C120 166 110 182 110 206 L110 330 C112 348 122 354 134 352 C148 352 156 344 156 328 L156 200 Z"
+          fill="url(#adult-female-top-oversized-long-sleeve__sleeve)"/>
+    <path d="M256 158 C280 166 290 182 290 206 L290 330 C288 348 278 354 266 352 C252 352 244 344 244 328 L244 200 Z"
+          fill="url(#adult-female-top-oversized-long-sleeve__sleeve)"/>
+    <!-- very boxy body, hem at mid-thigh y380 -->
+    <path d="M160 152 C176 144 224 144 240 152 C266 158 274 172 272 196 L274 300 C272 340 270 360 268 380 C224 392 176 392 132 380 C130 360 128 340 126 300 L128 196 C126 172 134 158 160 152 Z"
+          fill="url(#adult-female-top-oversized-long-sleeve__body)"/>
+  </g>
+  <!-- contrast lower panel, clipped to the body -->
+  <g clip-path="url(#adult-female-top-oversized-long-sleeve__clip)">
+    <path d="M120 306 C160 316 240 316 280 306 L280 396 L120 396 Z"
+          fill="url(#adult-female-top-oversized-long-sleeve__band)"/>
+  </g>
+  <!-- side splits -->
+  <path d="M134 344 v34 M266 344 v34" stroke="var(--c2, #86A067)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- dropped shoulder seams -->
+  <path d="M158 158 q-4 20 -2 40 M242 158 q4 20 2 40"
+        stroke="var(--c2, #86A067)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- crew bind -->
+  <path d="M178 144 q22 24 44 0 q4 5 2 11 q-26 24 -48 0 q-2-6 2-11 z" fill="var(--c3, #F1F5E4)"/>
+  <path d="M185 148 q15 18 30 0 q-4 16 -15 16 q-11 0 -15-16 z" fill="var(--skin2, #E7B892)"/>
+  <!-- cuff folds -->
+  <path d="M114 336 q21 8 42 0 M244 336 q21 8 42 0"
+        stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 192 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

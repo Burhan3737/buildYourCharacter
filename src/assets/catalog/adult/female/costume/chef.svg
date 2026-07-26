@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chef Whites" data-family="chef" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: double-breasted jacket with two button columns (closure)
+       + a long apron panel to mid-calf over straight trousers (hem) -->
+  <defs>
+    <linearGradient id="adult-female-costume-chef__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F3EC)"/>
+      <stop offset="1" stop-color="var(--c2, #DCD6C8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-chef__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6A7078)"/>
+      <stop offset="1" stop-color="var(--c3, #4E545C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-chef__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DCD6C8)"/>
+      <stop offset="1" stop-color="var(--c1, #F6F3EC)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straight trousers -->
+    <path d="M160 330 h40 v214 q0 8 -8 8 h-26 q-8 0 -8 -8 Z"
+          fill="url(#adult-female-costume-chef__trouser)"/>
+    <path d="M240 330 h-40 v214 q0 8 8 8 h26 q8 0 8 -8 Z"
+          fill="url(#adult-female-costume-chef__trouser)"/>
+    <!-- jacket sleeves, rolled at the forearm -->
+    <path d="M114 172 q0-20 18-20 h14 q18 0 18 20 v98 q0 12 -18 12 h-14 q-18 0 -18 -12 Z"
+          fill="url(#adult-female-costume-chef__jacket)"/>
+    <path d="M286 172 q0-20 -18-20 h-14 q-18 0 -18 20 v98 q0 12 18 12 h14 q18 0 18 -12 Z"
+          fill="url(#adult-female-costume-chef__jacket)"/>
+    <!-- boxy double-breasted jacket body, squared hem at the hip -->
+    <path d="M144 176 q0-24 24-24 h64 q24 0 24 24 v148 h-112 Z"
+          fill="url(#adult-female-costume-chef__jacket)"/>
+    <!-- long apron panel over the trousers -->
+    <path d="M168 296 h64 v182 q-32 12 -64 0 Z"
+          fill="url(#adult-female-costume-chef__apron)"/>
+  </g>
+
+  <!-- knotted neckerchief -->
+  <path d="M170 152 q30 22 60 0 q-8 22 -30 22 q-22 0 -30 -22 Z" fill="var(--c3, #6A7078)"/>
+  <path d="M196 172 q10 -8 16 2 q-6 12 -16 8 Z" fill="var(--c3, #6A7078)"/>
+  <!-- two button columns -->
+  <g fill="var(--c3, #6A7078)">
+    <circle cx="184" cy="198" r="4.4"/><circle cx="216" cy="198" r="4.4"/>
+    <circle cx="184" cy="226" r="4.4"/><circle cx="216" cy="226" r="4.4"/>
+    <circle cx="184" cy="254" r="4.4"/><circle cx="216" cy="254" r="4.4"/>
+    <circle cx="184" cy="282" r="4.4"/><circle cx="216" cy="282" r="4.4"/>
+  </g>
+  <!-- the double-breasted overlap edge -->
+  <path d="M224 154 q-14 20 -14 44 v122" stroke="var(--c2, #DCD6C8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- apron waist tie -->
+  <rect x="160" y="292" width="80" height="14" rx="6" fill="var(--c3, #6A7078)"/>
+  <path d="M238 300 q22 10 26 30" stroke="var(--c3, #6A7078)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- apron pocket -->
+  <path d="M180 378 h40 v30 q0 6 -6 6 h-28 q-6 0 -6 -6 Z" fill="var(--c2, #DCD6C8)"/>
+  <path d="M200 380 v32" stroke="var(--c3, #6A7078)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- rolled cuffs -->
+  <rect x="114" y="262" width="32" height="18" rx="8" fill="var(--c2, #DCD6C8)"/>
+  <rect x="254" y="262" width="32" height="18" rx="8" fill="var(--c2, #DCD6C8)"/>
+  <!-- highlight -->
+  <path d="M156 180 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

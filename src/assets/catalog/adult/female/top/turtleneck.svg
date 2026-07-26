@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: tall folded neck tube reaching the jaw drawn as its own major form
+       (shoulder/neckline) + close-fitting narrow body ending at the waist, y296 (hem/volume).
+       Tools: trim (fold band on the tube, cuff bands) + structural (fold line, princess seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="1" stop-color="var(--c2, #37817A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="1" stop-color="var(--c2, #37817A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCF0EC)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9E96)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long close sleeves -->
+    <path d="M152 152 q-32 12 -34 40 v106 q0 16 16 18 q16-2 16-18 v-108 z"
+          fill="url(#adult-female-top-turtleneck__sleeve)"/>
+    <path d="M248 152 q32 12 34 40 v106 q0 16 -16 18 q-16-2 -16-18 v-108 z"
+          fill="url(#adult-female-top-turtleneck__sleeve)"/>
+    <!-- close-fitting body, hem at the waist y296 -->
+    <path d="M168 150 H232 C252 156 262 172 262 196 L262 246 C260 270 256 286 252 300 C216 310 184 310 148 300 C144 286 140 270 138 246 L138 196 C138 172 148 156 168 150 Z"
+          fill="url(#adult-female-top-turtleneck__body)"/>
+    <!-- tall folded neck tube, reaching the jaw -->
+    <path d="M176 128 h48 q8 0 8 8 v36 q0 8 -8 8 h-48 q-8 0 -8-8 v-36 q0-8 8-8 z"
+          fill="url(#adult-female-top-turtleneck__tube)"/>
+  </g>
+  <!-- horizontal fold line on the tube -->
+  <path d="M170 152 q30 8 60 0" stroke="var(--c2, #37817A)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 145 q30 8 60 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuff bands -->
+  <path d="M118 296 q17 10 34 0 v18 q-17 10 -34 0 z" fill="var(--c3, #DCF0EC)" opacity="0.9"/>
+  <path d="M248 296 q17 10 34 0 v18 q-17 10 -34 0 z" fill="var(--c3, #DCF0EC)" opacity="0.9"/>
+  <!-- princess seams -->
+  <path d="M172 190 q-4 52 0 102 M228 190 q4 52 0 102"
+        stroke="var(--c2, #37817A)" stroke-opacity="0.42" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 200 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

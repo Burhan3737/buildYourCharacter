@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puffer Vest" data-family="puffer-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: NO sleeve at all, bare arms under a high stand collar (shoulder)
+       + zip closure on a boxy padded body (closure/volume).
+       Tools: structural (six quilted channel seams) + trim (stand collar, zip line with pull). -->
+  <defs>
+    <linearGradient id="adult-female-top-puffer-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFB84A)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9628)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-puffer-vest__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE9628)"/>
+      <stop offset="1" stop-color="var(--c1, #EFB84A)"/>
+    </linearGradient>
+    <clipPath id="adult-female-top-puffer-vest__clip">
+      <path d="M168 148 H232 C254 150 266 164 266 190 C266 212 264 234 266 258 C266 286 264 306 260 322 C220 332 180 332 140 322 C136 306 134 286 134 258 C136 234 134 212 134 190 C134 164 146 150 168 148 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- padded sleeveless body, hem at the hip y322 -->
+    <path d="M168 148 H232 C254 150 266 164 266 190 C266 212 264 234 266 258 C266 286 264 306 260 322 C220 332 180 332 140 322 C136 306 134 286 134 258 C136 234 134 212 134 190 C134 164 146 150 168 148 Z"
+          fill="url(#adult-female-top-puffer-vest__body)"/>
+    <!-- high stand collar -->
+    <path d="M172 138 H228 C232 148 232 158 228 166 H172 C168 158 168 148 172 138 Z"
+          fill="url(#adult-female-top-puffer-vest__collar)"/>
+  </g>
+  <!-- quilted channel seams -->
+  <g clip-path="url(#adult-female-top-puffer-vest__clip)">
+    <path d="M128 178 q72 12 144 0 M128 208 q72 12 144 0 M128 238 q72 12 144 0 M128 268 q72 12 144 0 M128 298 q72 12 144 0"
+          stroke="var(--c2, #CE9628)" stroke-opacity="0.6" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+    <path d="M128 183 q72 12 144 0 M128 213 q72 12 144 0 M128 243 q72 12 144 0 M128 273 q72 12 144 0 M128 303 q72 12 144 0"
+          stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- centre zip -->
+  <path d="M195 150 h10 v168 h-10 z" fill="var(--c2, #CE9628)"/>
+  <path d="M200 152 v166" stroke="var(--c3, #4A4438)" stroke-opacity="0.85" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <!-- zip pull -->
+  <rect x="194" y="228" width="12" height="10" rx="3" fill="var(--c3, #4A4438)"/>
+  <path d="M200 238 v12" stroke="var(--c3, #4A4438)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- collar fold -->
+  <path d="M174 158 q26 6 52 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- armhole shading, keeping the bare arms readable -->
+  <path d="M140 172 q-6 44 -2 92 M260 172 q6 44 2 92"
+        stroke="var(--c2, #CE9628)" stroke-opacity="0.4" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 170 q22 10 40 4 M210 174 q22 6 40-4"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

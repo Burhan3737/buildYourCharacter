@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Robe" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: wrapped crossover front held by a tie belt (closure)
+       + mid-calf hem with wide draped sleeves (hem/shoulder) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-robe__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A88BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #8A6EA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-robe__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6EA6)"/>
+      <stop offset="1" stop-color="var(--c1, #A88BC4)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A88BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #8A6EA6)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide draped sleeves, flaring at the wrist -->
+    <path d="M108 174 q4-20 22-20 h18 q18 0 18 20 l6 130 q-32 14 -64 0 Z"
+          fill="url(#adult-female-onepiece-robe__sleeve)"/>
+    <path d="M292 174 q-4-20 -22-20 h-18 q-18 0 -18 20 l-6 130 q32 14 64 0 Z"
+          fill="url(#adult-female-onepiece-robe__sleeve)"/>
+    <!-- under panel: the right side of the wrap, going in first -->
+    <path d="M204 154 h34 q26 0 26 26 l16 320 q-38 12 -76 4 Z"
+          fill="url(#adult-female-onepiece-robe__body)"/>
+    <!-- over panel: the left side crossing diagonally over it -->
+    <path d="M196 154 h-34 q-26 0 -26 26 l-16 320 q54 18 114 4 L212 268 Z"
+          fill="url(#adult-female-onepiece-robe__over)"/>
+  </g>
+
+  <!-- shawl collar following the wrap -->
+  <path d="M172 152 L200 156 L216 268 L196 268 L182 172 Z" fill="var(--c3, #6A4F86)"/>
+  <path d="M228 152 L200 156 L206 202 L222 200 Z" fill="var(--c3, #6A4F86)"/>
+  <!-- tie belt with two hanging ends -->
+  <rect x="128" y="278" width="144" height="18" rx="8" fill="var(--c3, #6A4F86)"/>
+  <path d="M214 292 q12 30 8 58 M234 292 q16 26 16 54" stroke="var(--c3, #6A4F86)"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- patch pocket -->
+  <path d="M232 330 h34 v30 q0 6 -6 6 h-22 q-6 0 -6-6 Z" fill="var(--c2, #8A6EA6)"/>
+  <!-- highlights -->
+  <path d="M152 180 q40 14 76 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 380 q40 14 78 2" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Animal Ears" data-family="animal-ears" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: two tall ears standing above the crown on a slim band (crown shape)
+       + no brim and no coverage of the hair (coverage) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-animal-ears__ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B08A6E)"/>
+      <stop offset="1" stop-color="var(--c2, #906E56)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-animal-ears__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #906E56)"/>
+      <stop offset="1" stop-color="var(--c1, #B08A6E)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- left ear: rounded, tilted slightly outward -->
+    <path d="M166 42 C154 42 146 30 148 18 C150 6 164 4 172 12 C179 19 178 34 172 42 Z"
+          fill="url(#accessories-adult-headwear-animal-ears__ear)"/>
+    <!-- right ear -->
+    <path d="M234 42 C246 42 254 30 252 18 C250 6 236 4 228 12 C221 19 222 34 228 42 Z"
+          fill="url(#accessories-adult-headwear-animal-ears__ear)"/>
+    <!-- slim band across the crown -->
+    <path d="M148 48 Q200 26 252 48 Q200 36 148 55 Z"
+          fill="url(#accessories-adult-headwear-animal-ears__band)"/>
+  </g>
+  <!-- inner ear panels -->
+  <path d="M166 36 C158 34 154 26 156 18 C158 12 166 12 169 18 C172 24 171 32 166 36 Z"
+        fill="var(--c3, #F0BFC6)"/>
+  <path d="M234 36 C242 34 246 26 244 18 C242 12 234 12 231 18 C228 24 229 32 234 36 Z"
+        fill="var(--c3, #F0BFC6)"/>
+  <!-- highlight -->
+  <path d="M155 16 Q163 8 170 13" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M245 16 Q237 8 230 13" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

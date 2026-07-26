@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs the slot: structured square padded shoulder line drawn entirely in straight
+       segments (shoulder) + open front over a wide V, hem at mid-thigh y362 (closure/hem).
+       Tools: panel blocking (notched lapels painted through c3) + structural (welt pockets, one button). -->
+  <defs>
+    <linearGradient id="adult-female-top-blazer__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46516E)"/>
+      <stop offset="1" stop-color="var(--c2, #333C55)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-blazer__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46516E)"/>
+      <stop offset="1" stop-color="var(--c2, #333C55)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-blazer__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9CFE0)"/>
+      <stop offset="1" stop-color="var(--c2, #333C55)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- structured straight sleeves -->
+    <path d="M148 152 L120 164 L114 200 L116 300 L120 322 L152 322 L156 300 L154 196 Z"
+          fill="url(#adult-female-top-blazer__sleeve)"/>
+    <path d="M252 152 L280 164 L286 200 L284 300 L280 322 L248 322 L244 300 L246 196 Z"
+          fill="url(#adult-female-top-blazer__sleeve)"/>
+    <!-- left front, square shoulder, hem at mid-thigh -->
+    <path d="M196 154 L164 150 L142 158 L138 184 L136 268 L140 340 L146 362 L196 356 L206 250 Z"
+          fill="url(#adult-female-top-blazer__panel)"/>
+    <!-- right front -->
+    <path d="M204 154 L236 150 L258 158 L262 184 L264 268 L260 340 L254 362 L204 356 L194 250 Z"
+          fill="url(#adult-female-top-blazer__panel)"/>
+  </g>
+  <!-- notched lapels -->
+  <path d="M180 150 L200 156 L206 214 L192 250 L176 200 L164 176 Z"
+        fill="url(#adult-female-top-blazer__lapel)"/>
+  <path d="M220 150 L200 156 L194 214 L208 250 L224 200 L236 176 Z"
+        fill="url(#adult-female-top-blazer__lapel)"/>
+  <!-- lapel notches -->
+  <path d="M176 200 L164 176 L180 178 Z" fill="var(--c2, #333C55)"/>
+  <path d="M224 200 L236 176 L220 178 Z" fill="var(--c2, #333C55)"/>
+  <!-- one button -->
+  <circle cx="200" cy="268" r="5" fill="var(--c3, #C9CFE0)"/>
+  <!-- welt pockets -->
+  <path d="M150 292 h38 v10 h-38 z" fill="var(--c2, #333C55)"/>
+  <path d="M212 292 h38 v10 h-38 z" fill="var(--c2, #333C55)"/>
+  <!-- breast welt -->
+  <path d="M154 226 h26 v7 h-26 z" fill="var(--c2, #333C55)"/>
+  <!-- sleeve cuff buttons -->
+  <circle cx="131" cy="306" r="3" fill="var(--c3, #C9CFE0)"/>
+  <circle cx="269" cy="306" r="3" fill="var(--c3, #C9CFE0)"/>
+  <!-- padded shoulder highlight -->
+  <path d="M148 166 q16-6 32 0 M220 166 q16-6 32 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

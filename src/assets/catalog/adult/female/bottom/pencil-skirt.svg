@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pencil Skirt" data-family="pencil-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: high rise on a shaped waist yoke (rise) + a narrow straight sheath
+       to the knee, no flare, closed by a short back vent (volume / hem treatment) -->
+  <defs>
+    <linearGradient id="adult-female-bottom-pencil-skirt__sheath" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #414A63)"/>
+      <stop offset="0.6" stop-color="var(--c1, #414A63)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3548)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-pencil-skirt__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2E3548)"/>
+      <stop offset="1" stop-color="var(--c1, #414A63)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major form: one narrow high-waisted sheath to the knee, notched by a back vent -->
+  <g class="sp-shadow">
+    <path d="M152 282 Q152 278 158 278 H242 Q248 278 248 282 L250 446 Q250 456 240 456
+             H208 L208 420 L196 420 L196 456 H162 Q150 456 150 446 Z"
+          fill="url(#adult-female-bottom-pencil-skirt__sheath)"/>
+  </g>
+
+  <!-- vent facing -->
+  <path d="M196 420 H208 V456 H203 V426 H196 Z" fill="var(--c3, #E3B7A0)"/>
+  <path d="M208 422 V454" stroke="var(--c2, #2E3548)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- high shaped waistband -->
+  <path d="M152 282 Q152 278 158 278 H242 Q248 278 248 282 L249 304 H151 Z"
+        fill="url(#adult-female-bottom-pencil-skirt__waist)"/>
+  <path d="M152 296 H248" stroke="var(--c3, #E3B7A0)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- front darts -->
+  <path d="M178 310 q3 22 2 44" stroke="var(--c2, #2E3548)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M222 310 q-3 22 -2 44" stroke="var(--c2, #2E3548)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- side seams following the straight sheath -->
+  <path d="M158 312 L160 448" stroke="var(--c2, #2E3548)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 312 L240 448" stroke="var(--c2, #2E3548)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem facing -->
+  <path d="M164 450 H192" stroke="var(--c2, #2E3548)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 450 H238" stroke="var(--c2, #2E3548)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M164 314 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 330 V410" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

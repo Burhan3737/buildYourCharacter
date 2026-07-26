@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon Suit" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: angular faceted plating with shoulder wing stubs (shoulder/sleeve)
+       + hard-edged tapering volume, no soft rounding anywhere (volume).
+       vs dino specifically: dino is a rounded plush body with no shoulder forms; dragon is
+       plated, straight-edged, and carries two wing stubs at the shoulder line. -->
+  <defs>
+    <linearGradient id="adult-female-costume-dragon__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B5EA7)"/>
+      <stop offset="1" stop-color="var(--c1, #63498A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dragon__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B5EA7)"/>
+      <stop offset="1" stop-color="var(--c1, #5B4380)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dragon__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3670)"/>
+      <stop offset="1" stop-color="var(--c2, #3A2A58)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dragon__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3670)"/>
+      <stop offset="1" stop-color="var(--c2, #34264F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dragon__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #DFAE58)"/>
+    </linearGradient>
+    <pattern id="adult-female-costume-dragon__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 1 L15 8 L8 15 L1 8 Z" fill="var(--c2, #4A3670)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="adult-female-costume-dragon__plateclip">
+      <path d="M136 150 L264 150 L270 208 L256 274 L240 322 L160 322 L144 274 L130 208 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- angular tail, faceted, tapering off the right hip -->
+    <path d="M246 300 L304 328 L330 392 L322 466 L294 522 L268 508 L294 460 L300 400
+             L280 356 L240 342 Z"
+          fill="url(#adult-female-costume-dragon__tail)"/>
+    <!-- wing stubs at the shoulder line -->
+    <path d="M140 156 L96 172 L88 206 L106 218 L138 200 Z"
+          fill="url(#adult-female-costume-dragon__wing)"/>
+    <path d="M260 156 L304 172 L312 206 L294 218 L262 200 Z"
+          fill="url(#adult-female-costume-dragon__wing)"/>
+    <!-- faceted plated torso -->
+    <path d="M136 150 L264 150 L270 208 L256 274 L240 322 L160 322 L144 274 L130 208 Z"
+          fill="url(#adult-female-costume-dragon__plate)"/>
+    <!-- angular plated sleeves -->
+    <path d="M112 162 L150 162 L146 246 L142 324 L118 324 L114 246 Z"
+          fill="url(#adult-female-costume-dragon__limb)"/>
+    <path d="M250 162 L288 162 L286 246 L282 324 L258 324 L254 246 Z"
+          fill="url(#adult-female-costume-dragon__limb)"/>
+    <!-- angular hip plate -->
+    <path d="M138 286 L262 286 L254 348 L146 348 Z"
+          fill="url(#adult-female-costume-dragon__plate)"/>
+    <!-- straight-edged tapering legs -->
+    <path d="M156 342 L200 342 L197 448 L193 552 L161 552 L157 448 Z"
+          fill="url(#adult-female-costume-dragon__limb)"/>
+    <path d="M200 342 L244 342 L243 448 L239 552 L207 552 L203 448 Z"
+          fill="url(#adult-female-costume-dragon__limb)"/>
+    <!-- clawed plate feet -->
+    <path d="M152 532 L204 532 L210 568 L144 568 Z"
+          fill="url(#adult-female-costume-dragon__wing)"/>
+    <path d="M196 532 L248 532 L256 568 L190 568 Z"
+          fill="url(#adult-female-costume-dragon__wing)"/>
+  </g>
+
+  <!-- scale pattern over the plated torso -->
+  <g clip-path="url(#adult-female-costume-dragon__plateclip)">
+    <rect x="128" y="148" width="146" height="178"
+          fill="url(#adult-female-costume-dragon__scales)"/>
+  </g>
+
+  <!-- panel blocking: hard-edged belly plate -->
+  <path d="M176 196 L224 196 L230 250 L222 310 L178 310 L170 250 Z"
+        fill="url(#adult-female-costume-dragon__belly)"/>
+  <path d="M176 226 L224 226 M178 256 L222 256 M180 286 L220 286"
+        stroke="var(--c2, #4A3670)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="square"/>
+
+  <!-- ridged dorsal crest running down the back edge -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M266 158 L292 150 L286 178 Z"/>
+    <path d="M270 190 L296 184 L288 212 Z"/>
+    <path d="M268 224 L294 220 L284 246 Z"/>
+    <path d="M260 258 L286 256 L274 280 Z"/>
+    <path d="M250 292 L276 292 L262 314 Z"/>
+    <path d="M292 348 L316 352 L300 372 Z"/>
+    <path d="M304 396 L326 404 L306 420 Z"/>
+  </g>
+
+  <!-- trim: hard collar band and plated cuffs -->
+  <path d="M166 150 L234 150 L228 172 L172 172 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M113 296 L149 296 L147 316 L115 316 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M251 296 L287 296 L285 316 L253 316 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- house highlight -->
+  <path d="M150 172 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

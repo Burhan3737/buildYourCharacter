@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard Robe" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes vs the slot: one robe flaring from the shoulder to the ankle, no leg division (volume)
+       + wide draped sleeves hanging well below the wrist (shoulder) -->
+  <defs>
+    <linearGradient id="adult-female-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3E86)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2560)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-wizard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3E86)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2560)"/>
+    </linearGradient>
+    <pattern id="adult-female-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 l2.6 5.4 l5.9 .8 l-4.3 4.2 l1 5.9 l-5.2 -2.8 l-5.2 2.8 l1 -5.9
+               l-4.3 -4.2 l5.9 -.8 Z" fill="var(--c3, #F2D06A)"/>
+    </pattern>
+    <clipPath id="adult-female-costume-wizard__clip">
+      <path d="M168 150 h64 q26 4 32 34 l22 130 q14 106 20 234 q-106 26 -212 0
+               q6 -128 20 -234 l22 -130 q6 -30 32 -34 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide draped sleeves -->
+    <path d="M110 176 q6 -22 26 -22 h16 q18 0 18 22 l4 118 q-38 20 -74 4 Z"
+          fill="url(#adult-female-costume-wizard__sleeve)"/>
+    <path d="M290 176 q-6 -22 -26 -22 h-16 q-18 0 -18 22 l-4 118 q38 20 74 4 Z"
+          fill="url(#adult-female-costume-wizard__sleeve)"/>
+    <!-- one robe, flaring continuously from the shoulder to the ankle -->
+    <path d="M168 150 h64 q26 4 32 34 l22 130 q14 106 20 234 q-106 26 -212 0
+             q6 -128 20 -234 l22 -130 q6 -30 32 -34 Z"
+          fill="url(#adult-female-costume-wizard__robe)"/>
+    <!-- star scatter over the robe -->
+    <g clip-path="url(#adult-female-costume-wizard__clip)">
+      <rect x="90" y="146" width="220" height="410"
+            fill="url(#adult-female-costume-wizard__stars)" opacity="0.42"/>
+    </g>
+  </g>
+
+  <!-- cord belt with a knot and two hanging ends -->
+  <path d="M144 292 q56 20 112 0" stroke="var(--c3, #F2D06A)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 304 q10 34 4 62 M244 300 q14 30 12 58" stroke="var(--c3, #F2D06A)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- deep front opening edges -->
+  <path d="M182 154 L192 292 M218 154 L208 292" stroke="var(--c2, #2E2560)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem band -->
+  <path d="M96 526 q104 26 208 0" stroke="var(--c3, #F2D06A)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- sleeve edge bands -->
+  <path d="M112 288 q30 16 62 4 M288 288 q-30 16 -62 4" stroke="var(--c3, #F2D06A)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M164 180 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

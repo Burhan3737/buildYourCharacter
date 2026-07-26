@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Skirt" data-family="maxi-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a narrow column falling dead straight to the ankle, no flare at all
+       (leg width / volume) + an ankle hem cut open by a single side slit (leg length /
+       hem treatment) -->
+  <defs>
+    <linearGradient id="adult-female-bottom-maxi-skirt__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4708A)"/>
+      <stop offset="0.62" stop-color="var(--c1, #C4708A)"/>
+      <stop offset="1" stop-color="var(--c2, #A2586F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-maxi-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A2586F)"/>
+      <stop offset="1" stop-color="var(--c1, #C4708A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major form: one narrow ankle-length column with a slit notched out of the left hem -->
+  <g class="sp-shadow">
+    <path d="M150 290 H250 L253 528 Q253 542 241 542 H172 L172 430 L164 430 L164 542 H150 Z"
+          fill="url(#adult-female-bottom-maxi-skirt__column)"/>
+  </g>
+
+  <!-- slit facing -->
+  <path d="M164 430 H172 V542 H168 V438 H164 Z" fill="var(--c3, #F6DCE4)"/>
+  <path d="M172 432 V540" stroke="var(--c2, #A2586F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- waistband -->
+  <path d="M150 290 H250 L250 310 H150 Z" fill="url(#adult-female-bottom-maxi-skirt__band)"/>
+  <path d="M152 302 H248" stroke="var(--c3, #F6DCE4)" stroke-opacity="0.6" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long drape seams -->
+  <path d="M186 316 V534" stroke="var(--c2, #A2586F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 316 V534" stroke="var(--c2, #A2586F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 320 L241 528" stroke="var(--c2, #A2586F)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem band -->
+  <path d="M176 534 H248" stroke="var(--c2, #A2586F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M164 320 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 336 V520" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

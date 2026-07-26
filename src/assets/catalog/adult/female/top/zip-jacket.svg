@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Zip Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: centre zip closure with the body split into two panels (closure)
+       + stand collar as its own major form above a straight hip-length body (shoulder/volume).
+       Tools: panel blocking (two front panels + stand collar) + trim (ribbed cuffs, hem band, zip pull). -->
+  <defs>
+    <linearGradient id="adult-female-top-zip-jacket__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6C7FC4)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5FA0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-zip-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6C7FC4)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5FA0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-zip-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E5FA0)"/>
+      <stop offset="1" stop-color="var(--c1, #6C7FC4)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5FA0)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long track sleeves -->
+    <path d="M150 152 C126 158 116 176 116 200 L114 302 C116 316 124 322 136 322 C148 322 156 314 156 300 L156 194 Z"
+          fill="url(#adult-female-top-zip-jacket__sleeve)"/>
+    <path d="M250 152 C274 158 284 176 284 200 L286 302 C284 316 276 322 264 322 C252 322 244 314 244 300 L244 194 Z"
+          fill="url(#adult-female-top-zip-jacket__sleeve)"/>
+    <!-- left front panel -->
+    <path d="M198 150 H172 C148 152 140 164 138 186 L136 262 C136 296 140 316 146 320 H198 Z"
+          fill="url(#adult-female-top-zip-jacket__panel)"/>
+    <!-- right front panel -->
+    <path d="M202 150 H228 C252 152 260 164 262 186 L264 262 C264 296 260 316 254 320 H202 Z"
+          fill="url(#adult-female-top-zip-jacket__panel)"/>
+    <!-- stand collar -->
+    <path d="M172 140 H228 C232 148 232 158 228 168 H172 C168 158 168 148 172 140 Z"
+          fill="url(#adult-female-top-zip-jacket__collar)"/>
+  </g>
+  <!-- centre zip tape and teeth -->
+  <path d="M196 150 h8 v170 h-8 z" fill="var(--c2, #4E5FA0)"/>
+  <path d="M200 152 v168" stroke="var(--c3, #F2C14E)" stroke-opacity="0.9" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <!-- zip pull -->
+  <rect x="194" y="214" width="12" height="10" rx="3" fill="var(--c3, #F2C14E)"/>
+  <path d="M200 224 v14" stroke="var(--c3, #F2C14E)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <path d="M114 298 h44 v22 q-22 8 -44 0 z" fill="url(#adult-female-top-zip-jacket__rib)"/>
+  <path d="M242 298 h44 v22 q-22 8 -44 0 z" fill="url(#adult-female-top-zip-jacket__rib)"/>
+  <!-- ribbed hem band -->
+  <path d="M138 300 h124 v20 q-62 10 -124 0 z" fill="url(#adult-female-top-zip-jacket__rib)"/>
+  <path d="M150 304 v16 M164 305 v16 M178 306 v16 M192 306 v16 M208 306 v16 M222 306 v16 M236 305 v16 M250 304 v16"
+        stroke="var(--c2, #4E5FA0)" stroke-opacity="0.35" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 186 q20 10 38 4 M210 190 q20 6 38-4"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

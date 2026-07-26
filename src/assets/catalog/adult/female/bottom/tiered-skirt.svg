@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: three stacked gathered ruffle tiers, each stepping wider than the
+       one above (leg width / volume) + a mid-calf hem far below the A-line and pleated
+       skirts (leg length) -->
+  <defs>
+    <linearGradient id="adult-female-bottom-tiered-skirt__tier" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A752)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-tiered-skirt__alt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFF3DA)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A752)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: three ruffle tiers, each its own gathered cone -->
+  <g class="sp-shadow">
+    <path d="M138 414 H262 L280 476 Q200 492 120 476 Z"
+          fill="url(#adult-female-bottom-tiered-skirt__tier)"/>
+    <path d="M146 352 H254 L268 418 Q200 430 132 418 Z"
+          fill="url(#adult-female-bottom-tiered-skirt__alt)"/>
+    <path d="M152 290 H248 L258 356 Q200 366 142 356 Z"
+          fill="url(#adult-female-bottom-tiered-skirt__tier)"/>
+  </g>
+
+  <!-- waistband -->
+  <path d="M152 290 H248 L249 308 H151 Z" fill="var(--c2, #D9A752)"/>
+
+  <!-- gathers at each tier seam -->
+  <path d="M160 356 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 358 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 360 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 358 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 356 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 420 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M175 424 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 426 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M225 424 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 420 v10" stroke="var(--c2, #D9A752)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- tier seam bands -->
+  <path d="M144 353 Q200 366 256 353" stroke="var(--c3, #FFF3DA)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 416 Q200 430 264 416" stroke="var(--c3, #FFF3DA)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem binding -->
+  <path d="M124 474 Q200 490 276 474" stroke="var(--c3, #FFF3DA)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M164 320 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 372 q-6 20 -12 38" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 436 q-8 20 -16 36" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

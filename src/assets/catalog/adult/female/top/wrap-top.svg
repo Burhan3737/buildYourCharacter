@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: crossover/wrap front — two diagonal panels crossing at the waist
+       (closure) + three-quarter sleeves ending at y286 (shoulder).
+       Tools: panel blocking (two overlapping diagonal fronts) + structural (tie belt with a knot). -->
+  <defs>
+    <linearGradient id="adult-female-top-wrap-top__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D07C90)"/>
+      <stop offset="1" stop-color="var(--c1, #EE9DB0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-wrap-top__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EE9DB0)"/>
+      <stop offset="1" stop-color="var(--c2, #D07C90)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EE9DB0)"/>
+      <stop offset="1" stop-color="var(--c2, #D07C90)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves -->
+    <path d="M150 154 C128 160 118 176 116 200 L118 268 C120 282 130 288 140 286 C150 284 154 274 154 262 L154 194 Z"
+          fill="url(#adult-female-top-wrap-top__sleeve)"/>
+    <path d="M250 154 C272 160 282 176 284 200 L282 268 C280 282 270 288 260 286 C250 284 246 274 246 262 L246 194 Z"
+          fill="url(#adult-female-top-wrap-top__sleeve)"/>
+    <!-- under panel, wrapping left shoulder to right waist -->
+    <path d="M178 146 H154 C140 152 138 170 138 192 L140 264 C142 292 148 308 154 318 L254 306 L250 276 Z"
+          fill="url(#adult-female-top-wrap-top__under)"/>
+    <!-- over panel, wrapping right shoulder to left waist -->
+    <path d="M222 146 H246 C260 152 262 170 262 192 L260 264 C258 292 252 308 246 318 L146 306 L150 276 Z"
+          fill="url(#adult-female-top-wrap-top__over)"/>
+  </g>
+  <!-- wrap edge binding on the over panel -->
+  <path d="M222 146 L150 276 L146 306 L154 306 L158 280 L230 150 Z" fill="var(--c3, #FDEDF1)"/>
+  <!-- wrap edge binding on the under panel -->
+  <path d="M178 146 L250 276 L254 306 L246 306 L242 280 L170 150 Z" fill="var(--c3, #FDEDF1)" opacity="0.55"/>
+  <!-- neck opening in the deep V -->
+  <path d="M182 146 L200 208 L218 146 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- tie belt -->
+  <path d="M140 282 q60 16 120 0 l2 16 q-62 16 -124 0 z" fill="var(--c3, #FDEDF1)"/>
+  <!-- knot and tails -->
+  <path d="M188 280 h24 q6 0 6 8 v10 q0 8 -6 8 h-24 q-6 0 -6-8 v-10 q0-8 6-8 z" fill="var(--c2, #D07C90)"/>
+  <path d="M186 306 l-10 26 l12 4 l8-28 z" fill="var(--c3, #FDEDF1)"/>
+  <path d="M214 306 l10 26 l-12 4 l-8-28 z" fill="var(--c3, #FDEDF1)"/>
+  <!-- cuff folds -->
+  <path d="M120 268 q17 8 34 0 M246 268 q17 8 34 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 186 q18 12 32 22 M216 208 q18-10 32-22"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes vs the slot: a flat-topped column standing off the crown over shaved sides
+       (volume/texture of the outline) + a hard ruler-straight front hairline with no part at all
+       (parting). The fade is a value ramp inside the hair: shadow at the skin line up to the lit hair colour. -->
+  <g data-part="back"></g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-female-hair-high-top-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #35251C)"/>
+        <stop offset="1" stop-color="var(--hair2, #1B120D)"/>
+      </linearGradient>
+      <!-- the fade itself: light at the top of the crescent, down to bare shadow at the skin line -->
+      <linearGradient id="adult-female-hair-high-top-fade__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #35251C)"/>
+        <stop offset="0.45" stop-color="var(--hair2, #1B120D)"/>
+        <stop offset="1" stop-color="var(--hair2, #1B120D)" stop-opacity="0.35"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M158 62 C146 66 141 84 142 106 C142 113 148 115 150 108 C151 90 156 78 164 72
+               C180 68 220 68 236 72 C244 78 249 90 250 108 C252 115 258 113 258 106
+               C259 84 254 66 242 62 Z"
+            fill="url(#adult-female-hair-high-top-fade__front-f)"/>
+      <path d="M158 64 L158 26 C158 18 166 13 177 13 L223 13 C234 13 242 18 242 26 L242 64 Z"
+            fill="url(#adult-female-hair-high-top-fade__front-g)"/>
+    </g>
+    <!-- the hard front hairline: a crisp dark seam where the column meets the faded scalp -->
+    <rect x="158" y="62" width="84" height="5" fill="var(--hair2, #1B120D)"/>
+    <path d="M158 64 L166 64 L166 30 C166 24 170 20 176 19 C166 19 160 23 160 30 Z"
+          fill="var(--hair2, #1B120D)"/>
+    <path d="M242 64 L234 64 L234 30 C234 24 230 20 224 19 C234 19 240 23 240 30 Z"
+          fill="var(--hair2, #1B120D)"/>
+    <path d="M148 72 C144 84 143 96 144 108 C147 94 149 82 154 74 Z"
+          fill="var(--hair2, #1B120D)"/>
+    <path d="M252 72 C256 84 257 96 256 108 C253 94 251 82 246 74 Z"
+          fill="var(--hair2, #1B120D)"/>
+    <path d="M174 22 C186 18 214 18 226 22" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M164 40 C164 48 164 54 164 60" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

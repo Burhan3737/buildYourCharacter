@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flip Flops" data-family="flip-flops" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: nothing above the sole at all, the foot is bare (shaft height) +
+       a Y-thong on a toe post, no strap round the heel (fastening) + the thinnest, lowest
+       slab in the slot (sole depth). surface tools: trim (contoured footbed inset + sole
+       edge stripe) + structural detail (toe post and thong arms). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-flip-flops__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46BFC4)"/>
+      <stop offset="1" stop-color="var(--c2, #2E9298)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-flip-flops__thong" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFEAB0)"/>
+      <stop offset="1" stop-color="var(--c3, #FFEAB0)" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- contoured sole slabs, and nothing else -->
+  <g class="sp-shadow">
+    <path d="M152 562
+             C152 556 157 553 164 553
+             L192 554
+             C199 554 203 557 203 562
+             C203 567 199 570 192 570
+             L164 570
+             C157 570 152 567 152 562
+             Z"
+          fill="url(#adult-female-shoes-flip-flops__sole)"/>
+    <path d="M248 562
+             C248 556 243 553 236 553
+             L208 554
+             C201 554 197 557 197 562
+             C197 567 201 570 208 570
+             L236 570
+             C243 570 248 567 248 562
+             Z"
+          fill="url(#adult-female-shoes-flip-flops__sole)"/>
+  </g>
+
+  <!-- footbed insets -->
+  <rect x="156" y="556" width="44" height="7" rx="3.5" fill="var(--c2, #2E9298)"/>
+  <rect x="200" y="556" width="44" height="7" rx="3.5" fill="var(--c2, #2E9298)"/>
+
+  <!-- sole edge stripes -->
+  <rect x="154" y="566" width="47" height="3" rx="1.5" fill="var(--c3, #FFEAB0)"/>
+  <rect x="199" y="566" width="47" height="3" rx="1.5" fill="var(--c3, #FFEAB0)"/>
+
+  <!-- Y-thongs: two arms converging on a toe post -->
+  <rect x="151" y="543" width="21" height="8" rx="4"
+        fill="url(#adult-female-shoes-flip-flops__thong)"
+        transform="rotate(24 161 547)"/>
+  <rect x="169" y="543" width="21" height="8" rx="4"
+        fill="url(#adult-female-shoes-flip-flops__thong)"
+        transform="rotate(-24 179 547)"/>
+  <ellipse cx="170" cy="552" rx="6.5" ry="5" fill="var(--c3, #FFEAB0)"/>
+
+  <rect x="228" y="543" width="21" height="8" rx="4"
+        fill="url(#adult-female-shoes-flip-flops__thong)"
+        transform="rotate(-24 239 547)"/>
+  <rect x="210" y="543" width="21" height="8" rx="4"
+        fill="url(#adult-female-shoes-flip-flops__thong)"
+        transform="rotate(24 221 547)"/>
+  <ellipse cx="230" cy="552" rx="6.5" ry="5" fill="var(--c3, #FFEAB0)"/>
+
+  <!-- foam sheen -->
+  <path d="M160 559 q18 4 34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 559 q-18 4 -34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

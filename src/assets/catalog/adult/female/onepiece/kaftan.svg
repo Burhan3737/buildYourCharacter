@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: one T-shaped panel falling straight from the shoulder, no waist (volume)
+       + wide draped sleeves cut in one with the body (shoulder) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-kaftan__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FA9A0)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8A83)"/>
+    </linearGradient>
+    <pattern id="adult-female-onepiece-kaftan__diamond" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 3 L19 11 L11 19 L3 11 Z" fill="none" stroke="var(--c3, #F2D08A)" stroke-width="2.4"/>
+    </pattern>
+    <clipPath id="adult-female-onepiece-kaftan__clip">
+      <path d="M200 148 h48 q16 0 22 14 l26 66 q-20 16 -44 8 l-4 -12 L262 500 q-62 20 -124 0
+               L152 224 l-4 12 q-24 8 -44 -8 l26 -66 q6-14 22-14 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the whole garment as one T of cloth: shoulder to calf, sleeves cut in one -->
+    <path d="M200 148 h48 q16 0 22 14 l26 66 q-20 16 -44 8 l-4 -12 L262 500 q-62 20 -124 0
+             L152 224 l-4 12 q-24 8 -44 -8 l26 -66 q6-14 22-14 Z"
+          fill="url(#adult-female-onepiece-kaftan__cloth)"/>
+    <!-- woven diamond pattern over the cloth -->
+    <g clip-path="url(#adult-female-onepiece-kaftan__clip)">
+      <rect x="100" y="144" width="200" height="366"
+            fill="url(#adult-female-onepiece-kaftan__diamond)" opacity="0.42"/>
+    </g>
+  </g>
+
+  <!-- slit neckline with an embroidered placket -->
+  <path d="M184 150 q16 12 32 0 l-6 16 q-10 6 -20 0 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M194 164 h12 v56 h-12 Z" fill="var(--c3, #F2D08A)"/>
+  <path d="M180 150 q20 16 40 0" stroke="var(--c3, #F2D08A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- embroidered hem band -->
+  <path d="M140 468 q60 20 120 0" stroke="var(--c3, #F2D08A)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- sleeve edge bands -->
+  <path d="M106 226 q22 14 42 6 M294 226 q-22 14 -42 6" stroke="var(--c3, #F2D08A)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M158 176 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 344 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

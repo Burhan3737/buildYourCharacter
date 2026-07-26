@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kufi" data-family="kufi" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: small shallow brimless cap sitting flat on the crown (crown shape)
+       + no brim and no fastening, the hairline stays visible (coverage) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-kufi__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c2, #DCD3C0)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-headwear-kufi__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M7 2 L12 7 L7 12 L2 7 Z" fill="none" stroke="var(--c3, #B7A98C)" stroke-width="2"/>
+    </pattern>
+    <clipPath id="accessories-adult-headwear-kufi__clip">
+      <path d="M162 60 C162 34 176 26 200 26 C224 26 238 34 238 60 Q200 68 162 60 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- shallow rounded cap on the top of the head only -->
+    <path d="M162 60 C162 34 176 26 200 26 C224 26 238 34 238 60 Q200 68 162 60 Z"
+          fill="url(#accessories-adult-headwear-kufi__cap)"/>
+    <!-- embroidered band round the lower edge -->
+    <path d="M161 55 Q200 65 239 55 Q239 64 200 71 Q161 64 161 55 Z"
+          fill="var(--c3, #B7A98C)"/>
+    <!-- woven texture on the crown -->
+    <g clip-path="url(#accessories-adult-headwear-kufi__clip)">
+      <rect x="158" y="22" width="84" height="46"
+            fill="url(#accessories-adult-headwear-kufi__weave)" opacity="0.5"/>
+    </g>
+  </g>
+  <!-- highlight -->
+  <path d="M176 36 Q200 28 224 36" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

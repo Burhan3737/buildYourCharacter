@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: A-line shell flaring from a x140 shoulder to a x116-284 hem (volume)
+       + hem at mid-thigh y374 over a front snap placket (hem/closure). Hood lies behind the neck.
+       Tools: trim (snap placket band with four round snaps) + structural (patch pockets, seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FC6E0)"/>
+      <stop offset="1" stop-color="var(--c2, #58A5C2)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FC6E0)"/>
+      <stop offset="1" stop-color="var(--c2, #58A5C2)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #58A5C2)"/>
+      <stop offset="1" stop-color="var(--c1, #7FC6E0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-raincoat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F1E4)"/>
+      <stop offset="1" stop-color="var(--c2, #58A5C2)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long shell sleeves -->
+    <path d="M148 156 C124 164 116 180 114 204 L112 300 C114 318 122 326 134 326 C146 326 154 318 154 300 L154 198 Z"
+          fill="url(#adult-female-top-raincoat__sleeve)"/>
+    <path d="M252 156 C276 164 284 180 286 204 L288 300 C286 318 278 326 266 326 C254 326 246 318 246 300 L246 198 Z"
+          fill="url(#adult-female-top-raincoat__sleeve)"/>
+    <!-- A-line shell, hem noticeably wider than the shoulders -->
+    <path d="M170 150 H230 C252 154 260 168 262 190 C266 240 272 300 284 368 C230 380 170 380 116 368 C128 300 134 240 138 190 C140 168 148 154 170 150 Z"
+          fill="url(#adult-female-top-raincoat__body)"/>
+    <!-- hood lying flat behind the neck -->
+    <path d="M162 154 C166 142 180 136 200 136 C220 136 234 142 238 154 C236 178 220 190 200 190 C180 190 164 178 162 154 Z"
+          fill="url(#adult-female-top-raincoat__hood)"/>
+  </g>
+  <!-- hood opening -->
+  <path d="M176 148 q24 16 48 0 q-8 26 -24 26 q-16 0 -24-26 z" fill="var(--skin2, #E7B892)"/>
+  <!-- snap placket band -->
+  <path d="M188 170 h24 l4 202 h-32 z" fill="url(#adult-female-top-raincoat__placket)"/>
+  <!-- four round snaps -->
+  <circle cx="200" cy="210" r="5" fill="var(--c2, #58A5C2)"/>
+  <circle cx="200" cy="252" r="5" fill="var(--c2, #58A5C2)"/>
+  <circle cx="200" cy="294" r="5" fill="var(--c2, #58A5C2)"/>
+  <circle cx="200" cy="336" r="5" fill="var(--c2, #58A5C2)"/>
+  <!-- patch pockets -->
+  <path d="M144 284 h40 l4 40 q0 6 -6 6 h-32 q-6 0 -6-6 z" fill="var(--c2, #58A5C2)"/>
+  <path d="M216 284 h40 l-2 40 q0 6 -6 6 h-32 q-6 0 -6-6 z" fill="var(--c2, #58A5C2)"/>
+  <path d="M146 292 h36 M218 292 h36" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- flare seams -->
+  <path d="M154 200 q-10 82 -22 164 M246 200 q10 82 22 164"
+        stroke="var(--c2, #58A5C2)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 200 q22 12 40 6 M208 206 q22 6 40-6"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

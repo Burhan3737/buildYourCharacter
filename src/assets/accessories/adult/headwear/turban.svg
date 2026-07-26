@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turban" data-family="turban" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes: tall wrapped dome with real volume above the crown (crown shape)
+       + wrapped fold line across the front, no brim (fastening/drape) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-turban__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A24C)"/>
+      <stop offset="1" stop-color="var(--c2, #C0863A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-turban__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C0863A)"/>
+      <stop offset="1" stop-color="var(--c3, #9C6A2C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- wrapped dome, taller and wider than the skull -->
+    <path d="M138 82 C130 34 158 10 200 10 C242 10 270 34 262 82
+             Q200 96 138 82 Z"
+          fill="url(#accessories-adult-headwear-turban__dome)"/>
+    <!-- the front wrap band crossing the brow -->
+    <path d="M136 72 Q200 92 264 72 Q262 92 200 102 Q138 92 136 72 Z"
+          fill="url(#accessories-adult-headwear-turban__fold)"/>
+    <!-- the diagonal tuck at the side of the dome -->
+    <path d="M226 16 Q262 32 260 74 Q244 62 236 40 Q232 26 226 16 Z"
+          fill="var(--c2, #C0863A)"/>
+  </g>
+  <!-- wrap seams following the fold -->
+  <path d="M144 56 Q200 74 256 56" stroke="#3B2A22" stroke-opacity="0.14" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 38 Q200 54 252 38" stroke="#3B2A22" stroke-opacity="0.1" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M160 30 Q200 14 240 28" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

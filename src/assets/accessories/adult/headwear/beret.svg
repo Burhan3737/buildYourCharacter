@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Beret" data-family="beret" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: soft flat disc tilted off-centre (crown shape) + no brim at all (brim) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-beret__felt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9576B)"/>
+      <stop offset="1" stop-color="var(--c2, #B54355)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-beret__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B54355)"/>
+      <stop offset="1" stop-color="var(--c3, #8E3244)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- soft round disc, sitting high and tipped down to the right -->
+    <path d="M152 66 C146 34 176 20 208 20 C246 20 268 34 262 58
+             C258 74 232 82 196 80 C170 78 156 74 152 66 Z"
+          fill="url(#accessories-adult-headwear-beret__felt)"/>
+    <!-- the head-hugging band under the disc -->
+    <path d="M154 64 Q200 80 250 62 Q246 76 200 82 Q160 80 154 64 Z"
+          fill="url(#accessories-adult-headwear-beret__band)"/>
+  </g>
+  <!-- little stalk at the crown of the disc -->
+  <path d="M206 22 q3 -8 -2 -12" stroke="var(--c3, #8E3244)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- felt fold lines radiating from the stalk -->
+  <path d="M204 26 Q186 42 164 56 M204 26 Q216 44 232 58 M204 26 Q206 46 202 66"
+        stroke="#3B2A22" stroke-opacity="0.11" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M170 36 Q202 26 236 34" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

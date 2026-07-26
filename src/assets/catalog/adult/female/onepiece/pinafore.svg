@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: square bib on two shoulder straps, arms and chest sides bare (shoulder)
+       + one continuous A-line panel from bib to knee, no waist seam (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-pinafore__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C0703F)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5931)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C0703F)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5931)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straps rising over the shoulders -->
+    <path d="M170 206 L148 152 q0-4 5-4 h13 q5 0 5 4 L190 202 Z"
+          fill="url(#adult-female-onepiece-pinafore__strap)"/>
+    <path d="M230 206 L252 152 q0-4 -5-4 h-13 q-5 0 -5 4 L210 202 Z"
+          fill="url(#adult-female-onepiece-pinafore__strap)"/>
+    <!-- square bib widening continuously into an A-line skirt to the knee -->
+    <path d="M166 184 h68 v66 q10 0 14 10 L282 448 q-82 26 -164 0 L120 260 q4-10 14-10 Z"
+          fill="url(#adult-female-onepiece-pinafore__body)"/>
+  </g>
+
+  <!-- bib patch pocket -->
+  <path d="M180 208 h40 v30 q0 6 -6 6 h-28 q-6 0 -6-6 Z" fill="var(--c2, #9E5931)"/>
+  <path d="M186 222 h28" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- strap buckles -->
+  <rect x="168" y="188" width="16" height="16" rx="4" fill="var(--c3, #F2CE8B)"/>
+  <rect x="216" y="188" width="16" height="16" rx="4" fill="var(--c3, #F2CE8B)"/>
+  <!-- hem band -->
+  <path d="M122 424 Q200 452 278 424" stroke="var(--c3, #F2CE8B)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- side seams -->
+  <path d="M148 262 L128 424 M252 262 L272 424" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M178 200 q22 8 44 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 330 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

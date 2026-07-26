@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Durag" data-family="durag" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes: skin-close cap with no crown volume at all (crown shape)
+       + long ties knotted at the front and trailing behind (fastening/drape) -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-durag__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F4A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #2C3550)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-durag__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2C3550)"/>
+      <stop offset="1" stop-color="var(--c3, #1E2539)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- flat cap hugging the skull, following the head contour exactly -->
+    <path d="M144 84 C144 40 166 22 200 22 C234 22 256 40 256 84
+             Q200 96 144 84 Z"
+          fill="url(#accessories-adult-headwear-durag__cap)"/>
+    <!-- the flag: long panel trailing back and down behind the head -->
+    <path d="M150 78 Q136 118 128 152 Q146 146 160 120 Q166 100 166 84 Z"
+          fill="url(#accessories-adult-headwear-durag__tie)"/>
+    <path d="M250 78 Q264 118 272 152 Q254 146 240 120 Q234 100 234 84 Z"
+          fill="url(#accessories-adult-headwear-durag__tie)"/>
+    <!-- the knot, tied at the front of the brow -->
+    <path d="M186 68 q14 -10 28 0 q-6 14 -14 14 q-8 0 -14 -14 z"
+          fill="var(--c3, #1E2539)"/>
+  </g>
+  <!-- the tie bands crossing the brow into the knot -->
+  <path d="M146 76 Q172 82 190 72" stroke="var(--c3, #1E2539)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 76 Q228 82 210 72" stroke="var(--c3, #1E2539)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- satin sheen -->
+  <path d="M162 40 Q200 26 238 40" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

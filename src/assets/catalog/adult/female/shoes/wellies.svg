@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wellies" data-family="wellies" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: one smooth unbroken rubber column to mid-calf (shaft height) +
+       no fastening of any kind (fastening) + a thin flat sole (sole depth).
+       surface tools: trim (contrast top band + thin sole welt) + structural detail
+       (pull tab, moulded shin seam). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-wellies__rubber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #C79A32)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one continuous moulded boot per leg: shaft and foot are a single piece -->
+  <g class="sp-shadow">
+    <path d="M164 484
+             C164 474 172 470 182 470
+             C192 470 200 474 200 484
+             L200 552
+             C200 564 194 570 184 570
+             L158 570
+             C152 570 150 566 150 560
+             L150 550
+             C150 536 156 530 166 527
+             L164 484
+             Z"
+          fill="url(#adult-female-shoes-wellies__rubber)"/>
+    <path d="M234 484
+             C234 474 226 470 216 470
+             C206 470 198 474 198 484
+             L198 552
+             C198 564 204 570 214 570
+             L240 570
+             C246 570 248 566 248 560
+             L248 550
+             C248 536 242 530 232 527
+             L234 484
+             Z"
+          fill="url(#adult-female-shoes-wellies__rubber)"/>
+  </g>
+
+  <!-- contrast band around the top of each shaft -->
+  <rect x="162" y="474" width="40" height="12" rx="6" fill="var(--c3, #3F5E86)"/>
+  <rect x="196" y="474" width="40" height="12" rx="6" fill="var(--c3, #3F5E86)"/>
+
+  <!-- small pull tabs at the outer edge of each shaft top -->
+  <rect x="162" y="470" width="10" height="20" rx="5" fill="var(--c3, #3F5E86)"/>
+  <rect x="226" y="470" width="10" height="20" rx="5" fill="var(--c3, #3F5E86)"/>
+
+  <!-- thin flat soles -->
+  <rect x="150" y="562" width="52" height="8" rx="4" fill="var(--c2, #C79A32)"/>
+  <rect x="196" y="562" width="52" height="8" rx="4" fill="var(--c2, #C79A32)"/>
+
+  <!-- moulded shin seams -->
+  <path d="M170 496 v50" stroke="var(--c2, #C79A32)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 496 v50" stroke="var(--c2, #C79A32)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rubber sheen down the shafts and over the toes -->
+  <path d="M178 494 v44" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 494 v44" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 550 q14 6 28 2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 550 q-14 6 -28 2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>
