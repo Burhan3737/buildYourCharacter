@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Handlebar Moustache" data-family="handlebar"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: UPPER LIP = flared, extended ends. The bar is ordinary but the tips are
+       grown out to x 148 and x 252 and hooked up to y 92, so the outline is 104 units across,
+       twice the mouth. CHEEK LINE = none; the chin and jaw stay bare, which is what separates
+       it from every joined family. -->
+  <defs>
+    <linearGradient id="adult-male-beard-handlebar__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.62" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- centre bar with two tapering hooks; each tip is a real point, thick at the lip -->
+  <g class="sp-shadow">
+    <path d="M150 97 Q157 91 161 99 C165 105 170 107 178 105
+             C186 103 194 102 200 102 C206 102 214 103 222 105
+             C230 107 235 105 239 99 Q243 91 250 97
+             C253 105 248 113 238 116 C230 118 223 116 216 116
+             C208 116 204 118 200 118 C196 118 192 116 184 116
+             C177 116 170 118 162 116 C152 113 147 105 150 97 Z"
+          fill="url(#adult-male-beard-handlebar__grad)"/>
+  </g>
+
+  <!-- philtrum split -->
+  <path d="M197 103 C198 107 202 107 203 103 C205 109 203 114 200 114
+           C197 114 195 109 197 103 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- wax lines running out into each hook, and the shadow under the bar -->
+  <path d="M186 111 C176 112 166 111 157 105" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M214 111 C224 112 234 111 243 105" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M184 115 C192 118 208 118 216 115" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- lit crest along the top of the bar and up into the hooks -->
+  <path d="M160 100 C176 105 224 105 240 100" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

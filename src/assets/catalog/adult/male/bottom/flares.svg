@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=close to the knee then flaring 66 units outward per leg to a
+       floor brushing hem + rise=low (waist at y 310). Against jeans that is leg width and rise;
+       against wide-leg it is the knee inflection, which wide-leg does not have. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-flares__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8724E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A5A3C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-flares__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8724E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A5A3C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a low seat block and two legs that pinch at the knee then flare hard -->
+  <g class="sp-shadow">
+    <path d="M156 364 H198 L196 446 L196 560 Q196 566 190 566 H136 Q129 566 130 558 L164 446 Z"
+          fill="url(#adult-male-bottom-flares__leg)"/>
+    <path d="M244 364 H202 L204 446 L204 560 Q204 566 210 566 H264 Q271 566 270 558 L236 446 Z"
+          fill="url(#adult-male-bottom-flares__leg)"/>
+    <path d="M138 310 H262 V354 Q262 370 246 370 H154 Q138 370 138 354 Z"
+          fill="url(#adult-male-bottom-flares__seat)"/>
+  </g>
+
+  <!-- low slim waistband -->
+  <rect x="138" y="310" width="124" height="13" rx="6" fill="var(--c2, #8A5A3C)"/>
+  <!-- small coin pocket -->
+  <path d="M242 326 H258 V340 H244 Z" fill="var(--c2, #8A5A3C)"/>
+
+  <!-- topstitched outseam following the flare, the line that shows the knee inflection -->
+  <path d="M158 372 L166 446 L134 556" stroke="var(--c3, #F2D9A8)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M242 372 L234 446 L266 556" stroke="var(--c3, #F2D9A8)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M200 326 v40" stroke="var(--c3, #F2D9A8)" stroke-width="2.6" stroke-dasharray="6 5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- contrast bound hem across both bells -->
+  <path d="M134 558 H192" stroke="var(--c3, #F2D9A8)" stroke-width="7" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+  <path d="M208 558 H266" stroke="var(--c3, #F2D9A8)" stroke-width="7" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+
+  <!-- drape folds inside each bell -->
+  <g stroke="var(--c2, #8A5A3C)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M176 460 L160 550"/>
+    <path d="M224 460 L240 550"/>
+  </g>
+  <path d="M158 322 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

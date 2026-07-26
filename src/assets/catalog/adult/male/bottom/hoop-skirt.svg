@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=a rigid dome clearing the widest point of the body (x 142 to
+       258) by 64 units per side at the hem, far over the 40 unit floor + hem treatment=a
+       ground sweeping firm arc with four horizontal hoop channel seams. Against maxi-skirt and
+       tiered-skirt that is volume and hem on both counts.
+       Trademark note: the fallback is deliberately house mint. Pale blue, yellow and
+       pink with a gold bodice are named animated princess palettes and are banned here. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47897B)"/>
+    </linearGradient>
+    <clipPath id="adult-male-bottom-hoop-skirt__clip">
+      <path d="M152 284 H248 Q290 340 304 402 Q322 482 322 558 Q322 568 312 568 H88
+               Q78 568 78 558 Q78 482 96 402 Q110 340 152 284 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the rigid dome, springing from a high waist to the ground line -->
+  <g class="sp-shadow">
+    <path d="M152 284 H248 Q290 340 304 402 Q322 482 322 558 Q322 568 312 568 H88
+             Q78 568 78 558 Q78 482 96 402 Q110 340 152 284 Z"
+          fill="url(#adult-male-bottom-hoop-skirt__dome)"/>
+  </g>
+
+  <!-- four horizontal hoop channel seams, each following the dome curve -->
+  <g clip-path="url(#adult-male-bottom-hoop-skirt__clip)">
+    <path d="M70 372 Q200 358 330 372 L330 381 Q200 367 70 381 Z" fill="var(--c2, #47897B)"/>
+    <path d="M70 428 Q200 412 330 428 L330 437 Q200 421 70 437 Z" fill="var(--c2, #47897B)"/>
+    <path d="M70 486 Q200 470 330 486 L330 495 Q200 479 70 495 Z" fill="var(--c2, #47897B)"/>
+    <path d="M70 542 Q200 526 330 542 L330 551 Q200 535 70 551 Z" fill="var(--c2, #47897B)"/>
+    <path d="M70 368 Q200 354 330 368" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+          fill="none"/>
+    <path d="M70 424 Q200 408 330 424" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+          fill="none"/>
+    <path d="M70 482 Q200 466 330 482" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
+          fill="none"/>
+    <path d="M70 538 Q200 522 330 538" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4"
+          fill="none"/>
+  </g>
+
+  <!-- high waistband with a bound top edge -->
+  <rect x="150" y="282" width="100" height="20" rx="9" fill="var(--c2, #47897B)"/>
+  <path d="M154 288 H246" stroke="var(--c3, #F2E4C6)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <!-- vertical stay tapes, structural detail -->
+  <g stroke="var(--c3, #F2E4C6)" stroke-opacity="0.45" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M166 300 Q126 420 106 556"/>
+    <path d="M234 300 Q274 420 294 556"/>
+    <path d="M200 300 V560"/>
+  </g>
+
+  <path d="M158 296 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

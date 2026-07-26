@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stubble" data-family="stubble"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: LENGTH = shadow. Nothing stands off the face; the whole form sits inside
+       the head ellipse and reads as density, not mass. UPPER LIP = shadow, not a bar: the
+       growth crosses the philtrum at exactly the cheek density, so there is no edge to see.
+       Cheek line natural, y about 107, but deliberately soft. -->
+  <defs>
+    <linearGradient id="adult-male-beard-stubble__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the growth field: one soft veil hugging the jaw, chin, lower cheeks and the whole lip -->
+  <g class="sp-shadow">
+    <path d="M151 105 C153 124 165 137 178 144 C186 148 214 148 222 144
+             C235 137 247 124 249 105 C241 112 232 113 224 110
+             C218 103 212 99 200 99 C188 99 182 103 176 110
+             C168 113 159 112 151 105 Z"
+          fill="url(#adult-male-beard-stubble__grad)" opacity="0.44"/>
+  </g>
+
+  <!-- density banding: heavier through hair2 where a beard would come in first -->
+  <path d="M170 128 C182 140 218 140 230 128 C226 142 212 149 200 149
+           C188 149 174 142 170 128 Z"
+        fill="var(--hair2, #331E16)" opacity="0.22"/>
+  <path d="M180 100 C188 97 212 97 220 100 C214 105 186 105 180 100 Z"
+        fill="var(--hair2, #331E16)" opacity="0.2"/>
+
+  <!-- grain: a fine scatter of short growth, never dense enough to make an edge -->
+  <g fill="var(--hair2, #331E16)" opacity="0.4">
+    <ellipse cx="163" cy="112" rx="2.4" ry="1.4"/>
+    <ellipse cx="172" cy="118" rx="2.1" ry="1.3"/>
+    <ellipse cx="181" cy="112" rx="2.3" ry="1.3"/>
+    <ellipse cx="190" cy="104" rx="2.2" ry="1.2"/>
+    <ellipse cx="200" cy="107" rx="2.4" ry="1.3"/>
+    <ellipse cx="210" cy="104" rx="2.2" ry="1.2"/>
+    <ellipse cx="219" cy="112" rx="2.3" ry="1.3"/>
+    <ellipse cx="228" cy="118" rx="2.1" ry="1.3"/>
+    <ellipse cx="237" cy="112" rx="2.4" ry="1.4"/>
+    <ellipse cx="168" cy="126" rx="2.2" ry="1.3"/>
+    <ellipse cx="178" cy="132" rx="2.3" ry="1.3"/>
+    <ellipse cx="189" cy="137" rx="2.2" ry="1.2"/>
+    <ellipse cx="200" cy="140" rx="2.5" ry="1.4"/>
+    <ellipse cx="211" cy="137" rx="2.2" ry="1.2"/>
+    <ellipse cx="222" cy="132" rx="2.3" ry="1.3"/>
+    <ellipse cx="232" cy="126" rx="2.2" ry="1.3"/>
+    <ellipse cx="184" cy="124" rx="2.1" ry="1.2"/>
+    <ellipse cx="200" cy="128" rx="2.3" ry="1.3"/>
+    <ellipse cx="216" cy="124" rx="2.1" ry="1.2"/>
+    <ellipse cx="194" cy="118" rx="2" ry="1.2"/>
+    <ellipse cx="206" cy="118" rx="2" ry="1.2"/>
+    <ellipse cx="158" cy="119" rx="2.2" ry="1.3"/>
+    <ellipse cx="242" cy="119" rx="2.2" ry="1.3"/>
+  </g>
+
+  <!-- lit upper surface of the growth field -->
+  <path d="M160 110 C176 118 224 118 240 110" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

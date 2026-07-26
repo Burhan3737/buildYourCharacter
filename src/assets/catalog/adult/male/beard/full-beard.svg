@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Full Beard" data-family="full-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: CHIN AND JAW = full jaw and cheeks, one continuous mass from ear to ear
+       ending at the throat, hem about y 178. CHEEK LINE = natural, y about 107, with a hem
+       built from six unequal lobes rather than a smooth arc. The moustache is trimmed clear of
+       the lip, bottom edge at y 114, which is what keeps it out of long beard territory. -->
+  <defs>
+    <linearGradient id="adult-male-beard-full-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.45" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mass: cheek line down each side, lobed hem at the throat, mouth left open -->
+  <g class="sp-shadow">
+    <path d="M147 100 C145 112 146 124 150 136 C154 150 160 162 170 170
+             C176 175 182 179 190 178 C194 180 198 179 201 176
+             C205 180 211 180 216 176 C223 178 230 173 236 166
+             C245 156 252 142 254 126 C255 114 255 106 253 99
+             C249 104 244 107 236 108 C230 108 226 106 222 102
+             C214 99 206 100 200 100 C194 100 186 99 178 102
+             C174 106 170 108 164 108 C156 107 151 104 147 100 Z
+             M200 114 C190 114 180 116 176 122 C173 128 178 135 188 137
+             C196 138 204 138 212 137 C222 135 227 128 224 122
+             C220 116 210 114 200 114 Z"
+          fill-rule="evenodd" fill="url(#adult-male-beard-full-beard__grad)"/>
+  </g>
+
+  <!-- moustache underside, trimmed level above the mouth -->
+  <path d="M178 116 C186 112 214 112 222 116" stroke="var(--hair2, #331E16)"
+        stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- philtrum -->
+  <path d="M197 100 C198 105 202 105 203 100 C205 107 203 113 200 113
+           C197 113 195 107 197 100 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- under-jaw shadow where the mass turns under the chin -->
+  <path d="M164 140 C176 158 224 158 236 140" stroke="var(--hair2, #331E16)"
+        stroke-width="5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- grain, following the fall of each lobe -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"
+     opacity="0.55">
+    <path d="M158 118 C158 138 164 156 176 168"/>
+    <path d="M180 140 C180 154 183 166 189 175"/>
+    <path d="M200 142 C200 156 200 167 201 174"/>
+    <path d="M220 140 C220 154 217 166 211 175"/>
+    <path d="M242 118 C242 138 236 156 224 168"/>
+  </g>
+
+  <!-- lit cheek line -->
+  <path d="M156 110 C162 112 170 112 176 108" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M244 110 C238 112 230 112 224 108" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

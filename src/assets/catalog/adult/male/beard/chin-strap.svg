@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: CHIN AND JAW = a chin plus jaw band, an even 13 unit strap that traces the
+       drawn jawline ear to ear and nothing else. CHEEK LINE = jaw only; the band never climbs
+       the cheek, and the lip stays bare. Against chin curtain the separator is depth, 13 units
+       of band against 44 units of hang. -->
+  <defs>
+    <linearGradient id="adult-male-beard-chin-strap__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the strap: outer contour on the jaw, inner contour 13 units inboard, plus a root at
+       each ear so the band reaches the sideburn -->
+  <g class="sp-shadow">
+    <path d="M150 100 Q152 132 200 158 Q248 132 250 100
+             L237 100 Q235 127 200 145 Q165 127 163 100 Z"
+          fill="url(#adult-male-beard-chin-strap__grad)"/>
+    <path d="M147 92 C143 96 144 104 150 106 C156 108 161 104 160 98
+             C159 92 152 88 147 92 Z"
+          fill="url(#adult-male-beard-chin-strap__grad)"/>
+    <path d="M253 92 C257 96 256 104 250 106 C244 108 239 104 240 98
+             C241 92 248 88 253 92 Z"
+          fill="url(#adult-male-beard-chin-strap__grad)"/>
+  </g>
+
+  <!-- inner edge of the strap, kept crisp in hair2 -->
+  <path d="M164 106 Q168 130 200 146 Q232 130 236 106" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- grain across the band -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="2.4" fill="none" stroke-linecap="round"
+     opacity="0.55">
+    <path d="M152 112 L164 111"/>
+    <path d="M156 126 L167 123"/>
+    <path d="M166 138 L175 132"/>
+    <path d="M181 149 L187 141"/>
+    <path d="M200 154 L200 145"/>
+    <path d="M219 149 L213 141"/>
+    <path d="M234 138 L225 132"/>
+    <path d="M244 126 L233 123"/>
+    <path d="M248 112 L236 111"/>
+  </g>
+
+  <!-- lit outer edge along the jaw -->
+  <path d="M156 122 C166 138 182 150 197 155" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M244 122 C234 138 218 150 203 155" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

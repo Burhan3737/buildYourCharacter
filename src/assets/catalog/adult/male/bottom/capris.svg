@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg length=cropped at mid calf (hem y 484, 70 units of bare shin below it)
+       + hem treatment=a single deep turn up cuff. Against jeans (full length, plain hem) that is
+       two axes; against tailored-trousers (full length, turn up) it is leg length plus leg width. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-capris__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA6B8)"/>
+      <stop offset="1" stop-color="var(--c2, #6C808F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-capris__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA6B8)"/>
+      <stop offset="1" stop-color="var(--c2, #6C808F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a natural rise seat and two narrow straight legs cut off at mid calf -->
+  <g class="sp-shadow">
+    <path d="M157 352 H197 L195 486 H159 Z" fill="url(#adult-male-bottom-capris__leg)"/>
+    <path d="M243 352 H203 L205 486 H241 Z" fill="url(#adult-male-bottom-capris__leg)"/>
+    <path d="M150 294 H250 Q262 294 262 308 V336 Q262 358 244 358 H156 Q138 358 138 336 V308
+             Q138 294 150 294 Z" fill="url(#adult-male-bottom-capris__seat)"/>
+  </g>
+
+  <!-- deep turn up cuffs, the hem identity, sitting proud of the leg on both sides -->
+  <rect x="152" y="482" width="50" height="20" rx="8" fill="var(--c2, #6C808F)"/>
+  <rect x="198" y="482" width="50" height="20" rx="8" fill="var(--c2, #6C808F)"/>
+  <path d="M155 486 H199" stroke="var(--c3, #E7DCC4)" stroke-width="2.4" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M201 486 H245" stroke="var(--c3, #E7DCC4)" stroke-width="2.4" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+
+  <!-- structured waistband and belt loops -->
+  <rect x="138" y="294" width="124" height="17" rx="8" fill="var(--c2, #6C808F)"/>
+  <rect x="164" y="292" width="7" height="23" rx="3" fill="var(--c3, #E7DCC4)" opacity="0.55"/>
+  <rect x="229" y="292" width="7" height="23" rx="3" fill="var(--c3, #E7DCC4)" opacity="0.55"/>
+
+  <!-- slanted side pockets -->
+  <path d="M140 314 H166 Q158 336 140 332 Z" fill="var(--c2, #6C808F)"/>
+  <path d="M260 314 H234 Q242 336 260 332 Z" fill="var(--c2, #6C808F)"/>
+
+  <!-- pressed centre crease down each leg -->
+  <path d="M177 366 V478" stroke="var(--c3, #E7DCC4)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M223 366 V478" stroke="var(--c3, #E7DCC4)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- inner leg shadow and upper highlight -->
+  <path d="M195 362 V478" stroke="var(--c2, #6C808F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M205 362 V478" stroke="var(--c2, #6C808F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 308 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

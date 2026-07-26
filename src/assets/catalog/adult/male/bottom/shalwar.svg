@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot, plain cloth with a fine tonal self
+       stripe, no community specific woven design.
+       silhouette axes: leg width=enormously full through hip and thigh (176 units across at
+       y 402, wider than the 116 unit hip) then collapsing to a close ankle band + hem
+       treatment=gathered ankle band. It is a triangle, not a tube. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B6AF97)"/>
+    </linearGradient>
+    <pattern id="adult-male-bottom-shalwar__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="3" height="16" fill="var(--c2, #B6AF97)"/>
+    </pattern>
+    <clipPath id="adult-male-bottom-shalwar__clip">
+      <path d="M148 292 H252 Q282 342 288 402 Q292 472 242 522 H206 L208 402 L200 372 L192 402
+               L194 522 H158 Q108 472 112 402 Q118 342 148 292 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the triangle of cloth, with the crotch notched up between the ankles -->
+  <g class="sp-shadow">
+    <path d="M148 292 H252 Q282 342 288 402 Q292 472 242 522 H206 L208 402 L200 372 L192 402
+             L194 522 H158 Q108 472 112 402 Q118 342 148 292 Z"
+          fill="url(#adult-male-bottom-shalwar__cloth)"/>
+  </g>
+
+  <!-- fine tonal self stripe over the gradient, clipped to the cloth -->
+  <g clip-path="url(#adult-male-bottom-shalwar__clip)">
+    <rect x="108" y="290" width="184" height="236" fill="url(#adult-male-bottom-shalwar__stripe)"
+          opacity="0.4"/>
+  </g>
+
+  <!-- deep gathered pleats radiating from the drawstring waist into the fullness -->
+  <g stroke="var(--c2, #B6AF97)" stroke-opacity="0.65" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M156 312 Q132 372 124 428"/>
+    <path d="M170 312 Q152 376 146 448"/>
+    <path d="M184 312 Q176 380 172 480"/>
+    <path d="M244 312 Q268 372 276 428"/>
+    <path d="M230 312 Q248 376 254 448"/>
+    <path d="M216 312 Q224 380 228 480"/>
+  </g>
+
+  <!-- drawstring waistband with two aglets -->
+  <rect x="146" y="290" width="108" height="20" rx="9" fill="var(--c2, #B6AF97)"/>
+  <path d="M186 308 Q192 326 182 340" stroke="var(--c3, #9A5F35)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 308 Q208 326 218 340" stroke="var(--c3, #9A5F35)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="177" y="336" width="9" height="15" rx="4" fill="var(--c3, #9A5F35)"/>
+  <rect x="214" y="336" width="9" height="15" rx="4" fill="var(--c3, #9A5F35)"/>
+
+  <!-- plain close ankle bands, the hem the fullness collapses into -->
+  <rect x="156" y="512" width="42" height="24" rx="10" fill="var(--c2, #B6AF97)"/>
+  <rect x="202" y="512" width="42" height="24" rx="10" fill="var(--c2, #B6AF97)"/>
+  <path d="M160 518 H194" stroke="var(--c3, #9A5F35)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.75"/>
+  <path d="M206 518 H240" stroke="var(--c3, #9A5F35)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.75"/>
+
+  <path d="M158 306 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

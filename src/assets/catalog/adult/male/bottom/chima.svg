@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot, plain cloth, no community specific
+       woven design.
+       silhouette axes: rise=the band sits ABOVE the bust at y 214, the only bottom in the slot
+       that starts on the torso + leg width=one gathered column widening to the ankle. Against
+       maxi-skirt that is rise and volume; against tiered-skirt, rise and hem.
+       Paired line note: the jeogori top hem sits at y 238, so this band top edge at y 214 sits
+       above it and the pair reads as a jacket over a high banded skirt. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-chima__col" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c2, #9A7A97)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2ECE0)"/>
+      <stop offset="1" stop-color="var(--c2, #9A7A97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the above the bust band, and one gathered column falling from it to the ankle -->
+  <g class="sp-shadow">
+    <path d="M138 246 H262 L270 300 Q286 412 288 534 Q200 548 112 534 Q114 412 130 300 Z"
+          fill="url(#adult-male-bottom-chima__col)"/>
+    <path d="M140 214 H260 Q266 214 266 222 V244 Q266 250 260 250 H140 Q134 250 134 244 V222
+             Q134 214 140 214 Z" fill="url(#adult-male-bottom-chima__band)"/>
+  </g>
+
+  <!-- long tie falling from a soft bow at the band -->
+  <path d="M160 244 Q176 236 190 246 Q180 256 168 254 Q160 252 160 244 Z"
+        fill="var(--c3, #F2ECE0)"/>
+  <path d="M166 252 Q160 330 156 380 Q166 384 172 378 Q174 320 178 252 Z"
+        fill="var(--c3, #F2ECE0)"/>
+  <path d="M180 252 Q186 330 192 378 Q184 384 176 380 Q174 320 172 252 Z"
+        fill="var(--c2, #9A7A97)" opacity="0.55"/>
+
+  <!-- vertical gather folds running the full length of the column -->
+  <g stroke="var(--c2, #9A7A97)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M144 258 Q132 400 122 524"/>
+    <path d="M162 258 Q154 400 148 530"/>
+    <path d="M200 258 Q200 400 200 538"/>
+    <path d="M238 258 Q246 400 252 530"/>
+    <path d="M256 258 Q268 400 278 524"/>
+  </g>
+
+  <!-- bound hem and the upper highlight on the band -->
+  <path d="M116 530 Q200 544 284 530" stroke="var(--c3, #F2ECE0)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M152 224 q48 10 96 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

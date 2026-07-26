@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: UPPER LIP = overhanging. The mass grows down off the lip and swallows the
+       mouth entirely, hem at y 142. LENGTH = past the mouth, the only moustache here that goes
+       below the lower lip. Chin, jaw and cheeks stay bare. -->
+  <defs>
+    <linearGradient id="adult-male-beard-walrus__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the droop: two heavy unequal lobes with a shallow centre part between them -->
+  <g class="sp-shadow">
+    <path d="M164 108 C163 101 170 98 180 101 C188 103 195 104 200 104
+             C205 104 212 103 220 101 C230 98 237 101 236 108
+             C235 121 230 134 218 140 C210 144 202 140 200 132
+             C198 140 190 144 182 140 C170 134 165 121 164 108 Z"
+          fill="url(#adult-male-beard-walrus__grad)"/>
+  </g>
+
+  <!-- centre part, cut down through the mass in hair2 -->
+  <path d="M198 106 C202 106 203 118 201 131 C200 135 199 135 198 131
+           C196 118 195 106 198 106 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- sweep of the droop on each lobe -->
+  <path d="M176 112 C176 124 180 133 190 138" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M224 112 C224 124 220 133 210 138" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M168 116 C172 128 178 136 186 141" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M232 116 C228 128 222 136 214 141" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- lit upper surface, just under the nose -->
+  <path d="M174 106 C186 102 214 102 226 106" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=two flat panels 70 units wide each, so wide it reads as a skirt
+       until the centre split shows + rise=high (waist at y 278). Against wide-leg that is leg
+       length (knee, not full) plus rise; against skirt it is the genuine 8 unit centre split. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-culottes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6B79A)"/>
+      <stop offset="1" stop-color="var(--c2, #9C8C6F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one major form: a wide flat culotte with a real vertical split notched up from the hem -->
+  <g class="sp-shadow">
+    <path d="M150 278 H250 Q258 296 264 324 Q273 376 274 452 H204 V354 H196 V452 H126
+             Q127 376 136 324 Q142 296 150 278 Z"
+          fill="url(#adult-male-bottom-culottes__cloth)"/>
+  </g>
+
+  <!-- high waistband -->
+  <rect x="148" y="276" width="104" height="22" rx="10" fill="var(--c2, #9C8C6F)"/>
+  <rect x="148" y="276" width="104" height="8" rx="4" fill="var(--c1, #C6B79A)" opacity="0.5"/>
+
+  <!-- knife pleats: four per panel, falling from the waistband to the flat hem -->
+  <g stroke="var(--c2, #9C8C6F)" stroke-opacity="0.55" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M164 300 L142 448"/>
+    <path d="M176 298 L162 450"/>
+    <path d="M188 298 L182 450"/>
+    <path d="M236 300 L258 448"/>
+    <path d="M224 298 L238 450"/>
+    <path d="M212 298 L218 450"/>
+  </g>
+
+  <!-- the split edges, bound so the gap reads at tray size -->
+  <path d="M196 356 V450" stroke="var(--c3, #4A4234)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.75"/>
+  <path d="M204 356 V450" stroke="var(--c3, #4A4234)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.75"/>
+
+  <!-- bound flat hem on both panels -->
+  <path d="M126 448 H196" stroke="var(--c3, #4A4234)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.65"/>
+  <path d="M204 448 H274" stroke="var(--c3, #4A4234)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.65"/>
+
+  <path d="M160 292 q40 10 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

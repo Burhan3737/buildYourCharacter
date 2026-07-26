@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: CHIN AND JAW = chin only. One rounded island on the chin pad, 54 wide by 40
+       tall, hanging 18 units below the chin at y 150 with clear skin all round it. UPPER LIP =
+       bare, so it never closes into a ring the way circle beard does. -->
+  <defs>
+    <linearGradient id="adult-male-beard-goatee__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.58" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the chin island, tapering slightly as it drops past the jaw -->
+  <g class="sp-shadow">
+    <path d="M177 131 C184 128 216 128 223 131 C227 141 225 155 214 163
+             C207 168 193 168 186 163 C175 155 173 141 177 131 Z"
+          fill="url(#adult-male-beard-goatee__grad)"/>
+  </g>
+
+  <!-- soft-edged top: reads as a small gap of skin under the lower lip -->
+  <path d="M180 133 C188 130 212 130 220 133 C212 136 188 136 180 133 Z"
+        fill="var(--skin2, #E7B892)" opacity="0.35"/>
+
+  <!-- the whorl at the centre of the chin, drawn in hair2 -->
+  <path d="M201 140 C207 140 209 145 205 149 C201 153 194 151 193 146"
+        stroke="var(--hair2, #331E16)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M186 141 C184 148 186 155 192 160" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M214 141 C216 148 214 155 208 160" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- weight at the hanging tip -->
+  <path d="M188 159 C194 164 206 164 212 159" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- lit upper surface -->
+  <path d="M184 136 C193 133 207 133 216 136" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

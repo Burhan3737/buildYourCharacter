@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Circle Beard" data-family="circle-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: CHIN AND JAW = chin plus a closed ring; the mouth sits in a genuine hole in
+       the mass, skin showing through, and the loop is the whole read at thumbnail size. UPPER
+       LIP = a trimmed bar joined round both mouth corners, which is exactly what goatee does
+       not do. Jaw and cheeks bare. -->
+  <defs>
+    <linearGradient id="adult-male-beard-circle-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer contour plus a counter contour for the mouth aperture -->
+  <g class="sp-shadow">
+    <path d="M166 110 C166 102 174 98 184 101 C191 103 196 104 200 104
+             C204 104 209 103 216 101 C226 98 234 102 234 110
+             C234 123 232 135 228 145 C223 157 213 166 200 166
+             C187 166 177 157 172 145 C168 135 166 123 166 110 Z
+             M200 114 C207 114 214 117 217 122 C220 127 217 132 210 133
+             C203 134 197 134 190 133 C183 132 180 127 183 122
+             C186 117 193 114 200 114 Z"
+          fill-rule="evenodd" fill="url(#adult-male-beard-circle-beard__grad)"/>
+  </g>
+
+  <!-- inner edge of the ring, shaded so the hole reads as a hole -->
+  <path d="M183 121 C187 116 213 116 217 121" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M184 132 C192 136 208 136 216 132" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- philtrum notch on the bar, and the whorl on the chin -->
+  <path d="M197 101 C198 105 202 105 203 101 C205 107 203 112 200 112
+           C197 112 195 107 197 101 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M201 142 C207 143 208 149 203 152 C198 155 192 152 192 148"
+        stroke="var(--hair2, #331E16)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- the two corner joins, where the bar wraps into the chin -->
+  <path d="M172 112 C170 122 172 132 178 140" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M228 112 C230 122 228 132 222 140" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- lit top of the ring -->
+  <path d="M176 105 C186 101 214 101 224 105" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

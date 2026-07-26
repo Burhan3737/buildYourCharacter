@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Beard" data-family="long-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: LENGTH = to mid chest, hem at y 222, and the mass widens as it falls to
+       x 138 and x 262, wider than the head itself. UPPER LIP = overhanging, untrimmed, the
+       moustache carries down to y 128 and covers the top of the mouth. Cheek line natural at
+       y about 107. -->
+  <defs>
+    <linearGradient id="adult-male-beard-long-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.4" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mass: narrow at the cheek line, swelling past the jaw to a broad lobed hem -->
+  <g class="sp-shadow">
+    <path d="M147 100 C144 116 143 134 146 152 C140 168 138 184 140 198
+             C143 212 158 220 176 222 C186 224 196 222 200 219
+             C206 223 216 224 226 221 C244 217 258 207 260 194
+             C262 180 260 165 254 152 C257 134 256 116 253 100
+             C249 105 244 107 237 108 C230 109 226 107 222 103
+             C214 99 206 100 200 101 C194 100 186 99 178 103
+             C174 107 170 109 163 108 C156 107 151 105 147 100 Z
+             M200 128 C192 128 184 129 181 133 C179 138 185 143 195 143
+             C202 144 210 143 215 141 C221 139 221 132 216 129
+             C211 127 205 128 200 128 Z"
+          fill-rule="evenodd" fill="url(#adult-male-beard-long-beard__grad)"/>
+  </g>
+
+  <!-- the overhanging moustache edge, hanging over the top of the mouth -->
+  <path d="M178 124 C186 130 214 130 222 124" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M197 100 C198 106 202 106 203 100 C206 110 204 122 200 122
+           C196 122 194 110 197 100 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- shadow where the beard meets the throat -->
+  <path d="M160 146 C176 164 224 164 240 146" stroke="var(--hair2, #331E16)"
+        stroke-width="7" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- long divisions running the length of the fall -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3.4" fill="none" stroke-linecap="round"
+     opacity="0.6">
+    <path d="M166 152 C158 174 154 194 160 212"/>
+    <path d="M186 156 C180 178 179 198 183 216"/>
+    <path d="M212 156 C218 178 219 198 215 216"/>
+    <path d="M234 152 C242 174 246 194 240 212"/>
+  </g>
+  <path d="M200 158 C199 180 199 200 200 218" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- lit cheek line and the lit shoulder of the fall -->
+  <path d="M156 110 C162 112 170 112 176 108" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M150 130 C146 152 144 174 148 194" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

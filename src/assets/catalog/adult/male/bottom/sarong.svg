@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot, a fine tonal check, no community
+       specific woven design.
+       silhouette axes: hem treatment=asymmetric, a visible overlap edge running diagonally down
+       one leg with the overlapping corner hanging 10 units lower + leg length=mid calf skirt.
+       Against maxi-skirt that is hem and length; against skirt, length and the asymmetry. -->
+  <defs>
+    <linearGradient id="adult-male-bottom-sarong__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E9FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4E7883)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-sarong__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FB2BA)"/>
+      <stop offset="1" stop-color="var(--c2, #4E7883)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-sarong__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FB2BA)"/>
+      <stop offset="1" stop-color="var(--c2, #4E7883)"/>
+    </linearGradient>
+    <pattern id="adult-male-bottom-sarong__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="3.2" fill="var(--c3, #EDD9A6)"/>
+      <rect x="0" y="0" width="3.2" height="20" fill="var(--c3, #EDD9A6)"/>
+    </pattern>
+    <clipPath id="adult-male-bottom-sarong__clip">
+      <path d="M138 294 H262 Q268 396 266 492 Q200 502 134 492 Q132 396 138 294 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the wrapped underlayer, the overlapping panel proud of it, and the hip knot -->
+  <g class="sp-shadow">
+    <path d="M138 294 H262 Q268 396 266 492 Q200 502 134 492 Q132 396 138 294 Z"
+          fill="url(#adult-male-bottom-sarong__under)"/>
+    <path d="M248 292 H268 Q274 396 270 502 Q248 508 224 503 Q234 396 248 292 Z"
+          fill="url(#adult-male-bottom-sarong__over)"/>
+    <path d="M232 286 Q250 274 268 286 Q280 298 270 312 Q252 322 236 313 Q224 300 232 286 Z"
+          fill="url(#adult-male-bottom-sarong__knot)"/>
+  </g>
+
+  <!-- fine tonal check over the underlayer only, so the overlap edge stays legible -->
+  <g clip-path="url(#adult-male-bottom-sarong__clip)">
+    <rect x="130" y="292" width="140" height="212" fill="url(#adult-male-bottom-sarong__check)"
+          opacity="0.45"/>
+  </g>
+
+  <!-- the overlap edge, bound so it reads as a real edge in the outline -->
+  <path d="M248 296 Q234 396 226 500" stroke="var(--c3, #EDD9A6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound hem, stepped where the overlapping corner hangs lower -->
+  <path d="M136 490 Q182 500 224 500" stroke="var(--c3, #EDD9A6)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M228 502 Q250 507 270 500" stroke="var(--c3, #EDD9A6)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- wrap fold at the waist and drape folds -->
+  <path d="M136 300 H262" stroke="var(--c2, #4E7883)" stroke-width="6" stroke-linecap="round"
+        fill="none" opacity="0.65"/>
+  <g stroke="var(--c2, #4E7883)" stroke-opacity="0.45" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M160 316 Q156 400 152 484"/>
+    <path d="M190 316 Q188 400 186 490"/>
+  </g>
+  <path d="M240 296 Q252 292 262 298" stroke="var(--c2, #4E7883)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <path d="M156 306 q40 10 74 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

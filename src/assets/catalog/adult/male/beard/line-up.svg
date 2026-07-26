@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Line Up" data-family="line-up"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: CHEEK LINE = joined, straight off the ear at y 95 and razored down to the
+       mouth corner in one unbroken diagonal. UPPER LIP = a hard trimmed bar, y 102 to 117,
+       squared into the beard at the corners. Also LENGTH = clipped short, hem at y 164. Every
+       edge in this file is a straight run, which no other family here uses. -->
+  <defs>
+    <linearGradient id="adult-male-beard-line-up__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.62" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one hard edged mass: razored cheek lines, squared moustache bar, straight neck line,
+       and a cut aperture for the mouth -->
+  <g class="sp-shadow">
+    <path d="M149 95 L176 122 L176 114 L184 102 L216 102 L224 114 L224 122 L251 95
+             L254 112 L250 140 L240 156 L222 163 L200 164 L178 163 L160 156
+             L150 140 L146 112 Z
+             M178 117 L222 117 L222 134 L212 141 L188 141 L178 134 Z"
+          fill-rule="evenodd" fill="url(#adult-male-beard-line-up__grad)"/>
+  </g>
+
+  <!-- the razor edges, restated crisply in hair2 -->
+  <path d="M149 95 L176 122" stroke="var(--hair2, #331E16)" stroke-width="2.6" fill="none"/>
+  <path d="M251 95 L224 122" stroke="var(--hair2, #331E16)" stroke-width="2.6" fill="none"/>
+  <path d="M184 102 L216 102" stroke="var(--hair2, #331E16)" stroke-width="2.6" fill="none"/>
+  <!-- straight neck line -->
+  <path d="M178 162 L222 162" stroke="var(--hair2, #331E16)" stroke-width="3.4" fill="none"
+        stroke-linecap="square"/>
+  <!-- squared aperture edge -->
+  <path d="M178 117 L222 117" stroke="var(--hair2, #331E16)" stroke-width="2.4" fill="none"/>
+  <path d="M178 134 L188 141 L212 141 L222 134" stroke="var(--hair2, #331E16)"
+        stroke-width="2.4" fill="none"/>
+  <!-- philtrum, cut square -->
+  <path d="M197 102 L203 102 L203 116 L197 116 Z" fill="var(--hair2, #331E16)"/>
+
+  <!-- clipped, even shading along the jaw run -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="2.4" fill="none" opacity="0.5">
+    <path d="M154 124 L162 152"/>
+    <path d="M170 130 L176 158"/>
+    <path d="M246 124 L238 152"/>
+    <path d="M230 130 L224 158"/>
+  </g>
+
+  <!-- lit temple to jaw run on the lit side -->
+  <path d="M152 104 L156 138" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 106 L214 106" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

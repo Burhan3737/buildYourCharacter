@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Moustache" data-family="moustache"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Axes chosen: UPPER LIP = trimmed bar. A single clipped block on the lip, 58 units wide
+       and 19 tall, ends level with the mouth corners and far outside the nose. CHIN AND JAW =
+       bare; there is no cheek line at all. Reads against handlebar on the extents of the ends
+       and against walrus on depth. -->
+  <defs>
+    <linearGradient id="adult-male-beard-moustache__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bar: wide and low, with the outer ends dipping toward the mouth corners -->
+  <g class="sp-shadow">
+    <path d="M172 108 C171 102 176 99 184 100 C191 101 196 103 200 103
+             C204 103 209 101 216 100 C224 99 229 102 228 108
+             C227 114 223 118 216 117 C209 116 204 112 200 112
+             C196 112 191 116 184 117 C177 118 173 114 172 108 Z"
+          fill="url(#adult-male-beard-moustache__grad)"/>
+  </g>
+
+  <!-- philtrum notch, cut into the bar through hair2 -->
+  <path d="M196 100 C198 104 202 104 204 100 C206 106 204 111 200 111
+           C196 111 194 106 196 100 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- trimmed underside, and the direction of the comb-out at each end -->
+  <path d="M177 114 C186 118 214 118 223 114" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M180 106 C176 109 175 112 176 115" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M220 106 C224 109 225 112 224 115" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- lit top edge -->
+  <path d="M180 104 C190 101 210 101 220 104" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
