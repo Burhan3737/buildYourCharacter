@@ -1,29 +1,168 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      data-name="Beach" data-family="beach" data-slot="top" data-layer="top"
      data-colors="">
   <defs>
-    <linearGradient id="backdrops-beach__sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#EAF2F5"/>
-      <stop offset="1" stop-color="#E1ECEF"/>
+    <linearGradient id="backdrops-beach__sky-g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="410">
+      <stop offset="0" stop-color="#E6F0F5"/>
+      <stop offset="1" stop-color="#CFE3EC"/>
     </linearGradient>
-    <linearGradient id="backdrops-beach__sea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#DAE9E7"/>
-      <stop offset="1" stop-color="#CCE0DC"/>
+    <linearGradient id="backdrops-beach__sea-g" gradientUnits="userSpaceOnUse" x1="0" y1="400" x2="0" y2="626">
+      <stop offset="0" stop-color="#A9CBD3"/>
+      <stop offset="1" stop-color="#90B9C5"/>
     </linearGradient>
-    <linearGradient id="backdrops-beach__sand" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#EFE7D6"/>
-      <stop offset="1" stop-color="#E3D8C1"/>
+    <linearGradient id="backdrops-beach__sand-g" gradientUnits="userSpaceOnUse" x1="0" y1="620" x2="0" y2="1000">
+      <stop offset="0" stop-color="#E4D5BA"/>
+      <stop offset="1" stop-color="#D2BE9C"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__wet-g" gradientUnits="userSpaceOnUse" x1="0" y1="618" x2="0" y2="698">
+      <stop offset="0" stop-color="#BFAA8A"/>
+      <stop offset="1" stop-color="#E0D0B4"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__canopy-a" gradientUnits="userSpaceOnUse" x1="0" y1="292" x2="0" y2="414">
+      <stop offset="0" stop-color="#E8DED2"/>
+      <stop offset="1" stop-color="#CFC1B0"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__canopy-b" gradientUnits="userSpaceOnUse" x1="0" y1="292" x2="0" y2="414">
+      <stop offset="0" stop-color="#D2C4B1"/>
+      <stop offset="1" stop-color="#B8A794"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__pole-g" gradientUnits="userSpaceOnUse" x1="0" y1="292" x2="0" y2="726">
+      <stop offset="0" stop-color="#CDBCA2"/>
+      <stop offset="1" stop-color="#A8916E"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__frond-g" gradientUnits="userSpaceOnUse" x1="0" y1="220" x2="0" y2="460">
+      <stop offset="0" stop-color="#A6B7A9"/>
+      <stop offset="1" stop-color="#8A9C90"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__trunk-g" gradientUnits="userSpaceOnUse" x1="0" y1="340" x2="0" y2="740">
+      <stop offset="0" stop-color="#B6A991"/>
+      <stop offset="1" stop-color="#9A886D"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__dune-g" gradientUnits="userSpaceOnUse" x1="0" y1="644" x2="0" y2="820">
+      <stop offset="0" stop-color="#DFCFB3"/>
+      <stop offset="1" stop-color="#C6B08E"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__ball-g" gradientUnits="userSpaceOnUse" x1="0" y1="804" x2="0" y2="920">
+      <stop offset="0" stop-color="#EAE3D7"/>
+      <stop offset="1" stop-color="#CFC2AE"/>
+    </linearGradient>
+    <linearGradient id="backdrops-beach__bucket-g" gradientUnits="userSpaceOnUse" x1="0" y1="842" x2="0" y2="940">
+      <stop offset="0" stop-color="#D9CAB3"/>
+      <stop offset="1" stop-color="#B7A184"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="400" height="600" fill="url(#backdrops-beach__sky)"/>
+  <!-- sky, full bleed -->
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#backdrops-beach__sky-g)"/>
 
-  <path d="M0 255 Q100 240 200 250 Q300 260 400 245 L400 600 L0 600 Z"
-        fill="url(#backdrops-beach__sea)"/>
+  <!-- low sun with soft halo -->
+  <circle cx="1210" cy="300" r="172" fill="#F4F1E6" opacity="0.22"/>
+  <circle cx="1210" cy="300" r="112" fill="#F7F0E1" opacity="0.32"/>
+  <circle cx="1210" cy="300" r="60" fill="#F4E9D6"/>
 
-  <path d="M0 405 Q100 390 200 400 Q300 410 400 393 L400 600 L0 600 Z"
-        fill="url(#backdrops-beach__sand)"/>
+  <!-- flat clouds, all above y = 280 -->
+  <rect x="200" y="138" width="252" height="42" rx="21" fill="#F2F8FA" opacity="0.9"/>
+  <ellipse cx="280" cy="136" rx="72" ry="32" fill="#F2F8FA" opacity="0.9"/>
+  <ellipse cx="374" cy="144" rx="52" ry="26" fill="#F2F8FA" opacity="0.9"/>
+  <rect x="730" y="206" width="200" height="34" rx="17" fill="#EDF5F8" opacity="0.85"/>
+  <ellipse cx="800" cy="204" rx="58" ry="26" fill="#EDF5F8" opacity="0.85"/>
+  <ellipse cx="872" cy="210" rx="42" ry="20" fill="#EDF5F8" opacity="0.85"/>
+  <rect x="1330" y="102" width="230" height="36" rx="18" fill="#F1F7FA" opacity="0.85"/>
+  <ellipse cx="1400" cy="100" rx="62" ry="28" fill="#F1F7FA" opacity="0.85"/>
+  <ellipse cx="1484" cy="108" rx="46" ry="22" fill="#F1F7FA" opacity="0.85"/>
 
-  <ellipse cx="150" cy="252" rx="70" ry="8" fill="#F2F8F7" opacity="0.4"/>
-  <ellipse cx="290" cy="248" rx="50" ry="6" fill="#F2F8F7" opacity="0.3"/>
+  <!-- haze just above the horizon -->
+  <rect x="0" y="378" width="1600" height="22" fill="#DCEAEE" opacity="0.55"/>
+
+  <!-- sea: horizon at y = 400 down to the shoreline at y = 620 -->
+  <rect x="0" y="400" width="1600" height="222" fill="url(#backdrops-beach__sea-g)"/>
+  <rect x="0" y="400" width="1600" height="9" fill="#9CBFC9" opacity="0.55"/>
+
+  <!-- surf lines: far and tight, near and wide/soft -->
+  <path d="M0 450 Q400 438 780 450 Q1140 462 1600 446 L1600 456 Q1140 472 780 460 Q400 448 0 460 Z"
+        fill="#CFE2E7" opacity="0.85"/>
+  <path d="M0 506 Q380 492 760 508 Q1160 524 1600 502 L1600 518 Q1160 540 760 524 Q380 508 0 522 Z"
+        fill="#D6E7EA" opacity="0.7"/>
+  <path d="M0 562 Q400 546 800 566 Q1180 584 1600 558 L1600 582 Q1180 608 800 590 Q400 570 0 586 Z"
+        fill="#DDECEE" opacity="0.6"/>
+
+  <!-- glitter path under the sun -->
+  <rect x="1183" y="416" width="54" height="8" rx="4" fill="#E6F1F2" opacity="0.7"/>
+  <rect x="1172" y="442" width="76" height="9" rx="4" fill="#E6F1F2" opacity="0.66"/>
+  <rect x="1160" y="470" width="100" height="10" rx="5" fill="#E6F1F2" opacity="0.62"/>
+  <rect x="1146" y="500" width="128" height="11" rx="5" fill="#E6F1F2" opacity="0.56"/>
+  <rect x="1131" y="534" width="158" height="12" rx="6" fill="#E6F1F2" opacity="0.5"/>
+  <rect x="1115" y="570" width="190" height="13" rx="6" fill="#E6F1F2" opacity="0.44"/>
+  <rect x="1098" y="602" width="224" height="14" rx="7" fill="#E6F1F2" opacity="0.38"/>
+
+  <!-- dry sand ground plane, everything below the shoreline -->
+  <rect x="0" y="620" width="1600" height="380" fill="url(#backdrops-beach__sand-g)"/>
+  <rect x="0" y="620" width="1600" height="76" fill="url(#backdrops-beach__wet-g)"/>
+
+  <!-- scalloped foam edge sitting on the shoreline at y = 620 -->
+  <path d="M0 586 L1600 586 L1600 598 Q1500 616 1400 598 Q1300 580 1200 598 Q1100 616 1000 598 Q900 580 800 598 Q700 616 600 598 Q500 580 400 598 Q300 616 200 598 Q100 580 0 598 Z"
+        fill="#E3EFF0" opacity="0.5"/>
+  <path d="M0 604 L1600 604 L1600 620 Q1550 644 1500 620 Q1450 644 1400 620 Q1350 644 1300 620 Q1250 644 1200 620 Q1150 644 1100 620 Q1050 644 1000 620 Q950 644 900 620 Q850 644 800 620 Q750 644 700 620 Q650 644 600 620 Q550 644 500 620 Q450 644 400 620 Q350 644 300 620 Q250 644 200 620 Q150 644 100 620 Q50 644 0 620 Z"
+        fill="#EEF5F4"/>
+
+  <!-- sand tone bands -->
+  <path d="M0 700 Q800 682 1600 704 L1600 792 Q800 812 0 788 Z" fill="#DCCBAE" opacity="0.55"/>
+  <path d="M0 884 Q800 864 1600 890 L1600 1000 L0 1000 Z" fill="#CDB795" opacity="0.5"/>
+
+  <!-- sand ripples -->
+  <path d="M0 756 Q320 736 640 754 Q980 772 1600 744" fill="none" stroke="#D3BE9C" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0 842 Q360 820 720 840 Q1080 860 1600 830" fill="none" stroke="#CBB491" stroke-width="10" stroke-linecap="round" opacity="0.65"/>
+  <path d="M0 948 Q400 926 800 946 Q1200 966 1600 936" fill="none" stroke="#C2A886" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- pebbles -->
+  <ellipse cx="140" cy="806" rx="14" ry="8" fill="#BCA484" opacity="0.7"/>
+  <ellipse cx="232" cy="862" rx="10" ry="6" fill="#BCA484" opacity="0.6"/>
+  <ellipse cx="86" cy="930" rx="18" ry="10" fill="#BCA484" opacity="0.65"/>
+  <ellipse cx="1548" cy="846" rx="12" ry="7" fill="#BCA484" opacity="0.6"/>
+  <ellipse cx="1512" cy="912" rx="17" ry="9" fill="#BCA484" opacity="0.65"/>
+  <ellipse cx="1330" cy="956" rx="13" ry="8" fill="#BCA484" opacity="0.55"/>
+
+  <!-- right third: low dune with beach grass -->
+  <path d="M1120 716 Q1330 648 1600 688 L1600 812 L1120 812 Z" fill="url(#backdrops-beach__dune-g)"/>
+  <path d="M1238 678 Q1216 620 1194 580 Q1230 618 1250 676 Z" fill="#A9B49F"/>
+  <path d="M1268 674 Q1258 606 1250 562 Q1284 606 1282 672 Z" fill="#9EAB96"/>
+  <path d="M1302 670 Q1316 610 1338 570 Q1320 616 1316 668 Z" fill="#A9B49F"/>
+  <path d="M1348 668 Q1372 622 1408 590 Q1374 626 1362 666 Z" fill="#9EAB96"/>
+  <path d="M1396 668 Q1400 614 1394 574 Q1416 616 1412 666 Z" fill="#A9B49F"/>
+  <path d="M1440 670 Q1458 630 1478 606 Q1454 634 1452 668 Z" fill="#9EAB96"/>
+
+  <!-- right third: palm -->
+  <ellipse cx="1492" cy="736" rx="98" ry="16" fill="#C0A984" opacity="0.4"/>
+  <path d="M1476 734 Q1452 556 1416 348 L1442 342 Q1482 556 1508 734 Z" fill="url(#backdrops-beach__trunk-g)"/>
+  <path d="M1430 340 Q1340 336 1262 404 Q1348 392 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <path d="M1430 340 Q1352 280 1288 288 Q1364 326 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <path d="M1430 340 Q1392 268 1424 224 Q1456 274 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <path d="M1430 340 Q1510 264 1560 258 Q1500 316 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <path d="M1430 340 Q1534 308 1600 366 Q1524 372 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <path d="M1430 340 Q1502 362 1534 442 Q1464 396 1430 340 Z" fill="url(#backdrops-beach__frond-g)"/>
+  <circle cx="1422" cy="360" r="10" fill="#B6A88E"/>
+  <circle cx="1444" cy="368" r="9" fill="#C3B69E"/>
+
+  <!-- left third: beach umbrella -->
+  <ellipse cx="268" cy="728" rx="152" ry="22" fill="#C0A984" opacity="0.45"/>
+  <rect x="233" y="292" width="14" height="432" rx="7" fill="url(#backdrops-beach__pole-g)"/>
+  <path d="M240 294 Q112 300 60 370 Q90 402 120 384 Q160 306 240 294 Z" fill="url(#backdrops-beach__canopy-a)"/>
+  <path d="M240 294 Q160 306 120 384 Q150 411 180 393 Q200 314 240 294 Z" fill="url(#backdrops-beach__canopy-b)"/>
+  <path d="M240 294 Q200 314 180 393 Q210 414 240 396 Q240 318 240 294 Z" fill="url(#backdrops-beach__canopy-a)"/>
+  <path d="M240 294 Q240 318 240 396 Q270 414 300 393 Q280 314 240 294 Z" fill="url(#backdrops-beach__canopy-b)"/>
+  <path d="M240 294 Q280 314 300 393 Q330 411 360 384 Q320 306 240 294 Z" fill="url(#backdrops-beach__canopy-a)"/>
+  <path d="M240 294 Q320 306 360 384 Q390 402 420 370 Q368 300 240 294 Z" fill="url(#backdrops-beach__canopy-b)"/>
+  <path d="M110 332 Q240 292 372 334 Q240 314 110 332 Z" fill="#FFFFFF" opacity="0.24"/>
+  <circle cx="240" cy="288" r="12" fill="#C4B49A"/>
+
+  <!-- lower right props -->
+  <ellipse cx="1252" cy="908" rx="62" ry="12" fill="#BFA783" opacity="0.45"/>
+  <circle cx="1246" cy="862" r="54" fill="url(#backdrops-beach__ball-g)"/>
+  <path d="M1246 808 Q1198 862 1246 916 Q1294 862 1246 808 Z" fill="#C6B8A4" opacity="0.85"/>
+  <path d="M1246 808 Q1222 862 1246 916 Q1270 862 1246 808 Z" fill="#EDE7DC" opacity="0.9"/>
+  <path d="M1210 832 Q1246 812 1284 834 Q1246 822 1210 832 Z" fill="#FFFFFF" opacity="0.3"/>
+  <ellipse cx="1450" cy="938" rx="58" ry="10" fill="#BFA783" opacity="0.45"/>
+  <path d="M1400 848 Q1443 806 1486 848" fill="none" stroke="#B7A184" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1392 854 L1494 854 L1480 926 Q1478 936 1466 936 L1420 936 Q1408 936 1406 926 Z" fill="url(#backdrops-beach__bucket-g)"/>
+  <rect x="1384" y="842" width="118" height="18" rx="9" fill="#C7B69C"/>
 </svg>

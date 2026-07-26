@@ -14,6 +14,17 @@ export const SKIN_VARS = ['skin1', 'skin2', 'skin3'] as const
 const REQUIRED_ATTRS = ['data-name', 'data-family', 'data-slot', 'data-layer'] as const
 const VAR_USE = /var\(\s*--([a-zA-Z0-9_-]+)\s*(,[^)]*)?\)/g
 
+/** Every asset is drawn in this box, bottom-aligned on the ground line at y = 570. */
+export const ASSET_VIEW_BOX = '0 0 400 600'
+/**
+ * Backdrops are the one exception: they are the stage itself, so they are authored at the
+ * stage's own coordinate space (`STAGE_W` x `STAGE_H`) and render into it 1:1. Anything else
+ * gets cover-cropped, which eats the drawn ground plane.
+ */
+export const BACKDROP_VIEW_BOX = '0 0 1600 1000'
+
+const isBackdrop = (file: string): boolean => file.replace(/\\/g, '/').includes('/backdrops/')
+
 export function lintAsset(file: string, raw: string): LintIssue[] {
   const issues: LintIssue[] = []
   const id = assetIdFromPath(file)
@@ -31,8 +42,9 @@ export function lintAsset(file: string, raw: string): LintIssue[] {
   }
 
   // --- structure -----------------------------------------------------------
-  if (root.getAttribute('viewBox') !== '0 0 400 600') {
-    add('structure', `viewBox is "${root.getAttribute('viewBox')}", expected "0 0 400 600"`)
+  const wantViewBox = isBackdrop(file) ? BACKDROP_VIEW_BOX : ASSET_VIEW_BOX
+  if (root.getAttribute('viewBox') !== wantViewBox) {
+    add('structure', `viewBox is "${root.getAttribute('viewBox')}", expected "${wantViewBox}"`)
   }
   for (const a of REQUIRED_ATTRS) {
     if (!root.getAttribute(a)) add('structure', `missing required attribute ${a}`)

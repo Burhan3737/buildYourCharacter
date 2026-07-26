@@ -1,37 +1,193 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      data-name="Space" data-family="space" data-slot="top" data-layer="top"
      data-colors="">
   <defs>
-    <linearGradient id="backdrops-space__sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#7B82A8"/>
-      <stop offset="1" stop-color="#666D91"/>
+    <linearGradient id="backdrops-space__sky" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="660">
+      <stop offset="0" stop-color="#464663"/>
+      <stop offset="0.42" stop-color="#54537A"/>
+      <stop offset="0.78" stop-color="#6C6693"/>
+      <stop offset="1" stop-color="#7C759B"/>
     </linearGradient>
-    <linearGradient id="backdrops-space__ground" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8B87A6"/>
-      <stop offset="1" stop-color="#726E8E"/>
+    <linearGradient id="backdrops-space__glow" gradientUnits="userSpaceOnUse" x1="0" y1="424" x2="0" y2="620">
+      <stop offset="0" stop-color="#8B84A8" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#8B84A8" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#9C95B4" stop-opacity="0.82"/>
     </linearGradient>
+    <linearGradient id="backdrops-space__moon" gradientUnits="userSpaceOnUse" x1="0" y1="108" x2="0" y2="232">
+      <stop offset="0" stop-color="#C0B9D2"/>
+      <stop offset="1" stop-color="#8B84A8"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__planet" gradientUnits="userSpaceOnUse" x1="0" y1="65" x2="0" y2="435">
+      <stop offset="0" stop-color="#A29ABA"/>
+      <stop offset="0.55" stop-color="#8078A0"/>
+      <stop offset="1" stop-color="#6A6486"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__ridge" gradientUnits="userSpaceOnUse" x1="0" y1="512" x2="0" y2="648">
+      <stop offset="0" stop-color="#6E6892"/>
+      <stop offset="1" stop-color="#5C5679"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__ground" gradientUnits="userSpaceOnUse" x1="0" y1="620" x2="0" y2="1000">
+      <stop offset="0" stop-color="#857E9B"/>
+      <stop offset="0.28" stop-color="#7E7794"/>
+      <stop offset="1" stop-color="#6A6486"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__dune-a" gradientUnits="userSpaceOnUse" x1="0" y1="648" x2="0" y2="880">
+      <stop offset="0" stop-color="#8E87A4"/>
+      <stop offset="1" stop-color="#7A7396"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__dune-b" gradientUnits="userSpaceOnUse" x1="0" y1="756" x2="0" y2="1000">
+      <stop offset="0" stop-color="#7C7598"/>
+      <stop offset="1" stop-color="#676186"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__fore" gradientUnits="userSpaceOnUse" x1="0" y1="872" x2="0" y2="1000">
+      <stop offset="0" stop-color="#6E6889"/>
+      <stop offset="1" stop-color="#5B5675"/>
+    </linearGradient>
+    <linearGradient id="backdrops-space__rock" gradientUnits="userSpaceOnUse" x1="0" y1="640" x2="0" y2="990">
+      <stop offset="0" stop-color="#9C95B4"/>
+      <stop offset="0.5" stop-color="#7B7497"/>
+      <stop offset="1" stop-color="#625C7E"/>
+    </linearGradient>
+    <clipPath id="backdrops-space__planet-clip">
+      <circle cx="1350" cy="250" r="185"/>
+    </clipPath>
   </defs>
 
-  <rect x="0" y="0" width="400" height="600" fill="url(#backdrops-space__sky)"/>
+  <!-- full-bleed night sky -->
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#backdrops-space__sky)"/>
 
-  <path d="M0 405 Q100 388 200 398 Q300 408 400 392 L400 600 L0 600 Z"
-        fill="url(#backdrops-space__ground)"/>
-
-  <g fill="#F2F2F8">
-    <circle cx="40" cy="60" r="1.4" opacity="0.35"/>
-    <circle cx="120" cy="110" r="1" opacity="0.25"/>
-    <circle cx="210" cy="45" r="1.6" opacity="0.3"/>
-    <circle cx="300" cy="90" r="1.2" opacity="0.25"/>
-    <circle cx="360" cy="150" r="1" opacity="0.2"/>
-    <circle cx="70" cy="200" r="1.3" opacity="0.3"/>
-    <circle cx="250" cy="180" r="1" opacity="0.2"/>
-    <circle cx="330" cy="240" r="1.5" opacity="0.3"/>
-    <circle cx="170" cy="260" r="1" opacity="0.2"/>
-    <circle cx="20" cy="300" r="1.2" opacity="0.25"/>
-    <circle cx="380" cy="60" r="1" opacity="0.2"/>
-    <circle cx="150" cy="150" r="1.2" opacity="0.25"/>
+  <!-- starfield: dense high, sparse toward the horizon -->
+  <g fill="#EFECF8">
+    <circle cx="60" cy="70" r="4.6" opacity="0.9"/>
+    <circle cx="145" cy="38" r="2" opacity="0.5"/>
+    <circle cx="232" cy="110" r="2.6" opacity="0.65"/>
+    <circle cx="318" cy="52" r="4" opacity="0.9"/>
+    <circle cx="392" cy="146" r="1.8" opacity="0.45"/>
+    <circle cx="470" cy="84" r="2.4" opacity="0.6"/>
+    <circle cx="556" cy="32" r="3.2" opacity="0.75"/>
+    <circle cx="628" cy="128" r="2" opacity="0.5"/>
+    <circle cx="712" cy="66" r="2.8" opacity="0.7"/>
+    <circle cx="800" cy="26" r="1.8" opacity="0.4"/>
+    <circle cx="876" cy="104" r="3.6" opacity="0.8"/>
+    <circle cx="952" cy="58" r="2.2" opacity="0.55"/>
+    <circle cx="1040" cy="132" r="2.6" opacity="0.6"/>
+    <circle cx="1118" cy="40" r="3" opacity="0.7"/>
+    <circle cx="1096" cy="150" r="1.8" opacity="0.45"/>
+    <circle cx="1560" cy="64" r="2.4" opacity="0.55"/>
+    <circle cx="28" cy="232" r="2.6" opacity="0.6"/>
+    <circle cx="108" cy="296" r="1.8" opacity="0.4"/>
+    <circle cx="196" cy="190" r="3.4" opacity="0.75"/>
+    <circle cx="286" cy="262" r="2" opacity="0.5"/>
+    <circle cx="372" cy="320" r="2.4" opacity="0.55"/>
+    <circle cx="452" cy="208" r="3" opacity="0.65"/>
+    <circle cx="540" cy="286" r="1.8" opacity="0.4"/>
+    <circle cx="624" cy="232" r="2.6" opacity="0.6"/>
+    <circle cx="708" cy="312" r="2" opacity="0.45"/>
+    <circle cx="792" cy="196" r="3.2" opacity="0.7"/>
+    <circle cx="872" cy="268" r="1.8" opacity="0.4"/>
+    <circle cx="958" cy="330" r="2.4" opacity="0.5"/>
+    <circle cx="1044" cy="222" r="2.8" opacity="0.6"/>
+    <circle cx="1126" cy="294" r="2" opacity="0.45"/>
+    <circle cx="1580" cy="300" r="2" opacity="0.45"/>
+    <circle cx="66" cy="392" r="2.2" opacity="0.45"/>
+    <circle cx="188" cy="446" r="1.8" opacity="0.35"/>
+    <circle cx="300" cy="368" r="2.6" opacity="0.5"/>
+    <circle cx="424" cy="430" r="2" opacity="0.35"/>
+    <circle cx="556" cy="378" r="2.4" opacity="0.45"/>
+    <circle cx="686" cy="442" r="1.8" opacity="0.3"/>
+    <circle cx="820" cy="386" r="2.2" opacity="0.4"/>
+    <circle cx="1050" cy="424" r="2" opacity="0.35"/>
+    <circle cx="140" cy="516" r="1.8" opacity="0.28"/>
+    <circle cx="382" cy="548" r="2" opacity="0.3"/>
+    <circle cx="642" cy="502" r="1.6" opacity="0.25"/>
+    <circle cx="908" cy="544" r="1.8" opacity="0.26"/>
+    <circle cx="1420" cy="520" r="2" opacity="0.3"/>
   </g>
 
-  <ellipse cx="150" cy="395" rx="90" ry="26" fill="#9691AF" opacity="0.3"/>
-  <ellipse cx="290" cy="410" rx="70" ry="20" fill="#7D7A9C" opacity="0.25"/>
+  <!-- horizon glow -->
+  <rect x="0" y="424" width="1600" height="196" fill="url(#backdrops-space__glow)"/>
+
+  <!-- crescent moon, left third -->
+  <circle cx="300" cy="170" r="92" fill="#8B84A8" opacity="0.16"/>
+  <path d="M300 108 A62 62 0 0 0 300 232 A44 62 0 0 1 300 108 Z" fill="url(#backdrops-space__moon)"/>
+
+  <!-- ringed gas giant, right third -->
+  <ellipse cx="1350" cy="278" rx="270" ry="58" fill="none" stroke="#A9A2C0" stroke-width="9" opacity="0.4"/>
+  <circle cx="1350" cy="250" r="185" fill="url(#backdrops-space__planet)"/>
+  <g clip-path="url(#backdrops-space__planet-clip)">
+    <ellipse cx="1350" cy="180" rx="200" ry="24" fill="#B3ACC6" opacity="0.25"/>
+    <ellipse cx="1350" cy="300" rx="200" ry="18" fill="#6A6486" opacity="0.32"/>
+    <ellipse cx="1350" cy="356" rx="200" ry="13" fill="#5D5878" opacity="0.28"/>
+    <circle cx="1470" cy="340" r="225" fill="#585273" opacity="0.5"/>
+    <circle cx="1524" cy="384" r="230" fill="#4E4969" opacity="0.32"/>
+    <ellipse cx="1288" cy="150" rx="100" ry="44" fill="#FFFFFF" opacity="0.16"/>
+  </g>
+  <path d="M1080 278 A270 58 0 0 0 1620 278" fill="none" stroke="#B3ACC6" stroke-width="9" opacity="0.5"/>
+
+  <!-- distant ridge meeting the horizon -->
+  <path d="M0 588 Q80 520 170 566 Q250 512 340 572 Q430 542 520 592 Q700 610 900 606 Q1020 598 1120 560 Q1200 528 1290 582 Q1360 522 1440 566 Q1520 536 1600 578 L1600 648 L0 648 Z"
+        fill="url(#backdrops-space__ridge)"/>
+
+  <!-- regolith ground plane, horizon at y = 620 -->
+  <rect x="0" y="620" width="1600" height="380" fill="url(#backdrops-space__ground)"/>
+  <rect x="0" y="620" width="1600" height="7" fill="#9C95B4" opacity="0.55"/>
+
+  <!-- dunes -->
+  <path d="M0 700 Q260 654 560 690 Q900 726 1240 682 Q1440 658 1600 690 L1600 1000 L0 1000 Z"
+        fill="url(#backdrops-space__dune-a)"/>
+  <path d="M0 812 Q300 760 640 800 Q980 840 1300 792 Q1460 768 1600 800 L1600 1000 L0 1000 Z"
+        fill="url(#backdrops-space__dune-b)"/>
+  <path d="M0 918 Q380 876 780 906 Q1180 936 1600 900 L1600 1000 L0 1000 Z"
+        fill="url(#backdrops-space__fore)"/>
+
+  <!-- craters: lit rim ellipse with a darker bowl offset upward -->
+  <g>
+    <ellipse cx="430" cy="668" rx="70" ry="17" fill="#948DAC" opacity="0.85"/>
+    <ellipse cx="430" cy="663" rx="52" ry="11" fill="#5D5878" opacity="0.7"/>
+    <ellipse cx="1160" cy="660" rx="62" ry="15" fill="#948DAC" opacity="0.8"/>
+    <ellipse cx="1160" cy="656" rx="46" ry="10" fill="#5D5878" opacity="0.68"/>
+    <ellipse cx="210" cy="752" rx="150" ry="40" fill="#948DAC" opacity="0.85"/>
+    <ellipse cx="210" cy="744" rx="118" ry="28" fill="#5D5878" opacity="0.8"/>
+    <ellipse cx="1290" cy="734" rx="130" ry="36" fill="#948DAC" opacity="0.8"/>
+    <ellipse cx="1290" cy="726" rx="100" ry="25" fill="#5D5878" opacity="0.75"/>
+    <ellipse cx="430" cy="880" rx="120" ry="34" fill="#8F88A8" opacity="0.7"/>
+    <ellipse cx="430" cy="872" rx="94" ry="24" fill="#55506E" opacity="0.7"/>
+    <ellipse cx="1470" cy="862" rx="140" ry="38" fill="#8F88A8" opacity="0.7"/>
+    <ellipse cx="1470" cy="854" rx="110" ry="26" fill="#55506E" opacity="0.72"/>
+    <ellipse cx="980" cy="972" rx="165" ry="38" fill="#847DA0" opacity="0.6"/>
+    <ellipse cx="980" cy="962" rx="128" ry="26" fill="#55506E" opacity="0.62"/>
+  </g>
+
+  <!-- boulders with contact shadows -->
+  <g>
+    <ellipse cx="330" cy="706" rx="58" ry="12" fill="#55506E" opacity="0.5"/>
+    <path d="M290 702 Q282 668 316 656 Q354 644 370 672 Q384 696 358 706 Q320 714 290 702 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="322" cy="670" rx="28" ry="11" fill="#A9A2C0" opacity="0.35"/>
+
+    <ellipse cx="1212" cy="694" rx="52" ry="11" fill="#55506E" opacity="0.48"/>
+    <path d="M1176 690 Q1168 660 1198 648 Q1232 638 1248 664 Q1260 686 1236 694 Q1202 702 1176 690 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="1204" cy="662" rx="25" ry="10" fill="#A9A2C0" opacity="0.32"/>
+
+    <ellipse cx="118" cy="850" rx="122" ry="24" fill="#55506E" opacity="0.55"/>
+    <path d="M22 846 Q8 770 78 740 Q154 708 190 764 Q218 812 178 844 Q104 868 22 846 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="98" cy="762" rx="64" ry="26" fill="#A9A2C0" opacity="0.35"/>
+
+    <ellipse cx="1492" cy="794" rx="140" ry="24" fill="#55506E" opacity="0.52"/>
+    <path d="M1382 788 Q1366 712 1444 682 Q1530 650 1574 710 Q1610 758 1566 788 Q1478 812 1382 788 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="1468" cy="708" rx="70" ry="27" fill="#A9A2C0" opacity="0.32"/>
+
+    <ellipse cx="246" cy="964" rx="184" ry="30" fill="#55506E" opacity="0.5"/>
+    <path d="M96 958 Q74 868 168 832 Q276 794 336 862 Q386 918 330 954 Q216 986 96 958 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="220" cy="866" rx="88" ry="32" fill="#A9A2C0" opacity="0.3"/>
+
+    <ellipse cx="1396" cy="982" rx="192" ry="32" fill="#55506E" opacity="0.5"/>
+    <path d="M1252 974 Q1228 882 1330 844 Q1446 806 1514 878 Q1568 936 1508 972 Q1382 1002 1252 974 Z"
+          fill="url(#backdrops-space__rock)"/>
+    <ellipse cx="1370" cy="880" rx="92" ry="34" fill="#A9A2C0" opacity="0.3"/>
+  </g>
 </svg>

@@ -1,28 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      data-name="Kitchen" data-family="kitchen" data-slot="top" data-layer="top"
      data-colors="">
   <defs>
-    <linearGradient id="backdrops-kitchen__wall" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#EFF3F1"/>
-      <stop offset="1" stop-color="#E5ECE8"/>
+    <linearGradient id="backdrops-kitchen__wall-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF2EE"/>
+      <stop offset="0.62" stop-color="#DCE5DE"/>
+      <stop offset="1" stop-color="#DCE5DE"/>
     </linearGradient>
-    <linearGradient id="backdrops-kitchen__floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E2E8E1"/>
-      <stop offset="1" stop-color="#D3DCD1"/>
+    <linearGradient id="backdrops-kitchen__splash-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6EDE7"/>
+      <stop offset="1" stop-color="#D6E0D8"/>
     </linearGradient>
-    <linearGradient id="backdrops-kitchen__counter" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#DCE4DD"/>
-      <stop offset="1" stop-color="#CFDACE"/>
+    <linearGradient id="backdrops-kitchen__floor-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9D2CA"/>
+      <stop offset="1" stop-color="#B2BEB4"/>
+    </linearGradient>
+    <linearGradient id="backdrops-kitchen__top-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D6DED6"/>
+      <stop offset="1" stop-color="#BFCAC2"/>
+    </linearGradient>
+    <linearGradient id="backdrops-kitchen__door-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BCCDC2"/>
+      <stop offset="1" stop-color="#A9BEB1"/>
+    </linearGradient>
+    <linearGradient id="backdrops-kitchen__upper-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8D6CC"/>
+      <stop offset="1" stop-color="#B6C7BB"/>
+    </linearGradient>
+    <linearGradient id="backdrops-kitchen__fridge-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D4DED7"/>
+      <stop offset="1" stop-color="#BDC9C0"/>
+    </linearGradient>
+    <linearGradient id="backdrops-kitchen__shelf-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B9C9BE"/>
+      <stop offset="1" stop-color="#A6B9AC"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="400" height="600" fill="url(#backdrops-kitchen__wall)"/>
+  <!-- full-bleed wall -->
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#backdrops-kitchen__wall-g)"/>
 
-  <rect x="0" y="400" width="400" height="200" fill="url(#backdrops-kitchen__floor)"/>
+  <!-- tiled backsplash band -->
+  <rect x="0" y="318" width="1600" height="4" fill="#CBD6CE" opacity="0.7"/>
+  <rect x="0" y="320" width="1600" height="150" fill="url(#backdrops-kitchen__splash-g)"/>
+  <path d="M0 395H1600M100 320V470M200 320V470M300 320V470M400 320V470M500 320V470M600 320V470M700 320V470M800 320V470M900 320V470M1000 320V470M1100 320V470M1200 320V470M1300 320V470M1400 320V470M1500 320V470"
+        fill="none" stroke="#C8D4CB" stroke-width="3" opacity="0.8"/>
 
-  <rect x="0" y="370" width="400" height="32" fill="url(#backdrops-kitchen__counter)" opacity="0.6"/>
-  <rect x="0" y="368" width="400" height="4" fill="#C9D5C7" opacity="0.4"/>
+  <!-- left wall cabinet -->
+  <rect x="240" y="120" width="320" height="180" rx="18" fill="url(#backdrops-kitchen__upper-g)"/>
+  <rect x="256" y="132" width="288" height="9" rx="4.5" fill="#FFFFFF" opacity="0.3"/>
+  <path d="M400 130V290" fill="none" stroke="#93A79A" stroke-width="3" opacity="0.75"/>
+  <rect x="290" y="270" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="450" y="270" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="240" y="292" width="320" height="9" rx="4.5" fill="#8FA396" opacity="0.35"/>
 
-  <rect x="30" y="120" width="110" height="70" rx="8" fill="#E6ECE4" opacity="0.35"/>
-  <rect x="260" y="120" width="110" height="70" rx="8" fill="#E6ECE4" opacity="0.3"/>
+  <!-- right open shelves -->
+  <rect x="1118" y="140" width="12" height="166" rx="6" fill="#A6B9AC"/>
+  <rect x="1548" y="140" width="12" height="166" rx="6" fill="#A6B9AC"/>
+  <rect x="1110" y="190" width="450" height="14" rx="7" fill="url(#backdrops-kitchen__shelf-g)"/>
+  <rect x="1110" y="290" width="450" height="14" rx="7" fill="url(#backdrops-kitchen__shelf-g)"/>
+  <rect x="1180" y="132" width="52" height="58" rx="15" fill="url(#backdrops-kitchen__door-g)"/>
+  <rect x="1174" y="123" width="64" height="13" rx="6.5" fill="#8FA396"/>
+  <rect x="1258" y="146" width="44" height="44" rx="13" fill="url(#backdrops-kitchen__door-g)"/>
+  <rect x="1252" y="138" width="56" height="11" rx="5.5" fill="#8FA396"/>
+  <path d="M1336 150h80a40 40 0 0 1-80 0z" fill="url(#backdrops-kitchen__door-g)"/>
+  <rect x="1424" y="240" width="48" height="50" rx="14" fill="url(#backdrops-kitchen__door-g)"/>
+  <rect x="1418" y="232" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <path d="M1490 252h62a31 31 0 0 1-62 0z" fill="url(#backdrops-kitchen__door-g)"/>
+
+  <!-- floor -->
+  <rect x="0" y="620" width="1600" height="380" fill="url(#backdrops-kitchen__floor-g)"/>
+  <path d="M0 646H1600M0 680H1600M0 724H1600M0 780H1600M0 850H1600M0 936H1600"
+        fill="none" stroke="#A3B2A7" stroke-width="3" opacity="0.5"/>
+  <path d="M800 620L-760 1000M800 620L-280 1000M800 620L200 1000M800 620L680 1000M800 620L920 1000M800 620L1400 1000M800 620L1880 1000M800 620L2360 1000"
+        fill="none" stroke="#A3B2A7" stroke-width="3" opacity="0.32"/>
+
+  <!-- skirting on the floor line -->
+  <rect x="0" y="602" width="1600" height="18" fill="#A5B6AA"/>
+
+  <!-- contact shadows -->
+  <rect x="0" y="620" width="1600" height="16" fill="#8FA396" opacity="0.22"/>
+  <rect x="36" y="620" width="180" height="24" rx="12" fill="#8FA396" opacity="0.32"/>
+  <rect x="228" y="620" width="324" height="22" rx="11" fill="#8FA396" opacity="0.3"/>
+  <rect x="1056" y="620" width="554" height="22" rx="11" fill="#8FA396" opacity="0.3"/>
+
+  <!-- fridge, far left, standing on the floor -->
+  <rect x="36" y="196" width="180" height="424" rx="26" fill="url(#backdrops-kitchen__fridge-g)"/>
+  <rect x="52" y="210" width="148" height="10" rx="5" fill="#FFFFFF" opacity="0.28"/>
+  <rect x="40" y="376" width="172" height="5" rx="2.5" fill="#94A79B" opacity="0.65"/>
+  <rect x="190" y="300" width="13" height="112" rx="6.5" fill="#8FA396"/>
+
+  <!-- tap, behind the left worktop -->
+  <path d="M290 468V430q0-22 22-22h66v24" fill="none" stroke="#9DB1A3" stroke-width="10"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- left worktop run -->
+  <rect x="216" y="466" width="348" height="36" rx="8" fill="url(#backdrops-kitchen__top-g)"/>
+  <rect x="228" y="470" width="324" height="8" rx="4" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="216" y="492" width="348" height="10" rx="5" fill="#A9BEB1" opacity="0.55"/>
+  <rect x="224" y="500" width="332" height="102" rx="10" fill="url(#backdrops-kitchen__door-g)"/>
+  <path d="M340 508V596M448 508V596" fill="none" stroke="#93A79A" stroke-width="3" opacity="0.75"/>
+  <rect x="252" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="364" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="472" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="238" y="598" width="304" height="22" fill="#94A79B"/>
+
+  <!-- sink basin set into the left worktop -->
+  <rect x="300" y="470" width="170" height="24" rx="10" fill="#AFC0B4"/>
+  <rect x="310" y="474" width="150" height="15" rx="7" fill="#9DB1A3"/>
+  <circle cx="385" cy="481" r="5" fill="#8FA396"/>
+
+  <!-- right worktop run -->
+  <rect x="1044" y="466" width="566" height="36" rx="8" fill="url(#backdrops-kitchen__top-g)"/>
+  <rect x="1056" y="470" width="544" height="8" rx="4" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="1044" y="492" width="566" height="10" rx="5" fill="#A9BEB1" opacity="0.55"/>
+  <rect x="1052" y="500" width="558" height="102" rx="10" fill="url(#backdrops-kitchen__door-g)"/>
+  <path d="M1160 508V596M1400 508V596M1500 508V596" fill="none" stroke="#93A79A" stroke-width="3" opacity="0.75"/>
+  <rect x="1076" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="1420" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="1525" y="516" width="60" height="11" rx="5.5" fill="#8FA396"/>
+  <rect x="1066" y="598" width="544" height="22" fill="#94A79B"/>
+
+  <!-- oven under the hob -->
+  <rect x="1180" y="508" width="200" height="88" rx="12" fill="#9DB1A3"/>
+  <rect x="1194" y="530" width="172" height="54" rx="9" fill="#8FA396"/>
+  <rect x="1196" y="514" width="168" height="11" rx="5.5" fill="#C4D3C8"/>
+
+  <!-- hob on the right worktop -->
+  <rect x="1196" y="462" width="172" height="26" rx="11" fill="#AFC0B4"/>
+  <circle cx="1222" cy="475" r="9" fill="#8FA396"/>
+  <circle cx="1262" cy="475" r="9" fill="#8FA396"/>
+  <circle cx="1302" cy="475" r="9" fill="#8FA396"/>
+  <circle cx="1342" cy="475" r="9" fill="#8FA396"/>
 </svg>

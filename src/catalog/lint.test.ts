@@ -14,6 +14,17 @@ const good = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
   </g>
 </svg>`
 
+const BACKDROP_FILE = '/src/assets/backdrops/park.svg'
+const BACKDROP_ID = 'backdrops-park'
+
+/** Backdrops are the one exception to the 400x600 canvas: they fill the stage. */
+const goodBackdrop = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
+  data-name="Park" data-family="park" data-slot="top"
+  data-layer="top" data-colors="">
+  <defs><linearGradient id="${BACKDROP_ID}__sky"><stop offset="0" stop-color="#fff"/></linearGradient></defs>
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#${BACKDROP_ID}__sky)"/>
+</svg>`
+
 const rules = (file: string, raw: string) => lintAsset(file, raw).map((i) => i.rule)
 
 describe('lintAsset', () => {
@@ -23,6 +34,27 @@ describe('lintAsset', () => {
 
   it('rejects a wrong viewBox', () => {
     expect(rules(FILE, good.replace('0 0 400 600', '0 0 512 512'))).toContain('structure')
+  })
+
+  it('passes a backdrop authored at the stage size', () => {
+    expect(lintAsset(BACKDROP_FILE, goodBackdrop)).toEqual([])
+  })
+
+  it('rejects a backdrop still authored at the 400x600 asset size', () => {
+    const issues = lintAsset(BACKDROP_FILE, goodBackdrop.replace('0 0 1600 1000', '0 0 400 600'))
+    expect(issues.map((i) => i.rule)).toContain('structure')
+    expect(issues[0].message).toContain('0 0 1600 1000')
+  })
+
+  it('rejects a non-backdrop authored at the stage size', () => {
+    const issues = lintAsset(FILE, good.replace('0 0 400 600', '0 0 1600 1000'))
+    expect(issues.map((i) => i.rule)).toContain('structure')
+    expect(issues[0].message).toContain('0 0 400 600')
+  })
+
+  it('applies every other rule to backdrops too', () => {
+    const bad = goodBackdrop.replace(`${BACKDROP_ID}__sky`, 'sky')
+    expect(rules(BACKDROP_FILE, bad)).toContain('id-prefix')
   })
 
   it('rejects missing required attributes', () => {

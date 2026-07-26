@@ -61,14 +61,22 @@ function DrawerEntry({ id, label, getStageRect, onDrop, children }: DrawerEntryP
   )
 }
 
-/** A raw asset drawn at thumbnail size — props and backdrops share this. */
-function AssetThumb({ asset, className }: { asset: AssetRecord; className: string }) {
+/**
+ * A raw asset drawn at thumbnail size — props and backdrops share this. Backdrops are
+ * authored at the stage's size rather than the asset canvas, so the viewBox is passed in.
+ */
+function AssetThumb(
+  { asset, className, viewBox }: { asset: AssetRecord; className: string; viewBox: string },
+) {
   return (
-    <svg viewBox={`0 0 ${ART_W} ${ART_H}`} className={className} aria-hidden="true">
+    <svg viewBox={viewBox} className={className} aria-hidden="true">
       <g dangerouslySetInnerHTML={{ __html: asset.markup }} />
     </svg>
   )
 }
+
+const ART_VIEW_BOX = `0 0 ${ART_W} ${ART_H}`
+const BACKDROP_VIEW_BOX = `0 0 ${STAGE_W} ${STAGE_H}`
 
 export function StageDrawer({
   catalog, characters, backdropId, getStageRect, onSetBackdrop, onAdd,
@@ -137,7 +145,7 @@ export function StageDrawer({
                 key={p.id} id={p.id} label={p.name} getStageRect={getStageRect}
                 onDrop={(x, y) => onAdd('prop', p.id, x, y)}
               >
-                <AssetThumb asset={p} className="h-16 w-full" />
+                <AssetThumb asset={p} className="h-16 w-full" viewBox={ART_VIEW_BOX} />
               </DrawerEntry>
             ))}
           </div>
@@ -166,7 +174,7 @@ export function StageDrawer({
                 className={`shrink-0 overflow-hidden rounded-xl bg-white ${backdropId === b.id ? 'ring-2 ring-peri' : ''}`}
                 onClick={() => onSetBackdrop(b.id)}
               >
-                <AssetThumb asset={b} className="h-10 w-16" />
+                <AssetThumb asset={b} className="h-10 w-16" viewBox={BACKDROP_VIEW_BOX} />
               </button>
             ))}
           </div>

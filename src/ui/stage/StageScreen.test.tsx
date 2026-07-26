@@ -3,6 +3,7 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { buildCatalog } from '../../catalog/build'
 import { useAppStore } from '../../state/appStore'
 import { STAGE_H, STAGE_W } from '../../state/sceneOps'
+import { ART_H, ART_W } from './StageItem'
 import { StageScreen } from './StageScreen'
 
 const svg = (name: string) => `<svg xmlns="http://www.w3.org/2000/svg"
@@ -10,9 +11,20 @@ const svg = (name: string) => `<svg xmlns="http://www.w3.org/2000/svg"
   data-slot="top" data-layer="top" data-colors="">
   <path d="M0 0h10v10z"/></svg>`
 
+/**
+ * A prop whose art is a single column standing on the ground line: 180 units wide out of the
+ * 400-unit canvas, so the art is much narrower than the canvas it is authored in.
+ */
+const columnSvg = (name: string) => `<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 400 600" data-name="${name}" data-family="${name}"
+  data-slot="top" data-layer="top" data-colors="">
+  <rect x="110" y="330" width="180" height="240" fill="#7E90DC"/></svg>`
+
 const catalog = buildCatalog({
   '/src/assets/bodies/adult/female/base.svg': svg('Body'),
   '/src/assets/props/beach-ball.svg': svg('Beach ball'),
+  '/src/assets/props/column-a.svg': columnSvg('Column A'),
+  '/src/assets/props/column-b.svg': columnSvg('Column B'),
   '/src/assets/backdrops/park.svg': svg('Park'),
 })
 
@@ -51,6 +63,53 @@ function addProp(): string {
 const select = (id: string) => {
   firePointer(screen.getByTestId(`item-${id}`), 'pointerdown', 300, 200)
 }
+
+/** Adds one prop of the given asset at (x, y) and returns its scene item id. */
+function addPropAt(refId: string, x: number, y: number): string {
+  useAppStore.getState().addToScene('prop', refId, x, y)
+  return scene().items[scene().items.length - 1].id
+}
+
+const TRANSLATE = /translate\(\s*(-?[\d.]+)[\s,]+(-?[\d.]+)/
+
+/** Sum of the translate() components of an element and every ancestor up to the stage. */
+function offsetOf(el: Element): { x: number; y: number } {
+  let x = 0
+  let y = 0
+  for (let node: Element | null = el; node; node = node.parentElement) {
+    if (node.getAttribute('data-testid') === 'stage-svg') break
+    const m = TRANSLATE.exec(node.getAttribute('transform') ?? '')
+    if (m) { x += Number(m[1]); y += Number(m[2]) }
+  }
+  return { x, y }
+}
+
+/**
+ * jsdom does no layout, so this stands in for SVG's default `pointer-events: visiblePainted`
+ * over the axis-aligned, unscaled shapes these fixtures use: every `<rect>` with a fill that
+ * is not `none` is a hit region — `transparent` very much included, which is exactly why a
+ * full-bleed transparent rect stole its neighbours' clicks — and the last one in document
+ * order (the top of the paint stack) wins. Returns the element a browser would deliver the
+ * pointerdown to.
+ */
+function elementAtStagePoint(x: number, y: number): Element | null {
+  let hit: Element | null = null
+  for (const el of Array.from(document.querySelectorAll('[data-item-id] rect'))) {
+    const fill = el.getAttribute('fill')
+    if (!fill || fill === 'none') continue
+    if ((el.getAttribute('pointer-events') ?? '') === 'none') continue
+    const o = offsetOf(el)
+    const left = o.x + Number(el.getAttribute('x'))
+    const top = o.y + Number(el.getAttribute('y'))
+    const right = left + Number(el.getAttribute('width'))
+    const bottom = top + Number(el.getAttribute('height'))
+    if (x >= left && x <= right && y >= top && y <= bottom) hit = el
+  }
+  return hit
+}
+
+/** The test rect maps stage units to client px at 0.5, with the stage origin at (100, 50). */
+const toClient = (x: number, y: number) => ({ x: 100 + x * 0.5, y: 50 + y * 0.5 })
 
 beforeEach(() => {
   localStorage.clear()
@@ -176,6 +235,62 @@ describe('StageScreen', () => {
     select(id)
     firePointer(screen.getByRole('button', { name: /flip/i }), 'pointerdown', 300, 120)
     expect(screen.getByRole('button', { name: /flip/i })).toBeInTheDocument()
+  })
+
+  it('selects the item whose art was actually clicked, not the one on top', () => {
+    // Two columns 160 units apart, so their art overlaps only at the seam. A click squarely
+    // on the LEFT column's art used to land on the RIGHT column's full-bleed transparent hit
+    // rect — which spans the whole 400x600 canvas — and selected, raised and removed the
+    // wrong item.
+    const left = addPropAt('props-column-a', 700, 800)
+    const right = addPropAt('props-column-b', 860, 800)
+    render(<StageScreen catalog={catalog} />)
+
+    const target = elementAtStagePoint(700, 700)
+    expect(target).not.toBeNull()
+    expect(target!.closest('[data-item-id]')!.getAttribute('data-item-id')).toBe(left)
+
+    const at = toClient(700, 700)
+    firePointer(target!, 'pointerdown', at.x, at.y)
+
+    expect(screen.getByRole('slider', { name: /size of column a/i })).toBeInTheDocument()
+    const items = scene().items
+    const a = items.find((i) => i.id === left)!
+    const b = items.find((i) => i.id === right)!
+    expect(a.z).toBeGreaterThan(b.z)
+  })
+
+  it('leaves the art itself as the hit area — no full-canvas hit rect', () => {
+    const id = addPropAt('props-column-a', 700, 800)
+    render(<StageScreen catalog={catalog} />)
+    const group = screen.getByTestId(`item-${id}`)
+    const fullBleed = Array.from(group.querySelectorAll('rect')).filter((r) =>
+      Number(r.getAttribute('width')) >= ART_W && Number(r.getAttribute('height')) >= ART_H)
+    expect(fullBleed).toEqual([])
+  })
+
+  it('renders the selected item controls outside the scaled stage svg', () => {
+    // Inside the svg the whole toolbar shrinks with the stage: 17px tall on a tablet. The
+    // controls have to live in screen space so they keep a usable size at any stage scale.
+    const id = addProp()
+    render(<StageScreen catalog={catalog} />)
+    select(id)
+    const stage = screen.getByTestId('stage-svg')
+    const toolbar = screen.getByTestId('stage-toolbar')
+    expect(stage.contains(toolbar)).toBe(false)
+    expect(stage.querySelector('foreignObject')).toBeNull()
+  })
+
+  it('gives every stage control a 44px touch target', () => {
+    const id = addProp()
+    render(<StageScreen catalog={catalog} />)
+    select(id)
+    const toolbar = screen.getByTestId('stage-toolbar')
+    const controls = Array.from(toolbar.querySelectorAll('button, input'))
+    expect(controls.length).toBeGreaterThanOrEqual(4)
+    for (const c of controls) {
+      expect(c).toHaveStyle({ minWidth: '44px', minHeight: '44px' })
+    }
   })
 
   it('adds a prop at the stage centre when its drawer entry is tapped', () => {

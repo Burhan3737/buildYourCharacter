@@ -1,31 +1,190 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      data-name="Park" data-family="park" data-slot="top" data-layer="top"
      data-colors="">
   <defs>
     <linearGradient id="backdrops-park__sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E9EEF5"/>
-      <stop offset="1" stop-color="#DEE6EF"/>
+      <stop offset="0" stop-color="#DCE7F4"/>
+      <stop offset="1" stop-color="#C9DAEF"/>
     </linearGradient>
-    <linearGradient id="backdrops-park__grass" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#DCE8DE"/>
-      <stop offset="1" stop-color="#CBDECE"/>
+    <linearGradient id="backdrops-park__cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F8FC"/>
+      <stop offset="1" stop-color="#E2EBF6"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__hills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C3D6CD"/>
+      <stop offset="1" stop-color="#AFC8BC"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__treeline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9C6B4"/>
+      <stop offset="1" stop-color="#93B7A2"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFD3B2"/>
+      <stop offset="1" stop-color="#A8C29B"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__path" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D3E1C6"/>
+      <stop offset="1" stop-color="#C2D5B5"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__canopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A6C3AE"/>
+      <stop offset="1" stop-color="#87A98F"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__canopy-far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#AFCAB6"/>
+      <stop offset="1" stop-color="#92B49B"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__trunk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A2907F"/>
+      <stop offset="1" stop-color="#847263"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__shrub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9CBCA4"/>
+      <stop offset="1" stop-color="#7FA07F"/>
+    </linearGradient>
+    <linearGradient id="backdrops-park__bench" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B4A695"/>
+      <stop offset="1" stop-color="#8E7F6E"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="400" height="600" fill="url(#backdrops-park__sky)"/>
+  <!-- sky, full bleed -->
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#backdrops-park__sky)"/>
 
-  <path d="M0 402 Q100 385 200 397 Q300 409 400 390 L400 600 L0 600 Z"
-        fill="url(#backdrops-park__grass)"/>
-
-  <ellipse cx="80" cy="404" rx="120" ry="42" fill="#D2E3D6" opacity="0.45"/>
-  <ellipse cx="330" cy="410" rx="95" ry="34" fill="#C7DBCB" opacity="0.35"/>
-
-  <g opacity="0.4">
-    <ellipse cx="255" cy="392" rx="26" ry="24" fill="#C3DAC8"/>
-    <ellipse cx="278" cy="398" rx="20" ry="18" fill="#C3DAC8"/>
-    <rect x="264" y="404" width="6" height="14" rx="3" fill="#C3DAC8"/>
+  <!-- clouds, high in the sky -->
+  <g fill="url(#backdrops-park__cloud)">
+    <ellipse cx="250" cy="150" rx="150" ry="52"/>
+    <ellipse cx="168" cy="168" rx="96" ry="40"/>
+    <ellipse cx="330" cy="122" rx="98" ry="46"/>
+    <ellipse cx="770" cy="106" rx="176" ry="48"/>
+    <ellipse cx="676" cy="122" rx="104" ry="38"/>
+    <ellipse cx="862" cy="126" rx="112" ry="36"/>
+    <ellipse cx="1316" cy="196" rx="164" ry="50"/>
+    <ellipse cx="1224" cy="212" rx="100" ry="38"/>
+    <ellipse cx="1420" cy="176" rx="104" ry="42"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.3">
+    <ellipse cx="252" cy="128" rx="112" ry="26"/>
+    <ellipse cx="772" cy="88" rx="128" ry="22"/>
+    <ellipse cx="1316" cy="176" rx="118" ry="22"/>
   </g>
 
-  <ellipse cx="140" cy="60" rx="46" ry="16" fill="#F3F6FA" opacity="0.5"/>
-  <ellipse cx="300" cy="95" rx="34" ry="12" fill="#F3F6FA" opacity="0.4"/>
+  <!-- distant rolling hills, just behind the treeline -->
+  <path d="M0 592 C 210 528 400 548 580 582 C 780 620 920 574 1120 552 C 1310 532 1450 566 1600 540 L1600 640 L0 640 Z"
+        fill="url(#backdrops-park__hills)"/>
+  <path d="M0 592 C 210 528 400 548 580 582 C 780 620 920 574 1120 552 C 1310 532 1450 566 1600 540 L1600 566 C 1450 592 1310 558 1120 578 C 920 600 780 646 580 608 C 400 574 210 554 0 618 Z"
+        fill="#FFFFFF" opacity="0.24"/>
+
+  <!-- treeline / hedge band sitting on the horizon -->
+  <g fill="url(#backdrops-park__treeline)">
+    <ellipse cx="60" cy="556" rx="118" ry="72"/>
+    <ellipse cx="196" cy="572" rx="102" ry="60"/>
+    <ellipse cx="318" cy="552" rx="112" ry="74"/>
+    <ellipse cx="448" cy="576" rx="98" ry="56"/>
+    <ellipse cx="574" cy="586" rx="104" ry="44"/>
+    <ellipse cx="700" cy="592" rx="96" ry="38"/>
+    <ellipse cx="822" cy="588" rx="102" ry="42"/>
+    <ellipse cx="948" cy="594" rx="94" ry="36"/>
+    <ellipse cx="1070" cy="584" rx="102" ry="44"/>
+    <ellipse cx="1196" cy="566" rx="112" ry="62"/>
+    <ellipse cx="1330" cy="576" rx="100" ry="54"/>
+    <ellipse cx="1462" cy="550" rx="122" ry="76"/>
+    <ellipse cx="1580" cy="572" rx="102" ry="58"/>
+    <rect x="0" y="560" width="1600" height="62"/>
+  </g>
+
+  <!-- ground plane: horizon at y = 620 -->
+  <rect x="0" y="620" width="1600" height="380" fill="url(#backdrops-park__ground)"/>
+  <path d="M0 620 L1600 620 L1600 690 C 1330 664 1060 700 800 692 C 540 684 260 706 0 682 Z"
+        fill="#7FA07F" opacity="0.22"/>
+
+  <!-- soft mown sweep across the lawn -->
+  <path d="M-20 792 C 260 742 520 822 820 802 C 1120 782 1380 736 1620 774 L1620 894 C 1380 862 1120 912 820 894 C 520 876 260 944 -20 896 Z"
+        fill="url(#backdrops-park__path)"/>
+
+  <!-- large tree, left third -->
+  <ellipse cx="242" cy="668" rx="178" ry="32" fill="#7FA07F" opacity="0.34"/>
+  <path d="M198 666 C 212 566 220 476 220 384 L262 384 C 262 476 270 566 286 666 Z"
+        fill="url(#backdrops-park__trunk)"/>
+  <path d="M170 668 C 190 656 206 646 210 620 L228 620 C 226 648 232 658 244 668 Z"
+        fill="url(#backdrops-park__trunk)"/>
+  <g fill="url(#backdrops-park__canopy)">
+    <ellipse cx="230" cy="300" rx="178" ry="142"/>
+    <ellipse cx="106" cy="342" rx="106" ry="92"/>
+    <ellipse cx="352" cy="348" rx="112" ry="94"/>
+    <ellipse cx="196" cy="200" rx="116" ry="88"/>
+    <ellipse cx="316" cy="238" rx="94" ry="78"/>
+    <ellipse cx="150" cy="424" rx="78" ry="58"/>
+    <ellipse cx="300" cy="428" rx="82" ry="56"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.26">
+    <ellipse cx="196" cy="188" rx="98" ry="42"/>
+    <ellipse cx="104" cy="306" rx="66" ry="30"/>
+  </g>
+  <ellipse cx="316" cy="392" rx="118" ry="70" fill="#7FA07F" opacity="0.2"/>
+
+  <!-- smaller tree, right third -->
+  <ellipse cx="1404" cy="664" rx="132" ry="26" fill="#7FA07F" opacity="0.32"/>
+  <path d="M1382 662 C 1390 590 1392 520 1392 452 L1420 452 C 1420 520 1424 590 1432 662 Z"
+        fill="url(#backdrops-park__trunk)"/>
+  <g fill="url(#backdrops-park__canopy-far)">
+    <ellipse cx="1404" cy="382" rx="134" ry="108"/>
+    <ellipse cx="1306" cy="418" rx="88" ry="74"/>
+    <ellipse cx="1500" cy="414" rx="90" ry="74"/>
+    <ellipse cx="1378" cy="304" rx="90" ry="70"/>
+    <ellipse cx="1462" cy="478" rx="66" ry="46"/>
+    <ellipse cx="1338" cy="480" rx="62" ry="44"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.24">
+    <ellipse cx="1378" cy="292" rx="74" ry="32"/>
+  </g>
+  <ellipse cx="1470" cy="446" rx="92" ry="54" fill="#7FA07F" opacity="0.18"/>
+
+  <!-- park bench, right third, feet on the ground -->
+  <ellipse cx="1246" cy="806" rx="126" ry="18" fill="#7FA07F" opacity="0.3"/>
+  <g fill="url(#backdrops-park__bench)">
+    <rect x="1156" y="682" width="16" height="74" rx="8"/>
+    <rect x="1322" y="682" width="16" height="74" rx="8"/>
+    <rect x="1152" y="690" width="192" height="18" rx="9"/>
+    <rect x="1152" y="718" width="192" height="18" rx="9"/>
+    <rect x="1144" y="744" width="208" height="20" rx="10"/>
+    <rect x="1164" y="760" width="16" height="46" rx="8"/>
+    <rect x="1316" y="760" width="16" height="46" rx="8"/>
+  </g>
+  <rect x="1152" y="744" width="200" height="7" rx="3" fill="#FFFFFF" opacity="0.28"/>
+
+  <!-- shrub clump, left edge of the ground -->
+  <g fill="url(#backdrops-park__shrub)">
+    <ellipse cx="86" cy="742" rx="112" ry="66"/>
+    <ellipse cx="188" cy="768" rx="76" ry="48"/>
+    <ellipse cx="24" cy="792" rx="86" ry="54"/>
+  </g>
+  <g fill="#E9DCAE">
+    <circle cx="60" cy="700" r="9"/>
+    <circle cx="118" cy="712" r="8"/>
+    <circle cx="176" cy="736" r="8"/>
+  </g>
+  <g fill="#E6C2B8">
+    <circle cx="26" cy="722" r="9"/>
+    <circle cx="144" cy="694" r="8"/>
+  </g>
+
+  <!-- shrub clump, right edge of the ground -->
+  <g fill="url(#backdrops-park__shrub)">
+    <ellipse cx="1544" cy="790" rx="118" ry="70"/>
+    <ellipse cx="1436" cy="820" rx="80" ry="50"/>
+    <ellipse cx="1596" cy="862" rx="92" ry="58"/>
+  </g>
+  <g fill="#E9DCAE">
+    <circle cx="1500" cy="754" r="9"/>
+    <circle cx="1566" cy="740" r="8"/>
+  </g>
+  <g fill="#E6C2B8">
+    <circle cx="1440" cy="784" r="9"/>
+    <circle cx="1592" cy="768" r="8"/>
+  </g>
+
+  <!-- foreground lawn shadow, keeps the bottom edge grounded -->
+  <path d="M0 946 C 300 916 560 962 860 950 C 1140 938 1380 968 1600 940 L1600 1000 L0 1000 Z"
+        fill="#7FA07F" opacity="0.26"/>
 </svg>

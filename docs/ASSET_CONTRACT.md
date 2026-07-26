@@ -6,7 +6,8 @@ the build.
 
 ## Canvas
 
-- `viewBox="0 0 400 600"` exactly. Never any other value.
+- `viewBox="0 0 400 600"` exactly. Never any other value — **except backdrops**, which are
+  the stage itself and are authored at `viewBox="0 0 1600 1000"`. See "Backdrops" below.
 - Centreline is `x = 200`. Ground is `y = 570`. Figures stand on the ground line — they are
   bottom-aligned, not centred, so a character switching life stage grows rather than jumps.
 - Draw against the body spec for your bundle: `specs/bodies/<stage>-<bodyType>.json`.
@@ -28,6 +29,39 @@ the build.
 `data-family` is what makes a character age. If you author `hoodie` for `teen-female`, the
 `adult-female` agent authoring their own hoodie must use the same family string. Families are
 listed per category in this document so all twelve bundles agree.
+
+## Backdrops — the one canvas exception
+
+Files under `src/assets/backdrops/` are **not** worn by anybody: they are the stage. The stage
+is one `<svg viewBox="0 0 1600 1000">`, and the backdrop is injected into it **1:1** — no
+scaling, no `preserveAspectRatio` trickery. So a backdrop is authored at the stage's own size:
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
+     data-name="Park" data-family="park" data-slot="top" data-layer="top"
+     data-colors="">
+```
+
+- **`viewBox="0 0 1600 1000"` exactly, and only for backdrops.** Everything else stays
+  `0 0 400 600`. `lintAsset` picks the rule from the file's path, so authoring a backdrop at
+  the asset size (or an asset at the stage size) fails the build.
+- **Horizon / ground line at `y ≈ 620`.** The floor, sea-edge, skirting board or road kerb sits
+  there, and the ground plane occupies everything below it. Characters land with their feet on
+  the stage floor, so a horizon anywhere else leaves them hovering in sky or sunk into a wall.
+- Fill the full width to the bleed. There is no letterboxing and no cropping: `x = 0` and
+  `x = 1600` are both on screen, on every viewport.
+- **Value contrast, not colour contrast.** A backdrop has to read as a place — sky above a
+  clearly separate ground, with a few large legible forms — while staying quiet enough that
+  the characters in front of it stay the subject. Keep it desaturated and mid-to-light in
+  value; save the saturated house palette for the figures. A backdrop that is one near-white
+  rectangle with two ghost shapes on it is a bug, not restraint.
+- Keep the biggest, busiest shapes away from the centre band (`x` 500–1100, `y` 300–700) where
+  characters usually stand.
+- `data-slot="top"` and `data-layer="top"` are inert for backdrops — the catalog routes the
+  file by its directory — but they are still required attributes, so keep them.
+- Every other rule in this document still applies: id prefixing (`backdrops-park__…`), no
+  `<filter>`, no `<image>`, no external references, no `<text>`, `var()` always with a
+  fallback.
 
 ## Slots and layers
 
@@ -113,7 +147,8 @@ each other's characters — this is the most common and most confusing failure i
 - `<image>`, external `href`s, web fonts, `<script>`, raster data URIs
 - `<filter>` elements and `filter=` attributes
 - `<text>` — all lettering must be drawn as paths
-- Any `viewBox` other than `0 0 400 600`
+- Any `viewBox` other than `0 0 400 600` — or, under `src/assets/backdrops/`, any `viewBox`
+  other than `0 0 1600 1000`
 - `var(--x)` without a fallback
 
 ## House style — Soft Papercut

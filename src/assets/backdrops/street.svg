@@ -1,28 +1,221 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      data-name="Street" data-family="street" data-slot="top" data-layer="top"
      data-colors="">
   <defs>
     <linearGradient id="backdrops-street__sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#EAEDF3"/>
-      <stop offset="1" stop-color="#DFE4ED"/>
+      <stop offset="0" stop-color="#E9ECF4"/>
+      <stop offset="1" stop-color="#D3DAE8"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9D0DE"/>
+      <stop offset="1" stop-color="#BAC3D4"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__bldgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A6B0C5"/>
+      <stop offset="1" stop-color="#96A1BA"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__bldgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B6BFD0"/>
+      <stop offset="1" stop-color="#A6B0C5"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__bldgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C0C8D7"/>
+      <stop offset="1" stop-color="#AEB8CA"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__brick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9B8B3"/>
+      <stop offset="1" stop-color="#B9A7A2"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__shop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8D0DE"/>
+      <stop offset="1" stop-color="#AFB9CC"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__awningA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9ADA6"/>
+      <stop offset="1" stop-color="#B4948D"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__awningB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9BDB6"/>
+      <stop offset="1" stop-color="#91A9A1"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B2C0B6"/>
+      <stop offset="1" stop-color="#97A99E"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__pave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C6CAD2"/>
+      <stop offset="1" stop-color="#B2B7C1"/>
+    </linearGradient>
+    <linearGradient id="backdrops-street__kerb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B0B6C3"/>
+      <stop offset="1" stop-color="#8C93A2"/>
     </linearGradient>
     <linearGradient id="backdrops-street__road" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#DBDCE1"/>
-      <stop offset="1" stop-color="#CDCFD5"/>
+      <stop offset="0" stop-color="#A9AFBC"/>
+      <stop offset="1" stop-color="#9AA1B0"/>
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="400" height="600" fill="url(#backdrops-street__sky)"/>
+  <!-- sky, full bleed -->
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#backdrops-street__sky)"/>
+  <ellipse cx="1210" cy="150" rx="300" ry="200" fill="#F1F3F9" opacity="0.55"/>
+  <rect x="150" y="128" width="330" height="70" rx="35" fill="#F1F3F9" opacity="0.75"/>
+  <rect x="255" y="96" width="190" height="62" rx="31" fill="#F1F3F9" opacity="0.75"/>
 
-  <g opacity="0.4">
-    <rect x="15" y="300" width="70" height="110" rx="6" fill="#CBCFDB"/>
-    <rect x="95" y="330" width="55" height="80" rx="6" fill="#D2D6E0"/>
-    <rect x="230" y="310" width="65" height="100" rx="6" fill="#CBCFDB"/>
-    <rect x="305" y="335" width="80" height="75" rx="6" fill="#D2D6E0"/>
+  <!-- distant skyline -->
+  <g>
+    <rect x="0" y="440" width="250" height="180" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="225" y="398" width="210" height="222" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="410" y="458" width="280" height="162" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="665" y="418" width="260" height="202" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="900" y="452" width="300" height="168" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="1175" y="406" width="250" height="214" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="1400" y="446" width="200" height="174" rx="12" fill="url(#backdrops-street__far)"/>
+    <rect x="0" y="392" width="1600" height="228" fill="#DCE1EC" opacity="0.32"/>
   </g>
 
-  <path d="M0 402 L400 402 L400 600 L0 600 Z" fill="url(#backdrops-street__road)"/>
+  <!-- left third: tall brick corner block -->
+  <g>
+    <rect x="0" y="170" width="200" height="450" rx="14" fill="url(#backdrops-street__brick)"/>
+    <rect x="0" y="160" width="212" height="20" rx="10" fill="#B2A09B"/>
+    <rect x="10" y="182" width="180" height="12" rx="6" fill="#FFFFFF" opacity="0.26"/>
+    <rect x="22" y="206" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="80" y="206" width="42" height="52" rx="10" fill="#E8E2CE"/>
+    <rect x="138" y="206" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="22" y="288" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="80" y="288" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="138" y="288" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="22" y="370" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="80" y="370" width="42" height="52" rx="10" fill="#E8E2CE"/>
+    <rect x="138" y="370" width="42" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="30" y="450" width="140" height="34" rx="17" fill="#DEE3EC"/>
+    <path d="M8 498 H192 V530 a23 23 0 0 1 -46 0 a23 23 0 0 1 -46 0 a23 23 0 0 1 -46 0 a23 23 0 0 1 -46 0 Z" fill="url(#backdrops-street__awningA)"/>
+    <rect x="14" y="536" width="172" height="84" rx="14" fill="url(#backdrops-street__shop)"/>
+    <rect x="140" y="548" width="42" height="72" rx="12" fill="#8C93A2"/>
+  </g>
 
-  <rect x="0" y="396" width="400" height="7" fill="#E4E6EC" opacity="0.5"/>
-  <rect x="0" y="440" width="400" height="4" fill="#C4C7CF" opacity="0.3"/>
+  <!-- left third: mid block -->
+  <g>
+    <rect x="185" y="255" width="170" height="365" rx="14" fill="url(#backdrops-street__bldgA)"/>
+    <rect x="177" y="246" width="186" height="18" rx="9" fill="#8E99AF"/>
+    <rect x="206" y="292" width="46" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="272" y="292" width="46" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="206" y="372" width="46" height="54" rx="10" fill="#E8E2CE"/>
+    <rect x="272" y="372" width="46" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="248" y="522" width="56" height="98" rx="14" fill="#8C93A2"/>
+  </g>
+
+  <!-- left third: lower shop block -->
+  <g>
+    <rect x="340" y="330" width="180" height="290" rx="14" fill="url(#backdrops-street__bldgB)"/>
+    <rect x="332" y="321" width="196" height="18" rx="9" fill="#A0AABD"/>
+    <rect x="364" y="364" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="438" y="364" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="364" y="440" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="438" y="440" width="52" height="52" rx="10" fill="#E8E2CE"/>
+    <path d="M346 512 H514 V540 a21 21 0 0 1 -42 0 a21 21 0 0 1 -42 0 a21 21 0 0 1 -42 0 a21 21 0 0 1 -42 0 Z" fill="url(#backdrops-street__awningB)"/>
+    <rect x="352" y="546" width="156" height="74" rx="14" fill="url(#backdrops-street__shop)"/>
+    <rect x="462" y="556" width="40" height="64" rx="12" fill="#8C93A2"/>
+  </g>
+
+  <!-- centre: low plain facade, left half -->
+  <g>
+    <rect x="505" y="410" width="300" height="210" rx="14" fill="url(#backdrops-street__bldgC)"/>
+    <rect x="497" y="401" width="316" height="18" rx="9" fill="#AAB4C6"/>
+    <rect x="536" y="446" width="64" height="48" rx="12" fill="#C7CFDF"/>
+    <rect x="710" y="446" width="64" height="48" rx="12" fill="#C7CFDF"/>
+    <rect x="517" y="524" width="276" height="16" rx="8" fill="#B49B95"/>
+    <rect x="525" y="544" width="260" height="76" rx="12" fill="url(#backdrops-street__shop)"/>
+    <rect x="730" y="556" width="44" height="64" rx="12" fill="#8C93A2"/>
+  </g>
+
+  <!-- centre: low plain facade, right half -->
+  <g>
+    <rect x="790" y="395" width="290" height="225" rx="14" fill="url(#backdrops-street__bldgB)"/>
+    <rect x="782" y="386" width="306" height="18" rx="9" fill="#A0AABD"/>
+    <rect x="800" y="414" width="270" height="12" rx="6" fill="#FFFFFF" opacity="0.24"/>
+    <rect x="818" y="440" width="60" height="48" rx="12" fill="#C7CFDF"/>
+    <rect x="1000" y="440" width="60" height="48" rx="12" fill="#C7CFDF"/>
+    <rect x="804" y="536" width="262" height="84" rx="12" fill="url(#backdrops-street__shop)"/>
+    <rect x="826" y="548" width="44" height="72" rx="12" fill="#8C93A2"/>
+  </g>
+
+  <!-- right third: mid block -->
+  <g>
+    <rect x="1065" y="340" width="175" height="280" rx="14" fill="url(#backdrops-street__bldgB)"/>
+    <rect x="1057" y="331" width="191" height="18" rx="9" fill="#A0AABD"/>
+    <rect x="1090" y="374" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="1164" y="374" width="52" height="52" rx="10" fill="#E8E2CE"/>
+    <rect x="1090" y="450" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="1164" y="450" width="52" height="52" rx="10" fill="#C7CFDF"/>
+    <rect x="1148" y="536" width="50" height="84" rx="14" fill="#8C93A2"/>
+  </g>
+
+  <!-- right third: tall brick shop -->
+  <g>
+    <rect x="1225" y="185" width="195" height="435" rx="14" fill="url(#backdrops-street__brick)"/>
+    <rect x="1217" y="176" width="207" height="19" rx="9" fill="#B2A09B"/>
+    <rect x="1250" y="222" width="52" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="1330" y="222" width="52" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="1250" y="304" width="52" height="54" rx="10" fill="#E8E2CE"/>
+    <rect x="1330" y="304" width="52" height="54" rx="10" fill="#C7CFDF"/>
+    <rect x="1268" y="450" width="112" height="34" rx="17" fill="#DEE3EC"/>
+    <path d="M1233 498 H1413 V530 a22.5 22.5 0 0 1 -45 0 a22.5 22.5 0 0 1 -45 0 a22.5 22.5 0 0 1 -45 0 a22.5 22.5 0 0 1 -45 0 Z" fill="url(#backdrops-street__awningA)"/>
+    <rect x="1237" y="536" width="172" height="84" rx="14" fill="url(#backdrops-street__shop)"/>
+    <rect x="1358" y="548" width="42" height="72" rx="12" fill="#8C93A2"/>
+  </g>
+
+  <!-- right edge: tallest tower -->
+  <g>
+    <rect x="1405" y="130" width="195" height="490" rx="14" fill="url(#backdrops-street__bldgA)"/>
+    <rect x="1397" y="121" width="203" height="19" rx="9" fill="#8E99AF"/>
+    <rect x="1416" y="150" width="172" height="12" rx="6" fill="#FFFFFF" opacity="0.24"/>
+    <rect x="1430" y="182" width="54" height="56" rx="10" fill="#C7CFDF"/>
+    <rect x="1508" y="182" width="54" height="56" rx="10" fill="#C7CFDF"/>
+    <rect x="1430" y="268" width="54" height="56" rx="10" fill="#E8E2CE"/>
+    <rect x="1508" y="268" width="54" height="56" rx="10" fill="#C7CFDF"/>
+    <rect x="1468" y="518" width="58" height="102" rx="14" fill="#8C93A2"/>
+  </g>
+
+  <!-- pavement -->
+  <rect x="0" y="620" width="1600" height="380" fill="url(#backdrops-street__pave)"/>
+  <rect x="0" y="620" width="1600" height="30" fill="url(#backdrops-street__kerb)"/>
+  <rect x="0" y="620" width="1600" height="14" fill="#8C93A2" opacity="0.38"/>
+  <rect x="0" y="646" width="1600" height="8" rx="4" fill="#D3D7DE" opacity="0.55"/>
+
+  <!-- paving seams in gentle perspective -->
+  <g stroke="#A3A9B7" stroke-linecap="round" fill="none" opacity="0.34">
+    <path d="M800 662 L188 872" stroke-width="5"/>
+    <path d="M800 662 L556 872" stroke-width="5"/>
+    <path d="M800 662 L1044 872" stroke-width="5"/>
+    <path d="M800 662 L1412 872" stroke-width="5"/>
+    <path d="M0 752 H1600" stroke-width="4"/>
+  </g>
+
+  <!-- road at the near edge -->
+  <rect x="0" y="880" width="1600" height="120" fill="url(#backdrops-street__road)"/>
+  <rect x="0" y="872" width="1600" height="14" rx="7" fill="#CBCFD7"/>
+  <rect x="140" y="944" width="150" height="12" rx="6" fill="#C6CAD2" opacity="0.5"/>
+  <rect x="500" y="944" width="150" height="12" rx="6" fill="#C6CAD2" opacity="0.5"/>
+  <rect x="860" y="944" width="150" height="12" rx="6" fill="#C6CAD2" opacity="0.5"/>
+
+  <!-- tree in a planter, left third -->
+  <g>
+    <ellipse cx="252" cy="676" rx="66" ry="14" fill="#8C93A2" opacity="0.24"/>
+    <rect x="244" y="498" width="16" height="128" rx="8" fill="#A79A96"/>
+    <ellipse cx="252" cy="466" rx="78" ry="62" fill="url(#backdrops-street__leaf)"/>
+    <ellipse cx="214" cy="502" rx="48" ry="40" fill="url(#backdrops-street__leaf)"/>
+    <rect x="212" y="616" width="80" height="54" rx="16" fill="#A9AEBB"/>
+    <rect x="212" y="616" width="80" height="12" rx="6" fill="#FFFFFF" opacity="0.28"/>
+  </g>
+
+  <!-- street lamp, right third -->
+  <g>
+    <ellipse cx="1342" cy="672" rx="58" ry="13" fill="#8C93A2" opacity="0.24"/>
+    <rect x="1334" y="300" width="16" height="352" rx="8" fill="#9BA3B2"/>
+    <path d="M1342 314 q0 -36 46 -36" stroke="#9BA3B2" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <rect x="1362" y="266" width="54" height="30" rx="14" fill="#8C93A2"/>
+    <ellipse cx="1389" cy="304" rx="30" ry="18" fill="#E8E2CE" opacity="0.45"/>
+    <rect x="1320" y="646" width="44" height="20" rx="10" fill="#8C93A2"/>
+  </g>
 </svg>
