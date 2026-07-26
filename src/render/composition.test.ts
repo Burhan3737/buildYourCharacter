@@ -31,6 +31,11 @@ const catalog = buildCatalog({
   '/src/assets/catalog/adult/female/costume/thor.svg': svg('costume', 'costume', 'thor', 'top,bottom,shoes'),
   '/src/assets/catalog/adult/female/onepiece/dress.svg': svg('onepiece', 'onepiece', 'dress', 'top,bottom'),
   '/src/assets/accessories/adult/glasses/round.svg': svg('glasses', 'glasses', 'round'),
+  // A full-coverage head covering has to be able to suppress the hair underneath it.
+  '/src/assets/accessories/adult/headwear/hijab.svg': svg('headwear', 'headwear', 'hijab', 'hair'),
+  '/src/assets/accessories/adult/headwear/cap.svg': svg('headwear', 'headwear', 'cap'),
+  '/src/assets/catalog/adult/female/costume/mascot.svg':
+    svg('costume', 'costume', 'mascot', 'headwear'),
 }, { 'adult-female': spec })
 
 const base: Character = {
@@ -65,6 +70,35 @@ describe('hiddenSlots', () => {
     }
     // costume hides top/bottom/shoes; the dress is not hidden, so it still contributes
     expect([...hiddenSlots(c, catalog)].sort()).toEqual(['bottom', 'shoes', 'top'])
+  })
+
+  it('honours data-hides on headwear', () => {
+    const c = {
+      ...base,
+      slots: { ...base.slots, headwear: { assetId: 'accessories-adult-headwear-hijab', colors: {} } },
+    }
+    expect([...hiddenSlots(c, catalog)]).toEqual(['hair'])
+  })
+
+  it('leaves the hair alone for headwear that declares no hides', () => {
+    const c = {
+      ...base,
+      slots: { ...base.slots, headwear: { assetId: 'accessories-adult-headwear-cap', colors: {} } },
+    }
+    expect(hiddenSlots(c, catalog).size).toBe(0)
+  })
+
+  it('does not apply headwear that is itself hidden by a costume', () => {
+    const c = {
+      ...base,
+      slots: {
+        ...base.slots,
+        costume: { assetId: 'adult-female-costume-mascot', colors: {} },
+        headwear: { assetId: 'accessories-adult-headwear-hijab', colors: {} },
+      },
+    }
+    // The costume wins: the headwear goes, and takes its claim on the hair with it.
+    expect([...hiddenSlots(c, catalog)]).toEqual(['headwear'])
   })
 })
 
@@ -106,6 +140,27 @@ describe('composeCharacter', () => {
     const c = { ...base, slots: { ...base.slots, top: { assetId: 'gone', colors: {} } } }
     expect(() => composeCharacter(c, catalog)).not.toThrow()
     expect(composeCharacter(c, catalog).some((l) => l.layer === 'top')).toBe(false)
+  })
+
+  it('drops both hair layers when the headwear covers the hair', () => {
+    const c = {
+      ...base,
+      slots: { ...base.slots, headwear: { assetId: 'accessories-adult-headwear-hijab', colors: {} } },
+    }
+    const layers = composeCharacter(c, catalog)
+    expect(layers.some((l) => l.layer === 'hair-back')).toBe(false)
+    expect(layers.some((l) => l.layer === 'hair-front')).toBe(false)
+    expect(layers.some((l) => l.layer === 'headwear')).toBe(true)
+  })
+
+  it('keeps the hair under headwear that does not declare it hidden', () => {
+    const c = {
+      ...base,
+      slots: { ...base.slots, headwear: { assetId: 'accessories-adult-headwear-cap', colors: {} } },
+    }
+    const layers = composeCharacter(c, catalog)
+    expect(layers.some((l) => l.layer === 'hair-back')).toBe(true)
+    expect(layers.some((l) => l.layer === 'hair-front')).toBe(true)
   })
 
   it('gives head-mounted accessories a scale-and-translate transform', () => {

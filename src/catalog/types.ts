@@ -24,8 +24,13 @@ export type Slot = (typeof SLOTS)[number]
 /** Slots served by the shared head-mounted pool rather than a per-bundle folder. */
 export const ACCESSORY_SLOTS: readonly Slot[] = ['glasses', 'headwear', 'earrings', 'necklace']
 
-/** Slots that can suppress other slots while equipped, in resolution order. */
-export const OVERRIDE_SLOTS: readonly Slot[] = ['costume', 'onepiece']
+/**
+ * Slots that can suppress other slots while equipped, in resolution order.
+ * `hiddenSlots()` skips an override that is itself already hidden, so the order is
+ * the precedence order: a costume that hides `headwear` beats that headwear's own
+ * claim on the hair.
+ */
+export const OVERRIDE_SLOTS: readonly Slot[] = ['costume', 'onepiece', 'headwear']
 
 export const HEAD_SIZE_CLASSES = ['toddler', 'teen', 'adult'] as const
 export type HeadSizeClass = (typeof HEAD_SIZE_CLASSES)[number]
