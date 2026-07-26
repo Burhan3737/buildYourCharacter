@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jersey" data-family="jersey" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FB3D9)"/>
+      <stop offset="1" stop-color="var(--c2, #4692BA)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #4692BA)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-top-jersey__clip">
+      <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- raglan sleeves in the accent colour -->
+    <rect x="122" y="348" width="34" height="46" rx="17" fill="url(#toddler-female-top-jersey__sleeve)"/>
+    <rect x="244" y="348" width="34" height="46" rx="17" fill="url(#toddler-female-top-jersey__sleeve)"/>
+    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+          fill="url(#toddler-female-top-jersey__body)"/>
+  </g>
+
+  <!-- contrast side panels -->
+  <g clip-path="url(#toddler-female-top-jersey__clip)">
+    <rect x="148" y="344" width="13" height="112" fill="var(--c3, #F7C873)"/>
+    <rect x="239" y="344" width="13" height="112" fill="var(--c3, #F7C873)"/>
+    <!-- raglan seams running from the neck to the underarm -->
+    <path d="M186 346 L152 392 M214 346 L248 392" stroke="var(--c2, #4692BA)" stroke-width="5"
+          stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- sporty chest chevron -->
+  <path d="M174 396 L200 414 L226 396" stroke="var(--c3, #F7C873)" stroke-width="11"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 414 L200 429 L222 414" stroke="var(--c3, #F7C873)" stroke-width="7"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ribbed athletic collar -->
+  <path d="M177 347 Q200 366 223 347" stroke="var(--c2, #4692BA)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight -->
+  <path d="M164 372 q36 13 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

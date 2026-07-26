@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tank" data-family="tank" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-top-tank__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DFAB53)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-tank__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DFAB53)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thin shoulder straps, arms left bare -->
+    <rect x="160" y="344" width="14" height="30" rx="7" fill="url(#toddler-female-top-tank__strap)"/>
+    <rect x="226" y="344" width="14" height="30" rx="7" fill="url(#toddler-female-top-tank__strap)"/>
+    <!-- body with a scooped neckline -->
+    <path d="M148 372 q2-18 20-26 q32 22 64 0 q18 8 20 26 v58 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+          fill="url(#toddler-female-top-tank__body)"/>
+  </g>
+
+  <!-- ruffled hem, scalloped edge peeking below the shirt line -->
+  <path d="M156 434 h88 v10 q-11 14 -22 0 q-11 14 -22 0 q-11 14 -22 0 q-11 14 -22 0 z"
+        fill="var(--c3, #F4A79B)"/>
+  <path d="M160 439 q40 8 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- scoop neckline trim -->
+  <path d="M168 348 q32 22 64 0" stroke="var(--c2, #DFAB53)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- little bow at the centre of the neckline -->
+  <path d="M200 366 q-13-9 -13 1 q0 10 13 1 q13 9 13 -1 q0-10 -13 -1 z" fill="var(--c3, #F4A79B)"/>
+  <circle cx="200" cy="367" r="3.6" fill="#FFFFFF" fill-opacity="0.55"/>
+
+  <!-- soft chest highlight -->
+  <path d="M160 386 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

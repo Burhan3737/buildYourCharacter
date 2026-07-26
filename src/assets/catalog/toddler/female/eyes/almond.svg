@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Almond" data-family="almond" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-eyes-almond__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-almond__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tapered toddler lens, outer corners lifted a touch, still soft and wide -->
+  <g class="sp-shadow">
+    <path d="M139 286 q13 -16 26 -16 q13 0 26 16 q-13 16 -26 16 q-13 0 -26 -16 z"
+          transform="rotate(7 168 286)" fill="url(#toddler-female-eyes-almond__sclera)"/>
+    <path d="M206 286 q13 -16 26 -16 q13 0 26 16 q-13 16 -26 16 q-13 0 -26 -16 z"
+          transform="rotate(-7 232 286)" fill="url(#toddler-female-eyes-almond__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="168" cy="286" r="13" fill="#3B2A22"/>
+  <circle cx="232" cy="286" r="13" fill="#3B2A22"/>
+  <circle cx="168" cy="286" r="13" fill="url(#toddler-female-eyes-almond__iris)"/>
+  <circle cx="232" cy="286" r="13" fill="url(#toddler-female-eyes-almond__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="168" cy="286" r="6" fill="#3B2A22"/>
+  <circle cx="232" cy="286" r="6" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="163" cy="281" r="4" fill="#FFFFFF"/>
+  <circle cx="227" cy="281" r="4" fill="#FFFFFF"/>
+
+  <!-- upper lash line, arcing over the eye and flicking up at the outer corner -->
+  <path d="M194 292 Q168 262 143 279 q-3 -1 -5 -3" stroke="#3B2A22" stroke-width="5.4"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M206 292 Q232 262 257 279 q3 -1 5 -3" stroke="#3B2A22" stroke-width="5.4"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

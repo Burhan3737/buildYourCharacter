@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Round" data-family="round" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-eyes-round__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-round__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- big round toddler sclera: generous white shows all around the iris -->
+  <g class="sp-shadow">
+    <circle cx="168" cy="286" r="21" fill="url(#toddler-female-eyes-round__sclera)"/>
+    <circle cx="232" cy="286" r="21" fill="url(#toddler-female-eyes-round__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="168" cy="287" r="13" fill="#3B2A22"/>
+  <circle cx="232" cy="287" r="13" fill="#3B2A22"/>
+  <circle cx="168" cy="287" r="13" fill="url(#toddler-female-eyes-round__iris)"/>
+  <circle cx="232" cy="287" r="13" fill="url(#toddler-female-eyes-round__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="168" cy="287" r="6.2" fill="#3B2A22"/>
+  <circle cx="232" cy="287" r="6.2" fill="#3B2A22"/>
+
+  <!-- catchlights, big and bright for a sweet toddler sparkle -->
+  <circle cx="162" cy="280" r="4.6" fill="#FFFFFF"/>
+  <circle cx="226" cy="280" r="4.6" fill="#FFFFFF"/>
+  <circle cx="171" cy="291" r="2.3" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="235" cy="291" r="2.3" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- upper lash line, a gentle cap over the top of each round eye -->
+  <path d="M144 268 Q168 250 192 268" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 268 Q232 250 208 268" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

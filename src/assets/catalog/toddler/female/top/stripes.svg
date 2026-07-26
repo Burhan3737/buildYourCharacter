@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stripes" data-family="stripes" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5EADA)"/>
+      <stop offset="1" stop-color="var(--c2, #DCCBB2)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5EADA)"/>
+      <stop offset="1" stop-color="var(--c2, #DCCBB2)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-top-stripes__clip">
+      <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"/>
+      <rect x="122" y="348" width="34" height="84" rx="17"/>
+      <rect x="244" y="348" width="34" height="84" rx="17"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long breton sleeves -->
+    <rect x="122" y="348" width="34" height="84" rx="17" fill="url(#toddler-female-top-stripes__sleeve)"/>
+    <rect x="244" y="348" width="34" height="84" rx="17" fill="url(#toddler-female-top-stripes__sleeve)"/>
+    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+          fill="url(#toddler-female-top-stripes__body)"/>
+  </g>
+
+  <!-- bold horizontal bands running straight across body and sleeves -->
+  <g clip-path="url(#toddler-female-top-stripes__clip)" fill="var(--c3, #5C6BB8)">
+    <rect x="110" y="358" width="180" height="14"/>
+    <rect x="110" y="384" width="180" height="14"/>
+    <rect x="110" y="410" width="180" height="14"/>
+    <rect x="110" y="436" width="180" height="14"/>
+  </g>
+
+  <!-- boat neckline trim -->
+  <path d="M172 348 Q200 364 228 348" stroke="var(--c3, #5C6BB8)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight, sitting above the first band -->
+  <path d="M162 352 q38 10 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 378 q42 9 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

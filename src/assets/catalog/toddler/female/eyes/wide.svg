@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide" data-family="wide" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-eyes-wide__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E0E5F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-wide__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tall startled sclera, extra large so white shows above and below the iris -->
+  <g class="sp-shadow">
+    <ellipse cx="168" cy="286" rx="20" ry="24" fill="url(#toddler-female-eyes-wide__sclera)"/>
+    <ellipse cx="232" cy="286" rx="20" ry="24" fill="url(#toddler-female-eyes-wide__sclera)"/>
+  </g>
+
+  <!-- iris floats, small relative to the sclera -->
+  <circle cx="168" cy="286" r="12" fill="#3B2A22"/>
+  <circle cx="232" cy="286" r="12" fill="#3B2A22"/>
+  <circle cx="168" cy="286" r="12" fill="url(#toddler-female-eyes-wide__iris)"/>
+  <circle cx="232" cy="286" r="12" fill="url(#toddler-female-eyes-wide__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="168" cy="286" r="5.8" fill="#3B2A22"/>
+  <circle cx="232" cy="286" r="5.8" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="163" cy="281" r="4.6" fill="#FFFFFF"/>
+  <circle cx="227" cy="281" r="4.6" fill="#FFFFFF"/>
+  <circle cx="173" cy="292" r="2.2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="237" cy="292" r="2.2" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- upper lid, lifted high and hugging the rim in surprise -->
+  <path d="M152 270 Q168 261 184 270" stroke="#3B2A22" stroke-width="5.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 270 Q232 261 216 270" stroke="#3B2A22" stroke-width="5.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

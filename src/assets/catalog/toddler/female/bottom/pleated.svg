@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pleated Skirt" data-family="pleated" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="toddler-female-bottom-pleated__light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFAFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #CB95A3)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-pleated__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CB95A3)" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="var(--c2, #CB95A3)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-pleated__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFAFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #CB95A3)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- pleated cone with a knife-pleat zig-zag hem, plus the waist block -->
+  <g class="sp-shadow">
+    <path d="M158 454 H242 L254 500 L245 510 L236 500 L227 510 L218 500 L209 510
+             L200 500 L191 510 L182 500 L173 510 L164 500 L155 510 L146 500 Z"
+          fill="url(#toddler-female-bottom-pleated__light)"/>
+    <rect x="156" y="440" width="88" height="24" rx="12"
+          fill="url(#toddler-female-bottom-pleated__hip)"/>
+  </g>
+
+  <!-- alternating shaded pleat panels -->
+  <path d="M172 456 H186 L182 500 L173 510 L164 500 Z"
+        fill="url(#toddler-female-bottom-pleated__dark)"/>
+  <path d="M200 456 H214 L218 500 L209 510 L200 500 Z"
+        fill="url(#toddler-female-bottom-pleated__dark)"/>
+  <path d="M228 456 H242 L254 500 L245 510 L236 500 Z"
+        fill="url(#toddler-female-bottom-pleated__dark)"/>
+
+  <!-- crisp knife-pleat folds radiating to the hem -->
+  <g stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M171.3 462 L164.4 498"/>
+    <path d="M185.7 462 L182.2 498"/>
+    <path d="M200 462 L200 498"/>
+    <path d="M214.3 462 L217.8 498"/>
+    <path d="M228.7 462 L235.6 498"/>
+  </g>
+
+  <!-- soft waistband -->
+  <rect x="156" y="440" width="88" height="15" rx="7.5" fill="var(--c2, #CB95A3)"/>
+
+  <!-- hem trim tracing every pleat point -->
+  <path d="M146 500 L155 510 L164 500 L173 510 L182 500 L191 510 L200 500
+           L209 510 L218 500 L227 510 L236 500 L245 510 L254 500"
+        stroke="var(--c3, #F7C873)" stroke-width="3" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M166 468 q34 11 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
