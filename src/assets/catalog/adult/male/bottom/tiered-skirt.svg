@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=gathered tiers widening to mid-calf, hem=ruffled
+       (vs skirt: single A-line cone above the knee; vs pleated: single knife-pleated cone) -->
+  <defs>
+    <linearGradient id="adult-male-bottom-tiered-skirt__tier" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D0857A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- three gathered tiers widening toward mid-calf, drawn as one shadow group -->
+  <g class="sp-shadow">
+    <path d="M126 298 H274 V358 Q262 372 250 358 Q237 372 225 358 Q212 372 200 358
+             Q187 372 175 358 Q162 372 150 358 Q137 372 126 358 Z"
+          fill="url(#adult-male-bottom-tiered-skirt__tier)"/>
+    <path d="M110 362 H290 V422 Q275 436 260 422 Q245 436 230 422 Q215 436 200 422
+             Q185 436 170 422 Q155 436 140 422 Q125 436 110 422 Z"
+          fill="url(#adult-male-bottom-tiered-skirt__tier)"/>
+    <path d="M90 424 H310 V472 Q294 486 278 472 Q262 486 246 472 Q230 486 214 472
+             Q198 486 182 472 Q166 486 150 472 Q134 486 118 472 Q102 486 90 472 Z"
+          fill="url(#adult-male-bottom-tiered-skirt__tier)"/>
+  </g>
+
+  <!-- waistband -->
+  <rect x="138" y="296" width="124" height="18" rx="8" fill="var(--c2, #D0857A)"/>
+
+  <!-- gather lines, one per tier -->
+  <path d="M130 312 H270" stroke="var(--c3, #F7C873)" stroke-width="2"
+        stroke-dasharray="3 4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M114 378 H286" stroke="var(--c3, #F7C873)" stroke-width="2"
+        stroke-dasharray="3 4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M94 440 H306" stroke="var(--c3, #F7C873)" stroke-width="2"
+        stroke-dasharray="3 4" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- contrast tier edges -->
+  <path d="M126 358 Q200 372 274 358" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.9"/>
+  <path d="M110 422 Q200 438 290 422" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- soft upper highlight -->
+  <path d="M154 306 q46 10 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

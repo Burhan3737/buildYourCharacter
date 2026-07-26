@@ -1,37 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Pullover Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes vs the `tee` baseline: SHOULDER = long dropped (not short set-in) and
+       VOLUME = gathered — the body blouses out well past the torso and is drawn in to a
+       narrower ribbed hem band. Hem sits past the hip. -->
   <defs>
     <linearGradient id="adult-male-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7C8794)"/>
-      <stop offset="1" stop-color="var(--c2, #626B76)"/>
+      <stop offset="1" stop-color="var(--c2, #59626C)"/>
     </linearGradient>
     <linearGradient id="adult-male-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7C8794)"/>
-      <stop offset="1" stop-color="var(--c2, #626B76)"/>
+      <stop offset="1" stop-color="var(--c2, #59626C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A95A2)"/>
+      <stop offset="1" stop-color="var(--c2, #59626C)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves to the wrist -->
-    <rect x="104" y="158" width="34" height="154" rx="17" fill="url(#adult-male-top-hoodie__sleeve)"/>
-    <rect x="262" y="158" width="34" height="154" rx="17" fill="url(#adult-male-top-hoodie__sleeve)"/>
-    <!-- torso block, hem tucked at y318 -->
-    <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"
+    <!-- dropped, oversized long sleeves, mounted low and clear of the body -->
+    <rect x="96" y="180" width="40" height="148" rx="19" fill="url(#adult-male-top-hoodie__sleeve)"/>
+    <rect x="264" y="180" width="40" height="148" rx="19" fill="url(#adult-male-top-hoodie__sleeve)"/>
+    <!-- blousy gathered torso, wider than the body it covers -->
+    <path d="M124 196 Q124 158 160 152 H240 Q276 158 276 196 V302 Q276 338 250 338
+             H150 Q124 338 124 302 Z"
           fill="url(#adult-male-top-hoodie__body)"/>
-    <!-- hood behind the neck -->
-    <path d="M168 138 q32 24 64 0 q-6 32 -32 32 q-26 0 -32-32 z" fill="var(--c2, #626B76)"/>
+    <!-- hood lying flat behind the neck, sitting over the yoke -->
+    <path d="M156 150 Q200 184 244 150 Q240 196 200 202 Q160 196 156 150 Z"
+          fill="url(#adult-male-top-hoodie__hood)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="104" y="294" width="34" height="18" rx="9" fill="var(--c2, #626B76)"/>
-  <rect x="262" y="294" width="34" height="18" rx="9" fill="var(--c2, #626B76)"/>
-  <!-- kangaroo pocket -->
-  <path d="M170 246 h60 v26 q0 8 -8 8 h-44 q-8 0 -8-8 z" fill="var(--c2, #626B76)"/>
-  <!-- drawstrings -->
-  <path d="M188 140 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+
+  <!-- hood opening edge, bound in the accent -->
+  <path d="M158 152 Q200 188 242 152" stroke="var(--c3, #E4E9EF)" stroke-width="7"
         fill="none" stroke-linecap="round"/>
-  <path d="M212 140 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+
+  <!-- deep ribbed hem band, drawn in narrower than the blouse above it -->
+  <path d="M136 310 H264 V304 Q264 338 246 338 H154 Q136 338 136 304 Z" fill="var(--c3, #E4E9EF)"/>
+  <g stroke="var(--c2, #59626C)" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round">
+    <path d="M152 316 V332"/><path d="M170 316 V334"/><path d="M188 316 V334"/>
+    <path d="M212 316 V334"/><path d="M230 316 V334"/><path d="M248 316 V332"/>
+  </g>
+
+  <!-- ribbed cuffs -->
+  <rect x="96" y="306" width="40" height="22" rx="11" fill="var(--c3, #E4E9EF)"/>
+  <rect x="264" y="306" width="40" height="22" rx="11" fill="var(--c3, #E4E9EF)"/>
+
+  <!-- kangaroo pocket with an accent top edge -->
+  <path d="M158 250 H242 V284 Q242 296 230 296 H170 Q158 296 158 284 Z"
+        fill="var(--c2, #59626C)" fill-opacity="0.6"/>
+  <path d="M158 250 H242" stroke="var(--c3, #E4E9EF)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <!-- highlight -->
-  <path d="M150 174 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M176 250 V296" stroke="var(--c2, #59626C)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 250 V296" stroke="var(--c2, #59626C)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- drawstrings with two aglets -->
+  <path d="M186 178 V212" stroke="var(--c3, #E4E9EF)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 178 V212" stroke="var(--c3, #E4E9EF)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <ellipse cx="186" cy="217" rx="4" ry="6" fill="var(--c2, #59626C)"/>
+  <ellipse cx="214" cy="217" rx="4" ry="6" fill="var(--c2, #59626C)"/>
+
+  <!-- dropped shoulder seams -->
+  <path d="M136 198 Q150 176 176 166" stroke="var(--c2, #59626C)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M264 198 Q250 176 224 166" stroke="var(--c2, #59626C)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M144 206 Q200 226 256 206" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

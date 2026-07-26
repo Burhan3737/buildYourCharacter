@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: LENGTH — skin-close at the ear, stepping up to a short flat top; the whole style
+       sits inside 40px of height. PARTING — no part at all, but a razored hairline: a hard
+       straight edge at y 63 with squared temple corners, and the fade is a value ramp from
+       hair2 at the skin line up to hair1. Differs from buzz (one even cap, soft rounded
+       hairline) on length step and hairline, and from high-top-fade on volume. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-taper-fade__napefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M158 107 C156 127 162 141 174 148 L226 148
+               C238 141 244 127 242 107 C216 118 184 118 158 107 Z"
+            fill="url(#adult-male-hair-taper-fade__napefade)"/>
+    </g>
+    <path d="M172 143 C186 149 214 149 228 143 C222 151 178 151 172 143 Z"
+          fill="var(--hair2, #331E16)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-taper-fade__topgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.66" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-taper-fade__sidefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M152 63 C152 38 170 24 200 24 C230 24 248 38 248 63 Z"
+            fill="url(#adult-male-hair-taper-fade__topgrad)"/>
+      <path d="M143 58 C141 78 143 96 149 110 C154 98 155 78 155 58 Z"
+            fill="url(#adult-male-hair-taper-fade__sidefade)"/>
+      <path d="M257 58 C259 78 257 96 251 110 C246 98 245 78 245 58 Z"
+            fill="url(#adult-male-hair-taper-fade__sidefade)"/>
+    </g>
+    <path d="M152 56 L248 56 L248 63 L152 63 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M144 89 C147 99 150 105 152 108" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M256 89 C253 99 250 105 248 108" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M168 33 C182 27 218 27 232 33" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flip-Flops" data-family="flip-flops" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: shaft height (none/open, the whole foot is bare) + fastening
+       (Y-thong between the toes) -->
+  <defs>
+    <linearGradient id="adult-male-shoes-flip-flops__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A94E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- flat thin sole slabs: left first, right in front -->
+  <g class="sp-shadow">
+    <rect x="158" y="562" width="44" height="8" rx="4" fill="url(#adult-male-shoes-flip-flops__sole)"/>
+    <rect x="198" y="562" width="44" height="8" rx="4" fill="url(#adult-male-shoes-flip-flops__sole)"/>
+  </g>
+
+  <!-- bare toes, reading through the character's own skin tone -->
+  <ellipse cx="166" cy="554" rx="4" ry="3" fill="var(--skin1, #E8B48C)"/>
+  <ellipse cx="175" cy="554" rx="4" ry="3" fill="var(--skin2, #C68A6B)"/>
+  <ellipse cx="184" cy="554" rx="4" ry="3" fill="var(--skin1, #E8B48C)"/>
+  <ellipse cx="193" cy="554" rx="4" ry="3" fill="var(--skin2, #C68A6B)"/>
+  <ellipse cx="206" cy="554" rx="4" ry="3" fill="var(--skin1, #E8B48C)"/>
+  <ellipse cx="215" cy="554" rx="4" ry="3" fill="var(--skin2, #C68A6B)"/>
+  <ellipse cx="224" cy="554" rx="4" ry="3" fill="var(--skin1, #E8B48C)"/>
+  <ellipse cx="233" cy="554" rx="4" ry="3" fill="var(--skin2, #C68A6B)"/>
+
+  <!-- Y-thong strap -->
+  <path d="M162 560 L180 548 L198 560" stroke="var(--c1, #F7C873)" stroke-opacity="0.95"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M202 560 L220 548 L238 560" stroke="var(--c1, #F7C873)" stroke-opacity="0.95"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- toe-post bead -->
+  <circle cx="180" cy="548" r="3.5" fill="var(--c3, #F4A79B)"/>
+  <circle cx="220" cy="548" r="3.5" fill="var(--c3, #F4A79B)"/>
+
+  <!-- sole edge highlight -->
+  <path d="M162 566 q18 3 36 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 566 q18 3 36 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

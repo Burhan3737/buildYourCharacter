@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: shoulder = structured square (small shoulder-pad bump) + closure = open front -->
+  <defs>
+    <linearGradient id="adult-male-top-blazer__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55617A)"/>
+      <stop offset="1" stop-color="var(--c2, #414A5E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-blazer__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55617A)"/>
+      <stop offset="1" stop-color="var(--c2, #414A5E)"/>
+    </linearGradient>
+  </defs>
+  <!-- open-front gap reveals the chest -->
+  <path d="M191 150 L200 216 L209 150 Q200 176 191 150 Z" fill="var(--skin2, #E7B892)"/>
+  <g class="sp-shadow">
+    <!-- long structured sleeves -->
+    <rect x="100" y="156" width="36" height="180" rx="14" fill="url(#adult-male-top-blazer__sleeve)"/>
+    <rect x="264" y="156" width="36" height="180" rx="14" fill="url(#adult-male-top-blazer__sleeve)"/>
+    <!-- small square shoulder-pad bumps -->
+    <rect x="150" y="142" width="26" height="14" rx="6" fill="url(#adult-male-top-blazer__body)"/>
+    <rect x="224" y="142" width="26" height="14" rx="6" fill="url(#adult-male-top-blazer__body)"/>
+    <!-- open front: two separate panels, thigh-length -->
+    <path d="M136 178 Q136 150 168 148 Q184 148 190 156 L182 372 Q182 380 174 380 L146 380 Q136 380 136 370 Z"
+          fill="url(#adult-male-top-blazer__body)"/>
+    <path d="M264 178 Q264 150 232 148 Q216 148 210 156 L218 372 Q218 380 226 380 L254 380 Q264 380 264 370 Z"
+          fill="url(#adult-male-top-blazer__body)"/>
+  </g>
+  <!-- notched lapels, contrast lining edge -->
+  <path d="M190 152 L200 176 L184 172 L176 206 L188 216 Z" fill="var(--c3, #D9AE63)"/>
+  <path d="M210 152 L200 176 L216 172 L224 206 L212 216 Z" fill="var(--c3, #D9AE63)"/>
+  <!-- two-button stance -->
+  <circle cx="210" cy="244" r="4.5" fill="var(--c2, #414A5E)"/>
+  <circle cx="210" cy="278" r="4.5" fill="var(--c2, #414A5E)"/>
+  <!-- welt pockets -->
+  <rect x="146" y="296" width="32" height="8" rx="4" fill="var(--c2, #414A5E)"/>
+  <rect x="222" y="296" width="32" height="8" rx="4" fill="var(--c2, #414A5E)"/>
+  <!-- highlight -->
+  <path d="M144 176 Q166 190 188 176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 176 Q234 190 256 176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

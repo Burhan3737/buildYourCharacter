@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Boiler Suit" data-family="boiler-suit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = a full-length centre zip from collar to crotch, and
+       VOLUME = boxy utility (the body is cut square and the legs are wide and straight).
+       Differs from `jumpsuit` on closure + volume, from `romper` on hem + closure. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-boiler-suit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8B5E)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6844)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-boiler-suit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8B5E)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5B3A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-boiler-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8B5E)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6844)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide straight utility legs -->
+    <path d="M146 300 H198 V536 Q198 550 184 550 H160 Q146 550 146 536 Z"
+          fill="url(#adult-male-onepiece-boiler-suit__leg)"/>
+    <path d="M254 300 H202 V536 Q202 550 216 550 H240 Q254 550 254 536 Z"
+          fill="url(#adult-male-onepiece-boiler-suit__leg)"/>
+    <!-- long sleeves -->
+    <rect x="102" y="158" width="38" height="184" rx="18" fill="url(#adult-male-onepiece-boiler-suit__sleeve)"/>
+    <rect x="260" y="158" width="38" height="184" rx="18" fill="url(#adult-male-onepiece-boiler-suit__sleeve)"/>
+    <!-- squared boxy bodice -->
+    <path d="M126 176 Q126 146 156 146 H244 Q274 146 274 176 V308 H126 Z"
+          fill="url(#adult-male-onepiece-boiler-suit__body)"/>
+  </g>
+
+  <!-- stand collar -->
+  <path d="M168 152 Q200 168 232 152 L232 128 Q200 140 168 128 Z" fill="var(--c3, #E0B84A)"/>
+  <path d="M180 136 q20 12 40 0 v10 q-20 12 -40 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- full-length centre zip -->
+  <rect x="194" y="146" width="12" height="162" rx="4" fill="var(--c3, #E0B84A)"/>
+  <path d="M200 152 V304" stroke="var(--c2, #5A6844)" stroke-opacity="0.6" stroke-width="2.4"
+        fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <rect x="195" y="238" width="10" height="20" rx="4" fill="var(--c2, #5A6844)"/>
+
+  <!-- tie at the waist -->
+  <rect x="126" y="286" width="148" height="16" rx="7" fill="var(--c3, #E0B84A)"/>
+  <path d="M186 288 Q176 300 166 306" stroke="var(--c3, #E0B84A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 288 Q224 300 234 306" stroke="var(--c3, #E0B84A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- chest and thigh utility pockets -->
+  <rect x="142" y="198" width="34" height="30" rx="4" fill="var(--c2, #5A6844)" fill-opacity="0.5"/>
+  <rect x="142" y="198" width="34" height="8" rx="3" fill="var(--c3, #E0B84A)"/>
+  <rect x="224" y="198" width="34" height="30" rx="4" fill="var(--c2, #5A6844)" fill-opacity="0.5"/>
+  <rect x="224" y="198" width="34" height="8" rx="3" fill="var(--c3, #E0B84A)"/>
+  <rect x="150" y="348" width="40" height="42" rx="5" fill="var(--c2, #5A6844)" fill-opacity="0.5"/>
+
+  <!-- cuffs -->
+  <rect x="102" y="324" width="38" height="18" rx="9" fill="var(--c3, #E0B84A)"/>
+  <rect x="260" y="324" width="38" height="18" rx="9" fill="var(--c3, #E0B84A)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M148 172 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

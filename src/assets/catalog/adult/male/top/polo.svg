@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: CLOSURE = half placket (two buttons under a flat knit collar),
+       VOLUME = fitted (body pulls in visibly at the waist, curved hem).
+       Differs from `tee` on closure + volume, from `henley` on shoulder + volume. -->
+  <defs>
+    <linearGradient id="adult-male-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8474)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8474)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-polo__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFFFFF)"/>
+      <stop offset="1" stop-color="var(--c3, #E2E8E6)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two short set-in sleeves and a waisted body with a curved hem -->
+  <g class="sp-shadow">
+    <rect x="102" y="156" width="39" height="70" rx="19" fill="url(#adult-male-top-polo__sleeve)"/>
+    <rect x="259" y="156" width="39" height="70" rx="19" fill="url(#adult-male-top-polo__sleeve)"/>
+    <path d="M130 190 Q130 148 172 148 H228 Q270 148 270 190 L263 250 Q257 286 253 302
+             Q228 318 200 318 Q172 318 147 302 Q143 286 137 250 Z"
+          fill="url(#adult-male-top-polo__body)"/>
+  </g>
+
+  <!-- flat knit collar, two leaves lying open -->
+  <path d="M172 148 Q186 150 200 168 L180 186 Q164 176 160 156 Z"
+        fill="url(#adult-male-top-polo__collar)"/>
+  <path d="M228 148 Q214 150 200 168 L220 186 Q236 176 240 156 Z"
+        fill="url(#adult-male-top-polo__collar)"/>
+  <path d="M180 140 q20 16 40 0 v10 q-20 16 -40 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- two-button placket -->
+  <rect x="192" y="164" width="16" height="52" rx="4" fill="var(--c3, #FFFFFF)"/>
+  <path d="M200 166 V214" stroke="var(--c2, #3F8474)" stroke-opacity="0.35" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="178" r="4" fill="var(--c2, #3F8474)"/>
+  <circle cx="200" cy="202" r="4" fill="var(--c2, #3F8474)"/>
+
+  <!-- contrast tipping bands at the sleeve openings -->
+  <rect x="102" y="208" width="39" height="12" rx="6" fill="var(--c2, #3F8474)"/>
+  <rect x="259" y="208" width="39" height="12" rx="6" fill="var(--c2, #3F8474)"/>
+
+  <!-- side seams that show the waist shaping -->
+  <path d="M137 250 Q141 284 147 302" stroke="var(--c2, #3F8474)" stroke-opacity="0.32"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M263 250 Q259 284 253 302" stroke="var(--c2, #3F8474)" stroke-opacity="0.32"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M150 178 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

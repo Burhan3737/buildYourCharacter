@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bike Shorts" data-family="bike-shorts" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg length=short (mid-thigh), hem=raw cut edge
+       (vs jeans: full leg; vs sweat-shorts: loose-straight leg, above-the-knee length) -->
+  <defs>
+    <linearGradient id="adult-male-bottom-bike-shorts__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #2A1D18)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-bike-shorts__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #2A1D18)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- high-rise skin-close bike shorts cut off mid-thigh: hip block plus both short legs -->
+  <g class="sp-shadow">
+    <path d="M163 356 H193 V414 H169 Z" fill="url(#adult-male-bottom-bike-shorts__leg)"/>
+    <path d="M237 356 H207 V414 H231 Z" fill="url(#adult-male-bottom-bike-shorts__leg)"/>
+    <rect x="140" y="290" width="120" height="64" rx="26"
+          fill="url(#adult-male-bottom-bike-shorts__hip)"/>
+  </g>
+
+  <!-- wide flat waistband -->
+  <rect x="140" y="290" width="120" height="22" rx="11" fill="var(--c2, #2A1D18)"/>
+
+  <!-- contrast side panel -->
+  <path d="M166 356 Q161 386 168 414" stroke="var(--c3, #F4A79B)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 356 Q239 386 232 414" stroke="var(--c3, #F4A79B)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat-lock seam stitching -->
+  <path d="M163 414 H193" stroke="var(--c3, #F4A79B)" stroke-width="2.5"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <path d="M207 414 H237" stroke="var(--c3, #F4A79B)" stroke-width="2.5"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <path d="M200 316 v38" stroke="var(--c3, #F4A79B)" stroke-width="2.5"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M154 306 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

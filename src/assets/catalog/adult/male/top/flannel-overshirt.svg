@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: closure = open front, worn open + volume = boxy -->
+  <defs>
+    <linearGradient id="adult-male-top-flannel-overshirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97B5D)"/>
+      <stop offset="1" stop-color="var(--c2, #7A4A3A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97B5D)"/>
+      <stop offset="1" stop-color="var(--c2, #7A4A3A)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-flannel-overshirt__plaid" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <rect x="0" y="8" width="20" height="4" fill="var(--c2, #7A4A3A)" opacity="0.5"/>
+      <rect x="8" y="0" width="4" height="20" fill="var(--c2, #7A4A3A)" opacity="0.5"/>
+      <rect x="0" y="9.2" width="20" height="1.6" fill="var(--c3, #3B2A22)" opacity="0.65"/>
+      <rect x="9.2" y="0" width="1.6" height="20" fill="var(--c3, #3B2A22)" opacity="0.65"/>
+    </pattern>
+    <clipPath id="adult-male-top-flannel-overshirt__clip">
+      <path d="M122 182 L122 152 Q122 148 128 148 L192 148 L192 316 L130 316 Q122 316 122 308 Z"/>
+      <path d="M278 182 L278 152 Q278 148 272 148 L208 148 L208 316 L270 316 Q278 316 278 308 Z"/>
+      <rect x="100" y="158" width="38" height="158" rx="10"/>
+      <rect x="262" y="158" width="38" height="158" rx="10"/>
+    </clipPath>
+  </defs>
+  <!-- worn open: the gap between the panels shows the chest -->
+  <path d="M192 148 L192 316 L208 316 L208 148 Z" fill="var(--skin2, #E7B892)"/>
+  <g class="sp-shadow">
+    <!-- boxy long sleeves -->
+    <rect x="100" y="158" width="38" height="158" rx="10" fill="url(#adult-male-top-flannel-overshirt__sleeve)"/>
+    <rect x="262" y="158" width="38" height="158" rx="10" fill="url(#adult-male-top-flannel-overshirt__sleeve)"/>
+    <!-- boxy, squared-hem open panels -->
+    <path d="M122 182 L122 152 Q122 148 128 148 L192 148 L192 316 L130 316 Q122 316 122 308 Z"
+          fill="url(#adult-male-top-flannel-overshirt__body)"/>
+    <path d="M278 182 L278 152 Q278 148 272 148 L208 148 L208 316 L270 316 Q278 316 278 308 Z"
+          fill="url(#adult-male-top-flannel-overshirt__body)"/>
+  </g>
+  <!-- plaid surface, clipped to the panels and sleeves -->
+  <g clip-path="url(#adult-male-top-flannel-overshirt__clip)">
+    <rect x="96" y="146" width="208" height="176" fill="url(#adult-male-top-flannel-overshirt__plaid)"/>
+  </g>
+  <!-- contrast cuffs -->
+  <rect x="98" y="296" width="42" height="22" rx="8" fill="var(--c3, #3B2A22)"/>
+  <rect x="260" y="296" width="42" height="22" rx="8" fill="var(--c3, #3B2A22)"/>
+  <!-- two flap chest pockets -->
+  <rect x="142" y="214" width="34" height="30" rx="4" fill="var(--c2, #7A4A3A)"/>
+  <rect x="142" y="208" width="34" height="12" rx="3" fill="var(--c2, #7A4A3A)"/>
+  <rect x="224" y="214" width="34" height="30" rx="4" fill="var(--c2, #7A4A3A)"/>
+  <rect x="224" y="208" width="34" height="12" rx="3" fill="var(--c2, #7A4A3A)"/>
+  <!-- highlight -->
+  <path d="M126 176 Q160 188 190 176" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 176 Q240 188 274 176" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

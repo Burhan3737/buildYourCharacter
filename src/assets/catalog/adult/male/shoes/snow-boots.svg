@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Snow Boots" data-family="snow-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: toe shape (bulbous) + fastening (slip-on with one toggle, no laces) -->
+  <defs>
+    <linearGradient id="adult-male-shoes-snow-boots__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48577C)"/>
+      <stop offset="1" stop-color="var(--c2, #313E5C)"/>
+    </linearGradient>
+    <pattern id="adult-male-shoes-snow-boots__lugs" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="2" y="2" width="10" height="10" rx="2" fill="var(--c2, #313E5C)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="adult-male-shoes-snow-boots__clipL">
+      <rect x="146" y="554" width="62" height="16" rx="8"/>
+    </clipPath>
+    <clipPath id="adult-male-shoes-snow-boots__clipR">
+      <rect x="196" y="554" width="62" height="16" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- bulky insulated shell, foot then shaft: left first, right in front -->
+  <g class="sp-shadow">
+    <rect x="148" y="536" width="58" height="30" rx="17" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+    <rect x="160" y="500" width="42" height="60" rx="18" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+    <rect x="198" y="536" width="58" height="30" rx="17" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+    <rect x="210" y="500" width="42" height="60" rx="18" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+  </g>
+
+  <!-- deep lugged sole with a tread pattern -->
+  <rect x="146" y="554" width="62" height="16" rx="8" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+  <rect x="196" y="554" width="62" height="16" rx="8" fill="url(#adult-male-shoes-snow-boots__shell)"/>
+  <g clip-path="url(#adult-male-shoes-snow-boots__clipL)">
+    <rect x="140" y="550" width="74" height="24" fill="url(#adult-male-shoes-snow-boots__lugs)"/>
+  </g>
+  <g clip-path="url(#adult-male-shoes-snow-boots__clipR)">
+    <rect x="190" y="550" width="74" height="24" fill="url(#adult-male-shoes-snow-boots__lugs)"/>
+  </g>
+
+  <!-- soft folded-over fleece cuff, a lighter value -->
+  <rect x="156" y="494" width="50" height="18" rx="9" fill="var(--c3, #F4EDE1)"/>
+  <rect x="206" y="494" width="50" height="18" rx="9" fill="var(--c3, #F4EDE1)"/>
+
+  <!-- single toggle -->
+  <ellipse cx="181" cy="490" rx="5" ry="4" fill="var(--c3, #F4EDE1)"/>
+  <path d="M181 494 L181 500" stroke="var(--c2, #313E5C)" stroke-width="2"/>
+  <ellipse cx="231" cy="490" rx="5" ry="4" fill="var(--c3, #F4EDE1)"/>
+  <path d="M231 494 L231 500" stroke="var(--c2, #313E5C)" stroke-width="2"/>
+
+  <!-- instep highlights -->
+  <path d="M154 548 q23 6 46 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 548 q23 6 46 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Breton Stripes" data-family="stripes" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes vs the tee baseline: hem = waist (not hip) + sleeve = long set-in (not short) -->
   <defs>
     <linearGradient id="adult-male-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F3F1EA)"/>
@@ -11,32 +12,31 @@
       <stop offset="1" stop-color="var(--c2, #D9D6CB)"/>
     </linearGradient>
     <clipPath id="adult-male-top-stripes__clip">
-      <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"/>
+      <path d="M130 172 Q130 150 152 150 L248 150 Q270 150 270 172 L270 268 Q270 292 250 292 L150 292 Q130 292 130 268 Z"/>
       <rect x="104" y="158" width="34" height="154" rx="17"/>
       <rect x="262" y="158" width="34" height="154" rx="17"/>
     </clipPath>
   </defs>
   <g class="sp-shadow">
-    <!-- long sleeves -->
+    <!-- long sleeves to the wrist -->
     <rect x="104" y="158" width="34" height="154" rx="17" fill="url(#adult-male-top-stripes__sleeve)"/>
     <rect x="262" y="158" width="34" height="154" rx="17" fill="url(#adult-male-top-stripes__sleeve)"/>
-    <!-- torso block, hem tucked at y318 -->
-    <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"
+    <!-- straight torso, hem tucked at the waist -->
+    <path d="M130 172 Q130 150 152 150 L248 150 Q270 150 270 172 L270 268 Q270 292 250 292 L150 292 Q130 292 130 268 Z"
           fill="url(#adult-male-top-stripes__body)"/>
   </g>
   <!-- breton bands, clipped to the garment silhouette -->
   <g clip-path="url(#adult-male-top-stripes__clip)">
-    <rect x="98" y="184" width="204" height="14" fill="var(--c3, #2E3A59)"/>
-    <rect x="98" y="212" width="204" height="14" fill="var(--c3, #2E3A59)"/>
-    <rect x="98" y="240" width="204" height="14" fill="var(--c3, #2E3A59)"/>
-    <rect x="98" y="268" width="204" height="14" fill="var(--c3, #2E3A59)"/>
-    <rect x="98" y="296" width="204" height="14" fill="var(--c3, #2E3A59)"/>
+    <rect x="98" y="176" width="204" height="14" fill="var(--c3, #2E3A59)"/>
+    <rect x="98" y="204" width="204" height="14" fill="var(--c3, #2E3A59)"/>
+    <rect x="98" y="232" width="204" height="14" fill="var(--c3, #2E3A59)"/>
+    <rect x="98" y="260" width="204" height="14" fill="var(--c3, #2E3A59)"/>
   </g>
-  <!-- boat neckband -->
-  <path d="M168 138 q32 32 64 0 z" fill="var(--c2, #D9D6CB)"/>
+  <!-- wide boat neckband, contrast bind -->
+  <path d="M158 144 Q200 160 242 144 L242 156 Q200 172 158 156 Z" fill="var(--c2, #D9D6CB)"/>
   <!-- neck opening -->
-  <path d="M178 141 q22 20 44 0 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M168 147 Q200 160 232 147 Z" fill="var(--skin2, #E7B892)"/>
   <!-- highlight -->
-  <path d="M150 174 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M150 176 Q200 194 250 176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

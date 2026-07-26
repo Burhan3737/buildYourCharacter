@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHOULDER = wide strap with a deep dropped armhole scooped from the
+       shoulder line down to the ribs, and HEM = past hip. Against `tank` (narrow straps,
+       fitted, hip hem) the pair also differs on hem and on volume. -->
+  <defs>
+    <linearGradient id="adult-male-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0B94F)"/>
+      <stop offset="1" stop-color="var(--c2, #C08A2C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-ribbed-vest__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0B94F)"/>
+      <stop offset="1" stop-color="var(--c2, #C08A2C)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="6" height="14" fill="var(--c2, #C08A2C)" fill-opacity="0.38"/>
+    </pattern>
+    <clipPath id="adult-male-top-ribbed-vest__clip">
+      <path d="M158 172 Q174 190 200 192 Q226 190 242 172 Q265 188 265 224 V312
+               Q265 338 245 338 H155 Q135 338 135 312 V224 Q135 188 158 172 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide shoulder straps, set inboard of the arms -->
+    <rect x="150" y="146" width="30" height="34" rx="13" fill="url(#adult-male-top-ribbed-vest__strap)"/>
+    <rect x="220" y="146" width="30" height="34" rx="13" fill="url(#adult-male-top-ribbed-vest__strap)"/>
+    <!-- body: scooped neck, armholes cut deep into the sides, straight past-hip hem -->
+    <path d="M158 172 Q174 190 200 192 Q226 190 242 172 Q265 188 265 224 V312
+             Q265 338 245 338 H155 Q135 338 135 312 V224 Q135 188 158 172 Z"
+          fill="url(#adult-male-top-ribbed-vest__body)"/>
+  </g>
+
+  <!-- vertical rib surface, clipped to the garment -->
+  <g clip-path="url(#adult-male-top-ribbed-vest__clip)">
+    <rect x="130" y="164" width="140" height="180" fill="url(#adult-male-top-ribbed-vest__rib)"/>
+  </g>
+
+  <!-- bound neckline -->
+  <path d="M160 174 Q176 194 200 196 Q224 194 240 174" stroke="var(--c3, #3D4B5C)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- bound armholes, following the deep scoop -->
+  <path d="M156 174 Q136 192 136 224" stroke="var(--c3, #3D4B5C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 174 Q264 192 264 224" stroke="var(--c3, #3D4B5C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- strap binding at the shoulder -->
+  <rect x="150" y="146" width="30" height="8" rx="4" fill="var(--c3, #3D4B5C)"/>
+  <rect x="220" y="146" width="30" height="8" rx="4" fill="var(--c3, #3D4B5C)"/>
+
+  <!-- ribbed hem band -->
+  <path d="M135 314 H265 V312 Q265 338 245 338 H155 Q135 338 135 312 Z" fill="var(--c3, #3D4B5C)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M154 208 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

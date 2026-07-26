@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mary Janes" data-family="mary-janes" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: FASTENING = a single instep strap with a buckle over a bare instep,
+       and SHAFT HEIGHT = a scooped topline cut well below the ankle bone, so the vamp is a
+       low crescent rather than a closed collar. Against `dress-shoes` — a closed low
+       slip-on with a tapered toe and a heel wedge — the outline differs on fastening and
+       on the open topline, and the vamp is drawn as a scooped path, not a capsule. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-mary-janes__vamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C1466B)"/>
+      <stop offset="1" stop-color="var(--c2, #93304F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- low vamps with a scooped topline: left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M151 562 Q151 550 163 547 Q176 543 190 549 Q203 554 203 563
+             Q203 569 195 569 H159 Q151 569 151 562 Z"
+          fill="url(#adult-male-shoes-mary-janes__vamp)"/>
+    <path d="M197 562 Q197 550 209 547 Q222 543 236 549 Q249 554 249 563
+             Q249 569 241 569 H205 Q197 569 197 562 Z"
+          fill="url(#adult-male-shoes-mary-janes__vamp)"/>
+  </g>
+
+  <!-- thin flat sole edge sitting on the ground line -->
+  <path d="M149 562 H205 Q205 570 197 570 H157 Q149 570 149 562 Z" fill="var(--c2, #93304F)"/>
+  <path d="M195 562 H251 Q251 570 243 570 H203 Q195 570 195 562 Z" fill="var(--c2, #93304F)"/>
+
+  <!-- the bare instep, reading through the character's own skin tone -->
+  <path d="M164 548 Q178 542 191 549 L189 540 Q177 536 166 540 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M210 548 Q224 542 237 549 L235 540 Q223 536 212 540 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- single strap crossing the bare instep -->
+  <path d="M159 540 Q178 534 197 540 L197 548 Q178 542 159 548 Z" fill="var(--c1, #C1466B)"/>
+  <path d="M205 540 Q224 534 243 540 L243 548 Q224 542 205 548 Z" fill="var(--c1, #C1466B)"/>
+
+  <!-- buckle on the outer side of each strap -->
+  <rect x="190" y="537" width="8" height="9" rx="2.5" fill="var(--c3, #F7C873)"/>
+  <rect x="236" y="537" width="8" height="9" rx="2.5" fill="var(--c3, #F7C873)"/>
+  <path d="M194 539 V544" stroke="var(--c2, #93304F)" stroke-width="1.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 539 V544" stroke="var(--c2, #93304F)" stroke-width="1.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- contrast binding along the scooped topline -->
+  <path d="M152 558 Q163 548 176 546" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 558 Q209 548 222 546" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- toe highlight -->
+  <path d="M180 556 q12 3 20 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 556 q12 3 20 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

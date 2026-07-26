@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: closure = zip + volume = gathered (bloused above a ribbed hem band) -->
+  <defs>
+    <linearGradient id="adult-male-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FA08D)"/>
+      <stop offset="1" stop-color="var(--c2, #457567)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FA08D)"/>
+      <stop offset="1" stop-color="var(--c2, #457567)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <rect x="104" y="158" width="34" height="146" rx="16" fill="url(#adult-male-top-bomber__sleeve)"/>
+    <rect x="262" y="158" width="34" height="146" rx="16" fill="url(#adult-male-top-bomber__sleeve)"/>
+    <!-- torso blouses out through the chest, then gathers in above the hem band -->
+    <path d="M124 188 Q124 154 156 150 L244 150 Q276 154 276 188 L282 250 Q282 270 270 280 L270 296 Q270 318 250 318 L150 318 Q130 318 130 296 L130 280 Q118 270 118 250 Z"
+          fill="url(#adult-male-top-bomber__body)"/>
+  </g>
+  <!-- ribbed stand-up collar -->
+  <path d="M176 138 Q200 126 224 138 L224 152 Q200 142 176 152 Z" fill="var(--c2, #457567)"/>
+  <!-- ribbed cuffs -->
+  <rect x="102" y="292" width="38" height="20" rx="8" fill="var(--c2, #457567)"/>
+  <rect x="260" y="292" width="38" height="20" rx="8" fill="var(--c2, #457567)"/>
+  <!-- ribbed hem band, narrower than the bloused body above it -->
+  <rect x="130" y="292" width="140" height="26" rx="12" fill="var(--c2, #457567)"/>
+  <!-- centre zip with a pull -->
+  <path d="M200 150 V318" stroke="var(--c3, #C9A24A)" stroke-opacity="0.9" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="196" y="204" width="8" height="14" rx="2" fill="var(--c3, #C9A24A)"/>
+  <circle cx="200" cy="210" r="5" fill="var(--c3, #C9A24A)"/>
+  <!-- one welt pocket each side -->
+  <rect x="150" y="226" width="30" height="8" rx="4" fill="var(--c2, #457567)"/>
+  <rect x="220" y="226" width="30" height="8" rx="4" fill="var(--c2, #457567)"/>
+  <!-- highlight -->
+  <path d="M146 178 Q200 198 254 178" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

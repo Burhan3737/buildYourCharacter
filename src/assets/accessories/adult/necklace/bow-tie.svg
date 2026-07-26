@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bow Tie" data-family="bow-tie" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: BODY SHAPE = two symmetric wings meeting at a centre knot, and
+       DROP LENGTH = none — the whole form sits in a 22px band at the throat, where
+       `pendant` and `beads` hang down onto the collarbone. -->
+  <defs>
+    <linearGradient id="accessories-adult-necklace-bow-tie__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5566AF)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-necklace-bow-tie__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7ECFA)"/>
+      <stop offset="1" stop-color="var(--c2, #5566AF)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left wing: pinched at the knot, flaring out with a notched outer edge -->
+    <path d="M194 142 L170 136 Q163 135 163 143 L169 148 L163 153 Q163 161 170 160 L194 154 Z"
+          fill="url(#accessories-adult-necklace-bow-tie__wing)"/>
+    <!-- right wing, mirrored -->
+    <path d="M206 142 L230 136 Q237 135 237 143 L231 148 L237 153 Q237 161 230 160 L206 154 Z"
+          fill="url(#accessories-adult-necklace-bow-tie__wing)"/>
+    <!-- centre knot -->
+    <rect x="192" y="139" width="16" height="18" rx="5"
+          fill="url(#accessories-adult-necklace-bow-tie__knot)"/>
+  </g>
+
+  <!-- neck band disappearing behind the collar on each side -->
+  <path d="M192 144 Q178 139 172 141" stroke="var(--c2, #5566AF)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M208 144 Q222 139 228 141" stroke="var(--c2, #5566AF)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- fold creases running out of the knot -->
+  <path d="M190 143 L176 141" stroke="var(--c2, #5566AF)" stroke-opacity="0.5"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M190 153 L176 156" stroke="var(--c2, #5566AF)" stroke-opacity="0.5"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M210 143 L224 141" stroke="var(--c2, #5566AF)" stroke-opacity="0.5"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M210 153 L224 156" stroke="var(--c2, #5566AF)" stroke-opacity="0.5"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M172 140 Q182 138 190 140" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 140 Q218 138 210 140" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

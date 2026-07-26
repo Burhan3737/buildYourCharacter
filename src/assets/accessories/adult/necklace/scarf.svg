@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Neck Scarf" data-family="scarf" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: BODY SHAPE = a soft fabric loop with volume, not a chain or a band,
+       and SCALE = 70px wide across the neck against the 40px of `choker`.
+       Ends deliberately kept short so the head-ratio transform lands correctly. -->
+  <defs>
+    <linearGradient id="accessories-adult-necklace-scarf__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9635A)"/>
+      <stop offset="1" stop-color="var(--c2, #96453F)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-necklace-scarf__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9635A)"/>
+      <stop offset="1" stop-color="var(--c2, #853B36)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-necklace-scarf__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="14" height="4" fill="var(--c3, #F0D9B0)" fill-opacity="0.6"/>
+      <rect x="0" y="0" width="4" height="14" fill="var(--c3, #F0D9B0)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="accessories-adult-necklace-scarf__clip">
+      <path d="M165 144 Q200 132 235 144 Q240 158 234 166 Q200 176 166 166 Q160 158 165 144 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two short hanging ends, drawn first so the loop overlaps them -->
+    <path d="M186 160 L179 190 Q186 194 194 190 L196 160 Z"
+          fill="url(#accessories-adult-necklace-scarf__tail)"/>
+    <path d="M214 160 L221 188 Q214 192 206 188 L204 160 Z"
+          fill="url(#accessories-adult-necklace-scarf__tail)"/>
+    <!-- the soft loop round the neck -->
+    <path d="M165 144 Q200 132 235 144 Q240 158 234 166 Q200 176 166 166 Q160 158 165 144 Z"
+          fill="url(#accessories-adult-necklace-scarf__cloth)"/>
+  </g>
+
+  <!-- woven check, clipped to the loop -->
+  <g clip-path="url(#accessories-adult-necklace-scarf__clip)">
+    <rect x="158" y="130" width="86" height="50" fill="url(#accessories-adult-necklace-scarf__check)"/>
+  </g>
+
+  <!-- fringe on the two ends -->
+  <g fill="var(--c3, #F0D9B0)">
+    <rect x="180" y="188" width="3.4" height="9" rx="1.7"/>
+    <rect x="186" y="190" width="3.4" height="9" rx="1.7"/>
+    <rect x="192" y="188" width="3.4" height="9" rx="1.7"/>
+    <rect x="207" y="187" width="3.4" height="9" rx="1.7"/>
+    <rect x="213" y="189" width="3.4" height="9" rx="1.7"/>
+    <rect x="219" y="187" width="3.4" height="9" rx="1.7"/>
+  </g>
+
+  <!-- fold shadow where the loop crosses itself -->
+  <path d="M186 160 Q200 168 214 160" stroke="var(--c2, #96453F)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- upper-surface highlight -->
+  <path d="M174 145 Q200 138 226 145" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

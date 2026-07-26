@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jeans" data-family="jeans" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: rise=natural, leg width=straight
+       (vs cargo: low rise + wide-relaxed leg; vs leggings: high rise + skin-close leg) -->
   <defs>
     <linearGradient id="adult-male-bottom-jeans__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
@@ -12,50 +14,60 @@
     </linearGradient>
   </defs>
 
-  <!-- trousers: both legs plus the hip block on top, one shadow group -->
+  <!-- straight five-pocket jeans: hip block plus both legs, one shadow group -->
   <g class="sp-shadow">
-    <path d="M160 336 H197 V538 q0 10 -10 10 H177 q-10 0 -10 -10 Z"
+    <path d="M161 358 H195 V536 q0 8 -8 8 H169 q-8 0 -8 -8 Z"
           fill="url(#adult-male-bottom-jeans__leg)"/>
-    <path d="M240 336 H203 V538 q0 10 10 10 H223 q10 0 10 -10 Z"
+    <path d="M239 358 H205 V536 q0 8 8 8 H231 q8 0 8 -8 Z"
           fill="url(#adult-male-bottom-jeans__leg)"/>
-    <rect x="138" y="298" width="124" height="60" rx="26"
+    <rect x="138" y="300" width="124" height="58" rx="22"
           fill="url(#adult-male-bottom-jeans__hip)"/>
   </g>
 
-  <!-- waistband -->
-  <rect x="138" y="298" width="124" height="20" rx="9" fill="var(--c2, #5E72AB)"/>
+  <!-- structured waistband -->
+  <rect x="138" y="300" width="124" height="18" rx="8" fill="var(--c2, #5E72AB)"/>
+  <rect x="138" y="300" width="124" height="7" rx="3" fill="var(--c1, #6E86C8)" opacity="0.5"/>
   <!-- belt loops -->
-  <rect x="158" y="296" width="7" height="26" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="196" y="296" width="8" height="26" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="235" y="296" width="7" height="26" rx="3" fill="var(--c2, #5E72AB)"/>
+  <rect x="158" y="298" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
+  <rect x="196" y="298" width="8" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
+  <rect x="235" y="298" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
 
   <!-- curved front pockets -->
-  <path d="M138 318 H169 Q161 344 138 339 Z" fill="var(--c2, #5E72AB)"/>
-  <path d="M262 318 H231 Q239 344 262 339 Z" fill="var(--c2, #5E72AB)"/>
+  <path d="M138 320 H167 Q160 344 138 340 Z" fill="var(--c2, #5E72AB)"/>
+  <path d="M262 320 H233 Q240 344 262 340 Z" fill="var(--c2, #5E72AB)"/>
+  <!-- rivets -->
+  <circle cx="141" cy="322" r="2.6" fill="var(--c3, #EBC98A)"/>
+  <circle cx="259" cy="322" r="2.6" fill="var(--c3, #EBC98A)"/>
+  <circle cx="163" cy="360" r="2.6" fill="var(--c3, #EBC98A)"/>
+  <circle cx="237" cy="360" r="2.6" fill="var(--c3, #EBC98A)"/>
+
+  <!-- back-yoke seam suggestion at the hip sides -->
+  <path d="M144 306 Q150 316 144 328" stroke="var(--c3, #EBC98A)" stroke-width="2"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M256 306 Q250 316 256 328" stroke="var(--c3, #EBC98A)" stroke-width="2"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
 
   <!-- centre fly seam -->
-  <path d="M200 320 q5 18 1 34" stroke="var(--c2, #5E72AB)" stroke-width="4"
+  <path d="M200 320 q4 18 0 34" stroke="var(--c2, #5E72AB)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
-  <!-- topstitching -->
-  <path d="M169 320 Q161 342 140 338" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <!-- contrast topstitching -->
+  <path d="M167 322 Q160 342 140 338" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M231 320 Q239 342 260 338" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M233 322 Q240 342 260 338" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
   <path d="M200 322 v32" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M140 313 H260" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
-        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
-  <path d="M170 536 H190" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M161 534 H187" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M210 536 H230" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M213 534 H239" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
 
   <!-- soft upper highlight -->
-  <path d="M158 322 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M158 314 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M170 362 q0 80 -2 160" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+  <path d="M172 372 q0 78 -2 154" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M230 362 q0 80 2 160" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+  <path d="M228 372 q0 78 2 154" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

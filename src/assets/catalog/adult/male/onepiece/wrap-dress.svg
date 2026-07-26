@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Dress" data-family="wrap-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = diagonal crossover bodice tied at the waist, and
+       SHOULDER = three-quarter sleeves ending mid-forearm. Hem at the knee, skirt flared.
+       Differs from `robe` on hem + shoulder, from `party-dress` on closure + volume. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-wrap-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8607F)"/>
+      <stop offset="1" stop-color="var(--c2, #9A4560)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-wrap-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B45673)"/>
+      <stop offset="1" stop-color="var(--c2, #8B3C55)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-wrap-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8607F)"/>
+      <stop offset="1" stop-color="var(--c2, #9A4560)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-wrap-dress__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8607F)"/>
+      <stop offset="1" stop-color="var(--c2, #8B3C55)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves, ending mid-forearm at y268 -->
+    <rect x="104" y="158" width="35" height="112" rx="17" fill="url(#adult-male-onepiece-wrap-dress__sleeve)"/>
+    <rect x="261" y="158" width="35" height="112" rx="17" fill="url(#adult-male-onepiece-wrap-dress__sleeve)"/>
+    <!-- flared knee-length skirt -->
+    <path d="M136 282 H264 Q278 360 288 436 Q200 452 112 436 Q122 360 136 282 Z"
+          fill="url(#adult-male-onepiece-wrap-dress__skirt)"/>
+    <!-- under-side of the crossover, running from the left shoulder to the right waist -->
+    <path d="M164 148 Q134 152 132 190 L136 292 H264 L262 226 L200 200 Z"
+          fill="url(#adult-male-onepiece-wrap-dress__under)"/>
+    <!-- over-side of the crossover, right shoulder down across to the left waist -->
+    <path d="M236 148 Q268 152 270 190 L266 292 H140 L200 214 L214 152 Z"
+          fill="url(#adult-male-onepiece-wrap-dress__over)"/>
+  </g>
+
+  <!-- deep V made by the two crossing edges, bound in a contrast -->
+  <path d="M164 150 L206 268" stroke="var(--c3, #F6E0D2)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 150 L194 268" stroke="var(--c3, #F6E0D2)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 148 Q200 190 224 148 Q212 206 200 214 Q188 206 176 148 Z"
+        fill="var(--skin2, #E7B892)"/>
+
+  <!-- tie belt knotted at the side of the waist -->
+  <rect x="132" y="276" width="136" height="16" rx="7" fill="var(--c3, #F6E0D2)"/>
+  <rect x="150" y="272" width="24" height="24" rx="8" fill="var(--c1, #C8607F)"/>
+  <path d="M152 292 Q142 316 136 336" stroke="var(--c3, #F6E0D2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 292 Q166 318 164 338" stroke="var(--c3, #F6E0D2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- skirt folds and hem band -->
+  <g stroke="var(--c2, #8B3C55)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M166 300 L146 428"/>
+    <path d="M234 300 L254 428"/>
+  </g>
+  <path d="M116 428 Q200 444 284 428" stroke="var(--c3, #F6E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M152 176 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

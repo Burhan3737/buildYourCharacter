@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dressing Gown" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = wrap front, one side crossing over the other and held by
+       a tie belt; VOLUME = draped and flared, widening from the shoulder to a mid-calf hem.
+       Differs from `kaftan` on closure + volume, from `jumpsuit` on closure + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-robe__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6FB4)"/>
+      <stop offset="1" stop-color="var(--c2, #63498A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6FB4)"/>
+      <stop offset="1" stop-color="var(--c2, #63498A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-robe__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B5DA0)"/>
+      <stop offset="1" stop-color="var(--c2, #58407C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide draped sleeves, flaring toward the wrist -->
+    <path d="M104 168 Q100 170 100 184 L96 320 Q96 336 112 336 H136 Q150 336 150 320 L142 184
+             Q140 170 132 168 Z"
+          fill="url(#adult-male-onepiece-robe__sleeve)"/>
+    <path d="M296 168 Q300 170 300 184 L304 320 Q304 336 288 336 H264 Q250 336 250 320 L258 184
+             Q260 170 268 168 Z"
+          fill="url(#adult-male-onepiece-robe__sleeve)"/>
+    <!-- under-side of the wrap, crossing right over left -->
+    <path d="M200 178 L268 158 Q276 190 280 300 L292 486 Q248 500 200 500 Z"
+          fill="url(#adult-male-onepiece-robe__under)"/>
+    <!-- over-side of the wrap -->
+    <path d="M200 178 L132 158 Q124 190 120 300 L108 486 Q152 500 200 500 Z"
+          fill="url(#adult-male-onepiece-robe__cloth)"/>
+  </g>
+
+  <!-- shawl collar running down both sides of the crossover -->
+  <path d="M132 158 L200 182 L200 200 L126 176 Z" fill="var(--c3, #E6D8F2)"/>
+  <path d="M268 158 L200 182 L200 200 L274 176 Z" fill="var(--c3, #E6D8F2)"/>
+  <path d="M200 182 L200 496" stroke="var(--c3, #E6D8F2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- tie belt with two hanging ends -->
+  <rect x="112" y="292" width="176" height="18" rx="8" fill="var(--c3, #E6D8F2)"/>
+  <path d="M190 300 Q182 342 176 372" stroke="var(--c3, #E6D8F2)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 300 Q218 342 224 372" stroke="var(--c3, #E6D8F2)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <rect x="186" y="288" width="28" height="26" rx="9" fill="var(--c1, #8E6FB4)"/>
+
+  <!-- patch pocket -->
+  <rect x="136" y="352" width="46" height="42" rx="6" fill="var(--c2, #63498A)" fill-opacity="0.45"/>
+  <path d="M136 362 H182" stroke="var(--c3, #E6D8F2)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- drape folds and highlight -->
+  <g stroke="var(--c2, #63498A)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M150 320 L138 486"/>
+    <path d="M250 320 L262 486"/>
+  </g>
+  <path d="M152 196 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

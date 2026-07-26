@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Quilted Gilet" data-family="puffer-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = none (sleeveless, arms fully bare),
+       HEM = past hip. Also closure = zip, volume = boxy.
+       Differs from `waistcoat` on closure + volume, from `tank` on shoulder + closure. -->
+  <defs>
+    <linearGradient id="adult-male-top-puffer-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9553F)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A2A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-puffer-vest__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8E3A2A)"/>
+      <stop offset="1" stop-color="var(--c2, #74301F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major form: one bulky sleeveless body, shoulders capped just inside the arms -->
+  <g class="sp-shadow">
+    <path d="M133 192 Q133 144 179 144 H221 Q267 144 267 192 V324 Q267 338 253 338 H147 Q133 338 133 324 Z"
+          fill="url(#adult-male-top-puffer-vest__body)"/>
+  </g>
+
+  <!-- horizontal quilting channel seams: the surface that makes it read as a puffer -->
+  <g stroke="var(--c2, #8E3A2A)" stroke-opacity="0.5" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M136 186 Q200 196 264 186"/>
+    <path d="M134 220 Q200 230 266 220"/>
+    <path d="M134 254 Q200 264 266 254"/>
+    <path d="M134 288 Q200 298 266 288"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.16">
+    <path d="M136 190 Q200 200 264 190 V204 Q200 214 136 204 Z"/>
+    <path d="M134 224 Q200 234 266 224 V238 Q200 248 134 238 Z"/>
+    <path d="M134 258 Q200 268 266 258 V272 Q200 282 134 272 Z"/>
+    <path d="M134 292 Q200 302 266 292 V306 Q200 316 134 306 Z"/>
+  </g>
+
+  <!-- high stand collar -->
+  <path d="M166 156 Q200 174 234 156 L234 120 Q200 134 166 120 Z"
+        fill="url(#adult-male-top-puffer-vest__collar)"/>
+  <path d="M178 128 q22 14 44 0 v12 q-22 14 -44 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- centre zip and pull -->
+  <rect x="195" y="144" width="10" height="192" rx="4" fill="var(--c2, #8E3A2A)"/>
+  <path d="M200 150 V332" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"
+        fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <rect x="196" y="248" width="8" height="18" rx="4" fill="var(--c3, #F7C873)"/>
+
+  <!-- two hand-warmer pockets with contrast binding -->
+  <path d="M141 268 h34 v10 h-34 z" fill="var(--c3, #F7C873)"/>
+  <path d="M259 268 h-34 v10 h34 z" fill="var(--c3, #F7C873)"/>
+  <path d="M141 278 h34 q-4 26 -18 30 q-16 -4 -16 -30 z" fill="var(--c2, #8E3A2A)" fill-opacity="0.4"/>
+  <path d="M259 278 h-34 q4 26 18 30 q16 -4 16 -30 z" fill="var(--c2, #8E3A2A)" fill-opacity="0.4"/>
+
+  <!-- armhole binding -->
+  <path d="M137 168 Q145 210 141 250" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M263 168 Q255 210 259 250" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M152 170 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chef's Whites" data-family="chef" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: closure (double-breasted, two button columns) and hem (a long apron
+       reaching the calf, well past the jacket's own hem). -->
+  <defs>
+    <linearGradient id="adult-male-costume-chef__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5F1E8)"/>
+      <stop offset="1" stop-color="var(--c1, #E3DCC9)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-chef__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E9DFC8)"/>
+      <stop offset="1" stop-color="var(--c2, #D4C6A8)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- jacket and trouser legs -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="14" fill="url(#adult-male-costume-chef__jacket)"/>
+    <rect x="206" y="336" width="32" height="216" rx="14" fill="url(#adult-male-costume-chef__jacket)"/>
+    <rect x="140" y="300" width="120" height="54" rx="20" fill="url(#adult-male-costume-chef__jacket)"/>
+    <path d="M135 149 Q135 148 139 148 L261 148 Q265 148 265 149 L265 258 Q265 288 249 298 L151 298 Q135 288 135 258 Z"
+          fill="url(#adult-male-costume-chef__jacket)"/>
+    <rect x="108" y="160" width="26" height="150" rx="13" fill="url(#adult-male-costume-chef__jacket)"/>
+    <rect x="266" y="160" width="26" height="150" rx="13" fill="url(#adult-male-costume-chef__jacket)"/>
+  </g>
+
+  <!-- long waist apron, reaching the calf -->
+  <g class="sp-shadow">
+    <rect x="148" y="298" width="104" height="204" rx="18" fill="url(#adult-male-costume-chef__apron)"/>
+  </g>
+  <rect x="182" y="296" width="36" height="14" rx="7" fill="var(--c2, #D4C6A8)"/>
+  <path d="M148 340 q-16 6 -14 24 M252 340 q16 6 14 24" stroke="var(--c2, #D4C6A8)"
+        stroke-width="4" fill="none" stroke-opacity="0.7" stroke-linecap="round"/>
+
+  <!-- double-breasted button columns -->
+  <g fill="var(--c3, #C4534B)">
+    <circle cx="180" cy="182" r="4.5"/>
+    <circle cx="180" cy="204" r="4.5"/>
+    <circle cx="180" cy="226" r="4.5"/>
+    <circle cx="220" cy="182" r="4.5"/>
+    <circle cx="220" cy="204" r="4.5"/>
+    <circle cx="220" cy="226" r="4.5"/>
+  </g>
+
+  <!-- knotted neckerchief -->
+  <path d="M182 150 L200 172 L218 150 Q200 162 182 150 Z" fill="var(--c3, #C4534B)"/>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

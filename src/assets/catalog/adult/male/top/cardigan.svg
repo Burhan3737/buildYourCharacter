@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = open front (two separate fronts, a gap down the centre),
+       HEM = thigh. Also shoulder = long dropped, volume = flared/A-line.
+       Differs from `flannel-overshirt` on hem + volume, from `blazer` on shoulder + hem. -->
+  <defs>
+    <linearGradient id="adult-male-top-cardigan__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B4A183)"/>
+      <stop offset="1" stop-color="var(--c2, #7E6B48)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B4A183)"/>
+      <stop offset="1" stop-color="var(--c2, #7E6B48)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-cardigan__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="4" height="14" fill="var(--c2, #7E6B48)" fill-opacity="0.32"/>
+    </pattern>
+    <clipPath id="adult-male-top-cardigan__clipL">
+      <path d="M126 198 Q126 150 170 150 L196 246 L196 374 H114 Q106 288 126 198 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-top-cardigan__clipR">
+      <path d="M274 198 Q274 150 230 150 L204 246 L204 374 H286 Q294 288 274 198 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two dropped-shoulder sleeves and two flared open front panels -->
+  <g class="sp-shadow">
+    <rect x="98" y="168" width="42" height="180" rx="21" fill="url(#adult-male-top-cardigan__sleeve)"/>
+    <rect x="260" y="168" width="42" height="180" rx="21" fill="url(#adult-male-top-cardigan__sleeve)"/>
+    <path d="M126 198 Q126 150 170 150 L196 246 L196 374 H114 Q106 288 126 198 Z"
+          fill="url(#adult-male-top-cardigan__knit)"/>
+    <path d="M274 198 Q274 150 230 150 L204 246 L204 374 H286 Q294 288 274 198 Z"
+          fill="url(#adult-male-top-cardigan__knit)"/>
+  </g>
+
+  <!-- knit rib surface, clipped to each front -->
+  <g clip-path="url(#adult-male-top-cardigan__clipL)">
+    <rect x="100" y="140" width="110" height="240" fill="url(#adult-male-top-cardigan__rib)"/>
+  </g>
+  <g clip-path="url(#adult-male-top-cardigan__clipR)">
+    <rect x="190" y="140" width="110" height="240" fill="url(#adult-male-top-cardigan__rib)"/>
+  </g>
+
+  <!-- wide shawl-ish front bands running the full length of the opening -->
+  <path d="M170 150 L196 246 L196 374 H182 L182 248 L156 154 Z" fill="var(--c3, #E4D7BC)"/>
+  <path d="M230 150 L204 246 L204 374 H218 L218 248 L244 154 Z" fill="var(--c3, #E4D7BC)"/>
+
+  <!-- ribbed cuffs -->
+  <rect x="98" y="326" width="42" height="22" rx="11" fill="var(--c3, #E4D7BC)"/>
+  <rect x="260" y="326" width="42" height="22" rx="11" fill="var(--c3, #E4D7BC)"/>
+
+  <!-- two low patch pockets -->
+  <rect x="132" y="292" width="46" height="46" rx="8" fill="var(--c2, #7E6B48)" fill-opacity="0.45"/>
+  <rect x="222" y="292" width="46" height="46" rx="8" fill="var(--c2, #7E6B48)" fill-opacity="0.45"/>
+  <path d="M132 302 h46" stroke="var(--c3, #E4D7BC)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M222 302 h46" stroke="var(--c3, #E4D7BC)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- dropped shoulder seams -->
+  <path d="M140 176 Q152 164 172 158" stroke="var(--c2, #7E6B48)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 176 Q248 164 228 158" stroke="var(--c2, #7E6B48)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M144 178 q28 14 48 22" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 178 q-28 14 -48 22" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

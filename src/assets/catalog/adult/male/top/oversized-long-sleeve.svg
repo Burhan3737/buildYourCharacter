@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: HEM = thigh (a long straight column well past the hip),
+       SHOULDER = dropped, sleeves running past the wrist over the hands.
+       Differs from `sweater` on hem + volume, from `hoodie` on hem + volume. -->
+  <defs>
+    <linearGradient id="adult-male-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9DEE6)"/>
+      <stop offset="1" stop-color="var(--c2, #A6B0BF)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-oversized-long-sleeve__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9DEE6)"/>
+      <stop offset="1" stop-color="var(--c2, #A6B0BF)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-oversized-long-sleeve__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E5C7E)"/>
+      <stop offset="1" stop-color="var(--c3, #2F4762)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two extra-long dropped sleeves and one straight tunic column -->
+  <g class="sp-shadow">
+    <rect x="96" y="176" width="43" height="182" rx="21" fill="url(#adult-male-top-oversized-long-sleeve__sleeve)"/>
+    <rect x="261" y="176" width="43" height="182" rx="21" fill="url(#adult-male-top-oversized-long-sleeve__sleeve)"/>
+    <path d="M120 202 Q120 146 176 146 H224 Q280 146 280 202 V362 Q280 376 266 376 H134 Q120 376 120 362 Z"
+          fill="url(#adult-male-top-oversized-long-sleeve__body)"/>
+  </g>
+
+  <!-- contrast chest yoke: a shallow band with a curved lower seam, not a slab -->
+  <path d="M120 202 Q120 146 176 146 H224 Q280 146 280 202 Q200 218 120 202 Z"
+        fill="url(#adult-male-top-oversized-long-sleeve__yoke)"/>
+  <path d="M120 200 Q200 216 280 200" stroke="var(--c2, #A6B0BF)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- crew neck bind and neck opening -->
+  <path d="M176 146 q24 22 48 0 v9 q-24 24 -48 0 z" fill="var(--c1, #D9DEE6)"/>
+  <path d="M182 147 q18 18 36 0 v5 q-18 18 -36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- dropped shoulder seams sitting well down the arm -->
+  <path d="M139 194 Q150 176 176 168" stroke="var(--c2, #A6B0BF)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M261 194 Q250 176 224 168" stroke="var(--c2, #A6B0BF)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- turned-back sleeve ends past the wrist -->
+  <rect x="96" y="334" width="43" height="24" rx="12" fill="var(--c3, #3E5C7E)"/>
+  <rect x="261" y="334" width="43" height="24" rx="12" fill="var(--c3, #3E5C7E)"/>
+
+  <!-- split side hem vents -->
+  <path d="M122 336 V370" stroke="var(--c2, #A6B0BF)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M278 336 V370" stroke="var(--c2, #A6B0BF)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- deep hem band, in the same accent as the yoke so the column reads top-and-tailed -->
+  <path d="M120 354 H280 V362 Q280 376 266 376 H134 Q120 376 120 362 Z"
+        fill="url(#adult-male-top-oversized-long-sleeve__yoke)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M148 236 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

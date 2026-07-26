@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: shoulder = none (sleeveless) + hem = hip with a pointed front -->
+  <defs>
+    <linearGradient id="adult-male-top-waistcoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5049)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3B36)"/>
+    </linearGradient>
+  </defs>
+  <!-- deep V front reveals the chest -->
+  <path d="M190 150 Q200 190 200 230 Q200 190 210 150 Z" fill="var(--skin2, #E7B892)"/>
+  <g class="sp-shadow">
+    <!-- fitted, sleeveless torso: deep V neck, pointed hem -->
+    <path d="M150 150 Q150 148 156 148 L196 148 L200 232 L204 148 L244 148 Q250 148 250 150 L256 300 Q256 312 246 312 L206 312 L200 326 L194 312 L154 312 Q144 312 144 300 Z"
+          fill="url(#adult-male-top-waistcoat__body)"/>
+  </g>
+  <!-- contrast back-panel strip peeking at each armhole -->
+  <path d="M150 150 L156 148 L160 178 L150 192 Z" fill="var(--c3, #D6A64C)"/>
+  <path d="M250 150 L244 148 L240 178 L250 192 Z" fill="var(--c3, #D6A64C)"/>
+  <!-- four buttons down the placket -->
+  <circle cx="200" cy="246" r="4" fill="var(--c2, #5C3B36)"/>
+  <circle cx="200" cy="264" r="4" fill="var(--c2, #5C3B36)"/>
+  <circle cx="200" cy="282" r="4" fill="var(--c2, #5C3B36)"/>
+  <circle cx="200" cy="300" r="4" fill="var(--c2, #5C3B36)"/>
+  <!-- two welt pockets -->
+  <rect x="160" y="272" width="30" height="8" rx="4" fill="var(--c2, #5C3B36)"/>
+  <rect x="210" y="272" width="30" height="8" rx="4" fill="var(--c2, #5C3B36)"/>
+  <!-- highlight -->
+  <path d="M156 172 Q178 186 196 176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 176 Q222 186 244 172" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

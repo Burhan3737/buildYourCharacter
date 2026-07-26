@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight's Tabard" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: shoulder/sleeve (plate pauldrons capping the shoulder) and closure
+       (open-sided tabard worn loose over a mail body, not closed at the sides). -->
+  <defs>
+    <linearGradient id="adult-male-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9CA6B8)"/>
+      <stop offset="1" stop-color="var(--c1, #7C879C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #445076)"/>
+      <stop offset="1" stop-color="var(--c2, #333C5C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-knight__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9A548)"/>
+      <stop offset="1" stop-color="var(--c3, #B9862F)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-knight__mesh" patternUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+      <circle cx="6" cy="6" r="4" fill="none" stroke="var(--c1, #7C879C)" stroke-width="1.4" stroke-opacity="0.55"/>
+    </pattern>
+    <clipPath id="adult-male-costume-knight__mailclip">
+      <path d="M133 150 Q133 148 137 148 L263 148 Q267 148 267 150 L267 264 Q267 292 251 302 L149 302 Q133 292 133 264 Z"/>
+      <rect x="140" y="300" width="120" height="56" rx="14"/>
+      <rect x="162" y="336" width="32" height="216" rx="10"/>
+      <rect x="206" y="336" width="32" height="216" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- mail body -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="10" fill="url(#adult-male-costume-knight__mail)"/>
+    <rect x="206" y="336" width="32" height="216" rx="10" fill="url(#adult-male-costume-knight__mail)"/>
+    <rect x="140" y="300" width="120" height="56" rx="14" fill="url(#adult-male-costume-knight__mail)"/>
+    <path d="M133 150 Q133 148 137 148 L263 148 Q267 148 267 150 L267 264 Q267 292 251 302 L149 302 Q133 292 133 264 Z"
+          fill="url(#adult-male-costume-knight__mail)"/>
+    <rect x="108" y="160" width="26" height="140" rx="10" fill="url(#adult-male-costume-knight__mail)"/>
+    <rect x="266" y="160" width="26" height="140" rx="10" fill="url(#adult-male-costume-knight__mail)"/>
+  </g>
+  <g clip-path="url(#adult-male-costume-knight__mailclip)">
+    <rect x="106" y="148" width="188" height="404" fill="url(#adult-male-costume-knight__mesh)"/>
+  </g>
+
+  <!-- open-sided tabard: narrower than the mail body, sides left visibly open -->
+  <g class="sp-shadow">
+    <path d="M158 158 L242 158 L246 292 Q200 304 154 292 Z" fill="url(#adult-male-costume-knight__tabard)"/>
+  </g>
+  <path d="M158 158 L154 292 M242 158 L246 292" stroke="var(--c3, #D9A548)" stroke-width="4"
+        fill="none" stroke-opacity="0.8" stroke-linecap="round"/>
+
+  <!-- shoulder pauldrons -->
+  <g class="sp-shadow">
+    <path d="M98 168 Q98 150 118 150 Q140 150 140 172 L140 200 Q116 208 98 196 Z"
+          fill="url(#adult-male-costume-knight__plate)"/>
+    <path d="M302 168 Q302 150 282 150 Q260 150 260 172 L260 200 Q284 208 302 196 Z"
+          fill="url(#adult-male-costume-knight__plate)"/>
+  </g>
+
+  <!-- mailed gauntlets -->
+  <g class="sp-shadow">
+    <circle cx="120" cy="330" r="16" fill="url(#adult-male-costume-knight__mail)"/>
+    <circle cx="280" cy="330" r="16" fill="url(#adult-male-costume-knight__mail)"/>
+  </g>
+
+  <!-- wide belt at the waist -->
+  <rect x="138" y="290" width="124" height="20" rx="9" fill="var(--c3, #D9A548)"/>
+  <rect x="188" y="288" width="24" height="24" rx="7" fill="var(--c3, #D9A548)"/>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

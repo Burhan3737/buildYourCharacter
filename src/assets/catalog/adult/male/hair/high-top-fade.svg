@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: VOLUME/TEXTURE OF THE OUTLINE — a squared column standing 30px proud of the skull
+       with a flat top and vertical walls; the only deliberately hard-cornered outline in the
+       slot. LENGTH — the sides are shaved to nothing, so the length reads as a step, not a
+       taper, and the fade is a value ramp from hair2 at the skin line up to hair1 with a
+       dead-straight front hairline at y 69. Differs from buzz and taper-fade on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-high-top-fade__backfade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #4E3527)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #4E3527)"/>
+        <stop offset="1" stop-color="var(--hair1, #6B4A3A)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M149 69 C147 99 151 127 159 144 C176 152 224 152 241 144
+               C249 127 253 99 251 69 C231 81 169 81 149 69 Z"
+            fill="url(#adult-male-hair-high-top-fade__backfade)"/>
+    </g>
+    <path d="M152 137 C174 147 226 147 248 137 C242 147 158 147 152 137 Z"
+          fill="var(--hair2, #4E3527)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-high-top-fade__column" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="0.72" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-high-top-fade__frontfade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #4E3527)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #4E3527)"/>
+        <stop offset="1" stop-color="var(--hair1, #6B4A3A)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M157 69 L157 12 C157 5 163 1 172 1 L228 1
+               C237 1 243 5 243 12 L243 69 Z"
+            fill="url(#adult-male-hair-high-top-fade__column)"/>
+      <path d="M144 64 C142 90 148 114 159 131 L176 131 C166 114 160 90 160 64 Z"
+            fill="url(#adult-male-hair-high-top-fade__frontfade)"/>
+      <path d="M256 64 C258 90 252 114 241 131 L224 131 C234 114 240 90 240 64 Z"
+            fill="url(#adult-male-hair-high-top-fade__frontfade)"/>
+    </g>
+    <path d="M157 61 L243 61 L243 69 L157 69 Z" fill="var(--hair2, #4E3527)"/>
+    <path d="M145 99 C149 109 152 115 155 119" stroke="var(--hair2, #4E3527)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M255 99 C251 109 248 115 245 119" stroke="var(--hair2, #4E3527)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M166 11 C180 6 214 6 230 11" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M163 23 L163 57" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

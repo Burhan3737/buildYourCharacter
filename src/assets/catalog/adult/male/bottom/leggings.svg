@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: rise=high (tall waistband), leg width=skin-close, hem=elasticated
+       (vs jeans: natural rise + straight leg + raw hem; vs cargo: low rise + wide-relaxed leg) -->
   <defs>
     <linearGradient id="adult-male-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
@@ -12,38 +14,42 @@
     </linearGradient>
   </defs>
 
-  <!-- skin-tight legs plus hip block, one shadow group -->
+  <!-- high-rise skin-close leggings: tall hip block plus both tapered leg tubes, one shadow group -->
   <g class="sp-shadow">
-    <path d="M158 334 H195 V538 q0 10 -10 10 H175 q-10 0 -10 -10 Z"
+    <path d="M162 358 Q158 452 163 540 Q164 548 172 548 H184 Q192 548 193 540 Q198 452 194 358 Z"
           fill="url(#adult-male-bottom-leggings__leg)"/>
-    <path d="M242 334 H205 V538 q0 10 10 10 H225 q10 0 10 -10 Z"
+    <path d="M238 358 Q242 452 237 540 Q236 548 228 548 H216 Q208 548 207 540 Q202 452 206 358 Z"
           fill="url(#adult-male-bottom-leggings__leg)"/>
-    <rect x="138" y="298" width="124" height="60" rx="26"
+    <rect x="140" y="290" width="120" height="68" rx="28"
           fill="url(#adult-male-bottom-leggings__hip)"/>
   </g>
 
-  <!-- thin high waistband -->
-  <rect x="138" y="296" width="124" height="15" rx="7" fill="var(--c2, #2A1D18)"/>
-  <path d="M140 306 H260" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"
+  <!-- wide elastic waistband with rib lines -->
+  <rect x="140" y="290" width="120" height="26" rx="13" fill="var(--c2, #2A1D18)"/>
+  <path d="M152 296 v14" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 296 v14" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 296 v14" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 296 v14" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2.5"
         fill="none" stroke-linecap="round"/>
 
-  <!-- outer leg seams -->
-  <path d="M164 352 V536" stroke="var(--c2, #2A1D18)" stroke-width="4"
+  <!-- contrast side stripe panels -->
+  <path d="M167 360 Q163 452 168 540" stroke="var(--c3, #6BBFAD)" stroke-width="7"
         fill="none" stroke-linecap="round"/>
-  <path d="M236 352 V536" stroke="var(--c2, #2A1D18)" stroke-width="4"
+  <path d="M233 360 Q237 452 232 540" stroke="var(--c3, #6BBFAD)" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 
-  <!-- ankle hem bands -->
-  <path d="M165 534 H185" stroke="var(--c2, #2A1D18)" stroke-width="5"
-        fill="none" stroke-linecap="round"/>
-  <path d="M215 534 H235" stroke="var(--c2, #2A1D18)" stroke-width="5"
-        fill="none" stroke-linecap="round"/>
+  <!-- elasticated ankle cuff binding -->
+  <path d="M164 540 Q164 550 172 550 H184 Q192 550 192 540 Z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M208 540 Q208 550 216 550 H228 Q236 550 236 540 Z" fill="var(--c3, #6BBFAD)"/>
 
   <!-- soft upper highlight -->
-  <path d="M158 318 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M154 306 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M186 360 q-2 74 -4 150" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
+  <path d="M182 366 q-4 84 -6 168" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M214 360 q2 74 4 150" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
+  <path d="M218 366 q4 84 6 168" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

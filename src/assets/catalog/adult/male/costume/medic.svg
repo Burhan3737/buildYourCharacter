@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic Scrubs" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: closure (closed V-neck pullover, no placket) and hem (short tunic at the
+       hip, layered over separate drawstring trousers below it). No cross, no logo. -->
+  <defs>
+    <linearGradient id="adult-male-costume-medic__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6FB8AE)"/>
+      <stop offset="1" stop-color="var(--c1, #559A91)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- drawstring trousers and V-neck tunic -->
+  <g class="sp-shadow">
+    <rect x="138" y="298" width="124" height="58" rx="26" fill="url(#adult-male-costume-medic__body)"/>
+    <rect x="160" y="340" width="32" height="212" rx="16" fill="url(#adult-male-costume-medic__body)"/>
+    <rect x="208" y="340" width="32" height="212" rx="16" fill="url(#adult-male-costume-medic__body)"/>
+    <path d="M137 150 L189 150 L200 172 L211 150 L263 150 Q267 150 267 156 L267 256 Q267 284 251 294 L149 294 Q133 284 133 256 L133 156 Q133 150 137 150 Z"
+          fill="url(#adult-male-costume-medic__body)"/>
+    <rect x="110" y="160" width="24" height="110" rx="12" fill="url(#adult-male-costume-medic__body)"/>
+    <rect x="266" y="160" width="24" height="110" rx="12" fill="url(#adult-male-costume-medic__body)"/>
+  </g>
+
+  <!-- V-neck bind trim -->
+  <path d="M137 152 L189 152 L200 173 L211 152 L263 152" fill="none"
+        stroke="var(--c2, #3B6E68)" stroke-width="5" stroke-opacity="0.8" stroke-linecap="round"/>
+
+  <!-- drawstring at the trouser waist -->
+  <path d="M170 300 q30 10 60 0" stroke="var(--c2, #3B6E68)" stroke-width="3.5"
+        fill="none" stroke-opacity="0.7" stroke-linecap="round"/>
+  <circle cx="170" cy="300" r="2.6" fill="var(--c2, #3B6E68)"/>
+  <circle cx="230" cy="300" r="2.6" fill="var(--c2, #3B6E68)"/>
+
+  <!-- chest patch pocket -->
+  <rect x="205" y="194" width="34" height="30" rx="6" fill="var(--c2, #3B6E68)"/>
+  <path d="M205 202 L239 202" stroke="var(--c1, #6FB8AE)" stroke-width="2" stroke-opacity="0.6"/>
+
+  <!-- lanyard: thin cord and a small blank card -->
+  <path d="M188 152 Q200 190 200 210" stroke="var(--c2, #3B6E68)" stroke-width="3"
+        fill="none" stroke-opacity="0.7"/>
+  <path d="M212 152 Q200 190 200 210" stroke="var(--c2, #3B6E68)" stroke-width="3"
+        fill="none" stroke-opacity="0.7"/>
+  <rect x="188" y="208" width="24" height="30" rx="5" fill="var(--c3, #F7C873)"/>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 18 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

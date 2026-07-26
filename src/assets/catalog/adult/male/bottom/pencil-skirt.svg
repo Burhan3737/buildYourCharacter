@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pencil Skirt" data-family="pencil-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=narrow straight, hem=short back vent
+       (vs skirt: straight column instead of A-line flare; vs maxi-skirt: knee length, no side slit) -->
+  <defs>
+    <linearGradient id="adult-male-bottom-pencil-skirt__col" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4C9484)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow straight column to the knee, with a small vent notch at the back hem -->
+  <g class="sp-shadow">
+    <path d="M148 298 H252 V420 q0 8 -8 8 H206 L200 402 L194 428 H156 q-8 0 -8 -8 V298 Z"
+          fill="url(#adult-male-bottom-pencil-skirt__col)"/>
+  </g>
+
+  <!-- waistband with a small tab and button -->
+  <rect x="148" y="296" width="104" height="18" rx="8" fill="var(--c2, #4C9484)"/>
+  <rect x="192" y="294" width="16" height="12" rx="4" fill="var(--c3, #2E5C50)"/>
+  <circle cx="200" cy="300" r="3" fill="var(--c3, #2E5C50)"/>
+
+  <!-- welt darts at the front -->
+  <path d="M176 320 V346" stroke="var(--c3, #2E5C50)" stroke-width="2.5"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M224 320 V346" stroke="var(--c3, #2E5C50)" stroke-width="2.5"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- vent shadow -->
+  <path d="M200 402 L194 428" stroke="var(--c2, #4C9484)" stroke-opacity="0.6" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M156 306 q44 8 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

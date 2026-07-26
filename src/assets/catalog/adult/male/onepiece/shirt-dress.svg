@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = full button-through placket from collar to hem,
+       SHOULDER = long cuffed set-in sleeves. Hem at the knee, volume straight and belted.
+       Differs from `jumpsuit` on closure + hem, from `romper` on shoulder + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8C4DC)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9CB8)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8C4DC)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9CB8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long cuffed sleeves -->
+    <rect x="104" y="160" width="35" height="180" rx="17" fill="url(#adult-male-onepiece-shirt-dress__sleeve)"/>
+    <rect x="261" y="160" width="35" height="180" rx="17" fill="url(#adult-male-onepiece-shirt-dress__sleeve)"/>
+    <!-- one straight shirt body running unbroken from the shoulder to the knee -->
+    <path d="M130 186 Q130 148 172 148 H228 Q270 148 270 186 V286 L276 430
+             Q200 444 124 430 L130 286 Z"
+          fill="url(#adult-male-onepiece-shirt-dress__body)"/>
+  </g>
+
+  <!-- flat collar -->
+  <path d="M174 148 Q188 152 200 168 L182 184 Q166 172 164 154 Z" fill="var(--c3, #F4F7FA)"/>
+  <path d="M226 148 Q212 152 200 168 L218 184 Q234 172 236 154 Z" fill="var(--c3, #F4F7FA)"/>
+  <path d="M182 142 q18 16 36 0 v8 q-18 16 -36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- full button placket running the whole length -->
+  <rect x="190" y="160" width="20" height="272" rx="4" fill="var(--c3, #F4F7FA)"/>
+  <g fill="var(--c2, #7C9CB8)">
+    <circle cx="200" cy="184" r="4.2"/>
+    <circle cx="200" cy="216" r="4.2"/>
+    <circle cx="200" cy="248" r="4.2"/>
+    <circle cx="200" cy="326" r="4.2"/>
+    <circle cx="200" cy="366" r="4.2"/>
+    <circle cx="200" cy="406" r="4.2"/>
+  </g>
+
+  <!-- belt at the natural waist -->
+  <rect x="126" y="278" width="148" height="20" rx="9" fill="var(--c3, #F4F7FA)"/>
+  <rect x="190" y="274" width="20" height="28" rx="6" fill="var(--c2, #7C9CB8)"/>
+
+  <!-- chest pocket and cuffs -->
+  <rect x="146" y="206" width="30" height="26" rx="4" fill="var(--c2, #7C9CB8)" fill-opacity="0.45"/>
+  <rect x="104" y="322" width="35" height="18" rx="9" fill="var(--c3, #F4F7FA)"/>
+  <rect x="261" y="322" width="35" height="18" rx="9" fill="var(--c3, #F4F7FA)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M150 178 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

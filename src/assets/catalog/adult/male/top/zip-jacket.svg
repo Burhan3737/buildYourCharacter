@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Track Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHOULDER = long raglan (sleeve panel seamed neck-to-underarm),
+       CLOSURE = zip (centre zip line and pull). Also hem = hip, volume = boxy.
+       Differs from `bomber` on shoulder + volume, from `hoodie` on closure + hem. -->
+  <defs>
+    <linearGradient id="adult-male-top-zip-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A8FBF)"/>
+      <stop offset="1" stop-color="var(--c2, #2E4E66)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-zip-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDF1F6)"/>
+      <stop offset="1" stop-color="var(--c2, #2E4E66)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A6280)"/>
+      <stop offset="1" stop-color="var(--c2, #2E4E66)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two long raglan sleeve tubes and a boxy square-hem body -->
+  <g class="sp-shadow">
+    <rect x="100" y="158" width="38" height="178" rx="19" fill="url(#adult-male-top-zip-jacket__sleeve)"/>
+    <rect x="262" y="158" width="38" height="178" rx="19" fill="url(#adult-male-top-zip-jacket__sleeve)"/>
+    <path d="M124 192 Q124 146 170 146 H230 Q276 146 276 192 V312 Q276 320 268 320 H132 Q124 320 124 312 Z"
+          fill="url(#adult-male-top-zip-jacket__body)"/>
+  </g>
+
+  <!-- raglan yoke panels: the seam runs from the neck out to the underarm -->
+  <path d="M170 146 H150 Q126 156 124 196 L124 214 Q136 176 170 158 Z"
+        fill="var(--c3, #EDF1F6)"/>
+  <path d="M230 146 H250 Q274 156 276 196 L276 214 Q264 176 230 158 Z"
+        fill="var(--c3, #EDF1F6)"/>
+  <path d="M170 150 Q136 172 126 212" stroke="var(--c2, #2E4E66)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230 150 Q264 172 274 212" stroke="var(--c2, #2E4E66)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- contrast stripe down each raglan sleeve -->
+  <rect x="112" y="182" width="9" height="132" rx="4.5" fill="var(--c2, #2E4E66)"/>
+  <rect x="279" y="182" width="9" height="132" rx="4.5" fill="var(--c2, #2E4E66)"/>
+
+  <!-- stand collar -->
+  <path d="M168 152 Q200 168 232 152 L232 124 Q200 136 168 124 Z"
+        fill="url(#adult-male-top-zip-jacket__rib)"/>
+  <!-- neck opening -->
+  <path d="M180 132 q20 14 40 0 v10 q-20 12 -40 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- centre zip line, tape and pull -->
+  <rect x="195" y="146" width="10" height="176" rx="4" fill="var(--c2, #2E4E66)"/>
+  <path d="M200 152 V318" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2"
+        fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <rect x="196" y="236" width="8" height="18" rx="4" fill="var(--c3, #EDF1F6)"/>
+
+  <!-- ribbed hem band and ribbed cuffs -->
+  <rect x="124" y="298" width="152" height="22" rx="9" fill="url(#adult-male-top-zip-jacket__rib)"/>
+  <rect x="100" y="314" width="38" height="22" rx="11" fill="url(#adult-male-top-zip-jacket__rib)"/>
+  <rect x="262" y="314" width="38" height="22" rx="11" fill="url(#adult-male-top-zip-jacket__rib)"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round">
+    <path d="M136 302 V316"/><path d="M152 302 V316"/><path d="M168 302 V316"/>
+    <path d="M232 302 V316"/><path d="M248 302 V316"/><path d="M264 302 V316"/>
+  </g>
+
+  <!-- side pockets -->
+  <path d="M136 268 h30 l-6 20 h-30 z" fill="var(--c2, #2E4E66)" fill-opacity="0.55"/>
+  <path d="M264 268 h-30 l6 20 h30 z" fill="var(--c2, #2E4E66)" fill-opacity="0.55"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M148 176 q52 20 104 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailored Trousers" data-family="tailored-trousers" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: rise=high, leg width=straight-slim, hem=turn-up (folded cuff band)
+       (vs jeans: natural rise + wider leg + raw hem; vs wide-leg: much narrower column) -->
+  <defs>
+    <linearGradient id="adult-male-bottom-tailored-trousers__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B5F6B)"/>
+      <stop offset="1" stop-color="var(--c2, #43464F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-tailored-trousers__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B5F6B)"/>
+      <stop offset="1" stop-color="var(--c2, #43464F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- high-rise slim straight-leg trousers: hip block plus both slim legs, one shadow group -->
+  <g class="sp-shadow">
+    <path d="M164 357 H194 V536 q0 6 -6 6 H170 q-6 0 -6 -6 Z"
+          fill="url(#adult-male-bottom-tailored-trousers__leg)"/>
+    <path d="M236 357 H206 V536 q0 6 6 6 H230 q6 0 6 -6 Z"
+          fill="url(#adult-male-bottom-tailored-trousers__leg)"/>
+    <rect x="141" y="291" width="118" height="66" rx="20"
+          fill="url(#adult-male-bottom-tailored-trousers__hip)"/>
+  </g>
+
+  <!-- narrow waistband with belt loops -->
+  <rect x="141" y="291" width="118" height="16" rx="6" fill="var(--c2, #43464F)"/>
+  <rect x="160" y="289" width="6" height="20" rx="2.5" fill="var(--c2, #43464F)"/>
+  <rect x="197" y="289" width="6" height="20" rx="2.5" fill="var(--c2, #43464F)"/>
+  <rect x="234" y="289" width="6" height="20" rx="2.5" fill="var(--c2, #43464F)"/>
+
+  <!-- welt back pocket suggested at the hip side -->
+  <path d="M146 320 H162" stroke="var(--c3, #C7A45C)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 320 H238" stroke="var(--c3, #C7A45C)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- pressed centre crease down each leg -->
+  <path d="M179 359 V532" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M221 359 V532" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turned-up cuff band -->
+  <rect x="162" y="520" width="34" height="20" rx="6" fill="var(--c3, #C7A45C)" opacity="0.9"/>
+  <rect x="204" y="520" width="34" height="20" rx="6" fill="var(--c3, #C7A45C)" opacity="0.9"/>
+  <path d="M164 524 H194" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 524 H236" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M156 305 q44 10 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

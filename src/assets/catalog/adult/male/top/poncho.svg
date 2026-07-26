@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHOULDER = draped (one trapezoid of cloth, no sleeve division at all),
+       VOLUME = flared. Also hem = thigh, closure = closed.
+       Differs from `raincoat` on shoulder + closure, from `cardigan` on shoulder + closure. -->
+  <defs>
+    <linearGradient id="adult-male-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C2624F)"/>
+      <stop offset="1" stop-color="var(--c2, #8E4335)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-poncho__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 14 L9 5 L18 14" fill="none" stroke="var(--c3, #F0D9B0)"
+            stroke-width="3.5" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-male-top-poncho__clip">
+      <path d="M136 152 Q140 146 154 146 H246 Q260 146 264 152 L308 360 Q312 380 292 380
+               H108 Q88 380 92 360 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one wide trapezoid of cloth falling straight off the shoulders -->
+  <g class="sp-shadow">
+    <path d="M136 152 Q140 146 154 146 H246 Q260 146 264 152 L308 360 Q312 380 292 380
+             H108 Q88 380 92 360 Z"
+          fill="url(#adult-male-top-poncho__cloth)"/>
+  </g>
+
+  <!-- woven chevron banding, clipped to the cloth -->
+  <g clip-path="url(#adult-male-top-poncho__clip)">
+    <rect x="80" y="228" width="240" height="54" fill="url(#adult-male-top-poncho__chevron)"/>
+    <rect x="80" y="316" width="240" height="36" fill="url(#adult-male-top-poncho__chevron)"/>
+    <rect x="80" y="216" width="240" height="8" fill="var(--c3, #F0D9B0)"/>
+    <rect x="80" y="286" width="240" height="8" fill="var(--c3, #F0D9B0)"/>
+    <rect x="80" y="356" width="240" height="8" fill="var(--c3, #F0D9B0)"/>
+  </g>
+
+  <!-- bound neck opening: the only hole in the cloth -->
+  <path d="M174 144 Q200 168 226 144 Q224 178 200 180 Q176 178 174 144 Z"
+        fill="var(--c3, #F0D9B0)"/>
+  <path d="M181 146 Q200 164 219 146 Q217 170 200 172 Q183 170 181 146 Z"
+        fill="var(--skin2, #E7B892)"/>
+
+  <!-- fringe along the lower edge -->
+  <g fill="var(--c3, #F0D9B0)">
+    <rect x="100" y="376" width="6" height="22" rx="3"/>
+    <rect x="118" y="378" width="6" height="26" rx="3"/>
+    <rect x="136" y="378" width="6" height="22" rx="3"/>
+    <rect x="154" y="378" width="6" height="27" rx="3"/>
+    <rect x="172" y="378" width="6" height="23" rx="3"/>
+    <rect x="190" y="378" width="6" height="26" rx="3"/>
+    <rect x="208" y="378" width="6" height="22" rx="3"/>
+    <rect x="226" y="378" width="6" height="27" rx="3"/>
+    <rect x="244" y="378" width="6" height="23" rx="3"/>
+    <rect x="262" y="378" width="6" height="26" rx="3"/>
+    <rect x="280" y="376" width="6" height="22" rx="3"/>
+    <rect x="295" y="372" width="6" height="24" rx="3"/>
+  </g>
+
+  <!-- soft fold running from the neck to the hem, the only shaping in the drape -->
+  <path d="M200 184 Q194 280 190 372" stroke="var(--c2, #8E4335)" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M150 166 q50 14 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

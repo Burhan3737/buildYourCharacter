@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bib" data-family="bib" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: BODY SHAPE = one broad rounded panel covering the upper chest,
+       and SCALE = 78px wide by 46px deep, far the largest form in the slot.
+       Differs from `choker` on shape + scale, from `pendant` on both. -->
+  <defs>
+    <linearGradient id="accessories-adult-necklace-bib__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-necklace-bib__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="3" fill="var(--c3, #FFF3D6)" fill-opacity="0.75"/>
+    </pattern>
+    <clipPath id="accessories-adult-necklace-bib__clip">
+      <path d="M161 152 Q200 142 239 152 Q243 178 232 190 Q216 198 200 198
+               Q184 198 168 190 Q157 178 161 152 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- neck band -->
+    <path d="M176 140 Q200 132 224 140 Q226 148 224 152 Q200 145 176 152 Q174 148 176 140 Z"
+          fill="var(--c3, #FFF3D6)"/>
+    <!-- broad rounded bib panel over the upper chest -->
+    <path d="M161 152 Q200 142 239 152 Q243 178 232 190 Q216 198 200 198
+             Q184 198 168 190 Q157 178 161 152 Z"
+          fill="url(#accessories-adult-necklace-bib__cloth)"/>
+  </g>
+
+  <!-- scattered dot surface, clipped to the panel -->
+  <g clip-path="url(#accessories-adult-necklace-bib__clip)">
+    <rect x="155" y="140" width="92" height="62" fill="url(#accessories-adult-necklace-bib__dot)"/>
+  </g>
+
+  <!-- scalloped contrast binding along the lower edge -->
+  <path d="M163 176 Q200 190 237 176" stroke="var(--c3, #FFF3D6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck opening showing the throat -->
+  <path d="M182 141 q18 10 36 0 v6 q-18 10 -36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M172 156 Q200 150 228 156" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

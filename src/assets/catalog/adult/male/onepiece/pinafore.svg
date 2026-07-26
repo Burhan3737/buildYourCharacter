@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = none — a squared bib on two wide over-shoulder straps,
+       chest and arms otherwise bare; HEM = thigh, well above the knee.
+       Differs from `sundress` on hem + volume, from `party-dress` on shoulder + volume. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-pinafore__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4867E)"/>
+      <stop offset="1" stop-color="var(--c2, #96605A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4867E)"/>
+      <stop offset="1" stop-color="var(--c2, #96605A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two wide over-shoulder straps -->
+    <rect x="154" y="146" width="20" height="66" rx="8" fill="url(#adult-male-onepiece-pinafore__strap)"/>
+    <rect x="226" y="146" width="20" height="66" rx="8" fill="url(#adult-male-onepiece-pinafore__strap)"/>
+    <!-- squared bib panel over an A-line skirt, one continuous form -->
+    <path d="M158 202 H242 V282 L266 398 Q200 412 134 398 L158 282 Z"
+          fill="url(#adult-male-onepiece-pinafore__cloth)"/>
+  </g>
+
+  <!-- bib pocket with contrast binding -->
+  <rect x="180" y="222" width="40" height="34" rx="5" fill="var(--c2, #96605A)" fill-opacity="0.5"/>
+  <rect x="180" y="222" width="40" height="7" rx="3" fill="var(--c3, #F6E6D2)"/>
+  <path d="M200 232 V250" stroke="var(--c3, #F6E6D2)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- strap buttons at the bib corners -->
+  <circle cx="164" cy="208" r="5" fill="var(--c3, #F6E6D2)"/>
+  <circle cx="236" cy="208" r="5" fill="var(--c3, #F6E6D2)"/>
+
+  <!-- contrast waist seam and hem band -->
+  <rect x="152" y="276" width="96" height="12" rx="5" fill="var(--c3, #F6E6D2)"/>
+  <path d="M136 388 Q200 402 264 388" stroke="var(--c3, #F6E6D2)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- A-line skirt folds -->
+  <g stroke="var(--c2, #96605A)" stroke-opacity="0.35" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M170 292 L158 386"/>
+    <path d="M200 292 V396"/>
+    <path d="M230 292 L242 386"/>
+  </g>
+
+  <!-- upper-surface highlight -->
+  <path d="M168 212 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

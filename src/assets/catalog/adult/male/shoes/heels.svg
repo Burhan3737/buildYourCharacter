@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Heels" data-family="heels" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: toe shape (almond/tapered, pointed at the front) + sole depth (a
+       raised heel column lifting the back of the foot clearly above the toe) -->
+  <defs>
+    <linearGradient id="adult-male-shoes-heels__vamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #56659E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- pointed-toe vamp and its raised heel column: left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M148 552 Q148 540 164 537 Q186 534 200 538 Q206 540 206 548 L206 554
+             Q206 560 198 560 L158 560 Q148 560 148 552 Z"
+          fill="url(#adult-male-shoes-heels__vamp)"/>
+    <rect x="188" y="538" width="16" height="32" rx="7" fill="url(#adult-male-shoes-heels__vamp)"/>
+    <path d="M196 552 Q196 540 212 537 Q234 534 248 538 Q254 540 254 548 L254 554
+             Q254 560 246 560 L206 560 Q196 560 196 552 Z"
+          fill="url(#adult-male-shoes-heels__vamp)"/>
+    <rect x="236" y="538" width="16" height="32" rx="7" fill="url(#adult-male-shoes-heels__vamp)"/>
+  </g>
+
+  <!-- thin sole under the ball of the foot -->
+  <rect x="150" y="562" width="36" height="8" rx="4" fill="var(--c2, #56659E)"/>
+  <rect x="198" y="562" width="36" height="8" rx="4" fill="var(--c2, #56659E)"/>
+
+  <!-- contrast sole edge -->
+  <rect x="150" y="566" width="36" height="4" rx="2" fill="var(--c3, #3B2A22)"/>
+  <rect x="198" y="566" width="36" height="4" rx="2" fill="var(--c3, #3B2A22)"/>
+
+  <!-- arch curve under the instep, connecting toe sole to heel column -->
+  <path d="M184 566 Q196 552 190 542" stroke="var(--c2, #56659E)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M232 566 Q244 552 238 542" stroke="var(--c2, #56659E)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- instep highlights -->
+  <path d="M154 546 q23 6 46 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 546 q23 6 46 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

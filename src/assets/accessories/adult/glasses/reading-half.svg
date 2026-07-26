@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Reading Half-Moons" data-family="reading-half" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2" data-hides="">
+  <!-- Silhouette axes: LENS SHAPE = half-moon (flat top, curved bottom) and
+       LENS SIZE/POSITION = small and low on the nose, well below the pupil line.
+       Differs from `round` on shape + size, from `square` on shape + position. -->
+  <defs>
+    <linearGradient id="accessories-adult-glasses-reading-half__lens" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFE3EC)" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="var(--c2, #CFE3EC)" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- half-moon lenses sitting low, at y106-120 rather than on the eye line -->
+    <path d="M160 106 H196 Q196 122 178 122 Q160 122 160 106 Z"
+          fill="url(#accessories-adult-glasses-reading-half__lens)"
+          stroke="var(--c1, #6B4A3A)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M204 106 H240 Q240 122 222 122 Q204 122 204 106 Z"
+          fill="url(#accessories-adult-glasses-reading-half__lens)"
+          stroke="var(--c1, #6B4A3A)" stroke-width="4" stroke-linejoin="round"/>
+    <!-- flat top bar carrying across the bridge -->
+    <path d="M160 106 H240" stroke="var(--c1, #6B4A3A)" stroke-width="4.5"
+          fill="none" stroke-linecap="round"/>
+    <!-- short temples out to the ears -->
+    <path d="M160 107 L147 101" stroke="var(--c1, #6B4A3A)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M240 107 L253 101" stroke="var(--c1, #6B4A3A)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- retainer chain looping down from each temple: the identifying detail -->
+  <path d="M147 103 Q141 124 146 140" stroke="var(--c1, #6B4A3A)" stroke-width="2.4"
+        stroke-dasharray="3 3.5" fill="none" stroke-linecap="round"/>
+  <path d="M253 103 Q259 124 254 140" stroke="var(--c1, #6B4A3A)" stroke-width="2.4"
+        stroke-dasharray="3 3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- lens highlight -->
+  <path d="M165 110 L174 110" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M209 110 L218 110" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,57 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo Pants" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: rise=low (waistband sits low), leg width=wide-relaxed
+       (vs jeans: natural rise + straight leg; vs leggings: high rise + skin-close leg) -->
   <defs>
     <linearGradient id="adult-male-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7FA98C)"/>
-      <stop offset="1" stop-color="var(--c2, #6D9178)"/>
+      <stop offset="1" stop-color="var(--c2, #5F8069)"/>
     </linearGradient>
     <linearGradient id="adult-male-bottom-cargo__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7FA98C)"/>
-      <stop offset="1" stop-color="var(--c2, #6D9178)"/>
+      <stop offset="1" stop-color="var(--c2, #5F8069)"/>
     </linearGradient>
   </defs>
 
-  <!-- wide utility trousers: hip block plus both legs, one shadow group -->
+  <!-- low-rise wide-relaxed cargo: hip block sitting low plus both wide legs, one shadow group -->
   <g class="sp-shadow">
-    <path d="M156 336 H198 V536 q0 12 -12 12 H172 q-12 0 -12 -12 Z"
+    <path d="M152 358 H200 V532 q0 10 -10 10 H162 q-10 0 -10 -10 Z"
           fill="url(#adult-male-bottom-cargo__leg)"/>
-    <path d="M244 336 H202 V536 q0 12 12 12 H228 q12 0 12 -12 Z"
+    <path d="M248 358 H200 V532 q0 10 10 10 H238 q10 0 10 -10 Z"
           fill="url(#adult-male-bottom-cargo__leg)"/>
-    <rect x="138" y="298" width="124" height="60" rx="24"
+    <rect x="136" y="312" width="128" height="46" rx="18"
           fill="url(#adult-male-bottom-cargo__hip)"/>
   </g>
 
-  <!-- waistband and belt loops -->
-  <rect x="138" y="298" width="124" height="20" rx="9" fill="var(--c2, #6D9178)"/>
-  <rect x="158" y="296" width="7" height="26" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="196" y="296" width="8" height="26" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="235" y="296" width="7" height="26" rx="3" fill="var(--c3, #55735F)"/>
+  <!-- low-set waistband -->
+  <rect x="136" y="312" width="128" height="18" rx="8" fill="var(--c2, #5F8069)"/>
+  <!-- belt loops -->
+  <rect x="156" y="310" width="7" height="22" rx="3" fill="var(--c3, #3F5B48)"/>
+  <rect x="196" y="310" width="8" height="22" rx="3" fill="var(--c3, #3F5B48)"/>
+  <rect x="237" y="310" width="7" height="22" rx="3" fill="var(--c3, #3F5B48)"/>
 
-  <!-- thigh patch pockets -->
-  <rect x="158" y="406" width="38" height="48" rx="8" fill="var(--c2, #6D9178)"/>
-  <rect x="204" y="406" width="38" height="48" rx="8" fill="var(--c2, #6D9178)"/>
-  <!-- pocket flaps -->
-  <rect x="155" y="397" width="44" height="17" rx="7" fill="var(--c3, #55735F)"/>
-  <rect x="201" y="397" width="44" height="17" rx="7" fill="var(--c3, #55735F)"/>
-  <circle cx="177" cy="418" r="4" fill="var(--c3, #55735F)"/>
-  <circle cx="223" cy="418" r="4" fill="var(--c3, #55735F)"/>
+  <!-- webbing belt with rectangular buckle -->
+  <rect x="136" y="317" width="128" height="8" fill="var(--c3, #3F5B48)" opacity="0.85"/>
+  <rect x="190" y="314" width="20" height="14" rx="3" fill="var(--c3, #3F5B48)"/>
+  <rect x="194" y="317" width="12" height="8" rx="1.5" fill="var(--c1, #7FA98C)"/>
 
-  <!-- knee seams -->
-  <path d="M160 478 H194" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <!-- two large flapped thigh pockets -->
+  <rect x="150" y="424" width="42" height="52" rx="9" fill="var(--c2, #5F8069)"/>
+  <rect x="208" y="424" width="42" height="52" rx="9" fill="var(--c2, #5F8069)"/>
+  <rect x="147" y="414" width="48" height="18" rx="7" fill="var(--c3, #3F5B48)"/>
+  <rect x="205" y="414" width="48" height="18" rx="7" fill="var(--c3, #3F5B48)"/>
+  <circle cx="171" cy="437" r="4" fill="var(--c3, #3F5B48)"/>
+  <circle cx="229" cy="437" r="4" fill="var(--c3, #3F5B48)"/>
+
+  <!-- utility tab under the left pocket -->
+  <rect x="158" y="478" width="18" height="10" rx="4" fill="var(--c3, #3F5B48)"/>
+  <circle cx="167" cy="483" r="2" fill="var(--c1, #7FA98C)"/>
+
+  <!-- knee reinforcement seams -->
+  <path d="M155 500 H197" stroke="var(--c2, #5F8069)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M206 478 H240" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <path d="M203 500 H245" stroke="var(--c2, #5F8069)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
   <!-- centre seam -->
-  <path d="M200 314 v30" stroke="var(--c2, #6D9178)" stroke-width="4"
+  <path d="M200 328 v26" stroke="var(--c2, #5F8069)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
   <!-- soft upper highlight -->
-  <path d="M156 324 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M150 330 q50 12 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M164 358 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M160 362 v34" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M236 358 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M240 362 v34" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

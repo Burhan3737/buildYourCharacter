@@ -3,24 +3,24 @@
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
   <defs>
     <linearGradient id="adult-male-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+      <stop offset="0" stop-color="var(--c2, #5C3A6E)"/>
+      <stop offset="1" stop-color="var(--c2, #452A53)"/>
     </linearGradient>
     <linearGradient id="adult-male-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #3F8E86)"/>
+      <stop offset="1" stop-color="var(--c1, #31756E)"/>
     </linearGradient>
     <linearGradient id="adult-male-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #3F8E86)"/>
+      <stop offset="1" stop-color="var(--c1, #31756E)"/>
     </linearGradient>
     <linearGradient id="adult-male-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #3F8E86)"/>
+      <stop offset="1" stop-color="var(--c1, #31756E)"/>
     </linearGradient>
     <linearGradient id="adult-male-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+      <stop offset="0" stop-color="var(--c2, #5C3A6E)"/>
+      <stop offset="1" stop-color="var(--c2, #4E3160)"/>
     </linearGradient>
   </defs>
 
@@ -50,16 +50,20 @@
   <rect x="136" y="288" width="128" height="22" rx="10" fill="var(--c3, #F7C873)"/>
   <rect x="186" y="286" width="28" height="26" rx="9" fill="var(--c3, #F7C873)"/>
 
-  <!-- original chest mark: a soft four point star, no real-world insignia -->
-  <path d="M200 184 q7 24 30 30 q-23 6 -30 30 q-7 -24 -30 -30 q23 -6 30 -30 z"
-        fill="var(--c3, #F7C873)"/>
+  <!-- Chest stays PLAIN: docs/FAMILIES.md §2.8 requires "no insignia of any kind" on this
+       family, and §0.3 bans a signature colour-plus-marking combination. The cape is fastened
+       at the shoulders instead, which is the family's actual identifying detail. -->
+  <circle cx="152" cy="166" r="8" fill="var(--c3, #F7C873)"/>
+  <circle cx="248" cy="166" r="8" fill="var(--c3, #F7C873)"/>
+  <path d="M158 172 Q200 188 242 172" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
 
   <!-- gloves and boots -->
   <g class="sp-shadow">
-    <rect x="108" y="318" width="26" height="20" rx="10" fill="var(--c2, #C4534B)"/>
-    <rect x="266" y="318" width="26" height="20" rx="10" fill="var(--c2, #C4534B)"/>
-    <circle cx="121" cy="332" r="17" fill="var(--c2, #C4534B)"/>
-    <circle cx="279" cy="332" r="17" fill="var(--c2, #C4534B)"/>
+    <rect x="108" y="318" width="26" height="20" rx="10" fill="var(--c2, #5C3A6E)"/>
+    <rect x="266" y="318" width="26" height="20" rx="10" fill="var(--c2, #5C3A6E)"/>
+    <circle cx="121" cy="332" r="17" fill="var(--c2, #5C3A6E)"/>
+    <circle cx="279" cy="332" r="17" fill="var(--c2, #5C3A6E)"/>
     <rect x="161" y="466" width="34" height="92" rx="17" fill="url(#adult-male-costume-caped-hero__trim)"/>
     <rect x="205" y="466" width="34" height="92" rx="17" fill="url(#adult-male-costume-caped-hero__trim)"/>
     <rect x="156" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-caped-hero__trim)"/>

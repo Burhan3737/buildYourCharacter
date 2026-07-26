@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard's Robe" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: shoulder/sleeve (wide draped sleeves) and volume (flared A-line robe
+       falling to the ankle, replacing the legs entirely with one shape). No hat — that
+       lives in headwear. -->
+  <defs>
+    <linearGradient id="adult-male-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B4E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #453A6B)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-wizard__stars" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <path d="M10 3 L11.5 8 L17 8 L12.5 11 L14 16 L10 13 L6 16 L7.5 11 L3 8 L8.5 8 Z"
+            fill="var(--c3, #F7C873)" fill-opacity="0.75"/>
+    </pattern>
+    <clipPath id="adult-male-costume-wizard__robeclip">
+      <path d="M140 150 Q140 148 146 148 L254 148 Q260 148 260 150 L282 540 Q200 566 118 540 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- robe: one flaring shape from shoulder to ankle, no leg division -->
+  <g class="sp-shadow">
+    <path d="M140 150 Q140 148 146 148 L254 148 Q260 148 260 150 L282 540 Q200 566 118 540 Z"
+          fill="url(#adult-male-costume-wizard__robe)"/>
+  </g>
+  <g clip-path="url(#adult-male-costume-wizard__robeclip)">
+    <rect x="70" y="148" width="260" height="420" fill="url(#adult-male-costume-wizard__stars)"/>
+  </g>
+
+  <!-- wide draped sleeves -->
+  <g class="sp-shadow">
+    <path d="M112 160 Q80 200 74 260 Q70 300 92 320 Q110 300 118 260 Q124 210 140 172 Z"
+          fill="url(#adult-male-costume-wizard__robe)"/>
+    <path d="M288 160 Q320 200 326 260 Q330 300 308 320 Q290 300 282 260 Q276 210 260 172 Z"
+          fill="url(#adult-male-costume-wizard__robe)"/>
+  </g>
+  <path d="M92 300 q14 -6 22 -18 M308 300 q-14 -6 -22 -18" stroke="var(--c3, #F7C873)"
+        stroke-width="3" stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <!-- rope tie belt at the waist -->
+  <rect x="150" y="296" width="100" height="14" rx="7" fill="var(--c3, #F7C873)" fill-opacity="0.85"/>
+  <path d="M244 300 q14 8 10 22 q-4 -4 -10 -6" fill="var(--c3, #F7C873)"/>
+
+  <!-- house highlight -->
+  <path d="M150 172 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

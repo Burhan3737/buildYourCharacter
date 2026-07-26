@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = cropped at the hip with a high-cut leg opening (the shortest
+       one-piece in the slot by 80px), VOLUME = fitted skin-close with no skirt or ruffle.
+       Differs from `romper` on shoulder + hem, from `sundress` on hem + volume. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #1E5C7E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-swimsuit__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #1E5C7E)"/>
+    </linearGradient>
+    <clipPath id="adult-male-onepiece-swimsuit__clip">
+      <path d="M140 196 Q140 178 156 178 H244 Q260 178 260 196 V270
+               Q260 306 232 330 Q216 344 200 344 Q184 344 168 330 Q140 306 140 270 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide scoop-back straps -->
+    <rect x="156" y="150" width="22" height="40" rx="10" fill="url(#adult-male-onepiece-swimsuit__strap)"/>
+    <rect x="222" y="150" width="22" height="40" rx="10" fill="url(#adult-male-onepiece-swimsuit__strap)"/>
+    <!-- skin-close body ending high on the hip, leg openings cut steeply away -->
+    <path d="M140 196 Q140 178 156 178 H244 Q260 178 260 196 V270
+             Q260 306 232 330 Q216 344 200 344 Q184 344 168 330 Q140 306 140 270 Z"
+          fill="url(#adult-male-onepiece-swimsuit__body)"/>
+  </g>
+
+  <!-- colour-blocked lower half, clipped to the body -->
+  <g clip-path="url(#adult-male-onepiece-swimsuit__clip)">
+    <path d="M132 262 Q200 246 268 262 V352 H132 Z" fill="var(--c3, #F7C873)"/>
+    <path d="M132 262 Q200 246 268 262 V274 Q200 258 132 274 Z" fill="var(--c2, #1E5C7E)"/>
+  </g>
+
+  <!-- bound neckline and bound leg openings -->
+  <path d="M156 182 Q200 200 244 182" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 332 Q152 306 146 274" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 332 Q248 306 254 274" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- neck opening -->
+  <path d="M166 180 q34 22 68 0 v8 q-34 22 -68 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M158 204 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

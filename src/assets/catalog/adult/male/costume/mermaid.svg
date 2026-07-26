@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid Tail" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: hem (single scaled tail flaring to a fluke at the ground line, no leg
+       division at all) and volume (a tapering-then-flaring column, unlike any two-legged
+       garment in this slot). -->
+  <defs>
+    <linearGradient id="adult-male-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB6AE)"/>
+      <stop offset="1" stop-color="var(--c1, #3B948D)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-mermaid__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0B25E)"/>
+      <stop offset="1" stop-color="var(--c3, #D89A44)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-mermaid__scale" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="14">
+      <path d="M0 7 Q4.5 0 9 7 Q4.5 14 0 7 Z" fill="var(--c2, #2E7871)" fill-opacity="0.4"/>
+      <path d="M9 7 Q13.5 0 18 7 Q13.5 14 9 7 Z" fill="var(--c2, #2E7871)" fill-opacity="0.25"/>
+    </pattern>
+    <clipPath id="adult-male-costume-mermaid__tailclip">
+      <path d="M140 300 Q126 380 148 456 L150 496 Q100 508 68 534 Q112 548 154 526 L162 526
+               Q168 552 150 572 L250 572 Q232 552 238 526 L246 526 Q288 548 332 534
+               Q300 508 250 496 L252 456 Q274 380 260 300 Q200 318 140 300 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- shell bodice, strap shoulders -->
+  <g class="sp-shadow">
+    <path d="M132 150 Q132 148 136 148 L264 148 Q268 148 268 150 L268 268 Q268 296 250 306 L150 306 Q132 296 132 268 Z"
+          fill="url(#adult-male-costume-mermaid__bodice)"/>
+  </g>
+
+  <!-- one tapering scaled tail flaring into a fluke -->
+  <g class="sp-shadow">
+    <path d="M140 300 Q126 380 148 456 L150 496 Q100 508 68 534 Q112 548 154 526 L162 526
+             Q168 552 150 572 L250 572 Q232 552 238 526 L246 526 Q288 548 332 534
+             Q300 508 250 496 L252 456 Q274 380 260 300 Q200 318 140 300 Z"
+          fill="url(#adult-male-costume-mermaid__tail)"/>
+  </g>
+  <g clip-path="url(#adult-male-costume-mermaid__tailclip)">
+    <rect x="60" y="296" width="280" height="284" fill="url(#adult-male-costume-mermaid__scale)"/>
+  </g>
+
+  <!-- fin edge trim -->
+  <path d="M68 534 Q112 548 154 526 L162 526 Q168 552 150 572"
+        fill="none" stroke="var(--c2, #2E7871)" stroke-width="4" stroke-opacity="0.6" stroke-linecap="round"/>
+  <path d="M332 534 Q288 548 246 526 L238 526 Q232 552 250 572"
+        fill="none" stroke="var(--c2, #2E7871)" stroke-width="4" stroke-opacity="0.6" stroke-linecap="round"/>
+
+  <!-- shell bodice detail: applied graphic, one motif pair -->
+  <g fill="var(--c3, #F0B25E)">
+    <path d="M170 190 q18 -18 18 10 q0 22 -18 30 q-18 -8 -18 -30 q0 -28 18 -10 z"/>
+    <path d="M230 190 q18 -18 18 10 q0 22 -18 30 q-18 -8 -18 -30 q0 -28 18 -10 z"/>
+  </g>
+  <path d="M158 202 q12 -10 24 -2 M242 202 q-12 -10 -24 -2" stroke="#FFFFFF" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M148 172 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

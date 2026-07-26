@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pout" data-family="pout" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- Small pushed-forward mouth with a visibly fuller lower lip. Narrow — 30px against
+       the 64px of `smile` — with the two lips drawn as separate masses and a soft
+       shadow under the lower one where it pushes out. -->
+  <defs>
+    <linearGradient id="adult-male-mouth-pout__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C4675E)" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="var(--lip1, #C4675E)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="adult-male-mouth-pout__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C4675E)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--lip1, #C4675E)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="adult-male-mouth-pout__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.26"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- upper lip: narrow, with a soft cupid's bow -->
+    <path d="M185 118 Q192 111 200 115 Q208 111 215 118 Q208 122 200 122 Q192 122 185 118 Z"
+          fill="url(#adult-male-mouth-pout__upper)"/>
+    <!-- lower lip: pushed forward, clearly the fuller of the two -->
+    <path d="M184 119 Q200 116 216 119 Q217 131 200 133 Q183 131 184 119 Z"
+          fill="url(#adult-male-mouth-pout__lower)"/>
+    <path d="M184 119 Q200 116 216 119 Q217 131 200 133 Q183 131 184 119 Z"
+          fill="url(#adult-male-mouth-pout__vol)"/>
+  </g>
+
+  <!-- lip line -->
+  <path d="M186 119 Q200 122 214 119" stroke="#3B2A22" stroke-opacity="0.42" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight on the pushed-out lower lip -->
+  <path d="M193 124 Q200 126 207 124" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <!-- soft shadow beneath, which is what makes the lip read as pushed forward -->
+  <path d="M190 136 Q200 139 210 136" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

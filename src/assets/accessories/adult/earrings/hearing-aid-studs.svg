@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hearing Aids with Studs" data-family="hearing-aid-studs" data-slot="earrings"
+     data-layer="earrings" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: BODY SHAPE = a slim straight behind-the-ear case (not the curved
+       hooked case of `hearing-aid`) worn TOGETHER with a stud, and DROP LENGTH — the
+       form runs from y80 down to the lobe at y112, where `hearing-aid` stops at y110
+       behind the ear. The slot holds one asset, so this pairing exists to stop a player
+       having to choose between hearing aids and earrings. -->
+  <defs>
+    <linearGradient id="accessories-adult-earrings-hearing-aid-studs__case" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E7C6D6)"/>
+      <stop offset="1" stop-color="var(--c2, #A9788D)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-earrings-hearing-aid-studs__stud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #A9788D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- slim straight BTE case, tilted slightly with the back of the ear -->
+    <rect x="134" y="80" width="9" height="26" rx="4.5"
+          fill="url(#accessories-adult-earrings-hearing-aid-studs__case)"
+          transform="rotate(-8 138.5 93)"/>
+    <rect x="257" y="80" width="9" height="26" rx="4.5"
+          fill="url(#accessories-adult-earrings-hearing-aid-studs__case)"
+          transform="rotate(8 261.5 93)"/>
+    <!-- the stud at the lobe, worn at the same time -->
+    <circle cx="149" cy="108" r="5.2" fill="url(#accessories-adult-earrings-hearing-aid-studs__stud)"/>
+    <circle cx="251" cy="108" r="5.2" fill="url(#accessories-adult-earrings-hearing-aid-studs__stud)"/>
+  </g>
+
+  <!-- tube from the case over the rim of the ear -->
+  <path d="M140 80 Q150 76 154 88 Q156 96 151 99" stroke="var(--c2, #A9788D)"
+        stroke-opacity="0.6" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M260 80 Q250 76 246 88 Q244 96 249 99" stroke="var(--c2, #A9788D)"
+        stroke-opacity="0.6" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- stud highlight and case highlight -->
+  <circle cx="147.4" cy="106.2" r="1.7" fill="#FFFFFF" fill-opacity="0.8"/>
+  <circle cx="249.4" cy="106.2" r="1.7" fill="#FFFFFF" fill-opacity="0.8"/>
+  <path d="M137 84 V94" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M263 84 V94" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

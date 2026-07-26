@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Dress" data-family="maxi-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = ankle, and VOLUME = a narrow unbroken column that never
+       widens past the shoulder line. Differs from `sundress` on hem + volume, from
+       `jumpsuit` on shoulder + volume (there is no leg division at all). -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-maxi-dress__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F6E8E)"/>
+      <stop offset="1" stop-color="var(--c2, #2A4E68)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-maxi-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F6E8E)"/>
+      <stop offset="1" stop-color="var(--c2, #2A4E68)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps -->
+    <rect x="166" y="148" width="13" height="42" rx="6" fill="url(#adult-male-onepiece-maxi-dress__strap)"/>
+    <rect x="221" y="148" width="13" height="42" rx="6" fill="url(#adult-male-onepiece-maxi-dress__strap)"/>
+    <!-- one narrow column: fitted bodice running straight to the ankle, no flare -->
+    <path d="M144 200 Q144 184 158 182 Q200 194 242 182 Q256 184 256 200 V286
+             L252 546 Q200 556 148 546 L144 286 Z"
+          fill="url(#adult-male-onepiece-maxi-dress__column)"/>
+  </g>
+
+  <!-- narrow contrast waist band, high on the natural waist -->
+  <rect x="142" y="274" width="116" height="14" rx="6" fill="var(--c3, #E9C88A)"/>
+  <!-- straight neckline bind -->
+  <path d="M158 184 Q200 196 242 184" stroke="var(--c3, #E9C88A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- ankle hem band -->
+  <path d="M148 534 Q200 544 252 534" stroke="var(--c3, #E9C88A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vertical drape folds, the only shaping in the column -->
+  <g stroke="var(--c2, #2A4E68)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M172 296 L170 538"/>
+    <path d="M200 296 V546"/>
+    <path d="M228 296 L230 538"/>
+  </g>
+
+  <!-- upper-surface highlight -->
+  <path d="M160 206 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 340 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon Suit" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs from dino on: volume (angular/plated, not rounded-soft) and shoulder/sleeve
+       (folded wing stubs at the shoulder, which dino does not have). -->
+  <defs>
+    <linearGradient id="adult-male-costume-dragon__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E8F63)"/>
+      <stop offset="1" stop-color="var(--c1, #2E6B49)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-dragon__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #35573F)"/>
+      <stop offset="1" stop-color="var(--c2, #24402E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-dragon__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C97B5A)"/>
+      <stop offset="1" stop-color="var(--c3, #A85F42)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-dragon__scale" patternUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+      <path d="M0 8 Q4 0 8 8 Q4 16 0 8 Z" fill="var(--c3, #C97B5A)" fill-opacity="0.55"/>
+      <path d="M8 8 Q12 0 16 8 Q12 16 8 8 Z" fill="var(--c3, #C97B5A)" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="adult-male-costume-dragon__bodyclip">
+      <path d="M132 150 L268 150 Q272 150 272 158 L272 190 L266 210 L272 230 L272 296 Q272 306 262 306 L138 306 Q128 306 128 296 L128 230 L134 210 L128 190 L128 158 Q128 150 132 150 Z"/>
+      <rect x="140" y="300" width="120" height="50" rx="14"/>
+      <rect x="162" y="338" width="30" height="210" rx="10"/>
+      <rect x="208" y="338" width="30" height="210" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- angular plated body mass -->
+  <g class="sp-shadow">
+    <rect x="162" y="338" width="30" height="210" rx="10" fill="url(#adult-male-costume-dragon__body)"/>
+    <rect x="208" y="338" width="30" height="210" rx="10" fill="url(#adult-male-costume-dragon__body)"/>
+    <rect x="140" y="300" width="120" height="50" rx="14" fill="url(#adult-male-costume-dragon__body)"/>
+    <path d="M132 150 L268 150 Q272 150 272 158 L272 190 L266 210 L272 230 L272 296 Q272 306 262 306 L138 306 Q128 306 128 296 L128 230 L134 210 L128 190 L128 158 Q128 150 132 150 Z"
+          fill="url(#adult-male-costume-dragon__body)"/>
+    <rect x="106" y="160" width="28" height="158" rx="10" fill="url(#adult-male-costume-dragon__body)"/>
+    <rect x="266" y="160" width="28" height="158" rx="10" fill="url(#adult-male-costume-dragon__body)"/>
+  </g>
+
+  <!-- scale texture over the plated body -->
+  <g clip-path="url(#adult-male-costume-dragon__bodyclip)">
+    <rect x="120" y="148" width="172" height="410" fill="url(#adult-male-costume-dragon__scale)"/>
+  </g>
+
+  <!-- folded wing stubs at the shoulder -->
+  <g class="sp-shadow">
+    <path d="M108 190 L74 168 L92 150 L112 176 Z" fill="url(#adult-male-costume-dragon__wing)"/>
+    <path d="M292 190 L326 168 L308 150 L288 176 Z" fill="url(#adult-male-costume-dragon__wing)"/>
+  </g>
+
+  <!-- ridged dorsal plates down the back -->
+  <g fill="var(--c2, #35573F)">
+    <path d="M270 168 l16 10 l-16 12 z"/>
+    <path d="M272 198 l17 10 l-17 12 z"/>
+    <path d="M272 228 l17 10 l-17 12 z"/>
+    <path d="M269 258 l16 9 l-16 11 z"/>
+    <path d="M262 286 l15 8 l-15 10 z"/>
+  </g>
+
+  <!-- thick tapering tail -->
+  <g class="sp-shadow">
+    <path d="M262 300 q62 12 58 88 q-3 56 -24 92 q-8 13 -21 6 q-13 -7 -6 -21
+             q17 -30 19 -77 q2 -43 -32 -52 z"
+          fill="url(#adult-male-costume-dragon__tail)"/>
+  </g>
+
+  <!-- clawed hands and feet -->
+  <g class="sp-shadow">
+    <circle cx="119" cy="330" r="16" fill="url(#adult-male-costume-dragon__body)"/>
+    <circle cx="281" cy="330" r="16" fill="url(#adult-male-costume-dragon__body)"/>
+    <rect x="150" y="532" width="54" height="38" rx="10" fill="url(#adult-male-costume-dragon__tail)"/>
+    <rect x="196" y="532" width="54" height="38" rx="10" fill="url(#adult-male-costume-dragon__tail)"/>
+  </g>
+  <g fill="var(--c3, #C97B5A)">
+    <path d="M156 566 l4 9 l4 -9 z"/>
+    <path d="M172 569 l4 9 l4 -9 z"/>
+    <path d="M188 566 l4 9 l4 -9 z"/>
+    <path d="M202 566 l4 9 l4 -9 z"/>
+    <path d="M218 569 l4 9 l4 -9 z"/>
+    <path d="M234 566 l4 9 l4 -9 z"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

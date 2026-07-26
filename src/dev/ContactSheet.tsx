@@ -18,9 +18,15 @@ const initialStage = (): LifeStage => {
   return (LIFE_STAGES as readonly string[]).includes(q ?? '') ? (q as LifeStage) : 'adult'
 }
 
+/** Mirrors `?stage=` so a headless screenshot can open a bundle without clicking. */
+const initialBodyType = (): BodyType => {
+  const q = new URLSearchParams(window.location.search).get('body')
+  return (BODY_TYPES as readonly string[]).includes(q ?? '') ? (q as BodyType) : 'female'
+}
+
 export function ContactSheet() {
   const [stage, setStage] = useState<LifeStage>(initialStage)
-  const [bodyType, setBodyType] = useState<BodyType>('female')
+  const [bodyType, setBodyType] = useState<BodyType>(initialBodyType)
   const key = bundleKey(stage, bodyType)
   const bundlePools = catalog.bundle[key]
   const headClass = catalog.specs[key]?.headSizeClass

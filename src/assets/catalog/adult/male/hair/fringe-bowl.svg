@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fringe Bowl" data-family="fringe-bowl" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `bob`:
+       (1) LENGTH — the hem sits at y118 all the way round, well above the jaw,
+           where the bob carries to y150 with long front side-locks;
+       (2) PARTING — there is none: a single blunt fringe cut dead straight at y102
+           across the brow, instead of the bob's centre sweep and swinging side panels.
+       The hemline is even front, side and back, which is what makes it a bowl. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-fringe-bowl__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B4830)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- even bowl shell: one smooth arc all the way round, hem at y ~128 -->
+      <path d="M136 65 C136 29 164 21 200 21 C236 21 264 29 264 65
+               C266 89 264 105 258 115 C240 123 160 123 142 115
+               C136 105 134 89 136 65 Z"
+            fill="url(#adult-male-hair-fringe-bowl__back-grad)"/>
+    </g>
+    <!-- the blunt cut edge, read as the underside of the shell -->
+    <path d="M144 109 C168 121 232 121 256 109 C250 121 150 121 144 109 Z"
+          fill="var(--hair2, #6B4830)"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-fringe-bowl__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B4830)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- one piece: dome, straight sides to y118, blunt fringe edge flat at y102 -->
+      <path d="M136 107 C135 53 158 19 200 19 C242 19 265 53 264 107
+               L244 107 L244 91 L156 91 L156 107 Z"
+            fill="url(#adult-male-hair-fringe-bowl__front-grad)"/>
+    </g>
+    <!-- the fringe's cut line: dead level, the whole point of the style -->
+    <path d="M156 89.5 H244" stroke="var(--hair2, #6B4830)" stroke-width="4"
+          fill="none" stroke-linecap="butt"/>
+    <!-- weight line where the fringe meets the side panels -->
+    <path d="M156 91 V106" stroke="var(--hair2, #6B4830)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M244 91 V106" stroke="var(--hair2, #6B4830)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <!-- combed-down fringe strands -->
+    <path d="M172 51 V87" stroke="var(--hair2, #6B4830)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M200 45 V87" stroke="var(--hair2, #6B4830)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M228 51 V87" stroke="var(--hair2, #6B4830)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M162 43 C182 27 218 27 238 43" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

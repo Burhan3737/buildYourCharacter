@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sports Jersey" data-family="jersey" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes vs the tee baseline: sleeve = short raglan (not set-in) + hem = past hip, boxy -->
   <defs>
     <linearGradient id="adult-male-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #E2574C)"/>
@@ -11,32 +12,35 @@
       <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
     </linearGradient>
     <clipPath id="adult-male-top-jersey__clip">
-      <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"/>
+      <path d="M120 190 Q120 158 150 152 L250 152 Q280 158 280 190 L280 300 Q280 332 260 332 L140 332 Q120 332 120 300 Z"/>
     </clipPath>
   </defs>
   <g class="sp-shadow">
-    <!-- torso block, hem at y318 -->
-    <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"
+    <!-- boxy torso block, hem past the hip -->
+    <path d="M120 190 Q120 158 150 152 L250 152 Q280 158 280 190 L280 300 Q280 332 260 332 L140 332 Q120 332 120 300 Z"
           fill="url(#adult-male-top-jersey__body)"/>
-    <!-- raglan shoulder yokes -->
-    <path d="M186 140 L128 184 L128 148 q0-6 6-6 h52 z" fill="var(--c2, #C23F35)"/>
-    <path d="M214 140 L272 184 L272 148 q0-6 -6-6 h-52 z" fill="var(--c2, #C23F35)"/>
+    <!-- raglan shoulder yokes, seamed neck-to-underarm -->
+    <path d="M186 140 L150 152 L120 190 L120 152 Q120 146 126 146 L180 146 Z" fill="var(--c2, #C23F35)"/>
+    <path d="M214 140 L250 152 L280 190 L280 152 Q280 146 274 146 L220 146 Z" fill="var(--c2, #C23F35)"/>
     <!-- raglan short sleeves -->
-    <rect x="104" y="158" width="34" height="76" rx="17" fill="var(--c2, #C23F35)"/>
-    <rect x="262" y="158" width="34" height="76" rx="17" fill="var(--c2, #C23F35)"/>
+    <rect x="100" y="156" width="36" height="78" rx="18" fill="var(--c2, #C23F35)"/>
+    <rect x="264" y="156" width="36" height="78" rx="18" fill="var(--c2, #C23F35)"/>
     <!-- vertical shading over the sleeves -->
-    <rect x="104" y="158" width="34" height="76" rx="17" fill="url(#adult-male-top-jersey__shade)"/>
-    <rect x="262" y="158" width="34" height="76" rx="17" fill="url(#adult-male-top-jersey__shade)"/>
+    <rect x="100" y="156" width="36" height="78" rx="18" fill="url(#adult-male-top-jersey__shade)"/>
+    <rect x="264" y="156" width="36" height="78" rx="18" fill="url(#adult-male-top-jersey__shade)"/>
   </g>
+  <!-- contrast sleeve cuffs -->
+  <rect x="100" y="218" width="36" height="16" rx="8" fill="var(--c3, #F5D76E)"/>
+  <rect x="264" y="218" width="36" height="16" rx="8" fill="var(--c3, #F5D76E)"/>
   <!-- accent side stripes, clipped to the body -->
   <g clip-path="url(#adult-male-top-jersey__clip)">
-    <rect x="140" y="184" width="10" height="134" fill="var(--c3, #F5D76E)"/>
-    <rect x="250" y="184" width="10" height="134" fill="var(--c3, #F5D76E)"/>
+    <rect x="134" y="190" width="10" height="134" fill="var(--c3, #F5D76E)"/>
+    <rect x="256" y="190" width="10" height="134" fill="var(--c3, #F5D76E)"/>
   </g>
-  <!-- contrast V-neck yoke -->
-  <path d="M178 138 L200 186 L222 138 z" fill="var(--c3, #F5D76E)"/>
-  <path d="M188 138 L200 168 L212 138 z" fill="var(--skin2, #E7B892)"/>
+  <!-- contrast V-neck bind -->
+  <path d="M180 138 L200 182 L220 138 Z" fill="var(--c3, #F5D76E)"/>
+  <path d="M190 138 L200 164 L210 138 Z" fill="var(--skin2, #E7B892)"/>
   <!-- highlight -->
-  <path d="M150 202 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M150 210 Q200 228 250 210" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

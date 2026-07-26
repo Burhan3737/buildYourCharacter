@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- Upper lid partly covering the crease, so only a short strip of lid shows between
+       the hood fold and the lash line. Differs from `sleepy` — the aperture is a full
+       round eye, it is the brow-side hood that is heavy, not the lid resting on the iris. -->
+  <defs>
+    <linearGradient id="adult-male-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-male-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5A6E4A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5A6E4A)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="adult-male-eyes-hooded__clip-l">
+      <path d="M164 100 Q178 91 192 100 Q188 111 178 112 Q168 111 164 100 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-eyes-hooded__clip-r">
+      <path d="M236 100 Q222 91 208 100 Q212 111 222 112 Q232 111 236 100 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M164 100 Q178 91 192 100 Q188 111 178 112 Q168 111 164 100 Z"
+          fill="url(#adult-male-eyes-hooded__sclera)"/>
+    <path d="M236 100 Q222 91 208 100 Q212 111 222 112 Q232 111 236 100 Z"
+          fill="url(#adult-male-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#adult-male-eyes-hooded__clip-l)">
+    <circle cx="178" cy="102" r="8.6" fill="#3B2A22"/>
+    <circle cx="178" cy="102" r="8.6" fill="url(#adult-male-eyes-hooded__iris)"/>
+    <circle cx="178" cy="102" r="3.9" fill="#3B2A22"/>
+    <circle cx="175" cy="99" r="2.3" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-male-eyes-hooded__clip-r)">
+    <circle cx="222" cy="102" r="8.6" fill="#3B2A22"/>
+    <circle cx="222" cy="102" r="8.6" fill="url(#adult-male-eyes-hooded__iris)"/>
+    <circle cx="222" cy="102" r="3.9" fill="#3B2A22"/>
+    <circle cx="219" cy="99" r="2.3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line -->
+  <path d="M163 99.5 Q178 90 193 99.5" stroke="#3B2A22" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M237 99.5 Q222 90 207 99.5" stroke="#3B2A22" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the hood: a heavy fold dropping over the outer half of the crease, leaving only a
+       short visible strip of lid between it and the lashes -->
+  <path d="M158 92 Q170 82 186 84 Q194 85 197 90 Q186 88.5 176 89.5 Q166 90.5 158 95 Z"
+        fill="#3B2A22" fill-opacity="0.42"/>
+  <path d="M242 92 Q230 82 214 84 Q206 85 203 90 Q214 88.5 224 89.5 Q234 90.5 242 95 Z"
+        fill="#3B2A22" fill-opacity="0.42"/>
+  <path d="M159 93.5 Q172 84.5 189 86.5" stroke="#3B2A22" stroke-opacity="0.55"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M241 93.5 Q228 84.5 211 86.5" stroke="#3B2A22" stroke-opacity="0.55"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</svg>

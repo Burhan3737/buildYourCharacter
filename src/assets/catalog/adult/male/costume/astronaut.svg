@@ -1,89 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="EVA Space Suit" data-family="astronaut" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Redrawn against dino: differs on shoulder/sleeve (long set-in, straight-sided sleeves)
+       and volume (boxy, square-cornered, minimal waist taper). -->
   <defs>
     <linearGradient id="adult-male-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
-    </linearGradient>
-    <linearGradient id="adult-male-costume-astronaut__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
-    </linearGradient>
-    <linearGradient id="adult-male-costume-astronaut__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
+      <stop offset="1" stop-color="var(--c1, #D6DCEE)"/>
     </linearGradient>
     <linearGradient id="adult-male-costume-astronaut__boot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #9AA6C4)"/>
-      <stop offset="1" stop-color="var(--c2, #8391B3)"/>
+      <stop offset="0" stop-color="var(--c2, #A9B3D0)"/>
+      <stop offset="1" stop-color="var(--c2, #8C97BA)"/>
     </linearGradient>
   </defs>
 
-  <!-- padded suit mass, puffed slightly for a bulky EVA-suit read -->
+  <!-- boxy suit mass: straight sides, square corners -->
   <g class="sp-shadow">
-    <rect x="158" y="334" width="40" height="220" rx="20" fill="url(#adult-male-costume-astronaut__leg)"/>
-    <rect x="202" y="334" width="40" height="220" rx="20" fill="url(#adult-male-costume-astronaut__leg)"/>
-    <rect x="136" y="296" width="128" height="64" rx="30" fill="url(#adult-male-costume-astronaut__body)"/>
-    <path d="M126 182 Q126 148 160 148 L240 148 Q274 148 274 182 L274 272 Q274 302 258 312 L142 312 Q126 302 126 272 Z"
+    <rect x="160" y="338" width="28" height="206" rx="8" fill="url(#adult-male-costume-astronaut__body)"/>
+    <rect x="212" y="338" width="28" height="206" rx="8" fill="url(#adult-male-costume-astronaut__body)"/>
+    <rect x="140" y="300" width="120" height="48" rx="12" fill="url(#adult-male-costume-astronaut__body)"/>
+    <path d="M134 150 L266 150 Q270 150 270 158 L270 296 Q270 306 260 306 L140 306 Q130 306 130 296 L130 158 Q130 150 134 150 Z"
           fill="url(#adult-male-costume-astronaut__body)"/>
-    <rect x="104" y="158" width="34" height="160" rx="17" fill="url(#adult-male-costume-astronaut__sleeve)"/>
-    <rect x="258" y="158" width="34" height="160" rx="17" fill="url(#adult-male-costume-astronaut__sleeve)"/>
+    <rect x="104" y="160" width="32" height="168" rx="10" fill="url(#adult-male-costume-astronaut__body)"/>
+    <rect x="264" y="160" width="32" height="168" rx="10" fill="url(#adult-male-costume-astronaut__body)"/>
   </g>
 
-  <!-- neck ring: the top of the piece, no helmet -->
-  <rect x="176" y="148" width="48" height="14" rx="7" fill="var(--c3, #F4A79B)"/>
+  <!-- soft neck ring: the top of the piece, no helmet -->
+  <rect x="176" y="150" width="48" height="14" rx="7" fill="var(--c3, #F4A79B)"/>
 
-  <!-- ribbed suit-seam bands across the arms and legs -->
-  <g fill="var(--c2, #9AA6C4)">
-    <rect x="104" y="198" width="34" height="7" rx="3.5"/>
-    <rect x="104" y="218" width="34" height="7" rx="3.5"/>
-    <rect x="104" y="238" width="34" height="7" rx="3.5"/>
-    <rect x="104" y="258" width="34" height="7" rx="3.5"/>
-    <rect x="258" y="198" width="34" height="7" rx="3.5"/>
-    <rect x="258" y="218" width="34" height="7" rx="3.5"/>
-    <rect x="258" y="238" width="34" height="7" rx="3.5"/>
-    <rect x="258" y="258" width="34" height="7" rx="3.5"/>
-    <rect x="158" y="378" width="40" height="8" rx="4"/>
-    <rect x="158" y="404" width="40" height="8" rx="4"/>
-    <rect x="158" y="430" width="40" height="8" rx="4"/>
-    <rect x="158" y="456" width="40" height="8" rx="4"/>
-    <rect x="202" y="378" width="40" height="8" rx="4"/>
-    <rect x="202" y="404" width="40" height="8" rx="4"/>
-    <rect x="202" y="430" width="40" height="8" rx="4"/>
-    <rect x="202" y="456" width="40" height="8" rx="4"/>
+  <!-- centre zip: the suit's closure -->
+  <rect x="194" y="163" width="12" height="138" rx="6" fill="var(--c2, #A9B3D0)"/>
+  <circle cx="200" cy="297" r="7" fill="var(--c3, #F4A79B)"/>
+
+  <!-- ribbed joint bands across the arms and legs -->
+  <g fill="var(--c2, #A9B3D0)">
+    <rect x="104" y="198" width="32" height="7" rx="3.5"/>
+    <rect x="104" y="220" width="32" height="7" rx="3.5"/>
+    <rect x="104" y="242" width="32" height="7" rx="3.5"/>
+    <rect x="104" y="264" width="32" height="7" rx="3.5"/>
+    <rect x="264" y="198" width="32" height="7" rx="3.5"/>
+    <rect x="264" y="220" width="32" height="7" rx="3.5"/>
+    <rect x="264" y="242" width="32" height="7" rx="3.5"/>
+    <rect x="264" y="264" width="32" height="7" rx="3.5"/>
+    <rect x="160" y="380" width="28" height="8" rx="4"/>
+    <rect x="160" y="406" width="28" height="8" rx="4"/>
+    <rect x="160" y="432" width="28" height="8" rx="4"/>
+    <rect x="160" y="458" width="28" height="8" rx="4"/>
+    <rect x="212" y="380" width="28" height="8" rx="4"/>
+    <rect x="212" y="406" width="28" height="8" rx="4"/>
+    <rect x="212" y="432" width="28" height="8" rx="4"/>
+    <rect x="212" y="458" width="28" height="8" rx="4"/>
   </g>
 
   <!-- chest control panel -->
-  <rect x="176" y="200" width="48" height="40" rx="10" fill="var(--c2, #9AA6C4)"/>
-  <rect x="182" y="206" width="36" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.45"/>
+  <rect x="168" y="198" width="40" height="34" rx="8" fill="var(--c2, #A9B3D0)"/>
+  <rect x="173" y="203" width="30" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.45"/>
   <g fill="var(--c3, #F4A79B)">
-    <circle cx="188" cy="230" r="4.5"/>
-    <circle cx="200" cy="230" r="4.5"/>
-    <circle cx="212" cy="230" r="4.5"/>
+    <circle cx="177" cy="222" r="4"/>
+    <circle cx="188" cy="222" r="4"/>
+    <circle cx="199" cy="222" r="4"/>
   </g>
 
-  <!-- original insignia: an abstract circle and sweeping arc, no real-world logo -->
-  <circle cx="244" cy="190" r="10" fill="var(--c3, #F4A79B)"/>
-  <path d="M226 206 q18 -30 38 -8" stroke="var(--c3, #F4A79B)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- shoulder flash -->
-  <rect x="106" y="170" width="34" height="22" rx="10" fill="var(--c3, #F4A79B)"/>
+  <!-- shoulder flashes -->
+  <rect x="106" y="168" width="30" height="18" rx="9" fill="var(--c3, #F4A79B)"/>
+  <rect x="264" y="168" width="30" height="18" rx="9" fill="var(--c3, #F4A79B)"/>
 
   <!-- wide waist ring -->
-  <rect x="134" y="288" width="132" height="16" rx="8" fill="var(--c2, #9AA6C4)"/>
+  <rect x="136" y="294" width="128" height="14" rx="7" fill="var(--c2, #A9B3D0)"/>
 
-  <!-- gloves and chunky boots -->
+  <!-- gloves and chunky square-toed boots -->
   <g class="sp-shadow">
-    <rect x="102" y="298" width="38" height="18" rx="9" fill="var(--c2, #9AA6C4)"/>
-    <rect x="260" y="298" width="38" height="18" rx="9" fill="var(--c2, #9AA6C4)"/>
-    <circle cx="121" cy="332" r="18" fill="url(#adult-male-costume-astronaut__body)"/>
-    <circle cx="279" cy="332" r="18" fill="url(#adult-male-costume-astronaut__body)"/>
-    <rect x="156" y="484" width="42" height="72" rx="19" fill="url(#adult-male-costume-astronaut__boot)"/>
-    <rect x="202" y="484" width="42" height="72" rx="19" fill="url(#adult-male-costume-astronaut__boot)"/>
-    <rect x="150" y="530" width="52" height="40" rx="19" fill="url(#adult-male-costume-astronaut__boot)"/>
-    <rect x="198" y="530" width="52" height="40" rx="19" fill="url(#adult-male-costume-astronaut__boot)"/>
+    <circle cx="120" cy="332" r="17" fill="url(#adult-male-costume-astronaut__body)"/>
+    <circle cx="280" cy="332" r="17" fill="url(#adult-male-costume-astronaut__body)"/>
+    <rect x="152" y="480" width="48" height="76" rx="10" fill="url(#adult-male-costume-astronaut__boot)"/>
+    <rect x="200" y="480" width="48" height="76" rx="10" fill="url(#adult-male-costume-astronaut__boot)"/>
+    <rect x="146" y="540" width="60" height="30" rx="10" fill="url(#adult-male-costume-astronaut__boot)"/>
+    <rect x="196" y="540" width="60" height="30" rx="10" fill="url(#adult-male-costume-astronaut__boot)"/>
   </g>
 
   <!-- house highlight -->

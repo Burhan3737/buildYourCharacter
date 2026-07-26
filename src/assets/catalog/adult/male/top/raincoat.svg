@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Rain Shell" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: VOLUME = flared/A-line (widens hard from shoulder to hem),
+       HEM = thigh. Also closure = full snap placket, shoulder = long set-in.
+       Differs from `button-up` on hem + volume, from `cardigan` on shoulder + closure. -->
+  <defs>
+    <linearGradient id="adult-male-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #C4923A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #C4923A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #B98832)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hood lying flat behind the neck, well below the shoulder line -->
+  <path d="M162 150 Q200 178 238 150 Q234 194 200 196 Q166 194 162 150 Z"
+        fill="url(#adult-male-top-raincoat__hood)"/>
+
+  <!-- major forms: two sleeves and one A-line shell flaring to mid-thigh -->
+  <g class="sp-shadow">
+    <rect x="104" y="160" width="36" height="182" rx="18" fill="url(#adult-male-top-raincoat__sleeve)"/>
+    <rect x="260" y="160" width="36" height="182" rx="18" fill="url(#adult-male-top-raincoat__sleeve)"/>
+    <path d="M132 190 Q132 148 176 148 H224 Q268 148 268 190 L288 364 Q290 378 274 378
+             H126 Q110 378 112 364 Z"
+          fill="url(#adult-male-top-raincoat__body)"/>
+  </g>
+
+  <!-- storm flap over a full snap placket -->
+  <path d="M186 150 H214 L219 378 H181 Z" fill="var(--c3, #2E3F52)"/>
+  <path d="M200 152 V376" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c1, #F2C14E)">
+    <circle cx="200" cy="186" r="5"/>
+    <circle cx="200" cy="230" r="5"/>
+    <circle cx="200" cy="274" r="5"/>
+    <circle cx="200" cy="318" r="5"/>
+    <circle cx="201" cy="362" r="5"/>
+  </g>
+
+  <!-- contrast piping along the hood edge and the hem -->
+  <path d="M162 150 Q200 178 238 150" stroke="var(--c3, #2E3F52)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 366 Q200 384 286 366" stroke="var(--c3, #2E3F52)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- two flap pockets, angled with the flare -->
+  <path d="M132 286 h44 l3 16 h-49 z" fill="var(--c3, #2E3F52)"/>
+  <path d="M268 286 h-44 l-3 16 h49 z" fill="var(--c3, #2E3F52)"/>
+  <path d="M130 302 h50 l4 42 h-58 z" fill="var(--c2, #C4923A)" fill-opacity="0.5"/>
+  <path d="M270 302 h-50 l-4 42 h58 z" fill="var(--c2, #C4923A)" fill-opacity="0.5"/>
+
+  <!-- elasticated cuff bands -->
+  <rect x="104" y="322" width="36" height="20" rx="10" fill="var(--c3, #2E3F52)"/>
+  <rect x="260" y="322" width="36" height="20" rx="10" fill="var(--c3, #2E3F52)"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M150 180 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

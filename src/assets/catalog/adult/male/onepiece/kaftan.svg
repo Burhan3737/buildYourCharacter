@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = a wide draped T-shape, the sleeve cut in one with the
+       body and no armhole seam at all; HEM = calf, falling dead straight from the shoulder.
+       Differs from `robe` on closure + volume, from `jumpsuit` on shoulder + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-kaftan__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #BEB79F)"/>
+    </linearGradient>
+    <pattern id="adult-male-onepiece-kaftan__band" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 10 L10 2 L20 10 L10 18 Z" fill="none" stroke="var(--c3, #B0743C)"
+            stroke-width="2.6"/>
+    </pattern>
+    <clipPath id="adult-male-onepiece-kaftan__clip">
+      <path d="M200 148 H236 L296 176 Q302 178 300 190 L286 250 Q284 260 274 258 L258 252
+               L262 492 Q200 504 138 492 L142 252 L126 258 Q116 260 114 250 L100 190
+               Q98 178 104 176 L164 148 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one T-shaped robe, sleeve and body cut in a single piece -->
+  <g class="sp-shadow">
+    <path d="M200 148 H236 L296 176 Q302 178 300 190 L286 250 Q284 260 274 258 L258 252
+             L262 492 Q200 504 138 492 L142 252 L126 258 Q116 260 114 250 L100 190
+             Q98 178 104 176 L164 148 Z"
+          fill="url(#adult-male-onepiece-kaftan__cloth)"/>
+  </g>
+
+  <!-- woven trim bands, clipped to the cloth -->
+  <g clip-path="url(#adult-male-onepiece-kaftan__clip)">
+    <rect x="96" y="222" width="208" height="40" fill="url(#adult-male-onepiece-kaftan__band)"/>
+    <rect x="96" y="212" width="208" height="7" fill="var(--c3, #B0743C)"/>
+    <rect x="96" y="266" width="208" height="7" fill="var(--c3, #B0743C)"/>
+    <rect x="96" y="468" width="208" height="9" fill="var(--c3, #B0743C)"/>
+  </g>
+
+  <!-- slit neckline with an embroidered placket running down from it -->
+  <path d="M178 148 Q200 168 222 148 Q220 178 200 182 Q180 178 178 148 Z"
+        fill="var(--c3, #B0743C)"/>
+  <path d="M184 150 Q200 164 216 150 Q214 172 200 175 Q186 172 184 150 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <rect x="192" y="180" width="16" height="46" rx="5" fill="var(--c3, #B0743C)"/>
+  <path d="M200 186 V220" stroke="var(--c2, #BEB79F)" stroke-opacity="0.7" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide sleeve openings -->
+  <path d="M116 252 L126 258 Q116 260 114 250 Z" fill="var(--c3, #B0743C)"/>
+  <path d="M284 252 L274 258 Q284 260 286 250 Z" fill="var(--c3, #B0743C)"/>
+  <path d="M100 190 L114 250" stroke="var(--c3, #B0743C)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M300 190 L286 250" stroke="var(--c3, #B0743C)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- straight drape folds and highlight -->
+  <g stroke="var(--c2, #BEB79F)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M166 282 L162 484"/>
+    <path d="M234 282 L238 484"/>
+  </g>
+  <path d="M158 194 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

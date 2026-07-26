@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: VOLUME = fitted (skims the body the whole way down),
+       HEM = past hip. Also shoulder = long set-in, closure = closed.
+       Differs from `tee` on shoulder + volume, from `sweater` on hem + volume. -->
+  <defs>
+    <linearGradient id="adult-male-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6FB4)"/>
+      <stop offset="1" stop-color="var(--c2, #5F4680)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6FB4)"/>
+      <stop offset="1" stop-color="var(--c2, #5F4680)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-turtleneck__neck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9B7DBF)"/>
+      <stop offset="1" stop-color="var(--c2, #5F4680)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-turtleneck__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4" height="12" fill="var(--c3, #E4D6F2)" fill-opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- major forms: the tall folded neck tube, two close sleeves, one skimming body -->
+  <g class="sp-shadow">
+    <rect x="174" y="116" width="52" height="48" rx="18" fill="url(#adult-male-top-turtleneck__neck)"/>
+    <rect x="106" y="162" width="30" height="178" rx="15" fill="url(#adult-male-top-turtleneck__sleeve)"/>
+    <rect x="264" y="162" width="30" height="178" rx="15" fill="url(#adult-male-top-turtleneck__sleeve)"/>
+    <path d="M132 192 Q132 150 174 150 H226 Q268 150 268 192 L265 248 Q262 280 258 300
+             Q254 324 246 332 H154 Q146 324 142 300 Q138 280 135 248 Z"
+          fill="url(#adult-male-top-turtleneck__body)"/>
+  </g>
+
+  <!-- rib on the neck tube plus its fold line -->
+  <rect x="174" y="116" width="52" height="48" rx="18" fill="url(#adult-male-top-turtleneck__rib)"/>
+  <path d="M176 138 Q200 148 224 138" stroke="var(--c2, #5F4680)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs and ribbed hem band -->
+  <rect x="106" y="318" width="30" height="22" rx="11" fill="var(--c3, #E4D6F2)"/>
+  <rect x="264" y="318" width="30" height="22" rx="11" fill="var(--c3, #E4D6F2)"/>
+  <rect x="106" y="318" width="30" height="22" rx="11" fill="url(#adult-male-top-turtleneck__rib)"/>
+  <rect x="264" y="318" width="30" height="22" rx="11" fill="url(#adult-male-top-turtleneck__rib)"/>
+  <path d="M146 314 Q200 326 254 314 L252 330 Q200 342 148 330 Z" fill="var(--c3, #E4D6F2)"/>
+
+  <!-- set-in shoulder seams -->
+  <path d="M138 172 Q150 156 174 152" stroke="var(--c2, #5F4680)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M262 172 Q250 156 226 152" stroke="var(--c2, #5F4680)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M152 180 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

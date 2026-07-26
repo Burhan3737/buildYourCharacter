@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Snow Pants" data-family="snow-pants" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=very-wide-bulky, hem=elastic cuff over the boot
+       (vs wide-leg: bulkier column + cuff sits high over the boot instead of a deep hem band) -->
+  <defs>
+    <linearGradient id="adult-male-bottom-snow-pants__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97E72)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-bottom-snow-pants__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97E72)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- high-rise very wide bulky snow pants: hip block plus both bulky legs, one shadow group -->
+  <g class="sp-shadow">
+    <path d="M145 356 H203 V510 q0 12 -12 12 H157 q-12 0 -12 -12 Z"
+          fill="url(#adult-male-bottom-snow-pants__leg)"/>
+    <path d="M255 356 H197 V510 q0 12 12 12 H243 q12 0 12 -12 Z"
+          fill="url(#adult-male-bottom-snow-pants__leg)"/>
+    <rect x="139" y="287" width="122" height="73" rx="24"
+          fill="url(#adult-male-bottom-snow-pants__hip)"/>
+  </g>
+
+  <!-- brace stubs at the waist -->
+  <rect x="152" y="278" width="10" height="16" rx="4" fill="var(--c2, #C97E72)"/>
+  <rect x="238" y="278" width="10" height="16" rx="4" fill="var(--c2, #C97E72)"/>
+
+  <!-- big thigh pocket -->
+  <rect x="152" y="404" width="46" height="48" rx="10" fill="var(--c2, #C97E72)"/>
+  <rect x="149" y="396" width="52" height="16" rx="6" fill="var(--c3, #8A4A40)"/>
+
+  <!-- contrast knee panel -->
+  <rect x="149" y="456" width="46" height="34" rx="10" fill="var(--c3, #8A4A40)"/>
+  <rect x="205" y="456" width="46" height="34" rx="10" fill="var(--c3, #8A4A40)"/>
+
+  <!-- horizontal insulation channel seams -->
+  <path d="M147 372 H201" stroke="var(--c2, #C97E72)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M199 372 H253" stroke="var(--c2, #C97E72)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M147 500 H201" stroke="var(--c2, #C97E72)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M199 500 H253" stroke="var(--c2, #C97E72)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- elastic cuff sitting over the boot -->
+  <rect x="149" y="504" width="42" height="22" rx="11" fill="var(--c3, #8A4A40)"/>
+  <rect x="209" y="504" width="42" height="22" rx="11" fill="var(--c3, #8A4A40)"/>
+  <path d="M158 509 v12" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 509 v12" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 509 v12" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 509 v12" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M150 302 q50 10 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

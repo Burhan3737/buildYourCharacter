@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turnout Coat" data-family="firefighter" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Differs on: volume (bulky boxy coat, wider than the body) and hem (thigh-length coat
+       hanging well past the hip, over separate trousers). No badge, no lettering. -->
+  <defs>
+    <linearGradient id="adult-male-costume-firefighter__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A3D)"/>
+      <stop offset="1" stop-color="var(--c1, #A96F2D)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-firefighter__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A4640)"/>
+      <stop offset="1" stop-color="var(--c2, #3A3630)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- trousers, visible below the coat hem -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="14" fill="url(#adult-male-costume-firefighter__trouser)"/>
+    <rect x="206" y="336" width="32" height="216" rx="14" fill="url(#adult-male-costume-firefighter__trouser)"/>
+    <rect x="140" y="300" width="120" height="56" rx="16" fill="url(#adult-male-costume-firefighter__trouser)"/>
+  </g>
+
+  <!-- bulky bomber-wide sleeves -->
+  <g class="sp-shadow">
+    <rect x="96" y="160" width="34" height="180" rx="14" fill="url(#adult-male-costume-firefighter__coat)"/>
+    <rect x="270" y="160" width="34" height="180" rx="14" fill="url(#adult-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- heavy turnout coat, boxy and thigh-length -->
+  <g class="sp-shadow">
+    <path d="M120 150 L280 150 Q286 150 286 158 L286 260 L292 400 Q200 420 108 400 L114 260 L114 158 Q114 150 120 150 Z"
+          fill="url(#adult-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- high storm collar -->
+  <path d="M180 150 L220 150 L224 174 Q200 182 176 174 Z" fill="var(--c2, #4A4640)"/>
+
+  <!-- two horizontal reflective bands -->
+  <rect x="112" y="228" width="176" height="14" rx="4" fill="var(--c3, #EDE6D2)" fill-opacity="0.92"/>
+  <rect x="110" y="356" width="180" height="14" rx="4" fill="var(--c3, #EDE6D2)" fill-opacity="0.92"/>
+
+  <!-- centre placket and pocket flaps -->
+  <rect x="196" y="160" width="8" height="182" rx="4" fill="var(--c2, #4A4640)" fill-opacity="0.6"/>
+  <rect x="128" y="270" width="34" height="22" rx="5" fill="var(--c2, #4A4640)" fill-opacity="0.5"/>
+  <rect x="238" y="270" width="34" height="22" rx="5" fill="var(--c2, #4A4640)" fill-opacity="0.5"/>
+
+  <!-- gloves and turnout boots -->
+  <g class="sp-shadow">
+    <circle cx="112" cy="342" r="17" fill="url(#adult-male-costume-firefighter__coat)"/>
+    <circle cx="288" cy="342" r="17" fill="url(#adult-male-costume-firefighter__coat)"/>
+    <rect x="150" y="480" width="48" height="74" rx="12" fill="url(#adult-male-costume-firefighter__trouser)"/>
+    <rect x="202" y="480" width="48" height="74" rx="12" fill="url(#adult-male-costume-firefighter__trouser)"/>
+    <rect x="144" y="540" width="60" height="30" rx="10" fill="url(#adult-male-costume-firefighter__trouser)"/>
+    <rect x="196" y="540" width="60" height="30" rx="10" fill="url(#adult-male-costume-firefighter__trouser)"/>
+  </g>
+  <rect x="148" y="536" width="56" height="10" rx="5" fill="var(--c3, #EDE6D2)" fill-opacity="0.85"/>
+  <rect x="200" y="536" width="56" height="10" rx="5" fill="var(--c3, #EDE6D2)" fill-opacity="0.85"/>
+
+  <!-- house highlight -->
+  <path d="M132 172 q68 22 136 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

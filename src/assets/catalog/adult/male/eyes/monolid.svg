@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- Smooth single-fold lid: no crease line at all, a wide flat lash line and a
+       long low aperture. Differs from `almond` on aperture height and lid treatment. -->
+  <defs>
+    <linearGradient id="adult-male-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-male-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #3E2C24)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #3E2C24)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="adult-male-eyes-monolid__clip-l">
+      <path d="M160 100 Q178 92 196 99 Q194 110 178 111 Q163 110 160 100 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-eyes-monolid__clip-r">
+      <path d="M240 100 Q222 92 204 99 Q206 110 222 111 Q237 110 240 100 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- long, low, gently tapered aperture -->
+  <g class="sp-shadow">
+    <path d="M160 100 Q178 92 196 99 Q194 110 178 111 Q163 110 160 100 Z"
+          fill="url(#adult-male-eyes-monolid__sclera)"/>
+    <path d="M240 100 Q222 92 204 99 Q206 110 222 111 Q237 110 240 100 Z"
+          fill="url(#adult-male-eyes-monolid__sclera)"/>
+  </g>
+
+  <g clip-path="url(#adult-male-eyes-monolid__clip-l)">
+    <circle cx="178" cy="102" r="9" fill="#3B2A22"/>
+    <circle cx="178" cy="102" r="9" fill="url(#adult-male-eyes-monolid__iris)"/>
+    <circle cx="178" cy="102" r="4" fill="#3B2A22"/>
+    <circle cx="174.8" cy="99" r="2.4" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-male-eyes-monolid__clip-r)">
+    <circle cx="222" cy="102" r="9" fill="#3B2A22"/>
+    <circle cx="222" cy="102" r="9" fill="url(#adult-male-eyes-monolid__iris)"/>
+    <circle cx="222" cy="102" r="4" fill="#3B2A22"/>
+    <circle cx="218.8" cy="99" r="2.4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- wide flat lash line, even weight from corner to corner, no crease above it -->
+  <path d="M159 99.5 Q178 91 197 98.5" stroke="#3B2A22" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241 99.5 Q222 91 203 98.5" stroke="#3B2A22" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- smooth unbroken lid plane, a soft value shift only -->
+  <path d="M162 88 Q178 82 194 87" stroke="#3B2A22" stroke-opacity="0.09" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 88 Q222 82 206 87" stroke="#3B2A22" stroke-opacity="0.09" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

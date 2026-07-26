@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- Outer corner lifting clearly above the inner corner: the aperture climbs about 7px
+       from the nose side to the temple side. Differs from `almond` on tilt and on the
+       rounded inner-corner shape. -->
+  <defs>
+    <linearGradient id="adult-male-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-male-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #2F6B8C)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #2F6B8C)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="adult-male-eyes-upturned__clip-l">
+      <path d="M193 106 Q188 94 176 93 Q164 92 162 100 Q166 110 178 111 Q189 112 193 106 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-eyes-upturned__clip-r">
+      <path d="M207 106 Q212 94 224 93 Q236 92 238 100 Q234 110 222 111 Q211 112 207 106 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- aperture: inner corner low and rounded at x196/y107, outer corner lifted to y95 -->
+  <g class="sp-shadow">
+    <path d="M196 107 Q190 93 176 92 Q163 91 161 100 Q165 111 178 112 Q191 113 196 107 Z"
+          fill="url(#adult-male-eyes-upturned__sclera)"/>
+    <path d="M204 107 Q210 93 224 92 Q237 91 239 100 Q235 111 222 112 Q209 113 204 107 Z"
+          fill="url(#adult-male-eyes-upturned__sclera)"/>
+  </g>
+
+  <g clip-path="url(#adult-male-eyes-upturned__clip-l)">
+    <circle cx="177" cy="102" r="8.8" fill="#3B2A22"/>
+    <circle cx="177" cy="102" r="8.8" fill="url(#adult-male-eyes-upturned__iris)"/>
+    <circle cx="177" cy="102" r="4" fill="#3B2A22"/>
+    <circle cx="174" cy="98.8" r="2.4" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-male-eyes-upturned__clip-r)">
+    <circle cx="223" cy="102" r="8.8" fill="#3B2A22"/>
+    <circle cx="223" cy="102" r="8.8" fill="url(#adult-male-eyes-upturned__iris)"/>
+    <circle cx="223" cy="102" r="4" fill="#3B2A22"/>
+    <circle cx="220" cy="98.8" r="2.4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line sweeping up and out, heaviest at the lifted outer corner -->
+  <path d="M196 105 Q189 91 175 90.5 Q164 90 160 98" stroke="#3B2A22" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 105 Q211 91 225 90.5 Q236 90 240 98" stroke="#3B2A22" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lid crease echoing the lift -->
+  <path d="M192 90 Q184 83 172 83.5" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 90 Q216 83 228 83.5" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

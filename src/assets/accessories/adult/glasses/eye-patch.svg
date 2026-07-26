@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Eye Patch" data-family="eye-patch" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: LENS SHAPE = a single soft opaque oval pad over one eye only
+       (asymmetric — every other family in the slot is a symmetric pair), and
+       TEMPLE/STRAP = one diagonal strap crossing the head. -->
+  <defs>
+    <linearGradient id="accessories-adult-glasses-eye-patch__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5A72)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3B4E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- diagonal strap: low on the left, rising over the right temple -->
+    <path d="M146 112 L254 78" stroke="var(--c2, #2E3B4E)" stroke-width="9"
+          fill="none" stroke-linecap="round"/>
+    <!-- soft oval pad covering the left eye only -->
+    <ellipse cx="178" cy="101" rx="21" ry="18"
+             fill="url(#accessories-adult-glasses-eye-patch__pad)"/>
+  </g>
+
+  <!-- stitched edge binding round the pad -->
+  <ellipse cx="178" cy="101" rx="17" ry="14" fill="none"
+           stroke="var(--c3, #E4D7BC)" stroke-width="2.2" stroke-dasharray="4 4"/>
+
+  <!-- soft crease across the pad and a highlight on its upper surface -->
+  <path d="M164 97 Q178 92 192 97" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 108 Q178 112 190 108" stroke="var(--c2, #2E3B4E)" stroke-opacity="0.6"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- small strap adjuster where the strap meets the pad -->
+  <rect x="195" y="90" width="9" height="12" rx="3" fill="var(--c3, #E4D7BC)"
+        transform="rotate(-18 199.5 96)"/>
+</svg>

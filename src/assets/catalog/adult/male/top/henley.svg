@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <!-- silhouette axes: sleeve = long, pushed up at the forearm (bare below the elbow) + closure = half placket -->
+  <defs>
+    <linearGradient id="adult-male-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98B72)"/>
+      <stop offset="1" stop-color="var(--c2, #B8664F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98B72)"/>
+      <stop offset="1" stop-color="var(--c2, #B8664F)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- sleeves pushed up, ending above the wrist so the forearm stays bare -->
+    <rect x="104" y="160" width="34" height="110" rx="16" fill="url(#adult-male-top-henley__sleeve)"/>
+    <rect x="262" y="160" width="34" height="110" rx="16" fill="url(#adult-male-top-henley__sleeve)"/>
+    <!-- straight torso, hip hem -->
+    <path d="M134 180 Q134 152 164 150 L236 150 Q266 152 266 180 L266 296 Q266 316 246 316 L154 316 Q134 316 134 296 Z"
+          fill="url(#adult-male-top-henley__body)"/>
+  </g>
+  <!-- rolled cuff band at the pushed-up sleeve end -->
+  <rect x="100" y="252" width="42" height="22" rx="10" fill="var(--c2, #B8664F)"/>
+  <rect x="258" y="252" width="42" height="22" rx="10" fill="var(--c2, #B8664F)"/>
+  <!-- half placket, three buttons, no collar -->
+  <rect x="192" y="150" width="16" height="86" rx="4" fill="var(--c2, #B8664F)"/>
+  <circle cx="200" cy="176" r="4.5" fill="var(--c2, #B8664F)"/>
+  <circle cx="200" cy="206" r="4.5" fill="var(--c2, #B8664F)"/>
+  <circle cx="200" cy="236" r="4.5" fill="var(--c2, #B8664F)"/>
+  <!-- crew neckline, no collar -->
+  <path d="M176 148 Q200 168 224 148" stroke="var(--c2, #B8664F)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M184 149 Q200 162 216 149 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M150 176 Q200 194 250 176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
