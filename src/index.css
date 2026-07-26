@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { background: theme('colors.page'); color: theme('colors.ink');
+       -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
+
+/* Quality tiers — the ONLY place the shared shadow filter is applied. */
+.quality-high .sp-shadow { filter: url(#sp-drop); }
+.quality-flat .sp-shadow { filter: none; }
