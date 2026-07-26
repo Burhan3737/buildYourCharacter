@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=LONG STRUCTURED square · closure=OPEN FRONT with lapels · hem=past hip · volume=straight -->
+  <defs>
+    <linearGradient id="teen-female-top-blazer__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4E63)"/>
+      <stop offset="1" stop-color="var(--c2, #34384A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-blazer__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4E63)"/>
+      <stop offset="1" stop-color="var(--c2, #34384A)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-blazer__pin" patternUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="3" height="16" fill="var(--c3, #C9CEE4)" fill-opacity="0.42"/>
+    </pattern>
+    <clipPath id="teen-female-top-blazer__clip">
+      <path d="M140 210 q0-20 22-20 h76 q22 0 22 20 v152 q0 16 -16 16 h-88 q-16 0 -16-16 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- squared-off structured sleeves -->
+    <rect x="116" y="196" width="30" height="158" rx="11" fill="url(#teen-female-top-blazer__sleeve)"/>
+    <rect x="254" y="196" width="30" height="158" rx="11" fill="url(#teen-female-top-blazer__sleeve)"/>
+    <!-- straight body past the hip -->
+    <path d="M140 210 q0-20 22-20 h76 q22 0 22 20 v152 q0 16 -16 16 h-88 q-16 0 -16-16 z"
+          fill="url(#teen-female-top-blazer__body)"/>
+  </g>
+
+  <!-- fine pinstripe -->
+  <g clip-path="url(#teen-female-top-blazer__clip)">
+    <rect x="138" y="188" width="124" height="192" fill="url(#teen-female-top-blazer__pin)"/>
+  </g>
+
+  <!-- shell showing through the open front -->
+  <path d="M186 206 h28 v170 h-28 z" fill="var(--c3, #C9CEE4)"/>
+
+  <!-- notched lapels -->
+  <path d="M166 190 L200 206 L198 264 L172 236 L160 206 z" fill="var(--c2, #34384A)"/>
+  <path d="M234 190 L200 206 L202 264 L228 236 L240 206 z" fill="var(--c2, #34384A)"/>
+  <path d="M160 206 L172 202 L176 218 z" fill="var(--c3, #C9CEE4)"/>
+  <path d="M240 206 L228 202 L224 218 z" fill="var(--c3, #C9CEE4)"/>
+
+  <!-- one fastening button and welt pockets -->
+  <circle cx="196" cy="288" r="5" fill="var(--c3, #C9CEE4)"/>
+  <rect x="148" y="322" width="34" height="9" rx="4" fill="var(--c2, #34384A)"/>
+  <rect x="218" y="322" width="34" height="9" rx="4" fill="var(--c2, #34384A)"/>
+
+  <!-- cuff buttons -->
+  <circle cx="131" cy="336" r="3" fill="var(--c3, #C9CEE4)"/>
+  <circle cx="269" cy="336" r="3" fill="var(--c3, #C9CEE4)"/>
+
+  <!-- highlight -->
+  <path d="M154 200 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

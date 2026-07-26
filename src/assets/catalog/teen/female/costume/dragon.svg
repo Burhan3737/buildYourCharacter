@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon Suit" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=WING STUBS · closure=closed · hem=ankle · volume=ANGULAR PLATED (vs dino's rounded plush) -->
+  <defs>
+    <linearGradient id="teen-female-costume-dragon__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6BD6)"/>
+      <stop offset="1" stop-color="var(--c2, #6A4CA8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-dragon__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E6BD6)"/>
+      <stop offset="1" stop-color="var(--c2, #6A4CA8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-dragon__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2B65C)"/>
+      <stop offset="1" stop-color="var(--c3, #F2B65C)" stop-opacity="0.75"/>
+    </linearGradient>
+    <pattern id="teen-female-costume-dragon__scale" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="14">
+      <path d="M0 14 q9 -18 18 0" fill="none" stroke="var(--c3, #F2B65C)"
+            stroke-width="2.6" stroke-opacity="0.7"/>
+    </pattern>
+    <clipPath id="teen-female-costume-dragon__clip">
+      <path d="M144 226 L166 196 H234 L256 226 V302 L244 350 H156 L144 302 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- thick angular tail behind the figure -->
+  <path d="M252 352 L306 396 L318 470 L300 522 L282 514 L296 468 L288 412 L246 380 Z"
+        fill="var(--c2, #6A4CA8)"/>
+
+  <!-- wing stubs sitting behind the shoulders, below the shoulder line -->
+  <path d="M138 214 L98 236 L112 288 L146 268 Z" fill="url(#teen-female-costume-dragon__wing)"/>
+  <path d="M262 214 L302 236 L288 288 L254 268 Z" fill="url(#teen-female-costume-dragon__wing)"/>
+
+  <g class="sp-shadow">
+    <rect x="166" y="334" width="34" height="212" rx="10" fill="url(#teen-female-costume-dragon__limb)"/>
+    <rect x="200" y="334" width="34" height="212" rx="10" fill="url(#teen-female-costume-dragon__limb)"/>
+    <path d="M146 328 L254 328 L250 388 L150 388 Z" fill="url(#teen-female-costume-dragon__body)"/>
+    <!-- angular faceted plate torso -->
+    <path d="M144 226 L166 196 H234 L256 226 V302 L244 350 H156 L144 302 Z" fill="url(#teen-female-costume-dragon__body)"/>
+    <rect x="122" y="202" width="30" height="136" rx="8" fill="url(#teen-female-costume-dragon__limb)"/>
+    <rect x="248" y="202" width="30" height="136" rx="8" fill="url(#teen-female-costume-dragon__limb)"/>
+  </g>
+
+  <!-- scale surface across the plated torso -->
+  <g clip-path="url(#teen-female-costume-dragon__clip)">
+    <rect x="142" y="194" width="118" height="160" fill="url(#teen-female-costume-dragon__scale)"/>
+  </g>
+
+  <!-- ridged dorsal crest, sharp triangular plates -->
+  <g fill="var(--c3, #F2B65C)">
+    <path d="M256 200 L282 210 L256 222 Z"/>
+    <path d="M256 232 L284 242 L256 254 Z"/>
+    <path d="M254 264 L280 274 L254 286 Z"/>
+    <path d="M250 296 L274 306 L250 318 Z"/>
+  </g>
+
+  <!-- chest plate panel -->
+  <path d="M176 232 L224 232 L232 300 L200 322 L168 300 Z" fill="var(--c3, #F2B65C)" fill-opacity="0.9"/>
+
+  <!-- clawed feet -->
+  <g class="sp-shadow">
+    <path d="M154 524 H204 L208 566 H150 Z" fill="url(#teen-female-costume-dragon__wing)"/>
+    <path d="M196 524 H246 L250 566 H192 Z" fill="url(#teen-female-costume-dragon__wing)"/>
+  </g>
+  <g fill="var(--c2, #6A4CA8)">
+    <path d="M154 566 l8 -14 l8 14 z"/><path d="M172 566 l8 -14 l8 14 z"/><path d="M190 566 l8 -14 l8 14 z"/>
+    <path d="M196 566 l8 -14 l8 14 z"/><path d="M214 566 l8 -14 l8 14 z"/><path d="M232 566 l8 -14 l8 14 z"/>
+  </g>
+
+  <path d="M172 206 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

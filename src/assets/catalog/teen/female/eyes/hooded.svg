@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="teen-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="teen-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6B8C5A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6B8C5A)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="teen-female-eyes-hooded__lidL">
+      <path d="M160 144 q18 -16 36 -6 q-2 16 -18 18 q-16 2 -18 -12 z"/>
+    </clipPath>
+    <clipPath id="teen-female-eyes-hooded__lidR">
+      <path d="M240 144 q-18 -16 -36 -6 q2 16 18 18 q16 2 18 -12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M160 144 q18 -16 36 -6 q-2 16 -18 18 q-16 2 -18 -12 z" fill="url(#teen-female-eyes-hooded__sclera)"/>
+    <path d="M240 144 q-18 -16 -36 -6 q2 16 18 18 q16 2 18 -12 z" fill="url(#teen-female-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-eyes-hooded__lidL)">
+    <circle cx="178" cy="143" r="8" fill="#3B2A22"/>
+    <circle cx="178" cy="143" r="8" fill="url(#teen-female-eyes-hooded__iris)"/>
+    <circle cx="178" cy="143" r="3.8" fill="#3B2A22"/>
+    <circle cx="175.2" cy="140" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#teen-female-eyes-hooded__lidR)">
+    <circle cx="222" cy="143" r="8" fill="#3B2A22"/>
+    <circle cx="222" cy="143" r="8" fill="url(#teen-female-eyes-hooded__iris)"/>
+    <circle cx="222" cy="143" r="3.8" fill="#3B2A22"/>
+    <circle cx="219.2" cy="140" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- the hood: a heavy fold dropping over the outer half, leaving a SHORT visible lid strip -->
+  <path d="M156 133 q22 -12 42 -3 l-2 8 q-20 -8 -40 3 z" fill="#3B2A22" fill-opacity="0.22"/>
+  <path d="M244 133 q-22 -12 -42 -3 l2 8 q20 -8 40 3 z" fill="#3B2A22" fill-opacity="0.22"/>
+  <path d="M157 134 Q178 122 199 130" stroke="#3B2A22" stroke-opacity="0.42" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M243 134 Q222 122 201 130" stroke="#3B2A22" stroke-opacity="0.42" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lash line under the hood -->
+  <path d="M160 141 Q179 130 197 137" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 141 Q221 130 203 137" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

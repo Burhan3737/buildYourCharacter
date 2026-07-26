@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=NONE · closure=FULL BUTTON V-front · hem=hip POINTED · volume=fitted -->
+  <defs>
+    <linearGradient id="teen-female-top-waistcoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C6BA8)"/>
+      <stop offset="1" stop-color="var(--c2, #6C4E86)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-waistcoat__argyle" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M11 2 L20 11 L11 20 L2 11 z" fill="var(--c3, #E9D7A8)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-female-top-waistcoat__clip">
+      <path d="M152 210 q6-20 24-20 h16 l8 40 l8-40 h16 q18 0 24 20 v98 l-48 36 l-48-36 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- sleeveless V-front tapering to a point at the hem -->
+    <path d="M152 210 q6-20 24-20 h16 l8 40 l8-40 h16 q18 0 24 20 v98 l-48 36 l-48-36 z"
+          fill="url(#teen-female-top-waistcoat__body)"/>
+  </g>
+
+  <!-- argyle diamonds -->
+  <g clip-path="url(#teen-female-top-waistcoat__clip)">
+    <rect x="150" y="188" width="104" height="160" fill="url(#teen-female-top-waistcoat__argyle)"/>
+  </g>
+
+  <!-- bound V edge -->
+  <path d="M176 190 l24 42 l24-42 l8 6 l-32 52 l-32-52 z" fill="var(--c3, #E9D7A8)"/>
+
+  <!-- button line down the centre -->
+  <g fill="var(--c3, #E9D7A8)">
+    <circle cx="200" cy="252" r="4.5"/>
+    <circle cx="200" cy="276" r="4.5"/>
+    <circle cx="200" cy="300" r="4.5"/>
+  </g>
+
+  <!-- welt pockets -->
+  <rect x="158" y="286" width="28" height="8" rx="4" fill="var(--c2, #6C4E86)"/>
+  <rect x="214" y="286" width="28" height="8" rx="4" fill="var(--c2, #6C4E86)"/>
+
+  <!-- armhole binding -->
+  <path d="M156 202 q-6 44 4 84" stroke="var(--c3, #E9D7A8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 202 q6 44 -4 84" stroke="var(--c3, #E9D7A8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M164 204 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

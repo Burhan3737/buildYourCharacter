@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turban" data-family="turban" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes vs. hijab/headwrap/bonnet: crown shape (a raised wrapped dome with a visible fold
+       ridge across the front, the only family with a pleat) + coverage (stops clean at the
+       hairline, no neck drape, no upward fan, no nape gather). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-turban__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6072C0)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-turban__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D9847A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wrapped dome sitting on the hairline, clear of the face -->
+    <path d="M124 138 C124 76 158 58 200 58 C242 58 276 76 276 138
+             C260 124 236 114 200 114 C164 114 140 124 124 138 Z"
+          fill="url(#accessories-teen-headwear-turban__dome)"/>
+    <!-- the fold ridge crossing the front -->
+    <path d="M132 122 C150 100 172 90 200 90 C228 90 250 100 268 122
+             C248 110 226 104 200 104 C174 104 152 110 132 122 Z"
+          fill="url(#accessories-teen-headwear-turban__fold)"/>
+  </g>
+
+  <!-- wrap seams running back over the crown -->
+  <g stroke="var(--c3, #2A3468)" stroke-width="3" stroke-opacity="0.55"
+     fill="none" stroke-linecap="round">
+    <path d="M150 128 C154 100 172 78 200 74"/>
+    <path d="M176 132 C178 106 188 84 200 74"/>
+    <path d="M224 132 C222 106 212 84 200 74"/>
+    <path d="M250 128 C246 100 228 78 200 74"/>
+  </g>
+  <!-- the tucked end knot at the side -->
+  <path d="M262 128 q16 -6 18 8 q2 14 -16 12 q-8-2 -6-10 z" fill="var(--c3, #2A3468)"/>
+
+  <path d="M156 76 Q200 60 244 76" fill="none" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid Tail" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=NONE (shell bodice) · closure=closed · hem=ankle FLUKE · volume=fitted then flared -->
+  <defs>
+    <linearGradient id="teen-female-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48C0D8)"/>
+      <stop offset="1" stop-color="var(--c2, #2E8FA8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-mermaid__fluke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48C0D8)"/>
+      <stop offset="1" stop-color="var(--c2, #2E8FA8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-mermaid__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6A8C4)"/>
+      <stop offset="1" stop-color="var(--c3, #F6A8C4)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="teen-female-costume-mermaid__scale" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="14">
+      <path d="M0 14 q10 -20 20 0" fill="none" stroke="var(--c3, #F6A8C4)"
+            stroke-width="2.8" stroke-opacity="0.6"/>
+    </pattern>
+    <clipPath id="teen-female-costume-mermaid__clip">
+      <path d="M150 322 H250 Q244 420 226 494 Q214 540 200 540 Q186 540 174 494 Q156 420 150 322 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- horizontal fluke resting on the ground line -->
+    <path d="M200 494 Q152 500 116 546 Q150 572 200 560 Q250 572 284 546 Q248 500 200 494 Z"
+          fill="url(#teen-female-costume-mermaid__fluke)"/>
+    <!-- one tapering tail replacing the legs entirely -->
+    <path d="M150 322 H250 Q244 420 226 494 Q214 540 200 540 Q186 540 174 494 Q156 420 150 322 Z"
+          fill="url(#teen-female-costume-mermaid__tail)"/>
+    <!-- shell bodice on the torso, no sleeves -->
+    <path d="M154 240 q10-44 46-44 q36 0 46 44 v42 q0 30 -46 30 q-46 0 -46-30 z"
+          fill="url(#teen-female-costume-mermaid__shell)"/>
+  </g>
+
+  <!-- scale surface over the tail -->
+  <g clip-path="url(#teen-female-costume-mermaid__clip)">
+    <rect x="148" y="318" width="104" height="226" fill="url(#teen-female-costume-mermaid__scale)"/>
+  </g>
+
+  <!-- shell ribs -->
+  <g stroke="var(--c2, #2E8FA8)" stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M176 226 q-6 40 -4 74"/><path d="M200 220 v82"/><path d="M224 226 q6 40 4 74"/>
+  </g>
+
+  <!-- waist scallop where the shell meets the tail -->
+  <g fill="var(--c3, #F6A8C4)">
+    <circle cx="160" cy="322" r="9"/><circle cx="180" cy="326" r="9"/>
+    <circle cx="200" cy="328" r="9"/><circle cx="220" cy="326" r="9"/>
+    <circle cx="240" cy="322" r="9"/>
+  </g>
+
+  <!-- fluke ribs -->
+  <g stroke="var(--c3, #F6A8C4)" stroke-opacity="0.7" stroke-width="3.4" fill="none" stroke-linecap="round">
+    <path d="M188 512 q-32 12 -54 34"/><path d="M212 512 q32 12 54 34"/>
+  </g>
+
+  <path d="M172 216 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

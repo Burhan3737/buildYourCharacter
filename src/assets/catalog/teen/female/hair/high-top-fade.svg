@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High-Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: volume (a tall flat-topped column over skin-close sides) · parting (a hard, clean straight front hairline) -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-female-hair-high-top-fade__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M156 120 C150 146 156 164 200 164 C244 164 250 146 244 120 Q200 112 156 120 Z"
+            fill="url(#teen-female-hair-high-top-fade__back-g)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-female-hair-high-top-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+      <linearGradient id="teen-female-hair-high-top-fade__fade-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #2A1710)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the fade: hair over the WHOLE skull, value ramping from hair1 at the crown
+           down to hair2 at the skin line -->
+      <path d="M140 156 C138 94 168 68 200 68 C232 68 262 94 260 156
+               C252 130 232 116 200 116 C168 116 148 130 140 156 Z"
+            fill="url(#teen-female-hair-high-top-fade__fade-g)"/>
+      <!-- the flat-topped column of dense hair, hard square front edge -->
+      <path d="M156 34 q0-9 10-9 h68 q10 0 10 9 v54 q-44 13 -88 0 z" fill="url(#teen-female-hair-high-top-fade__front-g)"/>
+    </g>
+    <!-- hard clean front hairline where the column meets the fade -->
+    <path d="M157 90 h86" stroke="var(--hair2, #2A1710)" stroke-width="4" fill="none"/>
+    <!-- the fade line itself, sharpest at the temple -->
+    <path d="M142 128 C156 112 176 104 200 104 C224 104 244 112 258 128"
+          stroke="var(--hair2, #2A1710)" stroke-width="3" stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+    <!-- sponge texture in the column -->
+    <g fill="var(--hair2, #2A1710)" fill-opacity="0.4">
+      <circle cx="170" cy="46" r="4.5"/><circle cx="187" cy="40" r="4.5"/><circle cx="204" cy="46" r="4.5"/>
+      <circle cx="221" cy="40" r="4.5"/><circle cx="234" cy="48" r="4.5"/>
+      <circle cx="166" cy="66" r="4.5"/><circle cx="185" cy="62" r="4.5"/><circle cx="205" cy="68" r="4.5"/>
+      <circle cx="223" cy="62" r="4.5"/><circle cx="236" cy="70" r="4.5"/>
+    </g>
+    <path d="M168 36 C184 30 216 30 232 36" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

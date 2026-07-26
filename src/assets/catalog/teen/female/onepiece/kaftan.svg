@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=T-SHAPED wide panel sleeve · closure=SLIT NECKLINE · hem=calf · volume=straight loose -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-kaftan__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9B44C)"/>
+      <stop offset="1" stop-color="var(--c2, #C2903A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-kaftan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9B44C)"/>
+      <stop offset="1" stop-color="var(--c2, #C2903A)"/>
+    </linearGradient>
+    <pattern id="teen-female-onepiece-kaftan__tile" patternUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <path d="M12 2 L22 12 L12 22 L2 12 Z" fill="none" stroke="var(--c3, #3E6E63)" stroke-width="2.6"/>
+      <circle cx="12" cy="12" r="2.4" fill="var(--c3, #3E6E63)"/>
+    </pattern>
+    <clipPath id="teen-female-onepiece-kaftan__clip">
+      <path d="M158 194 h84 l32 278 q-74 24 -148 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- flat T-shaped sleeve panels, no armhole shaping -->
+    <path d="M160 196 L104 210 L110 250 L164 240 Z" fill="url(#teen-female-onepiece-kaftan__sleeve)"/>
+    <path d="M240 196 L296 210 L290 250 L236 240 Z" fill="url(#teen-female-onepiece-kaftan__sleeve)"/>
+    <!-- one straight loose column from the shoulder to the calf -->
+    <path d="M158 194 h84 l32 278 q-74 24 -148 0 z" fill="url(#teen-female-onepiece-kaftan__body)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-onepiece-kaftan__clip)">
+    <rect x="124" y="272" width="152" height="72" fill="url(#teen-female-onepiece-kaftan__tile)"/>
+    <rect x="118" y="426" width="164" height="52" fill="url(#teen-female-onepiece-kaftan__tile)"/>
+  </g>
+
+  <!-- slit neckline with an embroidered placket band -->
+  <path d="M182 194 h36 v10 q-18 8 -36 0 z" fill="var(--c3, #3E6E63)"/>
+  <path d="M192 202 h16 v58 q-8 6 -16 0 z" fill="var(--c3, #3E6E63)"/>
+  <path d="M196 206 h8 v50 h-8 z" fill="var(--c2, #C2903A)"/>
+
+  <!-- braided trim along the sleeve edges and the hem -->
+  <path d="M108 244 L164 234" stroke="var(--c3, #3E6E63)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M292 244 L236 234" stroke="var(--c3, #3E6E63)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 466 q72 22 144 0" stroke="var(--c3, #3E6E63)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M170 210 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

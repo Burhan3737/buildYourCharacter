@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long slim · closure=closed TALL NECK TUBE · hem=WAIST · volume=fitted -->
+  <defs>
+    <linearGradient id="teen-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8845F)"/>
+      <stop offset="1" stop-color="var(--c2, #C4653F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8845F)"/>
+      <stop offset="1" stop-color="var(--c2, #C4653F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-turtleneck__neck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8845F)"/>
+      <stop offset="1" stop-color="var(--c2, #C4653F)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-turtleneck__rib" patternUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4" height="12" fill="var(--c3, #7A3C22)" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="teen-female-top-turtleneck__clip">
+      <path d="M150 218 q4-26 26-26 h48 q22 0 26 26 v70 q0 40 -26 40 h-48 q-26 0 -26-40 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- tall folded neck tube reaching the jaw -->
+    <rect x="180" y="166" width="40" height="46" rx="16" fill="url(#teen-female-top-turtleneck__neck)"/>
+    <rect x="128" y="204" width="26" height="144" rx="13" fill="url(#teen-female-top-turtleneck__sleeve)"/>
+    <rect x="246" y="204" width="26" height="144" rx="13" fill="url(#teen-female-top-turtleneck__sleeve)"/>
+    <!-- close body finishing at the natural waist -->
+    <path d="M150 218 q4-26 26-26 h48 q22 0 26 26 v70 q0 40 -26 40 h-48 q-26 0 -26-40 z"
+          fill="url(#teen-female-top-turtleneck__body)"/>
+  </g>
+
+  <!-- fine rib through the body -->
+  <g clip-path="url(#teen-female-top-turtleneck__clip)">
+    <rect x="148" y="190" width="104" height="142" fill="url(#teen-female-top-turtleneck__rib)"/>
+  </g>
+
+  <!-- neck fold line and hem band -->
+  <rect x="178" y="184" width="44" height="9" rx="4" fill="var(--c3, #7A3C22)"/>
+  <path d="M152 318 q48 16 96 0 v10 q-48 16 -96 0 z" fill="var(--c3, #7A3C22)"/>
+
+  <!-- ribbed cuffs -->
+  <rect x="126" y="330" width="30" height="16" rx="8" fill="var(--c3, #7A3C22)"/>
+  <rect x="244" y="330" width="30" height="16" rx="8" fill="var(--c3, #7A3C22)"/>
+
+  <!-- highlight -->
+  <path d="M162 210 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

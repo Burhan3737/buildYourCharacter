@@ -1,49 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: rise=HIGH · leg=full · width=SKIN-CLOSE tapered · hem=plain ankle -->
   <defs>
     <linearGradient id="teen-female-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
-      <stop offset="1" stop-color="var(--c2, #2A1D18)"/>
+      <stop offset="1" stop-color="var(--c2, #241914)"/>
     </linearGradient>
     <linearGradient id="teen-female-bottom-leggings__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
-      <stop offset="1" stop-color="var(--c2, #2A1D18)"/>
+      <stop offset="1" stop-color="var(--c2, #241914)"/>
     </linearGradient>
   </defs>
 
-  <!-- skin-tight teen leggings: legs fitted just beyond the body leg rects, plus hip block -->
   <g class="sp-shadow">
-    <path d="M168 334 H196 V540 q0 8 -8 8 H176 q-8 0 -8 -8 Z"
+    <path d="M166 332 H196 L192 500 L190 540 Q190 546 184 546 H176 Q170 546 170 540 L168 500 Z"
           fill="url(#teen-female-bottom-leggings__leg)"/>
-    <path d="M232 334 H204 V540 q0 8 8 8 H224 q8 0 8 -8 Z"
+    <path d="M234 332 H204 L208 500 L210 540 Q210 546 216 546 H224 Q230 546 230 540 L232 500 Z"
           fill="url(#teen-female-bottom-leggings__leg)"/>
-    <rect x="149" y="332" width="102" height="52" rx="22"
+    <path d="M151 314 q0-8 10-8 h78 q10 0 10 8 v56 q0 12 -14 12 h-70 q-14 0 -14-12 z"
           fill="url(#teen-female-bottom-leggings__hip)"/>
   </g>
 
-  <!-- thin high waistband -->
-  <rect x="149" y="330" width="102" height="15" rx="7" fill="var(--c2, #2A1D18)"/>
-  <path d="M151 340 H249" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"
+  <!-- high compression waistband -->
+  <rect x="150" y="306" width="100" height="22" rx="10" fill="var(--c3, #F4A79B)"/>
+  <path d="M154 320 H246" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- side stripe accents -->
-  <path d="M171 360 V536" stroke="var(--c3, #F4A79B)" stroke-width="4"
+  <!-- contoured side-panel seams -->
+  <path d="M172 340 q-4 100 -2 196" stroke="var(--c3, #F4A79B)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M229 360 V536" stroke="var(--c3, #F4A79B)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- ankle hem bands -->
-  <path d="M172 536 H192" stroke="var(--c2, #2A1D18)" stroke-width="5"
-        fill="none" stroke-linecap="round"/>
-  <path d="M208 536 H228" stroke="var(--c2, #2A1D18)" stroke-width="5"
+  <path d="M228 340 q4 100 2 196" stroke="var(--c3, #F4A79B)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
-  <!-- soft upper highlight -->
-  <path d="M164 360 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- knee darts -->
+  <path d="M174 456 q8 6 16 0" stroke="var(--c2, #241914)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M210 456 q8 6 16 0" stroke="var(--c2, #241914)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <path d="M166 344 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M186 400 q-2 70 -4 140" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
+  <path d="M184 400 q-2 68 -3 132" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M214 400 q2 70 4 140" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
+  <path d="M216 400 q2 68 3 132" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hijab" data-family="hijab" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes vs. turban/headwrap/bonnet: coverage (the only family that drapes past the ears and
+       down over the neck to converge under the chin) + fastening (a pin at the throat, not a
+       fold ridge, an upward fan or a gathered nape edge). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-hijab__drape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-hijab__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #E0AC55)"/>
+    </linearGradient>
+    <pattern id="accessories-teen-headwear-hijab__dot" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="1.8" fill="var(--c3, #2E5F55)"/>
+    </pattern>
+    <clipPath id="accessories-teen-headwear-hijab__clip">
+      <path fill-rule="evenodd"
+            d="M124 118 C124 74 158 56 200 56 C242 56 276 74 276 118
+               C276 158 266 188 244 208 Q200 224 156 208 C134 188 124 158 124 118 Z
+               M200 104 C177 104 161 126 161 152 C161 178 178 198 200 198
+               C222 198 239 178 239 152 C239 126 223 104 200 104 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the drape, with the face aperture cut out so the features stay visible -->
+    <path fill-rule="evenodd"
+          d="M124 118 C124 74 158 56 200 56 C242 56 276 74 276 118
+             C276 158 266 188 244 208 Q200 224 156 208 C134 188 124 158 124 118 Z
+             M200 104 C177 104 161 126 161 152 C161 178 178 198 200 198
+             C222 198 239 178 239 152 C239 126 223 104 200 104 Z"
+          fill="url(#accessories-teen-headwear-hijab__drape)"/>
+  </g>
+
+  <g clip-path="url(#accessories-teen-headwear-hijab__clip)">
+    <rect x="118" y="52" width="164" height="176" fill="url(#accessories-teen-headwear-hijab__dot)" fill-opacity="0.6"/>
+  </g>
+
+  <!-- contrast under-cap band framing the aperture -->
+  <path d="M162 128 C168 110 182 100 200 100 C218 100 232 110 238 128
+           C230 116 216 108 200 108 C184 108 170 116 162 128 Z" fill="url(#accessories-teen-headwear-hijab__band)"/>
+  <!-- the pin at the throat -->
+  <circle cx="200" cy="206" r="6" fill="var(--c2, #F7C873)"/>
+  <path d="M150 82 Q200 62 250 82" fill="none" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" stroke-linecap="round"/>
+</svg>

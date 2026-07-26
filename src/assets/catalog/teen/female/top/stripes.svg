@@ -1,44 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Stripes" data-family="stripes" data-slot="top"
+     data-name="Breton Boat-Neck" data-family="stripes" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long dropped · closure=closed BOAT NECK · hem=hip · volume=BOXY -->
   <defs>
     <linearGradient id="teen-female-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
-      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+      <stop offset="1" stop-color="var(--c2, #D7CFBC)"/>
     </linearGradient>
     <linearGradient id="teen-female-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
-      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+      <stop offset="1" stop-color="var(--c2, #D7CFBC)"/>
     </linearGradient>
+    <pattern id="teen-female-top-stripes__breton" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <rect x="0" y="0" width="22" height="13" fill="var(--c3, #3F5C9A)"/>
+    </pattern>
     <clipPath id="teen-female-top-stripes__clip">
-      <path d="M140 214 q0-24 26-24 h68 q26 0 26 24 v104 q0 32 -26 32 h-68 q-26 0 -26-32 z"/>
-      <rect x="121" y="198" width="32" height="144" rx="16"/>
-      <rect x="247" y="198" width="32" height="144" rx="16"/>
+      <path d="M134 212 q0-24 24-24 h84 q24 0 24 24 v118 q0 14 -14 14 h-104 q-14 0 -14-14 z"/>
+      <rect x="114" y="202" width="34" height="136" rx="17"/>
+      <rect x="252" y="202" width="34" height="136" rx="17"/>
     </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves -->
-    <rect x="121" y="198" width="32" height="144" rx="16" fill="url(#teen-female-top-stripes__sleeve)"/>
-    <rect x="247" y="198" width="32" height="144" rx="16" fill="url(#teen-female-top-stripes__sleeve)"/>
-    <!-- body, hem at y350 -->
-    <path d="M140 214 q0-24 26-24 h68 q26 0 26 24 v104 q0 32 -26 32 h-68 q-26 0 -26-32 z"
+    <!-- long straight sleeves dropped off a wide shoulder -->
+    <rect x="114" y="202" width="34" height="136" rx="17" fill="url(#teen-female-top-stripes__sleeve)"/>
+    <rect x="252" y="202" width="34" height="136" rx="17" fill="url(#teen-female-top-stripes__sleeve)"/>
+    <!-- wide square boxy body -->
+    <path d="M134 212 q0-24 24-24 h84 q24 0 24 24 v118 q0 14 -14 14 h-104 q-14 0 -14-14 z"
           fill="url(#teen-female-top-stripes__body)"/>
   </g>
-  <!-- horizontal bands, clipped to the garment silhouette -->
+
+  <!-- breton banding, clipped to the garment -->
   <g clip-path="url(#teen-female-top-stripes__clip)">
-    <rect x="106" y="196" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
-    <rect x="106" y="224" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
-    <rect x="106" y="241" width="188" height="6" fill="var(--c3, #7E90DC)"/>
-    <rect x="106" y="252" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
-    <rect x="106" y="280" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
-    <rect x="106" y="308" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
-    <rect x="106" y="336" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="186" width="190" height="170" fill="url(#teen-female-top-stripes__breton)"/>
   </g>
-  <!-- boat neckband -->
-  <path d="M168 186 q32 34 64 0 z" fill="var(--c2, #DFD8C7)"/>
-  <!-- neck opening -->
-  <path d="M177 190 q23 20 46 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- wide boat neckline bind -->
+  <path d="M162 188 q38 34 76 0 q-4 12 -14 16 q-24 12 -48 0 q-10-4 -14-16 z" fill="var(--c2, #D7CFBC)"/>
+  <path d="M174 192 q26 20 52 0 q-8 14 -26 14 q-18 0 -26-14 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- ribbed sleeve cuffs -->
+  <rect x="112" y="322" width="38" height="16" rx="8" fill="var(--c3, #3F5C9A)"/>
+  <rect x="250" y="322" width="38" height="16" rx="8" fill="var(--c3, #3F5C9A)"/>
+
   <!-- highlight -->
-  <path d="M152 206 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M152 202 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

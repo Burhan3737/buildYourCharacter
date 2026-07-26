@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=DRAPED, no sleeve division · closure=closed · hem=thigh · volume=FLARED -->
+  <defs>
+    <linearGradient id="teen-female-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C77A5C)"/>
+      <stop offset="1" stop-color="var(--c2, #A15C42)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-poncho__chevron" patternUnits="userSpaceOnUse" x="0" y="0" width="24" height="20">
+      <path d="M0 14 L12 4 L24 14" fill="none" stroke="var(--c3, #F2E4C9)" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="teen-female-top-poncho__clip">
+      <path d="M158 190 h84 q10 0 14 10 l50 198 q-106 30 -212 0 l50-198 q4-10 14-10 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one trapezoid of cloth falling from the shoulders -->
+    <path d="M158 190 h84 q10 0 14 10 l50 198 q-106 30 -212 0 l50-198 q4-10 14-10 z"
+          fill="url(#teen-female-top-poncho__cloth)"/>
+  </g>
+
+  <!-- woven chevron banding -->
+  <g clip-path="url(#teen-female-top-poncho__clip)">
+    <rect x="94" y="248" width="212" height="40" fill="url(#teen-female-top-poncho__chevron)"/>
+    <rect x="94" y="330" width="212" height="40" fill="url(#teen-female-top-poncho__chevron)"/>
+  </g>
+
+  <!-- neck opening and bound edge -->
+  <path d="M170 190 q30 24 60 0 q-6 18 -30 18 q-24 0 -30-18 z" fill="var(--c2, #A15C42)"/>
+  <path d="M180 192 q20 16 40 0 q-6 10 -20 10 q-14 0 -20-10 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- fringed hem -->
+  <g stroke="var(--c3, #F2E4C9)" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M104 404 v16"/><path d="M124 410 v16"/><path d="M144 414 v16"/>
+    <path d="M164 417 v16"/><path d="M184 419 v16"/><path d="M204 419 v16"/>
+    <path d="M224 417 v16"/><path d="M244 414 v16"/><path d="M264 410 v16"/>
+    <path d="M284 404 v16"/>
+  </g>
+
+  <!-- highlight -->
+  <path d="M162 202 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

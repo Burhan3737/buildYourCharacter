@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knit Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long · closure=OPEN FRONT wide V · hem=PAST HIP · volume=straight -->
+  <defs>
+    <linearGradient id="teen-female-top-cardigan__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9B7E8)"/>
+      <stop offset="1" stop-color="var(--c2, #A793CC)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9B7E8)"/>
+      <stop offset="1" stop-color="var(--c2, #A793CC)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-cardigan__rib" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="5" height="14" fill="var(--c2, #A793CC)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-female-top-cardigan__clip">
+      <path d="M142 220 q0-30 28-30 h20 l10 62 l10 -62 h20 q28 0 28 30 v144 q0 20 -20 20 h-76 q-20 0 -20-20 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="124" y="202" width="30" height="152" rx="15" fill="url(#teen-female-top-cardigan__sleeve)"/>
+    <rect x="246" y="202" width="30" height="152" rx="15" fill="url(#teen-female-top-cardigan__sleeve)"/>
+    <!-- long knit body with a deep V opening cut out of the front -->
+    <path d="M142 220 q0-30 28-30 h20 l10 62 l10 -62 h20 q28 0 28 30 v144 q0 20 -20 20 h-76 q-20 0 -20-20 z"
+          fill="url(#teen-female-top-cardigan__body)"/>
+  </g>
+
+  <!-- vertical rib knit -->
+  <g clip-path="url(#teen-female-top-cardigan__clip)">
+    <rect x="140" y="188" width="122" height="200" fill="url(#teen-female-top-cardigan__rib)"/>
+  </g>
+
+  <!-- contrast front bands running down both sides of the opening -->
+  <path d="M170 190 h20 l10 62 l-6 132 h-24 z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M230 190 h-20 l-10 62 l6 132 h24 z" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- button line down the left band -->
+  <circle cx="180" cy="252" r="4" fill="var(--c2, #A793CC)"/>
+  <circle cx="180" cy="288" r="4" fill="var(--c2, #A793CC)"/>
+  <circle cx="180" cy="324" r="4" fill="var(--c2, #A793CC)"/>
+
+  <!-- patch pockets -->
+  <path d="M150 316 h30 v34 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #A793CC)"/>
+  <path d="M220 316 h30 v34 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #A793CC)"/>
+
+  <!-- ribbed cuffs -->
+  <rect x="122" y="336" width="34" height="18" rx="9" fill="var(--c3, #6BBFAD)"/>
+  <rect x="244" y="336" width="34" height="18" rx="9" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- highlight -->
+  <path d="M156 206 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

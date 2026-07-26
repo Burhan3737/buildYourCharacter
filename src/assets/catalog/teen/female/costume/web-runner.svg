@@ -1,76 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Web Runner Suit" data-family="web-runner" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=long slim · closure=closed · hem=ankle · volume=SKIN-CLOSE fitted, waisted -->
   <defs>
     <linearGradient id="teen-female-costume-web-runner__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+      <stop offset="1" stop-color="var(--c2, #2F8F89)"/>
     </linearGradient>
-    <linearGradient id="teen-female-costume-web-runner__sleeve" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="teen-female-costume-web-runner__limb" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
-    </linearGradient>
-    <linearGradient id="teen-female-costume-web-runner__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+      <stop offset="1" stop-color="var(--c2, #2F8F89)"/>
     </linearGradient>
     <linearGradient id="teen-female-costume-web-runner__boot" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c3, #3E4549)"/>
       <stop offset="1" stop-color="var(--c3, #2A3033)"/>
     </linearGradient>
-    <clipPath id="teen-female-costume-web-runner__torsoclip">
-      <path d="M144 218 q0-24 26-24 h60 q26 0 26 24 v102 q0 26 -26 26 h-60 q-26 0-26-26 z"/>
+    <pattern id="teen-female-costume-web-runner__lattice" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="none" stroke="var(--c3, #3E4549)"
+            stroke-width="2" stroke-opacity="0.65"/>
+    </pattern>
+    <clipPath id="teen-female-costume-web-runner__clip">
+      <path d="M150 216 q0-22 22-22 h56 q22 0 22 22 v54 q0 22 -10 36 v28 q-45 14 -90 0 v-28 q-10-14 -10-36 z"/>
+      <rect x="168" y="330" width="28" height="218" rx="14"/>
+      <rect x="204" y="330" width="28" height="218" rx="14"/>
     </clipPath>
   </defs>
 
-  <!-- suit mass: legs, hips, torso, sleeves -->
   <g class="sp-shadow">
-    <rect x="167" y="330" width="30" height="218" rx="15" fill="url(#teen-female-costume-web-runner__leg)"/>
-    <rect x="203" y="330" width="30" height="218" rx="15" fill="url(#teen-female-costume-web-runner__leg)"/>
-    <rect x="148" y="332" width="104" height="54" rx="27" fill="url(#teen-female-costume-web-runner__body)"/>
-    <path d="M144 218 q0-24 26-24 h60 q26 0 26 24 v102 q0 26 -26 26 h-60 q-26 0-26-26 z"
+    <rect x="168" y="330" width="28" height="218" rx="14" fill="url(#teen-female-costume-web-runner__limb)"/>
+    <rect x="204" y="330" width="28" height="218" rx="14" fill="url(#teen-female-costume-web-runner__limb)"/>
+    <rect x="152" y="330" width="96" height="54" rx="25" fill="url(#teen-female-costume-web-runner__body)"/>
+    <!-- close second-skin torso with a clear waist taper -->
+    <path d="M150 216 q0-22 22-22 h56 q22 0 22 22 v54 q0 22 -10 36 v28 q-45 14 -90 0 v-28 q-10-14 -10-36 z"
           fill="url(#teen-female-costume-web-runner__body)"/>
-    <rect x="123" y="200" width="28" height="136" rx="14" fill="url(#teen-female-costume-web-runner__sleeve)"/>
-    <rect x="249" y="200" width="28" height="136" rx="14" fill="url(#teen-female-costume-web-runner__sleeve)"/>
+    <rect x="126" y="200" width="24" height="136" rx="12" fill="url(#teen-female-costume-web-runner__limb)"/>
+    <rect x="250" y="200" width="24" height="136" rx="12" fill="url(#teen-female-costume-web-runner__limb)"/>
   </g>
 
-  <!-- outer arm panels -->
-  <rect x="124" y="216" width="10" height="104" rx="5" fill="var(--c2, #5A6F81)"/>
-  <rect x="266" y="216" width="10" height="104" rx="5" fill="var(--c2, #5A6F81)"/>
-  <!-- outer leg panels -->
-  <rect x="169" y="344" width="10" height="188" rx="5" fill="var(--c2, #5A6F81)"/>
-  <rect x="221" y="344" width="10" height="188" rx="5" fill="var(--c2, #5A6F81)"/>
-
-  <!-- abstract diamond lattice: two families of straight parallel lines -->
-  <g clip-path="url(#teen-female-costume-web-runner__torsoclip)" fill="none" stroke="var(--c3, #3E4549)"
-     stroke-width="2" stroke-opacity="0.55" stroke-linecap="round">
-    <path d="M232 196 L254 218 M214 196 L254 236 M196 196 L254 254
-             M178 196 L254 272 M160 196 L254 290 M146 200 L254 308
-             M146 218 L254 326 M146 236 L254 344 M146 254 L236 344
-             M146 272 L218 344 M146 290 L200 344 M146 308 L182 344
-             M146 326 L164 344 M146 214 L164 196 M146 232 L182 196
-             M146 250 L200 196 M146 268 L218 196 M146 286 L236 196
-             M146 304 L254 196 M146 322 L254 214 M146 340 L254 232
-             M160 344 L254 250 M178 344 L254 268 M196 344 L254 286
-             M214 344 L254 304 M232 344 L254 322"/>
+  <!-- abstract diamond lattice -->
+  <g clip-path="url(#teen-female-costume-web-runner__clip)">
+    <rect x="146" y="192" width="110" height="360" fill="url(#teen-female-costume-web-runner__lattice)"/>
   </g>
+
+  <!-- outer arm and leg panels -->
+  <rect x="127" y="214" width="9" height="106" rx="4" fill="var(--c3, #3E4549)"/>
+  <rect x="264" y="214" width="9" height="106" rx="4" fill="var(--c3, #3E4549)"/>
+
+  <!-- raised collar -->
+  <path d="M168 194 q32 18 64 0 v16 q-32 16 -64 0 z" fill="var(--c3, #3E4549)"/>
 
   <!-- gloves and boots -->
   <g class="sp-shadow">
-    <rect x="123" y="316" width="28" height="18" rx="9" fill="var(--c3, #343A3D)"/>
-    <rect x="249" y="316" width="28" height="18" rx="9" fill="var(--c3, #343A3D)"/>
+    <rect x="124" y="314" width="28" height="20" rx="10" fill="var(--c3, #343A3D)"/>
+    <rect x="248" y="314" width="28" height="20" rx="10" fill="var(--c3, #343A3D)"/>
     <circle cx="137" cy="346" r="15" fill="var(--c3, #343A3D)"/>
     <circle cx="263" cy="346" r="15" fill="var(--c3, #343A3D)"/>
-    <rect x="165" y="460" width="34" height="90" rx="17" fill="url(#teen-female-costume-web-runner__boot)"/>
-    <rect x="201" y="460" width="34" height="90" rx="17" fill="url(#teen-female-costume-web-runner__boot)"/>
-    <rect x="156" y="540" width="50" height="34" rx="16" fill="url(#teen-female-costume-web-runner__boot)"/>
-    <rect x="198" y="540" width="50" height="34" rx="16" fill="url(#teen-female-costume-web-runner__boot)"/>
+    <rect x="164" y="464" width="36" height="86" rx="17" fill="url(#teen-female-costume-web-runner__boot)"/>
+    <rect x="200" y="464" width="36" height="86" rx="17" fill="url(#teen-female-costume-web-runner__boot)"/>
+    <rect x="155" y="538" width="52" height="34" rx="16" fill="url(#teen-female-costume-web-runner__boot)"/>
+    <rect x="193" y="538" width="52" height="34" rx="16" fill="url(#teen-female-costume-web-runner__boot)"/>
   </g>
-  <!-- boot cuffs -->
-  <rect x="161" y="454" width="38" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
-  <rect x="201" y="454" width="38" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
 
-  <!-- collar highlight, kept at/below the shoulder line -->
-  <path d="M174 196 q26 12 52 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <path d="M172 202 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=THREE-QUARTER · closure=CROSSOVER WRAP · hem=waist · volume=fitted -->
+  <defs>
+    <linearGradient id="teen-female-top-wrap-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E56E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #BF4E6C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E56E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #BF4E6C)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-wrap-top__petal" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="5" r="3" fill="var(--c3, #F6E7C9)" fill-opacity="0.8"/>
+      <circle cx="5" cy="10" r="3" fill="var(--c3, #F6E7C9)" fill-opacity="0.8"/>
+      <circle cx="15" cy="10" r="3" fill="var(--c3, #F6E7C9)" fill-opacity="0.8"/>
+      <circle cx="10" cy="15" r="3" fill="var(--c3, #F6E7C9)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="teen-female-top-wrap-top__clip">
+      <path d="M148 214 q2-24 26-24 h20 l6 46 l6-46 h20 q24 0 26 24 v72 q0 24 -24 24 h-56 q-24 0 -24-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves ending above the wrist -->
+    <rect x="126" y="202" width="28" height="106" rx="14" fill="url(#teen-female-top-wrap-top__sleeve)"/>
+    <rect x="246" y="202" width="28" height="106" rx="14" fill="url(#teen-female-top-wrap-top__sleeve)"/>
+    <!-- fitted body with a deep V, hem at the natural waist -->
+    <path d="M148 214 q2-24 26-24 h20 l6 46 l6-46 h20 q24 0 26 24 v72 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+          fill="url(#teen-female-top-wrap-top__body)"/>
+  </g>
+
+  <!-- four-petal floral -->
+  <g clip-path="url(#teen-female-top-wrap-top__clip)">
+    <rect x="146" y="188" width="108" height="126" fill="url(#teen-female-top-wrap-top__petal)"/>
+  </g>
+
+  <!-- the crossover: two diagonal front panels overlapping at the waist -->
+  <path d="M174 190 l30 52 l-6 68 h-42 q-10 0 -10-14 z" fill="var(--c2, #BF4E6C)" fill-opacity="0.92"/>
+  <path d="M226 190 l-30 52 l6 68 h42 q10 0 10-14 z" fill="var(--c2, #BF4E6C)"/>
+
+  <!-- tie belt knotted at the side waist -->
+  <path d="M154 296 q46 16 92 0 v12 q-46 16 -92 0 z" fill="var(--c3, #F6E7C9)"/>
+  <path d="M236 300 l22 20 l-8 8 l-20 -20 z" fill="var(--c3, #F6E7C9)"/>
+  <path d="M242 306 l20 -8 l4 10 l-20 8 z" fill="var(--c3, #F6E7C9)"/>
+
+  <!-- highlight -->
+  <path d="M160 206 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

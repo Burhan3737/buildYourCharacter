@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Head Wrap" data-family="headwrap" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- axes vs. turban/hijab/bonnet: crown shape (a tall fanned crown standing well above the
+       head, the only family that extends upward) + fastening (a cinch knot binding the fan,
+       not a fold ridge, a chin pin or a nape gather). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-headwrap__base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0574F)"/>
+      <stop offset="1" stop-color="var(--c1, #B93E38)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-headwrap__fan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0574F)"/>
+      <stop offset="1" stop-color="var(--c1, #B93E38)"/>
+    </linearGradient>
+    <pattern id="accessories-teen-headwear-headwrap__wax" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="3.4" fill="none" stroke="var(--c3, #F2D06B)" stroke-width="2.4"/>
+    </pattern>
+    <clipPath id="accessories-teen-headwear-headwrap__clip">
+      <path d="M126 142 C126 92 154 70 200 70 C246 70 274 92 274 142
+               C258 128 234 118 200 118 C166 118 142 128 126 142 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the tall fan standing above the crown -->
+    <path d="M172 82 Q152 34 128 26 Q142 62 152 88 Z" fill="url(#accessories-teen-headwear-headwrap__fan)"/>
+    <path d="M228 82 Q248 34 272 26 Q258 62 248 88 Z" fill="url(#accessories-teen-headwear-headwrap__fan)"/>
+    <path d="M186 78 Q198 24 214 78 Q200 66 186 78 Z" fill="url(#accessories-teen-headwear-headwrap__fan)"/>
+    <!-- the wrapped base, sitting on the hairline and clear of the face -->
+    <path d="M126 142 C126 92 154 70 200 70 C246 70 274 92 274 142
+             C258 128 234 118 200 118 C166 118 142 128 126 142 Z"
+          fill="url(#accessories-teen-headwear-headwrap__base)"/>
+  </g>
+
+  <g clip-path="url(#accessories-teen-headwear-headwrap__clip)">
+    <rect x="120" y="66" width="160" height="82" fill="url(#accessories-teen-headwear-headwrap__wax)"/>
+  </g>
+
+  <!-- shadowed underside where the wrap meets the hairline -->
+  <path d="M128 138 C142 126 166 116 200 116 C234 116 258 126 272 138
+           C256 130 232 124 200 124 C168 124 144 130 128 138 Z" fill="var(--c2, #8C2F2A)"/>
+  <path d="M152 88 L172 82 L166 94 Z" fill="var(--c2, #8C2F2A)"/>
+  <path d="M248 88 L228 82 L234 94 Z" fill="var(--c2, #8C2F2A)"/>
+
+  <!-- the cinch knot binding the fan -->
+  <path d="M168 74 q32 -14 64 0 v18 q-32 14 -64 0 z" fill="var(--c3, #F2D06B)"/>
+  <path d="M186 76 q14 10 28 0 q-14 16 -28 0 z" fill="var(--c1, #E0574F)"/>
+
+  <path d="M148 106 Q174 92 200 90" fill="none" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" stroke-linecap="round"/>
+</svg>

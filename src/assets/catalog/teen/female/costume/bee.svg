@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bee Suit" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=ROUNDED WINGS behind · closure=closed · hem=thigh over tights · volume=GATHERED bulb -->
+  <defs>
+    <linearGradient id="teen-female-costume-bee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C231)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A016)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-bee__abdomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C231)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A016)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8F4FF)" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="var(--c3, #E8F4FF)" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-bee__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two rounded wings standing behind the shoulders -->
+  <ellipse cx="118" cy="252" rx="34" ry="52" fill="url(#teen-female-costume-bee__wing)" transform="rotate(-18 118 252)"/>
+  <ellipse cx="282" cy="252" rx="34" ry="52" fill="url(#teen-female-costume-bee__wing)" transform="rotate(18 282 252)"/>
+
+  <g class="sp-shadow">
+    <rect x="168" y="360" width="28" height="188" rx="14" fill="url(#teen-female-costume-bee__limb)"/>
+    <rect x="204" y="360" width="28" height="188" rx="14" fill="url(#teen-female-costume-bee__limb)"/>
+    <!-- plush rounded abdomen bulging below the waist -->
+    <path d="M148 318 q-6 46 22 62 q30 16 60 0 q28-16 22-62 z" fill="url(#teen-female-costume-bee__abdomen)"/>
+    <!-- rounded banded thorax -->
+    <path d="M150 234 q6-38 34-38 h32 q28 0 34 38 v54 q0 42 -50 42 q-50 0 -50-42 z"
+          fill="url(#teen-female-costume-bee__body)"/>
+    <rect x="124" y="200" width="28" height="140" rx="14" fill="url(#teen-female-costume-bee__limb)"/>
+    <rect x="248" y="200" width="28" height="140" rx="14" fill="url(#teen-female-costume-bee__limb)"/>
+  </g>
+
+  <!-- plush stripes across the thorax and abdomen -->
+  <g fill="var(--c3, #3B2A22)">
+    <path d="M152 250 q48 16 96 0 v18 q-48 16 -96 0 z"/>
+    <path d="M152 290 q48 16 96 0 v18 q-48 16 -96 0 z"/>
+    <path d="M150 330 q50 16 100 0 v18 q-50 16 -100 0 z"/>
+    <path d="M158 368 q42 14 84 0 v16 q-42 14 -84 0 z"/>
+  </g>
+
+  <!-- soft collar ruff -->
+  <path d="M166 196 q34 18 68 0 q-4 16 -18 20 q-16 6 -32 0 q-14-4 -18-20 z" fill="var(--c3, #3B2A22)"/>
+
+  <!-- rounded shoes -->
+  <g class="sp-shadow">
+    <rect x="156" y="538" width="50" height="32" rx="15" fill="url(#teen-female-costume-bee__limb)"/>
+    <rect x="194" y="538" width="50" height="32" rx="15" fill="url(#teen-female-costume-bee__limb)"/>
+  </g>
+
+  <!-- wing veins -->
+  <g stroke="var(--c1, #F7C231)" stroke-opacity="0.55" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <path d="M108 214 q6 44 4 78"/><path d="M292 214 q-6 44 -4 78"/>
+  </g>
+
+  <path d="M170 212 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

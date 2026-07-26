@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bucket Hat" data-family="bucket-hat" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs. beanie/cap/sun-hat: crown shape (flat rounded-rect crown, not a curved dome)
+       + brim (a soft all-round downturned droop, not a visor or an up-curved disc). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-bucket-hat__crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-bucket-hat__brim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #F4A79B)" stop-opacity="0.84"/>
+    </linearGradient>
+    <pattern id="accessories-teen-headwear-bucket-hat__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect width="8" height="8" fill="var(--c1, #7E90DC)" fill-opacity="0.4"/>
+      <rect x="8" y="8" width="8" height="8" fill="var(--c1, #7E90DC)" fill-opacity="0.4"/>
+    </pattern>
+  </defs>
+  <g class="sp-shadow">
+    <path d="M128 120 Q140 158 200 162 Q260 158 272 120 Q260 132 200 134 Q140 132 128 120 Z"
+          fill="url(#accessories-teen-headwear-bucket-hat__brim)"/>
+    <rect x="150" y="70" width="100" height="46" rx="18" ry="18"
+          fill="url(#accessories-teen-headwear-bucket-hat__crown)"/>
+    <rect x="150" y="110" width="100" height="10" rx="5" fill="var(--c3, #6BBFAD)"/>
+  </g>
+  <path d="M128 120 Q140 158 200 162 Q260 158 272 120 Q260 132 200 134 Q140 132 128 120 Z"
+        fill="url(#accessories-teen-headwear-bucket-hat__check)" fill-opacity="0.6"/>
+  <path d="M164 80 Q200 70 236 80" fill="none" stroke="#FFFFFF" stroke-opacity="0.25"
+        stroke-width="4" stroke-linecap="round"/>
+</svg>

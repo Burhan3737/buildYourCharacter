@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=narrow strap · closure=closed · hem=HIGH-CUT LEG at the hip · volume=skin-close -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8563F)"/>
+      <stop offset="1" stop-color="var(--c2, #BE3B2A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-swimsuit__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8563F)"/>
+      <stop offset="1" stop-color="var(--c2, #BE3B2A)"/>
+    </linearGradient>
+    <pattern id="teen-female-onepiece-swimsuit__dot" patternUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="3.4" fill="var(--c3, #FBEFD6)"/>
+    </pattern>
+    <clipPath id="teen-female-onepiece-swimsuit__clip">
+      <path d="M156 216 q10-24 44-24 q34 0 44 24 v96 q0 30 -22 46 q-12 8 -22-10 q-10 18 -22 10 q-22-16 -22-46 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="174" y="170" width="12" height="34" rx="6" fill="url(#teen-female-onepiece-swimsuit__strap)"/>
+    <rect x="214" y="170" width="12" height="34" rx="6" fill="url(#teen-female-onepiece-swimsuit__strap)"/>
+    <path d="M156 216 q10-24 44-24 q34 0 44 24 v96 q0 30 -22 46 q-12 8 -22-10 q-10 18 -22 10 q-22-16 -22-46 z"
+          fill="url(#teen-female-onepiece-swimsuit__body)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-onepiece-swimsuit__clip)">
+    <rect x="154" y="190" width="94" height="176" fill="url(#teen-female-onepiece-swimsuit__dot)"/>
+  </g>
+
+  <!-- contrast bound neckline and leg openings -->
+  <path d="M158 214 q42-26 84 0" stroke="var(--c3, #FBEFD6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 344 q14 14 30 0" stroke="var(--c3, #FBEFD6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 344 q16 14 30 0" stroke="var(--c3, #FBEFD6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- centre-front ruche seam -->
+  <path d="M200 232 v96" stroke="var(--c2, #BE3B2A)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g stroke="var(--c2, #BE3B2A)" stroke-opacity="0.6" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M190 248 q10 8 20 0"/><path d="M190 274 q10 8 20 0"/><path d="M190 300 q10 8 20 0"/>
+  </g>
+
+  <path d="M170 226 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

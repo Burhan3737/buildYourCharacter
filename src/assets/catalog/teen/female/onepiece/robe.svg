@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dressing Gown" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=WIDE DRAPED sleeve · closure=WRAP FRONT tie belt · hem=mid-calf · volume=flared -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-robe__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FB8C9)"/>
+      <stop offset="1" stop-color="var(--c2, #6C97A9)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FB8C9)"/>
+      <stop offset="1" stop-color="var(--c2, #6C97A9)"/>
+    </linearGradient>
+    <pattern id="teen-female-onepiece-robe__quilt" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M0 11 L11 0 L22 11 L11 22 Z" fill="none" stroke="var(--c3, #F5E7DA)"
+            stroke-width="2" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-female-onepiece-robe__clip">
+      <path d="M148 214 q4-22 26-22 h52 q22 0 26 22 l16 252 q-70 24 -136 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 212 L110 332 q26 16 52 0 L170 218 Z" fill="url(#teen-female-onepiece-robe__sleeve)"/>
+    <path d="M254 212 L290 332 q-26 16 -52 0 L230 218 Z" fill="url(#teen-female-onepiece-robe__sleeve)"/>
+    <path d="M148 214 q4-22 26-22 h52 q22 0 26 22 l16 252 q-70 24 -136 0 z" fill="url(#teen-female-onepiece-robe__body)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-onepiece-robe__clip)">
+    <rect x="130" y="192" width="140" height="290" fill="url(#teen-female-onepiece-robe__quilt)"/>
+  </g>
+
+  <!-- shawl collar running down both sides of the wrap -->
+  <path d="M172 192 q28 24 56 0 l14 8 l-24 40 l-6 216 h-18 l6-232 z" fill="var(--c3, #F5E7DA)"/>
+  <path d="M172 192 l-14 8 l24 40 l6 216 h18 l-6-232 z" fill="var(--c3, #F5E7DA)"/>
+
+  <!-- tie belt with a knot and two hanging ends -->
+  <path d="M146 318 q54 20 108 0 v16 q-54 20 -108 0 z" fill="var(--c2, #6C97A9)"/>
+  <path d="M188 330 q-6 34 -14 54" stroke="var(--c2, #6C97A9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 330 q6 34 14 54" stroke="var(--c2, #6C97A9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- patch pockets -->
+  <path d="M156 372 h34 v34 q0 8 -8 8 h-18 q-8 0 -8-8 z" fill="var(--c2, #6C97A9)"/>
+  <path d="M210 372 h34 v34 q0 8 -8 8 h-18 q-8 0 -8-8 z" fill="var(--c2, #6C97A9)"/>
+
+  <path d="M170 206 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

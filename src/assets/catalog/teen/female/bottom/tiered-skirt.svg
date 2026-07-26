@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: rise=natural · leg=NONE (skirt) · width=flared in gathered tiers · hem=RUFFLED, mid-calf -->
+  <defs>
+    <linearGradient id="teen-female-bottom-tiered-skirt__t1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #D07E9C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-bottom-tiered-skirt__t2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #D07E9C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-bottom-tiered-skirt__t3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #D07E9C)"/>
+    </linearGradient>
+    <pattern id="teen-female-bottom-tiered-skirt__ditsy" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="10" r="2.6" fill="var(--c3, #FCF3E4)"/>
+      <circle cx="0" cy="0" r="2.6" fill="var(--c3, #FCF3E4)"/>
+      <circle cx="20" cy="20" r="2.6" fill="var(--c3, #FCF3E4)"/>
+    </pattern>
+    <clipPath id="teen-female-bottom-tiered-skirt__clip">
+      <path d="M152 330 H248 L262 388 H138 Z"/>
+      <path d="M138 384 H262 L278 448 H122 Z"/>
+      <path d="M122 444 H278 L294 504 q-94 24 -188 0 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M122 444 H278 L294 504 q-94 24 -188 0 Z" fill="url(#teen-female-bottom-tiered-skirt__t3)"/>
+    <path d="M138 384 H262 L278 448 H122 Z" fill="url(#teen-female-bottom-tiered-skirt__t2)"/>
+    <path d="M152 330 H248 L262 388 H138 Z" fill="url(#teen-female-bottom-tiered-skirt__t1)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-bottom-tiered-skirt__clip)">
+    <rect x="106" y="326" width="188" height="204" fill="url(#teen-female-bottom-tiered-skirt__ditsy)"/>
+  </g>
+
+  <!-- gathered tier seams -->
+  <path d="M139 386 H261" stroke="var(--c2, #D07E9C)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M124 446 H276" stroke="var(--c2, #D07E9C)" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- gather ticks -->
+  <g stroke="var(--c2, #D07E9C)" stroke-opacity="0.55" stroke-width="3.4" stroke-linecap="round" fill="none">
+    <path d="M156 392 v14"/><path d="M180 392 v14"/><path d="M204 392 v14"/><path d="M228 392 v14"/><path d="M252 392 v14"/>
+    <path d="M140 452 v16"/><path d="M172 452 v16"/><path d="M204 452 v16"/><path d="M236 452 v16"/><path d="M268 452 v16"/>
+  </g>
+
+  <!-- narrow waistband -->
+  <rect x="150" y="326" width="100" height="16" rx="7" fill="var(--c3, #FCF3E4)"/>
+
+  <path d="M164 352 q38 10 76 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

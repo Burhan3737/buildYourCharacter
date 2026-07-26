@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bonnet" data-family="bonnet" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3,hair1,hair2" data-hides="hair">
+  <!-- axes vs. turban/hijab/headwrap: coverage (the roundest, poofiest silhouette, gathered
+       low over the nape behind the ears) + fastening (a scalloped elastic edge and a small
+       front bow, not a fold ridge, a chin pin or an upward fan). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-bonnet__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D9847A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-bonnet__ruffle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5F72BE)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-bonnet__tuft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #6B4A32)"/>
+      <stop offset="1" stop-color="var(--hair2, #4A3222)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the small amount of hair that escapes at the temples -->
+  <path d="M126 138 C124 122 132 112 142 116 C150 122 148 138 138 148 C130 148 127 144 126 138 Z"
+        fill="url(#accessories-teen-headwear-bonnet__tuft)"/>
+  <path d="M274 138 C276 122 268 112 258 116 C250 122 252 138 262 148 C270 148 273 144 274 138 Z"
+        fill="url(#accessories-teen-headwear-bonnet__tuft)"/>
+
+  <g class="sp-shadow">
+    <!-- a gathered satin puff, wider than the head, stopping at the hairline -->
+    <path d="M118 142 C118 84 154 60 200 60 C246 60 282 84 282 142
+             C264 126 238 116 200 116 C162 116 136 126 118 142 Z"
+          fill="url(#accessories-teen-headwear-bonnet__puff)"/>
+    <!-- scalloped elastic edge -->
+    <path d="M118 142 Q134 124 150 134 Q166 122 182 130 Q200 118 218 130
+             Q234 122 250 134 Q266 124 282 142 Q200 122 118 142 Z"
+          fill="url(#accessories-teen-headwear-bonnet__ruffle)"/>
+  </g>
+
+  <!-- gather lines radiating from the crown -->
+  <g stroke="var(--c2, #7E90DC)" stroke-width="3" stroke-opacity="0.5"
+     fill="none" stroke-linecap="round">
+    <path d="M144 132 C150 104 170 80 200 74"/>
+    <path d="M172 126 C176 102 186 84 200 74"/>
+    <path d="M228 126 C224 102 214 84 200 74"/>
+    <path d="M256 132 C250 104 230 80 200 74"/>
+  </g>
+
+  <!-- the small front bow -->
+  <path d="M186 122 L168 112 L170 132 Z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M214 122 L232 112 L230 132 Z" fill="var(--c3, #6BBFAD)"/>
+  <circle cx="200" cy="122" r="6" fill="var(--c3, #6BBFAD)"/>
+
+  <path d="M148 88 Q200 70 252 88" fill="none" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=SPAGHETTI STRAP · closure=closed · hem=hip · volume=straight skimming -->
+  <defs>
+    <linearGradient id="teen-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCC7E6)"/>
+      <stop offset="1" stop-color="var(--c2, #B69CC6)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCC7E6)"/>
+      <stop offset="1" stop-color="var(--c2, #B69CC6)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two narrow spaghetti straps -->
+    <rect x="176" y="166" width="9" height="36" rx="4" fill="url(#teen-female-top-camisole__strap)"/>
+    <rect x="215" y="166" width="9" height="36" rx="4" fill="url(#teen-female-top-camisole__strap)"/>
+    <!-- skimming straight body with a straight-across neckline -->
+    <path d="M152 206 q16-12 48-12 q32 0 48 12 v110 q0 24 -22 24 h-52 q-22 0 -22-24 z"
+          fill="url(#teen-female-top-camisole__body)"/>
+  </g>
+
+  <!-- scalloped lace edge along the neckline -->
+  <g fill="var(--c3, #6E4A82)">
+    <circle cx="162" cy="206" r="6"/><circle cx="177" cy="201" r="6"/>
+    <circle cx="192" cy="199" r="6"/><circle cx="208" cy="199" r="6"/>
+    <circle cx="223" cy="201" r="6"/><circle cx="238" cy="206" r="6"/>
+  </g>
+
+  <!-- lace hem edge -->
+  <g fill="var(--c3, #6E4A82)">
+    <circle cx="161" cy="335" r="6.5"/><circle cx="176" cy="338" r="6.5"/>
+    <circle cx="192" cy="339" r="6.5"/><circle cx="208" cy="339" r="6.5"/>
+    <circle cx="224" cy="338" r="6.5"/><circle cx="239" cy="335" r="6.5"/>
+  </g>
+
+  <!-- centre seam and tiny bow -->
+  <path d="M200 210 v122" stroke="var(--c2, #B69CC6)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M192 212 l8 6 l-8 6 z" fill="var(--c3, #6E4A82)"/>
+  <path d="M208 212 l-8 6 l8 6 z" fill="var(--c3, #6E4A82)"/>
+
+  <!-- highlight -->
+  <path d="M164 212 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

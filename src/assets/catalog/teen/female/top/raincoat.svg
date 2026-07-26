@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long · closure=FULL SNAP PLACKET · hem=THIGH · volume=FLARED A-line -->
+  <defs>
+    <linearGradient id="teen-female-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA23F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA23F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DBA23F)"/>
+      <stop offset="1" stop-color="var(--c2, #DBA23F)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="118" y="206" width="34" height="150" rx="17" fill="url(#teen-female-top-raincoat__sleeve)"/>
+    <rect x="248" y="206" width="34" height="150" rx="17" fill="url(#teen-female-top-raincoat__sleeve)"/>
+    <!-- shell flaring from the shoulder to mid-thigh -->
+    <path d="M146 216 q2-26 26-26 h56 q24 0 26 26 l22 178 q-76 24 -152 0 z"
+          fill="url(#teen-female-top-raincoat__body)"/>
+    <!-- hood lying flat behind the neck -->
+    <path d="M166 190 q34 24 68 0 q-6 32 -34 32 q-28 0 -34-32 z" fill="url(#teen-female-top-raincoat__hood)"/>
+  </g>
+
+  <!-- storm flap and snap line -->
+  <rect x="192" y="196" width="16" height="196" rx="6" fill="var(--c2, #DBA23F)"/>
+  <g fill="var(--c3, #3B4A5A)">
+    <circle cx="200" cy="232" r="4.5"/>
+    <circle cx="200" cy="272" r="4.5"/>
+    <circle cx="200" cy="312" r="4.5"/>
+    <circle cx="200" cy="352" r="4.5"/>
+  </g>
+
+  <!-- reflective band around the body -->
+  <path d="M152 288 q48 14 96 0 l2 14 q-50 14 -100 0 z" fill="var(--c3, #3B4A5A)" fill-opacity="0.85"/>
+
+  <!-- flap pockets -->
+  <path d="M154 330 h32 v14 q0 6 -6 6 h-20 q-6 0 -6-6 z" fill="var(--c2, #DBA23F)"/>
+  <path d="M214 330 h32 v14 q0 6 -6 6 h-20 q-6 0 -6-6 z" fill="var(--c2, #DBA23F)"/>
+
+  <!-- elasticated cuffs -->
+  <rect x="116" y="340" width="38" height="16" rx="8" fill="var(--c3, #3B4A5A)"/>
+  <rect x="246" y="340" width="38" height="16" rx="8" fill="var(--c3, #3B4A5A)"/>
+
+  <!-- highlight -->
+  <path d="M158 206 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

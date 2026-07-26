@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandana" data-family="bandana" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs. headband: crown shape (a pointed triangle apex, not a thin flat arc)
+       + coverage (drapes down to the brow and wraps to knotted tails at the ears). -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-bandana__tri" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="accessories-teen-headwear-bandana__paisley" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="6" cy="6" r="2.4" fill="var(--c2, #6BBFAD)"/>
+      <path d="M13 11 Q17 11 16 15 Q13 15 13 11 Z" fill="var(--c2, #6BBFAD)"/>
+    </pattern>
+  </defs>
+  <g class="sp-shadow">
+    <path d="M124 134 L200 60 L276 134 L262 146 Q200 128 138 146 Z"
+          fill="url(#accessories-teen-headwear-bandana__tri)"/>
+    <ellipse cx="134" cy="152" rx="10" ry="14" fill="var(--c3, #3B2A22)"/>
+    <ellipse cx="266" cy="152" rx="10" ry="14" fill="var(--c3, #3B2A22)"/>
+  </g>
+  <path d="M124 134 L200 60 L276 134 L262 146 Q200 128 138 146 Z"
+        fill="url(#accessories-teen-headwear-bandana__paisley)" fill-opacity="0.7"/>
+  <path d="M160 108 Q200 92 240 108" fill="none" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="4" stroke-linecap="round"/>
+</svg>
