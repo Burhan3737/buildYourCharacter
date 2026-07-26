@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepy" data-family="sleepy" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="elder-female-eyes-sleepy__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-sleepy__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sclera, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <circle cx="174" cy="134" r="13.5" fill="url(#elder-female-eyes-sleepy__sclera)"/>
+    <circle cx="218" cy="134" r="13.5" fill="url(#elder-female-eyes-sleepy__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="174" cy="134" r="9" fill="#3B2A22"/>
+  <circle cx="218" cy="134" r="9" fill="#3B2A22"/>
+  <circle cx="174" cy="134" r="9" fill="url(#elder-female-eyes-sleepy__iris)"/>
+  <circle cx="218" cy="134" r="9" fill="url(#elder-female-eyes-sleepy__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="174" cy="134" r="4.2" fill="#3B2A22"/>
+  <circle cx="218" cy="134" r="4.2" fill="#3B2A22"/>
+
+  <!-- catchlights, sit low since the fold covers the upper iris -->
+  <circle cx="177.2" cy="138" r="1.6" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="221.2" cy="138" r="1.6" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="171.5" cy="135.5" r="2.6" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="215.5" cy="135.5" r="2.6" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- heavy relaxed eyelid fold, covers roughly the top 40% of the sclera -->
+  <path d="M159 131 Q159 118 174 118 Q189 118 189 131 Q174 133 159 131 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M203 131 Q203 118 218 118 Q233 118 233 131 Q218 133 203 131 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- upper lash / crease line, sitting on the fold -->
+  <path d="M163 116.5 Q174 109.5 185 116.5" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M229 116.5 Q218 109.5 207 116.5" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

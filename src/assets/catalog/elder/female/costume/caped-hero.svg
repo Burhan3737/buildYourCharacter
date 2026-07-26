@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="elder-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cape, drawn first so it falls behind the figure; nothing above y=182 -->
+  <g class="sp-shadow">
+    <path d="M168 182 h64 q34 6 40 46 l16 250
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             l16 -250 q6 -40 40 -46 z"
+          fill="url(#elder-female-costume-caped-hero__cape)"/>
+  </g>
+
+  <!-- bodysuit mass -->
+  <g class="sp-shadow">
+    <rect x="164" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-caped-hero__leg)"/>
+    <rect x="200" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-caped-hero__leg)"/>
+    <rect x="146" y="328" width="108" height="58" rx="24" fill="url(#elder-female-costume-caped-hero__body)"/>
+    <rect x="140" y="182" width="120" height="154" rx="28" fill="url(#elder-female-costume-caped-hero__body)"/>
+    <rect x="112" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-caped-hero__sleeve)"/>
+    <rect x="252" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-caped-hero__sleeve)"/>
+  </g>
+
+  <!-- trunks over the hips -->
+  <rect x="148" y="326" width="104" height="52" rx="22" fill="url(#elder-female-costume-caped-hero__trim)"/>
+  <!-- belt -->
+  <rect x="144" y="320" width="112" height="20" rx="9" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest mark: a soft four-point star, generic (not a real logo) -->
+  <path d="M200 208 q6 20 26 26 q-20 6 -26 26 q-6 -20 -26 -26 q20 -6 26 -26 z"
+        fill="var(--c3, #F7C873)"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <circle cx="130" cy="328" r="16" fill="var(--c2, #C4534B)"/>
+    <circle cx="270" cy="328" r="16" fill="var(--c2, #C4534B)"/>
+    <rect x="160" y="534" width="42" height="26" rx="13" fill="url(#elder-female-costume-caped-hero__trim)"/>
+    <rect x="198" y="534" width="42" height="26" rx="13" fill="url(#elder-female-costume-caped-hero__trim)"/>
+  </g>
+
+  <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

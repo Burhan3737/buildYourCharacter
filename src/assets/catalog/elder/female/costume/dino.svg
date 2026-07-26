@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dino" data-family="dino" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="elder-female-costume-dino__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4F9C8B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-dino__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4F9C8B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-dino__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4F9C8B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-dino__tail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #4F9C8B)"/>
+      <stop offset="1" stop-color="var(--c2, #3D7A6C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft zip-up dinosaur onesie; no hood/head piece, nothing above y=182 -->
+  <!-- tail, drawn first so it falls behind the legs -->
+  <g class="sp-shadow">
+    <path d="M236 470 Q300 490 330 540 Q290 528 250 520 Q260 496 236 470 Z"
+          fill="url(#elder-female-costume-dino__tail)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <rect x="164" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-dino__leg)"/>
+    <rect x="200" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-dino__leg)"/>
+    <rect x="146" y="328" width="108" height="58" rx="24" fill="url(#elder-female-costume-dino__body)"/>
+    <rect x="140" y="182" width="120" height="154" rx="28" fill="url(#elder-female-costume-dino__body)"/>
+    <rect x="112" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-dino__sleeve)"/>
+    <rect x="252" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-dino__sleeve)"/>
+  </g>
+
+  <!-- spine-ridge triangles down the centre, starting right at the y=182 boundary -->
+  <path d="M196 184 L204 184 L200 196 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M194 202 L206 202 L200 216 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M193 222 L207 222 L200 238 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M193 244 L207 244 L200 260 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M194 266 L206 266 L200 280 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- zip line -->
+  <path d="M200 292 v40" stroke="var(--c1, #4F9C8B)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <circle cx="130" cy="328" r="16" fill="var(--c1, #4F9C8B)"/>
+    <circle cx="270" cy="328" r="16" fill="var(--c1, #4F9C8B)"/>
+    <rect x="160" y="534" width="42" height="26" rx="13" fill="var(--c1, #4F9C8B)"/>
+    <rect x="198" y="534" width="42" height="26" rx="13" fill="var(--c1, #4F9C8B)"/>
+  </g>
+
+  <path d="M154 208 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

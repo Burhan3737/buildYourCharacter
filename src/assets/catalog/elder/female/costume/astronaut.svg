@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Astronaut" data-family="astronaut" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="elder-female-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
+      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-astronaut__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
+      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-astronaut__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
+      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- spacesuit bodysuit; no helmet, nothing above y=182 -->
+  <g class="sp-shadow">
+    <rect x="164" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-astronaut__leg)"/>
+    <rect x="200" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-astronaut__leg)"/>
+    <rect x="146" y="328" width="108" height="58" rx="24" fill="url(#elder-female-costume-astronaut__body)"/>
+    <rect x="140" y="182" width="120" height="154" rx="28" fill="url(#elder-female-costume-astronaut__body)"/>
+    <rect x="112" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-astronaut__sleeve)"/>
+    <rect x="252" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-astronaut__sleeve)"/>
+  </g>
+
+  <!-- collar ring -->
+  <rect x="172" y="182" width="56" height="16" rx="8" fill="var(--c2, #DC7A5A)"/>
+
+  <!-- chest control-panel emblem, entirely original -->
+  <rect x="180" y="212" width="40" height="30" rx="6" fill="var(--c2, #DC7A5A)"/>
+  <circle cx="190" cy="222" r="3.4" fill="var(--c3, #6BBFAD)"/>
+  <circle cx="202" cy="222" r="3.4" fill="var(--c3, #F7C873)"/>
+  <rect x="188" y="230" width="24" height="6" rx="3" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- rounded glove and boot caps -->
+  <g class="sp-shadow">
+    <circle cx="130" cy="328" r="17" fill="var(--c2, #DC7A5A)"/>
+    <circle cx="270" cy="328" r="17" fill="var(--c2, #DC7A5A)"/>
+    <rect x="158" y="532" width="44" height="30" rx="15" fill="var(--c2, #DC7A5A)"/>
+    <rect x="198" y="532" width="44" height="30" rx="15" fill="var(--c2, #DC7A5A)"/>
+  </g>
+
+  <path d="M154 210 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

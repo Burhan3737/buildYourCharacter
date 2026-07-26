@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Elder Female Body" data-family="base" data-slot="eyes"
+     data-layer="body" data-colors="" data-hides="">
+  <defs>
+    <linearGradient id="bodies-elder-female-base__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- legs -->
+  <g class="sp-shadow">
+    <rect x="168" y="374" width="28" height="170" rx="14" fill="url(#bodies-elder-female-base__skin)"/>
+    <rect x="204" y="374" width="28" height="170" rx="14" fill="url(#bodies-elder-female-base__skin)"/>
+  </g>
+  <!-- feet -->
+  <g class="sp-shadow">
+    <rect x="160" y="544" width="42" height="26" rx="13" fill="var(--skin2, #E7B892)"/>
+    <rect x="198" y="544" width="42" height="26" rx="13" fill="var(--skin2, #E7B892)"/>
+  </g>
+  <!-- hips, bridging torso to legs (drawn a touch taller than the spec box so no seam shows) -->
+  <g class="sp-shadow">
+    <rect x="150" y="328" width="100" height="54" rx="22" fill="url(#bodies-elder-female-base__skin)"/>
+  </g>
+  <!-- arms -->
+  <g class="sp-shadow">
+    <rect x="116" y="182" width="28" height="150" rx="14" fill="url(#bodies-elder-female-base__skin)"/>
+    <rect x="256" y="182" width="28" height="150" rx="14" fill="url(#bodies-elder-female-base__skin)"/>
+  </g>
+  <!-- hands -->
+  <g class="sp-shadow">
+    <circle cx="130" cy="328" r="16" fill="var(--skin2, #E7B892)"/>
+    <circle cx="270" cy="328" r="16" fill="var(--skin2, #E7B892)"/>
+  </g>
+  <!-- neck -->
+  <rect x="182" y="166" width="28" height="34" rx="12" fill="var(--skin2, #E7B892)"/>
+  <!-- torso: narrower than the adult bundle for slighter, elder-female shoulders -->
+  <g class="sp-shadow">
+    <path d="M144 208 q0-28 28-28 h56 q28 0 28 28 v92 q0 36 -28 36 h-56 q-28 0 -28-36 z"
+          fill="url(#bodies-elder-female-base__skin)"/>
+  </g>
+  <!-- torso highlight -->
+  <path d="M156 198 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- ears -->
+  <ellipse cx="145" cy="129" rx="11" ry="13" fill="var(--skin2, #E7B892)"/>
+  <ellipse cx="247" cy="129" rx="11" ry="13" fill="var(--skin2, #E7B892)"/>
+  <!-- head: shifted 4px toward the viewer's left of the body centreline (x200) for a gentle
+       forward stoop. This is a body-art-only choice; specs/bodies/elder-female.json keeps
+       head.cx at 200 unchanged. -->
+  <g class="sp-shadow">
+    <ellipse cx="196" cy="125" rx="57" ry="59" fill="url(#bodies-elder-female-base__skin)"/>
+  </g>
+  <!-- upper-surface highlight -->
+  <path d="M168 91 q26 -18 50 -10" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- soft age line across the brow -->
+  <path d="M172 96 Q196 88 220 96" stroke="var(--skin2, #E7B892)" stroke-opacity="0.22"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- laugh lines -->
+  <path d="M172 150 Q167 159 173 167" stroke="var(--skin2, #E7B892)" stroke-opacity="0.22"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M220 150 Q225 159 219 167" stroke="var(--skin2, #E7B892)" stroke-opacity="0.22"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- cheeks -->
+  <ellipse cx="162" cy="142" rx="11" ry="7" fill="var(--skin3, #EC9A8D)" opacity="0.45"/>
+  <ellipse cx="230" cy="142" rx="11" ry="7" fill="var(--skin3, #EC9A8D)" opacity="0.45"/>
+</svg>

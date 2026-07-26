@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide" data-family="wide" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="elder-female-eyes-wide__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-wide__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sclera, larger radius for a wide-eyed look, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <circle cx="174" cy="134" r="15.5" fill="url(#elder-female-eyes-wide__sclera)"/>
+    <circle cx="218" cy="134" r="15.5" fill="url(#elder-female-eyes-wide__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="174" cy="134" r="10.5" fill="#3B2A22"/>
+  <circle cx="218" cy="134" r="10.5" fill="#3B2A22"/>
+  <circle cx="174" cy="134" r="10.5" fill="url(#elder-female-eyes-wide__iris)"/>
+  <circle cx="218" cy="134" r="10.5" fill="url(#elder-female-eyes-wide__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="174" cy="134" r="4.8" fill="#3B2A22"/>
+  <circle cx="218" cy="134" r="4.8" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="170.1" cy="129.2" r="3.7" fill="#FFFFFF"/>
+  <circle cx="214.1" cy="129.2" r="3.7" fill="#FFFFFF"/>
+  <circle cx="177.7" cy="138.6" r="1.8" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="221.7" cy="138.6" r="1.8" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- upper lash line -->
+  <path d="M161.4 123.1 Q174 115 186.6 123.1" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230.6 123.1 Q218 115 205.4 123.1" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.8"
+        fill="none" stroke-linecap="round"/>
+</svg>

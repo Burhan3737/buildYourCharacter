@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tee" data-family="tee" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="elder-female-top-tee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #57A692)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #57A692)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short sleeves, overlapping the bare-arm anchors (x116-144 / x256-284) by 4px -->
+    <rect x="112" y="178" width="36" height="84" rx="17" fill="url(#elder-female-top-tee__sleeve)"/>
+    <rect x="252" y="178" width="36" height="84" rx="17" fill="url(#elder-female-top-tee__sleeve)"/>
+    <!-- relaxed crew body, overlapping the torso (x144-256 y180-336) by 4px on the sides,
+         4px at the shoulder and 8px past the torso bottom for a clean tuck -->
+    <rect x="140" y="176" width="120" height="168" rx="32" fill="url(#elder-female-top-tee__body)"/>
+  </g>
+
+  <!-- crew neckline -->
+  <path d="M182 178 Q200 190 218 178" fill="none" stroke="var(--c2, #57A692)" stroke-width="4"
+        stroke-linecap="round" opacity="0.55"/>
+  <!-- chest highlight -->
+  <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
