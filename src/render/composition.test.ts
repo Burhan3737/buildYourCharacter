@@ -14,7 +14,7 @@ const svg = (slot: string, layer: string, family: string, hides = '') =>
 
 const spec: BodySpec = {
   viewBox: [0, 0, 400, 600],
-  head: { cx: 200, cy: 88, rx: 56, ry: 58 }, eyeLine: 96,
+  head: { cx: 200, cy: 88, rx: 57, ry: 58 }, eyeLine: 96,
   ears: [{ x: 144, y: 92 }, { x: 256, y: 92 }],
   shoulders: [{ x: 140, y: 156 }, { x: 260, y: 156 }],
   torso: { x: 138, y: 150, w: 124, h: 150 },

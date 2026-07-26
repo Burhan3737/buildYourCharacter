@@ -14,7 +14,7 @@ export interface RefHead { cx: number; cy: number; rx: number }
 export const ACCESSORY_REF: Record<HeadSizeClass, RefHead> = {
   toddler: { cx: 200, cy: 268, rx: 82 },
   teen: { cx: 200, cy: 132, rx: 60 },
-  adult: { cx: 200, cy: 91, rx: 56 },
+  adult: { cx: 200, cy: 91, rx: 57 },
 }
 
 export interface RenderLayer {
