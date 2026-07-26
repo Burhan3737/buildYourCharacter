@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Undercut Sweep" data-family="undercut-sweep" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `side-part` and `pixie`:
+       (1) PARTING — a deep disconnected part at x150: the left side is shaved to the
+           skin with the temple bare, and the whole top is thrown across it;
+       (2) VOLUME — deliberately asymmetric, with the swept mass piling up on the right
+           and falling to y150 past the ear while the left edge stops at y84. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-undercut-sweep__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.3"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- shaved nape carrying round from the undercut -->
+      <path d="M152 100 C150 124 168 142 200 144 C232 142 250 126 250 104
+               L236 118 L200 126 L166 116 Z"
+            fill="url(#midage-male-hair-undercut-sweep__back-grad)"/>
+    </g>
+    <path d="M168 118 Q200 130 234 120" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-undercut-sweep__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-undercut-sweep__shave-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.85"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.2"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the swept top: gathered low on the left, piled and falling on the right -->
+      <path d="M148 84 C144 56 168 32 202 32 C240 32 266 52 267 90
+               C270 116 264 138 252 150
+               C256 124 249 106 236 96 C224 88 204 84 186 82
+               C170 80 156 80 148 84 Z"
+            fill="url(#midage-male-hair-undercut-sweep__front-grad)"/>
+      <!-- the undercut itself: clipper-short stubble, skin reading through it -->
+      <path d="M143 88 C144 104 148 116 156 124 C164 118 168 106 168 92
+               C160 88 151 86 143 88 Z"
+            fill="url(#midage-male-hair-undercut-sweep__shave-grad)"/>
+    </g>
+
+    <!-- the disconnected part line, cut hard between shave and sweep -->
+    <path d="M147 86 Q158 82 170 82" stroke="var(--hair2, #331E16)" stroke-width="3.6"
+          fill="none" stroke-linecap="round"/>
+    <!-- the sweep, combed across from left to right -->
+    <path d="M162 74 Q206 52 250 74" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M168 90 Q212 66 252 96" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M240 108 Q252 126 250 146" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- bare temple, so the undercut reads as skin and not as dark hair -->
+    <path d="M144 96 Q152 106 156 118 Q147 112 143 100 Z"
+          fill="var(--skin1, #F7D2B0)" opacity="0.75"/>
+    <path d="M180 46 C206 36 236 42 252 60" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

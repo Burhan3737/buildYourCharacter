@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HIGH rise · full length · SKIN-CLOSE leg · plain ankle hem.
+       Against jeans it differs on rise and leg width; against bike-shorts on
+       leg length and hem. -->
   <defs>
     <linearGradient id="midage-male-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
@@ -13,15 +16,26 @@
   </defs>
 
   <g class="sp-shadow">
-    <rect x="167" y="348" width="28" height="200" rx="14" fill="url(#midage-male-bottom-leggings__leg)"/>
-    <rect x="205" y="348" width="28" height="200" rx="14" fill="url(#midage-male-bottom-leggings__leg)"/>
-    <rect x="138" y="312" width="124" height="64" rx="28" fill="url(#midage-male-bottom-leggings__hip)"/>
+    <rect x="168" y="350" width="27" height="198" rx="13" fill="url(#midage-male-bottom-leggings__leg)"/>
+    <rect x="205" y="350" width="27" height="198" rx="13" fill="url(#midage-male-bottom-leggings__leg)"/>
+    <rect x="142" y="296" width="116" height="80" rx="30" fill="url(#midage-male-bottom-leggings__hip)"/>
   </g>
 
-  <rect x="138" y="312" width="124" height="16" rx="8" fill="var(--c2, #241A15)"/>
-
-  <path d="M172 360 v170" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"
+  <!-- trim: wide high-rise waistband sitting above the natural waist -->
+  <rect x="142" y="296" width="116" height="24" rx="12" fill="var(--c2, #241A15)"/>
+  <!-- panel: contrast side panel running the full length of each leg -->
+  <path d="M170 356 q-4 96 0 188" stroke="var(--c3, #7E90DC)" stroke-width="7" stroke-opacity="0.9"
         fill="none" stroke-linecap="round"/>
-  <path d="M228 360 v170" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"
+  <path d="M230 356 q4 96 0 188" stroke="var(--c3, #7E90DC)" stroke-width="7" stroke-opacity="0.9"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: flat-lock seams either side of the panel -->
+  <path d="M182 360 v182" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 360 v182" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 312 h112" stroke="var(--c3, #7E90DC)" stroke-opacity="0.55" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M158 330 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

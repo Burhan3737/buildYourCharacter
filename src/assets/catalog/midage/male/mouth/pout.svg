@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pout" data-family="pout" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- small and pushed forward: a narrow 32px mouth whose lower lip carries
+       roughly twice the depth of the upper -->
+  <defs>
+    <linearGradient id="midage-male-mouth-pout__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="midage-male-mouth-pout__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- upper lip: shallow, with a soft cupid's bow -->
+    <path d="M184 126 C188 120.5 195 119 200 122 C205 119 212 120.5 216 126
+             C210 128 190 128 184 126 Z"
+          fill="var(--lip1, #C25A50)"/>
+    <!-- lower lip: pushed forward and clearly the fuller of the two -->
+    <path d="M183.5 127.5 C190 125 210 125 216.5 127.5
+             C218 137.5 210.5 143.5 200 143.5
+             C189.5 143.5 182 137.5 183.5 127.5 Z"
+          fill="var(--lip1, #C25A50)"/>
+    <path d="M184 126 C188 120.5 195 119 200 122 C205 119 212 120.5 216 126
+             C210 128 190 128 184 126 Z"
+          fill="url(#midage-male-mouth-pout__upper)"/>
+    <path d="M183.5 127.5 C190 125 210 125 216.5 127.5
+             C218 137.5 210.5 143.5 200 143.5
+             C189.5 143.5 182 137.5 183.5 127.5 Z"
+          fill="url(#midage-male-mouth-pout__lower)"/>
+  </g>
+
+  <!-- lip seam -->
+  <path d="M185.5 126.6 Q200 129 214.5 126.6" stroke="#3B2A22" stroke-opacity="0.4"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- highlight on the crest of the full lower lip -->
+  <path d="M192 132.5 Q200 130.5 208 132.5" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

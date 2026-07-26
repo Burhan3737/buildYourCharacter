@@ -1,31 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Stripes" data-family="stripes" data-slot="top"
+     data-name="Boat-Neck Top" data-family="stripes" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: LONG straight sleeve · closed wide boat neck · hip · boxy.
+       Against tee it differs on sleeve length and volume; against button-up on closure
+       (closed vs full placket) and neckline. The breton banding is surface, not identity. -->
   <defs>
     <linearGradient id="midage-male-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DC8C80)"/>
+      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
+      <stop offset="1" stop-color="var(--c2, #CBD2E2)"/>
     </linearGradient>
     <linearGradient id="midage-male-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DC8C80)"/>
+      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
+      <stop offset="1" stop-color="var(--c2, #CBD2E2)"/>
     </linearGradient>
+    <pattern id="midage-male-top-stripes__breton" patternUnits="userSpaceOnUse"
+             x="0" y="152" width="20" height="20">
+      <rect x="0" y="0" width="20" height="11" fill="var(--c3, #384A78)"/>
+      <rect x="0" y="15" width="20" height="3" fill="var(--c3, #384A78)" opacity="0.55"/>
+    </pattern>
+    <clipPath id="midage-male-top-stripes__clip">
+      <path d="M126 190 q0-32 34-32 h80 q34 0 34 32 v72 q0 38 -34 38 h-80 q-34 0-34-38 z"/>
+      <rect x="108" y="176" width="26" height="164" rx="13"/>
+      <rect x="266" y="176" width="26" height="164" rx="13"/>
+    </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="102" y="166" width="32" height="90" rx="16" fill="url(#midage-male-top-stripes__sleeve)"/>
-    <rect x="266" y="166" width="32" height="90" rx="16" fill="url(#midage-male-top-stripes__sleeve)"/>
-    <path d="M124 198 q0-40 40-40 h72 q40 0 40 40 v64 q0 42 -40 42 h-72 q-40 0-40-42 z"
+    <rect x="108" y="176" width="26" height="164" rx="13" fill="url(#midage-male-top-stripes__sleeve)"/>
+    <rect x="266" y="176" width="26" height="164" rx="13" fill="url(#midage-male-top-stripes__sleeve)"/>
+    <path d="M126 190 q0-32 34-32 h80 q34 0 34 32 v72 q0 38 -34 38 h-80 q-34 0-34-38 z"
           fill="url(#midage-male-top-stripes__body)"/>
   </g>
 
-  <!-- horizontal stripe bands -->
-  <rect x="124" y="212" width="152" height="14" fill="var(--c3, #3B2A22)" opacity="0.85"/>
-  <rect x="124" y="242" width="152" height="14" fill="var(--c3, #3B2A22)" opacity="0.85"/>
-  <rect x="124" y="272" width="152" height="14" fill="var(--c3, #3B2A22)" opacity="0.85"/>
+  <!-- pattern: uneven breton banding, clipped to the garment -->
+  <g clip-path="url(#midage-male-top-stripes__clip)">
+    <rect x="100" y="152" width="200" height="196" fill="url(#midage-male-top-stripes__breton)" opacity="0.9"/>
+  </g>
 
-  <path d="M172 160 q28 20 56 0 q-4 26 -28 26 q-24 0 -28-26 z" fill="var(--c2, #DC8C80)"/>
+  <!-- trim: wide boat neckline bound in a contrasting value -->
+  <path d="M156 158 h88 q4 12 -6 16 q-38 8 -76 0 q-10-4 -6-16 z" fill="var(--c3, #384A78)"/>
+  <!-- trim: turned-back cuff bands -->
+  <rect x="108" y="322" width="26" height="18" rx="9" fill="var(--c3, #384A78)"/>
+  <rect x="266" y="322" width="26" height="18" rx="9" fill="var(--c3, #384A78)"/>
 
-  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M154 186 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

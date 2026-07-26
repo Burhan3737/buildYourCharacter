@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dungarees" data-family="dungarees" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: BIB rise over the shoulders on two straps · full length · straight leg ·
+       plain hem. Against jeans it differs on rise and leg width; against cargo on
+       rise and pocket structure. -->
   <defs>
     <linearGradient id="midage-male-bottom-dungarees__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #8FA0C4)"/>
@@ -10,33 +13,41 @@
       <stop offset="0" stop-color="var(--c1, #8FA0C4)"/>
       <stop offset="1" stop-color="var(--c2, #6E7FA6)"/>
     </linearGradient>
+    <linearGradient id="midage-male-bottom-dungarees__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0C4)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7FA6)"/>
+    </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <path d="M164 348 H198 V538 q0 10 -10 10 H174 q-10 0 -10 -10 Z" fill="url(#midage-male-bottom-dungarees__leg)"/>
-    <path d="M236 348 H202 V538 q0 10 10 10 H226 q10 0 10 -10 Z" fill="url(#midage-male-bottom-dungarees__leg)"/>
-    <rect x="138" y="312" width="124" height="64" rx="28" fill="url(#midage-male-bottom-dungarees__hip)"/>
+    <path d="M160 352 H198 V534 q0 12 -10 12 H170 q-10 0-10-12 Z"
+          fill="url(#midage-male-bottom-dungarees__leg)"/>
+    <path d="M240 352 H202 V534 q0 12 10 12 H230 q10 0 10-12 Z"
+          fill="url(#midage-male-bottom-dungarees__leg)"/>
+    <rect x="138" y="308" width="124" height="70" rx="22" fill="url(#midage-male-bottom-dungarees__hip)"/>
+    <path d="M168 240 h64 q10 0 10 10 v66 h-84 v-66 q0-10 10-10 z"
+          fill="url(#midage-male-bottom-dungarees__bib)"/>
+    <path d="M176 244 q-6-42 22-62 l14 12 q-22 18 -20 50 z"
+          fill="url(#midage-male-bottom-dungarees__bib)"/>
+    <path d="M224 244 q6-42 -22-62 l-14 12 q22 18 20 50 z"
+          fill="url(#midage-male-bottom-dungarees__bib)"/>
   </g>
 
-  <!-- small bib hint over the waist -->
-  <rect x="180" y="292" width="40" height="26" rx="8" fill="var(--c2, #6E7FA6)"/>
-  <!-- thin suspender straps, stop well below the shoulders -->
-  <path d="M186 292 V200" stroke="var(--c2, #6E7FA6)" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <path d="M214 292 V200" stroke="var(--c2, #6E7FA6)" stroke-width="8" fill="none" stroke-linecap="round"/>
-
-  <rect x="138" y="312" width="124" height="20" rx="10" fill="var(--c2, #6E7FA6)"/>
-  <path d="M140 332 H174 Q166 358 140 352 Z" fill="var(--c2, #6E7FA6)"/>
-  <path d="M260 332 H226 Q234 358 260 352 Z" fill="var(--c2, #6E7FA6)"/>
-
-  <!-- brass-look buttons -->
-  <circle cx="186" cy="300" r="4" fill="var(--c3, #F7C873)"/>
-  <circle cx="214" cy="300" r="4" fill="var(--c3, #F7C873)"/>
-
-  <path d="M170 536 H193" stroke="var(--c3, #F7C873)" stroke-width="2.5" stroke-dasharray="5 4"
+  <!-- structural: bib pocket and brass-look strap rivets -->
+  <path d="M180 262 h40 v36 q0 8 -8 8 h-24 q-8 0-8-8 z" fill="var(--c2, #6E7FA6)"/>
+  <path d="M184 274 h32" stroke="var(--c3, #F7C873)" stroke-width="2.2" stroke-dasharray="5 4"
         fill="none" stroke-linecap="round"/>
-  <path d="M207 536 H230" stroke="var(--c3, #F7C873)" stroke-width="2.5" stroke-dasharray="5 4"
+  <circle cx="178" cy="248" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="222" cy="248" r="5" fill="var(--c3, #F7C873)"/>
+  <!-- trim: waistband and hammer loop -->
+  <rect x="138" y="308" width="124" height="18" rx="9" fill="var(--c2, #6E7FA6)"/>
+  <path d="M148 328 v32" stroke="var(--c2, #6E7FA6)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- topstitching down the outer seams -->
+  <path d="M162 358 v176" stroke="var(--c3, #F7C873)" stroke-width="2.2" stroke-dasharray="6 6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 358 v176" stroke="var(--c3, #F7C873)" stroke-width="2.2" stroke-dasharray="6 6"
         fill="none" stroke-linecap="round"/>
 
-  <path d="M156 344 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+  <path d="M172 254 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

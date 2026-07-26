@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: NO sleeve, bib on two shoulder straps · closed · knee hem · A-line.
+       Against sundress it differs on shoulder (bib straps vs scoop bodice) and
+       volume; against jumpsuit on shoulder and hem. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-pinafore__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B6E8F)"/>
+      <stop offset="1" stop-color="var(--c2, #6A5170)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-pinafore__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2EADC)"/>
+      <stop offset="1" stop-color="var(--c3, #D8CFBF)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B6E8F)"/>
+      <stop offset="1" stop-color="var(--c2, #6A5170)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="104" y="168" width="30" height="72" rx="15" fill="url(#midage-male-onepiece-pinafore__shirt)"/>
+    <rect x="266" y="168" width="30" height="72" rx="15" fill="url(#midage-male-onepiece-pinafore__shirt)"/>
+    <path d="M126 198 q0-40 40-40 h68 q40 0 40 40 v96 h-148 z" fill="url(#midage-male-onepiece-pinafore__shirt)"/>
+    <path d="M164 212 h72 v98 l34 154 q3 14 -13 14 h-114 q-16 0-13-14 l34-154 z"
+          fill="url(#midage-male-onepiece-pinafore__dress)"/>
+    <path d="M172 214 q-6-38 22-56 l14 12 q-22 16 -20 44 z" fill="url(#midage-male-onepiece-pinafore__strap)"/>
+    <path d="M228 214 q6-38 -22-56 l-14 12 q22 16 20 44 z" fill="url(#midage-male-onepiece-pinafore__strap)"/>
+  </g>
+
+  <!-- structural: bib pocket and a button on each strap -->
+  <path d="M180 240 h40 v34 q0 8 -8 8 h-24 q-8 0-8-8 z" fill="var(--c2, #6A5170)"/>
+  <circle cx="176" cy="220" r="5" fill="var(--c3, #F2EADC)"/>
+  <circle cx="224" cy="220" r="5" fill="var(--c3, #F2EADC)"/>
+  <!-- trim: waist seam and a bound A-line hem -->
+  <rect x="160" y="300" width="80" height="16" rx="7" fill="var(--c2, #6A5170)"/>
+  <path d="M144 468 q56 12 112 0" stroke="var(--c3, #F2EADC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: two soft A-line folds -->
+  <path d="M182 322 q-10 74 -22 146" stroke="var(--c2, #6A5170)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M218 322 q10 74 22 146" stroke="var(--c2, #6A5170)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <path d="M172 224 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: strap shoulder · closed scoop back · HIGH-CUT leg at the hip · fitted.
+       Against sundress it differs on hem and volume; against romper on hem and
+       volume. No skirt, no ruffle: one continuous fitted maillot. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-swimsuit__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #1F6E86)"/>
+      <stop offset="1" stop-color="var(--c2, #14505F)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-swimsuit__chev" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="16">
+      <path d="M0 12 L10 4 L20 12" stroke="var(--c3, #F3E2C0)" stroke-width="3"
+            stroke-opacity="0.55" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-swimsuit__clip">
+      <path d="M148 172 q-6 42 -4 84 q2 62 18 90 q18 30 38 30 q20 0 38-30 q16-28 18-90 q2-42 -4-84 q-52-16 -104 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M148 172 q-6 42 -4 84 q2 62 18 90 q18 30 38 30 q20 0 38-30 q16-28 18-90 q2-42 -4-84 q-52-16 -104 0 z"
+          fill="url(#midage-male-onepiece-swimsuit__suit)"/>
+  </g>
+
+  <!-- pattern: chevron banding across the body -->
+  <g clip-path="url(#midage-male-onepiece-swimsuit__clip)">
+    <rect x="140" y="220" width="120" height="64" fill="url(#midage-male-onepiece-swimsuit__chev)"/>
+  </g>
+
+  <!-- trim: bound scoop neckline and the two shoulder straps -->
+  <path d="M162 168 q38 22 76 0 q-6 22 -38 22 q-32 0-38-22 z" fill="var(--c3, #F3E2C0)"/>
+  <path d="M154 170 q-2-8 4-12" stroke="var(--c3, #F3E2C0)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M246 170 q2-8 -4-12" stroke="var(--c3, #F3E2C0)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- trim: bound high-cut leg openings, the defining edge -->
+  <path d="M148 300 q14 34 34 46" stroke="var(--c3, #F3E2C0)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 300 q-14 34 -34 46" stroke="var(--c3, #F3E2C0)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: princess seams shaping the fitted body -->
+  <path d="M174 198 q-6 70 4 128" stroke="var(--c2, #14505F)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M226 198 q6 70 -4 128" stroke="var(--c2, #14505F)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M162 194 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

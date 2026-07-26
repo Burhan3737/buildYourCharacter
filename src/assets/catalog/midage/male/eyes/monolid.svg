@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- aperture: wide shallow lens, no crease; lash line straight and level -->
+  <defs>
+    <linearGradient id="midage-male-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-male-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="midage-male-eyes-monolid__clip-l">
+      <path d="M159 110 Q178 100.5 197 110 Q178 118.5 159 110 Z"/>
+    </clipPath>
+    <clipPath id="midage-male-eyes-monolid__clip-r">
+      <path d="M241 110 Q222 100.5 203 110 Q222 118.5 241 110 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide, shallow lens aperture, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <path d="M159 110 Q178 100.5 197 110 Q178 118.5 159 110 Z"
+          fill="url(#midage-male-eyes-monolid__sclera)"/>
+    <path d="M241 110 Q222 100.5 203 110 Q222 118.5 241 110 Z"
+          fill="url(#midage-male-eyes-monolid__sclera)"/>
+  </g>
+
+  <!-- iris: large, clipped by the shallow opening top and bottom -->
+  <g clip-path="url(#midage-male-eyes-monolid__clip-l)">
+    <circle cx="178" cy="110.5" r="9.2" fill="#3B2A22"/>
+    <circle cx="178" cy="110.5" r="9.2" fill="url(#midage-male-eyes-monolid__iris)"/>
+    <circle cx="178" cy="110.5" r="4.2" fill="#3B2A22"/>
+    <circle cx="174.8" cy="107.4" r="2.7" fill="#FFFFFF"/>
+    <circle cx="181.4" cy="114" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g clip-path="url(#midage-male-eyes-monolid__clip-r)">
+    <circle cx="222" cy="110.5" r="9.2" fill="#3B2A22"/>
+    <circle cx="222" cy="110.5" r="9.2" fill="url(#midage-male-eyes-monolid__iris)"/>
+    <circle cx="222" cy="110.5" r="4.2" fill="#3B2A22"/>
+    <circle cx="218.8" cy="107.4" r="2.7" fill="#FFFFFF"/>
+    <circle cx="225.4" cy="114" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- wide flat lash line: level, no arch, carried right out to both corners -->
+  <path d="M157.5 103 H198.5" stroke="#3B2A22" stroke-opacity="0.94" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242.5 103 H201.5" stroke="#3B2A22" stroke-opacity="0.94" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- smooth single fold: a soft shaded plane instead of a drawn crease -->
+  <path d="M160 96.5 Q178 93 196 96.5" stroke="var(--skin2, #E7B892)" stroke-opacity="0.4"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M240 96.5 Q222 93 204 96.5" stroke="var(--skin2, #E7B892)" stroke-opacity="0.4"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash hint, level to match -->
+  <path d="M164 120.5 H192" stroke="#3B2A22" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 120.5 H208" stroke="#3B2A22" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thick" data-family="thick" data-slot="brows"
+     data-layer="face" data-colors="hair2" data-hides="">
+  <defs>
+    <linearGradient id="midage-male-brows-thick__hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair2, #6B4A3A)" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="var(--hair2, #6B4A3A)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="midage-male-brows-thick__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3B2A22" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left brow: 12px of even weight, blunt SQUARED inner end standing vertically
+         at x=197, straight lower edge, only a light taper at the temple.
+         Spans x 155 to 197, centred on the brow line y~91. -->
+    <path d="M197 85.2
+             L197 97.6
+             L173.5 96.4
+             C163.5 95.6 155.4 94.0 155.0 91.2
+             C154.6 88.2 163.0 85.8 173.5 85.2
+             Z"
+          fill="url(#midage-male-brows-thick__hair)"/>
+    <!-- right brow, mirrored about the centreline x=200 -->
+    <path d="M203 85.2
+             L203 97.6
+             L226.5 96.4
+             C236.5 95.6 244.6 94.0 245.0 91.2
+             C245.4 88.2 237.0 85.8 226.5 85.2
+             Z"
+          fill="url(#midage-male-brows-thick__hair)"/>
+
+    <!-- lower-edge deepening, keeping the papercut light-top / heavy-bottom read -->
+    <path d="M197 85.2
+             L197 97.6
+             L173.5 96.4
+             C163.5 95.6 155.4 94.0 155.0 91.2
+             C154.6 88.2 163.0 85.8 173.5 85.2
+             Z"
+          fill="url(#midage-male-brows-thick__shade)"/>
+    <path d="M203 85.2
+             L203 97.6
+             L226.5 96.4
+             C236.5 95.6 244.6 94.0 245.0 91.2
+             C245.4 88.2 237.0 85.8 226.5 85.2
+             Z"
+          fill="url(#midage-male-brows-thick__shade)"/>
+  </g>
+
+  <!-- a few coarse hairs combed outward: the middle-aged tell on a heavy brow -->
+  <path d="M165 88 q6 -1.5 12 -1" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 88 q-6 -1.5 -12 -1" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

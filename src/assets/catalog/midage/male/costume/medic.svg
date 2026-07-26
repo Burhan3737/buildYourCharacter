@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: SHORT set-in sleeve · closed V-neck, no placket · hip-length tunic over
+       drawstring trousers · boxy. Against chef it differs on sleeve length and
+       closure; against firefighter on sleeve length and volume. -->
+  <defs>
+    <linearGradient id="midage-male-costume-medic__scrub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9A93)"/>
+      <stop offset="1" stop-color="var(--c2, #37746F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-medic__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9A93)"/>
+      <stop offset="1" stop-color="var(--c2, #37746F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="102" y="168" width="32" height="82" rx="16" fill="url(#midage-male-costume-medic__scrub)"/>
+    <rect x="266" y="168" width="32" height="82" rx="16" fill="url(#midage-male-costume-medic__scrub)"/>
+    <path d="M120 196 q0-34 42-34 h76 q42 0 42 34 v112 q0 12 -14 12 h-132 q-14 0-14-12 z"
+          fill="url(#midage-male-costume-medic__scrub)"/>
+    <rect x="152" y="312" width="46" height="240" rx="18" fill="url(#midage-male-costume-medic__trouser)"/>
+    <rect x="202" y="312" width="46" height="240" rx="18" fill="url(#midage-male-costume-medic__trouser)"/>
+  </g>
+
+  <!-- trim: bound V-neck, cut deep with no placket -->
+  <path d="M172 162 L200 214 L228 162 L216 160 L200 194 L184 160 Z" fill="var(--c2, #37746F)"/>
+  <!-- structural: chest patch pocket and two hip pockets -->
+  <path d="M148 226 h40 v42 q0 8 -8 8 h-24 q-8 0-8-8 z" fill="var(--c2, #37746F)"/>
+  <path d="M154 240 h28" stroke="var(--c3, #EFE7D6)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M132 286 h34 v28 h-34 z" fill="var(--c2, #37746F)"/>
+  <path d="M268 286 h-34 v28 h34 z" fill="var(--c2, #37746F)"/>
+  <!-- structural: the trouser drawstring, tied at the waist -->
+  <path d="M152 322 h96" stroke="var(--c2, #37746F)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M192 326 q-8 18 -12 28" stroke="var(--c3, #EFE7D6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M208 326 q8 18 12 28" stroke="var(--c3, #EFE7D6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- trim: lanyard round the neck with a plain blank card -->
+  <path d="M182 178 q-6 40 12 62" stroke="var(--c3, #EFE7D6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M218 178 q6 40 -12 62" stroke="var(--c3, #EFE7D6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="188" y="238" width="24" height="32" rx="4" fill="var(--c3, #EFE7D6)"/>
+  <path d="M192 250 h16" stroke="var(--c2, #37746F)" stroke-opacity="0.5" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M192 258 h16" stroke="var(--c2, #37746F)" stroke-opacity="0.5" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- soft shoes -->
+  <g class="sp-shadow">
+    <rect x="150" y="542" width="52" height="28" rx="13" fill="var(--c3, #EFE7D6)"/>
+    <rect x="198" y="542" width="52" height="28" rx="13" fill="var(--c3, #EFE7D6)"/>
+  </g>
+
+  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

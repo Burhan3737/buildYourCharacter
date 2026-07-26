@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: natural elasticated rise · mid-thigh leg · relaxed width · SIDE-SPLIT
+       hem. Against shorts it differs on hem treatment and waistband; against
+       sweat-shorts on leg length and hem. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-swim-trunks__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7E86)"/>
+      <stop offset="1" stop-color="var(--c2, #215E64)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7E86)"/>
+      <stop offset="1" stop-color="var(--c2, #215E64)"/>
+    </linearGradient>
+    <pattern id="midage-male-bottom-swim-trunks__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 12 q4.5 -7 9 0 q4.5 7 9 0" stroke="var(--c3, #F2E5C8)" stroke-width="2.6"
+            stroke-opacity="0.65" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-male-bottom-swim-trunks__clip">
+      <path d="M156 350 H198 V424 q0 10 -9 10 H165 q-9 0-9-10 Z"/>
+      <path d="M244 350 H202 V424 q0 10 9 10 H235 q9 0 9-10 Z"/>
+      <rect x="139" y="314" width="122" height="60" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M156 350 H198 V424 q0 10 -9 10 H165 q-9 0-9-10 Z"
+          fill="url(#midage-male-bottom-swim-trunks__leg)"/>
+    <path d="M244 350 H202 V424 q0 10 9 10 H235 q9 0 9-10 Z"
+          fill="url(#midage-male-bottom-swim-trunks__leg)"/>
+    <rect x="139" y="314" width="122" height="60" rx="20" fill="url(#midage-male-bottom-swim-trunks__hip)"/>
+  </g>
+
+  <!-- pattern: small wave motif across the whole garment -->
+  <g clip-path="url(#midage-male-bottom-swim-trunks__clip)">
+    <rect x="134" y="310" width="132" height="130" fill="url(#midage-male-bottom-swim-trunks__wave)"/>
+  </g>
+
+  <!-- trim: elastic waistband with a flat tie -->
+  <rect x="139" y="314" width="122" height="16" rx="8" fill="var(--c2, #215E64)"/>
+  <path d="M188 330 q-10 12 -16 18" stroke="var(--c3, #F2E5C8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M212 330 q10 12 16 18" stroke="var(--c3, #F2E5C8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- structural: the short side split at each hem, the trunks' tell -->
+  <path d="M158 400 v30" stroke="var(--c2, #215E64)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M242 400 v30" stroke="var(--c2, #215E64)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- trim: contrast binding along the hem -->
+  <path d="M158 428 h38" stroke="var(--c3, #F2E5C8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M204 428 h38" stroke="var(--c3, #F2E5C8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 346 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

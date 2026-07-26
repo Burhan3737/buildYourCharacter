@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mop Shag" data-family="mop-shag" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `bob` and `long-waves`:
+       (1) VOLUME/TEXTURE OF THE OUTLINE — every hem in this file is a stepped zigzag
+           of unequal chops cut into the silhouette path itself, front and back, so
+           there is no smooth arc anywhere;
+       (2) LENGTH — it stops at the chin around y160, between the bob's jaw-length
+           swing and the past-shoulder waves, and the fringe hangs to y104 over the
+           brow rather than being swept to a side. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-mop-shag__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M138 66 C128 100 128 130 134 154
+               L146 138 L152 158 L164 140 L172 162 L186 144 L200 164
+               L214 144 L228 162 L236 140 L248 158 L254 138 L266 154
+               C272 130 272 100 262 66 C240 44 160 44 138 66 Z"
+            fill="url(#midage-male-hair-mop-shag__back-grad)"/>
+    </g>
+    <!-- layer shadows so the chops read as stacked layers, not as a saw edge -->
+    <path d="M140 118 Q170 130 200 128" stroke="var(--hair2, #331E16)" stroke-width="3.2"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M260 118 Q230 130 200 128" stroke="var(--hair2, #331E16)" stroke-width="3.2"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M150 140 q10 10 14 2" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M186 146 q12 12 16 2" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M234 142 q12 12 16 2" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-mop-shag__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-mop-shag__lock-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- heavy fringe, chopped irregularly right across the brow -->
+      <path d="M136 116 C134 58 162 32 200 32 C238 32 266 58 264 116
+               L256 100 L248 114 L238 96 L228 110 L214 92 L200 106
+               L186 92 L172 108 L162 94 L152 110 L144 96 Z"
+            fill="url(#midage-male-hair-mop-shag__front-grad)"/>
+      <!-- one long side lock in front of the ear, stepped at the end -->
+      <path d="M138 92 C130 116 129 140 134 158 L142 146 L148 160 L154 142
+               C152 124 152 106 156 88 Z"
+            fill="url(#midage-male-hair-mop-shag__lock-grad)"/>
+      <path d="M262 92 C270 116 271 142 266 160 L258 146 L252 162 L246 144
+               C248 126 248 106 244 88 Z"
+            fill="url(#midage-male-hair-mop-shag__lock-grad)"/>
+    </g>
+    <!-- choppy fringe strands -->
+    <path d="M166 60 Q162 82 160 96" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M188 52 Q186 78 186 94" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M212 52 Q214 78 214 94" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M234 60 Q238 82 240 96" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M144 118 q6 14 4 26" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M256 118 q-6 14 -4 26" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M164 48 C182 36 218 36 236 48" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

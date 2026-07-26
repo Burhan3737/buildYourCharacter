@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: long sleeve · OPEN FRONT worn over a tee · past hip with a SQUARED hem ·
+       boxy. Against cardigan it differs on hem shape and volume; against button-up
+       on closure and hem. -->
+  <defs>
+    <linearGradient id="midage-male-top-flannel-overshirt__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9E4B44)"/>
+      <stop offset="1" stop-color="var(--c2, #7A342F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9E4B44)"/>
+      <stop offset="1" stop-color="var(--c2, #7A342F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-flannel-overshirt__tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E9E4D8)"/>
+      <stop offset="1" stop-color="var(--c3, #CDC7B7)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-flannel-overshirt__plaid" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <rect x="0" y="0" width="24" height="7" fill="var(--c2, #7A342F)" opacity="0.85"/>
+      <rect x="0" y="0" width="7" height="24" fill="var(--c2, #7A342F)" opacity="0.85"/>
+      <rect x="14" y="14" width="3" height="10" fill="var(--c3, #E9E4D8)" opacity="0.45"/>
+      <rect x="14" y="14" width="10" height="3" fill="var(--c3, #E9E4D8)" opacity="0.45"/>
+    </pattern>
+    <clipPath id="midage-male-top-flannel-overshirt__clip">
+      <path d="M120 194 q0-36 40-36 h36 v170 h-76 z"/>
+      <path d="M280 194 q0-36 -40-36 h-36 v170 h76 z"/>
+      <rect x="96" y="172" width="38" height="178" rx="18"/>
+      <rect x="266" y="172" width="38" height="178" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="96" y="172" width="38" height="178" rx="18" fill="url(#midage-male-top-flannel-overshirt__sleeve)"/>
+    <rect x="266" y="172" width="38" height="178" rx="18" fill="url(#midage-male-top-flannel-overshirt__sleeve)"/>
+    <rect x="176" y="166" width="48" height="150" rx="10" fill="url(#midage-male-top-flannel-overshirt__tee)"/>
+    <path d="M120 194 q0-36 40-36 h36 v170 h-76 z" fill="url(#midage-male-top-flannel-overshirt__cloth)"/>
+    <path d="M280 194 q0-36 -40-36 h-36 v170 h76 z" fill="url(#midage-male-top-flannel-overshirt__cloth)"/>
+  </g>
+
+  <!-- pattern: plaid, two crossed bands, clipped to the overshirt only -->
+  <g clip-path="url(#midage-male-top-flannel-overshirt__clip)">
+    <rect x="90" y="150" width="220" height="210" fill="url(#midage-male-top-flannel-overshirt__plaid)" opacity="0.75"/>
+  </g>
+
+  <!-- structural: two flapped chest pockets -->
+  <path d="M136 218 h36 v12 h-36 z" fill="var(--c2, #7A342F)"/>
+  <path d="M228 218 h36 v12 h-36 z" fill="var(--c2, #7A342F)"/>
+  <!-- trim: buttoned cuffs and a flat collar -->
+  <rect x="96" y="330" width="38" height="18" rx="9" fill="var(--c2, #7A342F)"/>
+  <rect x="266" y="330" width="38" height="18" rx="9" fill="var(--c2, #7A342F)"/>
+  <path d="M172 158 L200 186 L228 158 L242 170 L228 190 L200 200 L172 190 L158 170 Z"
+        fill="var(--c2, #7A342F)"/>
+
+  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

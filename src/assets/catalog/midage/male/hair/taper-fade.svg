@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `high-top-fade` and `buzz`:
+       (1) VOLUME — the top is 45px of low, flat-brushed hair against the high-top's
+           76px column, so the outline barely leaves the skull;
+       (2) LENGTH — the taper carries the sides all the way down past the ear line to
+           y104 in a continuous shortening, where the high-top cuts them off square.
+       Sharp hairline at y90, and the fade is a value ramp inside the hair itself. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-taper-fade__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #4B4846)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the taper carries round the nape and disappears into the skin -->
+      <path d="M154 110 C156 132 174 146 200 146 C226 146 244 132 246 110 Z"
+            fill="url(#midage-male-hair-taper-fade__back-grad)"/>
+    </g>
+    <path d="M170 122 q30 10 60 0" stroke="var(--hair2, #4B4846)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-taper-fade__fade-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="0.45" stop-color="var(--hair2, #4B4846)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)" stop-opacity="0.3"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-taper-fade__top-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded sides, shortest at the bottom -->
+      <path d="M142 104 Q142 70 200 62 Q258 70 258 104
+               L246 96 L228 91 L200 90 L170 91 L154 96 Z"
+            fill="url(#midage-male-hair-taper-fade__fade-grad)"/>
+      <!-- low flat top, barely proud of the skull -->
+      <path d="M160 84 L160 48 Q162 39 200 38 Q238 39 240 48 L240 84 Z"
+            fill="url(#midage-male-hair-taper-fade__top-grad)"/>
+    </g>
+
+    <!-- sharp hairline, one clean edge across the brow and round each temple -->
+    <path d="M158 90.5 H242" stroke="var(--hair2, #4B4846)" stroke-width="3.4"
+          fill="none" stroke-linecap="butt"/>
+    <path d="M143 101 Q160 92 176 90" stroke="var(--hair2, #4B4846)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M257 101 Q240 92 224 90" stroke="var(--hair2, #4B4846)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <!-- the taper's guideline where the short sides meet the longer top -->
+    <path d="M160 74 Q200 68 240 74" stroke="var(--hair2, #4B4846)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M172 46 q28 -5 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

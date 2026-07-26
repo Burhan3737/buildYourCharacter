@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Laugh" data-family="open-laugh" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- a 34px-tall open aperture with a tongue sitting in it: taller and rounder
+       than `grin`, which is a closed lip mass with a tooth band laid over it -->
+  <defs>
+    <linearGradient id="midage-male-mouth-open-laugh__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.58" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="midage-male-mouth-open-laugh__tongue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C25A50)" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="var(--lip1, #C25A50)" stop-opacity="0.6"/>
+    </linearGradient>
+    <clipPath id="midage-male-mouth-open-laugh__inner">
+      <path d="M177 121 C189 117.5 211 117.5 223 121 C226 135 215.5 148 200 148
+               C184.5 148 174 135 177 121 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M169 116 C182 111 218 111 231 116 C235 133 224 152 200 152
+             C176 152 165 133 169 116 Z"
+          fill="var(--lip1, #C25A50)"/>
+    <path d="M169 116 C182 111 218 111 231 116 C235 133 224 152 200 152
+             C176 152 165 133 169 116 Z"
+          fill="url(#midage-male-mouth-open-laugh__vol)"/>
+  </g>
+
+  <!-- the dark of the open mouth -->
+  <path d="M177 121 C189 117.5 211 117.5 223 121 C226 135 215.5 148 200 148
+           C184.5 148 174 135 177 121 Z"
+        fill="#3B2A22" opacity="0.82"/>
+
+  <g clip-path="url(#midage-male-mouth-open-laugh__inner)">
+    <!-- upper tooth band, clipped so it follows the aperture -->
+    <path d="M177 119 H223 V128 C211 130 189 130 177 128 Z" fill="#FFFFFF" opacity="0.94"/>
+    <!-- tongue, filling the lower half of the opening -->
+    <path d="M186 137 C186 128 214 128 214 137 C214 146 208 151 200 151
+             C192 151 186 146 186 137 Z"
+          fill="url(#midage-male-mouth-open-laugh__tongue)"/>
+    <path d="M192 138 q8 -4 16 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- tooth separations, and the lit crest of the lower lip -->
+  <path d="M190 119.5 V128.5" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="1.3"/>
+  <path d="M210 119.5 V128.5" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="1.3"/>
+  <path d="M186 149 Q200 155 214 149" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

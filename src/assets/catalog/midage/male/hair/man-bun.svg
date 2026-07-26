@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Man Bun" data-family="man-bun" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `bun` and `ponytail`:
+       (1) PARTING — everything is swept straight back off an exposed forehead, so the
+           front mass is a band along the top of the skull with 26px of bare brow
+           beneath it, where `bun` brings a full fringe down to y90;
+       (2) GATHERING — the knot is small and sits HIGH, breaking the outline above the
+           crown at y14, instead of the low round bun at y118 behind the head.
+       Salt-and-pepper by default, which suits the age of this bundle. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-man-bun__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-man-bun__knot-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- hair pulled tight to the skull and gathered behind -->
+      <path d="M150 56 Q140 92 148 124 L252 124 Q260 92 250 56 Q200 38 150 56 Z"
+            fill="url(#midage-male-hair-man-bun__back-grad)"/>
+      <!-- the knot, sitting high on the back of the crown -->
+      <circle cx="200" cy="40" r="26" fill="url(#midage-male-hair-man-bun__knot-grad)"/>
+    </g>
+    <!-- the wrap holding the knot, and the coil inside it -->
+    <path d="M182 52 q18 10 36 0 l2 10 q-20 11 -40 0 z" fill="var(--hair2, #4B4846)"/>
+    <path d="M188 36 C188 28 212 28 212 38 C212 46 194 48 192 42"
+          stroke="var(--hair2, #4B4846)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M186 26 q14 -8 28 -1" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-man-bun__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E6A68)"/>
+        <stop offset="1" stop-color="var(--hair2, #4B4846)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept-back band: forehead left bare from y67 down -->
+      <path d="M141 88 C138 66 148 50 166 42 C182 34 218 34 234 42
+               C252 50 262 66 259 88
+               C252 76 240 70 224 68 C210 66 190 66 176 68 C160 70 148 76 141 88 Z"
+            fill="url(#midage-male-hair-man-bun__front-grad)"/>
+      <!-- two strands escaping at the temples -->
+      <path d="M146 78 C140 94 139 112 143 128 C147 134 153 133 154 126
+               C152 112 152 96 156 82 Z"
+            fill="url(#midage-male-hair-man-bun__front-grad)"/>
+      <path d="M254 80 C260 96 261 116 257 132 C253 138 247 137 246 130
+               C248 116 248 98 244 84 Z"
+            fill="url(#midage-male-hair-man-bun__front-grad)"/>
+    </g>
+    <!-- comb marks running back from the hairline -->
+    <path d="M156 78 Q176 62 200 58" stroke="var(--hair2, #4B4846)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M244 78 Q224 62 200 58" stroke="var(--hair2, #4B4846)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M172 72 Q196 60 224 66" stroke="var(--hair2, #4B4846)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M164 52 C182 42 218 42 236 52" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

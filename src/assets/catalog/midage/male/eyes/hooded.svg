@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- aperture: shortened by a skin hood that thickens over the outer half,
+       leaving a short strip of visible lid on the inner half -->
+  <defs>
+    <linearGradient id="midage-male-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-male-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+    <clipPath id="midage-male-eyes-hooded__clip-l">
+      <path d="M163 112 Q178 103 193 108 Q191 120.5 178 121 Q166.5 120 163 112 Z"/>
+    </clipPath>
+    <clipPath id="midage-male-eyes-hooded__clip-r">
+      <path d="M237 112 Q222 103 207 108 Q209 120.5 222 121 Q233.5 120 237 112 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M163 112 Q178 103 193 108 Q191 120.5 178 121 Q166.5 120 163 112 Z"
+          fill="url(#midage-male-eyes-hooded__sclera)"/>
+    <path d="M237 112 Q222 103 207 108 Q209 120.5 222 121 Q233.5 120 237 112 Z"
+          fill="url(#midage-male-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#midage-male-eyes-hooded__clip-l)">
+    <circle cx="178" cy="112.5" r="9" fill="#3B2A22"/>
+    <circle cx="178" cy="112.5" r="9" fill="url(#midage-male-eyes-hooded__iris)"/>
+    <circle cx="178" cy="112.5" r="4.1" fill="#3B2A22"/>
+    <circle cx="175" cy="109.6" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#midage-male-eyes-hooded__clip-r)">
+    <circle cx="222" cy="112.5" r="9" fill="#3B2A22"/>
+    <circle cx="222" cy="112.5" r="9" fill="url(#midage-male-eyes-hooded__iris)"/>
+    <circle cx="222" cy="112.5" r="4.1" fill="#3B2A22"/>
+    <circle cx="219" cy="109.6" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line sits low, following the shortened opening -->
+  <path d="M161 111.5 Q178 102 194 107.5" stroke="#3B2A22" stroke-opacity="0.94"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M239 111.5 Q222 102 206 107.5" stroke="#3B2A22" stroke-opacity="0.94"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- the hood itself: skin, heavy at the outer corner, thinning to nothing inside -->
+  <path d="M197 92 C186 86 168 86 157 93 C154 99 156 105.5 162.5 107.5
+           C170.5 108.5 176.5 104 180.5 99 C185.5 95 191 93 197 92 Z"
+        fill="var(--skin1, #F7D2B0)"/>
+  <path d="M203 92 C214 86 232 86 243 93 C246 99 244 105.5 237.5 107.5
+           C229.5 108.5 223.5 104 219.5 99 C214.5 95 209 93 203 92 Z"
+        fill="var(--skin1, #F7D2B0)"/>
+
+  <!-- crease riding on top of the hood -->
+  <path d="M156.5 93.5 C167 87 186 87 197.5 92.5" stroke="var(--skin2, #E7B892)"
+        stroke-opacity="0.7" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M243.5 93.5 C233 87 214 87 202.5 92.5" stroke="var(--skin2, #E7B892)"
+        stroke-opacity="0.7" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- shadow the hood throws on the short visible lid strip -->
+  <path d="M162 106.5 C171 108 179 104 184.5 99.5" stroke="var(--skin2, #E7B892)"
+        stroke-opacity="0.55" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M238 106.5 C229 108 221 104 215.5 99.5" stroke="var(--skin2, #E7B892)"
+        stroke-opacity="0.55" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</svg>

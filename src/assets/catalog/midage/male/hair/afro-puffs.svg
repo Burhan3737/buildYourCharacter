@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Afro Puffs" data-family="afro-puffs" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `afro` and vs `pigtails`:
+       (1) GATHERING — the mass is sectioned into two puffs bound above the ear line,
+           so the outline is two big lobes flanking a low crown, not one dome;
+       (2) VOLUME/TEXTURE OF THE OUTLINE — every contour here is coily: the puffs are
+           built from overlapping lobes of unequal size and the crown edge is bumpy,
+           so the texture IS the silhouette rather than a decoration inside it. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-afro-puffs__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left puff: lobed, no two bumps the same size -->
+      <path d="M120 40 C133 35 143 45 143 57 C155 54 164 65 158 78
+               C167 87 161 100 148 101 C147 114 133 120 124 112
+               C111 119 99 111 97 99 C84 96 80 82 89 73
+               C82 60 92 48 105 50 C107 41 113 37 120 40 Z"
+            fill="url(#midage-male-hair-afro-puffs__back-grad)"/>
+      <!-- right puff: mirrored placement, deliberately different lobe rhythm -->
+      <path d="M280 44 C267 38 256 47 257 60 C245 55 235 66 242 80
+               C233 88 240 101 252 102 C254 115 268 121 277 113
+               C290 120 302 111 303 98 C316 94 319 80 310 71
+               C317 59 306 47 293 50 C291 41 286 40 280 44 Z"
+            fill="url(#midage-male-hair-afro-puffs__back-grad)"/>
+    </g>
+    <!-- lobe undersides, so each puff reads as coils rather than a ball -->
+    <path d="M104 92 q12 10 24 4" stroke="var(--hair2, #331E16)" stroke-width="3.4"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M112 68 q13 9 26 3" stroke="var(--hair2, #331E16)" stroke-width="3.4"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M296 94 q-12 10 -24 4" stroke="var(--hair2, #331E16)" stroke-width="3.4"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M288 70 q-13 9 -26 3" stroke="var(--hair2, #331E16)" stroke-width="3.4"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <!-- puff bindings -->
+    <path d="M146 76 q10 -6 18 0 l-1 12 q-8 -5 -17 0 z" fill="var(--hair2, #331E16)"/>
+    <path d="M254 78 q-10 -6 -18 0 l1 12 q8 -5 17 0 z" fill="var(--hair2, #331E16)"/>
+    <path d="M106 56 q14 -10 28 -6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M294 58 q-14 -10 -28 -6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-afro-puffs__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- low crown, left of the part: outer edge bumpy, hairline visible at the temple -->
+      <path d="M141 92 C134 76 138 62 148 54 C152 44 164 40 172 44
+               C180 36 192 36 197 40 L197 79 C168 81 152 84 141 92 Z"
+            fill="url(#midage-male-hair-afro-puffs__front-grad)"/>
+      <!-- right of the part -->
+      <path d="M259 92 C266 76 262 62 252 54 C248 44 236 40 228 44
+               C220 36 208 36 203 40 L203 79 C232 81 248 84 259 92 Z"
+            fill="url(#midage-male-hair-afro-puffs__front-grad)"/>
+    </g>
+    <!-- the part between the two sections -->
+    <path d="M197 40 H203 V79 H197 Z" fill="var(--skin1, #F7D2B0)"/>
+    <path d="M200 42 V77" stroke="var(--skin2, #E7B892)" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- hairline at the temples: skin reclaiming the corners -->
+    <path d="M141 90 Q150 80 164 76 Q150 84 145 95 Z" fill="var(--skin1, #F7D2B0)" opacity="0.92"/>
+    <path d="M259 90 Q250 80 236 76 Q250 84 255 95 Z" fill="var(--skin1, #F7D2B0)" opacity="0.92"/>
+    <!-- coil shadows on the crown -->
+    <path d="M156 70 q10 8 20 2" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M180 54 q9 8 16 2" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M244 70 q-10 8 -20 2" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M220 54 q-9 8 -16 2" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

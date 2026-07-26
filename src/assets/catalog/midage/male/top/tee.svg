@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tee" data-family="tee" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: short set-in sleeve · closed crew · hip · straight.
+       Against jersey it differs on shoulder (set-in vs raglan) and volume (straight vs boxy);
+       against stripes on sleeve length and neckline width. -->
   <defs>
     <linearGradient id="midage-male-top-tee__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
@@ -13,15 +16,24 @@
   </defs>
 
   <g class="sp-shadow">
-    <rect x="102" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-tee__sleeve)"/>
-    <rect x="266" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-tee__sleeve)"/>
-    <path d="M124 198 q0-40 40-40 h72 q40 0 40 40 v60 q0 42 -40 42 h-72 q-40 0-40-42 z"
+    <path d="M136 164 h-28 q-10 0 -11 10 l-5 60 q-1 10 9 12 l26 5 q10 1 10-9 z"
+          fill="url(#midage-male-top-tee__sleeve)"/>
+    <path d="M264 164 h28 q10 0 11 10 l5 60 q1 10 -9 12 l-26 5 q-10 1 -10-9 z"
+          fill="url(#midage-male-top-tee__sleeve)"/>
+    <path d="M124 196 q0-38 40-38 h72 q40 0 40 38 v60 q0 46 -40 46 h-72 q-40 0-40-46 z"
           fill="url(#midage-male-top-tee__body)"/>
   </g>
 
-  <!-- crew neckline -->
-  <path d="M172 160 q28 20 56 0 q-4 26 -28 26 q-24 0 -28-26 z" fill="var(--c2, #6B7FD0)"/>
+  <!-- trim: contrast-bound crew neck and matching sleeve binds -->
+  <path d="M172 158 q28 22 56 0 q-4 26 -28 26 q-24 0 -28-26 z" fill="var(--c3, #4E5FA8)"/>
+  <path d="M100 232 l32 6 l-2 14 l-32-6 z" fill="var(--c3, #4E5FA8)"/>
+  <path d="M300 232 l-32 6 l2 14 l32-6 z" fill="var(--c3, #4E5FA8)"/>
+  <!-- structural: a single flat-felled side seam either side -->
+  <path d="M140 214 q-4 44 0 84" stroke="var(--c2, #6B7FD0)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 214 q4 44 0 84" stroke="var(--c2, #6B7FD0)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
 
-  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M150 188 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

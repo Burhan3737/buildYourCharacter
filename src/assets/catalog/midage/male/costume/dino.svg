@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dino" data-family="dino" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: set-in sleeve · closed · ankle · ROUNDED SOFT volume.
+       Against dragon it differs on volume (soft plush vs angular plated) and
+       shoulder (no wing stubs); against web-runner on volume and closure. -->
   <defs>
     <linearGradient id="midage-male-costume-dino__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c1, #4E9C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8C)"/>
     </linearGradient>
-    <linearGradient id="midage-male-costume-dino__spike" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #4E9C8C)"/>
-      <stop offset="1" stop-color="var(--c2, #366F63)"/>
+    <linearGradient id="midage-male-costume-dino__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8C)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="162" y="340" width="36" height="212" rx="18" fill="url(#midage-male-costume-dino__body)"/>
-    <rect x="202" y="340" width="36" height="212" rx="18" fill="url(#midage-male-costume-dino__body)"/>
-    <rect x="146" y="316" width="108" height="58" rx="26" fill="url(#midage-male-costume-dino__body)"/>
-    <path d="M126 200 q0-36 36-36 h76 q36 0 36 36 v100 q0 40 -36 40 h-76 q-36 0-36-40 z"
+    <path d="M120 208 q0-46 44-48 h72 q44 2 44 48 q6 62 -12 96 q-24 24 -68 24 q-44 0-68-24 q-18-34 -12-96 z"
           fill="url(#midage-male-costume-dino__body)"/>
-    <rect x="102" y="168" width="32" height="172" rx="16" fill="url(#midage-male-costume-dino__body)"/>
-    <rect x="266" y="168" width="32" height="172" rx="16" fill="url(#midage-male-costume-dino__body)"/>
+    <rect x="142" y="316" width="116" height="62" rx="30" fill="url(#midage-male-costume-dino__limb)"/>
+    <rect x="158" y="344" width="42" height="210" rx="21" fill="url(#midage-male-costume-dino__limb)"/>
+    <rect x="200" y="344" width="42" height="210" rx="21" fill="url(#midage-male-costume-dino__limb)"/>
+    <rect x="100" y="170" width="34" height="166" rx="17" fill="url(#midage-male-costume-dino__limb)"/>
+    <rect x="266" y="170" width="34" height="166" rx="17" fill="url(#midage-male-costume-dino__limb)"/>
   </g>
 
-  <!-- soft dorsal spikes down the back, staying below the shoulder line -->
-  <path d="M196 168 l8 -6 l8 6 v10 h-16 z" fill="url(#midage-male-costume-dino__spike)"/>
-  <path d="M192 210 l8 -8 l8 8 v12 h-16 z" fill="url(#midage-male-costume-dino__spike)"/>
-  <path d="M190 254 l10 -8 l10 8 v12 h-20 z" fill="url(#midage-male-costume-dino__spike)"/>
-  <path d="M190 298 l10 -8 l10 8 v12 h-20 z" fill="url(#midage-male-costume-dino__spike)"/>
-
-  <!-- scale texture accents -->
-  <circle cx="170" cy="230" r="7" fill="var(--c2, #4E9C8C)" opacity="0.5"/>
-  <circle cx="230" cy="230" r="7" fill="var(--c2, #4E9C8C)" opacity="0.5"/>
-  <circle cx="170" cy="270" r="7" fill="var(--c2, #4E9C8C)" opacity="0.5"/>
-  <circle cx="230" cy="270" r="7" fill="var(--c2, #4E9C8C)" opacity="0.5"/>
-
-  <!-- soft belly patch -->
-  <rect x="182" y="220" width="36" height="90" rx="16" fill="var(--c3, #F7C873)" opacity="0.85"/>
-
-  <!-- tail, trailing from the hip -->
-  <path d="M254 340 q40 30 46 90 q2 20 -14 22 q-10 -46 -40 -76 z" fill="url(#midage-male-costume-dino__body)"/>
-  <path d="M282 420 l10 6 l-10 8 z" fill="url(#midage-male-costume-dino__spike)"/>
-
+  <!-- structural: soft rounded dorsal humps, kept below the shoulder line -->
+  <path d="M186 166 q14-6 28 0 q-4 12 -14 12 q-10 0-14-12 z" fill="var(--c2, #4E9C8C)"/>
+  <path d="M180 206 q20-10 40 0 q-6 16 -20 16 q-14 0-20-16 z" fill="var(--c2, #4E9C8C)"/>
+  <path d="M178 254 q22-10 44 0 q-6 16 -22 16 q-16 0-22-16 z" fill="var(--c2, #4E9C8C)"/>
+  <path d="M180 302 q20-10 40 0 q-6 14 -20 14 q-14 0-20-14 z" fill="var(--c2, #4E9C8C)"/>
+  <!-- panel: the soft belly plate, the plush-costume tell -->
+  <path d="M170 228 q30-12 60 0 q6 42 0 76 q-30 14 -60 0 q-6-34 0-76 z" fill="var(--c3, #F5DFA8)"/>
+  <g stroke="var(--c2, #4E9C8C)" stroke-opacity="0.35" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M174 250 h52"/><path d="M172 274 h56"/><path d="M174 296 h52"/>
+  </g>
+  <!-- structural: thick rounded tail curling off the hip -->
+  <path d="M256 346 q46 34 50 96 q2 22 -18 24 q-10-50 -44-82 z" fill="var(--c2, #4E9C8C)"/>
+  <path d="M288 434 q12 4 12 14 q-10 4 -14-4 z" fill="var(--c3, #F5DFA8)"/>
+  <!-- rounded padded feet -->
   <g class="sp-shadow">
-    <rect x="160" y="490" width="38" height="70" rx="18" fill="var(--c1, #6BBFAD)"/>
-    <rect x="202" y="490" width="38" height="70" rx="18" fill="var(--c1, #6BBFAD)"/>
-    <rect x="154" y="544" width="48" height="26" rx="13" fill="var(--c2, #4E9C8C)"/>
-    <rect x="198" y="544" width="48" height="26" rx="13" fill="var(--c2, #4E9C8C)"/>
+    <path d="M150 528 h52 v28 q0 14 -16 14 h-24 q-16 0-16-16 z" fill="var(--c2, #4E9C8C)"/>
+    <path d="M250 528 h-52 v28 q0 14 16 14 h24 q16 0 16-16 z" fill="var(--c2, #4E9C8C)"/>
+  </g>
+  <g fill="var(--c3, #F5DFA8)">
+    <circle cx="162" cy="558" r="4.5"/><circle cx="176" cy="561" r="4.5"/><circle cx="190" cy="558" r="4.5"/>
+    <circle cx="210" cy="558" r="4.5"/><circle cx="224" cy="561" r="4.5"/><circle cx="238" cy="558" r="4.5"/>
   </g>
 
-  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M148 198 q52 20 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

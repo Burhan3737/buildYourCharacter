@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: short set-in sleeve · HALF PLACKET under a knit collar · hip with a
+       curved shirttail · fitted. Against tee it differs on closure and volume;
+       against button-up on closure length and sleeve length. -->
+  <defs>
+    <linearGradient id="midage-male-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FBF)"/>
+      <stop offset="1" stop-color="var(--c2, #52719E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FBF)"/>
+      <stop offset="1" stop-color="var(--c2, #52719E)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-polo__pique" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #EBE2CE)" opacity="0.5"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #EBE2CE)" opacity="0.5"/>
+    </pattern>
+    <clipPath id="midage-male-top-polo__clip">
+      <path d="M126 200 q2-42 42-42 h64 q42 0 44 42 v44 q0 26 -10 40 q-14 20 -66 20 q-52 0 -66-20 q-10-14 -10-40 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="104" y="168" width="30" height="76" rx="15" fill="url(#midage-male-top-polo__sleeve)"/>
+    <rect x="266" y="168" width="30" height="76" rx="15" fill="url(#midage-male-top-polo__sleeve)"/>
+    <path d="M126 200 q2-42 42-42 h64 q42 0 44 42 v44 q0 26 -10 40 q-14 20 -66 20 q-52 0 -66-20 q-10-14 -10-40 z"
+          fill="url(#midage-male-top-polo__body)"/>
+  </g>
+
+  <!-- pattern: fine pique dot, clipped to the body -->
+  <g clip-path="url(#midage-male-top-polo__clip)">
+    <rect x="120" y="150" width="164" height="160" fill="url(#midage-male-top-polo__pique)"/>
+  </g>
+
+  <!-- trim: flat knit collar with two points -->
+  <path d="M170 156 L200 190 L230 156 L246 168 L232 190 L200 204 L168 190 L154 168 Z"
+        fill="var(--c3, #EBE2CE)"/>
+  <!-- structural: short two-button placket -->
+  <rect x="192" y="190" width="16" height="46" rx="4" fill="var(--c3, #EBE2CE)"/>
+  <circle cx="200" cy="202" r="3.4" fill="var(--c2, #52719E)"/>
+  <circle cx="200" cy="224" r="3.4" fill="var(--c2, #52719E)"/>
+  <!-- trim: knit sleeve bands -->
+  <rect x="104" y="228" width="30" height="14" rx="7" fill="var(--c3, #EBE2CE)"/>
+  <rect x="266" y="228" width="30" height="14" rx="7" fill="var(--c3, #EBE2CE)"/>
+
+  <path d="M152 192 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

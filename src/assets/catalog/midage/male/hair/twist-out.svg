@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Twist Out" data-family="twist-out" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `curls` and `long-waves`:
+       (1) VOLUME/TEXTURE OF THE OUTLINE — the hem is built from eight spiral lobes of
+           unequal size cut straight into the silhouette path, so the outer contour is
+           irregular everywhere; nothing is drawn on top of a smooth shape;
+       (2) LENGTH — the defined spirals stop at the shoulder line around y196, between
+           the ear-length curls and the past-shoulder waves. No parting anywhere. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-twist-out__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M132 70 C118 106 114 148 122 180
+               C130 196 148 194 151 178
+               C158 198 176 202 182 186
+               C190 204 210 204 217 187
+               C224 202 244 199 249 183
+               C260 196 275 189 276 174
+               C282 140 279 104 268 70
+               C244 42 156 42 132 70 Z"
+            fill="url(#midage-male-hair-twist-out__back-grad)"/>
+    </g>
+    <!-- the two-strand twist of each falling lobe -->
+    <path d="M132 104 C140 112 132 122 140 130 C148 138 140 148 148 156"
+          stroke="var(--hair2, #331E16)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M164 108 C172 116 164 126 172 134 C180 142 172 152 180 162"
+          stroke="var(--hair2, #331E16)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M198 112 C206 120 198 130 206 138 C214 146 206 156 214 166"
+          stroke="var(--hair2, #331E16)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M232 108 C240 116 232 126 240 134 C248 142 240 152 248 160"
+          stroke="var(--hair2, #331E16)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M262 100 C270 108 262 118 268 128" stroke="var(--hair2, #331E16)"
+          stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-twist-out__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown volume, lobed all the way round the top edge -->
+      <path d="M134 108 C127 84 132 60 148 46
+               C158 32 178 26 196 28
+               C214 25 234 32 244 46
+               C262 58 270 84 264 108
+               C252 96 240 90 200 88
+               C160 89 146 95 134 108 Z"
+            fill="url(#midage-male-hair-twist-out__front-grad)"/>
+    </g>
+    <!-- spiral definition across the crown, no parting drawn anywhere -->
+    <path d="M152 84 C144 78 150 68 158 70 C166 72 166 62 158 58"
+          stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M182 80 C174 74 180 62 188 64 C196 66 196 54 188 50"
+          stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M214 80 C222 74 216 62 208 64 C200 66 200 54 208 50"
+          stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M246 84 C254 78 248 68 240 70 C232 72 232 62 240 58"
+          stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- hairline showing at the temples -->
+    <path d="M136 100 Q146 88 160 84 Q146 92 140 104 Z" fill="var(--skin1, #F7D2B0)" opacity="0.9"/>
+    <path d="M264 100 Q254 88 240 84 Q254 92 260 104 Z" fill="var(--skin1, #F7D2B0)" opacity="0.9"/>
+    <path d="M164 42 C182 30 216 30 234 42" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

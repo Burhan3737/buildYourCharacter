@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide Leg" data-family="wide-leg" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HIGH waist · full length · WIDE straight column · hem breaking over the
+       shoe. Against cargo it differs on rise and pocket structure; against
+       tailored-trousers on rise and leg width. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-wide-leg__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A8C7C)"/>
+      <stop offset="1" stop-color="var(--c2, #766A5C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-wide-leg__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A8C7C)"/>
+      <stop offset="1" stop-color="var(--c2, #766A5C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M148 356 H198 V546 q0 8 -8 8 H156 q-8 0-8-8 Z"
+          fill="url(#midage-male-bottom-wide-leg__leg)"/>
+    <path d="M252 356 H202 V546 q0 8 8 8 H244 q8 0 8-8 Z"
+          fill="url(#midage-male-bottom-wide-leg__leg)"/>
+    <rect x="140" y="300" width="120" height="78" rx="26" fill="url(#midage-male-bottom-wide-leg__hip)"/>
+  </g>
+
+  <!-- trim: deep high-rise waistband with a self belt -->
+  <rect x="140" y="300" width="120" height="26" rx="12" fill="var(--c2, #766A5C)"/>
+  <rect x="188" y="304" width="24" height="18" rx="4" fill="var(--c3, #E6DCC9)"/>
+  <!-- structural: two front pleats releasing into the column -->
+  <path d="M176 332 v34" stroke="var(--c2, #766A5C)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M224 332 v34" stroke="var(--c2, #766A5C)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- structural: the wide column's inner fall, drawn as long soft creases -->
+  <path d="M166 368 v176" stroke="var(--c3, #E6DCC9)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 368 v176" stroke="var(--c3, #E6DCC9)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: the hem break over the shoe -->
+  <path d="M150 534 q24 8 46 0" stroke="var(--c2, #766A5C)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M250 534 q-24 8 -46 0" stroke="var(--c2, #766A5C)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 336 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

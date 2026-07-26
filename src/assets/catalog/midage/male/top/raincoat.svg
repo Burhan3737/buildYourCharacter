@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: long sleeve · full SNAP placket · THIGH hem · flared/A-line.
+       Against button-up it differs on hem and volume; against poncho on shoulder
+       (set-in sleeve vs draped) and closure. -->
+  <defs>
+    <linearGradient id="midage-male-top-raincoat__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0B23F)"/>
+      <stop offset="1" stop-color="var(--c2, #C98C24)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0B23F)"/>
+      <stop offset="1" stop-color="var(--c2, #C98C24)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C98C24)"/>
+      <stop offset="1" stop-color="var(--c2, #A87218)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="100" y="174" width="36" height="170" rx="18" fill="url(#midage-male-top-raincoat__sleeve)"/>
+    <rect x="264" y="174" width="36" height="170" rx="18" fill="url(#midage-male-top-raincoat__sleeve)"/>
+    <path d="M128 200 q6-42 44-42 h56 q38 0 44 42 l24 212 q2 12 -12 12 h-168 q-14 0-12-12 z"
+          fill="url(#midage-male-top-raincoat__shell)"/>
+    <path d="M160 150 q40-18 80 0 q8 24 -8 32 h-64 q-16-8 -8-32 z"
+          fill="url(#midage-male-top-raincoat__hood)"/>
+  </g>
+
+  <!-- structural: front snap placket down the full length -->
+  <rect x="191" y="188" width="18" height="230" rx="6" fill="var(--c2, #C98C24)"/>
+  <circle cx="200" cy="212" r="4.4" fill="var(--c3, #33383F)"/>
+  <circle cx="200" cy="256" r="4.4" fill="var(--c3, #33383F)"/>
+  <circle cx="200" cy="300" r="4.4" fill="var(--c3, #33383F)"/>
+  <circle cx="200" cy="344" r="4.4" fill="var(--c3, #33383F)"/>
+  <circle cx="200" cy="388" r="4.4" fill="var(--c3, #33383F)"/>
+  <!-- structural: welt pockets set into the flare -->
+  <path d="M144 332 h40 l-4 14 h-40 z" fill="var(--c2, #C98C24)"/>
+  <path d="M256 332 h-40 l4 14 h40 z" fill="var(--c2, #C98C24)"/>
+  <!-- trim: reflective band round the hem and storm cuffs -->
+  <path d="M108 400 h184" stroke="var(--c3, #33383F)" stroke-width="9" stroke-opacity="0.85"
+        fill="none" stroke-linecap="round"/>
+  <rect x="100" y="326" width="36" height="18" rx="9" fill="var(--c3, #33383F)"/>
+  <rect x="264" y="326" width="36" height="18" rx="9" fill="var(--c3, #33383F)"/>
+
+  <path d="M152 192 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

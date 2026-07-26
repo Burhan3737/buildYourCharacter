@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Robe" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: WIDE draped sleeve · crossover wrap front · mid-calf hem · flared.
+       Against kaftan it differs on closure (wrap vs slit neck) and volume; against
+       shirt-dress on closure and sleeve. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-robe__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C6B76)"/>
+      <stop offset="1" stop-color="var(--c2, #785059)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C6B76)"/>
+      <stop offset="1" stop-color="var(--c2, #785059)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M138 168 h-38 q-12 0 -12 12 l-4 148 q0 14 14 14 h34 q12 0 12-14 z"
+          fill="url(#midage-male-onepiece-robe__sleeve)"/>
+    <path d="M262 168 h38 q12 0 12 12 l4 148 q0 14 -14 14 h-34 q-12 0-12-14 z"
+          fill="url(#midage-male-onepiece-robe__sleeve)"/>
+    <path d="M126 196 q4-38 44-38 h60 q40 0 44 38 l20 296 q2 14 -14 14 h-160 q-16 0-14-14 z"
+          fill="url(#midage-male-onepiece-robe__cloth)"/>
+  </g>
+
+  <!-- structural: the crossover wrap, one front laid over the other -->
+  <path d="M170 158 L226 306 L200 316 L146 190 Z" fill="var(--c2, #785059)" opacity="0.85"/>
+  <!-- trim: shawl collar following the wrap -->
+  <path d="M166 158 L216 296 L232 288 L192 158 Z" fill="var(--c3, #F3E5DC)"/>
+  <path d="M234 158 L212 214 L200 196 L212 158 Z" fill="var(--c3, #F3E5DC)"/>
+  <!-- trim: tie belt with two hanging ends -->
+  <rect x="130" y="300" width="140" height="20" rx="9" fill="var(--c3, #F3E5DC)"/>
+  <path d="M186 318 q-10 30 -18 52" stroke="var(--c3, #F3E5DC)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M214 318 q10 30 18 52" stroke="var(--c3, #F3E5DC)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trim: turned-back cuffs on the wide sleeves -->
+  <path d="M86 322 h48" stroke="var(--c3, #F3E5DC)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M314 322 h-48" stroke="var(--c3, #F3E5DC)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- structural: soft drape folds falling to the hem -->
+  <path d="M164 340 q-8 76 -14 148" stroke="var(--c2, #785059)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M236 340 q8 76 14 148" stroke="var(--c2, #785059)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 192 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

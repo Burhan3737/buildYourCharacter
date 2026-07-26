@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: SQUARE plated shoulder with pauldrons · closed tabard over a mail body ·
+       thigh-length tabard · straight. Against storm-herald it differs on shoulder
+       (plate pauldrons vs soft mantle) and closure; against firefighter on hem and
+       volume. -->
+  <defs>
+    <linearGradient id="midage-male-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9AA3AE)"/>
+      <stop offset="1" stop-color="var(--c2, #737C88)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F6DA8)"/>
+      <stop offset="1" stop-color="var(--c3, #2C4E7C)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-knight__ring" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="4" fill="none" stroke="var(--c3, #2C4E7C)"
+              stroke-width="1.8" stroke-opacity="0.45"/>
+    </pattern>
+    <clipPath id="midage-male-costume-knight__clip">
+      <path d="M126 200 q0-38 40-38 h68 q40 0 40 38 v100 q0 38 -40 38 h-68 q-40 0-40-38 z"/>
+      <rect x="102" y="170" width="30" height="170" rx="15"/>
+      <rect x="268" y="170" width="30" height="170" rx="15"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M126 200 q0-38 40-38 h68 q40 0 40 38 v100 q0 38 -40 38 h-68 q-40 0-40-38 z"
+          fill="url(#midage-male-costume-knight__mail)"/>
+    <rect x="102" y="170" width="30" height="170" rx="15" fill="url(#midage-male-costume-knight__mail)"/>
+    <rect x="268" y="170" width="30" height="170" rx="15" fill="url(#midage-male-costume-knight__mail)"/>
+    <rect x="146" y="316" width="108" height="60" rx="18" fill="url(#midage-male-costume-knight__mail)"/>
+    <rect x="164" y="348" width="34" height="200" rx="14" fill="url(#midage-male-costume-knight__mail)"/>
+    <rect x="202" y="348" width="34" height="200" rx="14" fill="url(#midage-male-costume-knight__mail)"/>
+    <path d="M170 168 h60 v226 l-30 20 l-30-20 z" fill="url(#midage-male-costume-knight__tabard)"/>
+    <path d="M100 164 h40 q10 0 10 10 v22 q0 10 -12 10 h-38 q-10 0-10-10 v-22 q0-10 10-10 z"
+          fill="url(#midage-male-costume-knight__mail)"/>
+    <path d="M300 164 h-40 q-10 0-10 10 v22 q0 10 12 10 h38 q10 0 10-10 v-22 q0-10 -10-10 z"
+          fill="url(#midage-male-costume-knight__mail)"/>
+  </g>
+
+  <!-- pattern: the mail rings, clipped to the body and arms -->
+  <g clip-path="url(#midage-male-costume-knight__clip)">
+    <rect x="98" y="162" width="204" height="180" fill="url(#midage-male-costume-knight__ring)"/>
+  </g>
+
+  <!-- trim: contrast border down both edges of the tabard -->
+  <path d="M174 168 v222" stroke="var(--c3, #2C4E7C)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M226 168 v222" stroke="var(--c3, #2C4E7C)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- trim: wide belt over the tabard with a plain plate buckle -->
+  <rect x="146" y="306" width="108" height="24" rx="8" fill="var(--c2, #9AA3AE)"/>
+  <rect x="186" y="304" width="28" height="28" rx="6" fill="var(--c3, #2C4E7C)"/>
+  <!-- structural: articulated plate ridges on the pauldrons -->
+  <path d="M104 180 h36" stroke="var(--c3, #2C4E7C)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 180 h36" stroke="var(--c3, #2C4E7C)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- sabatons -->
+  <g class="sp-shadow">
+    <path d="M152 540 h50 v22 q0 8 -10 8 h-30 q-10 0-10-8 z" fill="var(--c2, #9AA3AE)"/>
+    <path d="M248 540 h-50 v22 q0 8 10 8 h30 q10 0 10-8 z" fill="var(--c2, #9AA3AE)"/>
+  </g>
+
+  <path d="M150 190 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

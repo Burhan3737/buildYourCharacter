@@ -1,32 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jersey" data-family="jersey" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: short RAGLAN sleeve seamed neck-to-underarm · closed V-bind · hip · boxy.
+       Against tee it differs on shoulder and volume; against stripes on sleeve length
+       and volume. The raglan panel is real geometry, not a printed seam. -->
   <defs>
     <linearGradient id="midage-male-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
       <stop offset="1" stop-color="var(--c2, #4E9C8C)"/>
     </linearGradient>
-    <linearGradient id="midage-male-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="midage-male-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c3, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #4E9C8C)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A94F)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="102" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-jersey__sleeve)"/>
-    <rect x="266" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-jersey__sleeve)"/>
-    <path d="M124 198 q0-40 40-40 h72 q40 0 40 40 v64 q0 42 -40 42 h-72 q-40 0-40-42 z"
+    <path d="M182 158 q-34 2 -54 20 q-16 14 -18 34 l-4 40 q-1 10 9 12 l24 4 q10 2 12-8 l8-44 q4-20 24-30 z"
+          fill="url(#midage-male-top-jersey__raglan)"/>
+    <path d="M218 158 q34 2 54 20 q16 14 18 34 l4 40 q1 10 -9 12 l-24 4 q-10 2 -12-8 l-8-44 q-4-20 -24-30 z"
+          fill="url(#midage-male-top-jersey__raglan)"/>
+    <path d="M126 202 q4-44 46-44 h56 q42 0 46 44 v52 q0 44 -46 44 h-56 q-46 0-46-44 z"
           fill="url(#midage-male-top-jersey__body)"/>
   </g>
 
-  <!-- simple chest accent shape, no lettering -->
-  <path d="M180 216 h40 l-8 20 h-24 z" fill="var(--c3, #F7C873)"/>
-  <!-- sleeve cuff trim -->
-  <rect x="102" y="238" width="32" height="16" rx="8" fill="var(--c3, #F7C873)"/>
-  <rect x="266" y="238" width="32" height="16" rx="8" fill="var(--c3, #F7C873)"/>
+  <!-- trim: V-neck bind following the raglan seams -->
+  <path d="M174 158 L200 202 L226 158 L214 156 L200 182 L186 156 Z" fill="var(--c3, #F7C873)"/>
+  <!-- panel: contrast lower band, the second half of the colour block -->
+  <path d="M128 272 q10 24 44 24 h56 q34 0 44-24 q2 26 -44 26 h-56 q-46 0-44-26 z"
+        fill="var(--c3, #F7C873)" opacity="0.9"/>
+  <!-- trim: sleeve cuff binds -->
+  <path d="M114 250 l26 4 l-3 14 l-26-4 z" fill="var(--c2, #4E9C8C)"/>
+  <path d="M286 250 l-26 4 l3 14 l26-4 z" fill="var(--c2, #4E9C8C)"/>
 
-  <path d="M172 160 q28 20 56 0 q-4 26 -28 26 q-24 0 -28-26 z" fill="var(--c2, #4E9C8C)"/>
-
-  <path d="M150 190 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M152 192 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: WIDE DRAPED sleeve · closed · ankle-length robe with NO leg division ·
+       flared/A-line. Against storm-herald it differs on sleeve and volume; against
+       knight on volume and hem. -->
+  <defs>
+    <linearGradient id="midage-male-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B4A86)"/>
+      <stop offset="1" stop-color="var(--c2, #2F2E5C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-wizard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B4A86)"/>
+      <stop offset="1" stop-color="var(--c2, #2F2E5C)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <path d="M8 3 l2 4 l4 1 l-3 3 l1 4 l-4-2 l-4 2 l1-4 l-3-3 l4-1 z"
+            fill="var(--c3, #F2D06B)" opacity="0.65"/>
+      <circle cx="19" cy="17" r="1.8" fill="var(--c3, #F2D06B)" opacity="0.5"/>
+    </pattern>
+    <clipPath id="midage-male-costume-wizard__clip">
+      <path d="M136 200 q8-38 48-38 h32 q40 0 48 38 l34 348 q2 14 -14 14 h-168 q-16 0-14-14 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M136 168 h-32 q-14 0-16 14 l-16 148 q-2 16 14 16 h44 q14 0 14-16 z"
+          fill="url(#midage-male-costume-wizard__sleeve)"/>
+    <path d="M264 168 h32 q14 0 16 14 l16 148 q2 16 -14 16 h-44 q-14 0-14-16 z"
+          fill="url(#midage-male-costume-wizard__sleeve)"/>
+    <path d="M136 200 q8-38 48-38 h32 q40 0 48 38 l34 348 q2 14 -14 14 h-168 q-16 0-14-14 z"
+          fill="url(#midage-male-costume-wizard__robe)"/>
+  </g>
+
+  <!-- pattern: scattered star surface across the robe -->
+  <g clip-path="url(#midage-male-costume-wizard__clip)">
+    <rect x="100" y="160" width="200" height="404" fill="url(#midage-male-costume-wizard__stars)"/>
+  </g>
+
+  <!-- trim: wide banded hem and cuff edges -->
+  <path d="M116 540 h168" stroke="var(--c3, #F2D06B)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M76 322 h56" stroke="var(--c3, #F2D06B)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M324 322 h-56" stroke="var(--c3, #F2D06B)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- trim: cowl neck opening and a corded belt with a tassel -->
+  <path d="M172 162 h56 q6 20 -8 28 h-40 q-14-8 -8-28 z" fill="var(--c3, #F2D06B)"/>
+  <path d="M144 306 q56 18 112 0" stroke="var(--c3, #F2D06B)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 316 q8 26 4 46" stroke="var(--c3, #F2D06B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="215" cy="368" r="6" fill="var(--c3, #F2D06B)"/>
+  <!-- structural: long robe folds falling to the hem -->
+  <path d="M168 340 q-8 100 -14 196" stroke="var(--c2, #2F2E5C)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M232 340 q8 100 14 196" stroke="var(--c2, #2F2E5C)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 194 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

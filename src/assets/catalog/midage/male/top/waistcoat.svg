@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: NO sleeve · full button front with a deep V · POINTED hem at the waist ·
+       fitted. Against tank it differs on closure and hem shape; against blazer on
+       shoulder and hem. -->
+  <defs>
+    <linearGradient id="midage-male-top-waistcoat__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5D5A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #423F4E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-waistcoat__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2EDE2)"/>
+      <stop offset="1" stop-color="var(--c3, #D9D2C4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M170 158 h60 v54 l-30 34 l-30-34 z" fill="url(#midage-male-top-waistcoat__shirt)"/>
+    <path d="M132 192 q8-34 44-34 h6 l18 42 l18-42 h6 q36 0 44 34 v86 l-68 42 l-68-42 z"
+          fill="url(#midage-male-top-waistcoat__front)"/>
+  </g>
+
+  <!-- structural: button line running to the point of the hem -->
+  <path d="M200 208 V296" stroke="var(--c2, #423F4E)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="218" r="4.2" fill="var(--c3, #F2EDE2)"/>
+  <circle cx="200" cy="244" r="4.2" fill="var(--c3, #F2EDE2)"/>
+  <circle cx="200" cy="270" r="4.2" fill="var(--c3, #F2EDE2)"/>
+  <circle cx="200" cy="296" r="4.2" fill="var(--c3, #F2EDE2)"/>
+  <!-- structural: two welt pockets -->
+  <path d="M146 256 h30 l-3 10 h-30 z" fill="var(--c2, #423F4E)"/>
+  <path d="M254 256 h-30 l3 10 h30 z" fill="var(--c2, #423F4E)"/>
+  <!-- trim: bound armholes and a contrast edge along the pointed hem -->
+  <path d="M136 200 q12 10 12 44 q0 26 -6 40" stroke="var(--c2, #423F4E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 200 q-12 10 -12 44 q0 26 6 40" stroke="var(--c2, #423F4E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 282 L200 322 L264 282" stroke="var(--c3, #F2EDE2)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M156 184 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

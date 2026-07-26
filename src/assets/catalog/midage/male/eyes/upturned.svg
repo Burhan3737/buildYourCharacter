@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- aperture: the whole lens tilts, outer corner sitting 12px above the inner one -->
+  <defs>
+    <linearGradient id="midage-male-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-male-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+    <clipPath id="midage-male-eyes-upturned__clip-l">
+      <path d="M159 104 Q176 95 196 116 Q174 120 159 104 Z"/>
+    </clipPath>
+    <clipPath id="midage-male-eyes-upturned__clip-r">
+      <path d="M241 104 Q224 95 204 116 Q226 120 241 104 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M159 104 Q176 95 196 116 Q174 120 159 104 Z"
+          fill="url(#midage-male-eyes-upturned__sclera)"/>
+    <path d="M241 104 Q224 95 204 116 Q226 120 241 104 Z"
+          fill="url(#midage-male-eyes-upturned__sclera)"/>
+  </g>
+
+  <g clip-path="url(#midage-male-eyes-upturned__clip-l)">
+    <circle cx="177" cy="109" r="8.8" fill="#3B2A22"/>
+    <circle cx="177" cy="109" r="8.8" fill="url(#midage-male-eyes-upturned__iris)"/>
+    <circle cx="177" cy="109" r="4" fill="#3B2A22"/>
+    <circle cx="174" cy="105.8" r="2.6" fill="#FFFFFF"/>
+    <circle cx="180.4" cy="112.6" r="1.3" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g clip-path="url(#midage-male-eyes-upturned__clip-r)">
+    <circle cx="223" cy="109" r="8.8" fill="#3B2A22"/>
+    <circle cx="223" cy="109" r="8.8" fill="url(#midage-male-eyes-upturned__iris)"/>
+    <circle cx="223" cy="109" r="4" fill="#3B2A22"/>
+    <circle cx="220" cy="105.8" r="2.6" fill="#FFFFFF"/>
+    <circle cx="226.4" cy="112.6" r="1.3" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- upper lid rides the tilt and flicks up past the outer corner -->
+  <path d="M197.5 115 Q176 92.5 158 102.5 Q155.5 100 155 96.5" stroke="#3B2A22"
+        stroke-opacity="0.94" stroke-width="4.8" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M202.5 115 Q224 92.5 242 102.5 Q244.5 100 245 96.5" stroke="#3B2A22"
+        stroke-opacity="0.94" stroke-width="4.8" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lower rim, tilted the same way -->
+  <path d="M163 108.5 Q178 118 194 117" stroke="#3B2A22" stroke-opacity="0.28"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M237 108.5 Q222 118 206 117" stroke="#3B2A22" stroke-opacity="0.28"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- settled crease, parallel to the tilted lid -->
+  <path d="M160 96 Q178 88 192 99" stroke="var(--skin2, #E7B892)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M240 96 Q222 88 208 99" stroke="var(--skin2, #E7B892)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

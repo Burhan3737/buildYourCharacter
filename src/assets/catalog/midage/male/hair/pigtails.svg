@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pigtails" data-family="pigtails" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes:
+       (1) GATHERING — the mass is split into two bound tails clear of the head,
+           so the outline reads as three separate lumps, not one;
+       (2) PARTING — a hard centre part runs the full crown, splitting the front
+           into two mirrored lobes with scalp showing between them. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-pigtails__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-pigtails__tail-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept-in back mass, narrowing toward the nape where the tails are taken -->
+      <path d="M150 60 Q140 96 148 128 Q170 140 200 140 Q230 140 252 128
+               Q260 96 250 60 Q200 42 150 60 Z"
+            fill="url(#midage-male-hair-pigtails__back-grad)"/>
+      <!-- left tail: gathered at y116, hanging well below the ear line -->
+      <path d="M132 114 C118 142 116 180 124 212 C130 232 152 234 159 214
+               C166 182 163 144 151 116 Z"
+            fill="url(#midage-male-hair-pigtails__tail-grad)"/>
+      <!-- right tail: a different length and swing, so the pair is not mirrored art -->
+      <path d="M249 116 C260 146 264 184 258 218 C252 238 230 238 224 218
+               C218 184 222 146 232 114 Z"
+            fill="url(#midage-male-hair-pigtails__tail-grad)"/>
+    </g>
+    <!-- binding bands at the root of each tail -->
+    <path d="M129 112 q12 -8 25 -2 l-2 12 q-11 -6 -22 1 z" fill="var(--hair2, #331E16)"/>
+    <path d="M271 114 q-12 -8 -25 -2 l2 12 q11 -6 22 1 z" fill="var(--hair2, #331E16)"/>
+    <!-- strand grooves so the tails read as gathered hair, not as tubes -->
+    <path d="M138 132 q6 40 4 74" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M148 136 q4 40 2 70" stroke="var(--hair2, #331E16)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M254 134 q-4 42 -2 76" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M243 138 q-3 40 -1 70" stroke="var(--hair2, #331E16)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-pigtails__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left of the part -->
+      <path d="M139 110 C139 56 166 36 197 36 L197 86 C168 88 150 97 139 110 Z"
+            fill="url(#midage-male-hair-pigtails__front-grad)"/>
+      <!-- right of the part -->
+      <path d="M261 110 C261 56 234 36 203 36 L203 86 C232 88 250 97 261 110 Z"
+            fill="url(#midage-male-hair-pigtails__front-grad)"/>
+    </g>
+    <!-- the part itself: scalp, 6px wide, running crown to hairline -->
+    <path d="M197 36 H203 V86 H197 Z" fill="var(--skin1, #F7D2B0)"/>
+    <path d="M200 38 V84" stroke="var(--skin2, #E7B892)" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- hair combed away from the part on each side -->
+    <path d="M192 44 Q174 56 162 78" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M208 44 Q226 56 238 78" stroke="var(--hair2, #331E16)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M168 54 q16 -12 26 -14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M232 54 q-16 -12 -26 -14" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

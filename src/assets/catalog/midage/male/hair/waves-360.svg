@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="360 Waves" data-family="waves-360" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `buzz` and `taper-fade`:
+       (1) VOLUME — this is the shortest style in the slot: the mass never leaves the
+           skull, topping out 2px proud of it, with no raised top of any kind;
+       (2) PARTING — no part, but a hard cut front hairline stepped straight across the
+           brow at y87, so the outline is a flat-bottomed shell, not a dome.
+       The texture is six concentric hair2 ripples radiating from the crown. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-waves-360__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M156 116 Q200 130 244 116 Q240 142 200 148 Q160 142 156 116 Z"
+            fill="url(#midage-male-hair-waves-360__back-grad)"/>
+    </g>
+    <path d="M166 124 Q200 136 234 124" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M172 134 Q200 143 228 134" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-waves-360__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <clipPath id="midage-male-hair-waves-360__front-clip">
+        <path d="M142 98 C142 60 168 40 200 40 C232 40 258 60 258 98
+                 L252 94 L240 90 L220 88 L200 87 L180 88 L160 90 L148 94 Z"/>
+      </clipPath>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M142 98 C142 60 168 40 200 40 C232 40 258 60 258 98
+               L252 94 L240 90 L220 88 L200 87 L180 88 L160 90 L148 94 Z"
+            fill="url(#midage-male-hair-waves-360__front-grad)"/>
+    </g>
+
+    <!-- the waves themselves: concentric ripples spinning out from the crown -->
+    <g clip-path="url(#midage-male-hair-waves-360__front-clip)">
+      <ellipse cx="200" cy="56" rx="15" ry="11" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.85"/>
+      <ellipse cx="200" cy="56" rx="25" ry="19" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.8"/>
+      <ellipse cx="200" cy="56" rx="35" ry="27" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.75"/>
+      <ellipse cx="200" cy="56" rx="45" ry="35" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.7"/>
+      <ellipse cx="200" cy="56" rx="55" ry="43" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.65"/>
+      <ellipse cx="200" cy="56" rx="66" ry="52" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3.2" opacity="0.6"/>
+      <ellipse cx="200" cy="56" rx="6" ry="4.5" fill="none"
+               stroke="var(--hair2, #331E16)" stroke-width="3" opacity="0.9"/>
+    </g>
+
+    <!-- hard cut front hairline -->
+    <path d="M160 89.5 H240" stroke="var(--hair2, #331E16)" stroke-width="3.4"
+          fill="none" stroke-linecap="butt"/>
+    <path d="M144 96 L160 90" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M256 96 L240 90" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M172 48 q28 -6 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

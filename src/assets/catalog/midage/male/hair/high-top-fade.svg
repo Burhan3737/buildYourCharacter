@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High-Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `taper-fade` and `buzz`:
+       (1) VOLUME — a 76px column of dense hair stands squarely off the crown, so the
+           outline is a flat-topped block rather than a dome;
+       (2) PARTING — none, but a HARD front hairline cut straight across at y90 with
+           shaved sides below it, so the top and the sides are two separate masses.
+       The fade is value inside the hair itself: hair2 at the skin line running up
+       to hair1 at the top of the column. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-high-top-fade__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.35"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- nape, shaved right down: the fade continues round the back -->
+      <path d="M158 112 C160 130 176 140 200 140 C224 140 240 130 242 112 Z"
+            fill="url(#midage-male-hair-high-top-fade__back-grad)"/>
+    </g>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <!-- the fade: dark at the skin line, lifting to the full colour going up -->
+      <linearGradient id="midage-male-hair-high-top-fade__fade-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.4"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-high-top-fade__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the column: flat top, straight sides, squared-off corners -->
+      <path d="M156 90 L156 30 C156 16 172 10 200 10 C228 10 244 16 244 30 L244 90 Z"
+            fill="url(#midage-male-hair-high-top-fade__front-grad)"/>
+      <!-- the shaved sides, carrying the fade -->
+      <path d="M141 102 Q141 70 200 66 Q259 70 259 102 Q244 92 200 90 Q156 92 141 102 Z"
+            fill="url(#midage-male-hair-high-top-fade__fade-grad)"/>
+    </g>
+
+    <!-- hard front hairline: one crisp edge, no fuzz -->
+    <path d="M158 90.5 H242" stroke="var(--hair2, #331E16)" stroke-width="3.5"
+          fill="none" stroke-linecap="butt"/>
+    <path d="M142 100 Q170 91 200 90" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M258 100 Q230 91 200 90" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <!-- the two square corners of the column, the shape's signature -->
+    <path d="M156 90 V34" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M244 90 V34" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M168 20 q32 -6 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

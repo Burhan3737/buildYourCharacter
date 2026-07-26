@@ -1,37 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Overalls Top" data-family="overalls-top" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: NO sleeve (bib on two over-shoulder straps) · closed · waist · straight.
+       The bare shoulders and arms are the silhouette; against tank it differs on
+       shoulder (bib straps vs scoop straps) and hem (waist vs hip). -->
   <defs>
-    <linearGradient id="midage-male-top-overalls-top__shirt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c3, #E7EDF5)"/>
-      <stop offset="1" stop-color="var(--c3, #C7D1E0)"/>
-    </linearGradient>
     <linearGradient id="midage-male-top-overalls-top__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0C4)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7FA6)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-overalls-top__strap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #8FA0C4)"/>
       <stop offset="1" stop-color="var(--c2, #6E7FA6)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <!-- plain undershirt base -->
-    <rect x="102" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-overalls-top__shirt)"/>
-    <rect x="266" y="166" width="32" height="88" rx="16" fill="url(#midage-male-top-overalls-top__shirt)"/>
-    <path d="M124 198 q0-40 40-40 h72 q40 0 40 40 v60 q0 42 -40 42 h-72 q-40 0-40-42 z"
-          fill="url(#midage-male-top-overalls-top__shirt)"/>
+    <path d="M166 208 h68 q12 0 12 12 v88 q0 12 -12 12 h-68 q-12 0-12-12 v-88 q0-12 12-12 z"
+          fill="url(#midage-male-top-overalls-top__bib)"/>
+    <path d="M172 212 q-4-36 20-54 l16 12 q-20 16 -18 42 z"
+          fill="url(#midage-male-top-overalls-top__strap)"/>
+    <path d="M228 212 q4-36 -20-54 l-16 12 q20 16 18 42 z"
+          fill="url(#midage-male-top-overalls-top__strap)"/>
   </g>
 
-  <path d="M172 160 q28 20 56 0 q-4 26 -28 26 q-24 0 -28-26 z" fill="var(--c3, #C7D1E0)"/>
+  <!-- structural: patch pocket on the bib and a rivet button on each strap -->
+  <path d="M180 246 h40 v34 q0 8 -8 8 h-24 q-8 0 -8-8 z" fill="var(--c2, #6E7FA6)"/>
+  <path d="M182 258 h36" stroke="var(--c3, #F7C873)" stroke-width="2.2" stroke-dasharray="5 4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="174" cy="216" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="226" cy="216" r="5" fill="var(--c3, #F7C873)"/>
+  <!-- trim: flat waistband under the bib hem -->
+  <rect x="150" y="304" width="100" height="16" rx="8" fill="var(--c2, #6E7FA6)"/>
+  <path d="M154 312 h92" stroke="var(--c3, #F7C873)" stroke-width="2.2" stroke-dasharray="6 5"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- dungaree bib worn over the shirt, straps to the shoulders -->
-  <g class="sp-shadow">
-    <path d="M176 220 h48 v70 q0 10 -10 10 h-28 q-10 0 -10-10 z" fill="url(#midage-male-top-overalls-top__bib)"/>
-    <path d="M180 220 q0-40 20-52" stroke="var(--c1, #8FA0C4)" stroke-width="14" fill="none" stroke-linecap="round"/>
-    <path d="M220 220 q0-40 -20-52" stroke="var(--c1, #8FA0C4)" stroke-width="14" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <circle cx="182" cy="230" r="4" fill="var(--c3, #F7C873)"/>
-  <circle cx="218" cy="230" r="4" fill="var(--c3, #F7C873)"/>
-
-  <path d="M150 192 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M172 222 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

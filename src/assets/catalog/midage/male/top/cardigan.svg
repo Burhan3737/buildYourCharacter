@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: long sleeve · OPEN FRONT · past hip · straight.
+       Against sweater it differs on closure and hem; against blazer on volume
+       (soft knit vs structured) and shoulder (natural vs square). -->
+  <defs>
+    <linearGradient id="midage-male-top-cardigan__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA98C)"/>
+      <stop offset="1" stop-color="var(--c2, #77856A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA98C)"/>
+      <stop offset="1" stop-color="var(--c2, #77856A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFE6D6)"/>
+      <stop offset="1" stop-color="var(--c3, #D6CBB7)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M138 164 h-30 q-11 0 -12 11 l-9 156 q-1 11 10 12 l27 3 q11 1 11-10 z"
+          fill="url(#midage-male-top-cardigan__sleeve)"/>
+    <path d="M262 164 h30 q11 0 12 11 l9 156 q1 11 -10 12 l-27 3 q-11 1 -11-10 z"
+          fill="url(#midage-male-top-cardigan__sleeve)"/>
+    <path d="M186 158 h28 v170 h-28 z" fill="url(#midage-male-top-cardigan__shell)"/>
+    <path d="M124 202 q4-44 44-44 h28 l-14 46 v126 q0 12 -12 12 h-34 q-12 0-12-12 z"
+          fill="url(#midage-male-top-cardigan__knit)"/>
+    <path d="M276 202 q-4-44 -44-44 h-28 l14 46 v126 q0 12 12 12 h34 q12 0 12-12 z"
+          fill="url(#midage-male-top-cardigan__knit)"/>
+  </g>
+
+  <!-- structural: patch pockets low on each front -->
+  <path d="M140 268 h34 v34 q0 8 -8 8 h-18 q-8 0 -8-8 z" fill="var(--c2, #77856A)"/>
+  <path d="M226 268 h34 v34 q0 8 -8 8 h-18 q-8 0-8-8 z" fill="var(--c2, #77856A)"/>
+  <!-- trim: button band down each front edge, buttons on the right -->
+  <path d="M182 204 l-12 40 v122" stroke="var(--c2, #77856A)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M218 204 l12 40 v122" stroke="var(--c2, #77856A)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="216" cy="252" r="4.5" fill="var(--c3, #EFE6D6)"/>
+  <circle cx="219" cy="286" r="4.5" fill="var(--c3, #EFE6D6)"/>
+  <circle cx="221" cy="320" r="4.5" fill="var(--c3, #EFE6D6)"/>
+  <!-- trim: ribbed cuffs -->
+  <path d="M96 314 l30 4 l-2 20 l-30-4 z" fill="var(--c2, #77856A)"/>
+  <path d="M304 314 l-30 4 l2 20 l30-4 z" fill="var(--c2, #77856A)"/>
+
+  <path d="M154 194 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
