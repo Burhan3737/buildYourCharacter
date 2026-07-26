@@ -32,7 +32,7 @@
     <circle cx="127" cy="366" r="16" fill="var(--skin2, #C99A72)"/>
     <circle cx="273" cy="366" r="16" fill="var(--skin2, #C99A72)"/>
   </g>
-  <!-- neck -->
+  <!-- neck: centred, sized to sit inside the tank/tee necklines authored for this bundle -->
   <rect x="186" y="166" width="28" height="34" rx="12" fill="var(--skin2, #C99A72)"/>
   <!-- torso: fitted to spec box x136 y184 w128 h152, top corners rx32/ry28, bottom rx32/ry34 -->
   <g class="sp-shadow">
@@ -42,26 +42,27 @@
   <!-- torso highlight -->
   <path d="M158 210 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
         fill="none" stroke-linecap="round"/>
-  <!-- ears: shifted -4px with the head for the elder forward-stoop lean -->
-  <ellipse cx="145" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
-  <ellipse cx="247" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
-  <!-- head: spec anchor is cx200 cy125 rx57 ry59 - drawn 4px left (cx196) for the elder
-       stoop; the spec JSON keeps cx200 untouched. Wardrobe/face assets for this bundle must
-       be drawn against these ACTUAL coordinates (cx196), not the raw spec. -->
+  <!-- ears: on the spec ear anchors, x149 / x251 -->
+  <ellipse cx="149" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
+  <ellipse cx="251" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
+  <!-- head: on the spec anchor exactly (cx200 cy125 rx57 ry59). Runtime-fitted accessories
+       (glasses, headwear, earrings, necklace) are placed from the spec, so the drawn skull
+       must stay centred here. The elder read comes from the low head, short stance and
+       narrow shoulders - never from moving the skull off its anchor. -->
   <g class="sp-shadow">
-    <ellipse cx="196" cy="125" rx="57" ry="59" fill="url(#bodies-elder-male-base__skin)"/>
+    <ellipse cx="200" cy="125" rx="57" ry="59" fill="url(#bodies-elder-male-base__skin)"/>
   </g>
   <!-- upper-surface highlight -->
-  <path d="M166 91 q28 -18 52 -10" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="8"
+  <path d="M170 91 q28 -18 52 -10" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="8"
         fill="none" stroke-linecap="round"/>
   <!-- cheeks -->
-  <ellipse cx="162" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
-  <ellipse cx="230" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
+  <ellipse cx="166" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
+  <ellipse cx="234" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
   <!-- soft age lines: forehead crease and jaw/nasolabial fold, low-opacity skin2 -->
-  <path d="M172 100 q24 -8 48 0" stroke="var(--skin2, #C99A72)" stroke-opacity="0.4"
+  <path d="M176 100 q24 -8 48 0" stroke="var(--skin2, #C99A72)" stroke-opacity="0.4"
         stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M164 152 q-6 14 2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
+  <path d="M168 152 q-6 14 2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
         stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M228 152 q6 14 -2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
+  <path d="M232 152 q6 14 -2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
         stroke-width="2" fill="none" stroke-linecap="round"/>
 </svg>

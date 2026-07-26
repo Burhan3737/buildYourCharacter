@@ -1,35 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Braids" data-family="braids" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282.
+       The braids hang OUTSIDE the silhouette (x<112 / x>288) so they trail past the ears
+       instead of landing on the cheeks. -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-braids__backgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-braids__backgrad" x1="0" y1="292" x2="0" y2="396"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
-    <!-- two tiny wisp-twists trailing just past the ears -->
-    <path d="M128 342 C122 356 124 370 130 380 C134 372 133 358 132 346 Z"
-          fill="url(#newborn-male-hair-braids__backgrad)"/>
-    <path d="M272 342 C278 356 276 370 270 380 C266 372 267 358 268 346 Z"
-          fill="url(#newborn-male-hair-braids__backgrad)"/>
-    <!-- twist ridges -->
-    <path d="M129 350 l4 3 M129 360 l4 3 M129 370 l4 3" stroke="var(--hair2, #331E16)"
-          stroke-width="1.6" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
-    <path d="M271 350 l-4 3 M271 360 l-4 3 M271 370 l-4 3" stroke="var(--hair2, #331E16)"
-          stroke-width="1.6" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+    <g class="sp-shadow">
+      <path d="M114 294 C96 306 92 330 96 354 C98 372 102 382 106 386
+               C112 382 112 366 110 348 C109 326 111 308 118 298 Z"
+            fill="url(#newborn-male-hair-braids__backgrad)"/>
+      <path d="M286 294 C304 306 308 330 304 354 C302 372 298 382 294 386
+               C288 382 288 366 290 348 C291 326 289 308 282 298 Z"
+            fill="url(#newborn-male-hair-braids__backgrad)"/>
+      <!-- tuft below each tie -->
+      <path d="M98 388 C94 396 96 404 102 408 C108 404 108 396 106 388 Z"
+            fill="url(#newborn-male-hair-braids__backgrad)"/>
+      <path d="M302 388 C306 396 304 404 298 408 C292 404 292 396 294 388 Z"
+            fill="url(#newborn-male-hair-braids__backgrad)"/>
+    </g>
+    <!-- twist ridges down each braid -->
+    <path d="M97 320 q8 6 14 2 M95 342 q8 6 16 2 M97 364 q7 6 14 2"
+          stroke="var(--hair2, #331E16)" stroke-opacity="0.55" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M303 320 q-8 6 -14 2 M305 342 q-8 6 -16 2 M303 364 q-7 6 -14 2"
+          stroke="var(--hair2, #331E16)" stroke-opacity="0.55" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- ties: the plainest way to say "braid" at this size -->
+    <path d="M96 383 q10 5 16 -1" stroke="var(--hair2, #331E16)" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M304 383 q-10 5 -16 -1" stroke="var(--hair2, #331E16)" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-braids__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-braids__frontgrad" x1="0" y1="232" x2="0" y2="292"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
-    <!-- two tiny twisted tufts at the temples -->
-    <path d="M136 320 C130 330 132 340 138 346 C142 338 141 328 140 322 Z"
-          fill="url(#newborn-male-hair-braids__frontgrad)"/>
-    <path d="M264 320 C270 330 268 340 262 346 C258 338 259 328 260 322 Z"
-          fill="url(#newborn-male-hair-braids__frontgrad)"/>
+    <g class="sp-shadow">
+      <!-- centre-parted crown the braids are gathered from -->
+      <path d="M132 288 C126 256 158 234 200 234 C242 234 274 256 268 288
+               C254 274 228 268 200 268 C172 268 146 274 132 288 Z"
+            fill="url(#newborn-male-hair-braids__frontgrad)"/>
+      <!-- the gathered roots, one either side of the part -->
+      <circle cx="168" cy="252" r="12" fill="url(#newborn-male-hair-braids__frontgrad)"/>
+      <circle cx="232" cy="252" r="12" fill="url(#newborn-male-hair-braids__frontgrad)"/>
+    </g>
+    <!-- centre part -->
+    <path d="M200 236 L200 266" stroke="var(--hair2, #331E16)" stroke-opacity="0.6"
+          stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M160 250 q8 6 16 2 M160 258 q8 6 16 2" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.5" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M240 250 q-8 6 -16 2 M240 258 q-8 6 -16 2" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.5" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M172 240 q28 -10 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
   </g>
 </svg>

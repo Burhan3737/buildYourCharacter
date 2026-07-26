@@ -1,15 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Buzz" data-family="buzz" data-slot="hair"
-     data-layer="hair" data-colors="hair1" data-hides="">
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84. The cap's upper edge is an arc on that exact
+       ellipse, so the fuzz hugs the skull instead of overhanging it. No sp-shadow: this is a
+       translucent film on the scalp, not a form of its own, and a drop shadow reads as a dish. -->
   <g data-part="back"></g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-buzz__frontgrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #43291F)" stop-opacity="0.22"/>
-        <stop offset="1" stop-color="var(--hair1, #43291F)" stop-opacity="0.32"/>
+      <linearGradient id="newborn-male-hair-buzz__frontgrad" x1="0" y1="250" x2="0" y2="312"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)" stop-opacity="0.48"/>
+        <stop offset="0.62" stop-color="var(--hair1, #43291F)" stop-opacity="0.32"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.06"/>
+      </linearGradient>
+      <linearGradient id="newborn-male-hair-buzz__crowngrad" x1="0" y1="252" x2="0" y2="290"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.2"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0"/>
       </linearGradient>
     </defs>
-    <!-- nearly bald newborn: just the faintest fuzz shading across the scalp -->
-    <ellipse cx="200" cy="278" rx="72" ry="32" fill="url(#newborn-male-hair-buzz__frontgrad)"/>
+    <!-- clipped fuzz over the whole scalp, fading out along the hairline -->
+    <path d="M115.1 312 A88 84 0 0 1 284.9 312
+             C266 300 240 294 200 294 C160 294 134 300 115.1 312 Z"
+          fill="url(#newborn-male-hair-buzz__frontgrad)"/>
+    <!-- denser patch at the crown so the fuzz has some weight where it is thickest -->
+    <path d="M143 288 C146 262 170 250 200 250 C230 250 254 262 257 288
+             C238 280 220 277 200 277 C180 277 162 280 143 288 Z"
+          fill="url(#newborn-male-hair-buzz__crowngrad)"/>
+    <path d="M164 264 q36 -14 72 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
   </g>
 </svg>

@@ -1,34 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Long Waves" data-family="long-waves" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, ears at x118 / x282, shoulders y424 -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-long-waves__backgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-long-waves__backgrad" x1="0" y1="286" x2="0" y2="426"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- a few short wavy strands falling behind the ears -->
-      <path d="M134 344 C126 362 130 382 122 400 C132 396 140 378 140 358 C140 352 137 346 134 344 Z"
+      <!-- long, broad wavy lengths falling clear of the silhouette on both sides -->
+      <path d="M124 286 C92 302 80 338 88 372 C94 398 82 418 92 436
+               C118 428 124 400 120 370 C116 336 116 308 132 292 Z"
             fill="url(#newborn-male-hair-long-waves__backgrad)"/>
-      <path d="M266 344 C274 362 270 382 278 400 C268 396 260 378 260 358 C260 352 263 346 266 344 Z"
+      <path d="M276 286 C308 302 320 338 312 372 C306 398 318 418 308 436
+               C282 428 276 400 280 370 C284 336 284 308 268 292 Z"
             fill="url(#newborn-male-hair-long-waves__backgrad)"/>
     </g>
+    <path d="M94 322 C106 332 108 342 100 350 M90 366 C104 376 106 388 96 396
+             M94 406 C108 414 110 422 102 428"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M306 322 C294 332 292 342 300 350 M310 366 C296 376 294 388 304 396
+             M306 406 C292 414 290 422 298 428"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-long-waves__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-long-waves__frontgrad" x1="0" y1="226" x2="0" y2="306"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- a sparse soft wavy fringe -->
-      <path d="M150 266 C168 250 232 250 250 266 C240 260 226 264 214 258 C204 264 196 264 186 258 C174 264 160 260 150 266 Z"
+      <!-- soft wavy crown, the fringe scalloped into three gentle waves -->
+      <path d="M128 300
+               C122 264 132 240 156 230
+               C170 224 184 222 200 222
+               C216 222 230 224 244 230
+               C268 240 278 264 272 300
+               C266 282 262 274 254 268
+               C242 262 234 272 222 268
+               C210 264 210 272 200 270
+               C190 272 190 264 178 268
+               C166 272 158 262 146 268
+               C138 274 134 282 128 300 Z"
             fill="url(#newborn-male-hair-long-waves__frontgrad)"/>
     </g>
-    <path d="M180 256 q20-8 40 0" stroke="#FFFFFF" stroke-opacity="0.22"
-          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M166 236 q34 -12 68 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M156 254 C176 246 224 246 244 254" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.35" stroke-width="3" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

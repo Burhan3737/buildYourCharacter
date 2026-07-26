@@ -1,34 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Bun" data-family="bun" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282 -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-bun__backgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-bun__backgrad" x1="0" y1="212" x2="0" y2="252"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- one small round tuft on the crown, standing in for a bun -->
-      <circle cx="200" cy="242" r="13" fill="url(#newborn-male-hair-bun__backgrad)"/>
+      <!-- the knot itself, gathered above the crown -->
+      <circle cx="200" cy="230" r="19" fill="url(#newborn-male-hair-bun__backgrad)"/>
     </g>
-    <!-- thin wrapped band at its base -->
-    <path d="M188 246 q12 6 24 0" stroke="var(--hair2, #331E16)" stroke-width="2.4"
+    <path d="M186 240 q14 8 28 0" stroke="var(--hair2, #331E16)" stroke-width="3.4"
           stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
-    <path d="M191 236 q9-5 18 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2"
+    <path d="M190 222 q10 -6 20 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
           fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-bun__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-bun__frontgrad" x1="0" y1="242" x2="0" y2="292"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
-    <!-- a couple of stray hairline wisps -->
-    <path d="M166 266 C163 260 165 255 170 253 C168 258 168 262 168 267 Z"
-          fill="url(#newborn-male-hair-bun__frontgrad)"/>
-    <path d="M234 266 C237 260 235 255 230 253 C232 258 232 262 232 267 Z"
-          fill="url(#newborn-male-hair-bun__frontgrad)"/>
+    <g class="sp-shadow">
+      <!-- hair pulled smoothly up off the face into the knot -->
+      <path d="M136 290 C132 262 162 246 200 246 C238 246 268 262 264 290
+               C248 278 226 272 200 272 C174 272 152 278 136 290 Z"
+            fill="url(#newborn-male-hair-bun__frontgrad)"/>
+    </g>
+    <!-- sweep lines converging on the knot -->
+    <path d="M152 280 C168 266 186 258 200 256" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.3" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M248 280 C232 266 214 258 200 256" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.3" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M166 262 q34 -12 68 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
   </g>
 </svg>

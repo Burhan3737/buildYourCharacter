@@ -1,33 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Side Part" data-family="side-part" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282 -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-side-part__backgrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
-        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
-      </linearGradient>
-    </defs>
-    <path d="M144 392 C139 402 141 412 146 418 C150 411 150 401 148 393 Z"
-          fill="url(#newborn-male-hair-side-part__backgrad)"/>
-  </g>
-  <g data-part="front">
-    <defs>
-      <linearGradient id="newborn-male-hair-side-part__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-side-part__backgrad" x1="0" y1="292" x2="0" y2="356"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- sparse fringe swept to one side with a thin part line -->
-      <path d="M150 264 C168 248 200 244 214 250 C226 254 240 260 252 268
-               C238 260 210 254 196 256 C176 258 160 262 150 264 Z"
+      <!-- the swept-over side tucks a short length behind the far ear -->
+      <path d="M118 294 C104 308 102 332 108 352 C116 344 118 322 122 298 Z"
+            fill="url(#newborn-male-hair-side-part__backgrad)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-side-part__frontgrad" x1="0" y1="220" x2="0" y2="304"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- weight swept across to the viewer's left, thinning away over the far temple -->
+      <path d="M128 302
+               C120 264 132 240 156 230
+               C170 224 184 222 200 222
+               C216 222 230 224 244 230
+               C268 240 278 262 272 292
+               C262 276 244 264 222 258
+               C204 253 186 258 168 268
+               C150 278 136 288 128 302 Z"
             fill="url(#newborn-male-hair-side-part__frontgrad)"/>
     </g>
-    <!-- the part line -->
-    <path d="M204 246 L212 262" stroke="var(--hair2, #331E16)" stroke-width="2"
-          stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
-    <path d="M160 258 q20-6 34-2" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3"
-          fill="none" stroke-linecap="round"/>
+    <!-- the part, read as a groove: a hard shadow channel with a lit lip on the swept side -->
+    <path d="M224 228 C230 240 234 250 238 262" stroke="var(--hair2, #331E16)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M219 229 C224 241 228 251 232 263" stroke="#FFFFFF" stroke-opacity="0.34"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- sweep, running away from the part across to the heavy side -->
+    <path d="M148 278 C170 262 198 252 218 254" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M152 262 C176 242 198 234 216 234" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

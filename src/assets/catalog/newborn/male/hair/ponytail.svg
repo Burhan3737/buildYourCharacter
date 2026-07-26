@@ -1,32 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Ponytail" data-family="ponytail" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, ears at x118 / x282, shoulders y424.
+       Gathered high on one side so it reads apart from the centred Bun topknot. -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-ponytail__backgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-ponytail__backgrad" x1="0" y1="264" x2="0" y2="400"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- one small identifying tuft-curl at the crown, standing in for a ponytail -->
-      <path d="M200 238 C190 232 186 240 190 248 C194 256 206 256 210 248 C214 240 210 232 200 238 Z"
+      <!-- the tail, swinging out clear of the silhouette and down past the jaw -->
+      <path d="M262 270
+               C294 280 314 308 310 342
+               C307 368 296 388 283 398
+               C281 380 292 358 292 334
+               C292 306 282 284 256 274 Z"
             fill="url(#newborn-male-hair-ponytail__backgrad)"/>
     </g>
-    <!-- tiny elastic band at its base -->
-    <rect x="194" y="248" width="12" height="5" rx="2.5" fill="var(--hair2, #331E16)"/>
+    <path d="M296 306 q8 10 6 20 M300 340 q4 12 -2 20"
+          stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3.4"
+          fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-ponytail__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-ponytail__frontgrad" x1="0" y1="238" x2="0" y2="292"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
-    <!-- a couple of stray wisps at the hairline -->
-    <path d="M160 264 C156 258 158 253 163 251 C161 256 161 260 162 265 Z"
-          fill="url(#newborn-male-hair-ponytail__frontgrad)"/>
-    <path d="M240 264 C244 258 242 253 237 251 C239 256 239 260 238 265 Z"
-          fill="url(#newborn-male-hair-ponytail__frontgrad)"/>
+    <g class="sp-shadow">
+      <!-- hair swept off the face and gathered at the right temple -->
+      <path d="M136 290 C132 262 162 246 200 246 C238 246 268 262 264 290
+               C248 278 226 272 200 272 C174 272 152 278 136 290 Z"
+            fill="url(#newborn-male-hair-ponytail__frontgrad)"/>
+      <circle cx="256" cy="256" r="15" fill="url(#newborn-male-hair-ponytail__frontgrad)"/>
+    </g>
+    <!-- elastic at the gather -->
+    <path d="M245 262 q11 9 21 2" stroke="var(--hair2, #331E16)" stroke-width="4"
+          stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+    <!-- sweep lines converging on the gather -->
+    <path d="M150 282 C176 264 214 254 240 256" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.3" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M156 268 C184 252 214 246 236 248" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

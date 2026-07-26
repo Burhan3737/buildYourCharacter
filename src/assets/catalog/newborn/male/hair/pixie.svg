@@ -1,33 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Pixie" data-family="pixie" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282 -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-pixie__backgrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
-        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
-      </linearGradient>
-    </defs>
-    <!-- two tiny cropped tufts at the nape -->
-    <path d="M180 396 q-6 8 0 16 q6-8 0-16 z" fill="url(#newborn-male-hair-pixie__backgrad)"/>
-    <path d="M220 396 q-6 8 0 16 q6-8 0-16 z" fill="url(#newborn-male-hair-pixie__backgrad)"/>
-  </g>
-  <g data-part="front">
-    <defs>
-      <linearGradient id="newborn-male-hair-pixie__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-pixie__backgrad" x1="0" y1="300" x2="0" y2="352"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- a scatter of tiny cropped tufts across the crown -->
-      <path d="M158 260 q-5 9 0 17 q5-8 0-17 z" fill="url(#newborn-male-hair-pixie__frontgrad)"/>
-      <path d="M180 250 q-5 9 0 17 q5-8 0-17 z" fill="url(#newborn-male-hair-pixie__frontgrad)"/>
-      <path d="M200 246 q-5 9 0 17 q5-8 0-17 z" fill="url(#newborn-male-hair-pixie__frontgrad)"/>
-      <path d="M220 250 q-5 9 0 17 q5-8 0-17 z" fill="url(#newborn-male-hair-pixie__frontgrad)"/>
-      <path d="M242 260 q-5 9 0 17 q5-8 0-17 z" fill="url(#newborn-male-hair-pixie__frontgrad)"/>
+      <!-- cropped points tucked behind each ear -->
+      <path d="M114 302 C102 314 98 330 102 346 C110 338 114 322 118 306 Z"
+            fill="url(#newborn-male-hair-pixie__backgrad)"/>
+      <path d="M286 302 C298 314 302 330 298 346 C290 338 286 322 282 306 Z"
+            fill="url(#newborn-male-hair-pixie__backgrad)"/>
     </g>
-    <path d="M170 256 q30-10 60 0" stroke="#FFFFFF" stroke-opacity="0.22"
-          stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-pixie__frontgrad" x1="0" y1="238" x2="0" y2="330"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- close crop: soft wispy scallops along the hairline rather than a flat band.
+           Every scallop tip sits below the skull surface at that x, so no scalp shows. -->
+      <path d="M136 296
+               C130 262 160 240 200 240
+               C240 240 270 262 264 296
+               Q258 284 252 291 Q245 279 238 288 Q231 277 224 286
+               Q217 276 210 285 Q203 276 196 285 Q189 276 182 285
+               Q175 277 168 286 Q161 279 154 288 Q146 283 140 291 Z"
+            fill="url(#newborn-male-hair-pixie__frontgrad)"/>
+      <!-- tapered points cropped in front of each ear -->
+      <path d="M137 290 C133 304 135 316 141 324 C147 314 144 300 143 288 Z"
+            fill="url(#newborn-male-hair-pixie__frontgrad)"/>
+      <path d="M263 290 C267 304 265 316 259 324 C253 314 256 300 257 288 Z"
+            fill="url(#newborn-male-hair-pixie__frontgrad)"/>
+    </g>
+    <path d="M162 256 q38 -14 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M168 272 C186 266 214 266 232 272" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.28" stroke-width="3" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

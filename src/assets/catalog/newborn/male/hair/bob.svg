@@ -1,37 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Bob" data-family="bob" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282 -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-bob__backgrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
-        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
-      </linearGradient>
-    </defs>
-    <!-- a couple of sparse wisps at the nape, behind the ears -->
-    <path d="M138 388 C133 400 134 412 140 420 C144 412 144 400 141 390 Z"
-          fill="url(#newborn-male-hair-bob__backgrad)"/>
-    <path d="M262 388 C267 400 266 412 260 420 C256 412 256 400 259 390 Z"
-          fill="url(#newborn-male-hair-bob__backgrad)"/>
-  </g>
-  <g data-part="front">
-    <defs>
-      <linearGradient id="newborn-male-hair-bob__frontgrad" x1="0" y1="0" x2="0" y2="1">
+      <linearGradient id="newborn-male-hair-bob__backgrad" x1="0" y1="286" x2="0" y2="366"
+                      gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- a thin sparse fringe band across the crown -->
-      <path d="M148 266 C168 250 232 250 252 266 C234 258 166 258 148 266 Z"
+      <!-- blunt ends showing just past each ear, level with the jaw -->
+      <path d="M118 288 C104 306 102 336 108 362 C118 358 120 330 122 292 Z"
+            fill="url(#newborn-male-hair-bob__backgrad)"/>
+      <path d="M282 288 C296 306 298 336 292 362 C282 358 280 330 278 292 Z"
+            fill="url(#newborn-male-hair-bob__backgrad)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-bob__frontgrad" x1="0" y1="228" x2="0" y2="316"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- rounded cap with a blunt fringe, tapering into short side lengths by the temples -->
+      <path d="M126 332
+               C120 294 130 254 156 236
+               C170 228 184 226 200 226
+               C216 226 230 228 244 236
+               C270 254 280 294 274 332
+               L256 332
+               C258 310 254 292 246 280
+               C232 268 218 266 200 266
+               C182 266 168 268 154 280
+               C146 292 142 310 144 332 Z"
             fill="url(#newborn-male-hair-bob__frontgrad)"/>
     </g>
-    <!-- a few tiny wisp tips -->
-    <path d="M162 262 C160 256 163 251 168 250 C166 255 165 259 165 264 Z"
-          fill="var(--hair2, #331E16)"/>
-    <path d="M238 262 C240 256 237 251 232 250 C234 255 235 259 235 264 Z"
-          fill="var(--hair2, #331E16)"/>
-    <path d="M186 254 C196 248 204 248 214 254" stroke="#FFFFFF" stroke-opacity="0.24"
-          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- fringe underside, and a soft highlight along the crown -->
+    <path d="M150 264 C168 258 232 258 250 264 C232 268 168 268 150 264 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <path d="M166 240 q34 -12 68 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
   </g>
 </svg>
