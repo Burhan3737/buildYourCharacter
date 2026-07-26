@@ -25,7 +25,11 @@ beforeEach(reset)
 
 describe('the real catalog', () => {
   it('loads every authored asset', () => {
-    expect(Object.keys(catalog.byId).length).toBe(711)
+    // A floor, not an exact count — the catalogue is expected to grow, and an exact
+    // assertion just forces a test edit per asset. This still catches the failure that
+    // matters: the glob silently loading nothing, or a bundle going missing wholesale.
+    // Per-bundle completeness is asserted separately below.
+    expect(Object.keys(catalog.byId).length).toBeGreaterThanOrEqual(1500)
   })
 
   it('has a body and a spec for all twelve bundles', () => {
