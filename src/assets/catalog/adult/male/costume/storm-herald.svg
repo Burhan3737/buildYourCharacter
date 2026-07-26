@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Storm Herald" data-family="storm-herald" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="adult-male-costume-storm-herald__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3C7267)"/>
+      <stop offset="1" stop-color="var(--c2, #2F574F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-storm-herald__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3BA46F)"/>
+      <stop offset="1" stop-color="var(--c1, #36865E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-storm-herald__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3BA46F)"/>
+      <stop offset="1" stop-color="var(--c1, #36865E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-storm-herald__legging" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3C7267)"/>
+      <stop offset="1" stop-color="var(--c2, #336258)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-storm-herald__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3C7267)"/>
+      <stop offset="1" stop-color="var(--c2, #2E5850)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short cape hanging from the shoulders down the BACK only; top stays at y=150, well below y=148 limit line -->
+  <g class="sp-shadow">
+    <path d="M160 150 h80 q30 0 34 34 l20 148 q-92 20 -184 0 l20-148 q4-34 30-34 z"
+          fill="url(#adult-male-costume-storm-herald__cape)"/>
+  </g>
+
+  <!-- figure mass: leggings, hips, tunic, sleeves -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-storm-herald__legging)"/>
+    <rect x="206" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-storm-herald__legging)"/>
+    <rect x="140" y="300" width="120" height="56" rx="26" fill="url(#adult-male-costume-storm-herald__legging)"/>
+    <path d="M130 180 Q130 150 162 150 L238 150 Q270 150 270 180 L270 268 L276 312
+             Q200 330 124 312 L124 268 Z"
+          fill="url(#adult-male-costume-storm-herald__tunic)"/>
+    <rect x="108" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-storm-herald__sleeve)"/>
+    <rect x="266" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-storm-herald__sleeve)"/>
+  </g>
+
+  <!-- wide belt -->
+  <rect x="136" y="282" width="128" height="26" rx="12" fill="var(--c3, #CC914F)"/>
+  <rect x="186" y="280" width="28" height="30" rx="10" fill="var(--c3, #CC914F)"/>
+
+  <!-- chunky bracers over the forearms -->
+  <rect x="104" y="270" width="34" height="50" rx="17" fill="var(--c3, #CC914F)"/>
+  <rect x="262" y="270" width="34" height="50" rx="17" fill="var(--c3, #CC914F)"/>
+
+  <!-- abstract stacked-chevron gust mark, not an insignia -->
+  <path d="M166 204 L200 187 L234 204 M166 222 L200 205 L234 222 M166 240 L200 223 L234 240"
+        fill="none" stroke="var(--c3, #CC914F)" stroke-width="7" stroke-opacity="0.95"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- tall boots with accent cuffs -->
+  <g class="sp-shadow">
+    <rect x="161" y="456" width="34" height="96" rx="17" fill="url(#adult-male-costume-storm-herald__boot)"/>
+    <rect x="205" y="456" width="34" height="96" rx="17" fill="url(#adult-male-costume-storm-herald__boot)"/>
+    <rect x="156" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-storm-herald__boot)"/>
+    <rect x="196" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-storm-herald__boot)"/>
+  </g>
+  <rect x="158" y="448" width="38" height="18" rx="9" fill="var(--c3, #CC914F)"/>
+  <rect x="204" y="448" width="38" height="18" rx="9" fill="var(--c3, #CC914F)"/>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

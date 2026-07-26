@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Web Runner Suit" data-family="web-runner" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="midage-female-costume-web-runner__c1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
+      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-web-runner__c2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #536574)"/>
+      <stop offset="1" stop-color="var(--c2, #43505D)"/>
+    </linearGradient>
+    <clipPath id="midage-female-costume-web-runner__torsoclip">
+      <path d="M135 185 q0-25 33-25 h64 q33 0 33 25 v108 q0 34 -33 34 h-64 q-33 0 -33-34 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two-tone bodysuit mass, refit to the midage torso/limb geometry -->
+  <g class="sp-shadow">
+    <rect x="165" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-web-runner__c2)"/>
+    <rect x="199" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-web-runner__c2)"/>
+    <rect x="141" y="313" width="118" height="64" rx="30" fill="url(#midage-female-costume-web-runner__c2)"/>
+    <path d="M135 185 q0-25 33-25 h64 q33 0 33 25 v108 q0 34 -33 34 h-64 q-33 0 -33-34 z"
+          fill="url(#midage-female-costume-web-runner__c1)"/>
+    <rect x="113" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-web-runner__c1)"/>
+    <rect x="255" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-web-runner__c1)"/>
+  </g>
+
+  <!-- abstract diamond lattice: two families of straight parallel lines -->
+  <g clip-path="url(#midage-female-costume-web-runner__torsoclip)" fill="none" stroke="var(--c3, #252829)"
+     stroke-width="2.2" stroke-opacity="0.6" stroke-linecap="round">
+    <path d="M242 162 L263 183 M222 162 L263 203 M202 162 L263 223
+             M182 162 L263 243 M162 162 L263 263 M142 162 L263 283
+             M137 177 L263 303 M137 197 L263 323 M137 217 L245 325
+             M137 237 L225 325 M137 257 L205 325 M137 277 L185 325
+             M137 297 L165 325 M137 317 L145 325 M137 183 L158 162
+             M137 203 L178 162 M137 223 L198 162 M137 243 L218 162
+             M137 263 L238 162 M137 283 L258 162 M137 303 L263 177
+             M137 323 L263 197 M155 325 L263 217 M175 325 L263 237
+             M195 325 L263 257 M215 325 L263 277 M235 325 L263 297
+             M255 325 L263 317"/>
+  </g>
+
+  <!-- dark gloves and boots -->
+  <g class="sp-shadow">
+    <circle cx="129" cy="364" r="20" fill="var(--c3, #252829)"/>
+    <circle cx="271" cy="364" r="20" fill="var(--c3, #252829)"/>
+    <rect x="160" y="496" width="40" height="48" rx="18" fill="var(--c3, #252829)"/>
+    <rect x="200" y="496" width="40" height="48" rx="18" fill="var(--c3, #252829)"/>
+    <rect x="156" y="540" width="48" height="34" rx="16" fill="var(--c3, #252829)"/>
+    <rect x="196" y="540" width="48" height="34" rx="16" fill="var(--c3, #252829)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M160 178 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

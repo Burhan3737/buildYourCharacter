@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Web Runner Suit" data-family="web-runner" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="adult-male-costume-web-runner__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
+      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-web-runner__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
+      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-web-runner__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
+      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-web-runner__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E4549)"/>
+      <stop offset="1" stop-color="var(--c3, #2A3033)"/>
+    </linearGradient>
+    <clipPath id="adult-male-costume-web-runner__torsoclip">
+      <path d="M130 180 Q130 150 162 150 L238 150 Q270 150 270 180 L270 270 Q270 300 256 310 L144 310 Q130 300 130 270 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- suit mass: legs, hips, torso, sleeves (built directly from the body's own geometry) -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-web-runner__leg)"/>
+    <rect x="206" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-web-runner__leg)"/>
+    <rect x="140" y="300" width="120" height="56" rx="26" fill="url(#adult-male-costume-web-runner__body)"/>
+    <path d="M130 180 Q130 150 162 150 L238 150 Q270 150 270 180 L270 270 Q270 300 256 310 L144 310 Q130 300 130 270 Z"
+          fill="url(#adult-male-costume-web-runner__body)"/>
+    <rect x="108" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-web-runner__sleeve)"/>
+    <rect x="266" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-web-runner__sleeve)"/>
+  </g>
+
+  <!-- outer arm panels -->
+  <rect x="109" y="182" width="11" height="114" rx="5.5" fill="var(--c2, #5A6F81)"/>
+  <rect x="280" y="182" width="11" height="114" rx="5.5" fill="var(--c2, #5A6F81)"/>
+  <!-- outer leg panels -->
+  <rect x="164" y="352" width="11" height="170" rx="5.5" fill="var(--c2, #5A6F81)"/>
+  <rect x="225" y="352" width="11" height="170" rx="5.5" fill="var(--c2, #5A6F81)"/>
+
+  <!-- abstract diamond lattice: two families of straight parallel lines -->
+  <g clip-path="url(#adult-male-costume-web-runner__torsoclip)" fill="none" stroke="var(--c3, #3E4549)"
+     stroke-width="2" stroke-opacity="0.55" stroke-linecap="round">
+    <path d="M252 152 L268 168 M232 152 L268 188 M212 152 L268 208
+             M192 152 L268 228 M172 152 L268 248 M152 152 L268 268
+             M132 152 L268 288 M132 172 L268 308 M132 192 L248 308
+             M132 212 L228 308 M132 232 L208 308 M132 252 L188 308
+             M132 272 L168 308 M132 292 L148 308 M132 168 L148 152
+             M132 188 L168 152 M132 208 L188 152 M132 228 L208 152
+             M132 248 L228 152 M132 268 L248 152 M132 288 L268 152
+             M132 308 L268 172 M152 308 L268 192 M172 308 L268 212
+             M192 308 L268 232 M212 308 L268 252 M232 308 L268 272
+             M252 308 L268 292"/>
+  </g>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <rect x="108" y="316" width="26" height="20" rx="10" fill="var(--c3, #343A3D)"/>
+    <rect x="266" y="316" width="26" height="20" rx="10" fill="var(--c3, #343A3D)"/>
+    <circle cx="121" cy="332" r="17" fill="var(--c3, #343A3D)"/>
+    <circle cx="279" cy="332" r="17" fill="var(--c3, #343A3D)"/>
+    <rect x="162" y="486" width="32" height="62" rx="16" fill="url(#adult-male-costume-web-runner__boot)"/>
+    <rect x="206" y="486" width="32" height="62" rx="16" fill="url(#adult-male-costume-web-runner__boot)"/>
+    <rect x="156" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-web-runner__boot)"/>
+    <rect x="196" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-web-runner__boot)"/>
+  </g>
+  <!-- boot cuffs -->
+  <rect x="160" y="480" width="36" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
+  <rect x="204" y="480" width="36" height="14" rx="7" fill="var(--c2, #5A6F81)"/>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
