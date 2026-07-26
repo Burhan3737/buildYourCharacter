@@ -35,6 +35,39 @@ which of the twelve bundles author it. Never invent a family, never rename one, 
 author a family for a bundle that is not listed against it — `data-family` resolution across
 stages depends on all twelve bundles agreeing.
 
+## There are no aisles — a hard requirement
+
+> **Every family is authored in every bundle its tier covers, on BOTH body types. Body type may
+> change drape and fit. It may never change availability.**
+
+This is a build requirement, not a preference. A family listed at Core, Growing or Older tier in
+`docs/FAMILIES.md` and missing from one body type's directory is a **defect**, in the same
+category as a wrong `viewBox`. There is no fitting tier in this project. `fit-F` and `fit-M` have
+been deleted and must never be reintroduced under any name.
+
+**Why it is a correctness issue and not a values statement.** `data-family` is how a character
+survives a stage or body change: `remapSlots` looks for the same family key in the target bundle's
+pool, and clears the slot when it is not there. A family authored on one body and not the other
+means a character silently loses that garment the moment the player switches body type — and
+regains it on switching back, which reads as a bug and is one. The de-gendering in this revision
+was forced by exactly that.
+
+**Why the fitting argument does not hold.** It was tested. The head specs for `adult-female` and
+`adult-male` are byte-identical (`cx 200, cy 91, rx 57, ry 59`, ears at `(149, 95)` and
+`(251, 95)`, eyeLine `100`), and so are the teen, midage and elder pairs. A man bun and a half-up
+knot are the same construction problem on the same ellipse. Torsos do differ, which is why drape
+differs — a `camisole` on the male spec keeps its narrow straps and skimming hem and is cut for
+that chest; a `ribbed-vest` on the female spec keeps its deep dropped armhole — but a differing
+torso is a reason to redraw a garment, never a reason to omit it.
+
+**What this means at your desk.** If you are drawing `adult/male`, you draw every skirt, every
+gown, the `camisole`, the `sari` and the `jeogori`. If you are drawing `elder/female`, you draw
+all twelve beards. If a family in your roster feels like it "belongs" to the other body type, that
+feeling is the thing this rule exists to override. Draw the file.
+
+The tray is one undifferentiated list per slot. No sub-tabs, no "cultural" section, no gendered
+ordering, no ordering that puts anything last.
+
 ## Backdrops — the one canvas exception
 
 Files under `src/assets/backdrops/` are **not** worn by anybody: they are the stage. The stage
@@ -89,7 +122,25 @@ scaling, no `preserveAspectRatio` trickery. So a backdrop is authored at the sta
 
 The `beard` slot exists and holds one asset at a time. It covers every facial-hair shape —
 stubble, moustaches, goatees, partial and full beards — because each is reachable as a single
-family. See `docs/RESEARCH-HAIR.md` §D and §E for the reasoning and the family roster.
+family. **The authoritative roster is `docs/FAMILIES.md` §2.4** (twelve families, Older tier,
+teen → elder, both body types); `docs/RESEARCH-HAIR.md` §D and §E carry the reasoning behind the
+slot and the deferred list.
+
+**The four axes for this slot** — two families in the same `(bundle, beard)` must differ on at
+least two of them, exactly as for garments:
+
+| Axis | Values |
+|---|---|
+| **Upper lip** | bare · shadow · trimmed bar · overhanging the lip · flared or extended ends |
+| **Chin & jaw coverage** | bare · tuft under the lip only · chin only · chin + jaw band · under-jaw curtain · full jaw and cheeks |
+| **Cheek line** | none · jaw-only · low and clipped · natural mid-cheek · joined to the sideburn and hairline |
+| **Length** | shadow · stubble · clipped short · to the throat · past the jaw · to mid-chest |
+
+Cheek line is the money axis — six of the twelve families differ from a sibling on it. Express it
+as a fraction of the distance from the jaw corner up to the ear anchor: *low* ≈ 25% (a clipped
+line), *natural* ≈ 55% (untrimmed), *joined* = 100% (meeting the sideburn, as in `line-up`). **Set
+it deliberately and keep it consistent across every bundle you author**, or `full-beard` reads as
+a different family at teen than at elder.
 
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
@@ -127,7 +178,7 @@ family. See `docs/RESEARCH-HAIR.md` §D and §E for the reasoning and the family
 
 ## Slots that do not exist yet
 
-Three categories that the catalogue research proposes have **no slot to live in**, and an SVG
+Four categories that the catalogue research proposes have **no slot to live in**, and an SVG
 author cannot create one. They are recorded here so nobody draws them into the wrong slot — a
 face marking on the `costume` layer would sit above the face, and a wheelchair on `shoes` would
 draw in front of the legs and behind nothing.
@@ -136,13 +187,54 @@ draw in front of the legs and behind nothing.
 
 | Wanted | Not yet supported — the engineering change it needs |
 |---|---|
-| **face markings** (`freckles`, `vitiligo`, `birthmark`, `blush-cheeks`, `beauty-spot`, `laugh-lines`, `scar`, `acne`) | A new `face-mark` slot at z 62 — above `face`, below `hair-front`. Same three files to touch. Markings scale with the head, so like `glasses` they are authored per head-size class: 8 families × 3 classes = 24 files. Note that `--skin1/2/3` are available to any asset, so these can paint through the character's own skin ramp for free. |
+| **layered outerwear** (`apron`; and re-homing `long-coat` and `duster-cardigan`) | The deferred **`overlayer`** slot — see the section immediately below for the exact change and the interim answer. |
+| **face markings** (`freckles`, `vitiligo`, `birthmark`, `blush-cheeks`, `beauty-spot`, `laugh-lines`, `scar`, `acne`) | A new `face-mark` slot at z 62 — above `face`, below `hair-front`. Same three files to touch. Markings scale with the head, so like `glasses` they are authored per head-size class: 8 families × 3 classes = 24 files. Note that `--skin1/2/3` are available to any asset, so these can paint through the character's own skin ramp for free. **Two further pieces of evidence for this slot:** a clown's whiteface and a mime's painted face are the entire readable half of both archetypes and cannot be drawn today, and `clown-nose` has had to borrow the `glasses` slot (`docs/FAMILIES.md` §4.1) at the cost of the player's glasses. |
 | **mobility aids** (`cane`, `forearm-crutches`, `wheelchair`, `power-chair`, `walker`) | A new `mobility` slot. `cane` and `forearm-crutches` are single-layer — they sit beside the body — and need only a slot at z 55, above `shoes`, authored per bundle: 2 × 12 = 24 files. `wheelchair`, `power-chair` and `walker` are **not** single-layer: the frame and back wheel draw behind the body and the front wheel, footplate and armrest draw in front of it, so the slot must contribute to two layers (z 15 and z 55) using the same two-group file pattern `hair` already uses. That is a renderer change, not just a slot. |
 | **hearing technology worn *with* earrings** | An `ear-tech` slot at z 91, so `hearing-aid` and `ear-cuff` stop competing for one anchor. Until then `hearing-aid-studs` is the workaround family. |
 
 A mobility aid that is scenery rather than something you wear is the documented failure mode
 across this whole product category. If a stopgap prop is ever added under `src/assets/props/`,
 it is a stopgap and must be labelled as one — it is not the answer.
+
+### The deferred `overlayer` slot — a known limitation
+
+**Stated plainly: you cannot wear a coat over a dress in this app, and you cannot wear an apron
+over anything at all.** This is the single most-requested layering combination in the genre and
+the one thing our slot architecture cannot express. It was considered for this revision and
+**deliberately deferred**; the change is recorded here so it is not re-derived, and the dependent
+families are absent from `docs/FAMILIES.md` on purpose.
+
+**Why.** `top` is z 40 and is suppressed by `onepiece` (z 45, `data-hides="top,bottom"`). There is
+no layer above `onepiece` that a garment can occupy. So `long-coat` and `duster-cardigan` — which
+ship in `top`, correctly, given the engine as it stands — vanish the moment a dress is equipped.
+
+**The exact change, if it is ever done.**
+
+1. `src/catalog/types.ts` — add `'overlayer'` to the `SLOTS` tuple. It is a per-bundle body slot,
+   so it must **not** go in `ACCESSORY_SLOTS`.
+2. `src/catalog/layers.ts` — add `'overlayer'` to `LAYERS` **in position between `onepiece` and
+   `shoes`, not appended**, and give it `LAYER_Z['overlayer'] = 47`. `layers.test.ts` asserts
+   `LAYER_Z` is strictly ascending in declaration order, so appending fails immediately. z 47
+   places it above `onepiece` (45) and below `shoes` (50), so a coat draws over a dress and the
+   shoe still draws over the coat hem, which is correct.
+3. Confirm that `onepiece` never lists `overlayer` in its `data-hides`, and **add `overlayer` to
+   `costume`'s `data-hides`** — a costume should suppress it.
+4. Add the slot to the studio's category list (`src/ui/studio/categories.ts`) and to
+   `SLOT_LABELS` in `OptionTray.tsx`, which is typed `Record<Slot, string>` and will otherwise
+   fail to compile.
+5. Check `silhouette.test.ts`'s `(bundle, slot)` grouping picks the new slot up — it is generic
+   over `SLOTS`, so it should be free.
+
+**Families it would unlock, at 10 files each:** `apron` (bib apron on two neck-and-waist ties,
+open at the back and the sides, hem at the knee), plus re-homing `long-coat` and `duster-cardigan`
+from `top`.
+
+**The interim answer is `tabard`.** A tabard is a garment in its own right — two flat panels
+joined only at the shoulders, completely open down both sides — not a layer pretending to be one,
+and it delivers the hi-vis vest, the sports bib, the shop smock and the medieval surcoat reads. It
+ships in `top` at Growing tier. **Do not work around the missing slot by drawing a dress into a
+coat file, or an implied shirt into an apron file** — either one locks that garment's colour and
+shape forever.
 
 ## Hair is two groups
 
@@ -269,7 +361,12 @@ closed / thigh / flared) differs from everything in the slot.
 For `bottom` the axes are **rise** (low / natural / high / bib), **leg length** (none-skirt /
 short / knee / cropped / full), **leg width** (skin-close / straight / wide / flared /
 gathered-cuff) and **hem treatment** (raw / cuffed / elasticated / ruffled). Same rule: two of
-four. `shoes` use **shaft height · toe shape · fastening · sole depth**.
+four. `shoes` use **shaft height · toe shape · fastening · sole depth**. `beard` uses **upper lip ·
+chin & jaw coverage · cheek line · length** — the values are tabulated under "Facial hair" above.
+`hair` uses **crown · length · volume · parting/hem**, where crown is how the mass is organised at
+the scalp (no parting · centre part · side/hard part · fringe · shaved or faded sides · sectioned
+grid · scalp rows · three-section · bare) and parting/hem is how it ends (blunt continuous ·
+tapered to a point · lobed/irregular · separated strand-ends · knotted · tied · beaded · none).
 
 Write your two axes down in an XML comment at the top of the file. If you cannot name two, you
 are about to draw a duplicate.
@@ -454,6 +551,205 @@ redraw, not to widen the list.
 The test is the floor, not the ceiling. Passing it means you did not copy a path. It does not
 mean you satisfied the two-of-four axis rule — that is on you and on the contact sheet.
 
+### The 40-unit practical floor
+
+There is a second floor the test cannot check for you, and it is arithmetic.
+
+The picker shows every asset at roughly **64×64**. The canvas is 600 units tall, so the scale is
+about **0.107 screen pixels per canvas unit**.
+
+| Canvas size | Screen size in the tray | Verdict |
+|---|---|---|
+| 12–24u (a legal `<pattern>` motif) | 1.3–2.6 px | **texture only** — never an identity |
+| 40u | ~4.3 px | the practical floor for "I can see that" |
+| 60u | ~6.4 px | a confident, countable feature |
+| 120u (adult torso width) | ~13 px | the reference measure |
+
+> **Any feature that is meant to *identify* a family must be at least 40 canvas units. Below that
+> it is decoration, and it cannot be the thing that tells two families apart.**
+
+A 22-unit harlequin diamond is 2.4 screen pixels — undifferentiated texture in the picker. That is
+why `harlequin`'s identity in the tray is its outline (the skin-close continuous one-piece, the
+horizontal waist seam, the small ruff) and the diamonds are a bonus visible only on the stage. The
+same arithmetic decides a dozen other things: a jester's hem tab must be ≥30u deep, a clown's ruff
+must project ≥45u beyond the neck on each side, a ball gown's dome must clear the widest point of
+the body by ≥40u per side, a bustle must project ≥50u behind the hip line, a hoop skirt's dome
+≥40u per side, and a plate joint band needs ≥3 device pixels, which is why `exo-frame` is Older
+tier rather than Growing.
+
+**Identity lives in the outline.** Surface — pattern, trim, an applied graphic — separates
+*instances inside* a silhouette, which is a real and necessary skill. It never creates a
+silhouette, and it never rescues one at 64px. This is the practical reason several genuinely
+iconic shapes are in `docs/FAMILIES.md` §6 rather than in the roster: `soul-patch` is roughly two
+screen pixels, `pencil-moustache` is indistinguishable from `moustache`, and `sideburns` is the
+same story — `mutton-chops` is the legible member of that group and it is the one that ships.
+
+**Verify, do not trust the table.** These figures are computed from the canvas dimensions and
+`specs/bodies/adult-female.json`, not measured off the running app. Check
+`/?dev=sheet` before treating any threshold as exact.
+
+### The costume face ceiling
+
+`costume` is z 80 and draws **above** `face` (60) and `hair-front` (70). A mask, cowl, helmet,
+beak, muzzle or hood-worn-up **erases the character's features**, and there is no workaround
+inside the slot.
+
+**Costume art must stay below the bundle's shoulder line minus 8px.** Read
+`specs/bodies/<stage>-<bodyType>.json` and take `shoulders[0].y`. The numbers, precomputed:
+
+| Bundle | shoulder `y` | costume art must stay at `y ≥` | jaw (head bottom) at `y` |
+|---|---|---|---|
+| newborn/female · newborn/male | 424 | **416** | 418 |
+| toddler/female · toddler/male | 352 | **344** | 346 |
+| teen/female · teen/male | 200 | **192** | 194 |
+| adult/female · adult/male | 156 | **148** | 150 |
+| midage/female · midage/male | 168 | **160** | 162 |
+| elder/female · elder/male | 190 | **182** | 184 |
+
+Note what the table says: **the ceiling sits about 2px above the jaw on every bundle.** A standing
+collar may rise to the jawline and stop. It may not reach the mouth. The calibration references
+are `adult/female/costume/caped-hero.svg`, whose torso starts at `y = 148` exactly, and
+`wizard.svg`, whose topmost geometry is at `y = 150`.
+
+**Copy your bundle's ceiling into an XML comment at the top of every costume file you draw.**
+
+**The three sanctioned resolutions.**
+
+1. **Push the identity down into the body.** A hoplite is not the Corinthian helmet, it is the
+   moulded cuirass and the strip skirt. A berserker is not the bear's head, it is the shaggy lobed
+   hem of the pelt jerkin. A clown is not the whiteface, it is the ballooning romper and the ruff.
+   This is the primary answer for almost every family.
+2. **Hood worn down, collar worn low.** A hood pooled in a fabric roll behind the neck reads as
+   "hooded" from the silhouette alone — the same trick `hoodie` already uses in `top`. This is the
+   sanctioned hood pattern for the whole catalogue. `disguise-coat`'s turned-up collar frames the
+   jaw **from below** and stops at the ceiling; `oversized-suit`'s shoulder pads exaggerate
+   **outward**, not up; `pierrot`'s collaret is a flat disc spreading outward from the ceiling.
+3. **Author the head half as a companion `headwear` family.** It draws at z 100 on the head
+   anchor, where it belongs. **`headwear` also draws above the face**, so a companion helmet must
+   be open-faced: no nasal bar, no cheek plate over the cheekbone, no visor, no beak, no muzzle.
+
+**`top` (40), `bottom` (30) and `onepiece` (45) all draw *under* the face (60) and have no face
+constraint at all.** That is a further reason formalwear belongs in those slots rather than in
+`costume`, and it is why the seven gowns are one-pieces.
+
+### Trademark guardrails
+
+Read this before you draw anything in `costume`, and before you pick a fallback colour anywhere.
+
+**The rule that most people get backwards.** `--c1`, `--c2` and `--c3` are player-tunable, which
+sounds like it removes trademark risk. **It does the opposite.** The fallback values are what a
+player sees in the picker, on the contact sheet, in every screenshot and in every marketing image
+before anybody touches a swatch. The fallback *is* the costume's identity for the first several
+seconds of its life. **A signature palette is what creates risk, and the fallback is what people
+see first.**
+
+Two consequences follow directly:
+
+- **A family may not be identifiable by its colours.** If you can only tell two costumes apart at
+  their defaults, you have drawn one costume twice.
+- **Fallbacks come from the house palette** — `#7E90DC` periwinkle, `#F4A79B` coral, `#6BBFAD`
+  mint, `#F7C873` butter, `#3B2A22` ink — and are chosen to *avoid* the combinations below, not to
+  approach them. **Check your triple against this table before you pick colours, not after.**
+
+This project has paid for getting it wrong once: `spider` and `thunder-god` had to be stripped and
+re-keyed to `web-runner` and `storm-herald` because a generic display name did not cure a
+red-and-navy web suit or a red-and-blue armoured tunic. **A generic display name does not cure a
+signature colour-plus-marking combination.**
+
+#### Banned fallback pairings in the `costume` slot
+
+| Banned default pairing | Why |
+|---|---|
+| red + navy, red + royal blue | claimed by several publishers' flagship characters |
+| red + gold / red + brass, especially with a circular chest disc | armoured-tech character |
+| red + blue + gold, with white stars | warrior-princess character |
+| blue + white + red with a circular chest field | shield-bearing patriot character |
+| green + black, ring-lit | ring-powered character |
+| black + yellow, or black + grey with a scalloped hem | cowled vigilante character |
+| green + purple with a torn hem | strongman-monster character |
+| all-green with a hood | archer character |
+| purple + black with a chevron | archer character |
+| orange scale over green legs | aquatic character |
+| silver/chrome monochrome, seamless | cosmic character |
+| red cape + grey ring-mail + a row of circular chest discs | thunder-god character |
+| green + gold, horned | trickster character |
+| white + pale blue armour with a winged helm | winged-warrior character |
+| green hair + purple tailcoat + orange or green waistcoat + white face + red grin, in any combination | clown-villain character. `jester`, `harlequin` and `tailcoat` all sit near this and must all stay clear of it. |
+| pale blue, or yellow, or pink-with-a-gold-bodice, on `ball-gown` / `hoop-skirt` / `bridal-gown` | named animated princess palettes |
+| `frost-giant` defaulted to blue | blue is what makes a frost giant read as a specific studio's version. Its fallback is **mint, deliberately.** If it only works in blue, it is not a silhouette. |
+
+A player who recolours a costume into any of those has done that themselves. Shipping it that way
+is us doing it.
+
+#### Shapes and markings banned outright, at any colour
+
+- **No emblem, crest, monogram, chest insignia or applied chest graphic on any heroic costume.**
+  Applied graphics are effectively banned in this slot: a centred chest motif on a heroic costume
+  *is* an emblem.
+- **No drawn lettering anywhere.** `<text>` is banned by lint, and drawn lettering reads as a logo,
+  which is a trademark problem rather than a style choice.
+- **No lightning bolt on a chest** — `speedster` carries calf vanes and one raked diagonal seam
+  instead. **No glowing circular chest reactor** — `exo-frame`'s chest plate is a plain bevelled
+  panel. **No scalloped or bat-winged cape hem, no pointed ear shapes** — `shadow-agent` keeps the
+  asymmetry and drops all of it. **No mechanical or feathered metal wings** — `sky-glider`'s
+  membrane is plain cloth with drawn rib seams.
+- **No horned or winged helmet**, in `costume` or in `headwear`. Both are 19th-century Romantic
+  invention rather than Norse archaeology, and the winged version is a trademark tell besides.
+- **The toothbrush moustache — narrow, tall, no wider than the nose — may never be drawn.** At our
+  flat-vector scale the silhouette is unavoidably a specific historical reference and there is no
+  styling that de-risks it. Note the generative risk: if `moustache` is drawn too narrow it becomes
+  this by accident. **Keep the bar's ends at the corners of the mouth, well outside the nose
+  width.** **`fu-manchu` is likewise banned** — the name and its associations are a racial
+  caricature, and the underlying shape is not proposed under any name.
+- **Avoid the words "super hero" / "superhero" in any `data-name` string.** Two publishers jointly
+  registered the mark in 1981 and have protected it aggressively; a 2024 default judgement
+  cancelling it is not a merits ruling and should not be relied on. Use "Hero", "Suit", "Runner",
+  "Frame" or a role noun.
+
+#### `shield-warrior` — the do-not-draw list
+
+`shield-warrior` (Greek, `costume`, Growing) was flagged as the **highest residual trademark risk
+in the whole expansion** and is the reason the family was renamed away from `amazon`. It must be
+drawn to the brief exactly.
+
+**Do not draw, in any combination:**
+
+- a strapless bustier;
+- a star motif, anywhere, at any size;
+- a tiara (head-mounted and out of slot regardless — and `tiara` is refused as a `headwear` family
+  besides, being silhouette-identical to `flower-crown`);
+- wide matching metal bracers on both wrists;
+- a coiled rope or lasso at the hip;
+- a red + blue + gold fallback palette.
+
+**Any two of those together is a specific character.** The silhouette that ships — a trousered,
+long-sleeved, fully-covered rider with a crescent shield slung flat across the back and a wide
+diagonal baldric — is the opposite of that costume on every axis, which is exactly why it was
+chosen. **Keep the trousers and keep the sleeves.** The Phrygian cap is not proposed as a
+companion headwear family; `beanie` and `bandana` already occupy that outline space.
+
+#### Cultural guardrails, which are the same rule wearing different clothes
+
+Classical Greece, Viking-age Scandinavia and pharaonic Egypt are in scope for `costume` because
+they are historical periods with no living community whose identity is at stake, and reconstructing
+their everyday dress is scholarship rather than caricature.
+
+**Living cultural dress is never a costume.** It belongs in `top`, `bottom` and `onepiece` under
+its own endonym. So does formalwear, for a different and equally hard reason: `costume` declares
+`data-hides="top,bottom,shoes"`, and for formalwear the shoes are the look.
+
+**Never drawn, under any framing:** war bonnets and any Native American regalia; Mesoamerican
+eagle- or jaguar-warrior regalia (sacred military vesture of a colonised people with living
+descendant communities — and not to be softened into a "generic feathered warrior" either, which
+is the same costume with the honesty removed); religious vestments and ritual garments, including
+yamabushi vesture and therefore the tengu; face-covering veils; and any garment whose identity *is*
+a specific community's woven design — named-clan tartan setts, particular kente patterns, Adinkra
+symbols, Māori kōwhaiwhai. The "never promote a surface treatment to a family name" rule above is
+the same principle; this is its cultural-harm form.
+
+Families named by endonym are **drawn but held from release** until an expert of that culture has
+reviewed them. That gate applies to shipping, not to authoring.
+
 ## Hard-won clarifications
 
 Every one of these was discovered the expensive way while authoring the `adult/female`
@@ -517,6 +813,10 @@ expected for highlight arcs, drawstrings, stitching, glasses frames and similar 
 The costume layer (z 80) draws **above** the face (60) and hair-front (70). A mask or helmet
 will erase the character's features. Costume art must stay **below the bundle's shoulder line
 minus 8px** — no head coverage of any kind. Capes, hoods worn down, and collars are fine.
+
+**The per-bundle numbers, and the three sanctioned ways to pay for this rule rather than merely
+obey it, are in "The costume face ceiling" above.** `headwear` (z 100) draws above the face too,
+so a companion helmet must be open-faced as well.
 
 ### 7. Put the primary colour first in `data-colors`
 
