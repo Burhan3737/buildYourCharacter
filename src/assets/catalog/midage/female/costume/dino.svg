@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dino Onesie" data-family="dino" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="midage-female-costume-dino__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #57A897)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-dino__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #BFE6DB)"/>
+      <stop offset="1" stop-color="var(--c2, #A8DCCF)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-dino__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #BFE6DB)"/>
+      <stop offset="1" stop-color="var(--c2, #90CCBD)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-dino__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #E8B25C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- chunky tail curving out from the right hip, drawn behind the figure -->
+  <path d="M250 308 Q300 320 302 380 Q304 430 288 468 Q282 480 270 474 Q260 468 264 456
+           Q276 424 274 380 Q272 340 244 322 Z"
+        fill="url(#midage-female-costume-dino__tail)"/>
+
+  <!-- plush onesie mass, refit to midage torso+limbs -->
+  <g class="sp-shadow">
+    <rect x="163" y="366" width="38" height="134" rx="19" fill="url(#midage-female-costume-dino__body)"/>
+    <rect x="199" y="366" width="38" height="134" rx="19" fill="url(#midage-female-costume-dino__body)"/>
+    <rect x="139" y="311" width="122" height="66" rx="31" fill="url(#midage-female-costume-dino__body)"/>
+    <path d="M133 187 q0-27 35-27 h64 q35 0 35 27 v100 q0 36 -35 36 h-64 q-35 0 -35-36 z"
+          fill="url(#midage-female-costume-dino__body)"/>
+    <rect x="112" y="172" width="34" height="184" rx="17" fill="url(#midage-female-costume-dino__body)"/>
+    <rect x="254" y="172" width="34" height="184" rx="17" fill="url(#midage-female-costume-dino__body)"/>
+  </g>
+
+  <!-- soft ruffled collar at the base of the neck, well clear of the face -->
+  <path d="M168 164 q32 22 64 0 q-6 30 -32 30 q-26 0 -32-30 z" fill="var(--c2, #A8DCCF)"/>
+
+  <!-- soft belly panel with texture lines -->
+  <rect x="172" y="196" width="56" height="128" rx="27" fill="url(#midage-female-costume-dino__belly)"/>
+  <path d="M180 236 h40 M180 266 h40 M182 296 h36" stroke="#FFFFFF" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- rounded back spikes running down the outer silhouette -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M270 176 q24 6 22 16 q-2 10 -22 14 q6-16 0-30 z"/>
+    <path d="M271 208 q23 6 21 16 q-2 10 -21 14 q6-16 0-30 z"/>
+    <path d="M271 240 q22 6 20 16 q-2 10 -20 14 q6-16 0-30 z"/>
+    <path d="M269 272 q21 6 19 15 q-2 9 -19 13 q6-15 0-28 z"/>
+    <path d="M265 304 q20 5 18 13 q-2 8 -18 11 q5-13 0-24 z"/>
+  </g>
+
+  <!-- subtle scale texture across the shoulders -->
+  <g fill="none" stroke="var(--c2, #A8DCCF)" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round">
+    <path d="M150 200 q8 8 16 0 M170 200 q8 8 16 0 M118 200 q8 8 16 0"/>
+    <path d="M254 200 q8 8 16 0 M274 200 q8 8 16 0"/>
+  </g>
+
+  <!-- soft rounded claw feet -->
+  <g class="sp-shadow">
+    <rect x="156" y="534" width="52" height="40" rx="19" fill="url(#midage-female-costume-dino__foot)"/>
+    <rect x="196" y="534" width="52" height="40" rx="19" fill="url(#midage-female-costume-dino__foot)"/>
+  </g>
+  <g fill="var(--c1, #6BBFAD)" opacity="0.85">
+    <circle cx="166" cy="560" r="7"/>
+    <circle cx="182" cy="563" r="7"/>
+    <circle cx="198" cy="560" r="7"/>
+    <circle cx="210" cy="560" r="7"/>
+    <circle cx="226" cy="563" r="7"/>
+    <circle cx="242" cy="560" r="7"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 182 q42 18 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

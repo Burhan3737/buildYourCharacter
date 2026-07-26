@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Storm Herald" data-family="thunder-god" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="midage-female-costume-thunder-god__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4880)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-thunder-god__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C0584F)"/>
+      <stop offset="1" stop-color="var(--c1, #A44A42)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-thunder-god__legging" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #3E4C90)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-thunder-god__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #384682)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short half-cape hanging from the shoulders, top edge flat at y164 -->
+  <g class="sp-shadow">
+    <path d="M170 164 h60 q28 4 32 34 l14 138 q-78 16 -152 0 l14-138 q4-30 32-34 z"
+          fill="url(#midage-female-costume-thunder-god__cape)"/>
+  </g>
+
+  <!-- figure mass: leggings/hips, tunic, sleeves, refit to midage torso+limbs -->
+  <g class="sp-shadow">
+    <rect x="165" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-thunder-god__legging)"/>
+    <rect x="199" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-thunder-god__legging)"/>
+    <rect x="141" y="313" width="118" height="64" rx="30" fill="url(#midage-female-costume-thunder-god__legging)"/>
+    <path d="M135 185 q0-25 33-25 h64 q33 0 33 25 v108 q0 34 -33 34 h-64 q-33 0 -33-34 z"
+          fill="url(#midage-female-costume-thunder-god__tunic)"/>
+    <rect x="113" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-thunder-god__tunic)"/>
+    <rect x="255" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-thunder-god__tunic)"/>
+  </g>
+
+  <!-- small pauldron plates at the shoulder line -->
+  <g fill="var(--c3, #E3B457)">
+    <rect x="108" y="172" width="44" height="26" rx="12"/>
+    <rect x="248" y="172" width="44" height="26" rx="12"/>
+  </g>
+
+  <!-- wide belt with buckle -->
+  <rect x="138" y="303" width="124" height="24" rx="11" fill="var(--c3, #E3B457)"/>
+  <rect x="186" y="300" width="28" height="28" rx="10" fill="var(--c3, #E3B457)"/>
+
+  <!-- chunky bracers over the forearms -->
+  <rect x="109" y="296" width="40" height="46" rx="17" fill="var(--c3, #E3B457)"/>
+  <rect x="251" y="296" width="40" height="46" rx="17" fill="var(--c3, #E3B457)"/>
+
+  <!-- original mirrored lightning-bolt motif across the chest -->
+  <path d="M190 190 L168 222 L182 222 L172 254 L200 214 L184 214 Z" fill="var(--c3, #E3B457)"/>
+  <path d="M210 190 L232 222 L218 222 L228 254 L200 214 L216 214 Z" fill="var(--c3, #E3B457)"/>
+
+  <!-- tall boots with accent cuffs -->
+  <g class="sp-shadow">
+    <rect x="160" y="462" width="40" height="94" rx="19" fill="url(#midage-female-costume-thunder-god__boot)"/>
+    <rect x="200" y="462" width="40" height="94" rx="19" fill="url(#midage-female-costume-thunder-god__boot)"/>
+    <rect x="156" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-thunder-god__boot)"/>
+    <rect x="196" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-thunder-god__boot)"/>
+  </g>
+  <rect x="156" y="454" width="48" height="20" rx="9" fill="var(--c3, #E3B457)"/>
+  <rect x="196" y="454" width="48" height="20" rx="9" fill="var(--c3, #E3B457)"/>
+
+  <!-- house highlight -->
+  <path d="M160 178 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

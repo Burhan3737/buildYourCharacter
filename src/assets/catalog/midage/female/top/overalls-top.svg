@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Overalls Bib" data-family="overalls-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="midage-female-top-overalls-top__base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDE6D8"/>
+      <stop offset="1" stop-color="#D9D0BC"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-overalls-top__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7FA0)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6A87)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-overalls-top__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7FA0)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6A87)"/>
+    </linearGradient>
+  </defs>
+  <!-- base short-sleeve top worn under the dungaree bib; fixed neutral, not a tunable colour -->
+  <g class="sp-shadow">
+    <rect x="114" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-overalls-top__base)"/>
+    <rect x="252" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-overalls-top__base)"/>
+    <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"
+          fill="url(#midage-female-top-overalls-top__base)"/>
+  </g>
+  <path d="M176 145 q24 34 48 0 z" fill="#D9D0BC"/>
+  <path d="M185 148 q15 20 30 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- dungaree bib and straps, drawn as their own major form -->
+  <g class="sp-shadow">
+    <!-- straps rising over the shoulders -->
+    <path d="M168 212 L146 154 q0-4 4-4 h14 q4 0 4 4 L188 208 z"
+          fill="url(#midage-female-top-overalls-top__strap)"/>
+    <path d="M232 212 L254 154 q0-4 -4-4 h-14 q-4 0 -4 4 L212 208 z"
+          fill="url(#midage-female-top-overalls-top__strap)"/>
+    <!-- chest bib -->
+    <rect x="168" y="186" width="64" height="84" rx="10" fill="url(#midage-female-top-overalls-top__bib)"/>
+  </g>
+  <!-- bib pocket -->
+  <path d="M180 222 h40 v28 q0 6 -6 6 h-28 q-6 0 -6-6 z" fill="var(--c2, #5A6A87)"/>
+  <path d="M186 234 h28" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- buckles -->
+  <rect x="171" y="190" width="15" height="15" rx="3" fill="var(--c3, #C9A45E)"/>
+  <rect x="214" y="190" width="15" height="15" rx="3" fill="var(--c3, #C9A45E)"/>
+  <!-- highlight -->
+  <path d="M176 210 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

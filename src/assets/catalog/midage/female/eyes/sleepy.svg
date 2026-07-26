@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepy" data-family="sleepy" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="midage-female-eyes-sleepy__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-female-eyes-sleepy__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+    <clipPath id="midage-female-eyes-sleepy__clip-l">
+      <path d="M159 114 Q177 107 195 110 Q191 123 177 123 Q163 123 159 114 Z"/>
+    </clipPath>
+    <clipPath id="midage-female-eyes-sleepy__clip-r">
+      <path d="M241 114 Q223 107 205 110 Q209 123 223 123 Q237 123 241 114 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- half closed sclera, drooping toward the outer corner -->
+  <g class="sp-shadow">
+    <path d="M159 114 Q177 107 195 110 Q191 123 177 123 Q163 123 159 114 Z"
+          fill="url(#midage-female-eyes-sleepy__sclera)"/>
+    <path d="M241 114 Q223 107 205 110 Q209 123 223 123 Q237 123 241 114 Z"
+          fill="url(#midage-female-eyes-sleepy__sclera)"/>
+  </g>
+
+  <!-- iris, clipped so the heavy lid eats the top third -->
+  <g clip-path="url(#midage-female-eyes-sleepy__clip-l)">
+    <circle cx="177" cy="115" r="9" fill="#3B2A22"/>
+    <circle cx="177" cy="115" r="9" fill="url(#midage-female-eyes-sleepy__iris)"/>
+    <circle cx="177" cy="115" r="4" fill="#3B2A22"/>
+    <circle cx="173.6" cy="115.4" r="2.4" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#midage-female-eyes-sleepy__clip-r)">
+    <circle cx="223" cy="115" r="9" fill="#3B2A22"/>
+    <circle cx="223" cy="115" r="9" fill="url(#midage-female-eyes-sleepy__iris)"/>
+    <circle cx="223" cy="115" r="4" fill="#3B2A22"/>
+    <circle cx="219.6" cy="115.4" r="2.4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- heavy upper lid resting low over the eye -->
+  <path d="M160 114.5 Q177 107 193 110" stroke="#3B2A22" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 114.5 Q223 107 207 110" stroke="#3B2A22" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft relaxed lid crease -->
+  <path d="M164 106 Q177 101 190 104" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 106 Q223 101 210 104" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash hint -->
+  <path d="M165 124 Q177 127 189 125" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 124 Q223 127 211 125" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

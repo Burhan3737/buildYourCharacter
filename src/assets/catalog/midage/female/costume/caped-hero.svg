@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="midage-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long flowing cape, drawn first so it falls behind the whole figure; top edge flat at y164 -->
+  <g class="sp-shadow">
+    <path d="M170 164 H230 Q260 168 264 202 L280 480
+             Q260 500 240 484 Q220 500 200 484 Q180 500 160 484 Q140 500 120 480
+             L136 202 Q140 168 170 164 Z"
+          fill="url(#midage-female-costume-caped-hero__cape)"/>
+  </g>
+
+  <!-- bodysuit mass, refit to midage torso+limbs -->
+  <g class="sp-shadow">
+    <rect x="165" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-caped-hero__body)"/>
+    <rect x="199" y="366" width="36" height="134" rx="18" fill="url(#midage-female-costume-caped-hero__body)"/>
+    <rect x="141" y="313" width="118" height="64" rx="30" fill="url(#midage-female-costume-caped-hero__body)"/>
+    <path d="M135 185 q0-25 33-25 h64 q33 0 33 25 v108 q0 34 -33 34 h-64 q-33 0 -33-34 z"
+          fill="url(#midage-female-costume-caped-hero__body)"/>
+    <rect x="113" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-caped-hero__body)"/>
+    <rect x="255" y="172" width="32" height="182" rx="16" fill="url(#midage-female-costume-caped-hero__body)"/>
+  </g>
+
+  <!-- trunks over the hips -->
+  <rect x="145" y="309" width="110" height="56" rx="24" fill="url(#midage-female-costume-caped-hero__trim)"/>
+  <!-- belt with buckle -->
+  <rect x="138" y="303" width="124" height="22" rx="10" fill="var(--c3, #F7C873)"/>
+  <rect x="188" y="300" width="24" height="26" rx="9" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest emblem: a rounded diamond crossed by a bar -->
+  <path d="M200 184 Q222 200 200 220 Q178 200 200 184 Z" fill="var(--c3, #F7C873)"/>
+  <rect x="188" y="198" width="24" height="8" rx="4" fill="var(--c3, #F7C873)"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <circle cx="129" cy="364" r="20" fill="var(--c2, #C4534B)"/>
+    <circle cx="271" cy="364" r="20" fill="var(--c2, #C4534B)"/>
+    <rect x="160" y="470" width="40" height="86" rx="19" fill="url(#midage-female-costume-caped-hero__trim)"/>
+    <rect x="200" y="470" width="40" height="86" rx="19" fill="url(#midage-female-costume-caped-hero__trim)"/>
+    <rect x="156" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-caped-hero__trim)"/>
+    <rect x="196" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-caped-hero__trim)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M160 178 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
