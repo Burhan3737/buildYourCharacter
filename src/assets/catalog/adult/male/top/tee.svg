@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crew Tee" data-family="tee" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="adult-male-top-tee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA6C7)"/>
+      <stop offset="1" stop-color="var(--c2, #6F86A8)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA6C7)"/>
+      <stop offset="1" stop-color="var(--c2, #6F86A8)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short sleeves, mounted a few px outside the arm anchors for overlap -->
+    <rect x="104" y="158" width="34" height="82" rx="17" fill="url(#adult-male-top-tee__sleeve)"/>
+    <rect x="262" y="158" width="34" height="82" rx="17" fill="url(#adult-male-top-tee__sleeve)"/>
+    <!-- torso block, hem tucked at y318 -->
+    <path d="M128 184 q0-42 42-42 h60 q42 0 42 42 v82 q2 34 -12 52 h-120 q-2-34-12-52 v-82 z"
+          fill="url(#adult-male-top-tee__body)"/>
+  </g>
+  <!-- crew neckband -->
+  <path d="M172 140 q28 30 56 0 z" fill="var(--c2, #6F86A8)"/>
+  <!-- neck opening -->
+  <path d="M182 143 q18 20 36 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- sleeve hem creases -->
+  <path d="M108 232 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M266 232 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 176 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

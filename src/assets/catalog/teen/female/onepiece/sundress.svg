@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sundress" data-family="sundress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <defs>
+    <linearGradient id="teen-female-onepiece-sundress__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D4AC63)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sundress__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D4AC63)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sundress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D4AC63)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thin shoulder straps flanking the neck, dipping into the bodice top -->
+    <rect x="176" y="172" width="14" height="30" rx="7" fill="url(#teen-female-onepiece-sundress__strap)"/>
+    <rect x="210" y="172" width="14" height="30" rx="7" fill="url(#teen-female-onepiece-sundress__strap)"/>
+    <!-- fitted bodice: flat top y194 x170-230, rounds to shoulder edges 144/256 by y218, tapers to waist -->
+    <path d="M144 218 Q146 194 170 194 H230 Q254 194 256 218 V270 L250 296 Q200 308 150 296 L144 270 Z"
+          fill="url(#teen-female-onepiece-sundress__bodice)"/>
+    <!-- A-line skirt, waist 150-250 flaring to a softly scalloped hem around y440-458 -->
+    <path d="M150 296 H250 Q266 356 276 432 q-76 26 -152 0 Q134 356 150 296 Z"
+          fill="url(#teen-female-onepiece-sundress__skirt)"/>
+  </g>
+
+  <!-- waist sash -->
+  <rect x="146" y="288" width="108" height="18" rx="9" fill="var(--c3, #6BBFAD)"/>
+  <!-- sash knot -->
+  <rect x="190" y="284" width="20" height="26" rx="8" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- upper chest highlight -->
+  <path d="M154 206 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- skirt sheen -->
+  <path d="M160 364 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

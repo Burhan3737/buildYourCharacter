@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chunky Sweater" data-family="sweater" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="adult-male-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
+      <stop offset="1" stop-color="var(--c2, #628A71)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
+      <stop offset="1" stop-color="var(--c2, #628A71)"/>
+    </linearGradient>
+    <clipPath id="adult-male-top-sweater__clip">
+      <path d="M122 184 q0-46 46-46 h64 q46 0 46 46 v78 q2 38 -14 58 h-128 q-2-38-14-58 z"/>
+      <rect x="100" y="154" width="38" height="162" rx="19"/>
+      <rect x="262" y="154" width="38" height="162" rx="19"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- bulky long sleeves -->
+    <rect x="100" y="154" width="38" height="162" rx="19" fill="url(#adult-male-top-sweater__sleeve)"/>
+    <rect x="262" y="154" width="38" height="162" rx="19" fill="url(#adult-male-top-sweater__sleeve)"/>
+    <!-- bulky torso block, hem at y320 -->
+    <path d="M122 184 q0-46 46-46 h64 q46 0 46 46 v78 q2 38 -14 58 h-128 q-2-38-14-58 z"
+          fill="url(#adult-male-top-sweater__body)"/>
+  </g>
+  <!-- ribbed hem band and cuffs, clipped to the knit silhouette -->
+  <g clip-path="url(#adult-male-top-sweater__clip)">
+    <rect x="130" y="296" width="140" height="28" fill="var(--c2, #628A71)"/>
+    <rect x="96" y="292" width="46" height="30" fill="var(--c2, #628A71)"/>
+    <rect x="258" y="292" width="46" height="30" fill="var(--c2, #628A71)"/>
+    <path d="M144 300 v16 M156 300 v16 M168 300 v16 M180 300 v16 M192 300 v16 M204 300 v16 M216 300 v16 M228 300 v16 M240 300 v16 M252 300 v16"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M108 296 v18 M120 296 v18 M132 296 v18 M268 296 v18 M280 296 v18 M292 296 v18"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- wide ribbed crew collar -->
+  <path d="M166 136 q34 34 68 0 z" fill="var(--c2, #628A71)"/>
+  <path d="M180 140 q20 16 40 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- knit texture on the chest -->
+  <path d="M150 214 q50 12 100 0 M150 242 q50 12 100 0 M150 270 q50 12 100 0"
+        stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M148 178 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

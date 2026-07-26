@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepy" data-family="sleepy" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-male-eyes-sleepy__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-male-eyes-sleepy__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6B4A3A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6B4A3A)" stop-opacity="0.82"/>
+    </linearGradient>
+    <clipPath id="adult-male-eyes-sleepy__clip-l">
+      <path d="M161 105 Q178 99.5 195 102 Q190 112 178 112 Q165 112 161 105 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-eyes-sleepy__clip-r">
+      <path d="M239 105 Q222 99.5 205 102 Q210 112 222 112 Q235 112 239 105 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- heavy lidded sclera, a slim crescent shows below the lid -->
+  <g class="sp-shadow">
+    <path d="M161 105 Q178 99.5 195 102 Q190 112 178 112 Q165 112 161 105 Z"
+          fill="url(#adult-male-eyes-sleepy__sclera)"/>
+    <path d="M239 105 Q222 99.5 205 102 Q210 112 222 112 Q235 112 239 105 Z"
+          fill="url(#adult-male-eyes-sleepy__sclera)"/>
+  </g>
+
+  <!-- iris, clipped so the heavy lid eats the top half -->
+  <g clip-path="url(#adult-male-eyes-sleepy__clip-l)">
+    <circle cx="178" cy="105.5" r="8.5" fill="#3B2A22"/>
+    <circle cx="178" cy="105.5" r="8.5" fill="url(#adult-male-eyes-sleepy__iris)"/>
+    <circle cx="178" cy="105.5" r="3.8" fill="#3B2A22"/>
+    <circle cx="175" cy="105.8" r="2" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#adult-male-eyes-sleepy__clip-r)">
+    <circle cx="222" cy="105.5" r="8.5" fill="#3B2A22"/>
+    <circle cx="222" cy="105.5" r="8.5" fill="url(#adult-male-eyes-sleepy__iris)"/>
+    <circle cx="222" cy="105.5" r="3.8" fill="#3B2A22"/>
+    <circle cx="219" cy="105.8" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- heavy upper lid resting low over the eye -->
+  <path d="M162 105.5 Q178 99.5 193 102" stroke="#3B2A22" stroke-width="5.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 105.5 Q222 99.5 207 102" stroke="#3B2A22" stroke-width="5.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- relaxed lid crease -->
+  <path d="M166 97 Q178 92.5 190 95" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 97 Q222 92.5 210 95" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

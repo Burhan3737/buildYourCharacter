@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jumpsuit" data-family="jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2" data-hides="top,bottom">
+  <defs>
+    <linearGradient id="adult-male-onepiece-jumpsuit__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-jumpsuit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-jumpsuit__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-jumpsuit__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide trouser legs, slightly flared, hem at y 548 -->
+    <path d="M140 302 H200 V536 q0 12 -12 12 h-30 q-12 0 -12-12 Q134 420 140 302 Z"
+          fill="url(#adult-male-onepiece-jumpsuit__legL)"/>
+    <path d="M200 302 H260 Q266 420 262 536 q0 12 -12 12 h-30 q-12 0 -12-12 V302 Z"
+          fill="url(#adult-male-onepiece-jumpsuit__legR)"/>
+    <!-- short cap sleeves over the broader shoulders -->
+    <rect x="104" y="158" width="34" height="46" rx="17" fill="url(#adult-male-onepiece-jumpsuit__sleeve)"/>
+    <rect x="262" y="158" width="34" height="46" rx="17" fill="url(#adult-male-onepiece-jumpsuit__sleeve)"/>
+    <!-- bodice, full 130-270 shoulder width, squared neckline dipping to y 182 -->
+    <path d="M130 180 q0-20 20-20 h20 v8 q0 14 14 14 h32 q14 0 14-14 v-8 h20 q20 0 20 20 V302 H130 Z"
+          fill="url(#adult-male-onepiece-jumpsuit__bodice)"/>
+  </g>
+
+  <!-- belted waist -->
+  <rect x="136" y="292" width="128" height="20" rx="10" fill="var(--c2, #6C7CBD)"/>
+  <!-- buckle -->
+  <rect x="190" y="289" width="20" height="26" rx="7" fill="var(--c1, #7E90DC)"/>
+  <!-- hip pockets -->
+  <path d="M152 322 h26 q6 0 6 6 v14 q0 6 -6 6 h-26 q-6 0 -6-6 v-14 q0-6 6-6 Z" fill="var(--c2, #6C7CBD)"/>
+  <path d="M222 322 h26 q6 0 6 6 v14 q0 6 -6 6 h-26 q-6 0 -6-6 v-14 q0-6 6-6 Z" fill="var(--c2, #6C7CBD)"/>
+
+  <!-- upper chest highlight -->
+  <path d="M156 200 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- leg sheen -->
+  <path d="M160 368 v150" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 368 v150" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

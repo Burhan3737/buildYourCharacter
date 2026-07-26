@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dungarees" data-family="dungarees" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="teen-female-bottom-dungarees__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6878B8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-bottom-dungarees__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6878B8)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- denim overalls legwear: full jean-style legs plus a taller high-waist block
+       (the bib itself lives in top/overalls-top.svg) -->
+  <g class="sp-shadow">
+    <path d="M166 334 H198 V538 q0 10 -10 10 H176 q-10 0 -10 -10 Z"
+          fill="url(#teen-female-bottom-dungarees__leg)"/>
+    <path d="M234 334 H202 V538 q0 10 10 10 H224 q10 0 10 -10 Z"
+          fill="url(#teen-female-bottom-dungarees__leg)"/>
+    <rect x="142" y="318" width="116" height="66" rx="24"
+          fill="url(#teen-female-bottom-dungarees__hip)"/>
+  </g>
+
+  <!-- tall high-waist band -->
+  <rect x="142" y="318" width="116" height="22" rx="11" fill="var(--c2, #6878B8)"/>
+
+  <!-- side rivets/buttons -->
+  <circle cx="156" cy="329" r="4" fill="var(--c3, #F7C873)"/>
+  <circle cx="244" cy="329" r="4" fill="var(--c3, #F7C873)"/>
+
+  <!-- centre seam -->
+  <path d="M200 340 v34" stroke="var(--c2, #6878B8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- topstitching -->
+  <path d="M144 333 H256" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M200 342 v30" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M173 530 H195" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M205 530 H227" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M160 350 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Skyguard" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cape, drawn first so it falls behind the figure; starts right at the shoulder line -->
+  <g class="sp-shadow">
+    <path d="M170 200 h60 q26 4 30 36 l16 222
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             q-11 14 -22 0 q-11 -14 -22 0
+             l16 -222 q4 -32 30 -36 z"
+          fill="url(#teen-female-costume-caped-hero__cape)"/>
+  </g>
+
+  <!-- bodysuit mass -->
+  <g class="sp-shadow">
+    <rect x="167" y="330" width="30" height="218" rx="15" fill="url(#teen-female-costume-caped-hero__leg)"/>
+    <rect x="203" y="330" width="30" height="218" rx="15" fill="url(#teen-female-costume-caped-hero__leg)"/>
+    <rect x="148" y="332" width="104" height="54" rx="27" fill="url(#teen-female-costume-caped-hero__body)"/>
+    <path d="M144 218 q0-24 26-24 h60 q26 0 26 24 v102 q0 26 -26 26 h-60 q-26 0-26-26 z"
+          fill="url(#teen-female-costume-caped-hero__body)"/>
+    <rect x="123" y="200" width="28" height="136" rx="14" fill="url(#teen-female-costume-caped-hero__sleeve)"/>
+    <rect x="249" y="200" width="28" height="136" rx="14" fill="url(#teen-female-costume-caped-hero__sleeve)"/>
+  </g>
+
+  <!-- trunks over the hips -->
+  <rect x="148" y="332" width="104" height="52" rx="24" fill="url(#teen-female-costume-caped-hero__trim)"/>
+  <!-- belt -->
+  <rect x="144" y="326" width="112" height="20" rx="10" fill="var(--c3, #F7C873)"/>
+  <rect x="188" y="324" width="24" height="24" rx="9" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest mark: a simple diamond -->
+  <path d="M200 216 L218 244 L200 272 L182 244 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <rect x="123" y="316" width="28" height="18" rx="9" fill="var(--c2, #C4534B)"/>
+    <rect x="249" y="316" width="28" height="18" rx="9" fill="var(--c2, #C4534B)"/>
+    <circle cx="137" cy="346" r="15" fill="var(--c2, #C4534B)"/>
+    <circle cx="263" cy="346" r="15" fill="var(--c2, #C4534B)"/>
+    <rect x="165" y="458" width="34" height="92" rx="17" fill="url(#teen-female-costume-caped-hero__trim)"/>
+    <rect x="201" y="458" width="34" height="92" rx="17" fill="url(#teen-female-costume-caped-hero__trim)"/>
+    <rect x="156" y="540" width="50" height="34" rx="16" fill="url(#teen-female-costume-caped-hero__trim)"/>
+    <rect x="198" y="540" width="50" height="34" rx="16" fill="url(#teen-female-costume-caped-hero__trim)"/>
+  </g>
+
+  <!-- collar highlight, kept at/below the shoulder line -->
+  <path d="M174 196 q26 12 52 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

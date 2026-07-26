@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="adult-male-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cape, drawn first so it falls behind the whole figure; top stays at y=150 -->
+  <g class="sp-shadow">
+    <path d="M158 150 h84 q34 6 40 46 l16 288
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             l16 -288 q6 -40 40 -46 z"
+          fill="url(#adult-male-costume-caped-hero__cape)"/>
+  </g>
+
+  <!-- bodysuit mass -->
+  <g class="sp-shadow">
+    <rect x="162" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-caped-hero__leg)"/>
+    <rect x="206" y="336" width="32" height="216" rx="16" fill="url(#adult-male-costume-caped-hero__leg)"/>
+    <rect x="140" y="300" width="120" height="56" rx="26" fill="url(#adult-male-costume-caped-hero__body)"/>
+    <path d="M130 180 Q130 150 162 150 L238 150 Q270 150 270 180 L270 270 Q270 300 256 310 L144 310 Q130 300 130 270 Z"
+          fill="url(#adult-male-costume-caped-hero__body)"/>
+    <rect x="108" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-caped-hero__sleeve)"/>
+    <rect x="266" y="160" width="26" height="156" rx="13" fill="url(#adult-male-costume-caped-hero__sleeve)"/>
+  </g>
+
+  <!-- trunks over the hips -->
+  <rect x="140" y="300" width="120" height="56" rx="26" fill="url(#adult-male-costume-caped-hero__trim)"/>
+  <!-- belt -->
+  <rect x="136" y="288" width="128" height="22" rx="10" fill="var(--c3, #F7C873)"/>
+  <rect x="186" y="286" width="28" height="26" rx="9" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest mark: a soft four point star, no real-world insignia -->
+  <path d="M200 184 q7 24 30 30 q-23 6 -30 30 q-7 -24 -30 -30 q23 -6 30 -30 z"
+        fill="var(--c3, #F7C873)"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <rect x="108" y="318" width="26" height="20" rx="10" fill="var(--c2, #C4534B)"/>
+    <rect x="266" y="318" width="26" height="20" rx="10" fill="var(--c2, #C4534B)"/>
+    <circle cx="121" cy="332" r="17" fill="var(--c2, #C4534B)"/>
+    <circle cx="279" cy="332" r="17" fill="var(--c2, #C4534B)"/>
+    <rect x="161" y="466" width="34" height="92" rx="17" fill="url(#adult-male-costume-caped-hero__trim)"/>
+    <rect x="205" y="466" width="34" height="92" rx="17" fill="url(#adult-male-costume-caped-hero__trim)"/>
+    <rect x="156" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-caped-hero__trim)"/>
+    <rect x="196" y="540" width="48" height="30" rx="15" fill="url(#adult-male-costume-caped-hero__trim)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M144 172 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

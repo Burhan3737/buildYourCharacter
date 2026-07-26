@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Round" data-family="round" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-male-eyes-round__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-male-eyes-round__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6B4A3A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6B4A3A)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sclera, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <circle cx="178" cy="101" r="12.5" fill="url(#adult-male-eyes-round__sclera)"/>
+    <circle cx="222" cy="101" r="12.5" fill="url(#adult-male-eyes-round__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="178" cy="102" r="8.5" fill="#3B2A22"/>
+  <circle cx="222" cy="102" r="8.5" fill="#3B2A22"/>
+  <circle cx="178" cy="102" r="8.5" fill="url(#adult-male-eyes-round__iris)"/>
+  <circle cx="222" cy="102" r="8.5" fill="url(#adult-male-eyes-round__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="178" cy="102" r="4" fill="#3B2A22"/>
+  <circle cx="222" cy="102" r="4" fill="#3B2A22"/>
+
+  <!-- catchlights, single dot per eye for a plainer masculine finish -->
+  <circle cx="175" cy="98.2" r="2.6" fill="#FFFFFF"/>
+  <circle cx="219" cy="98.2" r="2.6" fill="#FFFFFF"/>
+
+  <!-- upper lash line, straighter and slightly heavier -->
+  <path d="M166.5 93 Q178 87.5 189.5 93" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233.5 93 Q222 87.5 210.5 93" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Romper" data-family="romper" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <defs>
+    <linearGradient id="adult-male-onepiece-romper__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-romper__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-romper__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-romper__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short sleeves -->
+    <rect x="104" y="158" width="34" height="50" rx="17" fill="url(#adult-male-onepiece-romper__sleeve)"/>
+    <rect x="262" y="158" width="34" height="50" rx="17" fill="url(#adult-male-onepiece-romper__sleeve)"/>
+    <!-- bodice with a round neckline dipping to y 180 -->
+    <path d="M130 184 q0-24 24-24 q46 20 92 0 q24 0 24 24 V298 H130 Z"
+          fill="url(#adult-male-onepiece-romper__bodice)"/>
+    <!-- short shorts, cuffed hem at y 410, well above the knee -->
+    <path d="M140 294 H200 V398 q0 12 -12 12 h-30 q-12 0 -12-12 Z"
+          fill="url(#adult-male-onepiece-romper__legL)"/>
+    <path d="M200 294 H260 L262 398 q0 12 -12 12 h-30 q-12 0 -12-12 V294 Z"
+          fill="url(#adult-male-onepiece-romper__legR)"/>
+  </g>
+
+  <!-- gathered waist -->
+  <rect x="138" y="290" width="124" height="16" rx="8" fill="var(--c2, #5CA495)"/>
+  <!-- cuffed hems -->
+  <rect x="138" y="396" width="64" height="18" rx="9" fill="var(--c2, #5CA495)"/>
+  <rect x="198" y="396" width="64" height="18" rx="9" fill="var(--c2, #5CA495)"/>
+
+  <!-- small collar -->
+  <path d="M156 160 q44 26 88 0 q-8 22 -44 22 q-36 0 -44-22 Z" fill="var(--c3, #F7C873)"/>
+  <!-- button placket -->
+  <circle cx="200" cy="204" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="228" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="252" r="5" fill="var(--c3, #F7C873)"/>
+
+  <!-- upper chest highlight -->
+  <path d="M160 200 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- hip sheen -->
+  <path d="M158 330 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
