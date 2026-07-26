@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stubble" data-family="stubble" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: upper lip=SHADOW - coverage=full jaw and cheeks - cheek line=low and soft, no edge - length=SHADOW -->
+  <defs>
+    <linearGradient id="teen-female-beard-stubble__field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.52"/>
+    </linearGradient>
+    <pattern id="teen-female-beard-stubble__speck" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <circle cx="4" cy="4" r="1.5" fill="var(--hair2, #331E16)" fill-opacity="0.5"/>
+      <circle cx="11" cy="10" r="1.3" fill="var(--hair2, #331E16)" fill-opacity="0.42"/>
+    </pattern>
+    <clipPath id="teen-female-beard-stubble__clip">
+      <path d="M150 152 C152 176 170 196 200 199 C230 196 248 176 250 152
+               C244 166 232 174 218 176 C210 177 208 174 200 174
+               C192 174 190 177 182 176 C168 174 156 166 150 152 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- jaw, chin and lower cheeks: a soft field with no defined edge -->
+    <path d="M150 152 C152 176 170 196 200 199 C230 196 248 176 250 152
+             C244 166 232 174 218 176 C210 177 208 174 200 174
+             C192 174 190 177 182 176 C168 174 156 166 150 152 Z"
+          fill="url(#teen-female-beard-stubble__field)"/>
+    <!-- upper lip shadow, the same soft value -->
+    <path d="M177 151 C183 145 192 143 200 146 C208 143 217 145 223 151
+             C217 155 209 153 200 153 C191 153 183 155 177 151 Z"
+          fill="url(#teen-female-beard-stubble__field)"/>
+    <g clip-path="url(#teen-female-beard-stubble__clip)">
+      <rect x="146" y="146" width="110" height="58" fill="url(#teen-female-beard-stubble__speck)"/>
+    </g>
+  </g>
+
+  <!-- the chin whorl reads a shade denser -->
+  <path d="M188 184 C193 180 207 180 212 184 C210 192 190 192 188 184 Z"
+        fill="var(--hair2, #331E16)" fill-opacity="0.3"/>
+  <!-- philtrum gap kept clear -->
+  <path d="M197 145 q3 4 0 8" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

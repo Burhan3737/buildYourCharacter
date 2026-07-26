@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mutton Chops" data-family="mutton-chops" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: upper lip=BARE - coverage=CHEEKS ONLY, chin bare - cheek line=joined to the sideburn - length=past the jaw -->
+  <defs>
+    <linearGradient id="teen-female-beard-mutton-chops__chop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left chop: narrow at the ear, flaring wide toward the jaw corner -->
+    <path d="M137 122 C135 148 142 172 160 188 C172 198 186 192 182 180
+             C176 165 173 148 171 130 C167 119 147 116 137 122 Z"
+          fill="url(#teen-female-beard-mutton-chops__chop)"/>
+    <!-- right chop -->
+    <path d="M263 122 C265 148 258 172 240 188 C228 198 214 192 218 180
+             C224 165 227 148 229 130 C233 119 253 116 263 122 Z"
+          fill="url(#teen-female-beard-mutton-chops__chop)"/>
+  </g>
+
+  <!-- the flared lower edge, drawn as three uneven lobes each side -->
+  <path d="M147 176 C152 186 160 193 170 195 C160 197 148 189 143 176 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M253 176 C248 186 240 193 230 195 C240 197 252 189 257 176 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- both chops stop well short of the chin -->
+  <path d="M142 132 q6 32 22 52" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 132 q-6 32 -22 52" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>
