@@ -1,31 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dungarees" data-family="dungarees" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: bib rise on two straps · full-length leg · straight width · plain hem -->
   <defs>
-    <linearGradient id="newborn-female-bottom-dungarees__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+    <linearGradient id="newborn-female-bottom-dungarees__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A93C4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6E99)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-bottom-dungarees__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A93C4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6E99)"/>
     </linearGradient>
     <linearGradient id="newborn-female-bottom-dungarees__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+      <stop offset="0" stop-color="var(--c1, #7A93C4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6E99)"/>
     </linearGradient>
   </defs>
-  <!-- soft footed overall-trousers, with short strap stubs and a small bib flap -->
   <g class="sp-shadow">
-    <rect x="172" y="518" width="26" height="32" rx="13" fill="url(#newborn-female-bottom-dungarees__leg)"/>
-    <rect x="202" y="518" width="26" height="32" rx="13" fill="url(#newborn-female-bottom-dungarees__leg)"/>
-    <rect x="158" y="492" width="84" height="40" rx="20" fill="url(#newborn-female-bottom-dungarees__hip)"/>
+    <rect x="168" y="410" width="13" height="30" rx="6" fill="url(#newborn-female-bottom-dungarees__strap)"/>
+    <rect x="219" y="410" width="13" height="30" rx="6" fill="url(#newborn-female-bottom-dungarees__strap)"/>
+    <path d="M166 436 L234 436 Q244 436 244 448 L244 512 Q244 528 228 528 L172 528 Q156 528 156 512 L156 448 Q156 436 166 436 Z"
+          fill="url(#newborn-female-bottom-dungarees__bib)"/>
+    <rect x="171" y="522" width="28" height="34" rx="11" fill="url(#newborn-female-bottom-dungarees__leg)"/>
+    <rect x="201" y="522" width="28" height="34" rx="11" fill="url(#newborn-female-bottom-dungarees__leg)"/>
   </g>
-  <!-- short strap stubs, rising just above the waistband -->
-  <rect x="178" y="480" width="9" height="16" rx="4.5" fill="var(--c2, #5E72AB)"/>
-  <rect x="213" y="480" width="9" height="16" rx="4.5" fill="var(--c2, #5E72AB)"/>
-  <!-- small bib flap -->
-  <path d="M182 492 h36 v16 q0 6 -6 6 h-24 q-6 0-6-6 z" fill="var(--c2, #5E72AB)"/>
-  <circle cx="200" cy="502" r="3" fill="var(--c3, #EBC98A)"/>
-  <!-- cuffs -->
-  <rect x="172" y="540" width="26" height="10" rx="5" fill="var(--c2, #5E72AB)"/>
-  <rect x="202" y="540" width="26" height="10" rx="5" fill="var(--c2, #5E72AB)"/>
-  <path d="M166 502 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4.5"
+  <!-- strap buckles -->
+  <rect x="164" y="434" width="20" height="11" rx="4" fill="var(--c3, #EBC98A)"/>
+  <rect x="216" y="434" width="20" height="11" rx="4" fill="var(--c3, #EBC98A)"/>
+  <!-- bib patch pocket -->
+  <path d="M180 452 h40 v28 q0 4 -4 4 h-32 q-4 0-4-4 z" fill="var(--c2, #5A6E99)"/>
+  <path d="M180 462 h40" stroke="var(--c3, #EBC98A)" stroke-width="2" stroke-dasharray="4 3"
+        fill="none" stroke-linecap="round"/>
+  <!-- side topstitch and rise seam -->
+  <path d="M162 452 v66 M238 452 v66 M200 490 v34" stroke="var(--c3, #EBC98A)"
+        stroke-width="2" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M174 448 q26 8 52 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4.5"
         fill="none" stroke-linecap="round"/>
 </svg>

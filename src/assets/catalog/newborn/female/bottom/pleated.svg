@@ -1,24 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Pleated" data-family="pleated" data-slot="bottom"
+     data-name="Pleated Skirt" data-family="pleated" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · no leg division · knife-pleated flare · notched pleat hem -->
   <defs>
-    <linearGradient id="newborn-female-bottom-pleated__flare" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6A7CCB)"/>
+    <linearGradient id="newborn-female-bottom-pleated__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B8CCE8)"/>
+      <stop offset="1" stop-color="var(--c2, #8FA9CC)"/>
     </linearGradient>
   </defs>
-  <!-- tiny soft pleated bloomer-skirt -->
   <g class="sp-shadow">
-    <path d="M158 492 q0-10 10-10 h64 q10 0 10 10 v18 q0 18 -20 18 h-44 q-20 0-20-18 z"
-          fill="url(#newborn-female-bottom-pleated__flare)"/>
+    <path d="M162 494 L238 494 L252 546 L242 554 L232 546 L222 554 L212 546 L200 554 L188 546 L178 554 L168 546 L158 554 L148 546 Z"
+          fill="url(#newborn-female-bottom-pleated__body)"/>
   </g>
-  <rect x="158" y="492" width="84" height="10" rx="5" fill="var(--c2, #6A7CCB)"/>
-  <!-- pleat lines -->
-  <path d="M172 502 v22" stroke="var(--c3, #F7C873)" stroke-width="1.8" opacity="0.7" fill="none" stroke-linecap="round"/>
-  <path d="M186 502 v26" stroke="var(--c3, #F7C873)" stroke-width="1.8" opacity="0.7" fill="none" stroke-linecap="round"/>
-  <path d="M200 502 v28" stroke="var(--c3, #F7C873)" stroke-width="1.8" opacity="0.7" fill="none" stroke-linecap="round"/>
-  <path d="M214 502 v26" stroke="var(--c3, #F7C873)" stroke-width="1.8" opacity="0.7" fill="none" stroke-linecap="round"/>
-  <path d="M228 502 v22" stroke="var(--c3, #F7C873)" stroke-width="1.8" opacity="0.7" fill="none" stroke-linecap="round"/>
-  <path d="M166 502 q34 8 68 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+  <!-- knife pleats: every fold is drawn, so the notched hem reads as structure -->
+  <path d="M172 502 L158 548 M186 500 L178 549 M200 499 L200 549 M214 500 L222 549 M228 502 L242 548"
+        stroke="var(--c2, #8FA9CC)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M179 502 L168 546 M193 500 L189 548 M207 500 L211 548 M221 502 L232 546"
+        stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- flat waistband over the pleat heads -->
+  <rect x="160" y="492" width="80" height="14" rx="6" fill="var(--c3, #3D4E6B)"/>
+  <circle cx="200" cy="499" r="3" fill="var(--c1, #B8CCE8)"/>
+  <!-- highlight -->
+  <path d="M170 512 q30 8 60 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

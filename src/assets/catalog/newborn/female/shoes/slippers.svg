@@ -1,22 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Slippers" data-family="slippers" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2" data-hides="">
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: collapsed collar below the ankle · rounded toe · no fastening · no sole definition -->
   <defs>
-    <linearGradient id="newborn-female-shoes-slippers__upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+    <linearGradient id="newborn-female-shoes-slippers__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6A8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #C685A6)"/>
     </linearGradient>
   </defs>
-  <!-- the simplest plain soft bootie -->
   <g class="sp-shadow">
-    <rect x="168" y="542" width="34" height="28" rx="14" fill="url(#newborn-female-shoes-slippers__upper)"/>
-    <rect x="198" y="542" width="34" height="28" rx="14" fill="url(#newborn-female-shoes-slippers__upper)"/>
+    <path d="M166 550 q0-8 10-8 h20 q12 0 12 12 v8 q0 8 -10 8 h-22 q-10 0-10-8 z"
+          fill="url(#newborn-female-shoes-slippers__body)"/>
+    <path d="M196 550 q0-8 10-8 h20 q12 0 12 12 v8 q0 8 -10 8 h-22 q-10 0-10-8 z"
+          fill="url(#newborn-female-shoes-slippers__body)"/>
   </g>
-  <!-- tiny pompom accent -->
-  <circle cx="185" cy="546" r="4.4" fill="#FFFFFF" opacity="0.9"/>
-  <circle cx="215" cy="546" r="4.4" fill="#FFFFFF" opacity="0.9"/>
-  <path d="M174 558 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3.2"
+  <!-- the collapsed fluffy collar that defines the family -->
+  <path d="M166 548 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0" stroke="var(--c3, #FBEFD9)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M196 548 q6 -8 12 0 q6 -8 12 0 q6 -8 12 0" stroke="var(--c3, #FBEFD9)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- little pom on each toe -->
+  <circle cx="200" cy="556" r="5.5" fill="var(--c3, #FBEFD9)"/>
+  <circle cx="230" cy="556" r="5.5" fill="var(--c3, #FBEFD9)"/>
+  <!-- soft toe highlight, no sole line anywhere -->
+  <path d="M172 558 q12 4 22 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.4"
         fill="none" stroke-linecap="round"/>
-  <path d="M204 558 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3.2"
+  <path d="M202 558 q12 4 22 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.4"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,18 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Skirt" data-family="skirt" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: natural rise · no leg division · A-line flare · plain bound hem above the knee -->
   <defs>
-    <linearGradient id="newborn-female-bottom-skirt__flare" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #55A392)"/>
+    <linearGradient id="newborn-female-bottom-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #DCA84F)"/>
     </linearGradient>
+    <pattern id="newborn-female-bottom-skirt__dots" patternUnits="userSpaceOnUse"
+             x="140" y="490" width="16" height="16">
+      <circle cx="8" cy="8" r="3" fill="var(--c2, #FFFFFF)" fill-opacity="0.75"/>
+    </pattern>
+    <clipPath id="newborn-female-bottom-skirt__clip">
+      <path d="M160 494 L240 494 L256 540 Q256 548 246 548 L154 548 Q144 548 144 540 Z"/>
+    </clipPath>
   </defs>
-  <!-- tiny soft bloomer-skirt, flared at the hem -->
   <g class="sp-shadow">
-    <path d="M158 492 q0-10 10-10 h64 q10 0 10 10 v18 q0 18 -20 18 h-44 q-20 0-20-18 z"
-          fill="url(#newborn-female-bottom-skirt__flare)"/>
+    <path d="M160 494 L240 494 L256 540 Q256 548 246 548 L154 548 Q144 548 144 540 Z"
+          fill="url(#newborn-female-bottom-skirt__body)"/>
   </g>
-  <rect x="158" y="492" width="84" height="10" rx="5" fill="var(--c2, #55A392)"/>
-  <path d="M166 502 q34 8 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+  <!-- scattered dot print -->
+  <rect x="142" y="492" width="116" height="58" fill="url(#newborn-female-bottom-skirt__dots)"
+        clip-path="url(#newborn-female-bottom-skirt__clip)"/>
+  <!-- waistband and hem band, both in the accent so the A-line reads at thumbnail size -->
+  <rect x="158" y="492" width="84" height="13" rx="6" fill="var(--c3, #E2604F)"/>
+  <path d="M148 538 L252 538 L254 545 Q254 548 246 548 L154 548 Q146 548 146 545 Z"
+        fill="var(--c3, #E2604F)"/>
+  <!-- flare folds -->
+  <path d="M180 506 L172 538 M200 506 L200 538 M220 506 L228 538"
+        stroke="var(--c1, #DCA84F)" stroke-opacity="0.75" stroke-width="2.4" fill="none"
+        stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M168 512 q32 8 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4.5"
         fill="none" stroke-linecap="round"/>
 </svg>

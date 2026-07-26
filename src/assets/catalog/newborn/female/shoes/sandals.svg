@@ -1,24 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sandals" data-family="sandals" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2" data-hides="">
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: no shaft at all · open toe · two-strap buckle · thin flat sole -->
   <defs>
-    <linearGradient id="newborn-female-shoes-sandals__upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
+    <linearGradient id="newborn-female-shoes-sandals__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C89A6A)"/>
+      <stop offset="1" stop-color="var(--c2, #A87C51)"/>
     </linearGradient>
   </defs>
-  <!-- soft strappy bootie, fully soft-soled -->
   <g class="sp-shadow">
-    <rect x="168" y="544" width="34" height="26" rx="13" fill="url(#newborn-female-shoes-sandals__upper)"/>
-    <rect x="198" y="544" width="34" height="26" rx="13" fill="url(#newborn-female-shoes-sandals__upper)"/>
+    <rect x="166" y="560" width="38" height="10" rx="5" fill="url(#newborn-female-shoes-sandals__sole)"/>
+    <rect x="196" y="560" width="38" height="10" rx="5" fill="url(#newborn-female-shoes-sandals__sole)"/>
   </g>
-  <!-- crossed straps -->
-  <path d="M172 550 L198 562" stroke="var(--c2, #E08F82)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M198 550 L172 562" stroke="var(--c2, #E08F82)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M202 550 L228 562" stroke="var(--c2, #E08F82)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M228 550 L202 562" stroke="var(--c2, #E08F82)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M174 556 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
+  <!-- the open upper: a toe strap and an instep strap, the foot bare between them -->
+  <path d="M170 558 q14 -8 28 0" stroke="var(--c1, #F4A79B)" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M204 556 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
+  <path d="M172 548 q12 -7 24 0" stroke="var(--c1, #F4A79B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 558 q14 -8 28 0" stroke="var(--c1, #F4A79B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 548 q12 -7 24 0" stroke="var(--c1, #F4A79B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- ankle strap with a tiny buckle -->
+  <path d="M168 552 q-4 6 0 10" stroke="var(--c1, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 552 q4 6 0 10" stroke="var(--c1, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="168" cy="555" r="3" fill="var(--c3, #F7C873)"/>
+  <circle cx="232" cy="555" r="3" fill="var(--c3, #F7C873)"/>
+  <!-- footbed edge -->
+  <path d="M170 564 h30 M200 564 h30" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
 </svg>

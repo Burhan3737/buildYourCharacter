@@ -1,35 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Romper" data-family="romper" data-slot="onepiece"
      data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: short set-in sleeve · shoulder button placket · short cuffed leg at mid-thigh · boxy -->
   <defs>
-    <linearGradient id="newborn-female-onepiece-romper__bodice" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-female-onepiece-romper__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
-    </linearGradient>
-    <linearGradient id="newborn-female-onepiece-romper__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+      <stop offset="1" stop-color="var(--c2, #4F9A8A)"/>
     </linearGradient>
     <linearGradient id="newborn-female-onepiece-romper__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+      <stop offset="1" stop-color="var(--c2, #4F9A8A)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-romper__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4F9A8A)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="126" y="420" width="28" height="30" rx="14" fill="url(#newborn-female-onepiece-romper__sleeve)"/>
-    <rect x="246" y="420" width="28" height="30" rx="14" fill="url(#newborn-female-onepiece-romper__sleeve)"/>
-    <path d="M152 442 q0-32 32-32 h32 q32 0 32 32 v54 q0 22 -22 22 h-52 q-22 0-22-22 z"
-          fill="url(#newborn-female-onepiece-romper__bodice)"/>
-    <rect x="172" y="514" width="24" height="16" rx="8" fill="url(#newborn-female-onepiece-romper__leg)"/>
-    <rect x="204" y="514" width="24" height="16" rx="8" fill="url(#newborn-female-onepiece-romper__leg)"/>
+    <rect x="129" y="420" width="28" height="30" rx="14" fill="url(#newborn-female-onepiece-romper__sleeve)"/>
+    <rect x="243" y="420" width="28" height="30" rx="14" fill="url(#newborn-female-onepiece-romper__sleeve)"/>
+    <path d="M152 412 h96 v58 q0 30 -30 30 h-36 q-30 0-30-30 z"
+          fill="url(#newborn-female-onepiece-romper__body)"/>
+    <rect x="170" y="494" width="30" height="26" rx="12" fill="url(#newborn-female-onepiece-romper__leg)"/>
+    <rect x="200" y="494" width="30" height="26" rx="12" fill="url(#newborn-female-onepiece-romper__leg)"/>
   </g>
-  <!-- gathered waist -->
-  <rect x="152" y="490" width="96" height="10" rx="5" fill="var(--c2, #5CA495)"/>
-  <!-- small collar -->
-  <path d="M178 412 q22 14 44 0 q-6 16 -22 16 q-16 0-22-16 z" fill="var(--c3, #F7C873)"/>
-  <!-- buttons -->
-  <circle cx="200" cy="436" r="3.2" fill="var(--c3, #F7C873)"/>
-  <circle cx="200" cy="456" r="3.2" fill="var(--c3, #F7C873)"/>
-  <path d="M164 434 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+  <!-- shoulder placket with real buttons, which is how a romper actually opens -->
+  <rect x="152" y="412" width="96" height="12" rx="4" fill="var(--c3, #F7C873)"/>
+  <circle cx="170" cy="418" r="3.2" fill="var(--c2, #4F9A8A)"/>
+  <circle cx="200" cy="418" r="3.2" fill="var(--c2, #4F9A8A)"/>
+  <circle cx="230" cy="418" r="3.2" fill="var(--c2, #4F9A8A)"/>
+  <!-- patch pocket -->
+  <path d="M182 448 h36 v22 q0 4 -4 4 h-28 q-4 0-4-4 z" fill="var(--c2, #4F9A8A)"/>
+  <path d="M182 456 h36" stroke="var(--c3, #F7C873)" stroke-width="2" stroke-dasharray="4 3"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuffed short legs -->
+  <rect x="168" y="510" width="34" height="12" rx="6" fill="var(--c3, #F7C873)"/>
+  <rect x="198" y="510" width="34" height="12" rx="6" fill="var(--c3, #F7C873)"/>
+  <!-- highlight -->
+  <path d="M166 436 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

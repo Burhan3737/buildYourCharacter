@@ -1,62 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Little Caped Hero Onesie" data-family="caped-hero" data-slot="costume"
+     data-name="Little Caped Hero" data-family="caped-hero" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: long sleeve under a shoulder-fastened cape · closed · full-length footed hem · fitted -->
+  <!-- generic archetype: the chest is deliberately plain. No insignia, no emblem, no lettering,
+       and the palette is kept away from any signature colour pairing. -->
   <defs>
     <linearGradient id="newborn-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+      <stop offset="0" stop-color="var(--c2, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DCA84F)"/>
     </linearGradient>
     <linearGradient id="newborn-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #8E7CC8)"/>
+      <stop offset="1" stop-color="var(--c1, #6E5CA8)"/>
     </linearGradient>
     <linearGradient id="newborn-female-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #8E7CC8)"/>
+      <stop offset="1" stop-color="var(--c1, #6E5CA8)"/>
     </linearGradient>
     <linearGradient id="newborn-female-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #8E7CC8)"/>
+      <stop offset="1" stop-color="var(--c1, #6E5CA8)"/>
     </linearGradient>
     <linearGradient id="newborn-female-costume-caped-hero__foot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #2A1D17)"/>
     </linearGradient>
   </defs>
-
-  <!-- small cape, drawn first so it falls behind the whole figure -->
   <g class="sp-shadow">
-    <path d="M164 416 h72 q24 0 24 24 v64 q0 20 -20 20 h-80 q-20 0-20-20 v-64 q0-24 24-24 z"
+    <!-- long cape, drawn first so it falls behind the whole figure -->
+    <path d="M158 420 L242 420 L262 540 Q266 560 244 562 L156 562 Q134 560 138 540 Z"
           fill="url(#newborn-female-costume-caped-hero__cape)"/>
-    <circle cx="182" cy="504" r="9" fill="url(#newborn-female-costume-caped-hero__cape)"/>
-    <circle cx="200" cy="504" r="9" fill="url(#newborn-female-costume-caped-hero__cape)"/>
-    <circle cx="218" cy="504" r="9" fill="url(#newborn-female-costume-caped-hero__cape)"/>
+    <rect x="126" y="423" width="30" height="56" rx="15" fill="url(#newborn-female-costume-caped-hero__sleeve)"/>
+    <rect x="244" y="423" width="30" height="56" rx="15" fill="url(#newborn-female-costume-caped-hero__sleeve)"/>
+    <path d="M152 446 Q152 419 182 418 L218 418 Q248 419 248 446 L248 492 Q248 512 228 512 L172 512 Q152 512 152 492 Z"
+          fill="url(#newborn-female-costume-caped-hero__body)"/>
+    <rect x="169" y="506" width="30" height="46" rx="13" fill="url(#newborn-female-costume-caped-hero__leg)"/>
+    <rect x="201" y="506" width="30" height="46" rx="13" fill="url(#newborn-female-costume-caped-hero__leg)"/>
+    <rect x="164" y="544" width="38" height="26" rx="12" fill="url(#newborn-female-costume-caped-hero__foot)"/>
+    <rect x="198" y="544" width="38" height="26" rx="12" fill="url(#newborn-female-costume-caped-hero__foot)"/>
   </g>
-
-  <!-- plush onesie mass -->
-  <g class="sp-shadow">
-    <rect x="124" y="420" width="38" height="80" rx="19" fill="url(#newborn-female-costume-caped-hero__sleeve)"/>
-    <rect x="238" y="420" width="38" height="80" rx="19" fill="url(#newborn-female-costume-caped-hero__sleeve)"/>
-    <rect x="152" y="416" width="96" height="94" rx="28" fill="url(#newborn-female-costume-caped-hero__body)"/>
-    <rect x="156" y="492" width="88" height="42" rx="20" fill="url(#newborn-female-costume-caped-hero__body)"/>
-    <rect x="168" y="514" width="34" height="46" rx="16" fill="url(#newborn-female-costume-caped-hero__leg)"/>
-    <rect x="198" y="514" width="34" height="46" rx="16" fill="url(#newborn-female-costume-caped-hero__leg)"/>
-  </g>
-
-  <!-- soft booties -->
-  <g class="sp-shadow">
-    <rect x="162" y="538" width="46" height="32" rx="16" fill="url(#newborn-female-costume-caped-hero__foot)"/>
-    <rect x="192" y="538" width="46" height="32" rx="16" fill="url(#newborn-female-costume-caped-hero__foot)"/>
-  </g>
-
-  <!-- collar band -->
-  <rect x="170" y="416" width="60" height="14" rx="7" fill="var(--c2, #C4534B)"/>
-
-  <!-- original chest mark: a soft four-point star -->
-  <path d="M200 442 q5 18 23 23 q-18 5 -23 23 q-5 -18 -23 -23 q18 -5 23 -23 z"
-        fill="var(--c3, #F7C873)"/>
-
-  <!-- house highlight -->
-  <path d="M172 434 q28 14 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <!-- two round cape fasteners at the shoulders: how the cape is actually held on -->
+  <circle cx="166" cy="426" r="7" fill="var(--c3, #3B2A22)"/>
+  <circle cx="234" cy="426" r="7" fill="var(--c3, #3B2A22)"/>
+  <!-- cape drape folds -->
+  <path d="M170 440 L156 552 M200 442 L200 556 M230 440 L244 552"
+        stroke="var(--c2, #DCA84F)" stroke-opacity="0.75" stroke-width="3" fill="none"
+        stroke-linecap="round"/>
+  <!-- wide belt with a plain unmarked plate -->
+  <rect x="152" y="482" width="96" height="16" rx="5" fill="var(--c3, #3B2A22)"/>
+  <rect x="188" y="480" width="24" height="20" rx="5" fill="var(--c2, #F7C873)"/>
+  <!-- contrast cuffs -->
+  <rect x="126" y="466" width="30" height="12" rx="6" fill="var(--c3, #3B2A22)"/>
+  <rect x="244" y="466" width="30" height="12" rx="6" fill="var(--c3, #3B2A22)"/>
+  <!-- highlight; the chest stays empty -->
+  <path d="M172 436 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

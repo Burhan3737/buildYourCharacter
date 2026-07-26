@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFDFF"/>
+      <stop offset="1" stop-color="#DFE4F0"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5F7F5A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5F7F5A)" stop-opacity="0.76"/>
+    </linearGradient>
+    <clipPath id="newborn-female-eyes-hooded__clipL">
+      <ellipse cx="166" cy="354" rx="16" ry="13"/>
+    </clipPath>
+    <clipPath id="newborn-female-eyes-hooded__clipR">
+      <ellipse cx="234" cy="354" rx="16" ry="13"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <ellipse cx="166" cy="354" rx="16" ry="13" fill="url(#newborn-female-eyes-hooded__sclera)"/>
+    <ellipse cx="234" cy="354" rx="16" ry="13" fill="url(#newborn-female-eyes-hooded__sclera)"/>
+  </g>
+  <g clip-path="url(#newborn-female-eyes-hooded__clipL)">
+    <circle cx="166" cy="355" r="11" fill="#3B2A22"/>
+    <circle cx="166" cy="355" r="11" fill="url(#newborn-female-eyes-hooded__iris)"/>
+    <circle cx="166" cy="355" r="4.8" fill="#3B2A22"/>
+    <circle cx="162" cy="350.6" r="3.4" fill="#FFFFFF"/>
+    <!-- the hood itself: upper lid dropped over the top of the aperture -->
+    <path d="M148 336 Q166 349 184 336 L184 342 Q166 354 148 342 Z" fill="var(--skin2, #E7B892)"/>
+  </g>
+  <g clip-path="url(#newborn-female-eyes-hooded__clipR)">
+    <circle cx="234" cy="355" r="11" fill="#3B2A22"/>
+    <circle cx="234" cy="355" r="11" fill="url(#newborn-female-eyes-hooded__iris)"/>
+    <circle cx="234" cy="355" r="4.8" fill="#3B2A22"/>
+    <circle cx="230" cy="350.6" r="3.4" fill="#FFFFFF"/>
+    <path d="M252 336 Q234 349 216 336 L216 342 Q234 354 252 342 Z" fill="var(--skin2, #E7B892)"/>
+  </g>
+  <!-- the fold sits low, so only a short strip of lid stays visible -->
+  <path d="M148 340 Q166 328 184 340" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 340 Q234 328 216 340" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 331 Q166 321 182 331" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 331 Q234 321 218 331" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

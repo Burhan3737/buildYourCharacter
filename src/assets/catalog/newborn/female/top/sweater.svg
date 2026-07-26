@@ -1,36 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sweater" data-family="sweater" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: dropped long sleeve · closed · deep ribbed hem past the hip · boxy -->
   <defs>
     <linearGradient id="newborn-female-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AE54)"/>
+      <stop offset="0" stop-color="var(--c1, #E3A0A8)"/>
+      <stop offset="1" stop-color="var(--c2, #C4808A)"/>
     </linearGradient>
     <linearGradient id="newborn-female-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AE54)"/>
+      <stop offset="0" stop-color="var(--c1, #E3A0A8)"/>
+      <stop offset="1" stop-color="var(--c2, #C4808A)"/>
     </linearGradient>
+    <linearGradient id="newborn-female-top-sweater__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4808A)"/>
+      <stop offset="1" stop-color="var(--c2, #AE6B76)"/>
+    </linearGradient>
+    <pattern id="newborn-female-top-sweater__knit" patternUnits="userSpaceOnUse"
+             x="150" y="410" width="16" height="16">
+      <path d="M2 14 Q8 4 14 14" stroke="var(--c3, #FBEFD9)" stroke-opacity="0.55"
+            stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="newborn-female-top-sweater__clip">
+      <path d="M150 434 q0-24 24-24 h52 q24 0 24 24 v50 q0 14 -14 14 h-72 q-14 0-14-14 z"/>
+    </clipPath>
   </defs>
   <g class="sp-shadow">
-    <rect x="124" y="420" width="30" height="60" rx="15" fill="url(#newborn-female-top-sweater__sleeve)"/>
-    <rect x="246" y="420" width="30" height="60" rx="15" fill="url(#newborn-female-top-sweater__sleeve)"/>
-    <path d="M150 442 q0-32 32-32 h36 q32 0 32 32 v40 q0 34 -32 34 h-36 q-32 0-32-34 z"
+    <rect x="120" y="432" width="36" height="52" rx="18" fill="url(#newborn-female-top-sweater__sleeve)"/>
+    <rect x="244" y="432" width="36" height="52" rx="18" fill="url(#newborn-female-top-sweater__sleeve)"/>
+    <path d="M150 434 q0-24 24-24 h52 q24 0 24 24 v50 q0 14 -14 14 h-72 q-14 0-14-14 z"
           fill="url(#newborn-female-top-sweater__body)"/>
+    <rect x="152" y="492" width="96" height="18" rx="9" fill="url(#newborn-female-top-sweater__rib)"/>
   </g>
-  <!-- ribbed crew neck -->
-  <path d="M178 412 q22 14 44 0 q-4 16 -22 16 q-18 0-22-16 z" fill="var(--c2, #E0AE54)"/>
-  <!-- ribbed cuffs -->
-  <rect x="124" y="470" width="30" height="10" rx="5" fill="var(--c2, #E0AE54)"/>
-  <rect x="246" y="470" width="30" height="10" rx="5" fill="var(--c2, #E0AE54)"/>
-  <path d="M129 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <path d="M136 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <path d="M143 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <path d="M251 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <path d="M258 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <path d="M265 473 v4" stroke="var(--c1, #F7C873)" stroke-width="1.6"/>
-  <!-- ribbed hem -->
-  <rect x="152" y="502" width="96" height="10" rx="5" fill="var(--c2, #E0AE54)"/>
+  <!-- knit stitch surface -->
+  <rect x="148" y="408" width="104" height="92" fill="url(#newborn-female-top-sweater__knit)"
+        clip-path="url(#newborn-female-top-sweater__clip)"/>
+  <!-- ribbing on the deep hem band -->
+  <path d="M160 496 v11 M172 496 v11 M184 496 v11 M196 496 v11 M208 496 v11 M220 496 v11 M232 496 v11 M240 496 v11"
+        stroke="var(--c1, #E3A0A8)" stroke-opacity="0.5" stroke-width="2.4" fill="none"
+        stroke-linecap="round"/>
+  <rect x="120" y="470" width="36" height="14" rx="7" fill="url(#newborn-female-top-sweater__rib)"/>
+  <rect x="244" y="470" width="36" height="14" rx="7" fill="url(#newborn-female-top-sweater__rib)"/>
+  <!-- ribbed roll neck -->
+  <path d="M176 410 q24 16 48 0 q-2 14 -24 14 q-22 0-24-14 z" fill="url(#newborn-female-top-sweater__rib)"/>
   <!-- chest highlight -->
-  <path d="M164 436 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+  <path d="M166 432 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,35 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Party Dress" data-family="party-dress" data-slot="onepiece"
      data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: cap sleeve · closed · gathered full skirt standing off the leg · fitted bodice -->
   <defs>
     <linearGradient id="newborn-female-onepiece-party-dress__bodice" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
+      <stop offset="0" stop-color="var(--c1, #E6A8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #C685A6)"/>
     </linearGradient>
     <linearGradient id="newborn-female-onepiece-party-dress__skirt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
+      <stop offset="0" stop-color="var(--c1, #E6A8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #C685A6)"/>
     </linearGradient>
-    <linearGradient id="newborn-female-onepiece-party-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
+    <linearGradient id="newborn-female-onepiece-party-dress__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6A8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #C685A6)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="124" y="418" width="30" height="28" rx="14" fill="url(#newborn-female-onepiece-party-dress__sleeve)"/>
-    <rect x="246" y="418" width="30" height="28" rx="14" fill="url(#newborn-female-onepiece-party-dress__sleeve)"/>
-    <path d="M152 442 q0-32 32-32 h32 q32 0 32 32 v46 h-96 z" fill="url(#newborn-female-onepiece-party-dress__bodice)"/>
-    <path d="M148 488 h104 v14 q0 30 -32 30 h-40 q-32 0-32-30 z" fill="url(#newborn-female-onepiece-party-dress__skirt)"/>
+    <ellipse cx="147" cy="432" rx="21" ry="16" fill="url(#newborn-female-onepiece-party-dress__cap)"/>
+    <ellipse cx="253" cy="432" rx="21" ry="16" fill="url(#newborn-female-onepiece-party-dress__cap)"/>
+    <path d="M160 438 Q160 414 184 414 L216 414 Q240 414 240 438 L240 482 L160 482 Z"
+          fill="url(#newborn-female-onepiece-party-dress__bodice)"/>
+    <path d="M150 478 L250 478 Q272 520 268 546 Q234 556 200 556 Q166 556 132 546 Q128 520 150 478 Z"
+          fill="url(#newborn-female-onepiece-party-dress__skirt)"/>
   </g>
-  <!-- sash and bow at the waist -->
-  <rect x="148" y="484" width="104" height="10" rx="5" fill="var(--c3, #F7C873)"/>
-  <path d="M192 483 q-10-6 -16 2 q6 6 16 2 Z" fill="var(--c3, #F7C873)"/>
-  <path d="M208 483 q10-6 16 2 q-6 6 -16 2 Z" fill="var(--c3, #F7C873)"/>
-  <circle cx="200" cy="486" r="3.4" fill="var(--c2, #E08F82)"/>
-  <!-- scoop neckline -->
-  <path d="M178 412 q22 14 44 0 q-6 16 -22 16 q-16 0-22-16 z" fill="var(--c3, #F7C873)"/>
-  <path d="M164 434 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+  <!-- waist sash with a bow, the join between fitted bodice and standing skirt -->
+  <rect x="154" y="474" width="92" height="13" rx="6" fill="var(--c3, #F7E3B8)"/>
+  <path d="M200 480 q-14 -10 -20 0 q14 10 20 0 z" fill="var(--c3, #F7E3B8)"/>
+  <path d="M200 480 q14 -10 20 0 q-14 10 -20 0 z" fill="var(--c3, #F7E3B8)"/>
+  <circle cx="200" cy="480" r="4" fill="var(--c2, #C685A6)"/>
+  <!-- gathers standing the skirt away from the leg -->
+  <path d="M166 486 Q156 516 148 546 M184 486 Q180 516 176 552 M216 486 Q220 516 224 552 M234 486 Q244 516 252 546"
+        stroke="var(--c2, #C685A6)" stroke-opacity="0.8" stroke-width="2.8" fill="none"
+        stroke-linecap="round"/>
+  <!-- scalloped hem -->
+  <path d="M134 546 q12 10 24 4 q12 10 24 4 q12 10 24 -2 q12 10 24 -4 q10 8 18 0"
+        stroke="var(--c3, #F7E3B8)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- bound neckline -->
+  <path d="M178 414 q22 14 44 0" stroke="var(--c3, #F7E3B8)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M164 512 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4.5"
+  <!-- highlight -->
+  <path d="M172 440 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,30 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jersey" data-family="jersey" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: short raglan sleeve seamed neck to underarm · closed V neck · hem at the hip · boxy -->
   <defs>
     <linearGradient id="newborn-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #58A392)"/>
+      <stop offset="0" stop-color="var(--c1, #F1F3F8)"/>
+      <stop offset="1" stop-color="var(--c1, #D8DDE8)"/>
     </linearGradient>
-    <linearGradient id="newborn-female-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #58A392)"/>
+    <linearGradient id="newborn-female-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D2453C)"/>
+      <stop offset="1" stop-color="var(--c2, #B03830)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="126" y="420" width="28" height="58" rx="14" fill="url(#newborn-female-top-jersey__sleeve)"/>
-    <rect x="246" y="420" width="28" height="58" rx="14" fill="url(#newborn-female-top-jersey__sleeve)"/>
-    <path d="M152 442 q0-32 32-32 h32 q32 0 32 32 v38 q0 32 -32 32 h-32 q-32 0-32-32 z"
+    <!-- raglan panels: the seam runs from the neck point straight out to the underarm -->
+    <path d="M178 412 L156 452 L128 456 L124 432 L150 414 Z"
+          fill="url(#newborn-female-top-jersey__raglan)"/>
+    <path d="M222 412 L244 452 L272 456 L276 432 L250 414 Z"
+          fill="url(#newborn-female-top-jersey__raglan)"/>
+    <path d="M158 414 L242 414 Q250 430 250 452 L250 484 Q250 506 228 506 L172 506 Q150 506 150 484 L150 452 Q150 430 158 414 Z"
           fill="url(#newborn-female-top-jersey__body)"/>
   </g>
-  <!-- crew neckline trim -->
-  <path d="M180 412 q20 12 40 0 q-4 14 -20 14 q-16 0-20-14 z" fill="var(--c3, #F7C873)"/>
-  <!-- sleeve side stripes -->
-  <rect x="126" y="420" width="6" height="58" fill="var(--c3, #F7C873)"/>
-  <rect x="268" y="420" width="6" height="58" fill="var(--c3, #F7C873)"/>
-  <!-- chest number patch -->
-  <circle cx="200" cy="466" r="14" fill="var(--c3, #F7C873)" opacity="0.9"/>
+  <!-- V neck bind -->
+  <path d="M180 412 L200 440 L220 412 L214 412 L200 432 L186 412 Z" fill="var(--c3, #2C3550)"/>
+  <path d="M178 412 L156 452" stroke="var(--c3, #2C3550)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M222 412 L244 452" stroke="var(--c3, #2C3550)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast sleeve cuffs -->
+  <path d="M128 456 L124 432 L133 429 L137 454 Z" fill="var(--c3, #2C3550)"/>
+  <path d="M272 456 L276 432 L267 429 L263 454 Z" fill="var(--c3, #2C3550)"/>
+  <!-- contrast hem band -->
+  <rect x="152" y="492" width="96" height="11" rx="5.5" fill="var(--c2, #D2453C)"/>
   <!-- chest highlight -->
-  <path d="M164 434 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <path d="M170 450 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,33 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: long sleeve · closed pullover · hem at the hip · bulked by the hood behind the neck -->
   <defs>
     <linearGradient id="newborn-female-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9B8B)"/>
     </linearGradient>
     <linearGradient id="newborn-female-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9B8B)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E9B8B)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="126" y="420" width="28" height="58" rx="14" fill="url(#newborn-female-top-hoodie__sleeve)"/>
-    <rect x="246" y="420" width="28" height="58" rx="14" fill="url(#newborn-female-top-hoodie__sleeve)"/>
-    <path d="M152 442 q0-32 32-32 h32 q32 0 32 32 v38 q0 32 -32 32 h-32 q-32 0-32-32 z"
+    <!-- hood lying flat behind the neck, spread wider than the shoulders -->
+    <path d="M146 438 q0-26 26-26 h56 q26 0 26 26 q0 11 -11 11 h-86 q-11 0-11-11 z"
+          fill="url(#newborn-female-top-hoodie__hood)"/>
+    <rect x="124" y="424" width="32" height="58" rx="16" fill="url(#newborn-female-top-hoodie__sleeve)"/>
+    <rect x="244" y="424" width="32" height="58" rx="16" fill="url(#newborn-female-top-hoodie__sleeve)"/>
+    <path d="M152 446 q0-30 30-30 h36 q30 0 30 30 v42 q0 24 -24 24 h-48 q-24 0-24-24 z"
           fill="url(#newborn-female-top-hoodie__body)"/>
-    <!-- soft hood, worn down, resting on the collar -->
-    <path d="M178 406 q22 16 44 0 q-4 20 -22 20 q-18 0-22-20 z" fill="var(--c2, #6B7FD0)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="126" y="472" width="28" height="12" rx="6" fill="var(--c2, #6B7FD0)"/>
-  <rect x="246" y="472" width="28" height="12" rx="6" fill="var(--c2, #6B7FD0)"/>
-  <!-- pouch pocket -->
-  <path d="M180 470 h40 v18 q0 6 -6 6 h-28 q-6 0 -6-6 z" fill="var(--c2, #6B7FD0)"/>
-  <!-- drawstrings -->
-  <path d="M190 416 v16" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-  <path d="M210 416 v16" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- hood lining edge -->
+  <path d="M156 440 q44 -16 88 0" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- drawcord with two aglets -->
+  <path d="M182 448 q-6 12 -4 22 M218 448 q6 12 4 22" stroke="var(--c3, #F7C873)"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="178" cy="472" r="3.4" fill="var(--c3, #F7C873)"/>
+  <circle cx="222" cy="472" r="3.4" fill="var(--c3, #F7C873)"/>
+  <!-- kangaroo pocket -->
+  <path d="M166 476 h68 v18 q0 8 -8 8 h-52 q-8 0-8-8 z" fill="var(--c2, #4E9B8B)"/>
+  <path d="M166 476 q10 10 20 12 M234 476 q-10 10 -20 12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs and hem -->
+  <rect x="124" y="468" width="32" height="12" rx="6" fill="var(--c2, #4E9B8B)"/>
+  <rect x="244" y="468" width="32" height="12" rx="6" fill="var(--c2, #4E9B8B)"/>
+  <rect x="154" y="500" width="92" height="11" rx="5.5" fill="var(--c2, #4E9B8B)"/>
   <!-- chest highlight -->
-  <path d="M164 434 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+  <path d="M168 458 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

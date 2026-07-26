@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pigtails" data-family="pigtails" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- length: short tails · outline: two gathered bunches either side · parting: centre · gathering: two -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="newborn-female-hair-pigtails__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A2F)"/>
+        <stop offset="1" stop-color="var(--hair2, #4A3120)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- back mass, kept narrow because the hair is pulled to the sides -->
+      <path d="M126 300 Q140 262 200 258 Q260 262 274 300 Q276 340 268 356 Q244 330 200 328 Q156 330 132 356 Q124 340 126 300 Z"
+            fill="url(#newborn-female-hair-pigtails__back-g)"/>
+      <!-- left tail: gathered at the root, widening to a soft blunt end -->
+      <path d="M126 322 Q100 320 92 348 Q84 376 96 396 Q112 408 124 396 Q112 372 118 352 Q122 336 134 330 Z"
+            fill="url(#newborn-female-hair-pigtails__back-g)"/>
+      <!-- right tail -->
+      <path d="M274 322 Q300 320 308 348 Q316 376 304 396 Q288 408 276 396 Q288 372 282 352 Q278 336 266 330 Z"
+            fill="url(#newborn-female-hair-pigtails__back-g)"/>
+    </g>
+    <!-- strand separation inside each tail -->
+    <path d="M104 350 Q98 374 106 392" stroke="var(--hair2, #4A3120)" stroke-opacity="0.7"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M296 350 Q302 374 294 392" stroke="var(--hair2, #4A3120)" stroke-opacity="0.7"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-female-hair-pigtails__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A2F)"/>
+        <stop offset="1" stop-color="var(--hair2, #4A3120)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept off a clean centre parting into two roots above the ear line -->
+      <path d="M120 314 Q126 260 200 254 Q274 260 280 314 Q268 292 240 284 Q220 280 204 290 L200 268 L196 290 Q180 280 160 284 Q132 292 120 314 Z"
+            fill="url(#newborn-female-hair-pigtails__front-g)"/>
+    </g>
+    <!-- the two bands, drawn as real trim on the roots -->
+    <rect x="112" y="310" width="26" height="12" rx="6" fill="var(--hair2, #4A3120)"/>
+    <rect x="262" y="310" width="26" height="12" rx="6" fill="var(--hair2, #4A3120)"/>
+    <!-- the parting itself, scalp reading through -->
+    <path d="M200 258 L200 288" stroke="var(--skin2, #E7B892)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <!-- sweep highlights following the pull toward each band -->
+    <path d="M150 288 Q176 274 194 282" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M250 288 Q224 274 206 282" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

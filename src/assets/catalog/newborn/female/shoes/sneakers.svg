@@ -1,29 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sneakers" data-family="sneakers" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: low cut below the ankle · rounded toe · lace fastening · thick banded sole -->
   <defs>
     <linearGradient id="newborn-female-shoes-sneakers__upper" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB4)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-shoes-sneakers__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBFAF4)"/>
+      <stop offset="1" stop-color="var(--c3, #DDDACB)"/>
     </linearGradient>
   </defs>
-  <!-- one continuous plush bootie per foot, no rigid sole -->
   <g class="sp-shadow">
-    <rect x="168" y="540" width="34" height="30" rx="15" fill="url(#newborn-female-shoes-sneakers__upper)"/>
-    <rect x="198" y="540" width="34" height="30" rx="15" fill="url(#newborn-female-shoes-sneakers__upper)"/>
+    <rect x="166" y="536" width="36" height="24" rx="11" fill="url(#newborn-female-shoes-sneakers__upper)"/>
+    <rect x="198" y="536" width="36" height="24" rx="11" fill="url(#newborn-female-shoes-sneakers__upper)"/>
+    <rect x="164" y="556" width="40" height="14" rx="7" fill="url(#newborn-female-shoes-sneakers__sole)"/>
+    <rect x="196" y="556" width="40" height="14" rx="7" fill="url(#newborn-female-shoes-sneakers__sole)"/>
   </g>
-  <!-- soft toe highlight -->
-  <path d="M174 556 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.6"
+  <!-- sole stripe, the thing that makes a thick banded sole read at 64px -->
+  <path d="M166 561 h36 M198 561 h36" stroke="var(--c2, #5F6FB4)" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
-  <path d="M204 556 q13 4 26 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.6"
+  <!-- padded tongue -->
+  <rect x="176" y="534" width="14" height="14" rx="5" fill="var(--c3, #FBFAF4)"/>
+  <rect x="208" y="534" width="14" height="14" rx="5" fill="var(--c3, #FBFAF4)"/>
+  <!-- lace ladder -->
+  <path d="M172 542 h20 M173 549 h18" stroke="var(--c3, #FBFAF4)" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
-  <!-- little tongue -->
-  <rect x="177" y="540" width="12" height="12" rx="5" fill="var(--c3, #F7C873)"/>
-  <rect x="207" y="540" width="12" height="12" rx="5" fill="var(--c3, #F7C873)"/>
-  <!-- soft laces -->
-  <path d="M172 546 h20" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-  <path d="M202 546 h20" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-  <!-- faint stitched sole line, not a rigid slab -->
-  <path d="M170 566 h30" stroke="var(--c2, #6C7CBD)" stroke-width="1.6" stroke-dasharray="3 3" fill="none" stroke-linecap="round"/>
-  <path d="M200 566 h30" stroke="var(--c2, #6C7CBD)" stroke-width="1.6" stroke-dasharray="3 3" fill="none" stroke-linecap="round"/>
+  <path d="M204 542 h20 M205 549 h18" stroke="var(--c3, #FBFAF4)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- toe cap highlight -->
+  <path d="M170 544 q10 4 18 2 M202 544 q10 4 18 2" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
 </svg>

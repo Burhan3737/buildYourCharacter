@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Vest" data-family="wrap-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: wide kimono sleeve · crossover front tied at the side · hem at the hip · straight -->
+  <defs>
+    <linearGradient id="newborn-female-top-wrap-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c1, #E7DAC4)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-top-wrap-vest__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c1, #E7DAC4)"/>
+    </linearGradient>
+    <pattern id="newborn-female-top-wrap-vest__sprig" patternUnits="userSpaceOnUse"
+             x="150" y="412" width="18" height="18">
+      <circle cx="6" cy="6" r="2.6" fill="var(--c2, #8FBF9E)"/>
+      <circle cx="14" cy="13" r="2" fill="var(--c2, #8FBF9E)"/>
+    </pattern>
+    <clipPath id="newborn-female-top-wrap-vest__clip">
+      <path d="M156 416 L200 434 L244 416 L248 452 L248 486 L240 508 L160 508 L152 486 L152 452 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- wide kimono sleeves, cut in one with the shoulder -->
+    <path d="M156 418 L124 434 L128 462 L158 452 Z" fill="url(#newborn-female-top-wrap-vest__sleeve)"/>
+    <path d="M244 418 L276 434 L272 462 L242 452 Z" fill="url(#newborn-female-top-wrap-vest__sleeve)"/>
+    <path d="M156 416 L200 434 L244 416 L248 452 L248 486 L240 508 L160 508 L152 486 L152 452 Z"
+          fill="url(#newborn-female-top-wrap-vest__body)"/>
+  </g>
+  <!-- scattered sprig print -->
+  <rect x="150" y="412" width="100" height="98" fill="url(#newborn-female-top-wrap-vest__sprig)"
+        opacity="0.75" clip-path="url(#newborn-female-top-wrap-vest__clip)"/>
+  <!-- the crossover: right panel laid over left, both edges bound -->
+  <path d="M156 416 L206 470 L200 508 L192 508 L196 470 L150 424 Z" fill="var(--c3, #E2A0A8)"/>
+  <path d="M244 416 L200 464 L206 508 L214 508 L210 466 L250 424 Z" fill="var(--c3, #E2A0A8)"/>
+  <!-- the side tie, knotted clear of the belly -->
+  <path d="M244 470 q14 4 22 12" stroke="var(--c3, #E2A0A8)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 468 q10 -4 18 -2" stroke="var(--c3, #E2A0A8)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="245" cy="470" r="5.5" fill="var(--c3, #E2A0A8)"/>
+  <!-- chest highlight -->
+  <path d="M166 444 q20 8 34 -2" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

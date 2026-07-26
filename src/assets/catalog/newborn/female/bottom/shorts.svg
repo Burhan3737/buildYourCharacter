@@ -1,17 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Shorts" data-family="shorts" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · mid-thigh leg · straight width · rolled cuff -->
   <defs>
     <linearGradient id="newborn-female-bottom-shorts__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
+      <stop offset="1" stop-color="var(--c2, #D9857A)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-bottom-shorts__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D9857A)"/>
     </linearGradient>
   </defs>
-  <!-- simplest soft nappy-shorts -->
   <g class="sp-shadow">
-    <rect x="156" y="492" width="88" height="34" rx="17" fill="url(#newborn-female-bottom-shorts__hip)"/>
+    <rect x="158" y="494" width="84" height="32" rx="14" fill="url(#newborn-female-bottom-shorts__hip)"/>
+    <rect x="168" y="518" width="30" height="22" rx="9" fill="url(#newborn-female-bottom-shorts__leg)"/>
+    <rect x="202" y="518" width="30" height="22" rx="9" fill="url(#newborn-female-bottom-shorts__leg)"/>
   </g>
-  <rect x="156" y="492" width="88" height="10" rx="5" fill="var(--c2, #E08F82)"/>
-  <path d="M166 500 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4.5"
+  <!-- rolled cuff at each leg, the shape's whole point -->
+  <rect x="166" y="530" width="34" height="12" rx="6" fill="var(--c2, #D9857A)"/>
+  <rect x="200" y="530" width="34" height="12" rx="6" fill="var(--c2, #D9857A)"/>
+  <path d="M170 536 h26 M204 536 h26" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="1.8"
+        fill="none" stroke-linecap="round"/>
+  <!-- soft elastic waist with a drawcord bow -->
+  <rect x="158" y="493" width="84" height="12" rx="6" fill="var(--c2, #D9857A)"/>
+  <path d="M192 502 q-8 6 -14 4 M208 502 q8 6 14 4" stroke="var(--c3, #FBEFD9)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="501" r="4" fill="var(--c3, #FBEFD9)"/>
+  <!-- side seam -->
+  <path d="M160 508 v14 M240 508 v14" stroke="var(--c2, #D9857A)" stroke-opacity="0.8"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M168 512 q32 8 64 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4.5"
         fill="none" stroke-linecap="round"/>
 </svg>

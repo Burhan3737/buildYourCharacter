@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swaddle" data-family="swaddle" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: no sleeve, arms enclosed · wrapped crossover closure · tapered closed hem · fitted cocoon -->
+  <defs>
+    <linearGradient id="newborn-female-onepiece-swaddle__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E7D2E4)"/>
+      <stop offset="1" stop-color="var(--c2, #C0A4BE)"/>
+    </linearGradient>
+    <pattern id="newborn-female-onepiece-swaddle__stars" patternUnits="userSpaceOnUse"
+             x="154" y="410" width="22" height="22">
+      <path d="M11 4 L12.6 8.8 L17.6 9 L13.6 12 L15 17 L11 14.1 L7 17 L8.4 12 L4.4 9 L9.4 8.8 Z"
+            fill="var(--c3, #FBEFD9)" fill-opacity="0.7"/>
+    </pattern>
+    <clipPath id="newborn-female-onepiece-swaddle__clip">
+      <path d="M126 448 Q126 416 168 414 L232 414 Q274 416 274 448 L264 522 Q256 568 200 570 Q144 568 136 522 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- one cocoon wide enough to enclose both arms and hands: no limb reads through it -->
+    <path d="M126 448 Q126 416 168 414 L232 414 Q274 416 274 448 L264 522 Q256 568 200 570 Q144 568 136 522 Z"
+          fill="url(#newborn-female-onepiece-swaddle__body)"/>
+  </g>
+  <!-- star scatter -->
+  <rect x="124" y="410" width="152" height="162" fill="url(#newborn-female-onepiece-swaddle__stars)"
+        clip-path="url(#newborn-female-onepiece-swaddle__clip)"/>
+  <!-- the wrap itself: one diagonal panel folded across the front and tucked at the side -->
+  <path d="M128 442 L272 486 L270 516 L131 470 Z" fill="var(--c2, #C0A4BE)"
+        clip-path="url(#newborn-female-onepiece-swaddle__clip)"/>
+  <path d="M130 442 L272 486" stroke="var(--c3, #FBEFD9)" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 470 L270 516" stroke="var(--c3, #FBEFD9)" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound top edge, sitting clear of the chin -->
+  <path d="M136 428 q64 -18 128 0" stroke="var(--c3, #FBEFD9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- gathers where the cocoon tapers to the closed foot end -->
+  <path d="M152 534 q48 12 96 0 M158 550 q42 10 84 0" stroke="var(--c2, #C0A4BE)"
+        stroke-opacity="0.9" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 452 q50 14 96 -4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

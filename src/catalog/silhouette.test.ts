@@ -75,29 +75,8 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
   'catalog/elder/female/top/jersey.svg|catalog/elder/female/top/tee.svg',
   'catalog/elder/female/top/stripes.svg|catalog/elder/female/top/tee.svg',
 
-  // elder/male · bottom — 4 pair(s): nudged
-  'catalog/elder/male/bottom/cargo.svg|catalog/elder/male/bottom/leggings.svg',
-  'catalog/elder/male/bottom/jeans.svg|catalog/elder/male/bottom/leggings.svg',
-  'catalog/elder/male/bottom/jeans.svg|catalog/elder/male/bottom/pleated.svg',
-  'catalog/elder/male/bottom/leggings.svg|catalog/elder/male/bottom/pleated.svg',
-
-  // elder/male · costume — 2 pair(s): shared-primary
-  'catalog/elder/male/costume/astronaut.svg|catalog/elder/male/costume/spider.svg',
-  'catalog/elder/male/costume/astronaut.svg|catalog/elder/male/costume/web-runner.svg',
-
-  // elder/male · top — 12 pair(s): identical, nudged, shared-primary
-  'catalog/elder/male/top/button-up.svg|catalog/elder/male/top/hoodie.svg',
-  'catalog/elder/male/top/button-up.svg|catalog/elder/male/top/jersey.svg',
-  'catalog/elder/male/top/button-up.svg|catalog/elder/male/top/stripes.svg',
-  'catalog/elder/male/top/button-up.svg|catalog/elder/male/top/sweater.svg',
-  'catalog/elder/male/top/button-up.svg|catalog/elder/male/top/tee.svg',
-  'catalog/elder/male/top/hoodie.svg|catalog/elder/male/top/jersey.svg',
-  'catalog/elder/male/top/hoodie.svg|catalog/elder/male/top/stripes.svg',
-  'catalog/elder/male/top/hoodie.svg|catalog/elder/male/top/tee.svg',
-  'catalog/elder/male/top/jersey.svg|catalog/elder/male/top/stripes.svg',
-  'catalog/elder/male/top/jersey.svg|catalog/elder/male/top/tee.svg',
-  'catalog/elder/male/top/stripes.svg|catalog/elder/male/top/sweater.svg',
-  'catalog/elder/male/top/stripes.svg|catalog/elder/male/top/tee.svg',
+  // elder/male — RETIRED. All 18 pairs (4 bottom, 2 costume, 12 top) were redrawn
+  // during the art expansion and no longer collide, so their entries are gone.
 
   // midage/female — RETIRED. All 19 pairs (6 bottom, 2 costume, 11 top) were redrawn
   // during the art expansion and no longer collide, so their entries are gone.
@@ -105,89 +84,14 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
   // midage/male — RETIRED. All 22 pairs (10 bottom, 8 costume, 4 top) were redrawn
   // during the art expansion and no longer collide, so their entries are gone.
 
-  // newborn/female · bottom — 7 pair(s): identical, nudged
-  'catalog/newborn/female/bottom/cargo.svg|catalog/newborn/female/bottom/jeans.svg',
-  'catalog/newborn/female/bottom/cargo.svg|catalog/newborn/female/bottom/shorts.svg',
-  'catalog/newborn/female/bottom/dungarees.svg|catalog/newborn/female/bottom/joggers.svg',
-  'catalog/newborn/female/bottom/dungarees.svg|catalog/newborn/female/bottom/leggings.svg',
-  'catalog/newborn/female/bottom/jeans.svg|catalog/newborn/female/bottom/shorts.svg',
-  'catalog/newborn/female/bottom/joggers.svg|catalog/newborn/female/bottom/leggings.svg',
-  'catalog/newborn/female/bottom/pleated.svg|catalog/newborn/female/bottom/skirt.svg',
+  // newborn/female — RETIRED. All 38 pairs (7 bottom, 7 costume, 2 onepiece, 5 shoes,
+  // 17 top) were redrawn during the art expansion and no longer collide, so their
+  // entries are gone.
 
-  // newborn/female · costume — 7 pair(s): identical
-  'catalog/newborn/female/costume/astronaut.svg|catalog/newborn/female/costume/dino.svg',
-  'catalog/newborn/female/costume/astronaut.svg|catalog/newborn/female/costume/spider.svg',
-  'catalog/newborn/female/costume/astronaut.svg|catalog/newborn/female/costume/web-runner.svg',
-  'catalog/newborn/female/costume/caped-hero.svg|catalog/newborn/female/costume/storm-herald.svg',
-  'catalog/newborn/female/costume/caped-hero.svg|catalog/newborn/female/costume/thunder-god.svg',
-  'catalog/newborn/female/costume/dino.svg|catalog/newborn/female/costume/spider.svg',
-  'catalog/newborn/female/costume/dino.svg|catalog/newborn/female/costume/web-runner.svg',
-
-  // newborn/female · onepiece — 2 pair(s): nudged, shared-primary
-  'catalog/newborn/female/onepiece/jumpsuit.svg|catalog/newborn/female/onepiece/romper.svg',
-  'catalog/newborn/female/onepiece/party-dress.svg|catalog/newborn/female/onepiece/sundress.svg',
-
-  // newborn/female · shoes — 5 pair(s): identical, nudged
-  'catalog/newborn/female/shoes/dress-shoes.svg|catalog/newborn/female/shoes/sandals.svg',
-  'catalog/newborn/female/shoes/dress-shoes.svg|catalog/newborn/female/shoes/slippers.svg',
-  'catalog/newborn/female/shoes/dress-shoes.svg|catalog/newborn/female/shoes/sneakers.svg',
-  'catalog/newborn/female/shoes/sandals.svg|catalog/newborn/female/shoes/slippers.svg',
-  'catalog/newborn/female/shoes/slippers.svg|catalog/newborn/female/shoes/sneakers.svg',
-
-  // newborn/female · top — 17 pair(s): identical, nudged, shared-primary
-  'catalog/newborn/female/top/button-up.svg|catalog/newborn/female/top/hoodie.svg',
-  'catalog/newborn/female/top/button-up.svg|catalog/newborn/female/top/jersey.svg',
-  'catalog/newborn/female/top/button-up.svg|catalog/newborn/female/top/overalls-top.svg',
-  'catalog/newborn/female/top/button-up.svg|catalog/newborn/female/top/stripes.svg',
-  'catalog/newborn/female/top/button-up.svg|catalog/newborn/female/top/tee.svg',
-  'catalog/newborn/female/top/hoodie.svg|catalog/newborn/female/top/jersey.svg',
-  'catalog/newborn/female/top/hoodie.svg|catalog/newborn/female/top/overalls-top.svg',
-  'catalog/newborn/female/top/hoodie.svg|catalog/newborn/female/top/stripes.svg',
-  'catalog/newborn/female/top/hoodie.svg|catalog/newborn/female/top/tee.svg',
-  'catalog/newborn/female/top/jersey.svg|catalog/newborn/female/top/overalls-top.svg',
-  'catalog/newborn/female/top/jersey.svg|catalog/newborn/female/top/stripes.svg',
-  'catalog/newborn/female/top/jersey.svg|catalog/newborn/female/top/sweater.svg',
-  'catalog/newborn/female/top/jersey.svg|catalog/newborn/female/top/tee.svg',
-  'catalog/newborn/female/top/overalls-top.svg|catalog/newborn/female/top/stripes.svg',
-  'catalog/newborn/female/top/overalls-top.svg|catalog/newborn/female/top/tee.svg',
-  'catalog/newborn/female/top/stripes.svg|catalog/newborn/female/top/sweater.svg',
-  'catalog/newborn/female/top/stripes.svg|catalog/newborn/female/top/tee.svg',
-
-  // newborn/male · bottom — 1 pair(s): identical
-  'catalog/newborn/male/bottom/cargo.svg|catalog/newborn/male/bottom/shorts.svg',
-
-  // newborn/male · costume — 13 pair(s): identical, shared-primary
-  'catalog/newborn/male/costume/astronaut.svg|catalog/newborn/male/costume/dino.svg',
-  'catalog/newborn/male/costume/astronaut.svg|catalog/newborn/male/costume/spider.svg',
-  'catalog/newborn/male/costume/astronaut.svg|catalog/newborn/male/costume/storm-herald.svg',
-  'catalog/newborn/male/costume/astronaut.svg|catalog/newborn/male/costume/thunder-god.svg',
-  'catalog/newborn/male/costume/astronaut.svg|catalog/newborn/male/costume/web-runner.svg',
-  'catalog/newborn/male/costume/dino.svg|catalog/newborn/male/costume/spider.svg',
-  'catalog/newborn/male/costume/dino.svg|catalog/newborn/male/costume/storm-herald.svg',
-  'catalog/newborn/male/costume/dino.svg|catalog/newborn/male/costume/thunder-god.svg',
-  'catalog/newborn/male/costume/dino.svg|catalog/newborn/male/costume/web-runner.svg',
-  'catalog/newborn/male/costume/spider.svg|catalog/newborn/male/costume/storm-herald.svg',
-  'catalog/newborn/male/costume/spider.svg|catalog/newborn/male/costume/thunder-god.svg',
-  'catalog/newborn/male/costume/storm-herald.svg|catalog/newborn/male/costume/web-runner.svg',
-  'catalog/newborn/male/costume/thunder-god.svg|catalog/newborn/male/costume/web-runner.svg',
-
-  // newborn/male · shoes — 4 pair(s): nudged
-  'catalog/newborn/male/shoes/dress-shoes.svg|catalog/newborn/male/shoes/sandals.svg',
-  'catalog/newborn/male/shoes/dress-shoes.svg|catalog/newborn/male/shoes/slippers.svg',
-  'catalog/newborn/male/shoes/dress-shoes.svg|catalog/newborn/male/shoes/sneakers.svg',
-  'catalog/newborn/male/shoes/sandals.svg|catalog/newborn/male/shoes/slippers.svg',
-
-  // newborn/male · top — 10 pair(s): identical, shared-primary
-  'catalog/newborn/male/top/button-up.svg|catalog/newborn/male/top/hoodie.svg',
-  'catalog/newborn/male/top/button-up.svg|catalog/newborn/male/top/jersey.svg',
-  'catalog/newborn/male/top/button-up.svg|catalog/newborn/male/top/stripes.svg',
-  'catalog/newborn/male/top/button-up.svg|catalog/newborn/male/top/tee.svg',
-  'catalog/newborn/male/top/hoodie.svg|catalog/newborn/male/top/jersey.svg',
-  'catalog/newborn/male/top/hoodie.svg|catalog/newborn/male/top/stripes.svg',
-  'catalog/newborn/male/top/hoodie.svg|catalog/newborn/male/top/tee.svg',
-  'catalog/newborn/male/top/jersey.svg|catalog/newborn/male/top/stripes.svg',
-  'catalog/newborn/male/top/jersey.svg|catalog/newborn/male/top/tee.svg',
-  'catalog/newborn/male/top/stripes.svg|catalog/newborn/male/top/tee.svg',
+  // newborn/male — RETIRED. All 28 pairs (1 bottom, 13 costume, 4 shoes, 10 top) were redrawn
+  // during the art expansion and no longer collide, so their entries are gone. The costume
+  // entries also covered the dead `spider` / `thunder-god` spellings, which the rename to
+  // `web-runner` / `storm-herald` has since retired on this bundle.
 
   // teen/female · bottom, costume, top — all 11 pairs redrawn during the art expansion:
   // cargo and leggings, dino and web-runner, button-up and stripes all have new major forms.
@@ -199,55 +103,25 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
   'catalog/toddler/female/bottom/cargo.svg|catalog/toddler/female/bottom/leggings.svg',
   'catalog/toddler/female/bottom/jeans.svg|catalog/toddler/female/bottom/leggings.svg',
 
-  // toddler/female · costume — 5 pair(s): shared-primary
-  'catalog/toddler/female/costume/astronaut.svg|catalog/toddler/female/costume/dino.svg',
-  'catalog/toddler/female/costume/astronaut.svg|catalog/toddler/female/costume/spider.svg',
-  'catalog/toddler/female/costume/astronaut.svg|catalog/toddler/female/costume/web-runner.svg',
-  'catalog/toddler/female/costume/dino.svg|catalog/toddler/female/costume/spider.svg',
-  'catalog/toddler/female/costume/dino.svg|catalog/toddler/female/costume/web-runner.svg',
+  // toddler/female · costume — RETIRED. All 5 pairs were redrawn during the art expansion:
+  // astronaut is now the bulkiest mass in the slot, dino a soft rounded body with a curling
+  // tail, and web-runner the slimmest skin-close suit. None of them shares a major form.
 
-  // toddler/female · top — 15 pair(s): identical, shared-primary
-  'catalog/toddler/female/top/button-up.svg|catalog/toddler/female/top/hoodie.svg',
-  'catalog/toddler/female/top/button-up.svg|catalog/toddler/female/top/jersey.svg',
-  'catalog/toddler/female/top/button-up.svg|catalog/toddler/female/top/overalls-top.svg',
-  'catalog/toddler/female/top/button-up.svg|catalog/toddler/female/top/stripes.svg',
-  'catalog/toddler/female/top/button-up.svg|catalog/toddler/female/top/tee.svg',
-  'catalog/toddler/female/top/hoodie.svg|catalog/toddler/female/top/jersey.svg',
-  'catalog/toddler/female/top/hoodie.svg|catalog/toddler/female/top/overalls-top.svg',
-  'catalog/toddler/female/top/hoodie.svg|catalog/toddler/female/top/stripes.svg',
-  'catalog/toddler/female/top/hoodie.svg|catalog/toddler/female/top/tee.svg',
-  'catalog/toddler/female/top/jersey.svg|catalog/toddler/female/top/overalls-top.svg',
-  'catalog/toddler/female/top/jersey.svg|catalog/toddler/female/top/stripes.svg',
-  'catalog/toddler/female/top/jersey.svg|catalog/toddler/female/top/tee.svg',
-  'catalog/toddler/female/top/overalls-top.svg|catalog/toddler/female/top/stripes.svg',
-  'catalog/toddler/female/top/overalls-top.svg|catalog/toddler/female/top/tee.svg',
-  'catalog/toddler/female/top/stripes.svg|catalog/toddler/female/top/tee.svg',
+  // toddler/female · top — RETIRED. All 15 pairs were redrawn during the art expansion:
+  // tee, hoodie, stripes, button-up, jersey and overalls-top each carry new major forms.
 
-  // toddler/male · bottom — 6 pair(s): identical, shared-primary
-  'catalog/toddler/male/bottom/cargo.svg|catalog/toddler/male/bottom/jeans.svg',
-  'catalog/toddler/male/bottom/cargo.svg|catalog/toddler/male/bottom/joggers.svg',
-  'catalog/toddler/male/bottom/cargo.svg|catalog/toddler/male/bottom/leggings.svg',
-  'catalog/toddler/male/bottom/jeans.svg|catalog/toddler/male/bottom/joggers.svg',
-  'catalog/toddler/male/bottom/jeans.svg|catalog/toddler/male/bottom/leggings.svg',
-  'catalog/toddler/male/bottom/joggers.svg|catalog/toddler/male/bottom/leggings.svg',
+  // toddler/male · bottom — RETIRED. All 6 pairs (cargo, jeans, joggers, leggings) were
+  // redrawn during the art expansion and no longer collide, so their entries are gone.
 
-  // toddler/male · costume — 7 pair(s): identical, nudged, shared-primary
-  'catalog/toddler/male/costume/astronaut.svg|catalog/toddler/male/costume/dino.svg',
-  'catalog/toddler/male/costume/astronaut.svg|catalog/toddler/male/costume/spider.svg',
-  'catalog/toddler/male/costume/astronaut.svg|catalog/toddler/male/costume/web-runner.svg',
-  'catalog/toddler/male/costume/caped-hero.svg|catalog/toddler/male/costume/storm-herald.svg',
-  'catalog/toddler/male/costume/caped-hero.svg|catalog/toddler/male/costume/thunder-god.svg',
-  'catalog/toddler/male/costume/dino.svg|catalog/toddler/male/costume/spider.svg',
-  'catalog/toddler/male/costume/dino.svg|catalog/toddler/male/costume/web-runner.svg',
+  // toddler/male · costume — RETIRED. All 7 pairs are gone. The five core costumes were
+  // redrawn during the art expansion, so astronaut|dino, astronaut|web-runner,
+  // dino|web-runner and caped-hero|storm-herald no longer collide; the three remaining
+  // entries used the pre-rename `spider` / `thunder-god` spellings and named files that no
+  // longer exist, so they exempted nothing and have been removed too.
 
-  // toddler/male · top — 7 pair(s): identical, shared-primary
-  'catalog/toddler/male/top/button-up.svg|catalog/toddler/male/top/jersey.svg',
-  'catalog/toddler/male/top/button-up.svg|catalog/toddler/male/top/stripes.svg',
-  'catalog/toddler/male/top/button-up.svg|catalog/toddler/male/top/tee.svg',
-  'catalog/toddler/male/top/hoodie.svg|catalog/toddler/male/top/sweater.svg',
-  'catalog/toddler/male/top/jersey.svg|catalog/toddler/male/top/stripes.svg',
-  'catalog/toddler/male/top/jersey.svg|catalog/toddler/male/top/tee.svg',
-  'catalog/toddler/male/top/stripes.svg|catalog/toddler/male/top/tee.svg',
+  // toddler/male · top — RETIRED. All 7 pairs (button-up, hoodie, jersey, stripes,
+  // sweater and tee) were redrawn during the art expansion and no longer collide,
+  // so their entries are gone.
 ])
 
 // ---------------------------------------------------------------------------------------------

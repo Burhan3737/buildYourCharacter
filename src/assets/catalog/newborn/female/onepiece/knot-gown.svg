@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knot Gown" data-family="knot-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: long sleeve · closed · open gown hem knotted at the bottom · flared with no leg division -->
+  <defs>
+    <linearGradient id="newborn-female-onepiece-knot-gown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #AFCFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #88AE9A)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-knot-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #AFCFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #88AE9A)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-knot-gown__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #88AE9A)"/>
+      <stop offset="1" stop-color="var(--c2, #6F9585)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="126" y="421" width="31" height="54" rx="15" fill="url(#newborn-female-onepiece-knot-gown__sleeve)"/>
+    <rect x="243" y="421" width="31" height="54" rx="15" fill="url(#newborn-female-onepiece-knot-gown__sleeve)"/>
+    <path d="M154 414 L246 414 L258 500 Q262 526 240 532 Q200 540 160 532 Q138 526 142 500 Z"
+          fill="url(#newborn-female-onepiece-knot-gown__body)"/>
+    <!-- the knot: the open hem gathered and tied shut -->
+    <path d="M178 526 q22-10 44 0 q12 7 3 16 q-24 9 -50 0 q-9-9 3-16 z"
+          fill="url(#newborn-female-onepiece-knot-gown__knot)"/>
+  </g>
+  <!-- gathers radiating into the knot -->
+  <path d="M160 470 Q176 504 190 524 M200 462 L200 522 M240 470 Q224 504 210 524"
+        stroke="var(--c2, #6F9585)" stroke-opacity="0.75" stroke-width="2.6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M176 470 Q184 504 194 522 M224 470 Q216 504 206 522"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.4" fill="none"
+        stroke-linecap="round"/>
+  <!-- the twist of the knot itself -->
+  <path d="M186 532 q14 -6 28 0" stroke="var(--c1, #AFCFC0)" stroke-opacity="0.85"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- bound neck and cuffs -->
+  <path d="M178 414 q22 14 44 0 q-3 15 -22 15 q-19 0-22-15 z" fill="var(--c3, #F0C46A)"/>
+  <rect x="126" y="462" width="31" height="11" rx="5.5" fill="var(--c3, #F0C46A)"/>
+  <rect x="243" y="462" width="31" height="11" rx="5.5" fill="var(--c3, #F0C46A)"/>
+  <!-- highlight -->
+  <path d="M168 436 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

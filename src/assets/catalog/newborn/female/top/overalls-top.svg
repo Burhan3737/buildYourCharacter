@@ -1,34 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Overalls Top" data-family="overalls-top" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: no sleeve, two over-shoulder straps · open sides · flat hem at the waist · straight -->
   <defs>
-    <linearGradient id="newborn-female-top-overalls-top__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E08F82)"/>
-    </linearGradient>
     <linearGradient id="newborn-female-top-overalls-top__bib" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c3, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #5E72AB)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5C8E)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-top-overalls-top__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E72AB)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5C8E)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="126" y="420" width="28" height="34" rx="14" fill="url(#newborn-female-top-overalls-top__body)"/>
-    <rect x="246" y="420" width="28" height="34" rx="14" fill="url(#newborn-female-top-overalls-top__body)"/>
-    <path d="M152 442 q0-32 32-32 h32 q32 0 32 32 v38 q0 32 -32 32 h-32 q-32 0-32-32 z"
-          fill="url(#newborn-female-top-overalls-top__body)"/>
+    <rect x="166" y="412" width="13" height="26" rx="6" fill="url(#newborn-female-top-overalls-top__strap)"/>
+    <rect x="221" y="412" width="13" height="26" rx="6" fill="url(#newborn-female-top-overalls-top__strap)"/>
+    <rect x="164" y="434" width="72" height="62" rx="10" fill="url(#newborn-female-top-overalls-top__bib)"/>
   </g>
-  <!-- crew neckline -->
-  <path d="M180 412 q20 12 40 0 q-4 14 -20 14 q-16 0-20-14 z" fill="var(--c2, #E08F82)"/>
-  <!-- dungaree bib and straps, drawn over the tee -->
-  <g class="sp-shadow">
-    <rect x="176" y="422" width="10" height="30" rx="5" fill="url(#newborn-female-top-overalls-top__bib)"/>
-    <rect x="214" y="422" width="10" height="30" rx="5" fill="url(#newborn-female-top-overalls-top__bib)"/>
-    <path d="M172 450 h56 v42 q0 8 -8 8 h-40 q-8 0 -8-8 z" fill="url(#newborn-female-top-overalls-top__bib)"/>
-  </g>
-  <!-- buttons where straps meet the bib -->
-  <circle cx="181" cy="454" r="3.4" fill="var(--c3, #7E90DC)"/>
-  <circle cx="219" cy="454" r="3.4" fill="var(--c3, #7E90DC)"/>
-  <!-- bib highlight -->
-  <path d="M180 460 q20 8 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <!-- strap buckles where the straps meet the bib -->
+  <rect x="164" y="432" width="17" height="10" rx="4" fill="var(--c3, #EBC98A)"/>
+  <rect x="219" y="432" width="17" height="10" rx="4" fill="var(--c3, #EBC98A)"/>
+  <!-- patch pocket on the bib -->
+  <path d="M180 452 h40 v26 q0 4 -4 4 h-32 q-4 0-4-4 z" fill="var(--c2, #4A5C8E)"/>
+  <path d="M180 462 h40" stroke="var(--c3, #EBC98A)" stroke-width="2" stroke-dasharray="4 3"
+        fill="none" stroke-linecap="round"/>
+  <!-- topstitched bib edge -->
+  <path d="M168 438 v54 M232 438 v54" stroke="var(--c3, #EBC98A)" stroke-width="2"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M174 446 q26 8 52 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4.5"
         fill="none" stroke-linecap="round"/>
 </svg>

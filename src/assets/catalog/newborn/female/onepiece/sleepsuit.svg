@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepsuit" data-family="sleepsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: long cuffed sleeve · popper line down one leg · closed footed hem · straight -->
+  <defs>
+    <linearGradient id="newborn-female-onepiece-sleepsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFD8EC)"/>
+      <stop offset="1" stop-color="var(--c2, #9BBBD6)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-sleepsuit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFD8EC)"/>
+      <stop offset="1" stop-color="var(--c2, #9BBBD6)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-sleepsuit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFD8EC)"/>
+      <stop offset="1" stop-color="var(--c2, #9BBBD6)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-sleepsuit__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9BBBD6)"/>
+      <stop offset="1" stop-color="var(--c2, #83A5C2)"/>
+    </linearGradient>
+    <pattern id="newborn-female-onepiece-sleepsuit__moons" patternUnits="userSpaceOnUse"
+             x="152" y="414" width="20" height="20">
+      <path d="M12 4 A7 7 0 1 0 12 16 A5.5 5.5 0 1 1 12 4 Z" fill="var(--c3, #FBEFD9)"
+            fill-opacity="0.7"/>
+    </pattern>
+    <clipPath id="newborn-female-onepiece-sleepsuit__clip">
+      <path d="M153 443 C153 417 172 415 190 415 L210 415 C228 415 247 417 247 443 L247 494 C247 512 232 516 214 516 L186 516 C168 516 153 512 153 494 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="125" y="422" width="32" height="60" rx="16" fill="url(#newborn-female-onepiece-sleepsuit__sleeve)"/>
+    <rect x="243" y="422" width="32" height="60" rx="16" fill="url(#newborn-female-onepiece-sleepsuit__sleeve)"/>
+    <path d="M153 443 C153 417 172 415 190 415 L210 415 C228 415 247 417 247 443 L247 494 C247 512 232 516 214 516 L186 516 C168 516 153 512 153 494 Z"
+          fill="url(#newborn-female-onepiece-sleepsuit__body)"/>
+    <rect x="167" y="510" width="32" height="44" rx="14" fill="url(#newborn-female-onepiece-sleepsuit__leg)"/>
+    <rect x="201" y="510" width="32" height="44" rx="14" fill="url(#newborn-female-onepiece-sleepsuit__leg)"/>
+    <!-- closed feet: the sleepsuit does not stop at the ankle -->
+    <path d="M166 546 q0-10 10-10 h22 q8 0 8 10 v12 q0 12 -12 12 h-16 q-12 0-12-12 z"
+          fill="url(#newborn-female-onepiece-sleepsuit__foot)"/>
+    <path d="M194 546 q0-10 10-10 h22 q8 0 8 10 v12 q0 12 -12 12 h-16 q-12 0-12-12 z"
+          fill="url(#newborn-female-onepiece-sleepsuit__foot)"/>
+  </g>
+  <!-- small moon print -->
+  <rect x="152" y="414" width="96" height="104" fill="url(#newborn-female-onepiece-sleepsuit__moons)"
+        clip-path="url(#newborn-female-onepiece-sleepsuit__clip)"/>
+  <!-- the popper line, running down the centre and out along one leg -->
+  <g fill="var(--c3, #FBEFD9)">
+    <circle cx="200" cy="436" r="3.2"/>
+    <circle cx="200" cy="454" r="3.2"/>
+    <circle cx="200" cy="472" r="3.2"/>
+    <circle cx="200" cy="490" r="3.2"/>
+    <circle cx="200" cy="508" r="3.2"/>
+    <circle cx="207" cy="524" r="3.2"/>
+    <circle cx="212" cy="538" r="3.2"/>
+    <circle cx="216" cy="552" r="3.2"/>
+  </g>
+  <path d="M200 430 v82 q4 20 16 30" stroke="var(--c3, #FBEFD9)" stroke-opacity="0.55"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- cuffed wrists and a soft bound neck -->
+  <rect x="125" y="468" width="32" height="12" rx="6" fill="var(--c2, #83A5C2)"/>
+  <rect x="243" y="468" width="32" height="12" rx="6" fill="var(--c2, #83A5C2)"/>
+  <path d="M180 415 q20 13 40 0 q-3 14 -20 14 q-17 0-20-14 z" fill="var(--c2, #83A5C2)"/>
+  <!-- highlight -->
+  <path d="M168 434 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

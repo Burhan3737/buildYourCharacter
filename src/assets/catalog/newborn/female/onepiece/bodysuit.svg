@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bodysuit" data-family="bodysuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: short set-in sleeve · poppered gusset closure · gusset hem, legs bare · fitted -->
+  <defs>
+    <linearGradient id="newborn-female-onepiece-bodysuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBFAF4)"/>
+      <stop offset="1" stop-color="var(--c1, #E4E1D4)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-bodysuit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBFAF4)"/>
+      <stop offset="1" stop-color="var(--c1, #E4E1D4)"/>
+    </linearGradient>
+    <linearGradient id="newborn-female-onepiece-bodysuit__gusset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3F0E5)"/>
+      <stop offset="1" stop-color="var(--c1, #DDD9CB)"/>
+    </linearGradient>
+    <pattern id="newborn-female-onepiece-bodysuit__pin" patternUnits="userSpaceOnUse"
+             x="154" y="412" width="14" height="14">
+      <path d="M0 3 h14" stroke="var(--c2, #6BBFAD)" stroke-opacity="0.65" stroke-width="3"
+            fill="none"/>
+    </pattern>
+    <clipPath id="newborn-female-onepiece-bodysuit__clip">
+      <path d="M155 412 L245 412 L245 478 Q245 500 226 504 L174 504 Q155 500 155 478 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="131" y="421" width="26" height="28" rx="13" fill="url(#newborn-female-onepiece-bodysuit__sleeve)"/>
+    <rect x="243" y="421" width="26" height="28" rx="13" fill="url(#newborn-female-onepiece-bodysuit__sleeve)"/>
+    <path d="M155 412 L245 412 L245 478 Q245 500 226 504 L174 504 Q155 500 155 478 Z"
+          fill="url(#newborn-female-onepiece-bodysuit__body)"/>
+    <!-- the poppered gusset, visible between the legs: what makes this a bodysuit -->
+    <path d="M172 498 h56 q6 0 6 10 v14 q0 12 -12 14 q-22 4 -44 0 q-12-2 -12-14 v-14 q0-10 6-10 z"
+          fill="url(#newborn-female-onepiece-bodysuit__gusset)"/>
+  </g>
+  <!-- fine pin stripe -->
+  <rect x="154" y="412" width="92" height="94" fill="url(#newborn-female-onepiece-bodysuit__pin)"
+        clip-path="url(#newborn-female-onepiece-bodysuit__clip)"/>
+  <!-- three poppers across the gusset -->
+  <g fill="var(--c3, #E28A7C)">
+    <circle cx="184" cy="528" r="3.4"/>
+    <circle cx="200" cy="530" r="3.4"/>
+    <circle cx="216" cy="528" r="3.4"/>
+  </g>
+  <!-- envelope neckline, the folded shoulder overlap a vest is cut with -->
+  <path d="M172 412 L200 432 L228 412 L221 412 L200 426 L179 412 Z" fill="var(--c2, #6BBFAD)"/>
+  <path d="M164 414 L176 426 M236 414 L224 426" stroke="var(--c2, #6BBFAD)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound sleeve and leg openings -->
+  <rect x="131" y="440" width="26" height="8" rx="4" fill="var(--c2, #6BBFAD)"/>
+  <rect x="243" y="440" width="26" height="8" rx="4" fill="var(--c2, #6BBFAD)"/>
+  <path d="M166 512 q8 16 20 22 M234 512 q-8 16 -20 22" stroke="var(--c2, #6BBFAD)"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M168 436 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>
