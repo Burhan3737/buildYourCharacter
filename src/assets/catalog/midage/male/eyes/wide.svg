@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide" data-family="wide" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="midage-male-eyes-wide__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFE4F0"/>
+    </linearGradient>
+    <linearGradient id="midage-male-eyes-wide__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tall, alert sclera -->
+  <g class="sp-shadow">
+    <ellipse cx="178" cy="110" rx="13" ry="15.5" fill="url(#midage-male-eyes-wide__sclera)"/>
+    <ellipse cx="222" cy="110" rx="13" ry="15.5" fill="url(#midage-male-eyes-wide__sclera)"/>
+  </g>
+
+  <!-- iris floats with white showing above and below -->
+  <circle cx="178" cy="110" r="7.8" fill="#3B2A22"/>
+  <circle cx="222" cy="110" r="7.8" fill="#3B2A22"/>
+  <circle cx="178" cy="110" r="7.8" fill="url(#midage-male-eyes-wide__iris)"/>
+  <circle cx="222" cy="110" r="7.8" fill="url(#midage-male-eyes-wide__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="178" cy="110" r="3.8" fill="#3B2A22"/>
+  <circle cx="222" cy="110" r="3.8" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="175" cy="107" r="2.9" fill="#FFFFFF"/>
+  <circle cx="219" cy="107" r="2.9" fill="#FFFFFF"/>
+  <circle cx="181" cy="114" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="225" cy="114" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- upper lid, lifted and hugging the rim -->
+  <path d="M168 100 Q178 94.5 188 100" stroke="#3B2A22" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 100 Q222 94.5 212 100" stroke="#3B2A22" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+</svg>
