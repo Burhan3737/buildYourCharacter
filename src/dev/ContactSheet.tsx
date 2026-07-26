@@ -7,11 +7,25 @@ import {
 } from '../catalog/types'
 import { DEFAULT_SKIN_ID } from '../render/skinTones'
 
-const blank = (stage: LifeStage, bodyType: BodyType, slot?: Slot, assetId?: string): Character => ({
-  id: 'sheet', name: assetId ?? 'base', stage, bodyType, skinToneId: DEFAULT_SKIN_ID,
-  slots: slot && assetId ? { [slot]: { assetId, colors: {} } } : {},
-  createdAt: 0, updatedAt: 0,
-})
+/** Drawn under every card so head-mounted art can be checked against a real eye line. */
+const FACE_SLOTS: readonly Slot[] = ['eyes', 'brows', 'mouth']
+
+const blank = (
+  stage: LifeStage, bodyType: BodyType, slot?: Slot, assetId?: string,
+  face: Partial<Record<Slot, string>> = {},
+): Character => {
+  const slots: Character['slots'] = {}
+  for (const f of FACE_SLOTS) {
+    if (f === slot) continue
+    const id = face[f]
+    if (id) slots[f] = { assetId: id, colors: {} }
+  }
+  if (slot && assetId) slots[slot] = { assetId, colors: {} }
+  return {
+    id: 'sheet', name: assetId ?? 'base', stage, bodyType, skinToneId: DEFAULT_SKIN_ID,
+    slots, createdAt: 0, updatedAt: 0,
+  }
+}
 
 const initialStage = (): LifeStage => {
   const q = new URLSearchParams(window.location.search).get('stage')
@@ -34,6 +48,14 @@ export function ContactSheet() {
   const poolFor = (slot: Slot) =>
     (ACCESSORY_SLOTS.includes(slot) ? accessoryPools?.[slot] : bundlePools[slot]) ?? []
 
+  // The widest eye aperture in the bundle, so a brim that crops an eye is visible here
+  // rather than only on the one character who happens to wear those eyes.
+  const face: Partial<Record<Slot, string>> = {}
+  for (const f of FACE_SLOTS) {
+    const pool = poolFor(f)
+    face[f] = (pool.find((a) => a.family === 'wide') ?? pool[0])?.id
+  }
+
   return (
     <div className="p-6">
       <div className="mb-6 flex flex-wrap gap-2">
@@ -54,7 +76,7 @@ export function ContactSheet() {
       <section className="mb-8">
         <h2 className="mb-2 text-sm font-bold uppercase tracking-wide opacity-60">Base body</h2>
         <div className="w-40 rounded-xl bg-white p-2">
-          <CharacterSvg character={blank(stage, bodyType)} catalog={catalog} />
+          <CharacterSvg character={blank(stage, bodyType, undefined, undefined, face)} catalog={catalog} />
         </div>
       </section>
 
@@ -67,7 +89,7 @@ export function ContactSheet() {
             <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-3">
               {poolFor(slot).map((a) => (
                 <figure key={a.id} className="rounded-xl bg-white p-2">
-                  <CharacterSvg character={blank(stage, bodyType, slot, a.id)} catalog={catalog} />
+                  <CharacterSvg character={blank(stage, bodyType, slot, a.id, face)} catalog={catalog} />
                   <figcaption className="mt-1 truncate text-center text-xs opacity-60">{a.name}</figcaption>
                 </figure>
               ))}
