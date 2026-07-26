@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { buildCatalog } from '../catalog/build'
-import { composeCharacter, hiddenSlots } from './composition'
-import type { BodySpec, Character } from '../catalog/types'
+import { ACCESSORY_REF, composeCharacter, headTransform, hiddenSlots } from './composition'
+import {
+  BODY_TYPES, HEAD_SIZE_CLASSES, LIFE_STAGES, bundleKey,
+  type BodySpec, type Character, type HeadSizeClass,
+} from '../catalog/types'
 
 const svg = (slot: string, layer: string, family: string, hides = '') =>
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" data-name="${family}"
@@ -48,6 +53,56 @@ const base: Character = {
   },
   createdAt: 0, updatedAt: 0,
 }
+
+/**
+ * Head-mounted art is drawn once per head size class and mapped onto every bundle in that
+ * class by `headTransform`, which only knows about the head circle. So a bundle may only
+ * borrow a class if that same transform also lands the class's *eye line* on its own —
+ * otherwise every brim, lens and band in the pool sits at the wrong height on the face, and
+ * nothing in the suite notices because the files themselves are all still valid.
+ *
+ * `newborn` is the case this guards: it declares `headSizeClass: "toddler"` with an rx of 88
+ * against the toddler reference of 82, and is only legitimate because its eye line rides at
+ * the same fraction of the head.
+ */
+describe('head size classes', () => {
+  const readSpec = (bundle: string): BodySpec =>
+    JSON.parse(readFileSync(join(process.cwd(), 'specs', 'bodies', `${bundle}.json`), 'utf8'))
+
+  const bundles = LIFE_STAGES.flatMap((s) => BODY_TYPES.map((b) => bundleKey(s, b)))
+
+  it('takes each reference head straight from its namesake stage', () => {
+    for (const cls of HEAD_SIZE_CLASSES) {
+      for (const bodyType of BODY_TYPES) {
+        const { head } = readSpec(bundleKey(cls, bodyType))
+        expect({ cls, ...ACCESSORY_REF[cls] }).toEqual({ cls, cx: head.cx, cy: head.cy, rx: head.rx })
+      }
+    }
+  })
+
+  // The reference eye line for a class is the eye line of the stage it is named after.
+  const refEyeLine = Object.fromEntries(
+    HEAD_SIZE_CLASSES.map((cls) => [cls, readSpec(bundleKey(cls, 'female')).eyeLine]),
+  ) as Record<HeadSizeClass, number>
+
+  it.each(bundles)('%s lands its class reference head and eye line on its own face', (bundle) => {
+    const spec = readSpec(bundle)
+    const ref = ACCESSORY_REF[spec.headSizeClass]
+    const m = headTransform(spec, ref).match(/translate\((-?[\d.]+) (-?[\d.]+)\) scale\(([\d.]+)\)/)
+    expect(m).not.toBeNull()
+    const tx = Number(m![1]); const ty = Number(m![2]); const s = Number(m![3])
+
+    const map = (y: number) => y * s + ty
+    expect(Math.abs(ref.cx * s + tx - spec.head.cx)).toBeLessThan(0.5)
+    expect(Math.abs(map(ref.cy) - spec.head.cy)).toBeLessThan(0.5)
+    expect(Math.abs(ref.rx * s - spec.head.rx)).toBeLessThan(0.5)
+    // Same head shape, so a hat drawn on the class's skull still follows this one.
+    const refSpec = readSpec(bundleKey(spec.headSizeClass, 'female'))
+    expect(Math.abs(refSpec.head.ry * s - spec.head.ry)).toBeLessThan(3)
+    // And the eye line the art was drawn against lands on this bundle's real eye line.
+    expect(Math.abs(map(refEyeLine[spec.headSizeClass]) - spec.eyeLine)).toBeLessThan(3)
+  })
+})
 
 describe('hiddenSlots', () => {
   it('hides nothing when no override is equipped', () => {
