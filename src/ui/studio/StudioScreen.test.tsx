@@ -3,7 +3,7 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { buildCatalog } from '../../catalog/build'
 import type { Character } from '../../catalog/types'
 import { SKIN_TONES } from '../../render/skinTones'
-import { GARMENT_PALETTE } from '../../state/palettes'
+import { GARMENT_PALETTE, HAIR_PALETTE } from '../../state/palettes'
 import { useAppStore } from '../../state/appStore'
 import { StudioScreen } from './StudioScreen'
 import { makeCatalog, makeCharacter } from './testCatalog'
@@ -106,7 +106,7 @@ describe('StudioScreen', () => {
   it('8. a colour swatch updates the equipped slot’s colors', () => {
     mount()
     fireEvent.click(screen.getByTestId('rail-top'))
-    fireEvent.click(screen.getByTestId('swatch-top-4'))
+    fireEvent.click(screen.getByTestId('swatch-top-c1-4'))
 
     expect(current().slots.top?.colors.c1).toBe(GARMENT_PALETTE[4])
     expect(current().slots.top?.assetId).toBe('adult-female-top-tee')
@@ -152,6 +152,136 @@ describe('StudioScreen', () => {
     mount()
     fireEvent.click(screen.getByTestId('done'))
     expect(onDone).toHaveBeenCalledTimes(1)
+  })
+})
+
+describe('StudioScreen colour rows', () => {
+  const openTop = () => {
+    mount()
+    fireEvent.click(screen.getByTestId('rail-top'))
+  }
+
+  it('renders one labelled swatch row per declared colour variable', () => {
+    seed({ slots: { top: { assetId: 'adult-female-top-jersey', colors: {} } } })
+    openTop()
+
+    const section = screen.getByTestId('section-top')
+    expect(within(section).getByTestId('swatches-top-c1')).toBeInTheDocument()
+    expect(within(section).getByTestId('swatches-top-c2')).toBeInTheDocument()
+    expect(within(section).getByTestId('swatches-top-c3')).toBeInTheDocument()
+
+    // Human-readable labels, not raw variable names.
+    expect(within(section).getByText('Main')).toBeInTheDocument()
+    expect(within(section).getByText('Shade')).toBeInTheDocument()
+    expect(within(section).getByText('Accent')).toBeInTheDocument()
+    expect(within(section).queryByText('c2')).toBeNull()
+  })
+
+  it('renders a single row for a single-variable asset', () => {
+    openTop()
+    const rows = within(screen.getByTestId('section-top')).getAllByRole('group')
+    expect(rows).toHaveLength(1)
+    expect(rows[0]).toHaveAttribute('data-testid', 'swatches-top-c1')
+  })
+
+  it('each row edits only its own variable', () => {
+    seed({ slots: { top: { assetId: 'adult-female-top-jersey', colors: { c1: '#123456' } } } })
+    openTop()
+
+    fireEvent.click(screen.getByTestId('swatch-top-c2-4'))
+    expect(current().slots.top?.colors).toEqual({ c1: '#123456', c2: GARMENT_PALETTE[4] })
+
+    fireEvent.click(screen.getByTestId('swatch-top-c3-2'))
+    expect(current().slots.top?.colors).toEqual({
+      c1: '#123456', c2: GARMENT_PALETTE[4], c3: GARMENT_PALETTE[2],
+    })
+  })
+
+  it('marks the active swatch per row independently', () => {
+    seed({
+      slots: {
+        top: {
+          assetId: 'adult-female-top-jersey',
+          colors: { c1: GARMENT_PALETTE[0], c2: GARMENT_PALETTE[5] },
+        },
+      },
+    })
+    openTop()
+
+    expect(screen.getByTestId('swatch-top-c1-0')).toHaveAttribute('aria-pressed', 'true')
+    expect(screen.getByTestId('swatch-top-c2-0')).toHaveAttribute('aria-pressed', 'false')
+    expect(screen.getByTestId('swatch-top-c2-5')).toHaveAttribute('aria-pressed', 'true')
+  })
+
+  it('an asset declaring no colours renders no rows', () => {
+    seed({ slots: { shoes: { assetId: 'adult-female-shoes-clog', colors: {} } } })
+    mount()
+    fireEvent.click(screen.getByTestId('rail-shoes'))
+    expect(within(screen.getByTestId('section-shoes')).queryAllByRole('group')).toHaveLength(0)
+  })
+
+  it('an empty slot renders no rows', () => {
+    seed({ slots: {} })
+    openTop()
+    expect(within(screen.getByTestId('section-top')).queryAllByRole('group')).toHaveLength(0)
+  })
+
+  it('hair variables use the hair ramp, garment variables the garment ramp', () => {
+    seed({ slots: { hair: { assetId: 'adult-female-hair-bob', colors: {} } } })
+    mount()
+    fireEvent.click(screen.getByTestId('rail-hair'))
+
+    const section = screen.getByTestId('section-hair')
+    expect(screen.getByTestId('swatch-label-hair-hair1')).toHaveTextContent('Hair')
+    expect(screen.getByTestId('swatch-label-hair-hair2')).toHaveTextContent('Hair shade')
+    expect(within(section).getAllByTestId(/^swatch-hair-hair1-/))
+      .toHaveLength(HAIR_PALETTE.length)
+    expect(screen.getByTestId('swatch-hair-hair1-0'))
+      .toHaveStyle({ backgroundColor: HAIR_PALETTE[0] })
+
+    fireEvent.click(screen.getByTestId('swatch-hair-hair2-3'))
+    expect(current().slots.hair?.colors.hair2).toBe(HAIR_PALETTE[3])
+  })
+
+  it('gives face slots their own rows without duplicating the skin-tone control', () => {
+    seed({
+      slots: {
+        eyes: { assetId: 'adult-female-eyes-round', colors: {} },
+        brows: { assetId: 'adult-female-brows-soft', colors: {} },
+        mouth: { assetId: 'adult-female-mouth-smile', colors: {} },
+      },
+    })
+    mount() // Face is the opening category.
+
+    expect(screen.getAllByTestId('swatches-skin')).toHaveLength(1)
+    expect(screen.getByTestId('swatch-label-eyes-eye1')).toHaveTextContent('Eyes')
+    expect(screen.getByTestId('swatch-label-mouth-lip1')).toHaveTextContent('Lips')
+    // Brows are hair-coloured, so they take the hair ramp.
+    expect(screen.getByTestId('swatch-brows-hair2-0'))
+      .toHaveStyle({ backgroundColor: HAIR_PALETTE[0] })
+
+    fireEvent.click(screen.getByTestId('swatch-eyes-eye1-3'))
+    expect(current().slots.eyes?.colors.eye1).toBe(GARMENT_PALETTE[3])
+  })
+
+  it('disables every row of a slot hidden by a costume', () => {
+    seed({
+      slots: {
+        top: { assetId: 'adult-female-top-jersey', colors: {} },
+        costume: { assetId: 'adult-female-costume-hero', colors: {} },
+      },
+    })
+    openTop()
+
+    for (const v of ['c1', 'c2', 'c3']) {
+      expect(screen.getByTestId(`swatch-top-${v}-0`)).toBeDisabled()
+    }
+  })
+
+  it('falls back to the raw variable name when it has no friendly label', () => {
+    seed({ slots: { top: { assetId: 'adult-female-top-zed', colors: {} } } })
+    openTop()
+    expect(within(screen.getByTestId('section-top')).getByText('zz9')).toBeInTheDocument()
   })
 })
 

@@ -7,15 +7,17 @@ import type { BodySpec, Character } from '../../catalog/types'
  * and a shared accessory pool.
  */
 
-const svg = (slot: string, layer: string, family: string, hides = '') =>
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" data-name="${family}"
-    data-family="${family}" data-slot="${slot}" data-layer="${layer}" data-colors="c1"
+const svg = (slot: string, layer: string, family: string, hides = '', colors = 'c1') => {
+  const first = colors.split(',')[0]?.trim() || 'c1'
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" data-name="${family}"
+    data-family="${family}" data-slot="${slot}" data-layer="${layer}" data-colors="${colors}"
     data-hides="${hides}">
     ${layer === 'hair'
     ? `<g data-part="back"><path class="mark-${family}-back" d="M0 0"/></g>
-       <g data-part="front"><path class="mark-${family}" d="M0 0" fill="var(--c1, #111111)"/></g>`
-    : `<path class="mark-${family}" d="M0 0" fill="var(--c1, #111111)"/>`}
+       <g data-part="front"><path class="mark-${family}" d="M0 0" fill="var(--${first}, #111111)"/></g>`
+    : `<path class="mark-${family}" d="M0 0" fill="var(--${first}, #111111)"/>`}
   </svg>`
+}
 
 export const ADULT_SPEC: BodySpec = {
   viewBox: [0, 0, 400, 600],
@@ -36,16 +38,29 @@ export function makeCatalog(): Catalog {
       '/src/assets/bodies/adult/male/base.svg': svg('eyes', 'body', 'base'),
       '/src/assets/bodies/teen/female/base.svg': svg('eyes', 'body', 'base'),
 
-      '/src/assets/catalog/adult/female/eyes/round.svg': svg('eyes', 'face', 'round'),
-      '/src/assets/catalog/adult/female/eyes/wide.svg': svg('eyes', 'face', 'wide'),
-      '/src/assets/catalog/adult/female/brows/soft.svg': svg('brows', 'face', 'soft'),
-      '/src/assets/catalog/adult/female/mouth/smile.svg': svg('mouth', 'face', 'smile'),
-      '/src/assets/catalog/adult/female/hair/bob.svg': svg('hair', 'hair', 'bob'),
-      '/src/assets/catalog/adult/female/hair/curls.svg': svg('hair', 'hair', 'curls'),
+      '/src/assets/catalog/adult/female/eyes/round.svg':
+        svg('eyes', 'face', 'round', '', 'eye1'),
+      '/src/assets/catalog/adult/female/eyes/wide.svg':
+        svg('eyes', 'face', 'wide', '', 'eye1'),
+      '/src/assets/catalog/adult/female/brows/soft.svg':
+        svg('brows', 'face', 'soft', '', 'hair2'),
+      '/src/assets/catalog/adult/female/mouth/smile.svg':
+        svg('mouth', 'face', 'smile', '', 'lip1'),
+      '/src/assets/catalog/adult/female/hair/bob.svg':
+        svg('hair', 'hair', 'bob', '', 'hair1,hair2'),
+      '/src/assets/catalog/adult/female/hair/curls.svg':
+        svg('hair', 'hair', 'curls', '', 'hair1,hair2'),
       '/src/assets/catalog/adult/female/top/tee.svg': svg('top', 'top', 'tee'),
       '/src/assets/catalog/adult/female/top/hoodie.svg': svg('top', 'top', 'hoodie'),
+      // Three declared variables: the case the tray used to collapse to one row.
+      '/src/assets/catalog/adult/female/top/jersey.svg':
+        svg('top', 'top', 'jersey', '', 'c1,c2,c3'),
+      // An unmapped variable name, to prove the label falls back to the raw name.
+      '/src/assets/catalog/adult/female/top/zed.svg': svg('top', 'top', 'zed', '', 'zz9'),
       '/src/assets/catalog/adult/female/bottom/jeans.svg': svg('bottom', 'bottom', 'jeans'),
       '/src/assets/catalog/adult/female/shoes/sneaker.svg': svg('shoes', 'shoes', 'sneaker'),
+      // Declares no colour variables at all.
+      '/src/assets/catalog/adult/female/shoes/clog.svg': svg('shoes', 'shoes', 'clog', '', ''),
       '/src/assets/catalog/adult/female/onepiece/sundress.svg':
         svg('onepiece', 'onepiece', 'sundress', 'top,bottom'),
       '/src/assets/catalog/adult/female/costume/hero.svg':

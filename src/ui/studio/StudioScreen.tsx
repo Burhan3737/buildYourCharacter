@@ -49,13 +49,12 @@ export function StudioScreen({ catalog, characterId, onDone }: StudioScreenProps
     equip(character.id, slot, asset.id, colors)
   }
 
-  /** The swatch row drives the asset's primary colour variable. */
-  const onRecolor = (slot: Slot, color: string) => {
+  /** One swatch row per declared variable; each row edits only its own. */
+  const onRecolor = (slot: Slot, variable: string, color: string) => {
     const equipped = character.slots[slot]
     const asset = equipped ? catalog.byId[equipped.assetId] : undefined
-    const primary = asset?.colors[0]
-    if (!equipped || !primary) return
-    equip(character.id, slot, equipped.assetId, { ...equipped.colors, [primary]: color })
+    if (!equipped || !asset?.colors.includes(variable)) return
+    equip(character.id, slot, equipped.assetId, { ...equipped.colors, [variable]: color })
   }
 
   const onSurprise = () => {

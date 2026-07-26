@@ -16,13 +16,36 @@ export const SLOT_LABELS: Record<Slot, string> = {
   costume: 'Costume',
 }
 
+/**
+ * Human-readable names for the colour variables an asset may declare. Anything
+ * unmapped falls back to the raw variable name, so new variables still get a row.
+ */
+export const COLOR_VAR_LABELS: Record<string, string> = {
+  c1: 'Main', c2: 'Shade', c3: 'Accent',
+  hair1: 'Hair', hair2: 'Hair shade',
+  eye1: 'Eyes', lip1: 'Lips',
+}
+
+export const colorVarLabel = (variable: string): string =>
+  COLOR_VAR_LABELS[variable] ?? variable
+
+/** Hair-coloured variables get the hair ramp wherever they are declared. */
+export const paletteFor = (variable: string): string[] =>
+  variable.startsWith('hair') ? HAIR_PALETTE : GARMENT_PALETTE
+
+/** Screen-reader name for a row, without stuttering ("Eyes Eyes") on face slots. */
+const rowLabel = (slot: Slot, variable: string): string => {
+  const name = colorVarLabel(variable)
+  return name === SLOT_LABELS[slot] ? `${name} colour` : `${SLOT_LABELS[slot]} ${name}`
+}
+
 export interface OptionTrayProps {
   category: Category
   character: Character
   catalog: Catalog
   onEquip: (slot: Slot, asset: AssetRecord) => void
   onUnequip: (slot: Slot) => void
-  onRecolor: (slot: Slot, color: string) => void
+  onRecolor: (slot: Slot, variable: string, color: string) => void
   onSkinTone: (skinToneId: string) => void
 }
 
@@ -63,9 +86,6 @@ export function OptionTray({
         const isHidden = hidden.has(slot)
         const equipped = character.slots[slot]
         const asset = equipped ? catalog.byId[equipped.assetId] : undefined
-        const ramp = slot === 'hair' ? HAIR_PALETTE : GARMENT_PALETTE
-        const colorVar = asset?.colors[0]
-        const value = colorVar ? equipped?.colors[colorVar] : undefined
 
         return (
           <section
@@ -85,16 +105,25 @@ export function OptionTray({
               )}
             </header>
 
-            {category.key !== 'face' && (
-              <SwatchRow
-                id={slot}
-                label={`${SLOT_LABELS[slot]} colour`}
-                colors={ramp}
-                value={value}
-                disabled={isHidden || !colorVar}
-                onChange={(color) => onRecolor(slot, color)}
-              />
-            )}
+            {/* One row per variable the equipped asset declares; none if it declares none. */}
+            {asset?.colors.map((variable) => (
+              <div key={variable} className="flex items-center gap-2">
+                <span
+                  data-testid={`swatch-label-${slot}-${variable}`}
+                  className="w-[68px] shrink-0 text-[11px] font-medium leading-tight text-ink/45"
+                >
+                  {colorVarLabel(variable)}
+                </span>
+                <SwatchRow
+                  id={`${slot}-${variable}`}
+                  label={rowLabel(slot, variable)}
+                  colors={paletteFor(variable)}
+                  value={equipped?.colors[variable]}
+                  disabled={isHidden}
+                  onChange={(color) => onRecolor(slot, variable, color)}
+                />
+              </div>
+            ))}
 
             {pool.length === 0 ? (
               <p className="rounded-2xl bg-white/60 px-3 py-4 text-center text-xs text-ink/40">
