@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bee" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: VOLUME (a fat rounded abdomen ballooning out past the hips, so the
+       lower half is the widest part of the figure) and SHOULDER (two rounded wings standing
+       out behind the shoulder line). Nothing above y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-bee__abdomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C64B)"/>
+      <stop offset="1" stop-color="var(--c1, #D3A32E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-bee__thorax" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5CE5C)"/>
+      <stop offset="1" stop-color="var(--c1, #DCAE37)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EAF3F8)"/>
+      <stop offset="1" stop-color="var(--c3, #C6D9E6)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-bee__bands" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="44">
+      <rect x="0" y="0" width="20" height="22" fill="var(--c2, #3B2A22)"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: two rounded wings, plush legs, the big oval abdomen, a rounded thorax and
+       two plush sleeves. -->
+  <g class="sp-shadow">
+    <path d="M142 194 q-54-24 -74 10 q-18 32 20 50 q34 16 60 -6 z"
+          fill="url(#midage-female-costume-bee__wing)"/>
+    <path d="M258 194 q54-24 74 10 q18 32 -20 50 q-34 16 -60 -6 z"
+          fill="url(#midage-female-costume-bee__wing)"/>
+    <rect x="158" y="460" width="42" height="94" rx="21"
+          fill="url(#midage-female-costume-bee__thorax)"/>
+    <rect x="200" y="460" width="42" height="94" rx="21"
+          fill="url(#midage-female-costume-bee__thorax)"/>
+    <ellipse cx="200" cy="400" rx="82" ry="96"
+             fill="url(#midage-female-costume-bee__abdomen)"/>
+    <path d="M138 196 q0-36 34-36 h56 q34 0 34 36 v92 q0 38 -34 38 h-56 q-34 0 -34-38 z"
+          fill="url(#midage-female-costume-bee__thorax)"/>
+    <rect x="110" y="170" width="38" height="150" rx="19"
+          fill="url(#midage-female-costume-bee__thorax)"/>
+    <rect x="252" y="170" width="38" height="150" rx="19"
+          fill="url(#midage-female-costume-bee__thorax)"/>
+  </g>
+
+  <!-- PATTERN: fat even bands wrapping the abdomen. -->
+  <ellipse cx="200" cy="400" rx="82" ry="96" fill="url(#midage-female-costume-bee__bands)"
+           fill-opacity="0.9"/>
+
+  <!-- TRIM: one band across the thorax and a soft ruff at the base of the neck. -->
+  <rect x="138" y="232" width="124" height="26" rx="12" fill="var(--c2, #3B2A22)"/>
+  <path d="M164 162 q36 26 72 0 q-8 32 -36 32 q-28 0 -36-32 z" fill="var(--c3, #EAF3F8)"/>
+
+  <!-- TRIM: plush cuffs at the wrist and the ankle. -->
+  <g fill="var(--c2, #3B2A22)">
+    <rect x="108" y="298" width="42" height="20" rx="10"/>
+    <rect x="250" y="298" width="42" height="20" rx="10"/>
+    <rect x="156" y="526" width="46" height="22" rx="11"/>
+    <rect x="198" y="526" width="46" height="22" rx="11"/>
+  </g>
+
+  <!-- STRUCTURAL: wing veins, drawn as line work not as an outline. -->
+  <g fill="none" stroke="var(--c2, #3B2A22)" stroke-opacity="0.3" stroke-width="2.5"
+     stroke-linecap="round">
+    <path d="M134 200 q-40 4 -56 34 M132 218 q-34 6 -48 30 M128 236 q-26 6 -34 22"/>
+    <path d="M266 200 q40 4 56 34 M268 218 q34 6 48 30 M272 236 q26 6 34 22"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 186 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 348 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

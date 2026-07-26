@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = short two-button placket and
+       VOLUME = fitted, with the hem curving up at the side seams (sides y304,
+       centre y334) rather than running straight across.
+       Short sleeves, hem at the hip.
+       Surface tools: trim (flat knit collar, placket band, contrast sleeve
+       tipping) and structural (button line, curved hem, side vents). -->
+  <defs>
+    <linearGradient id="midage-female-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F7A5A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A5C41)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-polo__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F7A5A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A5C41)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-polo__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2ECDC)"/>
+      <stop offset="1" stop-color="var(--c3, #F2ECDC)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short sleeves, shallower than the tee's -->
+    <rect x="114" y="176" width="34" height="56" rx="17" fill="url(#midage-female-top-polo__arm)"/>
+    <rect x="252" y="176" width="34" height="56" rx="17" fill="url(#midage-female-top-polo__arm)"/>
+    <!-- fitted body with a curved shirt-tail hem -->
+    <path d="M140 200 q2-42 32-42 h56 q30 0 32 42 v100 q-30 34 -60 34 q-30 0-60-34 z"
+          fill="url(#midage-female-top-polo__body)"/>
+  </g>
+
+  <!-- short two-button placket -->
+  <rect x="192" y="160" width="16" height="60" rx="4" fill="url(#midage-female-top-polo__trim)"/>
+  <!-- flat knit collar sitting over the placket -->
+  <path d="M174 150 L200 164 L192 188 L166 166 z" fill="url(#midage-female-top-polo__trim)"/>
+  <path d="M226 150 L200 164 L208 188 L234 166 z" fill="url(#midage-female-top-polo__trim)"/>
+  <path d="M174 156 L198 168" stroke="var(--c2, #2A5C41)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 156 L202 168" stroke="var(--c2, #2A5C41)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- two buttons -->
+  <circle cx="200" cy="184" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="206" r="4.2" fill="#3B2A22"/>
+  <!-- contrast sleeve tipping -->
+  <rect x="114" y="220" width="34" height="12" rx="6" fill="url(#midage-female-top-polo__trim)"/>
+  <rect x="252" y="220" width="34" height="12" rx="6" fill="url(#midage-female-top-polo__trim)"/>
+  <!-- side vents where the curved hem lifts -->
+  <path d="M146 292 v14 M254 292 v14" stroke="var(--c3, #F2ECDC)" stroke-opacity="0.6"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- curved hem stitch -->
+  <path d="M148 300 q52 26 104 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 184 q22 10 42 12 M208 196 q20 -2 40 -12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

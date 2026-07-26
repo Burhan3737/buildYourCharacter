@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Dress" data-family="wrap-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: CLOSURE (diagonal crossover bodice tied at the side waist) and
+       SHOULDER (three-quarter sleeve to the elbow). Knee hem, softly flared skirt. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-wrap-dress__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F7D63)"/>
+      <stop offset="1" stop-color="var(--c2, #2C5B47)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-wrap-dress__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F7D63)"/>
+      <stop offset="1" stop-color="var(--c2, #2C5B47)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-wrap-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F7D63)"/>
+      <stop offset="1" stop-color="var(--c2, #2C5B47)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-wrap-dress__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4E3C0)"/>
+      <stop offset="1" stop-color="var(--c3, #DCC9A2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two elbow sleeves, a V-crossover bodice, one flared knee-length skirt. -->
+  <g class="sp-shadow">
+    <rect x="114" y="172" width="34" height="112" rx="16"
+          fill="url(#midage-female-onepiece-wrap-dress__sleeve)"/>
+    <rect x="252" y="172" width="34" height="112" rx="16"
+          fill="url(#midage-female-onepiece-wrap-dress__sleeve)"/>
+    <path d="M138 196 q2-34 32-34 l30 62 l30-62 q30 0 32 34 v76 q-62 18 -124 0 z"
+          fill="url(#midage-female-onepiece-wrap-dress__bodice)"/>
+    <path d="M142 266 h116 q10 66 14 134 q4 34 6 62 q-78 20 -156 0
+             q2-28 6-62 q4-68 14-134 z"
+          fill="url(#midage-female-onepiece-wrap-dress__skirt)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: the two crossing wrap panels, one lapping over the other. -->
+  <path d="M170 164 l30 62 l0 48 q-32 4 -60-6 q-2-64 30-104 z"
+        fill="var(--c2, #2C5B47)" fill-opacity="0.55"/>
+  <path d="M230 164 l-30 62 l0 48 q32 4 60-6 q2-64 -30-104 z"
+        fill="var(--c1, #3F7D63)" fill-opacity="0.5"/>
+
+  <!-- TRIM: contrast binding following both wrap edges and around the waist tie. -->
+  <path d="M168 162 q22 34 32 66 l-14 6 q-10-30 -32-62 z"
+        fill="url(#midage-female-onepiece-wrap-dress__band)"/>
+  <path d="M232 162 q-22 34 -32 66 l14 6 q10-30 32-62 z"
+        fill="url(#midage-female-onepiece-wrap-dress__band)"/>
+  <rect x="138" y="262" width="124" height="18" rx="8"
+        fill="url(#midage-female-onepiece-wrap-dress__band)"/>
+
+  <!-- STRUCTURAL: the knot at the side waist with two soft tails. -->
+  <path d="M248 258 h22 l10 26 h-34 z" fill="var(--c3, #E8D6AF)"/>
+  <path d="M272 282 q18 30 12 70 l-16 -2 q4-34 -12-62 z" fill="var(--c3, #E8D6AF)"/>
+  <path d="M254 284 q6 34 -6 62 l-16-6 q14-24 8-56 z" fill="var(--c3, #E8D6AF)"/>
+
+  <!-- house highlight -->
+  <path d="M158 202 q18 12 34 18" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 340 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: SHOULDER (wide horizontal T-sleeve cut in one with the body) and
+       VOLUME (one straight untailored column — no waist definition anywhere). Calf hem,
+       closed but for a slit neckline. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-kaftan__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FA9C4)"/>
+      <stop offset="1" stop-color="var(--c2, #40839C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-kaftan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FA9C4)"/>
+      <stop offset="1" stop-color="var(--c2, #40839C)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-kaftan__diamonds" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <path d="M12 3 L21 12 L12 21 L3 12 Z" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-width="2.4" stroke-opacity="0.85"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: two wide T-sleeves and one straight column falling from the shoulder. -->
+  <g class="sp-shadow">
+    <rect x="98" y="166" width="62" height="100" rx="20"
+          fill="url(#midage-female-onepiece-kaftan__sleeve)"/>
+    <rect x="240" y="166" width="62" height="100" rx="20"
+          fill="url(#midage-female-onepiece-kaftan__sleeve)"/>
+    <path d="M142 172 q0-12 12-12 h92 q12 0 12 12 l14 166 q6 82 10 164
+             q-82 20 -164 0 q4-82 10-164 l14-166 z"
+          fill="url(#midage-female-onepiece-kaftan__body)"/>
+  </g>
+
+  <!-- PATTERN: an open diamond lattice over the column, kept off the sleeves. -->
+  <path d="M142 172 q0-12 12-12 h92 q12 0 12 12 l14 166 q6 82 10 164
+           q-82 20 -164 0 q4-82 10-164 l14-166 z"
+        fill="url(#midage-female-onepiece-kaftan__diamonds)"/>
+
+  <!-- TRIM: contrast bands at the neck slit, the sleeve edges and the hem. -->
+  <path d="M176 160 h48 l-6 16 h-36 z" fill="var(--c3, #F7C873)"/>
+  <path d="M192 172 h16 l-3 76 h-10 z" fill="var(--c3, #F7C873)"/>
+  <rect x="98" y="248" width="62" height="16" rx="8" fill="var(--c3, #F7C873)"/>
+  <rect x="240" y="248" width="62" height="16" rx="8" fill="var(--c3, #F7C873)"/>
+  <path d="M119 486 q82 20 162 0 l2 16 q-82 20 -166 0 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- STRUCTURAL: the two side seams that show the column has no shaping. -->
+  <g fill="none" stroke="var(--c2, #40839C)" stroke-opacity="0.4" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M148 280 q-8 108 -12 202"/>
+    <path d="M252 280 q8 108 12 202"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M156 190 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 392 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

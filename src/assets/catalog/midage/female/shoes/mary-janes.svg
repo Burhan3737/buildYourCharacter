@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mary Janes" data-family="mary-janes" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: toe shape = a wide round toe swept up from a very low vamp
+             fastening = a single instep strap with a small buckle (dress-shoes have none) -->
+  <defs>
+    <linearGradient id="midage-female-shoes-mary-janes__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C4257)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3042)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-shoes-mary-janes__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C4257)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3042)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two low round-toed flats, left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M200 534 v32 H164 q-12 0 -12 -12 q0 -14 14 -16 q20 -2 34 -4 Z"
+          fill="url(#midage-female-shoes-mary-janes__upper)"/>
+    <path d="M200 534 v32 H236 q12 0 12 -12 q0 -14 -14 -16 q-20 -2 -34 -4 Z"
+          fill="url(#midage-female-shoes-mary-janes__upper)"/>
+  </g>
+
+  <!-- TRIM: a thin flat sole, no heel to speak of -->
+  <rect x="152" y="562" width="50" height="9" rx="4" fill="var(--c2, #6B3042)"/>
+  <rect x="198" y="562" width="50" height="9" rx="4" fill="var(--c2, #6B3042)"/>
+
+  <!-- FASTENING: single instep strap and a small square buckle -->
+  <rect x="166" y="532" width="34" height="10" rx="5"
+        fill="url(#midage-female-shoes-mary-janes__strap)"/>
+  <rect x="200" y="532" width="34" height="10" rx="5"
+        fill="url(#midage-female-shoes-mary-janes__strap)"/>
+  <rect x="176" y="530" width="11" height="13" rx="3" fill="var(--c3, #E9DAC5)"/>
+  <rect x="213" y="530" width="11" height="13" rx="3" fill="var(--c3, #E9DAC5)"/>
+  <rect x="180" y="534" width="4" height="5" rx="1.5" fill="var(--c2, #6B3042)"/>
+  <rect x="216" y="534" width="4" height="5" rx="1.5" fill="var(--c2, #6B3042)"/>
+
+  <!-- STRUCTURE: a topline bind following the round toe -->
+  <path d="M196 540 q-18 2 -30 6" stroke="var(--c3, #E9DAC5)" stroke-opacity="0.75"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M204 540 q18 2 30 6" stroke="var(--c3, #E9DAC5)" stroke-opacity="0.75"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- toe highlights -->
+  <path d="M160 552 q14 6 28 2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 552 q-14 6 -28 2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

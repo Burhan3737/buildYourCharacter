@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Braided Crown" data-family="braided-crown" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs the rest of the slot: GATHERING (one plait taken right around the
+       hairline as a band, nine crossing segments giving the outline a scalloped rim, the
+       rest tucked away under it) and LENGTH (nothing hangs at all — the hem stops at the
+       nape above y152 and both ears are left completely clear).
+       Surface tools: trim/edge treatment (the braid band itself is a 26px trim running the
+       full hairline) + structural detail (alternating plait segments and the tuck shadow
+       where the band meets the smooth cap). Fallbacks carry a silver reading. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-braided-crown__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E635B)"/>
+        <stop offset="1" stop-color="var(--hair2, #43392F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M158 92 C152 116 158 138 172 148 C190 154 210 154 228 148
+               C242 138 248 116 242 92 Z"
+            fill="url(#midage-female-hair-braided-crown__back-g)"/>
+    </g>
+    <path d="M170 134 C184 144 216 144 230 134 C226 152 174 152 170 134 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M176 100 C186 110 214 110 224 100 C220 116 180 116 176 100 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M172 98 C186 88 214 88 228 98" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-braided-crown__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E635B)"/>
+        <stop offset="1" stop-color="var(--hair2, #43392F)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-braided-crown__plait-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6E635B)"/>
+        <stop offset="1" stop-color="var(--hair2, #43392F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- smooth tucked cap the band is laid over -->
+      <path d="M143 100 C141 54 169 36 200 36 C231 36 259 54 257 100
+               C230 88 170 88 143 100 Z"
+            fill="url(#midage-female-hair-braided-crown__front-g)"/>
+      <!-- the plait: nine segments crossing alternately around the hairline -->
+      <ellipse cx="143" cy="101" rx="13" ry="8.5" transform="rotate(-80 143 101)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="157" cy="90" rx="13" ry="8.5" transform="rotate(-8 157 90)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="172" cy="81" rx="13" ry="8.5" transform="rotate(-56 172 81)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="186" cy="75" rx="13" ry="8.5" transform="rotate(18 186 75)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="200" cy="72" rx="13" ry="8.5" transform="rotate(-30 200 72)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="214" cy="75" rx="13" ry="8.5" transform="rotate(42 214 75)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="228" cy="81" rx="13" ry="8.5" transform="rotate(-4 228 81)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="243" cy="90" rx="13" ry="8.5" transform="rotate(68 243 90)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+      <ellipse cx="257" cy="101" rx="13" ry="8.5" transform="rotate(20 257 101)"
+               fill="url(#midage-female-hair-braided-crown__plait-g)"/>
+    </g>
+    <!-- crossings: where one strand passes under the next -->
+    <path d="M150 96 C154 90 158 88 162 88 C156 92 152 96 150 100 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M165 86 C169 81 173 79 178 79 C172 82 168 86 166 90 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M179 78 C184 74 189 73 193 73 C187 76 183 79 181 82 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M207 73 C212 73 216 74 221 78 C215 76 211 76 206 77 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M222 79 C227 79 231 81 235 86 C229 83 225 82 220 82 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M238 88 C243 88 247 90 250 96 C245 92 241 90 236 90 Z"
+          fill="var(--hair2, #43392F)"/>
+    <!-- the tuck: cap slipping in behind the band -->
+    <path d="M152 88 C176 74 224 74 248 88 C224 80 176 80 152 88 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M144 104 C150 108 156 108 160 104 C154 112 146 110 143 106 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M256 104 C250 108 244 108 240 104 C246 112 254 110 257 106 Z"
+          fill="var(--hair2, #43392F)"/>
+    <path d="M164 52 C182 40 218 40 236 52" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M178 70 C188 64 212 64 222 70" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

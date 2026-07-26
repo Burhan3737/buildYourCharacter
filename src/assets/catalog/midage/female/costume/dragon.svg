@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on (against dino in particular): VOLUME (every form is angular and
+       faceted — plated armour panels with straight cut edges, where dino is rounded and plush)
+       and SHOULDER (hard wing stubs standing outboard of the shoulder line). Nothing above
+       y160 — the crest runs down the back, never over the head. -->
+  <defs>
+    <linearGradient id="midage-female-costume-dragon__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5AC4)"/>
+      <stop offset="1" stop-color="var(--c1, #5A3F9B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-dragon__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7050B8)"/>
+      <stop offset="1" stop-color="var(--c1, #4F368B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-dragon__crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #DDA94F)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-dragon__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="16">
+      <path d="M0 16 L10 2 L20 16" fill="none" stroke="var(--c2, #2E1F55)"
+            stroke-width="2.4" stroke-opacity="0.55"/>
+    </pattern>
+    <clipPath id="midage-female-costume-dragon__torsoclip">
+      <path d="M136 196 L166 160 H234 L264 196 L268 300 L246 330 H154 L132 300 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: faceted plate torso, angular tapering tail, cut-facet limbs, a hip plate,
+       a ridged dorsal crest and two hard wing stubs. -->
+  <g class="sp-shadow">
+    <path d="M244 316 L292 336 L306 396 L300 458 L282 500 L266 492 L280 452 L284 398
+             L272 356 L238 342 Z"
+          fill="url(#midage-female-costume-dragon__crest)"/>
+    <path d="M116 178 L84 196 L92 232 L120 238 L124 200 Z"
+          fill="url(#midage-female-costume-dragon__crest)"/>
+    <path d="M284 178 L316 196 L308 232 L280 238 L276 200 Z"
+          fill="url(#midage-female-costume-dragon__crest)"/>
+    <path d="M266 190 L288 206 L266 222 L290 240 L266 256 L288 274 L262 292 L256 200 Z"
+          fill="url(#midage-female-costume-dragon__crest)"/>
+    <path d="M112 176 L146 172 L150 300 L140 356 L118 352 L124 296 Z"
+          fill="url(#midage-female-costume-dragon__limb)"/>
+    <path d="M288 176 L254 172 L250 300 L260 356 L282 352 L276 296 Z"
+          fill="url(#midage-female-costume-dragon__limb)"/>
+    <path d="M160 366 L200 366 L198 480 L192 552 L166 552 L164 476 Z"
+          fill="url(#midage-female-costume-dragon__limb)"/>
+    <path d="M240 366 L200 366 L202 480 L208 552 L234 552 L236 476 Z"
+          fill="url(#midage-female-costume-dragon__limb)"/>
+    <path d="M140 312 H262 L256 372 H146 Z"
+          fill="url(#midage-female-costume-dragon__plate)"/>
+    <path d="M136 196 L166 160 H234 L264 196 L268 300 L246 330 H154 L132 300 Z"
+          fill="url(#midage-female-costume-dragon__plate)"/>
+  </g>
+
+  <!-- PATTERN: hard-edged chevron scales, clipped to the chest plate. -->
+  <g clip-path="url(#midage-female-costume-dragon__torsoclip)">
+    <path d="M136 196 L166 160 H234 L264 196 L268 300 L246 330 H154 L132 300 Z"
+          fill="url(#midage-female-costume-dragon__scales)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: a hard belly plate with cut horizontal segments. -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M172 208 H228 L232 226 H168 Z"/>
+    <path d="M168 232 H232 L236 250 H164 Z"/>
+    <path d="M164 256 H236 L238 274 H162 Z"/>
+    <path d="M162 280 H238 L234 300 H166 Z"/>
+  </g>
+
+  <!-- TRIM: hard claw cuffs and a plated hip edge. -->
+  <g fill="var(--c2, #2E1F55)">
+    <path d="M118 336 L142 332 L146 356 L120 358 Z"/>
+    <path d="M282 336 L258 332 L254 356 L280 358 Z"/>
+    <path d="M162 528 L200 528 L196 556 L164 556 Z"/>
+    <path d="M238 528 L200 528 L204 556 L236 556 Z"/>
+    <path d="M140 306 H262 L264 318 H138 Z"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M154 186 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 190 l4 96" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M276 190 l-4 96" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

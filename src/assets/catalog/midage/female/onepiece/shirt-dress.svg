@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: CLOSURE (full button-through placket, top to hem) and
+       SHOULDER (long set-in sleeve to the wrist). Hem straight to the knee, volume straight. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A06A)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7A4B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A06A)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7A4B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-shirt-dress__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F5EBD4)"/>
+      <stop offset="1" stop-color="var(--c3, #DED2B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two long sleeves and one straight, uninterrupted shirt body. -->
+  <g class="sp-shadow">
+    <rect x="114" y="172" width="34" height="180" rx="17"
+          fill="url(#midage-female-onepiece-shirt-dress__sleeve)"/>
+    <rect x="252" y="172" width="34" height="180" rx="17"
+          fill="url(#midage-female-onepiece-shirt-dress__sleeve)"/>
+    <path d="M141 192 q2-30 31-30 h56 q29 0 31 30 l4 118 q1 74 2 148
+             q-65 16 -130 0 q1-74 2-148 l4-118 z"
+          fill="url(#midage-female-onepiece-shirt-dress__body)"/>
+  </g>
+
+  <!-- TRIM: contrast placket band running the full length, real shirt collar, cuffs. -->
+  <rect x="191" y="164" width="18" height="292" rx="7"
+        fill="url(#midage-female-onepiece-shirt-dress__trim)"/>
+  <path d="M170 158 h30 l-24 34 q-20-8 -6-34 z" fill="url(#midage-female-onepiece-shirt-dress__trim)"/>
+  <path d="M230 158 h-30 l24 34 q20-8 6-34 z" fill="url(#midage-female-onepiece-shirt-dress__trim)"/>
+  <rect x="112" y="334" width="38" height="20" rx="10" fill="var(--c3, #E8DCBE)"/>
+  <rect x="250" y="334" width="38" height="20" rx="10" fill="var(--c3, #E8DCBE)"/>
+
+  <!-- TRIM: self-fabric belt at the natural waist, with a plain keeper. -->
+  <rect x="136" y="294" width="128" height="22" rx="10" fill="var(--c2, #6E7A4B)"/>
+  <rect x="190" y="290" width="20" height="30" rx="8" fill="var(--c3, #E8DCBE)"/>
+
+  <!-- STRUCTURAL: button line down the placket and two patch pockets. -->
+  <g fill="var(--c2, #6E7A4B)">
+    <circle cx="200" cy="204" r="5"/>
+    <circle cx="200" cy="238" r="5"/>
+    <circle cx="200" cy="272" r="5"/>
+    <circle cx="200" cy="342" r="5"/>
+    <circle cx="200" cy="380" r="5"/>
+    <circle cx="200" cy="418" r="5"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #6E7A4B)" stroke-opacity="0.55" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M152 246 h34 v34 h-34 z"/>
+    <path d="M214 246 h34 v34 h-34 z"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M156 196 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 372 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

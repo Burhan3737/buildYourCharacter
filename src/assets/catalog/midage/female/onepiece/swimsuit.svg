@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: HEM (no leg at all — the suit stops at a high-cut leg line around
+       y400) and VOLUME (skin-close, no ease anywhere). Narrow straps, closed scoop back. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7D8C)"/>
+      <stop offset="1" stop-color="var(--c2, #1F5C68)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-swimsuit__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7D8C)"/>
+      <stop offset="1" stop-color="var(--c2, #1F5C68)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-swimsuit__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #DFAC58)"/>
+    </linearGradient>
+    <clipPath id="midage-female-onepiece-swimsuit__clip">
+      <path d="M136 212 q0-32 32-32 q32 18 64 0 q32 0 32 32 v94 q0 26 -14 46
+               q-16 30 -42 52 q-8 12 -16 0 q-26-22 -42-52 q-14-20 -14-46 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two narrow straps and one continuous maillot with high-cut leg openings. -->
+  <g class="sp-shadow">
+    <rect x="172" y="150" width="14" height="40" rx="7"
+          fill="url(#midage-female-onepiece-swimsuit__strap)"/>
+    <rect x="214" y="150" width="14" height="40" rx="7"
+          fill="url(#midage-female-onepiece-swimsuit__strap)"/>
+    <path d="M136 212 q0-32 32-32 q32 18 64 0 q32 0 32 32 v94 q0 26 -14 46
+             q-16 30 -42 52 q-8 12 -16 0 q-26-22 -42-52 q-14-20 -14-46 z"
+          fill="url(#midage-female-onepiece-swimsuit__body)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast side panels seamed from the underarm to the leg line. -->
+  <g clip-path="url(#midage-female-onepiece-swimsuit__clip)">
+    <path d="M130 186 q22 6 26 60 q4 66 -6 130 h-32 z"
+          fill="url(#midage-female-onepiece-swimsuit__panel)"/>
+    <path d="M270 186 q-22 6 -26 60 q-4 66 6 130 h32 z"
+          fill="url(#midage-female-onepiece-swimsuit__panel)"/>
+  </g>
+
+  <!-- TRIM: contrast binding along the scoop neckline and around each leg opening. -->
+  <path d="M166 182 q34 20 68 0 l4 12 q-38 22 -76 0 z" fill="var(--c3, #F7C873)"/>
+  <path d="M252 348 q-16 30 -44 56 l-9-9 q26-25 41-53 z" fill="var(--c3, #F7C873)"/>
+  <path d="M148 348 q16 30 44 56 l9-9 q-26-25 -41-53 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- STRUCTURAL: a soft gathered seam at the centre front. -->
+  <g fill="none" stroke="var(--c2, #1F5C68)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M200 232 q-10 26 0 54 q10 28 0 56"/>
+    <path d="M182 246 q-8 20 0 40"/>
+    <path d="M218 246 q8 20 0 40"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M160 208 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 300 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

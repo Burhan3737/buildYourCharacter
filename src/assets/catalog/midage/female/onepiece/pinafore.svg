@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: CLOSURE (open bib front — the arms, shoulders and upper chest are
+       left bare for the top worn underneath) and HEM (square-cut to the knee). Sleeveless,
+       A-line volume. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-pinafore__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B85C4A)"/>
+      <stop offset="1" stop-color="var(--c2, #8C4234)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-pinafore__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B85C4A)"/>
+      <stop offset="1" stop-color="var(--c2, #8C4234)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B85C4A)"/>
+      <stop offset="1" stop-color="var(--c2, #8C4234)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-pinafore__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="10" height="10" fill="var(--c3, #F6E3C8)" fill-opacity="0.55"/>
+      <rect x="10" y="10" width="10" height="10" fill="var(--c3, #F6E3C8)" fill-opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: two shoulder straps, a narrow chest bib, one wide A-line skirt. -->
+  <g class="sp-shadow">
+    <rect x="164" y="150" width="20" height="64" rx="10"
+          fill="url(#midage-female-onepiece-pinafore__strap)"/>
+    <rect x="216" y="150" width="20" height="64" rx="10"
+          fill="url(#midage-female-onepiece-pinafore__strap)"/>
+    <rect x="162" y="196" width="76" height="96" rx="14"
+          fill="url(#midage-female-onepiece-pinafore__bib)"/>
+    <path d="M156 288 H244 Q262 372 282 455 q-82 24 -164 0 Q138 372 156 288 Z"
+          fill="url(#midage-female-onepiece-pinafore__skirt)"/>
+  </g>
+
+  <!-- PATTERN: gingham check over the skirt only, so the bib reads as a solid panel. -->
+  <path d="M156 288 H244 Q262 372 282 455 q-82 24 -164 0 Q138 372 156 288 Z"
+        fill="url(#midage-female-onepiece-pinafore__check)"/>
+
+  <!-- TRIM: contrast binding on the bib edge, the waist seam and the hem. -->
+  <rect x="158" y="190" width="84" height="12" rx="6" fill="var(--c3, #F6E3C8)"/>
+  <rect x="148" y="284" width="104" height="16" rx="8" fill="var(--c3, #F6E3C8)"/>
+  <path d="M120 452 q80 22 160 0 l3 14 q-82 24 -166 0 z" fill="var(--c3, #F6E3C8)"/>
+
+  <!-- STRUCTURAL: a patch pocket on the bib and two buttons where the straps land. -->
+  <rect x="178" y="222" width="44" height="40" rx="8" fill="none"
+        stroke="var(--c2, #8C4234)" stroke-opacity="0.6" stroke-width="3.5"/>
+  <g fill="var(--c3, #F6E3C8)">
+    <circle cx="174" cy="208" r="6"/>
+    <circle cx="226" cy="208" r="6"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M172 216 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 356 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Firefighter" data-family="firefighter" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: VOLUME (a heavy padded turnout coat, 140px across and cut with no
+       waist at all) and HEM (the coat drops past the hip to mid-thigh over the trousers).
+       The storm collar stands from y160 down — no head coverage. -->
+  <defs>
+    <linearGradient id="midage-female-costume-firefighter__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A5148)"/>
+      <stop offset="1" stop-color="var(--c2, #38312B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-firefighter__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A5148)"/>
+      <stop offset="1" stop-color="var(--c2, #38312B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-firefighter__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #544B43)"/>
+      <stop offset="1" stop-color="var(--c2, #332D28)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-firefighter__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #38312B)"/>
+      <stop offset="1" stop-color="var(--c2, #24201C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two oversized dropped-shoulder sleeves, two trouser legs, two heavy boots
+       and one thick turnout coat. -->
+  <g class="sp-shadow">
+    <rect x="100" y="176" width="44" height="186" rx="20"
+          fill="url(#midage-female-costume-firefighter__sleeve)"/>
+    <rect x="256" y="176" width="44" height="186" rx="20"
+          fill="url(#midage-female-costume-firefighter__sleeve)"/>
+    <rect x="154" y="400" width="48" height="150" rx="18"
+          fill="url(#midage-female-costume-firefighter__trouser)"/>
+    <rect x="198" y="400" width="48" height="150" rx="18"
+          fill="url(#midage-female-costume-firefighter__trouser)"/>
+    <rect x="150" y="500" width="52" height="74" rx="22"
+          fill="url(#midage-female-costume-firefighter__boot)"/>
+    <rect x="198" y="500" width="52" height="74" rx="22"
+          fill="url(#midage-female-costume-firefighter__boot)"/>
+    <path d="M130 200 q0-40 40-40 h60 q40 0 40 40 v212 q-70 22 -140 0 z"
+          fill="url(#midage-female-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: high storm collar standing above the coat, starting at y160. -->
+  <path d="M156 160 h88 q6 20 2 34 q-46 12 -92 0 q-4-14 2-34 z" fill="var(--c2, #38312B)"/>
+  <path d="M162 166 h76 q4 12 2 20 q-40 10 -80 0 q-2-8 2-20 z" fill="var(--c1, #5A5148)"/>
+
+  <!-- TRIM: two horizontal reflective bands across the coat, carried round the sleeves. -->
+  <g fill="var(--c3, #F2E34A)">
+    <rect x="132" y="298" width="136" height="18" rx="6"/>
+    <rect x="134" y="336" width="132" height="18" rx="6"/>
+    <rect x="100" y="298" width="44" height="18" rx="6"/>
+    <rect x="100" y="336" width="44" height="18" rx="6"/>
+    <rect x="256" y="298" width="44" height="18" rx="6"/>
+    <rect x="256" y="336" width="44" height="18" rx="6"/>
+    <rect x="154" y="452" width="48" height="16" rx="6"/>
+    <rect x="198" y="452" width="48" height="16" rx="6"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.4">
+    <rect x="132" y="302" width="136" height="5" rx="2.5"/>
+    <rect x="134" y="340" width="132" height="5" rx="2.5"/>
+  </g>
+
+  <!-- STRUCTURAL: storm-flap closure with three hardware clips down the centre front. -->
+  <rect x="188" y="194" width="24" height="212" rx="8" fill="var(--c2, #38312B)"/>
+  <g fill="var(--c3, #F2E34A)">
+    <rect x="186" y="212" width="28" height="14" rx="6"/>
+    <rect x="186" y="252" width="28" height="14" rx="6"/>
+    <rect x="186" y="378" width="28" height="14" rx="6"/>
+  </g>
+
+  <!-- STRUCTURAL: bellows pockets on the coat skirt and reinforced cuffs. -->
+  <g fill="none" stroke="var(--c2, #38312B)" stroke-width="4" stroke-linecap="round">
+    <path d="M144 366 h34 v40 h-34 z"/>
+    <path d="M222 366 h34 v40 h-34 z"/>
+  </g>
+  <g fill="var(--c2, #38312B)">
+    <rect x="98" y="340" width="48" height="24" rx="11"/>
+    <rect x="254" y="340" width="48" height="24" rx="11"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 196 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 204 q0 40 -2 78" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 204 q0 40 2 78" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

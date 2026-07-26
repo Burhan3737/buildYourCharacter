@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dressing Gown" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: CLOSURE (crossover wrap front held only by a tie belt) and
+       SHOULDER (wide bell sleeve flaring at the elbow). Hem to mid-calf, draped volume. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-robe__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C87F9B)"/>
+      <stop offset="1" stop-color="var(--c2, #A05C77)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C87F9B)"/>
+      <stop offset="1" stop-color="var(--c2, #A05C77)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-robe__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6E6EC)"/>
+      <stop offset="1" stop-color="var(--c3, #E0C7D2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two bell sleeves and one long draped wrap body. -->
+  <g class="sp-shadow">
+    <path d="M112 176 q0-14 16-14 h18 q16 0 16 14 l4 108 q2 34 -14 40 q-22 8 -34-2
+             q-14-8 -12-38 l6-108 z"
+          fill="url(#midage-female-onepiece-robe__sleeve)"/>
+    <path d="M288 176 q0-14 -16-14 h-18 q-16 0 -16 14 l-4 108 q-2 34 14 40 q22 8 34-2
+             q14-8 12-38 l-6-108 z"
+          fill="url(#midage-female-onepiece-robe__sleeve)"/>
+    <path d="M140 196 q4-34 34-34 h52 q30 0 34 34 l6 116 q4 92 6 184
+             q-72 20 -144 0 q2-92 4-184 l8-116 z"
+          fill="url(#midage-female-onepiece-robe__body)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: shawl collar sweeping from the neck down both sides of the wrap. -->
+  <path d="M176 162 q-16 44 -30 96 q-8 30 -6 78 l26 6 q-4-52 6-88 q10-40 26-92 z"
+        fill="url(#midage-female-onepiece-robe__collar)"/>
+  <path d="M224 162 q16 44 30 96 q8 30 6 78 l-26 6 q4-52 -6-88 q-10-40 -26-92 z"
+        fill="url(#midage-female-onepiece-robe__collar)"/>
+
+  <!-- TRIM: cuff bands on the bells, and the tie belt with two hanging ends. -->
+  <path d="M104 300 q30 18 62 2 l2 16 q-32 18 -66 -2 z" fill="var(--c3, #E9D2DA)"/>
+  <path d="M296 300 q-30 18 -62 2 l-2 16 q32 18 66 -2 z" fill="var(--c3, #E9D2DA)"/>
+  <rect x="136" y="300" width="128" height="20" rx="9" fill="var(--c2, #A05C77)"/>
+  <path d="M188 296 h24 l12 30 h-48 z" fill="var(--c3, #E9D2DA)"/>
+  <path d="M176 322 q-16 44 -14 84 l18 2 q-4-42 12-82 z" fill="var(--c2, #A05C77)"/>
+  <path d="M224 322 q16 44 14 84 l-18 2 q4-42 -12-82 z" fill="var(--c2, #A05C77)"/>
+
+  <!-- STRUCTURAL: the wrap overlap edge and a patch pocket on the right hip. -->
+  <path d="M200 200 q-30 74 -34 292" stroke="var(--c2, #A05C77)" stroke-opacity="0.45"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <rect x="212" y="356" width="42" height="40" rx="8" fill="none"
+        stroke="var(--c2, #A05C77)" stroke-opacity="0.55" stroke-width="3.5"/>
+
+  <!-- house highlight -->
+  <path d="M158 194 q42 18 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 424 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

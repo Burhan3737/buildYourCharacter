@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailored Trousers" data-family="tailored-trousers" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: leg width = clean tapered line, 38px at the hip narrowing to 28px at the hem
+             hem treatment = deep turn-up cuff, against the jeans' plain raw hem
+       Rise natural, leg length full, centre crease pressed the whole drop. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-tailored-trousers__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48587A)"/>
+      <stop offset="1" stop-color="var(--c2, #35425C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-tailored-trousers__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48587A)"/>
+      <stop offset="1" stop-color="var(--c2, #35425C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-tailored-trousers__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #35425C)"/>
+      <stop offset="1" stop-color="var(--c1, #48587A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two straight-tapered tailored legs, then a crisp shallow hip block -->
+  <g class="sp-shadow">
+    <path d="M162 358 H200 V550 H172 Z"
+          fill="url(#midage-female-bottom-tailored-trousers__leg)"/>
+    <path d="M238 358 H200 V550 H228 Z"
+          fill="url(#midage-female-bottom-tailored-trousers__leg)"/>
+    <rect x="146" y="311" width="108" height="64" rx="16"
+          fill="url(#midage-female-bottom-tailored-trousers__hip)"/>
+  </g>
+
+  <!-- TRIM: narrow tailored waistband with a hook-and-bar extension tab -->
+  <rect x="146" y="306" width="108" height="16" rx="6" fill="var(--c2, #35425C)"/>
+  <rect x="190" y="304" width="22" height="20" rx="6" fill="var(--c3, #CDBB98)"/>
+
+  <!-- STRUCTURE: pressed centre creases and clean slanted pocket mouths -->
+  <path d="M181 330 V546" stroke="var(--c3, #CDBB98)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M219 330 V546" stroke="var(--c3, #CDBB98)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M150 328 Q158 352 172 362" stroke="var(--c2, #35425C)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 328 Q242 352 228 362" stroke="var(--c2, #35425C)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turn-up cuffs at the hem, folded back over the leg -->
+  <path d="M164 530 H200 V550 H172 Z"
+        fill="url(#midage-female-bottom-tailored-trousers__cuff)"/>
+  <path d="M236 530 H200 V550 H228 Z"
+        fill="url(#midage-female-bottom-tailored-trousers__cuff)"/>
+  <path d="M166 534 H197" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 534 H234" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M160 342 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

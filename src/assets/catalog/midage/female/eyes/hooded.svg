@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- aperture: a heavy hood fold rides down over the crease, leaving a short lid strip -->
+  <defs>
+    <linearGradient id="midage-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #7A5A3C)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #7A5A3C)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="midage-female-eyes-hooded__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)" stop-opacity="0.95"/>
+    </linearGradient>
+    <clipPath id="midage-female-eyes-hooded__clip-l">
+      <path d="M160 112 Q177 104 194 111 Q191 122 177 122.5 Q163 122 160 112 Z"/>
+    </clipPath>
+    <clipPath id="midage-female-eyes-hooded__clip-r">
+      <path d="M240 112 Q223 104 206 111 Q209 122 223 122.5 Q237 122 240 112 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M160 112 Q177 104 194 111 Q191 122 177 122.5 Q163 122 160 112 Z"
+          fill="url(#midage-female-eyes-hooded__sclera)"/>
+    <path d="M240 112 Q223 104 206 111 Q209 122 223 122.5 Q237 122 240 112 Z"
+          fill="url(#midage-female-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#midage-female-eyes-hooded__clip-l)">
+    <circle cx="177" cy="113" r="8.4" fill="#3B2A22"/>
+    <circle cx="177" cy="113" r="8.4" fill="url(#midage-female-eyes-hooded__iris)"/>
+    <circle cx="177" cy="113" r="3.8" fill="#3B2A22"/>
+    <circle cx="174" cy="110.4" r="2.4" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#midage-female-eyes-hooded__clip-r)">
+    <circle cx="223" cy="113" r="8.4" fill="#3B2A22"/>
+    <circle cx="223" cy="113" r="8.4" fill="url(#midage-female-eyes-hooded__iris)"/>
+    <circle cx="223" cy="113" r="3.8" fill="#3B2A22"/>
+    <circle cx="220" cy="110.4" r="2.4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line, then the short visible lid strip, then the hood fold above it -->
+  <path d="M160 111.5 Q177 103.5 194 110.5" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 111.5 Q223 103.5 206 110.5" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M156 100 Q177 90 198 101 Q195 106 177 100.5 Q160 106 156 100 Z"
+        fill="url(#midage-female-eyes-hooded__hood)"/>
+  <path d="M244 100 Q223 90 202 101 Q205 106 223 100.5 Q240 106 244 100 Z"
+        fill="url(#midage-female-eyes-hooded__hood)"/>
+
+  <!-- fold edge: the crease is hidden under this line, which is the point -->
+  <path d="M157 100 Q177 91 197 101" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M243 100 Q223 91 203 101" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M165 121.5 Q177 124.5 189 121.5" stroke="#3B2A22" stroke-opacity="0.25"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M235 121.5 Q223 124.5 211 121.5" stroke="#3B2A22" stroke-opacity="0.25"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

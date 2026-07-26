@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs the rest of the slot: VOLUME (a flat-topped rectangular column
+       standing above the skull, corners squared, sides sheared vertical) and LENGTH (the
+       sides are taken down to the skin — hair stops dead on a hard straight hairline at
+       y78 and the temples fade out by y120).
+       Surface tools: panel blocking (column / skull block / temple fade as three painted
+       panels sharing one value ramp) + trim/edge treatment (the hard cut line and the
+       dark skin line at the bottom of the fade). The fade is a value gradient in the hair
+       itself: hair1 at the top of the column down to hair2 at the skin line. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-high-top-fade__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M178 126 C174 144 180 156 190 161 L210 161 C220 156 226 144 222 126 Z"
+            fill="url(#midage-female-hair-high-top-fade__back-g)"/>
+    </g>
+    <path d="M182 148 C190 154 210 154 218 148 C214 160 186 160 182 148 Z"
+          fill="var(--hair2, #372417)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <!-- one continuous ramp so the fade is genuinely in the hair, not a bottom stop -->
+      <linearGradient id="midage-female-hair-high-top-fade__fade-g"
+                      gradientUnits="userSpaceOnUse" x1="0" y1="22" x2="0" y2="122">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="0.46" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the column: flat top, squared corners, sheared sides -->
+      <path d="M156 84 L156 36 C156 28 164 24 174 24 L226 24 C236 24 244 28 244 36 L244 84 Z"
+            fill="url(#midage-female-hair-high-top-fade__fade-g)"/>
+      <!-- the skull block: the closing line of this path IS the hard front hairline -->
+      <path d="M148 78 C146 60 154 46 168 40 L232 40 C246 46 254 60 252 78 Z"
+            fill="url(#midage-female-hair-high-top-fade__fade-g)"/>
+      <!-- temple fades, taken down to the skin -->
+      <path d="M149 78 C146 92 147 106 152 118 C158 122 164 117 162 109
+               C159 99 159 88 161 78 Z"
+            fill="url(#midage-female-hair-high-top-fade__fade-g)"/>
+      <path d="M251 78 C254 92 253 106 248 118 C242 122 236 117 238 109
+               C241 99 241 88 239 78 Z"
+            fill="url(#midage-female-hair-high-top-fade__fade-g)"/>
+    </g>
+    <!-- the skin line: darkest value, where the fade runs out -->
+    <path d="M150 110 C154 118 158 120 162 118 C160 124 150 122 148 112 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M250 110 C246 118 242 120 238 118 C240 124 250 122 252 112 Z"
+          fill="var(--hair2, #372417)"/>
+    <!-- the hard cut across the brow -->
+    <path d="M150 72 C180 68 220 68 250 72 L250 78 L150 78 Z"
+          fill="var(--hair2, #372417)"/>
+    <!-- corner shadow so the column reads square, not domed -->
+    <path d="M156 84 L156 42 C158 50 160 62 160 84 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M244 84 L244 42 C242 50 240 62 240 84 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M168 32 C182 26 214 26 230 31" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M162 52 C182 48 218 48 238 52" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

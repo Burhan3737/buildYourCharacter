@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = past the hip and pointed — the
+       hem is not a line, it drops from y306 at the side seams to a single point
+       at (200, 344) — and CLOSURE = a full button line up a deep V front.
+       Sleeveless with high cut-away armholes, fitted volume.
+       Surface tools: trim (contrast front facing following the V and the point)
+       and structural (five-button line, two welt pockets, dart seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-waistcoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #57314A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-waistcoat__facing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C08C)"/>
+      <stop offset="1" stop-color="var(--c3, #D9C08C)" stop-opacity="0.76"/>
+    </linearGradient>
+    <clipPath id="midage-female-top-waistcoat__clip">
+      <path d="M144 302 V240 q0-44 14-70 q6-12 26-12 L200 254 L216 158 q20 0 26 12 q14 26 14 70 V302 L200 344 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- fitted sleeveless body, deep V front, pointed hem -->
+    <path d="M144 302 V240 q0-44 14-70 q6-12 26-12 L200 254 L216 158 q20 0 26 12 q14 26 14 70 V302 L200 344 z"
+          fill="url(#midage-female-top-waistcoat__body)"/>
+  </g>
+
+  <!-- contrast facing running the V and down to the point -->
+  <path d="M184 158 L200 254 L216 158 l9 3 L200 274 L175 161 z"
+        fill="url(#midage-female-top-waistcoat__facing)"/>
+  <g clip-path="url(#midage-female-top-waistcoat__clip)">
+    <path d="M144 296 L200 338 L256 296 v10 L200 348 L144 306 z"
+          fill="url(#midage-female-top-waistcoat__facing)"/>
+  </g>
+  <!-- button line down the centre front -->
+  <circle cx="200" cy="264" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="282" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="300" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="318" r="4.2" fill="#3B2A22"/>
+  <!-- welt pockets -->
+  <path d="M156 268 h30 v8 h-30 z" fill="var(--c3, #D9C08C)"/>
+  <path d="M214 268 h30 v8 h-30 z" fill="var(--c3, #D9C08C)"/>
+  <!-- dart seams -->
+  <path d="M170 206 q-6 52 -4 92 M230 206 q6 52 4 92" stroke="var(--c2, #57314A)"
+        stroke-opacity="0.6" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- armhole binding -->
+  <path d="M147 240 q0-42 13-66" stroke="var(--c3, #D9C08C)" stroke-opacity="0.65"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M253 240 q0-42 -13-66" stroke="var(--c3, #D9C08C)" stroke-opacity="0.65"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 196 q16 12 26 26 M242 196 q-16 12 -26 26" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

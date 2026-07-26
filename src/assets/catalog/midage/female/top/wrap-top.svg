@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = crossover wrap (two panels
+       cross diagonally, each running from one shoulder to the opposite hip, so
+       the deep V is cut into the outline) and VOLUME = gathered, the body drawn
+       in by a tie belt at the waist.
+       Three-quarter sleeves (y302), hem at the hip (y334).
+       Surface tools: trim (contrast binding down both crossing edges) and
+       structural (tie belt with a knot and two tails, waist gathers). -->
+  <defs>
+    <linearGradient id="midage-female-top-wrap-top__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #B4667E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-wrap-top__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #B4667E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-wrap-top__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #B4667E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-wrap-top__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7E4EA)"/>
+      <stop offset="1" stop-color="var(--c3, #F7E4EA)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves ending at the forearm -->
+    <rect x="114" y="174" width="34" height="128" rx="17" fill="url(#midage-female-top-wrap-top__arm)"/>
+    <rect x="252" y="174" width="34" height="128" rx="17" fill="url(#midage-female-top-wrap-top__arm)"/>
+    <!-- under panel: left shoulder across to the right hip -->
+    <path d="M138 202 q2-44 32-44 h4 L256 302 q0 32 -30 32 h-58 q-30 0-30-32 z"
+          fill="url(#midage-female-top-wrap-top__panel)"/>
+    <!-- over panel: right shoulder across to the left hip -->
+    <path d="M262 202 q-2-44 -32-44 h-4 L144 302 q0 32 30 32 h58 q30 0 30-32 z"
+          fill="url(#midage-female-top-wrap-top__over)"/>
+  </g>
+
+  <!-- contrast binding: the over panel's edge runs the full crossover, the under
+       panel's edge shows only above the crossing point, so the front reads as a
+       wrap V rather than a symmetric harness -->
+  <path d="M174 158 L206 214 l-11 6 L163 163 z" fill="url(#midage-female-top-wrap-top__bind)"/>
+  <path d="M226 158 L144 302 l11 6 L237 163 z" fill="url(#midage-female-top-wrap-top__bind)"/>
+  <!-- waist gathers pulling towards the tie -->
+  <path d="M164 272 q22 10 34 22 M236 272 q-22 10 -34 22" stroke="var(--c2, #B4667E)"
+        stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M156 292 q26 6 40 14 M244 292 q-26 6 -40 14" stroke="var(--c2, #B4667E)"
+        stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- tie belt with a knot and two tails -->
+  <path d="M146 288 q54 16 108 0 v16 q-54 16 -108 0 z" fill="var(--c2, #B4667E)"/>
+  <path d="M188 286 h24 q6 0 6 8 v10 q0 8 -6 8 h-24 q-6 0-6-8 v-10 q0-8 6-8 z"
+        fill="url(#midage-female-top-wrap-top__bind)"/>
+  <path d="M186 310 q-8 20 -16 26" stroke="var(--c2, #B4667E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 310 q8 20 16 26" stroke="var(--c2, #B4667E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 182 q20 12 36 18 M246 182 q-20 12 -36 18" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

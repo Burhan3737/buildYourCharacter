@@ -1,42 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sports Jersey" data-family="jersey" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = short raglan (the
+       neck-to-underarm seam is real geometry — the sleeve panels carry the
+       shoulder, the body is cut away under them), HEM = past the hip (y346).
+       Volume straight, closure closed with a V-neck bind.
+       Surface tools: panel blocking (raglan panels through the c2 variable) and trim
+       (V-neck bind and sleeve tipping through the c3 variable). -->
   <defs>
     <linearGradient id="midage-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7183A8)"/>
-      <stop offset="1" stop-color="var(--c2, #5C6D91)"/>
+      <stop offset="0" stop-color="var(--c1, #3F9D8C)"/>
+      <stop offset="1" stop-color="var(--c2, #2B7264)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-jersey__shade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    <linearGradient id="midage-female-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2B7264)"/>
+      <stop offset="1" stop-color="var(--c2, #2B7264)" stop-opacity="0.82"/>
     </linearGradient>
     <clipPath id="midage-female-top-jersey__clip">
-      <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"/>
+      <path d="M141 216 L179 160 L200 196 L221 160 L259 216 v92 q0 38 -32 38 h-54 q-32 0-32-38 z"/>
     </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- body, hem at y332 -->
-    <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"
+    <!-- body: shoulders cut away on the raglan line from neck to underarm -->
+    <path d="M141 216 L179 160 L200 196 L221 160 L259 216 v92 q0 38 -32 38 h-54 q-32 0-32-38 z"
           fill="url(#midage-female-top-jersey__body)"/>
-    <!-- raglan shoulder yokes -->
-    <path d="M186 158 L134 196 q0-38 32-38 z" fill="var(--c2, #5C6D91)"/>
-    <path d="M214 158 L266 196 q0-38 -32-38 z" fill="var(--c2, #5C6D91)"/>
-    <!-- raglan short sleeves -->
-    <rect x="114" y="172" width="34" height="66" rx="17" fill="var(--c2, #5C6D91)"/>
-    <rect x="252" y="172" width="34" height="66" rx="17" fill="var(--c2, #5C6D91)"/>
-    <!-- vertical shading over the sleeves -->
-    <rect x="114" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-jersey__shade)"/>
-    <rect x="252" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-jersey__shade)"/>
+    <!-- raglan sleeve panels: neck point, over the shoulder, short at the bicep -->
+    <path d="M179 160 q-38 8 -54 40 l-10 22 v20 q0 18 18 18 t18-18 v-24 z"
+          fill="url(#midage-female-top-jersey__raglan)"/>
+    <path d="M221 160 q38 8 54 40 l10 22 v20 q0 18 -18 18 t-18-18 v-24 z"
+          fill="url(#midage-female-top-jersey__raglan)"/>
   </g>
-  <!-- accent side stripes, clipped to the body -->
+
+  <!-- accent side panels, clipped to the body -->
   <g clip-path="url(#midage-female-top-jersey__clip)">
-    <rect x="140" y="206" width="10" height="118" fill="var(--c3, #C9A45E)"/>
-    <rect x="250" y="206" width="10" height="118" fill="var(--c3, #C9A45E)"/>
+    <rect x="145" y="214" width="11" height="134" fill="var(--c3, #F7C873)"/>
+    <rect x="244" y="214" width="11" height="134" fill="var(--c3, #F7C873)"/>
   </g>
-  <!-- contrast V-neck yoke -->
-  <path d="M175 156 L200 202 L225 156 z" fill="var(--c3, #C9A45E)"/>
-  <path d="M186 156 L200 184 L214 156 z" fill="var(--skin2, #E7B892)"/>
+  <!-- V-neck bind -->
+  <path d="M172 156 L200 206 L228 156 l-11-4 L200 190 L183 152 z" fill="var(--c3, #F7C873)"/>
+  <!-- sleeve tipping -->
+  <path d="M115 240 q18 12 36 0 v10 q-18 12 -36 0 z" fill="var(--c3, #F7C873)"/>
+  <path d="M285 240 q-18 12 -36 0 v10 q18 12 36 0 z" fill="var(--c3, #F7C873)"/>
+  <!-- raglan seam stitching -->
+  <path d="M180 164 q-34 10 -50 40" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 164 q34 10 50 40" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem stitch -->
+  <path d="M156 334 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M152 212 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M158 222 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

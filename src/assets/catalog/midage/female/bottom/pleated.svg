@@ -1,53 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Pleated Trousers" data-family="pleated" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-name="Pleated Skirt" data-family="pleated" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: leg length = none, a skirt with no leg division (against every trouser here)
+             hem treatment = knife-pleated zig-zag hem (against the A-line skirt's plain arc)
+       Rise natural; the pleated column is narrower than the skirt family's flare. Redrawn
+       from scratch as the knife-pleated skirt the family description requires. -->
   <defs>
-    <linearGradient id="midage-female-bottom-pleated__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7B86AE)"/>
-      <stop offset="1" stop-color="var(--c2, #636E92)"/>
+    <linearGradient id="midage-female-bottom-pleated__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D28FA0)"/>
+      <stop offset="1" stop-color="var(--c2, #B06F82)"/>
     </linearGradient>
-    <linearGradient id="midage-female-bottom-pleated__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7B86AE)"/>
-      <stop offset="1" stop-color="var(--c2, #636E92)"/>
+    <linearGradient id="midage-female-bottom-pleated__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B06F82)"/>
+      <stop offset="1" stop-color="var(--c1, #D28FA0)"/>
     </linearGradient>
+    <pattern id="midage-female-bottom-pleated__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="6" height="16" fill="var(--c3, #F6E2E6)" opacity="0.45"/>
+    </pattern>
   </defs>
 
-  <!-- tailored straight leg, hip block plus both legs, one shadow group -->
+  <!-- MAJOR FORM: one pleated cone, hem stepped into sixteen knife pleats.
+       The stripe pattern sits inside this shadow group, over the gradient. -->
   <g class="sp-shadow">
-    <path d="M166 360 H200 V538 q0 10 -10 10 H181 q-10 0 -10 -10 Z"
-          fill="url(#midage-female-bottom-pleated__leg)"/>
-    <path d="M234 360 H200 V538 q0 10 10 10 H219 q10 0 10 -10 Z"
-          fill="url(#midage-female-bottom-pleated__leg)"/>
-    <rect x="141" y="313" width="118" height="64" rx="28"
-          fill="url(#midage-female-bottom-pleated__hip)"/>
+    <path d="M143 310 H257 L264 452 L256 464 L248 452 L240 464 L232 452 L224 464
+             L216 452 L208 464 L200 452 L192 464 L184 452 L176 464 L168 452
+             L160 464 L152 452 L144 464 L136 452 Z"
+          fill="url(#midage-female-bottom-pleated__skirt)"/>
+    <path d="M143 310 H257 L264 452 L256 464 L248 452 L240 464 L232 452 L224 464
+             L216 452 L208 464 L200 452 L192 464 L184 452 L176 464 L168 452
+             L160 464 L152 452 L144 464 L136 452 Z"
+          fill="url(#midage-female-bottom-pleated__stripe)"/>
   </g>
 
-  <!-- waistband -->
-  <rect x="141" y="310" width="118" height="20" rx="10" fill="var(--c2, #636E92)"/>
-
-  <!-- front pleat pinches -->
-  <path d="M180 332 q6 6 4 16" stroke="var(--c2, #636E92)" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
-  <path d="M188 332 q4 6 2 16" stroke="var(--c2, #636E92)" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
-  <path d="M220 332 q-6 6 -4 16" stroke="var(--c2, #636E92)" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
-  <path d="M212 332 q-4 6 -2 16" stroke="var(--c2, #636E92)" stroke-width="3"
+  <!-- TRIM: neat flat waistband -->
+  <rect x="142" y="306" width="116" height="20" rx="8"
+        fill="url(#midage-female-bottom-pleated__band)"/>
+  <path d="M146 316 H254" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- pressed crease lines -->
-  <path d="M183 364 V536" stroke="var(--c2, #636E92)" stroke-opacity="0.7" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
-  <path d="M217 364 V536" stroke="var(--c2, #636E92)" stroke-opacity="0.7" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
+  <!-- STRUCTURE: the pressed pleat folds, opening as they fall -->
+  <path d="M186 330 L176 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M172 330 L160 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M158 330 L144 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M214 330 L224 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M228 330 L240 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M242 330 L256 452" stroke="var(--c2, #B06F82)" stroke-opacity="0.55"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M200 330 V452" stroke="var(--c2, #B06F82)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
 
-  <!-- slash pocket lines -->
-  <path d="M144 330 H178 Q170 356 148 352" stroke="var(--c2, #636E92)" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
-  <path d="M256 330 H222 Q230 356 252 352" stroke="var(--c2, #636E92)" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- soft upper highlight -->
-  <path d="M162 340 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- soft upper highlight across the yoke -->
+  <path d="M158 336 q42 13 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

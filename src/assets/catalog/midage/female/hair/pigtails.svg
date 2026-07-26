@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pigtails" data-family="pigtails" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs the rest of the slot: GATHERING (two low gathers either side of
+       the head with visible bands, tails swinging out beyond the shoulder line) and
+       PARTING (a hard centre part drawn as two separate swept scalp panels, not a cap).
+       Surface tools: pattern (20px wave band through hair2 on both tails)
+       + trim/edge treatment (the two elastic bands and the blunt tail tips). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-pigtails__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-pigtails__tail-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+      <pattern id="midage-female-hair-pigtails__back-wave" patternUnits="userSpaceOnUse"
+               x="0" y="0" width="20" height="20">
+        <path d="M-3 7 C3 1 9 13 15 7 C18 4 21 5 23 8" stroke="var(--hair2, #372417)"
+              stroke-opacity="0.42" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </pattern>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M152 50 C140 90 144 132 156 152 C170 160 186 163 200 163
+               C214 163 230 160 244 152 C256 132 260 90 248 50 Z"
+            fill="url(#midage-female-hair-pigtails__back-g)"/>
+      <path d="M146 138 C124 148 112 174 110 204 C108 236 116 268 130 296
+               C138 308 152 302 149 289 C142 262 138 234 142 208 C146 182 154 162 165 148 Z"
+            fill="url(#midage-female-hair-pigtails__tail-g)"/>
+      <path d="M254 138 C276 148 288 174 290 204 C292 236 284 268 270 296
+               C262 308 248 302 251 289 C258 262 262 234 258 208 C254 182 246 162 235 148 Z"
+            fill="url(#midage-female-hair-pigtails__tail-g)"/>
+      <path d="M146 138 C124 148 112 174 110 204 C108 236 116 268 130 296
+               C138 308 152 302 149 289 C142 262 138 234 142 208 C146 182 154 162 165 148 Z"
+            fill="url(#midage-female-hair-pigtails__back-wave)"/>
+      <path d="M254 138 C276 148 288 174 290 204 C292 236 284 268 270 296
+               C262 308 248 302 251 289 C258 262 262 234 258 208 C254 182 246 162 235 148 Z"
+            fill="url(#midage-female-hair-pigtails__back-wave)"/>
+    </g>
+    <!-- elastics at the gather point -->
+    <rect x="130" y="130" width="30" height="15" rx="7.5" fill="var(--hair2, #372417)"/>
+    <rect x="240" y="130" width="30" height="15" rx="7.5" fill="var(--hair2, #372417)"/>
+    <!-- blunt tail tips -->
+    <path d="M129 292 C136 302 146 304 150 298 C144 306 132 304 127 296 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M271 292 C264 302 254 304 250 298 C256 306 268 304 273 296 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M137 132 C144 128 152 128 157 131" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M243 132 C250 128 258 128 263 131" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M124 178 C116 208 116 246 124 274" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M276 178 C284 208 284 246 276 274" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-pigtails__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left half of the parting, swept down toward its gather -->
+      <path d="M200 38 C170 38 149 56 143 88 C139 108 141 130 149 146
+               C158 140 161 125 159 109 C172 96 186 89 200 86 L200 38 Z"
+            fill="url(#midage-female-hair-pigtails__front-g)"/>
+      <!-- right half -->
+      <path d="M200 38 C230 38 251 56 257 88 C261 108 259 130 251 146
+               C242 140 239 125 241 109 C228 96 214 89 200 86 L200 38 Z"
+            fill="url(#midage-female-hair-pigtails__front-g)"/>
+      <!-- face-framing wisps in front of the ears -->
+      <path d="M149 104 C143 122 143 142 149 158 C155 165 163 161 162 152
+               C158 138 158 120 161 104 Z"
+            fill="url(#midage-female-hair-pigtails__front-g)"/>
+      <path d="M251 104 C257 122 257 142 251 158 C245 165 237 161 238 152
+               C242 138 242 120 239 104 Z"
+            fill="url(#midage-female-hair-pigtails__front-g)"/>
+    </g>
+    <!-- the parting itself -->
+    <path d="M197 40 C199 56 199 72 198 86 L202 86 C203 70 203 54 202 40 Z"
+          fill="var(--hair2, #372417)"/>
+    <!-- swept strand shadows following the part -->
+    <path d="M188 44 C172 54 160 70 156 92 C158 68 170 50 186 41 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M212 44 C228 54 240 70 244 92 C242 68 230 50 214 41 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M154 96 C170 88 186 84 199 83 C184 87 168 93 157 102 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M246 96 C230 88 214 84 201 83 C216 87 232 93 243 102 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M166 60 C178 48 190 43 198 42" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M234 60 C222 48 210 43 202 42" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

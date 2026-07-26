@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = thigh (y374, the longest closed
+       top in this slot) and VOLUME = straight — the body is the same width from
+       the shoulder to the hem, with no rib pulling it in.
+       Dropped shoulders, sleeves past the wrist (y372), closure closed.
+       Surface tools: trim (wide crew neckband, turned-back sleeve cuffs) and
+       structural (dropped shoulder seams, split side vents, centre-back seam). -->
+  <defs>
+    <linearGradient id="midage-female-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #78848F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-oversized-long-sleeve__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #78848F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-oversized-long-sleeve__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #46505E)"/>
+      <stop offset="1" stop-color="var(--c3, #46505E)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dropped sleeves running past the wrist -->
+    <rect x="106" y="174" width="40" height="198" rx="20"
+          fill="url(#midage-female-top-oversized-long-sleeve__arm)"/>
+    <rect x="254" y="174" width="40" height="198" rx="20"
+          fill="url(#midage-female-top-oversized-long-sleeve__arm)"/>
+    <!-- straight-falling body, same width top to hem, thigh length -->
+    <path d="M130 200 q0-42 38-42 h64 q38 0 38 42 v148 q0 26 -26 26 h-88 q-26 0-26-26 z"
+          fill="url(#midage-female-top-oversized-long-sleeve__body)"/>
+  </g>
+
+  <!-- wide crew neckband -->
+  <path d="M170 148 q30 40 60 0 q-4 20 -30 20 q-26 0-30-20 z"
+        fill="url(#midage-female-top-oversized-long-sleeve__trim)"/>
+  <path d="M180 152 q20 26 40 0 q-4 12 -20 12 q-16 0-20-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- turned-back sleeve cuffs -->
+  <rect x="106" y="348" width="40" height="24" rx="12"
+        fill="url(#midage-female-top-oversized-long-sleeve__trim)"/>
+  <rect x="254" y="348" width="40" height="24" rx="12"
+        fill="url(#midage-female-top-oversized-long-sleeve__trim)"/>
+  <!-- dropped shoulder seams, far out on the upper arm -->
+  <path d="M152 180 q-4 30 -2 56" stroke="var(--c2, #78848F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 180 q4 30 2 56" stroke="var(--c2, #78848F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- split side vents at the long hem -->
+  <path d="M134 330 v42 M266 330 v42" stroke="var(--c3, #46505E)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- centre seam and hem stitch -->
+  <path d="M200 220 v138" stroke="var(--c2, #78848F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 362 q52 12 104 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M150 184 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

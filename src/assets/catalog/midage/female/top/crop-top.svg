@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cropped Knit Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = cropped above the natural waist
+       (y268, well clear of the hip block, so the midriff is bare) and
+       VOLUME = fitted. Short sleeves, closure closed.
+       Surface tools: trim (ribbed hem band, ribbed scoop neckband, ribbed
+       sleeve cuffs) and structural (princess seams, hem stitch). -->
+  <defs>
+    <linearGradient id="midage-female-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6FBFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9A9C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-crop-top__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6FBFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9A9C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-crop-top__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF0E0)"/>
+      <stop offset="1" stop-color="var(--c3, #FBF0E0)" stop-opacity="0.74"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short sleeves -->
+    <rect x="116" y="172" width="32" height="52" rx="16" fill="url(#midage-female-top-crop-top__arm)"/>
+    <rect x="252" y="172" width="32" height="52" rx="16" fill="url(#midage-female-top-crop-top__arm)"/>
+    <!-- fitted body cropped above the waist -->
+    <path d="M139 196 q3-38 31-38 h60 q28 0 31 38 v40 q0 32 -31 32 h-60 q-31 0-31-32 z"
+          fill="url(#midage-female-top-crop-top__body)"/>
+    <!-- ribbed crop hem band -->
+    <rect x="140" y="250" width="120" height="18" rx="8" fill="url(#midage-female-top-crop-top__rib)"/>
+  </g>
+
+  <!-- rib texture on the hem band -->
+  <path d="M150 254 v11 M162 254 v11 M174 254 v11 M186 254 v11 M198 254 v11 M210 254 v11 M222 254 v11 M234 254 v11 M246 254 v11"
+        stroke="var(--c2, #4B9A9C)" stroke-opacity="0.35" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- ribbed scoop neckband -->
+  <path d="M170 150 q30 40 60 0 q-4 20 -30 20 q-26 0-30-20 z" fill="url(#midage-female-top-crop-top__rib)"/>
+  <path d="M180 154 q20 26 40 0 q-3 12 -20 12 q-17 0-20-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- ribbed sleeve cuffs -->
+  <rect x="116" y="212" width="32" height="12" rx="6" fill="url(#midage-female-top-crop-top__rib)"/>
+  <rect x="252" y="212" width="32" height="12" rx="6" fill="url(#midage-female-top-crop-top__rib)"/>
+  <!-- princess seams -->
+  <path d="M170 186 q-4 30 -2 60 M230 186 q4 30 2 60" stroke="var(--c2, #4B9A9C)"
+        stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 184 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

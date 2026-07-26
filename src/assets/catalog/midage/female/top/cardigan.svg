@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = open front (two panels with a
+       wide V between them showing the layer beneath) and HEM = thigh (y372),
+       with a draped, unstructured volume.
+       Long sleeves. Surface tools: trim (contrast front-edge bands running the
+       whole opening, ribbed cuffs) and structural (two patch pockets, knit
+       purl channels). -->
+  <defs>
+    <linearGradient id="midage-female-top-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B49AC6)"/>
+      <stop offset="1" stop-color="var(--c2, #8F76A2)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-cardigan__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B49AC6)"/>
+      <stop offset="1" stop-color="var(--c2, #8F76A2)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-cardigan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1E7F6)"/>
+      <stop offset="1" stop-color="var(--c3, #F1E7F6)" stop-opacity="0.74"/>
+    </linearGradient>
+    <pattern id="midage-female-top-cardigan__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 2 v12" stroke="var(--c2, #8F76A2)" stroke-opacity="0.3"
+            stroke-width="3" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-female-top-cardigan__clip">
+      <path d="M134 210 q0-52 36-52 h14 l16 118 v96 h-32 q-34 0-34-38 z"/>
+      <path d="M266 210 q0-52 -36-52 h-14 l-16 118 v96 h32 q34 0 34-38 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long draped sleeves -->
+    <rect x="108" y="176" width="38" height="180" rx="19" fill="url(#midage-female-top-cardigan__arm)"/>
+    <rect x="254" y="176" width="38" height="180" rx="19" fill="url(#midage-female-top-cardigan__arm)"/>
+    <!-- left front panel, edge falling from the shoulder to the centre waist -->
+    <path d="M134 210 q0-52 36-52 h14 l16 118 v96 h-32 q-34 0-34-38 z"
+          fill="url(#midage-female-top-cardigan__panel)"/>
+    <!-- right front panel -->
+    <path d="M266 210 q0-52 -36-52 h-14 l-16 118 v96 h32 q34 0 34-38 z"
+          fill="url(#midage-female-top-cardigan__panel)"/>
+  </g>
+
+  <!-- purl channels across the knit -->
+  <g clip-path="url(#midage-female-top-cardigan__clip)">
+    <rect x="130" y="158" width="140" height="216" fill="url(#midage-female-top-cardigan__knit)"/>
+  </g>
+  <!-- contrast bands down both front edges -->
+  <path d="M184 158 l16 118 v96 h-11 v-95 l-16-119 z" fill="url(#midage-female-top-cardigan__band)"/>
+  <path d="M216 158 l-16 118 v96 h11 v-95 l16-119 z" fill="url(#midage-female-top-cardigan__band)"/>
+  <!-- patch pockets -->
+  <path d="M148 288 h38 v40 q0 8 -8 8 h-22 q-8 0-8-8 z" fill="var(--c2, #8F76A2)"/>
+  <path d="M214 288 h38 v40 q0 8 -8 8 h-22 q-8 0-8-8 z" fill="var(--c2, #8F76A2)"/>
+  <path d="M154 296 h26 M220 296 h26" stroke="var(--c3, #F1E7F6)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <rect x="108" y="336" width="38" height="20" rx="10" fill="url(#midage-female-top-cardigan__band)"/>
+  <rect x="254" y="336" width="38" height="20" rx="10" fill="url(#midage-female-top-cardigan__band)"/>
+  <!-- highlight -->
+  <path d="M150 182 q22 12 42 14 M208 196 q22 -2 42 -14" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Zip Track Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = centre zip with the two front
+       panels drawn as separate major forms, so the open V is in the outline;
+       VOLUME = straight (no waist suppression, no bulk).
+       Long sleeves, hem at the hip (y338), stand collar.
+       Surface tools: trim (stand collar, ribbed cuffs and hem band, zip tape
+       and pull) and panel blocking (contrast raglan-run sleeve stripe). -->
+  <defs>
+    <linearGradient id="midage-female-top-zip-jacket__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6E8E)"/>
+      <stop offset="1" stop-color="var(--c2, #365070)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-zip-jacket__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6E8E)"/>
+      <stop offset="1" stop-color="var(--c2, #365070)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-zip-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #365070)"/>
+      <stop offset="1" stop-color="var(--c1, #4E6E8E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDEFF2)"/>
+      <stop offset="1" stop-color="var(--c3, #EDEFF2)" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- stand collar -->
+    <path d="M172 154 q28 -6 56 0 v20 q-28 -6 -56 0 z"
+          fill="url(#midage-female-top-zip-jacket__collar)"/>
+    <!-- long sleeves -->
+    <rect x="110" y="174" width="38" height="170" rx="19" fill="url(#midage-female-top-zip-jacket__arm)"/>
+    <rect x="252" y="174" width="38" height="170" rx="19" fill="url(#midage-female-top-zip-jacket__arm)"/>
+    <!-- left front panel -->
+    <path d="M136 204 q0-46 34-46 h20 l9 52 v128 h-29 q-34 0-34-40 z"
+          fill="url(#midage-female-top-zip-jacket__panel)"/>
+    <!-- right front panel -->
+    <path d="M264 204 q0-46 -34-46 h-20 l-9 52 v128 h29 q34 0 34-40 z"
+          fill="url(#midage-female-top-zip-jacket__panel)"/>
+  </g>
+
+  <!-- the zip itself: tape, teeth line and pull -->
+  <rect x="196" y="206" width="8" height="126" rx="3" fill="var(--c3, #EDEFF2)"/>
+  <path d="M200 210 v118" stroke="var(--c2, #365070)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="195" y="232" width="10" height="16" rx="4" fill="var(--c3, #EDEFF2)"/>
+  <path d="M200 248 v14" stroke="var(--c3, #EDEFF2)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast stripe running the length of each sleeve -->
+  <rect x="124" y="184" width="9" height="140" rx="4" fill="var(--c3, #EDEFF2)" opacity="0.9"/>
+  <rect x="267" y="184" width="9" height="140" rx="4" fill="var(--c3, #EDEFF2)" opacity="0.9"/>
+  <!-- ribbed cuffs -->
+  <rect x="110" y="322" width="38" height="22" rx="11" fill="url(#midage-female-top-zip-jacket__rib)"/>
+  <rect x="252" y="322" width="38" height="22" rx="11" fill="url(#midage-female-top-zip-jacket__rib)"/>
+  <!-- ribbed hem band across both panels -->
+  <rect x="138" y="318" width="124" height="20" rx="9" fill="url(#midage-female-top-zip-jacket__rib)"/>
+  <path d="M148 322 v12 M162 322 v12 M176 322 v12 M190 322 v12 M210 322 v12 M224 322 v12 M238 322 v12 M252 322 v12"
+        stroke="var(--c2, #365070)" stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- collar fold -->
+  <path d="M176 166 q24 -6 48 0" stroke="var(--c3, #EDEFF2)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 182 q20 10 40 12 M208 194 q20 -2 40 -12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME = fitted (the side seams pull in
+       hard at the waist) and HEM = past the hip (y346). The tall folded neck
+       tube reaching the jaw is a major form of its own.
+       Long slim sleeves, closure closed.
+       Surface tools: trim (folded neck-tube band, contrast cuff and hem bands)
+       and pattern (fine vertical rib through the c2 variable). -->
+  <defs>
+    <linearGradient id="midage-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3D7C2)"/>
+      <stop offset="1" stop-color="var(--c2, #C0AE93)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-turtleneck__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3D7C2)"/>
+      <stop offset="1" stop-color="var(--c2, #C0AE93)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3D7C2)"/>
+      <stop offset="1" stop-color="var(--c2, #C0AE93)"/>
+    </linearGradient>
+    <pattern id="midage-female-top-turtleneck__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <path d="M6 0 v12" stroke="var(--c2, #C0AE93)" stroke-opacity="0.42"
+            stroke-width="3" fill="none"/>
+    </pattern>
+    <clipPath id="midage-female-top-turtleneck__clip">
+      <path d="M143 198 q3-40 29-40 h56 q26 0 29 40 v34 q-5 14 0 28 v50 q0 36 -29 36 h-56 q-29 0-29-36 v-50 q5-14 0-28 z"/>
+      <rect x="117" y="174" width="30" height="178" rx="15"/>
+      <rect x="253" y="174" width="30" height="178" rx="15"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- tall folded neck tube, meeting the jaw line -->
+    <rect x="174" y="152" width="52" height="38" rx="16" fill="url(#midage-female-top-turtleneck__tube)"/>
+    <!-- slim long sleeves -->
+    <rect x="117" y="174" width="30" height="178" rx="15" fill="url(#midage-female-top-turtleneck__arm)"/>
+    <rect x="253" y="174" width="30" height="178" rx="15" fill="url(#midage-female-top-turtleneck__arm)"/>
+    <!-- close-fitting body, waist drawn in, hem past the hip -->
+    <path d="M143 198 q3-40 29-40 h56 q26 0 29 40 v34 q-5 14 0 28 v50 q0 36 -29 36 h-56 q-29 0-29-36 v-50 q5-14 0-28 z"
+          fill="url(#midage-female-top-turtleneck__body)"/>
+  </g>
+
+  <!-- fine rib over the knit -->
+  <g clip-path="url(#midage-female-top-turtleneck__clip)">
+    <rect x="112" y="158" width="176" height="196" fill="url(#midage-female-top-turtleneck__rib)"/>
+  </g>
+  <!-- neck-tube rib and turnover fold -->
+  <path d="M178 158 v28 M186 156 v32 M194 155 v34 M202 155 v34 M210 156 v32 M218 158 v28"
+        stroke="var(--c2, #C0AE93)" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M175 174 q25 10 50 0" stroke="var(--c3, #8C7A60)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast cuff bands -->
+  <rect x="117" y="336" width="30" height="16" rx="8" fill="var(--c3, #8C7A60)"/>
+  <rect x="253" y="336" width="30" height="16" rx="8" fill="var(--c3, #8C7A60)"/>
+  <!-- contrast hem band -->
+  <path d="M146 330 q54 14 108 0 v10 q-54 14 -108 0 z" fill="var(--c3, #8C7A60)"/>
+  <!-- princess seams -->
+  <path d="M172 210 q-4 50 0 108 M228 210 q4 50 0 108" stroke="var(--c2, #C0AE93)"
+        stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 196 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

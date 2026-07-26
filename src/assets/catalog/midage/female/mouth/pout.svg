@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pout" data-family="pout" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- small pushed-forward mouth: narrow upper lip, distinctly fuller lower lip -->
+  <defs>
+    <linearGradient id="midage-female-mouth-pout__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C4645E)" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="var(--lip1, #C4645E)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="midage-female-mouth-pout__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C4645E)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--lip1, #C4645E)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="midage-female-mouth-pout__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow upper lip with a soft cupid's bow -->
+    <path d="M184 128 C187 121, 194 119, 200 122 C206 119, 213 121, 216 128
+             C209 126, 191 126, 184 128 Z"
+          fill="url(#midage-female-mouth-pout__upper)"/>
+    <!-- full lower lip, pushed forward and rounded -->
+    <path d="M184 128 C191 126, 209 126, 216 128
+             C216 139, 209 144, 200 144 C191 144, 184 139, 184 128 Z"
+          fill="url(#midage-female-mouth-pout__lower)"/>
+    <path d="M184 128 C191 126, 209 126, 216 128
+             C216 139, 209 144, 200 144 C191 144, 184 139, 184 128 Z"
+          fill="url(#midage-female-mouth-pout__vol)"/>
+  </g>
+
+  <!-- lip line -->
+  <path d="M185 127.6 Q200 130 215 127.6" stroke="#8E3A3A" stroke-opacity="0.55"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight on the fullest part of the lower lip -->
+  <path d="M194 134 Q200 132 206 134" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft shadow under the pushed-forward lip -->
+  <path d="M191 146 Q200 148.5 209 146" stroke="#3B2A22" stroke-opacity="0.16"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>

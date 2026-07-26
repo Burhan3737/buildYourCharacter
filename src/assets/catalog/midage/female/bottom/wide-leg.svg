@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide-Leg Trousers" data-family="wide-leg" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: rise = high, a deep 80px waistband panel starting at y298
+             leg width = wide column, 53px per leg falling straight from hip to floor
+       Leg length full, hem breaking over the shoe at y556. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-wide-leg__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A46B)"/>
+      <stop offset="1" stop-color="var(--c2, #A5814C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-wide-leg__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A46B)"/>
+      <stop offset="1" stop-color="var(--c2, #A5814C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-wide-leg__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #A5814C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two broad straight columns, then the deep high waist panel -->
+  <g class="sp-shadow">
+    <path d="M146 362 H199 V546 q0 10 -10 10 H156 q-10 0 -10 -10 Z"
+          fill="url(#midage-female-bottom-wide-leg__leg)"/>
+    <path d="M254 362 H201 V546 q0 10 10 10 H244 q10 0 10 -10 Z"
+          fill="url(#midage-female-bottom-wide-leg__leg)"/>
+    <rect x="144" y="298" width="112" height="80" rx="18"
+          fill="url(#midage-female-bottom-wide-leg__waist)"/>
+  </g>
+
+  <!-- TRIM: a self-fabric tie belt sitting on the high waist, knotted off-centre -->
+  <rect x="143" y="316" width="114" height="14" rx="6"
+        fill="url(#midage-female-bottom-wide-leg__belt)"/>
+  <rect x="188" y="312" width="26" height="22" rx="8" fill="var(--c3, #F2E6D2)"/>
+  <path d="M196 334 q-4 16 -10 26" stroke="var(--c3, #F2E6D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 334 q6 14 12 22" stroke="var(--c3, #F2E6D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURE: front creases running the full drop, plus welt pocket mouths -->
+  <path d="M172 340 V548" stroke="var(--c2, #A5814C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M228 340 V548" stroke="var(--c2, #A5814C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M150 344 H166" stroke="var(--c2, #A5814C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 344 H234" stroke="var(--c2, #A5814C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M156 306 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 392 v120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 392 v120" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

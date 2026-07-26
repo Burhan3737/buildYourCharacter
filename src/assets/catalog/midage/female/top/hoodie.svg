@@ -1,39 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = dropped/oversized,
+       VOLUME = gathered (deep rib cuffs and hem band draw the body in).
+       Closure closed, hem at the hip (y338). The hood lying flat behind the
+       neck is a major form in its own right, drawn behind the shoulders.
+       Surface tools: structural (kangaroo pocket, dropped armhole seams) and
+       trim (ribbed cuffs, ribbed hem band, drawstring with two aglets). -->
   <defs>
     <linearGradient id="midage-female-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #8B96B5)"/>
-      <stop offset="1" stop-color="var(--c2, #707AA0)"/>
+      <stop offset="0" stop-color="var(--c1, #8290D8)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6CAF)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #8B96B5)"/>
-      <stop offset="1" stop-color="var(--c2, #707AA0)"/>
+    <linearGradient id="midage-female-top-hoodie__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8290D8)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6CAF)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5F6CAF)"/>
+      <stop offset="1" stop-color="var(--c1, #8290D8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-hoodie__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4E8F7)"/>
+      <stop offset="1" stop-color="var(--c3, #E4E8F7)" stop-opacity="0.7"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- bulky long sleeves -->
-    <rect x="110" y="170" width="38" height="160" rx="19" fill="url(#midage-female-top-hoodie__sleeve)"/>
-    <rect x="252" y="170" width="38" height="160" rx="19" fill="url(#midage-female-top-hoodie__sleeve)"/>
-    <!-- hip-length body, hem at y340 -->
-    <path d="M130 198 q0-40 36-40 h68 q36 0 36 40 v104 q0 38 -36 38 h-68 q-36 0-36-38 z"
+    <!-- the hood, lying flat behind the neck and shoulders -->
+    <path d="M148 208 q-6-56 52-56 q58 0 52 56 q-52 24 -104 0 z"
+          fill="url(#midage-female-top-hoodie__hood)"/>
+    <!-- dropped, wide sleeve tubes -->
+    <rect x="103" y="176" width="46" height="160" rx="23" fill="url(#midage-female-top-hoodie__arm)"/>
+    <rect x="251" y="176" width="46" height="160" rx="23" fill="url(#midage-female-top-hoodie__arm)"/>
+    <!-- broad pullover body -->
+    <path d="M129 210 q0-52 40-52 h62 q40 0 40 52 v88 q0 40 -40 40 h-62 q-40 0-40-40 z"
           fill="url(#midage-female-top-hoodie__body)"/>
+    <!-- deep ribbed hem band, narrower than the body so the hem reads gathered -->
+    <rect x="134" y="314" width="132" height="26" rx="12" fill="url(#midage-female-top-hoodie__rib)"/>
+    <!-- ribbed cuffs -->
+    <rect x="103" y="314" width="46" height="24" rx="12" fill="url(#midage-female-top-hoodie__rib)"/>
+    <rect x="251" y="314" width="46" height="24" rx="12" fill="url(#midage-female-top-hoodie__rib)"/>
   </g>
-  <!-- ribbed cuffs -->
-  <rect x="110" y="312" width="38" height="18" rx="9" fill="var(--c2, #707AA0)"/>
-  <rect x="252" y="312" width="38" height="18" rx="9" fill="var(--c2, #707AA0)"/>
-  <!-- hood/collar -->
-  <path d="M168 150 q32 24 64 0 q-6 32 -32 32 q-26 0 -32-32 z" fill="var(--c2, #707AA0)"/>
-  <!-- drawstrings -->
-  <path d="M192 178 v34" stroke="var(--c2, #707AA0)" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M208 178 v34" stroke="var(--c2, #707AA0)" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <circle cx="192" cy="214" r="3.5" fill="var(--c2, #707AA0)"/>
-  <circle cx="208" cy="214" r="3.5" fill="var(--c2, #707AA0)"/>
-  <!-- front kangaroo pocket -->
-  <path d="M170 272 h60 v34 q0 8 -8 8 h-44 q-8 0 -8-8 z" fill="var(--c2, #707AA0)"/>
-  <path d="M176 272 q24 12 48 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"
+
+  <!-- rib texture -->
+  <path d="M146 320 v14 M160 320 v14 M174 320 v14 M188 320 v14 M202 320 v14 M216 320 v14 M230 320 v14 M244 320 v14 M256 320 v14"
+        stroke="var(--c2, #5F6CAF)" stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M112 320 v12 M124 320 v12 M136 320 v12 M262 320 v12 M274 320 v12 M286 320 v12"
+        stroke="var(--c2, #5F6CAF)" stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- dropped armhole seams, well outboard of the natural shoulder -->
+  <path d="M152 182 q-4 34 -2 62" stroke="var(--c2, #5F6CAF)" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
+  <path d="M248 182 q4 34 2 62" stroke="var(--c2, #5F6CAF)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- drawstrings with aglets -->
+  <path d="M188 200 q-3 22 -2 40" stroke="var(--c3, #E4E8F7)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 200 q3 22 2 40" stroke="var(--c3, #E4E8F7)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="182" y="238" width="8" height="12" rx="4" fill="var(--c2, #5F6CAF)"/>
+  <rect x="210" y="238" width="8" height="12" rx="4" fill="var(--c2, #5F6CAF)"/>
+  <!-- kangaroo pocket -->
+  <path d="M162 266 h76 v38 q0 9 -9 9 h-58 q-9 0-9-9 z" fill="var(--c2, #5F6CAF)"/>
+  <path d="M170 266 q30 14 60 0" stroke="var(--c3, #E4E8F7)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M148 178 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+  <path d="M150 186 q50 20 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

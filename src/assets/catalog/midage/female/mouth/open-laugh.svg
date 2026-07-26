@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Laugh" data-family="open-laugh" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- wide open mouth, upper tooth band and a visible tongue filling the lower half -->
+  <defs>
+    <linearGradient id="midage-female-mouth-open-laugh__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.26"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.58" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.24"/>
+    </linearGradient>
+    <linearGradient id="midage-female-mouth-open-laugh__teeth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EBDCD6"/>
+    </linearGradient>
+    <linearGradient id="midage-female-mouth-open-laugh__tongue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C4655F"/>
+      <stop offset="1" stop-color="#A34C4C"/>
+    </linearGradient>
+    <clipPath id="midage-female-mouth-open-laugh__inner">
+      <path d="M175 124 C178 119, 188 117, 200 117 C212 117, 222 119, 225 124
+               C225 140, 214 149, 200 149 C186 149, 175 140, 175 124 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M167 124 C170 116, 183 113, 200 113 C217 113, 230 116, 233 124
+             C233 143, 218 154, 200 154 C182 154, 167 143, 167 124 Z"
+          fill="var(--lip1, #C86058)"/>
+    <path d="M167 124 C170 116, 183 113, 200 113 C217 113, 230 116, 233 124
+             C233 143, 218 154, 200 154 C182 154, 167 143, 167 124 Z"
+          fill="url(#midage-female-mouth-open-laugh__vol)"/>
+  </g>
+
+  <!-- mouth cavity -->
+  <path d="M175 124 C178 119, 188 117, 200 117 C212 117, 222 119, 225 124
+           C225 140, 214 149, 200 149 C186 149, 175 140, 175 124 Z"
+        fill="#7E3232"/>
+
+  <g clip-path="url(#midage-female-mouth-open-laugh__inner)">
+    <!-- tongue, sitting low in the cavity -->
+    <ellipse cx="200" cy="150" rx="19" ry="13" fill="url(#midage-female-mouth-open-laugh__tongue)"/>
+    <path d="M200 141 V152" stroke="#8E3A3A" stroke-opacity="0.5" stroke-width="2"
+          fill="none" stroke-linecap="round"/>
+    <!-- upper tooth band -->
+    <path d="M175 123 C178 118, 188 116, 200 116 C212 116, 222 118, 225 123
+             C225 129, 175 129, 175 123 Z"
+          fill="url(#midage-female-mouth-open-laugh__teeth)"/>
+    <path d="M190 117 V128" stroke="#3B2A22" stroke-opacity="0.12" stroke-width="1.6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M210 117 V128" stroke="#3B2A22" stroke-opacity="0.12" stroke-width="1.6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- upper lip highlight -->
+  <path d="M182 116.5 Q200 113.5 218 116.5" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

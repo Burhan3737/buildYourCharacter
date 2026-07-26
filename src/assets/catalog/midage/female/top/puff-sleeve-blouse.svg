@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = puff — a large rounded
+       balloon of cloth at the shoulder gathering into a tight band at the elbow,
+       drawn as its own major form on each side — and VOLUME = gathered, the
+       narrow body eased in at the waist. Hem past the hip (y348), closure closed.
+       Surface tools: pattern (four-petal floral scatter through the c3 variable) and trim
+       (round neckband, gathered puff cuffs, gather stitching). -->
+  <defs>
+    <linearGradient id="midage-female-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C6E2)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9FBE)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C6E2)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9FBE)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-puff-sleeve-blouse__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7F9FBE)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9FBE)" stop-opacity="0.84"/>
+    </linearGradient>
+    <pattern id="midage-female-top-puff-sleeve-blouse__floral" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="5" r="3" fill="var(--c3, #FBF3E4)" opacity="0.85"/>
+      <circle cx="17" cy="11" r="3" fill="var(--c3, #FBF3E4)" opacity="0.85"/>
+      <circle cx="11" cy="17" r="3" fill="var(--c3, #FBF3E4)" opacity="0.85"/>
+      <circle cx="5" cy="11" r="3" fill="var(--c3, #FBF3E4)" opacity="0.85"/>
+      <circle cx="11" cy="11" r="2" fill="var(--c2, #7F9FBE)" opacity="0.6"/>
+    </pattern>
+    <clipPath id="midage-female-top-puff-sleeve-blouse__clip">
+      <path d="M140 200 q4-42 32-42 h56 q28 0 32 42 v42 q-6 12 0 24 v46 q0 36 -32 36 h-56 q-32 0-32-36 v-46 q6-12 0-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- balloon puffs, rounded and much wider than the arm -->
+    <path d="M156 174 q-44 0 -54 34 q-10 32 14 46 q26 14 44-6 q10-16 8-40 z"
+          fill="url(#midage-female-top-puff-sleeve-blouse__puff)"/>
+    <path d="M244 174 q44 0 54 34 q10 32 -14 46 q-26 14 -44-6 q-10-16 -8-40 z"
+          fill="url(#midage-female-top-puff-sleeve-blouse__puff)"/>
+    <!-- tight gathering cuffs closing each puff -->
+    <rect x="112" y="248" width="42" height="18" rx="9"
+          fill="url(#midage-female-top-puff-sleeve-blouse__cuff)"/>
+    <rect x="246" y="248" width="42" height="18" rx="9"
+          fill="url(#midage-female-top-puff-sleeve-blouse__cuff)"/>
+    <!-- narrow body eased at the waist, hem past the hip -->
+    <path d="M140 200 q4-42 32-42 h56 q28 0 32 42 v42 q-6 12 0 24 v46 q0 36 -32 36 h-56 q-32 0-32-36 v-46 q6-12 0-24 z"
+          fill="url(#midage-female-top-puff-sleeve-blouse__body)"/>
+  </g>
+
+  <!-- floral scatter over the blouse -->
+  <g clip-path="url(#midage-female-top-puff-sleeve-blouse__clip)">
+    <rect x="136" y="158" width="128" height="192"
+          fill="url(#midage-female-top-puff-sleeve-blouse__floral)"/>
+  </g>
+  <!-- round neckband -->
+  <path d="M176 150 q24 34 48 0 q-4 18 -24 18 q-20 0-24-18 z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M185 154 q15 20 30 0 q-3 10 -15 10 q-12 0-15-10 z" fill="var(--skin2, #E7B892)"/>
+  <!-- gather stitching where the puff meets the shoulder and the cuff -->
+  <path d="M126 202 q-4 12 -2 24 M138 194 q-4 14 -2 28 M150 190 q-2 14 0 28"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M274 202 q4 12 2 24 M262 194 q4 14 2 28 M250 190 q2 14 0 28"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M118 250 v14 M130 250 v14 M142 250 v14 M258 250 v14 M270 250 v14 M282 250 v14"
+        stroke="var(--c3, #FBF3E4)" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- waist easing -->
+  <path d="M152 266 q48 12 96 0" stroke="var(--c2, #7F9FBE)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M164 194 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

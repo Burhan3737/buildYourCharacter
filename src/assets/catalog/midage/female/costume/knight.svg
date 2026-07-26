@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c3,c1,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: SHOULDER (broad hard pauldrons overhanging the arm on both sides)
+       and CLOSURE (an open-sided tabard hanging free front and back over the mail, held only
+       by the belt). Thigh-length tabard, straight volume. Nothing above y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9B3C4)"/>
+      <stop offset="1" stop-color="var(--c2, #78839A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-knight__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BBC4D3)"/>
+      <stop offset="1" stop-color="var(--c2, #6F7A91)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c3, #9C3E38)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-knight__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="4" fill="none" stroke="var(--c2, #78839A)"
+              stroke-width="1.8" stroke-opacity="0.85"/>
+    </pattern>
+    <clipPath id="midage-female-costume-knight__mailclip">
+      <path d="M140 192 q2-32 32-32 h56 q30 0 32 32 v104 q0 30 -32 30 h-56 q-32 0 -32-30 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: mail body, mail sleeves, hip skirt, mail legs, the hanging tabard panel
+       and two pauldrons. -->
+  <g class="sp-shadow">
+    <path d="M140 192 q2-32 32-32 h56 q30 0 32 32 v104 q0 30 -32 30 h-56 q-32 0 -32-30 z"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <rect x="114" y="206" width="34" height="150" rx="16"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <rect x="252" y="206" width="34" height="150" rx="16"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <rect x="142" y="314" width="116" height="62" rx="26"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <rect x="160" y="368" width="42" height="182" rx="14"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <rect x="198" y="368" width="42" height="182" rx="14"
+          fill="url(#midage-female-costume-knight__mail)"/>
+    <path d="M162 168 h76 v300 q-38 12 -76 0 z"
+          fill="url(#midage-female-costume-knight__tabard)"/>
+    <path d="M104 190 q2-30 30-30 h24 q26 2 26 30 v22 q-40 16 -80 0 z"
+          fill="url(#midage-female-costume-knight__plate)"/>
+    <path d="M296 190 q-2-30 -30-30 h-24 q-26 2 -26 30 v22 q40 16 80 0 z"
+          fill="url(#midage-female-costume-knight__plate)"/>
+  </g>
+
+  <!-- PATTERN: mail rings over the body, clipped so the tabard stays a flat panel. -->
+  <g clip-path="url(#midage-female-costume-knight__mailclip)">
+    <path d="M140 192 q2-32 32-32 h56 q30 0 32 32 v104 q0 30 -32 30 h-56 q-32 0 -32-30 z"
+          fill="url(#midage-female-costume-knight__rings)"/>
+  </g>
+
+  <!-- TRIM: contrast edging down both sides of the tabard and along its hem. -->
+  <g fill="var(--c1, #BBC4D3)">
+    <rect x="158" y="168" width="9" height="298" rx="4"/>
+    <rect x="233" y="168" width="9" height="298" rx="4"/>
+    <path d="M162 456 q38 12 76 0 l0 13 q-38 12 -76 0 z"/>
+  </g>
+
+  <!-- TRIM: plate belt with a square buckle, and plated bracers. -->
+  <rect x="140" y="300" width="120" height="24" rx="10" fill="url(#midage-female-costume-knight__plate)"/>
+  <rect x="184" y="296" width="32" height="32" rx="10" fill="var(--c3, #C4534B)"/>
+  <rect x="110" y="312" width="42" height="46" rx="14" fill="url(#midage-female-costume-knight__plate)"/>
+  <rect x="248" y="312" width="42" height="46" rx="14" fill="url(#midage-female-costume-knight__plate)"/>
+
+  <!-- STRUCTURAL: rivet lines on the pauldrons and greave banding on the legs. -->
+  <g fill="var(--c2, #78839A)">
+    <circle cx="124" cy="180" r="4.5"/>
+    <circle cx="144" cy="174" r="4.5"/>
+    <circle cx="164" cy="180" r="4.5"/>
+    <circle cx="276" cy="180" r="4.5"/>
+    <circle cx="256" cy="174" r="4.5"/>
+    <circle cx="236" cy="180" r="4.5"/>
+    <rect x="158" y="480" width="46" height="12" rx="6"/>
+    <rect x="196" y="480" width="46" height="12" rx="6"/>
+    <rect x="158" y="508" width="46" height="12" rx="6"/>
+    <rect x="196" y="508" width="46" height="12" rx="6"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M116 176 q22 10 44 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 176 q-22 10 -44 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 200 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

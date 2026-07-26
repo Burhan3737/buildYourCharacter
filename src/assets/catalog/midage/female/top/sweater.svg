@@ -1,46 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Chunky Sweater" data-family="sweater" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = dropped (the armscye
+       sits far out on the upper arm and the tube is wide), HEM = past the hip
+       (y352, lower than the tee and the hoodie). Volume boxy, closure closed.
+       Surface tools: trim (deep ribbed hem band, ribbed cuffs, wide ribbed crew
+       collar) and pattern (chunky knit purl channels through the c3 variable). -->
   <defs>
     <linearGradient id="midage-female-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #C48972)"/>
-      <stop offset="1" stop-color="var(--c2, #A96F5A)"/>
+      <stop offset="0" stop-color="var(--c1, #C9793F)"/>
+      <stop offset="1" stop-color="var(--c2, #A2602E)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #C48972)"/>
-      <stop offset="1" stop-color="var(--c2, #A96F5A)"/>
+    <linearGradient id="midage-female-top-sweater__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9793F)"/>
+      <stop offset="1" stop-color="var(--c2, #A2602E)"/>
     </linearGradient>
+    <linearGradient id="midage-female-top-sweater__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A2602E)"/>
+      <stop offset="1" stop-color="var(--c2, #A2602E)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="midage-female-top-sweater__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M2 11 q9-10 18 0" stroke="var(--c3, #F0CFA0)" stroke-opacity="0.34"
+            stroke-width="4" fill="none" stroke-linecap="round"/>
+    </pattern>
     <clipPath id="midage-female-top-sweater__clip">
-      <path d="M130 198 q0-40 36-40 h68 q36 0 36 40 v104 q0 38 -36 38 h-68 q-36 0-36-38 z"/>
-      <rect x="110" y="170" width="38" height="160" rx="19"/>
-      <rect x="252" y="170" width="38" height="160" rx="19"/>
+      <path d="M122 212 q2-54 48-54 h60 q46 0 48 54 v88 q0 52 -46 52 h-64 q-46 0-46-52 z"/>
     </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- bulky long sleeves -->
-    <rect x="110" y="170" width="38" height="160" rx="19" fill="url(#midage-female-top-sweater__sleeve)"/>
-    <rect x="252" y="170" width="38" height="160" rx="19" fill="url(#midage-female-top-sweater__sleeve)"/>
-    <!-- bulky body, hem at y340 -->
-    <path d="M130 198 q0-40 36-40 h68 q36 0 36 40 v104 q0 38 -36 38 h-68 q-36 0-36-38 z"
+    <!-- dropped, wide knit sleeves -->
+    <rect x="100" y="176" width="46" height="166" rx="23" fill="url(#midage-female-top-sweater__arm)"/>
+    <rect x="254" y="176" width="46" height="166" rx="23" fill="url(#midage-female-top-sweater__arm)"/>
+    <!-- broad-shouldered knit body, hem past the hip -->
+    <path d="M122 212 q2-54 48-54 h60 q46 0 48 54 v88 q0 52 -46 52 h-64 q-46 0-46-52 z"
           fill="url(#midage-female-top-sweater__body)"/>
+    <!-- deep ribbed hem band -->
+    <rect x="126" y="320" width="148" height="32" rx="14" fill="url(#midage-female-top-sweater__rib)"/>
+    <!-- ribbed cuffs -->
+    <rect x="100" y="316" width="46" height="26" rx="13" fill="url(#midage-female-top-sweater__rib)"/>
+    <rect x="254" y="316" width="46" height="26" rx="13" fill="url(#midage-female-top-sweater__rib)"/>
   </g>
-  <!-- ribbed hem band and cuffs, clipped to the knit silhouette -->
+
+  <!-- chunky purl channels over the knit -->
   <g clip-path="url(#midage-female-top-sweater__clip)">
-    <rect x="130" y="312" width="140" height="30" fill="var(--c2, #A96F5A)"/>
-    <rect x="106" y="306" width="46" height="30" fill="var(--c2, #A96F5A)"/>
-    <rect x="248" y="306" width="46" height="30" fill="var(--c2, #A96F5A)"/>
-    <path d="M146 314 v18 M158 314 v18 M170 314 v18 M182 314 v18 M194 314 v18 M206 314 v18 M218 314 v18 M230 314 v18 M242 314 v18 M254 314 v18"
-          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M117 308 v18 M127 308 v18 M137 308 v18 M259 308 v18 M269 308 v18 M279 308 v18"
-          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="118" y="170" width="166" height="150" fill="url(#midage-female-top-sweater__knit)"/>
   </g>
+  <!-- rib texture on band and cuffs -->
+  <path d="M136 326 v20 M150 326 v20 M164 326 v20 M178 326 v20 M192 326 v20 M206 326 v20 M220 326 v20 M234 326 v20 M248 326 v20 M262 326 v20"
+        stroke="var(--c3, #F0CFA0)" stroke-opacity="0.3" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M110 322 v16 M122 322 v16 M134 322 v16 M264 322 v16 M276 322 v16 M288 322 v16"
+        stroke="var(--c3, #F0CFA0)" stroke-opacity="0.3" stroke-width="4" fill="none" stroke-linecap="round"/>
   <!-- wide ribbed crew collar -->
-  <path d="M170 146 q30 32 60 0 z" fill="var(--c2, #A96F5A)"/>
-  <path d="M182 149 q18 14 36 0 z" fill="var(--skin2, #E7B892)"/>
-  <!-- knit texture on the chest -->
-  <path d="M156 230 q44 12 88 0 M156 258 q44 12 88 0 M156 286 q44 12 88 0"
-        stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M168 148 q32 38 64 0 q-4 22 -32 22 q-28 0-32-22 z" fill="var(--c2, #A2602E)"/>
+  <path d="M178 152 q22 26 44 0 q-4 12 -22 12 q-18 0-22-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- dropped shoulder seams sitting out on the upper arm -->
+  <path d="M148 184 q-4 26 -2 48" stroke="var(--c2, #A2602E)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 184 q4 26 2 48" stroke="var(--c2, #A2602E)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M148 180 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+  <path d="M148 188 q52 20 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

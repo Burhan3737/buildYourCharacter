@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailored Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = open front over a shell (two
+       tailored panels are separate major forms, and the shell between them is a
+       third) and HEM = past the hip (y352). Structured square shoulders, long
+       sleeves, straight volume.
+       Surface tools: panel blocking (notched lapels turning back off each front
+       panel) and structural (welt breast pocket, two flap pockets, sleeve
+       buttons, a single waist button). -->
+  <defs>
+    <linearGradient id="midage-female-top-blazer__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #29314A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-blazer__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #29314A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-blazer__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C7B189)"/>
+      <stop offset="1" stop-color="var(--c3, #C7B189)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-blazer__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #29314A)"/>
+      <stop offset="1" stop-color="var(--c1, #3E4A63)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the shell showing between the open fronts -->
+    <rect x="176" y="164" width="48" height="172" rx="12" fill="url(#midage-female-top-blazer__shell)"/>
+    <!-- long sleeves -->
+    <rect x="112" y="172" width="36" height="178" rx="18" fill="url(#midage-female-top-blazer__arm)"/>
+    <rect x="252" y="172" width="36" height="178" rx="18" fill="url(#midage-female-top-blazer__arm)"/>
+    <!-- left front panel, square shoulder -->
+    <path d="M134 192 q0-34 30-34 h26 l10 40 l-8 154 h-24 q-34 0-34-38 z"
+          fill="url(#midage-female-top-blazer__panel)"/>
+    <!-- right front panel -->
+    <path d="M266 192 q0-34 -30-34 h-26 l-10 40 l8 154 h24 q34 0 34-38 z"
+          fill="url(#midage-female-top-blazer__panel)"/>
+  </g>
+
+  <!-- notched lapels turning back off each front -->
+  <path d="M170 162 L196 158 L200 206 L182 234 L166 200 z"
+        fill="url(#midage-female-top-blazer__lapel)"/>
+  <path d="M230 162 L204 158 L200 206 L218 234 L234 200 z"
+        fill="url(#midage-female-top-blazer__lapel)"/>
+  <path d="M172 168 L192 202" stroke="var(--c3, #C7B189)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 168 L208 202" stroke="var(--c3, #C7B189)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- welt breast pocket -->
+  <path d="M150 226 h30 v9 h-30 z" fill="var(--c3, #C7B189)"/>
+  <!-- flap pockets -->
+  <path d="M142 288 h44 v16 q0 6 -6 6 h-32 q-6 0-6-6 z" fill="var(--c2, #29314A)"/>
+  <path d="M214 288 h44 v16 q0 6 -6 6 h-32 q-6 0-6-6 z" fill="var(--c2, #29314A)"/>
+  <!-- waist button -->
+  <circle cx="188" cy="252" r="5" fill="var(--c3, #C7B189)"/>
+  <!-- sleeve buttons -->
+  <circle cx="130" cy="330" r="3.2" fill="var(--c3, #C7B189)"/>
+  <circle cx="130" cy="340" r="3.2" fill="var(--c3, #C7B189)"/>
+  <circle cx="270" cy="330" r="3.2" fill="var(--c3, #C7B189)"/>
+  <circle cx="270" cy="340" r="3.2" fill="var(--c3, #C7B189)"/>
+  <!-- structured shoulder line -->
+  <path d="M150 176 q-2 26 0 50 M250 176 q2 26 0 50" stroke="var(--c2, #29314A)"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M148 178 q18 8 34 10 M218 188 q18 -2 34 -10" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

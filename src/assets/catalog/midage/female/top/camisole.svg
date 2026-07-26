@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = past the hip (y344, a skimming
+       length) and VOLUME = flared — the body widens from the bust to a wider,
+       softly dipping hem. Narrow spaghetti straps, closure closed.
+       Surface tools: trim (scalloped neckline binding running the whole top
+       edge, hem binding) and structural (centre-front bow, drape seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A0596B)"/>
+      <stop offset="1" stop-color="var(--c2, #7C4152)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A0596B)"/>
+      <stop offset="1" stop-color="var(--c2, #7C4152)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow spaghetti straps -->
+    <rect x="170" y="146" width="7" height="46" rx="3" fill="url(#midage-female-top-camisole__strap)"/>
+    <rect x="223" y="146" width="7" height="46" rx="3" fill="url(#midage-female-top-camisole__strap)"/>
+    <!-- scalloped neckline, body flaring to a soft dipped hem -->
+    <path d="M139 210 q10-20 30-22 q11 14 22 0 q11 14 22 0 q11 14 22 0 q16 2 26 22 v76 l8 48 q-69 18 -138 0 l8-48 v-76 z"
+          fill="url(#midage-female-top-camisole__body)"/>
+  </g>
+
+  <!-- scalloped neckline binding -->
+  <path d="M139 210 q10-20 30-22 q11 14 22 0 q11 14 22 0 q11 14 22 0 q16 2 26 22 l-7 5 q-9-16 -20-18 q-11 14 -22 0 q-11 14 -22 0 q-11 14 -22 0 q-13 2 -22 18 z"
+        fill="var(--c3, #F3E3E7)"/>
+  <!-- hem binding -->
+  <path d="M131 334 q69 18 138 0 l2 8 q-70 18 -142 0 z" fill="var(--c3, #F3E3E7)" opacity="0.85"/>
+  <!-- centre-front bow -->
+  <path d="M192 196 q-14-10 -18 0 q4 10 18 2 z" fill="var(--c3, #F3E3E7)"/>
+  <path d="M208 196 q14-10 18 0 q-4 10 -18 2 z" fill="var(--c3, #F3E3E7)"/>
+  <circle cx="200" cy="197" r="5" fill="var(--c3, #F3E3E7)"/>
+  <!-- drape seams falling from the bust to the flared hem -->
+  <path d="M168 222 q-10 60 -20 114 M232 222 q10 60 20 114" stroke="var(--c2, #7C4152)"
+        stroke-opacity="0.5" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M186 232 q-4 56 -8 106 M214 232 q4 56 8 106" stroke="var(--c2, #7C4152)"
+        stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- satin sheen -->
+  <path d="M156 224 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 252 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = mid-thigh (y440) and VOLUME =
+       flared A-line, the body widening steadily from the shoulder to the hem.
+       Long sleeves, closure a full snap placket, hood lying flat at the back.
+       Surface tools: panel blocking (contrast storm-flap yoke across the chest)
+       and trim (snap placket band, hood binding, flap pockets, cuff tabs). -->
+  <defs>
+    <linearGradient id="midage-female-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C24B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9B2A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-raincoat__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C24B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9B2A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE9B2A)"/>
+      <stop offset="1" stop-color="var(--c1, #F2C24B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-raincoat__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E4C5E)"/>
+      <stop offset="1" stop-color="var(--c3, #3E4C5E)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hood lying flat behind the neck -->
+    <path d="M150 204 q-6-52 50-52 q56 0 50 52 q-50 22 -100 0 z"
+          fill="url(#midage-female-top-raincoat__hood)"/>
+    <!-- long sleeves -->
+    <rect x="110" y="178" width="38" height="176" rx="19" fill="url(#midage-female-top-raincoat__arm)"/>
+    <rect x="252" y="178" width="38" height="176" rx="19" fill="url(#midage-female-top-raincoat__arm)"/>
+    <!-- A-line shell flaring shoulder to mid-thigh -->
+    <path d="M140 204 q2-46 34-46 h52 q32 0 34 46 l24 216 q2 20 -20 20 h-128 q-22 0-20-20 z"
+          fill="url(#midage-female-top-raincoat__body)"/>
+  </g>
+
+  <!-- contrast storm-flap yoke across the chest -->
+  <path d="M142 200 q4-42 32-42 h52 q28 0 32 42 l3 26 q-60 18 -122 0 z"
+        fill="var(--c3, #3E4C5E)" opacity="0.92"/>
+  <!-- snap placket band down the full front -->
+  <rect x="190" y="196" width="20" height="238" rx="6" fill="url(#midage-female-top-raincoat__trim)"/>
+  <circle cx="200" cy="242" r="4.5" fill="var(--c1, #F2C24B)"/>
+  <circle cx="200" cy="288" r="4.5" fill="var(--c1, #F2C24B)"/>
+  <circle cx="200" cy="334" r="4.5" fill="var(--c1, #F2C24B)"/>
+  <circle cx="200" cy="380" r="4.5" fill="var(--c1, #F2C24B)"/>
+  <!-- hood binding -->
+  <path d="M152 200 q48 22 96 0" stroke="var(--c3, #3E4C5E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- flap pockets -->
+  <path d="M148 326 h44 v14 q0 6 -6 6 h-32 q-6 0-6-6 z" fill="var(--c3, #3E4C5E)"/>
+  <path d="M208 326 h44 v14 q0 6 -6 6 h-32 q-6 0-6-6 z" fill="var(--c3, #3E4C5E)"/>
+  <!-- cuff tabs -->
+  <rect x="110" y="334" width="38" height="16" rx="8" fill="url(#midage-female-top-raincoat__trim)"/>
+  <rect x="252" y="334" width="38" height="16" rx="8" fill="url(#midage-female-top-raincoat__trim)"/>
+  <!-- A-line drape seams -->
+  <path d="M158 250 q-10 90 -18 178 M242 250 q10 90 18 178" stroke="var(--c2, #CE9B2A)"
+        stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 190 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

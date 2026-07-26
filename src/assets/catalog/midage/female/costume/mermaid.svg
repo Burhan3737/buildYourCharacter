@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: HEM (there is no leg opening at all — one closed tail running to a
+       wide fluke on the ground line) and SHOULDER (nothing on the shoulder or the arm; the
+       piece is a two-cup shell bodice only). Nothing above y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #57B6D6)"/>
+      <stop offset="1" stop-color="var(--c1, #3A8CAB)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mermaid__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #DA8578)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-mermaid__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="16">
+      <path d="M0 1 q11 20 22 0" fill="none" stroke="var(--c2, #23697F)"
+            stroke-width="2.4" stroke-opacity="0.6"/>
+      <path d="M-11 9 q11 20 22 0 M11 9 q11 20 22 0" fill="none" stroke="var(--c2, #23697F)"
+            stroke-width="2.4" stroke-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: one closed tail flaring into a fluke at the ground line, plus two
+       shell cups. -->
+  <g class="sp-shadow">
+    <path d="M144 300 h112 q8 62 -6 120 q-8 50 -14 94 q34 10 50 46 q-86 14 -172 0
+             q16-36 50-46 q-6-44 -14-94 q-14-58 -6-120 z"
+          fill="url(#midage-female-costume-mermaid__tail)"/>
+    <path d="M144 204 q4-42 56-42 v76 q-58 2 -56-34 z"
+          fill="url(#midage-female-costume-mermaid__shell)"/>
+    <path d="M256 204 q-4-42 -56-42 v76 q58 2 56-34 z"
+          fill="url(#midage-female-costume-mermaid__shell)"/>
+  </g>
+
+  <!-- PATTERN: overlapping scales across the whole tail. -->
+  <path d="M144 300 h112 q8 62 -6 120 q-8 50 -14 94 q34 10 50 46 q-86 14 -172 0
+           q16-36 50-46 q-6-44 -14-94 q-14-58 -6-120 z"
+        fill="url(#midage-female-costume-mermaid__scales)"/>
+
+  <!-- TRIM: a shell-coloured waistband where the tail begins, and fluke ribs. -->
+  <rect x="140" y="292" width="120" height="20" rx="10" fill="var(--c3, #F4A79B)"/>
+  <circle cx="200" cy="302" r="13" fill="var(--c2, #23697F)"/>
+  <circle cx="200" cy="302" r="6" fill="var(--c3, #F4A79B)"/>
+  <g fill="none" stroke="var(--c3, #F4A79B)" stroke-opacity="0.75" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M200 522 q-40 12 -64 40"/>
+    <path d="M200 522 q40 12 64 40"/>
+    <path d="M200 524 v40"/>
+  </g>
+
+  <!-- STRUCTURAL: shell ridges radiating from the base of each cup. -->
+  <g fill="none" stroke="var(--c2, #23697F)" stroke-opacity="0.45" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M198 236 q-24-16 -34-40 M198 236 q-14-22 -14-50 M198 236 q-2-24 4-48"/>
+    <path d="M202 236 q24-16 34-40 M202 236 q14-22 14-50 M202 236 q2-24 -4-48"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 186 q20 10 34 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 350 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 440 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

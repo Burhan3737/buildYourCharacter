@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- aperture: outer corner sits clearly above the inner corner, strong upward axis -->
+  <defs>
+    <linearGradient id="midage-female-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="midage-female-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #8A6BA8)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #8A6BA8)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="midage-female-eyes-upturned__clip-l">
+      <path d="M158 103 Q176 96 196 114 Q176 121 158 103 Z"/>
+    </clipPath>
+    <clipPath id="midage-female-eyes-upturned__clip-r">
+      <path d="M242 103 Q224 96 204 114 Q224 121 242 103 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 103 Q176 96 196 114 Q176 121 158 103 Z"
+          fill="url(#midage-female-eyes-upturned__sclera)"/>
+    <path d="M242 103 Q224 96 204 114 Q224 121 242 103 Z"
+          fill="url(#midage-female-eyes-upturned__sclera)"/>
+  </g>
+
+  <g clip-path="url(#midage-female-eyes-upturned__clip-l)">
+    <circle cx="178" cy="109" r="8.4" fill="#3B2A22"/>
+    <circle cx="178" cy="109" r="8.4" fill="url(#midage-female-eyes-upturned__iris)"/>
+    <circle cx="178" cy="109" r="3.8" fill="#3B2A22"/>
+    <circle cx="175" cy="106" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#midage-female-eyes-upturned__clip-r)">
+    <circle cx="222" cy="109" r="8.4" fill="#3B2A22"/>
+    <circle cx="222" cy="109" r="8.4" fill="url(#midage-female-eyes-upturned__iris)"/>
+    <circle cx="222" cy="109" r="3.8" fill="#3B2A22"/>
+    <circle cx="219" cy="106" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line rising to a lifted outer corner -->
+  <path d="M195 113 Q177 95 158.5 102.5 q-3 -1.5 -5.5 -4.5" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M205 113 Q223 95 241.5 102.5 q3 -1.5 5.5 -4.5" stroke="#3B2A22" stroke-width="4"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lid crease, parallel to the lifted axis -->
+  <path d="M191 106 Q176 91 160 96" stroke="#3B2A22" stroke-opacity="0.24" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M209 106 Q224 91 240 96" stroke="#3B2A22" stroke-opacity="0.24" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash, dropping toward the inner corner -->
+  <path d="M163 108 Q179 119 193 116" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="1.9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M237 108 Q221 119 207 116" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="1.9"
+        fill="none" stroke-linecap="round"/>
+</svg>

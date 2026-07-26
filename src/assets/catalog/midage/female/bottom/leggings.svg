@@ -1,49 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-name="High-Waist Leggings" data-family="leggings" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: rise = high, the waist panel climbs to y302 well above the natural waist
+             leg width = skin-close, the tubes hug the drawn leg cylinders exactly
+       Redrawn from scratch: one shaped high-waist panel curving down over the hip, plus two
+       narrow rounded tubes. No fly, no pockets, plain flat ankle hem. -->
   <defs>
-    <linearGradient id="midage-female-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4B3B33)"/>
-      <stop offset="1" stop-color="var(--c2, #362A24)"/>
+    <linearGradient id="midage-female-bottom-leggings__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3E52)"/>
+      <stop offset="1" stop-color="var(--c2, #362D3D)"/>
     </linearGradient>
     <linearGradient id="midage-female-bottom-leggings__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4B3B33)"/>
-      <stop offset="1" stop-color="var(--c2, #362A24)"/>
+      <stop offset="0" stop-color="var(--c1, #4A3E52)"/>
+      <stop offset="1" stop-color="var(--c2, #362D3D)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-leggings__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9C8FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #362D3D)"/>
     </linearGradient>
   </defs>
 
-  <!-- skin-close slim legs, hip block plus both legs, one shadow group -->
+  <!-- MAJOR FORMS: skin-close tubes, then the shaped high-waist panel over them -->
   <g class="sp-shadow">
-    <path d="M166 358 H200 V538 q0 10 -10 10 H176 q-10 0 -10 -10 Z"
+    <rect x="167" y="364" width="32" height="186" rx="14"
           fill="url(#midage-female-bottom-leggings__leg)"/>
-    <path d="M234 358 H200 V538 q0 10 10 10 H224 q10 0 10 -10 Z"
+    <rect x="201" y="364" width="32" height="186" rx="14"
           fill="url(#midage-female-bottom-leggings__leg)"/>
-    <rect x="141" y="313" width="118" height="64" rx="28"
-          fill="url(#midage-female-bottom-leggings__hip)"/>
+    <path d="M146 300 h108 v42 q0 32 -28 32 h-52 q-28 0 -28 -32 Z"
+          fill="url(#midage-female-bottom-leggings__waist)"/>
   </g>
 
-  <!-- thin high waistband -->
-  <rect x="141" y="311" width="118" height="15" rx="7" fill="var(--c2, #362A24)"/>
-  <path d="M144 321 H256" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"
+  <!-- TRIM: wide contrast fold-over band at the very top of the rise -->
+  <rect x="145" y="298" width="110" height="18" rx="8"
+        fill="url(#midage-female-bottom-leggings__band)"/>
+  <path d="M149 307 H251" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- outer leg seams -->
-  <path d="M170 372 V536" stroke="var(--c2, #362A24)" stroke-width="4"
+  <!-- STRUCTURE: flatlock side seams, centre-front rise seam, curved gusset -->
+  <path d="M171 372 V542" stroke="var(--c3, #9C8FA8)" stroke-opacity="0.5" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-  <path d="M230 372 V536" stroke="var(--c2, #362A24)" stroke-width="4"
+  <path d="M229 372 V542" stroke="var(--c3, #9C8FA8)" stroke-opacity="0.5" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-
-  <!-- ankle hem bands -->
-  <path d="M167 534 H197" stroke="var(--c2, #362A24)" stroke-width="5"
+  <path d="M200 318 v52" stroke="var(--c2, #362D3D)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-  <path d="M203 534 H233" stroke="var(--c2, #362A24)" stroke-width="5"
+  <path d="M182 344 q18 8 36 0" stroke="var(--c2, #362D3D)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- soft upper highlight -->
-  <path d="M162 336 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+  <!-- plain ankle hems, a single flat coverstitch -->
+  <path d="M170 540 H196" stroke="var(--c3, #9C8FA8)" stroke-opacity="0.6" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
-  <path d="M190 376 q-2 74 -4 150" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4"
+  <path d="M204 540 H230" stroke="var(--c3, #9C8FA8)" stroke-opacity="0.6" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
-  <path d="M210 376 q2 74 4 150" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4"
+
+  <!-- soft upper highlight and the long sheen down each close-fitting leg -->
+  <path d="M158 330 q42 13 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M181 382 q-2 74 -2 148" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M219 382 q2 74 2 148" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

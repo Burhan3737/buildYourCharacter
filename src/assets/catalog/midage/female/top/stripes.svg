@@ -1,42 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Breton Stripes" data-family="stripes" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-name="Breton Top" data-family="stripes" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Legacy key, real garment: the boat-neck long-sleeve top. The breton
+       banding is its surface, not its identity.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = long straight set-in,
+       VOLUME = boxy with squared shoulders and a wide shallow neckline.
+       Closure closed, hem at the hip (y332).
+       Surface tools: pattern (even breton band through the c3 variable) and trim
+       (contrast boat neckband, contrast sleeve end bands). -->
   <defs>
     <linearGradient id="midage-female-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDE6D8)"/>
-      <stop offset="1" stop-color="var(--c2, #D7CDB8)"/>
+      <stop offset="0" stop-color="var(--c1, #F0E9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2C7B0)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDE6D8)"/>
-      <stop offset="1" stop-color="var(--c2, #D7CDB8)"/>
+    <linearGradient id="midage-female-top-stripes__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0E9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2C7B0)"/>
     </linearGradient>
+    <pattern id="midage-female-top-stripes__breton" patternUnits="userSpaceOnUse"
+             x="0" y="170" width="26" height="26">
+      <rect x="0" y="0" width="26" height="13" fill="var(--c3, #35476F)"/>
+    </pattern>
     <clipPath id="midage-female-top-stripes__clip">
-      <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"/>
-      <rect x="114" y="172" width="34" height="158" rx="17"/>
-      <rect x="252" y="172" width="34" height="158" rx="17"/>
+      <path d="M136 188 q0-30 28-30 h72 q28 0 28 30 v106 q0 38 -30 38 h-68 q-30 0-30-38 z"/>
+      <rect x="113" y="170" width="34" height="180" rx="17"/>
+      <rect x="253" y="170" width="34" height="180" rx="17"/>
     </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves -->
-    <rect x="114" y="172" width="34" height="158" rx="17" fill="url(#midage-female-top-stripes__sleeve)"/>
-    <rect x="252" y="172" width="34" height="158" rx="17" fill="url(#midage-female-top-stripes__sleeve)"/>
-    <!-- body, hem at y332 -->
-    <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"
+    <!-- long straight sleeves running to the wrist -->
+    <rect x="113" y="170" width="34" height="180" rx="17" fill="url(#midage-female-top-stripes__arm)"/>
+    <rect x="253" y="170" width="34" height="180" rx="17" fill="url(#midage-female-top-stripes__arm)"/>
+    <!-- boxy body with squared shoulders -->
+    <path d="M136 188 q0-30 28-30 h72 q28 0 28 30 v106 q0 38 -30 38 h-68 q-30 0-30-38 z"
           fill="url(#midage-female-top-stripes__body)"/>
   </g>
-  <!-- breton bands, clipped to the garment silhouette -->
+
+  <!-- breton banding, clipped to the garment -->
   <g clip-path="url(#midage-female-top-stripes__clip)">
-    <rect x="108" y="198" width="184" height="14" fill="var(--c3, #6E7AA0)"/>
-    <rect x="108" y="226" width="184" height="14" fill="var(--c3, #6E7AA0)"/>
-    <rect x="108" y="254" width="184" height="14" fill="var(--c3, #6E7AA0)"/>
-    <rect x="108" y="282" width="184" height="14" fill="var(--c3, #6E7AA0)"/>
-    <rect x="108" y="310" width="184" height="14" fill="var(--c3, #6E7AA0)"/>
+    <rect x="100" y="158" width="200" height="200" fill="url(#midage-female-top-stripes__breton)"
+          opacity="0.9"/>
   </g>
-  <!-- boat neckband -->
-  <path d="M168 143 q32 34 64 0 z" fill="var(--c2, #D7CDB8)"/>
-  <!-- neck opening -->
-  <path d="M177 146 q23 20 46 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- wide shallow boat neckline with a contrast bind -->
+  <path d="M164 152 q36 30 72 0 q-4 20 -36 20 q-32 0-36-20 z" fill="var(--c3, #35476F)"/>
+  <path d="M172 154 q28 22 56 0 q-4 12 -28 12 q-24 0-28-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- contrast sleeve end bands -->
+  <rect x="113" y="332" width="34" height="18" rx="9" fill="var(--c3, #35476F)"/>
+  <rect x="253" y="332" width="34" height="18" rx="9" fill="var(--c3, #35476F)"/>
+  <!-- squared shoulder seams -->
+  <path d="M150 172 v52" stroke="var(--c2, #D2C7B0)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 172 v52" stroke="var(--c2, #D2C7B0)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M150 176 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M152 180 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

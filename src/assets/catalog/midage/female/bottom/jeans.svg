@@ -1,48 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Straight-Leg Jeans" data-family="jeans" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: leg width = straight (against cargo's wide column and leggings' skin-close tube)
+             hem treatment = plain raw hem (against cargo's cuff and joggers' elasticated cuff)
+       Rise natural, leg length full. Redrawn from scratch: tapered hip block, narrow straight
+       leg tubes, structured waistband carried on five belt loops. -->
   <defs>
     <linearGradient id="midage-female-bottom-jeans__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7386B9)"/>
-      <stop offset="1" stop-color="var(--c2, #5C6D97)"/>
+      <stop offset="0" stop-color="var(--c1, #5B6FA6)"/>
+      <stop offset="1" stop-color="var(--c2, #45557F)"/>
     </linearGradient>
     <linearGradient id="midage-female-bottom-jeans__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7386B9)"/>
-      <stop offset="1" stop-color="var(--c2, #5C6D97)"/>
+      <stop offset="0" stop-color="var(--c1, #5B6FA6)"/>
+      <stop offset="1" stop-color="var(--c2, #45557F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-jeans__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #45557F)"/>
+      <stop offset="1" stop-color="var(--c1, #5B6FA6)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-jeans__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #45557F)"/>
+      <stop offset="1" stop-color="var(--c1, #5B6FA6)"/>
     </linearGradient>
   </defs>
 
-  <!-- classic straight leg, hip block bridges the crotch gap, one shadow group -->
+  <!-- MAJOR FORMS: two narrow straight leg tubes, then the hip block over the crotch gap -->
   <g class="sp-shadow">
-    <path d="M166 360 H200 V538 q0 10 -10 10 H181 q-10 0 -10 -10 Z"
+    <path d="M162 358 H200 V540 q0 8 -8 8 H170 q-8 0 -8 -8 Z"
           fill="url(#midage-female-bottom-jeans__leg)"/>
-    <path d="M234 360 H200 V538 q0 10 10 10 H219 q10 0 10 -10 Z"
+    <path d="M238 358 H200 V540 q0 8 8 8 H230 q8 0 8 -8 Z"
           fill="url(#midage-female-bottom-jeans__leg)"/>
-    <rect x="141" y="313" width="118" height="64" rx="28"
+    <rect x="144" y="308" width="112" height="70" rx="20"
           fill="url(#midage-female-bottom-jeans__hip)"/>
   </g>
 
-  <!-- waistband and belt loops -->
-  <rect x="141" y="310" width="118" height="20" rx="10" fill="var(--c2, #5C6D97)"/>
-  <rect x="170" y="307" width="7" height="24" rx="3" fill="var(--c2, #5C6D97)"/>
-  <rect x="196" y="307" width="8" height="24" rx="3" fill="var(--c2, #5C6D97)"/>
-  <rect x="223" y="307" width="7" height="24" rx="3" fill="var(--c2, #5C6D97)"/>
+  <!-- TRIM: structured waistband, narrower than the hip, on five belt loops -->
+  <rect x="167" y="300" width="8" height="28" rx="3" fill="var(--c2, #45557F)"/>
+  <rect x="196" y="300" width="9" height="28" rx="3" fill="var(--c2, #45557F)"/>
+  <rect x="226" y="300" width="8" height="28" rx="3" fill="var(--c2, #45557F)"/>
+  <rect x="143" y="304" width="114" height="21" rx="8"
+        fill="url(#midage-female-bottom-jeans__band)"/>
+  <rect x="151" y="302" width="7" height="26" rx="3" fill="var(--c2, #45557F)"/>
+  <rect x="243" y="302" width="7" height="26" rx="3" fill="var(--c2, #45557F)"/>
 
-  <!-- back pocket yokes -->
-  <path d="M144 330 H181 Q172 358 144 353 Z" fill="var(--c2, #5C6D97)"/>
-  <path d="M256 330 H219 Q228 358 256 353 Z" fill="var(--c2, #5C6D97)"/>
-
-  <!-- centre seam -->
-  <path d="M200 314 q5 20 1 36" stroke="var(--c2, #5C6D97)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
+  <!-- STRUCTURE: curved pocket yokes and a button-fly placket -->
+  <path d="M146 334 H184 Q176 366 148 360 Z" fill="url(#midage-female-bottom-jeans__yoke)"/>
+  <path d="M254 334 H216 Q224 366 252 360 Z" fill="url(#midage-female-bottom-jeans__yoke)"/>
+  <rect x="196" y="326" width="9" height="34" rx="4" fill="var(--c2, #45557F)"/>
 
   <!-- topstitching -->
-  <path d="M181 332 Q172 356 148 352" stroke="var(--c3, #E4C077)" stroke-width="2.5"
+  <path d="M184 336 Q176 364 151 359" stroke="var(--c3, #E3C377)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M219 332 Q228 356 252 352" stroke="var(--c3, #E4C077)" stroke-width="2.5"
+  <path d="M216 336 Q224 364 249 359" stroke="var(--c3, #E3C377)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M146 328 H254" stroke="var(--c3, #E3C377)" stroke-width="2.5"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M193 328 v32" stroke="var(--c3, #E3C377)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M168 542 H194" stroke="var(--c3, #E3C377)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M206 542 H232" stroke="var(--c3, #E3C377)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
 
   <!-- soft upper highlight -->
-  <path d="M162 340 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M160 344 q40 13 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 386 v104" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 386 v104" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

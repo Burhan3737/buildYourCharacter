@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pencil Skirt" data-family="pencil-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- AXES: leg width = narrow straight, the hem 108px wide against the A-line skirt's 160px
+             hem treatment = a short kick vent notched into the centre back hem
+       Rise natural, length to the knee at y456, no leg division. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-pencil-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #414B5A)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3642)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-pencil-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2E3642)"/>
+      <stop offset="1" stop-color="var(--c1, #414B5A)"/>
+    </linearGradient>
+    <pattern id="midage-female-bottom-pencil-skirt__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="18" height="7" fill="var(--c3, #C3A9BA)" opacity="0.3"/>
+      <rect x="0" y="0" width="7" height="18" fill="var(--c3, #C3A9BA)" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORM: one narrow knee-length column with the vent notched from the hem.
+       The check pattern rides inside this shadow group, over the gradient. -->
+  <g class="sp-shadow">
+    <path d="M146 310 H254 L246 456 H208 V440 H192 V456 H154 Z"
+          fill="url(#midage-female-bottom-pencil-skirt__body)"/>
+    <path d="M146 310 H254 L246 456 H208 V440 H192 V456 H154 Z"
+          fill="url(#midage-female-bottom-pencil-skirt__gingham)"/>
+  </g>
+
+  <!-- TRIM: shaped waistband with a contrast bind along its lower edge -->
+  <rect x="145" y="304" width="110" height="22" rx="8"
+        fill="url(#midage-female-bottom-pencil-skirt__band)"/>
+  <path d="M148 326 H252" stroke="var(--c3, #C3A9BA)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURE: waist darts, a hip seam and the bound vent edges -->
+  <path d="M176 332 q3 18 2 34" stroke="var(--c2, #2E3642)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 332 q-3 18 -2 34" stroke="var(--c2, #2E3642)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 330 V450" stroke="var(--c2, #2E3642)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M192 442 V454" stroke="var(--c3, #C3A9BA)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 442 V454" stroke="var(--c3, #C3A9BA)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 448 H188" stroke="var(--c2, #2E3642)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M212 448 H242" stroke="var(--c2, #2E3642)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight -->
+  <path d="M158 340 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 366 q-2 40 -2 78" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chef" data-family="chef" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: CLOSURE (double-breasted crossover jacket, two button rows) and
+       VOLUME (boxy jacket over a long straight apron panel, so the figure reads as two
+       stacked slabs). No hat — the piece stops at a neckerchief below y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-chef__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5F2EA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2CCBB)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chef__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5F2EA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2CCBB)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chef__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFEBE0)"/>
+      <stop offset="1" stop-color="var(--c2, #C8C1AE)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chef__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D2CCBB)"/>
+      <stop offset="1" stop-color="var(--c2, #ADA694)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: boxy jacket, two long sleeves, a seat block, two trouser legs and one
+       long apron panel hanging from the waist. -->
+  <g class="sp-shadow">
+    <rect x="112" y="172" width="36" height="182" rx="17"
+          fill="url(#midage-female-costume-chef__sleeve)"/>
+    <rect x="252" y="172" width="36" height="182" rx="17"
+          fill="url(#midage-female-costume-chef__sleeve)"/>
+    <rect x="158" y="360" width="44" height="192" rx="16"
+          fill="url(#midage-female-costume-chef__trouser)"/>
+    <rect x="198" y="360" width="44" height="192" rx="16"
+          fill="url(#midage-female-costume-chef__trouser)"/>
+    <rect x="140" y="310" width="120" height="66" rx="28"
+          fill="url(#midage-female-costume-chef__trouser)"/>
+    <path d="M134 194 q2-34 34-34 h64 q32 0 34 34 v152 q-66 20 -132 0 z"
+          fill="url(#midage-female-costume-chef__jacket)"/>
+    <path d="M150 330 h100 q8 96 6 192 q-56 14 -112 0 q-2-96 6-192 z"
+          fill="url(#midage-female-costume-chef__apron)"/>
+  </g>
+
+  <!-- TRIM: knotted neckerchief at the base of the neck, well below the face. -->
+  <path d="M166 162 q34 24 68 0 q6 22 -4 34 q-30 14 -60 0 q-10-12 -4-34 z"
+        fill="var(--c3, #C4534B)"/>
+  <path d="M190 190 h20 l10 26 h-40 z" fill="var(--c3, #C4534B)"/>
+  <path d="M216 214 q16 22 14 48 l-14 2 q2-24 -12-42 z" fill="var(--c3, #C4534B)"/>
+
+  <!-- STRUCTURAL: the two button rows and the crossover edge of the double breast. -->
+  <g fill="var(--c2, #ADA694)">
+    <circle cx="176" cy="228" r="6"/>
+    <circle cx="176" cy="258" r="6"/>
+    <circle cx="176" cy="288" r="6"/>
+    <circle cx="224" cy="228" r="6"/>
+    <circle cx="224" cy="258" r="6"/>
+    <circle cx="224" cy="288" r="6"/>
+  </g>
+  <path d="M234 202 q-34 8 -58 26 q-24 18 -22 118" stroke="var(--c2, #ADA694)"
+        stroke-opacity="0.75" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: apron waist tie with two ends, plus turned-back cuffs. -->
+  <rect x="140" y="322" width="120" height="18" rx="8" fill="var(--c3, #C4534B)"/>
+  <path d="M136 340 q-8 34 -4 62 l16 2 q-4-30 4-60 z" fill="var(--c3, #C4534B)"/>
+  <g fill="var(--c2, #ADA694)">
+    <rect x="110" y="334" width="40" height="20" rx="10"/>
+    <rect x="250" y="334" width="40" height="20" rx="10"/>
+  </g>
+
+  <!-- STRUCTURAL: apron patch pocket. -->
+  <rect x="176" y="392" width="52" height="42" rx="8" fill="none"
+        stroke="var(--c2, #ADA694)" stroke-opacity="0.8" stroke-width="3.5"/>
+  <path d="M202 392 v42" stroke="var(--c2, #ADA694)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M156 186 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 356 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

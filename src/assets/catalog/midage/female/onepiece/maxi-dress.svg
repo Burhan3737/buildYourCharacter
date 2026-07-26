@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Dress" data-family="maxi-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Axes it differs on: HEM (full ankle length) and VOLUME (a narrow column that never
+       flares — it follows the hip and drops straight). Sleeveless on wide straps, closed. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-maxi-dress__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #35335A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-maxi-dress__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #35335A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-maxi-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #35335A)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-maxi-dress__petals" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <g fill="var(--c3, #D9C08A)" fill-opacity="0.8">
+        <circle cx="11" cy="6" r="3"/>
+        <circle cx="16" cy="11" r="3"/>
+        <circle cx="11" cy="16" r="3"/>
+        <circle cx="6" cy="11" r="3"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: two straps, a shaped bodice, and one narrow ankle-length column. -->
+  <g class="sp-shadow">
+    <rect x="170" y="148" width="14" height="44" rx="7"
+          fill="url(#midage-female-onepiece-maxi-dress__strap)"/>
+    <rect x="216" y="148" width="14" height="44" rx="7"
+          fill="url(#midage-female-onepiece-maxi-dress__strap)"/>
+    <path d="M140 198 q2-36 32-36 q28 14 56 0 q30 0 32 36 v72 q-60 16 -120 0 z"
+          fill="url(#midage-female-onepiece-maxi-dress__bodice)"/>
+    <path d="M146 266 h108 q8 44 6 96 q-4 76 -4 186 q-56 12 -112 0
+             q0-110 -4-186 q-2-52 6-96 z"
+          fill="url(#midage-female-onepiece-maxi-dress__column)"/>
+  </g>
+
+  <!-- PATTERN: a small four-petal floral scattered over the column only. -->
+  <path d="M146 266 h108 q8 44 6 96 q-4 76 -4 186 q-56 12 -112 0
+           q0-110 -4-186 q-2-52 6-96 z"
+        fill="url(#midage-female-onepiece-maxi-dress__petals)"/>
+
+  <!-- TRIM: contrast binding across the bodice top, a narrow waist band and a hem band. -->
+  <path d="M170 166 q30 14 60 0 l4 14 q-34 16 -68 0 z" fill="var(--c3, #D9C08A)"/>
+  <rect x="142" y="262" width="116" height="14" rx="7" fill="var(--c3, #D9C08A)"/>
+  <path d="M144 528 q56 12 112 0 l1 16 q-57 12 -114 0 z" fill="var(--c3, #D9C08A)"/>
+
+  <!-- STRUCTURAL: two bust darts and a long centre-back seam. -->
+  <g fill="none" stroke="var(--c2, #35335A)" stroke-opacity="0.45" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M172 208 q10 30 8 58"/>
+    <path d="M228 208 q-10 30 -8 58"/>
+    <path d="M200 290 q4 120 2 232"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 196 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 356 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

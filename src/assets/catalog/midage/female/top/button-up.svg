@@ -1,41 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Button-Up Shirt" data-family="button-up" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = full centre placket,
+       VOLUME = fitted (waist suppression drawn into the side seams).
+       Long cuffed sleeves, straight hem at the hip (y332) with side vents.
+       Surface tools: trim (flat collar, contrast placket band, buttoned cuffs)
+       and pattern (fine gingham check through the c3 variable). -->
   <defs>
     <linearGradient id="midage-female-top-button-up__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #D3AD68)"/>
-      <stop offset="1" stop-color="var(--c2, #B8934F)"/>
+      <stop offset="0" stop-color="var(--c1, #9DB58C)"/>
+      <stop offset="1" stop-color="var(--c2, #798F6B)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-button-up__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #D3AD68)"/>
-      <stop offset="1" stop-color="var(--c2, #B8934F)"/>
+    <linearGradient id="midage-female-top-button-up__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9DB58C)"/>
+      <stop offset="1" stop-color="var(--c2, #798F6B)"/>
     </linearGradient>
+    <linearGradient id="midage-female-top-button-up__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4F1E5)"/>
+      <stop offset="1" stop-color="var(--c3, #F4F1E5)" stop-opacity="0.74"/>
+    </linearGradient>
+    <pattern id="midage-female-top-button-up__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="8" fill="var(--c3, #F4F1E5)" opacity="0.3"/>
+      <rect x="0" y="0" width="8" height="20" fill="var(--c3, #F4F1E5)" opacity="0.3"/>
+      <rect x="0" y="0" width="8" height="8" fill="var(--c3, #F4F1E5)" opacity="0.42"/>
+    </pattern>
+    <clipPath id="midage-female-top-button-up__clip">
+      <path d="M142 198 q2-40 30-40 h56 q28 0 30 40 v34 q-6 16 0 32 v30 q0 38 -30 38 h-56 q-30 0-30-38 v-30 q6-16 0-32 z"/>
+      <rect x="115" y="172" width="32" height="176" rx="16"/>
+      <rect x="253" y="172" width="32" height="176" rx="16"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves -->
-    <rect x="114" y="172" width="34" height="158" rx="17" fill="url(#midage-female-top-button-up__sleeve)"/>
-    <rect x="252" y="172" width="34" height="158" rx="17" fill="url(#midage-female-top-button-up__sleeve)"/>
-    <!-- body, hem at y332 -->
-    <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"
+    <!-- long sleeves down to the cuff -->
+    <rect x="115" y="172" width="32" height="176" rx="16" fill="url(#midage-female-top-button-up__arm)"/>
+    <rect x="253" y="172" width="32" height="176" rx="16" fill="url(#midage-female-top-button-up__arm)"/>
+    <!-- fitted body: the side seams draw in at the waist and release at the hip -->
+    <path d="M142 198 q2-40 30-40 h56 q28 0 30 40 v34 q-6 16 0 32 v30 q0 38 -30 38 h-56 q-30 0-30-38 v-30 q6-16 0-32 z"
           fill="url(#midage-female-top-button-up__body)"/>
+    <!-- buttoned cuffs -->
+    <rect x="113" y="328" width="36" height="20" rx="9" fill="url(#midage-female-top-button-up__trim)"/>
+    <rect x="251" y="328" width="36" height="20" rx="9" fill="url(#midage-female-top-button-up__trim)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="114" y="310" width="34" height="20" rx="10" fill="var(--c2, #B8934F)"/>
-  <rect x="252" y="310" width="34" height="20" rx="10" fill="var(--c2, #B8934F)"/>
-  <!-- centre placket -->
-  <rect x="196" y="150" width="8" height="182" rx="3" fill="var(--c2, #B8934F)"/>
-  <!-- pointed collar wings -->
-  <path d="M174 148 L200 150 L196 180 L170 158 z" fill="var(--c2, #B8934F)"/>
-  <path d="M226 148 L200 150 L204 180 L230 158 z" fill="var(--c2, #B8934F)"/>
-  <!-- buttons: fixed ink tone, not a tunable variable -->
-  <circle cx="200" cy="196" r="4.5" fill="#3B2A22"/>
-  <circle cx="200" cy="228" r="4.5" fill="#3B2A22"/>
-  <circle cx="200" cy="260" r="4.5" fill="#3B2A22"/>
-  <circle cx="200" cy="292" r="4.5" fill="#3B2A22"/>
-  <circle cx="200" cy="322" r="4.5" fill="#3B2A22"/>
-  <!-- chest pocket -->
-  <path d="M152 220 h28 v22 q0 6 -6 6 h-16 q-6 0 -6-6 z" fill="var(--c2, #B8934F)"/>
+
+  <!-- gingham check over the shirting -->
+  <g clip-path="url(#midage-female-top-button-up__clip)">
+    <rect x="110" y="158" width="180" height="196" fill="url(#midage-female-top-button-up__gingham)"/>
+  </g>
+  <!-- full centre placket -->
+  <rect x="192" y="160" width="16" height="172" rx="4" fill="url(#midage-female-top-button-up__trim)"/>
+  <!-- flat collar over the placket -->
+  <path d="M176 152 L200 162 L194 190 L168 166 z" fill="url(#midage-female-top-button-up__trim)"/>
+  <path d="M224 152 L200 162 L206 190 L232 166 z" fill="url(#midage-female-top-button-up__trim)"/>
+  <!-- button line, fixed ink so it never disappears into a recolour -->
+  <circle cx="200" cy="198" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="230" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="262" r="4.2" fill="#3B2A22"/>
+  <circle cx="200" cy="294" r="4.2" fill="#3B2A22"/>
+  <circle cx="131" cy="338" r="3.4" fill="#3B2A22"/>
+  <circle cx="269" cy="338" r="3.4" fill="#3B2A22"/>
+  <!-- welt chest pocket -->
+  <path d="M154 214 h32 v24 q0 6 -6 6 h-20 q-6 0-6-6 z" fill="var(--c2, #798F6B)"/>
+  <!-- side vents -->
+  <path d="M147 306 v22 M253 306 v22" stroke="var(--c2, #798F6B)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M150 178 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M154 182 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

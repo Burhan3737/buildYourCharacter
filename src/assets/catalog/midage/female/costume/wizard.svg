@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: VOLUME (one enormous cone flaring from a narrow shoulder to a 216px
+       hem — no waist, no legs read at all) and HEM (floor length, sweeping past the ankle).
+       The hood is worn down behind the shoulders; nothing above y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4FA0)"/>
+      <stop offset="1" stop-color="var(--c2, #2B2F6B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-wizard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4FA0)"/>
+      <stop offset="1" stop-color="var(--c2, #2B2F6B)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="46" height="46">
+      <path d="M13 4 L16 11 L23 14 L16 17 L13 24 L10 17 L3 14 L10 11 Z"
+            fill="var(--c3, #F7C873)" fill-opacity="0.9"/>
+      <path d="M34 27 L36 32 L41 34 L36 36 L34 41 L32 36 L27 34 L32 32 Z"
+            fill="var(--c3, #F7C873)" fill-opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <!-- MAJOR FORMS: two wide draped sleeves and one full-length flaring robe. -->
+  <g class="sp-shadow">
+    <path d="M110 178 q-2-18 18-18 h26 q18 2 16 20 l6 96 q6 40 -14 52 q-28 14 -48-2
+             q-18-14 -12-52 l8-96 z"
+          fill="url(#midage-female-costume-wizard__sleeve)"/>
+    <path d="M290 178 q2-18 -18-18 h-26 q-18 2 -16 20 l-6 96 q-6 40 14 52 q28 14 48-2
+             q18-14 12-52 l-8-96 z"
+          fill="url(#midage-female-costume-wizard__sleeve)"/>
+    <path d="M150 170 q0-10 12-10 h76 q12 0 12 10 l22 176 q18 96 36 186
+             q-108 30 -216 0 q18-90 36-186 l22-176 z"
+          fill="url(#midage-female-costume-wizard__robe)"/>
+  </g>
+
+  <!-- PATTERN: a scattered star field over the robe. -->
+  <path d="M150 170 q0-10 12-10 h76 q12 0 12 10 l22 176 q18 96 36 186
+           q-108 30 -216 0 q18-90 36-186 l22-176 z"
+        fill="url(#midage-female-costume-wizard__stars)"/>
+
+  <!-- PANEL BLOCKING: the hood, worn down across the shoulders. -->
+  <path d="M158 164 q42 22 84 0 q10 44 -6 78 q-38 16 -72 0 q-16-34 -6-78 z"
+        fill="var(--c2, #2B2F6B)"/>
+
+  <!-- TRIM: contrast bands at both sleeve openings and around the hem. -->
+  <path d="M98 296 q34 22 74 4 l4 20 q-42 20 -82 -4 z" fill="var(--c3, #F7C873)"/>
+  <path d="M302 296 q-34 22 -74 4 l-4 20 q42 20 82 -4 z" fill="var(--c3, #F7C873)"/>
+  <path d="M94 516 q106 28 212 0 l2 18 q-108 30 -216 0 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- STRUCTURAL: a corded belt with a hanging tassel. -->
+  <path d="M136 322 q64 20 128 0 l2 16 q-66 20 -132 0 z" fill="var(--c3, #F7C873)"/>
+  <path d="M250 338 q10 42 2 76 l-16-2 q8-34 -2-70 z" fill="var(--c3, #F7C873)"/>
+  <circle cx="244" cy="420" r="11" fill="var(--c3, #F7C873)"/>
+
+  <!-- house highlight -->
+  <path d="M166 190 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 400 q60 20 120 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

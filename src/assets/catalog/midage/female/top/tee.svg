@@ -1,34 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tee" data-family="tee" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = short set-in cap,
+       VOLUME = straight. (Closure closed, hem at the hip, y332.)
+       Surface tools: trim (ribbed crew neckband + ribbed sleeve cuffs) and
+       structural detail (set-in armhole seams, chest patch pocket, hem stitch). -->
   <defs>
     <linearGradient id="midage-female-top-tee__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #D89A8E)"/>
-      <stop offset="1" stop-color="var(--c2, #BD8074)"/>
+      <stop offset="0" stop-color="var(--c1, #E9958A)"/>
+      <stop offset="1" stop-color="var(--c2, #C4706A)"/>
     </linearGradient>
-    <linearGradient id="midage-female-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #D89A8E)"/>
-      <stop offset="1" stop-color="var(--c2, #BD8074)"/>
+    <linearGradient id="midage-female-top-tee__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9958A)"/>
+      <stop offset="1" stop-color="var(--c2, #C4706A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-tee__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBE6D6)"/>
+      <stop offset="1" stop-color="var(--c3, #FBE6D6)" stop-opacity="0.72"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- short sleeves, shoulder anchor y172 down to y238 -->
-    <rect x="114" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-tee__sleeve)"/>
-    <rect x="252" y="172" width="34" height="66" rx="17" fill="url(#midage-female-top-tee__sleeve)"/>
-    <!-- body, hem at y332 -->
-    <path d="M134 196 q0-38 32-38 h68 q32 0 32 38 v102 q0 34 -32 34 h-68 q-32 0-32-34 z"
+    <!-- short set-in sleeves capped at the shoulder line, hem y238 -->
+    <rect x="112" y="174" width="36" height="64" rx="18" fill="url(#midage-female-top-tee__arm)"/>
+    <rect x="252" y="174" width="36" height="64" rx="18" fill="url(#midage-female-top-tee__arm)"/>
+    <!-- straight body, soft shoulder slope, hem at the hip -->
+    <path d="M137 202 q1-44 33-44 h60 q32 0 33 44 v92 q0 38 -33 38 h-60 q-33 0-33-38 z"
           fill="url(#midage-female-top-tee__body)"/>
   </g>
-  <!-- crew neckband -->
-  <path d="M176 145 q24 34 48 0 z" fill="var(--c2, #BD8074)"/>
-  <!-- neck opening -->
-  <path d="M185 148 q15 20 30 0 z" fill="var(--skin2, #E7B892)"/>
-  <!-- sleeve hem creases -->
-  <path d="M118 228 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+
+  <!-- ribbed crew neckband -->
+  <path d="M173 149 q27 40 54 0 z" fill="url(#midage-female-top-tee__rib)"/>
+  <path d="M183 153 q17 24 34 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- ribbed sleeve cuffs -->
+  <rect x="112" y="225" width="36" height="13" rx="6" fill="url(#midage-female-top-tee__rib)"/>
+  <rect x="252" y="225" width="36" height="13" rx="6" fill="url(#midage-female-top-tee__rib)"/>
+  <!-- set-in armhole seams -->
+  <path d="M150 178 q7 28 4 56" stroke="var(--c2, #C4706A)" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
-  <path d="M256 228 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+  <path d="M250 178 q-7 28 -4 56" stroke="var(--c2, #C4706A)" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
-  <!-- highlight -->
-  <path d="M150 176 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <!-- chest patch pocket -->
+  <path d="M157 218 h34 v26 q0 7 -7 7 h-20 q-7 0-7-7 z" fill="var(--c2, #C4706A)"/>
+  <path d="M161 225 h26" stroke="var(--c3, #FBE6D6)" stroke-opacity="0.7" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem stitch -->
+  <path d="M150 320 q50 12 100 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- upper-surface highlight -->
+  <path d="M152 180 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

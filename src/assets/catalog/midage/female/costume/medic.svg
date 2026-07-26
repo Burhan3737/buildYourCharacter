@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Axes it differs on: SHOULDER (short set-in scrub sleeve, arms bare from the elbow) and
+       CLOSURE (closed V-neck pullover tunic, no opening at all). Hip-length tunic over
+       straight drawstring trousers. Nothing above y160. -->
+  <defs>
+    <linearGradient id="midage-female-costume-medic__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A6B59)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-medic__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A6B59)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-medic__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A8471)"/>
+      <stop offset="1" stop-color="var(--c2, #26604F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: V-neck tunic to the hip, two short sleeves, a seat block and two straight
+       drawstring trouser legs. -->
+  <g class="sp-shadow">
+    <rect x="114" y="172" width="34" height="66" rx="17"
+          fill="url(#midage-female-costume-medic__sleeve)"/>
+    <rect x="252" y="172" width="34" height="66" rx="17"
+          fill="url(#midage-female-costume-medic__sleeve)"/>
+    <rect x="156" y="352" width="46" height="198" rx="18"
+          fill="url(#midage-female-costume-medic__trouser)"/>
+    <rect x="202" y="352" width="46" height="198" rx="18"
+          fill="url(#midage-female-costume-medic__trouser)"/>
+    <rect x="142" y="306" width="116" height="64" rx="26"
+          fill="url(#midage-female-costume-medic__trouser)"/>
+    <path d="M138 190 q0-30 32-30 l30 46 l30-46 q32 0 32 30 v168 q-62 18 -124 0 z"
+          fill="url(#midage-female-costume-medic__tunic)"/>
+  </g>
+
+  <!-- TRIM: contrast binding following both sides of the V neckline. -->
+  <path d="M168 160 l32 50 l-10 12 l-36-56 z" fill="var(--c3, #EDF4F2)"/>
+  <path d="M232 160 l-32 50 l10 12 l36-56 z" fill="var(--c3, #EDF4F2)"/>
+
+  <!-- STRUCTURAL: chest patch pocket with a divided top edge. -->
+  <rect x="212" y="238" width="46" height="46" rx="7" fill="var(--c2, #2A6B59)"/>
+  <rect x="216" y="242" width="38" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.35"/>
+  <path d="M235 252 v32" stroke="var(--c3, #EDF4F2)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: lanyard over the shoulders with a plain badge, all below the shoulder line. -->
+  <g fill="none" stroke="var(--c3, #EDF4F2)" stroke-width="6" stroke-linecap="round">
+    <path d="M184 162 q6 44 14 76"/>
+    <path d="M216 162 q-6 44 -14 76"/>
+  </g>
+  <rect x="184" y="238" width="32" height="42" rx="7" fill="var(--c3, #EDF4F2)"/>
+  <rect x="190" y="248" width="20" height="6" rx="3" fill="var(--c2, #2A6B59)"/>
+  <rect x="190" y="260" width="20" height="6" rx="3" fill="var(--c2, #2A6B59)"/>
+
+  <!-- TRIM: drawstring waist with two aglets, and a side-seam hip pocket. -->
+  <rect x="140" y="300" width="120" height="18" rx="8" fill="var(--c2, #2A6B59)"/>
+  <g fill="none" stroke="var(--c3, #EDF4F2)" stroke-width="5" stroke-linecap="round">
+    <path d="M186 318 q-6 22 -14 34"/>
+    <path d="M214 318 q6 22 14 34"/>
+  </g>
+  <path d="M212 386 q28 4 34 34" stroke="var(--c2, #2A6B59)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M156 200 q18 14 30 24" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 400 q0 74 -2 122" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 400 q0 74 2 122" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

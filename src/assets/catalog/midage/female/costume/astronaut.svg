@@ -1,82 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="EVA Space Suit" data-family="astronaut" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-name="Pressure Suit" data-family="astronaut" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Redrawn from scratch. Axes it differs on: VOLUME (a sealed pressure suit inflated well
+       past the body — 148px through the chest, 44px arms, 50px legs, where every bodysuit in
+       this slot is skin-close) and SHOULDER (dropped rounded shoulder domes sitting outboard
+       of the arm). No helmet: the suit stops at a soft neck ring on the shoulder line. -->
   <defs>
-    <linearGradient id="midage-female-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="midage-female-costume-astronaut__shell" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
+      <stop offset="1" stop-color="var(--c1, #CBD1E0)"/>
     </linearGradient>
-    <linearGradient id="midage-female-costume-astronaut__boot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #9AA6C4)"/>
-      <stop offset="1" stop-color="var(--c2, #8391B3)"/>
+    <linearGradient id="midage-female-costume-astronaut__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6E9F1)"/>
+      <stop offset="1" stop-color="var(--c1, #C4CBDC)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-astronaut__hard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8E9BBC)"/>
+      <stop offset="1" stop-color="var(--c2, #7785A8)"/>
     </linearGradient>
   </defs>
 
-  <!-- padded suit mass, refit to midage torso+limbs -->
+  <!-- MAJOR FORMS: an inflated barrel torso, two thick arms, a deep pressure girdle and two
+       thick legs. Every dimension is oversized against the body underneath. -->
   <g class="sp-shadow">
-    <rect x="163" y="366" width="38" height="134" rx="19" fill="url(#midage-female-costume-astronaut__body)"/>
-    <rect x="199" y="366" width="38" height="134" rx="19" fill="url(#midage-female-costume-astronaut__body)"/>
-    <rect x="139" y="311" width="122" height="66" rx="31" fill="url(#midage-female-costume-astronaut__body)"/>
-    <path d="M135 185 q0-25 33-25 h64 q33 0 33 25 v108 q0 34 -33 34 h-64 q-33 0 -33-34 z"
-          fill="url(#midage-female-costume-astronaut__body)"/>
-    <rect x="112" y="172" width="36" height="188" rx="18" fill="url(#midage-female-costume-astronaut__body)"/>
-    <rect x="252" y="172" width="36" height="188" rx="18" fill="url(#midage-female-costume-astronaut__body)"/>
+    <rect x="104" y="170" width="44" height="192" rx="22"
+          fill="url(#midage-female-costume-astronaut__limb)"/>
+    <rect x="252" y="170" width="44" height="192" rx="22"
+          fill="url(#midage-female-costume-astronaut__limb)"/>
+    <rect x="150" y="360" width="50" height="146" rx="25"
+          fill="url(#midage-female-costume-astronaut__limb)"/>
+    <rect x="200" y="360" width="50" height="146" rx="25"
+          fill="url(#midage-female-costume-astronaut__limb)"/>
+    <rect x="130" y="306" width="140" height="74" rx="34"
+          fill="url(#midage-female-costume-astronaut__shell)"/>
+    <path d="M126 192 q0-32 36-32 h76 q36 0 36 32 v104 q0 42 -38 42 h-72 q-38 0 -38-42 z"
+          fill="url(#midage-female-costume-astronaut__shell)"/>
   </g>
 
-  <!-- suit collar / neck ring: the top of the piece, no helmet, bare neck stays visible above it -->
-  <rect x="176" y="162" width="48" height="14" rx="7" fill="var(--c3, #F4A79B)"/>
-
-  <!-- ribbed bands across the arms and legs -->
-  <g fill="var(--c2, #9AA6C4)">
-    <rect x="112" y="206" width="36" height="7" rx="3.5"/>
-    <rect x="112" y="226" width="36" height="7" rx="3.5"/>
-    <rect x="112" y="246" width="36" height="7" rx="3.5"/>
-    <rect x="112" y="266" width="36" height="7" rx="3.5"/>
-    <rect x="252" y="206" width="36" height="7" rx="3.5"/>
-    <rect x="252" y="226" width="36" height="7" rx="3.5"/>
-    <rect x="252" y="246" width="36" height="7" rx="3.5"/>
-    <rect x="252" y="266" width="36" height="7" rx="3.5"/>
-    <rect x="163" y="384" width="38" height="8" rx="4"/>
-    <rect x="163" y="410" width="38" height="8" rx="4"/>
-    <rect x="163" y="436" width="38" height="8" rx="4"/>
-    <rect x="163" y="462" width="38" height="8" rx="4"/>
-    <rect x="199" y="384" width="38" height="8" rx="4"/>
-    <rect x="199" y="410" width="38" height="8" rx="4"/>
-    <rect x="199" y="436" width="38" height="8" rx="4"/>
-    <rect x="199" y="462" width="38" height="8" rx="4"/>
+  <!-- gloves and hard boots -->
+  <g class="sp-shadow">
+    <circle cx="126" cy="366" r="24" fill="url(#midage-female-costume-astronaut__hard)"/>
+    <circle cx="274" cy="366" r="24" fill="url(#midage-female-costume-astronaut__hard)"/>
+    <rect x="146" y="498" width="56" height="76" rx="24"
+          fill="url(#midage-female-costume-astronaut__hard)"/>
+    <rect x="198" y="498" width="56" height="76" rx="24"
+          fill="url(#midage-female-costume-astronaut__hard)"/>
   </g>
 
-  <!-- chest control panel -->
-  <rect x="176" y="206" width="48" height="40" rx="10" fill="var(--c2, #9AA6C4)"/>
-  <rect x="182" y="212" width="36" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.45"/>
-  <g fill="var(--c3, #F4A79B)">
-    <circle cx="188" cy="236" r="4.5"/>
-    <circle cx="200" cy="236" r="4.5"/>
-    <circle cx="212" cy="236" r="4.5"/>
+  <!-- soft neck ring: the top of the piece, sitting on the shoulder line, no head coverage -->
+  <rect x="164" y="160" width="72" height="20" rx="10" fill="var(--c3, #F58F5E)"/>
+  <rect x="170" y="164" width="60" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.4"/>
+
+  <!-- ribbed convolute joints at every articulation -->
+  <g fill="var(--c2, #8E9BBC)">
+    <rect x="104" y="238" width="44" height="9" rx="4.5"/>
+    <rect x="104" y="254" width="44" height="9" rx="4.5"/>
+    <rect x="104" y="270" width="44" height="9" rx="4.5"/>
+    <rect x="252" y="238" width="44" height="9" rx="4.5"/>
+    <rect x="252" y="254" width="44" height="9" rx="4.5"/>
+    <rect x="252" y="270" width="44" height="9" rx="4.5"/>
+    <rect x="150" y="410" width="50" height="10" rx="5"/>
+    <rect x="150" y="430" width="50" height="10" rx="5"/>
+    <rect x="150" y="450" width="50" height="10" rx="5"/>
+    <rect x="200" y="410" width="50" height="10" rx="5"/>
+    <rect x="200" y="430" width="50" height="10" rx="5"/>
+    <rect x="200" y="450" width="50" height="10" rx="5"/>
   </g>
 
-  <!-- original insignia: an abstract circle and sweeping arc -->
-  <circle cx="240" cy="196" r="10" fill="var(--c3, #F4A79B)"/>
-  <path d="M224 210 q16 -28 34 -8" stroke="var(--c3, #F4A79B)" stroke-width="4"
+  <!-- rounded shoulder domes sitting outboard of the arm -->
+  <path d="M102 200 q0-40 34-40 q22 0 26 26 q-30 8 -34 26 z"
+        fill="url(#midage-female-costume-astronaut__hard)"/>
+  <path d="M298 200 q0-40 -34-40 q-22 0 -26 26 q30 8 34 26 z"
+        fill="url(#midage-female-costume-astronaut__hard)"/>
+
+  <!-- chest control panel with a readout strip and three toggles -->
+  <rect x="156" y="208" width="88" height="62" rx="14" fill="var(--c2, #8E9BBC)"/>
+  <rect x="164" y="216" width="72" height="18" rx="8" fill="#FFFFFF" fill-opacity="0.5"/>
+  <g fill="var(--c3, #F58F5E)">
+    <rect x="164" y="244" width="20" height="18" rx="7"/>
+    <rect x="190" y="244" width="20" height="18" rx="7"/>
+    <rect x="216" y="244" width="20" height="18" rx="7"/>
+  </g>
+
+  <!-- hard waist ring sealing the girdle to the torso -->
+  <rect x="126" y="296" width="148" height="22" rx="11" fill="var(--c2, #8E9BBC)"/>
+  <rect x="188" y="292" width="24" height="30" rx="10" fill="var(--c3, #F58F5E)"/>
+
+  <!-- umbilical line running from the panel round to the girdle -->
+  <path d="M244 250 q34 12 30 48" stroke="var(--c3, #F58F5E)" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 
-  <!-- shoulder flash -->
-  <rect x="113" y="176" width="34" height="22" rx="10" fill="var(--c3, #F4A79B)"/>
-
-  <!-- wide waist ring -->
-  <rect x="138" y="308" width="124" height="16" rx="8" fill="var(--c2, #9AA6C4)"/>
-
-  <!-- gloves and chunky boots -->
-  <g class="sp-shadow">
-    <circle cx="129" cy="364" r="20" fill="var(--c2, #9AA6C4)"/>
-    <circle cx="271" cy="364" r="20" fill="var(--c2, #9AA6C4)"/>
-    <rect x="160" y="496" width="40" height="46" rx="18" fill="url(#midage-female-costume-astronaut__boot)"/>
-    <rect x="200" y="496" width="40" height="46" rx="18" fill="url(#midage-female-costume-astronaut__boot)"/>
-    <rect x="156" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-astronaut__boot)"/>
-    <rect x="196" y="536" width="48" height="38" rx="17" fill="url(#midage-female-costume-astronaut__boot)"/>
-  </g>
-
   <!-- house highlight -->
-  <path d="M160 178 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <path d="M150 190 q50 20 100 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 200 q0 70 2 132" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 200 q0 70 -2 132" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

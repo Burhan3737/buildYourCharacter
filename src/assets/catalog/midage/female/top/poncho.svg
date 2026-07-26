@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = draped — one single
+       trapezoid of cloth falls from the shoulders with no sleeve division at
+       all — and VOLUME = flared, widening the whole way to a thigh-length hem
+       (y414). Closure closed.
+       Surface tools: pattern (woven chevron band through the c3 variable) and structural
+       (fringed hem, neckline bind, drape folds). -->
+  <defs>
+    <linearGradient id="midage-female-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4735C)"/>
+      <stop offset="1" stop-color="var(--c2, #9D5442)"/>
+    </linearGradient>
+    <pattern id="midage-female-top-poncho__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="18">
+      <path d="M0 14 L12 4 L24 14" stroke="var(--c3, #EFDCC2)" stroke-opacity="0.75"
+            stroke-width="4" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-female-top-poncho__clip">
+      <path d="M168 158 h64 q32 0 38 38 l26 194 q4 24 -22 24 h-152 q-26 0-22-24 l26-194 q6-38 38-38 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one trapezoid of cloth, no sleeve division -->
+    <path d="M168 158 h64 q32 0 38 38 l26 194 q4 24 -22 24 h-152 q-26 0-22-24 l26-194 q6-38 38-38 z"
+          fill="url(#midage-female-top-poncho__cloth)"/>
+  </g>
+
+  <!-- woven chevron bands, clipped to the cloth -->
+  <g clip-path="url(#midage-female-top-poncho__clip)">
+    <rect x="96" y="248" width="208" height="36" fill="url(#midage-female-top-poncho__chevron)"/>
+    <rect x="96" y="330" width="208" height="36" fill="url(#midage-female-top-poncho__chevron)"/>
+    <rect x="96" y="240" width="208" height="6" fill="var(--c3, #EFDCC2)" opacity="0.8"/>
+    <rect x="96" y="288" width="208" height="6" fill="var(--c3, #EFDCC2)" opacity="0.8"/>
+    <rect x="96" y="322" width="208" height="6" fill="var(--c3, #EFDCC2)" opacity="0.8"/>
+    <rect x="96" y="370" width="208" height="6" fill="var(--c3, #EFDCC2)" opacity="0.8"/>
+  </g>
+  <!-- neckline bind -->
+  <path d="M170 150 q30 34 60 0 q-4 22 -30 22 q-26 0-30-22 z" fill="var(--c2, #9D5442)"/>
+  <path d="M180 154 q20 22 40 0 q-4 12 -20 12 q-16 0-20-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- drape folds falling from the shoulders -->
+  <path d="M158 210 l-18 194 M242 210 l18 194" stroke="var(--c2, #9D5442)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M186 216 l-8 188 M214 216 l8 188" stroke="var(--c2, #9D5442)" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- fringed hem -->
+  <path d="M112 410 v18 M126 412 v18 M140 413 v18 M154 414 v18 M168 414 v18 M182 415 v18 M196 415 v18 M210 415 v18 M224 414 v18 M238 414 v18 M252 413 v18 M266 412 v18 M280 410 v18"
+        stroke="var(--c3, #EFDCC2)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M160 186 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

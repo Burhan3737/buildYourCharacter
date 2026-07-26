@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Twist Out" data-family="twist-out" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs the rest of the slot: VOLUME (the hem and both sides are drawn as
+       a run of unequal overlapping lobes cut straight into the silhouette path — the
+       spirals ARE the outline, nothing is smooth) and PARTING (none: the crown is one
+       continuous lifted mass, no part line anywhere).
+       Surface tools: pattern (16px two-strand coil motif through hair2 laid over the
+       back mass) + structural detail (spiral shadows on the underside of every lobe). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-twist-out__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+      <pattern id="midage-female-hair-twist-out__coil" patternUnits="userSpaceOnUse"
+               x="0" y="0" width="16" height="16">
+        <path d="M3 -2 C10 3 10 11 3 18" stroke="var(--hair2, #372417)" stroke-opacity="0.34"
+              stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M13 -2 C6 3 6 11 13 18" stroke="var(--hair2, #372417)" stroke-opacity="0.22"
+              stroke-width="3" fill="none" stroke-linecap="round"/>
+      </pattern>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M200 34 C170 34 148 46 138 68 C128 88 126 104 130 118
+               C120 128 118 144 126 156 C118 168 120 184 132 192
+               C130 206 140 216 154 212 C160 222 176 224 186 214
+               C194 222 208 222 216 214 C228 224 244 218 248 206
+               C262 208 272 196 268 184 C280 174 280 158 270 150
+               C278 138 276 122 266 116 C272 100 268 82 256 68
+               C246 46 226 34 200 34 Z"
+            fill="url(#midage-female-hair-twist-out__back-g)"/>
+      <path d="M200 34 C170 34 148 46 138 68 C128 88 126 104 130 118
+               C120 128 118 144 126 156 C118 168 120 184 132 192
+               C130 206 140 216 154 212 C160 222 176 224 186 214
+               C194 222 208 222 216 214 C228 224 244 218 248 206
+               C262 208 272 196 268 184 C280 174 280 158 270 150
+               C278 138 276 122 266 116 C272 100 268 82 256 68
+               C246 46 226 34 200 34 Z"
+            fill="url(#midage-female-hair-twist-out__coil)"/>
+    </g>
+    <!-- undersides of the hem lobes -->
+    <path d="M132 186 C138 200 150 208 162 206 C150 214 134 206 128 192 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M168 200 C176 212 192 216 202 210 C190 220 172 216 164 204 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M206 208 C216 216 232 214 240 204 C238 216 218 222 204 214 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M246 190 C254 200 266 200 272 190 C272 204 252 208 244 198 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M124 140 C130 150 130 160 126 168 C120 158 120 146 122 138 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M276 140 C270 150 270 160 274 168 C280 158 280 146 278 138 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M150 58 C172 44 228 44 250 58" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-twist-out__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A3222)"/>
+        <stop offset="1" stop-color="var(--hair2, #372417)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown mass, top edge lobed into the path -->
+      <path d="M200 30 C182 30 168 34 158 42 C146 44 138 54 138 66
+               C130 74 128 88 134 98 C130 108 132 118 138 124
+               C142 110 150 100 162 96 C170 88 182 86 200 86
+               C218 86 230 88 238 96 C250 100 258 110 262 124
+               C268 118 270 108 266 98 C272 88 270 74 262 66
+               C262 54 254 44 242 42 C232 34 218 30 200 30 Z"
+            fill="url(#midage-female-hair-twist-out__front-g)"/>
+      <!-- lobed side masses down to the shoulder -->
+      <path d="M140 96 C128 110 122 130 124 148 C118 158 120 172 130 178
+               C136 186 150 186 156 178 C150 162 148 140 152 118
+               C154 106 152 98 148 92 Z"
+            fill="url(#midage-female-hair-twist-out__front-g)"/>
+      <path d="M260 96 C272 110 278 130 276 148 C282 158 280 172 270 178
+               C264 186 250 186 244 178 C250 162 252 140 248 118
+               C246 106 248 98 252 92 Z"
+            fill="url(#midage-female-hair-twist-out__front-g)"/>
+    </g>
+    <!-- two-strand spiral definition -->
+    <path d="M166 46 C176 56 168 68 176 80" stroke="var(--hair2, #372417)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M200 40 C210 50 202 62 210 76" stroke="var(--hair2, #372417)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M234 46 C244 56 236 68 244 82" stroke="var(--hair2, #372417)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M144 112 C154 122 146 134 154 148" stroke="var(--hair2, #372417)" stroke-opacity="0.5"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M256 112 C246 122 254 134 246 148" stroke="var(--hair2, #372417)" stroke-opacity="0.5"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- the hairline sits under the lifted crown -->
+    <path d="M154 100 C168 90 184 86 200 86 C182 90 166 96 156 108 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M246 100 C232 90 216 86 200 86 C218 90 234 96 244 108 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M132 150 C140 160 150 162 158 158 C150 168 134 164 130 154 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M268 150 C260 160 250 162 242 158 C250 168 266 164 270 154 Z"
+          fill="var(--hair2, #372417)"/>
+    <path d="M162 44 C182 32 218 32 238 44" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
