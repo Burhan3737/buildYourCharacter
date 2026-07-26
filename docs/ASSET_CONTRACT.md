@@ -128,6 +128,84 @@ each other's characters — this is the most common and most confusing failure i
 - Palette: `#7E90DC` periwinkle, `#F4A79B` coral, `#6BBFAD` mint, `#F7C873` butter,
   `#3B2A22` ink. Garment colours are tunable, so choose fallbacks from this family.
 
+## Hard-won clarifications
+
+Every one of these was discovered the expensive way while authoring the `adult/female`
+reference bundle. Read them before you draw anything.
+
+### 1. Gradients inside hair part-groups, never outside
+
+`<defs>` placed at the root of a hair file is **silently discarded** — the parser extracts
+only the contents of `<g data-part="back">` and `<g data-part="front">`, and renders them as
+two independent layers. A gradient defined outside them survives lint and then produces
+unpainted hair in the app.
+
+Define gradients **inside each part group**, with distinct ids per group:
+
+```xml
+<g data-part="back">
+  <defs><linearGradient id="adult-female-hair-bob__back-g">…</linearGradient></defs>
+  <path fill="url(#adult-female-hair-bob__back-g)"/>
+</g>
+<g data-part="front">
+  <defs><linearGradient id="adult-female-hair-bob__front-g">…</linearGradient></defs>
+  <path fill="url(#adult-female-hair-bob__front-g)"/>
+</g>
+```
+
+This is the single most dangerous trap in the contract.
+
+### 2. The drawn body is the truth, not the JSON
+
+`specs/bodies/*.json` gives you anchors, not an outline. The body you actually draw will
+differ by a few pixels. **Author the base body first, then hand its real drawn coordinates to
+whoever authors garments for that bundle.** A garment authored strictly from the JSON leaves a
+visible sliver of skin at the waist or shoulder.
+
+Garments should overlap the body they cover by 2–4px on every edge. Never leave a gap.
+
+### 3. Fill the hips
+
+The torso and the legs are separate forms with a gap between them. Your base body must draw a
+hips block bridging that gap, or the character has a hole through the middle. Check your body
+on the contact sheet with no clothing equipped.
+
+### 4. One-variable assets cannot ramp light-to-dark
+
+Eyes (`eye1`), brows (`hair2`), mouth (`lip1`) and many costume details declare a single
+colour variable, so a two-stop gradient through that one variable is impossible. Two sanctioned
+solutions — pick either:
+
+- a gradient whose stops share the variable but differ in `stop-opacity`, or
+- a flat `var()` fill with a separate non-tunable ink or white overlay at low opacity.
+
+The "no flat single-fill shapes" rule does not apply to single-variable assets.
+
+### 5. Strokes are allowed for detail, banned for silhouettes
+
+"No outlines" means no keyline tracing the outer shape of a form. Strokes are fine and
+expected for highlight arcs, drawstrings, stitching, glasses frames and similar linework.
+
+### 6. Costumes must not cover the face
+
+The costume layer (z 80) draws **above** the face (60) and hair-front (70). A mask or helmet
+will erase the character's features. Costume art must stay **below the bundle's shoulder line
+minus 8px** — no head coverage of any kind. Capes, hoods worn down, and collars are fine.
+
+### 7. Put the primary colour first in `data-colors`
+
+The studio's swatch row currently drives `data-colors[0]` only. List the dominant, most
+recolour-worthy variable first; secondary variables keep their fallback values in the UI.
+
+### 8. Layer order has art consequences
+
+- `bottom` draws **under** `top` — tuck shirt art accordingly.
+- `shoes` draw **over** trouser hems — do not draw a foot into a bottom asset.
+- Long `hair-front` covers shoulder and chest garment art — do not rely on detail there.
+- A contact-shadow ellipse drawn under a form is a plain shape, not `class="sp-shadow"`.
+  The class opts into the app's shared drop-shadow filter; a drawn contact shadow is separate
+  and both may be used together.
+
 ## Before you commit
 
 ```bash
