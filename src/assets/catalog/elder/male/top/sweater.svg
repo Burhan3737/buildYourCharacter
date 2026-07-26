@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cardigan" data-family="sweater" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="elder-male-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9C39A)"/>
+      <stop offset="1" stop-color="var(--c2, #B89A66)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9C39A)"/>
+      <stop offset="1" stop-color="var(--c2, #B89A66)"/>
+    </linearGradient>
+    <clipPath id="elder-male-top-sweater__clip">
+      <path d="M132 214 q0-34 36-34 h64 q36 0 36 34 v100 q0 36 -36 36 h-64 q-36 0 -36-36 z"/>
+      <rect x="112" y="190" width="38" height="160" rx="19"/>
+      <rect x="250" y="190" width="38" height="160" rx="19"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- bulky long sleeves, a soft roomy cardigan fit -->
+    <rect x="112" y="190" width="38" height="160" rx="19" fill="url(#elder-male-top-sweater__sleeve)"/>
+    <rect x="250" y="190" width="38" height="160" rx="19" fill="url(#elder-male-top-sweater__sleeve)"/>
+    <path d="M132 214 q0-34 36-34 h64 q36 0 36 34 v100 q0 36 -36 36 h-64 q-36 0 -36-36 z"
+          fill="url(#elder-male-top-sweater__body)"/>
+  </g>
+  <!-- ribbed hem band and cuffs, clipped to the knit silhouette -->
+  <g clip-path="url(#elder-male-top-sweater__clip)">
+    <rect x="128" y="326" width="144" height="28" fill="var(--c2, #B89A66)"/>
+    <rect x="108" y="324" width="46" height="30" fill="var(--c2, #B89A66)"/>
+    <rect x="246" y="324" width="46" height="30" fill="var(--c2, #B89A66)"/>
+    <path d="M144 332 v16 M156 332 v16 M168 332 v16 M180 332 v16 M192 332 v16 M204 332 v16 M216 332 v16 M228 332 v16 M240 332 v16 M252 332 v16"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M121 330 v16 M131 330 v16 M141 330 v16 M259 330 v16 M269 330 v16 M279 330 v16"
+          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- open cardigan front: lapel V and a button placket -->
+  <path d="M166 178 L196 210 L226 178 q-30 -14 -60 0 z" fill="var(--c2, #B89A66)"/>
+  <path d="M182 182 L196 206 L210 182 q-14 -8 -28 0 z" fill="var(--skin2, #C99A72)"/>
+  <path d="M196 210 v130" stroke="var(--c2, #B89A66)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="196" cy="240" r="4" fill="#3B2A22"/>
+  <circle cx="196" cy="270" r="4" fill="#3B2A22"/>
+  <circle cx="196" cy="300" r="4" fill="#3B2A22"/>
+  <!-- knit texture on the chest -->
+  <path d="M156 248 q44 12 88 0 M156 276 q44 12 88 0 M156 304 q44 12 88 0"
+        stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M148 210 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

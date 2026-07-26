@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Elder Male Body" data-family="base" data-slot="eyes"
+     data-layer="body" data-colors="" data-hides="">
+  <defs>
+    <linearGradient id="bodies-elder-male-base__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #E7B892)"/>
+      <stop offset="1" stop-color="var(--skin2, #C99A72)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- legs -->
+  <g class="sp-shadow">
+    <rect x="168" y="376" width="28" height="176" rx="14" fill="url(#bodies-elder-male-base__skin)"/>
+    <rect x="204" y="376" width="28" height="176" rx="14" fill="url(#bodies-elder-male-base__skin)"/>
+  </g>
+  <!-- feet -->
+  <g class="sp-shadow">
+    <rect x="158" y="544" width="44" height="26" rx="13" fill="var(--skin2, #C99A72)"/>
+    <rect x="198" y="544" width="44" height="26" rx="13" fill="var(--skin2, #C99A72)"/>
+  </g>
+  <!-- hips, bridging torso to legs -->
+  <g class="sp-shadow">
+    <rect x="148" y="328" width="104" height="50" rx="22" fill="url(#bodies-elder-male-base__skin)"/>
+  </g>
+  <!-- arms -->
+  <g class="sp-shadow">
+    <rect x="114" y="198" width="26" height="176" rx="13" fill="url(#bodies-elder-male-base__skin)"/>
+    <rect x="260" y="198" width="26" height="176" rx="13" fill="url(#bodies-elder-male-base__skin)"/>
+  </g>
+  <!-- hands -->
+  <g class="sp-shadow">
+    <circle cx="127" cy="366" r="16" fill="var(--skin2, #C99A72)"/>
+    <circle cx="273" cy="366" r="16" fill="var(--skin2, #C99A72)"/>
+  </g>
+  <!-- neck -->
+  <rect x="186" y="166" width="28" height="34" rx="12" fill="var(--skin2, #C99A72)"/>
+  <!-- torso: fitted to spec box x136 y184 w128 h152, top corners rx32/ry28, bottom rx32/ry34 -->
+  <g class="sp-shadow">
+    <path d="M136 212 q0-28 32-28 h64 q32 0 32 28 v90 q0 34 -32 34 h-64 q-32 0 -32-34 z"
+          fill="url(#bodies-elder-male-base__skin)"/>
+  </g>
+  <!-- torso highlight -->
+  <path d="M158 210 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- ears: shifted -4px with the head for the elder forward-stoop lean -->
+  <ellipse cx="145" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
+  <ellipse cx="247" cy="129" rx="11" ry="13" fill="var(--skin2, #C99A72)"/>
+  <!-- head: spec anchor is cx200 cy125 rx57 ry59 - drawn 4px left (cx196) for the elder
+       stoop; the spec JSON keeps cx200 untouched. Wardrobe/face assets for this bundle must
+       be drawn against these ACTUAL coordinates (cx196), not the raw spec. -->
+  <g class="sp-shadow">
+    <ellipse cx="196" cy="125" rx="57" ry="59" fill="url(#bodies-elder-male-base__skin)"/>
+  </g>
+  <!-- upper-surface highlight -->
+  <path d="M166 91 q28 -18 52 -10" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- cheeks -->
+  <ellipse cx="162" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
+  <ellipse cx="230" cy="147" rx="11" ry="7" fill="var(--skin3, #C4715F)" opacity="0.45"/>
+  <!-- soft age lines: forehead crease and jaw/nasolabial fold, low-opacity skin2 -->
+  <path d="M172 100 q24 -8 48 0" stroke="var(--skin2, #C99A72)" stroke-opacity="0.4"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M164 152 q-6 14 2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M228 152 q6 14 -2 24" stroke="var(--skin2, #C99A72)" stroke-opacity="0.35"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

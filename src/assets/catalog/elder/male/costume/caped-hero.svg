@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="elder-male-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cape, drawn first so it falls behind the whole figure -->
+  <g class="sp-shadow">
+    <path d="M168 186 h64 q34 6 40 46 l16 288
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             q-11 14 -22 0 q-11 -14 -22 0 q-11 14 -22 0 q-11 -14 -22 0
+             l16 -288 q6 -40 40 -46 z"
+          fill="url(#elder-male-costume-caped-hero__cape)"/>
+  </g>
+
+  <!-- bodysuit mass -->
+  <g class="sp-shadow">
+    <rect x="162" y="376" width="36" height="176" rx="18" fill="url(#elder-male-costume-caped-hero__leg)"/>
+    <rect x="202" y="376" width="36" height="176" rx="18" fill="url(#elder-male-costume-caped-hero__leg)"/>
+    <rect x="148" y="328" width="104" height="50" rx="24" fill="url(#elder-male-costume-caped-hero__body)"/>
+    <path d="M136 216 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+          fill="url(#elder-male-costume-caped-hero__body)"/>
+    <rect x="114" y="196" width="34" height="152" rx="17" fill="url(#elder-male-costume-caped-hero__sleeve)"/>
+    <rect x="252" y="196" width="34" height="152" rx="17" fill="url(#elder-male-costume-caped-hero__sleeve)"/>
+  </g>
+
+  <!-- trunks over the hips -->
+  <rect x="148" y="328" width="104" height="50" rx="24" fill="url(#elder-male-costume-caped-hero__trim)"/>
+  <!-- belt -->
+  <rect x="144" y="322" width="112" height="22" rx="10" fill="var(--c3, #F7C873)"/>
+  <rect x="188" y="320" width="24" height="26" rx="9" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest mark: a soft four point star -->
+  <path d="M200 222 q6 22 28 28 q-22 6 -28 28 q-6 -22 -28 -28 q22 -6 28 -28 z"
+        fill="var(--c3, #F7C873)"/>
+
+  <!-- gloves and boots -->
+  <g class="sp-shadow">
+    <rect x="114" y="336" width="34" height="20" rx="10" fill="var(--c2, #C4534B)"/>
+    <rect x="252" y="336" width="34" height="20" rx="10" fill="var(--c2, #C4534B)"/>
+    <circle cx="131" cy="368" r="18" fill="var(--c2, #C4534B)"/>
+    <circle cx="269" cy="368" r="18" fill="var(--c2, #C4534B)"/>
+    <rect x="160" y="454" width="38" height="90" rx="18" fill="url(#elder-male-costume-caped-hero__trim)"/>
+    <rect x="202" y="454" width="38" height="90" rx="18" fill="url(#elder-male-costume-caped-hero__trim)"/>
+    <rect x="154" y="534" width="48" height="36" rx="16" fill="url(#elder-male-costume-caped-hero__trim)"/>
+    <rect x="198" y="534" width="48" height="36" rx="16" fill="url(#elder-male-costume-caped-hero__trim)"/>
+  </g>
+
+  <path d="M150 208 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
