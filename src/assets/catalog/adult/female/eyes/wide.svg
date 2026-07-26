@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide" data-family="wide" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-eyes-wide__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFE4F0"/>
+    </linearGradient>
+    <linearGradient id="adult-female-eyes-wide__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tall startled sclera -->
+  <g class="sp-shadow">
+    <ellipse cx="178" cy="101" rx="12.5" ry="15" fill="url(#adult-female-eyes-wide__sclera)"/>
+    <ellipse cx="222" cy="101" rx="12.5" ry="15" fill="url(#adult-female-eyes-wide__sclera)"/>
+  </g>
+
+  <!-- iris floats with white showing above and below -->
+  <circle cx="178" cy="101" r="7.5" fill="#3B2A22"/>
+  <circle cx="222" cy="101" r="7.5" fill="#3B2A22"/>
+  <circle cx="178" cy="101" r="7.5" fill="url(#adult-female-eyes-wide__iris)"/>
+  <circle cx="222" cy="101" r="7.5" fill="url(#adult-female-eyes-wide__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="178" cy="101" r="3.6" fill="#3B2A22"/>
+  <circle cx="222" cy="101" r="3.6" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="175" cy="98" r="2.9" fill="#FFFFFF"/>
+  <circle cx="219" cy="98" r="2.9" fill="#FFFFFF"/>
+  <circle cx="181" cy="105" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="225" cy="105" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- upper lid, lifted and hugging the rim -->
+  <path d="M168 91 Q178 85.5 188 91" stroke="#3B2A22" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 91 Q222 85.5 212 91" stroke="#3B2A22" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

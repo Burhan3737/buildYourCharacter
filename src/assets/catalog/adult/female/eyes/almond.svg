@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Almond" data-family="almond" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-eyes-almond__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-female-eyes-almond__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tilted almond sclera, outer corner swept up -->
+  <g class="sp-shadow">
+    <path d="M162 100 q8 -10 16 -10 q8 0 16 10 q-8 10 -16 10 q-8 0 -16 -10 z"
+          transform="rotate(8 178 100)" fill="url(#adult-female-eyes-almond__sclera)"/>
+    <path d="M206 100 q8 -10 16 -10 q8 0 16 10 q-8 10 -16 10 q-8 0 -16 -10 z"
+          transform="rotate(-8 222 100)" fill="url(#adult-female-eyes-almond__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="178" cy="100" r="8" fill="#3B2A22"/>
+  <circle cx="222" cy="100" r="8" fill="#3B2A22"/>
+  <circle cx="178" cy="100" r="8" fill="url(#adult-female-eyes-almond__iris)"/>
+  <circle cx="222" cy="100" r="8" fill="url(#adult-female-eyes-almond__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="178" cy="100" r="3.8" fill="#3B2A22"/>
+  <circle cx="222" cy="100" r="3.8" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="175.2" cy="96.6" r="2.6" fill="#FFFFFF"/>
+  <circle cx="219.2" cy="96.6" r="2.6" fill="#FFFFFF"/>
+
+  <!-- upper lash line, arcing over the eye and flicking up at the outer corner -->
+  <path d="M195 102 Q179 83 164 95 q-3 -1 -5 -3" stroke="#3B2A22" stroke-width="3.8"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M205 102 Q221 83 236 95 q3 -1 5 -3" stroke="#3B2A22" stroke-width="3.8"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

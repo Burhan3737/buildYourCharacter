@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tank Top" data-family="tank" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-top-tank__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #58A695)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-tank__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #58A695)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- shoulder straps -->
+    <rect x="168" y="148" width="16" height="34" rx="8" fill="url(#adult-female-top-tank__strap)"/>
+    <rect x="216" y="148" width="16" height="34" rx="8" fill="url(#adult-female-top-tank__strap)"/>
+    <!-- body with scooped neckline, hem at y316 -->
+    <path d="M142 196 q2-22 22-30 q36 24 72 0 q20 8 22 30 v90 q0 30 -30 30 h-56 q-30 0 -30-30 z"
+          fill="url(#adult-female-top-tank__body)"/>
+  </g>
+  <!-- neckline trim -->
+  <path d="M170 174 q30 17 60 0" stroke="var(--c2, #58A695)" stroke-opacity="0.9" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem trim -->
+  <path d="M152 305 q48 12 96 0" stroke="var(--c2, #58A695)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 196 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

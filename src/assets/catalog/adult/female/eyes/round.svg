@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Round" data-family="round" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="adult-female-eyes-round__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="adult-female-eyes-round__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sclera, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <circle cx="178" cy="101" r="13.5" fill="url(#adult-female-eyes-round__sclera)"/>
+    <circle cx="222" cy="101" r="13.5" fill="url(#adult-female-eyes-round__sclera)"/>
+  </g>
+
+  <!-- iris base: ink reads through the semi transparent lower stop and darkens the bottom -->
+  <circle cx="178" cy="102" r="9" fill="#3B2A22"/>
+  <circle cx="222" cy="102" r="9" fill="#3B2A22"/>
+  <circle cx="178" cy="102" r="9" fill="url(#adult-female-eyes-round__iris)"/>
+  <circle cx="222" cy="102" r="9" fill="url(#adult-female-eyes-round__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="178" cy="102" r="4.2" fill="#3B2A22"/>
+  <circle cx="222" cy="102" r="4.2" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="174.6" cy="97.8" r="3.2" fill="#FFFFFF"/>
+  <circle cx="218.6" cy="97.8" r="3.2" fill="#FFFFFF"/>
+  <circle cx="181.2" cy="106" r="1.6" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="225.2" cy="106" r="1.6" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- upper lash line -->
+  <path d="M167 92.5 Q178 85.5 189 92.5" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 92.5 Q222 85.5 211 92.5" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

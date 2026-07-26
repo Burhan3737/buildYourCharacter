@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dino Onesie" data-family="dino" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="adult-female-costume-dino__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #57A897)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dino__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #57A897)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dino__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #57A897)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dino__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #BFE6DB)"/>
+      <stop offset="1" stop-color="var(--c2, #A8DCCF)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dino__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #BFE6DB)"/>
+      <stop offset="1" stop-color="var(--c2, #90CCBD)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-dino__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #E8B25C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- chunky tail curving out from the right hip, drawn behind the figure -->
+  <path d="M240 298 q56 10 56 80 q0 50 -18 88 q-6 12 -18 6 q-12 -6 -6 -18
+           q14 -30 14 -74 q0 -44 -30 -50 z"
+        fill="url(#adult-female-costume-dino__tail)"/>
+
+  <!-- plush onesie mass -->
+  <g class="sp-shadow">
+    <rect x="160" y="340" width="38" height="212" rx="19" fill="url(#adult-female-costume-dino__leg)"/>
+    <rect x="202" y="340" width="38" height="212" rx="19" fill="url(#adult-female-costume-dino__leg)"/>
+    <rect x="144" y="290" width="112" height="58" rx="28" fill="url(#adult-female-costume-dino__body)"/>
+    <path d="M132 182 q0-34 36-34 h64 q36 0 36 34 v100 q0 38 -36 38 h-64 q-36 0 -36-38 z"
+          fill="url(#adult-female-costume-dino__body)"/>
+    <rect x="114" y="160" width="34" height="160" rx="17" fill="url(#adult-female-costume-dino__sleeve)"/>
+    <rect x="252" y="160" width="34" height="160" rx="17" fill="url(#adult-female-costume-dino__sleeve)"/>
+  </g>
+
+  <!-- hood resting down behind the neck -->
+  <path d="M168 152 q32 22 64 0 q-6 30 -32 30 q-26 0 -32-30 z" fill="var(--c2, #A8DCCF)"/>
+
+  <!-- soft belly panel -->
+  <rect x="172" y="190" width="56" height="128" rx="27" fill="url(#adult-female-costume-dino__belly)"/>
+  <path d="M180 230 h40 M180 260 h40 M182 290 h36" stroke="#FFFFFF" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- rounded back spikes running down the outer silhouette -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M274 168 q24 6 22 16 q-2 10 -22 14 q6-16 0-30 z"/>
+    <path d="M275 200 q23 6 21 16 q-2 10 -21 14 q6-16 0-30 z"/>
+    <path d="M275 232 q22 6 20 16 q-2 10 -20 14 q6-16 0-30 z"/>
+    <path d="M273 264 q21 6 19 15 q-2 9 -19 13 q6-15 0-28 z"/>
+    <path d="M269 296 q20 5 18 13 q-2 8 -18 11 q5-13 0-24 z"/>
+  </g>
+
+  <!-- soft rounded claw feet -->
+  <g class="sp-shadow">
+    <rect x="152" y="528" width="54" height="42" rx="20" fill="url(#adult-female-costume-dino__foot)"/>
+    <rect x="194" y="528" width="54" height="42" rx="20" fill="url(#adult-female-costume-dino__foot)"/>
+  </g>
+  <g fill="var(--c1, #6BBFAD)" opacity="0.85">
+    <circle cx="163" cy="556" r="7"/>
+    <circle cx="179" cy="559" r="7"/>
+    <circle cx="195" cy="556" r="7"/>
+    <circle cx="209" cy="556" r="7"/>
+    <circle cx="225" cy="559" r="7"/>
+    <circle cx="241" cy="556" r="7"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M150 172 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
