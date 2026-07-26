@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Eye Patch" data-family="eye-patch" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2" data-hides="">
+  <!-- axes: lens shape (single soft pad, no lens at all) · temple/strap (one diagonal strap) -->
+  <defs>
+    <linearGradient id="accessories-teen-glasses-eye-patch__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <!-- diagonal strap, drawn under the pad -->
+  <path d="M144 122 Q186 134 252 156" stroke="var(--c2, #3B2A22)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <g class="sp-shadow">
+    <ellipse cx="177" cy="142" rx="24" ry="20"
+             fill="url(#accessories-teen-glasses-eye-patch__pad)"/>
+  </g>
+
+  <!-- quilted seam ring just inside the pad edge -->
+  <ellipse cx="177" cy="142" rx="17" ry="13.6" fill="none"
+           stroke="var(--c2, #3B2A22)" stroke-opacity="0.4" stroke-width="2"
+           stroke-dasharray="4 4"/>
+  <path d="M166 133 Q177 128.6 188 133" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

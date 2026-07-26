@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Zip Track Top" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = ZIP (centre zip, stand collar) · hem = PAST HIP (y374).
+       Sleeve long, volume straight. Differs from bomber on hem + volume, from
+       cardigan/blazer/overshirt on closure + hem, from hoodie/sweater/stripes on
+       closure + hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-zip-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F73C4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F4E92)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-zip-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F73C4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F4E92)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3F4E92)"/>
+      <stop offset="1" stop-color="var(--c1, #5F73C4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-zip-jacket__tape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.72"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-zip-jacket__clip">
+      <path d="M168 188 h64 q30 0 30 30 v130 q0 26 -26 26 h-72 q-26 0 -26-26 v-130 q0-30 30-30 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long tapered sleeves, shoulder y196 to wrist y358 -->
+    <path d="M112 220 q0-22 22-24 l24 0 v146 q0 16 -16 16 h-14 q-16 0 -16-16 z"
+          fill="url(#teen-male-top-zip-jacket__sleeve)"/>
+    <path d="M288 220 q0-22 -22-24 l-24 0 v146 q0 16 16 16 h14 q16 0 16-16 z"
+          fill="url(#teen-male-top-zip-jacket__sleeve)"/>
+    <!-- straight track-top body, hem carried past the hip to y374 -->
+    <path d="M168 188 h64 q30 0 30 30 v130 q0 26 -26 26 h-72 q-26 0 -26-26 v-130 q0-30 30-30 z"
+          fill="url(#teen-male-top-zip-jacket__body)"/>
+  </g>
+
+  <!-- panel: contrast raglan-look shoulder blocks and side tape, clipped to the body -->
+  <g clip-path="url(#teen-male-top-zip-jacket__clip)">
+    <path d="M138 188 h34 l-38 60 z" fill="var(--c2, #3F4E92)"/>
+    <path d="M262 188 h-34 l38 60 z" fill="var(--c2, #3F4E92)"/>
+    <rect x="146" y="200" width="9" height="176" fill="url(#teen-male-top-zip-jacket__tape)"/>
+    <rect x="245" y="200" width="9" height="176" fill="url(#teen-male-top-zip-jacket__tape)"/>
+  </g>
+
+  <!-- sleeve tapes -->
+  <rect x="126" y="206" width="8" height="140" rx="4" fill="var(--c3, #F7C873)" opacity="0.85"/>
+  <rect x="266" y="206" width="8" height="140" rx="4" fill="var(--c3, #F7C873)" opacity="0.85"/>
+
+  <!-- stand collar sitting round the neck, not over it -->
+  <path d="M172 200 q28-16 56 0 v-18 q-28-12 -56 0 z" fill="url(#teen-male-top-zip-jacket__rib)"/>
+  <path d="M176 186 q24-8 48 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed hem band -->
+  <path d="M140 352 h120 v22 q0 12 -20 12 h-80 q-20 0 -20-12 z" fill="url(#teen-male-top-zip-jacket__rib)"/>
+  <path d="M152 356 v26 M164 356 v26 M176 356 v26 M188 356 v26 M200 356 v26 M212 356 v26 M224 356 v26 M236 356 v26 M248 356 v26"
+        stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M112 338 h46 v20 q0 12 -14 12 h-18 q-14 0 -14-12 z" fill="url(#teen-male-top-zip-jacket__rib)"/>
+  <path d="M288 338 h-46 v20 q0 12 14 12 h18 q14 0 14-12 z" fill="url(#teen-male-top-zip-jacket__rib)"/>
+
+  <!-- centre zip line with a pull -->
+  <rect x="196" y="196" width="8" height="164" rx="4" fill="var(--c3, #F7C873)"/>
+  <path d="M200 200 v156" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="195" y="252" width="10" height="18" rx="5" fill="var(--c3, #F7C873)"/>
+  <path d="M200 270 v12" stroke="var(--c3, #F7C873)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M150 206 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

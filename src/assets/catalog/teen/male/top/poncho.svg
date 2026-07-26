@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve = DRAPED (one trapezoid of cloth, no sleeve division
+       at all — the arms are simply under it) · volume = FLARED (x146 at the
+       shoulder to x96 at the hem). Closure closed, hem thigh. Differs from
+       raincoat on sleeve + closure, from cardigan on sleeve + closure + volume,
+       and from every sleeved top in the slot on the sleeve axis alone. -->
+  <defs>
+    <linearGradient id="teen-male-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5A3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-poncho__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5A3C)"/>
+    </linearGradient>
+    <pattern id="teen-male-top-poncho__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 14 L10 4 L20 14" stroke="var(--c3, #F6E3C8)" stroke-width="3.5"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="teen-male-top-poncho__clip">
+      <path d="M170 190 q-20 0 -24 16 l-50 208 q-4 18 16 18 h176 q20 0 16-18 l-50-208 q-4-16 -24-16 z"/>
+    </clipPath>
+    <clipPath id="teen-male-top-poncho__capeclip">
+      <path d="M176 188 q-18 0 -22 14 l-26 76 q-4 14 14 14 h116 q18 0 14-14 l-26-76 q-4-14 -22-14 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one trapezoid of cloth falling from the shoulders to mid-thigh -->
+    <path d="M170 190 q-20 0 -24 16 l-50 208 q-4 18 16 18 h176 q20 0 16-18 l-50-208 q-4-16 -24-16 z"
+          fill="url(#teen-male-top-poncho__cloth)"/>
+    <!-- shorter shoulder cape layered over it -->
+    <path d="M176 188 q-18 0 -22 14 l-26 76 q-4 14 14 14 h116 q18 0 14-14 l-26-76 q-4-14 -22-14 z"
+          fill="url(#teen-male-top-poncho__cape)"/>
+  </g>
+
+  <!-- woven chevron banding on the lower cloth -->
+  <g clip-path="url(#teen-male-top-poncho__clip)">
+    <rect x="90" y="300" width="220" height="60" fill="url(#teen-male-top-poncho__chevron)" opacity="0.85"/>
+    <rect x="90" y="292" width="220" height="8" fill="var(--c3, #F6E3C8)"/>
+    <rect x="90" y="360" width="220" height="8" fill="var(--c3, #F6E3C8)"/>
+    <rect x="90" y="376" width="220" height="14" fill="var(--c2, #9A5A3C)"/>
+  </g>
+
+  <!-- narrower chevron band on the cape -->
+  <g clip-path="url(#teen-male-top-poncho__capeclip)">
+    <rect x="120" y="244" width="160" height="26" fill="url(#teen-male-top-poncho__chevron)" opacity="0.8"/>
+    <rect x="120" y="238" width="160" height="6" fill="var(--c3, #F6E3C8)"/>
+    <rect x="120" y="272" width="160" height="6" fill="var(--c3, #F6E3C8)"/>
+  </g>
+
+  <!-- neck opening, bound -->
+  <path d="M174 188 q26 30 52 0 q-8 26 -26 26 q-18 0 -26-26 z" fill="var(--c2, #9A5A3C)"/>
+  <path d="M182 190 q18 18 36 0 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M172 188 q28 34 56 0" stroke="var(--c3, #F6E3C8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- fringe along the hem -->
+  <path d="M112 432 v14 M126 432 v16 M140 433 v14 M154 432 v17 M168 433 v14 M182 432 v16 M196 433 v15 M210 432 v16 M224 433 v14 M238 432 v17 M252 433 v14 M266 432 v16 M280 433 v14"
+        stroke="var(--c3, #F6E3C8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight over the draped fold -->
+  <path d="M150 216 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

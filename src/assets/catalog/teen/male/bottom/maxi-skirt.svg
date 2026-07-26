@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Skirt" data-family="maxi-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = none (skirt), hem at the ankle ·
+       leg width = narrow straight column · hem = raw, cut open by one long side slit.
+       vs skirt: hem (ankle vs above-knee) + volume (narrow column vs A-line flare).
+       vs pencil-skirt: hem + volume. vs tiered-skirt: hem + volume.
+       Surface tools: trim (contrast waistband and a bound slit facing) + pattern
+       (18px even vertical stripe through the accent c3) + structural detail (hem band). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-maxi-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8474)"/>
+    </linearGradient>
+    <pattern id="teen-male-bottom-maxi-skirt__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="6" height="18" fill="var(--c3, #F7C873)" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 328 H254 L248 546 H186 L182 468 L178 546 H152 Z"
+          fill="url(#teen-male-bottom-maxi-skirt__body)"/>
+  </g>
+
+  <path d="M146 328 H254 L248 546 H186 L182 468 L178 546 H152 Z"
+        fill="url(#teen-male-bottom-maxi-skirt__stripe)"/>
+
+  <!-- waistband -->
+  <rect x="144" y="322" width="112" height="20" rx="8" fill="var(--c2, #3F8474)"/>
+  <path d="M148 328 h104" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound slit facing -->
+  <path d="M184 468 L186 546" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 468 L178 542" stroke="var(--c2, #3F8474)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- hem band -->
+  <path d="M176 534 H240 L240 546 H176 Z" fill="var(--c2, #3F8474)"/>
+  <path d="M254 328 L240 546" stroke="var(--c2, #3F8474)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 348 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 366 q-2 90 -2 168" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

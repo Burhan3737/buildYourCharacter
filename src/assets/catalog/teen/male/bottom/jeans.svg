@@ -1,51 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jeans" data-family="jeans" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = full · leg width = straight · hem = raw/plain.
+       One continuous cut-and-sewn trouser outline with a hard crotch notch.
+       vs leggings: rise + leg width. vs cargo: leg width + hem treatment.
+       vs dungarees: rise + hem treatment. Surface tools: trim (structured waistband,
+       belt loops, contrast fly) + structural detail (curved front pockets, rivets,
+       topstitching). -->
   <defs>
-    <linearGradient id="teen-male-bottom-jeans__hip" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="teen-male-bottom-jeans__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+      <stop offset="1" stop-color="var(--c2, #46557F)"/>
     </linearGradient>
-    <linearGradient id="teen-male-bottom-jeans__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+    <linearGradient id="teen-male-bottom-jeans__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #46557F)"/>
+      <stop offset="1" stop-color="var(--c1, #6E86C8)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="166" y="330" width="32" height="220" rx="15" fill="url(#teen-male-bottom-jeans__leg)"/>
-    <rect x="202" y="330" width="32" height="220" rx="15" fill="url(#teen-male-bottom-jeans__leg)"/>
-    <rect x="148" y="328" width="104" height="58" rx="24" fill="url(#teen-male-bottom-jeans__hip)"/>
+    <path d="M148 330 H252 V368 L236 548 H204 L202 400 Q200 392 198 400 L196 548 H164 L148 368 Z"
+          fill="url(#teen-male-bottom-jeans__body)"/>
   </g>
 
-  <rect x="148" y="328" width="104" height="19" rx="9" fill="var(--c2, #5E72AB)"/>
-  <rect x="164" y="326" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="197" y="326" width="8" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="230" y="326" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
+  <!-- structured waistband + belt loops -->
+  <rect x="146" y="322" width="108" height="22" rx="9" fill="url(#teen-male-bottom-jeans__band)"/>
+  <rect x="161" y="320" width="8" height="26" rx="3" fill="var(--c2, #46557F)"/>
+  <rect x="196" y="320" width="8" height="26" rx="3" fill="var(--c2, #46557F)"/>
+  <rect x="231" y="320" width="8" height="26" rx="3" fill="var(--c2, #46557F)"/>
 
-  <path d="M150 348 H180 Q172 375 150 370 Z" fill="var(--c2, #5E72AB)"/>
-  <path d="M250 348 H220 Q228 375 250 370 Z" fill="var(--c2, #5E72AB)"/>
-
-  <path d="M203 349 q5 18 1 34" stroke="var(--c2, #5E72AB)" stroke-width="4"
+  <!-- curved front pockets + fly -->
+  <path d="M150 346 H182 Q174 378 150 372 Z" fill="var(--c2, #46557F)"/>
+  <path d="M250 346 H218 Q226 378 250 372 Z" fill="var(--c2, #46557F)"/>
+  <path d="M204 346 q7 20 2 40" stroke="var(--c2, #46557F)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 
-  <path d="M180 350 Q172 373 152 369" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <!-- topstitching -->
+  <path d="M182 348 Q174 376 152 371" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M220 350 Q228 373 248 369" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M218 348 Q226 376 248 371" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M200 351 v32" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M199 348 q7 20 2 40" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M150 343 H250" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M150 340 H250" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
-  <path d="M174 546 H197" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M168 542 H194" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M203 546 H226" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M206 542 H232" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
 
-  <path d="M164 360 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- rivets -->
+  <circle cx="183" cy="349" r="3" fill="var(--c3, #EBC98A)"/>
+  <circle cx="217" cy="349" r="3" fill="var(--c3, #EBC98A)"/>
+
+  <path d="M160 358 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M174 400 q0 80 -2 148" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+  <path d="M175 404 q-2 76 -3 136" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M226 400 q0 80 2 148" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+  <path d="M225 404 q2 76 3 136" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

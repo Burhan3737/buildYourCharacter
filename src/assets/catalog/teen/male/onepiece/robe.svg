@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Robe" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (wrap front, one side crossing over the other under a tie belt) · volume (loose, falling open below the knot) -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-robe__towelling" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8DCC8)"/>
+      <stop offset="1" stop-color="var(--c2, #C9B99C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-robe__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8DCC8)"/>
+      <stop offset="1" stop-color="var(--c2, #C9B99C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- under panel: the side that sits beneath the crossover -->
+    <path d="M166 196 h68 q26 0 26 26 v92 l16 190 q-76 18 -152 0 l16-190 v-92 q0-26 26-26 z"
+          fill="url(#teen-male-onepiece-robe__towelling)"/>
+    <!-- over panel: a big diagonal from the right shoulder to the left hip, then straight down -->
+    <path d="M238 198 q22 6 22 26 v90 l16 190 q-38 9 -76 4 l-4-194 z"
+          fill="url(#teen-male-onepiece-robe__over)"/>
+    <!-- wide draped sleeves, cut deep and open at the cuff -->
+    <path d="M112 208 h38 v128 q0 12 -16 14 l-14 2 q-10 1 -10-12 z"
+          fill="url(#teen-male-onepiece-robe__towelling)"/>
+    <path d="M288 208 h-38 v128 q0 12 16 14 l14 2 q10 1 10-12 z"
+          fill="url(#teen-male-onepiece-robe__towelling)"/>
+  </g>
+
+  <!-- shawl collar: a wide band following the crossover line -->
+  <path d="M168 192 q16 4 22 16 l14 96 l14-96 q6-12 22-16 l10 10 q-14 6 -18 18 l-18 116
+           q-8 4 -20 0 l-18-116 q-4-12 -18-18 z"
+        fill="var(--c3, #8C7A5E)"/>
+  <!-- tie belt with a knot and two short ends -->
+  <path d="M138 322 q62 16 124 0 v16 q-62 16 -124 0 z" fill="var(--c3, #8C7A5E)"/>
+  <path d="M186 336 q-6 20 -16 32 M214 336 q6 20 16 32" stroke="var(--c3, #8C7A5E)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <rect x="188" y="318" width="24" height="24" rx="8" fill="var(--c2, #C9B99C)"/>
+
+  <path d="M154 216 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 494 q68 16 136 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

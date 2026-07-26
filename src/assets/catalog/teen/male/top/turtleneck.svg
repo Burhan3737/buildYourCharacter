@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: hem = PAST HIP (y366 body, y386 with the rib band) · volume = FITTED (waist
+       drawn in to x142/258). Sleeve long, closure closed, plus the tall folded
+       neck tube reaching the jaw. Differs from stripes/hoodie/sweater on
+       hem + volume, from oversized-long-sleeve on sleeve + volume, from
+       henley on closure + hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8564F)"/>
+      <stop offset="1" stop-color="var(--c2, #9B3A37)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8564F)"/>
+      <stop offset="1" stop-color="var(--c2, #9B3A37)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9B3A37)"/>
+      <stop offset="1" stop-color="var(--c1, #C8564F)"/>
+    </linearGradient>
+    <pattern id="teen-male-top-turtleneck__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4" height="12" fill="var(--c2, #9B3A37)"/>
+    </pattern>
+    <clipPath id="teen-male-top-turtleneck__clip">
+      <path d="M172 186 h56 q30 0 30 32 q-4 30 -4 56 q0 34 6 68 q4 24 -22 24 h-76 q-26 0 -22-24 q6-34 6-68 q0-26 -4-56 q0-32 30-32 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- tall folded neck tube, topping out just under the jaw at y182 -->
+    <path d="M178 212 v-14 q0-16 22-16 q22 0 22 16 v14 z"
+          fill="url(#teen-male-top-turtleneck__tube)"/>
+    <!-- close-fitting long sleeves -->
+    <path d="M116 216 q4-22 26-24 l18 0 v144 q0 18 -16 18 h-14 q-16 0 -16-18 z"
+          fill="url(#teen-male-top-turtleneck__sleeve)"/>
+    <path d="M284 216 q-4-22 -26-24 l-18 0 v144 q0 18 16 18 h14 q16 0 16-18 z"
+          fill="url(#teen-male-top-turtleneck__sleeve)"/>
+    <!-- fitted long body: nipped at the waist, hem carried past the hip to y366 -->
+    <path d="M172 186 h56 q30 0 30 32 q-4 30 -4 56 q0 34 6 68 q4 24 -22 24 h-76 q-26 0 -22-24 q6-34 6-68 q0-26 -4-56 q0-32 30-32 z"
+          fill="url(#teen-male-top-turtleneck__body)"/>
+  </g>
+
+  <!-- fine rib over the whole body, which is what a turtleneck knit reads as -->
+  <g clip-path="url(#teen-male-top-turtleneck__clip)">
+    <rect x="136" y="184" width="128" height="204" fill="url(#teen-male-top-turtleneck__rib)" opacity="0.3"/>
+    <!-- contrast chest yoke panel -->
+    <path d="M136 214 q64 26 128 0 v26 q-64 26 -128 0 z" fill="var(--c3, #F4A79B)" opacity="0.9"/>
+  </g>
+
+  <!-- fold line on the neck tube -->
+  <path d="M180 198 q20-8 40 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 206 q20-6 40 0" stroke="#3B2A22" stroke-opacity="0.18" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rib cuffs -->
+  <path d="M114 338 h48 v10 q0 16 -16 16 h-16 q-16 0 -16-16 z" fill="var(--c3, #F4A79B)"/>
+  <path d="M286 338 h-48 v10 q0 16 16 16 h16 q16 0 16-16 z" fill="var(--c3, #F4A79B)"/>
+
+  <!-- rib hem band -->
+  <path d="M142 362 h116 v10 q0 14 -18 14 h-80 q-18 0 -18-14 z" fill="var(--c3, #F4A79B)"/>
+  <path d="M154 366 v18 M168 366 v18 M182 366 v18 M196 366 v18 M210 366 v18 M224 366 v18 M238 366 v18"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M156 226 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

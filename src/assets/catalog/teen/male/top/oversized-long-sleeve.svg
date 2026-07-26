@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve = DROPPED/OVERSIZED (sleeve heads hang from y224,
+       well below the y200 shoulder line, and run past the wrist to y392) ·
+       hem = PAST HIP (y378). Closure closed, volume boxy. Differs from
+       hoodie/sweater/stripes on sleeve + hem, from turtleneck on sleeve + volume,
+       from flannel-overshirt on sleeve + closure. -->
+  <defs>
+    <linearGradient id="teen-male-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA5E4)"/>
+      <stop offset="1" stop-color="var(--c2, #5568B4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-oversized-long-sleeve__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5568B4)"/>
+      <stop offset="1" stop-color="var(--c1, #8FA5E4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-oversized-long-sleeve__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-oversized-long-sleeve__clip">
+      <path d="M164 190 h72 q38 0 38 36 v122 q0 30 -32 30 h-84 q-32 0 -32-30 v-122 q0-36 38-36 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dropped sleeves: the head starts at y224, past the wrist at y392 -->
+    <path d="M104 250 q0-24 24-26 l34 0 v146 q0 22 -22 22 h-16 q-20 0 -20-22 z"
+          fill="url(#teen-male-top-oversized-long-sleeve__sleeve)"/>
+    <path d="M296 250 q0-24 -24-26 l-34 0 v146 q0 22 22 22 h16 q20 0 20-22 z"
+          fill="url(#teen-male-top-oversized-long-sleeve__sleeve)"/>
+    <!-- very wide boxy body, x126-274, hem well below the hip -->
+    <path d="M164 190 h72 q38 0 38 36 v122 q0 30 -32 30 h-84 q-32 0 -32-30 v-122 q0-36 38-36 z"
+          fill="url(#teen-male-top-oversized-long-sleeve__body)"/>
+  </g>
+
+  <!-- panel blocking: contrast chest yoke and a colour-blocked lower band -->
+  <g clip-path="url(#teen-male-top-oversized-long-sleeve__clip)">
+    <rect x="120" y="238" width="160" height="34" fill="url(#teen-male-top-oversized-long-sleeve__yoke)"/>
+    <rect x="120" y="316" width="160" height="64" fill="var(--c2, #5568B4)"/>
+    <path d="M126 316 h148" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"/>
+    <path d="M132 246 q68 12 136 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- dropped shoulder seams, drawn so the oversized fit reads at thumbnail size -->
+  <path d="M138 224 q26-16 26-34 M262 224 q-26-16 -26-34" stroke="#3B2A22" stroke-opacity="0.2"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- wide ribbed crew neck -->
+  <path d="M166 188 q34 34 68 0 z" fill="var(--c2, #5568B4)"/>
+  <path d="M178 190 q22 22 44 0 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M170 190 q30 26 60 0" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rib cuffs at the very end of the long sleeves -->
+  <path d="M104 370 h58 v2 q0 22 -20 22 h-18 q-20 0 -20-22 z" fill="var(--c2, #5568B4)"/>
+  <path d="M296 370 h-58 v2 q0 22 20 22 h18 q20 0 20-22 z" fill="var(--c2, #5568B4)"/>
+  <path d="M114 376 v14 M126 376 v14 M138 376 v14 M150 376 v14 M262 376 v14 M274 376 v14 M286 376 v14"
+        stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M144 206 q56 18 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bib" data-family="bib" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: body shape (broad rounded panel, not a strand) · scale (covers the upper chest) -->
+  <defs>
+    <linearGradient id="accessories-teen-necklace-bib__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)" stop-opacity="0.76"/>
+    </linearGradient>
+    <pattern id="accessories-teen-necklace-bib__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="2.8" fill="var(--c2, #3E8C7C)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="accessories-teen-necklace-bib__clip">
+      <path d="M178 184 Q200 194 222 184 Q240 190 240 202 Q240 210 200 210 Q160 210 160 202 Q160 190 178 184 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M178 184 Q200 194 222 184 Q240 190 240 202 Q240 210 200 210 Q160 210 160 202 Q160 190 178 184 Z"
+          fill="url(#accessories-teen-necklace-bib__cloth)"/>
+  </g>
+
+  <g clip-path="url(#accessories-teen-necklace-bib__clip)">
+    <rect x="158" y="182" width="84" height="30" fill="url(#accessories-teen-necklace-bib__dots)"/>
+  </g>
+
+  <!-- neck binding and the fastening tab at the throat -->
+  <path d="M178 184 Q200 194 222 184" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="191" r="3.4" fill="var(--c3, #F7C873)"/>
+  <!-- scalloped hem band -->
+  <path d="M166 205 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0"
+        stroke="var(--c3, #F7C873)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M176 192 Q200 200 224 192" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

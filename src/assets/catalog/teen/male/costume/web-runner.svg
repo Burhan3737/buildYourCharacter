@@ -1,51 +1,101 @@
+<!-- axes vs storm-herald: SHOULDER (long fitted raglan sleeves, no mantle or cape) and
+     VOLUME (a skin-close seamed bodysuit drawn as one continuous torso-to-hip form,
+     against storm-herald's straight armoured tunic over a separate hip block).
+     Teal and charcoal, abstract lattice only: no web motif, no emblem. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Web Runner Suit" data-family="web-runner" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
   <defs>
-    <linearGradient id="teen-male-costume-web-runner__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #389E97)"/>
+    <linearGradient id="teen-male-costume-web-runner__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #43BEB6)"/>
+      <stop offset="1" stop-color="var(--c1, #2A8A85)"/>
     </linearGradient>
-    <linearGradient id="teen-male-costume-web-runner__trim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #343A40)"/>
-      <stop offset="1" stop-color="var(--c2, #24292E)"/>
+    <linearGradient id="teen-male-costume-web-runner__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #39404B)"/>
+      <stop offset="1" stop-color="var(--c2, #23272F)"/>
     </linearGradient>
+    <pattern id="teen-male-costume-web-runner__lattice" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 9 L9 0 L18 9 L9 18 Z" fill="none" stroke="var(--c3, #8DEDE6)"
+            stroke-opacity="0.55" stroke-width="2"/>
+      <circle cx="9" cy="9" r="1.6" fill="var(--c3, #8DEDE6)" fill-opacity="0.45"/>
+    </pattern>
+    <clipPath id="teen-male-costume-web-runner__suitClip">
+      <path d="M200 196 q-38 0 -52 22 q-14 22 -14 62 l-4 60 q-2 34 6 48 h128 q8 -14 6 -48
+               l-4 -60 q0 -40 -14 -62 q-14 -22 -52 -22 z"/>
+      <path d="M144 380 q28 -8 52 -2 l-4 172 q-22 6 -44 0 z"/>
+      <path d="M256 380 q-28 -8 -52 -2 l4 172 q22 6 44 0 z"/>
+    </clipPath>
   </defs>
 
+  <!-- raised stand collar -->
   <g class="sp-shadow">
-    <rect x="164" y="336" width="36" height="212" rx="18" fill="url(#teen-male-costume-web-runner__trim)"/>
-    <rect x="200" y="336" width="36" height="212" rx="18" fill="url(#teen-male-costume-web-runner__body)"/>
-    <rect x="148" y="332" width="104" height="56" rx="26" fill="url(#teen-male-costume-web-runner__body)"/>
-    <path d="M136 220 q0-28 30-28 h68 q30 0 30 28 v90 q0 36 -30 36 h-68 q-30 0 -30-36 z"
-          fill="url(#teen-male-costume-web-runner__body)"/>
-    <rect x="114" y="206" width="34" height="150" rx="17" fill="url(#teen-male-costume-web-runner__trim)"/>
-    <rect x="252" y="206" width="34" height="150" rx="17" fill="url(#teen-male-costume-web-runner__body)"/>
+    <path d="M172 194 h56 q12 0 12 14 v12 q-40 -10 -80 0 v-12 q0 -14 12 -14 z"
+          fill="url(#teen-male-costume-web-runner__panel)"/>
   </g>
 
-  <!-- abstract diamond lattice: two families of straight parallel lines -->
-  <g fill="none" stroke="var(--c3, #2A3036)"
-     stroke-width="2" stroke-opacity="0.6" stroke-linecap="round">
-    <path d="M232 232 L250 250 M215 232 L250 267 M198 232 L250 284
-             M181 232 L250 301 M164 232 L250 318 M150 235 L250 335
-             M150 252 L234 336 M150 269 L217 336 M150 286 L200 336
-             M150 303 L183 336 M150 320 L166 336 M150 241 L159 232
-             M150 258 L176 232 M150 275 L193 232 M150 292 L210 232
-             M150 309 L227 232 M150 326 L244 232 M157 336 L250 243
-             M174 336 L250 260 M191 336 L250 277 M208 336 L250 294
-             M225 336 L250 311 M242 336 L250 328"/>
-  </g>
-
+  <!-- one continuous fitted torso-to-hip form -->
   <g class="sp-shadow">
-    <rect x="114" y="352" width="34" height="20" rx="10" fill="var(--c2, #343A40)"/>
-    <rect x="252" y="352" width="34" height="20" rx="10" fill="var(--c2, #343A40)"/>
-    <circle cx="129" cy="376" r="18" fill="var(--c2, #343A40)"/>
-    <circle cx="271" cy="376" r="18" fill="var(--c2, #343A40)"/>
-    <rect x="160" y="470" width="38" height="90" rx="18" fill="url(#teen-male-costume-web-runner__trim)"/>
-    <rect x="202" y="470" width="38" height="90" rx="18" fill="url(#teen-male-costume-web-runner__trim)"/>
-    <rect x="154" y="534" width="48" height="36" rx="16" fill="url(#teen-male-costume-web-runner__trim)"/>
-    <rect x="198" y="534" width="48" height="36" rx="16" fill="url(#teen-male-costume-web-runner__trim)"/>
+    <path d="M200 196 q-38 0 -52 22 q-14 22 -14 62 l-4 60 q-2 34 6 48 h128 q8 -14 6 -48
+             l-4 -60 q0 -40 -14 -62 q-14 -22 -52 -22 z"
+          fill="url(#teen-male-costume-web-runner__suit)"/>
   </g>
 
-  <path d="M150 210 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+  <!-- fitted tapered raglan sleeves -->
+  <g class="sp-shadow">
+    <path d="M148 206 q-34 4 -36 34 l-2 118 q20 10 40 0 l6 -120 z"
+          fill="url(#teen-male-costume-web-runner__suit)"/>
+    <path d="M252 206 q34 4 36 34 l2 118 q-20 10 -40 0 l-6 -120 z"
+          fill="url(#teen-male-costume-web-runner__suit)"/>
+  </g>
+
+  <!-- fitted tapered legs -->
+  <g class="sp-shadow">
+    <path d="M144 380 q28 -8 52 -2 l-4 172 q-22 6 -44 0 z"
+          fill="url(#teen-male-costume-web-runner__suit)"/>
+    <path d="M256 380 q-28 -8 -52 -2 l4 172 q22 6 44 0 z"
+          fill="url(#teen-male-costume-web-runner__suit)"/>
+  </g>
+
+  <!-- integral gloves and running boots -->
+  <g class="sp-shadow">
+    <circle cx="128" cy="378" r="18" fill="url(#teen-male-costume-web-runner__panel)"/>
+    <circle cx="272" cy="378" r="18" fill="url(#teen-male-costume-web-runner__panel)"/>
+    <path d="M146 506 q26 -10 50 -2 q6 34 -2 50 q-24 10 -46 0 q-8 -18 -2 -48 z"
+          fill="url(#teen-male-costume-web-runner__panel)"/>
+    <path d="M204 504 q26 -8 50 2 q6 30 -2 48 q-24 10 -46 0 q-8 -16 -2 -50 z"
+          fill="url(#teen-male-costume-web-runner__panel)"/>
+  </g>
+
+  <!-- abstract geometric lattice over the suit -->
+  <g clip-path="url(#teen-male-costume-web-runner__suitClip)">
+    <rect x="126" y="194" width="148" height="366" fill="url(#teen-male-costume-web-runner__lattice)"/>
+  </g>
+
+  <!-- charcoal seam panels: shoulder yoke and outer thigh -->
+  <path d="M148 218 q52 -22 104 0 l6 30 q-58 -24 -116 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M146 384 q10 -4 16 -2 l-6 164 q-8 2 -14 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M254 384 q-10 -4 -16 -2 l6 164 q8 2 14 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M112 240 q18 -6 34 -2 l-2 18 q-16 -4 -33 2 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M288 240 q-18 -6 -34 -2 l2 18 q16 -4 33 2 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+
+  <!-- waist seam and cuff bands -->
+  <path d="M132 336 q68 16 136 0 l2 16 q-70 16 -140 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M110 344 q20 10 40 0 l-1 16 q-19 10 -40 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+  <path d="M290 344 q-20 10 -40 0 l1 16 q19 10 40 0 z"
+        fill="url(#teen-male-costume-web-runner__panel)"/>
+
+  <!-- centre-front seam -->
+  <path d="M200 226 v104" stroke="var(--c3, #8DEDE6)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M154 214 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

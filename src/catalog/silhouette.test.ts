@@ -57,27 +57,7 @@ const tolerance = (box: { x0: number; y0: number; x1: number; y1: number }) => {
  * Keys are `<pathA>|<pathB>` relative to `src/assets/`, both sides sorted lexicographically.
  */
 const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
-  // adult/female · bottom — 2 pair(s): nudged
-  'catalog/adult/female/bottom/cargo.svg|catalog/adult/female/bottom/leggings.svg',
-  'catalog/adult/female/bottom/jeans.svg|catalog/adult/female/bottom/leggings.svg',
-
-  // adult/female · costume — 2 pair(s): shared-primary
-  'catalog/adult/female/costume/astronaut.svg|catalog/adult/female/costume/spider.svg',
-  'catalog/adult/female/costume/astronaut.svg|catalog/adult/female/costume/web-runner.svg',
-
-  // adult/female · top — 12 pair(s): identical, nudged, shared-primary
-  'catalog/adult/female/top/button-up.svg|catalog/adult/female/top/hoodie.svg',
-  'catalog/adult/female/top/button-up.svg|catalog/adult/female/top/jersey.svg',
-  'catalog/adult/female/top/button-up.svg|catalog/adult/female/top/stripes.svg',
-  'catalog/adult/female/top/button-up.svg|catalog/adult/female/top/sweater.svg',
-  'catalog/adult/female/top/button-up.svg|catalog/adult/female/top/tee.svg',
-  'catalog/adult/female/top/hoodie.svg|catalog/adult/female/top/jersey.svg',
-  'catalog/adult/female/top/hoodie.svg|catalog/adult/female/top/stripes.svg',
-  'catalog/adult/female/top/hoodie.svg|catalog/adult/female/top/tee.svg',
-  'catalog/adult/female/top/jersey.svg|catalog/adult/female/top/stripes.svg',
-  'catalog/adult/female/top/jersey.svg|catalog/adult/female/top/tee.svg',
-  'catalog/adult/female/top/stripes.svg|catalog/adult/female/top/sweater.svg',
-  'catalog/adult/female/top/stripes.svg|catalog/adult/female/top/tee.svg',
+  // adult/female · bottom, costume and top: all 16 pairs redrawn during the art expansion.
 
   // adult/male · bottom — 3 pair(s): nudged
   'catalog/adult/male/bottom/cargo.svg|catalog/adult/male/bottom/jeans.svg',
@@ -162,33 +142,8 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
   'catalog/midage/female/top/stripes.svg|catalog/midage/female/top/sweater.svg',
   'catalog/midage/female/top/stripes.svg|catalog/midage/female/top/tee.svg',
 
-  // midage/male · bottom — 10 pair(s): identical, shared-primary
-  'catalog/midage/male/bottom/cargo.svg|catalog/midage/male/bottom/dungarees.svg',
-  'catalog/midage/male/bottom/cargo.svg|catalog/midage/male/bottom/jeans.svg',
-  'catalog/midage/male/bottom/cargo.svg|catalog/midage/male/bottom/leggings.svg',
-  'catalog/midage/male/bottom/cargo.svg|catalog/midage/male/bottom/pleated.svg',
-  'catalog/midage/male/bottom/dungarees.svg|catalog/midage/male/bottom/jeans.svg',
-  'catalog/midage/male/bottom/dungarees.svg|catalog/midage/male/bottom/leggings.svg',
-  'catalog/midage/male/bottom/dungarees.svg|catalog/midage/male/bottom/pleated.svg',
-  'catalog/midage/male/bottom/jeans.svg|catalog/midage/male/bottom/leggings.svg',
-  'catalog/midage/male/bottom/jeans.svg|catalog/midage/male/bottom/pleated.svg',
-  'catalog/midage/male/bottom/leggings.svg|catalog/midage/male/bottom/pleated.svg',
-
-  // midage/male · costume — 8 pair(s): shared-primary
-  'catalog/midage/male/costume/dino.svg|catalog/midage/male/costume/spider.svg',
-  'catalog/midage/male/costume/dino.svg|catalog/midage/male/costume/storm-herald.svg',
-  'catalog/midage/male/costume/dino.svg|catalog/midage/male/costume/thunder-god.svg',
-  'catalog/midage/male/costume/dino.svg|catalog/midage/male/costume/web-runner.svg',
-  'catalog/midage/male/costume/spider.svg|catalog/midage/male/costume/storm-herald.svg',
-  'catalog/midage/male/costume/spider.svg|catalog/midage/male/costume/thunder-god.svg',
-  'catalog/midage/male/costume/storm-herald.svg|catalog/midage/male/costume/web-runner.svg',
-  'catalog/midage/male/costume/thunder-god.svg|catalog/midage/male/costume/web-runner.svg',
-
-  // midage/male · top — 4 pair(s): nudged, shared-primary
-  'catalog/midage/male/top/jersey.svg|catalog/midage/male/top/stripes.svg',
-  'catalog/midage/male/top/jersey.svg|catalog/midage/male/top/tee.svg',
-  'catalog/midage/male/top/overalls-top.svg|catalog/midage/male/top/tee.svg',
-  'catalog/midage/male/top/stripes.svg|catalog/midage/male/top/tee.svg',
+  // midage/male — RETIRED. All 22 pairs (10 bottom, 8 costume, 4 top) were redrawn
+  // during the art expansion and no longer collide, so their entries are gone.
 
   // newborn/female · bottom — 7 pair(s): identical, nudged
   'catalog/newborn/female/bottom/cargo.svg|catalog/newborn/female/bottom/jeans.svg',
@@ -274,41 +229,10 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
   'catalog/newborn/male/top/jersey.svg|catalog/newborn/male/top/tee.svg',
   'catalog/newborn/male/top/stripes.svg|catalog/newborn/male/top/tee.svg',
 
-  // teen/female · bottom — 3 pair(s): nudged
-  'catalog/teen/female/bottom/cargo.svg|catalog/teen/female/bottom/jeans.svg',
-  'catalog/teen/female/bottom/cargo.svg|catalog/teen/female/bottom/leggings.svg',
-  'catalog/teen/female/bottom/jeans.svg|catalog/teen/female/bottom/leggings.svg',
+  // teen/female · bottom, costume, top — all 11 pairs redrawn during the art expansion:
+  // cargo and leggings, dino and web-runner, button-up and stripes all have new major forms.
 
-  // teen/female · costume — 5 pair(s): shared-primary
-  'catalog/teen/female/costume/astronaut.svg|catalog/teen/female/costume/dino.svg',
-  'catalog/teen/female/costume/astronaut.svg|catalog/teen/female/costume/spider.svg',
-  'catalog/teen/female/costume/astronaut.svg|catalog/teen/female/costume/web-runner.svg',
-  'catalog/teen/female/costume/dino.svg|catalog/teen/female/costume/spider.svg',
-  'catalog/teen/female/costume/dino.svg|catalog/teen/female/costume/web-runner.svg',
-
-  // teen/female · top — 3 pair(s): identical, shared-primary
-  'catalog/teen/female/top/button-up.svg|catalog/teen/female/top/stripes.svg',
-  'catalog/teen/female/top/button-up.svg|catalog/teen/female/top/tee.svg',
-  'catalog/teen/female/top/stripes.svg|catalog/teen/female/top/tee.svg',
-
-  // teen/male · bottom — 6 pair(s): identical, nudged
-  'catalog/teen/male/bottom/cargo.svg|catalog/teen/male/bottom/dungarees.svg',
-  'catalog/teen/male/bottom/cargo.svg|catalog/teen/male/bottom/jeans.svg',
-  'catalog/teen/male/bottom/cargo.svg|catalog/teen/male/bottom/leggings.svg',
-  'catalog/teen/male/bottom/dungarees.svg|catalog/teen/male/bottom/jeans.svg',
-  'catalog/teen/male/bottom/dungarees.svg|catalog/teen/male/bottom/leggings.svg',
-  'catalog/teen/male/bottom/jeans.svg|catalog/teen/male/bottom/leggings.svg',
-
-  // teen/male · costume — 4 pair(s): shared-primary
-  'catalog/teen/male/costume/spider.svg|catalog/teen/male/costume/storm-herald.svg',
-  'catalog/teen/male/costume/spider.svg|catalog/teen/male/costume/thunder-god.svg',
-  'catalog/teen/male/costume/storm-herald.svg|catalog/teen/male/costume/web-runner.svg',
-  'catalog/teen/male/costume/thunder-god.svg|catalog/teen/male/costume/web-runner.svg',
-
-  // teen/male · top — 3 pair(s): identical, shared-primary
-  'catalog/teen/male/top/button-up.svg|catalog/teen/male/top/jersey.svg',
-  'catalog/teen/male/top/button-up.svg|catalog/teen/male/top/tee.svg',
-  'catalog/teen/male/top/jersey.svg|catalog/teen/male/top/tee.svg',
+  // teen/male · bottom, costume, top — all 13 pairs redrawn during the art expansion.
 
   // toddler/female · bottom — 3 pair(s): nudged, shared-primary
   'catalog/toddler/female/bottom/cargo.svg|catalog/toddler/female/bottom/jeans.svg',

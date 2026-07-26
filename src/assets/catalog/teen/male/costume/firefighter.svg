@@ -1,0 +1,85 @@
+<!-- axes: VOLUME (a bulky boxy turnout coat far wider than the body it covers) and
+     HEM (coat carrying to mid-thigh over turnout trousers, not a hip-length body). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Firefighter" data-family="firefighter" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-firefighter__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A46)"/>
+      <stop offset="1" stop-color="var(--c1, #9C6730)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-firefighter__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3E68C)"/>
+      <stop offset="1" stop-color="var(--c2, #D9C85E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-firefighter__gear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3C424E)"/>
+      <stop offset="1" stop-color="var(--c3, #262A33)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- turnout trousers -->
+  <g class="sp-shadow">
+    <path d="M152 420 h50 l-2 132 h-46 z" fill="url(#teen-male-costume-firefighter__coat)"/>
+    <path d="M198 420 h50 l-2 132 h-46 z" fill="url(#teen-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- high storm collar -->
+  <g class="sp-shadow">
+    <path d="M164 194 h72 q14 2 14 16 v14 q-50 -12 -100 0 v-14 q0 -14 14 -16 z"
+          fill="url(#teen-male-costume-firefighter__gear)"/>
+  </g>
+
+  <!-- the bulky coat and its dropped oversized sleeves -->
+  <g class="sp-shadow">
+    <path d="M132 232 q4 -32 40 -38 h56 q36 6 40 38 v186 q0 24 -30 26 h-76 q-30 -2 -30 -26 z"
+          fill="url(#teen-male-costume-firefighter__coat)"/>
+    <path d="M132 236 q-28 4 -30 34 l-4 100 q22 12 44 0 l4 -104 z"
+          fill="url(#teen-male-costume-firefighter__coat)"/>
+    <path d="M268 236 q28 4 30 34 l4 100 q-22 12 -44 0 l-4 -104 z"
+          fill="url(#teen-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- gauntlet gloves and rubber boots -->
+  <g class="sp-shadow">
+    <circle cx="126" cy="382" r="21" fill="url(#teen-male-costume-firefighter__gear)"/>
+    <circle cx="274" cy="382" r="21" fill="url(#teen-male-costume-firefighter__gear)"/>
+    <path d="M148 496 h56 v58 q0 16 -28 16 q-28 0 -28 -16 z"
+          fill="url(#teen-male-costume-firefighter__gear)"/>
+    <path d="M196 496 h56 v58 q0 16 -28 16 q-28 0 -28 -16 z"
+          fill="url(#teen-male-costume-firefighter__gear)"/>
+  </g>
+
+  <!-- the two horizontal reflective bands, the coat's defining trim -->
+  <rect x="132" y="300" width="140" height="18" rx="4" fill="url(#teen-male-costume-firefighter__band)"/>
+  <rect x="132" y="368" width="140" height="18" rx="4" fill="url(#teen-male-costume-firefighter__band)"/>
+  <path d="M100 302 q22 10 44 0 l-1 18 q-21 10 -44 0 z" fill="url(#teen-male-costume-firefighter__band)"/>
+  <path d="M300 302 q-22 10 -44 0 l1 18 q21 10 44 0 z" fill="url(#teen-male-costume-firefighter__band)"/>
+  <rect x="152" y="452" width="96" height="16" rx="4" fill="url(#teen-male-costume-firefighter__band)"/>
+
+  <!-- storm flap down the centre front -->
+  <rect x="188" y="200" width="24" height="240" rx="6" fill="url(#teen-male-costume-firefighter__gear)"/>
+  <g fill="url(#teen-male-costume-firefighter__band)">
+    <rect x="194" y="228" width="12" height="8" rx="3"/>
+    <rect x="194" y="256" width="12" height="8" rx="3"/>
+    <rect x="194" y="340" width="12" height="8" rx="3"/>
+    <rect x="194" y="408" width="12" height="8" rx="3"/>
+  </g>
+
+  <!-- big cargo pockets on the coat skirt -->
+  <path d="M142 396 h36 q4 0 4 5 v38 q0 5 -4 5 h-36 q-4 0 -4 -5 v-38 q0 -5 4 -5 z"
+        fill="url(#teen-male-costume-firefighter__gear)"/>
+  <path d="M222 396 h36 q4 0 4 5 v38 q0 5 -4 5 h-36 q-4 0 -4 -5 v-38 q0 -5 4 -5 z"
+        fill="url(#teen-male-costume-firefighter__gear)"/>
+  <path d="M138 396 h44 v10 h-44 z M218 396 h44 v10 h-44 z"
+        fill="url(#teen-male-costume-firefighter__coat)"/>
+
+  <!-- shoulder yoke seam and cuff bands -->
+  <path d="M136 246 q64 -22 128 0" stroke="var(--c3, #262A33)" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M98 350 q22 12 44 0 l-1 18 q-21 12 -44 0 z" fill="url(#teen-male-costume-firefighter__gear)"/>
+  <path d="M302 350 q-22 12 -44 0 l1 18 q21 12 44 0 z" fill="url(#teen-male-costume-firefighter__gear)"/>
+
+  <path d="M150 226 q50 -16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

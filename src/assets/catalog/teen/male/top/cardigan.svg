@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = OPEN FRONT (two separate front panels, wide V) ·
+       hem = THIGH (y406). Sleeve long, volume straight. Differs from blazer on
+       hem + volume, from flannel-overshirt on hem + volume, from zip-jacket on
+       closure + hem, from poncho on sleeve + closure + volume. -->
+  <defs>
+    <linearGradient id="teen-male-top-cardigan__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B08FD6)"/>
+      <stop offset="1" stop-color="var(--c2, #B08FD6)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-cardigan__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9AEE8)"/>
+      <stop offset="1" stop-color="var(--c2, #B08FD6)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9AEE8)"/>
+      <stop offset="1" stop-color="var(--c2, #B08FD6)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-cardigan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="teen-male-top-cardigan__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="16">
+      <path d="M2 2 L7 8 L12 2 M2 10 L7 16 L12 10" stroke="var(--c2, #B08FD6)"
+            stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="teen-male-top-cardigan__clipL">
+      <path d="M176 190 q-24 2 -30 26 l-6 174 q-1 16 15 16 h34 q10 0 10-14 l0-96 z"/>
+    </clipPath>
+    <clipPath id="teen-male-top-cardigan__clipR">
+      <path d="M224 190 q24 2 30 26 l6 174 q1 16 -15 16 h-34 q-10 0 -10-14 l0-96 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- back panel seen through the open front -->
+    <path d="M170 188 h60 q28 0 28 28 v180 h-116 v-180 q0-28 28-28 z"
+          fill="url(#teen-male-top-cardigan__back)"/>
+    <!-- long dropped sleeves -->
+    <path d="M114 218 q2-24 28-26 l20 0 v152 q0 18 -18 18 h-14 q-18 0 -18-18 z"
+          fill="url(#teen-male-top-cardigan__sleeve)"/>
+    <path d="M286 218 q-2-24 -28-26 l-20 0 v152 q0 18 18 18 h14 q18 0 18-18 z"
+          fill="url(#teen-male-top-cardigan__sleeve)"/>
+    <!-- left and right front panels, wide V opening, thigh-length hem -->
+    <path d="M176 190 q-24 2 -30 26 l-6 174 q-1 16 15 16 h34 q10 0 10-14 l0-96 z"
+          fill="url(#teen-male-top-cardigan__front)"/>
+    <path d="M224 190 q24 2 30 26 l6 174 q1 16 -15 16 h-34 q-10 0 -10-14 l0-96 z"
+          fill="url(#teen-male-top-cardigan__front)"/>
+  </g>
+
+  <!-- knit rib texture over the front panels -->
+  <g clip-path="url(#teen-male-top-cardigan__clipL)">
+    <rect x="130" y="188" width="80" height="230" fill="url(#teen-male-top-cardigan__knit)" opacity="0.5"/>
+  </g>
+  <g clip-path="url(#teen-male-top-cardigan__clipR)">
+    <rect x="190" y="188" width="80" height="230" fill="url(#teen-male-top-cardigan__knit)" opacity="0.5"/>
+  </g>
+
+  <!-- contrast front bands running the full opening -->
+  <path d="M178 190 l24 106 v96 q0 12 -10 12 h-9 q-8 0 -8-12 l0-96 z"
+        fill="url(#teen-male-top-cardigan__band)"/>
+  <path d="M222 190 l-24 106 v96 q0 12 10 12 h9 q8 0 8-12 l0-96 z"
+        fill="url(#teen-male-top-cardigan__band)"/>
+
+  <!-- button line on the right band -->
+  <circle cx="207" cy="310" r="4.5" fill="var(--c2, #B08FD6)"/>
+  <circle cx="207" cy="340" r="4.5" fill="var(--c2, #B08FD6)"/>
+  <circle cx="207" cy="370" r="4.5" fill="var(--c2, #B08FD6)"/>
+
+  <!-- patch pockets -->
+  <path d="M148 330 h34 v34 q0 8 -8 8 h-18 q-8 0 -8-8 z" fill="var(--c2, #B08FD6)"/>
+  <path d="M218 330 h34 v34 q0 8 -8 8 h-18 q-8 0 -8-8 z" fill="var(--c2, #B08FD6)"/>
+  <path d="M152 340 h26 M222 340 h26" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M112 340 h50 v16 q0 20 -20 20 h-12 q-18 0 -18-20 z" fill="var(--c2, #B08FD6)"/>
+  <path d="M288 340 h-50 v16 q0 20 20 20 h12 q18 0 18-20 z" fill="var(--c2, #B08FD6)"/>
+
+  <!-- highlight -->
+  <path d="M152 204 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

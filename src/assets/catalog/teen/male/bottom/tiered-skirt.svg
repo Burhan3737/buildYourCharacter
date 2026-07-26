@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = none (skirt), hem at mid-calf ·
+       leg width = gathered, stepping wider at each tier · hem = ruffled.
+       Three stacked ruffle tiers, each one a separate major form.
+       vs skirt: hem (calf vs above-knee) + volume/width (three gathered tiers vs one
+       A-line cone). vs maxi-skirt: leg length + hem treatment. vs pleated: leg length
+       + hem. Surface tools: structural detail (gather ticks along every tier head)
+       + trim (contrast binding on each tier edge) + pattern (16px four-petal floral
+       through the accent c3 on the middle tier). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-tiered-skirt__t1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-tiered-skirt__t2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-tiered-skirt__t3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6C)"/>
+    </linearGradient>
+    <pattern id="teen-male-bottom-tiered-skirt__floral" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="5" r="3" fill="var(--c3, #F7C873)" opacity="0.65"/>
+      <circle cx="10" cy="15" r="3" fill="var(--c3, #F7C873)" opacity="0.65"/>
+      <circle cx="5" cy="10" r="3" fill="var(--c3, #F7C873)" opacity="0.65"/>
+      <circle cx="15" cy="10" r="3" fill="var(--c3, #F7C873)" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M130 438 H270 L292 504 Q200 528 108 504 Z"
+          fill="url(#teen-male-bottom-tiered-skirt__t3)"/>
+    <path d="M144 380 H256 L272 442 Q200 462 128 442 Z"
+          fill="url(#teen-male-bottom-tiered-skirt__t2)"/>
+    <path d="M150 330 H250 L258 384 Q200 400 142 384 Z"
+          fill="url(#teen-male-bottom-tiered-skirt__t1)"/>
+  </g>
+
+  <!-- floral over the middle tier -->
+  <path d="M144 380 H256 L272 442 Q200 462 128 442 Z"
+        fill="url(#teen-male-bottom-tiered-skirt__floral)"/>
+
+  <!-- waistband -->
+  <rect x="148" y="326" width="104" height="18" rx="8" fill="var(--c2, #CE7A6C)"/>
+
+  <!-- contrast tier bindings -->
+  <path d="M143 386 Q200 402 257 386" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M129 444 Q200 464 271 444" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M110 506 Q200 530 290 506" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gather ticks at each tier head -->
+  <path d="M156 348 v18 M176 348 v18 M196 348 v18 M216 348 v18 M236 348 v18"
+        stroke="var(--c2, #CE7A6C)" stroke-width="3" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 392 v20 M174 392 v20 M198 392 v20 M222 392 v20 M246 392 v20"
+        stroke="var(--c2, #CE7A6C)" stroke-width="3" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M138 450 v22 M166 450 v22 M194 450 v22 M222 450 v22 M250 450 v22"
+        stroke="var(--c2, #CE7A6C)" stroke-width="3" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M152 348 q48 12 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 398 q54 14 108 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 458 q68 16 136 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

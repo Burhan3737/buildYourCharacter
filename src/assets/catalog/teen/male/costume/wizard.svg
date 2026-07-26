@@ -1,0 +1,71 @@
+<!-- axes: VOLUME (one flared A-line robe sweeping to the ground, no leg forms at all) and
+     SHOULDER (wide draped hanging sleeves rather than fitted tubes). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5FB4)"/>
+      <stop offset="1" stop-color="var(--c1, #45397C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-wizard__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2F2A52)"/>
+      <stop offset="1" stop-color="var(--c2, #1F1B3A)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M8 3 l2.4 5 l5.4 0.6 l-4 3.7 l1.2 5.3 l-5 -2.8 l-5 2.8 l1.2 -5.3 l-4 -3.7 l5.4 -0.6 z"
+            fill="var(--c3, #F7C873)" fill-opacity="0.85"/>
+      <circle cx="19" cy="18" r="1.8" fill="var(--c3, #F7C873)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="teen-male-costume-wizard__robeClip">
+      <path d="M166 196 h68 q38 8 48 62 l26 292 q-42 16 -108 16 q-66 0 -108 -16 l26 -292
+               q10 -54 48 -62 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide draped sleeves, drawn behind the robe front -->
+  <g class="sp-shadow">
+    <path d="M166 198 q-40 4 -54 46 l-28 144 q46 18 82 -2 l16 -144 z"
+          fill="url(#teen-male-costume-wizard__robe)"/>
+    <path d="M234 198 q40 4 54 46 l28 144 q-46 18 -82 -2 l-16 -144 z"
+          fill="url(#teen-male-costume-wizard__robe)"/>
+  </g>
+
+  <!-- the robe: shoulders to the ground line, flaring the whole way -->
+  <g class="sp-shadow">
+    <path d="M166 196 h68 q38 8 48 62 l26 292 q-42 16 -108 16 q-66 0 -108 -16 l26 -292
+             q10 -54 48 -62 z"
+          fill="url(#teen-male-costume-wizard__robe)"/>
+  </g>
+
+  <!-- star scatter over the robe -->
+  <g clip-path="url(#teen-male-costume-wizard__robeClip)">
+    <rect x="88" y="194" width="224" height="380" fill="url(#teen-male-costume-wizard__stars)"/>
+  </g>
+
+  <!-- hem band, cuff bands and shoulder mantle -->
+  <path d="M96 524 q48 18 104 18 q56 0 104 -18 l4 26 q-46 18 -108 18 q-62 0 -108 -18 z"
+        fill="url(#teen-male-costume-wizard__trim)"/>
+  <path d="M85 372 q44 18 82 -2 l-3 26 q-38 18 -83 2 z"
+        fill="url(#teen-male-costume-wizard__trim)"/>
+  <path d="M315 372 q-44 18 -82 -2 l3 26 q38 18 83 2 z"
+        fill="url(#teen-male-costume-wizard__trim)"/>
+  <path d="M162 194 h76 q30 10 34 48 q-56 20 -144 0 q4 -38 34 -48 z"
+        fill="url(#teen-male-costume-wizard__trim)"/>
+
+  <!-- knotted cord belt -->
+  <path d="M139 352 q61 22 122 0 l3 16 q-64 24 -128 0 z" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="368" r="9" fill="var(--c3, #F7C873)"/>
+  <path d="M196 376 q-6 26 -14 44 M204 376 q6 26 14 44" stroke="var(--c3, #F7C873)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- fold seams down the flare -->
+  <g fill="none" stroke="var(--c2, #1F1B3A)" stroke-opacity="0.3" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M160 386 l-12 142 M200 386 l0 146 M240 386 l12 142"/>
+  </g>
+
+  <path d="M158 216 q42 -16 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

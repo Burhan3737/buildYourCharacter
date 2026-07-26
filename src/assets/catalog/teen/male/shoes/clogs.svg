@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clogs" data-family="clogs" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: toe shape (bulbous moulded dome, no toe seam) · sole depth (thick moulded slab, open heel) -->
+  <defs>
+    <linearGradient id="teen-male-shoes-clogs__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5E6FB4)"/>
+    </linearGradient>
+    <pattern id="teen-male-shoes-clogs__vents" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="2.6" fill="var(--c3, #3F4C86)" fill-opacity="0.62"/>
+    </pattern>
+    <clipPath id="teen-male-shoes-clogs__clipL">
+      <path d="M156 552 q0-18 22-18 q20 0 22 18 v6 q0 6 -8 6 h-30 q-6 0 -6-6 z"/>
+    </clipPath>
+    <clipPath id="teen-male-shoes-clogs__clipR">
+      <path d="M244 552 q0-18 -22-18 q-20 0 -22 18 v6 q0 6 8 6 h30 q6 0 6-6 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one moulded dome per foot: no lacing line, no separate collar -->
+    <path d="M156 552 q0-18 22-18 q20 0 22 18 v6 q0 6 -8 6 h-30 q-6 0 -6-6 z"
+          fill="url(#teen-male-shoes-clogs__shell)"/>
+    <path d="M244 552 q0-18 -22-18 q-20 0 -22 18 v6 q0 6 8 6 h30 q6 0 6-6 z"
+          fill="url(#teen-male-shoes-clogs__shell)"/>
+  </g>
+
+  <!-- ventilation holes -->
+  <g clip-path="url(#teen-male-shoes-clogs__clipL)">
+    <rect x="154" y="532" width="50" height="24" fill="url(#teen-male-shoes-clogs__vents)"/>
+  </g>
+  <g clip-path="url(#teen-male-shoes-clogs__clipR)">
+    <rect x="196" y="532" width="50" height="24" fill="url(#teen-male-shoes-clogs__vents)"/>
+  </g>
+
+  <!-- heel strap flipped back over the heel -->
+  <path d="M158 552 q-6 6 -2 14" stroke="var(--c3, #3F4C86)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 552 q6 6 2 14" stroke="var(--c3, #3F4C86)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep moulded sole slab -->
+  <rect x="152" y="558" width="52" height="12" rx="5" fill="var(--c2, #5E6FB4)"/>
+  <rect x="196" y="558" width="52" height="12" rx="5" fill="var(--c2, #5E6FB4)"/>
+
+  <path d="M166 540 q14 5 28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 540 q-14 5 -28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

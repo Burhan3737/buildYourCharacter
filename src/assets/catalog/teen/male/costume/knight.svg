@@ -1,0 +1,87 @@
+<!-- axes: SHOULDER (domed pauldrons standing proud of the shoulder line) and
+     HEM (a tabard panel hanging to mid-thigh over the mail, not a hip-length body). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6BB6)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A6B3C6)"/>
+      <stop offset="1" stop-color="var(--c2, #7C8AA0)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-knight__steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #56668A)"/>
+      <stop offset="1" stop-color="var(--c3, #3A455E)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-knight__mailring" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="4" cy="4" r="3" fill="none" stroke="var(--c3, #3A455E)"
+              stroke-opacity="0.5" stroke-width="1.8"/>
+      <circle cx="11" cy="11" r="3" fill="none" stroke="var(--c3, #3A455E)"
+              stroke-opacity="0.5" stroke-width="1.8"/>
+    </pattern>
+    <clipPath id="teen-male-costume-knight__mailClip">
+      <path d="M140 228 q6 -34 38 -34 h44 q32 0 38 34 v90 q-2 32 -32 32 h-56 q-30 0 -32 -32 z"/>
+      <rect x="112" y="214" width="36" height="142" rx="16"/>
+      <rect x="252" y="214" width="36" height="142" rx="16"/>
+      <rect x="162" y="372" width="38" height="182" rx="14"/>
+      <rect x="200" y="372" width="38" height="182" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- domed pauldrons -->
+  <g class="sp-shadow">
+    <path d="M108 226 q0 -32 32 -32 q28 0 32 32 q2 16 -2 32 q-32 8 -60 0 q-4 -16 -2 -32 z"
+          fill="url(#teen-male-costume-knight__steel)"/>
+    <path d="M292 226 q0 -32 -32 -32 q-28 0 -32 32 q-2 16 2 32 q32 8 60 0 q4 -16 2 -32 z"
+          fill="url(#teen-male-costume-knight__steel)"/>
+  </g>
+
+  <!-- mail body -->
+  <g class="sp-shadow">
+    <path d="M140 228 q6 -34 38 -34 h44 q32 0 38 34 v90 q-2 32 -32 32 h-56 q-30 0 -32 -32 z"
+          fill="url(#teen-male-costume-knight__mail)"/>
+    <rect x="146" y="326" width="108" height="60" rx="16" fill="url(#teen-male-costume-knight__mail)"/>
+    <rect x="162" y="372" width="38" height="182" rx="14" fill="url(#teen-male-costume-knight__mail)"/>
+    <rect x="200" y="372" width="38" height="182" rx="14" fill="url(#teen-male-costume-knight__mail)"/>
+    <rect x="112" y="214" width="36" height="142" rx="16" fill="url(#teen-male-costume-knight__mail)"/>
+    <rect x="252" y="214" width="36" height="142" rx="16" fill="url(#teen-male-costume-knight__mail)"/>
+  </g>
+
+  <!-- mail ring texture -->
+  <g clip-path="url(#teen-male-costume-knight__mailClip)">
+    <rect x="108" y="194" width="184" height="364" fill="url(#teen-male-costume-knight__mailring)"/>
+  </g>
+
+  <!-- the tabard, a long plated panel front and centre -->
+  <g class="sp-shadow">
+    <path d="M162 212 h76 v238 l-38 -24 l-38 24 z" fill="url(#teen-male-costume-knight__tabard)"/>
+  </g>
+  <path d="M162 212 h8 v230 l-8 5 z M230 212 h8 v235 l-8 -5 z"
+        fill="url(#teen-male-costume-knight__steel)"/>
+  <path d="M186 212 h28 v212 l-14 9 l-14 -9 z"
+        fill="url(#teen-male-costume-knight__steel)" fill-opacity="0.45"/>
+
+  <!-- gauntlets, greaves, belt -->
+  <rect x="144" y="322" width="112" height="24" rx="10" fill="url(#teen-male-costume-knight__steel)"/>
+  <rect x="188" y="318" width="26" height="32" rx="8" fill="url(#teen-male-costume-knight__mail)"/>
+  <rect x="158" y="452" width="46" height="56" rx="12" fill="url(#teen-male-costume-knight__steel)"/>
+  <rect x="196" y="452" width="46" height="56" rx="12" fill="url(#teen-male-costume-knight__steel)"/>
+
+  <g class="sp-shadow">
+    <rect x="110" y="348" width="40" height="26" rx="10" fill="url(#teen-male-costume-knight__steel)"/>
+    <rect x="250" y="348" width="40" height="26" rx="10" fill="url(#teen-male-costume-knight__steel)"/>
+    <circle cx="129" cy="378" r="18" fill="url(#teen-male-costume-knight__steel)"/>
+    <circle cx="271" cy="378" r="18" fill="url(#teen-male-costume-knight__steel)"/>
+    <path d="M146 512 h58 q10 30 0 44 q-29 10 -58 0 q-10 -16 0 -44 z"
+          fill="url(#teen-male-costume-knight__steel)"/>
+    <path d="M196 512 h58 q10 30 0 44 q-29 10 -58 0 q-10 -16 0 -44 z"
+          fill="url(#teen-male-costume-knight__steel)"/>
+  </g>
+
+  <path d="M154 210 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

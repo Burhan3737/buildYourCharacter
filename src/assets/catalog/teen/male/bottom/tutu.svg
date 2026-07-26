@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tutu" data-family="tutu" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = none (skirt), hem high on the thigh ·
+       leg width = gathered, standing out horizontally from the hip · hem = ruffled
+       (scalloped net edge, cut into the outline).
+       vs skirt: volume (two stiff net layers projecting sideways vs a hanging A-line)
+       + hem treatment (scalloped vs plain). vs pleated: leg length + volume.
+       vs tiered-skirt: hem length + volume. Surface tools: pattern (20px star scatter
+       through the accent c3 over the lower net) + trim (satin waistband with a bow) +
+       structural detail (radial gather rays from the waist). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-tutu__net1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F92)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-tutu__net2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F92)"/>
+    </linearGradient>
+    <pattern id="teen-male-bottom-tutu__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 L13 9 L18 9 L14 12 L16 17 L11 14 L6 17 L8 12 L4 9 L9 9 Z"
+            fill="var(--c3, #F7C873)" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M152 352 H248 Q300 364 304 418 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 Q92 364 152 352 Z"
+          fill="url(#teen-male-bottom-tutu__net2)"/>
+    <path d="M150 330 H250 Q288 340 290 382 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 q-10 14 -20 0 Q112 340 150 330 Z"
+          fill="url(#teen-male-bottom-tutu__net1)"/>
+  </g>
+
+  <!-- star scatter over the lower net -->
+  <path d="M152 352 H248 Q300 364 304 418 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 q-13 16 -26 0 Q92 364 152 352 Z"
+        fill="url(#teen-male-bottom-tutu__stars)"/>
+
+  <!-- satin waistband with a bow -->
+  <rect x="146" y="322" width="108" height="20" rx="9" fill="var(--c2, #D07F92)"/>
+  <path d="M186 332 q-16 -12 -22 0 q6 12 22 0 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M214 332 q16 -12 22 0 q-6 12 -22 0 Z" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="332" r="7" fill="var(--c3, #F7C873)"/>
+
+  <!-- radial gather rays -->
+  <path d="M172 344 L156 378" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M186 344 L180 380" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M214 344 L220 380" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M228 344 L244 378" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M158 358 L134 396" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+  <path d="M242 358 L266 396" stroke="var(--c2, #D07F92)" stroke-width="3"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 346 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 372 Q200 392 264 372" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

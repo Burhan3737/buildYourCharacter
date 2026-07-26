@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Platform Boots" data-family="platform-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: sole depth (a 26px slab lifting the whole foot) · fastening (side zip, no laces) -->
+  <defs>
+    <linearGradient id="teen-male-shoes-platform-boots__leather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241914)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-platform-boots__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8E2D4)"/>
+      <stop offset="1" stop-color="var(--c3, #E8E2D4)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- shaft: straight-sided, squared at the top, sitting on the slab not the floor -->
+    <path d="M161 488 h40 q5 0 5 7 v42 q0 5 3 7 v-1 q0 6 -7 6 h-40 q-6 0 -6-6 v-48 q0-7 5-7 z"
+          fill="url(#teen-male-shoes-platform-boots__leather)"/>
+    <path d="M239 488 h-40 q-5 0 -5 7 v42 q0 5 -3 7 v-1 q0 6 7 6 h40 q6 0 6-6 v-48 q0-7 -5-7 z"
+          fill="url(#teen-male-shoes-platform-boots__leather)"/>
+    <!-- the slab itself, in two visible layers -->
+    <rect x="152" y="544" width="54" height="14" rx="4" fill="url(#teen-male-shoes-platform-boots__slab)"/>
+    <rect x="194" y="544" width="54" height="14" rx="4" fill="url(#teen-male-shoes-platform-boots__slab)"/>
+    <rect x="150" y="556" width="58" height="14" rx="5" fill="url(#teen-male-shoes-platform-boots__slab)"/>
+    <rect x="192" y="556" width="58" height="14" rx="5" fill="url(#teen-male-shoes-platform-boots__slab)"/>
+  </g>
+
+  <!-- lug notches cut into the lower slab -->
+  <path d="M156 563 v7 M168 563 v7 M180 563 v7 M192 563 v7"
+        stroke="var(--c2, #241914)" stroke-width="3" stroke-opacity="0.55"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 563 v7 M232 563 v7 M220 563 v7 M208 563 v7"
+        stroke="var(--c2, #241914)" stroke-width="3" stroke-opacity="0.55"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- side zip line with a pull -->
+  <path d="M196 494 v42" stroke="var(--c3, #E8E2D4)" stroke-width="2.6"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <path d="M204 494 v42" stroke="var(--c3, #E8E2D4)" stroke-width="2.6"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <rect x="193" y="486" width="7" height="9" rx="3" fill="var(--c3, #E8E2D4)"/>
+  <rect x="200" y="486" width="7" height="9" rx="3" fill="var(--c3, #E8E2D4)"/>
+
+  <!-- top collar band -->
+  <rect x="158" y="486" width="46" height="9" rx="4" fill="var(--c2, #241914)"/>
+  <rect x="196" y="486" width="46" height="9" rx="4" fill="var(--c2, #241914)"/>
+
+  <path d="M165 500 q0 18 0 34" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 500 q0 18 0 34" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

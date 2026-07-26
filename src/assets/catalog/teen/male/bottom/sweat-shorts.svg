@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sweat Shorts" data-family="sweat-shorts" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = knee-short (just above the knee) ·
+       leg width = wide, flaring away from the thigh · hem = raw/open.
+       vs shorts: leg length + leg width (these flare out and hang lower).
+       vs bike-shorts: rise + leg width. vs swim-trunks: leg width + hem treatment.
+       Surface tools: trim (ribbed waistband with a drawcord and two aglets) +
+       structural detail (side seam vents, hem facing) + panel blocking (contrast
+       lower band across both legs). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-sweat-shorts__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97466)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-sweat-shorts__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97466)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M150 352 H198 L192 462 q0 8 -8 8 h-36 q-8 0 -8-8 Z"
+          fill="url(#teen-male-bottom-sweat-shorts__leg)"/>
+    <path d="M250 352 H202 L208 462 q0 8 8 8 h36 q8 0 8-8 Z"
+          fill="url(#teen-male-bottom-sweat-shorts__leg)"/>
+    <path d="M150 332 h100 q8 0 8 10 v28 q-58 10 -116 0 v-28 q0-10 8-10 Z"
+          fill="url(#teen-male-bottom-sweat-shorts__seat)"/>
+  </g>
+
+  <!-- ribbed waistband -->
+  <rect x="146" y="322" width="108" height="24" rx="10" fill="var(--c2, #C97466)"/>
+  <path d="M158 326 v16 M172 326 v16 M186 326 v16 M214 326 v16 M228 326 v16 M242 326 v16"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- drawcord with aglets -->
+  <path d="M190 344 q-6 16 -12 22" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 344 q6 16 12 22" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="176" cy="368" r="4.5" fill="var(--c3, #F7C873)"/>
+  <circle cx="224" cy="368" r="4.5" fill="var(--c3, #F7C873)"/>
+
+  <!-- contrast hem band -->
+  <path d="M142 448 h52 l-2 14 q0 8 -8 8 h-36 q-8 0 -8-8 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M258 448 h-52 l2 14 q0 8 8 8 h36 q8 0 8-8 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- side seam vents -->
+  <path d="M150 400 q-3 26 -4 46" stroke="var(--c2, #C97466)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 400 q3 26 4 46" stroke="var(--c2, #C97466)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M158 360 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 380 q-4 30 -6 56" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 380 q4 30 6 56" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

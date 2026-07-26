@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: hem (cropped at the hip with a high-cut leg, the shortest in the slot) · volume (skin-close, no skirt) -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-swimsuit__lycra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2FA6A0)"/>
+      <stop offset="1" stop-color="var(--c2, #1C7C79)"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-swimsuit__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 14 q5-8 10 0 q5 8 10 0" stroke="var(--c3, #F7C873)" stroke-width="2.6"
+            fill="none" stroke-opacity="0.7"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-swimsuit__clip">
+      <path d="M158 210 q16 12 42 12 q26 0 42-12 q10 4 10 22 v76 q0 26 -14 38
+               q-14 12 -38 12 q-24 0 -38-12 q-14-12 -14-38 v-76 q0-18 10-22 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one skin-close body, scooped at the neck, cut high at the leg -->
+    <path d="M158 210 q16 12 42 12 q26 0 42-12 q10 4 10 22 v76 q0 26 -14 38
+             q-14 12 -38 12 q-24 0 -38-12 q-14-12 -14-38 v-76 q0-18 10-22 z"
+          fill="url(#teen-male-onepiece-swimsuit__lycra)"/>
+    <!-- shoulder straps -->
+    <path d="M162 196 h14 v22 h-14 z" fill="url(#teen-male-onepiece-swimsuit__lycra)"/>
+    <path d="M224 196 h14 v22 h-14 z" fill="url(#teen-male-onepiece-swimsuit__lycra)"/>
+  </g>
+
+  <g clip-path="url(#teen-male-onepiece-swimsuit__clip)">
+    <rect x="148" y="240" width="104" height="80" fill="url(#teen-male-onepiece-swimsuit__wave)"/>
+  </g>
+
+  <!-- contrast bind round the neckline and the high leg openings -->
+  <path d="M158 210 q16 12 42 12 q26 0 42-12" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 322 q14 22 34 32" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 322 q-14 22 -34 32" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 228 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

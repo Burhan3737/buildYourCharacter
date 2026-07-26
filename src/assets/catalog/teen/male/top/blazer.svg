@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = OPEN FRONT (two structured fronts over a shell, notched
+       lapels) · volume = FITTED (square shoulder at x138/262 pulling to a
+       waisted front edge). Sleeve long, hem hip (y360). Differs from cardigan
+       on hem + volume, from flannel-overshirt on hem + volume, from button-up
+       on closure + volume, from waistcoat on sleeve + closure. -->
+  <defs>
+    <linearGradient id="teen-male-top-blazer__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46599C)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3C72)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-blazer__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46599C)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3C72)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-blazer__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-blazer__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2E3C72)"/>
+      <stop offset="1" stop-color="var(--c1, #46599C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- shell worn underneath, seen through the open front -->
+    <path d="M172 190 h56 q22 0 22 22 v130 h-100 v-130 q0-22 22-22 z"
+          fill="url(#teen-male-top-blazer__shell)"/>
+    <!-- structured square-shouldered sleeves -->
+    <path d="M112 224 q0-28 26-30 l30 0 v142 q0 18 -18 18 h-20 q-18 0 -18-18 z"
+          fill="url(#teen-male-top-blazer__sleeve)"/>
+    <path d="M288 224 q0-28 -26-30 l-30 0 v142 q0 18 18 18 h20 q18 0 18-18 z"
+          fill="url(#teen-male-top-blazer__sleeve)"/>
+    <!-- left and right jacket fronts -->
+    <path d="M176 190 q-38 2 -38 26 v122 q0 22 24 22 h34 q8 0 8-12 v-104 z"
+          fill="url(#teen-male-top-blazer__front)"/>
+    <path d="M224 190 q38 2 38 26 v122 q0 22 -24 22 h-34 q-8 0 -8-12 v-104 z"
+          fill="url(#teen-male-top-blazer__front)"/>
+  </g>
+
+  <!-- notched lapels, the tailoring signal -->
+  <path d="M178 190 l26 54 l-8 24 l-24-34 l-4-40 z" fill="url(#teen-male-top-blazer__lapel)"/>
+  <path d="M222 190 l-26 54 l8 24 l24-34 l4-40 z" fill="url(#teen-male-top-blazer__lapel)"/>
+  <path d="M172 194 l-2 34 M228 194 l2 34" stroke="#3B2A22" stroke-opacity="0.22"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- collar band behind the neck -->
+  <path d="M176 190 q24 16 48 0 l-6-12 q-18 8 -36 0 z" fill="var(--c2, #2E3C72)"/>
+
+  <!-- welt pockets and a chest pocket -->
+  <path d="M148 302 h38 v9 q0 4 -4 4 h-30 q-4 0 -4-4 z" fill="var(--c2, #2E3C72)"/>
+  <path d="M214 302 h38 v9 q0 4 -4 4 h-30 q-4 0 -4-4 z" fill="var(--c2, #2E3C72)"/>
+  <path d="M150 248 h28 v7 q0 3 -3 3 h-22 q-3 0 -3-3 z" fill="var(--c2, #2E3C72)"/>
+
+  <!-- single fastening button at the waist -->
+  <circle cx="200" cy="304" r="5.5" fill="var(--c3, #F6F2E9)"/>
+
+  <!-- cuff buttons -->
+  <circle cx="126" cy="330" r="3.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="126" cy="342" r="3.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="274" cy="330" r="3.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="274" cy="342" r="3.5" fill="var(--c3, #F6F2E9)"/>
+
+  <!-- highlight along the square shoulder -->
+  <path d="M144 204 q26-8 34 0 M256 204 q-26-8 -34 0" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

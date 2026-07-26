@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: hem = WAIST (the deep rib band lands at y336, above the hip block) ·
+       volume = BOXY/BLOUSED (body swells to x128/272 at the chest and gathers
+       back in to x148/252 at the hem). Sleeve long, closure zip. Differs from
+       zip-jacket on hem + volume, from puffer-vest on sleeve + hem, from henley
+       on closure + volume, from hoodie/sweater on closure + hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C6B57)"/>
+      <stop offset="1" stop-color="var(--c2, #32493B)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C6B57)"/>
+      <stop offset="1" stop-color="var(--c2, #32493B)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0B24A)"/>
+      <stop offset="1" stop-color="var(--c3, #F0B24A)" stop-opacity="0.76"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-bomber__clip">
+      <path d="M168 188 h64 q34 0 36 30 l4 66 q2 24 -20 30 q-52 14 -104 0 q-22-6 -20-30 l4-66 q2-30 36-30 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long bloused sleeves gathering into a rib cuff at y340 -->
+    <path d="M110 228 q2-28 28-30 l28 0 v122 q0 20 -20 20 h-18 q-20 0 -20-20 z"
+          fill="url(#teen-male-top-bomber__sleeve)"/>
+    <path d="M290 228 q-2-28 -28-30 l-28 0 v122 q0 20 20 20 h18 q20 0 20-20 z"
+          fill="url(#teen-male-top-bomber__sleeve)"/>
+    <!-- blouson body: wide at the chest, drawn in above a waist-height hem -->
+    <path d="M168 188 h64 q34 0 36 30 l4 66 q2 24 -20 30 q-52 14 -104 0 q-22-6 -20-30 l4-66 q2-30 36-30 z"
+          fill="url(#teen-male-top-bomber__body)"/>
+  </g>
+
+  <!-- panel: contrast shoulder-to-sleeve blocking -->
+  <g clip-path="url(#teen-male-top-bomber__clip)">
+    <path d="M124 188 h40 l-36 54 z" fill="var(--c2, #32493B)"/>
+    <path d="M276 188 h-40 l36 54 z" fill="var(--c2, #32493B)"/>
+    <path d="M132 268 q68 16 136 0 v16 q-68 16 -136 0 z" fill="var(--c3, #F0B24A)" opacity="0.85"/>
+  </g>
+
+  <!-- sleeve stripe -->
+  <path d="M112 262 h54 v14 h-54 z" fill="var(--c3, #F0B24A)" opacity="0.85"/>
+  <path d="M288 262 h-54 v14 h54 z" fill="var(--c3, #F0B24A)" opacity="0.85"/>
+
+  <!-- ribbed stand collar -->
+  <path d="M174 202 q26-16 52 0 v-16 q-26-12 -52 0 z" fill="url(#teen-male-top-bomber__rib)"/>
+  <path d="M178 192 h44" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep ribbed hem band at the waist -->
+  <path d="M148 310 q52 14 104 0 v14 q0 12 -18 14 q-34 6 -68 0 q-18-2 -18-14 z"
+        fill="url(#teen-male-top-bomber__rib)"/>
+  <path d="M158 318 v18 M172 320 v18 M186 322 v18 M200 322 v18 M214 322 v18 M228 320 v18 M242 318 v18"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M110 326 h56 v14 q0 20 -18 20 h-20 q-18 0 -18-20 z" fill="url(#teen-male-top-bomber__rib)"/>
+  <path d="M290 326 h-56 v14 q0 20 18 20 h20 q18 0 18-20 z" fill="url(#teen-male-top-bomber__rib)"/>
+
+  <!-- centre zip with a pull -->
+  <rect x="197" y="196" width="6" height="126" rx="3" fill="var(--c3, #F0B24A)"/>
+  <path d="M200 200 v118" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="195" y="238" width="10" height="16" rx="5" fill="var(--c3, #F0B24A)"/>
+
+  <!-- welt pockets angled into the side seams -->
+  <path d="M150 292 l30-8 v9 l-30 8 z" fill="var(--c2, #32493B)"/>
+  <path d="M250 292 l-30-8 v9 l30 8 z" fill="var(--c2, #32493B)"/>
+
+  <!-- highlight -->
+  <path d="M146 206 q54 16 108 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

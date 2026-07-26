@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (full button-through placket, collar to hem) · volume (straight column, belted, not flared) -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAED9)"/>
+      <stop offset="1" stop-color="var(--c2, #6E8CB8)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAED9)"/>
+      <stop offset="1" stop-color="var(--c2, #6E8CB8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one straight column from shoulder to knee, barely shaped at the waist -->
+    <path d="M166 192 h68 q32 0 33 30 l6 100 q3 76 5 148 q-78 16 -156 0 q2-72 5-148 l6-100 q1-30 33-30 z"
+          fill="url(#teen-male-onepiece-shirt-dress__body)"/>
+    <path d="M117 205 h30 q4 0 4 8 v46 q0 8 -6 8 h-26 q-6 0 -6-8 v-46 q0-8 4-8 z"
+          fill="url(#teen-male-onepiece-shirt-dress__sleeve)"/>
+    <path d="M283 205 h-30 q-4 0 -4 8 v46 q0 8 6 8 h26 q6 0 6-8 v-46 q0-8 -4-8 z"
+          fill="url(#teen-male-onepiece-shirt-dress__sleeve)"/>
+  </g>
+
+  <!-- flat collar wings over the placket -->
+  <path d="M176 190 L200 194 L195 220 L170 200 z" fill="var(--c3, #2F4468)"/>
+  <path d="M224 190 L200 194 L205 220 L230 200 z" fill="var(--c3, #2F4468)"/>
+  <!-- full button placket running the whole length -->
+  <rect x="194" y="194" width="12" height="270" rx="4" fill="var(--c3, #2F4468)"/>
+  <circle cx="200" cy="230" r="3.6" fill="var(--c1, #8FAED9)"/>
+  <circle cx="200" cy="266" r="3.6" fill="var(--c1, #8FAED9)"/>
+  <circle cx="200" cy="336" r="3.6" fill="var(--c1, #8FAED9)"/>
+  <circle cx="200" cy="380" r="3.6" fill="var(--c1, #8FAED9)"/>
+  <circle cx="200" cy="424" r="3.6" fill="var(--c1, #8FAED9)"/>
+
+  <!-- self-fabric belt at the natural waist -->
+  <path d="M141 300 q59 14 118 0 v18 q-59 14 -118 0 z" fill="var(--c3, #2F4468)"/>
+  <rect x="190" y="298" width="20" height="24" rx="5" fill="var(--c1, #8FAED9)"/>
+
+  <!-- cuff bands -->
+  <rect x="115" y="252" width="34" height="9" rx="4" fill="var(--c3, #2F4468)"/>
+  <rect x="251" y="252" width="34" height="9" rx="4" fill="var(--c3, #2F4468)"/>
+
+  <path d="M152 214 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 460 q50 12 100 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = HALF PLACKET (collarless three-button placket, no collar
+       at all) · hem = WAIST (y330, sitting above the hip block). Sleeve long but
+       pushed up to the forearm at y304; volume fitted. Differs from button-up on
+       closure + hem + volume, from turtleneck on closure + hem, from polo on
+       sleeve + hem, from blazer on closure + hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C9B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #63704F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C9B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #63704F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-henley__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #F6E3C8)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="teen-male-top-henley__slub" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="14">
+      <rect x="0" y="0" width="3" height="14" fill="var(--c2, #63704F)"/>
+      <rect x="7" y="0" width="1.5" height="14" fill="var(--c2, #63704F)" opacity="0.6"/>
+    </pattern>
+    <clipPath id="teen-male-top-henley__clip">
+      <path d="M170 190 h60 q34 0 34 30 v82 q0 28 -30 28 h-68 q-30 0 -30-28 v-82 q0-30 34-30 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeves pushed up, ending in a roll at the forearm (y304) -->
+    <path d="M136 198 q-22 6 -22 26 v60 q0 20 18 20 h16 q16 0 16-20 v-66 q0-20 -16-20 z"
+          fill="url(#teen-male-top-henley__sleeve)"/>
+    <path d="M264 198 q22 6 22 26 v60 q0 20 -18 20 h-16 q-16 0 -16-20 v-66 q0-20 16-20 z"
+          fill="url(#teen-male-top-henley__sleeve)"/>
+    <!-- fitted body cut short to the waist at y330 -->
+    <path d="M170 190 h60 q34 0 34 30 v82 q0 28 -30 28 h-68 q-30 0 -30-28 v-82 q0-30 34-30 z"
+          fill="url(#teen-male-top-henley__body)"/>
+  </g>
+
+  <!-- slub knit texture -->
+  <g clip-path="url(#teen-male-top-henley__clip)">
+    <rect x="132" y="186" width="136" height="150" fill="url(#teen-male-top-henley__slub)" opacity="0.28"/>
+    <path d="M136 306 h128 v30 h-128 z" fill="var(--c2, #63704F)" opacity="0.5"/>
+  </g>
+
+  <!-- collarless placket band with three buttons -->
+  <path d="M186 188 h28 v58 q0 8 -14 8 q-14 0 -14-8 z" fill="url(#teen-male-top-henley__placket)"/>
+  <path d="M200 190 v58" stroke="var(--c2, #63704F)" stroke-opacity="0.45" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="204" r="4.5" fill="var(--c2, #63704F)"/>
+  <circle cx="200" cy="222" r="4.5" fill="var(--c2, #63704F)"/>
+  <circle cx="200" cy="240" r="4.5" fill="var(--c2, #63704F)"/>
+
+  <!-- bound round neckline, no collar -->
+  <path d="M174 188 q26 22 52 0" stroke="var(--c3, #F6E3C8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rolled cuffs at the forearm -->
+  <path d="M114 288 h52 v6 q0 18 -16 18 h-20 q-16 0 -16-18 z" fill="var(--c2, #63704F)"/>
+  <path d="M286 288 h-52 v6 q0 18 16 18 h20 q16 0 16-18 z" fill="var(--c2, #63704F)"/>
+  <path d="M120 296 h40 M240 296 h40" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- waist hem band -->
+  <path d="M138 318 h124 v6 q0 12 -18 12 h-88 q-18 0 -18-12 z" fill="var(--c3, #F6E3C8)"/>
+
+  <!-- highlight -->
+  <path d="M152 206 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

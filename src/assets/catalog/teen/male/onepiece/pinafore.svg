@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (two narrow straps over a square bib, arms and chest bare) · volume (A-line flare from the bib) -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-pinafore__cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C56E7E)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5062)"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-pinafore__wale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 0 v16" stroke="var(--c2, #9E5062)" stroke-width="3" stroke-opacity="0.42" fill="none"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-pinafore__clip">
+      <path d="M158 258 h84 q6 0 8 12 l22 200 q-72 18 -144 0 l22-200 q2-12 8-12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- square bib plus a deep A-line skirt, one continuous piece -->
+    <path d="M158 258 h84 q6 0 8 12 l22 200 q-72 18 -144 0 l22-200 q2-12 8-12 z"
+          fill="url(#teen-male-onepiece-pinafore__cord)"/>
+    <!-- straps up over the shoulders -->
+    <path d="M164 190 h16 v72 h-16 z" fill="url(#teen-male-onepiece-pinafore__cord)"/>
+    <path d="M220 190 h16 v72 h-16 z" fill="url(#teen-male-onepiece-pinafore__cord)"/>
+  </g>
+
+  <!-- corduroy wale over the skirt -->
+  <g clip-path="url(#teen-male-onepiece-pinafore__clip)">
+    <rect x="128" y="258" width="144" height="222" fill="url(#teen-male-onepiece-pinafore__wale)"/>
+  </g>
+
+  <!-- strap buttons and a big patch pocket -->
+  <circle cx="172" cy="266" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="228" cy="266" r="5" fill="var(--c3, #F7C873)"/>
+  <path d="M176 350 h48 q5 0 5 6 v34 q0 6 -6 6 h-46 q-6 0 -6-6 v-34 q0-6 5-6 z"
+        fill="var(--c2, #9E5062)"/>
+  <path d="M176 364 h58" stroke="var(--c3, #F7C873)" stroke-width="2.6"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+
+  <path d="M164 274 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 464 q64 16 128 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

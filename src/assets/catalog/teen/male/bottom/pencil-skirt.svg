@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pencil Skirt" data-family="pencil-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = high · leg length = none (skirt), hem at the knee ·
+       leg width = narrow, straight and tapering in · hem = raw with a short centre vent.
+       The vent is cut into the outline, not drawn on it.
+       vs skirt: volume (narrow taper vs A-line flare) + hem treatment (vent vs plain).
+       vs maxi-skirt: hem length + hem treatment. vs pleated: leg length + volume.
+       Surface tools: pattern (16px gingham check through the accent c3) + trim (deep contrast
+       waistband, vent facing) + structural detail (waist darts, hem band). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-pencil-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8593B8)"/>
+      <stop offset="1" stop-color="var(--c2, #56638A)"/>
+    </linearGradient>
+    <pattern id="teen-male-bottom-pencil-skirt__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="5" fill="var(--c3, #F7C873)" opacity="0.4"/>
+      <rect x="0" y="0" width="5" height="16" fill="var(--c3, #F7C873)" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 328 H254 L246 470 H206 V444 H194 V470 H154 Z"
+          fill="url(#teen-male-bottom-pencil-skirt__body)"/>
+  </g>
+
+  <path d="M146 328 H254 L246 470 H206 V444 H194 V470 H154 Z"
+        fill="url(#teen-male-bottom-pencil-skirt__check)"/>
+
+  <!-- deep waistband -->
+  <rect x="144" y="318" width="112" height="26" rx="9" fill="var(--c2, #56638A)"/>
+  <path d="M148 326 h104" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vent facing -->
+  <path d="M194 444 V470" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 444 V470" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M194 446 H206" stroke="var(--c2, #56638A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- waist darts -->
+  <path d="M176 348 q3 20 1 34" stroke="var(--c2, #56638A)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 348 q-3 20 -1 34" stroke="var(--c2, #56638A)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem band -->
+  <path d="M154 458 H194 V470 H154 Z" fill="var(--c2, #56638A)"/>
+  <path d="M206 458 H246 V470 H206 Z" fill="var(--c2, #56638A)"/>
+
+  <path d="M154 350 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 372 q-3 40 -4 76" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

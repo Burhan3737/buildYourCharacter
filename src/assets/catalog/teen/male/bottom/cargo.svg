@@ -1,36 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural · leg length = full · leg width = wide/relaxed ·
+       hem = elasticated drawcord. Legs bow outward well past the body's shins and
+       gather at the ankle. vs jeans: leg width + hem treatment. vs leggings: rise +
+       leg width. vs wide-leg: rise + hem treatment. Surface tools: structural detail
+       (flapped thigh pockets, knee seam) + trim (waistband, belt loops, hem drawcord). -->
   <defs>
-    <linearGradient id="teen-male-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #A7A08C)"/>
-      <stop offset="1" stop-color="var(--c2, #8B8570)"/>
-    </linearGradient>
     <linearGradient id="teen-male-bottom-cargo__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #A7A08C)"/>
-      <stop offset="1" stop-color="var(--c2, #8B8570)"/>
+      <stop offset="1" stop-color="var(--c2, #7A755F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-cargo__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A7A08C)"/>
+      <stop offset="1" stop-color="var(--c2, #7A755F)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="166" y="330" width="33" height="220" rx="14" fill="url(#teen-male-bottom-cargo__leg)"/>
-    <rect x="201" y="330" width="33" height="220" rx="14" fill="url(#teen-male-bottom-cargo__leg)"/>
-    <rect x="148" y="328" width="104" height="58" rx="24" fill="url(#teen-male-bottom-cargo__hip)"/>
+    <path d="M154 336 H200 L196 540 q0 10 -10 10 h-30 q-10 0 -10-10 L140 442 Q134 384 154 336 Z"
+          fill="url(#teen-male-bottom-cargo__leg)"/>
+    <path d="M246 336 H200 L204 540 q0 10 10 10 h30 q10 0 10-10 L260 442 Q266 384 246 336 Z"
+          fill="url(#teen-male-bottom-cargo__leg)"/>
+    <path d="M148 324 h104 q8 0 8 10 v28 q-60 12 -120 0 v-28 q0-10 8-10 Z"
+          fill="url(#teen-male-bottom-cargo__seat)"/>
   </g>
 
-  <rect x="148" y="328" width="104" height="18" rx="9" fill="var(--c2, #8B8570)"/>
+  <!-- waistband and belt loops -->
+  <rect x="146" y="320" width="108" height="20" rx="9" fill="var(--c2, #7A755F)"/>
+  <rect x="164" y="318" width="8" height="24" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="228" y="318" width="8" height="24" rx="3" fill="var(--c3, #F7C873)"/>
 
-  <!-- cargo patch pockets -->
-  <rect x="164" y="400" width="34" height="40" rx="6" fill="var(--c2, #8B8570)"/>
-  <rect x="202" y="400" width="34" height="40" rx="6" fill="var(--c2, #8B8570)"/>
-  <rect x="170" y="400" width="22" height="10" rx="4" fill="var(--c3, #F7C873)"/>
-  <rect x="208" y="400" width="22" height="10" rx="4" fill="var(--c3, #F7C873)"/>
+  <!-- flapped cargo thigh pockets -->
+  <path d="M146 408 h44 q4 0 4 5 v44 q0 5 -5 5 h-38 q-5 0 -5-5 Z"
+        fill="var(--c2, #7A755F)"/>
+  <path d="M254 408 h-44 q-4 0-4 5 v44 q0 5 5 5 h38 q5 0 5-5 Z"
+        fill="var(--c2, #7A755F)"/>
+  <path d="M144 404 h48 q5 0 5 6 v10 h-58 v-10 q0-6 5-6 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M256 404 h-48 q-5 0-5 6 v10 h58 v-10 q0-6 -5-6 Z" fill="var(--c3, #F7C873)"/>
+  <circle cx="168" cy="428" r="4" fill="var(--c3, #F7C873)"/>
+  <circle cx="232" cy="428" r="4" fill="var(--c3, #F7C873)"/>
 
-  <path d="M180 350 Q172 373 152 369" stroke="var(--c3, #F7C873)" stroke-width="2.5"
-        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M220 350 Q228 373 248 369" stroke="var(--c3, #F7C873)" stroke-width="2.5"
-        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <!-- knee seam -->
+  <path d="M146 472 q26 8 48 2" stroke="var(--c2, #7A755F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 472 q-26 8 -48 2" stroke="var(--c2, #7A755F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
 
-  <path d="M166 360 q35 12 70 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+  <!-- gathered hem drawcord -->
+  <rect x="150" y="528" width="44" height="16" rx="8" fill="var(--c2, #7A755F)"/>
+  <rect x="206" y="528" width="44" height="16" rx="8" fill="var(--c2, #7A755F)"/>
+  <path d="M158 536 h28 M214 536 h28" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M154 350 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 380 q-8 60 0 130" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 380 q8 60 0 130" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

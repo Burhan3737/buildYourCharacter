@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Scarf" data-family="scarf" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: body shape (soft bulky wrapped loop) · scale (covers the whole neck, not a chain) -->
+  <defs>
+    <linearGradient id="accessories-teen-necklace-scarf__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)" stop-opacity="0.76"/>
+    </linearGradient>
+    <pattern id="accessories-teen-necklace-scarf__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M0 7 h14" stroke="var(--c2, #C97F73)" stroke-width="3" stroke-opacity="0.55" fill="none"/>
+    </pattern>
+    <clipPath id="accessories-teen-necklace-scarf__clip">
+      <path d="M172 182 Q200 196 228 182 Q234 190 232 200 Q200 214 168 200 Q166 190 172 182 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- short hanging ends, drawn behind the loop -->
+  <g class="sp-shadow">
+    <path d="M186 196 h16 q3 0 3 4 l-2 12 q-9 3 -18 0 l-2 -12 q0 -4 3 -4 z"
+          fill="url(#accessories-teen-necklace-scarf__wool)"/>
+    <path d="M172 182 Q200 196 228 182 Q234 190 232 200 Q200 214 168 200 Q166 190 172 182 Z"
+          fill="url(#accessories-teen-necklace-scarf__wool)"/>
+  </g>
+
+  <!-- knit ribbing across the loop -->
+  <g clip-path="url(#accessories-teen-necklace-scarf__clip)">
+    <rect x="164" y="180" width="72" height="36" fill="url(#accessories-teen-necklace-scarf__knit)"/>
+  </g>
+
+  <!-- fringe on the hanging ends -->
+  <path d="M186 211 v4 M191 212 v4 M196 212.4 v4 M201 212.4 v4 M206 212 v4"
+        stroke="var(--c3, #F7C873)" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <path d="M176 188 Q200 198 224 188" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

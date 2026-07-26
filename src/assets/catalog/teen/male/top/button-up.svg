@@ -1,37 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Button-Up Shirt" data-family="button-up" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = FULL PLACKET (button band from the collar to the hem
+       under a flat pointed collar) · shoulder/sleeve = LONG (cuffed at y352).
+       Narrow body x140-260 with a shirt-tail hem curving to y357; volume
+       straight. vs tee: sleeve + closure. vs jersey: sleeve + closure + volume.
+       vs polo: sleeve + closure + volume. vs flannel-overshirt: closure + hem.
+       vs henley: closure + hem + volume. -->
   <defs>
     <linearGradient id="teen-male-top-button-up__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AC55)"/>
+      <stop offset="0" stop-color="var(--c1, #A8C4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6E8FBF)"/>
     </linearGradient>
     <linearGradient id="teen-male-top-button-up__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AC55)"/>
+      <stop offset="0" stop-color="var(--c1, #A8C4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6E8FBF)"/>
     </linearGradient>
+    <linearGradient id="teen-male-top-button-up__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="teen-male-top-button-up__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="18" height="6" fill="var(--c2, #6E8FBF)" opacity="0.55"/>
+      <rect x="0" y="0" width="6" height="18" fill="var(--c2, #6E8FBF)" opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-male-top-button-up__clip">
+      <path d="M172 190 h56 q32 0 32 30 v94 q0 22 -6 30 q-54 20 -108 0 q-6-8 -6-30 v-94 q0-30 32-30 z"/>
+      <path d="M114 222 q0-24 26-28 l24 0 v140 q0 18 -14 18 h-20 q-16 0 -16-18 z"/>
+      <path d="M286 222 q0-24 -26-28 l-24 0 v140 q0 18 14 18 h20 q16 0 16-18 z"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- short sleeves, teen casual camp-shirt cut -->
-    <rect x="114" y="198" width="32" height="76" rx="16" fill="url(#teen-male-top-button-up__sleeve)"/>
-    <rect x="254" y="198" width="32" height="76" rx="16" fill="url(#teen-male-top-button-up__sleeve)"/>
-    <!-- body, hem at y352 -->
-    <path d="M168 190 h64 q34 0 34 34 v94 q0 34 -34 34 h-64 q-34 0 -34-34 v-94 q0-34 34-34 z"
+    <!-- long sleeves running to a cuff at the wrist, y352 -->
+    <path d="M114 222 q0-24 26-28 l24 0 v140 q0 18 -14 18 h-20 q-16 0 -16-18 z"
+          fill="url(#teen-male-top-button-up__sleeve)"/>
+    <path d="M286 222 q0-24 -26-28 l-24 0 v140 q0 18 14 18 h20 q16 0 16-18 z"
+          fill="url(#teen-male-top-button-up__sleeve)"/>
+    <!-- narrow body finishing in a curved shirt tail -->
+    <path d="M172 190 h56 q32 0 32 30 v94 q0 22 -6 30 q-54 20 -108 0 q-6-8 -6-30 v-94 q0-30 32-30 z"
           fill="url(#teen-male-top-button-up__body)"/>
   </g>
-  <!-- centre placket -->
-  <rect x="196" y="192" width="8" height="158" rx="3" fill="var(--c2, #E0AC55)"/>
-  <!-- looser collar wings -->
-  <path d="M174 188 L200 190 L196 220 L170 198 z" fill="var(--c2, #E0AC55)"/>
-  <path d="M226 188 L200 190 L204 220 L230 198 z" fill="var(--c2, #E0AC55)"/>
-  <!-- buttons -->
-  <circle cx="200" cy="224" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="256" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="288" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="320" r="4.5" fill="var(--c3, #3B2A22)"/>
+
+  <!-- gingham check over body and sleeves -->
+  <g clip-path="url(#teen-male-top-button-up__clip)">
+    <rect x="108" y="188" width="184" height="180" fill="url(#teen-male-top-button-up__gingham)"/>
+  </g>
+
+  <!-- full button placket band -->
+  <path d="M190 190 h20 v152 q0 8 -10 10 q-10-2 -10-10 z" fill="url(#teen-male-top-button-up__trim)"/>
+  <path d="M200 194 v152" stroke="var(--c2, #6E8FBF)" stroke-opacity="0.5" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="212" r="4.5" fill="var(--c2, #6E8FBF)"/>
+  <circle cx="200" cy="244" r="4.5" fill="var(--c2, #6E8FBF)"/>
+  <circle cx="200" cy="276" r="4.5" fill="var(--c2, #6E8FBF)"/>
+  <circle cx="200" cy="308" r="4.5" fill="var(--c2, #6E8FBF)"/>
+  <circle cx="200" cy="336" r="4.5" fill="var(--c2, #6E8FBF)"/>
+
+  <!-- flat pointed collar over the placket -->
+  <path d="M176 188 q14 18 22 8 l-6 30 q-22-8 -22-26 z" fill="url(#teen-male-top-button-up__trim)"/>
+  <path d="M224 188 q-14 18 -22 8 l6 30 q22-8 22-26 z" fill="url(#teen-male-top-button-up__trim)"/>
+  <path d="M180 194 q10 12 18 6 M220 194 q-10 12 -18 6" stroke="var(--c2, #6E8FBF)"
+        stroke-opacity="0.4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- cuffs -->
+  <path d="M114 336 h50 v6 q0 18 -14 18 h-22 q-14 0 -14-18 z" fill="url(#teen-male-top-button-up__trim)"/>
+  <path d="M286 336 h-50 v6 q0 18 14 18 h22 q14 0 14-18 z" fill="url(#teen-male-top-button-up__trim)"/>
+  <circle cx="152" cy="348" r="3" fill="var(--c2, #6E8FBF)"/>
+  <circle cx="248" cy="348" r="3" fill="var(--c2, #6E8FBF)"/>
+
   <!-- chest pocket -->
-  <path d="M150 234 h28 v22 q0 6 -6 6 h-16 q-6 0 -6-6 z" fill="var(--c2, #E0AC55)"/>
+  <path d="M152 236 h30 v24 q0 6 -6 6 h-18 q-6 0 -6-6 z" fill="var(--c2, #6E8FBF)"/>
+  <path d="M156 244 h22" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
   <!-- highlight -->
-  <path d="M150 200 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M154 204 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

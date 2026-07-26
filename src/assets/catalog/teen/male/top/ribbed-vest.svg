@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: hem = PAST HIP (y376, longline) · volume = STRAIGHT (narrow x164-236
+       through the chest, dropping straight to x136-264 below the armhole).
+       Shoulder wide strap, closure closed. The armhole is cut right down to
+       y294, which is what separates it from tank (hip + fitted) on hem + volume;
+       from puffer-vest on sleeve + hem + volume; from overalls-top on
+       sleeve + hem + volume. -->
+  <defs>
+    <linearGradient id="teen-male-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8E2D6)"/>
+      <stop offset="1" stop-color="var(--c2, #BCB3A2)"/>
+    </linearGradient>
+    <pattern id="teen-male-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4.5" height="12" fill="var(--c2, #BCB3A2)"/>
+      <rect x="7" y="0" width="1.5" height="12" fill="#FFFFFF" opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-male-top-ribbed-vest__clip">
+      <path d="M166 188 q34 26 68 0 q6 34 2 62 q22 14 28 44 v52 q0 30 -30 30 h-68 q-30 0 -30-30 v-52 q6-30 28-44 q-4-28 2-62 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one longline athletic vest: wide straps, deep dropped armholes, hem y376 -->
+    <path d="M166 188 q34 26 68 0 q6 34 2 62 q22 14 28 44 v52 q0 30 -30 30 h-68 q-30 0 -30-30 v-52 q6-30 28-44 q-4-28 2-62 z"
+          fill="url(#teen-male-top-ribbed-vest__body)"/>
+  </g>
+
+  <!-- ribbed surface, the whole point of the garment -->
+  <g clip-path="url(#teen-male-top-ribbed-vest__clip)">
+    <rect x="132" y="184" width="136" height="200" fill="url(#teen-male-top-ribbed-vest__rib)" opacity="0.55"/>
+    <!-- underarm shading so the deep armhole reads -->
+    <path d="M136 300 q18-32 30-46 l0 46 z" fill="var(--c2, #BCB3A2)" opacity="0.7"/>
+    <path d="M264 300 q-18-32 -30-46 l0 46 z" fill="var(--c2, #BCB3A2)" opacity="0.7"/>
+    <!-- contrast band low on the body -->
+    <rect x="130" y="340" width="140" height="12" fill="var(--c3, #C8564F)"/>
+  </g>
+
+  <!-- neckline and armhole binding, one continuous contrast edge -->
+  <path d="M166 190 q34 24 68 0" stroke="var(--c3, #C8564F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 194 q6 32 1 58 q-22 16 -30 46" stroke="var(--c3, #C8564F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 194 q-6 32 -1 58 q22 16 30 46" stroke="var(--c3, #C8564F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem band -->
+  <path d="M136 358 h128 v10 q0 12 -18 12 h-92 q-18 0 -18-12 z" fill="var(--c2, #BCB3A2)"/>
+  <path d="M148 362 v16 M162 362 v16 M176 362 v16 M190 362 v16 M204 362 v16 M218 362 v16 M232 362 v16 M246 362 v16"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M176 208 q24 12 48 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

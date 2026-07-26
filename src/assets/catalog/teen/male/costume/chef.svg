@@ -1,0 +1,84 @@
+<!-- axes: CLOSURE (double-breasted, two offset button columns and a wrapped front panel) and
+     HEM (a long waist apron carrying past the knee over a hip-length jacket). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chef" data-family="chef" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-chef__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7F3EA)"/>
+      <stop offset="1" stop-color="var(--c1, #D9D2C4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-chef__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #59616F)"/>
+      <stop offset="1" stop-color="var(--c2, #3C4250)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-chef__kerchief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8776A)"/>
+      <stop offset="1" stop-color="var(--c3, #C4544A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- trousers -->
+  <g class="sp-shadow">
+    <rect x="146" y="340" width="108" height="52" rx="18" fill="url(#teen-male-costume-chef__dark)"/>
+    <path d="M156 380 h46 l-2 172 h-42 z" fill="url(#teen-male-costume-chef__dark)"/>
+    <path d="M198 380 h46 l-2 172 h-42 z" fill="url(#teen-male-costume-chef__dark)"/>
+  </g>
+
+  <!-- boxy double-breasted jacket and long sleeves -->
+  <g class="sp-shadow">
+    <path d="M136 218 q6 -24 34 -24 h60 q28 0 34 24 v112 q0 26 -26 26 h-76 q-26 0 -26 -26 z"
+          fill="url(#teen-male-costume-chef__jacket)"/>
+    <rect x="110" y="210" width="36" height="148" rx="14" fill="url(#teen-male-costume-chef__jacket)"/>
+    <rect x="254" y="210" width="36" height="148" rx="14" fill="url(#teen-male-costume-chef__jacket)"/>
+  </g>
+
+  <!-- long waist apron -->
+  <g class="sp-shadow">
+    <path d="M152 344 h96 l7 176 q-55 15 -110 0 z" fill="url(#teen-male-costume-chef__jacket)"/>
+  </g>
+
+  <!-- clogs and hands -->
+  <g class="sp-shadow">
+    <circle cx="129" cy="378" r="18" fill="url(#teen-male-costume-chef__jacket)"/>
+    <circle cx="271" cy="378" r="18" fill="url(#teen-male-costume-chef__jacket)"/>
+    <path d="M150 526 h54 q9 26 1 40 q-28 9 -55 0 q-8 -16 0 -40 z"
+          fill="url(#teen-male-costume-chef__dark)"/>
+    <path d="M196 526 h54 q9 26 1 40 q-28 9 -55 0 q-8 -16 0 -40 z"
+          fill="url(#teen-male-costume-chef__dark)"/>
+  </g>
+
+  <!-- wrapped double-breasted front panel: the right side crosses over the left -->
+  <path d="M186 200 q-24 6 -30 24 l-14 132 h34 l6 -132 q4 -18 4 -24 z"
+        fill="var(--c1, #D9D2C4)" fill-opacity="0.55"/>
+  <path d="M214 200 q24 6 30 24 l-4 132 h-58 l6 -132 q-2 -18 26 -24 z"
+        fill="url(#teen-male-costume-chef__jacket)"/>
+
+  <!-- two button columns -->
+  <g fill="url(#teen-male-costume-chef__dark)">
+    <circle cx="180" cy="240" r="5"/><circle cx="180" cy="266" r="5"/>
+    <circle cx="180" cy="292" r="5"/><circle cx="180" cy="318" r="5"/>
+    <circle cx="222" cy="240" r="5"/><circle cx="222" cy="266" r="5"/>
+    <circle cx="222" cy="292" r="5"/><circle cx="222" cy="318" r="5"/>
+  </g>
+
+  <!-- turned cuffs -->
+  <rect x="108" y="330" width="40" height="24" rx="9" fill="url(#teen-male-costume-chef__dark)"/>
+  <rect x="252" y="330" width="40" height="24" rx="9" fill="url(#teen-male-costume-chef__dark)"/>
+
+  <!-- apron waistband and ties -->
+  <rect x="146" y="336" width="108" height="18" rx="8" fill="url(#teen-male-costume-chef__dark)"/>
+  <path d="M154 350 q-16 20 -22 46 M158 352 q-6 22 -4 46" stroke="var(--c2, #3C4250)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- knotted neckerchief, sitting at and below the shoulder line -->
+  <path d="M164 194 q36 22 72 0 l6 16 q-42 26 -84 0 z"
+        fill="url(#teen-male-costume-chef__kerchief)"/>
+  <path d="M192 208 q8 -8 16 0 q8 8 0 16 q-8 8 -16 0 q-8 -8 0 -16 z"
+        fill="url(#teen-male-costume-chef__kerchief)"/>
+  <path d="M196 224 l-10 24 l12 -6 z M204 224 l10 24 l-12 -6 z"
+        fill="url(#teen-male-costume-chef__kerchief)"/>
+
+  <path d="M152 212 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

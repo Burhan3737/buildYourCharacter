@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = HALF PLACKET (two-button placket under a flat knit collar) ·
+       volume = FITTED (sides pull in to x256, curved shirt hem). Sleeve short
+       set-in, hem hip. Differs from tee on closure + volume, from jersey on
+       sleeve + closure + volume, from button-up on sleeve + closure + volume,
+       from henley on sleeve + hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #45907F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #45907F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-polo__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="teen-male-top-polo__pique" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="4" cy="4" r="2" fill="var(--c2, #45907F)"/>
+      <circle cx="11" cy="11" r="2" fill="var(--c2, #45907F)"/>
+    </pattern>
+    <clipPath id="teen-male-top-polo__clip">
+      <path d="M168 190 h64 q28 0 30 28 l-2 80 q0 24 -8 34 q-52 22 -104 0 q-8-10 -8-34 l-2-80 q2-28 30-28 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves with a knitted band end -->
+    <path d="M138 196 q-24 4 -24 26 v40 q0 14 14 14 h20 q12 0 12-14 v-52 q0-14 -12-14 z"
+          fill="url(#teen-male-top-polo__sleeve)"/>
+    <path d="M262 196 q24 4 24 26 v40 q0 14 -14 14 h-20 q-12 0 -12-14 v-52 q0-14 12-14 z"
+          fill="url(#teen-male-top-polo__sleeve)"/>
+    <!-- fitted body with a curved shirt hem dipping to y343 -->
+    <path d="M168 190 h64 q28 0 30 28 l-2 80 q0 24 -8 34 q-52 22 -104 0 q-8-10 -8-34 l-2-80 q2-28 30-28 z"
+          fill="url(#teen-male-top-polo__body)"/>
+  </g>
+
+  <!-- piqué knit texture -->
+  <g clip-path="url(#teen-male-top-polo__clip)">
+    <rect x="130" y="186" width="140" height="176" fill="url(#teen-male-top-polo__pique)" opacity="0.45"/>
+    <!-- side seam shading, which is what makes the fitted line read -->
+    <path d="M138 218 q10 60 6 130 h-10 z" fill="var(--c2, #45907F)" opacity="0.5"/>
+    <path d="M262 218 q-10 60 -6 130 h10 z" fill="var(--c2, #45907F)" opacity="0.5"/>
+  </g>
+
+  <!-- two-button placket -->
+  <path d="M192 190 h16 v46 q0 6 -8 6 q-8 0 -8-6 z" fill="var(--c3, #F6F2E9)"/>
+  <path d="M200 192 v46" stroke="var(--c2, #45907F)" stroke-opacity="0.4" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="204" r="4" fill="var(--c2, #45907F)"/>
+  <circle cx="200" cy="226" r="4" fill="var(--c2, #45907F)"/>
+
+  <!-- flat knit collar lying over the placket -->
+  <path d="M172 186 q14 24 26 8 l-14 26 q-22-8 -26-24 z" fill="url(#teen-male-top-polo__collar)"/>
+  <path d="M228 186 q-14 24 -26 8 l14 26 q22-8 26-24 z" fill="url(#teen-male-top-polo__collar)"/>
+  <path d="M176 192 q10 14 20 8 M224 192 q-10 14 -20 8" stroke="var(--c2, #45907F)"
+        stroke-opacity="0.35" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- contrast sleeve bands -->
+  <path d="M114 258 h50 v6 q0 14 -12 14 h-24 q-14 0 -14-14 z" fill="var(--c3, #F6F2E9)"/>
+  <path d="M286 258 h-50 v6 q0 14 12 14 h24 q14 0 14-14 z" fill="var(--c3, #F6F2E9)"/>
+
+  <!-- highlight -->
+  <path d="M154 208 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

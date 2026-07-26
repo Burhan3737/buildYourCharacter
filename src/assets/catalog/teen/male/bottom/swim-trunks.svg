@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = low · leg length = short (mid-thigh) · leg width = straight ·
+       hem = split, cut away at the side seam. vs shorts: rise + hem treatment.
+       vs sweat-shorts: leg width + hem treatment. vs bike-shorts: rise + leg width.
+       Surface tools: pattern (18px scattered dot through the accent c3) + trim (elasticated
+       gathered waistband with a bow-tied cord) + structural detail (side split facing). -->
+  <defs>
+    <linearGradient id="teen-male-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58B7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #2F7E99)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-swim-trunks__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58B7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #2F7E99)"/>
+    </linearGradient>
+    <pattern id="teen-male-bottom-swim-trunks__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="3" fill="var(--c3, #F7C873)" opacity="0.7"/>
+      <circle cx="15" cy="15" r="2" fill="var(--c3, #F7C873)" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 348 H201 L194 452 H160 L158 430 Q152 424 146 430 Z"
+          fill="url(#teen-male-bottom-swim-trunks__leg)"/>
+    <path d="M254 348 H199 L206 452 H240 L242 430 Q248 424 254 430 Z"
+          fill="url(#teen-male-bottom-swim-trunks__leg)"/>
+    <path d="M148 330 q52-12 104 0 v34 q-52 12 -104 0 Z"
+          fill="url(#teen-male-bottom-swim-trunks__waist)"/>
+  </g>
+
+  <!-- dot pattern over the legs -->
+  <path d="M146 348 H201 L194 452 H160 L158 430 Q152 424 146 430 Z"
+        fill="url(#teen-male-bottom-swim-trunks__dots)"/>
+  <path d="M254 348 H199 L206 452 H240 L242 430 Q248 424 254 430 Z"
+        fill="url(#teen-male-bottom-swim-trunks__dots)"/>
+
+  <!-- elasticated waistband -->
+  <path d="M148 332 q52-12 104 0 v16 q-52 12 -104 0 Z" fill="var(--c2, #2F7E99)"/>
+  <path d="M156 336 v14 M168 334 v14 M180 333 v14 M220 333 v14 M232 334 v14 M244 336 v14"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cord with a bow -->
+  <path d="M186 348 q-10 8 -16 4 q-2 8 8 8 q8 0 10-10" stroke="var(--c3, #F7C873)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M214 348 q10 8 16 4 q2 8 -8 8 q-8 0 -10-10" stroke="var(--c3, #F7C873)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- side split facing -->
+  <path d="M148 430 Q153 425 158 431 L160 452" stroke="var(--c3, #F7C873)"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M252 430 Q247 425 242 431 L240 452" stroke="var(--c3, #F7C873)"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M200 350 v100" stroke="var(--c2, #2F7E99)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M156 366 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

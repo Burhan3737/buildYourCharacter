@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve = NONE (armholes cut straight to the shoulder seam,
+       bare arms) · closure = FULL PLACKET (visible four-button line down the
+       centre). Hem hip, ending in a point at y354; volume fitted. Differs from
+       tank on sleeve + closure, from puffer-vest on closure + volume, from
+       blazer on sleeve + closure, from ribbed-vest on all four. -->
+  <defs>
+    <linearGradient id="teen-male-top-waistcoat__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #2C2C40)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-waistcoat__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.76"/>
+    </linearGradient>
+    <pattern id="teen-male-top-waistcoat__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M0 16 L16 0" stroke="var(--c2, #2C2C40)" stroke-width="2.4" fill="none"/>
+      <path d="M0 8 L8 0 M8 16 L16 8" stroke="var(--c2, #2C2C40)" stroke-width="2.4" fill="none"/>
+    </pattern>
+    <clipPath id="teen-male-top-waistcoat__clipL">
+      <path d="M178 190 q-38 4 -40 30 l-2 100 q-1 12 14 12 l44 22 v-124 z"/>
+    </clipPath>
+    <clipPath id="teen-male-top-waistcoat__clipR">
+      <path d="M222 190 q38 4 40 30 l2 100 q1 12 -14 12 l-44 22 v-124 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- shirt shell beneath, showing at the neck and the deep V -->
+    <path d="M172 188 h56 q22 0 22 22 v120 h-100 v-120 q0-22 22-22 z"
+          fill="url(#teen-male-top-waistcoat__shell)"/>
+    <!-- left and right waistcoat fronts, each falling to a point at y354 -->
+    <path d="M178 190 q-38 4 -40 30 l-2 100 q-1 12 14 12 l44 22 v-124 z"
+          fill="url(#teen-male-top-waistcoat__front)"/>
+    <path d="M222 190 q38 4 40 30 l2 100 q1 12 -14 12 l-44 22 v-124 z"
+          fill="url(#teen-male-top-waistcoat__front)"/>
+  </g>
+
+  <!-- suiting weave over the fronts -->
+  <g clip-path="url(#teen-male-top-waistcoat__clipL)">
+    <rect x="134" y="186" width="72" height="176" fill="url(#teen-male-top-waistcoat__weave)" opacity="0.4"/>
+  </g>
+  <g clip-path="url(#teen-male-top-waistcoat__clipR)">
+    <rect x="194" y="186" width="72" height="176" fill="url(#teen-male-top-waistcoat__weave)" opacity="0.4"/>
+  </g>
+
+  <!-- V-edge binding down both fronts and along the pointed hem -->
+  <path d="M180 192 l18 40" stroke="var(--c3, #F6F2E9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 192 l-18 40" stroke="var(--c3, #F6F2E9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 332 l44 20 M250 332 l-44 20" stroke="var(--c3, #F6F2E9)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder seam binding, which is what makes the sleeveless cut read -->
+  <path d="M144 214 q16-22 36-24" stroke="var(--c2, #2C2C40)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 214 q-16-22 -36-24" stroke="var(--c2, #2C2C40)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- centre button line -->
+  <circle cx="200" cy="248" r="4.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="200" cy="274" r="4.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="200" cy="300" r="4.5" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="200" cy="326" r="4.5" fill="var(--c3, #F6F2E9)"/>
+  <path d="M200 240 v96" stroke="#3B2A22" stroke-opacity="0.24" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- welt pockets -->
+  <path d="M154 292 h30 v8 q0 4 -4 4 h-22 q-4 0 -4-4 z" fill="var(--c2, #2C2C40)"/>
+  <path d="M216 292 h30 v8 q0 4 -4 4 h-22 q-4 0 -4-4 z" fill="var(--c2, #2C2C40)"/>
+
+  <!-- highlight -->
+  <path d="M156 214 q20 10 30 22 M244 214 q-20 10 -30 22" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
