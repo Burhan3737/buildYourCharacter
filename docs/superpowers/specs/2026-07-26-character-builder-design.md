@@ -92,7 +92,7 @@ No sidecar JSON. Data attributes on the SVG root:
      data-family="bob"
      data-slot="hair"
      data-colors="hair1,hair2"
-     data-layer="hair-front"
+     data-layer="hair"
      data-hides="">
 ```
 
@@ -156,7 +156,7 @@ fitting, scaling, or warping code anywhere in the renderer. This is the entire p
 choosing fully-distinct-per-stage art: the hard problem is solved by authoring, and the code
 stays trivial.
 
-`headSizeClass` is one of `small | mid | full` and is what lets head-mounted accessories be
+`headSizeClass` is one of `toddler | teen | adult` and is what lets head-mounted accessories be
 shared (§4.7).
 
 ### 4.6 Layer order
@@ -181,16 +181,22 @@ A single z-stack, defined once in code. Assets declare membership via `data-laye
 
 Every layer holds at most one asset, so ordering within a layer is never ambiguous.
 
-**Hair is authored as two groups in one file** — a `hair-back` group and a `hair-front` group.
-The loader splits them and places each at its own z-position. Without this, long hair either
-floats over the shoulders or vanishes behind the torso.
+**Hair is authored as two groups in one file.** A hair asset declares `data-layer="hair"` on
+its root and must contain exactly two top-level groups, `<g data-part="back">` and
+`<g data-part="front">` (either may be empty). The loader splits them onto the `hair-back` and
+`hair-front` layers. Without this, long hair either floats over the shoulders or vanishes
+behind the torso.
 
 ### 4.7 Shared head-mounted accessories
 
 Glasses, headwear, earrings, and necklaces attach to head/neck anchors rather than the body
-silhouette. They are authored once per `headSizeClass` (`small`, `mid`, `full`) instead of once
-per bundle, and positioned from the target bundle's `head` and `ears` anchors. This removes
-~135 files with no visual loss. All other categories remain fully per-bundle.
+silhouette. They are authored once per `headSizeClass` (`toddler`, `teen`, `adult`) instead of
+once per bundle. Each class is drawn against a published reference head radius; the renderer
+maps it onto a target bundle with a uniform scale-and-translate derived from the two `head`
+anchors. This is the one piece of runtime fitting in the system, and it is exact because a
+circle-to-circle map has no distortion. Style still differs per class — chunky toddler frames
+versus slim adult ones — which is why three classes exist rather than one. This removes ~135
+files with no visual loss. All other categories remain fully per-bundle.
 
 ### 4.8 Directory layout
 
