@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stool" data-family="stool" data-slot="top" data-layer="top"
+     data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="props-stool__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9584)"/>
+    </linearGradient>
+    <linearGradient id="props-stool__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A6B52"/>
+      <stop offset="1" stop-color="#5F4632"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="66" ry="12" fill="#3B2A22" opacity="0.13"/>
+
+  <!-- legs -->
+  <g>
+    <rect x="150" y="466" width="16" height="102" rx="8" fill="url(#props-stool__leg)"/>
+    <rect x="234" y="466" width="16" height="102" rx="8" fill="url(#props-stool__leg)"/>
+    <path d="M150 500 L250 500" stroke="url(#props-stool__leg)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- seat -->
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="462" rx="66" ry="32" fill="url(#props-stool__seat)"/>
+  </g>
+  <path d="M144 452 Q200 436 256 452 Q200 444 144 452 Z" fill="#fff" opacity="0.26"/>
+</svg>

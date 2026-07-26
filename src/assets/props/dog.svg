@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dog" data-family="dog" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-dog__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A455)"/>
+    </linearGradient>
+    <linearGradient id="props-dog__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="#DD8D80"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="195" cy="572" rx="120" ry="14" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- legs -->
+  <g class="sp-shadow">
+    <rect x="118" y="502" width="15" height="68" rx="7" fill="url(#props-dog__fur)"/>
+    <rect x="215" y="502" width="15" height="68" rx="7" fill="url(#props-dog__fur)"/>
+    <rect x="138" y="508" width="17" height="62" rx="8" fill="url(#props-dog__fur)"/>
+    <rect x="235" y="508" width="17" height="62" rx="8" fill="url(#props-dog__fur)"/>
+  </g>
+
+  <!-- body + tail -->
+  <g class="sp-shadow">
+    <path d="M105,458 Q90,440 98,415 Q105,435 108,455 Z" fill="url(#props-dog__fur)"/>
+    <ellipse cx="175" cy="478" rx="70" ry="45" fill="url(#props-dog__fur)"/>
+    <path d="M130,445 Q175,428 220,445 Q175,438 130,445 Z" fill="#fff" opacity="0.24"/>
+  </g>
+
+  <!-- head, ear, snout, collar -->
+  <g class="sp-shadow">
+    <path d="M240,402 Q222,422 230,458 Q242,445 250,412 Z" fill="url(#props-dog__fur)"/>
+    <circle cx="262" cy="436" r="38" fill="url(#props-dog__fur)"/>
+    <ellipse cx="294" cy="448" rx="15" ry="12" fill="url(#props-dog__fur)"/>
+    <rect x="232" y="458" width="44" height="13" rx="6" fill="url(#props-dog__collar)" transform="rotate(12 254 465)"/>
+    <circle cx="254" cy="471" r="5" fill="#F0C24B"/>
+    <ellipse cx="307" cy="448" rx="6" ry="5" fill="#3B2A22"/>
+    <circle cx="272" cy="424" r="4.5" fill="#3B2A22"/>
+    <path d="M235,405 Q262,392 289,405 Q262,398 235,405 Z" fill="#fff" opacity="0.26"/>
+  </g>
+</svg>

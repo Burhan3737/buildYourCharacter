@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bed" data-family="bed" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-bed__headboard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A2E6)"/>
+      <stop offset="1" stop-color="var(--c2, #6470B8)"/>
+    </linearGradient>
+    <linearGradient id="props-bed__frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A2E6)"/>
+      <stop offset="1" stop-color="var(--c2, #6470B8)"/>
+    </linearGradient>
+    <linearGradient id="props-bed__blanket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6BBFAD"/>
+      <stop offset="1" stop-color="#4B9584"/>
+    </linearGradient>
+    <linearGradient id="props-bed__pillow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="#D9A853"/>
+    </linearGradient>
+    <linearGradient id="props-bed__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A6B52"/>
+      <stop offset="1" stop-color="#5F4632"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="185" ry="15" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- legs -->
+  <g>
+    <rect x="30" y="548" width="16" height="24" rx="7" fill="url(#props-bed__leg)"/>
+    <rect x="354" y="548" width="16" height="24" rx="7" fill="url(#props-bed__leg)"/>
+  </g>
+
+  <!-- headboard -->
+  <g class="sp-shadow">
+    <path d="M30 400 Q30 310 110 310 L290 310 Q370 310 370 400 L370 470 L30 470 Z"
+          fill="url(#props-bed__headboard)"/>
+    <path d="M55 330 Q200 308 345 330 Q200 320 55 330 Z" fill="#fff" opacity="0.2"/>
+  </g>
+
+  <!-- bed frame / base -->
+  <g class="sp-shadow">
+    <rect x="10" y="460" width="380" height="90" rx="30" fill="url(#props-bed__frame)"/>
+  </g>
+
+  <!-- mattress -->
+  <g class="sp-shadow">
+    <rect x="26" y="440" width="348" height="46" rx="22" fill="#F4EEE3"/>
+  </g>
+
+  <!-- blanket -->
+  <g class="sp-shadow">
+    <path d="M26 462 Q26 452 40 452 L360 452 Q374 452 374 462 L374 486 Q374 500 360 500 L40 500 Q26 500 26 486 Z"
+          fill="url(#props-bed__blanket)"/>
+  </g>
+  <path d="M50 462 Q200 448 350 462 Q200 456 50 462 Z" fill="#fff" opacity="0.22"/>
+
+  <!-- pillows -->
+  <g class="sp-shadow">
+    <rect x="55" y="392" width="110" height="60" rx="26" fill="url(#props-bed__pillow)"/>
+  </g>
+  <g class="sp-shadow">
+    <rect x="180" y="392" width="110" height="60" rx="26" fill="url(#props-bed__pillow)"/>
+  </g>
+  <path d="M70 402 Q110 392 150 402 Q110 397 70 402 Z" fill="#fff" opacity="0.3"/>
+  <path d="M195 402 Q235 392 275 402 Q235 397 195 402 Z" fill="#fff" opacity="0.3"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Table" data-family="table" data-slot="top" data-layer="top"
+     data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="props-table__top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C99748)"/>
+    </linearGradient>
+    <linearGradient id="props-table__edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C99748)"/>
+      <stop offset="1" stop-color="#A87B36"/>
+    </linearGradient>
+    <linearGradient id="props-table__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C99748)"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="122" ry="14" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- legs -->
+  <g class="sp-shadow">
+    <rect x="90" y="452" width="20" height="118" rx="9" fill="url(#props-table__leg)"/>
+    <rect x="290" y="452" width="20" height="118" rx="9" fill="url(#props-table__leg)"/>
+    <rect x="140" y="452" width="16" height="112" rx="8" fill="url(#props-table__leg)"/>
+    <rect x="244" y="452" width="16" height="112" rx="8" fill="url(#props-table__leg)"/>
+  </g>
+
+  <!-- apron under tabletop -->
+  <g class="sp-shadow">
+    <rect x="80" y="430" width="240" height="30" rx="12" fill="url(#props-table__edge)"/>
+  </g>
+
+  <!-- tabletop -->
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="430" rx="130" ry="32" fill="url(#props-table__top)"/>
+  </g>
+  <path d="M90 420 Q200 398 310 420 Q200 412 90 420 Z" fill="#fff" opacity="0.28"/>
+</svg>

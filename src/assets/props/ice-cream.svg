@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ice Cream Cone" data-family="ice-cream" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-ice-cream__scoop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9A89)"/>
+    </linearGradient>
+    <linearGradient id="props-ice-cream__cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="#C98A3E"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="572" rx="28" ry="7" fill="#3B2A22" opacity="0.13"/>
+
+  <g class="sp-shadow">
+    <path d="M200 570 L163 448 Q200 436 237 448 Z" fill="url(#props-ice-cream__cone)"/>
+    <path d="M175 480 Q200 485 225 480" fill="none" stroke="#C98A3E" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+    <path d="M180 510 Q200 515 220 510" fill="none" stroke="#C98A3E" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+    <path d="M188 540 Q200 545 212 540" fill="none" stroke="#C98A3E" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+  </g>
+
+  <g class="sp-shadow">
+    <path d="M148 445 C142 405 152 358 178 338 C186 330 195 322 200 328 C205 322 214 330 222 338 C248 358 258 405 252 445 Q200 462 148 445 Z" fill="url(#props-ice-cream__scoop)"/>
+    <path d="M225 400 Q248 415 240 440 Q230 420 215 412 Z" fill="var(--c2, #4E9A89)" opacity="0.35"/>
+    <path d="M165 370 Q180 345 205 340" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="0.3"/>
+  </g>
+</svg>

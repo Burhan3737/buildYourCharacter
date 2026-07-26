@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sofa" data-family="sofa" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-sofa__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A2E6)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7AC0)"/>
+    </linearGradient>
+    <linearGradient id="props-sofa__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #99A8E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6470B8)"/>
+    </linearGradient>
+    <linearGradient id="props-sofa__cushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A853)"/>
+    </linearGradient>
+    <linearGradient id="props-sofa__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C9BE2)"/>
+      <stop offset="1" stop-color="var(--c2, #616FBB)"/>
+    </linearGradient>
+    <linearGradient id="props-sofa__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A6B52"/>
+      <stop offset="1" stop-color="#5F4632"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground contact shadow -->
+  <ellipse cx="200" cy="573" rx="175" ry="16" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- legs -->
+  <g>
+    <rect x="55" y="540" width="16" height="34" rx="6" fill="url(#props-sofa__leg)"/>
+    <rect x="329" y="540" width="16" height="34" rx="6" fill="url(#props-sofa__leg)"/>
+    <rect x="120" y="548" width="14" height="26" rx="6" fill="url(#props-sofa__leg)"/>
+    <rect x="266" y="548" width="14" height="26" rx="6" fill="url(#props-sofa__leg)"/>
+  </g>
+
+  <!-- backrest -->
+  <g class="sp-shadow">
+    <path d="M45 400
+             Q45 340 110 340
+             L290 340
+             Q355 340 355 400
+             L355 460
+             L45 460 Z" fill="url(#props-sofa__back)"/>
+    <path d="M70 355 Q200 338 330 355 Q200 350 70 355 Z" fill="#fff" opacity="0.22"/>
+  </g>
+
+  <!-- main body / base -->
+  <g class="sp-shadow">
+    <rect x="15" y="440" width="370" height="120" rx="46" fill="url(#props-sofa__body)"/>
+  </g>
+
+  <!-- arms -->
+  <g class="sp-shadow">
+    <rect x="15" y="380" width="70" height="170" rx="34" fill="url(#props-sofa__arm)"/>
+  </g>
+  <g class="sp-shadow">
+    <rect x="315" y="380" width="70" height="170" rx="34" fill="url(#props-sofa__arm)"/>
+  </g>
+
+  <!-- seat cushions -->
+  <g class="sp-shadow">
+    <rect x="95" y="410" width="100" height="90" rx="30" fill="url(#props-sofa__cushion)"/>
+  </g>
+  <g class="sp-shadow">
+    <rect x="205" y="410" width="100" height="90" rx="30" fill="url(#props-sofa__cushion)"/>
+  </g>
+  <path d="M110 420 Q145 408 180 420 Q145 414 110 420 Z" fill="#fff" opacity="0.28"/>
+  <path d="M220 420 Q255 408 290 420 Q255 414 220 420 Z" fill="#fff" opacity="0.28"/>
+
+  <!-- arm highlights -->
+  <path d="M22 400 Q50 388 78 400 Q50 394 22 400 Z" fill="#fff" opacity="0.24"/>
+  <path d="M322 400 Q350 388 378 400 Q350 394 322 400 Z" fill="#fff" opacity="0.24"/>
+</svg>

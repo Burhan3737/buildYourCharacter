@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Teddy Bear" data-family="teddy" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-teddy__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A455)"/>
+    </linearGradient>
+    <linearGradient id="props-teddy__patch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF3E0"/>
+      <stop offset="1" stop-color="#F0DDB8"/>
+    </linearGradient>
+    <linearGradient id="props-teddy__bow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="#4B9584"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="572" rx="95" ry="14" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- body + tummy + bow -->
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="485" rx="68" ry="78" fill="url(#props-teddy__fur)"/>
+    <ellipse cx="200" cy="495" rx="38" ry="48" fill="url(#props-teddy__patch)"/>
+    <path d="M180,458 L200,472 L220,458 L214,470 L228,478 L200,486 L172,478 L186,470 Z" fill="url(#props-teddy__bow)"/>
+    <path d="M150,425 Q200,406 250,425 Q200,417 150,425 Z" fill="#fff" opacity="0.24"/>
+  </g>
+
+  <!-- legs / feet -->
+  <g class="sp-shadow">
+    <ellipse cx="165" cy="545" rx="38" ry="25" fill="url(#props-teddy__fur)"/>
+    <ellipse cx="235" cy="545" rx="38" ry="25" fill="url(#props-teddy__fur)"/>
+    <ellipse cx="165" cy="550" rx="20" ry="13" fill="url(#props-teddy__patch)"/>
+    <ellipse cx="235" cy="550" rx="20" ry="13" fill="url(#props-teddy__patch)"/>
+  </g>
+
+  <!-- arms -->
+  <g class="sp-shadow">
+    <ellipse cx="148" cy="455" rx="22" ry="50" fill="url(#props-teddy__fur)" transform="rotate(-10 148 455)"/>
+    <ellipse cx="252" cy="455" rx="22" ry="50" fill="url(#props-teddy__fur)" transform="rotate(10 252 455)"/>
+    <circle cx="142" cy="500" r="13" fill="url(#props-teddy__patch)" transform="rotate(-10 148 455)"/>
+    <circle cx="258" cy="500" r="13" fill="url(#props-teddy__patch)" transform="rotate(10 252 455)"/>
+  </g>
+
+  <!-- head -->
+  <g class="sp-shadow">
+    <circle cx="155" cy="360" r="22" fill="url(#props-teddy__fur)"/>
+    <circle cx="245" cy="360" r="22" fill="url(#props-teddy__fur)"/>
+    <circle cx="155" cy="362" r="12" fill="url(#props-teddy__patch)"/>
+    <circle cx="245" cy="362" r="12" fill="url(#props-teddy__patch)"/>
+    <circle cx="200" cy="402" r="52" fill="url(#props-teddy__fur)"/>
+    <ellipse cx="200" cy="430" rx="30" ry="22" fill="url(#props-teddy__patch)"/>
+    <circle cx="180" cy="398" r="5" fill="#3B2A22"/>
+    <circle cx="220" cy="398" r="5" fill="#3B2A22"/>
+    <ellipse cx="200" cy="426" rx="7" ry="5" fill="#3B2A22"/>
+    <path d="M188,438 Q200,444 212,438" fill="none" stroke="#3B2A22" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M158,368 Q200,352 242,368 Q200,360 158,368 Z" fill="#fff" opacity="0.28"/>
+  </g>
+</svg>

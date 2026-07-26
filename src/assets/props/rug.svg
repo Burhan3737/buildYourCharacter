@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Rug" data-family="rug" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-rug__field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6BB2)"/>
+    </linearGradient>
+    <linearGradient id="props-rug__border" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="#D9A853"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="574" rx="172" ry="14" fill="#3B2A22" opacity="0.1"/>
+
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="548" rx="170" ry="24" fill="url(#props-rug__border)"/>
+  </g>
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="546" rx="145" ry="19" fill="url(#props-rug__field)"/>
+  </g>
+
+  <!-- inner accent ring -->
+  <ellipse cx="200" cy="546" rx="95" ry="12" fill="none" stroke="#fff" stroke-opacity="0.22" stroke-width="4"/>
+  <ellipse cx="200" cy="546" rx="55" ry="7" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="3"/>
+
+  <!-- top surface highlight -->
+  <path d="M90 536 Q200 520 310 536 Q200 528 90 536 Z" fill="#fff" opacity="0.24"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tree" data-family="tree" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-tree__leafGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FCBA6)"/>
+      <stop offset="1" stop-color="var(--c2, #5FA483)"/>
+    </linearGradient>
+    <linearGradient id="props-tree__trunkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9C7A57)"/>
+      <stop offset="1" stop-color="#6B5138"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="572" rx="62" ry="12" fill="#3B2A22" opacity="0.15"/>
+
+  <g class="sp-shadow">
+    <path d="M182 358 Q182 350 190 350 L210 350 Q218 350 218 358 L222 562 Q222 570 214 570 L186 570 Q178 570 178 562 Z"
+          fill="url(#props-tree__trunkGrad)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <circle cx="200" cy="250" r="115" fill="url(#props-tree__leafGrad)"/>
+    <circle cx="115" cy="230" r="70" fill="url(#props-tree__leafGrad)"/>
+    <circle cx="285" cy="230" r="70" fill="url(#props-tree__leafGrad)"/>
+    <circle cx="200" cy="140" r="85" fill="url(#props-tree__leafGrad)"/>
+    <circle cx="150" cy="310" r="65" fill="url(#props-tree__leafGrad)"/>
+    <circle cx="250" cy="310" r="65" fill="url(#props-tree__leafGrad)"/>
+    <path d="M155 95 Q200 65 245 95 Q235 112 200 108 Q165 112 155 95 Z" fill="#fff" opacity="0.25"/>
+    <path d="M70 205 Q95 178 128 190 Q112 210 90 215 Q76 214 70 205 Z" fill="#fff" opacity="0.18"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Floor Lamp" data-family="lamp" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-lamp__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A853)"/>
+    </linearGradient>
+    <linearGradient id="props-lamp__stem" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C7BFB2"/>
+      <stop offset="1" stop-color="#948C7E"/>
+    </linearGradient>
+    <linearGradient id="props-lamp__base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A8074"/>
+      <stop offset="1" stop-color="#5E564C"/>
+    </linearGradient>
+    <linearGradient id="props-lamp__accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
+      <stop offset="1" stop-color="#5C6BB2"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="70" ry="12" fill="#3B2A22" opacity="0.13"/>
+
+  <!-- base -->
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="566" rx="62" ry="16" fill="url(#props-lamp__base)"/>
+  </g>
+
+  <!-- stem -->
+  <g class="sp-shadow">
+    <rect x="192" y="290" width="16" height="270" rx="8" fill="url(#props-lamp__stem)"/>
+  </g>
+
+  <!-- accent ring -->
+  <ellipse cx="200" cy="300" rx="22" ry="9" fill="url(#props-lamp__accent)"/>
+
+  <!-- shade -->
+  <g class="sp-shadow">
+    <path d="M130 290 L270 290 L250 230 Q200 218 150 230 Z" fill="url(#props-lamp__shade)"/>
+  </g>
+  <path d="M158 240 Q200 228 242 240 Q200 233 158 240 Z" fill="#fff" opacity="0.3"/>
+
+  <!-- finial -->
+  <path d="M195 218 Q200 208 205 218 Q200 224 195 218 Z" fill="#3B2A22"/>
+</svg>

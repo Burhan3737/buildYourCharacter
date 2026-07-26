@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Armchair" data-family="armchair" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-armchair__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7B4A6)"/>
+      <stop offset="1" stop-color="var(--c2, #D98576)"/>
+    </linearGradient>
+    <linearGradient id="props-armchair__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C6D)"/>
+    </linearGradient>
+    <linearGradient id="props-armchair__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFA093)"/>
+      <stop offset="1" stop-color="var(--c2, #C87668)"/>
+    </linearGradient>
+    <linearGradient id="props-armchair__cushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="#4B9584"/>
+    </linearGradient>
+    <linearGradient id="props-armchair__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A6B52"/>
+      <stop offset="1" stop-color="#5F4632"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="112" ry="15" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- legs -->
+  <g>
+    <rect x="100" y="538" width="15" height="32" rx="6" fill="url(#props-armchair__leg)"/>
+    <rect x="285" y="538" width="15" height="32" rx="6" fill="url(#props-armchair__leg)"/>
+  </g>
+
+  <!-- backrest -->
+  <g class="sp-shadow">
+    <path d="M100 300
+             Q100 300 200 300
+             Q300 300 300 300
+             L316 300
+             Q330 300 330 320
+             L330 460
+             L70 460
+             L70 320
+             Q70 300 84 300 Z" fill="url(#props-armchair__back)"/>
+    <path d="M110 315 Q200 300 290 315 Q200 308 110 315 Z" fill="#fff" opacity="0.22"/>
+  </g>
+
+  <!-- base / seat body -->
+  <g class="sp-shadow">
+    <rect x="55" y="430" width="290" height="115" rx="42" fill="url(#props-armchair__body)"/>
+  </g>
+
+  <!-- arms -->
+  <g class="sp-shadow">
+    <rect x="45" y="378" width="62" height="150" rx="30" fill="url(#props-armchair__arm)"/>
+  </g>
+  <g class="sp-shadow">
+    <rect x="293" y="378" width="62" height="150" rx="30" fill="url(#props-armchair__arm)"/>
+  </g>
+
+  <!-- seat cushion -->
+  <g class="sp-shadow">
+    <rect x="118" y="400" width="164" height="86" rx="30" fill="url(#props-armchair__cushion)"/>
+  </g>
+  <path d="M138 412 Q200 398 262 412 Q200 405 138 412 Z" fill="#fff" opacity="0.26"/>
+
+  <!-- arm highlights -->
+  <path d="M52 396 Q76 384 100 396 Q76 390 52 396 Z" fill="#fff" opacity="0.24"/>
+  <path d="M300 396 Q324 384 348 396 Q324 390 300 396 Z" fill="#fff" opacity="0.24"/>
+</svg>

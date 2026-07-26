@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Building Blocks" data-family="blocks" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-blocks__b1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="#5F6BB0"/>
+    </linearGradient>
+    <linearGradient id="props-blocks__b2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="#DD8D80"/>
+    </linearGradient>
+    <linearGradient id="props-blocks__b3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="#D9A455"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="573" rx="98" ry="13" fill="#3B2A22" opacity="0.14"/>
+
+  <!-- bottom block: star -->
+  <g class="sp-shadow">
+    <rect x="115" y="520" width="170" height="50" rx="14" fill="url(#props-blocks__b1)"/>
+    <path d="M200,527 L204.7,538.5 L217.1,539.4 L207.6,547.5 L210.6,559.6 L200,553 L189.4,559.6 L192.4,547.5 L182.9,539.4 L195.3,538.5 Z" fill="#FFF8EC" opacity="0.92"/>
+    <path d="M122,528 Q200,517 278,528 Q200,522 122,528 Z" fill="#fff" opacity="0.22"/>
+  </g>
+
+  <!-- middle block: circle -->
+  <g class="sp-shadow">
+    <rect x="140" y="470" width="130" height="50" rx="12" transform="rotate(2 205 495)" fill="url(#props-blocks__b2)"/>
+    <circle cx="205" cy="495" r="15" fill="#FFF8EC" opacity="0.9" transform="rotate(2 205 495)"/>
+    <path d="M148,478 Q205,468 262,478 Q205,472 148,478 Z" fill="#fff" opacity="0.22" transform="rotate(2 205 495)"/>
+  </g>
+
+  <!-- top block: heart -->
+  <g class="sp-shadow">
+    <rect x="150" y="420" width="100" height="50" rx="10" transform="rotate(-3 200 445)" fill="url(#props-blocks__b3)"/>
+    <path d="M200,455 C200,455 182,441 182,429 C182,421 189,417 195,421 C198,423 200,427 200,427 C200,427 202,423 205,421 C211,417 218,421 218,429 C218,441 200,455 200,455 Z" fill="#FFF8EC" opacity="0.9" transform="rotate(-3 200 445)"/>
+    <path d="M158,428 Q200,418 242,428 Q200,422 158,428 Z" fill="#fff" opacity="0.22" transform="rotate(-3 200 445)"/>
+  </g>
+</svg>

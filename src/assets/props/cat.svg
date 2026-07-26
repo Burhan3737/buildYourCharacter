@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cat" data-family="cat" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-cat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #DD8D80)"/>
+    </linearGradient>
+    <linearGradient id="props-cat__patch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF3E0"/>
+      <stop offset="1" stop-color="#F0DDB8"/>
+    </linearGradient>
+    <linearGradient id="props-cat__bow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="#4B9584"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="572" rx="88" ry="13" fill="#3B2A22" opacity="0.13"/>
+
+  <!-- body + tail + bow -->
+  <g class="sp-shadow">
+    <path d="M270,520 Q290,512 286,485 Q278,505 262,516 Z" fill="url(#props-cat__body)"/>
+    <path d="M130,570 Q122,480 200,465 Q278,480 270,570 Z" fill="url(#props-cat__body)"/>
+    <ellipse cx="200" cy="525" rx="30" ry="38" fill="url(#props-cat__patch)"/>
+    <path d="M182,458 L200,470 L218,458 L212,468 L224,475 L200,482 L176,475 L188,468 Z" fill="url(#props-cat__bow)"/>
+    <path d="M148,495 Q200,478 252,495 Q200,486 148,495 Z" fill="#fff" opacity="0.24"/>
+  </g>
+
+  <!-- head -->
+  <g class="sp-shadow">
+    <path d="M172,438 L180,415 L198,433 Z" fill="url(#props-cat__body)"/>
+    <path d="M228,438 L220,415 L202,433 Z" fill="url(#props-cat__body)"/>
+    <circle cx="200" cy="468" r="40" fill="url(#props-cat__body)"/>
+    <circle cx="185" cy="462" r="4" fill="#3B2A22"/>
+    <circle cx="215" cy="462" r="4" fill="#3B2A22"/>
+    <path d="M195,472 L200,478 L205,472 Z" fill="#3B2A22"/>
+    <path d="M188,486 Q200,492 212,486" fill="none" stroke="#3B2A22" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M172,442 Q200,428 228,442 Q200,436 172,442 Z" fill="#fff" opacity="0.28"/>
+  </g>
+</svg>

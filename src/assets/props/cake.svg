@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Birthday Cake" data-family="cake" data-slot="top" data-layer="top"
+     data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="props-cake__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97364)"/>
+    </linearGradient>
+    <linearGradient id="props-cake__candle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="#D9A34F"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="568" rx="112" ry="12" fill="#3B2A22" opacity="0.14"/>
+
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="505" rx="101" ry="18" fill="var(--c3, #F7C873)"/>
+    <rect x="100" y="505" width="200" height="65" rx="14" fill="url(#props-cake__body)"/>
+    <ellipse cx="200" cy="505" rx="96" ry="14" fill="var(--c1, #F4A79B)"/>
+    <path d="M118 500 Q200 486 282 500" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="0.25"/>
+  </g>
+
+  <g class="sp-shadow">
+    <ellipse cx="200" cy="445" rx="71" ry="14" fill="var(--c3, #F7C873)"/>
+    <rect x="130" y="445" width="140" height="65" rx="12" fill="url(#props-cake__body)"/>
+    <ellipse cx="200" cy="445" rx="66" ry="11" fill="var(--c1, #F4A79B)"/>
+    <path d="M145 441 Q200 430 255 441" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.28"/>
+  </g>
+
+  <g>
+    <rect x="193" y="412" width="14" height="36" rx="5" fill="url(#props-cake__candle)"/>
+    <path d="M200 392 C208 402 209 414 200 419 C191 414 192 402 200 392 Z" fill="#FFB347"/>
+    <ellipse cx="200" cy="408" rx="3.5" ry="6" fill="#FFE9A8" opacity="0.85"/>
+  </g>
+</svg>
