@@ -1,8 +1,9 @@
-import { useState, type ReactNode } from 'react'
+import { useId, useMemo, useState, type ReactNode } from 'react'
 import type { Catalog } from '../../catalog/build'
 import type { AssetRecord } from '../../catalog/parse'
 import type { Character, SceneItem } from '../../catalog/types'
 import { CharacterSvg } from '../../render/CharacterSvg'
+import { namespaceIds, sanitizeToken } from '../../render/namespaceIds'
 import { STAGE_H, STAGE_W } from '../../state/sceneOps'
 import { ART_H, ART_W } from './StageItem'
 import { isInsideRect, toStagePoint, usePointerDrag, type RectLike } from './usePointerDrag'
@@ -68,9 +69,14 @@ function DrawerEntry({ id, label, getStageRect, onDrop, children }: DrawerEntryP
 function AssetThumb(
   { asset, className, viewBox }: { asset: AssetRecord; className: string; viewBox: string },
 ) {
+  // Each thumbnail is its own instance, and the same asset also renders on the stage —
+  // without namespacing they share element ids and the first one wins every url(#…).
+  const token = sanitizeToken(useId())
+  const markup = useMemo(() => namespaceIds(asset.markup, token), [asset.markup, token])
+
   return (
     <svg viewBox={viewBox} className={className} aria-hidden="true">
-      <g dangerouslySetInnerHTML={{ __html: asset.markup }} />
+      <g dangerouslySetInnerHTML={{ __html: markup }} />
     </svg>
   )
 }

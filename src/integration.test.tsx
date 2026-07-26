@@ -5,7 +5,7 @@ import { composeCharacter, hiddenSlots } from './render/composition'
 import { loadEnvelope } from './state/persist'
 import {
   BODY_TYPES, LIFE_STAGES, SLOTS, bundleKey,
-  type BundleKey, type Slot,
+  type Slot,
 } from './catalog/types'
 
 /**

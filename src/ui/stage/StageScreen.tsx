@@ -1,5 +1,8 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import {
+  useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState,
+} from 'react'
 import type { Catalog } from '../../catalog/build'
+import { namespaceIds, sanitizeToken } from '../../render/namespaceIds'
 import { useAppStore } from '../../state/appStore'
 import { STAGE_H, STAGE_W } from '../../state/sceneOps'
 import { StageDrawer } from './StageDrawer'
@@ -80,6 +83,14 @@ export function StageScreen({ catalog }: StageScreenProps) {
 
   const backdrop = scene.backdropId ? catalog.byId[scene.backdropId] : undefined
 
+  // The drawer renders a thumbnail of this same backdrop, so both copies are in the document
+  // at once. Without namespacing they share element ids and one steals the other's gradients.
+  const backdropToken = sanitizeToken(useId())
+  const backdropMarkup = useMemo(
+    () => namespaceIds(backdrop?.markup ?? '', backdropToken),
+    [backdrop?.markup, backdropToken],
+  )
+
   const ordered = useMemo(
     () => [...scene.items].sort((a, b) => a.z - b.z),
     [scene.items],
@@ -131,7 +142,7 @@ export function StageScreen({ catalog }: StageScreenProps) {
               <g
                 data-testid="stage-backdrop"
                 pointerEvents="none"
-                dangerouslySetInnerHTML={{ __html: backdrop.markup }}
+                dangerouslySetInnerHTML={{ __html: backdropMarkup }}
               />
             )}
 

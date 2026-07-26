@@ -1,6 +1,8 @@
+import { useId, useMemo } from 'react'
 import type { Catalog } from '../../catalog/build'
 import type { Character, SceneItem } from '../../catalog/types'
 import { CharacterSvg } from '../../render/CharacterSvg'
+import { namespaceIds, sanitizeToken } from '../../render/namespaceIds'
 import { usePointerDrag, type RectLike } from './usePointerDrag'
 
 /** Every asset is authored in this box, bottom-aligned on the ground line. */
@@ -27,6 +29,14 @@ export function StageItem({
   item, catalog, character, selected, getStageRect, onSelect, onDrag,
 }: StageItemProps) {
   const prop = item.kind === 'prop' ? catalog.byId[item.refId] : undefined
+
+  // Two copies of the same prop on the stage would otherwise inject duplicate element ids,
+  // and every url(#…) in the document would resolve to the first one — same bug characters had.
+  const token = sanitizeToken(useId())
+  const propMarkup = useMemo(
+    () => namespaceIds(prop?.markup ?? '', token),
+    [prop?.markup, token],
+  )
 
   const handlers = usePointerDrag({
     getRect: getStageRect,
@@ -68,7 +78,7 @@ export function StageItem({
         ) : (
           <g
             transform={`translate(${-ANCHOR_X} ${-ANCHOR_Y})`}
-            dangerouslySetInnerHTML={{ __html: prop?.markup ?? '' }}
+            dangerouslySetInnerHTML={{ __html: propMarkup }}
           />
         )}
       </g>
