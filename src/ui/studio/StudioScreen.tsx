@@ -5,10 +5,12 @@ import type { Slot } from '../../catalog/types'
 import { CharacterSvg } from '../../render/CharacterSvg'
 import { useAppStore } from '../../state/appStore'
 import { randomCharacter } from '../../state/randomizer'
+import { useMediaQuery } from '../useMediaQuery'
 import { CategoryRail } from './CategoryRail'
 import { CATEGORIES } from './categories'
 import { OptionTray } from './OptionTray'
 import { StageStrip } from './StageStrip'
+import { TrayDrawer } from './TrayDrawer'
 
 export interface StudioScreenProps {
   catalog: Catalog
@@ -27,6 +29,7 @@ export function StudioScreen({ catalog, characterId, onDone }: StudioScreenProps
   const updateCharacter = useAppStore((s) => s.updateCharacter)
 
   const [categoryKey, setCategoryKey] = useState(CATEGORIES[0].key)
+  const narrow = useMediaQuery('(max-width: 899px)')
 
   if (!character) {
     return (
@@ -74,12 +77,20 @@ export function StudioScreen({ catalog, characterId, onDone }: StudioScreenProps
     />
   )
 
+  // Both arrangements render the same three children in the same order, so the
+  // character subtree survives a rotation across the breakpoint without remounting.
   return (
     <div
       data-testid="studio-screen"
-      className="grid h-full min-h-0 grid-cols-[70px_1fr_300px]"
+      className={narrow
+        ? 'flex h-full min-h-0 flex-col pb-12'
+        : 'grid h-full min-h-0 grid-cols-[70px_1fr_300px]'}
     >
-      <CategoryRail active={category.key} orientation="vertical" onSelect={setCategoryKey} />
+      <CategoryRail
+        active={category.key}
+        orientation={narrow ? 'horizontal' : 'vertical'}
+        onSelect={setCategoryKey}
+      />
 
       <div className="flex min-h-0 flex-1 flex-col items-center gap-3 overflow-y-auto px-4 py-3">
         <StageStrip
@@ -129,12 +140,16 @@ export function StudioScreen({ catalog, characterId, onDone }: StudioScreenProps
         </div>
       </div>
 
-      <aside
-        data-testid="tray"
-        className="min-h-0 w-[300px] overflow-y-auto border-l border-ink/5 bg-white/70 px-3 py-3"
-      >
-        {tray}
-      </aside>
+      {narrow ? (
+        <TrayDrawer label="options">{tray}</TrayDrawer>
+      ) : (
+        <aside
+          data-testid="tray"
+          className="min-h-0 w-[300px] overflow-y-auto border-l border-ink/5 bg-white/70 px-3 py-3"
+        >
+          {tray}
+        </aside>
+      )}
     </div>
   )
 }
