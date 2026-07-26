@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=long · closure=FULL SNAP PLACKET · hem=THIGH · volume=A-LINE flared -->
+  <!-- shell flares from the shoulder to a wide mid thigh hem; hood lies flat behind the neck -->
+  <defs>
+    <linearGradient id="toddler-female-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D29B37)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D29B37)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D29B37)"/>
+      <stop offset="1" stop-color="var(--c1, #F7C873)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long shell sleeves -->
+    <rect x="118" y="350" width="38" height="94" rx="19" fill="url(#toddler-female-top-raincoat__sleeve)"/>
+    <rect x="244" y="350" width="38" height="94" rx="19" fill="url(#toddler-female-top-raincoat__sleeve)"/>
+    <!-- A-line shell: narrow at the shoulder, very wide at mid thigh -->
+    <path d="M152 372 q2-28 26-28 h44 q24 0 26 28 l18 122 q-60 18 -132 0 z"
+          fill="url(#toddler-female-top-raincoat__body)"/>
+    <!-- hood lying flat behind the neck -->
+    <path d="M168 344 q32 26 64 0 q-6 32 -32 32 q-26 0 -32-32 z"
+          fill="url(#toddler-female-top-raincoat__hood)"/>
+  </g>
+
+  <!-- storm flap running the full length of the front -->
+  <path d="M190 366 h20 l7 128 q-17 3 -34 0 z" fill="var(--c2, #D29B37)"/>
+
+  <!-- big popper studs a toddler can actually work -->
+  <g fill="var(--c3, #3E4C63)">
+    <circle cx="200" cy="384" r="6"/>
+    <circle cx="200" cy="412" r="6"/>
+    <circle cx="200" cy="440" r="6"/>
+    <circle cx="200" cy="468" r="6"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.5">
+    <circle cx="200" cy="384" r="2.2"/>
+    <circle cx="200" cy="412" r="2.2"/>
+    <circle cx="200" cy="440" r="2.2"/>
+    <circle cx="200" cy="468" r="2.2"/>
+  </g>
+
+  <!-- reflective band around the flare -->
+  <path d="M166 424 q34 8 68 0 l2 13 q-36 9 -72 0 z" fill="var(--c3, #3E4C63)" fill-opacity="0.9"/>
+
+  <!-- flap pockets -->
+  <path d="M158 452 h32 v14 q0 7 -7 7 h-18 q-7 0 -7-7 z" fill="var(--c2, #D29B37)"/>
+  <path d="M210 452 h32 v14 q0 7 -7 7 h-18 q-7 0 -7-7 z" fill="var(--c2, #D29B37)"/>
+
+  <!-- elasticated cuffs -->
+  <rect x="117" y="426" width="40" height="16" rx="8" fill="var(--c3, #3E4C63)"/>
+  <rect x="243" y="426" width="40" height="16" rx="8" fill="var(--c3, #3E4C63)"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M160 366 q16 10 26 12 M214 378 q16-2 26-12" stroke="#FFFFFF" stroke-opacity="0.32"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

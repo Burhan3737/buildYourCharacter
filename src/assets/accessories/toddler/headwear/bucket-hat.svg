@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bucket Hat" data-family="bucket-hat" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. sun-hat and cap: crown=FLAT-TOPPED CYLINDER (not a shallow dome or a
+       rounded ball) and brim=SHORT, TURNED DOWN ALL ROUND (not a wide flat disc, not a
+       single front peak). Tools: trim (contrast brim edge binding) plus structural
+       (topstitched crown bands and a side eyelet). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-bucket-hat__crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-bucket-hat__brim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- downturned brim: thick at the sides, sagging outward and down all round -->
+    <path d="M124 236 q-18 14 -14 26 q6 12 34 12 h112 q28 0 34 -12 q4 -12 -14 -26
+             q-76 22 -152 0 z"
+          fill="url(#accessories-toddler-headwear-bucket-hat__brim)"/>
+    <!-- flat-topped crown -->
+    <path d="M142 244 v-32 q0 -20 58 -20 q58 0 58 20 v32 q-58 14 -116 0 z"
+          fill="url(#accessories-toddler-headwear-bucket-hat__crown)"/>
+  </g>
+
+  <!-- contrast binding along the brim edge -->
+  <path d="M110 262 q6 12 34 12 h112 q28 0 34 -12" stroke="var(--c3, #F7C873)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- topstitched crown bands -->
+  <path d="M144 226 q56 12 112 0" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M143 240 q57 12 114 0" stroke="var(--c3, #F7C873)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- side eyelet -->
+  <circle cx="252" cy="232" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="252" cy="232" r="2.2" fill="var(--c2, #4E9C8A)"/>
+
+  <path d="M156 204 q44 -12 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puffer Vest" data-family="puffer-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=NONE, arms left bare · closure=zip · hem=hip · volume=boxy quilted -->
+  <defs>
+    <linearGradient id="toddler-female-top-puffer-vest__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7D72)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-puffer-vest__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE7D72)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-top-puffer-vest__clip">
+      <path d="M150 380 q0-36 30-36 h18 v116 h-24 q-24 0 -24-26 z"/>
+      <path d="M250 380 q0-36 -30-36 h-18 v116 h24 q24 0 24-26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two padded front panels, no sleeve of any kind -->
+    <path d="M150 380 q0-36 30-36 h18 v116 h-24 q-24 0 -24-26 z"
+          fill="url(#toddler-female-top-puffer-vest__panel)"/>
+    <path d="M250 380 q0-36 -30-36 h-18 v116 h24 q24 0 24-26 z"
+          fill="url(#toddler-female-top-puffer-vest__panel)"/>
+    <!-- high stand collar -->
+    <path d="M176 344 q24-18 48 0 v18 q-24-16 -48 0 z"
+          fill="url(#toddler-female-top-puffer-vest__collar)"/>
+  </g>
+
+  <!-- horizontal quilt channel seams -->
+  <g clip-path="url(#toddler-female-top-puffer-vest__clip)">
+    <g stroke="var(--c2, #CE7D72)" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M146 374 h108 M146 400 h108 M146 426 h108 M146 450 h108"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M150 384 h100 M150 410 h100 M150 436 h100"/>
+    </g>
+  </g>
+
+  <!-- centre zip with a big pull -->
+  <rect x="195" y="348" width="10" height="106" rx="4" fill="var(--c3, #F6EFE2)"/>
+  <g stroke="var(--c2, #CE7D72)" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round">
+    <path d="M197 358 h6 M197 370 h6 M197 382 h6 M197 394 h6 M197 406 h6 M197 418 h6 M197 430 h6"/>
+  </g>
+  <rect x="193" y="396" width="14" height="10" rx="5" fill="var(--c2, #CE7D72)"/>
+  <path d="M200 406 v13" stroke="var(--c2, #CE7D72)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+
+  <!-- bound armhole seams set in from the edge, so the bare arms read as deliberate -->
+  <path d="M158 374 q-4 22 -3 40 M242 374 q4 22 3 40" stroke="var(--c3, #F6EFE2)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- collar snap -->
+  <circle cx="200" cy="341" r="4.4" fill="var(--c3, #F6EFE2)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M162 372 q14 8 24 10 M214 382 q14-2 24-10" stroke="#FFFFFF" stroke-opacity="0.30"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

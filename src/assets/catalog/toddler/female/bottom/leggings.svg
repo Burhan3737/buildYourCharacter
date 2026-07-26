@@ -1,55 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: rise=HIGH, tall narrow waist block · leg=full · width=SKIN CLOSE · hem=plain ankle -->
   <defs>
     <linearGradient id="toddler-female-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #4F5C94)"/>
-      <stop offset="1" stop-color="var(--c2, #3B4570)"/>
+      <stop offset="1" stop-color="var(--c2, #353E66)"/>
     </linearGradient>
     <linearGradient id="toddler-female-bottom-leggings__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #4F5C94)"/>
-      <stop offset="1" stop-color="var(--c2, #3B4570)"/>
+      <stop offset="1" stop-color="var(--c2, #353E66)"/>
     </linearGradient>
+    <pattern id="toddler-female-bottom-leggings__stars" patternUnits="userSpaceOnUse"
+             x="3" y="0" width="18" height="18">
+      <path d="M9 3 L10.8 7.4 L15.4 7.7 L11.9 10.8 L13 15.3 L9 12.8 L5 15.3 L6.1 10.8 L2.6 7.7 L7.2 7.4 Z"
+            fill="var(--c3, #F4A79B)" fill-opacity="0.85"/>
+    </pattern>
+    <clipPath id="toddler-female-bottom-leggings__clip">
+      <rect x="167" y="478" width="32" height="68" rx="15"/>
+      <rect x="201" y="478" width="32" height="68" rx="15"/>
+    </clipPath>
   </defs>
 
-  <!-- slim stretch legs hugging the shape, plus the hip block -->
+  <!-- tall high-rise waist block and two skin-close stretch legs -->
   <g class="sp-shadow">
-    <rect x="165" y="478" width="34" height="66" rx="16"
+    <rect x="167" y="478" width="32" height="68" rx="15"
           fill="url(#toddler-female-bottom-leggings__leg)"/>
-    <rect x="201" y="478" width="34" height="66" rx="16"
+    <rect x="201" y="478" width="32" height="68" rx="15"
           fill="url(#toddler-female-bottom-leggings__leg)"/>
-    <rect x="156" y="440" width="88" height="44" rx="22"
+    <rect x="157" y="432" width="86" height="54" rx="26"
           fill="url(#toddler-female-bottom-leggings__hip)"/>
   </g>
 
-  <!-- contrast stretch waistband -->
-  <rect x="156" y="440" width="88" height="18" rx="9" fill="var(--c3, #F4A79B)"/>
-
-  <!-- ankle stripes -->
-  <rect x="166" y="510" width="32" height="8" rx="4" fill="var(--c3, #F4A79B)"/>
-  <rect x="202" y="510" width="32" height="8" rx="4" fill="var(--c3, #F4A79B)"/>
-  <rect x="167" y="523" width="30" height="5" rx="2.5" fill="var(--c3, #F4A79B)"/>
-  <rect x="203" y="523" width="30" height="5" rx="2.5" fill="var(--c3, #F4A79B)"/>
-
-  <!-- little dot pattern up the thighs -->
-  <g fill="var(--c3, #F4A79B)" fill-opacity="0.75">
-    <circle cx="176" cy="492" r="2.6"/>
-    <circle cx="189" cy="500" r="2.6"/>
-    <circle cx="176" cy="500"  r="1.6"/>
-    <circle cx="211" cy="492" r="2.6"/>
-    <circle cx="224" cy="500" r="2.6"/>
-    <circle cx="224" cy="492" r="1.6"/>
+  <!-- star scatter printed down the legs -->
+  <g clip-path="url(#toddler-female-bottom-leggings__clip)">
+    <rect x="160" y="482" width="80" height="48" fill="url(#toddler-female-bottom-leggings__stars)"/>
   </g>
 
-  <!-- crotch seam and knee shaping -->
-  <path d="M200 480 v10" stroke="var(--c2, #3B4570)" stroke-width="3"
+  <!-- wide contrast stretch waistband -->
+  <rect x="156" y="430" width="88" height="22" rx="11" fill="var(--c3, #F4A79B)"/>
+  <path d="M162 435 h76" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- soft upper highlight and stretch sheen down each leg -->
-  <path d="M164 468 q36 11 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <!-- contrast outseam running the full length of each leg -->
+  <path d="M170 486 V540" stroke="var(--c3, #F4A79B)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M172 490 v20" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+  <path d="M230 486 V540" stroke="var(--c3, #F4A79B)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M208 490 v20" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+
+  <!-- plain ankle bands closing the leg off flat -->
+  <rect x="167" y="532" width="32" height="12" rx="6" fill="var(--c3, #F4A79B)"/>
+  <rect x="201" y="532" width="32" height="12" rx="6" fill="var(--c3, #F4A79B)"/>
+
+  <!-- crotch seam plus stretch sheen -->
+  <path d="M200 480 v12" stroke="var(--c2, #353E66)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 462 q36 11 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M177 492 v28" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M211 492 v28" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

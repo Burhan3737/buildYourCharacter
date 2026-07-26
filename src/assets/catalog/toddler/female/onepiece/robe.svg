@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dressing Gown" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. the rest of the slot: closure=CROSSOVER WRAP with one front edge lapped
+       over the other, and shoulder=WIDE DRAPED BELL SLEEVE. Tools: trim (shawl collar,
+       cuff bands, tie belt) plus panel blocking (the overlapping front panel). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-robe__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A8C4)"/>
+      <stop offset="1" stop-color="var(--c2, #BC8099)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-robe__lap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A8C4)" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="var(--c2, #BC8099)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A8C4)"/>
+      <stop offset="1" stop-color="var(--c2, #BC8099)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- wide bell sleeves, flaring away from the arm -->
+  <g class="sp-shadow">
+    <path d="M124 350 q0-8 8-8 h26 q8 0 8 8 v52 q0 20 -8 24 h-32 q-10 -6 -8 -26 z"
+          fill="url(#toddler-female-onepiece-robe__sleeve)"/>
+    <path d="M276 350 q0-8 -8-8 h-26 q-8 0 -8 8 v52 q0 20 8 24 h32 q10 -6 8 -26 z"
+          fill="url(#toddler-female-onepiece-robe__sleeve)"/>
+  </g>
+
+  <!-- the gown, falling from the shoulders to mid-calf with a soft flare -->
+  <g class="sp-shadow">
+    <path d="M148 372 q4-28 28-28 l24 32 l24-32 q24 0 28 28 v56 l14 96 q-66 20 -132 0 l14-96 z"
+          fill="url(#toddler-female-onepiece-robe__cloth)"/>
+  </g>
+
+  <!-- the lapped-over right front panel, the closure that names the family -->
+  <g class="sp-shadow">
+    <path d="M200 380 l24-36 q24 0 28 28 v56 l10 66 q-32 10 -62 4 z"
+          fill="url(#toddler-female-onepiece-robe__lap)"/>
+  </g>
+
+  <!-- shawl collar rolling down both fronts and across the lap -->
+  <path d="M176 344 q10 22 24 36 l-14 12 q-24 -20 -28 -42 q6 -6 18 -6 z" fill="var(--c3, #FBEDE2)"/>
+  <path d="M224 344 q-10 22 -24 36 l14 12 q24 -20 28 -42 q-6 -6 -18 -6 z" fill="var(--c3, #FBEDE2)"/>
+  <path d="M214 392 l38 84" stroke="var(--c3, #FBEDE2)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft tie belt with two hanging ends -->
+  <rect x="146" y="438" width="108" height="16" rx="8" fill="var(--c3, #FBEDE2)"/>
+  <path d="M210 452 q16 24 6 44 q-14 -18 -14 -42 z" fill="var(--c3, #FBEDE2)"/>
+  <path d="M190 452 q-16 24 -6 44 q14 -18 14 -42 z" fill="var(--c3, #FBEDE2)"/>
+  <circle cx="200" cy="446" r="9" fill="var(--c2, #BC8099)"/>
+
+  <!-- turned cuff bands on the bell sleeves -->
+  <rect x="122" y="412" width="46" height="14" rx="7" fill="var(--c3, #FBEDE2)"/>
+  <rect x="232" y="412" width="46" height="14" rx="7" fill="var(--c3, #FBEDE2)"/>
+
+  <path d="M166 370 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 500 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

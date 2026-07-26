@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=short set-in · closure=HALF PLACKET, 2 big buttons · hem=hip CURVED shirt tail · volume=straight -->
+  <defs>
+    <linearGradient id="toddler-female-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FCB8A)"/>
+      <stop offset="1" stop-color="var(--c2, #6BA867)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FCB8A)"/>
+      <stop offset="1" stop-color="var(--c2, #6BA867)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-polo__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F1E3)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F1E3)" stop-opacity="0.8"/>
+    </linearGradient>
+    <!-- gingham check, 20px repeat -->
+    <pattern id="toddler-female-top-polo__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="9" fill="var(--c3, #F6F1E3)" fill-opacity="0.30"/>
+      <rect x="0" y="0" width="9" height="20" fill="var(--c3, #F6F1E3)" fill-opacity="0.30"/>
+    </pattern>
+    <clipPath id="toddler-female-top-polo__clip">
+      <path d="M152 370 q0-26 24-26 h48 q24 0 24 26 v52 q0 14 -6 22 q-42 16 -84 0 q-6-8 -6-22 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <rect x="120" y="352" width="36" height="46" rx="18" fill="url(#toddler-female-top-polo__sleeve)"/>
+    <rect x="244" y="352" width="36" height="46" rx="18" fill="url(#toddler-female-top-polo__sleeve)"/>
+    <!-- body with a curved shirt tail: dips at centre, rises at the side seams -->
+    <path d="M152 370 q0-26 24-26 h48 q24 0 24 26 v52 q0 14 -6 22 q-42 16 -84 0 q-6-8 -6-22 z"
+          fill="url(#toddler-female-top-polo__body)"/>
+  </g>
+
+  <!-- gingham over the body -->
+  <g clip-path="url(#toddler-female-top-polo__clip)">
+    <rect x="148" y="340" width="106" height="124" fill="url(#toddler-female-top-polo__gingham)"/>
+  </g>
+
+  <!-- flat knit collar lying open -->
+  <path d="M176 344 L200 358 L178 372 L168 352 z" fill="url(#toddler-female-top-polo__collar)"/>
+  <path d="M224 344 L200 358 L222 372 L232 352 z" fill="url(#toddler-female-top-polo__collar)"/>
+
+  <!-- half placket with two big toddler-friendly buttons -->
+  <rect x="192" y="356" width="16" height="44" rx="6" fill="url(#toddler-female-top-polo__collar)"/>
+  <circle cx="200" cy="369" r="4.6" fill="var(--c2, #6BA867)"/>
+  <circle cx="200" cy="389" r="4.6" fill="var(--c2, #6BA867)"/>
+
+  <!-- knit sleeve bands -->
+  <rect x="119" y="384" width="38" height="13" rx="6" fill="url(#toddler-female-top-polo__collar)"/>
+  <rect x="243" y="384" width="38" height="13" rx="6" fill="url(#toddler-female-top-polo__collar)"/>
+
+  <!-- side vent tacks where the curved hem lifts -->
+  <path d="M156 428 v10 M244 428 v10" stroke="var(--c3, #F6F1E3)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight -->
+  <path d="M162 380 q16 8 26 10 M212 390 q16-2 26-10" stroke="#FFFFFF" stroke-opacity="0.30"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,48 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jersey" data-family="jersey" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=SHORT RAGLAN wedge · closure=closed V bind · hem=hip · volume=boxy -->
+  <!-- the raglan panel is a wedge seamed neck to underarm, not a tube beside the body -->
   <defs>
     <linearGradient id="toddler-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #5FB3D9)"/>
-      <stop offset="1" stop-color="var(--c2, #4692BA)"/>
+      <stop offset="1" stop-color="var(--c2, #3F87AF)"/>
     </linearGradient>
-    <linearGradient id="toddler-female-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="toddler-female-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c3, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #4692BA)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
     </linearGradient>
     <clipPath id="toddler-female-top-jersey__clip">
-      <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"/>
+      <path d="M146 372 q2-28 30-28 h10 l14 30 l14-30 h10 q28 0 30 28 v54 q0 24 -24 24 h-60 q-24 0 -24-24 z"/>
     </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <!-- raglan sleeves in the accent colour -->
-    <rect x="122" y="348" width="34" height="46" rx="17" fill="url(#toddler-female-top-jersey__sleeve)"/>
-    <rect x="244" y="348" width="34" height="46" rx="17" fill="url(#toddler-female-top-jersey__sleeve)"/>
-    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+    <!-- boxy body with a V cut into the shoulder line -->
+    <path d="M146 372 q2-28 30-28 h10 l14 30 l14-30 h10 q28 0 30 28 v54 q0 24 -24 24 h-60 q-24 0 -24-24 z"
           fill="url(#toddler-female-top-jersey__body)"/>
+    <!-- raglan wedges: neck point out over the shoulder and down the arm -->
+    <path d="M188 346 q-48-2 -64 26 q-6 10 -6 22 q0 14 14 16 q14 2 20-10 l10-22 q8-18 20-22 z"
+          fill="url(#toddler-female-top-jersey__raglan)"/>
+    <path d="M212 346 q48-2 64 26 q6 10 6 22 q0 14 -14 16 q-14 2 -20-10 l-10-22 q-8-18 -20-22 z"
+          fill="url(#toddler-female-top-jersey__raglan)"/>
   </g>
 
-  <!-- contrast side panels -->
-  <g clip-path="url(#toddler-female-top-jersey__clip)">
-    <rect x="148" y="344" width="13" height="112" fill="var(--c3, #F7C873)"/>
-    <rect x="239" y="344" width="13" height="112" fill="var(--c3, #F7C873)"/>
-    <!-- raglan seams running from the neck to the underarm -->
-    <path d="M186 346 L152 392 M214 346 L248 392" stroke="var(--c2, #4692BA)" stroke-width="5"
-          stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <!-- raglan seam stitching, neck to underarm -->
+  <path d="M186 350 q-14 6 -22 26 M214 350 q14 6 22 26" stroke="var(--c2, #3F87AF)"
+        stroke-opacity="0.6" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- contrast side stripes down the body -->
+  <g clip-path="url(#toddler-female-top-jersey__clip)" fill="var(--c3, #F7C873)" fill-opacity="0.9">
+    <rect x="150" y="376" width="11" height="80"/>
+    <rect x="239" y="376" width="11" height="80"/>
   </g>
 
-  <!-- sporty chest chevron -->
-  <path d="M174 396 L200 414 L226 396" stroke="var(--c3, #F7C873)" stroke-width="11"
+  <!-- V neck bind following the cut -->
+  <path d="M184 346 l16 32 l16-32" stroke="var(--c3, #F7C873)" stroke-width="8"
         fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M178 414 L200 429 L222 414" stroke="var(--c3, #F7C873)" stroke-width="7"
-        stroke-opacity="0.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M188 348 l12 24 l12-24" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- ribbed athletic collar -->
-  <path d="M177 347 Q200 366 223 347" stroke="var(--c2, #4692BA)" stroke-width="9"
-        fill="none" stroke-linecap="round"/>
+  <!-- squad number panel drawn as a plain block, never lettering -->
+  <path d="M176 396 h48 q8 0 8 8 v22 q0 8 -8 8 h-48 q-8 0 -8-8 v-22 q0-8 8-8 z"
+        fill="var(--c3, #F7C873)" fill-opacity="0.55"/>
+
+  <!-- ribbed cuffs on the raglan wedges -->
+  <path d="M124 398 q14 14 28 2 M276 398 q-14 14 -28 2" stroke="var(--c2, #3F87AF)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
 
   <!-- soft chest highlight -->
-  <path d="M164 372 q36 13 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M162 384 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

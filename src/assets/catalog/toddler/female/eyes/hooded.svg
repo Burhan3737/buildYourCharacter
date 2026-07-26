@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- upper lid partly covering the crease, leaving a short visible lid strip -->
+  <defs>
+    <linearGradient id="toddler-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #7A5638)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #7A5638)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-hooded__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)" stop-opacity="0.35"/>
+    </linearGradient>
+    <clipPath id="toddler-female-eyes-hooded__clip-l">
+      <path d="M142 288 Q150 277 168 277 Q186 277 194 288 Q186 300 168 300 Q150 300 142 288 Z"/>
+    </clipPath>
+    <clipPath id="toddler-female-eyes-hooded__clip-r">
+      <path d="M258 288 Q250 277 232 277 Q214 277 206 288 Q214 300 232 300 Q250 300 258 288 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- rounded aperture, set lower in the socket than the other families -->
+  <g class="sp-shadow">
+    <path d="M142 288 Q150 277 168 277 Q186 277 194 288 Q186 300 168 300 Q150 300 142 288 Z"
+          fill="url(#toddler-female-eyes-hooded__sclera)"/>
+    <path d="M258 288 Q250 277 232 277 Q214 277 206 288 Q214 300 232 300 Q250 300 258 288 Z"
+          fill="url(#toddler-female-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#toddler-female-eyes-hooded__clip-l)">
+    <circle cx="168" cy="289" r="13" fill="#3B2A22"/>
+    <circle cx="168" cy="289" r="13" fill="url(#toddler-female-eyes-hooded__iris)"/>
+    <circle cx="168" cy="289" r="6" fill="#3B2A22"/>
+    <circle cx="163" cy="284" r="3.8" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#toddler-female-eyes-hooded__clip-r)">
+    <circle cx="232" cy="289" r="13" fill="#3B2A22"/>
+    <circle cx="232" cy="289" r="13" fill="url(#toddler-female-eyes-hooded__iris)"/>
+    <circle cx="232" cy="289" r="6" fill="#3B2A22"/>
+    <circle cx="227" cy="284" r="3.8" fill="#FFFFFF"/>
+  </g>
+
+  <!-- the hood: a heavy fold of lid skin dropping over the crease from above -->
+  <path d="M137 268 Q168 250 199 266 Q199 275 190 278 Q168 271 146 277 Q138 275 137 268 Z"
+        fill="url(#toddler-female-eyes-hooded__hood)"/>
+  <path d="M263 268 Q232 250 201 266 Q201 275 210 278 Q232 271 254 277 Q262 275 263 268 Z"
+        fill="url(#toddler-female-eyes-hooded__hood)"/>
+  <!-- the hood edge, drawn as its own ink line so the fold reads at thumbnail size -->
+  <path d="M139 274 Q168 262 196 273" stroke="#3B2A22" stroke-opacity="0.34" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 274 Q232 262 204 273" stroke="#3B2A22" stroke-opacity="0.34" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper lash line, sitting close under the hood so only a short lid strip shows -->
+  <path d="M143 284 Q168 272 193 284" stroke="#3B2A22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M257 284 Q232 272 207 284" stroke="#3B2A22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lower lash hint -->
+  <path d="M150 301 Q168 305 186 301" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 301 Q232 305 214 301" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
+</svg>

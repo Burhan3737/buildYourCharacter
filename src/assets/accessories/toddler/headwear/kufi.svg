@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kufi" data-family="kufi" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. beanie and kippah: crown=SHALLOW ROUNDED CAP with a straight horizontal
+       lower edge sitting flat on the head (the beanie is a tall dome, the kippah a small
+       flat disc set back), and coverage=THE FULL CROWN TO ABOVE THE EAR, well beyond a
+       kippah. Tools: pattern (14px embroidery diamond) plus trim (flat woven brim band). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-kufi__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0EDE4)"/>
+      <stop offset="1" stop-color="var(--c2, #D3CDBC)"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-headwear-kufi__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M7 2 L12 7 L7 12 L2 7 Z" fill="none" stroke="var(--c3, #6E7C5A)" stroke-width="2"/>
+    </pattern>
+    <clipPath id="accessories-toddler-headwear-kufi__clip">
+      <path d="M138 240 q0 -52 62 -52 q62 0 62 52 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- shallow rounded cap with a flat lower edge -->
+    <path d="M138 240 q0 -52 62 -52 q62 0 62 52 z" fill="url(#accessories-toddler-headwear-kufi__cap)"/>
+  </g>
+
+  <g clip-path="url(#accessories-toddler-headwear-kufi__clip)">
+    <rect x="134" y="184" width="132" height="60" fill="url(#accessories-toddler-headwear-kufi__weave)" fill-opacity="0.6"/>
+  </g>
+
+  <!-- flat woven brim band closing the cap -->
+  <rect x="136" y="230" width="128" height="14" rx="7" fill="var(--c3, #6E7C5A)"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M148 234 v6 M164 234 v6 M180 234 v6 M196 234 v6 M212 234 v6 M228 234 v6 M244 234 v6"/>
+  </g>
+
+  <path d="M156 200 q44 -12 88 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

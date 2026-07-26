@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bee" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: volume=two-lobed round thorax over a bulbous plush abdomen · hem=abdomen swallows the hips
+       and thighs, leaving only short stub legs. Rounded wings hang behind the shoulders. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-bee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F9CE5E)"/>
+      <stop offset="1" stop-color="var(--c1, #E0AE33)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-bee__abdomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F9CE5E)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A427)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-bee__limb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #E0AE33)"/>
+      <stop offset="0.45" stop-color="var(--c1, #F9CE5E)"/>
+      <stop offset="1" stop-color="var(--c1, #E0AE33)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EAF4FA)"/>
+      <stop offset="1" stop-color="var(--c3, #C2DAE8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-bee__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A2A)"/>
+      <stop offset="1" stop-color="var(--c2, #33271B)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-costume-bee__abdclip">
+      <path d="M146 462 q0-52 54-52 q54 0 54 52 v44 q0 46 -54 46 q-54 0 -54-46 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two rounded wings, tucked behind the shoulders -->
+  <g class="sp-shadow">
+    <path d="M156 356 q-58 -6 -68 42 q-8 44 34 48 q34 3 40-36 z"
+          fill="url(#toddler-female-costume-bee__wing)"/>
+    <path d="M244 356 q58 -6 68 42 q8 44 -34 48 q-34 3 -40-36 z"
+          fill="url(#toddler-female-costume-bee__wing)"/>
+  </g>
+
+  <!-- plush body: round thorax, bulbous abdomen, stub legs -->
+  <g class="sp-shadow">
+    <path d="M146 462 q0-52 54-52 q54 0 54 52 v44 q0 46 -54 46 q-54 0 -54-46 z"
+          fill="url(#toddler-female-costume-bee__abdomen)"/>
+    <path d="M152 372 q0-26 14-26 h68 q14 0 14 26 v40 q0 38 -48 38 q-48 0 -48-38 z"
+          fill="url(#toddler-female-costume-bee__body)"/>
+    <rect x="116" y="346" width="46" height="98" rx="20" fill="url(#toddler-female-costume-bee__limb)"/>
+    <rect x="238" y="346" width="46" height="98" rx="20" fill="url(#toddler-female-costume-bee__limb)"/>
+    <circle cx="139" cy="446" r="19" fill="url(#toddler-female-costume-bee__limb)"/>
+    <circle cx="261" cy="446" r="19" fill="url(#toddler-female-costume-bee__limb)"/>
+    <rect x="166" y="506" width="34" height="52" rx="17" fill="url(#toddler-female-costume-bee__band)"/>
+    <rect x="200" y="506" width="34" height="52" rx="17" fill="url(#toddler-female-costume-bee__band)"/>
+    <rect x="158" y="542" width="48" height="28" rx="14" fill="url(#toddler-female-costume-bee__band)"/>
+    <rect x="194" y="542" width="48" height="28" rx="14" fill="url(#toddler-female-costume-bee__band)"/>
+  </g>
+
+  <!-- three plush bands round the abdomen -->
+  <g clip-path="url(#toddler-female-costume-bee__abdclip)">
+    <path d="M138 432 q62 18 124 0 v24 q-62 18 -124 0 z" fill="url(#toddler-female-costume-bee__band)"/>
+    <path d="M138 472 q62 18 124 0 v24 q-62 18 -124 0 z" fill="url(#toddler-female-costume-bee__band)"/>
+    <path d="M138 512 q62 18 124 0 v24 q-62 18 -124 0 z" fill="url(#toddler-female-costume-bee__band)"/>
+  </g>
+
+  <!-- banded sleeve cuffs, so the arms read as part of the same body -->
+  <g fill="var(--c2, #4A3A2A)">
+    <rect x="116" y="376" width="46" height="16" rx="8"/>
+    <rect x="116" y="410" width="46" height="16" rx="8"/>
+    <rect x="238" y="376" width="46" height="16" rx="8"/>
+    <rect x="238" y="410" width="46" height="16" rx="8"/>
+  </g>
+
+  <!-- fuzzy scalloped ruff at the neck: the ceiling of this costume -->
+  <g fill="var(--c3, #EAF4FA)">
+    <circle cx="170" cy="364" r="13"/>
+    <circle cx="188" cy="361" r="14"/>
+    <circle cx="212" cy="361" r="14"/>
+    <circle cx="230" cy="364" r="13"/>
+  </g>
+
+  <!-- wing veins -->
+  <g stroke="var(--c2, #4A3A2A)" stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M150 364 q-42 12 -50 46 M150 382 q-38 12 -44 42 M152 400 q-30 10 -34 36"/>
+    <path d="M250 364 q42 12 50 46 M250 382 q38 12 44 42 M248 400 q30 10 34 36"/>
+  </g>
+
+  <path d="M168 366 q32 14 64 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 428 q36 16 72 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

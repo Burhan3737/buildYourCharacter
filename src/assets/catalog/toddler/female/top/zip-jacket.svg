@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Track Zip Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=long · closure=ZIP, two front panels meeting at a centre line · hem=hip · volume=straight -->
+  <defs>
+    <linearGradient id="toddler-female-top-zip-jacket__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4A9382)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-zip-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4A9382)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-zip-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A9382)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4F0E4)"/>
+      <stop offset="1" stop-color="var(--c3, #F4F0E4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long track sleeves -->
+    <rect x="124" y="348" width="32" height="90" rx="16" fill="url(#toddler-female-top-zip-jacket__sleeve)"/>
+    <rect x="244" y="348" width="32" height="90" rx="16" fill="url(#toddler-female-top-zip-jacket__sleeve)"/>
+    <!-- two front panels stopping short of centre: the zip runs in the gap -->
+    <path d="M150 370 q0-26 24-26 h24 v106 h-28 q-20 0 -20-20 z"
+          fill="url(#toddler-female-top-zip-jacket__panel)"/>
+    <path d="M250 370 q0-26 -24-26 h-24 v106 h28 q20 0 20-20 z"
+          fill="url(#toddler-female-top-zip-jacket__panel)"/>
+    <!-- stand collar rising just clear of the chin -->
+    <path d="M172 344 q28-14 56 0 v14 q-28-12 -56 0 z"
+          fill="url(#toddler-female-top-zip-jacket__collar)"/>
+  </g>
+
+  <!-- zip tape between the panels, with a pull tab -->
+  <rect x="196" y="344" width="8" height="106" rx="3" fill="var(--c3, #F4F0E4)"/>
+  <g stroke="var(--c2, #4A9382)" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round">
+    <path d="M198 352 h4 M198 362 h4 M198 372 h4 M198 382 h4 M198 392 h4 M198 402 h4 M198 412 h4 M198 422 h4"/>
+  </g>
+  <rect x="194" y="386" width="12" height="9" rx="4" fill="var(--c2, #4A9382)"/>
+  <path d="M200 395 v11" stroke="var(--c2, #4A9382)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- raglan-look contrast tape down each sleeve -->
+  <path d="M137 356 v78 M263 356 v78" stroke="var(--c3, #F4F0E4)" stroke-opacity="0.85"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs and hem band -->
+  <rect x="123" y="420" width="34" height="18" rx="8" fill="url(#toddler-female-top-zip-jacket__rib)"/>
+  <rect x="243" y="420" width="34" height="18" rx="8" fill="url(#toddler-female-top-zip-jacket__rib)"/>
+  <path d="M150 432 h100 v-4 q0 22 -20 22 h-60 q-20 0 -20-22 z"
+        fill="url(#toddler-female-top-zip-jacket__rib)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M160 372 q18 10 30 12 M210 384 q18-2 30-12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

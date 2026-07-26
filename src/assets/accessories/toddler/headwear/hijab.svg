@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hijab" data-family="hijab" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- axes vs. turban, headwrap, bonnet and durag: coverage=THE ONLY ONE THAT DRAPES PAST
+       THE EARS AND DOWN OVER THE NECK, converging under the chin; and fastening=A PIN AT
+       THE THROAT rather than a fold ridge, a fanned crown or trailing ties. Tools: pattern
+       (14px dot) plus trim (contrast under-cap band framing the face aperture). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-hijab__drape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #40806F)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-hijab__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-headwear-hijab__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="2" fill="var(--c2, #40806F)"/>
+    </pattern>
+    <clipPath id="accessories-toddler-headwear-hijab__clip">
+      <path fill-rule="evenodd"
+            d="M102 264 C102 196 144 172 200 172 C256 172 298 196 298 264
+               C298 316 282 350 250 368 Q200 386 150 368 C118 350 102 316 102 264 Z
+               M200 214 C166 214 138 248 138 288 C138 326 166 354 200 354
+               C234 354 262 326 262 288 C262 248 234 214 200 214 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the drape. The aperture is cut wide enough (x138 to x262 at the eye line y286) to
+         clear the outer corner of every eye family in the catalogue, so no headwear edge
+         ever crops a feature. -->
+    <path fill-rule="evenodd"
+          d="M102 264 C102 196 144 172 200 172 C256 172 298 196 298 264
+             C298 316 282 350 250 368 Q200 386 150 368 C118 350 102 316 102 264 Z
+             M200 214 C166 214 138 248 138 288 C138 326 166 354 200 354
+             C234 354 262 326 262 288 C262 248 234 214 200 214 Z"
+          fill="url(#accessories-toddler-headwear-hijab__drape)"/>
+  </g>
+
+  <g clip-path="url(#accessories-toddler-headwear-hijab__clip)">
+    <rect x="98" y="168" width="204" height="212" fill="url(#accessories-toddler-headwear-hijab__dot)" fill-opacity="0.55"/>
+  </g>
+
+  <!-- contrast under-cap band framing the aperture across the brow -->
+  <path d="M141 258 C150 230 172 208 200 208 C228 208 250 230 259 258
+           C246 236 226 220 200 220 C174 220 154 236 141 258 Z"
+        fill="url(#accessories-toddler-headwear-hijab__band)"/>
+
+  <!-- the pin at the throat -->
+  <circle cx="200" cy="364" r="7" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="364" r="3" fill="var(--c2, #40806F)"/>
+
+  <path d="M140 210 q60 -28 120 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

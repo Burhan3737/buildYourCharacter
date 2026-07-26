@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=PAULDRONS flaring wide past the arm · hem=knee-length tabard over a squared mail skirt.
+       Squared-off greaves and sabatons; no rounded limb caps anywhere. No heraldry on the tabard. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B4BDCE)"/>
+      <stop offset="1" stop-color="var(--c2, #7B8496)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-knight__limb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #7B8496)"/>
+      <stop offset="0.45" stop-color="var(--c1, #B4BDCE)"/>
+      <stop offset="1" stop-color="var(--c2, #7B8496)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-knight__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6CEDC)"/>
+      <stop offset="1" stop-color="var(--c2, #8A93A6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A73B8)"/>
+      <stop offset="1" stop-color="var(--c3, #33538A)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-knight__ring" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="4.2" fill="none" stroke="var(--c2, #7B8496)" stroke-width="2"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-knight__mailclip">
+      <path d="M150 372 q0-26 26-26 h48 q26 0 26 26 v56 q0 28 -26 28 h-48 q-26 0 -26-28 z"/>
+      <rect x="152" y="440" width="96" height="48" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M150 372 q0-26 26-26 h48 q26 0 26 26 v56 q0 28 -26 28 h-48 q-26 0 -26-28 z"
+          fill="url(#toddler-female-costume-knight__mail)"/>
+    <rect x="152" y="440" width="96" height="48" rx="16" fill="url(#toddler-female-costume-knight__mail)"/>
+    <rect x="122" y="350" width="32" height="94" rx="10" fill="url(#toddler-female-costume-knight__limb)"/>
+    <rect x="246" y="350" width="32" height="94" rx="10" fill="url(#toddler-female-costume-knight__limb)"/>
+    <path d="M112 372 q0-26 30-26 q14 0 18 10 v18 q-20 12 -48 8 z" fill="url(#toddler-female-costume-knight__plate)"/>
+    <path d="M288 372 q0-26 -30-26 q-14 0 -18 10 v18 q20 12 48 8 z" fill="url(#toddler-female-costume-knight__plate)"/>
+    <rect x="164" y="478" width="36" height="68" rx="8" fill="url(#toddler-female-costume-knight__plate)"/>
+    <rect x="200" y="478" width="36" height="68" rx="8" fill="url(#toddler-female-costume-knight__plate)"/>
+    <rect x="121" y="424" width="36" height="36" rx="9" fill="url(#toddler-female-costume-knight__plate)"/>
+    <rect x="243" y="424" width="36" height="36" rx="9" fill="url(#toddler-female-costume-knight__plate)"/>
+    <path d="M156 540 H202 L208 570 H150 Z" fill="url(#toddler-female-costume-knight__plate)"/>
+    <path d="M244 540 H198 L192 570 H250 Z" fill="url(#toddler-female-costume-knight__plate)"/>
+  </g>
+
+  <!-- chain-mail ring texture over the body and the mail skirt -->
+  <g clip-path="url(#toddler-female-costume-knight__mailclip)">
+    <rect x="150" y="346" width="100" height="142" fill="url(#toddler-female-costume-knight__ring)"/>
+  </g>
+
+  <!-- plain plated tabard hanging front and centre: no heraldry, no device -->
+  <path d="M174 348 H226 V494 L200 508 L174 494 Z" fill="url(#toddler-female-costume-knight__tabard)"/>
+  <path d="M174 386 H226 M174 424 H226 M174 462 H226" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- wide belt at the waist -->
+  <rect x="150" y="434" width="100" height="20" rx="7" fill="var(--c2, #7B8496)"/>
+  <rect x="190" y="430" width="22" height="28" rx="6" fill="var(--c3, #4A73B8)"/>
+
+  <!-- pauldron ridges and gauntlet knuckle plates -->
+  <g stroke="var(--c3, #4A73B8)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M120 368 q20 -12 38 -8"/>
+    <path d="M280 368 q-20 -12 -38 -8"/>
+  </g>
+  <g fill="var(--c3, #4A73B8)">
+    <rect x="124" y="432" width="30" height="7" rx="3.5"/>
+    <rect x="246" y="432" width="30" height="7" rx="3.5"/>
+  </g>
+
+  <!-- knee cops and sabaton straps -->
+  <g fill="var(--c2, #7B8496)">
+    <rect x="162" y="500" width="40" height="10" rx="4"/>
+    <rect x="198" y="500" width="40" height="10" rx="4"/>
+  </g>
+
+  <path d="M162 360 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

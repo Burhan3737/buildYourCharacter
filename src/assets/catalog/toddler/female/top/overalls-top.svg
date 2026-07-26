@@ -1,62 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Overalls Top" data-family="overalls-top" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=STRAP only · closure=closed · hem=WAIST · volume=bib -->
+  <!-- square bib on two over-shoulder straps, arms and shoulders bare, flat hem at the waist -->
   <defs>
     <linearGradient id="toddler-female-top-overalls-top__bib" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7C93C9)"/>
-      <stop offset="1" stop-color="var(--c2, #647CB3)"/>
+      <stop offset="1" stop-color="var(--c2, #5C74AE)"/>
     </linearGradient>
     <linearGradient id="toddler-female-top-overalls-top__strap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7C93C9)"/>
-      <stop offset="1" stop-color="var(--c2, #647CB3)"/>
+      <stop offset="1" stop-color="var(--c2, #5C74AE)"/>
     </linearGradient>
-    <!-- non-tunable ink ramp so the single-colour undershirt still reads light-to-dark -->
-    <linearGradient id="toddler-female-top-overalls-top__shade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3B2A22" stop-opacity="0"/>
-      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.17"/>
+    <linearGradient id="toddler-female-top-overalls-top__pocket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5C74AE)"/>
+      <stop offset="1" stop-color="var(--c2, #5C74AE)" stop-opacity="0.8"/>
     </linearGradient>
   </defs>
 
-  <!-- plain short-sleeve undershirt underneath -->
   <g class="sp-shadow">
-    <rect x="122" y="348" width="34" height="42" rx="17" fill="var(--c3, #F6E9D6)"/>
-    <rect x="244" y="348" width="34" height="42" rx="17" fill="var(--c3, #F6E9D6)"/>
-    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
-          fill="var(--c3, #F6E9D6)"/>
-  </g>
-  <g>
-    <rect x="122" y="348" width="34" height="42" rx="17" fill="url(#toddler-female-top-overalls-top__shade)"/>
-    <rect x="244" y="348" width="34" height="42" rx="17" fill="url(#toddler-female-top-overalls-top__shade)"/>
-    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
-          fill="url(#toddler-female-top-overalls-top__shade)"/>
-  </g>
-  <!-- undershirt neckline -->
-  <path d="M178 347 Q200 364 222 347" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="7"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- dungaree straps over the shoulders -->
-  <g class="sp-shadow">
-    <rect x="159" y="344" width="15" height="32" rx="7" fill="url(#toddler-female-top-overalls-top__strap)"/>
-    <rect x="226" y="344" width="15" height="32" rx="7" fill="url(#toddler-female-top-overalls-top__strap)"/>
-    <!-- bib panel across the chest -->
-    <path d="M161 374 q0-14 14-14 h50 q14 0 14 14 v54 q0 13 -14 13 h-50 q-14 0 -14-13 z"
+    <!-- broad dungaree straps over the shoulders -->
+    <rect x="162" y="344" width="18" height="36" rx="9" fill="url(#toddler-female-top-overalls-top__strap)"/>
+    <rect x="220" y="344" width="18" height="36" rx="9" fill="url(#toddler-female-top-overalls-top__strap)"/>
+    <!-- square bib stepping out to a wide waistband, flat hem at y446 -->
+    <path d="M160 378 q0-12 12-12 h56 q12 0 12 12 v42 h10 v26 h-100 v-26 h10 z"
           fill="url(#toddler-female-top-overalls-top__bib)"/>
   </g>
 
-  <!-- bib pocket with a scalloped stitch line -->
-  <path d="M175 398 h50 v20 q0 10 -10 10 h-30 q-10 0 -10-10 z" fill="var(--c2, #647CB3)"/>
-  <path d="M181 405 q19 9 38 0" stroke="var(--c3, #F6E9D6)" stroke-opacity="0.6" stroke-width="2.6"
+  <!-- big bib pocket -->
+  <path d="M176 392 h48 v24 q0 10 -10 10 h-28 q-10 0 -10-10 z"
+        fill="url(#toddler-female-top-overalls-top__pocket)"/>
+  <path d="M182 400 q18 8 36 0" stroke="var(--c3, #F6E9D6)" stroke-opacity="0.7" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- strap clasp buttons -->
-  <circle cx="166" cy="378" r="5" fill="var(--c3, #F6E9D6)"/>
-  <circle cx="234" cy="378" r="5" fill="var(--c3, #F6E9D6)"/>
+  <!-- chunky strap clasps -->
+  <rect x="163" y="372" width="16" height="14" rx="4" fill="var(--c3, #F6E9D6)"/>
+  <rect x="221" y="372" width="16" height="14" rx="4" fill="var(--c3, #F6E9D6)"/>
+  <circle cx="171" cy="379" r="3.2" fill="var(--c2, #5C74AE)"/>
+  <circle cx="229" cy="379" r="3.2" fill="var(--c2, #5C74AE)"/>
 
-  <!-- topstitching along the bib edge -->
-  <path d="M167 380 v46 M233 380 v46" stroke="var(--c3, #F6E9D6)" stroke-opacity="0.45"
-        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- topstitching around the bib and along the waistband -->
+  <path d="M166 386 v56 M234 386 v56 M154 428 h92" stroke="var(--c3, #F6E9D6)" stroke-opacity="0.5"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
   <!-- soft chest highlight -->
-  <path d="M172 372 q28 11 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <path d="M172 380 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puddle Suit" data-family="puddle-suit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. boiler-suit and jumpsuit: volume=BLOUSED, the body ballooning well past
+       the torso before gathering in, and hem=ELASTICATED ANKLE with the leg drawn in
+       tight over the boot. Tools: trim (hood roll, cuff and ankle elastic) plus
+       structural (storm flap poppers, seat seam). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-puddle-suit__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #D09A2C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-puddle-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #D09A2C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-puddle-suit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C14E)"/>
+      <stop offset="1" stop-color="var(--c2, #D09A2C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bulky waterproof sleeves -->
+  <g class="sp-shadow">
+    <rect x="116" y="348" width="42" height="90" rx="21" fill="url(#toddler-female-onepiece-puddle-suit__sleeve)"/>
+    <rect x="242" y="348" width="42" height="90" rx="21" fill="url(#toddler-female-onepiece-puddle-suit__sleeve)"/>
+  </g>
+
+  <!-- bloused body: bulges well outside the torso, then gathers back in at the seat -->
+  <g class="sp-shadow">
+    <path d="M144 374 q2-30 30-30 h52 q28 0 30 30 q4 34 -2 52 q-4 14 -14 18 h-80
+             q-10 -4 -14 -18 q-6 -18 -2 -52 z"
+          fill="url(#toddler-female-onepiece-puddle-suit__shell)"/>
+  </g>
+
+  <!-- roomy seat -->
+  <g class="sp-shadow">
+    <rect x="150" y="440" width="100" height="50" rx="24" fill="url(#toddler-female-onepiece-puddle-suit__shell)"/>
+  </g>
+
+  <!-- legs, bulky above and drawn in tight at the ankle -->
+  <g class="sp-shadow">
+    <path d="M154 486 h46 v34 q0 14 -12 18 h-22 q-12 -4 -12 -18 z"
+          fill="url(#toddler-female-onepiece-puddle-suit__leg)"/>
+    <path d="M246 486 h-46 v34 q0 14 12 18 h22 q12 -4 12 -18 z"
+          fill="url(#toddler-female-onepiece-puddle-suit__leg)"/>
+  </g>
+
+  <!-- the hood, rolled down behind the neck so the face is never covered -->
+  <path d="M166 344 q34 30 68 0 q-4 34 -34 34 q-30 0 -34 -34 z" fill="var(--c3, #2F6E8F)"/>
+  <path d="M176 350 q24 18 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- storm-flap placket with big poppers a toddler can work -->
+  <rect x="190" y="352" width="20" height="132" rx="7" fill="var(--c3, #2F6E8F)"/>
+  <g fill="var(--c1, #F2C14E)">
+    <circle cx="200" cy="378" r="5"/>
+    <circle cx="200" cy="412" r="5"/>
+    <circle cx="200" cy="446" r="5"/>
+    <circle cx="200" cy="476" r="5"/>
+  </g>
+
+  <!-- elastic cuffs and ankles -->
+  <g fill="var(--c3, #2F6E8F)">
+    <rect x="114" y="422" width="46" height="16" rx="8"/>
+    <rect x="240" y="422" width="46" height="16" rx="8"/>
+    <rect x="158" y="524" width="42" height="16" rx="8"/>
+    <rect x="200" y="524" width="42" height="16" rx="8"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M120 426 v9 M130 426 v9 M140 426 v9 M150 426 v9"/>
+    <path d="M246 426 v9 M256 426 v9 M266 426 v9 M276 426 v9"/>
+    <path d="M164 528 v9 M176 528 v9 M188 528 v9"/>
+    <path d="M208 528 v9 M220 528 v9 M232 528 v9"/>
+  </g>
+
+  <!-- taped seam across the chest and around the seat -->
+  <path d="M152 402 q48 14 96 0" stroke="var(--c3, #2F6E8F)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 466 q44 12 88 0" stroke="var(--c3, #2F6E8F)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M162 372 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

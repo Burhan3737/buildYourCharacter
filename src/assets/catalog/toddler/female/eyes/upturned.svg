@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- outer corner lifting clearly above the inner corner -->
+  <defs>
+    <linearGradient id="toddler-female-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #7C63B8)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #7C63B8)" stop-opacity="0.78"/>
+    </linearGradient>
+    <clipPath id="toddler-female-eyes-upturned__clip-l">
+      <path d="M195 295 Q186 305 172 303 Q152 300 141 276 Q158 274 175 280 Q191 286 195 295 Z"/>
+    </clipPath>
+    <clipPath id="toddler-female-eyes-upturned__clip-r">
+      <path d="M205 295 Q214 305 228 303 Q248 300 259 276 Q242 274 225 280 Q209 286 205 295 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- aperture: heavy rounded inner corner, sweeping up to a lifted point outside -->
+  <g class="sp-shadow">
+    <path d="M195 295 Q186 305 172 303 Q152 300 141 276 Q158 274 175 280 Q191 286 195 295 Z"
+          fill="url(#toddler-female-eyes-upturned__sclera)"/>
+    <path d="M205 295 Q214 305 228 303 Q248 300 259 276 Q242 274 225 280 Q209 286 205 295 Z"
+          fill="url(#toddler-female-eyes-upturned__sclera)"/>
+  </g>
+
+  <g clip-path="url(#toddler-female-eyes-upturned__clip-l)">
+    <circle cx="169" cy="290" r="13" fill="#3B2A22"/>
+    <circle cx="169" cy="290" r="13" fill="url(#toddler-female-eyes-upturned__iris)"/>
+    <circle cx="169" cy="290" r="6" fill="#3B2A22"/>
+    <circle cx="164" cy="285" r="4" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#toddler-female-eyes-upturned__clip-r)">
+    <circle cx="231" cy="290" r="13" fill="#3B2A22"/>
+    <circle cx="231" cy="290" r="13" fill="url(#toddler-female-eyes-upturned__iris)"/>
+    <circle cx="231" cy="290" r="6" fill="#3B2A22"/>
+    <circle cx="226" cy="285" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- upper lash line climbing steeply out to the lifted outer corner, with a flick -->
+  <path d="M196 294 Q176 276 152 272 Q144 271 139 268" stroke="#3B2A22" stroke-width="5.6"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 294 Q224 276 248 272 Q256 271 261 268" stroke="#3B2A22" stroke-width="5.6"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lower line, dropping away from the lift so the tilt reads at thumbnail size -->
+  <path d="M195 297 Q180 306 164 303" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M205 297 Q220 306 236 303" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

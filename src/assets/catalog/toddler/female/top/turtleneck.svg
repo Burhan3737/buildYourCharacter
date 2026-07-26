@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long · closure=closed · hem=hip · volume=FITTED, waist nipped in -->
+  <!-- tall folded neck tube, top edge held at y332 so it never covers the chin -->
+  <defs>
+    <linearGradient id="toddler-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6A2E0)"/>
+      <stop offset="1" stop-color="var(--c2, #9E77BF)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6A2E0)"/>
+      <stop offset="1" stop-color="var(--c2, #9E77BF)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6A2E0)"/>
+      <stop offset="1" stop-color="var(--c2, #9E77BF)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-top-turtleneck__clip">
+      <path d="M154 372 q0-28 24-28 h44 q24 0 24 28 q-6 22 -6 38 q0 16 6 34 q-46 12 -92 0 q6-18 6-34 q0-16 -6-38 z"/>
+      <rect x="126" y="352" width="28" height="88" rx="14"/>
+      <rect x="246" y="352" width="28" height="88" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- slim long sleeves -->
+    <rect x="126" y="352" width="28" height="88" rx="14" fill="url(#toddler-female-top-turtleneck__sleeve)"/>
+    <rect x="246" y="352" width="28" height="88" rx="14" fill="url(#toddler-female-top-turtleneck__sleeve)"/>
+    <!-- fitted body, drawn in at the waist and skimming the hip -->
+    <path d="M154 372 q0-28 24-28 h44 q24 0 24 28 q-6 22 -6 38 q0 16 6 34 q-46 12 -92 0 q6-18 6-34 q0-16 -6-38 z"
+          fill="url(#toddler-female-top-turtleneck__body)"/>
+    <!-- tall folded neck tube -->
+    <path d="M176 332 h48 v30 q-24 12 -48 0 z" fill="url(#toddler-female-top-turtleneck__tube)"/>
+  </g>
+
+  <!-- fold line across the neck tube -->
+  <path d="M177 346 q23 11 46 0" stroke="var(--c2, #9E77BF)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 338 q20 9 40 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- fine rib knit running the length of the body and sleeves -->
+  <g clip-path="url(#toddler-female-top-turtleneck__clip)">
+    <g stroke="var(--c3, #FFFFFF)" stroke-opacity="0.20" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M166 366 v88 M178 358 v96 M190 356 v98 M202 356 v98 M214 358 v96 M226 366 v88"/>
+      <path d="M134 362 v76 M146 362 v76 M254 362 v76 M266 362 v76"/>
+    </g>
+  </g>
+
+  <!-- rib cuffs -->
+  <path d="M128 424 q12 10 24 0 M248 424 q12 10 24 0" stroke="var(--c2, #9E77BF)"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- rib hem band hugging the hip -->
+  <path d="M158 436 q42 12 84 0 v8 q-42 12 -84 0 z" fill="var(--c2, #9E77BF)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M166 376 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

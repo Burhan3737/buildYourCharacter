@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Animal Ears" data-family="animal-ears" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. headband and flower-crown: crown=TWO TALL ROUNDED EARS STANDING CLEAR OF
+       THE SKULL, the only family whose outline leaves the head at all, and coverage=NONE
+       beyond a narrow band. Tools: panel blocking (contrast inner-ear panel) plus trim
+       (the band and its two anchor tabs). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-animal-ears__ear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6248)"/>
+      <stop offset="1" stop-color="var(--c2, #64452F)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-animal-ears__inner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6C7C0)"/>
+      <stop offset="1" stop-color="var(--c3, #F6C7C0)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-animal-ears__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6248)"/>
+      <stop offset="1" stop-color="var(--c2, #64452F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two tall rounded ears, set wide and standing well clear of the crown -->
+    <path d="M142 220 q-20 -50 4 -66 q26 -16 44 22 q12 22 8 42 q-30 10 -56 2 z"
+          fill="url(#accessories-toddler-headwear-animal-ears__ear)"/>
+    <path d="M258 220 q20 -50 -4 -66 q-26 -16 -44 22 q-12 22 -8 42 q30 10 56 2 z"
+          fill="url(#accessories-toddler-headwear-animal-ears__ear)"/>
+    <!-- slim even-width band, hooping the crown and tucking behind the head at the temples -->
+    <path d="M128 250 q12 -54 72 -58 q60 4 72 58 q-8 6 -13 -2 q-14 -40 -59 -43
+             q-45 3 -59 43 q-5 8 -13 2 z"
+          fill="url(#accessories-toddler-headwear-animal-ears__band)"/>
+  </g>
+
+  <!-- contrast inner-ear panels -->
+  <path d="M152 214 q-14 -38 2 -48 q17 -8 30 22 q8 16 5 27 q-22 6 -37 -1 z"
+        fill="url(#accessories-toddler-headwear-animal-ears__inner)"/>
+  <path d="M248 214 q14 -38 -2 -48 q-17 -8 -30 22 q-8 16 -5 27 q22 6 37 -1 z"
+        fill="url(#accessories-toddler-headwear-animal-ears__inner)"/>
+
+  <path d="M154 186 q12 -26 26 -20" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 186 q-12 -26 -26 -20" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

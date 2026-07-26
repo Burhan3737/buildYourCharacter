@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: rise=natural · leg=NONE, a skirt · width=flared in three stepped tiers · hem=RUFFLED and gathered -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-tiered-skirt__t1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C9B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-tiered-skirt__t2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C9B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-tiered-skirt__t3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C9B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-tiered-skirt__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2A6C0)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C9B)"/>
+    </linearGradient>
+    <pattern id="toddler-female-bottom-tiered-skirt__ditsy" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="6" r="2.6" fill="var(--c3, #FFF3E0)"/>
+      <circle cx="6" cy="10" r="2.6" fill="var(--c3, #FFF3E0)"/>
+      <circle cx="14" cy="10" r="2.6" fill="var(--c3, #FFF3E0)"/>
+      <circle cx="10" cy="14" r="2.6" fill="var(--c3, #FFF3E0)"/>
+    </pattern>
+    <clipPath id="toddler-female-bottom-tiered-skirt__clip">
+      <path d="M158 456 H242 L250 482 H150 Z"/>
+      <path d="M150 478 H250 L262 506 H138 Z"/>
+      <path d="M138 502 H262 L274 528 q-68 13 -136 0 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- three gathered tiers stepping outward, hung off a small waist block -->
+  <g class="sp-shadow">
+    <path d="M138 502 H262 L274 528 q-68 13 -136 0 Z"
+          fill="url(#toddler-female-bottom-tiered-skirt__t3)"/>
+    <path d="M150 478 H250 L262 506 H138 Z"
+          fill="url(#toddler-female-bottom-tiered-skirt__t2)"/>
+    <path d="M158 456 H242 L250 482 H150 Z"
+          fill="url(#toddler-female-bottom-tiered-skirt__t1)"/>
+    <rect x="158" y="441" width="84" height="20" rx="10"
+          fill="url(#toddler-female-bottom-tiered-skirt__waist)"/>
+  </g>
+
+  <!-- ditsy print over the whole skirt -->
+  <g clip-path="url(#toddler-female-bottom-tiered-skirt__clip)">
+    <rect x="134" y="452" width="140" height="90"
+          fill="url(#toddler-female-bottom-tiered-skirt__ditsy)"/>
+  </g>
+
+  <!-- gathered tier seams -->
+  <path d="M152 480 H248" stroke="var(--c2, #CE7C9B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 504 H260" stroke="var(--c2, #CE7C9B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gather ticks below each seam -->
+  <g stroke="var(--c2, #CE7C9B)" stroke-opacity="0.55" stroke-width="3"
+     stroke-linecap="round" fill="none">
+    <path d="M160 484 v12"/><path d="M180 484 v12"/><path d="M200 484 v12"/>
+    <path d="M220 484 v12"/><path d="M240 484 v12"/>
+    <path d="M148 508 v14"/><path d="M174 508 v14"/><path d="M200 508 v14"/>
+    <path d="M226 508 v14"/><path d="M252 508 v14"/>
+  </g>
+
+  <!-- soft waistband and the hem ruffle edge -->
+  <rect x="157" y="440" width="86" height="14" rx="7" fill="var(--c3, #FFF3E0)"/>
+  <path d="M140 528 q60 13 120 0" stroke="var(--c3, #FFF3E0)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 466 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

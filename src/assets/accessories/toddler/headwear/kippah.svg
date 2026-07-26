@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kippah" data-family="kippah" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. kufi and beret: coverage=A SMALL DISC ON THE BACK OF THE CROWN ONLY, far
+       short of the hairline, and crown=FLAT, resting on the skull rather than enclosing
+       it. Tools: trim (contrast bound rim) plus pattern (12px concentric stitch rings). -->
+  <defs>
+    <radialGradient id="accessories-toddler-headwear-kippah__disc" cx="0.42" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="var(--c1, #5C6FB8)"/>
+      <stop offset="1" stop-color="var(--c2, #3D4E8C)"/>
+    </radialGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- small flat disc set back on the crown -->
+    <path d="M156 206 q44 -22 88 0 q-8 16 -44 16 q-36 0 -44 -16 z"
+          fill="url(#accessories-toddler-headwear-kippah__disc)"/>
+  </g>
+
+  <!-- contrast bound rim -->
+  <path d="M156 206 q44 16 88 0" stroke="var(--c3, #E4C86A)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- concentric stitch rings, the woven kippah read -->
+  <g stroke="var(--c3, #E4C86A)" stroke-opacity="0.75" fill="none" stroke-linecap="round">
+    <path d="M166 200 q34 -14 68 0" stroke-width="2.6"/>
+    <path d="M176 194 q24 -10 48 0" stroke-width="2.2"/>
+    <path d="M186 189 q14 -6 28 0" stroke-width="2"/>
+  </g>
+
+  <path d="M170 197 q30 -12 60 -1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

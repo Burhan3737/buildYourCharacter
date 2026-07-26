@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=WIDE DRAPED bell sleeves hanging past the hands · volume=one flared floor-length
+       robe with no leg division. No hat, no hood: nothing in this file sits above y 344. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A4A9C)"/>
+      <stop offset="1" stop-color="var(--c2, #2F2664)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-wizard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A4A9C)"/>
+      <stop offset="1" stop-color="var(--c2, #372C74)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-wizard__stars" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M11 3 L13 9 L19 9 L14 13 L16 19 L11 15 L6 19 L8 13 L3 9 L9 9 Z"
+            fill="var(--c3, #F7D96B)" fill-opacity="0.82"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-wizard__robeclip">
+      <path d="M168 346 h64 q18 0 24 26 l26 172 q0 24 -26 26 h-104 q-26 -2 -26-26 l26-172 q6-26 24-26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide draped bell sleeves -->
+    <path d="M150 352 L108 452 q26 14 50 0 L172 356 Z" fill="url(#toddler-female-costume-wizard__sleeve)"/>
+    <path d="M250 352 L292 452 q-26 14 -50 0 L228 356 Z" fill="url(#toddler-female-costume-wizard__sleeve)"/>
+    <!-- one flared robe, shoulder to the ground line, no legs -->
+    <path d="M168 346 h64 q18 0 24 26 l26 172 q0 24 -26 26 h-104 q-26 -2 -26-26 l26-172 q6-26 24-26 z"
+          fill="url(#toddler-female-costume-wizard__robe)"/>
+  </g>
+
+  <!-- scattered star surface across the robe -->
+  <g clip-path="url(#toddler-female-costume-wizard__robeclip)">
+    <rect x="126" y="346" width="156" height="224" fill="url(#toddler-female-costume-wizard__stars)"/>
+  </g>
+
+  <!-- shawl collar lying flat over the shoulders -->
+  <path d="M170 346 q30 24 60 0 q-6 30 -30 30 q-24 0 -30-30 z" fill="var(--c3, #F7D96B)"/>
+
+  <!-- corded belt with a hanging tassel -->
+  <path d="M140 440 q60 20 120 0 v14 q-60 20 -120 0 z" fill="var(--c3, #F7D96B)"/>
+  <path d="M218 456 q8 26 4 46" stroke="var(--c3, #F7D96B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="221" cy="510" r="8" fill="var(--c3, #F7D96B)"/>
+
+  <!-- deep hem band -->
+  <path d="M128 534 q72 18 144 0 l4 22 q-76 18 -152 0 z" fill="var(--c2, #2F2664)"/>
+
+  <!-- sleeve edge binding -->
+  <g stroke="var(--c3, #F7D96B)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M110 448 q24 14 48 2"/>
+    <path d="M290 448 q-24 14 -48 2"/>
+  </g>
+
+  <path d="M172 360 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

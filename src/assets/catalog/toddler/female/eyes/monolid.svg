@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- smooth single-fold lid, crease hidden, wide flat lash line -->
+  <defs>
+    <linearGradient id="toddler-female-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7F1"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #4B6B57)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #4B6B57)" stop-opacity="0.78"/>
+    </linearGradient>
+    <clipPath id="toddler-female-eyes-monolid__clip-l">
+      <path d="M141 287 Q142 277 156 275 H181 Q195 277 196 287 Q188 300 168 300 Q148 300 141 287 Z"/>
+    </clipPath>
+    <clipPath id="toddler-female-eyes-monolid__clip-r">
+      <path d="M259 287 Q258 277 244 275 H219 Q205 277 204 287 Q212 300 232 300 Q252 300 259 287 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- smooth unbroken lid plane sweeping from the brow to the lash line, no crease at all -->
+  <path d="M136 272 Q168 252 200 268 Q168 262 141 278 Z" fill="var(--skin2, #E7B892)" opacity="0.42"/>
+  <path d="M264 272 Q232 252 200 268 Q232 262 259 278 Z" fill="var(--skin2, #E7B892)" opacity="0.42"/>
+
+  <!-- wide, shallow aperture: flat across the top, gently rounded underneath -->
+  <g class="sp-shadow">
+    <path d="M141 287 Q142 277 156 275 H181 Q195 277 196 287 Q188 300 168 300 Q148 300 141 287 Z"
+          fill="url(#toddler-female-eyes-monolid__sclera)"/>
+    <path d="M259 287 Q258 277 244 275 H219 Q205 277 204 287 Q212 300 232 300 Q252 300 259 287 Z"
+          fill="url(#toddler-female-eyes-monolid__sclera)"/>
+  </g>
+
+  <g clip-path="url(#toddler-female-eyes-monolid__clip-l)">
+    <circle cx="168" cy="288" r="13.5" fill="#3B2A22"/>
+    <circle cx="168" cy="288" r="13.5" fill="url(#toddler-female-eyes-monolid__iris)"/>
+    <circle cx="168" cy="288" r="6.2" fill="#3B2A22"/>
+    <circle cx="163" cy="282" r="4.2" fill="#FFFFFF"/>
+    <circle cx="172" cy="293" r="2.1" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g clip-path="url(#toddler-female-eyes-monolid__clip-r)">
+    <circle cx="232" cy="288" r="13.5" fill="#3B2A22"/>
+    <circle cx="232" cy="288" r="13.5" fill="url(#toddler-female-eyes-monolid__iris)"/>
+    <circle cx="232" cy="288" r="6.2" fill="#3B2A22"/>
+    <circle cx="227" cy="282" r="4.2" fill="#FFFFFF"/>
+    <circle cx="236" cy="293" r="2.1" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- the defining feature: one wide, flat, even-weight lash line -->
+  <path d="M140 281 Q154 273 168 273.5 Q182 274 196 281" stroke="#3B2A22" stroke-width="6.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 281 Q246 273 232 273.5 Q218 274 204 281" stroke="#3B2A22" stroke-width="6.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- short lash flick at the outer corner only -->
+  <path d="M141 279 q-5 -2 -8 -5" stroke="#3B2A22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M259 279 q5 -2 8 -5" stroke="#3B2A22" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. the rest of the slot: closure=FULL BUTTON PLACKET neck to hem, and
+       hem=KNEE on a straight, unflared column. Tools: trim (collar, cuffs, belt) plus
+       structural (placket, four big poppers, patch pockets). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-shirt-dress__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FB6D9)"/>
+      <stop offset="1" stop-color="var(--c2, #6E94B8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FB6D9)"/>
+      <stop offset="1" stop-color="var(--c2, #6E94B8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-shirt-dress__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF1DF)"/>
+      <stop offset="1" stop-color="var(--c3, #FBF1DF)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short set-in sleeves with a turned cuff -->
+  <g class="sp-shadow">
+    <rect x="121" y="347" width="36" height="50" rx="18" fill="url(#toddler-female-onepiece-shirt-dress__sleeve)"/>
+    <rect x="243" y="347" width="36" height="50" rx="18" fill="url(#toddler-female-onepiece-shirt-dress__sleeve)"/>
+  </g>
+
+  <!-- one straight column from shoulder to knee, barely shaped at the waist -->
+  <g class="sp-shadow">
+    <path d="M150 368 q0-24 22-24 h56 q22 0 22 24 v66 l10 78 q-60 18 -120 0 l10-78 z"
+          fill="url(#toddler-female-onepiece-shirt-dress__cloth)"/>
+  </g>
+
+  <!-- flat shirt collar, two points meeting at the throat -->
+  <path d="M176 344 h20 l-18 26 q-12 -6 -12 -18 q0 -6 10 -8 z" fill="url(#toddler-female-onepiece-shirt-dress__trim)"/>
+  <path d="M224 344 h-20 l18 26 q12 -6 12 -18 q0 -6 -10 -8 z" fill="url(#toddler-female-onepiece-shirt-dress__trim)"/>
+
+  <!-- the full placket, running neck to hem -->
+  <rect x="191" y="352" width="18" height="158" rx="6" fill="url(#toddler-female-onepiece-shirt-dress__trim)"/>
+  <g fill="var(--c2, #6E94B8)">
+    <circle cx="200" cy="378" r="4.6"/>
+    <circle cx="200" cy="412" r="4.6"/>
+    <circle cx="200" cy="452" r="4.6"/>
+    <circle cx="200" cy="488" r="4.6"/>
+  </g>
+
+  <!-- easy tie belt at the high toddler waist -->
+  <rect x="146" y="428" width="108" height="15" rx="7" fill="url(#toddler-female-onepiece-shirt-dress__trim)"/>
+  <path d="M212 436 q18 -6 26 6 q-16 4 -26 -6 z" fill="var(--c3, #FBF1DF)"/>
+  <path d="M188 436 q-18 -6 -26 6 q16 4 26 -6 z" fill="var(--c3, #FBF1DF)"/>
+
+  <!-- patch pockets low on the skirt -->
+  <rect x="160" y="462" width="26" height="26" rx="6" fill="var(--c2, #6E94B8)"/>
+  <rect x="214" y="462" width="26" height="26" rx="6" fill="var(--c2, #6E94B8)"/>
+
+  <!-- turned sleeve cuffs -->
+  <rect x="119" y="386" width="40" height="13" rx="6" fill="var(--c3, #FBF1DF)"/>
+  <rect x="241" y="386" width="40" height="13" rx="6" fill="var(--c3, #FBF1DF)"/>
+
+  <!-- chest highlight and a soft skirt sheen -->
+  <path d="M164 372 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 466 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

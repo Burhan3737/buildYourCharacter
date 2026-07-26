@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knit Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=long · closure=OPEN FRONT, wide V · hem=PAST HIP · volume=straight -->
+  <!-- the two front panels are held apart, so the shell beneath is part of the silhouette -->
+  <defs>
+    <linearGradient id="toddler-female-top-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E2A6C8)"/>
+      <stop offset="1" stop-color="var(--c2, #BF7FA6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E2A6C8)"/>
+      <stop offset="1" stop-color="var(--c2, #BF7FA6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EFE2)"/>
+      <stop offset="1" stop-color="var(--c3, #F6EFE2)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the layer beneath, visible through the open front -->
+    <path d="M172 366 q0-22 28-22 q28 0 28 22 v104 h-56 z"
+          fill="url(#toddler-female-top-cardigan__shell)"/>
+    <!-- long knit sleeves -->
+    <rect x="122" y="350" width="34" height="94" rx="17" fill="url(#toddler-female-top-cardigan__sleeve)"/>
+    <rect x="244" y="350" width="34" height="94" rx="17" fill="url(#toddler-female-top-cardigan__sleeve)"/>
+    <!-- front panels falling past the hip, cut away to a wide V -->
+    <path d="M148 372 q2-28 28-28 h14 l-14 44 v82 h-8 q-20 0 -20-20 z"
+          fill="url(#toddler-female-top-cardigan__panel)"/>
+    <path d="M252 372 q-2-28 -28-28 h-14 l14 44 v82 h8 q20 0 20-20 z"
+          fill="url(#toddler-female-top-cardigan__panel)"/>
+  </g>
+
+  <!-- knitted rib running down each front edge -->
+  <path d="M186 350 l-12 38 v80 M214 350 l12 38 v80" stroke="var(--c2, #BF7FA6)"
+        stroke-opacity="0.6" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- two patch pockets -->
+  <path d="M150 414 h24 v22 q0 8 -8 8 h-8 q-8 0 -8-8 z" fill="var(--c2, #BF7FA6)"/>
+  <path d="M226 414 h24 v22 q0 8 -8 8 h-8 q-8 0 -8-8 z" fill="var(--c2, #BF7FA6)"/>
+  <path d="M151 420 h22 M227 420 h22" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- chunky knit texture on the panels -->
+  <g stroke="#FFFFFF" stroke-opacity="0.20" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M156 386 v66 M164 392 v60 M236 392 v60 M244 386 v66"/>
+  </g>
+
+  <!-- cuff bands -->
+  <rect x="121" y="426" width="36" height="14" rx="7" fill="var(--c3, #F6EFE2)"/>
+  <rect x="243" y="426" width="36" height="14" rx="7" fill="var(--c3, #F6EFE2)"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M158 366 q14 8 22 10 M220 376 q14-2 22-10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

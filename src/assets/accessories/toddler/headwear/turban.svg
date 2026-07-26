@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turban" data-family="turban" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- axes vs. hijab, headwrap and bonnet: coverage=DOME ONLY, stopping cleanly above the
+       ear line with nothing falling to the neck; and fastening=STACKED WRAP FOLDS meeting
+       in a visible ridge across the front, not a pin, not a crown fan, not a gathered
+       nape. Tools: panel blocking (three separately-valued wrap layers) plus trim (the
+       tucked front point). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-turban__wrapA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7BD0)"/>
+      <stop offset="1" stop-color="var(--c2, #6A5BAE)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-turban__wrapB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7BD0)" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="var(--c2, #6A5BAE)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the wrapped dome, sitting low across the brow and stopping above the ears -->
+    <path d="M116 258 q-4 -54 32 -74 q52 -28 104 0 q36 20 32 74 q-84 26 -168 0 z"
+          fill="url(#accessories-toddler-headwear-turban__wrapA)"/>
+    <!-- the upper wrap layer, offset so the two read as separate turns of cloth -->
+    <path d="M132 214 q16 -32 68 -32 q52 0 68 32 q-68 22 -136 0 z"
+          fill="url(#accessories-toddler-headwear-turban__wrapB)"/>
+  </g>
+
+  <!-- the fold ridges: the turban's defining front detail -->
+  <path d="M118 240 q82 26 164 0" stroke="var(--c3, #F3E0A9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 218 q76 24 152 0" stroke="var(--c3, #F3E0A9)" stroke-width="5"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+  <path d="M136 199 q64 20 128 0" stroke="var(--c3, #F3E0A9)" stroke-width="4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- the tucked front point where the last turn is folded in -->
+  <path d="M186 236 q14 -20 28 0 q-14 16 -28 0 z" fill="var(--c3, #F3E0A9)"/>
+
+  <path d="M150 196 q50 -18 100 -2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

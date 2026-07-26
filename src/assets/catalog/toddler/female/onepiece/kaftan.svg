@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. the rest of the slot: shoulder=ONE DRAPED T WITH NO ARMHOLE SEAM AT ALL
+       (sleeve and body are a single piece of cloth), and volume=STRAIGHT BOXY to the calf.
+       Tools: trim (banded neck slit and hem band) plus pattern (18px chevron border). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-kaftan__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #64B9A6)"/>
+      <stop offset="1" stop-color="var(--c2, #45907F)"/>
+    </linearGradient>
+    <pattern id="toddler-female-onepiece-kaftan__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="18">
+      <path d="M0 13 L11 4 L22 13" fill="none" stroke="var(--c3, #F6E2B4)" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="toddler-female-onepiece-kaftan__clip">
+      <path d="M114 352 q0-8 10-8 h152 q10 0 10 8 v36 q0 8 -10 8 h-32 v30 l14 100
+               q-58 18 -116 0 l14-100 v-30 h-32 q-10 0 -10-8 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one T of cloth: shoulders, sleeves and body cut as a single form -->
+  <g class="sp-shadow">
+    <path d="M114 352 q0-8 10-8 h152 q10 0 10 8 v36 q0 8 -10 8 h-32 v30 l14 100
+             q-58 18 -116 0 l14-100 v-30 h-32 q-10 0 -10-8 z"
+          fill="url(#toddler-female-onepiece-kaftan__cloth)"/>
+  </g>
+
+  <!-- woven chevron borders at the sleeve ends and above the hem -->
+  <g clip-path="url(#toddler-female-onepiece-kaftan__clip)">
+    <rect x="110" y="368" width="180" height="24" fill="url(#toddler-female-onepiece-kaftan__chevron)"/>
+    <rect x="130" y="474" width="140" height="24" fill="url(#toddler-female-onepiece-kaftan__chevron)"/>
+  </g>
+
+  <!-- slit neckline, bound on both edges -->
+  <path d="M180 344 q20 16 40 0 q-4 16 -20 18 q-16 -2 -20 -18 z" fill="var(--c2, #45907F)"/>
+  <path d="M194 360 h12 v34 q-6 6 -12 0 z" fill="var(--c2, #45907F)"/>
+  <path d="M178 346 q22 20 44 0" stroke="var(--c3, #F6E2B4)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M192 362 v34" stroke="var(--c3, #F6E2B4)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 362 v34" stroke="var(--c3, #F6E2B4)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat hem band closing the column -->
+  <path d="M144 512 q56 16 112 0 l2 12 q-58 17 -116 0 z" fill="var(--c3, #F6E2B4)"/>
+
+  <path d="M156 358 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 442 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

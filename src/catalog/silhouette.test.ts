@@ -91,10 +91,9 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
 
   // teen/male · bottom, costume, top — all 13 pairs redrawn during the art expansion.
 
-  // toddler/female · bottom — 3 pair(s): nudged, shared-primary
-  'catalog/toddler/female/bottom/cargo.svg|catalog/toddler/female/bottom/jeans.svg',
-  'catalog/toddler/female/bottom/cargo.svg|catalog/toddler/female/bottom/leggings.svg',
-  'catalog/toddler/female/bottom/jeans.svg|catalog/toddler/female/bottom/leggings.svg',
+  // toddler/female · bottom — RETIRED. All 3 pairs were redrawn during the art expansion:
+  // jeans keeps a natural rise over a straight leg, cargo went to a wide relaxed leg with a
+  // cuffed hem, and leggings to a high rise over a skin-close leg. No shared major forms.
 
   // toddler/female · costume — RETIRED. All 5 pairs were redrawn during the art expansion:
   // astronaut is now the bulkiest mass in the slot, dino a soft rounded body with a curling

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Durag" data-family="durag" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- axes vs. bandana, bonnet and headwrap: crown=SKIN-CLOSE, following the skull with no
+       ease at all (the bonnet puffs, the wrap fans), and fastening=A FRONT-TIED BAND WITH
+       TWO LONG TAILS TRAILING PAST THE JAW rather than a short side knot or an elastic
+       edge. Tools: panel blocking (cap versus tie band versus tails) plus structural (the
+       centre seam and the flat front tie knot). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-durag__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #232C3D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long tails, trailing back and down past the jaw on both sides -->
+    <path d="M136 250 q-24 34 -20 78 q2 18 16 14 q12 -4 10 -22 q-2 -34 12 -58 z"
+          fill="url(#accessories-toddler-headwear-durag__tail)"/>
+    <path d="M264 250 q24 34 20 78 q-2 18 -16 14 q-12 -4 -10 -22 q2 -34 -12 -58 z"
+          fill="url(#accessories-toddler-headwear-durag__tail)"/>
+    <!-- the cap, hugging the skull with no ease -->
+    <path d="M122 254 q-2 -50 34 -68 q44 -22 88 0 q36 18 34 68 q-78 22 -156 0 z"
+          fill="url(#accessories-toddler-headwear-durag__tail)"/>
+  </g>
+
+  <!-- the flat tie band running round the head at the brow -->
+  <rect x="120" y="238" width="160" height="17" rx="8" fill="var(--c3, #C8D2E6)"/>
+  <!-- the front knot, flattened against the forehead -->
+  <path d="M184 234 q16 -10 32 0 q4 18 -16 20 q-20 -2 -16 -20 z" fill="var(--c3, #C8D2E6)"/>
+  <path d="M192 240 q8 -4 16 0" stroke="var(--c1, #3E4A63)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- centre seam over the crown -->
+  <path d="M200 182 v52" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M150 200 q50 -20 100 -2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

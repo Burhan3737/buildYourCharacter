@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tutu" data-family="tutu" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: rise=natural · leg=NONE, a skirt · width=STIFF, standing out horizontally from the hip · hem=two raw net layers -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-tutu__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6C6DE)"/>
+      <stop offset="1" stop-color="var(--c2, #DB9BBE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-tutu__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6C6DE)"/>
+      <stop offset="1" stop-color="var(--c2, #DB9BBE)"/>
+    </linearGradient>
+    <pattern id="toddler-female-bottom-tutu__net" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M0 0 L14 14 M14 0 L0 14" stroke="var(--c3, #FFFFFF)" stroke-width="1.6"
+            stroke-opacity="0.7" fill="none"/>
+    </pattern>
+    <clipPath id="toddler-female-bottom-tutu__clip">
+      <path d="M150 466 H250 L272 496 q-72 18 -144 0 Z"/>
+      <path d="M154 444 H246 L286 472 q-86 20 -172 0 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two stiff net layers thrown out sideways from the hip -->
+  <g class="sp-shadow">
+    <path d="M150 466 H250 L272 496 q-72 18 -144 0 Z"
+          fill="url(#toddler-female-bottom-tutu__lower)"/>
+    <path d="M154 444 H246 L286 472 q-86 20 -172 0 Z"
+          fill="url(#toddler-female-bottom-tutu__upper)"/>
+  </g>
+
+  <!-- net mesh over both layers -->
+  <g clip-path="url(#toddler-female-bottom-tutu__clip)">
+    <rect x="112" y="442" width="176" height="72" fill="url(#toddler-female-bottom-tutu__net)"/>
+  </g>
+
+  <!-- satin waistband with a big bow -->
+  <rect x="154" y="437" width="92" height="20" rx="10" fill="var(--c3, #FFFFFF)"/>
+  <path d="M186 447 l-22 -12 v24 Z" fill="var(--c3, #FFFFFF)"/>
+  <path d="M214 447 l22 -12 v24 Z" fill="var(--c3, #FFFFFF)"/>
+  <circle cx="200" cy="447" r="7" fill="var(--c2, #DB9BBE)"/>
+
+  <!-- radiating net gathers -->
+  <g stroke="var(--c2, #DB9BBE)" stroke-opacity="0.6" stroke-width="3.4"
+     stroke-linecap="round" fill="none">
+    <path d="M164 460 l-18 20"/><path d="M182 462 l-10 22"/>
+    <path d="M218 462 l10 22"/><path d="M236 460 l18 20"/>
+  </g>
+
+  <!-- ragged net edges -->
+  <path d="M116 474 q84 20 168 0" stroke="var(--c3, #FFFFFF)" stroke-opacity="0.65"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M130 498 q70 17 140 0" stroke="var(--c3, #FFFFFF)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M166 458 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.33" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

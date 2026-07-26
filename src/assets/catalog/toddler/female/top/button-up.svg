@@ -1,60 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Button-Up" data-family="button-up" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=long cuffed · closure=FULL PLACKET · hem=hip SQUARE with side vents · volume=straight narrow -->
   <defs>
     <linearGradient id="toddler-female-top-button-up__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #53A18F)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9A88)"/>
     </linearGradient>
     <linearGradient id="toddler-female-top-button-up__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #53A18F)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9A88)"/>
     </linearGradient>
-    <clipPath id="toddler-female-top-button-up__clip">
-      <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"/>
-      <rect x="122" y="348" width="34" height="84" rx="17"/>
-      <rect x="244" y="348" width="34" height="84" rx="17"/>
-    </clipPath>
+    <linearGradient id="toddler-female-top-button-up__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EFE0)"/>
+      <stop offset="1" stop-color="var(--c3, #F6EFE0)" stop-opacity="0.82"/>
+    </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <!-- long sleeves ending in a buttoned cuff -->
-    <rect x="122" y="348" width="34" height="84" rx="17" fill="url(#toddler-female-top-button-up__sleeve)"/>
-    <rect x="244" y="348" width="34" height="84" rx="17" fill="url(#toddler-female-top-button-up__sleeve)"/>
-    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+    <!-- long sleeves ending at a buttoned cuff -->
+    <rect x="126" y="350" width="30" height="86" rx="15" fill="url(#toddler-female-top-button-up__sleeve)"/>
+    <rect x="244" y="350" width="30" height="86" rx="15" fill="url(#toddler-female-top-button-up__sleeve)"/>
+    <!-- narrower body, square hem at y442 with the side panels cut short: side vents -->
+    <path d="M154 370 q0-26 24-26 h44 q24 0 24 26 v58 h-14 v14 h-64 v-14 h-14 z"
           fill="url(#toddler-female-top-button-up__body)"/>
   </g>
 
-  <!-- cuffs -->
-  <g clip-path="url(#toddler-female-top-button-up__clip)">
-    <rect x="118" y="414" width="42" height="22" fill="var(--c2, #53A18F)"/>
-    <rect x="240" y="414" width="42" height="22" fill="var(--c2, #53A18F)"/>
-  </g>
-  <circle cx="139" cy="425" r="3" fill="var(--c3, #F7C873)"/>
-  <circle cx="261" cy="425" r="3" fill="var(--c3, #F7C873)"/>
+  <!-- flat shirt collar lying open across the shoulder line -->
+  <path d="M172 344 q28 14 56 0 l-6 16 -22 12 -22-12 z" fill="url(#toddler-female-top-button-up__collar)"/>
+  <path d="M200 372 l-16-12 -6-14 M200 372 l16-12 6-14" stroke="var(--c2, #4E9A88)"
+        stroke-opacity="0.4" stroke-width="2.6" fill="none" stroke-linecap="round"/>
 
-  <!-- pointed collar sitting on the shoulder line -->
-  <path d="M170 344 q30 12 60 0 l-8 12 -22 12 -22-12 z" fill="var(--c2, #53A18F)"/>
-  <path d="M200 368 l-16-10 -8-12" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
-  <path d="M200 368 l16-10 8-12" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="2.5"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- centre placket -->
-  <rect x="195" y="364" width="10" height="86" rx="5" fill="var(--c2, #53A18F)"/>
-  <g fill="var(--c3, #F7C873)">
-    <circle cx="200" cy="378" r="3.6"/>
-    <circle cx="200" cy="399" r="3.6"/>
-    <circle cx="200" cy="420" r="3.6"/>
-    <circle cx="200" cy="441" r="3.6"/>
+  <!-- full centre placket band, top to hem -->
+  <rect x="193" y="366" width="14" height="76" rx="5" fill="url(#toddler-female-top-button-up__collar)"/>
+  <g fill="var(--c2, #4E9A88)">
+    <circle cx="200" cy="380" r="4.4"/>
+    <circle cx="200" cy="402" r="4.4"/>
+    <circle cx="200" cy="424" r="4.4"/>
   </g>
 
-  <!-- small chest pocket -->
-  <path d="M162 392 h30 v20 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #53A18F)"/>
-  <path d="M162 398 h30" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2.5"
+  <!-- cuff bands with a popper each -->
+  <rect x="125" y="418" width="32" height="16" rx="6" fill="url(#toddler-female-top-button-up__collar)"/>
+  <rect x="243" y="418" width="32" height="16" rx="6" fill="url(#toddler-female-top-button-up__collar)"/>
+  <circle cx="141" cy="426" r="3.4" fill="var(--c2, #4E9A88)"/>
+  <circle cx="259" cy="426" r="3.4" fill="var(--c2, #4E9A88)"/>
+
+  <!-- patch chest pocket -->
+  <path d="M162 388 h30 v18 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #4E9A88)"/>
+  <path d="M163 394 h28" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- topstitching along the vent steps -->
+  <path d="M168 428 h-12 M232 428 h12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
 
   <!-- soft chest highlight -->
-  <path d="M163 374 q37 13 74 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
-        fill="none" stroke-linecap="round"/>
+  <path d="M164 376 q18 9 26 10 M210 386 q18-1 26-10" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=ANGULAR WING STUBS behind the shoulders · volume=hard-faceted plated wedge.
+       Against dino, which is round and soft with no wings: every edge here is a straight cut. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-dragon__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4645C)"/>
+      <stop offset="1" stop-color="var(--c1, #93433E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-dragon__limb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #93433E)"/>
+      <stop offset="0.45" stop-color="var(--c1, #C4645C)"/>
+      <stop offset="1" stop-color="var(--c1, #93433E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-dragon__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2B14E)"/>
+      <stop offset="1" stop-color="var(--c3, #D18B29)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-dragon__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4645C)"/>
+      <stop offset="1" stop-color="var(--c1, #8A3B37)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-dragon__scute" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="16">
+      <path d="M10 1 L19 8 L10 15 L1 8 Z" fill="none" stroke="var(--c2, #F6DFA8)"
+            stroke-width="2.4" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-dragon__torsoclip">
+      <path d="M150 346 H250 L258 402 L250 460 L200 472 L150 460 L142 402 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- angular wing stubs, hung behind the shoulders and well clear of the head -->
+  <g class="sp-shadow">
+    <path d="M142 356 L94 370 L104 394 L90 412 L118 434 L146 414 Z"
+          fill="url(#toddler-female-costume-dragon__wing)"/>
+    <path d="M258 356 L306 370 L296 394 L310 412 L282 434 L254 414 Z"
+          fill="url(#toddler-female-costume-dragon__wing)"/>
+  </g>
+
+  <!-- straight tapering tail wedging out from the right hip -->
+  <g class="sp-shadow">
+    <path d="M246 466 L286 480 L308 512 L316 552 L296 552 L288 516 L268 494 L242 486 Z"
+          fill="url(#toddler-female-costume-dragon__tail)"/>
+  </g>
+
+  <!-- faceted plated suit: every form is a straight-edged cut -->
+  <g class="sp-shadow">
+    <path d="M150 346 H250 L258 402 L250 460 L200 472 L150 460 L142 402 Z"
+          fill="url(#toddler-female-costume-dragon__plate)"/>
+    <path d="M158 456 H200 L198 508 L198 556 H166 L164 508 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M242 456 H200 L202 508 L202 556 H234 L236 508 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M122 350 H154 L150 404 L146 448 H128 L124 404 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M278 350 H246 L250 404 L254 448 H272 L276 404 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M122 426 H156 L152 454 L139 466 L126 452 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M278 426 H244 L248 454 L261 466 L274 452 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M158 546 H202 L206 570 H150 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+    <path d="M242 546 H198 L194 570 H250 Z" fill="url(#toddler-female-costume-dragon__limb)"/>
+  </g>
+
+  <!-- hard diamond scute texture over the plated torso -->
+  <g clip-path="url(#toddler-female-costume-dragon__torsoclip)">
+    <rect x="142" y="346" width="116" height="126" fill="url(#toddler-female-costume-dragon__scute)"/>
+  </g>
+
+  <!-- stepped belly plates: the panel block -->
+  <g fill="var(--c2, #F6DFA8)">
+    <path d="M176 376 H224 L228 398 L172 398 Z"/>
+    <path d="M172 404 H228 L230 426 L170 426 Z"/>
+    <path d="M170 432 H230 L226 454 L174 454 Z"/>
+    <path d="M176 460 H224 L200 470 Z"/>
+  </g>
+
+  <!-- sharp dorsal crest: hip into the tail -->
+  <g fill="var(--c3, #D18B29)">
+    <path d="M240 452 L250 430 L260 458 Z"/>
+    <path d="M252 470 L264 450 L274 478 Z"/>
+    <path d="M274 480 L290 462 L294 492 Z"/>
+    <path d="M294 500 L312 488 L308 516 Z"/>
+  </g>
+
+  <!-- wing ribs -->
+  <g stroke="var(--c1, #93433E)" stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M140 366 L104 382 M140 380 L108 404 M140 396 L118 424"/>
+    <path d="M260 366 L296 382 M260 380 L292 404 M260 396 L282 424"/>
+  </g>
+
+  <!-- angular neck plate: the ceiling of this costume -->
+  <path d="M172 346 H228 L222 362 H178 Z" fill="var(--c3, #F2B14E)"/>
+
+  <!-- plate seam highlight -->
+  <path d="M158 356 L200 366 L242 356" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

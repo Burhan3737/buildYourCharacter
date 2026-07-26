@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Boiler Suit" data-family="boiler-suit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. jumpsuit: closure=CENTRE ZIP under a pointed utility collar rather than a
+       notched V over a buckled belt, and volume=BOXY UTILITY with a wide straight leg
+       instead of a fitted one. Tools: trim (collar, cuff and ankle bands) plus structural
+       (zip with a pull, chest pockets, tie at the waist). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-boiler-suit__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D89A55)"/>
+      <stop offset="1" stop-color="var(--c2, #B47B3C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-boiler-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D89A55)"/>
+      <stop offset="1" stop-color="var(--c2, #B47B3C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-boiler-suit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D89A55)"/>
+      <stop offset="1" stop-color="var(--c2, #B47B3C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long utility sleeves -->
+  <g class="sp-shadow">
+    <rect x="119" y="346" width="39" height="94" rx="19" fill="url(#toddler-female-onepiece-boiler-suit__sleeve)"/>
+    <rect x="242" y="346" width="39" height="94" rx="19" fill="url(#toddler-female-onepiece-boiler-suit__sleeve)"/>
+  </g>
+
+  <!-- boxy body -->
+  <g class="sp-shadow">
+    <path d="M146 370 q0-26 26-26 h56 q26 0 26 26 v66 q0 18 -18 18 h-72 q-18 0 -18-18 z"
+          fill="url(#toddler-female-onepiece-boiler-suit__cloth)"/>
+  </g>
+
+  <!-- roomy seat -->
+  <g class="sp-shadow">
+    <rect x="153" y="448" width="94" height="42" rx="17" fill="url(#toddler-female-onepiece-boiler-suit__cloth)"/>
+  </g>
+
+  <!-- wide straight legs, hems left clear of the shoe -->
+  <g class="sp-shadow">
+    <path d="M157 484 H200 V534 q0 8 -8 8 H165 q-8 0 -8 -8 Z"
+          fill="url(#toddler-female-onepiece-boiler-suit__leg)"/>
+    <path d="M243 484 H200 V534 q0 8 8 8 H235 q8 0 8 -8 Z"
+          fill="url(#toddler-female-onepiece-boiler-suit__leg)"/>
+  </g>
+
+  <!-- pointed utility collar sitting flat on the shoulders -->
+  <path d="M172 344 h26 l-22 30 q-14 -8 -14 -20 q0 -8 10 -10 z" fill="var(--c3, #3F4C58)"/>
+  <path d="M228 344 h-26 l22 30 q14 -8 14 -20 q0 -8 -10 -10 z" fill="var(--c3, #3F4C58)"/>
+
+  <!-- the centre zip: tape, teeth and a big square pull -->
+  <rect x="193" y="356" width="14" height="128" rx="5" fill="var(--c3, #3F4C58)"/>
+  <path d="M200 360 V480" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"
+        stroke-dasharray="4 4" fill="none" stroke-linecap="round"/>
+  <rect x="192" y="414" width="16" height="20" rx="5" fill="var(--c2, #B47B3C)"/>
+
+  <!-- chest patch pockets with flaps -->
+  <rect x="158" y="384" width="30" height="26" rx="5" fill="var(--c2, #B47B3C)"/>
+  <rect x="212" y="384" width="30" height="26" rx="5" fill="var(--c2, #B47B3C)"/>
+  <rect x="156" y="380" width="34" height="10" rx="4" fill="var(--c3, #3F4C58)"/>
+  <rect x="210" y="380" width="34" height="10" rx="4" fill="var(--c3, #3F4C58)"/>
+
+  <!-- soft tie at the waist, knotted off centre -->
+  <rect x="148" y="440" width="104" height="12" rx="6" fill="var(--c3, #3F4C58)"/>
+  <path d="M222 446 q22 -10 30 4 q-20 8 -30 -4 z" fill="var(--c3, #3F4C58)"/>
+
+  <!-- cuff and ankle bands -->
+  <g fill="var(--c3, #3F4C58)">
+    <rect x="117" y="424" width="43" height="13" rx="6"/>
+    <rect x="240" y="424" width="43" height="13" rx="6"/>
+    <rect x="156" y="528" width="45" height="13" rx="6"/>
+    <rect x="199" y="528" width="45" height="13" rx="6"/>
+  </g>
+
+  <path d="M162 366 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. sundress: shoulder=WIDE BIB STRAPS crossing a square bib panel rather than
+       thin straps over a shirred bodice, and volume=hard A-line from a low dropped waist.
+       Tools: panel blocking (bib versus skirt) plus structural (patch pocket, big buttons). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-pinafore__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BAE)"/>
+      <stop offset="1" stop-color="var(--c2, #A76A8D)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-pinafore__bib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BAE)"/>
+      <stop offset="1" stop-color="var(--c2, #A76A8D)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BAE)"/>
+      <stop offset="1" stop-color="var(--c2, #A76A8D)"/>
+    </linearGradient>
+    <pattern id="toddler-female-onepiece-pinafore__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="18" height="7" fill="var(--c3, #F7E6EE)" fill-opacity="0.5"/>
+      <rect x="0" y="0" width="7" height="18" fill="var(--c3, #F7E6EE)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="toddler-female-onepiece-pinafore__skirtclip">
+      <path d="M148 424 H252 L276 506 q-76 20 -152 0 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two broad over-shoulder straps -->
+  <g class="sp-shadow">
+    <rect x="161" y="344" width="19" height="40" rx="8" fill="url(#toddler-female-onepiece-pinafore__strap)"/>
+    <rect x="220" y="344" width="19" height="40" rx="8" fill="url(#toddler-female-onepiece-pinafore__strap)"/>
+  </g>
+
+  <!-- square bib panel, the family's whole identity -->
+  <g class="sp-shadow">
+    <rect x="166" y="376" width="68" height="56" rx="9" fill="url(#toddler-female-onepiece-pinafore__bib)"/>
+  </g>
+
+  <!-- hard A-line skirt hung from a low dropped waist -->
+  <g class="sp-shadow">
+    <path d="M148 424 H252 L276 506 q-76 20 -152 0 Z" fill="url(#toddler-female-onepiece-pinafore__cloth)"/>
+  </g>
+
+  <!-- gingham check over the skirt only, so the bib reads as a separate panel -->
+  <g clip-path="url(#toddler-female-onepiece-pinafore__skirtclip)">
+    <rect x="118" y="420" width="164" height="102" fill="url(#toddler-female-onepiece-pinafore__gingham)"/>
+  </g>
+
+  <!-- big toddler buttons fixing the straps to the bib -->
+  <g fill="var(--c3, #F7E6EE)">
+    <circle cx="170.5" cy="386" r="6.5"/>
+    <circle cx="229.5" cy="386" r="6.5"/>
+  </g>
+
+  <!-- bound bib edge and a small patch pocket -->
+  <rect x="164" y="374" width="72" height="8" rx="4" fill="var(--c3, #F7E6EE)"/>
+  <rect x="186" y="398" width="28" height="24" rx="6" fill="var(--c3, #F7E6EE)" fill-opacity="0.9"/>
+
+  <!-- waist band closing the bib against the skirt -->
+  <rect x="150" y="418" width="100" height="13" rx="6" fill="var(--c3, #F7E6EE)"/>
+
+  <!-- scalloped hem trim -->
+  <g fill="var(--c3, #F7E6EE)">
+    <circle cx="132" cy="509" r="10"/>
+    <circle cx="155" cy="513" r="10"/>
+    <circle cx="178" cy="515" r="10"/>
+    <circle cx="200" cy="516" r="10"/>
+    <circle cx="222" cy="515" r="10"/>
+    <circle cx="245" cy="513" r="10"/>
+    <circle cx="268" cy="509" r="10"/>
+  </g>
+
+  <path d="M174 386 q26 8 52 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 450 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

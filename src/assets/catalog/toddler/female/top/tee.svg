@@ -1,39 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tee" data-family="tee" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=short set-in · closure=closed crew · hem=hip · volume=straight -->
+  <!-- the plain baseline: gradient body, contrast rib trim, visible shoulder seams -->
   <defs>
     <linearGradient id="toddler-female-top-tee__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DC8B7E)"/>
+      <stop offset="1" stop-color="var(--c2, #D2857A)"/>
     </linearGradient>
     <linearGradient id="toddler-female-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DC8B7E)"/>
+      <stop offset="1" stop-color="var(--c2, #D2857A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-tee__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <!-- short puffed sleeves over arms x126-152 / x248-274 -->
-    <rect x="122" y="348" width="34" height="42" rx="17" fill="url(#toddler-female-top-tee__sleeve)"/>
-    <rect x="244" y="348" width="34" height="42" rx="17" fill="url(#toddler-female-top-tee__sleeve)"/>
-    <!-- body block, x148-252 y344-454, hem tucked over the hips -->
-    <path d="M148 368 q0-24 24-24 h56 q24 0 24 24 v62 q0 24 -24 24 h-56 q-24 0 -24-24 z"
+    <!-- short set-in sleeves capping the arms -->
+    <rect x="124" y="350" width="32" height="40" rx="16" fill="url(#toddler-female-top-tee__sleeve)"/>
+    <rect x="244" y="350" width="32" height="40" rx="16" fill="url(#toddler-female-top-tee__sleeve)"/>
+    <!-- straight body, x152-248, hem sitting on the hip at y452 -->
+    <path d="M152 364 q0-20 20-20 h56 q20 0 20 20 v70 q0 18 -18 18 h-60 q-18 0 -18-18 z"
           fill="url(#toddler-female-top-tee__body)"/>
   </g>
 
-  <!-- chunky contrast hem band, following the rounded hem -->
-  <path d="M148 428 h104 v2 q0 24 -24 24 h-56 q-24 0 -24-24 z" fill="var(--c3, #F7C873)"/>
-  <!-- hem stitching -->
-  <path d="M156 434 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"
+  <!-- ribbed crew neck bind -->
+  <path d="M177 346 Q200 368 223 346" stroke="var(--c3, #F7C873)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 349 Q200 364 218 349" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- contrast crew ribbing around the neckline -->
-  <path d="M176 347 Q200 367 224 347" stroke="var(--c3, #F7C873)" stroke-width="10"
-        fill="none" stroke-linecap="round"/>
-  <path d="M181 350 Q200 364 219 350" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
+  <!-- sleeve rib bands -->
+  <rect x="123" y="378" width="34" height="12" rx="6" fill="url(#toddler-female-top-tee__trim)"/>
+  <rect x="243" y="378" width="34" height="12" rx="6" fill="url(#toddler-female-top-tee__trim)"/>
+
+  <!-- hem band following the rounded hem -->
+  <path d="M152 434 h96 q0 18 -18 18 h-60 q-18 0 -18-18 z"
+        fill="url(#toddler-female-top-tee__trim)"/>
+
+  <!-- visible shoulder seams -->
+  <path d="M172 350 l-14 8 M228 350 l14 8" stroke="var(--c2, #D2857A)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
 
   <!-- soft chest highlight -->
-  <path d="M161 372 q39 15 78 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M164 374 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

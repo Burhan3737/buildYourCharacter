@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder=SHORT set-in sleeves, bare forearms · closure=open V-neck, no fastening at all.
+       Squared side-vented scrub tunic over straight drawstring trousers. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-medic__scrub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #63BEB0)"/>
+      <stop offset="1" stop-color="var(--c1, #46988C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-medic__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #46988C)"/>
+      <stop offset="0.45" stop-color="var(--c1, #63BEB0)"/>
+      <stop offset="1" stop-color="var(--c1, #46988C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-medic__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58AFA2)"/>
+      <stop offset="1" stop-color="var(--c1, #3D897E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-medic__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F2F5F7)"/>
+      <stop offset="1" stop-color="var(--c2, #D3DBE0)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M154 346 h92 q12 0 12 16 v112 q0 8 -12 8 h-92 q-12 0 -12-8 v-112 q0-16 12-16 z"
+          fill="url(#toddler-female-costume-medic__scrub)"/>
+    <rect x="162" y="468" width="38" height="96" rx="12" fill="url(#toddler-female-costume-medic__trouser)"/>
+    <rect x="200" y="468" width="38" height="96" rx="12" fill="url(#toddler-female-costume-medic__trouser)"/>
+    <rect x="120" y="350" width="38" height="54" rx="14" fill="url(#toddler-female-costume-medic__sleeve)"/>
+    <rect x="242" y="350" width="38" height="54" rx="14" fill="url(#toddler-female-costume-medic__sleeve)"/>
+    <rect x="158" y="542" width="44" height="28" rx="12" fill="url(#toddler-female-costume-medic__shoe)"/>
+    <rect x="198" y="542" width="44" height="28" rx="12" fill="url(#toddler-female-costume-medic__shoe)"/>
+  </g>
+
+  <!-- open V-neck with a contrast bind -->
+  <path d="M178 346 L200 390 L222 346 L212 346 L200 372 L188 346 Z" fill="var(--c2, #F2F5F7)"/>
+  <path d="M178 348 L200 392 L222 348" stroke="var(--c2, #D3DBE0)" stroke-width="5"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- chest patch pocket with a stitched flap -->
+  <rect x="208" y="398" width="38" height="34" rx="5" fill="var(--c1, #46988C)"/>
+  <rect x="208" y="398" width="38" height="9" rx="4" fill="#FFFFFF" fill-opacity="0.3"/>
+  <path d="M214 414 h14" stroke="var(--c2, #F2F5F7)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lanyard round the neck with a plain blank badge -->
+  <path d="M186 348 q-4 26 8 46 M214 348 q4 26 -8 46" stroke="var(--c3, #E8A33C)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <rect x="186" y="392" width="28" height="36" rx="5" fill="var(--c3, #E8A33C)"/>
+  <rect x="190" y="398" width="20" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.45"/>
+  <rect x="190" y="412" width="20" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.3"/>
+
+  <!-- side vents and the hip seam of the tunic -->
+  <g stroke="var(--c1, #3D897E)" stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M152 448 v28"/>
+    <path d="M248 448 v28"/>
+  </g>
+
+  <!-- drawstring waistband with a bow -->
+  <rect x="158" y="464" width="84" height="14" rx="7" fill="var(--c2, #F2F5F7)"/>
+  <path d="M200 471 q-14 -10 -20 2 q14 10 20 -2 z" fill="var(--c2, #D3DBE0)"/>
+  <path d="M200 471 q14 -10 20 2 q-14 10 -20 -2 z" fill="var(--c2, #D3DBE0)"/>
+
+  <!-- sleeve hem bands -->
+  <g fill="var(--c2, #F2F5F7)">
+    <rect x="119" y="390" width="40" height="10" rx="5"/>
+    <rect x="241" y="390" width="40" height="10" rx="5"/>
+  </g>
+
+  <path d="M160 362 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

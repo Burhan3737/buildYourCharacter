@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flat Cap" data-family="flat-cap" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. cap and bucket-hat: crown=LOW, PULLED FORWARD AND OVERHANGING the peak
+       (not a tall rounded ball, not a flat cylinder), and brim=SHORT STIFF FRONT PEAK
+       tucked under the crown lip. Tools: pattern (20px plaid) plus trim (bound peak edge
+       and a centre button). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-flat-cap__crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8886A)"/>
+      <stop offset="1" stop-color="var(--c2, #816450)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-flat-cap__peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #816450)"/>
+      <stop offset="1" stop-color="var(--c2, #816450)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-headwear-flat-cap__plaid" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="8" width="20" height="4" fill="var(--c3, #F0DCC4)" fill-opacity="0.55"/>
+      <rect x="8" y="0" width="4" height="20" fill="var(--c3, #F0DCC4)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="accessories-toddler-headwear-flat-cap__clip">
+      <path d="M136 250 q-8 -46 22 -60 q42 -20 84 0 q30 14 22 60 q-18 10 -46 8
+               q-40 -4 -82 -8 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short stiff peak, sitting under the forward lip of the crown -->
+    <path d="M128 246 q-14 4 -12 12 q4 8 26 9 q60 4 116 -2 q18 -3 16 -11 q-2 -7 -18 -8 z"
+          fill="url(#accessories-toddler-headwear-flat-cap__peak)"/>
+    <!-- low rounded crown, overhanging forward -->
+    <path d="M136 250 q-8 -46 22 -60 q42 -20 84 0 q30 14 22 60 q-18 10 -46 8
+             q-40 -4 -82 -8 z"
+          fill="url(#accessories-toddler-headwear-flat-cap__crown)"/>
+  </g>
+
+  <g clip-path="url(#accessories-toddler-headwear-flat-cap__clip)">
+    <rect x="130" y="184" width="144" height="82" fill="url(#accessories-toddler-headwear-flat-cap__plaid)"/>
+  </g>
+
+  <!-- bound peak edge -->
+  <path d="M118 254 q4 9 24 10 q60 5 116 -2 q16 -3 16 -10" stroke="var(--c3, #F0DCC4)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- centre crown button -->
+  <circle cx="200" cy="196" r="7" fill="var(--c3, #F0DCC4)"/>
+  <circle cx="200" cy="196" r="3" fill="var(--c2, #816450)"/>
+
+  <path d="M156 206 q44 -14 88 -2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

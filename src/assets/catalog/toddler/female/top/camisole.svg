@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=SPAGHETTI STRAP · closure=closed · hem=hip · volume=skimming straight -->
+  <!-- straight neckline held on two narrow straps, arms and shoulders bare -->
+  <defs>
+    <linearGradient id="toddler-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C7EE)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9FCE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C7EE)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9FCE)"/>
+    </linearGradient>
+    <!-- fine dot scatter, 16px repeat -->
+    <pattern id="toddler-female-top-camisole__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.6" fill="var(--c3, #FBF3E4)" fill-opacity="0.8"/>
+      <circle cx="12" cy="12" r="2.6" fill="var(--c3, #FBF3E4)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="toddler-female-top-camisole__clip">
+      <path d="M150 376 h100 v56 q0 22 -22 22 h-56 q-22 0 -22-22 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow spaghetti straps -->
+    <rect x="169" y="344" width="10" height="34" rx="5" fill="url(#toddler-female-top-camisole__strap)"/>
+    <rect x="221" y="344" width="10" height="34" rx="5" fill="url(#toddler-female-top-camisole__strap)"/>
+    <!-- skimming body with a straight cut neckline at y376 -->
+    <path d="M150 376 h100 v56 q0 22 -22 22 h-56 q-22 0 -22-22 z"
+          fill="url(#toddler-female-top-camisole__body)"/>
+  </g>
+
+  <!-- dot scatter over the body -->
+  <g clip-path="url(#toddler-female-top-camisole__clip)">
+    <rect x="148" y="374" width="104" height="82" fill="url(#toddler-female-top-camisole__dots)"/>
+  </g>
+
+  <!-- scalloped lace trim along the straight neckline -->
+  <path d="M150 376 h100 v-4 q-8 9 -16 0 q-8 9 -17 0 q-8 9 -17 0 q-8 9 -17 0 q-8 9 -16 0 q-9 9 -17 0 z"
+        fill="var(--c3, #FBF3E4)"/>
+  <path d="M154 372 q46 8 92 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- matching scallop at the hem -->
+  <path d="M150 440 q22 10 50 10 q28 0 50-10 v-6 q0 22 -22 22 h-56 q-22 0 -22-22 z"
+        fill="var(--c3, #FBF3E4)" fill-opacity="0.85"/>
+
+  <!-- little bow where each strap meets the neckline -->
+  <path d="M174 374 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M226 374 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M160 390 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

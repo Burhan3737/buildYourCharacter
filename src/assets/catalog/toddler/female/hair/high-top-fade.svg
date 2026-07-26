@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: volume/texture (a flat-topped square column standing over skin-close sides) - parting (a hard clean front hairline where the column meets the fade) -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-female-hair-high-top-fade__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the shaved sides have thickness: a close rim reading round the skull -->
+      <path d="M114 300 C110 224 150 190 200 190
+               C250 190 290 224 286 300
+               C282 250 246 220 200 220
+               C154 220 118 250 114 300 Z"
+            fill="url(#toddler-female-hair-high-top-fade__back-g)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-female-hair-high-top-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <!-- the fade itself: hair1 at the top of the taper, hair2 down at the skin line -->
+      <linearGradient id="toddler-female-hair-high-top-fade__fade-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.42" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded sides, covering the whole skull below the column -->
+      <path d="M120 302 C116 226 152 194 200 194
+               C248 194 284 226 280 302
+               C272 264 244 244 200 244
+               C156 244 128 264 120 302 Z"
+            fill="url(#toddler-female-hair-high-top-fade__fade-g)"/>
+      <!-- the column: dense, flat on top, square across the front -->
+      <path d="M146 146 q0 -16 18 -16 h72 q18 0 18 16
+               L242 202 q-42 10 -84 0 z"
+            fill="url(#toddler-female-hair-high-top-fade__front-g)"/>
+    </g>
+    <!-- the hard clean line where the column stops and the fade begins -->
+    <path d="M158 202 Q200 212 242 202" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none"/>
+    <!-- the hard front hairline cut across the brow -->
+    <path d="M144 268 C156 252 176 244 200 244 C224 244 244 252 256 268"
+          stroke="var(--hair2, #331E16)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- the taper line, sharpest at the temple -->
+    <path d="M126 290 C134 268 152 254 172 248" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M274 290 C266 268 248 254 228 248" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <!-- sponge texture in the dense column -->
+    <g fill="var(--hair2, #331E16)" fill-opacity="0.42">
+      <circle cx="166" cy="152" r="5"/><circle cx="184" cy="146" r="5"/>
+      <circle cx="202" cy="152" r="5"/><circle cx="220" cy="146" r="5"/>
+      <circle cx="236" cy="152" r="5"/>
+      <circle cx="164" cy="174" r="5"/><circle cx="182" cy="170" r="5"/>
+      <circle cx="200" cy="176" r="5"/><circle cx="218" cy="170" r="5"/>
+      <circle cx="236" cy="176" r="5"/>
+      <circle cx="170" cy="192" r="5"/><circle cx="204" cy="194" r="5"/>
+      <circle cx="230" cy="192" r="5"/>
+    </g>
+    <path d="M166 142 C182 132 218 132 234 142" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

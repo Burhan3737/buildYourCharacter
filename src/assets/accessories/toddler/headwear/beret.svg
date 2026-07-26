@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Beret" data-family="beret" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. kufi and beanie: crown=SOFT WIDE DISC OVERHANGING THE SKULL AND TILTED to
+       one side, and brim=NONE AT ALL with no band round the head. Tools: trim (narrow
+       inner headband edge) plus structural (the centre stalk and two radiating fold
+       creases). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-beret__disc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9556B)"/>
+      <stop offset="1" stop-color="var(--c2, #A03D51)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-beret__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBE3D2)"/>
+      <stop offset="1" stop-color="var(--c3, #FBE3D2)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one soft disc, wider on the low side, slumping toward the left temple -->
+    <path d="M124 236 q-14 -22 8 -38 q26 -20 64 -22 q46 -3 72 18 q22 16 12 36
+             q-14 16 -60 18 q-58 3 -96 -12 z"
+          fill="url(#accessories-toddler-headwear-beret__disc)"/>
+  </g>
+
+  <!-- the little stalk at the crown -->
+  <circle cx="214" cy="181" r="8" fill="var(--c2, #A03D51)"/>
+  <circle cx="211" cy="178" r="3" fill="#FFFFFF" fill-opacity="0.4"/>
+
+  <!-- narrow inner headband showing under the low edge -->
+  <path d="M134 244 q60 22 130 6" stroke="url(#accessories-toddler-headwear-beret__band)"
+        stroke-width="9" fill="none" stroke-linecap="round"/>
+
+  <!-- radiating fold creases, the beret's soft-crush read -->
+  <g stroke="var(--c2, #A03D51)" stroke-opacity="0.5" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M210 190 q-32 16 -70 44"/>
+    <path d="M216 190 q14 20 34 44"/>
+    <path d="M208 192 q-4 24 -6 46"/>
+  </g>
+
+  <path d="M150 200 q44 -20 92 -6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>
