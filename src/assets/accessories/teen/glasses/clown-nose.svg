@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown Nose" data-family="clown-nose" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2" data-hides="">
+  <!-- axes: body shape (one solid convex ball on the nose, no lens ring and no bridge bar at
+       all) and attachment (nothing crosses the temples; there is no arm, no strap and no
+       frame wire anywhere in the outline). Every other family in this slot is a linework
+       frame or a lens band; this is the only filled mass.
+       Note for whoever reads this next: this is not glasses and it is not pretending to be.
+       The glasses slot is the only face anchor in the project and eye patch set the
+       precedent. The cost is stated openly in FAMILIES 4.1: the slot holds one asset, so
+       wearing the nose costs the player their glasses. Ship it anyway.
+       The ball is painted through c1 and is never a hardcoded red. -->
+  <defs>
+    <radialGradient id="accessories-teen-glasses-clown-nose__ball"
+                    cx="0.38" cy="0.32" r="0.78">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="0.62" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07C6F)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- the ball, seated on the nose between the eye line and the lip line -->
+  <g class="sp-shadow">
+    <circle cx="200" cy="148" r="12.5" fill="url(#accessories-teen-glasses-clown-nose__ball)"/>
+  </g>
+
+  <!-- seating shadow where the ball meets the cheek, so it reads as sitting proud -->
+  <path d="M190 156 Q200 161 210 156" stroke="var(--c2, #D07C6F)" stroke-width="2.6"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- faint highlight on the upper left of the sphere -->
+  <path d="M193 142 Q197 138 202 138" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="195.5" cy="144" r="2.2" fill="#FFFFFF" fill-opacity="0.42"/>
+</svg>

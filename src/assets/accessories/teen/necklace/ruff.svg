@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ruff" data-family="ruff" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: scale (a disc 128 units across, projecting 50 units clear of the neck on every
+       side, against pendant, beads, choker and bow tie which all sit inside the neck width)
+       and body shape (a flat pleated plate standing out horizontally, with a cut neck hole
+       through it, rather than a strand, a band or a hanging drop).
+       FAMILIES 4.4 sets the floor at 45 to 70 units of projection; the neck rect is x 186 to
+       214, so the outer edge at x 136 and x 264 clears it by 50 units either side. The
+       scalloped hem is built into the silhouette path itself, not laid on top of a smooth
+       ellipse, so it survives the 64px thumbnail.
+       This slot draws above top and costume, so this one file makes every garment in the
+       catalogue wearable in a comedy register. -->
+  <defs>
+    <linearGradient id="accessories-teen-necklace-ruff__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E7D5)"/>
+      <stop offset="1" stop-color="var(--c2, #CDBBA0)"/>
+    </linearGradient>
+    <clipPath id="accessories-teen-necklace-ruff__clip">
+      <path d="M136 197
+               Q141 211 152 215 Q158 222 168 220.5 Q174 227 184 223 Q190 230 200 224
+               Q210 230 216 223 Q226 227 232 220.5 Q242 222 248 215 Q259 211 264 197
+               C264 179 236 170 200 170 C164 170 136 179 136 197 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the disc: scalloped along the whole visible lower contour, with the neck cut clean
+       through it as evenodd negative space so the throat still reads -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M136 197
+             Q141 211 152 215 Q158 222 168 220.5 Q174 227 184 223 Q190 230 200 224
+             Q210 230 216 223 Q226 227 232 220.5 Q242 222 248 215 Q259 211 264 197
+             C264 179 236 170 200 170 C164 170 136 179 136 197 Z
+             M218 190 A18 9 0 1 0 182 190 A18 9 0 1 0 218 190 Z"
+          fill="url(#accessories-teen-necklace-ruff__linen)"/>
+  </g>
+
+  <!-- radial pleat folds, clipped to the plate so no fold escapes the scallops -->
+  <g clip-path="url(#accessories-teen-necklace-ruff__clip)" fill="none"
+     stroke="var(--c2, #CDBBA0)" stroke-width="3" stroke-opacity="0.85" stroke-linecap="round">
+    <path d="M218.8 193.4 L254.5 205.2"/>
+    <path d="M214.1 197.1 L241.0 214.0"/>
+    <path d="M206.8 199.4 L219.8 219.6"/>
+    <path d="M200 200 L200 221"/>
+    <path d="M193.2 199.4 L180.2 219.6"/>
+    <path d="M185.9 197.1 L159.0 214.0"/>
+    <path d="M181.2 193.4 L145.5 205.2"/>
+    <path d="M218.8 186.6 L254.5 188.8"/>
+    <path d="M214.1 182.9 L241.0 180.0"/>
+    <path d="M206.8 180.6 L219.8 174.4"/>
+    <path d="M200 180 L200 173"/>
+    <path d="M193.2 180.6 L180.2 174.4"/>
+    <path d="M185.9 182.9 L159.0 180.0"/>
+    <path d="M181.2 186.6 L145.5 188.8"/>
+  </g>
+
+  <!-- binding thread following the scalloped hem, and the gathered neck band -->
+  <path d="M136 197 Q141 211 152 215 Q158 222 168 220.5 Q174 227 184 223 Q190 230 200 224
+           Q210 230 216 223 Q226 227 232 220.5 Q242 222 248 215 Q259 211 264 197"
+        stroke="var(--c3, #F7C873)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M182 190 A18 9 0 0 0 218 190" stroke="var(--c3, #F7C873)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M158 184 Q200 176 242 184" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
