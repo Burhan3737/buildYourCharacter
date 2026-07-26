@@ -1,22 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sandals" data-family="sandals" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2" data-hides="">
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHAFT/COVERAGE = open — the only major form is a thin flat sole, the
+       toes are bare, and SOLE DEPTH = thin. The straps are surface, not silhouette.
+       Differs from `sneakers` on coverage and sole; from `slippers` on coverage and sole;
+       from `booties` on coverage and shaft height. -->
   <defs>
-    <linearGradient id="newborn-male-shoes-sandals__sole" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AD58)"/>
+    <linearGradient id="newborn-male-shoes-sandals__soleL" x1="0" y1="558" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #E8C39A)"/>
+      <stop offset="1" stop-color="var(--c2, #C39C74)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-shoes-sandals__soleR" x1="0" y1="558" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #E8C39A)"/>
+      <stop offset="1" stop-color="var(--c2, #C39C74)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- soft baby booties dressed up with strap bands, still fully soft -->
-    <rect x="169" y="552" width="32" height="20" rx="10" fill="url(#newborn-male-shoes-sandals__sole)"/>
-    <rect x="199" y="552" width="32" height="20" rx="10" fill="url(#newborn-male-shoes-sandals__sole)"/>
+    <!-- thin flat soles and nothing else: the foot itself stays visible above them -->
+    <path d="M166 561 C166 558 169 557 174 557 H198 C203 557 206 558 206 561 V566
+             C206 569 203 570 198 570 H174 C169 570 166 569 166 561 Z"
+          fill="url(#newborn-male-shoes-sandals__soleL)"/>
+    <path d="M234 561 C234 558 231 557 226 557 H202 C197 557 194 558 194 561 V566
+             C194 569 197 570 202 570 H226 C231 570 234 569 234 561 Z"
+          fill="url(#newborn-male-shoes-sandals__soleR)"/>
   </g>
-  <rect x="167" y="564" width="36" height="8" rx="4" fill="var(--c2, #E0AD58)"/>
-  <rect x="197" y="564" width="36" height="8" rx="4" fill="var(--c2, #E0AD58)"/>
-  <!-- strap bands -->
-  <path d="M170 558 h30" stroke="var(--c2, #E0AD58)" stroke-width="5" fill="none" stroke-linecap="round"/>
-  <path d="M200 558 h30" stroke="var(--c2, #E0AD58)" stroke-width="5" fill="none" stroke-linecap="round"/>
-  <path d="M182 556 h6 M188 556 h6" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.6"
+
+  <!-- two soft strap bands across each foot, with the toes left showing between them -->
+  <path d="M168 548 C176 544 196 544 204 548" stroke="var(--c3, #F5E2CB)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 548 C224 544 204 544 196 548" stroke="var(--c3, #F5E2CB)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 556 C178 553 194 553 202 556" stroke="var(--c3, #F5E2CB)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 556 C222 553 206 553 198 556" stroke="var(--c3, #F5E2CB)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a small buckle on the outer strap of each foot -->
+  <rect x="166" y="544" width="9" height="9" rx="2.5" fill="var(--c2, #C39C74)"/>
+  <rect x="225" y="544" width="9" height="9" rx="2.5" fill="var(--c2, #C39C74)"/>
+
+  <path d="M172 563 h26 M202 563 h26" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.2"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,37 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHOULDER = dropped/oversized (sleeves set outboard at x128 and x272),
+       HEM = past hip, ending on a deep ribbed band at y510. Also volume = boxy.
+       Differs from `tee` on shoulder, hem and volume; from `sweater` on hem and volume;
+       from `button-up` on shoulder and closure. The hood is a major form of its own. -->
   <defs>
     <linearGradient id="newborn-male-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="1" stop-color="var(--c2, #5B6BB4)"/>
     </linearGradient>
     <linearGradient id="newborn-male-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="1" stop-color="var(--c2, #5B6BB4)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B6C1F0)"/>
+      <stop offset="1" stop-color="var(--c2, #5B6BB4)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves reaching the hands -->
-    <rect x="136" y="410" width="24" height="86" rx="12" fill="url(#newborn-male-top-hoodie__sleeve)"/>
-    <rect x="240" y="410" width="24" height="86" rx="12" fill="url(#newborn-male-top-hoodie__sleeve)"/>
-    <!-- onesie-top body -->
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- dropped, oversized sleeves: wider and set further out than the tee's -->
+    <rect x="128" y="418" width="32" height="88" rx="16" fill="url(#newborn-male-top-hoodie__sleeve)"/>
+    <rect x="240" y="418" width="32" height="88" rx="16" fill="url(#newborn-male-top-hoodie__sleeve)"/>
+    <!-- boxy body dropping past the hip -->
+    <path d="M146 448 C146 428 160 418 180 418 H220 C240 418 254 428 254 448
+             V510 C254 522 246 528 232 528 H168 C154 528 146 522 146 510 Z"
           fill="url(#newborn-male-top-hoodie__body)"/>
-    <!-- a small soft hood, peeking behind the neck -->
-    <path d="M180 414 q20 14 40 0 q-4 18 -20 18 q-16 0-20-18 z" fill="var(--c2, #6B7FD0)"/>
+    <!-- the hood, lying flat behind the neck -->
+    <path d="M164 428 C164 410 180 402 200 402 C220 402 236 410 236 428
+             C236 442 220 450 200 450 C180 450 164 442 164 428 Z"
+          fill="url(#newborn-male-top-hoodie__hood)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="136" y="486" width="24" height="12" rx="6" fill="var(--c2, #6B7FD0)"/>
-  <rect x="240" y="486" width="24" height="12" rx="6" fill="var(--c2, #6B7FD0)"/>
-  <!-- tiny belly pocket -->
-  <path d="M182 466 h36 v16 q0 5 -5 5 h-26 q-5 0-5-5 z" fill="var(--c2, #6B7FD0)"/>
-  <!-- tiny drawstrings -->
-  <path d="M194 430 v12" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"
+
+  <!-- deep ribbed hem band and cuffs -->
+  <rect x="146" y="510" width="108" height="18" rx="9" fill="var(--c3, #B6C1F0)"/>
+  <path d="M158 514 v10 M172 514 v10 M186 514 v10 M200 514 v10
+           M214 514 v10 M228 514 v10 M242 514 v10"
+        stroke="var(--c2, #5B6BB4)" stroke-opacity="0.45" stroke-width="2"
         fill="none" stroke-linecap="round"/>
-  <path d="M206 430 v12" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3"
+  <rect x="128" y="490" width="32" height="16" rx="8" fill="var(--c3, #B6C1F0)"/>
+  <rect x="240" y="490" width="32" height="16" rx="8" fill="var(--c3, #B6C1F0)"/>
+
+  <!-- kangaroo pocket -->
+  <path d="M170 472 H230 V498 C230 504 226 508 220 508 H180 C174 508 170 504 170 498 Z"
+        fill="var(--c2, #5B6BB4)"/>
+  <path d="M170 472 H230" stroke="var(--c3, #B6C1F0)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <!-- highlight -->
-  <path d="M164 436 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+
+  <!-- drawstrings with two aglets -->
+  <path d="M190 448 v14" stroke="var(--c3, #B6C1F0)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 448 v14" stroke="var(--c3, #B6C1F0)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="190" cy="464" r="3" fill="var(--c3, #B6C1F0)"/>
+  <circle cx="210" cy="464" r="3" fill="var(--c3, #B6C1F0)"/>
+
+  <path d="M162 442 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,35 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Romper" data-family="romper" data-slot="onepiece"
-     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = thigh — two short cuffed legs, open at the foot and hand, which
+       is exactly what separates a romper from a bodysuit. CLOSURE = button placket down the
+       chest. Also shoulder = short set-in, volume = straight.
+       Differs from `bodysuit` on hem and volume; from `sleepsuit` on hem and sleeve length;
+       from `jumpsuit` on hem and sleeve length. -->
   <defs>
     <linearGradient id="newborn-male-onepiece-romper__bodice" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #57A996)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
     </linearGradient>
     <linearGradient id="newborn-male-onepiece-romper__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #57A996)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-onepiece-romper__leg" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-onepiece-romper__legL" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #57A996)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-onepiece-romper__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- short sleeves -->
+    <!-- short set-in sleeves -->
     <rect x="136" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-onepiece-romper__sleeve)"/>
     <rect x="240" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-onepiece-romper__sleeve)"/>
-    <!-- bodysuit with snap-crotch styling, ending short over the hips -->
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v66 q0 20 -12 24 q-16 6-32 0 q-16-6-32 0
-             q-16 6-24 0 q-8-4-8-24 z"
+    <!-- bodice running down over the hips -->
+    <path d="M152 442 C152 426 164 418 180 418 H220 C236 418 248 426 248 442
+             V504 C248 512 242 516 232 516 H168 C158 516 152 512 152 504 Z"
           fill="url(#newborn-male-onepiece-romper__bodice)"/>
+    <!-- two short legs, cut off at mid-thigh. The legs run y518-558 on this body, so the hem
+         has to land near y532 — any lower and the romper reads as a full-length jumpsuit. -->
+    <path d="M158 504 H198 V520 C198 528 192 532 182 532 H172 C163 532 158 528 158 520 Z"
+          fill="url(#newborn-male-onepiece-romper__legL)"/>
+    <path d="M242 504 H202 V520 C202 528 208 532 218 532 H228 C237 532 242 528 242 520 Z"
+          fill="url(#newborn-male-onepiece-romper__legR)"/>
   </g>
-  <!-- snap-crotch dots -->
-  <circle cx="176" cy="524" r="3" fill="var(--c3, #F7C873)"/>
-  <circle cx="200" cy="528" r="3" fill="var(--c3, #F7C873)"/>
-  <circle cx="224" cy="524" r="3" fill="var(--c3, #F7C873)"/>
-  <!-- small collar -->
-  <path d="M180 420 q20 12 40 0 q-4 12 -20 12 q-16 0-20-12 z" fill="var(--c2, #57A996)"/>
-  <path d="M164 436 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+
+  <!-- turned-back leg cuffs at mid-thigh -->
+  <rect x="156" y="520" width="44" height="12" rx="6" fill="var(--c3, #F5EFD8)"/>
+  <rect x="200" y="520" width="44" height="12" rx="6" fill="var(--c3, #F5EFD8)"/>
+
+  <!-- button placket down the chest -->
+  <rect x="194" y="428" width="12" height="80" rx="4" fill="var(--c3, #F5EFD8)"/>
+  <circle cx="200" cy="442" r="3.2" fill="var(--c2, #47907F)"/>
+  <circle cx="200" cy="464" r="3.2" fill="var(--c2, #47907F)"/>
+  <circle cx="200" cy="486" r="3.2" fill="var(--c2, #47907F)"/>
+
+  <!-- flat collar and bound sleeve openings -->
+  <path d="M178 420 C186 432 214 432 222 420" stroke="var(--c3, #F5EFD8)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <rect x="136" y="452" width="24" height="10" rx="5" fill="var(--c3, #F5EFD8)"/>
+  <rect x="240" y="452" width="24" height="10" rx="5" fill="var(--c3, #F5EFD8)"/>
+
+  <path d="M166 438 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

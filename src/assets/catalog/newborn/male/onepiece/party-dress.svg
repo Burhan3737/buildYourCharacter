@@ -1,36 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Party Dress" data-family="party-dress" data-slot="onepiece"
      data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = cap sleeve — a short rounded sleeve head capping the arm, no
+       strap. VOLUME = gathered, a full skirt that stands away from the leg on both sides
+       instead of following it. Also closure = closed, hem = knee.
+       Differs from `sundress` on shoulder and volume; from `romper` on hem and leg division;
+       from `swaddle` on shoulder and volume.
+       Drawn body anchors: torso x154-246 y418-504, arms x138-158 / x242-262 y412-496,
+       hips x166-234 y496-530, knee about y538, feet y550-570. -->
   <defs>
     <linearGradient id="newborn-male-onepiece-party-dress__bodice" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F7C873)"/>
       <stop offset="1" stop-color="var(--c2, #E0AD58)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-onepiece-party-dress__skirt" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-onepiece-party-dress__skirt" x1="0" y1="482" x2="0" y2="556"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #F7C873)"/>
       <stop offset="1" stop-color="var(--c2, #E0AD58)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-onepiece-party-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-onepiece-party-dress__cap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F7C873)"/>
       <stop offset="1" stop-color="var(--c2, #E0AD58)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- tiny puff sleeves -->
-    <rect x="138" y="412" width="20" height="30" rx="10" fill="url(#newborn-male-onepiece-party-dress__sleeve)"/>
-    <rect x="242" y="412" width="20" height="30" rx="10" fill="url(#newborn-male-onepiece-party-dress__sleeve)"/>
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- cap sleeves capping the top of each arm -->
+    <ellipse cx="148" cy="429" rx="22" ry="17" fill="url(#newborn-male-onepiece-party-dress__cap)"/>
+    <ellipse cx="252" cy="429" rx="22" ry="17" fill="url(#newborn-male-onepiece-party-dress__cap)"/>
+    <!-- fitted bodice to a raised waist -->
+    <path d="M156 436 C156 422 168 416 182 416 H218 C232 416 244 422 244 436 V486 H156 Z"
           fill="url(#newborn-male-onepiece-party-dress__bodice)"/>
-    <!-- a slightly fancier flared skirt -->
-    <path d="M156 500 h88 q8 16 4 30 q-48 14 -96 0 q-4-14 4-30 z"
+    <!-- gathered full skirt: it belles out well past the hips and stands off the leg -->
+    <path d="M150 482 H250 C270 506 276 530 270 546
+             C246 554 224 556 200 556 C176 556 154 554 130 546
+             C124 530 130 506 150 482 Z"
           fill="url(#newborn-male-onepiece-party-dress__skirt)"/>
   </g>
-  <!-- bow sash accent -->
-  <path d="M188 500 q12-10 24 0 q-4 8 -12 8 q-8 0-12-8 z" fill="var(--c3, #F4A79B)"/>
-  <circle cx="200" cy="503" r="4" fill="var(--c3, #F4A79B)"/>
-  <path d="M182 420 q18 14 36 0 q-2 10 -18 10 q-16 0-18-10 z" fill="var(--c2, #E0AD58)"/>
-  <path d="M166 436 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+
+  <!-- waist sash with a bow: the join between fitted bodice and standing skirt -->
+  <rect x="152" y="478" width="96" height="13" rx="6" fill="var(--c3, #F4A79B)"/>
+  <path d="M200 484 q-14 -10 -20 0 q14 10 20 0 z" fill="var(--c3, #F4A79B)"/>
+  <path d="M200 484 q14 -10 20 0 q-14 10 -20 0 z" fill="var(--c3, #F4A79B)"/>
+  <circle cx="200" cy="484" r="4" fill="var(--c2, #E0AD58)"/>
+  <!-- gathers standing the skirt away from the leg -->
+  <path d="M164 490 C154 514 146 534 140 548 M182 490 C178 514 174 536 172 552
+           M218 490 C222 514 226 536 228 552 M236 490 C246 514 254 534 260 548"
+        stroke="var(--c2, #E0AD58)" stroke-opacity="0.8" stroke-width="2.8" fill="none"
+        stroke-linecap="round"/>
+  <!-- scalloped hem -->
+  <path d="M134 546 q12 10 24 4 q12 10 24 4 q12 10 24 -2 q12 10 24 -4 q10 8 18 -2"
+        stroke="var(--c3, #F4A79B)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- bound neckline -->
+  <path d="M178 418 q22 14 44 0" stroke="var(--c3, #F4A79B)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M164 516 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+
+  <path d="M170 440 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

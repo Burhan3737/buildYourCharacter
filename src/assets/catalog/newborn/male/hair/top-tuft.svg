@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Top Tuft" data-family="top-tuft" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282.
+       Axes: length = crop everywhere, gathering = one sprout at the crown. The sprout is the
+       whole silhouette; the cap under it hugs the skull so nothing floats. -->
+  <g data-part="back"></g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-top-tuft__frontgrad" x1="0" y1="248" x2="0" y2="304"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="newborn-male-hair-top-tuft__tuftgrad" x1="0" y1="200" x2="0" y2="264"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- close crop over the skull, hairline scalloped so it does not read as a bowl -->
+      <path d="M133 300 C129 270 158 254 200 254 C242 254 271 270 267 300
+               Q259 288 251 295 Q243 284 235 292 Q227 282 219 290
+               Q211 281 203 289 Q195 281 187 290 Q179 282 171 292
+               Q163 284 155 295 Q147 288 139 300 Z"
+            fill="url(#newborn-male-hair-top-tuft__frontgrad)"/>
+      <!-- the sprout: one gathered lock rising off the crown and flicking to one side -->
+      <path d="M184 262 C180 240 186 218 202 206 C214 197 226 198 231 206
+               C223 205 214 210 209 219 C204 228 205 238 211 246
+               C204 254 194 260 186 264 Z"
+            fill="url(#newborn-male-hair-top-tuft__tuftgrad)"/>
+      <!-- the little band of hair gathering the sprout at its root -->
+      <path d="M182 258 C190 250 208 248 216 254 C210 262 192 266 183 264 Z"
+            fill="url(#newborn-male-hair-top-tuft__tuftgrad)"/>
+    </g>
+    <!-- strand grooves kept inside the sprout body, and a highlight on the crop -->
+    <path d="M195 252 C193 240 197 229 205 221 M202 254 C202 243 206 234 212 227"
+          stroke="var(--hair2, #331E16)" stroke-opacity="0.5" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M158 274 q42 -14 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

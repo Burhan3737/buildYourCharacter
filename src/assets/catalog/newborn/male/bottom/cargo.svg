@@ -1,22 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo" data-family="cargo" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: LEG LENGTH = full (down to y558, over the ankle), LEG WIDTH = relaxed
+       and wide, the leg widening from the hip rather than tapering. Also hem = plain, and the
+       flapped thigh pockets are structural surface on top of that.
+       Differs from `shorts` on leg length and width; from `joggers` on width and hem;
+       from `jeans` on width and hem. -->
   <defs>
     <linearGradient id="newborn-male-bottom-cargo__waist" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6272BE)"/>
+      <stop offset="0" stop-color="var(--c1, #9BA36F)"/>
+      <stop offset="1" stop-color="var(--c2, #77804F)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-cargo__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA36F)"/>
+      <stop offset="1" stop-color="var(--c2, #77804F)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-cargo__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA36F)"/>
+      <stop offset="1" stop-color="var(--c2, #77804F)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- soft nappy-shorts with a rounded pouch profile -->
-    <path d="M164 494 q0-4 4-4 h64 q4 0 4 4 v28 q0 4 -4 4 h-18 q-4 0-4-4 v-10 h-20 v10 q0 4 -4 4 h-18 q-4 0-4-4 z"
-          fill="url(#newborn-male-bottom-cargo__waist)"/>
+    <rect x="160" y="492" width="80" height="20" rx="10" fill="url(#newborn-male-bottom-cargo__waist)"/>
+    <path d="M160 506 H198 L201 548 C201 554 195 558 185 558 H171 C161 558 155 554 156 548 Z"
+          fill="url(#newborn-male-bottom-cargo__legL)"/>
+    <path d="M240 506 H202 L199 548 C199 554 205 558 215 558 H229 C239 558 245 554 244 548 Z"
+          fill="url(#newborn-male-bottom-cargo__legR)"/>
   </g>
-  <!-- tiny cargo pockets -->
-  <rect x="168" y="510" width="16" height="14" rx="4" fill="var(--c3, #F7C873)"/>
-  <rect x="216" y="510" width="16" height="14" rx="4" fill="var(--c3, #F7C873)"/>
-  <!-- waistband -->
-  <rect x="164" y="494" width="72" height="12" rx="6" fill="var(--c2, #6272BE)"/>
-  <path d="M172 504 q34 6 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+
+  <!-- flapped thigh pockets, one on each leg -->
+  <path d="M160 518 H184 V536 C184 540 181 542 177 542 H167 C163 542 160 540 160 536 Z"
+        fill="var(--c2, #77804F)"/>
+  <path d="M158 516 H186 V524 C186 527 184 528 181 528 H163 C160 528 158 527 158 524 Z"
+        fill="var(--c3, #D8DBA9)"/>
+  <path d="M240 518 H216 V536 C216 540 219 542 223 542 H233 C237 542 240 540 240 536 Z"
+        fill="var(--c2, #77804F)"/>
+  <path d="M242 516 H214 V524 C214 527 216 528 219 528 H237 C240 528 242 527 242 524 Z"
+        fill="var(--c3, #D8DBA9)"/>
+
+  <!-- webbing waistband with a small square buckle -->
+  <rect x="160" y="492" width="80" height="12" rx="6" fill="var(--c3, #D8DBA9)"/>
+  <rect x="193" y="491" width="14" height="14" rx="3" fill="var(--c2, #77804F)"/>
+
+  <!-- side seams so the wide leg reads as constructed -->
+  <path d="M164 512 L160 550 M236 512 L240 550" stroke="var(--c3, #D8DBA9)"
+        stroke-opacity="0.5" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <path d="M172 506 q28 8 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swaddle" data-family="swaddle" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = draped (the cloth wraps over both shoulders and the arms are
+       enclosed inside it, so no sleeve exists at all), VOLUME = a single tapered cocoon.
+       Also hem = ankle, closure = crossover wrap.
+       Differs from every other one-piece on shoulder and volume at once. This is a wearable
+       swaddle, not a loose blanket laid over a baby. -->
+  <defs>
+    <linearGradient id="newborn-male-onepiece-swaddle__cocoon" x1="0" y1="404" x2="0" y2="570"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #E9C7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #C094A6)"/>
+    </linearGradient>
+    <pattern id="newborn-male-onepiece-swaddle__leaf" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 5 C14 8 14 13 10 16 C6 13 6 8 10 5 Z" fill="var(--c3, #F8ECF1)"
+            fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="newborn-male-onepiece-swaddle__clip">
+      <path d="M134 442 C134 418 156 406 200 406 C244 406 266 418 266 442
+               L250 518 C244 548 228 566 200 566 C172 566 156 548 150 518 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the cocoon: shoulders to hem in one tapering form, arms wrapped inside -->
+    <path d="M134 442 C134 418 156 406 200 406 C244 406 266 418 266 442
+             L250 518 C244 548 228 566 200 566 C172 566 156 548 150 518 Z"
+          fill="url(#newborn-male-onepiece-swaddle__cocoon)"/>
+    <g clip-path="url(#newborn-male-onepiece-swaddle__clip)">
+      <rect x="132" y="404" width="136" height="166" fill="url(#newborn-male-onepiece-swaddle__leaf)"/>
+    </g>
+  </g>
+
+  <!-- the wrap: one wing folded across the body, its edge bound in the accent -->
+  <path d="M140 434 C168 464 208 492 254 504 L250 522 C247 538 240 550 231 558
+           C194 542 160 512 138 480 Z"
+        fill="var(--c2, #C094A6)" fill-opacity="0.45"/>
+  <path d="M140 434 C168 464 208 492 254 504" stroke="var(--c3, #F8ECF1)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound shoulder edge and a soft gathered hem -->
+  <path d="M138 432 C162 412 238 412 262 432" stroke="var(--c3, #F8ECF1)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 540 C176 552 224 552 242 540" stroke="var(--c3, #F8ECF1)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 548 v10 M190 554 v10 M210 554 v10 M228 548 v10"
+        stroke="var(--c2, #C094A6)" stroke-opacity="0.5" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 428 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

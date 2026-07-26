@@ -1,19 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Shorts" data-family="shorts" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: LEG LENGTH = short — there are two real legs, cut straight across at
+       mid-thigh (y538), HEM TREATMENT = rolled cuff turned back over each leg.
+       Differs from `cargo` on leg length and leg width; from `nappy` on rise and leg length;
+       from `joggers` on leg length and hem. -->
   <defs>
     <linearGradient id="newborn-male-bottom-shorts__waist" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E2897C)"/>
+      <stop offset="1" stop-color="var(--c2, #D97F72)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-shorts__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D97F72)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-shorts__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D97F72)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- simple soft nappy-shorts, the shortest of the family, hem near y526 -->
-    <path d="M164 494 q0-4 4-4 h64 q4 0 4 4 v28 q0 4 -4 4 h-18 q-4 0-4-4 v-10 h-20 v10 q0 4 -4 4 h-18 q-4 0-4-4 z"
-          fill="url(#newborn-male-bottom-shorts__waist)"/>
+    <rect x="163" y="492" width="74" height="22" rx="11" fill="url(#newborn-male-bottom-shorts__waist)"/>
+    <path d="M165 508 H197 V528 C197 534 192 538 184 538 H178 C170 538 165 534 165 528 Z"
+          fill="url(#newborn-male-bottom-shorts__legL)"/>
+    <path d="M235 508 H203 V528 C203 534 208 538 216 538 H222 C230 538 235 534 235 528 Z"
+          fill="url(#newborn-male-bottom-shorts__legR)"/>
   </g>
-  <!-- waistband -->
-  <rect x="164" y="494" width="72" height="12" rx="6" fill="var(--c2, #E2897C)"/>
-  <path d="M172 504 q34 6 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+
+  <!-- rolled-back cuffs, the whole point of the family -->
+  <rect x="163" y="528" width="36" height="12" rx="6" fill="var(--c3, #FBD3CB)"/>
+  <rect x="201" y="528" width="36" height="12" rx="6" fill="var(--c3, #FBD3CB)"/>
+  <path d="M170 532 h6 M182 532 h6 M208 532 h6 M220 532 h6"
+        stroke="var(--c2, #D97F72)" stroke-opacity="0.55" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat drawcord waist with a small knot -->
+  <rect x="163" y="492" width="74" height="11" rx="5.5" fill="var(--c3, #FBD3CB)"/>
+  <path d="M192 500 C196 506 204 506 208 500" stroke="var(--c2, #D97F72)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M174 506 q26 6 52 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

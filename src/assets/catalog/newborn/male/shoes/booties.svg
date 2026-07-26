@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Booties" data-family="booties" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: FASTENING = none, the shaft is simply gathered onto the ankle, and
+       SOLE DEPTH = none at all, the knit runs straight round under the foot.
+       Differs from `boots` on fastening and sole; from `slippers` on shaft height and hem;
+       from `sneakers` on fastening and sole. A knitted slipper-sock, not a shoe. -->
+  <defs>
+    <linearGradient id="newborn-male-shoes-booties__knitL" x1="0" y1="518" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #F2B8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #CE8B9C)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-shoes-booties__knitR" x1="0" y1="518" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #F2B8C6)"/>
+      <stop offset="1" stop-color="var(--c2, #CE8B9C)"/>
+    </linearGradient>
+    <pattern id="newborn-male-shoes-booties__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4" height="12" fill="var(--c3, #FBE3E9)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="newborn-male-shoes-booties__clip">
+      <path d="M168 532 C168 526 174 522 184 522 H196 C204 522 208 526 208 532
+               V550 C208 562 200 570 188 570 H172 C164 570 160 564 160 556
+               C160 546 164 538 168 532 Z"/>
+      <path d="M232 532 C232 526 226 522 216 522 H204 C196 522 192 526 192 532
+               V550 C192 562 200 570 212 570 H228 C236 570 240 564 240 556
+               C240 546 236 538 232 532 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft knitted sock rising well up the ankle, bulbous rounded toe, no sole edge -->
+    <path d="M168 532 C168 526 174 522 184 522 H196 C204 522 208 526 208 532
+             V550 C208 562 200 570 188 570 H172 C164 570 160 564 160 556
+             C160 546 164 538 168 532 Z"
+          fill="url(#newborn-male-shoes-booties__knitL)"/>
+    <path d="M232 532 C232 526 226 522 216 522 H204 C196 522 192 526 192 532
+             V550 C192 562 200 570 212 570 H228 C236 570 240 564 240 556
+             C240 546 236 538 232 532 Z"
+          fill="url(#newborn-male-shoes-booties__knitR)"/>
+    <g clip-path="url(#newborn-male-shoes-booties__clip)">
+      <rect x="158" y="520" width="84" height="52" fill="url(#newborn-male-shoes-booties__rib)"/>
+    </g>
+  </g>
+
+  <!-- the gather at the ankle: a turned-over knit cuff and a soft drawn-up ring -->
+  <rect x="166" y="520" width="44" height="12" rx="6" fill="var(--c3, #FBE3E9)"/>
+  <rect x="190" y="520" width="44" height="12" rx="6" fill="var(--c3, #FBE3E9)"/>
+  <path d="M170 538 C180 543 196 543 205 538" stroke="var(--c2, #CE8B9C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230 538 C220 543 204 543 195 538" stroke="var(--c2, #CE8B9C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- tiny knitted ties, no buckle and no lace ladder -->
+  <path d="M176 526 C180 522 186 522 190 526" stroke="var(--c2, #CE8B9C)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 526 C220 522 214 522 210 526" stroke="var(--c2, #CE8B9C)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 552 q12 5 24 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 552 q12 5 24 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

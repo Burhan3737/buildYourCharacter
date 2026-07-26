@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-male-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #4A3A2E)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #4A3A2E)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- wide, low aperture: the fold is smooth and hidden, so the lid reads as one plane -->
+  <g class="sp-shadow">
+    <ellipse cx="166" cy="353" rx="22" ry="13" fill="url(#newborn-male-eyes-monolid__sclera)"/>
+    <ellipse cx="234" cy="353" rx="22" ry="13" fill="url(#newborn-male-eyes-monolid__sclera)"/>
+  </g>
+
+  <!-- iris base: ink underlay reads through the semi-transparent lower stop -->
+  <circle cx="166" cy="354" r="11.5" fill="#3B2A22"/>
+  <circle cx="234" cy="354" r="11.5" fill="#3B2A22"/>
+  <circle cx="166" cy="354" r="11.5" fill="url(#newborn-male-eyes-monolid__iris)"/>
+  <circle cx="234" cy="354" r="11.5" fill="url(#newborn-male-eyes-monolid__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="166" cy="354" r="5.8" fill="#3B2A22"/>
+  <circle cx="234" cy="354" r="5.8" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="161" cy="349" r="4.2" fill="#FFFFFF"/>
+  <circle cx="229" cy="349" r="4.2" fill="#FFFFFF"/>
+  <circle cx="171" cy="358" r="2.1" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="239" cy="358" r="2.1" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- one smooth unbroken lid plane in skin, no crease drawn anywhere on it -->
+  <path d="M143 344 Q166 335 189 344 Q189 336 166 331 Q143 336 143 344 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M211 344 Q234 335 257 344 Q257 336 234 331 Q211 336 211 344 Z"
+        fill="var(--skin2, #E7B892)"/>
+
+  <!-- wide flat lash line: long and level rather than arched -->
+  <path d="M145 342 L187 342" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="6.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 342 L255 342" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="6.5"
+        fill="none" stroke-linecap="round"/>
+</svg>

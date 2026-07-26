@@ -1,47 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Storm Herald Onesie" data-family="storm-herald" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes: SHOULDER = sleeveless, with a hard shoulder mantle sitting proud of the
+       bare arms — there is no sleeve form in this file at all. HEM = a scalloped tunic hem at
+       the thigh over separate leg forms, not a continuous suit.
+       Differs from `caped-hero` on shoulder (sleeveless mantle vs sleeved bodysuit) and hem;
+       from `astronaut` on shoulder and volume;
+       from `web-runner` on shoulder and hem.
+       No emblem of any kind, and the palette is sage-and-amber, deliberately not red-and-blue.
+       The banding across the tunic is armour plating, not a chest mark. -->
   <defs>
-    <linearGradient id="newborn-male-costume-storm-herald__body" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-costume-storm-herald__tunic" x1="0" y1="414" x2="0" y2="530"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #86D4AD)"/>
-      <stop offset="1" stop-color="var(--c1, #45A776)"/>
+      <stop offset="1" stop-color="var(--c2, #3F7F63)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-costume-storm-herald__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #3B8979)"/>
-      <stop offset="1" stop-color="var(--c2, #306A5F)"/>
+    <linearGradient id="newborn-male-costume-storm-herald__cape" x1="0" y1="418" x2="0" y2="500"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c3, #C9924F)"/>
+      <stop offset="1" stop-color="var(--c2, #3F7F63)"/>
     </linearGradient>
   </defs>
 
-  <!-- short cape-let, drawn behind the body, staying at/below the shoulder line -->
+  <!-- short cape falling behind the tunic, drawn first so it sits behind everything -->
   <g class="sp-shadow">
-    <path d="M170 424 h60 q18 4 20 22 l6 40 q-9 8 -18 0 q-9 8 -18 0 q-9 8 -18 0 q-9 8 -18 0
-             q-9 8 -18 0 l6-40 q2-18 20-22 z"
+    <path d="M162 428 H238 C252 434 258 448 258 466 L262 500
+             C252 508 244 502 240 496 C232 506 222 504 216 496
+             C208 506 198 506 190 496 C182 506 172 506 164 496
+             C158 504 148 506 142 500 L146 466 C146 448 150 434 162 428 Z"
           fill="url(#newborn-male-costume-storm-herald__cape)"/>
   </g>
 
   <g class="sp-shadow">
-    <rect x="170" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-storm-herald__body)"/>
-    <rect x="202" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-storm-herald__body)"/>
-    <rect x="166" y="496" width="68" height="34" rx="17" fill="url(#newborn-male-costume-storm-herald__body)"/>
-    <path d="M154 442 q0-24 24-24 h44 q24 0 24 24 v58 q0 12 -12 12 h-68 q-12 0-12-12 z"
-          fill="url(#newborn-male-costume-storm-herald__body)"/>
-    <rect x="138" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-storm-herald__body)"/>
-    <rect x="242" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-storm-herald__body)"/>
+    <!-- shoulder mantle: two hard pauldron plates over otherwise bare arms -->
+    <path d="M136 434 C136 422 146 416 158 418 C168 420 172 428 170 438
+             C162 444 144 444 136 434 Z"
+          fill="url(#newborn-male-costume-storm-herald__tunic)"/>
+    <path d="M264 434 C264 422 254 416 242 418 C232 420 228 428 230 438
+             C238 444 256 444 264 434 Z"
+          fill="url(#newborn-male-costume-storm-herald__tunic)"/>
+    <!-- sleeveless tunic with a scalloped plate hem -->
+    <path d="M162 440 C162 426 174 418 186 418 H214 C226 418 238 426 238 440
+             V498 L234 522 C228 528 220 526 216 520 C210 528 202 528 196 520
+             C190 526 182 528 176 522 L166 498 Z"
+          fill="url(#newborn-male-costume-storm-herald__tunic)"/>
+    <!-- separate legs below the tunic hem -->
+    <rect x="170" y="516" width="28" height="48" rx="14" fill="url(#newborn-male-costume-storm-herald__tunic)"/>
+    <rect x="202" y="516" width="28" height="48" rx="14" fill="url(#newborn-male-costume-storm-herald__tunic)"/>
   </g>
 
   <g class="sp-shadow">
-    <rect x="170" y="550" width="30" height="20" rx="10" fill="var(--c2, #306A5F)"/>
-    <rect x="200" y="550" width="30" height="20" rx="10" fill="var(--c2, #306A5F)"/>
+    <rect x="170" y="550" width="30" height="20" rx="10" fill="var(--c2, #3F7F63)"/>
+    <rect x="200" y="550" width="30" height="20" rx="10" fill="var(--c2, #3F7F63)"/>
   </g>
 
-  <!-- abstract stacked-chevron gust mark, not an insignia -->
-  <path d="M182 462 L200 452 L218 462 M182 473 L200 463 L218 473 M182 484 L200 474 L218 484"
-        fill="none" stroke="var(--c3, #D29F65)" stroke-width="4" stroke-opacity="0.95"
-        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- horizontal armour banding across the tunic: panel blocking, not an insignia -->
+  <path d="M164 452 C182 446 218 446 236 452" stroke="var(--c3, #C9924F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 470 C182 464 218 464 236 470" stroke="var(--c3, #C9924F)" stroke-width="6"
+        fill="none" stroke-linecap="round" stroke-opacity="0.75"/>
 
-  <!-- small collar, well below the shoulder line -->
-  <path d="M180 420 q20 10 40 0 q-4 10 -20 10 q-16 0-20-10 z" fill="var(--c1, #45A776)"/>
+  <!-- wide belt with a plain rectangular clasp -->
+  <rect x="160" y="486" width="80" height="16" rx="8" fill="var(--c3, #C9924F)"/>
+  <rect x="190" y="484" width="20" height="20" rx="5" fill="var(--c2, #3F7F63)"/>
 
-  <path d="M164 438 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <!-- mantle rivets -->
+  <circle cx="150" cy="432" r="3.4" fill="var(--c3, #C9924F)"/>
+  <circle cx="250" cy="432" r="3.4" fill="var(--c3, #C9924F)"/>
+
+  <!-- raised collar, well below the shoulder line -->
+  <path d="M178 422 C186 434 214 434 222 422" stroke="var(--c2, #3F7F63)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 438 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

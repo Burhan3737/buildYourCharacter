@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knit Leggings" data-family="knit-leggings" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: LEG WIDTH = relaxed soft knit that stands away from the leg (not the
+       skin-close tube `leggings` draws), HEM TREATMENT = gathered scrunch at the ankle rather
+       than a plain cut edge. Also: no waistband at all — the top is a soft rolled-over edge.
+       Differs from `leggings` on leg width and hem; from `joggers` on rise and leg width. -->
+  <defs>
+    <linearGradient id="newborn-male-bottom-knit-leggings__roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A0C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A67CA2)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-knit-leggings__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A0C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A67CA2)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-knit-leggings__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A0C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A67CA2)"/>
+    </linearGradient>
+    <pattern id="newborn-male-bottom-knit-leggings__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4" height="12" fill="var(--c3, #E8D3E6)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="newborn-male-bottom-knit-leggings__clip">
+      <path d="M162 486 C162 481 168 478 178 478 H222 C232 478 238 481 238 486
+               V500 H162 Z"/>
+      <path d="M164 498 H200 V528 C200 540 196 548 189 552 C182 556 173 556 169 552
+               C164 548 162 540 163 528 Z"/>
+      <path d="M236 498 H200 V528 C200 540 204 548 211 552 C218 556 227 556 231 552
+               C236 548 238 540 237 528 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft rolled-over top edge instead of a waistband -->
+    <path d="M162 486 C162 481 168 478 178 478 H222 C232 478 238 481 238 486
+             V500 H162 Z"
+          fill="url(#newborn-male-bottom-knit-leggings__roll)"/>
+    <!-- relaxed knit legs, footless, bunching into a gathered ankle -->
+    <path d="M164 498 H200 V528 C200 540 196 548 189 552 C182 556 173 556 169 552
+             C164 548 162 540 163 528 Z"
+          fill="url(#newborn-male-bottom-knit-leggings__legL)"/>
+    <path d="M236 498 H200 V528 C200 540 204 548 211 552 C218 556 227 556 231 552
+             C236 548 238 540 237 528 Z"
+          fill="url(#newborn-male-bottom-knit-leggings__legR)"/>
+    <!-- vertical knit rib, clipped to the whole garment -->
+    <g clip-path="url(#newborn-male-bottom-knit-leggings__clip)">
+      <rect x="160" y="476" width="80" height="82" fill="url(#newborn-male-bottom-knit-leggings__rib)"/>
+    </g>
+  </g>
+
+  <!-- the roll at the top, drawn as its own band -->
+  <path d="M162 486 C176 480 224 480 238 486" stroke="var(--c3, #E8D3E6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gathered scrunch rings at each ankle -->
+  <path d="M164 534 q17 6 34 0 M165 542 q16 6 32 0"
+        stroke="var(--c3, #E8D3E6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M236 534 q-17 6 -34 0 M235 542 q-16 6 -32 0"
+        stroke="var(--c3, #E8D3E6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M172 494 q28 6 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

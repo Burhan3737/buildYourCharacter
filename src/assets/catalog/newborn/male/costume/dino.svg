@@ -1,40 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dino" data-family="dino" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes: OUTLINE = the tail and the dorsal crest are major forms, so the garment
+       has appendages nothing else in the slot has. VOLUME = a soft rounded belly that swells
+       forward, not a padded cylinder.
+       Differs from `astronaut` on outline (tail and crest) and volume;
+       from `web-runner` on outline and volume;
+       from `caped-hero` on outline (tail vs cape, which hang on opposite sides) and volume.
+       Generic soft creature suit: no markings, no named species. -->
   <defs>
-    <linearGradient id="newborn-male-costume-dino__body" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-costume-dino__body" x1="0" y1="410" x2="0" y2="570"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c1, #57A996)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8D7C)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-costume-dino__crest" x1="0" y1="428" x2="0" y2="540"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8D7C)"/>
     </linearGradient>
   </defs>
 
+  <!-- tail and crest, drawn behind the body so they read as attached to the back -->
   <g class="sp-shadow">
-    <rect x="170" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-dino__body)"/>
-    <rect x="202" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-dino__body)"/>
-    <rect x="166" y="496" width="68" height="34" rx="17" fill="url(#newborn-male-costume-dino__body)"/>
-    <path d="M154 442 q0-24 24-24 h44 q24 0 24 24 v58 q0 12 -12 12 h-68 q-12 0-12-12 z"
+    <path d="M244 500 C270 494 292 504 300 524 C306 540 300 556 288 560
+             C278 563 268 558 268 549 C268 542 274 537 280 539
+             C282 531 274 524 262 521 C254 519 248 518 244 518 Z"
           fill="url(#newborn-male-costume-dino__body)"/>
-    <rect x="138" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-dino__body)"/>
-    <rect x="242" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-dino__body)"/>
+    <path d="M246 438 C254 428 264 432 264 442 C273 434 284 441 282 452
+             C291 447 298 456 294 466 C302 463 307 472 302 481 L248 490 Z"
+          fill="url(#newborn-male-costume-dino__crest)"/>
   </g>
 
   <g class="sp-shadow">
-    <rect x="170" y="550" width="30" height="20" rx="10" fill="var(--c1, #57A996)"/>
-    <rect x="200" y="550" width="30" height="20" rx="10" fill="var(--c1, #57A996)"/>
+    <!-- short soft arms -->
+    <rect x="136" y="414" width="22" height="84" rx="11" fill="url(#newborn-male-costume-dino__body)"/>
+    <rect x="242" y="414" width="22" height="84" rx="11" fill="url(#newborn-male-costume-dino__body)"/>
+    <!-- rounded body that swells at the belly rather than running straight down -->
+    <path d="M154 448 C154 428 168 418 186 418 H214 C232 418 246 428 246 448
+             C250 468 250 486 246 502 C242 514 230 520 214 520 H186
+             C170 520 158 514 154 502 C150 486 150 468 154 448 Z"
+          fill="url(#newborn-male-costume-dino__body)"/>
+    <rect x="164" y="496" width="72" height="36" rx="18" fill="url(#newborn-male-costume-dino__body)"/>
+    <rect x="166" y="514" width="32" height="52" rx="16" fill="url(#newborn-male-costume-dino__body)"/>
+    <rect x="202" y="514" width="32" height="52" rx="16" fill="url(#newborn-male-costume-dino__body)"/>
   </g>
 
-  <!-- soft belly patch -->
-  <path d="M182 440 q18-6 36 0 v56 q-18 8 -36 0 z" fill="var(--c3, #F7C873)"/>
+  <g class="sp-shadow">
+    <!-- soft padded foot paws -->
+    <rect x="166" y="550" width="34" height="20" rx="10" fill="var(--c2, #3F8D7C)"/>
+    <rect x="200" y="550" width="34" height="20" rx="10" fill="var(--c2, #3F8D7C)"/>
+  </g>
 
-  <!-- a row of small soft rounded spikes down the spine, staying safely on the torso -->
-  <path d="M196 430 q4-6 8 0 q4-6 8 0 q4-6 8 0 q-4 5 -4 8 q-4-2 -8-2 q-4 0-8 2 q-4-2 -8-2 q0-3 4-6 z"
-        fill="var(--c2, #3F8D7C)"/>
-  <path d="M188 456 q4-6 8 0 q4-6 8 0 q4-6 8 0 q-3 5 -3 8 q-3-1 -5-1 q-2 0-5 1 q-3-1 -5-1 q-3-1 -6 -7 z"
-        fill="var(--c2, #3F8D7C)"/>
+  <!-- belly panel with soft segment lines -->
+  <path d="M178 444 C190 438 210 438 222 444 C226 464 226 486 222 504
+           C210 512 190 512 178 504 C174 486 174 464 178 444 Z"
+        fill="var(--c3, #F7C873)"/>
+  <path d="M180 462 C192 458 208 458 220 462 M179 480 C191 476 209 476 221 480
+           M180 496 C192 492 208 492 220 496"
+        stroke="var(--c2, #3F8D7C)" stroke-opacity="0.35" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- small collar, well below the shoulder line -->
-  <path d="M180 420 q20 10 40 0 q-4 10 -20 10 q-16 0-20-10 z" fill="var(--c1, #57A996)"/>
+  <!-- toe claws, which is where a creature suit earns its keep -->
+  <path d="M172 556 v10 M182 558 v10 M192 556 v10"
+        stroke="var(--c3, #F7C873)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M208 556 v10 M218 558 v10 M228 556 v10"
+        stroke="var(--c3, #F7C873)" stroke-width="3" fill="none" stroke-linecap="round"/>
 
-  <path d="M164 438 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <!-- soft collar, well below the shoulder line -->
+  <path d="M176 424 C186 436 214 436 224 424" stroke="var(--c2, #3F8D7C)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 440 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

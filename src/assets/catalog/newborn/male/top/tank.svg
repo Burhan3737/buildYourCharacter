@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tank" data-family="tank" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = strap (two narrow straps standing on the shoulder points, no
+       sleeve and no armhole at all), VOLUME = fitted — the body follows the torso to the waist,
+       nips in, then skims over the hip block instead of hanging straight off the chest.
+       Differs from `tee` on shoulder and volume; from `jersey` on shoulder and neckline;
+       from `overalls-top` on closure and hem.
+       Drawn body anchors: torso x154-246 y418-504, hips x166-234 y496-530, shoulders y424. -->
   <defs>
     <linearGradient id="newborn-male-top-tank__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
@@ -11,16 +17,40 @@
       <stop offset="1" stop-color="var(--c2, #E2897C)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- thin shoulder straps instead of sleeves -->
-    <rect x="164" y="412" width="10" height="16" rx="5" fill="url(#newborn-male-top-tank__strap)"/>
-    <rect x="226" y="412" width="10" height="16" rx="5" fill="url(#newborn-male-top-tank__strap)"/>
-    <!-- sleeveless onesie-top body -->
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- narrow straps standing on the shoulder points, not sleeves -->
+    <rect x="167" y="410" width="12" height="30" rx="6" fill="url(#newborn-male-top-tank__strap)"/>
+    <rect x="221" y="410" width="12" height="30" rx="6" fill="url(#newborn-male-top-tank__strap)"/>
+    <!-- fitted body: chest edge on the torso, waist drawn in, hem skimming the hip -->
+    <path d="M154 436 C154 424 164 418 176 418
+             C184 434 216 434 224 418
+             C236 418 246 424 246 436
+             V476 C246 489 241 497 235 503
+             C231 511 229 519 229 525
+             C229 531 223 534 215 534
+             H185 C177 534 171 531 171 525
+             C171 519 169 511 165 503
+             C159 497 154 489 154 476 Z"
           fill="url(#newborn-male-top-tank__body)"/>
   </g>
-  <!-- scoop neckline -->
-  <path d="M182 420 q18 14 36 0 q-2 10 -18 10 q-16 0-18-10 z" fill="var(--c2, #E2897C)"/>
-  <path d="M166 436 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+
+  <!-- bound scoop neckline: its own band, not a stroke on the body path -->
+  <path d="M177 421 C186 439 214 439 223 421" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound strap edges, so the strap reads as finished vest binding -->
+  <path d="M173 412 v26 M227 412 v26" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- ribbed hem band round the waist-to-hip skim -->
+  <rect x="167" y="518" width="66" height="14" rx="7" fill="var(--c3, #F7C873)"/>
+  <path d="M180 519 v12 M192 519 v12 M204 519 v12 M216 519 v12"
+        stroke="var(--c2, #E2897C)" stroke-opacity="0.5" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <!-- side seams following the nipped waist -->
+  <path d="M160 452 C162 476 168 496 172 516 M240 452 C238 476 232 496 228 516"
+        stroke="var(--c2, #E2897C)" stroke-opacity="0.45" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 446 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

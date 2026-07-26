@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bodysuit" data-family="bodysuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = crotch — the body stops at a high-cut poppered gusset and there
+       is no leg at all, VOLUME = fitted, the vest skimming the torso rather than hanging.
+       Differs from `romper` on hem and volume; from `sleepsuit` on hem and sleeve length;
+       from `sleep-sack` on shoulder and hem. -->
+  <defs>
+    <linearGradient id="newborn-male-onepiece-bodysuit__body" x1="0" y1="410" x2="0" y2="538"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A44E)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-onepiece-bodysuit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A44E)"/>
+    </linearGradient>
+    <pattern id="newborn-male-onepiece-bodysuit__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="5" fill="var(--c3, #FDF0D6)" fill-opacity="0.5"/>
+      <rect x="0" y="0" width="5" height="16" fill="var(--c3, #FDF0D6)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="newborn-male-onepiece-bodysuit__clip">
+      <path d="M153 441 C153 425 165 417 181 417 H219 C235 417 247 425 247 441
+               V492 C247 502 240 512 228 516 C220 519 212 524 208 530
+               C205 535 195 535 192 530 C188 524 180 519 172 516
+               C160 512 153 502 153 492 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <rect x="135" y="411" width="26" height="44" rx="13" fill="url(#newborn-male-onepiece-bodysuit__sleeve)"/>
+    <rect x="239" y="411" width="26" height="44" rx="13" fill="url(#newborn-male-onepiece-bodysuit__sleeve)"/>
+    <!-- fitted vest narrowing into a high-cut gusset between the legs -->
+    <path d="M153 441 C153 425 165 417 181 417 H219 C235 417 247 425 247 441
+             V492 C247 502 240 512 228 516 C220 519 212 524 208 530
+             C205 535 195 535 192 530 C188 524 180 519 172 516
+             C160 512 153 502 153 492 Z"
+          fill="url(#newborn-male-onepiece-bodysuit__body)"/>
+    <g clip-path="url(#newborn-male-onepiece-bodysuit__clip)">
+      <rect x="151" y="415" width="98" height="122" fill="url(#newborn-male-onepiece-bodysuit__check)"/>
+    </g>
+  </g>
+
+  <!-- envelope shoulders: the overlapping folds that let it pull down over the head -->
+  <path d="M168 420 L200 436 L232 420" stroke="var(--c3, #FDF0D6)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 417 L200 430 L224 417" stroke="var(--c2, #D9A44E)" stroke-opacity="0.55"
+        stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- bound sleeve openings -->
+  <rect x="135" y="445" width="26" height="9" rx="4.5" fill="var(--c3, #FDF0D6)"/>
+  <rect x="239" y="445" width="26" height="9" rx="4.5" fill="var(--c3, #FDF0D6)"/>
+
+  <!-- the poppered gusset, the whole point of a bodysuit -->
+  <path d="M180 514 C188 520 194 526 197 532 C199 535 201 535 203 532
+           C206 526 212 520 220 514 L224 522 C216 528 210 534 207 540
+           C203 546 197 546 193 540 C190 534 184 528 176 522 Z"
+        fill="var(--c3, #FDF0D6)"/>
+  <circle cx="186" cy="527" r="3.2" fill="var(--c2, #D9A44E)"/>
+  <circle cx="200" cy="537" r="3.2" fill="var(--c2, #D9A44E)"/>
+  <circle cx="214" cy="527" r="3.2" fill="var(--c2, #D9A44E)"/>
+
+  <path d="M168 438 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

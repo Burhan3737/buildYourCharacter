@@ -1,53 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Web Runner Onesie" data-family="web-runner" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes: VOLUME = skin-close, the torso, hips and legs drawn as ONE continuous
+       unbroken form with no waist break anywhere. CLOSURE = a raised stand collar at the throat.
+       Differs from `astronaut` on volume (close vs inflated) and closure;
+       from `dino` on volume and outline (no crest, no tail);
+       from `caped-hero` on outline (no cape) and volume.
+       Teal and charcoal, an abstract diamond lattice, PLAIN CHEST: no web, no emblem,
+       and deliberately nothing resembling a red-and-blue signature. -->
   <defs>
-    <linearGradient id="newborn-male-costume-web-runner__body" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-costume-web-runner__body" x1="0" y1="412" x2="0" y2="570"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #4BC4BC)"/>
-      <stop offset="1" stop-color="var(--c1, #3DA8A1)"/>
+      <stop offset="1" stop-color="var(--c3, #2F8781)"/>
     </linearGradient>
     <linearGradient id="newborn-male-costume-web-runner__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c2, #4F5D6A)"/>
-      <stop offset="1" stop-color="var(--c2, #404B56)"/>
+      <stop offset="1" stop-color="var(--c2, #38424C)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-costume-web-runner__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #4F5D6A)"/>
-      <stop offset="1" stop-color="var(--c2, #404B56)"/>
-    </linearGradient>
+    <pattern id="newborn-male-costume-web-runner__lattice" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 9 L9 0 L18 9 L9 18 Z" fill="none" stroke="var(--c2, #4F5D6A)"
+            stroke-opacity="0.55" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="newborn-male-costume-web-runner__clip">
+      <path d="M154 442 C154 424 168 416 186 416 H214 C232 416 246 424 246 442
+               V498 L242 530 L240 552 C240 562 232 568 222 568 H210
+               C204 568 201 562 202 554 L204 530 L200 518 L196 530 L198 554
+               C199 562 196 568 190 568 H178 C168 568 160 562 160 552
+               L158 530 L154 498 Z"/>
+    </clipPath>
   </defs>
 
-  <!-- padded onesie body mass -->
   <g class="sp-shadow">
-    <rect x="170" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-web-runner__leg)"/>
-    <rect x="202" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-web-runner__leg)"/>
-    <rect x="166" y="496" width="68" height="34" rx="17" fill="url(#newborn-male-costume-web-runner__body)"/>
-    <path d="M154 442 q0-24 24-24 h44 q24 0 24 24 v58 q0 12 -12 12 h-68 q-12 0-12-12 z"
+    <!-- charcoal sleeves, close to the arm -->
+    <rect x="137" y="412" width="22" height="86" rx="11" fill="url(#newborn-male-costume-web-runner__sleeve)"/>
+    <rect x="241" y="412" width="22" height="86" rx="11" fill="url(#newborn-male-costume-web-runner__sleeve)"/>
+    <!-- one unbroken skin-close body from the shoulder to the closed foot -->
+    <path d="M154 442 C154 424 168 416 186 416 H214 C232 416 246 424 246 442
+             V498 L242 530 L240 552 C240 562 232 568 222 568 H210
+             C204 568 201 562 202 554 L204 530 L200 518 L196 530 L198 554
+             C199 562 196 568 190 568 H178 C168 568 160 562 160 552
+             L158 530 L154 498 Z"
           fill="url(#newborn-male-costume-web-runner__body)"/>
-    <rect x="138" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-web-runner__sleeve)"/>
-    <rect x="242" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-web-runner__sleeve)"/>
+    <!-- abstract diamond lattice, clipped to the suit -->
+    <g clip-path="url(#newborn-male-costume-web-runner__clip)">
+      <rect x="152" y="414" width="96" height="156" fill="url(#newborn-male-costume-web-runner__lattice)"/>
+    </g>
   </g>
 
-  <!-- soft baby booties covering the feet -->
-  <g class="sp-shadow">
-    <rect x="170" y="550" width="30" height="20" rx="10" fill="url(#newborn-male-costume-web-runner__leg)"/>
-    <rect x="200" y="550" width="30" height="20" rx="10" fill="url(#newborn-male-costume-web-runner__leg)"/>
-  </g>
+  <!-- charcoal side panels: panel blocking down the flank, chest left completely plain -->
+  <path d="M156 452 C154 476 154 500 158 526" stroke="var(--c2, #4F5D6A)" stroke-opacity="0.75"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M244 452 C246 476 246 500 242 526" stroke="var(--c2, #4F5D6A)" stroke-opacity="0.75"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
 
-  <!-- abstract diamond lattice: two families of straight parallel lines -->
-  <g fill="none" stroke="var(--c2, #4F5D6A)"
-     stroke-width="1.4" stroke-opacity="0.5" stroke-linecap="round">
-    <path d="M220 428 L234 442 M207 428 L234 455 M194 428 L234 468
-             M181 428 L234 481 M168 428 L234 494 M166 439 L227 500
-             M166 452 L214 500 M166 465 L201 500 M166 478 L188 500
-             M166 491 L175 500 M166 445 L183 428 M166 458 L196 428
-             M166 471 L209 428 M166 484 L222 428 M166 497 L234 429
-             M176 500 L234 442 M189 500 L234 455 M202 500 L234 468
-             M215 500 L234 481"/>
-  </g>
+  <!-- charcoal glove and boot cuffs -->
+  <rect x="137" y="486" width="22" height="12" rx="6" fill="var(--c2, #38424C)"/>
+  <rect x="241" y="486" width="22" height="12" rx="6" fill="var(--c2, #38424C)"/>
+  <path d="M162 548 C170 556 186 560 198 558" stroke="var(--c2, #38424C)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 548 C230 556 214 560 202 558" stroke="var(--c2, #38424C)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- small soft collar, stays well below the shoulder line -->
-  <path d="M180 420 q20 10 40 0 q-4 10 -20 10 q-16 0-20-10 z" fill="var(--c2, #404B56)"/>
+  <!-- raised stand collar, well below the shoulder line -->
+  <path d="M176 422 C186 434 214 434 224 422" stroke="var(--c2, #38424C)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
 
-  <path d="M164 438 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <path d="M170 438 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,30 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sundress" data-family="sundress" data-slot="onepiece"
-     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = strap — two narrow straps, no sleeve of any kind.
+       HEM = knee, on a true A-line that leaves the waist and widens continuously to the hem.
+       Also closure = closed, volume = fitted bodice over flare.
+       Differs from `party-dress` on shoulder (strap vs cap sleeve) and volume (a flat A-line
+       cone vs a gathered skirt standing off the leg);
+       from `romper` on hem and leg division; from `jumpsuit` on shoulder and hem.
+       Drawn body anchors: torso x154-246 y418-504, hips x166-234 y496-530, knee about y538. -->
   <defs>
     <linearGradient id="newborn-male-onepiece-sundress__bodice" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
       <stop offset="1" stop-color="var(--c2, #E2897C)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-onepiece-sundress__skirt" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-onepiece-sundress__skirt" x1="0" y1="488" x2="0" y2="548"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
       <stop offset="1" stop-color="var(--c2, #E2897C)"/>
     </linearGradient>
+    <pattern id="newborn-male-onepiece-sundress__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="5" cy="5" r="3" fill="var(--c3, #F7C873)" fill-opacity="0.85"/>
+      <circle cx="14" cy="13" r="2.2" fill="var(--c3, #F7C873)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="newborn-male-onepiece-sundress__clip">
+      <path d="M156 488 H244 L266 532 C268 542 260 546 248 546
+               H152 C140 546 132 542 134 532 Z"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- soft sleeveless bodice, fitted to the tiny torso -->
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- two narrow straps standing on the shoulder points -->
+    <rect x="166" y="409" width="11" height="30" rx="5.5" fill="url(#newborn-male-onepiece-sundress__bodice)"/>
+    <rect x="223" y="409" width="11" height="30" rx="5.5" fill="url(#newborn-male-onepiece-sundress__bodice)"/>
+    <!-- fitted bodice, straight from the chest to the natural waist -->
+    <path d="M154 442 C154 428 166 421 180 421 H220 C234 421 246 428 246 442 V492 H154 Z"
           fill="url(#newborn-male-onepiece-sundress__bodice)"/>
-    <!-- gently flared skirt over the hips -->
-    <path d="M156 500 h88 q6 14 2 26 q-46 12 -92 0 q-4-12 2-26 z"
+    <!-- A-line skirt: one continuous flare from the waist to a hem at the knee -->
+    <path d="M156 488 H244 L266 532 C268 542 260 546 248 546
+             H152 C140 546 132 542 134 532 Z"
           fill="url(#newborn-male-onepiece-sundress__skirt)"/>
+    <!-- scattered dot print, clipped to the skirt so the flare carries the surface -->
+    <g clip-path="url(#newborn-male-onepiece-sundress__clip)">
+      <rect x="130" y="486" width="140" height="62" fill="url(#newborn-male-onepiece-sundress__dots)"/>
+    </g>
   </g>
-  <!-- scoop neckline -->
-  <path d="M182 420 q18 14 36 0 q-2 10 -18 10 q-16 0-18-10 z" fill="var(--c2, #E2897C)"/>
-  <!-- small sash -->
-  <rect x="152" y="498" width="96" height="8" rx="4" fill="var(--c3, #F7C873)"/>
-  <path d="M166 436 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+
+  <!-- bound top edge and a waist tie marking where the bodice becomes the skirt -->
+  <path d="M158 424 h84" stroke="var(--c3, #F7C873)" stroke-width="7"
         fill="none" stroke-linecap="round"/>
-  <path d="M164 512 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+  <rect x="154" y="484" width="92" height="12" rx="6" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="490" r="4.5" fill="var(--c2, #E2897C)"/>
+  <!-- hem band -->
+  <path d="M141 540 h118" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 440 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,28 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sneakers" data-family="sneakers" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2" data-hides="">
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SOLE DEPTH = thick banded sole, drawn as a form of its own under the
+       upper, and FASTENING = a lace ladder across the instep.
+       Differs from `slippers` on sole and fastening; from `dress-shoes` on toe (rounded vs
+       tapered), sole and fastening; from `sandals` on coverage and sole. -->
   <defs>
-    <linearGradient id="newborn-male-shoes-sneakers__upper" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-shoes-sneakers__upperL" x1="0" y1="538" x2="0" y2="562"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6C7CBD)"/>
+      <stop offset="1" stop-color="var(--c2, #5D6EB2)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-shoes-sneakers__upperR" x1="0" y1="538" x2="0" y2="562"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5D6EB2)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- soft baby booties, no hard sole -->
-    <rect x="168" y="548" width="34" height="24" rx="12" fill="url(#newborn-male-shoes-sneakers__upper)"/>
-    <rect x="198" y="548" width="34" height="24" rx="12" fill="url(#newborn-male-shoes-sneakers__upper)"/>
+    <!-- low-cut uppers with a rounded toe -->
+    <path d="M164 554 C164 545 172 539 184 539 H194 C202 539 206 545 206 554 V560 H164 Z"
+          fill="url(#newborn-male-shoes-sneakers__upperL)"/>
+    <path d="M236 554 C236 545 228 539 216 539 H206 C198 539 194 545 194 554 V560 H236 Z"
+          fill="url(#newborn-male-shoes-sneakers__upperR)"/>
+    <!-- thick banded sole -->
+    <rect x="162" y="556" width="46" height="14" rx="7" fill="var(--c3, #F4F6FB)"/>
+    <rect x="192" y="556" width="46" height="14" rx="7" fill="var(--c3, #F4F6FB)"/>
   </g>
-  <!-- soft rounded sole -->
-  <rect x="167" y="564" width="36" height="8" rx="4" fill="var(--c2, #6C7CBD)"/>
-  <rect x="197" y="564" width="36" height="8" rx="4" fill="var(--c2, #6C7CBD)"/>
-  <!-- tiny lace detail -->
-  <path d="M175 555 h20" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.6"
+
+  <!-- sole midline stripe, the cheapest sneaker signal there is -->
+  <path d="M164 563 H206 M194 563 H236" stroke="var(--c2, #5D6EB2)" stroke-opacity="0.55"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- lace ladder across each instep -->
+  <path d="M172 546 h22 M173 552 h20" stroke="var(--c3, #F4F6FB)" stroke-width="2.8"
         fill="none" stroke-linecap="round"/>
-  <path d="M205 555 h20" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="2.6"
+  <path d="M206 546 h22 M207 552 h20" stroke="var(--c3, #F4F6FB)" stroke-width="2.8"
         fill="none" stroke-linecap="round"/>
-  <!-- instep highlight -->
-  <path d="M172 552 q10 4 20 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.4"
+  <path d="M183 543 v14 M217 543 v14" stroke="var(--c3, #F4F6FB)" stroke-opacity="0.65"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <path d="M170 543 q12 4 22 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
-  <path d="M202 552 q10 4 20 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.4"
+  <path d="M208 543 q12 4 22 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,22 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Slippers" data-family="slippers" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2" data-hides="">
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: SHAFT HEIGHT = a collapsed collar that folds over and slumps below the
+       ankle bone, and SOLE DEPTH = none at all, the plush runs straight round the foot.
+       Differs from `booties` on shaft height (slumped vs drawn up) and hem treatment (folded
+       cuff vs gathered); from `sneakers` on sole and fastening; from `dress-shoes` on toe
+       and sole. -->
   <defs>
-    <linearGradient id="newborn-male-shoes-slippers__upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E2897C)"/>
+    <linearGradient id="newborn-male-shoes-slippers__plushL" x1="0" y1="536" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #C6B5E3)"/>
+      <stop offset="1" stop-color="var(--c2, #9C88C2)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-shoes-slippers__plushR" x1="0" y1="536" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #C6B5E3)"/>
+      <stop offset="1" stop-color="var(--c2, #9C88C2)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- the softest, plushest option, barely any sole definition -->
-    <rect x="168" y="552" width="34" height="20" rx="12" fill="url(#newborn-male-shoes-slippers__upper)"/>
-    <rect x="198" y="552" width="34" height="20" rx="12" fill="url(#newborn-male-shoes-slippers__upper)"/>
+    <!-- one plush bulb per foot: no sole edge, no topline, just a soft mass -->
+    <path d="M160 556 C160 545 170 538 186 538 C199 538 208 546 208 557
+             C208 566 199 570 186 570 C170 570 160 566 160 556 Z"
+          fill="url(#newborn-male-shoes-slippers__plushL)"/>
+    <path d="M240 556 C240 545 230 538 214 538 C201 538 192 546 192 557
+             C192 566 201 570 214 570 C230 570 240 566 240 556 Z"
+          fill="url(#newborn-male-shoes-slippers__plushR)"/>
   </g>
-  <!-- tiny soft tassel accents -->
-  <circle cx="185" cy="559" r="4" fill="var(--c2, #E2897C)"/>
-  <circle cx="215" cy="559" r="4" fill="var(--c2, #E2897C)"/>
-  <path d="M172 555 q10 3 20 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.2"
+
+  <!-- the collapsed collar: a fleece cuff folded outward and slumping over the opening -->
+  <path d="M164 546 C172 538 200 538 206 546 C200 552 172 552 164 546 Z"
+        fill="var(--c3, #F0E9FA)"/>
+  <path d="M236 546 C228 538 200 538 194 546 C200 552 228 552 236 546 Z"
+        fill="var(--c3, #F0E9FA)"/>
+  <path d="M170 545 q5 4 4 6 M182 543 q4 4 3 7 M194 545 q4 4 3 6"
+        stroke="var(--c2, #9C88C2)" stroke-opacity="0.4" stroke-width="1.8"
         fill="none" stroke-linecap="round"/>
-  <path d="M202 555 q10 3 20 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.2"
+  <path d="M230 545 q-5 4 -4 6 M218 543 q-4 4 -3 7 M206 545 q-4 4 -3 6"
+        stroke="var(--c2, #9C88C2)" stroke-opacity="0.4" stroke-width="1.8"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 558 q14 5 28 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 558 q14 5 28 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.6"
         fill="none" stroke-linecap="round"/>
 </svg>

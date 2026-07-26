@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Laugh" data-family="open-laugh" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-male-mouth-open-laugh__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.24"/>
+    </linearGradient>
+    <clipPath id="newborn-male-mouth-open-laugh__inside">
+      <path d="M187 369 C193 366 207 366 213 369 C214 379 208 386 200 386
+               C192 386 186 379 187 369 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide open laughing mouth, centred on x200 at the mouth line y370 -->
+  <g class="sp-shadow">
+    <path d="M180 364 C188 358 212 358 220 364 C224 372 220 386 210 391
+             C204 394 196 394 190 391 C180 386 176 372 180 364 Z"
+          fill="var(--lip1, #D9695F)"/>
+    <path d="M180 364 C188 358 212 358 220 364 C224 372 220 386 210 391
+             C204 394 196 394 190 391 C180 386 176 372 180 364 Z"
+          fill="url(#newborn-male-mouth-open-laugh__vol)"/>
+  </g>
+
+  <!-- dark aperture, then a soft tongue sitting low inside it -->
+  <path d="M187 369 C193 366 207 366 213 369 C214 379 208 386 200 386
+           C192 386 186 379 187 369 Z" fill="#3B2A22" fill-opacity="0.85"/>
+  <g clip-path="url(#newborn-male-mouth-open-laugh__inside)">
+    <ellipse cx="200" cy="386" rx="11" ry="8" fill="var(--lip1, #D9695F)"/>
+    <ellipse cx="200" cy="386" rx="11" ry="8" fill="#FFFFFF" fill-opacity="0.28"/>
+  </g>
+
+  <!-- upper-lip highlight -->
+  <path d="M190 363 Q200 360 210 363" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

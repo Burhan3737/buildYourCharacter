@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepsuit" data-family="sleepsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = closed feet — the body, legs and feet are ONE continuous form
+       running to the ground line at y570, with no ankle opening anywhere. CLOSURE = a popper
+       line running diagonally from the throat down the whole of one leg.
+       Differs from `jumpsuit` on hem (footed vs open ankle) and closure (diagonal popper run
+       vs centre placket); from `romper` on hem and sleeve length. -->
+  <defs>
+    <linearGradient id="newborn-male-onepiece-sleepsuit__body" x1="0" y1="410" x2="0" y2="572"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #B7D8E8)"/>
+      <stop offset="1" stop-color="var(--c2, #8AB3CA)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-onepiece-sleepsuit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7D8E8)"/>
+      <stop offset="1" stop-color="var(--c2, #8AB3CA)"/>
+    </linearGradient>
+    <pattern id="newborn-male-onepiece-sleepsuit__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 L13 9 L18 10 L14 13.5 L15 19 L11 16 L7 19 L8 13.5 L4 10 L9 9 Z"
+            fill="var(--c3, #F7E9C3)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="newborn-male-onepiece-sleepsuit__clip">
+      <path d="M150 442 C150 424 164 414 182 414 H218 C236 414 250 424 250 442
+               V498 L246 526 L244 552 C244 564 236 570 224 570 H210
+               C203 570 200 564 201 556 L205 526 L200 512 L195 526 L199 556
+               C200 564 197 570 190 570 H176 C164 570 156 564 156 552
+               L154 526 L150 498 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeves with cuffed wrists -->
+    <rect x="133" y="410" width="28" height="90" rx="14" fill="url(#newborn-male-onepiece-sleepsuit__sleeve)"/>
+    <rect x="239" y="410" width="28" height="90" rx="14" fill="url(#newborn-male-onepiece-sleepsuit__sleeve)"/>
+    <!-- one continuous body, legs and closed feet -->
+    <path d="M150 442 C150 424 164 414 182 414 H218 C236 414 250 424 250 442
+             V498 L246 526 L244 552 C244 564 236 570 224 570 H210
+             C203 570 200 564 201 556 L205 526 L200 512 L195 526 L199 556
+             C200 564 197 570 190 570 H176 C164 570 156 564 156 552
+             L154 526 L150 498 Z"
+          fill="url(#newborn-male-onepiece-sleepsuit__body)"/>
+    <!-- small star scatter, clipped to the suit -->
+    <g clip-path="url(#newborn-male-onepiece-sleepsuit__clip)">
+      <rect x="148" y="412" width="104" height="160" fill="url(#newborn-male-onepiece-sleepsuit__stars)"/>
+    </g>
+  </g>
+
+  <!-- the popper run: throat, across the chest, then all the way down the left leg -->
+  <path d="M196 424 C186 434 174 448 168 468 C163 486 162 508 162 528 L164 556"
+        stroke="var(--c3, #F7E9C3)" stroke-width="10" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="193" cy="427" r="3.2" fill="var(--c2, #8AB3CA)"/>
+  <circle cx="180" cy="443" r="3.2" fill="var(--c2, #8AB3CA)"/>
+  <circle cx="170" cy="463" r="3.2" fill="var(--c2, #8AB3CA)"/>
+  <circle cx="164" cy="486" r="3.2" fill="var(--c2, #8AB3CA)"/>
+  <circle cx="162" cy="510" r="3.2" fill="var(--c2, #8AB3CA)"/>
+  <circle cx="163" cy="534" r="3.2" fill="var(--c2, #8AB3CA)"/>
+
+  <!-- ribbed wrist cuffs -->
+  <rect x="133" y="486" width="28" height="14" rx="7" fill="var(--c3, #F7E9C3)"/>
+  <rect x="239" y="486" width="28" height="14" rx="7" fill="var(--c3, #F7E9C3)"/>
+  <path d="M139 489 v8 M147 489 v8 M155 489 v8 M245 489 v8 M253 489 v8 M261 489 v8"
+        stroke="var(--c2, #8AB3CA)" stroke-opacity="0.55" stroke-width="1.8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft envelope neckline -->
+  <path d="M178 418 C186 428 214 428 222 418" stroke="var(--c3, #F7E9C3)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- non-slip sole dots on each closed foot -->
+  <circle cx="176" cy="562" r="2.6" fill="var(--c3, #F7E9C3)"/>
+  <circle cx="186" cy="565" r="2.6" fill="var(--c3, #F7E9C3)"/>
+  <circle cx="214" cy="565" r="2.6" fill="var(--c3, #F7E9C3)"/>
+  <circle cx="224" cy="562" r="2.6" fill="var(--c3, #F7E9C3)"/>
+
+  <path d="M170 438 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

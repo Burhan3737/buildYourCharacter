@@ -1,41 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Astronaut" data-family="astronaut" data-slot="costume"
-     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+     data-layer="costume" data-colors="c1,c3,c2" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes: VOLUME = inflated — every limb and the torso are padded well outside the
+       body they cover, so the outline bulges rather than follows. SHOULDER = a sealed suit with
+       a raised neck ring, no armhole break at all.
+       Differs from `web-runner` on volume (bulky vs skin-close) and shoulder;
+       from `dino` on volume and the absence of any crest or tail;
+       from `storm-herald` on shoulder (sleeved vs sleeveless) and volume.
+       Generic pressure suit: an original round mission patch, no agency mark, no helmet. -->
   <defs>
-    <linearGradient id="newborn-male-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-costume-astronaut__suit" x1="0" y1="408" x2="0" y2="570"
+                    gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--c1, #F4F6FB)"/>
-      <stop offset="1" stop-color="var(--c1, #DCE1EE)"/>
+      <stop offset="1" stop-color="var(--c2, #C3CAD9)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="170" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-astronaut__body)"/>
-    <rect x="202" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-astronaut__body)"/>
-    <rect x="166" y="496" width="68" height="34" rx="17" fill="url(#newborn-male-costume-astronaut__body)"/>
-    <path d="M154 442 q0-24 24-24 h44 q24 0 24 24 v58 q0 12 -12 12 h-68 q-12 0-12-12 z"
-          fill="url(#newborn-male-costume-astronaut__body)"/>
-    <rect x="138" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-astronaut__body)"/>
-    <rect x="242" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-astronaut__body)"/>
+    <!-- padded arms, set wide of the body -->
+    <rect x="130" y="414" width="28" height="88" rx="14" fill="url(#newborn-male-costume-astronaut__suit)"/>
+    <rect x="242" y="414" width="28" height="88" rx="14" fill="url(#newborn-male-costume-astronaut__suit)"/>
+    <!-- inflated torso, shoulders rounded outward -->
+    <path d="M144 448 C144 424 160 416 180 416 H220 C240 416 256 424 256 448
+             V500 C256 514 246 522 230 522 H170 C154 522 144 514 144 500 Z"
+          fill="url(#newborn-male-costume-astronaut__suit)"/>
+    <!-- padded hips and legs -->
+    <rect x="158" y="496" width="84" height="40" rx="20" fill="url(#newborn-male-costume-astronaut__suit)"/>
+    <rect x="164" y="518" width="34" height="48" rx="17" fill="url(#newborn-male-costume-astronaut__suit)"/>
+    <rect x="202" y="518" width="34" height="48" rx="17" fill="url(#newborn-male-costume-astronaut__suit)"/>
   </g>
 
   <g class="sp-shadow">
-    <rect x="170" y="550" width="30" height="20" rx="10" fill="var(--c2, #6B7280)"/>
-    <rect x="200" y="550" width="30" height="20" rx="10" fill="var(--c2, #6B7280)"/>
+    <rect x="164" y="548" width="36" height="22" rx="11" fill="var(--c3, #6B7280)"/>
+    <rect x="200" y="548" width="36" height="22" rx="11" fill="var(--c3, #6B7280)"/>
   </g>
 
-  <!-- soft utility belt -->
-  <rect x="166" y="494" width="68" height="12" rx="6" fill="var(--c2, #6B7280)"/>
-  <rect x="192" y="492" width="16" height="16" rx="4" fill="var(--c2, #6B7280)"/>
+  <!-- soft neck ring: the seal at the top of a pressure suit, well below the face -->
+  <path d="M172 424 C180 436 220 436 228 424" stroke="var(--c3, #6B7280)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- original chest patch/badge, not a real agency logo -->
-  <circle cx="200" cy="460" r="16" fill="var(--c3, #F4A79B)"/>
-  <circle cx="200" cy="460" r="9" fill="var(--c1, #DCE1EE)"/>
+  <!-- ribbed joint bands at each elbow and knee, the structural tell of a sealed suit -->
+  <rect x="130" y="452" width="28" height="12" rx="6" fill="var(--c3, #6B7280)"/>
+  <rect x="242" y="452" width="28" height="12" rx="6" fill="var(--c3, #6B7280)"/>
+  <rect x="130" y="488" width="28" height="14" rx="7" fill="var(--c3, #6B7280)"/>
+  <rect x="242" y="488" width="28" height="14" rx="7" fill="var(--c3, #6B7280)"/>
+  <rect x="164" y="534" width="34" height="12" rx="6" fill="var(--c3, #6B7280)"/>
+  <rect x="202" y="534" width="34" height="12" rx="6" fill="var(--c3, #6B7280)"/>
+  <path d="M134 455 v6 M142 455 v6 M150 455 v6 M246 455 v6 M254 455 v6 M262 455 v6"
+        stroke="var(--c2, #C3CAD9)" stroke-opacity="0.8" stroke-width="1.8"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- ribbed cuffs and collar, all well below the shoulder line -->
-  <rect x="138" y="486" width="20" height="12" rx="6" fill="var(--c2, #6B7280)"/>
-  <rect x="242" y="486" width="20" height="12" rx="6" fill="var(--c2, #6B7280)"/>
-  <path d="M180 420 q20 10 40 0 q-4 10 -20 10 q-16 0-20-10 z" fill="var(--c2, #6B7280)"/>
+  <!-- chest control panel: buttons and a readout bar, no lettering -->
+  <rect x="176" y="450" width="48" height="34" rx="8" fill="var(--c3, #6B7280)"/>
+  <rect x="182" y="456" width="36" height="8" rx="4" fill="var(--c1, #F4F6FB)" fill-opacity="0.8"/>
+  <circle cx="188" cy="475" r="4" fill="var(--c1, #F4F6FB)"/>
+  <circle cx="200" cy="475" r="4" fill="var(--c1, #F4F6FB)" fill-opacity="0.6"/>
+  <circle cx="212" cy="475" r="4" fill="var(--c1, #F4F6FB)" fill-opacity="0.35"/>
 
-  <path d="M164 438 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+  <!-- utility belt with an original round mission patch on the hip -->
+  <rect x="158" y="496" width="84" height="14" rx="7" fill="var(--c3, #6B7280)"/>
+  <circle cx="200" cy="503" r="9" fill="var(--c1, #F4F6FB)"/>
+  <circle cx="200" cy="503" r="4.5" fill="var(--c3, #6B7280)"/>
+
+  <path d="M162 438 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,29 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jersey" data-family="jersey" data-slot="top"
-     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+     data-layer="top" data-colors="c3,c1,c2" data-hides="">
+  <!-- Silhouette axes: SHOULDER = raglan (the sleeve panel is seamed neck-to-underarm and is
+       cut as one piece with the shoulder, so there is no set-in armhole), CLOSURE/neckline =
+       V-neck bind rather than a crew. Also volume = boxy, hem = hip.
+       Differs from `tee` on shoulder and neckline; from `hoodie` on shoulder and hem.
+       Drawn body anchors: torso x154-246 y418-504, arms x138-158 / x242-262 y412-496. The
+       raglan panels start at y409 and run x134-166 / x234-266 so they cover the arm caps with
+       the 2-4px overlap the contract asks for; the body runs x152-248 for the same reason. -->
   <defs>
     <linearGradient id="newborn-male-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="0" stop-color="var(--c1, #F4F6FB)"/>
+      <stop offset="1" stop-color="var(--c2, #D3D9E8)"/>
     </linearGradient>
-    <linearGradient id="newborn-male-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+    <linearGradient id="newborn-male-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E2564C)"/>
+      <stop offset="1" stop-color="var(--c3, #B93F37)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <rect x="136" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-top-jersey__sleeve)"/>
-    <rect x="240" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-top-jersey__sleeve)"/>
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- raglan sleeve panels: each runs from the neck edge out over the shoulder cap and down
+         the arm, so no bare shoulder is left between the neckline and the sleeve -->
+    <path d="M192 414 L164 409 C146 413 134 430 134 452 V474
+             C134 483 141 489 150 489 C159 489 166 483 166 474 V456
+             C166 445 174 437 188 431 Z"
+          fill="url(#newborn-male-top-jersey__raglan)"/>
+    <path d="M208 414 L236 409 C254 413 266 430 266 452 V474
+             C266 483 259 489 250 489 C241 489 234 483 234 474 V456
+             C234 445 226 437 212 431 Z"
+          fill="url(#newborn-male-top-jersey__raglan)"/>
+    <!-- straight boxy body, cut away at the neck into a V -->
+    <path d="M152 445 C152 427 165 417 180 417 L200 449 L220 417
+             C235 417 248 427 248 445 V504 C248 514 242 519 232 519
+             H168 C158 519 152 514 152 504 Z"
           fill="url(#newborn-male-top-jersey__body)"/>
   </g>
-  <!-- sporty side stripe -->
-  <rect x="152" y="418" width="8" height="94" fill="var(--c3, #F7C873)"/>
-  <rect x="240" y="418" width="8" height="94" fill="var(--c3, #F7C873)"/>
-  <!-- soft chest number badge -->
-  <circle cx="200" cy="462" r="12" fill="var(--c3, #F7C873)" opacity="0.9"/>
-  <!-- small crew-neck collar -->
-  <path d="M180 420 q20 12 40 0 q-4 12 -20 12 q-16 0-20-12 z" fill="var(--c2, #6B7FD0)"/>
-  <path d="M164 436 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+
+  <!-- V-neck bind, drawn as its own band following the opening -->
+  <path d="M180 419 L200 453 L220 419" stroke="var(--c3, #E2564C)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- contrast sleeve cuffs -->
+  <rect x="134" y="476" width="32" height="13" rx="6.5" fill="var(--c2, #D3D9E8)"/>
+  <rect x="234" y="476" width="32" height="13" rx="6.5" fill="var(--c2, #D3D9E8)"/>
+
+  <!-- raglan seam lines, so the panel reads as a seam and not a paint job -->
+  <path d="M192 416 C175 424 167 438 165 456" stroke="var(--c2, #D3D9E8)"
+        stroke-opacity="0.7" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M208 416 C225 424 233 438 235 456" stroke="var(--c2, #D3D9E8)"
+        stroke-opacity="0.7" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- side panel bands and a plain hem stripe: sporty, and no lettering anywhere -->
+  <rect x="152" y="501" width="96" height="7" rx="3.5" fill="var(--c3, #E2564C)"/>
+  <path d="M168 462 v42 M232 462 v42" stroke="var(--c3, #E2564C)" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M170 445 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

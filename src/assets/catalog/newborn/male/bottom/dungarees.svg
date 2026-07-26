@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dungarees" data-family="dungarees" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: RISE = bib — the garment carries on above the waist into a square chest
+       panel held by two over-shoulder straps, the only bottom in this slot that does.
+       LEG LENGTH = full, to the ankle. Also leg width = straight, hem = plain.
+       Differs from `jeans` on rise and leg length; from `shorts` on rise and leg length;
+       from `pleated` on rise and leg division.
+       Drawn body anchors: torso x154-246 y418-504, hips x166-234 y496-530,
+       legs x170-198 / x202-230 y518-558, shoulders y424, feet y550-570. -->
   <defs>
-    <linearGradient id="newborn-male-bottom-dungarees__waist" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="newborn-male-bottom-dungarees__bib" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
       <stop offset="1" stop-color="var(--c2, #6272BE)"/>
     </linearGradient>
@@ -10,20 +17,40 @@
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
       <stop offset="1" stop-color="var(--c2, #6272BE)"/>
     </linearGradient>
+    <linearGradient id="newborn-male-bottom-dungarees__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6272BE)"/>
+    </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- two thin straps, drawn thin and soft since the top garment layers over these -->
-    <rect x="168" y="424" width="9" height="72" rx="4.5" fill="url(#newborn-male-bottom-dungarees__strap)"/>
-    <rect x="223" y="424" width="9" height="72" rx="4.5" fill="url(#newborn-male-bottom-dungarees__strap)"/>
-    <!-- bib-front dungaree-shorts -->
-    <path d="M164 494 q0-4 4-4 h64 q4 0 4 4 v28 q0 4 -4 4 h-18 q-4 0-4-4 v-10 h-20 v10 q0 4 -4 4 h-18 q-4 0-4-4 z"
-          fill="url(#newborn-male-bottom-dungarees__waist)"/>
+    <!-- two straps rising over the shoulder points from the top of the bib -->
+    <rect x="167" y="409" width="13" height="34" rx="6.5" fill="url(#newborn-male-bottom-dungarees__strap)"/>
+    <rect x="220" y="409" width="13" height="34" rx="6.5" fill="url(#newborn-male-bottom-dungarees__strap)"/>
+    <!-- the bib itself: a square chest panel carried well above the waist -->
+    <path d="M166 438 H234 C242 438 246 444 246 452
+             V502 C246 518 238 526 226 526 H174
+             C162 526 154 518 154 502 V452 C154 444 158 438 166 438 Z"
+          fill="url(#newborn-male-bottom-dungarees__bib)"/>
+    <!-- full-length straight legs, hem at the ankle -->
+    <rect x="166" y="514" width="34" height="46" rx="13" fill="url(#newborn-male-bottom-dungarees__leg)"/>
+    <rect x="200" y="514" width="34" height="46" rx="13" fill="url(#newborn-male-bottom-dungarees__leg)"/>
   </g>
-  <!-- metal button dots where straps meet the bib -->
-  <circle cx="172" cy="498" r="3.4" fill="var(--c3, #F7C873)"/>
-  <circle cx="228" cy="498" r="3.4" fill="var(--c3, #F7C873)"/>
-  <!-- waistband -->
-  <rect x="164" y="494" width="72" height="10" rx="5" fill="var(--c2, #6272BE)"/>
-  <path d="M172 504 q34 6 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+
+  <!-- strap buckles where the straps meet the bib -->
+  <rect x="163" y="436" width="21" height="11" rx="4" fill="var(--c3, #F7C873)"/>
+  <rect x="216" y="436" width="21" height="11" rx="4" fill="var(--c3, #F7C873)"/>
+  <!-- bib patch pocket -->
+  <path d="M180 456 h40 v26 q0 5 -5 5 h-30 q-5 0-5-5 z" fill="var(--c2, #6272BE)"/>
+  <path d="M180 465 h40" stroke="var(--c3, #F7C873)" stroke-width="2" stroke-dasharray="4 3"
+        fill="none" stroke-linecap="round"/>
+  <!-- side topstitching and the centre rise seam -->
+  <path d="M160 456 v62 M240 456 v62 M200 494 v58" stroke="var(--c3, #F7C873)"
+        stroke-width="2" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <!-- plain leg hems -->
+  <rect x="166" y="546" width="34" height="10" rx="5" fill="var(--c2, #6272BE)"/>
+  <rect x="200" y="546" width="34" height="10" rx="5" fill="var(--c2, #6272BE)"/>
+
+  <path d="M172 450 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4.5"
         fill="none" stroke-linecap="round"/>
 </svg>

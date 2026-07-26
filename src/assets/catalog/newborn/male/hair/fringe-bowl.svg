@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fringe Bowl" data-family="fringe-bowl" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282.
+       Axes: outline = one unbroken dome with a level hem, parting = none.
+       The hem is a single straight line at y318, just clear of the brow line at y322, and it
+       runs on round the sides in the back group so the bowl is even all the way round. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="newborn-male-hair-fringe-bowl__backgrad" x1="0" y1="270" x2="0" y2="336"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #2E2A44)"/>
+        <stop offset="1" stop-color="var(--hair2, #1D1A2C)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the hem carrying on behind the ears, level with the front so it reads all-round -->
+      <path d="M112 282 C104 296 100 312 102 330 L124 330 C120 314 120 298 124 286 Z"
+            fill="url(#newborn-male-hair-fringe-bowl__backgrad)"/>
+      <path d="M288 282 C296 296 300 312 298 330 L276 330 C280 314 280 298 276 286 Z"
+            fill="url(#newborn-male-hair-fringe-bowl__backgrad)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-fringe-bowl__frontgrad" x1="0" y1="242" x2="0" y2="322"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #2E2A44)"/>
+        <stop offset="1" stop-color="var(--hair2, #1D1A2C)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- one dome, hem cut dead level across the brow -->
+      <path d="M118 312 C114 272 152 244 200 244 C248 244 286 272 282 312
+               L282 318 L118 318 Z"
+            fill="url(#newborn-male-hair-fringe-bowl__frontgrad)"/>
+    </g>
+    <!-- the fringe is heavy, so the only surface it needs is a weight shadow above the hem -->
+    <path d="M124 306 C158 300 242 300 276 306" stroke="var(--hair2, #1D1A2C)"
+          stroke-opacity="0.55" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- a few cut lines so the blunt hem reads as scissored, not stamped -->
+    <path d="M146 306 v11 M170 305 v13 M200 304 v14 M230 305 v13 M254 306 v11"
+          stroke="var(--hair2, #1D1A2C)" stroke-opacity="0.45" stroke-width="2"
+          fill="none" stroke-linecap="round"/>
+    <path d="M152 264 q48 -16 96 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

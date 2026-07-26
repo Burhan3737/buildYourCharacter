@@ -1,24 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dress Shoes" data-family="dress-shoes" data-slot="shoes"
-     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: TOE SHAPE = tapered, drawing to a narrow point at the front rather than
+       a round bulb, and FASTENING = none, it is a slip-on. Also sole depth = thin.
+       Differs from `sneakers` on toe, fastening and sole; from `slippers` on toe and sole;
+       from `booties` on toe, shaft height and sole. -->
   <defs>
-    <linearGradient id="newborn-male-shoes-dress-shoes__upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
-      <stop offset="1" stop-color="var(--c2, #2C1F19)"/>
+    <linearGradient id="newborn-male-shoes-dress-shoes__upperL" x1="0" y1="540" x2="0" y2="566"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #55407E)"/>
+      <stop offset="1" stop-color="var(--c2, #392A57)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-shoes-dress-shoes__upperR" x1="0" y1="540" x2="0" y2="566"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #55407E)"/>
+      <stop offset="1" stop-color="var(--c2, #392A57)"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- a soft "special occasion" bootie, still soft-soled -->
-    <rect x="169" y="550" width="32" height="22" rx="11" fill="url(#newborn-male-shoes-dress-shoes__upper)"/>
-    <rect x="199" y="550" width="32" height="22" rx="11" fill="url(#newborn-male-shoes-dress-shoes__upper)"/>
+    <!-- tapered uppers: widest at the ankle, narrowing to a fine toe -->
+    <path d="M172 548 C172 542 178 539 187 539 C196 539 202 543 205 550
+             C207 555 205 560 199 562 H179 C174 562 172 558 172 552 Z"
+          fill="url(#newborn-male-shoes-dress-shoes__upperL)"/>
+    <path d="M228 548 C228 542 222 539 213 539 C204 539 198 543 195 550
+             C193 555 195 560 201 562 H221 C226 562 228 558 228 552 Z"
+          fill="url(#newborn-male-shoes-dress-shoes__upperR)"/>
+    <!-- thin soles following the tapered outline -->
+    <path d="M170 560 H203 C207 560 208 563 207 566 C206 569 203 570 198 570
+             H176 C171 570 169 568 169 565 Z"
+          fill="var(--c2, #392A57)"/>
+    <path d="M230 560 H197 C193 560 192 563 193 566 C194 569 197 570 202 570
+             H224 C229 570 231 568 231 565 Z"
+          fill="var(--c2, #392A57)"/>
   </g>
-  <rect x="167" y="564" width="36" height="8" rx="4" fill="var(--c2, #2C1F19)"/>
-  <rect x="197" y="564" width="36" height="8" rx="4" fill="var(--c2, #2C1F19)"/>
-  <!-- small bow accents -->
-  <path d="M179 556 q6-6 12 0 q-6 4 -6 4 q0 0 -6-4 z" fill="var(--c3, #F4A79B)"/>
-  <path d="M209 556 q6-6 12 0 q-6 4 -6 4 q0 0 -6-4 z" fill="var(--c3, #F4A79B)"/>
-  <path d="M174 555 q8 3 16 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="2"
+
+  <!-- topline binding and a small vamp seam: smart, and no fastening anywhere -->
+  <path d="M174 545 C182 541 194 542 201 549" stroke="var(--c3, #C9B6E8)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M204 555 q8 3 16 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="2"
+  <path d="M226 545 C218 541 206 542 199 549" stroke="var(--c3, #C9B6E8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 552 C192 553 197 556 200 560" stroke="var(--c3, #C9B6E8)" stroke-opacity="0.6"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M214 552 C208 553 203 556 200 560" stroke="var(--c3, #C9B6E8)" stroke-opacity="0.6"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <path d="M176 545 q10 3 18 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 545 q-10 3 -18 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.2"
         fill="none" stroke-linecap="round"/>
 </svg>

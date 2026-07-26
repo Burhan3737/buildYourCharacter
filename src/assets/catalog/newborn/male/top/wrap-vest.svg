@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Vest" data-family="wrap-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: CLOSURE = crossover wrap (two panels lapped, tied at the side),
+       HEM = waist (stops at y506, above the nappy line). Also shoulder = short set-in,
+       volume = straight. Differs from `tee` on closure and hem; from `button-up` on closure,
+       hem and sleeve length; from `tank` on shoulder and closure.
+       This is the kimono vest a newborn actually wears: nothing goes over the head. -->
+  <defs>
+    <linearGradient id="newborn-male-top-wrap-vest__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DDA84F)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-top-wrap-vest__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DDA84F)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-top-wrap-vest__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DDA84F)"/>
+    </linearGradient>
+    <pattern id="newborn-male-top-wrap-vest__seed" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 4 C11 6 11 10 8 12 C5 10 5 6 8 4 Z" fill="var(--c3, #C4826A)"
+            fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="newborn-male-top-wrap-vest__clip">
+      <path d="M248 438 C248 424 236 416 220 416 L204 416 L156 486 L156 494
+               C156 502 162 506 172 506 H232 C242 506 248 500 248 492 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <rect x="134" y="412" width="26" height="46" rx="13"
+          fill="url(#newborn-male-top-wrap-vest__sleeve)"/>
+    <rect x="240" y="412" width="26" height="46" rx="13"
+          fill="url(#newborn-male-top-wrap-vest__sleeve)"/>
+    <!-- under panel: crosses from the left shoulder down to the right waist -->
+    <path d="M152 438 C152 424 164 416 180 416 L196 416 L244 486 L244 494
+             C244 502 238 506 228 506 H168 C158 506 152 500 152 492 Z"
+          fill="url(#newborn-male-top-wrap-vest__under)"/>
+    <!-- over panel: laps the other way, and its diagonal edge is the whole garment -->
+    <path d="M248 438 C248 424 236 416 220 416 L204 416 L156 486 L156 494
+             C156 502 162 506 172 506 H232 C242 506 248 500 248 492 Z"
+          fill="url(#newborn-male-top-wrap-vest__over)"/>
+    <!-- small scattered seed print, clipped to the panel that is on top -->
+    <g clip-path="url(#newborn-male-top-wrap-vest__clip)">
+      <rect x="150" y="410" width="104" height="102" fill="url(#newborn-male-top-wrap-vest__seed)"/>
+    </g>
+  </g>
+
+  <!-- contrast binding running the whole length of the crossover edge -->
+  <path d="M204 416 L156 486" stroke="var(--c3, #C4826A)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 416 L244 486" stroke="var(--c3, #C4826A)" stroke-width="7" stroke-opacity="0.55"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound hem and sleeve openings -->
+  <rect x="154" y="496" width="92" height="8" rx="4" fill="var(--c3, #C4826A)"/>
+  <rect x="134" y="446" width="26" height="9" rx="4.5" fill="var(--c3, #C4826A)"/>
+  <rect x="240" y="446" width="26" height="9" rx="4.5" fill="var(--c3, #C4826A)"/>
+
+  <!-- the side tie: two soft cords knotted at the right waist, no neck fastening at all -->
+  <path d="M242 470 C252 472 258 480 256 490" stroke="var(--c3, #C4826A)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 470 C252 468 260 462 262 454" stroke="var(--c3, #C4826A)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="243" cy="470" r="5.5" fill="var(--c3, #C4826A)"/>
+
+  <path d="M166 434 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

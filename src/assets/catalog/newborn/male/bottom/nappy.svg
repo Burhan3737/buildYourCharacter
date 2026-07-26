@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nappy" data-family="nappy" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes: RISE = high (the waist sits at y482, above the hip block at y496),
+       LEG LENGTH = none — it is a brief, and the bulk is between the legs, not down them.
+       Also leg width = padded/bulky, hem treatment = elasticated frill.
+       Differs from `shorts` on rise and leg length; from `leggings` on leg length and width. -->
+  <defs>
+    <linearGradient id="newborn-male-bottom-nappy__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBFCFE)"/>
+      <stop offset="1" stop-color="var(--c2, #D8DEE9)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-bottom-nappy__tab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8CC7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #D8DEE9)"/>
+    </linearGradient>
+    <pattern id="newborn-male-bottom-nappy__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="5" cy="5" r="2.6" fill="var(--c3, #8CC7D8)" fill-opacity="0.55"/>
+      <circle cx="14" cy="13" r="1.8" fill="var(--c3, #8CC7D8)" fill-opacity="0.4"/>
+    </pattern>
+    <clipPath id="newborn-male-bottom-nappy__clip">
+      <path d="M160 490 C160 483 166 480 175 480 H225 C234 480 240 483 240 490
+               V508 C240 526 228 540 212 545 C204 547 196 547 188 545
+               C172 540 160 526 160 508 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- side fastening tabs, part of the outline -->
+    <path d="M154 486 C150 486 148 489 148 493 V503 C148 507 150 510 154 510 H166 V486 Z"
+          fill="url(#newborn-male-bottom-nappy__tab)"/>
+    <path d="M246 486 C250 486 252 489 252 493 V503 C252 507 250 510 246 510 H234 V486 Z"
+          fill="url(#newborn-male-bottom-nappy__tab)"/>
+    <!-- the padded brief: wide and high at the waist, bulky and rounded between the legs -->
+    <path d="M160 490 C160 483 166 480 175 480 H225 C234 480 240 483 240 490
+             V508 C240 526 228 540 212 545 C204 547 196 547 188 545
+             C172 540 160 526 160 508 Z"
+          fill="url(#newborn-male-bottom-nappy__pad)"/>
+    <!-- small scattered dot print, clipped to the pad -->
+    <g clip-path="url(#newborn-male-bottom-nappy__clip)">
+      <rect x="158" y="478" width="84" height="70" fill="url(#newborn-male-bottom-nappy__dots)"/>
+    </g>
+  </g>
+
+  <!-- elasticated waist band and the gathered frill round each leg opening -->
+  <rect x="158" y="480" width="84" height="12" rx="6" fill="var(--c3, #8CC7D8)"/>
+  <path d="M162 508 C168 522 176 532 186 538" stroke="var(--c3, #8CC7D8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 508 C232 522 224 532 214 538" stroke="var(--c3, #8CC7D8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 512 q5 4 4 9 M174 524 q5 3 5 8 M234 512 q-5 4 -4 9 M226 524 q-5 3 -5 8"
+        stroke="var(--c2, #D8DEE9)" stroke-opacity="0.8" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the two tab fasteners -->
+  <rect x="150" y="491" width="12" height="9" rx="4" fill="var(--c3, #8CC7D8)"/>
+  <rect x="238" y="491" width="12" height="9" rx="4" fill="var(--c3, #8CC7D8)"/>
+
+  <path d="M172 496 q28 8 56 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pigtails" data-family="pigtails" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282.
+       Axes: gathering = two high bunches, outline = two soft tapering tails hanging clear of
+       the head at x under 116 and over 284, so they read beside the ears, not on the cheeks.
+       Loose wavy hair, gathered but not plaited: no twist ridges, no blunt braid end. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="newborn-male-hair-pigtails__backgrad" x1="0" y1="272" x2="0" y2="400"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #8A5A38)"/>
+        <stop offset="1" stop-color="var(--hair2, #5E3A22)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left tail: full at the tie, waving out and tapering to a soft point -->
+      <path d="M124 280 C104 282 90 296 88 314 C86 332 94 346 92 362
+               C90 378 96 390 106 396 C110 386 106 372 110 358
+               C114 342 120 330 122 316 C124 302 126 290 132 284 Z"
+            fill="url(#newborn-male-hair-pigtails__backgrad)"/>
+      <path d="M276 280 C296 282 310 296 312 314 C314 332 306 346 308 362
+               C310 378 304 390 294 396 C290 386 294 372 290 358
+               C286 342 280 330 278 316 C276 302 274 290 268 284 Z"
+            fill="url(#newborn-male-hair-pigtails__backgrad)"/>
+      <!-- the gathered bunch at each tie, sitting above the ear line -->
+      <path d="M118 268 C104 268 96 280 100 292 C104 302 116 306 126 300
+               C134 296 136 284 130 274 Z"
+            fill="url(#newborn-male-hair-pigtails__backgrad)"/>
+      <path d="M282 268 C296 268 304 280 300 292 C296 302 284 306 274 300
+               C266 296 264 284 270 274 Z"
+            fill="url(#newborn-male-hair-pigtails__backgrad)"/>
+    </g>
+    <!-- ties, and a wave shadow down each tail -->
+    <path d="M112 296 C118 302 126 302 132 296" stroke="var(--hair2, #5E3A22)"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M288 296 C282 302 274 302 268 296" stroke="var(--hair2, #5E3A22)"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M104 322 C110 334 106 348 102 360 C99 370 100 380 104 388"
+          stroke="var(--hair2, #5E3A22)" stroke-opacity="0.45" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M296 322 C290 334 294 348 298 360 C301 370 300 380 296 388"
+          stroke="var(--hair2, #5E3A22)" stroke-opacity="0.45" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-pigtails__frontgrad" x1="0" y1="244" x2="0" y2="300"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #8A5A38)"/>
+        <stop offset="1" stop-color="var(--hair2, #5E3A22)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown swept off a centre part into the two bunches; the sides sweep outward and down -->
+      <path d="M130 298 C124 268 152 248 200 248 C248 248 276 268 270 298
+               C266 288 258 282 248 280 C240 272 226 268 200 268
+               C174 268 160 272 152 280 C142 282 134 288 130 298 Z"
+            fill="url(#newborn-male-hair-pigtails__frontgrad)"/>
+    </g>
+    <!-- centre part, then the sweep lines running out toward each tie -->
+    <path d="M200 250 L200 268" stroke="var(--hair2, #5E3A22)" stroke-opacity="0.6"
+          stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M194 256 C176 260 158 270 146 284 M206 256 C224 260 242 270 254 284"
+          stroke="var(--hair2, #5E3A22)" stroke-opacity="0.42" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M170 262 q30 -10 60 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

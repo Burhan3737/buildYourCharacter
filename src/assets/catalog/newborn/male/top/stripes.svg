@@ -1,29 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Stripes" data-family="stripes" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-name="Boat Neck Top" data-family="stripes" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Legacy family key, real garment: the boat-neck long-sleeve top.
+       Silhouette axes: NECKLINE/shoulder = wide boat opening cut straight across from shoulder
+       point to shoulder point, HEM = hip on a straight boxy body with long straight sleeves.
+       Differs from `tee` on sleeve length and neckline; from `hoodie` on shoulder and hem;
+       from `button-up` on closure and neckline. The breton banding is its SURFACE, not its
+       identity: it is a 16px pattern, and the garment still reads as a boat neck without it. -->
   <defs>
     <linearGradient id="newborn-male-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E2897C)"/>
+      <stop offset="0" stop-color="var(--c1, #F6F1E4)"/>
+      <stop offset="1" stop-color="var(--c3, #DCD3BE)"/>
     </linearGradient>
     <linearGradient id="newborn-male-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E2897C)"/>
+      <stop offset="0" stop-color="var(--c1, #F6F1E4)"/>
+      <stop offset="1" stop-color="var(--c3, #DCD3BE)"/>
     </linearGradient>
+    <pattern id="newborn-male-top-stripes__breton" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="9" fill="var(--c2, #3E5F8A)"/>
+      <rect x="0" y="12" width="16" height="2.5" fill="var(--c2, #3E5F8A)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="newborn-male-top-stripes__clip">
+      <path d="M152 442 C152 426 164 418 182 418 C186 430 214 430 218 418
+               C236 418 248 426 248 442 V500 C248 510 242 514 232 514
+               H168 C158 514 152 510 152 500 Z"/>
+    </clipPath>
+    <clipPath id="newborn-male-top-stripes__clipSL">
+      <rect x="134" y="414" width="26" height="84" rx="13"/>
+    </clipPath>
+    <clipPath id="newborn-male-top-stripes__clipSR">
+      <rect x="240" y="414" width="26" height="84" rx="13"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <rect x="136" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-top-stripes__sleeve)"/>
-    <rect x="240" y="410" width="24" height="52" rx="12" fill="url(#newborn-male-top-stripes__sleeve)"/>
-    <path d="M152 442 q0-24 24-24 h48 q24 0 24 24 v58 q0 12 -12 12 h-72 q-12 0-12-12 z"
+    <!-- long straight sleeves -->
+    <rect x="134" y="414" width="26" height="84" rx="13" fill="url(#newborn-male-top-stripes__sleeve)"/>
+    <rect x="240" y="414" width="26" height="84" rx="13" fill="url(#newborn-male-top-stripes__sleeve)"/>
+    <!-- boxy body; the wide shallow boat opening is cut into the body path itself -->
+    <path d="M152 442 C152 426 164 418 182 418 C186 430 214 430 218 418
+             C236 418 248 426 248 442 V500 C248 510 242 514 232 514
+             H168 C158 514 152 510 152 500 Z"
           fill="url(#newborn-male-top-stripes__body)"/>
+    <!-- breton banding, clipped to the body and to each sleeve -->
+    <g clip-path="url(#newborn-male-top-stripes__clip)">
+      <rect x="150" y="416" width="100" height="100" fill="url(#newborn-male-top-stripes__breton)"/>
+    </g>
+    <g clip-path="url(#newborn-male-top-stripes__clipSL)">
+      <rect x="132" y="412" width="30" height="90" fill="url(#newborn-male-top-stripes__breton)"/>
+    </g>
+    <g clip-path="url(#newborn-male-top-stripes__clipSR)">
+      <rect x="238" y="412" width="30" height="90" fill="url(#newborn-male-top-stripes__breton)"/>
+    </g>
   </g>
-  <!-- horizontal stripe bands -->
-  <rect x="152" y="446" width="96" height="10" fill="var(--c2, #E2897C)"/>
-  <rect x="152" y="470" width="96" height="10" fill="var(--c2, #E2897C)"/>
-  <rect x="150" y="494" width="98" height="10" fill="var(--c2, #E2897C)"/>
-  <!-- small crew-neck collar -->
-  <path d="M180 420 q20 12 40 0 q-4 12 -20 12 q-16 0-20-12 z" fill="var(--c2, #E2897C)"/>
-  <!-- upper chest highlight -->
-  <path d="M164 436 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+
+  <!-- contrast bind running right across the wide boat opening -->
+  <path d="M164 424 C176 418 182 424 186 428 C196 436 204 436 214 428
+           C218 424 224 418 236 424" stroke="var(--c3, #DCD3BE)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- plain cuff bands -->
+  <rect x="134" y="486" width="26" height="11" rx="5.5" fill="var(--c3, #DCD3BE)"/>
+  <rect x="240" y="486" width="26" height="11" rx="5.5" fill="var(--c3, #DCD3BE)"/>
+
+  <path d="M170 444 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

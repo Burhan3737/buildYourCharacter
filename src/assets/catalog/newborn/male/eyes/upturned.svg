@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-male-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #B07A4A)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #B07A4A)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer corner sits clearly higher than the inner corner; the whole aperture tilts up -->
+  <g class="sp-shadow">
+    <path d="M145 358 C147 342 162 334 178 337 C188 339 190 346 187 352
+             C181 364 166 370 155 368 C148 367 144 363 145 358 Z"
+          fill="url(#newborn-male-eyes-upturned__sclera)"/>
+    <path d="M255 358 C253 342 238 334 222 337 C212 339 210 346 213 352
+             C219 364 234 370 245 368 C252 367 256 363 255 358 Z"
+          fill="url(#newborn-male-eyes-upturned__sclera)"/>
+  </g>
+
+  <!-- iris base: ink underlay reads through the semi-transparent lower stop -->
+  <circle cx="167" cy="353" r="12" fill="#3B2A22"/>
+  <circle cx="233" cy="353" r="12" fill="#3B2A22"/>
+  <circle cx="167" cy="353" r="12" fill="url(#newborn-male-eyes-upturned__iris)"/>
+  <circle cx="233" cy="353" r="12" fill="url(#newborn-male-eyes-upturned__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="167" cy="353" r="6" fill="#3B2A22"/>
+  <circle cx="233" cy="353" r="6" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="162" cy="348" r="4" fill="#FFFFFF"/>
+  <circle cx="228" cy="348" r="4" fill="#FFFFFF"/>
+  <circle cx="172" cy="358" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="238" cy="358" r="2" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- lash line lifting to a flick past the outer corner -->
+  <path d="M147 350 Q160 334 180 335 Q188 336 192 331" stroke="#3B2A22" stroke-opacity="0.9"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M253 350 Q240 334 220 335 Q212 336 208 331" stroke="#3B2A22" stroke-opacity="0.9"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

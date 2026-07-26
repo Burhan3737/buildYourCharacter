@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knot Gown" data-family="knot-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = an open gown hem gathered and tied off in a knot, so the bottom
+       of the garment is a knot rather than an edge, VOLUME = flared, widening the whole way
+       down with no leg division anywhere. Also shoulder = long sleeves.
+       Differs from `sundress` on shoulder and volume; from `sleepsuit` on hem and volume;
+       from `sleep-sack` on shoulder and hem. -->
+  <defs>
+    <linearGradient id="newborn-male-onepiece-knot-gown__gown" x1="0" y1="410" x2="0" y2="548"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #A9CFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #7EA997)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-onepiece-knot-gown__sleeve" x1="0" y1="410" x2="0" y2="500"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #A9CFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #7EA997)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-onepiece-knot-gown__knot" x1="0" y1="530" x2="0" y2="566"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #A9CFC0)"/>
+      <stop offset="1" stop-color="var(--c2, #7EA997)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long tapered sleeves -->
+    <path d="M160 420 C144 425 136 438 136 454 V486 C136 494 142 499 150 499
+             C158 499 164 494 164 486 V456 C164 442 168 431 176 425 Z"
+          fill="url(#newborn-male-onepiece-knot-gown__sleeve)"/>
+    <path d="M240 420 C256 425 264 438 264 454 V486 C264 494 258 499 250 499
+             C242 499 236 494 236 486 V456 C236 442 232 431 224 425 Z"
+          fill="url(#newborn-male-onepiece-knot-gown__sleeve)"/>
+    <!-- the gown: one undivided cone flaring from the shoulders to a gathered hem -->
+    <path d="M152 440 C152 422 166 414 184 414 H216 C234 414 248 422 248 440
+             L258 512 C260 528 250 538 236 540 C212 544 188 544 164 540
+             C150 538 140 528 142 512 Z"
+          fill="url(#newborn-male-onepiece-knot-gown__gown)"/>
+    <!-- the knot itself: the hem drawn up and tied off -->
+    <path d="M178 538 C186 530 197 529 200 536 C203 529 214 530 222 538
+             C230 546 227 560 217 562 C209 564 204 557 200 552
+             C196 557 191 564 183 562 C173 560 170 546 178 538 Z"
+          fill="url(#newborn-male-onepiece-knot-gown__knot)"/>
+  </g>
+
+  <!-- gathers running down into the knot -->
+  <path d="M170 494 C174 512 178 528 184 538 M186 490 C188 510 190 526 194 536
+           M214 490 C212 510 210 526 206 536 M230 494 C226 512 222 528 216 538"
+        stroke="var(--c2, #7EA997)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 545 C193 549 207 549 214 545" stroke="var(--c2, #7EA997)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- contrast bound neckline and cuffs -->
+  <path d="M176 418 C186 432 214 432 224 418" stroke="var(--c3, #F0F6F2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 486 C144 492 156 492 164 486" stroke="var(--c3, #F0F6F2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 486 C256 492 244 492 236 486" stroke="var(--c3, #F0F6F2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a yoke seam across the chest: panel blocking without breaking the cone -->
+  <path d="M154 452 C176 462 224 462 246 452" stroke="var(--c3, #F0F6F2)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <path d="M170 436 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

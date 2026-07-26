@@ -1,52 +1,79 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Afro" data-family="afro" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
-  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282 -->
+  <!-- newborn-male head: cx200 cy334 rx88 ry84 (x112-288, y250-418), ears x118 / x282 y338.
+       An afro is a HALO, not a cap: the mass has to stand clear of the skull on every side, so
+       the back group draws a dome from x94 to x306 - roughly 20px proud of the head all round -
+       and its contour is broken into overlapping lobes of deliberately unequal size so the
+       outline reads coily rather than circular. The front group is the hairline: a lobed band
+       across the brow with the temple hair drawn in, stopping well above the eye line at y352
+       so nothing covers the face. hair2 does real work here: it is the underside of every
+       lobe and the coil partings, not just a gradient stop. -->
   <g data-part="back">
     <defs>
-      <linearGradient id="newborn-male-hair-afro__backgrad" x1="0" y1="278" x2="0" y2="352"
+      <linearGradient id="newborn-male-hair-afro__backgrad" x1="0" y1="212" x2="0" y2="400"
                       gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- puff volume showing past each ear -->
-      <path d="M116 282 C96 296 92 324 106 350 C114 336 114 308 120 286 Z"
-            fill="url(#newborn-male-hair-afro__backgrad)"/>
-      <path d="M284 282 C304 296 308 324 294 350 C286 336 286 308 280 286 Z"
-            fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <!-- the halo mass, standing clear of the skull on every side -->
+      <ellipse cx="200" cy="314" rx="96" ry="92" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <!-- lobes breaking the contour: no two the same size, so the outline is bumpy -->
+      <circle cx="200" cy="216" r="25" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="160" cy="226" r="22" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="241" cy="228" r="20" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="127" cy="255" r="23" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="273" cy="252" r="21" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="108" cy="299" r="19" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="293" cy="302" r="22" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="115" cy="347" r="21" fill="url(#newborn-male-hair-afro__backgrad)"/>
+      <circle cx="286" cy="344" r="18" fill="url(#newborn-male-hair-afro__backgrad)"/>
     </g>
   </g>
   <g data-part="front">
     <defs>
-      <linearGradient id="newborn-male-hair-afro__frontgrad" x1="0" y1="208" x2="0" y2="296"
+      <linearGradient id="newborn-male-hair-afro__frontgrad" x1="0" y1="228" x2="0" y2="330"
                       gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="var(--hair1, #43291F)"/>
         <stop offset="1" stop-color="var(--hair2, #331E16)"/>
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <!-- soft coily puff: one base band scalloped by five overlapping lobes. The lower edge
-           runs below the skull surface at every x so no scalp shows through. -->
-      <path d="M126 292 C118 262 130 240 152 230 C168 222 182 218 200 218
-               C218 218 232 222 248 230 C270 240 282 262 274 292
-               C260 276 234 268 200 268 C166 268 140 276 126 292 Z"
+      <!-- the hairline band: temple to temple, its lower edge following the brow ridge and
+           stopping at y296 in the centre, well clear of the eye line -->
+      <path d="M124 324
+               C118 288 138 258 172 246
+               C190 240 210 240 228 246
+               C262 258 282 288 276 324
+               C266 308 248 297 224 293
+               C210 290 190 290 176 293
+               C152 297 134 308 124 324 Z"
             fill="url(#newborn-male-hair-afro__frontgrad)"/>
-      <circle cx="150" cy="256" r="20" fill="url(#newborn-male-hair-afro__frontgrad)"/>
-      <circle cx="175" cy="234" r="20" fill="url(#newborn-male-hair-afro__frontgrad)"/>
-      <circle cx="200" cy="228" r="20" fill="url(#newborn-male-hair-afro__frontgrad)"/>
-      <circle cx="225" cy="234" r="20" fill="url(#newborn-male-hair-afro__frontgrad)"/>
-      <circle cx="250" cy="256" r="20" fill="url(#newborn-male-hair-afro__frontgrad)"/>
+      <!-- crown lobes standing over the hairline, again unequal -->
+      <circle cx="143" cy="285" r="21" fill="url(#newborn-male-hair-afro__frontgrad)"/>
+      <circle cx="171" cy="257" r="24" fill="url(#newborn-male-hair-afro__frontgrad)"/>
+      <circle cx="201" cy="247" r="26" fill="url(#newborn-male-hair-afro__frontgrad)"/>
+      <circle cx="231" cy="257" r="22" fill="url(#newborn-male-hair-afro__frontgrad)"/>
+      <circle cx="258" cy="286" r="19" fill="url(#newborn-male-hair-afro__frontgrad)"/>
     </g>
-    <!-- coil separations, low contrast so the puff still reads as one form -->
-    <path d="M164 246 q9 11 3 23" stroke="var(--hair2, #331E16)" stroke-opacity="0.4"
-          stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M236 246 q-9 11 -3 23" stroke="var(--hair2, #331E16)" stroke-opacity="0.4"
-          stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M200 244 q0 12 0 20" stroke="var(--hair2, #331E16)" stroke-opacity="0.32"
-          stroke-width="2.6" fill="none" stroke-linecap="round"/>
-    <path d="M168 228 q32 -16 64 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+    <!-- coil partings and lobe undersides, painted through hair2 -->
+    <path d="M156 300 C152 288 154 276 162 268" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M244 300 C248 288 246 276 238 268" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M182 292 C178 280 182 268 190 261" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.45" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M218 292 C222 280 218 268 210 261" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.45" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M200 290 v-26" stroke="var(--hair2, #331E16)" stroke-opacity="0.38"
+          stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <!-- the hairline itself, darkened where the hair meets the temple skin -->
+    <path d="M128 318 C144 302 168 294 200 294 C232 294 256 302 272 318"
+          stroke="var(--hair2, #331E16)" stroke-opacity="0.5" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M168 244 q33 -16 66 2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
           fill="none" stroke-linecap="round"/>
   </g>
 </svg>

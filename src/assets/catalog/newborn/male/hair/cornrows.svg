@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cornrows" data-family="cornrows" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- newborn-male head: cx200 cy334 rx88 ry84, crown apex y250, ears at x118 / x282.
+       Axes: outline = six raised braid rows, parting = the scalp between them.
+       The rows are the positive shape. The 4-6px channels between them are deliberately left
+       EMPTY so the baby's own scalp reads through as the parting, front-to-back, converging
+       slightly toward the crown. Not a hatch pattern laid over a cap: there is no cap. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="newborn-male-hair-cornrows__backgrad" x1="0" y1="336" x2="0" y2="392"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #3A2418)"/>
+        <stop offset="1" stop-color="var(--hair2, #24150D)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the rows gather into one small tail at the nape; it shows past the head edge -->
+      <path d="M122 344 C108 352 100 366 102 382 C104 394 112 400 120 398
+               C116 388 116 376 122 366 C126 358 128 350 128 344 Z"
+            fill="url(#newborn-male-hair-cornrows__backgrad)"/>
+      <path d="M278 344 C292 352 300 366 298 382 C296 394 288 400 280 398
+               C284 388 284 376 278 366 C274 358 272 350 272 344 Z"
+            fill="url(#newborn-male-hair-cornrows__backgrad)"/>
+    </g>
+    <!-- the tie holding the gathered tail -->
+    <path d="M104 378 C110 384 118 384 122 378" stroke="var(--hair2, #24150D)"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M296 378 C290 384 282 384 278 378" stroke="var(--hair2, #24150D)"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="newborn-male-hair-cornrows__frontgrad" x1="0" y1="256" x2="0" y2="310"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--hair1, #3A2418)"/>
+        <stop offset="1" stop-color="var(--hair2, #24150D)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- six rows running the whole way from the hairline at y306 up and over the crown,
+           fanning in toward the apex the way rows do on a dome seen head-on -->
+      <path d="M136 306 C133 288 145 270 172 256 L179 258 C158 272 150 289 152 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+      <path d="M157 306 C155 288 163 270 181 256 L188 258 C173 272 169 289 173 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+      <path d="M179 306 C177 288 183 270 191 256 L198 258 C192 272 191 289 195 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+      <path d="M221 306 C223 288 217 270 209 256 L202 258 C208 272 209 289 205 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+      <path d="M243 306 C245 288 237 270 219 256 L212 258 C227 272 231 289 227 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+      <path d="M264 306 C267 288 255 270 228 256 L221 258 C242 272 250 289 248 306 Z"
+            fill="url(#newborn-male-hair-cornrows__frontgrad)"/>
+    </g>
+    <!-- braid bumps along each row, so a row reads as plaited rather than as a stripe -->
+    <path d="M140 300 q6 3 10 0 M141 288 q6 3 10 0 M147 276 q6 3 9 0 M158 266 q6 3 9 -1
+             M161 300 q6 3 10 0 M162 288 q6 3 9 0 M167 276 q6 3 9 0 M176 265 q6 3 8 -1
+             M183 300 q6 3 10 0 M183 288 q6 3 9 0 M186 276 q6 3 8 0 M190 264 q6 3 7 -1
+             M207 300 q6 3 10 0 M208 288 q6 3 9 0 M206 276 q6 3 8 0 M203 264 q6 3 7 -1
+             M229 300 q6 3 10 0 M229 288 q6 3 9 0 M224 276 q6 3 8 0 M216 265 q6 3 8 -1
+             M250 300 q6 3 10 0 M249 288 q6 3 9 0 M244 276 q6 3 8 0 M233 266 q6 3 9 -1"
+          stroke="var(--hair2, #24150D)" stroke-opacity="0.6" stroke-width="2"
+          fill="none" stroke-linecap="round"/>
+    <!-- shine along the raised ridge of each row -->
+    <path d="M145 296 C148 281 155 269 173 259 M167 296 C168 281 173 269 182 259
+             M189 296 C189 281 191 269 193 259 M211 296 C211 281 209 269 207 259
+             M233 296 C232 281 227 269 218 259 M255 296 C252 281 245 269 227 259"
+          stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2.6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

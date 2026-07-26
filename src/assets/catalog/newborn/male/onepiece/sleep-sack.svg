@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Sack" data-family="sleep-sack" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = none — the armholes are cut straight out of the top edge and
+       the arms stay outside the garment entirely, VOLUME = a bag, widening to a wide flat hem
+       at y560 with no leg division. Also closure = centre zip, hem = ankle.
+       Differs from `sleepsuit` on shoulder and volume; from `swaddle` on shoulder (arms free)
+       and hem (flat and wide vs tapered); from `knot-gown` on shoulder and hem.
+       A wearable blanket, which is what infant sleep guidance asks the art to show. -->
+  <defs>
+    <linearGradient id="newborn-male-onepiece-sleep-sack__bag" x1="0" y1="410" x2="0" y2="566"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--c1, #8FA6D8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A80B4)"/>
+    </linearGradient>
+    <pattern id="newborn-male-onepiece-sleep-sack__quilt" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="var(--c3, #DCE4F6)"
+            stroke-opacity="0.45" stroke-width="2"/>
+    </pattern>
+    <clipPath id="newborn-male-onepiece-sleep-sack__clip">
+      <path d="M158 436 C158 424 168 416 182 416 H218 C232 416 242 424 242 436
+               L250 500 C254 524 256 540 256 550 C256 558 250 562 240 562
+               H160 C150 562 144 558 144 550 C144 540 146 524 150 500 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the bag: narrow at the shoulders, wide and flat at the hem -->
+    <path d="M158 436 C158 424 168 416 182 416 H218 C232 416 242 424 242 436
+             L250 500 C254 524 256 540 256 550 C256 558 250 562 240 562
+             H160 C150 562 144 558 144 550 C144 540 146 524 150 500 Z"
+          fill="url(#newborn-male-onepiece-sleep-sack__bag)"/>
+    <g clip-path="url(#newborn-male-onepiece-sleep-sack__clip)">
+      <rect x="142" y="414" width="116" height="150" fill="url(#newborn-male-onepiece-sleep-sack__quilt)"/>
+    </g>
+  </g>
+
+  <!-- bound armholes cut at the shoulder, and a bound neck between them -->
+  <path d="M160 434 C162 424 170 418 180 418" stroke="var(--c3, #DCE4F6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 434 C238 424 230 418 220 418" stroke="var(--c3, #DCE4F6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 418 C188 426 212 426 220 418" stroke="var(--c3, #DCE4F6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- centre zip with a pull tab at the bottom, which is how a sleep sack actually opens -->
+  <path d="M200 424 V546" stroke="var(--c3, #DCE4F6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 430 V540" stroke="var(--c2, #6A80B4)" stroke-opacity="0.7" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="195" y="540" width="10" height="14" rx="4" fill="var(--c3, #DCE4F6)"/>
+
+  <!-- wide flat hem band -->
+  <rect x="146" y="546" width="108" height="16" rx="8" fill="var(--c3, #DCE4F6)"/>
+  <path d="M160 550 v8 M180 550 v8 M220 550 v8 M240 550 v8"
+        stroke="var(--c2, #6A80B4)" stroke-opacity="0.45" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 434 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>
