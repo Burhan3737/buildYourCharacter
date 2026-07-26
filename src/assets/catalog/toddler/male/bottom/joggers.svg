@@ -1,38 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Joggers" data-family="joggers" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural (soft elasticated waist at y437) ·
+       leg length = full, the rib cuff finishing at y544 ·
+       leg width = gathered-cuff: the leg balloons out to x138 across the thigh and
+       then draws in hard to a 32px ankle ·
+       hem = elasticated, a fat ribbed cuff drawn as its own band.
+       vs jeans: leg width + hem treatment. vs cargo: leg width + hem treatment.
+       vs leggings: rise, leg width and hem treatment. vs snow pants: rise, leg
+       length and leg width. vs tailored trousers: leg length, leg width, hem.
+       vs wide leg: rise, leg width and hem treatment.
+       Surface tools: panel blocking (contrast colour-blocked lower leg), trim
+       (elastic waistband, drawcord with two aglets, ribbed ankle cuffs) and
+       structural detail (gather folds pulled in above each cuff). -->
   <defs>
-    <linearGradient id="toddler-male-bottom-joggers__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #626FA8)"/>
+    <linearGradient id="toddler-male-bottom-joggers__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A66A4)"/>
     </linearGradient>
     <linearGradient id="toddler-male-bottom-joggers__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #626FA8)"/>
+      <stop offset="0" stop-color="var(--c1, #8B9CE4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A66A4)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <path d="M168 482 H200 V532 q0 8 -8 8 H182 q-10 0 -10-8 Z"
+    <path d="M154 462 H200 V528 q0 6 -6 6 H174 q-6 0 -6-6 L146 496 Q138 472 154 462 Z"
           fill="url(#toddler-male-bottom-joggers__leg)"/>
-    <path d="M232 482 H200 V532 q0 8 8 8 H218 q10 0 10-8 Z"
+    <path d="M246 462 H200 V528 q0 6 6 6 H226 q6 0 6-6 L254 496 Q262 472 246 462 Z"
           fill="url(#toddler-male-bottom-joggers__leg)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20"
-          fill="url(#toddler-male-bottom-joggers__hip)"/>
+    <rect x="155" y="437" width="90" height="48" rx="24"
+          fill="url(#toddler-male-bottom-joggers__seat)"/>
   </g>
 
-  <!-- elastic waist -->
-  <rect x="160" y="440" width="80" height="14" rx="7" fill="var(--c2, #626FA8)"/>
-  <path d="M188 442 v10" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3.5"
+  <!-- panel blocking: contrast colour-blocked lower leg -->
+  <path d="M150 502 L168 528 q0 6 6 6 H194 q6 0 6-6 V502 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M250 502 L232 528 q0 6 -6 6 H206 q-6 0 -6-6 V502 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- trim: fat elastic waistband with a drawcord and two aglets -->
+  <rect x="155" y="434" width="90" height="18" rx="9" fill="var(--c2, #5A66A4)"/>
+  <path d="M180 438 v10 M190 438 v10 M210 438 v10 M220 438 v10"
+        stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-  <path d="M212 442 v10" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="3.5"
+  <path d="M186 448 q14 12 28 0" stroke="var(--c3, #F7C873)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <!-- ribbed ankle cuffs -->
-  <rect x="176" y="530" width="26" height="14" rx="7" fill="var(--c2, #626FA8)"/>
-  <rect x="198" y="530" width="26" height="14" rx="7" fill="var(--c2, #626FA8)"/>
-  <!-- side stripe accent -->
-  <path d="M172 484 V528" stroke="var(--c3, #F7C873)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M228 484 V528" stroke="var(--c3, #F7C873)" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M166 462 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <circle cx="185" cy="450" r="4" fill="var(--c3, #F7C873)"/>
+  <circle cx="215" cy="450" r="4" fill="var(--c3, #F7C873)"/>
+
+  <!-- trim: ribbed ankle cuffs -->
+  <rect x="165" y="526" width="38" height="18" rx="9" fill="var(--c2, #5A66A4)"/>
+  <rect x="197" y="526" width="38" height="18" rx="9" fill="var(--c2, #5A66A4)"/>
+  <path d="M172 530 v10 M182 530 v10 M192 530 v10"
+        stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 530 v10 M218 530 v10 M228 530 v10"
+        stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: gather folds pulled in above each cuff -->
+  <path d="M170 520 q10 6 22 2" stroke="var(--c2, #5A66A4)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M230 520 q-10 6 -22 2" stroke="var(--c2, #5A66A4)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M164 466 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 482 q0 18 12 32" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 482 q0 18 -12 32" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

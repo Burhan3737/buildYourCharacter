@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve reads LONG and slim, but the identity is the neck:
+       a folded tube standing from y388 up to y336, right under the jaw and
+       clear of the face, plus volume = FITTED (x156 to x244, skimming the
+       trunk) and hem = WAIST y440. Closure closed. Differs from stripes on hem
+       and volume, from hoodie on hem and volume, from henley on closure and
+       hem, from sweater on sleeve and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6470)"/>
+      <stop offset="1" stop-color="var(--c2, #414852)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6470)"/>
+      <stop offset="1" stop-color="var(--c2, #414852)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6470)"/>
+      <stop offset="1" stop-color="var(--c2, #414852)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-turtleneck__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE3D2)"/>
+      <stop offset="1" stop-color="var(--c3, #EDE3D2)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="toddler-male-top-turtleneck__rib-fill" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <rect x="0" y="0" width="4.5" height="12" fill="var(--c2, #414852)" opacity="0.45"/>
+    </pattern>
+    <clipPath id="toddler-male-top-turtleneck__clip">
+      <path d="M176 346 q-20 4 -20 26 v44 q0 24 22 24 h44 q22 0 22-24 v-44 q0-22 -20-26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- slim long sleeves -->
+    <path d="M152 352 q-30 4 -30 26 v46 q0 14 13 14 h18 q13 0 13-14 z"
+          fill="url(#toddler-male-top-turtleneck__sleeve)"/>
+    <path d="M248 352 q30 4 30 26 v46 q0 14 -13 14 h-18 q-13 0 -13-14 z"
+          fill="url(#toddler-male-top-turtleneck__sleeve)"/>
+    <!-- close fitting body -->
+    <path d="M176 346 q-20 4 -20 26 v44 q0 24 22 24 h44 q22 0 22-24 v-44 q0-22 -20-26 z"
+          fill="url(#toddler-male-top-turtleneck__body)"/>
+    <!-- tall folded neck tube, topping out at y336 -->
+    <path d="M174 378 q-2-42 26-42 q28 0 26 42 q-26 10 -52 0 z"
+          fill="url(#toddler-male-top-turtleneck__tube)"/>
+  </g>
+
+  <!-- vertical rib over the fitted body -->
+  <g clip-path="url(#toddler-male-top-turtleneck__clip)">
+    <rect x="152" y="344" width="96" height="100" fill="url(#toddler-male-top-turtleneck__rib-fill)"/>
+  </g>
+
+  <!-- the turn of the fold on the tube -->
+  <path d="M176 358 q24 12 48 0" stroke="var(--c3, #EDE3D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 342 q20-6 40 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed waist hem -->
+  <path d="M156 414 q44 12 88 0 v8 q0 12 -12 14 q-32 8 -64 0 q-12-2 -12-14 z"
+        fill="url(#toddler-male-top-turtleneck__rib)"/>
+  <path d="M168 424 v14 M184 428 v12 M200 430 v12 M216 428 v12 M232 424 v14"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M122 420 h44 v4 q0 14 -13 14 h-18 q-14 0 -13-18 z" fill="url(#toddler-male-top-turtleneck__rib)"/>
+  <path d="M278 420 h-44 v4 q0 14 13 14 h18 q14 0 13-18 z" fill="url(#toddler-male-top-turtleneck__rib)"/>
+
+  <!-- highlight -->
+  <path d="M168 390 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

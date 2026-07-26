@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pigtails" data-family="pigtails" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: GATHERING - the whole head is drawn into two ties above the ears and hangs as two
+       separate wavy tails, smooth walled, nothing loose at the nape.
+       PARTING - a real centre parting, 8px of bare scalp from the hairline to the crown, with
+       the two swept halves combed away from it. Straight hair, not coily: the tail edges are
+       smooth S curves. Differs from afro-puffs on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-pigtails__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9954E)"/>
+        <stop offset="1" stop-color="var(--hair2, #9A6E38)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-pigtails__tail-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9954E)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #C9954E)"/>
+        <stop offset="1" stop-color="var(--hair2, #9A6E38)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M152 198 C124 218 116 258 124 296 C130 312 150 320 200 320
+               C250 320 270 312 276 296 C284 258 276 218 248 198
+               C226 186 174 186 152 198 Z"
+            fill="url(#toddler-male-hair-pigtails__back-g)"/>
+      <path d="M112 248 C94 266 90 298 100 324 C106 338 122 342 132 332
+               C140 322 132 304 134 286 C136 268 130 256 126 246 Z"
+            fill="url(#toddler-male-hair-pigtails__tail-g)"/>
+      <path d="M288 248 C306 266 310 298 300 324 C294 338 278 342 268 332
+               C260 322 268 304 266 286 C264 268 270 256 274 246 Z"
+            fill="url(#toddler-male-hair-pigtails__tail-g)"/>
+    </g>
+    <!-- the ties: the gather point of each tail -->
+    <ellipse cx="126" cy="252" rx="14" ry="9" fill="var(--hair2, #9A6E38)"/>
+    <ellipse cx="274" cy="252" rx="14" ry="9" fill="var(--hair2, #9A6E38)"/>
+    <path d="M108 278 C102 298 104 316 110 330" stroke="var(--hair2, #9A6E38)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M292 278 C298 298 296 316 290 330" stroke="var(--hair2, #9A6E38)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M162 206 C182 196 218 196 238 206" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-pigtails__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9954E)"/>
+        <stop offset="1" stop-color="var(--hair2, #9A6E38)"/>
+      </linearGradient>
+    </defs>
+    <!-- bare scalp showing through the centre parting -->
+    <path d="M196 184 C200 181 200 181 204 184 L209 222 L191 222 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <g class="sp-shadow">
+      <path d="M122 250 C118 212 150 190 196 186 C194 202 184 212 168 218
+               C148 226 130 238 122 250 Z"
+            fill="url(#toddler-male-hair-pigtails__front-g)"/>
+      <path d="M278 250 C282 212 250 190 204 186 C206 202 216 212 232 218
+               C252 226 270 238 278 250 Z"
+            fill="url(#toddler-male-hair-pigtails__front-g)"/>
+    </g>
+    <path d="M190 190 C186 202 184 212 184 222" stroke="var(--hair2, #9A6E38)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M210 190 C214 202 216 212 216 222" stroke="var(--hair2, #9A6E38)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M168 196 C180 190 190 189 194 189" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M232 196 C220 190 210 189 206 189" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

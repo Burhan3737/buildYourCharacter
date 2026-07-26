@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Zip Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = ZIP (a hard centre line from the stand collar to the hem
+       band, with a pull on it) · hem = PAST HIP y472 over a rib band.
+       Sleeve long, volume boxy x142 to x258. Differs from button up on closure,
+       hem and volume, from bomber on hem and volume, from cardigan on closure
+       and volume, from hoodie on closure and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-zip-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F7BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F5794)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-zip-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F7BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F5794)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <clipPath id="toddler-male-top-zip-jacket__sleeveclip">
+      <path d="M152 352 q-36 2 -37 28 l-3 46 q-1 14 13 14 h24 q13 0 13-14 z"/>
+      <path d="M248 352 q36 2 37 28 l3 46 q1 14 -13 14 h-24 q-13 0 -13-14 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long track sleeves -->
+    <path d="M152 352 q-36 2 -37 28 l-3 46 q-1 14 13 14 h24 q13 0 13-14 z"
+          fill="url(#toddler-male-top-zip-jacket__sleeve)"/>
+    <path d="M248 352 q36 2 37 28 l3 46 q1 14 -13 14 h-24 q-13 0 -13-14 z"
+          fill="url(#toddler-male-top-zip-jacket__sleeve)"/>
+    <!-- boxy track body with a squared stand collar notch cut into the top edge -->
+    <path d="M172 344 q-30 2 -30 32 v66 q0 30 30 30 h56 q30 0 30-30 v-66 q0-30 -30-32 h-14 v14 h-28 v-14 z"
+          fill="url(#toddler-male-top-zip-jacket__body)"/>
+  </g>
+
+  <!-- contrast sleeve stripes -->
+  <g clip-path="url(#toddler-male-top-zip-jacket__sleeveclip)">
+    <rect x="106" y="382" width="188" height="9" fill="var(--c3, #F7C873)"/>
+    <rect x="106" y="396" width="188" height="9" fill="var(--c3, #F7C873)"/>
+  </g>
+
+  <!-- stand collar sitting under the chin, never over it -->
+  <path d="M178 362 q0-18 22-18 q22 0 22 18 q-22 8 -44 0 z" fill="url(#toddler-male-top-zip-jacket__rib)"/>
+  <path d="M182 350 q18-6 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed hem band -->
+  <path d="M143 450 q57 16 114 0 v10 q0 14 -14 16 q-43 10 -86 0 q-14-2 -14-16 z"
+        fill="url(#toddler-male-top-zip-jacket__rib)"/>
+  <path d="M158 460 v16 M176 464 v16 M194 466 v16 M212 466 v16 M230 464 v16 M246 460 v16"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M112 420 h50 v6 q0 14 -13 14 h-24 q-14 0 -13-16 z" fill="url(#toddler-male-top-zip-jacket__rib)"/>
+  <path d="M288 420 h-50 v6 q0 14 13 14 h24 q14 0 13-16 z" fill="url(#toddler-male-top-zip-jacket__rib)"/>
+
+  <!-- centre zip with a chunky pull -->
+  <path d="M195 352 h10 v100 q0 6 -5 6 q-5 0 -5-6 z" fill="var(--c3, #F7C873)"/>
+  <path d="M200 356 v98" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M193 398 h14 v18 q0 5 -7 5 q-7 0 -7-5 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- slash pockets -->
+  <path d="M156 428 l26-8 v10 l-26 8 z" fill="var(--c2, #3F5794)"/>
+  <path d="M244 428 l-26-8 v10 l26 8 z" fill="var(--c2, #3F5794)"/>
+
+  <!-- highlight -->
+  <path d="M158 372 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

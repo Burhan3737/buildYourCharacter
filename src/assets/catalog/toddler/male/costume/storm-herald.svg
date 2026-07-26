@@ -1,56 +1,67 @@
+<!-- axes: SHOULDER (no sleeve at all - bare arms under a hard shoulder mantle) and
+     HEM (a straight armoured tunic stopping at mid-thigh over tall greaves).
+     No emblem anywhere, and the palette is slate and bronze, never red with blue. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Storm Herald" data-family="storm-herald" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
   <defs>
-    <linearGradient id="toddler-male-costume-storm-herald__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #86D4AD)"/>
-      <stop offset="1" stop-color="var(--c1, #44AA77)"/>
+    <linearGradient id="toddler-male-costume-storm-herald__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #728F9C)"/>
+      <stop offset="1" stop-color="var(--c1, #4C6673)"/>
     </linearGradient>
-    <linearGradient id="toddler-male-costume-storm-herald__armor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C7DDD8)"/>
-      <stop offset="1" stop-color="var(--c2, #A4C8C1)"/>
+    <linearGradient id="toddler-male-costume-storm-herald__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DCE7EA)"/>
+      <stop offset="1" stop-color="var(--c2, #AFC3C9)"/>
     </linearGradient>
-    <linearGradient id="toddler-male-costume-storm-herald__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c3, #D9AF7E)"/>
-      <stop offset="1" stop-color="var(--c3, #D09A5C)"/>
+    <linearGradient id="toddler-male-costume-storm-herald__bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4BC67)"/>
+      <stop offset="1" stop-color="var(--c3, #B98C34)"/>
     </linearGradient>
   </defs>
 
-  <!-- cape, starting right at the neckline, never above the shoulder ceiling -->
+  <!-- short cape, hanging from the mantle to just past the belt -->
   <g class="sp-shadow">
-    <path d="M172 346 Q200 345 228 346 L246 470 Q200 486 154 470 Z"
-          fill="url(#toddler-male-costume-storm-herald__cape)"/>
+    <path d="M166 348 Q200 354 234 348 L272 466 Q200 508 128 466 Z"
+          fill="url(#toddler-male-costume-storm-herald__bronze)"/>
   </g>
 
+  <!-- sleeveless tunic and the hard mantle across the shoulders -->
   <g class="sp-shadow">
-    <rect x="168" y="482" width="32" height="84" rx="16" fill="url(#toddler-male-costume-storm-herald__body)"/>
-    <rect x="200" y="482" width="32" height="84" rx="16" fill="url(#toddler-male-costume-storm-herald__body)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v56 q0 26 -26 26 h-52 q-26 0 -26-26 z"
-          fill="url(#toddler-male-costume-storm-herald__body)"/>
-    <rect x="116" y="350" width="36" height="92" rx="18" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-    <rect x="248" y="350" width="36" height="92" rx="18" fill="url(#toddler-male-costume-storm-herald__armor)"/>
+    <path d="M156 350 h88 q12 0 12 16 v128 q-56 20 -112 0 v-128 q0-16 12-16 z"
+          fill="url(#toddler-male-costume-storm-herald__tunic)"/>
+    <path d="M134 382 q8-38 42-38 h48 q34 0 42 38 q-66 24 -132 0 z"
+          fill="url(#toddler-male-costume-storm-herald__plate)"/>
   </g>
 
-  <rect x="176" y="344" width="48" height="12" rx="6" fill="var(--c2, #A4C8C1)"/>
-
-  <!-- chest armor plate -->
-  <path d="M172 372 h56 v46 q-28 12 -56 0 z" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-  <!-- abstract stacked-chevron gust mark, not an insignia -->
-  <path d="M180 392 L200 382 L220 392 M180 404 L200 394 L220 404 M180 416 L200 406 L220 416"
-        fill="none" stroke="var(--c3, #D9AF7E)" stroke-width="4.5" stroke-opacity="0.95"
-        stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- forearm guards -->
-  <rect x="118" y="404" width="32" height="16" rx="8" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-  <rect x="250" y="404" width="32" height="16" rx="8" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-
-  <g class="sp-shadow">
-    <circle cx="134" cy="440" r="19" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-    <circle cx="266" cy="440" r="19" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-    <rect x="164" y="546" width="40" height="24" rx="14" fill="url(#toddler-male-costume-storm-herald__armor)"/>
-    <rect x="196" y="546" width="40" height="24" rx="14" fill="url(#toddler-male-costume-storm-herald__armor)"/>
+  <!-- chest plate panel with a riveted seam -->
+  <path d="M166 388 q34 12 68 0 v42 q-34 14 -68 0 z"
+        fill="url(#toddler-male-costume-storm-herald__plate)"/>
+  <path d="M166 410 q34 12 68 0" stroke="var(--c1, #4C6673)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #E4BC67)">
+    <circle cx="176" cy="396" r="4.5"/>
+    <circle cx="200" cy="400" r="4.5"/>
+    <circle cx="224" cy="396" r="4.5"/>
   </g>
 
-  <path d="M162 366 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- wide belt -->
+  <rect x="148" y="440" width="104" height="22" rx="10" fill="url(#toddler-male-costume-storm-herald__bronze)"/>
+  <rect x="186" y="442" width="28" height="18" rx="6" fill="url(#toddler-male-costume-storm-herald__plate)"/>
+
+  <!-- forearm bracers over the bare arms -->
+  <rect x="116" y="400" width="38" height="26" rx="10" fill="url(#toddler-male-costume-storm-herald__bronze)"/>
+  <rect x="246" y="400" width="38" height="26" rx="10" fill="url(#toddler-male-costume-storm-herald__bronze)"/>
+
+  <!-- tall greaves, from under the tunic hem down over the feet -->
+  <g class="sp-shadow">
+    <path d="M158 496 h42 v54 q0 22 -21 22 q-21 0 -21-22 z"
+          fill="url(#toddler-male-costume-storm-herald__plate)"/>
+    <path d="M200 496 h42 v54 q0 22 -21 22 q-21 0 -21-22 z"
+          fill="url(#toddler-male-costume-storm-herald__plate)"/>
+  </g>
+  <rect x="156" y="494" width="46" height="12" rx="6" fill="url(#toddler-male-costume-storm-herald__bronze)"/>
+  <rect x="198" y="494" width="46" height="12" rx="6" fill="url(#toddler-male-costume-storm-herald__bronze)"/>
+
+  <path d="M162 370 q38 16 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

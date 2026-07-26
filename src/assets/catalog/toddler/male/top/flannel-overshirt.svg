@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: closure = OPEN FRONT, worn unbuttoned over a tee, drawn as two
+       squared panels with a 28px gap between them · hem = PAST HIP y478, cut
+       square rather than curved, while the tee beneath stops at y444.
+       Shoulder dropped to y358, volume boxy x140 to x260. Differs from cardigan
+       on sleeve and volume, from button up on closure, hem and volume, from
+       zip jacket on closure and sleeve. -->
+  <defs>
+    <linearGradient id="toddler-male-top-flannel-overshirt__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C05C58)"/>
+      <stop offset="1" stop-color="var(--c2, #83332F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C05C58)"/>
+      <stop offset="1" stop-color="var(--c2, #83332F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-flannel-overshirt__tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2EDE4)"/>
+      <stop offset="1" stop-color="var(--c3, #F2EDE4)" stop-opacity="0.72"/>
+    </linearGradient>
+    <pattern id="toddler-male-top-flannel-overshirt__plaid" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="7" fill="var(--c2, #83332F)" opacity="0.55"/>
+      <rect x="0" y="0" width="7" height="20" fill="var(--c2, #83332F)" opacity="0.55"/>
+    </pattern>
+    <clipPath id="toddler-male-top-flannel-overshirt__clip">
+      <path d="M176 344 q-36 2 -36 32 v94 q0 8 8 8 h38 v-134 z"/>
+      <path d="M224 344 q36 2 36 32 v94 q0 8 -8 8 h-38 v-134 z"/>
+      <path d="M158 358 q-40 6 -44 34 l-4 44 q-2 16 14 16 h24 q14 0 14-16 z"/>
+      <path d="M242 358 q40 6 44 34 l4 44 q2 16 -14 16 h-24 q-14 0 -14-16 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the tee showing through the open front -->
+    <path d="M182 348 h36 q24 0 24 24 v50 q0 22 -24 22 h-36 q-24 0 -24-22 v-50 q0-24 24-24 z"
+          fill="url(#toddler-male-top-flannel-overshirt__tee)"/>
+    <!-- dropped shoulder sleeves -->
+    <path d="M158 358 q-40 6 -44 34 l-4 44 q-2 16 14 16 h24 q14 0 14-16 z"
+          fill="url(#toddler-male-top-flannel-overshirt__sleeve)"/>
+    <path d="M242 358 q40 6 44 34 l4 44 q2 16 -14 16 h-24 q-14 0 -14-16 z"
+          fill="url(#toddler-male-top-flannel-overshirt__sleeve)"/>
+    <!-- two squared front panels hanging open -->
+    <path d="M176 344 q-36 2 -36 32 v94 q0 8 8 8 h38 v-134 z"
+          fill="url(#toddler-male-top-flannel-overshirt__panel)"/>
+    <path d="M224 344 q36 2 36 32 v94 q0 8 -8 8 h-38 v-134 z"
+          fill="url(#toddler-male-top-flannel-overshirt__panel)"/>
+  </g>
+
+  <!-- plaid over the flannel only, never over the tee -->
+  <g clip-path="url(#toddler-male-top-flannel-overshirt__clip)">
+    <rect x="106" y="340" width="188" height="146" fill="url(#toddler-male-top-flannel-overshirt__plaid)"/>
+  </g>
+
+  <!-- chest pockets with flaps -->
+  <path d="M150 392 h28 v22 q0 7 -7 7 h-14 q-7 0 -7-7 z" fill="var(--c2, #83332F)"/>
+  <path d="M250 392 h-28 v22 q0 7 7 7 h14 q7 0 7-7 z" fill="var(--c2, #83332F)"/>
+  <path d="M148 390 h32 v7 h-32 z" fill="var(--c2, #83332F)"/>
+  <path d="M252 390 h-32 v7 h32 z" fill="var(--c2, #83332F)"/>
+
+  <!-- front edge facings and the flat collar lying open -->
+  <path d="M186 348 v128 M214 348 v128" stroke="var(--c2, #83332F)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M178 344 q-4 16 2 26 q4 8 12 2 q8-6 8-28 q-12-4 -22 0 z" fill="var(--c2, #83332F)"/>
+  <path d="M222 344 q4 16 -2 26 q-4 8 -12 2 q-8-6 -8-28 q12-4 22 0 z" fill="var(--c2, #83332F)"/>
+
+  <!-- crew bind on the tee beneath -->
+  <path d="M184 350 q16 14 32 0" stroke="var(--c2, #83332F)" stroke-opacity="0.5" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M156 378 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

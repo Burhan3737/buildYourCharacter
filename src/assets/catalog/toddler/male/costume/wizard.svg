@@ -1,0 +1,72 @@
+<!-- axes: VOLUME (one A-line robe flaring straight from the shoulders to the floor, with no
+     legs drawn at all) and SHOULDER (wide draped bell sleeves that swallow the hands).
+     The stars are a pattern surface, not an emblem. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard Robe" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A6CC6)"/>
+      <stop offset="1" stop-color="var(--c1, #4A3F8C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-wizard__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F5CF7C)"/>
+      <stop offset="1" stop-color="var(--c2, #D2A23F)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <path d="M12 3 L15 9 L21 12 L15 15 L12 21 L9 15 L3 12 L9 9 Z"
+            fill="var(--c3, #FBEDC4)" fill-opacity="0.72"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-wizard__robeClip">
+      <path d="M152 344 h96 q16 0 20 24 l38 188 q4 16 -12 16 h-188 q-16 0 -12-16
+               l38-188 q4-24 20-24 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the robe: a single flare from shoulder to ground -->
+  <g class="sp-shadow">
+    <path d="M152 344 h96 q16 0 20 24 l38 188 q4 16 -12 16 h-188 q-16 0 -12-16
+             l38-188 q4-24 20-24 z"
+          fill="url(#toddler-male-costume-wizard__robe)"/>
+  </g>
+
+  <!-- star scatter, clipped to the robe -->
+  <g clip-path="url(#toddler-male-costume-wizard__robeClip)">
+    <rect x="92" y="344" width="216" height="228" fill="url(#toddler-male-costume-wizard__stars)"/>
+  </g>
+
+  <!-- wide draped bell sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 350 C120 356 106 392 96 446 C120 460 148 456 160 444
+             C158 410 156 378 150 350 Z"
+          fill="url(#toddler-male-costume-wizard__robe)"/>
+    <path d="M250 350 C280 356 294 392 304 446 C280 460 252 456 240 444
+             C242 410 244 378 250 350 Z"
+          fill="url(#toddler-male-costume-wizard__robe)"/>
+  </g>
+  <path d="M96 446 C120 460 148 456 160 444 l3 14 C148 470 118 474 94 460 z"
+        fill="url(#toddler-male-costume-wizard__trim)"/>
+  <path d="M304 446 C280 460 252 456 240 444 l-3 14 C252 470 282 474 306 460 z"
+        fill="url(#toddler-male-costume-wizard__trim)"/>
+
+  <!-- wrapped front: a deep V lapel and an overlap edge set right of centre -->
+  <path d="M166 344 L200 398 L234 344 L250 352 L208 412 L192 412 L150 352 Z"
+        fill="url(#toddler-male-costume-wizard__trim)"/>
+  <rect x="204" y="406" width="16" height="160" rx="8" fill="url(#toddler-male-costume-wizard__trim)"/>
+  <path d="M212 412 v152" stroke="var(--c1, #4A3F8C)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rope cord at the waist with a knot and two falling ends -->
+  <rect x="140" y="452" width="120" height="16" rx="8" fill="url(#toddler-male-costume-wizard__trim)"/>
+  <circle cx="176" cy="460" r="13" fill="url(#toddler-male-costume-wizard__trim)"/>
+  <path d="M170 472 q-6 32 -2 60 M184 472 q6 32 2 60" stroke="var(--c2, #D2A23F)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- hem band -->
+  <path d="M100 548 l-6 8 q-4 16 12 16 h188 q16 0 12-16 l-6-8 z"
+        fill="url(#toddler-male-costume-wizard__trim)"/>
+
+  <path d="M160 360 q40 18 80 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

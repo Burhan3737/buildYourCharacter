@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Robe" data-family="robe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: closure = CROSSOVER WRAP, one front panel lapping over the other under
+       a shawl collar · volume = FLARED, swinging out from a tied waist to a
+       mid-calf hem. Wide dropped sleeves. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-robe__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FA8DC)"/>
+      <stop offset="1" stop-color="var(--c2, #737DB8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-robe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FA8DC)"/>
+      <stop offset="1" stop-color="var(--c2, #737DB8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-robe__lap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FA8DC)"/>
+      <stop offset="1" stop-color="var(--c2, #737DB8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide dropped sleeves, hanging open at the cuff -->
+    <path d="M108 364 q4 -20 24 -20 h32 v44 q0 16 -18 18 l-24 2 q-16 0 -16 -16 z"
+          fill="url(#toddler-male-onepiece-robe__sleeve)"/>
+    <path d="M292 364 q-4 -20 -24 -20 h-32 v44 q0 16 18 18 l24 2 q16 0 16 -16 z"
+          fill="url(#toddler-male-onepiece-robe__sleeve)"/>
+    <!-- flared wrap body falling to mid-calf -->
+    <path d="M156 344 h88 q14 0 16 16 l24 152 q2 14 -14 16 q-90 12 -180 0 q-16 -2 -14 -16
+             l24 -152 q2 -16 16 -16 z"
+          fill="url(#toddler-male-onepiece-robe__cloth)"/>
+    <!-- the overlapping front panel, crossing right over left -->
+    <path d="M200 350 q26 4 36 22 l16 138 q-38 8 -76 4 z"
+          fill="url(#toddler-male-onepiece-robe__lap)"/>
+  </g>
+
+  <!-- shawl collar running down both sides of the crossover -->
+  <path d="M172 344 q-6 24 -12 60 q-2 12 10 12 q10 0 12 -12 q6 -34 14 -60 z"
+        fill="var(--c3, #EFE3F5)"/>
+  <path d="M228 344 q6 24 12 60 q2 12 -10 12 q-10 0 -12 -12 q-6 -34 -14 -60 z"
+        fill="var(--c3, #EFE3F5)"/>
+
+  <!-- tie belt with a knot and two short ends -->
+  <path d="M144 438 q56 14 112 0 v16 q-56 14 -112 0 z" fill="var(--c3, #EFE3F5)"/>
+  <circle cx="200" cy="448" r="10" fill="var(--c2, #737DB8)"/>
+  <path d="M194 456 q-8 16 -6 30" stroke="var(--c3, #EFE3F5)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 456 q8 16 6 30" stroke="var(--c3, #EFE3F5)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- piped cuffs and hem band -->
+  <path d="M108 380 h56 v9 h-56 z" fill="var(--c3, #EFE3F5)"/>
+  <path d="M292 380 h-56 v9 h56 z" fill="var(--c3, #EFE3F5)"/>
+  <path d="M118 508 q82 14 164 0 v9 q-82 14 -164 0 z" fill="var(--c3, #EFE3F5)"/>
+
+  <path d="M164 366 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

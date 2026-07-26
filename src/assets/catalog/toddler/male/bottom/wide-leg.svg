@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide-Leg Trousers" data-family="wide-leg" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = high, the waist panel sitting up at y430 over the tummy ·
+       leg length = full and then some, the hem at y552 breaking down onto the shoe ·
+       leg width = flared, each leg opening from 42px at the top of the thigh to a
+       59px column at the floor ·
+       hem = a deep 22px turn-up cuff folded back on itself.
+       vs cargo: rise + leg width (a flare against a straight-sided tube).
+       vs jeans: rise, leg width and hem treatment.
+       vs leggings: leg width + hem treatment.
+       vs tailored trousers: rise, leg length and leg width.
+       vs snow pants: leg length, leg width and hem treatment.
+       vs joggers: rise, leg width and hem treatment.
+       Surface tools: pattern (18px even vertical stripe through the accent),
+       trim (deep contrast turn-ups and a wide waist panel) and structural detail
+       (a single pressed front pleat falling from the waist on each leg). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-wide-leg__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D8B08A)"/>
+      <stop offset="1" stop-color="var(--c2, #A9825E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-wide-leg__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D8B08A)"/>
+      <stop offset="1" stop-color="var(--c2, #A9825E)"/>
+    </linearGradient>
+    <pattern id="toddler-male-bottom-wide-leg__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="5" height="18" fill="var(--c3, #6BBFAD)" opacity="0.42"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 466 H200 V546 q0 6 -6 6 H142 q-6 0 -7-6 L136 500 Q134 478 158 466 Z"
+          fill="url(#toddler-male-bottom-wide-leg__leg)"/>
+    <path d="M242 466 H200 V546 q0 6 6 6 H258 q6 0 7-6 L264 500 Q266 478 242 466 Z"
+          fill="url(#toddler-male-bottom-wide-leg__leg)"/>
+    <path d="M158 430 h84 q8 0 8 10 v34 q0 12 -12 12 h-76 q-12 0 -12-12 v-34 q0-10 8-10 Z"
+          fill="url(#toddler-male-bottom-wide-leg__waist)"/>
+  </g>
+
+  <!-- pattern over the gradient legs -->
+  <path d="M158 466 H200 V546 q0 6 -6 6 H142 q-6 0 -7-6 L136 500 Q134 478 158 466 Z"
+        fill="url(#toddler-male-bottom-wide-leg__stripe)"/>
+  <path d="M242 466 H200 V546 q0 6 6 6 H258 q6 0 7-6 L264 500 Q266 478 242 466 Z"
+        fill="url(#toddler-male-bottom-wide-leg__stripe)"/>
+
+  <!-- trim: deep turn-up cuffs -->
+  <path d="M137 530 H200 V546 q0 6 -6 6 H143 q-6 0 -6-6 Z" fill="var(--c2, #A9825E)"/>
+  <path d="M263 530 H200 V546 q0 6 6 6 H257 q6 0 6-6 Z" fill="var(--c2, #A9825E)"/>
+  <path d="M139 532 h54 M207 532 h54" stroke="var(--c3, #6BBFAD)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: wide high waist panel -->
+  <rect x="150" y="426" width="100" height="18" rx="9" fill="var(--c2, #A9825E)"/>
+  <path d="M154 444 q46 8 92 0" stroke="var(--c3, #6BBFAD)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: one pressed front pleat per leg -->
+  <path d="M176 470 L166 528" stroke="var(--c2, #A9825E)" stroke-width="3.5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M224 470 L234 528" stroke="var(--c2, #A9825E)" stroke-width="3.5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M160 440 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 476 q-4 26 -6 50" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 476 q4 26 6 50" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

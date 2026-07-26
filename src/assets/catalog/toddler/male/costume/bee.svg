@@ -1,0 +1,83 @@
+<!-- axes: SHOULDER (big gathered puff sleeves with two round wings behind them) and
+     VOLUME (a flared abdomen bulb that is widest at the hips, not at the chest). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bee Suit" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-bee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FAD483)"/>
+      <stop offset="1" stop-color="var(--c1, #E5A939)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-bee__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #52443A)"/>
+      <stop offset="1" stop-color="var(--c2, #33291F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0F8FC)"/>
+      <stop offset="1" stop-color="var(--c3, #C6DEEB)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-bee__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <rect x="0" y="0" width="24" height="12" fill="var(--c2, #33291F)" fill-opacity="0.9"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-bee__bulbClip">
+      <path d="M154 372 q0-28 30-28 h32 q30 0 30 28 q18 44 10 86 q-8 42 -56 42
+               q-48 0 -56-42 q-8-42 10-86 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two rounded wings, behind the shoulders -->
+  <g class="sp-shadow">
+    <path d="M150 354 q-56 -6 -76 28 q-20 34 16 48 q38 14 56 -18 q12 -30 4 -58 z"
+          fill="url(#toddler-male-costume-bee__wing)"/>
+    <path d="M250 354 q56 -6 76 28 q20 34 -16 48 q-38 14 -56 -18 q-12 -30 -4 -58 z"
+          fill="url(#toddler-male-costume-bee__wing)"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round">
+    <path d="M100 372 q-18 16 -16 42 M84 386 q-12 14 -10 34
+             M300 372 q18 16 16 42 M316 386 q12 14 10 34"/>
+  </g>
+
+  <!-- plush banded body: a bulb widest across the abdomen -->
+  <g class="sp-shadow">
+    <path d="M154 372 q0-28 30-28 h32 q30 0 30 28 q18 44 10 86 q-8 42 -56 42
+             q-48 0 -56-42 q-8-42 10-86 z"
+          fill="url(#toddler-male-costume-bee__body)"/>
+    <path d="M152 350 q-44 2 -44 38 q0 32 32 34 q34 2 38 -30 z"
+          fill="url(#toddler-male-costume-bee__body)"/>
+    <path d="M248 350 q44 2 44 38 q0 32 -32 34 q-34 2 -38 -30 z"
+          fill="url(#toddler-male-costume-bee__body)"/>
+    <rect x="116" y="404" width="34" height="44" rx="17" fill="url(#toddler-male-costume-bee__body)"/>
+    <rect x="250" y="404" width="34" height="44" rx="17" fill="url(#toddler-male-costume-bee__body)"/>
+    <rect x="164" y="484" width="34" height="66" rx="17" fill="url(#toddler-male-costume-bee__body)"/>
+    <rect x="202" y="484" width="34" height="66" rx="17" fill="url(#toddler-male-costume-bee__body)"/>
+  </g>
+
+  <!-- the stripes, clipped to the abdomen bulb only -->
+  <g clip-path="url(#toddler-male-costume-bee__bulbClip)">
+    <rect x="140" y="386" width="120" height="120" fill="url(#toddler-male-costume-bee__stripe)"/>
+  </g>
+
+  <!-- soft collar and puff-sleeve cuff bands -->
+  <path d="M168 344 h64 q6 12 -6 17 q-26 8 -52 0 q-12 -5 -6 -17 z"
+        fill="url(#toddler-male-costume-bee__band)"/>
+  <g fill="var(--c2, #33291F)">
+    <rect x="114" y="398" width="38" height="11" rx="5.5"/>
+    <rect x="248" y="398" width="38" height="11" rx="5.5"/>
+    <rect x="164" y="486" width="34" height="11" rx="5.5"/>
+    <rect x="202" y="486" width="34" height="11" rx="5.5"/>
+    <rect x="164" y="522" width="34" height="11" rx="5.5"/>
+    <rect x="202" y="522" width="34" height="11" rx="5.5"/>
+  </g>
+
+  <!-- mitts and rounded shoe covers -->
+  <g class="sp-shadow">
+    <circle cx="132" cy="450" r="20" fill="url(#toddler-male-costume-bee__band)"/>
+    <circle cx="268" cy="450" r="20" fill="url(#toddler-male-costume-bee__band)"/>
+    <rect x="158" y="542" width="46" height="30" rx="15" fill="url(#toddler-male-costume-bee__band)"/>
+    <rect x="196" y="542" width="46" height="30" rx="15" fill="url(#toddler-male-costume-bee__band)"/>
+  </g>
+
+  <path d="M164 366 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,81 @@
+<!-- axes: SHOULDER (a heavy dropped shoulder far outside the body line) and
+     CLOSURE (a full storm-flap placket with clasps, under a high standing collar). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Firefighter Turnout" data-family="firefighter" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-firefighter__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A155)"/>
+      <stop offset="1" stop-color="var(--c1, #B87526)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-firefighter__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4EFD6)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC7A4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-firefighter__gear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #5A5048)"/>
+      <stop offset="1" stop-color="var(--c3, #3B332C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- turnout trousers under the coat -->
+  <g class="sp-shadow">
+    <rect x="158" y="496" width="42" height="60" rx="14" fill="url(#toddler-male-costume-firefighter__coat)"/>
+    <rect x="200" y="496" width="42" height="60" rx="14" fill="url(#toddler-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- heavy turnout coat: boxy, dropped shoulders, thigh-length -->
+  <g class="sp-shadow">
+    <path d="M138 372 q0-28 30-28 h64 q30 0 30 28 v114 q0 26 -28 26 h-68 q-28 0 -28-26 z"
+          fill="url(#toddler-male-costume-firefighter__coat)"/>
+    <rect x="102" y="354" width="44" height="98" rx="20" fill="url(#toddler-male-costume-firefighter__coat)"/>
+    <rect x="254" y="354" width="44" height="98" rx="20" fill="url(#toddler-male-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- storm-flap placket with clasps -->
+  <rect x="184" y="352" width="32" height="158" rx="8" fill="url(#toddler-male-costume-firefighter__gear)"/>
+  <g fill="var(--c2, #F4EFD6)">
+    <rect x="188" y="368" width="24" height="10" rx="5"/>
+    <rect x="188" y="436" width="24" height="10" rx="5"/>
+    <rect x="188" y="490" width="24" height="10" rx="5"/>
+  </g>
+
+  <!-- two horizontal reflective bands, running across coat and sleeves -->
+  <g>
+    <rect x="102" y="396" width="196" height="16" fill="url(#toddler-male-costume-firefighter__band)"/>
+    <rect x="102" y="392" width="196" height="5" fill="var(--c3, #5A5048)"/>
+    <rect x="102" y="411" width="196" height="5" fill="var(--c3, #5A5048)"/>
+    <rect x="138" y="456" width="124" height="16" fill="url(#toddler-male-costume-firefighter__band)"/>
+    <rect x="138" y="452" width="124" height="5" fill="var(--c3, #5A5048)"/>
+    <rect x="138" y="471" width="124" height="5" fill="var(--c3, #5A5048)"/>
+    <rect x="158" y="516" width="84" height="14" fill="url(#toddler-male-costume-firefighter__band)"/>
+  </g>
+
+  <!-- high storm collar, standing on the shoulder ceiling -->
+  <path d="M162 344 h76 v14 q-12 12 -38 12 q-26 0 -38 -12 z"
+        fill="url(#toddler-male-costume-firefighter__gear)"/>
+  <path d="M170 346 h60 v8 h-60 z" fill="#FFFFFF" fill-opacity="0.2"/>
+
+  <!-- cargo pocket flaps -->
+  <g fill="url(#toddler-male-costume-firefighter__gear)">
+    <rect x="144" y="418" width="36" height="30" rx="6"/>
+    <rect x="220" y="418" width="36" height="30" rx="6"/>
+  </g>
+
+  <!-- gauntlet gloves and heavy boots -->
+  <g class="sp-shadow">
+    <circle cx="124" cy="452" r="22" fill="url(#toddler-male-costume-firefighter__gear)"/>
+    <circle cx="276" cy="452" r="22" fill="url(#toddler-male-costume-firefighter__gear)"/>
+    <path d="M150 534 h52 q12 0 12 18 v10 q0 10 -14 10 h-48 q-14 0 -14 -10 v-10 q0-18 12-18 z"
+          fill="url(#toddler-male-costume-firefighter__gear)"/>
+    <path d="M198 534 h52 q12 0 12 18 v10 q0 10 -14 10 h-48 q-14 0 -14 -10 v-10 q0-18 12-18 z"
+          fill="url(#toddler-male-costume-firefighter__gear)"/>
+  </g>
+  <g fill="var(--c2, #F4EFD6)">
+    <rect x="140" y="538" width="72" height="8" rx="4"/>
+    <rect x="188" y="538" width="72" height="8" rx="4"/>
+  </g>
+
+  <path d="M154 368 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

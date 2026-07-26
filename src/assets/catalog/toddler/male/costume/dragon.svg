@@ -1,0 +1,97 @@
+<!-- axes: VOLUME (hard-edged, faceted plate armour of a body - every edge is a straight
+     cut) and SHOULDER (a pair of angular wing stubs standing out behind the shoulders).
+     This is what separates it from dino, which is a soft round bulb with no wings. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon Suit" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-dragon__scale" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9B7BD4)"/>
+      <stop offset="1" stop-color="var(--c1, #6B4FA8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-dragon__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6DCB4)"/>
+      <stop offset="1" stop-color="var(--c2, #DCB782)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-dragon__crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F5A24C)"/>
+      <stop offset="1" stop-color="var(--c3, #D9701F)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-dragon__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="16">
+      <path d="M-9 16 L0 4 L9 16 L18 4 L27 16" fill="none"
+            stroke="var(--c2, #DCB782)" stroke-opacity="0.45" stroke-width="2.4"
+            stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-dragon__bodyClip">
+      <path d="M152 344 h96 l10 34 v58 l-12 30 h-92 l-12-30 v-58 z"/>
+      <path d="M154 452 h92 l-8 36 h-76 z"/>
+      <rect x="164" y="458" width="34" height="92" rx="10"/>
+      <rect x="202" y="458" width="34" height="92" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- angular wing stubs and the tail, behind the body -->
+  <g class="sp-shadow">
+    <path d="M148 348 L66 368 L88 402 L112 392 L104 420 L150 406 Z"
+          fill="url(#toddler-male-costume-dragon__crest)"/>
+    <path d="M252 348 L334 368 L312 402 L288 392 L296 420 L250 406 Z"
+          fill="url(#toddler-male-costume-dragon__crest)"/>
+    <path d="M234 452 L286 480 L322 522 L336 550 L312 548 L288 516 L254 492 L230 480 Z"
+          fill="url(#toddler-male-costume-dragon__scale)"/>
+  </g>
+
+  <!-- faceted body: a hexagonal torso, hard-cornered sleeves and legs -->
+  <g class="sp-shadow">
+    <path d="M152 344 h96 l10 34 v58 l-12 30 h-92 l-12-30 v-58 z"
+          fill="url(#toddler-male-costume-dragon__scale)"/>
+    <rect x="112" y="352" width="38" height="92" rx="10" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <rect x="250" y="352" width="38" height="92" rx="10" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <path d="M154 452 h92 l-8 36 h-76 z" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <rect x="164" y="458" width="34" height="92" rx="10" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <rect x="202" y="458" width="34" height="92" rx="10" fill="url(#toddler-male-costume-dragon__scale)"/>
+  </g>
+
+  <!-- scale texture across the plated body -->
+  <g clip-path="url(#toddler-male-costume-dragon__bodyClip)">
+    <rect x="140" y="344" width="120" height="208" fill="url(#toddler-male-costume-dragon__scales)"/>
+  </g>
+
+  <!-- dorsal crest: sharp plates over the shoulder and down onto the tail -->
+  <g fill="url(#toddler-male-costume-dragon__crest)">
+    <path d="M254 372 L282 360 L280 388 Z"/>
+    <path d="M256 400 L286 390 L282 418 Z"/>
+    <path d="M248 462 L274 446 L272 476 Z"/>
+    <path d="M276 480 L302 466 L298 496 Z"/>
+    <path d="M302 502 L328 492 L320 520 Z"/>
+    <path d="M322 526 L348 520 L336 546 Z"/>
+  </g>
+
+  <!-- stacked belly plates, straight-edged and stepped -->
+  <g fill="url(#toddler-male-costume-dragon__plate)">
+    <path d="M170 380 h60 l-6 16 h-48 z"/>
+    <path d="M166 400 h68 l-6 16 h-56 z"/>
+    <path d="M164 420 h72 l-8 16 h-56 z"/>
+    <path d="M166 440 h68 l-10 16 h-48 z"/>
+  </g>
+
+  <!-- angular collar notch -->
+  <path d="M168 344 h64 l-12 18 h-40 z" fill="url(#toddler-male-costume-dragon__crest)"/>
+
+  <!-- clawed mitts and clawed feet -->
+  <g class="sp-shadow">
+    <path d="M112 428 h38 l6 20 l-10 14 h-30 l-10 -14 z" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <path d="M250 428 h38 l10 20 l-10 14 h-30 l-14 -14 z" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <path d="M156 540 h48 l10 20 v12 h-64 v-12 z" fill="url(#toddler-male-costume-dragon__scale)"/>
+    <path d="M196 540 h48 l10 20 v12 h-64 v-12 z" fill="url(#toddler-male-costume-dragon__scale)"/>
+  </g>
+  <g fill="url(#toddler-male-costume-dragon__plate)">
+    <path d="M156 562 l8 -12 l8 12 z"/>
+    <path d="M176 564 l8 -12 l8 12 z"/>
+    <path d="M204 562 l8 -12 l8 12 z"/>
+    <path d="M224 564 l8 -12 l8 12 z"/>
+  </g>
+
+  <path d="M160 364 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

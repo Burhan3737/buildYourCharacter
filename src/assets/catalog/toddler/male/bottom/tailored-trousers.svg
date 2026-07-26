@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailored Trousers" data-family="tailored-trousers" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural, a crisp squared waistband at y436 ·
+       leg length = cropped, the turn-up finishing at y532 and leaving the ankle bare ·
+       leg width = straight and slim, a clean 38px column with a flat front ·
+       hem = a folded turn-up, a squared 18px band pressed back on itself.
+       vs jeans: leg length + hem treatment. vs cargo: leg length, leg width, hem.
+       vs wide leg: rise, leg length and leg width.
+       vs joggers: leg length, leg width and hem treatment.
+       vs snow pants: rise, leg width and hem treatment.
+       vs sweat shorts: leg length + leg width. vs shorts: leg length + hem treatment.
+       Surface tools: trim (contrast squared waistband and matching turn-ups),
+       structural detail (a pressed centre crease down each leg, a welt hip pocket
+       and a fly seam) and panel blocking (contrast waistband facing). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-tailored-trousers__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A8FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #5D6178)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-tailored-trousers__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A8FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #5D6178)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M162 468 H200 V526 q0 6 -5 6 H167 q-5 0 -5-6 Z"
+          fill="url(#toddler-male-bottom-tailored-trousers__leg)"/>
+    <path d="M238 468 H200 V526 q0 6 5 6 H233 q5 0 5-6 Z"
+          fill="url(#toddler-male-bottom-tailored-trousers__leg)"/>
+    <path d="M160 436 h80 q6 0 6 8 v30 q0 10 -10 10 h-72 q-10 0 -10-10 v-30 q0-8 6-8 Z"
+          fill="url(#toddler-male-bottom-tailored-trousers__waist)"/>
+  </g>
+
+  <!-- trim: squared waistband with a contrast facing -->
+  <rect x="154" y="432" width="92" height="16" rx="5" fill="var(--c2, #5D6178)"/>
+  <path d="M156 448 h88" stroke="var(--c3, #F0D9B0)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: squared turn-ups at the cropped hem -->
+  <rect x="163" y="514" width="37" height="18" rx="4" fill="var(--c2, #5D6178)"/>
+  <rect x="200" y="514" width="37" height="18" rx="4" fill="var(--c2, #5D6178)"/>
+  <path d="M165 517 h33 M202 517 h33" stroke="var(--c3, #F0D9B0)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: pressed centre crease down the face of each leg -->
+  <path d="M181 470 V514" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M219 470 V514" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M183 470 V514" stroke="var(--c2, #5D6178)" stroke-width="2"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+  <path d="M217 470 V514" stroke="var(--c2, #5D6178)" stroke-width="2"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: welt hip pocket and fly seam -->
+  <path d="M158 462 h22" stroke="var(--c2, #5D6178)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 462 h-22" stroke="var(--c2, #5D6178)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 452 v22" stroke="var(--c2, #5D6178)" stroke-width="2.5"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlight -->
+  <path d="M164 456 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

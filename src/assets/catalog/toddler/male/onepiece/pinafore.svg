@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: shoulder = two narrow STRAPS over a square bib, leaving the whole
+       chest and arms open · volume = A-LINE, flaring hard from a high bib waist.
+       Nothing else in the slot is bib-fronted. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-pinafore__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5F41)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5F41)"/>
+    </linearGradient>
+    <pattern id="toddler-male-onepiece-pinafore__floret" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="6" r="3" fill="var(--c3, #F7E2C6)"/>
+      <circle cx="6" cy="12" r="3" fill="var(--c3, #F7E2C6)"/>
+      <circle cx="16" cy="12" r="3" fill="var(--c3, #F7E2C6)"/>
+      <circle cx="11" cy="17" r="3" fill="var(--c3, #F7E2C6)"/>
+    </pattern>
+    <clipPath id="toddler-male-onepiece-pinafore__clip">
+      <path d="M152 428 h96 l28 76 q-76 18 -152 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- over-shoulder straps -->
+    <path d="M162 344 h18 v34 h-18 q-5 0 -5 -6 v-22 q0 -6 5 -6 z"
+          fill="url(#toddler-male-onepiece-pinafore__strap)"/>
+    <path d="M238 344 h-18 v34 h18 q5 0 5 -6 v-22 q0 -6 -5 -6 z"
+          fill="url(#toddler-male-onepiece-pinafore__strap)"/>
+    <!-- square bib panel -->
+    <path d="M168 374 h64 q6 0 6 8 v46 h-76 v-46 q0 -8 6 -8 z"
+          fill="url(#toddler-male-onepiece-pinafore__cloth)"/>
+    <!-- A-line skirt flaring from the bib waist -->
+    <path d="M152 428 h96 l28 76 q-76 18 -152 0 z"
+          fill="url(#toddler-male-onepiece-pinafore__cloth)"/>
+  </g>
+
+  <!-- floret print across the skirt -->
+  <g clip-path="url(#toddler-male-onepiece-pinafore__clip)">
+    <rect x="120" y="424" width="160" height="92"
+          fill="url(#toddler-male-onepiece-pinafore__floret)" opacity="0.8"/>
+    <rect x="120" y="492" width="160" height="10" fill="var(--c3, #F7E2C6)"/>
+  </g>
+
+  <!-- big fastening buttons where the straps meet the bib -->
+  <circle cx="172" cy="380" r="6" fill="var(--c3, #F7E2C6)"/>
+  <circle cx="228" cy="380" r="6" fill="var(--c3, #F7E2C6)"/>
+
+  <!-- bound bib edge and a patch pocket -->
+  <path d="M164 376 h72" stroke="var(--c3, #F7E2C6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M184 396 h32 v22 h-32 z" fill="var(--c2, #9E5F41)"/>
+  <path d="M184 402 h32" stroke="var(--c3, #F7E2C6)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- waist seam -->
+  <path d="M152 428 h96" stroke="var(--c3, #F7E2C6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 386 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

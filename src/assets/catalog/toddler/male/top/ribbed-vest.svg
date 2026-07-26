@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: hem = PAST HIP y468, long over the hip block · volume = STRAIGHT,
+       x148 to x252 with no shaping. Shoulder is a wide 26px strap and the
+       armhole is cut deep and concave, scooping from y344 out to y412 before
+       the side seam starts. Closure closed. Differs from tank on hem and
+       volume, from overalls top on hem and volume, from puffer vest on closure,
+       hem and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FC4B3)"/>
+      <stop offset="1" stop-color="var(--c2, #47897A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-ribbed-vest__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="toddler-male-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="5" height="14" fill="var(--c2, #47897A)" opacity="0.45"/>
+    </pattern>
+    <clipPath id="toddler-male-top-ribbed-vest__clip">
+      <path d="M158 344 q-12 34 -10 68 v32 q0 24 26 24 h52 q26 0 26-24 v-32 q2-34 -10-68 h-26 q2 22 -16 26 q-18-4 -16-26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one athletic vest body; straps, deep armhole scoops and the scooped
+         neckline are all cut into the same outline -->
+    <path d="M158 344 q-12 34 -10 68 v32 q0 24 26 24 h52 q26 0 26-24 v-32 q2-34 -10-68 h-26 q2 22 -16 26 q-18-4 -16-26 z"
+          fill="url(#toddler-male-top-ribbed-vest__body)"/>
+  </g>
+
+  <!-- rib surface, the reason this is not just a tank -->
+  <g clip-path="url(#toddler-male-top-ribbed-vest__clip)">
+    <rect x="144" y="340" width="112" height="132" fill="url(#toddler-male-top-ribbed-vest__rib)"/>
+  </g>
+
+  <!-- hem band -->
+  <path d="M148 442 q52 14 104 0 v6 q0 20 -22 20 h-60 q-22 0 -22-20 z"
+        fill="url(#toddler-male-top-ribbed-vest__band)"/>
+
+  <!-- neck and armhole binding -->
+  <path d="M184 346 q4 22 16 24 q12-2 16-24" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 348 q-10 32 -8 62" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 348 q10 32 8 62" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- strap seams -->
+  <path d="M172 350 q-6 24 -6 40 M228 350 q6 24 6 40"
+        stroke="var(--c2, #47897A)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M170 392 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

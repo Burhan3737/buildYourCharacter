@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puffer Vest" data-family="puffer-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve = NONE (the arms are bare from the shoulder down) ·
+       volume = BOXY, and padded: four quilt channels bulge the side seams out
+       to x142/258 in scallops. Closure zip, hem hip y452. Differs from tank on
+       sleeve, closure and volume, from ribbed vest on closure, hem and volume,
+       from zip jacket on sleeve and hem. -->
+  <defs>
+    <linearGradient id="toddler-male-top-puffer-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F19A7E)"/>
+      <stop offset="1" stop-color="var(--c2, #C96E52)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-puffer-vest__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C96E52)"/>
+      <stop offset="1" stop-color="var(--c1, #F19A7E)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-top-puffer-vest__clip">
+      <path d="M170 344 h60 q28 0 28 24 q12 8 0 16 q12 8 0 16 q12 8 0 16 q12 8 0 16 q2 20 -26 20 h-64 q-28 0 -26-20 q-12-8 0-16 q-12-8 0-16 q-12-8 0-16 q-12-8 0-16 q-2-24 28-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one padded gilet; the channels are drawn into the outline itself -->
+    <path d="M170 344 h60 q28 0 28 24 q12 8 0 16 q12 8 0 16 q12 8 0 16 q12 8 0 16 q2 20 -26 20 h-64 q-28 0 -26-20 q-12-8 0-16 q-12-8 0-16 q-12-8 0-16 q-12-8 0-16 q-2-24 28-24 z"
+          fill="url(#toddler-male-top-puffer-vest__body)"/>
+  </g>
+
+  <!-- horizontal channel seams and their padded highlights -->
+  <g clip-path="url(#toddler-male-top-puffer-vest__clip)">
+    <rect x="136" y="366" width="128" height="5" fill="var(--c2, #C96E52)"/>
+    <rect x="136" y="382" width="128" height="5" fill="var(--c2, #C96E52)"/>
+    <rect x="136" y="398" width="128" height="5" fill="var(--c2, #C96E52)"/>
+    <rect x="136" y="414" width="128" height="5" fill="var(--c2, #C96E52)"/>
+    <rect x="136" y="430" width="128" height="5" fill="var(--c2, #C96E52)"/>
+    <path d="M150 374 q50 10 100 0 M150 390 q50 10 100 0 M150 406 q50 10 100 0 M150 422 q50 10 100 0"
+          stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- armhole shading so the bare arm reads as sitting behind the padding -->
+    <path d="M148 346 q16 16 14 44 l-20 0 z" fill="var(--c2, #C96E52)" opacity="0.5"/>
+    <path d="M252 346 q-16 16 -14 44 l20 0 z" fill="var(--c2, #C96E52)" opacity="0.5"/>
+  </g>
+
+  <!-- high padded stand collar, kept clear of the chin -->
+  <path d="M174 366 q26-14 52 0 v-16 q-26-10 -52 0 z" fill="url(#toddler-male-top-puffer-vest__collar)"/>
+  <path d="M178 354 q22-8 44 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- armhole binding -->
+  <path d="M150 348 q16 20 14 46" stroke="var(--c3, #FDF2E4)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 348 q-16 20 -14 46" stroke="var(--c3, #FDF2E4)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- centre zip -->
+  <path d="M195 352 h10 v92 q0 6 -5 6 q-5 0 -5-6 z" fill="var(--c3, #FDF2E4)"/>
+  <path d="M200 356 v90" stroke="#3B2A22" stroke-opacity="0.26" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M193 392 h14 v18 q0 5 -7 5 q-7 0 -7-5 z" fill="var(--c3, #FDF2E4)"/>
+
+  <!-- highlight -->
+  <path d="M160 360 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

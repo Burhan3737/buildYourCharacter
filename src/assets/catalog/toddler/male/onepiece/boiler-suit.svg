@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Boiler Suit" data-family="boiler-suit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: shoulder/sleeve = LONG to the wrist (the jumpsuit stops at the elbow) ·
+       volume = BOXY utility cut, the widest torso in the slot at x142 to x258.
+       Camp collar, centre zip, tie at the waist, straight legs. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-boiler-suit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A3E)"/>
+      <stop offset="1" stop-color="var(--c2, #9A6526)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-boiler-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A3E)"/>
+      <stop offset="1" stop-color="var(--c2, #9A6526)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-boiler-suit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A3E)"/>
+      <stop offset="1" stop-color="var(--c2, #9A6526)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeves running the full arm to the wrist -->
+    <path d="M110 360 q2 -16 18 -16 h28 v76 q0 14 -14 14 h-20 q-14 0 -14 -14 z"
+          fill="url(#toddler-male-onepiece-boiler-suit__sleeve)"/>
+    <path d="M290 360 q-2 -16 -18 -16 h-28 v76 q0 14 14 14 h20 q14 0 14 -14 z"
+          fill="url(#toddler-male-onepiece-boiler-suit__sleeve)"/>
+    <!-- boxy utility torso, straight down through the hip -->
+    <path d="M142 362 q2 -18 20 -18 h76 q18 0 20 18 v112 q0 12 -14 12 h-88 q-14 0 -14 -12 z"
+          fill="url(#toddler-male-onepiece-boiler-suit__body)"/>
+    <!-- straight legs, wider than the body's own -->
+    <path d="M158 482 h40 v58 q0 8 -8 8 h-24 q-8 0 -8 -8 z"
+          fill="url(#toddler-male-onepiece-boiler-suit__leg)"/>
+    <path d="M242 482 h-40 v58 q0 8 8 8 h24 q8 0 8 -8 z"
+          fill="url(#toddler-male-onepiece-boiler-suit__leg)"/>
+  </g>
+
+  <!-- camp collar sitting open over the zip -->
+  <path d="M176 344 l24 20 l-30 8 q-12 -6 -12 -18 z" fill="var(--c2, #9A6526)"/>
+  <path d="M224 344 l-24 20 l30 8 q12 -6 12 -18 z" fill="var(--c2, #9A6526)"/>
+
+  <!-- centre zip with a chunky pull -->
+  <rect x="196" y="360" width="8" height="112" rx="4" fill="var(--c3, #F3E0BB)"/>
+  <path d="M200 364 v104" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="193" y="404" width="14" height="18" rx="6" fill="var(--c3, #F3E0BB)"/>
+
+  <!-- tie belt at the waist, knotted off centre -->
+  <path d="M144 440 q56 12 112 0 v14 q-56 12 -112 0 z" fill="var(--c2, #9A6526)"/>
+  <path d="M212 442 q14 6 22 22" stroke="var(--c3, #F3E0BB)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 444 q4 12 -2 24" stroke="var(--c3, #F3E0BB)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- chest and thigh patch pockets -->
+  <path d="M158 380 h30 v22 h-30 z" fill="var(--c2, #9A6526)"/>
+  <path d="M158 386 h30" stroke="var(--c3, #F3E0BB)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 380 h30 v22 h-30 z" fill="var(--c2, #9A6526)"/>
+  <path d="M212 386 h30" stroke="var(--c3, #F3E0BB)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 490 h28 v20 h-28 z" fill="var(--c2, #9A6526)"/>
+
+  <!-- cuff bands -->
+  <path d="M110 412 h34 v10 h-34 z" fill="var(--c3, #F3E0BB)"/>
+  <path d="M290 412 h-34 v10 h34 z" fill="var(--c3, #F3E0BB)"/>
+
+  <path d="M158 366 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

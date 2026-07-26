@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Undercut Sweep" data-family="undercut-sweep" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: PARTING - a hard undercut line at y 236, a ruled disconnect with the long top
+       mass sitting above it and skin close, hair2 heavy stubble below it on both temples and
+       round the nape. There is no soft transition anywhere.
+       VOLUME - one asymmetric top mass swept off a low part on the left, piling to the right
+       and falling past the right temple to y 320, so the outline leans hard to one side.
+       Differs from side-part (symmetric cap, no undercut) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-undercut-sweep__back-g" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #33221A)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #33221A)"/>
+        <stop offset="1" stop-color="var(--hair1, #6B4A3A)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-undercut-sweep__tail-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #33221A)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M144 240 C138 274 148 300 164 312 C180 320 220 320 236 312
+               C252 300 262 274 256 240 C232 254 168 254 144 240 Z"
+            fill="url(#toddler-male-hair-undercut-sweep__back-g)"/>
+      <path d="M248 218 C264 244 268 276 262 306 C258 320 244 322 238 312
+               C244 288 244 256 236 232 Z"
+            fill="url(#toddler-male-hair-undercut-sweep__tail-g)"/>
+    </g>
+    <path d="M156 300 C176 310 224 310 244 300 C236 314 164 314 156 300 Z"
+          fill="var(--hair2, #33221A)"/>
+    <path d="M244 244 C250 270 250 292 246 308" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-undercut-sweep__top-g" x1="0.1" y1="0" x2="0.9" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #33221A)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-undercut-sweep__shave-g" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #33221A)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #33221A)"/>
+        <stop offset="1" stop-color="var(--hair1, #6B4A3A)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M144 236 C142 202 172 180 212 180 C252 180 284 202 286 236
+               C290 268 286 296 278 318 C270 330 254 330 248 318
+               C256 296 258 268 252 244 C238 226 200 218 170 226
+               C158 230 150 232 144 236 Z"
+            fill="url(#toddler-male-hair-undercut-sweep__top-g)"/>
+      <path d="M124 244 C118 272 122 296 132 312 C140 296 144 270 144 244 Z"
+            fill="url(#toddler-male-hair-undercut-sweep__shave-g)"/>
+      <path d="M276 250 C280 274 278 294 272 308 C266 294 262 274 262 250 Z"
+            fill="url(#toddler-male-hair-undercut-sweep__shave-g)"/>
+    </g>
+    <!-- the undercut line: the hard disconnect between the swept top and the shaved side -->
+    <path d="M124 244 C136 236 156 228 176 224 C158 232 142 240 130 250 Z"
+          fill="var(--hair2, #33221A)"/>
+    <path d="M126 268 C130 284 132 298 130 308" stroke="var(--hair2, #33221A)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M274 272 C276 286 274 298 272 306" stroke="var(--hair2, #33221A)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- the sweep: strands running left to right across the top -->
+    <path d="M158 226 C186 208 224 204 250 214" stroke="var(--hair2, #33221A)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M164 210 C192 194 230 192 256 202" stroke="var(--hair2, #33221A)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M172 198 C198 186 236 186 262 196" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M268 240 C274 266 274 290 270 306" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

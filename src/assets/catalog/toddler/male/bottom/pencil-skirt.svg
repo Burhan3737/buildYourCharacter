@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pencil Skirt" data-family="pencil-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural, a wide flat waistband at y438 ·
+       leg length = none (skirt), a hem at the knee at y522 ·
+       leg width = narrow and tapered, 84px at the waist closing to 64px at the hem
+       so the outline pulls inward instead of flaring ·
+       hem = raw, split by a short vent cut up the centre back to y500.
+       vs skirt: leg width (tapered narrow against A-line flare) + hem treatment.
+       vs pleated: leg width + hem treatment.
+       vs tiered skirt: leg width + hem treatment (plus hem height).
+       vs maxi skirt: rise, hem height and leg width.
+       vs tutu: hem height, leg width and hem treatment.
+       vs leggings: rise + leg length (one tapered column against two tubes).
+       vs bike shorts: leg length + hem treatment.
+       Surface tools: pattern (16px gingham check through the accent), trim (broad
+       contrast waistband and a hem facing band) and structural detail (two front
+       darts and a bound vent). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-pencil-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B489C9)"/>
+      <stop offset="1" stop-color="var(--c2, #7C5590)"/>
+    </linearGradient>
+    <pattern id="toddler-male-bottom-pencil-skirt__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="6" fill="var(--c3, #FFE9C6)" opacity="0.32"/>
+      <rect x="0" y="0" width="6" height="16" fill="var(--c3, #FFE9C6)" opacity="0.32"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 438 H242 L236 514 q0 8 -8 8 H204 V500 h-8 V522 H172 q-8 0 -8-8 Z"
+          fill="url(#toddler-male-bottom-pencil-skirt__body)"/>
+  </g>
+
+  <!-- pattern over the gradient body -->
+  <path d="M158 438 H242 L236 514 q0 8 -8 8 H204 V500 h-8 V522 H172 q-8 0 -8-8 Z"
+        fill="url(#toddler-male-bottom-pencil-skirt__gingham)"/>
+
+  <!-- trim: broad contrast waistband -->
+  <rect x="156" y="432" width="88" height="18" rx="7" fill="var(--c2, #7C5590)"/>
+  <path d="M160 450 h80" stroke="var(--c3, #FFE9C6)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: two shaping darts running down from the waist -->
+  <path d="M180 456 L177 492" stroke="var(--c2, #7C5590)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M220 456 L223 492" stroke="var(--c2, #7C5590)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: bound facing on both sides of the vent -->
+  <path d="M195 502 V520" stroke="var(--c2, #7C5590)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M205 502 V520" stroke="var(--c3, #FFE9C6)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: hem facing band, broken by the vent -->
+  <path d="M166 508 H194 V520 H169 q-3 0 -3-4 Z" fill="var(--c2, #7C5590)"/>
+  <path d="M234 508 H206 V520 H231 q3 0 3-4 Z" fill="var(--c2, #7C5590)"/>
+
+  <!-- soft highlights -->
+  <path d="M164 456 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 470 v26" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wellies" data-family="wellies" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shaft height = MID-CALF, the tallest smooth shaft in the slot ·
+       fastening = NONE at all, just a pull tab at the top edge. The shaft is a
+       clean unbroken rubber column with no collar and no lace line. -->
+  <defs>
+    <linearGradient id="toddler-male-shoes-wellies__rubber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D6A044)"/>
+    </linearGradient>
+    <pattern id="toddler-male-shoes-wellies__spot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="3" fill="var(--c3, #FFF6E0)"/>
+    </pattern>
+    <clipPath id="toddler-male-shoes-wellies__clipL">
+      <path d="M167 500 h30 q6 0 6 8 l2 40 q1 14 -9 18 h-30 q-9 -4 -8 -18 l2 -40 q0 -8 7 -8 z"/>
+    </clipPath>
+    <clipPath id="toddler-male-shoes-wellies__clipR">
+      <path d="M233 500 h-30 q-6 0 -6 8 l-2 40 q-1 14 9 18 h30 q9 -4 8 -18 l-2 -40 q0 -8 -7 -8 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M167 500 h30 q6 0 6 8 l2 40 q1 14 -9 18 h-30 q-9 -4 -8 -18 l2 -40 q0 -8 7 -8 z"
+          fill="url(#toddler-male-shoes-wellies__rubber)"/>
+    <path d="M233 500 h-30 q-6 0 -6 8 l-2 40 q-1 14 9 18 h30 q9 -4 8 -18 l-2 -40 q0 -8 -7 -8 z"
+          fill="url(#toddler-male-shoes-wellies__rubber)"/>
+  </g>
+
+  <!-- spot print, the way a child's welly is decorated -->
+  <g clip-path="url(#toddler-male-shoes-wellies__clipL)">
+    <rect x="158" y="500" width="52" height="70" fill="url(#toddler-male-shoes-wellies__spot)" opacity="0.75"/>
+  </g>
+  <g clip-path="url(#toddler-male-shoes-wellies__clipR)">
+    <rect x="190" y="500" width="52" height="70" fill="url(#toddler-male-shoes-wellies__spot)" opacity="0.75"/>
+  </g>
+
+  <!-- moulded top binding and the pull tab -->
+  <path d="M164 500 h38 v8 h-38 z" fill="var(--c2, #D6A044)"/>
+  <path d="M236 500 h-38 v8 h38 z" fill="var(--c2, #D6A044)"/>
+  <rect x="192" y="494" width="9" height="16" rx="4" fill="var(--c3, #FFF6E0)"/>
+  <rect x="199" y="494" width="9" height="16" rx="4" fill="var(--c3, #FFF6E0)"/>
+
+  <!-- shallow moulded sole with a small heel step -->
+  <path d="M158 558 h48 q3 0 3 5 v4 q0 3 -3 3 h-48 q-3 0 -3 -3 v-4 q0 -5 3 -5 z"
+        fill="var(--c2, #D6A044)"/>
+  <path d="M242 558 h-48 q-3 0 -3 5 v4 q0 3 3 3 h48 q3 0 3 -3 v-4 q0 -5 -3 -5 z"
+        fill="var(--c2, #D6A044)"/>
+
+  <!-- glossy rubber highlight down the shaft -->
+  <path d="M172 512 q0 22 3 40" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 512 q0 22 -3 40" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

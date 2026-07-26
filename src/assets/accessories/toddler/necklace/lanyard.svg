@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Lanyard" data-family="lanyard" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: body shape = two flat straps converging to a rectangular card, not a
+       curved chain · drop length = the longest in the slot, reaching the chest. -->
+  <defs>
+    <linearGradient id="accessories-toddler-necklace-lanyard__cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-necklace-lanyard__card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FBF3E2)"/>
+      <stop offset="1" stop-color="var(--c2, #FBF3E2)" stop-opacity="0.86"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- flat woven straps from the shoulders down to the clip -->
+    <path d="M170 338 l24 34 l-9 6 l-24 -34 z" fill="url(#accessories-toddler-necklace-lanyard__cord)"/>
+    <path d="M230 338 l-24 34 l9 6 l24 -34 z" fill="url(#accessories-toddler-necklace-lanyard__cord)"/>
+    <!-- the card hanging at the chest -->
+    <rect x="180" y="378" width="40" height="28" rx="5"
+          fill="url(#accessories-toddler-necklace-lanyard__card)"/>
+  </g>
+
+  <!-- clip joining the straps to the card -->
+  <rect x="194" y="368" width="12" height="14" rx="4" fill="var(--c3, #C7CEE8)"/>
+  <path d="M197 371 h6" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- card face: a punched slot and two blocked-out detail bars, never lettering -->
+  <rect x="194" y="382" width="12" height="4" rx="2" fill="var(--c3, #C7CEE8)"/>
+  <rect x="186" y="391" width="14" height="10" rx="3" fill="var(--c1, #7E90DC)" opacity="0.5"/>
+  <rect x="203" y="391" width="12" height="3.4" rx="1.7" fill="var(--c3, #C7CEE8)"/>
+  <rect x="203" y="397" width="9" height="3.4" rx="1.7" fill="var(--c3, #C7CEE8)"/>
+
+  <!-- woven texture stripe down each strap -->
+  <path d="M174 342 l20 28" stroke="var(--c3, #C7CEE8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 342 l-20 28" stroke="var(--c3, #C7CEE8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight along the top edge of the card -->
+  <path d="M186 383 q14 -3 28 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

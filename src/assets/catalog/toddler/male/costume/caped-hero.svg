@@ -1,47 +1,66 @@
+<!-- axes: HEM (a ground-length shoulder-fastened cape trailing well past the body) and
+     SHOULDER (long set-in sleeves with a plain crew neck, no collar and no mantle).
+     Chest is deliberately blank: no crest, star, badge or emblem of any kind. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
   <defs>
-    <linearGradient id="toddler-male-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c1, #4E9484)"/>
+    <linearGradient id="toddler-male-costume-caped-hero__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #52B48F)"/>
+      <stop offset="1" stop-color="var(--c1, #2F8A6A)"/>
     </linearGradient>
     <linearGradient id="toddler-male-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #E0897C)"/>
+      <stop offset="0" stop-color="var(--c2, #F7CE79)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A346)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF0DC)"/>
+      <stop offset="1" stop-color="var(--c3, #E4D3B4)"/>
     </linearGradient>
   </defs>
 
+  <!-- long cape, fastened at the shoulders and falling to the ground line -->
   <g class="sp-shadow">
-    <path d="M172 346 Q200 345 228 346 L248 468 Q200 484 152 468 Z"
+    <path d="M168 346 Q200 352 232 346 L260 470 Q274 528 288 566 Q200 580 112 566
+             Q126 528 140 470 Z"
           fill="url(#toddler-male-costume-caped-hero__cape)"/>
   </g>
+  <path d="M146 474 q-10 44 -22 84 M254 474 q10 44 22 84"
+        stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="12"
+        fill="none" stroke-linecap="round"/>
 
+  <!-- fitted bodysuit -->
   <g class="sp-shadow">
-    <rect x="168" y="482" width="32" height="84" rx="16" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <rect x="200" y="482" width="32" height="84" rx="16" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v56 q0 26 -26 26 h-52 q-26 0 -26-26 z"
-          fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <rect x="116" y="350" width="36" height="92" rx="18" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <rect x="248" y="350" width="36" height="92" rx="18" fill="url(#toddler-male-costume-caped-hero__body)"/>
+    <path d="M154 370 q0-26 26-26 h40 q26 0 26 26 v54 q0 24 -24 26 h-44 q-24-2 -24-26 z"
+          fill="url(#toddler-male-costume-caped-hero__suit)"/>
+    <rect x="116" y="350" width="38" height="94" rx="19" fill="url(#toddler-male-costume-caped-hero__suit)"/>
+    <rect x="246" y="350" width="38" height="94" rx="19" fill="url(#toddler-male-costume-caped-hero__suit)"/>
+    <rect x="160" y="432" width="80" height="50" rx="21" fill="url(#toddler-male-costume-caped-hero__suit)"/>
+    <rect x="168" y="444" width="30" height="86" rx="15" fill="url(#toddler-male-costume-caped-hero__suit)"/>
+    <rect x="202" y="444" width="30" height="86" rx="15" fill="url(#toddler-male-costume-caped-hero__suit)"/>
   </g>
 
-  <rect x="176" y="344" width="48" height="12" rx="6" fill="var(--c2, #E0897C)"/>
-  <!-- belt -->
-  <rect x="160" y="454" width="80" height="14" rx="7" fill="var(--c2, #E0897C)"/>
-  <circle cx="200" cy="461" r="8" fill="var(--c3, #F7C873)"/>
-  <!-- original abstract shield emblem on the chest, not a copied logo -->
-  <path d="M200 378 L216 386 V404 Q216 416 200 424 Q184 416 184 404 V386 Z"
-        fill="var(--c3, #F7C873)"/>
+  <!-- plain crew neck and the two shoulder cape fasteners -->
+  <rect x="172" y="344" width="56" height="12" rx="6" fill="url(#toddler-male-costume-caped-hero__trim)"/>
+  <circle cx="168" cy="356" r="9" fill="url(#toddler-male-costume-caped-hero__trim)"/>
+  <circle cx="232" cy="356" r="9" fill="url(#toddler-male-costume-caped-hero__trim)"/>
 
+  <!-- wide belt with a plain rectangular buckle -->
+  <rect x="150" y="428" width="100" height="24" rx="10" fill="url(#toddler-male-costume-caped-hero__cape)"/>
+  <rect x="186" y="430" width="28" height="20" rx="6" fill="url(#toddler-male-costume-caped-hero__trim)"/>
+
+  <!-- glove cuffs and tall hero boots -->
   <g class="sp-shadow">
-    <circle cx="134" cy="440" r="19" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <circle cx="266" cy="440" r="19" fill="url(#toddler-male-costume-caped-hero__body)"/>
-    <rect x="164" y="546" width="40" height="24" rx="14" fill="var(--c2, #E0897C)"/>
-    <rect x="196" y="546" width="40" height="24" rx="14" fill="var(--c2, #E0897C)"/>
+    <circle cx="134" cy="444" r="21" fill="url(#toddler-male-costume-caped-hero__cape)"/>
+    <circle cx="266" cy="444" r="21" fill="url(#toddler-male-costume-caped-hero__cape)"/>
+    <path d="M160 508 h44 v46 q0 18 -22 18 q-22 0 -22-18 z"
+          fill="url(#toddler-male-costume-caped-hero__cape)"/>
+    <path d="M196 508 h44 v46 q0 18 -22 18 q-22 0 -22-18 z"
+          fill="url(#toddler-male-costume-caped-hero__cape)"/>
   </g>
+  <path d="M160 508 q22 -14 44 0 v10 q-22 -12 -44 0 z" fill="url(#toddler-male-costume-caped-hero__trim)"/>
+  <path d="M196 508 q22 -14 44 0 v10 q-22 -12 -44 0 z" fill="url(#toddler-male-costume-caped-hero__trim)"/>
 
-  <path d="M162 366 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+  <path d="M162 366 q38 16 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

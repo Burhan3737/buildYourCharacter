@@ -1,25 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = high, the wide knit band riding up over the tummy to y428 ·
+       leg length = full, finishing flat at the ankle at y546 ·
+       leg width = skin-close, a 36px tube hugging the drawn 28px leg with only
+       4px of ease on each side and no ease anywhere else ·
+       hem = raw, a plain flat knit edge with no cuff and no band.
+       vs jeans: rise + leg width. vs joggers: rise, leg width and hem treatment.
+       vs cargo: rise + leg width. vs wide leg: leg width + hem treatment.
+       vs bike shorts: rise, leg length and hem treatment.
+       vs pencil skirt: rise + leg length. vs maxi skirt: leg length + leg width.
+       Surface tools: panel blocking (contrast knit side panel down the outer leg),
+       pattern (14px scattered dot through the accent) and trim (high contrast
+       waistband with a rib edge). -->
   <defs>
-    <linearGradient id="toddler-male-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="toddler-male-bottom-leggings__seat" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #626FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5C97)"/>
     </linearGradient>
     <linearGradient id="toddler-male-bottom-leggings__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #626FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5C97)"/>
     </linearGradient>
+    <pattern id="toddler-male-bottom-leggings__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.6" fill="var(--c3, #F7C873)" opacity="0.55"/>
+      <circle cx="12" cy="12" r="2.6" fill="var(--c3, #F7C873)" opacity="0.55"/>
+    </pattern>
   </defs>
 
   <g class="sp-shadow">
-    <!-- closely fitted, slightly narrower than a trouser leg -->
-    <rect x="171" y="482" width="26" height="60" rx="13" fill="url(#toddler-male-bottom-leggings__leg)"/>
-    <rect x="203" y="482" width="26" height="60" rx="13" fill="url(#toddler-male-bottom-leggings__leg)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20" fill="url(#toddler-male-bottom-leggings__hip)"/>
+    <path d="M166 478 H202 V536 q0 10 -10 10 H176 q-10 0 -10-10 Z"
+          fill="url(#toddler-male-bottom-leggings__leg)"/>
+    <path d="M234 478 H198 V536 q0 10 10 10 H224 q10 0 10-10 Z"
+          fill="url(#toddler-male-bottom-leggings__leg)"/>
+    <rect x="160" y="428" width="80" height="56" rx="24"
+          fill="url(#toddler-male-bottom-leggings__seat)"/>
   </g>
 
-  <rect x="160" y="440" width="80" height="12" rx="6" fill="var(--c2, #626FA8)"/>
-  <path d="M166 460 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+  <!-- pattern over the gradient body -->
+  <rect x="160" y="428" width="80" height="56" rx="24"
+        fill="url(#toddler-male-bottom-leggings__dots)"/>
+  <path d="M166 478 H202 V536 q0 10 -10 10 H176 q-10 0 -10-10 Z"
+        fill="url(#toddler-male-bottom-leggings__dots)"/>
+  <path d="M234 478 H198 V536 q0 10 10 10 H224 q10 0 10-10 Z"
+        fill="url(#toddler-male-bottom-leggings__dots)"/>
+
+  <!-- panel blocking: contrast knit side panel down each outer leg -->
+  <path d="M166 480 h9 v54 q-4 6 -9 0 Z" fill="var(--c2, #4F5C97)"/>
+  <path d="M234 480 h-9 v54 q4 6 9 0 Z" fill="var(--c2, #4F5C97)"/>
+
+  <!-- trim: high knit waistband with a rib edge -->
+  <rect x="160" y="426" width="80" height="20" rx="10" fill="var(--c2, #4F5C97)"/>
+  <path d="M166 446 q34 8 68 0" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 430 v11 M184 430 v11 M196 430 v11 M208 430 v11 M220 430 v11 M232 430 v11"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M166 456 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 490 v46" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 490 v46" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 </svg>

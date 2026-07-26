@@ -1,0 +1,87 @@
+<!-- axes: SHOULDER (domed pauldrons standing proud of the shoulder line) and
+     HEM (a plated tabard panel hanging to mid-calf over the mail body). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight Armour" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E9FE4)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6BB6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B7C2D2)"/>
+      <stop offset="1" stop-color="var(--c2, #8492A8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-knight__steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #5D6C90)"/>
+      <stop offset="1" stop-color="var(--c3, #3A455E)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-knight__mailring" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="4" cy="4" r="3.2" fill="none" stroke="var(--c3, #3A455E)"
+              stroke-opacity="0.5" stroke-width="1.8"/>
+      <circle cx="11" cy="11" r="3.2" fill="none" stroke="var(--c3, #3A455E)"
+              stroke-opacity="0.5" stroke-width="1.8"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-knight__mailClip">
+      <path d="M146 374 q4-30 34-30 h40 q30 0 34 30 v62 q-2 28 -30 28 h-48 q-28 0 -30-28 z"/>
+      <rect x="112" y="356" width="38" height="88" rx="17"/>
+      <rect x="250" y="356" width="38" height="88" rx="17"/>
+      <rect x="160" y="458" width="38" height="94" rx="13"/>
+      <rect x="202" y="458" width="38" height="94" rx="13"/>
+    </clipPath>
+  </defs>
+
+  <!-- mail body under the plate -->
+  <g class="sp-shadow">
+    <path d="M146 374 q4-30 34-30 h40 q30 0 34 30 v62 q-2 28 -30 28 h-48 q-28 0 -30-28 z"
+          fill="url(#toddler-male-costume-knight__mail)"/>
+    <rect x="112" y="356" width="38" height="88" rx="17" fill="url(#toddler-male-costume-knight__mail)"/>
+    <rect x="250" y="356" width="38" height="88" rx="17" fill="url(#toddler-male-costume-knight__mail)"/>
+    <rect x="160" y="458" width="38" height="94" rx="13" fill="url(#toddler-male-costume-knight__mail)"/>
+    <rect x="202" y="458" width="38" height="94" rx="13" fill="url(#toddler-male-costume-knight__mail)"/>
+  </g>
+
+  <!-- mail ring texture -->
+  <g clip-path="url(#toddler-male-costume-knight__mailClip)">
+    <rect x="108" y="344" width="184" height="212" fill="url(#toddler-male-costume-knight__mailring)"/>
+  </g>
+
+  <!-- domed pauldrons -->
+  <g class="sp-shadow">
+    <path d="M104 374 q0-30 30-30 q28 0 30 30 q2 16 -2 28 q-30 8 -56 0 q-4-12 -2-28 z"
+          fill="url(#toddler-male-costume-knight__steel)"/>
+    <path d="M296 374 q0-30 -30-30 q-28 0 -30 30 q-2 16 2 28 q30 8 56 0 q4-12 2-28 z"
+          fill="url(#toddler-male-costume-knight__steel)"/>
+  </g>
+
+  <!-- the tabard: a long plated panel front and centre, hanging to mid-calf -->
+  <g class="sp-shadow">
+    <path d="M164 350 h72 v190 l-36 -18 l-36 18 z" fill="url(#toddler-male-costume-knight__tabard)"/>
+  </g>
+  <path d="M164 350 h9 v185 l-9 5 z M227 350 h9 v190 l-9 -5 z"
+        fill="url(#toddler-male-costume-knight__steel)"/>
+  <path d="M186 350 h28 v168 l-14 8 l-14 -8 z"
+        fill="url(#toddler-male-costume-knight__steel)" fill-opacity="0.4"/>
+
+  <!-- belt at the waist, plus the gorget collar -->
+  <rect x="144" y="440" width="112" height="24" rx="10" fill="url(#toddler-male-costume-knight__steel)"/>
+  <rect x="186" y="442" width="28" height="20" rx="6" fill="url(#toddler-male-costume-knight__mail)"/>
+  <path d="M168 344 h64 q4 14 -8 18 q-24 8 -48 0 q-12 -4 -8 -18 z"
+        fill="url(#toddler-male-costume-knight__steel)"/>
+
+  <!-- gauntlets and sabatons -->
+  <g class="sp-shadow">
+    <rect x="110" y="418" width="42" height="26" rx="10" fill="url(#toddler-male-costume-knight__steel)"/>
+    <rect x="248" y="418" width="42" height="26" rx="10" fill="url(#toddler-male-costume-knight__steel)"/>
+    <circle cx="131" cy="448" r="20" fill="url(#toddler-male-costume-knight__steel)"/>
+    <circle cx="269" cy="448" r="20" fill="url(#toddler-male-costume-knight__steel)"/>
+    <path d="M156 542 h46 q12 0 12 14 v8 q0 8 -12 8 h-44 q-12 0 -12 -8 v-8 q0-14 10-14 z"
+          fill="url(#toddler-male-costume-knight__steel)"/>
+    <path d="M198 542 h46 q12 0 12 14 v8 q0 8 -12 8 h-44 q-12 0 -12 -8 v-8 q0-14 10-14 z"
+          fill="url(#toddler-male-costume-knight__steel)"/>
+  </g>
+
+  <path d="M158 368 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

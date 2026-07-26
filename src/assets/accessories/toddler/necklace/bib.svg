@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bib" data-family="bib" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: scale = one broad panel covering the upper chest, far larger than any
+       chain in the slot · attachment = a poppered neck band rather than a clasp. -->
+  <defs>
+    <linearGradient id="accessories-toddler-necklace-bib__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8C)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-necklace-bib__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E9C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8C)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-necklace-bib__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="3.4" fill="var(--c3, #FBF0D8)"/>
+    </pattern>
+    <clipPath id="accessories-toddler-necklace-bib__clip">
+      <path d="M180 346 q20 -8 40 0 q24 7 24 28 q0 26 -22 34 q-22 8 -44 0 q-22 -8 -22 -34 q0 -21 24 -28 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- neck band with a gap at the back -->
+    <path d="M176 340 q24 -10 48 0 q6 3 5 9 q-29 -10 -58 0 q-1 -6 5 -9 z"
+          fill="url(#accessories-toddler-necklace-bib__band)"/>
+    <!-- the bib panel itself -->
+    <path d="M180 346 q20 -8 40 0 q24 7 24 28 q0 26 -22 34 q-22 8 -44 0 q-22 -8 -22 -34 q0 -21 24 -28 z"
+          fill="url(#accessories-toddler-necklace-bib__cloth)"/>
+  </g>
+
+  <!-- spot pattern across the cloth -->
+  <g clip-path="url(#accessories-toddler-necklace-bib__clip)">
+    <rect x="150" y="340" width="100" height="76"
+          fill="url(#accessories-toddler-necklace-bib__dots)" opacity="0.8"/>
+    <!-- scalloped hem band -->
+    <path d="M154 392 q11 12 23 0 q11 12 23 0 q11 12 23 0 q11 12 23 0 v22 h-92 z"
+          fill="var(--c3, #FBF0D8)" opacity="0.9"/>
+  </g>
+
+  <!-- bound edge round the neck opening -->
+  <path d="M178 350 q22 -10 44 0" stroke="var(--c3, #FBF0D8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- popper at the neck -->
+  <circle cx="222" cy="345" r="4.4" fill="var(--c3, #FBF0D8)"/>
+
+  <!-- highlight across the upper chest -->
+  <path d="M172 362 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

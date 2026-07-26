@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cochlear Implants" data-family="cochlear-implant" data-slot="earrings"
+     data-layer="earrings" data-colors="c1,c2,c3" data-hides="">
+  <!-- A cochlear implant: a sound processor behind the ear and a round transmitter
+       coil held magnetically against the head above and behind it, joined by a fine
+       lead. Axes: body shape = disc plus processor, two separate bodies · scale =
+       reaching up onto the side of the head rather than sitting at the lobe. -->
+  <defs>
+    <linearGradient id="accessories-toddler-earrings-cochlear-implant__proc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-earrings-cochlear-implant__coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5C6ECB)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6ECB)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: transmitter coil on the side of the head -->
+    <circle cx="141" cy="240" r="15" fill="url(#accessories-toddler-earrings-cochlear-implant__coil)"/>
+    <!-- left: sound processor tucked behind the ear -->
+    <path d="M112 255 q11 0 11 10 v17 q0 10 -11 10 q-11 0 -11 -10 v-17 q0 -10 11 -10 z"
+          fill="url(#accessories-toddler-earrings-cochlear-implant__proc)"/>
+    <!-- right: mirrored -->
+    <circle cx="259" cy="240" r="15" fill="url(#accessories-toddler-earrings-cochlear-implant__coil)"/>
+    <path d="M288 255 q-11 0 -11 10 v17 q0 10 11 10 q11 0 11 -10 v-17 q0 -10 -11 -10 z"
+          fill="url(#accessories-toddler-earrings-cochlear-implant__proc)"/>
+  </g>
+
+  <!-- coil face: the concentric ring and centre magnet -->
+  <circle cx="141" cy="240" r="8.5" fill="none" stroke="var(--c3, #EAF0FF)" stroke-width="3"/>
+  <circle cx="141" cy="240" r="3.4" fill="var(--c3, #EAF0FF)"/>
+  <circle cx="259" cy="240" r="8.5" fill="none" stroke="var(--c3, #EAF0FF)" stroke-width="3"/>
+  <circle cx="259" cy="240" r="3.4" fill="var(--c3, #EAF0FF)"/>
+
+  <!-- fine lead from the coil down to the processor -->
+  <path d="M130 247 q-9 3 -14 9" stroke="var(--c2, #5C6ECB)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 247 q9 3 14 9" stroke="var(--c2, #5C6ECB)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ear hook holding the processor on, and its battery seam -->
+  <path d="M117 257 q13 -4 15 8" stroke="var(--c1, #7E90DC)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M283 257 q-13 -4 -15 8" stroke="var(--c1, #7E90DC)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M102 277 h20" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M298 277 h-20" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="106" y="262" width="12" height="5" rx="2.5" fill="var(--c3, #EAF0FF)"/>
+  <rect x="282" y="262" width="12" height="5" rx="2.5" fill="var(--c3, #EAF0FF)"/>
+
+  <!-- highlights -->
+  <path d="M133 232 q6 -5 14 -4" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 232 q-6 -5 -14 -4" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

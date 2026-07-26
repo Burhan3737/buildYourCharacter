@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High-Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: VOLUME AND TEXTURE OF THE OUTLINE - a squared column standing 66px clear of the
+       skull with a flat top and near vertical walls, the only hard cornered outline in the
+       slot. LENGTH - the sides drop to nothing, so the length reads as a STEP: the fade is a
+       value ramp from hair2 at the skin line up to hair1, and the front hairline is a ruled
+       band at y 210. Differs from taper-fade (low rounded cap, graduated wedge) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-high-top-fade__back-g" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #150E0B)"/>
+        <stop offset="0.48" stop-color="var(--hair2, #150E0B)"/>
+        <stop offset="1" stop-color="var(--hair1, #2A1D18)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M140 210 C136 250 142 284 154 304 C172 314 228 314 246 304
+               C258 284 264 250 260 210 C240 226 160 226 140 210 Z"
+            fill="url(#toddler-male-hair-high-top-fade__back-g)"/>
+    </g>
+    <path d="M148 292 C172 304 228 304 252 292 C244 306 156 306 148 292 Z"
+          fill="var(--hair2, #150E0B)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-high-top-fade__column-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1D18)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #2A1D18)"/>
+        <stop offset="1" stop-color="var(--hair2, #150E0B)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-high-top-fade__front-g" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #150E0B)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #150E0B)"/>
+        <stop offset="1" stop-color="var(--hair1, #2A1D18)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M156 210 L156 132 C156 122 168 116 182 116 L218 116
+               C232 116 244 122 244 132 L244 210 Z"
+            fill="url(#toddler-male-hair-high-top-fade__column-g)"/>
+      <path d="M126 204 C122 238 128 266 140 286 C148 268 152 238 152 204 Z"
+            fill="url(#toddler-male-hair-high-top-fade__front-g)"/>
+      <path d="M274 204 C278 238 272 266 260 286 C252 268 248 238 248 204 Z"
+            fill="url(#toddler-male-hair-high-top-fade__front-g)"/>
+    </g>
+    <!-- the hard front hairline: a ruled band, never fuzzy -->
+    <path d="M156 200 L244 200 L244 210 L156 210 Z" fill="var(--hair2, #150E0B)"/>
+    <path d="M128 244 C133 258 137 268 142 276" stroke="var(--hair2, #150E0B)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M272 244 C267 258 263 268 258 276" stroke="var(--hair2, #150E0B)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M168 128 C182 121 218 121 232 128" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M164 146 L164 190" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Man Bun" data-family="man-bun" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: PARTING - no fringe at all: the whole forehead is bare from y 214 down, the sides
+       are combed back off the face and only meet over the crown.
+       GATHERING - everything is drawn up into one small knot sitting high and forward at
+       y 162, wrapped at its base, with two wisps escaping at the temples. Differs from bun
+       (full fringe, low knot at y 182) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-man-bun__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8C3F2E)"/>
+        <stop offset="1" stop-color="var(--hair2, #5E2820)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-man-bun__knot-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8C3F2E)"/>
+        <stop offset="0.68" stop-color="var(--hair1, #8C3F2E)"/>
+        <stop offset="1" stop-color="var(--hair2, #5E2820)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M154 206 C132 226 124 258 132 292 C136 304 148 310 158 306
+               C150 280 154 252 168 232 C182 214 218 214 232 232
+               C246 252 250 280 242 306 C252 310 264 304 268 292
+               C276 258 268 226 246 206 C226 194 174 194 154 206 Z"
+            fill="url(#toddler-male-hair-man-bun__back-g)"/>
+      <circle cx="200" cy="162" r="25" fill="url(#toddler-male-hair-man-bun__knot-g)"/>
+    </g>
+    <!-- the wrap at the base of the knot -->
+    <ellipse cx="200" cy="184" rx="21" ry="8" fill="var(--hair2, #5E2820)"/>
+    <path d="M186 160 C192 150 210 150 216 158 C210 154 194 154 189 164"
+          stroke="var(--hair2, #5E2820)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M186 152 C192 146 206 146 212 151" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M168 224 C182 214 218 214 232 224" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-man-bun__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8C3F2E)"/>
+        <stop offset="1" stop-color="var(--hair2, #5E2820)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M124 252 C118 218 142 194 178 186 C170 200 158 214 150 228
+               C140 238 130 244 124 252 Z"
+            fill="url(#toddler-male-hair-man-bun__front-g)"/>
+      <path d="M276 252 C282 218 258 194 222 186 C230 200 242 214 250 228
+               C260 238 270 244 276 252 Z"
+            fill="url(#toddler-male-hair-man-bun__front-g)"/>
+      <path d="M170 190 C182 180 218 180 230 190 C218 198 182 198 170 190 Z"
+            fill="url(#toddler-male-hair-man-bun__front-g)"/>
+    </g>
+    <!-- the sweep lines: where the hair is combed back off the face -->
+    <path d="M140 240 C150 224 162 210 174 200" stroke="var(--hair2, #5E2820)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M260 240 C250 224 238 210 226 200" stroke="var(--hair2, #5E2820)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <!-- two loose strands escaping at the temples -->
+    <path d="M136 240 C129 256 127 272 132 286" stroke="var(--hair2, #5E2820)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M264 244 C271 258 273 272 268 284" stroke="var(--hair2, #5E2820)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M144 224 C154 210 166 200 178 194" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M256 224 C246 210 234 200 222 194" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hearing Aids" data-family="hearing-aid" data-slot="earrings"
+     data-layer="earrings" data-colors="c1,c2,c3" data-hides="">
+  <!-- A behind-the-ear hearing aid: the shell sits against the back of the ear,
+       a slim sound tube hooks over the top of the ear and a soft earmould seats
+       in the canal. Axes: body shape = curved shell hugging the ear, not a
+       hanging jewel · attachment = over the ear rather than through the lobe. -->
+  <defs>
+    <linearGradient id="accessories-toddler-earrings-hearing-aid__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-earrings-hearing-aid__mould" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F2E0CC)"/>
+      <stop offset="1" stop-color="var(--c2, #F2E0CC)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: shell behind the ear -->
+    <path d="M111 249 q10 0 11 11 l1 22 q1 10 -9 11 q-10 1 -11 -9 l-1 -24 q-1 -11 9 -11 z"
+          fill="url(#accessories-toddler-earrings-hearing-aid__shell)"/>
+    <!-- left: soft earmould seated in the canal -->
+    <ellipse cx="124" cy="276" rx="7.5" ry="8.5"
+             fill="url(#accessories-toddler-earrings-hearing-aid__mould)"/>
+    <!-- right: mirrored -->
+    <path d="M289 249 q-10 0 -11 11 l-1 22 q-1 10 9 11 q10 1 11 -9 l1 -24 q1 -11 -9 -11 z"
+          fill="url(#accessories-toddler-earrings-hearing-aid__shell)"/>
+    <ellipse cx="276" cy="276" rx="7.5" ry="8.5"
+             fill="url(#accessories-toddler-earrings-hearing-aid__mould)"/>
+  </g>
+
+  <!-- the clear sound tube, hooking from the top of the shell over the ear -->
+  <path d="M116 252 q15 -3 17 9 q2 11 -9 15" stroke="var(--c2, #F2E0CC)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 252 q-15 -3 -17 9 q-2 11 9 15" stroke="var(--c2, #F2E0CC)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- battery door seam and the small programme button on the shell -->
+  <path d="M105 274 h16" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M295 274 h-16" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="108" y="258" width="10" height="6" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="282" y="258" width="10" height="6" rx="3" fill="var(--c3, #F7C873)"/>
+  <!-- colour flash down the shell, the way a child's aid is decorated -->
+  <path d="M113 282 v6" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M287 282 v6" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlights -->
+  <path d="M107 256 q4 -4 9 -3" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M293 256 q-4 -4 -9 -3" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

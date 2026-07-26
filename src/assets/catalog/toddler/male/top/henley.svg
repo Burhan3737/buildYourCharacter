@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes: closure = HALF PLACKET, collarless, a three popper band dropping to
+       y402 with no collar over it · volume = FITTED, x158 to x242, the knit
+       skimming the trunk. Sleeve long but rolled up the forearm to y414, hem
+       hip y450. Differs from button up on closure, hem and volume, from polo on
+       sleeve and volume, from turtleneck on closure and hem, from tee on
+       sleeve, closure and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
+      <stop offset="1" stop-color="var(--c2, #557A61)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
+      <stop offset="1" stop-color="var(--c2, #557A61)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-henley__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E6D0)"/>
+      <stop offset="1" stop-color="var(--c3, #F2E6D0)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeves pushed up the forearm, bunched at the roll -->
+    <path d="M152 352 q-28 2 -30 24 l-2 22 q-1 16 15 16 h20 q14 0 14-16 z"
+          fill="url(#toddler-male-top-henley__sleeve)"/>
+    <path d="M248 352 q28 2 30 24 l2 22 q1 16 -15 16 h-20 q-14 0 -14-16 z"
+          fill="url(#toddler-male-top-henley__sleeve)"/>
+    <!-- fitted knit body with the deep placket V cut into the top edge -->
+    <path d="M180 344 q-22 4 -22 28 v50 q0 26 24 28 h36 q24-2 24-28 v-50 q0-24 -22-28 l-20 34 z"
+          fill="url(#toddler-male-top-henley__body)"/>
+  </g>
+
+  <!-- contrast placket band, no collar above it -->
+  <path d="M189 346 h22 v46 q0 10 -11 10 q-11 0 -11-10 z" fill="url(#toddler-male-top-henley__placket)"/>
+  <path d="M189 346 v52 M211 346 v52" stroke="#3B2A22" stroke-opacity="0.18" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- three big poppers -->
+  <g fill="var(--c2, #557A61)">
+    <circle cx="200" cy="360" r="5"/>
+    <circle cx="200" cy="376" r="5"/>
+    <circle cx="200" cy="392" r="5"/>
+  </g>
+
+  <!-- neck bind following the V -->
+  <path d="M179 344 L200 380 L221 344" stroke="var(--c2, #557A61)" stroke-width="8"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- the roll where the sleeve is pushed up -->
+  <path d="M119 394 h51 v6 q0 16 -14 16 h-22 q-16 0 -15-18 z" fill="var(--c2, #557A61)"/>
+  <path d="M281 394 h-51 v6 q0 16 14 16 h22 q16 0 15-18 z" fill="var(--c2, #557A61)"/>
+  <path d="M122 388 q24 8 46 0" stroke="var(--c3, #F2E6D0)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M278 388 q-24 8 -46 0" stroke="var(--c3, #F2E6D0)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- stitched hem -->
+  <path d="M168 438 q32 8 64 0" stroke="var(--c2, #557A61)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M168 392 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

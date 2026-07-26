@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bow Tie" data-family="bow-tie" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: body shape = two symmetric wings meeting at a centre knot ·
+       drop length = none at all, it sits hard against the throat. -->
+  <defs>
+    <linearGradient id="accessories-toddler-necklace-bow-tie__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #96382F)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-necklace-bow-tie__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #96382F)"/>
+      <stop offset="1" stop-color="var(--c2, #96382F)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-necklace-bow-tie__spot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="13" height="13">
+      <circle cx="6.5" cy="6.5" r="2.4" fill="var(--c3, #F7E4C0)"/>
+    </pattern>
+    <clipPath id="accessories-toddler-necklace-bow-tie__clip">
+      <path d="M194 348 q-14 -12 -26 -10 q-8 1 -8 12 q0 11 8 12 q12 2 26 -10 z
+               M206 348 q14 -12 26 -10 q8 1 8 12 q0 11 -8 12 q-12 2 -26 -10 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- neck band running out to the sides -->
+    <path d="M170 340 q30 -8 60 0 v7 q-30 -8 -60 0 z" fill="url(#accessories-toddler-necklace-bow-tie__knot)"/>
+    <!-- left and right wings -->
+    <path d="M194 348 q-14 -12 -26 -10 q-8 1 -8 12 q0 11 8 12 q12 2 26 -10 z"
+          fill="url(#accessories-toddler-necklace-bow-tie__wing)"/>
+    <path d="M206 348 q14 -12 26 -10 q8 1 8 12 q0 11 -8 12 q-12 2 -26 -10 z"
+          fill="url(#accessories-toddler-necklace-bow-tie__wing)"/>
+    <!-- centre knot -->
+    <rect x="192" y="337" width="16" height="22" rx="6" fill="url(#accessories-toddler-necklace-bow-tie__knot)"/>
+  </g>
+
+  <!-- spot pattern across both wings -->
+  <g clip-path="url(#accessories-toddler-necklace-bow-tie__clip)">
+    <rect x="156" y="332" width="88" height="32"
+          fill="url(#accessories-toddler-necklace-bow-tie__spot)" opacity="0.85"/>
+  </g>
+
+  <!-- pinched folds radiating from the knot -->
+  <path d="M190 342 q-8 6 -14 12 M190 354 q-8 -6 -14 -12"
+        stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M210 342 q8 6 14 12 M210 354 q8 -6 14 -12"
+        stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight on the upper edge of each wing -->
+  <path d="M166 342 q12 -3 22 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 342 q-12 -3 -22 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

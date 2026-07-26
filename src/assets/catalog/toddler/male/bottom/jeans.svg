@@ -1,50 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jeans" data-family="jeans" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural (structured waistband on the hip bone at y436) ·
+       leg length = full, hem at y546 sitting down on the shoe ·
+       leg width = straight, a clean 42px tube that never changes width ·
+       hem = raw, a plain flat cut with no cuff and no gather.
+       vs joggers: leg width + hem treatment. vs leggings: rise + leg width.
+       vs cargo: leg width (a 42px straight tube against a 54px bowed leg) and hem
+       opening (36px against 58px) - cargo also cuts its flap pockets into the major
+       form so its outline is lumpy where this one is a clean column.
+       vs dungarees: rise (natural waistband against a bib up the chest) + leg width.
+       vs shorts: leg length + leg width. vs tailored trousers: leg length + hem.
+       Surface tools: panel blocking (contrast hip yoke seamed across the seat),
+       trim (structured waistband with three fat belt loops) and structural detail
+       (curved front pockets, fly seam, chunky topstitching). -->
   <defs>
-    <linearGradient id="toddler-male-bottom-jeans__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+    <linearGradient id="toddler-male-bottom-jeans__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B8AC0)"/>
+      <stop offset="1" stop-color="var(--c2, #47638F)"/>
     </linearGradient>
     <linearGradient id="toddler-male-bottom-jeans__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+      <stop offset="0" stop-color="var(--c1, #6B8AC0)"/>
+      <stop offset="1" stop-color="var(--c2, #47638F)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <path d="M168 482 H200 V536 q0 8 -8 8 H180 q-8 0 -8-8 Z"
+    <path d="M158 470 H200 V540 q0 6 -6 6 H164 q-6 0 -6-6 Z"
           fill="url(#toddler-male-bottom-jeans__leg)"/>
-    <path d="M232 482 H200 V536 q0 8 8 8 H220 q8 0 8-8 Z"
+    <path d="M242 470 H200 V540 q0 6 6 6 H236 q6 0 6-6 Z"
           fill="url(#toddler-male-bottom-jeans__leg)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20"
-          fill="url(#toddler-male-bottom-jeans__hip)"/>
+    <rect x="156" y="436" width="88" height="50" rx="22"
+          fill="url(#toddler-male-bottom-jeans__seat)"/>
   </g>
 
-  <!-- waistband -->
-  <rect x="160" y="440" width="80" height="14" rx="7" fill="var(--c2, #5E72AB)"/>
-  <!-- belt loops -->
-  <rect x="172" y="438" width="6" height="18" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="197" y="438" width="6" height="18" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="222" y="438" width="6" height="18" rx="3" fill="var(--c2, #5E72AB)"/>
+  <!-- panel blocking: contrast hip yoke seamed across the seat -->
+  <path d="M160 462 q40 14 80 0 v12 q-40 12 -80 0 Z" fill="var(--c2, #47638F)"/>
 
-  <!-- curved front pockets -->
-  <path d="M162 455 H182 Q176 476 162 472 Z" fill="var(--c2, #5E72AB)"/>
-  <path d="M238 455 H218 Q224 476 238 472 Z" fill="var(--c2, #5E72AB)"/>
+  <!-- trim: structured waistband and three chunky belt loops -->
+  <rect x="156" y="433" width="88" height="17" rx="8" fill="var(--c2, #47638F)"/>
+  <rect x="170" y="431" width="9" height="23" rx="4" fill="var(--c2, #47638F)"/>
+  <rect x="196" y="431" width="9" height="23" rx="4" fill="var(--c2, #47638F)"/>
+  <rect x="221" y="431" width="9" height="23" rx="4" fill="var(--c2, #47638F)"/>
 
-  <!-- topstitching -->
-  <path d="M182 456 Q176 474 163 471" stroke="var(--c3, #EBC98A)" stroke-width="2"
-        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
-  <path d="M218 456 Q224 474 237 471" stroke="var(--c3, #EBC98A)" stroke-width="2"
-        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
-  <path d="M200 456 v20" stroke="var(--c3, #EBC98A)" stroke-width="2"
-        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
-  <path d="M174 538 H194" stroke="var(--c3, #EBC98A)" stroke-width="2"
-        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
-  <path d="M206 538 H226" stroke="var(--c3, #EBC98A)" stroke-width="2"
-        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <!-- structural: curved front pockets, fly and topstitching -->
+  <path d="M158 452 H182 Q176 478 158 474 Z" fill="var(--c2, #47638F)"/>
+  <path d="M242 452 H218 Q224 478 242 474 Z" fill="var(--c2, #47638F)"/>
+  <path d="M182 452 Q176 476 159 473" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M218 452 Q224 476 241 473" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M200 452 v26" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M158 450 h84" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <!-- plain hem, marked only by its stitch line -->
+  <path d="M162 537 H196" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M204 537 H238" stroke="var(--c3, #F0CE93)" stroke-width="2.5"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
 
-  <!-- soft highlight -->
-  <path d="M166 462 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <!-- soft highlights -->
+  <path d="M164 468 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 490 v40" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 490 v40" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

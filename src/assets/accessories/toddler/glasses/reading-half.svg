@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Reading Halves" data-family="reading-half" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: lens shape = HALF MOON (flat top edge, curved lower rim only) ·
+       lens size = SMALL and sitting LOW on the nose, well below the eye line.
+       Plus a chain loop at the temples, which no other frame in the slot has. -->
+  <defs>
+    <linearGradient id="accessories-toddler-glasses-reading-half__lens" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DCE7F2)" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="var(--c2, #DCE7F2)" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-glasses-reading-half__frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6A46)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6A46)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- half-moon lenses: straight across the top, deep curve underneath -->
+    <path d="M132 292 h56 q0 26 -28 26 q-28 0 -28 -26 z"
+          fill="url(#accessories-toddler-glasses-reading-half__lens)"/>
+    <path d="M212 292 h56 q0 26 -28 26 q-28 0 -28 -26 z"
+          fill="url(#accessories-toddler-glasses-reading-half__lens)"/>
+    <!-- the frame is only the flat top bar and the lower rim -->
+    <path d="M130 288 h60 v7 h-60 z" fill="url(#accessories-toddler-glasses-reading-half__frame)"/>
+    <path d="M210 288 h60 v7 h-60 z" fill="url(#accessories-toddler-glasses-reading-half__frame)"/>
+  </g>
+
+  <path d="M133 295 q4 24 27 24 q23 0 27 -24" stroke="var(--c1, #8A6A46)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 295 q4 24 27 24 q23 0 27 -24" stroke="var(--c1, #8A6A46)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- low bridge across the nose -->
+  <path d="M188 291 q12 -6 24 0" stroke="var(--c1, #8A6A46)" stroke-width="5.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- temples running back to the ears -->
+  <path d="M130 291 L120 280" stroke="var(--c1, #8A6A46)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 291 L280 280" stroke="var(--c1, #8A6A46)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- retainer chain looping under the chin line -->
+  <path d="M119 282 Q200 348 281 282" stroke="var(--c3, #C9A227)" stroke-width="3.2"
+        fill="none" stroke-linecap="round" stroke-dasharray="5 4"/>
+  <circle cx="119" cy="282" r="3.6" fill="var(--c3, #C9A227)"/>
+  <circle cx="281" cy="282" r="3.6" fill="var(--c3, #C9A227)"/>
+
+  <!-- glint -->
+  <path d="M139 297 q8 8 18 10" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M219 297 q8 8 18 10" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+</svg>

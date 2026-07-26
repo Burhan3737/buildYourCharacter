@@ -1,0 +1,85 @@
+<!-- axes: HEM (one fused tail from the waist to the ground line ending in a fluke - there
+     is no leg division at all) and SHOULDER (none: a strapped shell bodice, arms bare). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid Tail" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="toddler-male-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6FD0D8)"/>
+      <stop offset="1" stop-color="var(--c1, #3592A4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mermaid__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F8B7AB)"/>
+      <stop offset="1" stop-color="var(--c2, #DE8878)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mermaid__fin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCF6F8)"/>
+      <stop offset="1" stop-color="var(--c3, #A7E0E8)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-mermaid__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="15">
+      <path d="M-10 15 q10 -18 20 0 q10 -18 20 0" fill="none"
+            stroke="var(--c3, #A7E0E8)" stroke-opacity="0.5" stroke-width="2.8"
+            stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-mermaid__tailClip">
+      <path d="M150 406 q50 -16 100 0 q-6 44 -14 78 q-6 30 -4 58 q32 10 46 30
+               q-38 12 -78 -6 q-40 18 -78 6 q14 -20 46 -30 q-2 -28 -4 -58
+               q-8 -34 -14 -78 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- shell bodice, strapped, leaving the arms bare -->
+  <g class="sp-shadow">
+    <path d="M148 344 h104 q10 40 -4 64 q-48 18 -96 0 q-14 -24 -4 -64 z"
+          fill="url(#toddler-male-costume-mermaid__shell)"/>
+  </g>
+
+  <!-- hip fins -->
+  <g class="sp-shadow">
+    <path d="M152 424 q-34 10 -40 48 q26 -22 46 -22 z" fill="url(#toddler-male-costume-mermaid__fin)"/>
+    <path d="M248 424 q34 10 40 48 q-26 -22 -46 -22 z" fill="url(#toddler-male-costume-mermaid__fin)"/>
+  </g>
+
+  <!-- the fused tail: waist to ground, flaring into a two-lobed fluke -->
+  <g class="sp-shadow">
+    <path d="M150 406 q50 -16 100 0 q-6 44 -14 78 q-6 30 -4 58 q32 10 46 30
+             q-38 12 -78 -6 q-40 18 -78 6 q14 -20 46 -30 q-2 -28 -4 -58
+             q-8 -34 -14 -78 z"
+          fill="url(#toddler-male-costume-mermaid__tail)"/>
+  </g>
+
+  <!-- scale surface, clipped to the tail -->
+  <g clip-path="url(#toddler-male-costume-mermaid__tailClip)">
+    <rect x="112" y="400" width="176" height="180" fill="url(#toddler-male-costume-mermaid__scales)"/>
+  </g>
+
+  <!-- fluke ribs -->
+  <g fill="none" stroke="var(--c3, #DCF6F8)" stroke-opacity="0.6" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M214 544 q28 10 44 20 M212 554 q22 8 34 16
+             M186 544 q-28 10 -44 20 M188 554 q-22 8 -34 16"/>
+  </g>
+
+  <!-- scalloped waistband -->
+  <path d="M148 400 q13 -14 26 0 q13 -14 26 0 q13 -14 26 0 q13 -14 26 0 v16
+           q-13 12 -26 0 q-13 12 -26 0 q-13 12 -26 0 q-13 12 -26 0 z"
+        fill="url(#toddler-male-costume-mermaid__fin)"/>
+
+  <!-- two shell fans with their ribs, and the shoulder straps -->
+  <path d="M176 356 q-26 8 -26 30 q24 14 48 4 q6 -26 -22 -34 z"
+        fill="url(#toddler-male-costume-mermaid__shell)"/>
+  <path d="M224 356 q26 8 26 30 q-24 14 -48 4 q-6 -26 22 -34 z"
+        fill="url(#toddler-male-costume-mermaid__shell)"/>
+  <g fill="none" stroke="var(--c3, #DCF6F8)" stroke-width="3.4" stroke-linecap="round">
+    <path d="M172 368 q-6 12 -8 20 M182 364 q-4 14 -4 24 M192 364 q0 14 2 24
+             M228 368 q6 12 8 20 M218 364 q4 14 4 24 M208 364 q0 14 -2 24"/>
+  </g>
+  <g fill="url(#toddler-male-costume-mermaid__fin)">
+    <rect x="166" y="344" width="16" height="14" rx="6"/>
+    <rect x="218" y="344" width="16" height="14" rx="6"/>
+  </g>
+
+  <path d="M162 356 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

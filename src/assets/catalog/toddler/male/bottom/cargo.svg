@@ -1,36 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural (flat utility waistband at y438) ·
+       leg length = full, a wide 58px hem opening dropping to y542 ·
+       leg width = wide the whole way down, 54px at the thigh and never tapering,
+       with the flap pockets cut straight into the outline so the leg reads lumpy ·
+       hem = raw, an unfinished wide opening.
+       vs jeans: leg width (54px against 42px) and hem opening (58px against 36px) -
+       the pocket boxes are part of the major form here, not surface decoration.
+       vs joggers: leg width + hem treatment. vs leggings: rise + leg width.
+       vs wide leg: rise + leg width (a straight-sided tube against a flared column).
+       vs snow pants: rise, leg length and hem treatment.
+       vs sweat shorts: leg length + hem treatment.
+       Surface tools: structural detail (flap pockets with poppers, a knee seam),
+       trim (utility waistband and a webbing tab) and panel blocking (contrast
+       lower-leg band). -->
   <defs>
-    <linearGradient id="toddler-male-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #4E9484)"/>
+    <linearGradient id="toddler-male-bottom-cargo__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9BA98A)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7C5F)"/>
     </linearGradient>
     <linearGradient id="toddler-male-bottom-cargo__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #4E9484)"/>
+      <stop offset="0" stop-color="var(--c1, #9BA98A)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7C5F)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <path d="M168 482 H200 V536 q0 8 -8 8 H180 q-8 0 -8-8 Z"
+    <path d="M154 464 H200 V536 q0 6 -6 6 H152 q-6 0 -6-6 V518 h-8 q-4 0 -4-4 v-22 q0-4 4-4 h8 Q142 472 154 464 Z"
           fill="url(#toddler-male-bottom-cargo__leg)"/>
-    <path d="M232 482 H200 V536 q0 8 8 8 H220 q8 0 8-8 Z"
+    <path d="M246 464 H200 V536 q0 6 6 6 H248 q6 0 6-6 V518 h8 q4 0 4-4 v-22 q0-4 -4-4 h-8 Q258 472 246 464 Z"
           fill="url(#toddler-male-bottom-cargo__leg)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20"
-          fill="url(#toddler-male-bottom-cargo__hip)"/>
+    <rect x="154" y="438" width="92" height="48" rx="22"
+          fill="url(#toddler-male-bottom-cargo__seat)"/>
   </g>
 
-  <rect x="160" y="440" width="80" height="14" rx="7" fill="var(--c2, #4E9484)"/>
-  <!-- chunky side cargo pockets -->
-  <rect x="162" y="494" width="22" height="24" rx="6" fill="var(--c2, #4E9484)"/>
-  <rect x="216" y="494" width="22" height="24" rx="6" fill="var(--c2, #4E9484)"/>
-  <rect x="168" y="500" width="10" height="4" rx="2" fill="var(--c3, #F7C873)"/>
-  <rect x="222" y="500" width="10" height="4" rx="2" fill="var(--c3, #F7C873)"/>
-  <path d="M174 538 H194" stroke="var(--c3, #F7C873)" stroke-width="2" stroke-dasharray="4 3"
+  <!-- panel blocking: contrast band around the lower leg -->
+  <path d="M147 522 h47 v14 q0 6 -6 6 H152 q-6 0 -6-6 Z" fill="var(--c2, #6E7C5F)"/>
+  <path d="M253 522 h-47 v14 q0 6 6 6 H248 q6 0 6-6 Z" fill="var(--c2, #6E7C5F)"/>
+
+  <!-- trim: flat utility waistband with a webbing tab -->
+  <rect x="154" y="434" width="92" height="18" rx="8" fill="var(--c2, #6E7C5F)"/>
+  <rect x="184" y="430" width="32" height="14" rx="5" fill="var(--c3, #F7C873)"/>
+
+  <!-- structural: cargo flap pockets with poppers -->
+  <path d="M132 486 h20 q4 0 4 5 v11 h-28 v-11 q0-5 4-5 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M268 486 h-20 q-4 0-4 5 v11 h28 v-11 q0-5 -4-5 Z" fill="var(--c3, #F7C873)"/>
+  <circle cx="142" cy="506" r="4.5" fill="var(--c3, #F7C873)"/>
+  <circle cx="258" cy="506" r="4.5" fill="var(--c3, #F7C873)"/>
+  <!-- structural: knee seam across each wide leg -->
+  <path d="M148 500 q22 6 44 0" stroke="var(--c2, #6E7C5F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M252 500 q-22 6 -44 0" stroke="var(--c2, #6E7C5F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <!-- raw hem: a single frayed edge line, no cuff -->
+  <path d="M150 538 H192 M208 538 H250" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        stroke-dasharray="6 4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M162 466 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M206 538 H226" stroke="var(--c3, #F7C873)" stroke-width="2" stroke-dasharray="4 3"
+  <path d="M162 476 v44" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M166 462 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+  <path d="M238 476 v44" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,37 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: hem = PAST HIP (y474, well down over the hip block) ·
+       volume = GATHERED (body swells to x140/260 at the ribs and draws back in
+       to x164/236 at the hem). Sleeve long, closure closed pullover. Differs
+       from tee on sleeve, hem and volume, from stripes on hem and volume, from
+       zip jacket on closure and volume, from sweater on sleeve and hem. -->
   <defs>
     <linearGradient id="toddler-male-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #45907F)"/>
     </linearGradient>
     <linearGradient id="toddler-male-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6B7FD0)"/>
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #45907F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #45907F)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-hoodie__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves, ending just before the hands -->
-    <rect x="116" y="350" width="36" height="82" rx="18" fill="url(#toddler-male-top-hoodie__sleeve)"/>
-    <rect x="248" y="350" width="36" height="82" rx="18" fill="url(#toddler-male-top-hoodie__sleeve)"/>
-    <!-- body, fitted to torso, hem tucked into the hips -->
-    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v62 q0 26 -26 26 h-52 q-26 0 -26-26 z"
+    <!-- long sleeves stopping just short of the hands -->
+    <path d="M154 350 q-40 0 -42 30 l-2 38 q-1 18 17 18 h24 q14 0 14-16 z"
+          fill="url(#toddler-male-top-hoodie__sleeve)"/>
+    <path d="M246 350 q40 0 42 30 l2 38 q1 18 -17 18 h-24 q-14 0 -14-16 z"
+          fill="url(#toddler-male-top-hoodie__sleeve)"/>
+    <!-- gathered pullover body: wide through the ribs, drawn in at a long hem -->
+    <path d="M172 346 q-28 2 -30 30 l-2 46 q-2 30 6 44 q4 8 18 8 h72 q14 0 18-8 q8-14 6-44 l-2-46 q-2-28 -30-30 q-8 16 -28 16 q-20 0 -28-16 z"
           fill="url(#toddler-male-top-hoodie__body)"/>
-    <!-- hood peeking behind the neck -->
-    <path d="M170 342 q30 20 60 0 q-6 26 -30 26 q-24 0 -30-26 z" fill="var(--c2, #6B7FD0)"/>
+    <!-- hood down, lying on the shoulders in front of the body, clear of the face -->
+    <path d="M158 350 q10 34 42 34 q32 0 42-34 q12 26 0 42 q-42 16 -84 0 q-12-16 0-42 z"
+          fill="url(#toddler-male-top-hoodie__hood)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="116" y="424" width="36" height="16" rx="8" fill="var(--c2, #6B7FD0)"/>
-  <rect x="248" y="424" width="36" height="16" rx="8" fill="var(--c2, #6B7FD0)"/>
-  <!-- kangaroo pocket -->
-  <path d="M178 418 h44 v20 q0 7 -7 7 h-30 q-7 0 -7-7 z" fill="var(--c2, #6B7FD0)"/>
-  <!-- drawstrings -->
-  <path d="M190 352 v18" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="4.5"
+
+  <!-- ribbed cuffs -->
+  <path d="M111 414 h48 v8 q0 14 -14 14 h-20 q-15 0 -14-16 z" fill="url(#toddler-male-top-hoodie__trim)"/>
+  <path d="M289 414 h-48 v8 q0 14 14 14 h20 q15 0 14-16 z" fill="url(#toddler-male-top-hoodie__trim)"/>
+
+  <!-- ribbed hem band -->
+  <path d="M148 452 q52 16 104 0 q-2 16 -6 22 q-4 8 -18 8 h-56 q-14 0 -18-8 q-4-6 -6-22 z"
+        fill="url(#toddler-male-top-hoodie__trim)"/>
+  <path d="M162 462 v16 M178 466 v16 M194 468 v16 M210 468 v16 M226 466 v16 M242 462 v16"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- kangaroo pocket, big enough to read at thumbnail size -->
+  <path d="M166 408 h68 v22 q0 12 -14 12 h-40 q-14 0 -14-12 z" fill="var(--c2, #45907F)"/>
+  <path d="M166 408 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M210 352 v18" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="4.5"
+
+  <!-- hood opening and its binding -->
+  <path d="M164 356 q10 28 36 28 q26 0 36-28" stroke="var(--c3, #F7C873)" stroke-width="6"
         fill="none" stroke-linecap="round"/>
+
+  <!-- drawstrings with fat toddler aglets -->
+  <path d="M186 394 v14 M214 394 v14" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="412" r="4.5" fill="var(--c3, #F7C873)"/>
+  <circle cx="214" cy="412" r="4.5" fill="var(--c3, #F7C873)"/>
+
   <!-- highlight -->
-  <path d="M162 366 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <path d="M166 364 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

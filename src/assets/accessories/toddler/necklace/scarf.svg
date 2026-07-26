@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Scarf" data-family="scarf" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: body shape = a soft fabric loop with volume, not a chain or a band ·
+       drop length = two short knitted ends hanging clear of the loop. -->
+  <defs>
+    <linearGradient id="accessories-toddler-necklace-scarf__loop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D9857A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-necklace-scarf__end" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D9857A)"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-necklace-scarf__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M0 11 L7 4 L14 11" stroke="var(--c3, #FBE6D2)" stroke-width="2.6"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="accessories-toddler-necklace-scarf__clip">
+      <path d="M162 340 q38 26 76 0 q10 12 6 26 q-44 26 -88 0 q-4 -14 6 -26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two short hanging ends, tucked behind the loop -->
+    <path d="M182 358 h18 q4 0 4 6 v30 q0 6 -5 6 h-16 q-5 0 -5 -6 v-30 q0 -6 4 -6 z"
+          fill="url(#accessories-toddler-necklace-scarf__end)"/>
+    <path d="M204 356 h16 q5 0 5 6 v26 q0 6 -5 6 h-16 q-5 0 -5 -6 v-26 q0 -6 5 -6 z"
+          fill="url(#accessories-toddler-necklace-scarf__end)"/>
+    <!-- the loop wrapping the neck -->
+    <path d="M162 340 q38 26 76 0 q10 12 6 26 q-44 26 -88 0 q-4 -14 6 -26 z"
+          fill="url(#accessories-toddler-necklace-scarf__loop)"/>
+  </g>
+
+  <!-- knit texture across the loop -->
+  <g clip-path="url(#accessories-toddler-necklace-scarf__clip)">
+    <rect x="150" y="336" width="100" height="56"
+          fill="url(#accessories-toddler-necklace-scarf__knit)" opacity="0.8"/>
+  </g>
+
+  <!-- fringed tips on both ends -->
+  <path d="M181 394 v7 M187 394 v8 M193 394 v7 M199 394 v8"
+        stroke="var(--c3, #FBE6D2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M205 388 v7 M211 388 v8 M217 388 v7 M223 388 v8"
+        stroke="var(--c3, #FBE6D2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the fold where the loop crosses itself -->
+  <path d="M186 362 q14 8 28 0" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight over the top of the loop -->
+  <path d="M172 348 q28 16 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

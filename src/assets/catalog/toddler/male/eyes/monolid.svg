@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- Smooth single-fold lid: no crease drawn at all, a wide flat lash line sitting
+       low over a broad shallow aperture. Widest and flattest eye in the set. -->
+  <defs>
+    <linearGradient id="toddler-male-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #4A3A2E)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #4A3A2E)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-eyes-monolid__lidfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <ellipse cx="168" cy="288" rx="20" ry="12" fill="url(#toddler-male-eyes-monolid__sclera)"/>
+    <ellipse cx="232" cy="288" rx="20" ry="12" fill="url(#toddler-male-eyes-monolid__sclera)"/>
+  </g>
+
+  <circle cx="168" cy="289" r="11" fill="#3B2A22"/>
+  <circle cx="232" cy="289" r="11" fill="#3B2A22"/>
+  <circle cx="168" cy="289" r="11" fill="url(#toddler-male-eyes-monolid__iris)"/>
+  <circle cx="232" cy="289" r="11" fill="url(#toddler-male-eyes-monolid__iris)"/>
+  <circle cx="168" cy="289" r="5" fill="#3B2A22"/>
+  <circle cx="232" cy="289" r="5" fill="#3B2A22"/>
+
+  <circle cx="163.5" cy="284.5" r="3.8" fill="#FFFFFF"/>
+  <circle cx="227.5" cy="284.5" r="3.8" fill="#FFFFFF"/>
+
+  <!-- smooth single fold: the lid skin sits flat over the top of the aperture,
+       no crease line above it -->
+  <path d="M148 288 q20 -16 40 0 q-20 -7 -40 0 z" fill="url(#toddler-male-eyes-monolid__lidfill)"/>
+  <path d="M212 288 q20 -16 40 0 q-20 -7 -40 0 z" fill="url(#toddler-male-eyes-monolid__lidfill)"/>
+
+  <!-- wide flat lash line, even weight from corner to corner -->
+  <path d="M148 281 q20 -6 40 0" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 281 q-20 -6 -40 0" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft lower lid shading, no crease -->
+  <path d="M152 296 q16 6 32 0" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 296 q-16 6 -32 0" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

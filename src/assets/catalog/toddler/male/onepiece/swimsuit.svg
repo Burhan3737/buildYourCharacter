@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: hem = HIGH-CUT at the hip, the shortest in the slot, with the leg
+       openings scooped up out of the body itself · volume = FITTED, skin-close
+       everywhere. No sleeves, no skirt, no ruffle. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB3C4)"/>
+      <stop offset="1" stop-color="var(--c2, #2F8798)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-onepiece-swimsuit__clip">
+      <path d="M158 362 q0 -18 18 -18 h48 q18 0 18 18 v70 q0 24 -13 34 q-9 7 -13 -4
+               q-7 -18 -18 -18 q-11 0 -18 18 q-4 11 -13 4 q-13 -10 -13 -34 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 362 q0 -18 18 -18 h48 q18 0 18 18 v70 q0 24 -13 34 q-9 7 -13 -4
+             q-7 -18 -18 -18 q-11 0 -18 18 q-4 11 -13 4 q-13 -10 -13 -34 z"
+          fill="url(#toddler-male-onepiece-swimsuit__body)"/>
+  </g>
+
+  <!-- colour-blocked lower panel and a diagonal chest band -->
+  <g clip-path="url(#toddler-male-onepiece-swimsuit__clip)">
+    <path d="M150 424 h100 v60 h-100 z" fill="var(--c2, #2F8798)"/>
+    <path d="M150 376 l100 -22 v18 l-100 22 z" fill="var(--c3, #FBE9C8)"/>
+    <path d="M150 400 l100 -22 v9 l-100 22 z" fill="var(--c3, #FBE9C8)" opacity="0.7"/>
+  </g>
+
+  <!-- scooped neckline, bound in the accent -->
+  <path d="M174 344 q26 26 52 0" stroke="var(--c3, #FBE9C8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- leg-opening binding -->
+  <path d="M162 452 q10 16 20 16" stroke="var(--c3, #FBE9C8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 452 q-10 16 -20 16" stroke="var(--c3, #FBE9C8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M170 362 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes: closure = OPEN FRONT (two separate knit panels with a real gap
+       between them, 36px wide at the neck narrowing to 16px at the hem, the
+       shell underneath showing through) · hem = PAST HIP y470 while the shell
+       beneath stops at y432. Sleeve long, volume straight x148 to x252.
+       Differs from button up on closure and hem, from zip jacket on closure and
+       volume, from flannel overshirt on sleeve and volume, from hoodie on
+       closure and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9B7E8)"/>
+      <stop offset="1" stop-color="var(--c2, #9E86CE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9B7E8)"/>
+      <stop offset="1" stop-color="var(--c2, #9E86CE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c3, #FBF3E4)" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the layer beneath, visible through the open V -->
+    <path d="M180 344 q-26 2 -26 26 v40 q0 22 24 22 h44 q24 0 24-22 v-40 q0-24 -26-26 z"
+          fill="url(#toddler-male-top-cardigan__shell)"/>
+    <!-- two front panels, drawn apart -->
+    <path d="M182 344 h-6 q-28 0 -28 30 v68 q0 28 28 28 h16 v-66 z"
+          fill="url(#toddler-male-top-cardigan__panel)"/>
+    <path d="M218 344 h6 q28 0 28 30 v68 q0 28 -28 28 h-16 v-66 z"
+          fill="url(#toddler-male-top-cardigan__panel)"/>
+    <!-- long sleeves -->
+    <path d="M152 350 q-34 6 -34 30 v38 q0 14 14 14 h22 q12 0 12-14 z"
+          fill="url(#toddler-male-top-cardigan__sleeve)"/>
+    <path d="M248 350 q34 6 34 30 v38 q0 14 -14 14 h-22 q-12 0 -12-14 z"
+          fill="url(#toddler-male-top-cardigan__sleeve)"/>
+  </g>
+
+  <!-- ribbed front bands following the V opening down to the hem -->
+  <path d="M183 346 L193 406 V466" stroke="var(--c2, #9E86CE)" stroke-width="9"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M217 346 L207 406 V466" stroke="var(--c2, #9E86CE)" stroke-width="9"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- big toddler buttons on the right band -->
+  <circle cx="207" cy="418" r="6" fill="var(--c3, #FBF3E4)"/>
+  <circle cx="207" cy="446" r="6" fill="var(--c3, #FBF3E4)"/>
+
+  <!-- patch pockets, one on each panel -->
+  <path d="M153 414 h30 v24 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #9E86CE)"/>
+  <path d="M247 414 h-30 v24 q0 8 8 8 h14 q8 0 8-8 z" fill="var(--c2, #9E86CE)"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M118 416 h48 v2 q0 14 -12 14 h-22 q-14 0 -14-16 z" fill="var(--c2, #9E86CE)"/>
+  <path d="M282 416 h-48 v2 q0 14 12 14 h22 q14 0 14-16 z" fill="var(--c2, #9E86CE)"/>
+
+  <!-- highlight over the shoulders -->
+  <path d="M162 372 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

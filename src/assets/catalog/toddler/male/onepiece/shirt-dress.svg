@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: closure = FULL BUTTON-THROUGH placket running collar to hem (every
+       other dress here is closed or strap-only) · volume = STRAIGHT column, no
+       flare at all. Hem at the knee, short set-in sleeves. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA8D8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A82B4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA8D8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A82B4)"/>
+    </linearGradient>
+    <pattern id="toddler-male-onepiece-shirt-dress__gingham" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="18" height="6" fill="var(--c3, #FBF3E2)" opacity="0.5"/>
+      <rect x="0" y="0" width="6" height="18" fill="var(--c3, #FBF3E2)" opacity="0.5"/>
+    </pattern>
+    <clipPath id="toddler-male-onepiece-shirt-dress__clip">
+      <path d="M152 366 q2 -22 24 -22 h48 q22 0 24 22 l7 150 q1 10 -9 10 h-92 q-10 0 -9 -10 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves, cut square at the cuff -->
+    <path d="M116 362 q1 -18 16 -18 h24 v46 q0 12 -12 12 h-16 q-12 0 -12 -12 z"
+          fill="url(#toddler-male-onepiece-shirt-dress__sleeve)"/>
+    <path d="M284 362 q-1 -18 -16 -18 h-24 v46 q0 12 12 12 h16 q12 0 12 -12 z"
+          fill="url(#toddler-male-onepiece-shirt-dress__sleeve)"/>
+    <!-- straight column body falling to the knee -->
+    <path d="M152 366 q2 -22 24 -22 h48 q22 0 24 22 l7 150 q1 10 -9 10 h-92 q-10 0 -9 -10 z"
+          fill="url(#toddler-male-onepiece-shirt-dress__body)"/>
+  </g>
+
+  <!-- gingham surface, clipped to the body -->
+  <g clip-path="url(#toddler-male-onepiece-shirt-dress__clip)">
+    <rect x="140" y="344" width="120" height="184"
+          fill="url(#toddler-male-onepiece-shirt-dress__gingham)"/>
+  </g>
+
+  <!-- flat collar sitting over the placket -->
+  <path d="M180 346 l20 16 l-24 8 q-10 -4 -10 -14 z" fill="var(--c2, #6A82B4)"/>
+  <path d="M220 346 l-20 16 l24 8 q10 -4 10 -14 z" fill="var(--c2, #6A82B4)"/>
+
+  <!-- full button-through placket -->
+  <rect x="193" y="356" width="14" height="164" rx="3" fill="var(--c3, #FBF3E2)" opacity="0.85"/>
+  <g fill="var(--c2, #6A82B4)">
+    <circle cx="200" cy="378" r="4"/>
+    <circle cx="200" cy="404" r="4"/>
+    <circle cx="200" cy="430" r="4"/>
+    <circle cx="200" cy="472" r="4"/>
+    <circle cx="200" cy="498" r="4"/>
+  </g>
+
+  <!-- belt at the natural waist -->
+  <path d="M148 440 q52 12 104 0 v16 q-52 12 -104 0 z" fill="var(--c3, #FBF3E2)"/>
+  <rect x="190" y="440" width="20" height="18" rx="4" fill="var(--c2, #6A82B4)"/>
+
+  <!-- cuff bands and hem band -->
+  <path d="M116 384 h24 v8 h-24 z" fill="var(--c3, #FBF3E2)"/>
+  <path d="M284 384 h-24 v8 h24 z" fill="var(--c3, #FBF3E2)"/>
+  <path d="M144 512 q56 12 112 0 v8 q-56 12 -112 0 z" fill="var(--c2, #6A82B4)"/>
+
+  <path d="M162 366 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

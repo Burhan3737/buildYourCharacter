@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Laugh" data-family="open-laugh" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- Wide open mouth with a visible tongue shape filling the lower half — the
+       widest and tallest aperture in the set. -->
+  <defs>
+    <linearGradient id="toddler-male-mouth-open-laugh__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-mouth-open-laugh__tongue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #D9695F)" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="var(--lip1, #D9695F)" stop-opacity="0.6"/>
+    </linearGradient>
+    <clipPath id="toddler-male-mouth-open-laugh__clip">
+      <path d="M168 298 q32 -10 64 0 q4 20 -8 32 q-11 11 -24 11 q-13 0 -24 -11 q-12 -12 -8 -32 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M168 298 q32 -10 64 0 q4 20 -8 32 q-11 11 -24 11 q-13 0 -24 -11 q-12 -12 -8 -32 z"
+          fill="var(--lip1, #D9695F)"/>
+    <path d="M168 298 q32 -10 64 0 q4 20 -8 32 q-11 11 -24 11 q-13 0 -24 -11 q-12 -12 -8 -32 z"
+          fill="url(#toddler-male-mouth-open-laugh__vol)"/>
+  </g>
+
+  <g clip-path="url(#toddler-male-mouth-open-laugh__clip)">
+    <!-- dark mouth interior -->
+    <path d="M174 302 q26 -8 52 0 q2 16 -7 26 q-9 10 -19 10 q-10 0 -19 -10 q-9 -10 -7 -26 z"
+          fill="#3B2A22" opacity="0.68"/>
+    <!-- upper tooth band -->
+    <path d="M175 301 q25 -7 50 0 v9 q-25 -6 -50 0 z" fill="#FFFFFF" opacity="0.92"/>
+    <!-- tongue -->
+    <ellipse cx="200" cy="336" rx="19" ry="14" fill="url(#toddler-male-mouth-open-laugh__tongue)"/>
+    <path d="M200 328 v14" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <path d="M176 296 q24 -7 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
+</svg>

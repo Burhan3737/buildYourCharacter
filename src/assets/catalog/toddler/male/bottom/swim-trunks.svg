@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = low, the elastic sitting down at y444 below the tummy ·
+       leg length = mid-thigh, the hem at y514 ·
+       leg width = straight, a 42px tube that hangs off the hip ·
+       hem = raw, cut open by a short vertical side split on each outer seam.
+       vs shorts: rise, leg length and leg width.
+       vs bike shorts: rise, leg width and hem treatment.
+       vs sweat shorts: rise, leg width and hem treatment.
+       vs jeans: rise + leg length. vs cargo: rise, leg length and leg width.
+       vs dungarees: rise + leg length.
+       Surface tools: pattern (16px scattered dot through the accent over the
+       gradient), trim (elasticated waistband with a bow-tied drawcord) and
+       structural detail (the split cut into the major form with a bound facing). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-swim-trunks__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #3B7FA0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #3B7FA0)"/>
+    </linearGradient>
+    <pattern id="toddler-male-bottom-swim-trunks__spots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="3.2" fill="var(--c3, #F7C873)" opacity="0.6"/>
+      <circle cx="15" cy="15" r="3.2" fill="var(--c3, #F7C873)" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 472 H200 V506 q0 8 -8 8 H170 V494 h-4 V514 q-8 0 -8-8 Z"
+          fill="url(#toddler-male-bottom-swim-trunks__leg)"/>
+    <path d="M242 472 H200 V506 q0 8 8 8 H230 V494 h4 V514 q8 0 8-8 Z"
+          fill="url(#toddler-male-bottom-swim-trunks__leg)"/>
+    <rect x="158" y="444" width="84" height="44" rx="20"
+          fill="url(#toddler-male-bottom-swim-trunks__seat)"/>
+  </g>
+
+  <!-- pattern over the gradient body -->
+  <rect x="158" y="444" width="84" height="44" rx="20"
+        fill="url(#toddler-male-bottom-swim-trunks__spots)"/>
+  <path d="M158 472 H200 V506 q0 8 -8 8 H170 V494 h-4 V514 q-8 0 -8-8 Z"
+        fill="url(#toddler-male-bottom-swim-trunks__spots)"/>
+  <path d="M242 472 H200 V506 q0 8 8 8 H230 V494 h4 V514 q8 0 8-8 Z"
+        fill="url(#toddler-male-bottom-swim-trunks__spots)"/>
+
+  <!-- trim: low elasticated waistband -->
+  <rect x="158" y="440" width="84" height="16" rx="8" fill="var(--c2, #3B7FA0)"/>
+  <path d="M168 444 v8 M178 444 v8 M222 444 v8 M232 444 v8"
+        stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: bow-tied drawcord -->
+  <path d="M186 452 q-14 -10 -18 2 q6 10 18 -2 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M214 452 q14 -10 18 2 q-6 10 -18 -2 Z" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="452" r="6" fill="var(--c3, #F7C873)"/>
+  <path d="M194 456 v10 M206 456 v10" stroke="var(--c3, #F7C873)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: bound facing down each side split -->
+  <path d="M167 496 v16" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 496 v16" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 508 H192 M240 508 H208" stroke="var(--c2, #3B7FA0)" stroke-width="2.5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M164 464 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 478 v24 M220 478 v24" stroke="#FFFFFF" stroke-opacity="0.17"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes: volume = FLARED A LINE (x144/256 at the shoulder opening out to
+       x134/266 at the hem, the widest point being the hem itself) ·
+       hem = THIGH y506, the longest garment in the slot. Sleeve long, closure
+       full snap placket. The hood lies round the back of the neck between y340
+       and y390 and never reaches the face. Differs from button up on hem and
+       volume, from poncho on sleeve and closure, from oversized long sleeve on
+       closure and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-raincoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9536)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-raincoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9536)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE9536)"/>
+      <stop offset="1" stop-color="var(--c1, #F7C873)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-raincoat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A6FA5)"/>
+      <stop offset="1" stop-color="var(--c3, #4A6FA5)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="toddler-male-top-raincoat__clip">
+      <path d="M172 344 q-26 0 -28 28 l-10 122 q-2 12 12 12 h108 q14 0 12-12 l-10-122 q-2-28 -28-28 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long shell sleeves -->
+    <path d="M152 350 q-34 2 -36 28 l-2 48 q-1 16 15 16 h22 q14 0 14-16 z"
+          fill="url(#toddler-male-top-raincoat__sleeve)"/>
+    <path d="M248 350 q34 2 36 28 l2 48 q1 16 -15 16 h-22 q-14 0 -14-16 z"
+          fill="url(#toddler-male-top-raincoat__sleeve)"/>
+    <!-- A line shell flaring all the way to the hem -->
+    <path d="M172 344 q-26 0 -28 28 l-10 122 q-2 12 12 12 h108 q14 0 12-12 l-10-122 q-2-28 -28-28 z"
+          fill="url(#toddler-male-top-raincoat__body)"/>
+    <!-- hood down, resting on the shoulders, well clear of the face -->
+    <path d="M160 348 q8 34 40 34 q32 0 40-34 q12 26 2 42 q-42 16 -84 0 q-10-16 2-42 z"
+          fill="url(#toddler-male-top-raincoat__hood)"/>
+  </g>
+
+  <!-- panel: darker lower skirt so the flare reads at thumbnail size -->
+  <g clip-path="url(#toddler-male-top-raincoat__clip)">
+    <rect x="128" y="434" width="144" height="78" fill="var(--c2, #CE9536)" opacity="0.5"/>
+    <rect x="128" y="430" width="144" height="6" fill="var(--c3, #4A6FA5)"/>
+  </g>
+
+  <!-- front snap placket with big toddler poppers -->
+  <path d="M190 392 h20 v102 q0 8 -10 8 q-10 0 -10-8 z" fill="url(#toddler-male-top-raincoat__placket)"/>
+  <g fill="var(--c1, #F7C873)">
+    <circle cx="200" cy="408" r="5.5"/>
+    <circle cx="200" cy="434" r="5.5"/>
+    <circle cx="200" cy="460" r="5.5"/>
+    <circle cx="200" cy="486" r="5.5"/>
+  </g>
+
+  <!-- hood opening and its binding -->
+  <path d="M166 356 q8 28 34 28 q26 0 34-28" stroke="var(--c3, #4A6FA5)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flap pockets -->
+  <path d="M146 456 h36 v15 q0 6 -6 6 h-24 q-6 0 -6-6 z" fill="var(--c3, #4A6FA5)"/>
+  <path d="M254 456 h-36 v15 q0 6 6 6 h24 q6 0 6-6 z" fill="var(--c3, #4A6FA5)"/>
+
+  <!-- elasticated cuffs -->
+  <path d="M114 424 h51 v4 q0 16 -14 16 h-22 q-16 0 -15-20 z" fill="var(--c2, #CE9536)"/>
+  <path d="M286 424 h-51 v4 q0 16 14 16 h22 q16 0 15-20 z" fill="var(--c2, #CE9536)"/>
+
+  <!-- highlight -->
+  <path d="M168 364 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

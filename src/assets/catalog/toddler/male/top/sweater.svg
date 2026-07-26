@@ -1,36 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sweater" data-family="sweater" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: shoulder/sleeve = DROPPED (the armhole falls to y356 and the sleeve
+       hangs off it, no shoulder point) · hem = WAIST y446, where a deep rib band
+       pulls the knit in so the body blouses over it.
+       Closure closed, volume gathered above that band (x142/258 through the ribs
+       drawing back to x158/242). Differs from stripes on sleeve and hem, from
+       oversized long sleeve on hem and volume, from hoodie on sleeve and hem,
+       from turtleneck on sleeve and volume. -->
   <defs>
     <linearGradient id="toddler-male-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AD57)"/>
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D3796B)"/>
     </linearGradient>
     <linearGradient id="toddler-male-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
-      <stop offset="1" stop-color="var(--c2, #E0AD57)"/>
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D3796B)"/>
     </linearGradient>
+    <linearGradient id="toddler-male-top-sweater__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #F7E3C8)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="toddler-male-top-sweater__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M5 0 q7 10 0 20 M15 0 q-7 10 0 20" stroke="var(--c2, #D3796B)"
+            stroke-opacity="0.55" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="toddler-male-top-sweater__clip">
+      <path d="M176 344 q-34 4 -34 34 l0 40 q0 18 14 22 q44 12 88 0 q14-4 14-22 l0-40 q0-30 -34-34 q-6 16 -24 16 q-18 0 -24-16 z"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long chunky sleeves down to the wrist -->
-    <rect x="114" y="350" width="38" height="86" rx="19" fill="url(#toddler-male-top-sweater__sleeve)"/>
-    <rect x="248" y="350" width="38" height="86" rx="19" fill="url(#toddler-male-top-sweater__sleeve)"/>
-    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v62 q0 26 -26 26 h-52 q-26 0 -26-26 z"
+    <!-- chunky dropped sleeves, armhole starting low on the arm -->
+    <path d="M158 356 q-38 4 -42 32 l-6 34 q-2 16 14 16 h22 q14 0 14-14 z"
+          fill="url(#toddler-male-top-sweater__sleeve)"/>
+    <path d="M242 356 q38 4 42 32 l6 34 q2 16 -14 16 h-22 q-14 0 -14-14 z"
+          fill="url(#toddler-male-top-sweater__sleeve)"/>
+    <!-- knit body blousing out over the waist band -->
+    <path d="M176 344 q-34 4 -34 34 l0 40 q0 18 14 22 q44 12 88 0 q14-4 14-22 l0-40 q0-30 -34-34 q-6 16 -24 16 q-18 0 -24-16 z"
           fill="url(#toddler-male-top-sweater__body)"/>
   </g>
-  <!-- ribbed cuffs, hem band, and collar -->
-  <rect x="114" y="422" width="38" height="16" rx="8" fill="var(--c2, #E0AD57)"/>
-  <rect x="248" y="422" width="38" height="16" rx="8" fill="var(--c2, #E0AD57)"/>
-  <rect x="150" y="442" width="100" height="14" rx="7" fill="var(--c2, #E0AD57)"/>
-  <path d="M180 346 Q200 360 220 346" stroke="var(--c2, #E0AD57)" stroke-width="9"
-        fill="none" stroke-linecap="round"/>
-  <!-- chunky knit texture -->
-  <g stroke="var(--c3, #FFFFFF)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M158 380 v52"/>
-    <path d="M174 380 v52"/>
-    <path d="M190 380 v52"/>
-    <path d="M210 380 v52"/>
-    <path d="M226 380 v52"/>
-    <path d="M242 380 v52"/>
+
+  <!-- purl texture over the knit body -->
+  <g clip-path="url(#toddler-male-top-sweater__clip)">
+    <rect x="138" y="344" width="124" height="110" fill="url(#toddler-male-top-sweater__knit)"/>
   </g>
+
+  <!-- deep ribbed hem band at the waist -->
+  <path d="M144 424 q56 18 112 0 v14 q0 12 -14 16 q-42 10 -84 0 q-14-4 -14-16 z"
+        fill="url(#toddler-male-top-sweater__rib)"/>
+  <path d="M158 436 v18 M174 440 v16 M190 442 v16 M206 442 v16 M222 440 v16 M238 436 v18"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M110 414 h50 v10 q0 14 -14 14 h-22 q-16 0 -14-18 z" fill="url(#toddler-male-top-sweater__rib)"/>
+  <path d="M290 414 h-50 v10 q0 14 14 14 h22 q16 0 14-18 z" fill="url(#toddler-male-top-sweater__rib)"/>
+
+  <!-- rolled knit collar -->
+  <path d="M172 344 q8 20 28 20 q20 0 28-20 q10 4 8 14 q-12 20 -36 20 q-24 0 -36-20 q-2-10 8-14 z"
+        fill="url(#toddler-male-top-sweater__rib)"/>
+
+  <!-- highlight -->
+  <path d="M160 384 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
 </svg>

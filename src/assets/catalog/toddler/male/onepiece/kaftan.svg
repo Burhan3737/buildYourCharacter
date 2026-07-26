@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Axes: shoulder/sleeve = one flat T, the sleeve cut in a straight line out
+       from the body with no armhole seam · volume = STRAIGHT, the same width from
+       shoulder to calf. Closed but for a short slit at the neck. -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-kaftan__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3B85C)"/>
+      <stop offset="1" stop-color="var(--c2, #B98B33)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-kaftan__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E3B85C)"/>
+      <stop offset="1" stop-color="var(--c2, #B98B33)"/>
+    </linearGradient>
+    <pattern id="toddler-male-onepiece-kaftan__diamond" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 L17 10 L10 17 L3 10 Z" fill="none"
+            stroke="var(--c3, #F8EFD8)" stroke-width="2.6"/>
+    </pattern>
+    <clipPath id="toddler-male-onepiece-kaftan__clip">
+      <path d="M148 344 h104 q8 0 8 12 v160 q0 12 -12 12 h-96 q-12 0 -12 -12 v-160 q0 -12 8 -12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- flat sleeve wings running straight out from the shoulder line -->
+    <path d="M106 356 q0 -12 14 -12 h44 v54 h-44 q-14 0 -14 -12 z"
+          fill="url(#toddler-male-onepiece-kaftan__wing)"/>
+    <path d="M294 356 q0 -12 -14 -12 h-44 v54 h44 q14 0 14 -12 z"
+          fill="url(#toddler-male-onepiece-kaftan__wing)"/>
+    <!-- straight body column to the calf -->
+    <path d="M148 344 h104 q8 0 8 12 v160 q0 12 -12 12 h-96 q-12 0 -12 -12 v-160 q0 -12 8 -12 z"
+          fill="url(#toddler-male-onepiece-kaftan__body)"/>
+  </g>
+
+  <!-- woven diamond banding at the chest and at the hem -->
+  <g clip-path="url(#toddler-male-onepiece-kaftan__clip)">
+    <rect x="140" y="386" width="120" height="40"
+          fill="url(#toddler-male-onepiece-kaftan__diamond)" opacity="0.9"/>
+    <rect x="140" y="380" width="120" height="6" fill="var(--c3, #F8EFD8)"/>
+    <rect x="140" y="426" width="120" height="6" fill="var(--c3, #F8EFD8)"/>
+    <rect x="140" y="494" width="120" height="8" fill="var(--c3, #F8EFD8)"/>
+    <rect x="140" y="506" width="120" height="4" fill="var(--c2, #B98B33)"/>
+  </g>
+
+  <!-- slit neckline with an embroidered placket band -->
+  <path d="M186 344 q14 10 28 0 v10 q-14 10 -28 0 z" fill="var(--c2, #B98B33)"/>
+  <path d="M196 350 h8 v30 q-4 6 -8 0 z" fill="var(--c2, #B98B33)"/>
+  <path d="M184 346 q16 12 32 0" stroke="var(--c3, #F8EFD8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 352 v28" stroke="var(--c3, #F8EFD8)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- banded cuffs on the flat sleeves -->
+  <path d="M106 388 h20 v10 h-20 z" fill="var(--c3, #F8EFD8)"/>
+  <path d="M294 388 h-20 v10 h20 z" fill="var(--c3, #F8EFD8)"/>
+
+  <path d="M162 366 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

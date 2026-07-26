@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- A heavy brow-side hood of skin folds down over the crease, leaving only a
+       short strip of visible lid above the lash line. The aperture itself stays
+       round and open, unlike sleepy where the lid covers the iris. -->
+  <defs>
+    <linearGradient id="toddler-male-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6E8A5E)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6E8A5E)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-eyes-hooded__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)"/>
+      <stop offset="1" stop-color="var(--skin1, #F7D2B0)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <ellipse cx="168" cy="290" rx="17.5" ry="14" fill="url(#toddler-male-eyes-hooded__sclera)"/>
+    <ellipse cx="232" cy="290" rx="17.5" ry="14" fill="url(#toddler-male-eyes-hooded__sclera)"/>
+  </g>
+
+  <circle cx="168" cy="290" r="11.5" fill="#3B2A22"/>
+  <circle cx="232" cy="290" r="11.5" fill="#3B2A22"/>
+  <circle cx="168" cy="290" r="11.5" fill="url(#toddler-male-eyes-hooded__iris)"/>
+  <circle cx="232" cy="290" r="11.5" fill="url(#toddler-male-eyes-hooded__iris)"/>
+  <circle cx="168" cy="290" r="5.2" fill="#3B2A22"/>
+  <circle cx="232" cy="290" r="5.2" fill="#3B2A22"/>
+
+  <circle cx="163.5" cy="285.5" r="3.9" fill="#FFFFFF"/>
+  <circle cx="227.5" cy="285.5" r="3.9" fill="#FFFFFF"/>
+  <circle cx="173" cy="295" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="237" cy="295" r="2" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- the hood: a broad fold of skin dropping from the brow, hiding the crease
+       and cutting the top of the aperture short -->
+  <path d="M148 279 q20 -13 41 -1 q3 5 -1 8 q-20 -8 -38 -1 q-4 -2 -2 -6 z"
+        fill="url(#toddler-male-eyes-hooded__hood)"/>
+  <path d="M252 279 q-20 -13 -41 -1 q-3 5 1 8 q20 -8 38 -1 q4 -2 2 -6 z"
+        fill="url(#toddler-male-eyes-hooded__hood)"/>
+
+  <!-- short visible lid strip, then the lash line under it -->
+  <path d="M152 283 q16 -6 33 -1" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 283 q-16 -6 -33 -1" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M151 284 Q168 274 186 283" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M249 284 Q232 274 214 283" stroke="#3B2A22" stroke-opacity="0.92" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

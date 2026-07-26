@@ -1,72 +1,84 @@
+<!-- axes: VOLUME (a boxy, pressure-inflated shell far wider than the child inside it) and
+     CLOSURE (a front zip placket running neck ring to waist ring). No helmet. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="EVA Space Suit" data-family="astronaut" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
   <defs>
-    <linearGradient id="toddler-male-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #EDEFF5)"/>
-      <stop offset="1" stop-color="var(--c1, #D8DCE8)"/>
+    <linearGradient id="toddler-male-costume-astronaut__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F1F3F9)"/>
+      <stop offset="1" stop-color="var(--c1, #D3D8E6)"/>
     </linearGradient>
-    <linearGradient id="toddler-male-costume-astronaut__boot" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="toddler-male-costume-astronaut__joint" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c2, #9AA6C4)"/>
-      <stop offset="1" stop-color="var(--c2, #8391B3)"/>
+      <stop offset="1" stop-color="var(--c2, #7C89AB)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-astronaut__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #DFA84E)"/>
     </linearGradient>
   </defs>
 
+  <!-- inflated shell: torso, sleeves and legs, all far wider than the body underneath -->
   <g class="sp-shadow">
-    <rect x="168" y="482" width="32" height="70" rx="16" fill="url(#toddler-male-costume-astronaut__body)"/>
-    <rect x="200" y="482" width="32" height="70" rx="16" fill="url(#toddler-male-costume-astronaut__body)"/>
-    <rect x="160" y="440" width="80" height="42" rx="20" fill="url(#toddler-male-costume-astronaut__body)"/>
-    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v56 q0 26 -26 26 h-52 q-26 0 -26-26 z"
-          fill="url(#toddler-male-costume-astronaut__body)"/>
-    <rect x="116" y="350" width="36" height="88" rx="18" fill="url(#toddler-male-costume-astronaut__body)"/>
-    <rect x="248" y="350" width="36" height="88" rx="18" fill="url(#toddler-male-costume-astronaut__body)"/>
+    <path d="M138 374 q0-30 30-30 h64 q30 0 30 30 v58 q0 30 -30 30 h-64 q-30 0 -30-30 z"
+          fill="url(#toddler-male-costume-astronaut__shell)"/>
+    <rect x="104" y="348" width="48" height="104" rx="24" fill="url(#toddler-male-costume-astronaut__shell)"/>
+    <rect x="248" y="348" width="48" height="104" rx="24" fill="url(#toddler-male-costume-astronaut__shell)"/>
+    <rect x="154" y="452" width="46" height="98" rx="22" fill="url(#toddler-male-costume-astronaut__shell)"/>
+    <rect x="200" y="452" width="46" height="98" rx="22" fill="url(#toddler-male-costume-astronaut__shell)"/>
   </g>
 
-  <!-- neck ring, strictly below the shoulder ceiling -->
-  <rect x="176" y="344" width="48" height="12" rx="6" fill="var(--c3, #F4A79B)"/>
+  <!-- soft neck ring, sitting on the shoulder ceiling and never above it -->
+  <rect x="168" y="344" width="64" height="16" rx="8" fill="url(#toddler-male-costume-astronaut__joint)"/>
+  <rect x="174" y="348" width="52" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.4"/>
 
-  <!-- ribbed bands across arms and legs -->
+  <!-- ribbed joints: fat concertina bands at every bend -->
   <g fill="var(--c2, #9AA6C4)">
-    <rect x="116" y="378" width="36" height="6" rx="3"/>
-    <rect x="116" y="396" width="36" height="6" rx="3"/>
-    <rect x="116" y="414" width="36" height="6" rx="3"/>
-    <rect x="248" y="378" width="36" height="6" rx="3"/>
-    <rect x="248" y="396" width="36" height="6" rx="3"/>
-    <rect x="248" y="414" width="36" height="6" rx="3"/>
-    <rect x="168" y="498" width="32" height="6" rx="3"/>
-    <rect x="168" y="518" width="32" height="6" rx="3"/>
-    <rect x="200" y="498" width="32" height="6" rx="3"/>
-    <rect x="200" y="518" width="32" height="6" rx="3"/>
+    <rect x="104" y="386" width="48" height="9" rx="4.5"/>
+    <rect x="104" y="401" width="48" height="9" rx="4.5"/>
+    <rect x="104" y="416" width="48" height="9" rx="4.5"/>
+    <rect x="248" y="386" width="48" height="9" rx="4.5"/>
+    <rect x="248" y="401" width="48" height="9" rx="4.5"/>
+    <rect x="248" y="416" width="48" height="9" rx="4.5"/>
+    <rect x="154" y="492" width="46" height="9" rx="4.5"/>
+    <rect x="154" y="507" width="46" height="9" rx="4.5"/>
+    <rect x="200" y="492" width="46" height="9" rx="4.5"/>
+    <rect x="200" y="507" width="46" height="9" rx="4.5"/>
   </g>
 
-  <!-- chest control panel -->
-  <rect x="178" y="376" width="44" height="34" rx="9" fill="var(--c2, #9AA6C4)"/>
-  <rect x="183" y="381" width="34" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.45"/>
-  <g fill="var(--c3, #F4A79B)">
-    <circle cx="189" cy="400" r="3.6"/>
-    <circle cx="200" cy="400" r="3.6"/>
-    <circle cx="211" cy="400" r="3.6"/>
+  <!-- front zip placket -->
+  <rect x="192" y="358" width="16" height="92" rx="8" fill="url(#toddler-male-costume-astronaut__joint)"/>
+  <path d="M200 362 v84" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="3"
+        stroke-linecap="round" fill="none"/>
+
+  <!-- chest control panel: the one applied graphic, a real piece of hardware -->
+  <rect x="150" y="376" width="42" height="46" rx="10" fill="url(#toddler-male-costume-astronaut__joint)"/>
+  <rect x="156" y="382" width="30" height="14" rx="6" fill="#FFFFFF" fill-opacity="0.5"/>
+  <g fill="var(--c3, #F7C873)">
+    <circle cx="161" cy="408" r="4.4"/>
+    <circle cx="171" cy="408" r="4.4"/>
+    <circle cx="181" cy="408" r="4.4"/>
   </g>
+  <rect x="208" y="376" width="42" height="46" rx="10" fill="url(#toddler-male-costume-astronaut__joint)"/>
+  <rect x="214" y="384" width="30" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.35"/>
+  <rect x="214" y="398" width="30" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.25"/>
+  <rect x="214" y="410" width="18" height="8" rx="4" fill="var(--c3, #F7C873)"/>
 
-  <!-- original abstract insignia -->
-  <circle cx="234" cy="362" r="8" fill="var(--c3, #F4A79B)"/>
-  <path d="M220 372 q13 -22 27 -6" stroke="var(--c3, #F4A79B)" stroke-width="3.2"
-        fill="none" stroke-linecap="round"/>
+  <!-- wide waist ring and shoulder tapes -->
+  <rect x="134" y="440" width="132" height="18" rx="9" fill="url(#toddler-male-costume-astronaut__trim)"/>
+  <rect x="106" y="356" width="44" height="14" rx="7" fill="url(#toddler-male-costume-astronaut__trim)"/>
+  <rect x="250" y="356" width="44" height="14" rx="7" fill="url(#toddler-male-costume-astronaut__trim)"/>
 
-  <!-- shoulder flash -->
-  <rect x="117" y="356" width="28" height="16" rx="8" fill="var(--c3, #F4A79B)"/>
-
-  <!-- wide waist ring -->
-  <rect x="158" y="452" width="84" height="12" rx="6" fill="var(--c2, #9AA6C4)"/>
-
-  <!-- gloves and chunky boots -->
+  <!-- gauntlets and chunky moon boots -->
   <g class="sp-shadow">
-    <circle cx="132" cy="438" r="18" fill="var(--c2, #9AA6C4)"/>
-    <circle cx="268" cy="438" r="18" fill="var(--c2, #9AA6C4)"/>
-    <rect x="162" y="546" width="42" height="24" rx="13" fill="url(#toddler-male-costume-astronaut__boot)"/>
-    <rect x="196" y="546" width="42" height="24" rx="13" fill="url(#toddler-male-costume-astronaut__boot)"/>
+    <circle cx="128" cy="446" r="23" fill="url(#toddler-male-costume-astronaut__joint)"/>
+    <circle cx="272" cy="446" r="23" fill="url(#toddler-male-costume-astronaut__joint)"/>
+    <rect x="148" y="538" width="58" height="34" rx="15" fill="url(#toddler-male-costume-astronaut__joint)"/>
+    <rect x="194" y="538" width="58" height="34" rx="15" fill="url(#toddler-male-costume-astronaut__joint)"/>
   </g>
+  <rect x="150" y="560" width="54" height="10" rx="5" fill="var(--c3, #F7C873)"/>
+  <rect x="196" y="560" width="54" height="10" rx="5" fill="var(--c3, #F7C873)"/>
 
-  <path d="M162 366 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <path d="M152 368 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

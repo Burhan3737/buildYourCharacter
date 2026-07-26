@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Safety Goggles" data-family="safety-goggles" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: temple/strap = ELASTIC STRAP running right round the head (every other
+       frame in the slot has rigid arms) · bridge = NONE, the lens is one sealed
+       pane inside a soft gasket that closes against the face. -->
+  <defs>
+    <linearGradient id="accessories-toddler-glasses-safety-goggles__pane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFE6F5)" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="var(--c2, #CFE6F5)" stop-opacity="0.34"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-glasses-safety-goggles__gasket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #F7C873)" stop-opacity="0.76"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-glasses-safety-goggles__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A5A78)"/>
+      <stop offset="1" stop-color="var(--c3, #4A5A78)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- strap running round the head, passing behind at both sides -->
+    <path d="M116 264 h34 v20 h-34 q-4 -10 0 -20 z"
+          fill="url(#accessories-toddler-glasses-safety-goggles__strap)"/>
+    <path d="M284 264 h-34 v20 h34 q4 -10 0 -20 z"
+          fill="url(#accessories-toddler-glasses-safety-goggles__strap)"/>
+    <!-- soft sealing gasket: one rounded pillow across both eyes -->
+    <path d="M142 250 q58 -9 116 0 q14 2 14 20 v22 q0 18 -14 21 q-58 9 -116 0
+             q-14 -3 -14 -21 v-22 q0 -18 14 -20 z"
+          fill="url(#accessories-toddler-glasses-safety-goggles__gasket)"/>
+    <!-- the sealed pane inside it -->
+    <path d="M148 262 q52 -7 104 0 q6 1 6 11 v14 q0 10 -6 11 q-52 7 -104 0
+             q-6 -1 -6 -11 v-14 q0 -10 6 -11 z"
+          fill="url(#accessories-toddler-glasses-safety-goggles__pane)"/>
+  </g>
+
+  <!-- gasket seam and vent notches -->
+  <path d="M136 262 q64 -8 128 0" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 300 q64 8 128 0" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="132" y="270" width="7" height="14" rx="3.5" fill="var(--c3, #4A5A78)" opacity="0.8"/>
+  <rect x="261" y="270" width="7" height="14" rx="3.5" fill="var(--c3, #4A5A78)" opacity="0.8"/>
+
+  <!-- strap adjuster buckles where the strap meets the frame -->
+  <rect x="145" y="266" width="9" height="16" rx="3" fill="var(--c1, #F7C873)"/>
+  <rect x="246" y="266" width="9" height="16" rx="3" fill="var(--c1, #F7C873)"/>
+
+  <!-- glint across the pane -->
+  <path d="M158 272 q22 12 46 14" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

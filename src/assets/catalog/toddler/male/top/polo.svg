@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes: closure = HALF PLACKET (a short two button band stopping at y394,
+       under a flat knit collar) · volume = FITTED (x156 to x244, the narrowest
+       body in the slot) with a curved hem that dips at the centre.
+       Sleeve short set in, hem hip. Differs from tee on closure and volume,
+       from henley on sleeve and volume, from button up on closure, hem and
+       volume, from jersey on sleeve, closure and volume. -->
+  <defs>
+    <linearGradient id="toddler-male-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-polo__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="toddler-male-top-polo__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="11" r="3.2" fill="var(--c3, #F7C873)" opacity="0.38"/>
+    </pattern>
+    <clipPath id="toddler-male-top-polo__clip">
+      <path d="M180 344 q-24 2 -24 28 v46 q0 20 20 22 q24 16 48 0 q20-2 20-22 v-46 q0-26 -24-28 l-20 22 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set in sleeves, tapered -->
+    <path d="M152 352 q-30 0 -32 22 l-2 18 q-1 12 11 12 h20 q12 0 12-12 z"
+          fill="url(#toddler-male-top-polo__sleeve)"/>
+    <path d="M248 352 q30 0 32 22 l2 18 q1 12 -11 12 h-20 q-12 0 -12-12 z"
+          fill="url(#toddler-male-top-polo__sleeve)"/>
+    <!-- fitted body, hem curving down at the centre front -->
+    <path d="M180 344 q-24 2 -24 28 v46 q0 20 20 22 q24 16 48 0 q20-2 20-22 v-46 q0-26 -24-28 l-20 22 z"
+          fill="url(#toddler-male-top-polo__body)"/>
+  </g>
+
+  <!-- scattered dot -->
+  <g clip-path="url(#toddler-male-top-polo__clip)">
+    <rect x="152" y="340" width="96" height="120" fill="url(#toddler-male-top-polo__dots)"/>
+  </g>
+
+  <!-- short placket, two buttons -->
+  <path d="M192 358 h16 v30 q0 6 -8 6 q-8 0 -8-6 z" fill="url(#toddler-male-top-polo__knit)"/>
+  <path d="M192 358 v36 M208 358 v36" stroke="#3B2A22" stroke-opacity="0.18" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="368" r="4.5" fill="var(--c2, #46907F)"/>
+  <circle cx="200" cy="384" r="4.5" fill="var(--c2, #46907F)"/>
+
+  <!-- flat knit collar, two leaves falling away from the neck -->
+  <path d="M176 344 h20 l-9 28 q-2 7 -9 3 q-9-5 -11-19 q-1-9 9-12 z"
+        fill="url(#toddler-male-top-polo__knit)"/>
+  <path d="M224 344 h-20 l9 28 q2 7 9 3 q9-5 11-19 q1-9 -9-12 z"
+        fill="url(#toddler-male-top-polo__knit)"/>
+
+  <!-- knit sleeve bands -->
+  <path d="M118 392 h43 v0 q0 12 -12 12 h-20 q-12 0 -11-12 z" fill="url(#toddler-male-top-polo__knit)"/>
+  <path d="M282 392 h-43 v0 q0 12 12 12 h20 q12 0 11-12 z" fill="url(#toddler-male-top-polo__knit)"/>
+
+  <!-- side vents at the curved hem -->
+  <path d="M160 424 v14 M240 424 v14" stroke="var(--c2, #46907F)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M166 380 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

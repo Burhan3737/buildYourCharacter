@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Eye Patch" data-family="eye-patch" data-slot="glasses"
+     data-layer="glasses" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes: lens shape = ONE soft opaque oval pad, not a pair of lenses ·
+       temple/strap = a single DIAGONAL strap crossing the whole head rather than
+       two horizontal arms. Asymmetric by design. -->
+  <defs>
+    <linearGradient id="accessories-toddler-glasses-eye-patch__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5A78)"/>
+      <stop offset="1" stop-color="var(--c1, #4A5A78)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-glasses-eye-patch__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #34405A)"/>
+      <stop offset="1" stop-color="var(--c2, #34405A)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- diagonal strap: over the crown on one side, down past the ear on the other -->
+    <path d="M226 200 q-52 46 -108 96 l-12 -10 q56 -52 108 -98 z"
+          fill="url(#accessories-toddler-glasses-eye-patch__strap)"/>
+    <!-- soft oval pad over one eye -->
+    <ellipse cx="168" cy="287" rx="30" ry="34"
+             fill="url(#accessories-toddler-glasses-eye-patch__pad)"/>
+  </g>
+
+  <!-- stitched border a little inside the pad edge -->
+  <ellipse cx="168" cy="287" rx="23" ry="27" fill="none"
+           stroke="var(--c3, #F4A79B)" stroke-width="3" stroke-dasharray="6 5"/>
+  <!-- soft padding seam across the middle -->
+  <path d="M146 287 q22 7 44 0" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- strap keeper where it meets the pad -->
+  <rect x="186" y="256" width="12" height="18" rx="4" fill="var(--c3, #F4A79B)"
+        transform="rotate(-40 192 265)"/>
+
+  <!-- highlight on the upper surface of the pad -->
+  <path d="M154 270 q14 -8 28 -2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes: hem = WAIST y436, the highest hem of any sleeved jacket here, sitting
+       on a deep rib band above the hip block · volume = GATHERED, the body
+       blousing out to x144/256 through the chest and pulling back in to
+       x162/238 where the rib grips it. Sleeve long, closure zip. Differs from
+       zip jacket on hem and volume, from button up on closure, hem and volume,
+       from hoodie on closure and hem, from sweater on sleeve and closure. -->
+  <defs>
+    <linearGradient id="toddler-male-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C6B57)"/>
+      <stop offset="1" stop-color="var(--c2, #2E4437)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C6B57)"/>
+      <stop offset="1" stop-color="var(--c2, #2E4437)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0B24A)"/>
+      <stop offset="1" stop-color="var(--c3, #F0B24A)" stop-opacity="0.76"/>
+    </linearGradient>
+    <clipPath id="toddler-male-top-bomber__bodyclip">
+      <path d="M172 344 q-28 2 -28 32 v40 q0 16 12 20 q44 12 88 0 q12-4 12-20 v-40 q0-30 -28-32 h-14 v12 h-28 v-12 z"/>
+    </clipPath>
+    <clipPath id="toddler-male-top-bomber__sleeveclip">
+      <path d="M156 352 q-40 4 -42 30 l-2 40 q-1 18 16 18 h22 q14 0 14-16 z"/>
+      <path d="M244 352 q40 4 42 30 l2 40 q1 18 -16 18 h-22 q-14 0 -14-16 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long bloused sleeves -->
+    <path d="M156 352 q-40 4 -42 30 l-2 40 q-1 18 16 18 h22 q14 0 14-16 z"
+          fill="url(#toddler-male-top-bomber__sleeve)"/>
+    <path d="M244 352 q40 4 42 30 l2 40 q1 18 -16 18 h-22 q-14 0 -14-16 z"
+          fill="url(#toddler-male-top-bomber__sleeve)"/>
+    <!-- blouson body: wide through the chest, pulled in at a waist height hem -->
+    <path d="M172 344 q-28 2 -28 32 v40 q0 16 12 20 q44 12 88 0 q12-4 12-20 v-40 q0-30 -28-32 h-14 v12 h-28 v-12 z"
+          fill="url(#toddler-male-top-bomber__body)"/>
+  </g>
+
+  <!-- contrast shoulder blocking -->
+  <g clip-path="url(#toddler-male-top-bomber__bodyclip)">
+    <path d="M144 344 h34 l-34 40 z" fill="var(--c2, #2E4437)"/>
+    <path d="M256 344 h-34 l34 40 z" fill="var(--c2, #2E4437)"/>
+  </g>
+
+  <!-- sleeve stripes -->
+  <g clip-path="url(#toddler-male-top-bomber__sleeveclip)">
+    <rect x="108" y="388" width="184" height="10" fill="var(--c3, #F0B24A)" opacity="0.9"/>
+  </g>
+
+  <!-- ribbed stand collar -->
+  <path d="M178 362 q22-14 44 0 v-14 q-22-10 -44 0 z" fill="url(#toddler-male-top-bomber__rib)"/>
+  <path d="M182 352 h36" stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep ribbed hem band at the waist -->
+  <path d="M146 418 q54 16 108 0 v10 q0 14 -16 18 q-38 8 -76 0 q-16-4 -16-18 z"
+        fill="url(#toddler-male-top-bomber__rib)"/>
+  <path d="M160 430 v16 M176 434 v14 M192 436 v14 M208 436 v14 M224 434 v14 M240 430 v16"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <path d="M112 420 h52 v4 q0 16 -14 16 h-22 q-17 0 -16-20 z" fill="url(#toddler-male-top-bomber__rib)"/>
+  <path d="M288 420 h-52 v4 q0 16 14 16 h22 q17 0 16-20 z" fill="url(#toddler-male-top-bomber__rib)"/>
+
+  <!-- centre zip with a pull -->
+  <path d="M195 352 h10 v66 q0 6 -5 6 q-5 0 -5-6 z" fill="var(--c3, #F0B24A)"/>
+  <path d="M200 356 v64" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M193 380 h14 v18 q0 5 -7 5 q-7 0 -7-5 z" fill="var(--c3, #F0B24A)"/>
+
+  <!-- welt pockets angled into the side seams -->
+  <path d="M154 410 l26-8 v10 l-26 8 z" fill="var(--c2, #2E4437)"/>
+  <path d="M246 410 l-26-8 v10 l26 8 z" fill="var(--c2, #2E4437)"/>
+
+  <!-- highlight -->
+  <path d="M158 374 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

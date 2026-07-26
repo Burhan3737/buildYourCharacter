@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = natural, a soft gathered waistband at y438 ·
+       leg length = none (skirt), the hem landing at mid-calf around y534 ·
+       leg width = flared in three gathered steps, each tier wider than the last
+       until the bottom tier reaches x128 to x272 ·
+       hem = ruffled, a scalloped net edge cut into the outline of every tier.
+       vs skirt: hem height (mid-calf against above the knee) + hem treatment
+       (three scalloped ruffle edges against one clean A-line hem).
+       vs pleated: hem height + hem treatment.
+       vs maxi skirt: hem height, leg width and hem treatment.
+       vs pencil skirt: leg width + hem treatment.
+       vs tutu: hem height (mid-calf against a very short skirt standing out
+       horizontally) + leg width.
+       Surface tools: pattern (18px four-petal floral through the accent on the
+       bottom tier), trim (contrast gathered waistband and a binding at each tier
+       seam) and structural detail (gather stitching above each tier). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-tiered-skirt__tier3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C4707E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-tiered-skirt__tier2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C4707E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-tiered-skirt__tier1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C4707E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-tiered-skirt__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C4707E)"/>
+    </linearGradient>
+    <pattern id="toddler-male-bottom-tiered-skirt__floral" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="4" r="3" fill="var(--c3, #FFE9C6)" opacity="0.65"/>
+      <circle cx="14" cy="9" r="3" fill="var(--c3, #FFE9C6)" opacity="0.65"/>
+      <circle cx="9" cy="14" r="3" fill="var(--c3, #FFE9C6)" opacity="0.65"/>
+      <circle cx="4" cy="9" r="3" fill="var(--c3, #FFE9C6)" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M138 506 H262 L272 526 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 Z"
+          fill="url(#toddler-male-bottom-tiered-skirt__tier3)"/>
+    <path d="M148 478 H252 L260 500 q-12 10 -24 0 q-12 10 -24 0 q-12 10 -24 0 q-12 10 -24 0 q-12 10 -24 0 Z"
+          fill="url(#toddler-male-bottom-tiered-skirt__tier2)"/>
+    <path d="M162 450 H238 L248 474 q-12 10 -24 0 q-12 10 -24 0 q-12 10 -24 0 q-12 10 -24 0 Z"
+          fill="url(#toddler-male-bottom-tiered-skirt__tier1)"/>
+    <rect x="160" y="438" width="80" height="26" rx="12"
+          fill="url(#toddler-male-bottom-tiered-skirt__yoke)"/>
+  </g>
+
+  <!-- pattern over the bottom tier -->
+  <path d="M138 506 H262 L272 526 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 q-12 12 -24 0 Z"
+        fill="url(#toddler-male-bottom-tiered-skirt__floral)"/>
+
+  <!-- trim: binding along each tier seam -->
+  <path d="M142 506 H258" stroke="var(--c2, #C4707E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M151 478 H249" stroke="var(--c2, #C4707E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 450 H236" stroke="var(--c2, #C4707E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: gather stitching pulling each tier onto the one above -->
+  <path d="M156 484 v8 M176 484 v8 M196 484 v8 M216 484 v8 M236 484 v8 M252 484 v8"
+        stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 512 v9 M170 512 v9 M194 512 v9 M218 512 v9 M242 512 v9 M262 512 v9"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: gathered waistband -->
+  <rect x="158" y="434" width="84" height="18" rx="9" fill="var(--c2, #C4707E)"/>
+  <path d="M170 438 v10 M186 438 v10 M214 438 v10 M230 438 v10"
+        stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M166 460 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 492 Q200 504 244 492" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

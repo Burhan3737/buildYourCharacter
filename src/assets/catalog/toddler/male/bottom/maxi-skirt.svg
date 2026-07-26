@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Skirt" data-family="maxi-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = high, the waistband riding up to y430 over the tummy ·
+       leg length = none (skirt), a hem right down at the ankle at y546 ·
+       leg width = a narrow straight column, 84px at the waist and only 96px at the
+       ankle, so it hangs plumb instead of flaring ·
+       hem = raw, opened by one long side slit cut up the outline to y494.
+       vs skirt: rise, hem height (ankle against above the knee) and leg width.
+       vs pleated: rise, hem height and leg width.
+       vs tiered skirt: rise, hem height, leg width and hem treatment.
+       vs pencil skirt: rise, hem height and leg width (a straight column against a
+       tapered one). vs tutu: everything.
+       vs leggings: leg length (one column against two tubes) + leg width.
+       Surface tools: pattern (18px even vertical stripe through the accent),
+       trim (contrast high waistband and a deep hem band) and structural detail
+       (a bound facing running the length of the slit). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-maxi-skirt__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3B7F70)"/>
+    </linearGradient>
+    <pattern id="toddler-male-bottom-maxi-skirt__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="6" height="18" fill="var(--c3, #F7C873)" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M158 434 H242 L248 546 H178 V494 h-6 V546 H152 Z"
+          fill="url(#toddler-male-bottom-maxi-skirt__body)"/>
+  </g>
+
+  <!-- pattern over the gradient column -->
+  <path d="M158 434 H242 L248 546 H178 V494 h-6 V546 H152 Z"
+        fill="url(#toddler-male-bottom-maxi-skirt__stripe)"/>
+
+  <!-- trim: high contrast waistband -->
+  <rect x="156" y="428" width="88" height="20" rx="9" fill="var(--c2, #3B7F70)"/>
+  <path d="M160 448 h80" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: bound facing down both edges of the side slit -->
+  <path d="M177 496 V542" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M173 496 V542" stroke="var(--c2, #3B7F70)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: deep hem band -->
+  <path d="M179 530 H247 L248 546 H179 Z" fill="var(--c2, #3B7F70)"/>
+  <path d="M152 530 H171 L171 546 H152 Z" fill="var(--c2, #3B7F70)"/>
+  <path d="M182 534 h62" stroke="var(--c3, #F7C873)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the long side seam -->
+  <path d="M241 440 L246 528" stroke="var(--c2, #3B7F70)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlights -->
+  <path d="M162 452 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 466 q-2 32 -1 60" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
