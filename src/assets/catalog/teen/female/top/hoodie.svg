@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoodie" data-family="hoodie" data-slot="top"
+     data-layer="top" data-colors="c1,c2" data-hides="">
+  <defs>
+    <linearGradient id="teen-female-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6274C6)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #6274C6)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long oversized sleeves, shoulder anchor y198 down toward the wrist -->
+    <rect x="118" y="198" width="38" height="144" rx="19" fill="url(#teen-female-top-hoodie__sleeve)"/>
+    <rect x="244" y="198" width="38" height="144" rx="19" fill="url(#teen-female-top-hoodie__sleeve)"/>
+    <!-- boxier oversized body, overlapping torso (x144-256 y194-344) on every edge -->
+    <path d="M138 214 q0-26 28-26 h68 q28 0 28 26 v108 q0 36 -28 36 h-68 q-28 0 -28-36 z"
+          fill="url(#teen-female-top-hoodie__body)"/>
+    <!-- hood behind the neck -->
+    <path d="M168 186 q32 22 64 0 q-6 30 -32 30 q-26 0 -32-30 z" fill="var(--c2, #6274C6)"/>
+  </g>
+  <!-- cuffs -->
+  <rect x="118" y="324" width="38" height="20" rx="10" fill="var(--c2, #6274C6)"/>
+  <rect x="244" y="324" width="38" height="20" rx="10" fill="var(--c2, #6274C6)"/>
+  <!-- kangaroo pocket -->
+  <path d="M170 288 h60 v28 q0 8 -8 8 h-44 q-8 0 -8-8 z" fill="var(--c2, #6274C6)"/>
+  <!-- drawstrings -->
+  <path d="M188 216 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 216 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M148 200 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

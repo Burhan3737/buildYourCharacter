@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sports Jersey" data-family="jersey" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="teen-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C72B0)"/>
+      <stop offset="1" stop-color="var(--c2, #46599C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-jersey__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    </linearGradient>
+    <clipPath id="teen-female-top-jersey__clip">
+      <path d="M140 214 q0-24 26-24 h68 q26 0 26 24 v104 q0 32 -26 32 h-68 q-26 0 -26-32 z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- body, hem at y350 -->
+    <path d="M140 214 q0-24 26-24 h68 q26 0 26 24 v104 q0 32 -26 32 h-68 q-26 0 -26-32 z"
+          fill="url(#teen-female-top-jersey__body)"/>
+    <!-- raglan shoulder yokes -->
+    <path d="M182 190 L141 214 v-14 q0-26 28-26 z" fill="var(--c2, #46599C)"/>
+    <path d="M218 190 L259 214 v-14 q0-26 -28-26 z" fill="var(--c2, #46599C)"/>
+    <!-- contrast raglan short sleeves -->
+    <rect x="121" y="198" width="32" height="74" rx="16" fill="var(--c2, #46599C)"/>
+    <rect x="247" y="198" width="32" height="74" rx="16" fill="var(--c2, #46599C)"/>
+    <!-- vertical shading over the sleeves -->
+    <rect x="121" y="198" width="32" height="74" rx="16" fill="url(#teen-female-top-jersey__shade)"/>
+    <rect x="247" y="198" width="32" height="74" rx="16" fill="url(#teen-female-top-jersey__shade)"/>
+  </g>
+  <!-- accent side stripes, clipped to the body -->
+  <g clip-path="url(#teen-female-top-jersey__clip)">
+    <rect x="146" y="200" width="10" height="140" fill="var(--c3, #F7C873)"/>
+    <rect x="244" y="200" width="10" height="140" fill="var(--c3, #F7C873)"/>
+  </g>
+  <!-- contrast V-neck yoke -->
+  <path d="M175 190 L200 224 L225 190 z" fill="var(--c3, #F7C873)"/>
+  <path d="M186 190 L200 210 L214 190 z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M152 206 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
