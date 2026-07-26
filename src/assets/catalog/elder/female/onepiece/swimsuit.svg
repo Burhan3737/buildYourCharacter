@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: HEM = no leg at all, cut off at the top of the thigh
+       with leg openings curving up to about y360 at the hip, and VOLUME = fitted, skin-close
+       from x150 to x250 with no ease anywhere. Strap shoulders, scoop back.
+       Surface tools: panel blocking (contrast bust panel across the chest), trim (contrast
+       binding around the scoop neck and both leg openings) and a scattered dot pattern. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-swimsuit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E8F9C)"/>
+      <stop offset="1" stop-color="var(--c2, #2A6B77)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-swimsuit__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E8F9C)"/>
+      <stop offset="1" stop-color="var(--c2, #337E8B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-swimsuit__bust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3D9A6)"/>
+      <stop offset="1" stop-color="var(--c3, #DCBE84)"/>
+    </linearGradient>
+    <pattern id="elder-female-onepiece-swimsuit__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="5" cy="5" r="2.6" fill="var(--c3, #F3D9A6)" fill-opacity="0.55"/>
+      <circle cx="14" cy="13" r="2" fill="var(--c3, #F3D9A6)" fill-opacity="0.4"/>
+    </pattern>
+    <clipPath id="elder-female-onepiece-swimsuit__clip">
+      <path d="M150 214 Q150 184 180 182 Q200 200 220 182 Q250 184 250 214 L250 306
+               Q252 344 238 362 Q224 382 206 398 Q200 404 194 398 Q176 382 162 362
+               Q148 344 150 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two narrow straps and one high-cut maillot hugging the torso. -->
+  <g class="sp-shadow">
+    <path d="M172 214 l3-30 q1-6 8-6 q7 0 6 6 l-3 30 z"
+          fill="url(#elder-female-onepiece-swimsuit__strap)"/>
+    <path d="M228 214 l-3-30 q-1-6 -8-6 q-7 0 -6 6 l3 30 z"
+          fill="url(#elder-female-onepiece-swimsuit__strap)"/>
+    <path d="M150 214 Q150 184 180 182 Q200 200 220 182 Q250 184 250 214 L250 306
+             Q252 344 238 362 Q224 382 206 398 Q200 404 194 398 Q176 382 162 362
+             Q148 344 150 306 Z"
+          fill="url(#elder-female-onepiece-swimsuit__body)"/>
+  </g>
+
+  <!-- PATTERN: a light scattered dot across the whole suit, clipped to the maillot. -->
+  <g clip-path="url(#elder-female-onepiece-swimsuit__clip)">
+    <rect x="146" y="178" width="110" height="230"
+          fill="url(#elder-female-onepiece-swimsuit__dots)"/>
+    <!-- PANEL BLOCKING: contrast bust panel seamed across the chest. -->
+    <path d="M146 206 Q200 232 254 206 L254 262 Q200 288 146 262 Z"
+          fill="url(#elder-female-onepiece-swimsuit__bust)"/>
+  </g>
+
+  <!-- TRIM: contrast binding around the scoop neck and around each high-cut leg opening. -->
+  <path d="M176 180 Q200 200 224 180 l6 10 Q200 214 170 190 z" fill="var(--c3, #F3D9A6)"/>
+  <path d="M252 306 Q254 346 240 364 Q226 384 208 400 l-10-8 Q216 376 229 358
+           Q241 342 240 306 z" fill="var(--c3, #F3D9A6)"/>
+  <path d="M148 306 Q146 346 160 364 Q174 384 192 400 l10-8 Q184 376 171 358
+           Q159 342 160 306 z" fill="var(--c3, #F3D9A6)"/>
+
+  <!-- STRUCTURAL: a soft ruched seam gathered at the centre front. -->
+  <g fill="none" stroke="var(--c2, #2A6B77)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M200 276 q-10 24 0 48 q10 26 0 50"/>
+    <path d="M182 292 q-8 18 0 36"/>
+    <path d="M218 292 q8 18 0 36"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M164 206 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 320 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

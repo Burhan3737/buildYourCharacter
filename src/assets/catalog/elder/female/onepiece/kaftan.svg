@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: SHOULDER = draped, the sleeve cut square in one piece
+       with the body out to x96 and x304, and VOLUME = straight and wide with no waist at all,
+       falling from the shoulder to a calf hem at y496.
+       Surface tools: an all-over small diamond motif pattern, trim (a deep border band at the
+       hem and at both cuffs, plus an embroidered band around the slit neck) and structural
+       detail (a centre-front slit and side drape seams). -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-kaftan__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7FB8)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C90)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-kaftan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8C87A)"/>
+      <stop offset="1" stop-color="var(--c3, #CBA957)"/>
+    </linearGradient>
+    <pattern id="elder-female-onepiece-kaftan__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 2 L12 8 L8 14 L4 8 Z" fill="var(--c3, #E8C87A)" fill-opacity="0.34"/>
+    </pattern>
+    <clipPath id="elder-female-onepiece-kaftan__clip">
+      <path d="M98 198 Q96 186 110 184 L172 176 Q200 214 228 176 L290 184 Q304 186 302 198
+               L302 286 Q302 300 288 302 L262 300 Q256 298 256 282 L262 400 L266 496
+               Q200 516 134 496 L138 400 L144 282 Q144 298 138 300 L112 302 Q98 300 98 286 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORM: one T-shaped panel — sleeve and body cut from the same cloth. -->
+  <g class="sp-shadow">
+    <path d="M98 198 Q96 186 110 184 L172 176 Q200 214 228 176 L290 184 Q304 186 302 198
+             L302 286 Q302 300 288 302 L262 300 Q256 298 256 282 L262 400 L266 496
+             Q200 516 134 496 L138 400 L144 282 Q144 298 138 300 L112 302 Q98 300 98 286 Z"
+          fill="url(#elder-female-onepiece-kaftan__cloth)"/>
+  </g>
+
+  <!-- PATTERN: the all-over motif, clipped to the cloth. -->
+  <g clip-path="url(#elder-female-onepiece-kaftan__clip)">
+    <rect x="94" y="172" width="212" height="348"
+          fill="url(#elder-female-onepiece-kaftan__motif)"/>
+  </g>
+
+  <!-- TRIM: border bands at the hem and at both wide cuffs. -->
+  <path d="M266 496 Q200 516 134 496 L138 470 Q200 490 262 470 z"
+        fill="url(#elder-female-onepiece-kaftan__band)"/>
+  <path d="M98 278 h46 v20 q-6 4 -6 22 l-26 2 q-14-2 -14-16 z"
+        fill="url(#elder-female-onepiece-kaftan__band)"/>
+  <path d="M302 278 h-46 v20 q6 4 6 22 l26 2 q14-2 14-16 z"
+        fill="url(#elder-female-onepiece-kaftan__band)"/>
+
+  <!-- TRIM: the embroidered band around the slit neckline. -->
+  <path d="M198 186 q22 0 22 18 v34 q0 18 -22 18 q-22 0 -22-18 v-34 q0-18 22-18 z"
+        fill="url(#elder-female-onepiece-kaftan__band)"/>
+  <path d="M198 194 q13 0 13 11 v32 q0 11 -13 11 q-13 0 -13-11 v-32 q0-11 13-11 z"
+        fill="var(--skin1, #F7D2B0)"/>
+
+  <!-- STRUCTURAL: side drape seams and a run of stitch marks along the hem band. -->
+  <g fill="none" stroke="var(--c2, #4E5C90)" stroke-opacity="0.45" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M158 262 L152 490"/>
+    <path d="M242 262 L248 490"/>
+    <path d="M198 268 L198 486"/>
+  </g>
+  <g fill="var(--c2, #4E5C90)" fill-opacity="0.5">
+    <circle cx="156" cy="482" r="3.5"/>
+    <circle cx="178" cy="488" r="3.5"/>
+    <circle cx="200" cy="490" r="3.5"/>
+    <circle cx="222" cy="488" r="3.5"/>
+    <circle cx="244" cy="482" r="3.5"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M150 208 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 400 q56 16 112 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

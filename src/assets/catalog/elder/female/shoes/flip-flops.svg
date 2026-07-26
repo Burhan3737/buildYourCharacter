@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flip Flops" data-family="flip-flops" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHAFT HEIGHT = none whatsoever, the foot is otherwise
+       bare, and FASTENING = a Y-thong between the toes.
+       Surface tools: trim (contrast footbed inlay and thong straps) and structural (a moulded
+       toe ridge and a visible sole edge line). -->
+  <defs>
+    <linearGradient id="elder-female-shoes-flip-flops__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0B96B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9445)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: a thin flat sole only -->
+    <path d="M156 560 q6 -4 22 -4 h14 q16 0 20 5 q3 5 -2 9 q-6 4 -20 4 h-16 q-16 0 -20 -5
+             q-3 -5 2 -9 z"
+          fill="url(#elder-female-shoes-flip-flops__sole)"/>
+    <!-- right -->
+    <path d="M194 560 q6 -4 22 -4 h14 q16 0 20 5 q3 5 -2 9 q-6 4 -20 4 h-16 q-16 0 -20 -5
+             q-3 -5 2 -9 z"
+          fill="url(#elder-female-shoes-flip-flops__sole)"/>
+  </g>
+
+  <!-- footbed inlay -->
+  <path d="M160 561 q10 -3 20 -3 h12 q10 0 16 3 q2 3 -2 5 h-44 q-4 -2 -2 -5 z"
+        fill="var(--c3, #FBF3E2)" opacity="0.8"/>
+  <path d="M198 561 q10 -3 20 -3 h12 q10 0 16 3 q2 3 -2 5 h-44 q-4 -2 -2 -5 z"
+        fill="var(--c3, #FBF3E2)" opacity="0.8"/>
+
+  <!-- Y-thongs, sitting on bare skin -->
+  <path d="M181 546 L172 558 M181 546 L191 558 M181 546 v-4"
+        stroke="var(--c3, #FBF3E2)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M219 546 L210 558 M219 546 L229 558 M219 546 v-4"
+        stroke="var(--c3, #FBF3E2)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="181" cy="545" r="3" fill="var(--c2, #CE9445)"/>
+  <circle cx="219" cy="545" r="3" fill="var(--c2, #CE9445)"/>
+
+  <!-- sole edge line and highlight -->
+  <path d="M156 568 h48 M194 568 h48" stroke="var(--c2, #CE9445)" stroke-opacity="0.45"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M164 559 q14 -3 26 -1 M202 559 q14 -3 26 -1" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

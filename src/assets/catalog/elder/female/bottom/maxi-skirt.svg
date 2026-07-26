@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Skirt" data-family="maxi-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: LEG LENGTH = ankle, the longest in the slot at y548,
+       and LEG WIDTH = a narrow column barely wider than the hip, broken by a single side slit
+       running up to y438. No leg division, natural rise.
+       Surface tools: structural (the slit edge and long vertical drape folds) and trim (a
+       narrow contrast waistband and a bound hem). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-maxi-skirt__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #675C82)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-maxi-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0E3CB)"/>
+      <stop offset="1" stop-color="var(--c3, #F0E3CB)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow column, hip to ankle, with the slit cut into the left side -->
+    <path d="M150 320 h100 q4 0 4 6 v212 q0 10 -8 10 h-38 q-8 0-8-10 v-100
+             l-14 -2 v102 q0 10 -8 10 h-24 q-8 0-8-10 v-212 q0-6 4-6 z"
+          fill="url(#elder-female-bottom-maxi-skirt__skirt)"/>
+  </g>
+
+  <!-- narrow contrast waistband -->
+  <path d="M150 318 h100 v15 q-50 5 -100 0 z" fill="url(#elder-female-bottom-maxi-skirt__band)"/>
+  <!-- bound hem -->
+  <path d="M154 540 h34 M196 540 h50" stroke="var(--c3, #F0E3CB)" stroke-opacity="0.8"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- slit edge -->
+  <path d="M188 438 v100" stroke="var(--c3, #F0E3CB)" stroke-opacity="0.65" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- long vertical drape folds -->
+  <path d="M166 344 v190 M212 344 v190 M236 344 v190" stroke="var(--c2, #675C82)"
+        stroke-opacity="0.35" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M164 338 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

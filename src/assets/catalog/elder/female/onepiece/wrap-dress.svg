@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Dress" data-family="wrap-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: CLOSURE = a diagonal crossover bodice cut into the
+       outline as a deep V, one panel visibly over the other, and HEM = a soft A-line finishing
+       at the knee at y470. Three-quarter sleeves ending above the wrist.
+       Surface tools: panel blocking (the upper wrap panel lying across the bodice in a contrast
+       value) and trim (a bound V edge, a waist tie with two short ends, cuff bands), plus
+       structural detail (the front overlap edge running diagonally down the skirt). -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-wrap-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BA893)"/>
+      <stop offset="1" stop-color="var(--c2, #4C8272)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-wrap-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BA893)"/>
+      <stop offset="1" stop-color="var(--c2, #57907E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-wrap-dress__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #DCC7A5)"/>
+    </linearGradient>
+    <clipPath id="elder-female-onepiece-wrap-dress__clip">
+      <path d="M146 202 Q150 176 176 176 L200 232 L224 176 Q250 176 254 202 L258 316
+               Q266 394 270 470 Q200 492 130 470 Q134 394 142 316 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two three-quarter sleeves and one wrapped bodice-and-A-line-skirt body. -->
+  <g class="sp-shadow">
+    <path d="M114 194 Q114 176 134 176 L146 176 Q156 176 156 194 L158 272
+             Q158 290 138 290 L128 290 Q112 290 112 272 Z"
+          fill="url(#elder-female-onepiece-wrap-dress__sleeve)"/>
+    <path d="M286 194 Q286 176 266 176 L254 176 Q244 176 244 194 L242 272
+             Q242 290 262 290 L272 290 Q288 290 288 272 Z"
+          fill="url(#elder-female-onepiece-wrap-dress__sleeve)"/>
+    <path d="M146 202 Q150 176 176 176 L200 232 L224 176 Q250 176 254 202 L258 316
+             Q266 394 270 470 Q200 492 130 470 Q134 394 142 316 Z"
+          fill="url(#elder-female-onepiece-wrap-dress__body)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: the upper wrap panel, laid diagonally across the bodice from the left
+       shoulder down past the right hip. -->
+  <g clip-path="url(#elder-female-onepiece-wrap-dress__clip)">
+    <path d="M172 178 L204 240 Q232 268 262 274 L262 330 Q210 302 178 246
+             Q160 214 154 182 Z"
+          fill="url(#elder-female-onepiece-wrap-dress__panel)"/>
+  </g>
+
+  <!-- TRIM: bound edge along the deep V, and cuff bands on both sleeves. -->
+  <path d="M172 178 L200 232 L228 178 l10 6 L204 244 q-5 8 -10 0 L162 184 z"
+        fill="var(--c3, #EDDCBF)"/>
+  <path d="M112 270 q23 12 46 0 l0 20 q-23 12 -46 0 z" fill="var(--c3, #EDDCBF)"/>
+  <path d="M288 270 q-23 12 -46 0 l0 20 q23 12 46 0 z" fill="var(--c3, #EDDCBF)"/>
+
+  <!-- TRIM: the waist tie, knotted off-centre, with two short ends. -->
+  <path d="M142 306 q58 18 116 0 l2 22 q-60 20 -120 0 z" fill="var(--c2, #4C8272)"/>
+  <path d="M198 302 h26 q8 12 4 28 h-36 q-4-16 6-28 z" fill="var(--c3, #EDDCBF)"/>
+  <path d="M222 330 q18 18 22 44 l-16 6 q-4-26 -20-44 z" fill="var(--c2, #4C8272)"/>
+  <path d="M196 330 q-14 20 -16 46 l16 4 q0-26 14-46 z" fill="var(--c2, #4C8272)"/>
+
+  <!-- STRUCTURAL: the front overlap edge falling diagonally across the skirt. -->
+  <path d="M214 330 Q206 396 178 468" stroke="var(--c3, #EDDCBF)" stroke-opacity="0.75"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #4C8272)" stroke-opacity="0.35" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M240 336 Q252 400 258 462"/>
+    <path d="M156 340 Q146 400 140 462"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 196 q14 16 26 34" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 414 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

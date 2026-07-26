@@ -2,48 +2,58 @@
      data-name="Ponytail" data-family="ponytail" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
   <g data-part="back">
-    <defs>
-      <linearGradient id="elder-female-hair-ponytail__back-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <path d="M145 58 C137 96 137 132 144 158 C152 168 248 168 256 158 C263 132 263 96 255 58
-               C236 36 164 36 145 58 Z"
-            fill="url(#elder-female-hair-ponytail__back-g)"/>
-      <path d="M236 154 C250 168 258 196 254 226 C251 250 236 262 222 254 C214 248 214 236 218 222
-               C224 200 224 176 218 158 Z"
-            fill="url(#elder-female-hair-ponytail__back-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-ponytail__back-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <path d="M145 58 C137 96 137 132 144 158 C152 168 248 168 256 158 C263 132 263 96 255 58
+                 C236 36 164 36 145 58 Z"
+              fill="url(#elder-female-hair-ponytail__back-g)"/>
+        <path d="M236 154 C250 168 258 196 254 226 C251 250 236 262 222 254 C214 248 214 236 218 222
+                 C224 200 224 176 218 158 Z"
+              fill="url(#elder-female-hair-ponytail__back-g)"/>
+      </g>
+      <path d="M148 134 C174 148 226 148 252 134 C248 158 152 158 148 134 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M226 158 C234 158 240 160 244 164 C234 164 226 162 220 158 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M232 190 C242 206 244 224 238 240 C230 232 226 212 228 190 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M158 60 C180 46 220 46 242 60" stroke="#FFFFFF" stroke-opacity="0.26"
+            stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
-    <path d="M148 134 C174 148 226 148 252 134 C248 158 152 158 148 134 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M226 158 C234 158 240 160 244 164 C234 164 226 162 220 158 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M232 190 C242 206 244 224 238 240 C230 232 226 212 228 190 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M158 60 C180 46 220 46 242 60" stroke="#FFFFFF" stroke-opacity="0.26"
-          stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
-    <defs>
-      <linearGradient id="elder-female-hair-ponytail__front-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <path d="M140 96 C140 40 168 18 200 18 C232 18 260 40 260 96 C246 86 232 80 200 80
-               C168 80 154 86 140 96 Z"
-            fill="url(#elder-female-hair-ponytail__front-g)"/>
-      <path d="M141 74 C134 96 132 118 136 138 C142 132 148 118 150 100 C152 90 152 82 152 74 Z"
-            fill="url(#elder-female-hair-ponytail__front-g)"/>
-      <path d="M259 74 C266 96 268 118 264 138 C258 132 252 118 250 100 C248 90 248 82 248 74 Z"
-            fill="url(#elder-female-hair-ponytail__front-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-ponytail__front-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <path d="M140 96 C140 40 168 18 200 18 C232 18 260 40 260 96 C246 86 232 80 200 80
+                 C168 80 154 86 140 96 Z"
+              fill="url(#elder-female-hair-ponytail__front-g)"/>
+        <path d="M141 74 C134 96 132 118 136 138 C142 132 148 118 150 100 C152 90 152 82 152 74 Z"
+              fill="url(#elder-female-hair-ponytail__front-g)"/>
+        <path d="M259 74 C266 96 268 118 264 138 C258 132 252 118 250 100 C248 90 248 82 248 74 Z"
+              fill="url(#elder-female-hair-ponytail__front-g)"/>
+      </g>
+      <path d="M154 82 C172 74 228 74 246 82 C226 78 174 78 154 82 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M164 40 C180 26 220 26 236 40" stroke="#FFFFFF" stroke-opacity="0.30"
+            stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
-    <path d="M154 82 C172 74 228 74 246 82 C226 78 174 78 154 82 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M164 40 C180 26 220 26 236 40" stroke="#FFFFFF" stroke-opacity="0.30"
-          stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

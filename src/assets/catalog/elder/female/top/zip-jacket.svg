@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Zip Track Jacket" data-family="zip-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = centre zip / open front, drawn as two
+       separate front panel major forms with a zip channel between them, and TRIM STRUCTURE =
+       stand collar with ribbed cuffs and a ribbed hem band.
+       Long set-in sleeves, hem at the hip (y346), straight volume.
+       Surface tools: trim (stand collar, ribbed cuffs, ribbed hem band, zip tape and pull)
+       and panel blocking (a contrast stripe running the length of each sleeve). -->
+  <defs>
+    <linearGradient id="elder-female-top-zip-jacket__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FA6)"/>
+      <stop offset="1" stop-color="var(--c2, #4E6B80)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-zip-jacket__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FA6)"/>
+      <stop offset="1" stop-color="var(--c2, #4E6B80)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-zip-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E6B80)"/>
+      <stop offset="1" stop-color="var(--c1, #6E8FA6)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-zip-jacket__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8EDF0)"/>
+      <stop offset="1" stop-color="var(--c3, #E8EDF0)" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- stand collar wrapping the neck -->
+    <path d="M172 190 q28 -20 56 0 v-18 q-28 -12 -56 0 z"
+          fill="url(#elder-female-top-zip-jacket__collar)"/>
+    <!-- long tapered sleeves -->
+    <path d="M148 176 L116 190 Q112 192 112 204 L120 320 Q121 332 132 332 L140 332 Q148 332 148 322 Z"
+          fill="url(#elder-female-top-zip-jacket__arm)"/>
+    <path d="M252 176 L284 190 Q288 192 288 204 L280 320 Q279 332 268 332 L260 332 Q252 332 252 322 Z"
+          fill="url(#elder-female-top-zip-jacket__arm)"/>
+    <!-- left front panel -->
+    <path d="M138 208 q0 -34 32 -34 h26 v172 h-24 q-34 0 -34 -36 z"
+          fill="url(#elder-female-top-zip-jacket__panel)"/>
+    <!-- right front panel -->
+    <path d="M262 208 q0 -34 -32 -34 h-26 v172 h24 q34 0 34 -36 z"
+          fill="url(#elder-female-top-zip-jacket__panel)"/>
+  </g>
+
+  <!-- the zip: tape, teeth line and pull, down the 8px channel between the panels -->
+  <path d="M196 176 h8 v166 h-8 z" fill="var(--c3, #E8EDF0)"/>
+  <path d="M200 182 v156" stroke="var(--c2, #4E6B80)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M194 236 h12 v18 q0 4 -6 4 q-6 0 -6 -4 z" fill="var(--c3, #E8EDF0)"/>
+  <path d="M200 258 v16" stroke="var(--c3, #E8EDF0)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast stripe running the length of each sleeve -->
+  <path d="M124 194 q5 -1 5 4 l4 118 q0 5 -5 5 q-5 0 -5 -5 z" fill="var(--c3, #E8EDF0)" opacity="0.9"/>
+  <path d="M276 194 q-5 -1 -5 4 l-4 118 q0 5 5 5 q5 0 5 -5 z" fill="var(--c3, #E8EDF0)" opacity="0.9"/>
+  <!-- ribbed cuffs -->
+  <path d="M113 314 h35 v8 q0 10 -10 10 h-15 q-10 0 -10 -10 z"
+        fill="url(#elder-female-top-zip-jacket__rib)"/>
+  <path d="M287 314 h-35 v8 q0 10 10 10 h15 q10 0 10 -10 z"
+        fill="url(#elder-female-top-zip-jacket__rib)"/>
+  <!-- ribbed hem band, split by the zip channel -->
+  <path d="M138 330 h58 v16 h-46 q-12 0 -12 -12 z" fill="url(#elder-female-top-zip-jacket__rib)"/>
+  <path d="M262 330 h-58 v16 h46 q12 0 12 -12 z" fill="url(#elder-female-top-zip-jacket__rib)"/>
+  <path d="M150 334 v9 M164 334 v9 M178 334 v9 M190 334 v9 M210 334 v9 M222 334 v9 M236 334 v9 M250 334 v9"
+        stroke="var(--c2, #4E6B80)" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M118 318 v10 M128 320 v10 M138 320 v10 M272 320 v10 M282 320 v10"
+        stroke="var(--c2, #4E6B80)" stroke-opacity="0.28" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- collar fold -->
+  <path d="M178 180 q22 -8 44 0" stroke="var(--c3, #E8EDF0)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 196 q20 10 40 12 M208 208 q20 -2 40 -12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

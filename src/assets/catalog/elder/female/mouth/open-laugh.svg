@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Open Laugh" data-family="open-laugh" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- Wide open mouth: a real dark aperture with an upper tooth band and a visible tongue
+       shape sitting low in it, ringed by the lip. Reads clearly apart from grin, whose mouth
+       is closed over a tooth hint. -->
+  <defs>
+    <linearGradient id="elder-female-mouth-open-laugh__lip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C9847B)" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="var(--lip1, #C9847B)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="elder-female-mouth-open-laugh__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.22"/>
+    </linearGradient>
+    <clipPath id="elder-female-mouth-open-laugh__inner">
+      <path d="M180 152 Q200 149 220 152 Q222 170 200 176 Q178 170 180 152 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- lip ring: the wide open mouth shape -->
+    <path d="M172 149 Q200 143 228 149 Q232 172 200 182 Q168 172 172 149 Z"
+          fill="url(#elder-female-mouth-open-laugh__lip)"/>
+    <!-- the aperture itself -->
+    <path d="M180 152 Q200 149 220 152 Q222 170 200 176 Q178 170 180 152 Z" fill="#5C2B2B"/>
+    <g clip-path="url(#elder-female-mouth-open-laugh__inner)">
+      <!-- upper tooth band -->
+      <path d="M178 149 H222 V157 Q200 161 178 157 Z" fill="#FFF6F2" opacity="0.95"/>
+      <!-- tongue, low and centred -->
+      <path d="M188 166 Q200 160 212 166 Q212 178 200 180 Q188 178 188 166 Z"
+            fill="var(--lip1, #C9847B)"/>
+      <path d="M200 168 v9" stroke="#8E3A3A" stroke-opacity="0.4" stroke-width="1.8"
+            fill="none" stroke-linecap="round"/>
+    </g>
+    <path d="M172 149 Q200 143 228 149 Q232 172 200 182 Q168 172 172 149 Z"
+          fill="url(#elder-female-mouth-open-laugh__vol)"/>
+  </g>
+
+  <!-- highlight on the lower lip roll -->
+  <path d="M188 178 Q200 182 212 178" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- laugh creases at the corners -->
+  <path d="M170 150 q-5 4 -6 9 M230 150 q5 4 6 9" stroke="#3B2A22" stroke-opacity="0.16"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+</svg>

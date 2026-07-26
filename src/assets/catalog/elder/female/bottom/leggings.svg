@@ -1,25 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Leggings" data-family="leggings" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: RISE = high, a deep waistband climbing to y298, and
+       LEG WIDTH = skin-close, the fabric following the drawn leg with a shaped knee.
+       Full length, plain flat ankle hem.
+       Surface tools: panel blocking (a contrast side panel running hip to ankle) and trim
+       (the deep contrast waistband and flat hem bands). -->
   <defs>
     <linearGradient id="elder-female-bottom-leggings__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E9FB8)"/>
-      <stop offset="1" stop-color="var(--c2, #557E93)"/>
+      <stop offset="1" stop-color="var(--c2, #4E7488)"/>
     </linearGradient>
     <linearGradient id="elder-female-bottom-leggings__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E9FB8)"/>
-      <stop offset="1" stop-color="var(--c2, #557E93)"/>
+      <stop offset="1" stop-color="var(--c2, #4E7488)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-leggings__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8DCEB)"/>
+      <stop offset="1" stop-color="var(--c3, #E8DCEB)" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
 
-  <!-- simple stretch leggings, closer fit -->
   <g class="sp-shadow">
-    <rect x="166" y="380" width="32" height="164" rx="16" fill="url(#elder-female-bottom-leggings__leg)"/>
-    <rect x="202" y="380" width="32" height="164" rx="16" fill="url(#elder-female-bottom-leggings__leg)"/>
-    <rect x="148" y="324" width="104" height="58" rx="24" fill="url(#elder-female-bottom-leggings__hip)"/>
+    <!-- high-rise hip, rising above the natural waist -->
+    <path d="M150 306 q4-8 12-8 h76 q8 0 12 8 q4 10 4 24 v22 q0 30 -24 30 h-60
+             q-24 0-24-30 v-22 q0-14 4-24 z"
+          fill="url(#elder-female-bottom-leggings__hip)"/>
+    <!-- left leg, hugging the drawn limb with a shaped knee at y464 -->
+    <path d="M163 376 h37 v88 q-2 12 -4 24 v54 q0 6 -6 6 h-19 q-6 0-6-6 v-54
+             q-2-12 -2-24 z"
+          fill="url(#elder-female-bottom-leggings__leg)"/>
+    <!-- right leg -->
+    <path d="M237 376 h-37 v88 q2 12 4 24 v54 q0 6 6 6 h19 q6 0 6-6 v-54
+             q2-12 2-24 z"
+          fill="url(#elder-female-bottom-leggings__leg)"/>
   </g>
 
-  <rect x="148" y="324" width="104" height="16" rx="8" fill="var(--c2, #557E93)"/>
-  <path d="M164 356 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5"
+  <!-- deep contrast waistband -->
+  <path d="M150 306 q4-8 12-8 h76 q8 0 12 8 q3 8 4 18 q-54 10 -108 0 q1-10 4-18 z"
+        fill="url(#elder-female-bottom-leggings__band)"/>
+  <!-- contrast side panels, hip to ankle -->
+  <path d="M163 378 h9 v168 h-9 z" fill="var(--c3, #E8DCEB)" opacity="0.6"/>
+  <path d="M228 378 h9 v168 h-9 z" fill="var(--c3, #E8DCEB)" opacity="0.6"/>
+  <!-- flat ankle hem bands -->
+  <path d="M168 534 h26 v12 h-26 z M206 534 h26 v12 h-26 z"
+        fill="url(#elder-female-bottom-leggings__band)"/>
+  <!-- knee shaping seams -->
+  <path d="M170 462 q12 4 24 0 M206 462 q12 4 24 0" stroke="var(--c2, #4E7488)"
+        stroke-opacity="0.4" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M164 344 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

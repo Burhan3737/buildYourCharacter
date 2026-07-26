@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cropped Knit" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = cropped above the natural waist,
+       the outline stopping dead at y278 with a deep rib band rather than
+       running on to the hip, and VOLUME = fitted, the body held close at
+       x140 to x260 with no ease at all.
+       Short set-in sleeves ending y248. A relaxed, comfortable ribbed knit.
+       Surface tools: pattern (a 12px vertical rib clipped to the body) and
+       trim (a wide ribbed hem band at y262 to y278, ribbed neckline bind and
+       ribbed sleeve edges). -->
+  <defs>
+    <linearGradient id="elder-female-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FBCA8)"/>
+      <stop offset="1" stop-color="var(--c3, #75967F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FBCA8)"/>
+      <stop offset="1" stop-color="var(--c3, #75967F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #75967F)"/>
+      <stop offset="1" stop-color="var(--c3, #75967F)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="elder-female-top-crop-top__rib"
+             patternUnits="userSpaceOnUse" x="2" y="0" width="12" height="12">
+      <path d="M0 0 h5 v12 h-5 z" fill="var(--c2, #4F6B58)" fill-opacity="0.4"/>
+    </pattern>
+    <clipPath id="elder-female-top-crop-top__clip">
+      <path d="M140 202 q0-28 26-28 h68 q26 0 26 28 v60 q0 16 -14 16 h-92 q-14 0-14-16 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <path d="M150 196 q0-22 -20-22 h-8 q-12 0 -12 18 v44 q0 12 12 12 h16 q12 0 12-12 z"
+          fill="url(#elder-female-top-crop-top__sleeve)"/>
+    <path d="M250 196 q0-22 20-22 h8 q12 0 12 18 v44 q0 12 -12 12 h-16 q-12 0 -12-12 z"
+          fill="url(#elder-female-top-crop-top__sleeve)"/>
+    <!-- cropped body, the hem stopping well above the waist -->
+    <path d="M140 202 q0-28 26-28 h68 q26 0 26 28 v60 q0 16 -14 16 h-92 q-14 0-14-16 z"
+          fill="url(#elder-female-top-crop-top__body)"/>
+  </g>
+
+  <!-- vertical rib, clipped to the body -->
+  <g clip-path="url(#elder-female-top-crop-top__clip)">
+    <path d="M136 170 h128 v112 h-128 z" fill="url(#elder-female-top-crop-top__rib)"/>
+  </g>
+  <!-- wide ribbed hem band -->
+  <path d="M141 262 h118 v1 q0 15 -14 15 h-90 q-14 0-14-15 z"
+        fill="url(#elder-female-top-crop-top__band)"/>
+  <path d="M148 264 v12 M158 264 v13 M168 264 v13 M178 264 v13 M188 264 v13 M198 264 v13 M208 264 v13 M218 264 v13 M228 264 v13 M238 264 v13 M250 264 v12"
+        stroke="var(--c2, #4F6B58)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- ribbed neckline bind -->
+  <path d="M176 176 q24 16 48 0 l4 9 q-28 19 -56 0 z" fill="var(--c2, #4F6B58)"/>
+  <!-- ribbed sleeve edges -->
+  <path d="M119 240 h30 v8 q-14 5 -30 0 z" fill="var(--c2, #4F6B58)" fill-opacity="0.85"/>
+  <path d="M251 240 h30 v8 q-16 5 -30 0 z" fill="var(--c2, #4F6B58)" fill-opacity="0.85"/>
+  <!-- highlight -->
+  <path d="M154 198 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

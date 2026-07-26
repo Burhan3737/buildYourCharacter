@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailored Trousers" data-family="tailored-trousers" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM TREATMENT = a deep turn-up cuff folded back at
+       the hem (y524-548), and LEG WIDTH = a clean slim-straight leg with no break at all.
+       Natural rise, full length.
+       Surface tools: structural (a pressed centre crease and two welt pockets) and trim (a
+       narrow waistband with a single button and a contrast turn-up edge). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-tailored-trousers__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6C6F84)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5165)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-tailored-trousers__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6C6F84)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5165)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- clean tailored hip with a flat front -->
+    <path d="M148 318 h104 q4 0 4 6 v32 q0 28 -24 28 h-64 q-24 0-24-28 v-32 q0-6 4-6 z"
+          fill="url(#elder-female-bottom-tailored-trousers__hip)"/>
+    <!-- left leg: slim straight, 40px at the thigh to 36px at the cuff -->
+    <path d="M160 378 h40 v146 q0 4 -2 4 h-36 q-2 0-2-4 z"
+          fill="url(#elder-female-bottom-tailored-trousers__leg)"/>
+    <!-- right leg -->
+    <path d="M240 378 h-40 v146 q0 4 2 4 h36 q2 0 2-4 z"
+          fill="url(#elder-female-bottom-tailored-trousers__leg)"/>
+    <!-- turn-up cuffs, folded back and a touch wider than the leg -->
+    <path d="M158 524 h44 v22 q0 4 -4 4 h-36 q-4 0-4-4 z"
+          fill="url(#elder-female-bottom-tailored-trousers__leg)"/>
+    <path d="M242 524 h-44 v22 q0 4 4 4 h36 q4 0 4-4 z"
+          fill="url(#elder-female-bottom-tailored-trousers__leg)"/>
+  </g>
+
+  <!-- narrow waistband with a single button -->
+  <path d="M148 316 h104 v14 h-104 z" fill="var(--c2, #4E5165)"/>
+  <circle cx="200" cy="323" r="4" fill="var(--c3, #E5D2AE)"/>
+  <!-- welt pockets -->
+  <path d="M154 344 h30 v7 h-30 z M216 344 h30 v7 h-30 z" fill="var(--c2, #4E5165)"/>
+  <!-- turn-up top edge in the accent -->
+  <path d="M158 526 h44 M198 526 h44" stroke="var(--c3, #E5D2AE)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- pressed centre creases -->
+  <path d="M180 384 v138 M220 384 v138" stroke="#FFFFFF" stroke-opacity="0.32"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M162 360 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

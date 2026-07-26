@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Top Fade" data-family="high-top-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME/TEXTURE of the outline (a flat-topped column
+       with square corners standing off the skull at y40, over clipper-short faded sides that
+       taper away into the skin) and PARTING (none, and the front hairline is a hard straight
+       edge cut level at y96 from x166 to x234).
+       Surface tools: panel blocking (the dense column against the two faded side panels) and
+       a real value ramp painted from the hair2 variable at the skin line up to hair1 at y70,
+       so the fade is in the colour of the hair itself, not in an added squiggle. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-high-top-fade__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- a hair's-breadth of column standing proud behind the front block -->
+      <path d="M162 102 C160 72 162 52 172 43 C186 34 214 34 228 43
+               C238 52 240 72 238 102 C220 96 180 96 162 102 Z"
+            fill="url(#elder-female-hair-high-top-fade__back-g)"/>
+    </g>
+    <path d="M164 88 C182 94 218 94 236 88 C234 100 166 100 164 88 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <!-- the fade itself: anchored in user space so hair2 lands exactly on the skin line at
+           y118 and hair1 is reached at y70, whatever shape is painted with it -->
+      <linearGradient id="elder-female-hair-high-top-fade__fade"
+                      gradientUnits="userSpaceOnUse" x1="0" y1="120" x2="0" y2="66">
+        <stop offset="0" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair1, #D9D2C5)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- one continuous mass: the flat crown edge at y40 across x166 to x234, sides sweeping
+           down onto the skull and tapering out at the skin line, and the hard front hairline
+           cut dead level across x166 to x234 at y96 -->
+      <path d="M144 122
+               C142 103 149 82 164 68
+               C165 60 166 54 166 48
+               C166 42 171 40 178 40
+               L222 40
+               C229 40 234 42 234 48
+               C234 54 235 60 236 68
+               C251 82 258 103 256 122
+               C252 126 247 124 246 116
+               C243 105 240 100 234 96
+               L166 96
+               C160 100 157 105 154 116
+               C153 124 148 126 144 122 Z"
+            fill="url(#elder-female-hair-high-top-fade__fade)"/>
+    </g>
+    <!-- the hard hairline: a crisp dark lip terminating the block dead level -->
+    <path d="M166 92 C186 90 214 90 234 92 L234 96 L166 96 Z" fill="var(--hair2, #9AA3B2)"/>
+    <!-- square temple corners, the cue that this was cut with a line-up -->
+    <path d="M158 104 L166 96 L166 84 C161 89 158 96 158 104 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M242 104 L234 96 L234 84 C239 89 242 96 242 104 Z" fill="var(--hair2, #9AA3B2)"/>
+    <!-- clipper texture, densest where the fade meets skin -->
+    <path d="M148 116 C152 110 154 102 154 94" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M158 114 C161 106 162 98 162 90" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M252 116 C248 110 246 102 246 94" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M242 114 C239 106 238 98 238 90" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- brush strokes up the dense column -->
+    <path d="M180 86 C178 72 178 60 182 50" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.2" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M200 88 C199 74 199 60 200 50" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M220 86 C222 72 222 60 218 50" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.2" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M176 46 C186 41 214 41 224 46" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

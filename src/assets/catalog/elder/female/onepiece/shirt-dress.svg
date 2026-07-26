@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: CLOSURE = full button-through placket running from the
+       collar to the hem, and HEM = straight to the knee at y470. Long cuffed sleeves,
+       straight volume, narrow self belt at the natural waist.
+       Surface tools: trim (contrast placket band, shirt collar, cuff bands, belt and buckle)
+       and structural detail (six buttons down the placket, two chest pockets, side seams). -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9AA98A)"/>
+      <stop offset="1" stop-color="var(--c2, #74836A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9AA98A)"/>
+      <stop offset="1" stop-color="var(--c2, #74836A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-shirt-dress__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E8D2)"/>
+      <stop offset="1" stop-color="var(--c3, #DCCFB2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two long set-in sleeves and one uninterrupted straight shirt body. -->
+  <g class="sp-shadow">
+    <path d="M110 196 q0-20 20-20 h12 q10 0 10 20 v122 q0 18 -14 18 h-24 q-4 0 -4-18 z"
+          fill="url(#elder-female-onepiece-shirt-dress__sleeve)"/>
+    <path d="M290 196 q0-20 -20-20 h-12 q-10 0 -10 20 v122 q0 18 14 18 h24 q4 0 4-18 z"
+          fill="url(#elder-female-onepiece-shirt-dress__sleeve)"/>
+    <path d="M146 204 q0-26 28-26 h52 q28 0 28 26 v118 l6 148 q-60 18 -120 0 l6-148 z"
+          fill="url(#elder-female-onepiece-shirt-dress__body)"/>
+  </g>
+
+  <!-- TRIM: the button-through placket band, a flat two-point shirt collar, cuff bands. -->
+  <rect x="191" y="178" width="18" height="280" rx="7"
+        fill="url(#elder-female-onepiece-shirt-dress__trim)"/>
+  <path d="M170 174 h30 l-22 32 q-18-8 -8-32 z"
+        fill="url(#elder-female-onepiece-shirt-dress__trim)"/>
+  <path d="M230 174 h-30 l22 32 q18-8 8-32 z"
+        fill="url(#elder-female-onepiece-shirt-dress__trim)"/>
+  <rect x="108" y="314" width="46" height="24" rx="11" fill="var(--c3, #E4D7BA)"/>
+  <rect x="246" y="314" width="46" height="24" rx="11" fill="var(--c3, #E4D7BA)"/>
+
+  <!-- TRIM: narrow self belt at the natural waist with a small square buckle. -->
+  <rect x="142" y="312" width="116" height="20" rx="9" fill="var(--c2, #74836A)"/>
+  <rect x="188" y="308" width="24" height="28" rx="8" fill="var(--c3, #E4D7BA)"/>
+
+  <!-- STRUCTURAL: six buttons collar to hem, two chest pockets, quiet side seams. -->
+  <g fill="var(--c2, #74836A)">
+    <circle cx="200" cy="210" r="5"/>
+    <circle cx="200" cy="250" r="5"/>
+    <circle cx="200" cy="290" r="5"/>
+    <circle cx="200" cy="356" r="5"/>
+    <circle cx="200" cy="396" r="5"/>
+    <circle cx="200" cy="436" r="5"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #74836A)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M156 240 h32 v34 h-32 z"/>
+    <path d="M212 240 h32 v34 h-32 z"/>
+    <path d="M156 348 l-4 100"/>
+    <path d="M244 348 l4 100"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M158 200 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 380 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

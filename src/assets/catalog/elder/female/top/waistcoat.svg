@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = none (sleeveless with deep
+       cut-away armholes, so the bare arms read the whole way up) and HEM = past
+       the hip and pointed — the hem is not a line, it drops from y330 at the
+       side seams to a single point at (200, 364).
+       Fitted volume, deep V front.
+       Surface tools: trim (contrast facing following the V and the point, plus
+       armhole binding) and structural (four-button line, two welt pockets,
+       dart seams). -->
+  <defs>
+    <linearGradient id="elder-female-top-waistcoat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7D6A)"/>
+      <stop offset="1" stop-color="var(--c2, #4C5849)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-waistcoat__facing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4CE9E)"/>
+      <stop offset="1" stop-color="var(--c3, #E4CE9E)" stop-opacity="0.74"/>
+    </linearGradient>
+    <clipPath id="elder-female-top-waistcoat__clip">
+      <path d="M144 330 V262 q0-52 16-76 q6-10 24-10 L200 268 L216 176 q18 0 24 10 q16 24 16 76 V330 L200 364 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- fitted sleeveless body: deep V front, cut-away armholes, pointed hem -->
+    <path d="M144 330 V262 q0-52 16-76 q6-10 24-10 L200 268 L216 176 q18 0 24 10 q16 24 16 76 V330 L200 364 z"
+          fill="url(#elder-female-top-waistcoat__body)"/>
+  </g>
+
+  <!-- contrast facing running the V -->
+  <path d="M184 176 L200 268 L216 176 l10 3 L200 290 L174 179 z"
+        fill="url(#elder-female-top-waistcoat__facing)"/>
+  <!-- and the same facing chasing the pointed hem -->
+  <g clip-path="url(#elder-female-top-waistcoat__clip)">
+    <path d="M144 322 L200 358 L256 322 v10 L200 368 L144 332 z"
+          fill="url(#elder-female-top-waistcoat__facing)"/>
+  </g>
+  <!-- button line down the centre front -->
+  <circle cx="200" cy="280" r="4.4" fill="#3B2A22"/>
+  <circle cx="200" cy="298" r="4.4" fill="#3B2A22"/>
+  <circle cx="200" cy="316" r="4.4" fill="#3B2A22"/>
+  <circle cx="200" cy="334" r="4.4" fill="#3B2A22"/>
+  <!-- welt pockets -->
+  <path d="M156 300 h32 v9 h-32 z" fill="var(--c3, #E4CE9E)"/>
+  <path d="M212 300 h32 v9 h-32 z" fill="var(--c3, #E4CE9E)"/>
+  <!-- dart seams -->
+  <path d="M172 224 q-6 54 -4 96 M228 224 q6 54 4 96" stroke="var(--c2, #4C5849)"
+        stroke-opacity="0.6" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- armhole binding on the deep cut-away -->
+  <path d="M147 262 q0-50 15-74" stroke="var(--c3, #E4CE9E)" stroke-opacity="0.7"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M253 262 q0-50 -15-74" stroke="var(--c3, #E4CE9E)" stroke-opacity="0.7"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M160 206 q16 12 26 28 M240 206 q-16 12 -26 28" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

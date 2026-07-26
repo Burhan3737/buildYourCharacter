@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- The crease is there but the hood of skin above it comes down over it, leaving only a
+       short strip of visible lid between the crease line and the lash line. Distinct from
+       sleepy, where the lid drops over the iris itself rather than over the crease. -->
+  <defs>
+    <linearGradient id="elder-female-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-hooded__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)" stop-opacity="0.7"/>
+    </linearGradient>
+    <clipPath id="elder-female-eyes-hooded__clip-l">
+      <ellipse cx="178" cy="135" rx="15" ry="11"/>
+    </clipPath>
+    <clipPath id="elder-female-eyes-hooded__clip-r">
+      <ellipse cx="222" cy="135" rx="15" ry="11"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <ellipse cx="178" cy="135" rx="15" ry="11" fill="url(#elder-female-eyes-hooded__sclera)"/>
+    <ellipse cx="222" cy="135" rx="15" ry="11" fill="url(#elder-female-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#elder-female-eyes-hooded__clip-l)">
+    <circle cx="178" cy="135" r="9" fill="#3B2A22"/>
+    <circle cx="178" cy="135" r="9" fill="url(#elder-female-eyes-hooded__iris)"/>
+    <circle cx="178" cy="135" r="4.2" fill="#3B2A22"/>
+    <circle cx="174.6" cy="131.6" r="2.9" fill="#FFFFFF"/>
+    <circle cx="181.4" cy="139" r="1.5" fill="#FFFFFF" opacity="0.62"/>
+  </g>
+  <g clip-path="url(#elder-female-eyes-hooded__clip-r)">
+    <circle cx="222" cy="135" r="9" fill="#3B2A22"/>
+    <circle cx="222" cy="135" r="9" fill="url(#elder-female-eyes-hooded__iris)"/>
+    <circle cx="222" cy="135" r="4.2" fill="#3B2A22"/>
+    <circle cx="218.6" cy="131.6" r="2.9" fill="#FFFFFF"/>
+    <circle cx="225.4" cy="139" r="1.5" fill="#FFFFFF" opacity="0.62"/>
+  </g>
+
+  <!-- short visible lid strip: the crease sits high, the hood covers its outer half -->
+  <path d="M164 128 Q178 121 192 128 Q178 125 164 128 Z" fill="var(--skin1, #F7D2B0)" opacity="0.9"/>
+  <path d="M236 128 Q222 121 208 128 Q222 125 236 128 Z" fill="var(--skin1, #F7D2B0)" opacity="0.9"/>
+
+  <!-- the hood itself: a heavier fold of skin falling from the brow over the crease -->
+  <path d="M160 124 Q178 112 196 122 Q198 126 193 126 Q178 118 163 128 Q158 128 160 124 Z"
+        fill="url(#elder-female-eyes-hooded__hood)"/>
+  <path d="M240 124 Q222 112 204 122 Q202 126 207 126 Q222 118 237 128 Q242 128 240 124 Z"
+        fill="url(#elder-female-eyes-hooded__hood)"/>
+
+  <!-- crease line, only visible in its inner half before the hood swallows it -->
+  <path d="M166 126.5 Q174 122 182 123.5" stroke="#3B2A22" stroke-opacity="0.28"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M234 126.5 Q226 122 218 123.5" stroke="#3B2A22" stroke-opacity="0.28"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- lash line, thickened at the outer corner where the hood presses on it -->
+  <path d="M164 130 Q178 123 192 129.5" stroke="#3B2A22" stroke-opacity="0.94"
+        stroke-width="4.2" fill="none" stroke-linecap="round"/>
+  <path d="M236 130 Q222 123 208 129.5" stroke="#3B2A22" stroke-opacity="0.94"
+        stroke-width="4.2" fill="none" stroke-linecap="round"/>
+</svg>

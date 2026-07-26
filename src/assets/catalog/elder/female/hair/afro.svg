@@ -1,6 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Afro" data-family="afro" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME/TEXTURE of the outline (a halo far wider than
+       the skull whose contour is built from sixteen overlapping coil lobes of nine different
+       radii — bumpy the whole way round, never a circle) and PARTING (none: one continuous
+       mass off a visible natural hairline at the temples).
+       Surface tools: structural detail (a hair2 underside painted on every lower lobe so the
+       coils read as separate masses) and trim (the drawn hairline arc and temple baby hairs
+       that keep the halo sitting ON the head rather than in front of it). -->
   <g data-part="back">
     <defs>
       <linearGradient id="elder-female-hair-afro__back-g" x1="0" y1="0" x2="0" y2="1">
@@ -9,15 +16,46 @@
       </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <ellipse cx="200" cy="128" rx="98" ry="96" fill="url(#elder-female-hair-afro__back-g)"/>
+      <!-- the core of the halo, then the lobes that make its edge irregular -->
+      <ellipse cx="200" cy="128" rx="74" ry="66" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="200" cy="64" r="20" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="172" cy="68" r="17" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="228" cy="68" r="17" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="146" cy="84" r="22" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="254" cy="84" r="22" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="130" cy="108" r="18" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="270" cy="108" r="18" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="128" cy="136" r="23" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="272" cy="136" r="23" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="140" cy="163" r="17" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="260" cy="163" r="17" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="162" cy="182" r="21" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="238" cy="182" r="21" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="186" cy="192" r="16" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="214" cy="192" r="16" fill="url(#elder-female-hair-afro__back-g)"/>
+      <circle cx="200" cy="194" r="18" fill="url(#elder-female-hair-afro__back-g)"/>
     </g>
-    <path d="M108 148 C116 178 132 200 154 210 C134 196 122 172 118 146 Z"
+    <!-- the underside of every lobe along the lower half of the halo -->
+    <path d="M110 146 C114 164 122 176 134 180 C118 178 108 164 106 144 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M292 148 C284 178 268 200 246 210 C266 196 278 172 282 146 Z"
+    <path d="M290 146 C286 164 278 176 266 180 C282 178 292 164 294 144 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M154 214 C172 226 228 226 246 214 C240 234 160 234 154 214 Z"
+    <path d="M130 168 C136 182 148 190 160 188 C146 196 130 186 126 170 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M132 58 C158 36 242 36 268 58" stroke="#FFFFFF" stroke-opacity="0.22"
+    <path d="M270 168 C264 182 252 190 240 188 C254 196 270 186 274 170 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M152 192 C162 204 180 208 192 202 C180 214 156 210 148 196 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M248 192 C238 204 220 208 208 202 C220 214 244 210 252 196 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M184 200 C192 208 208 208 216 200 C214 214 186 214 184 200 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- coil shading up the flanks -->
+    <path d="M118 108 C126 118 126 132 120 142 C112 130 112 116 114 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M282 108 C274 118 274 132 280 142 C288 130 288 116 286 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M144 62 C170 44 230 44 256 62" stroke="#FFFFFF" stroke-opacity="0.22"
           stroke-width="12" fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
@@ -26,21 +64,54 @@
         <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
         <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
       </linearGradient>
+      <linearGradient id="elder-female-hair-afro__coil-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
     </defs>
     <g class="sp-shadow">
-      <ellipse cx="200" cy="120" rx="94" ry="90" fill="url(#elder-female-hair-afro__front-g)"/>
-      <path d="M108 116 C116 148 134 168 160 176 C138 160 126 138 122 112 Z"
+      <!-- ONLY the crown cap: bottom edge is the hairline, y98 at the brow falling to y122 at
+           the temples. Nothing here reaches the brows at y111 across the face, or the eyes. -->
+      <path d="M144 122 C138 100 140 76 152 62
+               C166 50 184 46 200 46
+               C216 46 234 50 248 62
+               C260 76 262 100 256 122
+               C248 106 232 98 200 98
+               C168 98 152 106 144 122 Z"
             fill="url(#elder-female-hair-afro__front-g)"/>
-      <path d="M292 116 C284 148 266 168 240 176 C262 160 274 138 278 112 Z"
-            fill="url(#elder-female-hair-afro__front-g)"/>
+      <!-- a few coil lobes along the top edge of the halo -->
+      <circle cx="200" cy="58" r="15" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="170" cy="64" r="16" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="230" cy="64" r="15" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="150" cy="82" r="16" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="250" cy="82" r="16" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="142" cy="104" r="14" fill="url(#elder-female-hair-afro__coil-g)"/>
+      <circle cx="258" cy="104" r="14" fill="url(#elder-female-hair-afro__coil-g)"/>
     </g>
-    <path d="M112 96 C120 90 130 88 138 92 C128 92 118 96 112 104 Z"
+    <!-- the natural hairline, visible at the brow and turning down at the temples -->
+    <path d="M154 110 C168 100 184 96 200 96 C182 100 166 106 156 120 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M288 96 C280 90 270 88 262 92 C272 92 282 96 288 104 Z"
+    <path d="M246 110 C232 100 216 96 200 96 C218 100 234 106 244 120 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M154 168 C172 178 228 178 246 168 C240 186 160 186 154 168 Z"
+    <path d="M160 100 C176 94 224 94 240 100 C222 98 178 98 160 100 Z"
           fill="var(--hair2, #9AA3B2)"/>
-    <path d="M136 46 C162 26 238 26 264 46" stroke="#FFFFFF" stroke-opacity="0.28"
-          stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- baby hairs at the temples -->
+    <path d="M148 116 C154 109 160 106 167 107" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M252 116 C246 109 240 106 233 107" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- undersides of the top-edge coils, so the crown is not a smooth dome -->
+    <path d="M158 76 C166 84 178 84 186 76 C182 90 160 90 158 76 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M214 76 C222 84 234 84 242 76 C238 90 216 90 214 76 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M138 96 C146 102 156 100 160 92 C160 108 140 110 138 96 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M262 96 C254 102 244 100 240 92 C240 108 260 110 262 96 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M188 66 C194 74 206 74 212 66 C210 80 190 80 188 66 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M168 54 C182 44 218 44 232 54" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

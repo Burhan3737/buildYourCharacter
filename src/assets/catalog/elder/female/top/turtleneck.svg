@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Turtleneck" data-family="turtleneck" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME = fitted, the body following the torso from a
+       x146 to x254 chest, nipping at the waist near y286 and easing back out to the hem, and
+       SHOULDER/NECK = a tall folded neck tube drawn as its own major form.
+       Long sleeves to y330, hem at the hip (y338).
+       Surface tools: pattern (a 12px vertical rib through the c2 variable, clipped to the
+       body) and trim (the folded neck tube and rib cuffs through the c3 variable). -->
+  <defs>
+    <linearGradient id="elder-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E8C9E)"/>
+      <stop offset="1" stop-color="var(--c2, #6B697B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-turtleneck__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E8C9E)"/>
+      <stop offset="1" stop-color="var(--c2, #6B697B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E8C9E)"/>
+      <stop offset="1" stop-color="var(--c2, #6B697B)"/>
+    </linearGradient>
+    <pattern id="elder-female-top-turtleneck__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <path d="M3 0 v12" stroke="var(--c2, #6B697B)" stroke-opacity="0.42"
+            stroke-width="3.5" fill="none"/>
+      <path d="M9 0 v12" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3" fill="none"/>
+    </pattern>
+    <clipPath id="elder-female-top-turtleneck__clip">
+      <path d="M148 338 Q152 310 150 286 Q146 250 146 218 Q146 182 178 180 H222 Q254 182 254 218 Q254 250 250 286 Q248 310 252 338 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- fitted long sleeves -->
+    <path d="M150 182 L122 192 Q116 195 116 206 L120 316 Q121 330 133 330 L141 330 Q150 330 150 320 Z"
+          fill="url(#elder-female-top-turtleneck__arm)"/>
+    <path d="M250 182 L278 192 Q284 195 284 206 L280 316 Q279 330 267 330 L259 330 Q250 330 250 320 Z"
+          fill="url(#elder-female-top-turtleneck__arm)"/>
+    <!-- fitted body, nipped at the waist -->
+    <path d="M148 338 Q152 310 150 286 Q146 250 146 218 Q146 182 178 180 H222 Q254 182 254 218 Q254 250 250 286 Q248 310 252 338 Z"
+          fill="url(#elder-female-top-turtleneck__body)"/>
+    <!-- tall folded neck tube -->
+    <path d="M176 194 q24 8 48 0 v-32 q-24 -6 -48 0 z"
+          fill="url(#elder-female-top-turtleneck__tube)"/>
+  </g>
+
+  <!-- vertical rib across the body -->
+  <g clip-path="url(#elder-female-top-turtleneck__clip)">
+    <path d="M144 178 h114 v164 h-114 z" fill="url(#elder-female-top-turtleneck__rib)"/>
+  </g>
+  <!-- the fold across the neck tube -->
+  <path d="M177 174 q23 6 46 0" stroke="var(--c3, #E9E6EE)" stroke-opacity="0.8"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M178 182 q22 6 44 0" stroke="var(--c2, #6B697B)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M182 164 v9 M192 163 v10 M202 163 v10 M212 164 v10"
+        stroke="var(--c3, #E9E6EE)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- rib cuffs -->
+  <path d="M117 312 h33 v8 q0 10 -9 10 h-8 q-12 0 -13 -12 z" fill="var(--c3, #E9E6EE)" opacity="0.85"/>
+  <path d="M283 312 h-33 v8 q0 10 9 10 h8 q12 0 13 -12 z" fill="var(--c3, #E9E6EE)" opacity="0.85"/>
+  <path d="M126 315 v12 M136 315 v13 M264 315 v13 M274 315 v12"
+        stroke="var(--c2, #6B697B)" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- rib hem band -->
+  <path d="M149 326 q51 12 102 0 v10 q-51 12 -102 0 z" fill="var(--c3, #E9E6EE)" opacity="0.7"/>
+  <!-- shoulder highlight -->
+  <path d="M156 200 q18 8 30 10 M214 210 q18 -2 30 -10" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

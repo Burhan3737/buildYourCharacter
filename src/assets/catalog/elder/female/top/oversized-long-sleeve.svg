@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = dropped and oversized, the shoulder
+       seam falling onto the upper arm so the sleeves begin at x106 and x294 and the shoulder
+       line sits wide and low at y182, and HEM = past the hip (y378).
+       Boxy body x128 to x272, sleeves running long past the wrist to y348.
+       Surface tools: trim (turned back contrast cuffs and a contrast hem facing) and
+       structural (dropped shoulder seams and short side vents at the hem). -->
+  <defs>
+    <linearGradient id="elder-female-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9C7A8)"/>
+      <stop offset="1" stop-color="var(--c2, #B39F7E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-oversized-long-sleeve__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9C7A8)"/>
+      <stop offset="1" stop-color="var(--c2, #B39F7E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-oversized-long-sleeve__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6E6154)"/>
+      <stop offset="1" stop-color="var(--c3, #6E6154)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dropped sleeves, starting out on the upper arm and running long past the wrist -->
+    <path d="M152 190 L112 208 Q106 211 106 224 L110 332 Q111 348 126 348 L140 348 Q152 348 152 334 Z"
+          fill="url(#elder-female-top-oversized-long-sleeve__arm)"/>
+    <path d="M248 190 L288 208 Q294 211 294 224 L290 332 Q289 348 274 348 L260 348 Q248 348 248 334 Z"
+          fill="url(#elder-female-top-oversized-long-sleeve__arm)"/>
+    <!-- boxy oversized body with a wide low shoulder line -->
+    <path d="M128 206 q0 -24 22 -24 h26 q24 22 48 0 h26 q22 0 22 24 v160 q0 12 -12 12 h-120 q-12 0 -12 -12 z"
+          fill="url(#elder-female-top-oversized-long-sleeve__body)"/>
+  </g>
+
+  <!-- dropped shoulder seams, sitting out on the arm -->
+  <path d="M152 192 q-4 22 -3 44" stroke="var(--c2, #B39F7E)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M248 192 q4 22 3 44" stroke="var(--c2, #B39F7E)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neckline binding -->
+  <path d="M174 182 q26 24 52 0 v9 q-26 24 -52 0 z" fill="var(--c3, #6E6154)" opacity="0.85"/>
+  <!-- turned back cuffs -->
+  <path d="M108 322 h45 v12 q0 14 -13 14 h-14 q-15 0 -16 -16 z"
+        fill="url(#elder-female-top-oversized-long-sleeve__cuff)"/>
+  <path d="M292 322 h-45 v12 q0 14 13 14 h14 q15 0 16 -16 z"
+        fill="url(#elder-female-top-oversized-long-sleeve__cuff)"/>
+  <path d="M110 326 q22 8 43 0 M290 326 q-22 8 -43 0" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- contrast hem facing across the boxy hem -->
+  <path d="M130 362 h140 v6 q0 10 -10 10 h-120 q-10 0 -10 -10 z"
+        fill="var(--c3, #6E6154)" opacity="0.75"/>
+  <!-- short side vents at the hem -->
+  <path d="M146 352 v26 M254 352 v26" stroke="var(--c2, #B39F7E)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- chest highlight across the wide shoulder -->
+  <path d="M140 208 q22 12 34 12 M226 220 q22 0 34 -12" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Quilted Gilet" data-family="puffer-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = none (sleeveless, the bare arms
+       show either side below y200) and VOLUME = boxy padded, with the padding built into the
+       outline itself as a soft lobe at every quilt channel down both side seams.
+       High stand collar, zip front, hem at the hip (y352).
+       Surface tools: structural (quilting channel seams every 26px) and trim (stand collar,
+       zip tape and pull, bound armhole edges). -->
+  <defs>
+    <linearGradient id="elder-female-top-puffer-vest__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6E5B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-puffer-vest__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5C6E5B)"/>
+      <stop offset="1" stop-color="var(--c1, #7C8F7A)"/>
+    </linearGradient>
+    <clipPath id="elder-female-top-puffer-vest__clip">
+      <path d="M176 172 H152 Q142 172 142 188 Q134 201 142 214 Q132 227 142 240 Q132 253 142 266 Q132 279 142 292 Q132 305 142 318 Q132 331 142 344 Q142 352 154 352 H246 Q258 352 258 344 Q268 331 258 318 Q268 305 258 292 Q268 279 258 266 Q268 253 258 240 Q268 227 258 214 Q266 201 258 188 Q258 172 248 172 H224 Q200 196 176 172 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- high stand collar -->
+    <path d="M176 186 q24 12 48 0 v-18 q-24 -14 -48 0 z"
+          fill="url(#elder-female-top-puffer-vest__collar)"/>
+    <!-- padded sleeveless shell: the side seams lobe outward at every quilt channel -->
+    <path d="M176 172 H152 Q142 172 142 188 Q134 201 142 214 Q132 227 142 240 Q132 253 142 266 Q132 279 142 292 Q132 305 142 318 Q132 331 142 344 Q142 352 154 352 H246 Q258 352 258 344 Q268 331 258 318 Q268 305 258 292 Q268 279 258 266 Q268 253 258 240 Q268 227 258 214 Q266 201 258 188 Q258 172 248 172 H224 Q200 196 176 172 Z"
+          fill="url(#elder-female-top-puffer-vest__shell)"/>
+  </g>
+
+  <!-- horizontal quilting channel seams, clipped to the shell -->
+  <g clip-path="url(#elder-female-top-puffer-vest__clip)">
+    <path d="M128 214 H272 M128 240 H272 M128 266 H272 M128 292 H272 M128 318 H272"
+          stroke="var(--c2, #5C6E5B)" stroke-opacity="0.55" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M128 218 H272 M128 244 H272 M128 270 H272 M128 296 H272 M128 322 H272"
+          stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- bound armhole edges, so the bare arms read as deliberately exposed -->
+  <path d="M148 184 q-6 16 -2 34 l6 116" stroke="var(--c3, #EDE6D6)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M252 184 q6 16 2 34 l-6 116" stroke="var(--c3, #EDE6D6)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- zip tape, teeth and pull down the centre front -->
+  <path d="M195 186 h10 v160 h-10 z" fill="var(--c3, #EDE6D6)"/>
+  <path d="M200 190 v152" stroke="var(--c2, #5C6E5B)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M193 250 h14 v18 q0 5 -7 5 q-7 0 -7 -5 z" fill="var(--c3, #EDE6D6)"/>
+  <path d="M200 273 v16" stroke="var(--c3, #EDE6D6)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- collar fold -->
+  <path d="M182 176 q18 -6 36 0" stroke="var(--c3, #EDE6D6)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight over the upper padding -->
+  <path d="M154 200 q22 12 40 12 M206 212 q22 0 40 -12" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

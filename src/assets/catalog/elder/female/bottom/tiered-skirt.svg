@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM TREATMENT = three gathered ruffle tiers, each
+       stepping visibly wider than the one above so the outline is a staircase rather than a
+       cone, and LEG LENGTH = mid-calf at y502. No leg division, natural elasticated rise.
+       Surface tools: structural (the tier seams with gathers radiating below each one) and
+       trim (a contrast binding along every tier edge). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-tiered-skirt__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B4657A)"/>
+      <stop offset="1" stop-color="var(--c2, #964F62)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-tiered-skirt__tier" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E19AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #B4657A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- elasticated waist yoke -->
+    <path d="M150 318 h100 q6 0 6 8 v14 q0 8 -8 8 h-96 q-8 0-8-8 v-14 q0-8 6-8 z"
+          fill="url(#elder-female-bottom-tiered-skirt__waist)"/>
+    <!-- tier one -->
+    <path d="M148 346 h104 l10 48 q-62 12 -124 0 z"
+          fill="url(#elder-female-bottom-tiered-skirt__tier)"/>
+    <!-- tier two, wider -->
+    <path d="M138 392 h124 l12 54 q-74 14 -148 0 z"
+          fill="url(#elder-female-bottom-tiered-skirt__tier)"/>
+    <!-- tier three, widest, hem at mid-calf -->
+    <path d="M126 444 h148 l12 58 q-86 16 -172 0 z"
+          fill="url(#elder-female-bottom-tiered-skirt__tier)"/>
+  </g>
+
+  <!-- contrast binding along every tier edge -->
+  <path d="M138 392 h124 M126 444 h148 M114 500 q86 16 172 0"
+        stroke="var(--c3, #F7E7CE)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- gathers radiating just below each seam -->
+  <path d="M152 350 v12 M172 350 v12 M192 350 v12 M212 350 v12 M232 350 v12"
+        stroke="var(--c2, #964F62)" stroke-opacity="0.4" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 396 v14 M170 396 v14 M194 396 v14 M218 396 v14 M242 396 v14"
+        stroke="var(--c2, #964F62)" stroke-opacity="0.4" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M134 448 v16 M162 448 v16 M190 448 v16 M218 448 v16 M246 448 v16"
+        stroke="var(--c2, #964F62)" stroke-opacity="0.4" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 334 q38 8 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

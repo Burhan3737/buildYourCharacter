@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Upturned" data-family="upturned" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- The whole aperture tilts: the outer corner sits 6px above the inner one, so the axis
+       of each eye lifts away from the nose. The lash line follows and flicks up at the end. -->
+  <defs>
+    <linearGradient id="elder-female-eyes-upturned__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-upturned__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.82"/>
+    </linearGradient>
+    <clipPath id="elder-female-eyes-upturned__clip-l">
+      <path d="M164 138 Q168 127 180 126 Q192 126 194 130 Q190 141 178 143 Q167 144 164 138 Z"/>
+    </clipPath>
+    <clipPath id="elder-female-eyes-upturned__clip-r">
+      <path d="M236 138 Q232 127 220 126 Q208 126 206 130 Q210 141 222 143 Q233 144 236 138 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- tilted apertures: inner corner low at (164,140), outer corner high at (194,130) -->
+  <g class="sp-shadow">
+    <path d="M164 138 Q168 127 180 126 Q192 126 194 130 Q190 141 178 143 Q167 144 164 138 Z"
+          fill="url(#elder-female-eyes-upturned__sclera)"/>
+    <path d="M236 138 Q232 127 220 126 Q208 126 206 130 Q210 141 222 143 Q233 144 236 138 Z"
+          fill="url(#elder-female-eyes-upturned__sclera)"/>
+  </g>
+
+  <g clip-path="url(#elder-female-eyes-upturned__clip-l)">
+    <circle cx="179" cy="134" r="8.8" fill="#3B2A22"/>
+    <circle cx="179" cy="134" r="8.8" fill="url(#elder-female-eyes-upturned__iris)"/>
+    <circle cx="179" cy="134" r="4.1" fill="#3B2A22"/>
+    <circle cx="175.8" cy="130.8" r="2.8" fill="#FFFFFF"/>
+    <circle cx="182.4" cy="137.6" r="1.4" fill="#FFFFFF" opacity="0.62"/>
+  </g>
+  <g clip-path="url(#elder-female-eyes-upturned__clip-r)">
+    <circle cx="221" cy="134" r="8.8" fill="#3B2A22"/>
+    <circle cx="221" cy="134" r="8.8" fill="url(#elder-female-eyes-upturned__iris)"/>
+    <circle cx="221" cy="134" r="4.1" fill="#3B2A22"/>
+    <circle cx="217.8" cy="130.8" r="2.8" fill="#FFFFFF"/>
+    <circle cx="224.4" cy="137.6" r="1.4" fill="#FFFFFF" opacity="0.62"/>
+  </g>
+
+  <!-- lash line lifting to a flick at the outer corner -->
+  <path d="M164 135 Q174 124 189 125 Q194 125 197 128" stroke="#3B2A22" stroke-opacity="0.92"
+        stroke-width="4.4" fill="none" stroke-linecap="round"/>
+  <path d="M236 135 Q226 124 211 125 Q206 125 203 128" stroke="#3B2A22" stroke-opacity="0.92"
+        stroke-width="4.4" fill="none" stroke-linecap="round"/>
+
+  <!-- lid crease, parallel to the tilted axis -->
+  <path d="M167 128 Q177 120 190 121" stroke="#3B2A22" stroke-opacity="0.22"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M233 128 Q223 120 210 121" stroke="#3B2A22" stroke-opacity="0.22"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- lower line, dropping toward the nose to make the tilt unmistakable -->
+  <path d="M167 141 Q177 145 189 139" stroke="#3B2A22" stroke-opacity="0.3"
+        stroke-width="1.9" fill="none" stroke-linecap="round"/>
+  <path d="M233 141 Q223 145 211 139" stroke="#3B2A22" stroke-opacity="0.3"
+        stroke-width="1.9" fill="none" stroke-linecap="round"/>
+</svg>

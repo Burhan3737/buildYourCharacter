@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Knight" data-family="knight" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: SHOULDER = broad square pauldrons overhanging the arm
+       on both sides out to x106 and x294, and CLOSURE = an open-sided tabard hanging free front
+       and back over the mail, held only by the belt. Hem sits at mid-thigh over mail leggings;
+       volume is straight. Surface tools: pattern (mail ring fill), trim (riveted plate edges,
+       belt and bracers) and panel blocking (the plain tabard front). The tabard front carries
+       no heraldry and no device. Nothing is drawn above y174. -->
+  <defs>
+    <linearGradient id="elder-female-costume-knight__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #ABB5C6)"/>
+      <stop offset="1" stop-color="var(--c2, #737E95)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-knight__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C0C9D7)"/>
+      <stop offset="1" stop-color="var(--c2, #6B768D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-knight__tabard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #57909F)"/>
+      <stop offset="1" stop-color="var(--c3, #3D6D7A)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-knight__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="13" height="13">
+      <circle cx="6.5" cy="6.5" r="3.8" fill="none" stroke="var(--c2, #737E95)"
+              stroke-width="1.7" stroke-opacity="0.85"/>
+    </pattern>
+    <clipPath id="elder-female-costume-knight__mailclip">
+      <path d="M142 202 q2-28 30-28 h56 q28 0 30 28 v96 q0 28 -30 28 h-56 q-30 0 -30-28 z"/>
+      <path d="M114 204 q0-24 17-24 q17 0 17 24 v122 q0 20 -17 20 q-17 0 -17-20 z"/>
+      <path d="M286 204 q0-24 -17-24 q-17 0 -17 24 v122 q0 20 17 20 q17 0 17-20 z"/>
+      <path d="M146 322 h108 q10 0 10 12 v34 q0 16 -18 16 h-92 q-18 0 -18-16 v-34
+               q0-12 10-12 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: mail body, two mail sleeves, a mail hip skirt, two mail leggings, the
+       hanging tabard panel and two square pauldrons. -->
+  <g class="sp-shadow">
+    <path d="M114 204 q0-24 17-24 q17 0 17 24 v122 q0 20 -17 20 q-17 0 -17-20 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M286 204 q0-24 -17-24 q-17 0 -17 24 v122 q0 20 17 20 q17 0 17-20 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M162 372 h38 v172 q-20 6 -38 0 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M238 372 h-38 v172 q20 6 38 0 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M146 322 h108 q10 0 10 12 v34 q0 16 -18 16 h-92 q-18 0 -18-16 v-34
+             q0-12 10-12 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M142 202 q2-28 30-28 h56 q28 0 30 28 v96 q0 28 -30 28 h-56 q-30 0 -30-28 z"
+          fill="url(#elder-female-costume-knight__mail)"/>
+    <path d="M164 174 h72 v276 q-36 12 -72 0 z"
+          fill="url(#elder-female-costume-knight__tabard)"/>
+    <path d="M106 192 q0-18 18-18 h44 q10 0 10 12 v26 q-38 14 -72 0 z"
+          fill="url(#elder-female-costume-knight__plate)"/>
+    <path d="M294 192 q0-18 -18-18 h-44 q-10 0 -10 12 v26 q38 14 72 0 z"
+          fill="url(#elder-female-costume-knight__plate)"/>
+  </g>
+
+  <!-- PATTERN: mail rings over every mail form, clipped so the tabard stays a flat panel -->
+  <g clip-path="url(#elder-female-costume-knight__mailclip)">
+    <rect x="100" y="174" width="200" height="226" fill="url(#elder-female-costume-knight__rings)"/>
+  </g>
+
+  <!-- TRIM: contrast edging down both sides of the tabard and along its hem -->
+  <g fill="var(--c1, #C0C9D7)">
+    <rect x="160" y="174" width="9" height="274" rx="4"/>
+    <rect x="231" y="174" width="9" height="274" rx="4"/>
+    <path d="M164 442 q36 12 72 0 v12 q-36 12 -72 0 z"/>
+  </g>
+
+  <!-- TRIM: plate belt with a square buckle, and plated bracers -->
+  <rect x="140" y="306" width="120" height="24" rx="10" fill="url(#elder-female-costume-knight__plate)"/>
+  <rect x="184" y="302" width="32" height="32" rx="10" fill="var(--c3, #57909F)"/>
+  <rect x="110" y="316" width="42" height="44" rx="14" fill="url(#elder-female-costume-knight__plate)"/>
+  <rect x="248" y="316" width="42" height="44" rx="14" fill="url(#elder-female-costume-knight__plate)"/>
+
+  <!-- STRUCTURAL: rivets on the pauldrons and greave banding on the mail leggings -->
+  <g fill="var(--c2, #737E95)">
+    <circle cx="124" cy="192" r="4.5"/>
+    <circle cx="144" cy="186" r="4.5"/>
+    <circle cx="164" cy="192" r="4.5"/>
+    <circle cx="276" cy="192" r="4.5"/>
+    <circle cx="256" cy="186" r="4.5"/>
+    <circle cx="236" cy="192" r="4.5"/>
+    <rect x="160" y="474" width="42" height="12" rx="6"/>
+    <rect x="198" y="474" width="42" height="12" rx="6"/>
+    <rect x="160" y="502" width="42" height="12" rx="6"/>
+    <rect x="198" y="502" width="42" height="12" rx="6"/>
+    <rect x="158" y="534" width="46" height="24" rx="10"/>
+    <rect x="196" y="534" width="46" height="24" rx="10"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M116 188 q22 10 44 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 188 q-22 10 -44 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 212 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

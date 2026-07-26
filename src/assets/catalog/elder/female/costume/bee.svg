@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bee" data-family="bee" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: VOLUME = a plush banded body that swells hard at the
+       hips out to x128 and x272, far wider than the 100px hip block underneath, and SHOULDER =
+       two rounded translucent wings standing behind and outboard of the shoulders. Surface
+       tools: pattern (soft fuzz scatter on the thorax), panel blocking (broad abdomen bands)
+       and trim (plush cuffs at wrist and ankle). Wings and body both start at y174 - nothing
+       is drawn above y172. -->
+  <defs>
+    <linearGradient id="elder-female-costume-bee__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5CB5F)"/>
+      <stop offset="1" stop-color="var(--c1, #D6A335)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-bee__abdomen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2C351)"/>
+      <stop offset="1" stop-color="var(--c1, #CD9A2E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-bee__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0C24F)"/>
+      <stop offset="1" stop-color="var(--c1, #C9962C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-bee__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7F1F8)"/>
+      <stop offset="1" stop-color="var(--c3, #BFD3E2)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-bee__fuzz" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="1.8" fill="var(--c2, #3B2A22)" fill-opacity="0.3"/>
+      <circle cx="12" cy="11" r="1.4" fill="var(--c2, #3B2A22)" fill-opacity="0.24"/>
+    </pattern>
+    <clipPath id="elder-female-costume-bee__thoraxclip">
+      <path d="M148 204 q0-30 34-30 h36 q34 0 34 30 v70 q0 30 -34 30 h-36 q-34 0 -34-30 z"/>
+    </clipPath>
+    <clipPath id="elder-female-costume-bee__abdomenclip">
+      <path d="M200 276 q46 0 62 30 q12 24 10 50 q-4 34 -34 44 q-38 12 -76 0
+               q-30-10 -34-44 q-2-26 10-50 q16-30 62-30 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two wings behind, a rounded thorax, a swollen plush abdomen, plush arms,
+       plush legs and rounded plush feet. -->
+  <g class="sp-shadow">
+    <path d="M148 188 q-46-12 -66 14 q-18 24 2 46 q22 22 52 8 q22-12 12-68 z"
+          fill="url(#elder-female-costume-bee__wing)" fill-opacity="0.72"/>
+    <path d="M252 188 q46-12 66 14 q18 24 -2 46 q-22 22 -52 8 q-22-12 -12-68 z"
+          fill="url(#elder-female-costume-bee__wing)" fill-opacity="0.72"/>
+    <path d="M112 200 q0-26 19-26 q19 0 19 26 v60 q4 10 0 20 v52 q0 22 -19 22
+             q-19 0 -19-22 v-52 q-4-10 0-20 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M288 200 q0-26 -19-26 q-19 0 -19 26 v60 q-4 10 0 20 v52 q0 22 19 22
+             q19 0 19-22 v-52 q4-10 0-20 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M164 380 q0-10 18-10 q18 0 18 10 v140 q0 20 -18 20 q-18 0 -18-20 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M236 380 q0-10 -18-10 q-18 0 -18 10 v140 q0 20 18 20 q18 0 18-20 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M154 524 h46 v22 q0 24 -22 24 h-2 q-22 0 -22-24 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M246 524 h-46 v22 q0 24 22 24 h2 q22 0 22-24 z"
+          fill="url(#elder-female-costume-bee__limb)"/>
+    <path d="M148 204 q0-30 34-30 h36 q34 0 34 30 v70 q0 30 -34 30 h-36 q-34 0 -34-30 z"
+          fill="url(#elder-female-costume-bee__body)"/>
+    <path d="M200 276 q46 0 62 30 q12 24 10 50 q-4 34 -34 44 q-38 12 -76 0
+             q-30-10 -34-44 q-2-26 10-50 q16-30 62-30 z"
+          fill="url(#elder-female-costume-bee__abdomen)"/>
+  </g>
+
+  <!-- PATTERN: soft fuzz over the thorax -->
+  <g clip-path="url(#elder-female-costume-bee__thoraxclip)">
+    <path d="M148 204 q0-30 34-30 h36 q34 0 34 30 v70 q0 30 -34 30 h-36 q-34 0 -34-30 z"
+          fill="url(#elder-female-costume-bee__fuzz)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: broad horizontal bands across the plush abdomen -->
+  <g clip-path="url(#elder-female-costume-bee__abdomenclip)" fill="var(--c2, #3B2A22)">
+    <rect x="110" y="296" width="180" height="22" rx="6"/>
+    <rect x="110" y="334" width="180" height="24" rx="6"/>
+    <rect x="110" y="374" width="180" height="26" rx="6"/>
+  </g>
+
+  <!-- TRIM: plush cuffs at the wrists and ankles, plus a thorax collar band -->
+  <g fill="var(--c2, #3B2A22)">
+    <rect x="108" y="332" width="46" height="20" rx="10"/>
+    <rect x="246" y="332" width="46" height="20" rx="10"/>
+    <rect x="160" y="510" width="44" height="20" rx="10"/>
+    <rect x="196" y="510" width="44" height="20" rx="10"/>
+    <rect x="156" y="184" width="88" height="16" rx="8"/>
+  </g>
+
+  <!-- STRUCTURAL: wing veins -->
+  <g fill="none" stroke="var(--c2, #3B2A22)" stroke-opacity="0.3" stroke-width="2.4"
+     stroke-linecap="round">
+    <path d="M140 202 q-32 6 -46 26 M142 220 q-30 8 -42 26 M138 238 q-24 8 -34 18"/>
+    <path d="M260 202 q32 6 46 26 M258 220 q30 8 42 26 M262 238 q24 8 34 18"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M162 194 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 292 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Dress" data-family="maxi-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: HEM = ankle, the skirt running unbroken to y546, and
+       VOLUME = fitted column, held between x152 and x248 for its whole length with almost no
+       flare. Small cap sleeves.
+       Surface tools: panel blocking (a contrast empire band seamed under the bust), a fine
+       scattered motif pattern over the column, and structural detail (two long vertical drape
+       folds and a shaped cap-sleeve seam). -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-maxi-dress__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C6E96)"/>
+      <stop offset="1" stop-color="var(--c2, #6B5175)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-maxi-dress__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C6E96)"/>
+      <stop offset="1" stop-color="var(--c2, #7A5D84)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-maxi-dress__empire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E9D9E4)"/>
+      <stop offset="1" stop-color="var(--c3, #CDB8C9)"/>
+    </linearGradient>
+    <pattern id="elder-female-onepiece-maxi-dress__sprig" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 5 q4 4 0 8 q-4-4 0-8 z" fill="var(--c3, #E9D9E4)" fill-opacity="0.34"/>
+      <circle cx="4" cy="17" r="2" fill="var(--c3, #E9D9E4)" fill-opacity="0.26"/>
+      <circle cx="18" cy="17" r="2" fill="var(--c3, #E9D9E4)" fill-opacity="0.26"/>
+    </pattern>
+    <clipPath id="elder-female-onepiece-maxi-dress__clip">
+      <path d="M152 206 Q154 178 180 176 L220 176 Q246 178 248 206 L244 296 L248 420
+               L246 546 Q200 562 154 546 L152 420 L156 296 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two small cap sleeves and one narrow ankle-length column. -->
+  <g class="sp-shadow">
+    <path d="M158 214 Q154 182 178 176 Q190 176 190 190 L188 214 Q172 220 158 214 Z"
+          fill="url(#elder-female-onepiece-maxi-dress__cap)"/>
+    <path d="M242 214 Q246 182 222 176 Q210 176 210 190 L212 214 Q228 220 242 214 Z"
+          fill="url(#elder-female-onepiece-maxi-dress__cap)"/>
+    <path d="M152 206 Q154 178 180 176 L220 176 Q246 178 248 206 L244 296 L248 420
+             L246 546 Q200 562 154 546 L152 420 L156 296 Z"
+          fill="url(#elder-female-onepiece-maxi-dress__column)"/>
+  </g>
+
+  <!-- PATTERN: a fine sprig scatter over the whole column. -->
+  <g clip-path="url(#elder-female-onepiece-maxi-dress__clip)">
+    <rect x="150" y="174" width="100" height="390"
+          fill="url(#elder-female-onepiece-maxi-dress__sprig)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast empire band seamed directly under the bust. -->
+  <path d="M150 244 q50 16 100 0 l-2 26 q-48 16 -96 0 z"
+        fill="url(#elder-female-onepiece-maxi-dress__empire)"/>
+
+  <!-- TRIM: bound neckline echoing the empire band. -->
+  <path d="M178 178 Q200 198 222 178 l6 10 Q200 212 172 188 z" fill="var(--c3, #E3D0DE)"/>
+
+  <!-- STRUCTURAL: two long vertical drape folds and the cap-sleeve seams. -->
+  <g fill="none" stroke="var(--c2, #6B5175)" stroke-opacity="0.4" stroke-width="3.5"
+     stroke-linecap="round">
+    <path d="M180 278 Q174 400 178 534"/>
+    <path d="M220 278 Q226 400 222 534"/>
+    <path d="M190 190 Q186 202 188 214"/>
+    <path d="M210 190 Q214 202 212 214"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M164 206 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 340 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

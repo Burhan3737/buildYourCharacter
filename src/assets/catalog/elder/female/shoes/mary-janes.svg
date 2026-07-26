@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mary Janes" data-family="mary-janes" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: FASTENING = a single instep strap with a buckle, the
+       only shoe in the slot cut that way, and SOLE DEPTH = thin (a 7px sole under a low
+       round-toed flat).
+       Surface tools: trim (contrast strap, buckle, sole edge) and structural (a topline seam
+       and a visible instep opening showing skin). -->
+  <defs>
+    <linearGradient id="elder-female-shoes-mary-janes__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #58324A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-shoes-mary-janes__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7C9A0)"/>
+      <stop offset="1" stop-color="var(--c3, #E7C9A0)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: low-cut round-toed flat, throat scooped so the instep skin shows -->
+    <path d="M157 566 q-2 -18 12 -22 q8 -2 12 4 q4 6 12 4 q14 -2 15 14 v4 q0 4 -6 4
+             h-39 q-6 0-6-8 z"
+          fill="url(#elder-female-shoes-mary-janes__upper)"/>
+    <path d="M155 565 h50 q4 0 4 4 q0 4 -4 4 h-50 q-4 0-4-4 q0-4 4-4 z"
+          fill="url(#elder-female-shoes-mary-janes__sole)"/>
+    <!-- right -->
+    <path d="M195 566 q-2 -18 12 -22 q8 -2 12 4 q4 6 12 4 q14 -2 15 14 v4 q0 4 -6 4
+             h-39 q-6 0-6-8 z"
+          fill="url(#elder-female-shoes-mary-janes__upper)"/>
+    <path d="M193 565 h50 q4 0 4 4 q0 4 -4 4 h-50 q-4 0-4-4 q0-4 4-4 z"
+          fill="url(#elder-female-shoes-mary-janes__sole)"/>
+  </g>
+
+  <!-- instep straps -->
+  <path d="M159 550 q22 -6 42 0 v7 q-21 -6 -42 0 z" fill="var(--c3, #E7C9A0)"/>
+  <path d="M197 550 q22 -6 42 0 v7 q-21 -6 -42 0 z" fill="var(--c3, #E7C9A0)"/>
+  <!-- buckles -->
+  <path d="M193 548 h9 v10 h-9 z" fill="var(--c2, #58324A)"/>
+  <path d="M231 548 h9 v10 h-9 z" fill="var(--c2, #58324A)"/>
+  <!-- topline seam and toe seam -->
+  <path d="M164 560 q18 -8 36 -2 M202 560 q18 -8 36 -2" stroke="var(--c2, #58324A)"
+        stroke-opacity="0.45" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- highlight across the vamp -->
+  <path d="M164 556 q12 -6 24 -4 M202 556 q12 -6 24 -4" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg>

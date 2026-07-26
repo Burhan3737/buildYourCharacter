@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thin Arch" data-family="thin-arch" data-slot="brows"
+     data-layer="face" data-colors="hair2" data-hides="">
+  <!-- A fine, high, pencilled arch: it sits 4px higher than the other brows in this bundle,
+       peaks two thirds of the way out, and tapers to an actual point at the tail. Single
+       variable, so the value ramp is stop-opacity plus a low ink overlay. -->
+  <defs>
+    <linearGradient id="elder-female-brows-thin-arch__hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="elder-female-brows-thin-arch__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left brow: rises from a soft inner head at x194 to a peak at x172, tapers to x160 -->
+    <path d="M194 116.5
+             C188 110.5 180 106.4 172 106
+             C166 105.7 161.5 107.4 159.6 110.2
+             C161.8 108.8 165 108.6 168.5 109.4
+             C176 111.2 185 114 191.5 119.4
+             C193.6 120.6 195.4 118.4 194 116.5 Z"
+          fill="url(#elder-female-brows-thin-arch__hair)"/>
+    <!-- right brow, mirrored about x=200 -->
+    <path d="M206 116.5
+             C212 110.5 220 106.4 228 106
+             C234 105.7 238.5 107.4 240.4 110.2
+             C238.2 108.8 235 108.6 231.5 109.4
+             C224 111.2 215 114 208.5 119.4
+             C206.4 120.6 204.6 118.4 206 116.5 Z"
+          fill="url(#elder-female-brows-thin-arch__hair)"/>
+
+    <path d="M194 116.5
+             C188 110.5 180 106.4 172 106
+             C166 105.7 161.5 107.4 159.6 110.2
+             C161.8 108.8 165 108.6 168.5 109.4
+             C176 111.2 185 114 191.5 119.4
+             C193.6 120.6 195.4 118.4 194 116.5 Z"
+          fill="url(#elder-female-brows-thin-arch__shade)"/>
+    <path d="M206 116.5
+             C212 110.5 220 106.4 228 106
+             C234 105.7 238.5 107.4 240.4 110.2
+             C238.2 108.8 235 108.6 231.5 109.4
+             C224 111.2 215 114 208.5 119.4
+             C206.4 120.6 204.6 118.4 206 116.5 Z"
+          fill="url(#elder-female-brows-thin-arch__shade)"/>
+  </g>
+</svg>

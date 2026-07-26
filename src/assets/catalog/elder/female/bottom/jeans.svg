@@ -1,43 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jeans" data-family="jeans" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = straight with a gentle taper from a 44px
+       thigh to a 32px ankle, and HEM TREATMENT = a plain finished hem under a structured
+       waistband. Natural rise, full length.
+       Surface tools: trim (a waistband of its own width, belt loops) and structural (curved
+       front pockets, a coin pocket, a fly seam and contrast topstitching throughout). -->
   <defs>
-    <linearGradient id="elder-female-bottom-jeans__hip" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="elder-female-bottom-jeans__seat" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+      <stop offset="1" stop-color="var(--c2, #56699F)"/>
     </linearGradient>
     <linearGradient id="elder-female-bottom-jeans__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
-      <stop offset="1" stop-color="var(--c2, #5E72AB)"/>
+      <stop offset="1" stop-color="var(--c2, #56699F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-jeans__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #56699F)"/>
+      <stop offset="1" stop-color="var(--c2, #56699F)" stop-opacity="0.82"/>
     </linearGradient>
   </defs>
 
-  <!-- relaxed comfort-waist trousers -->
   <g class="sp-shadow">
-    <rect x="164" y="380" width="36" height="164" rx="16" fill="url(#elder-female-bottom-jeans__leg)"/>
-    <rect x="200" y="380" width="36" height="164" rx="16" fill="url(#elder-female-bottom-jeans__leg)"/>
-    <rect x="146" y="324" width="108" height="58" rx="24" fill="url(#elder-female-bottom-jeans__hip)"/>
+    <!-- seat and hip, drawn with a curved yoke rather than a plain block -->
+    <path d="M146 320 q0-6 8-6 h92 q8 0 8 6 v30 q0 32 -26 32 h-56 q-26 0-26-32 z"
+          fill="url(#elder-female-bottom-jeans__seat)"/>
+    <!-- left leg: 44px at the thigh tapering to 32px at the ankle -->
+    <path d="M158 378 q0-6 8-6 h28 q8 0 8 6 v96 q0 12 -2 22 l-4 44 q-1 6 -8 6 h-16
+             q-7 0-8-6 l-4-44 q-2-10 -2-22 z"
+          fill="url(#elder-female-bottom-jeans__leg)"/>
+    <!-- right leg, mirrored about x200 -->
+    <path d="M242 378 q0-6 -8-6 h-28 q-8 0-8 6 v96 q0 12 2 22 l4 44 q1 6 8 6 h16
+             q7 0 8-6 l4-44 q2-10 2-22 z"
+          fill="url(#elder-female-bottom-jeans__leg)"/>
   </g>
 
-  <!-- waistband -->
-  <rect x="146" y="324" width="108" height="19" rx="9" fill="var(--c2, #5E72AB)"/>
+  <!-- waistband, its own width -->
+  <path d="M146 318 h108 v18 q-54 6 -108 0 z" fill="url(#elder-female-bottom-jeans__band)"/>
   <!-- belt loops -->
-  <rect x="163" y="322" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="196" y="322" width="8" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
-  <rect x="230" y="322" width="7" height="24" rx="3" fill="var(--c2, #5E72AB)"/>
-
+  <path d="M162 316 h7 v22 h-7 z M196 316 h8 v22 h-8 z M231 316 h7 v22 h-7 z"
+        fill="var(--c2, #56699F)"/>
   <!-- curved front pockets -->
-  <path d="M148 344 H179 Q171 371 148 366 Z" fill="var(--c2, #5E72AB)"/>
-  <path d="M252 344 H221 Q229 371 252 366 Z" fill="var(--c2, #5E72AB)"/>
-
-  <!-- topstitching -->
-  <path d="M179 346 Q171 369 150 365" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M148 340 H180 Q172 368 148 362 Z" fill="var(--c2, #56699F)"/>
+  <path d="M252 340 H220 Q228 368 252 362 Z" fill="var(--c2, #56699F)"/>
+  <!-- coin pocket -->
+  <path d="M164 342 h14 v10 h-14 z" fill="var(--c2, #56699F)"/>
+  <!-- contrast topstitching -->
+  <path d="M180 342 Q172 366 150 361" stroke="var(--c3, #EBC98A)" stroke-width="2.4"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M221 346 Q229 369 250 365" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M220 342 Q228 366 250 361" stroke="var(--c3, #EBC98A)" stroke-width="2.4"
         stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
-  <path d="M148 339 H252" stroke="var(--c3, #EBC98A)" stroke-width="2.5"
+  <path d="M148 334 H252" stroke="var(--c3, #EBC98A)" stroke-width="2.4"
         stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
-
+  <path d="M170 386 v150 M230 386 v150" stroke="var(--c3, #EBC98A)" stroke-opacity="0.6"
+        stroke-width="2" stroke-dasharray="6 6" fill="none" stroke-linecap="round"/>
+  <!-- fly seam -->
+  <path d="M200 338 v26" stroke="var(--c3, #EBC98A)" stroke-width="2.2"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
   <path d="M162 356 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -61,19 +61,12 @@ const KNOWN_DUPLICATES: ReadonlySet<string> = new Set([
 
   // adult/male · bottom, costume and top: all 14 pairs redrawn during the art expansion.
 
-  // elder/female · bottom — 3 pair(s): nudged
-  'catalog/elder/female/bottom/cargo.svg|catalog/elder/female/bottom/jeans.svg',
-  'catalog/elder/female/bottom/cargo.svg|catalog/elder/female/bottom/leggings.svg',
-  'catalog/elder/female/bottom/jeans.svg|catalog/elder/female/bottom/leggings.svg',
-
-  // elder/female · costume — 2 pair(s): shared-primary
-  'catalog/elder/female/costume/astronaut.svg|catalog/elder/female/costume/spider.svg',
-  'catalog/elder/female/costume/astronaut.svg|catalog/elder/female/costume/web-runner.svg',
-
-  // elder/female · top — 3 pair(s): identical, shared-primary
-  'catalog/elder/female/top/jersey.svg|catalog/elder/female/top/stripes.svg',
-  'catalog/elder/female/top/jersey.svg|catalog/elder/female/top/tee.svg',
-  'catalog/elder/female/top/stripes.svg|catalog/elder/female/top/tee.svg',
+  // elder/female — RETIRED. All 8 pairs (3 bottom, 2 costume, 3 top) were redrawn during the
+  // art expansion and no longer collide, so their entries are gone: jeans, cargo and leggings
+  // now differ on leg width and rise rather than sharing one hip block; astronaut is a bulkier
+  // stepped pressure suit against web-runner's skin-close lattice; and tee, jersey and stripes
+  // are a tapered set-in tee, a boxy raglan and a boat-neck long-sleeve. The costume entries
+  // also covered the dead `spider` spelling, which the rename to `web-runner` has retired.
 
   // elder/male — RETIRED. All 18 pairs (4 bottom, 2 costume, 12 top) were redrawn
   // during the art expansion and no longer collide, so their entries are gone.

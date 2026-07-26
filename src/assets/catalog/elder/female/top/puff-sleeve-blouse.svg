@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = puff — a balloon of volume
+       spanning x98 to x152 and x248 to x302 between y172 and y240, far outside
+       the arm it covers, gathered into a tight narrow cuff at y238 to y254 —
+       and VOLUME = fitted, the body nipped in to x148 and x252 at the waist so
+       the sleeves read as the whole story.
+       Hem at the waist (y320).
+       Surface tools: pattern (a fine four-petal floral at 16px, clipped to the
+       body) and trim (gathered sleeve cuffs and a round neckline band), with
+       gather lines at the sleeve head. -->
+  <defs>
+    <linearGradient id="elder-female-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6D9E8)"/>
+      <stop offset="1" stop-color="var(--c3, #BFA9C4)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6D9E8)"/>
+      <stop offset="1" stop-color="var(--c3, #BFA9C4)"/>
+    </linearGradient>
+    <pattern id="elder-female-top-puff-sleeve-blouse__floral"
+             patternUnits="userSpaceOnUse" x="4" y="6" width="16" height="16">
+      <circle cx="8" cy="3.4" r="2.3" fill="var(--c2, #8E6E96)" fill-opacity="0.62"/>
+      <circle cx="8" cy="12.6" r="2.3" fill="var(--c2, #8E6E96)" fill-opacity="0.62"/>
+      <circle cx="3.4" cy="8" r="2.3" fill="var(--c2, #8E6E96)" fill-opacity="0.62"/>
+      <circle cx="12.6" cy="8" r="2.3" fill="var(--c2, #8E6E96)" fill-opacity="0.62"/>
+      <circle cx="8" cy="8" r="1.5" fill="var(--c2, #8E6E96)"/>
+    </pattern>
+    <clipPath id="elder-female-top-puff-sleeve-blouse__clip">
+      <path d="M142 216 q0-32 22-38 q16-6 36-6 q20 0 36 6 q22 6 22 38 q0 46 -6 72 q-2 32 -22 32 h-60 q-20 0 -22-32 q-6-26 -6-72 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left puff: a balloon far wider than the arm underneath -->
+    <path d="M151 194 q-2-22 -25-22 q-28 0 -28 34 q0 24 14 32 q14 8 27 -2 q14-10 12-42 z"
+          fill="url(#elder-female-top-puff-sleeve-blouse__puff)"/>
+    <!-- right puff -->
+    <path d="M249 194 q2-22 25-22 q28 0 28 34 q0 24 -14 32 q-14 8 -27 -2 q-14-10 -12-42 z"
+          fill="url(#elder-female-top-puff-sleeve-blouse__puff)"/>
+    <!-- fitted body, waist hem -->
+    <path d="M142 216 q0-32 22-38 q16-6 36-6 q20 0 36 6 q22 6 22 38 q0 46 -6 72 q-2 32 -22 32 h-60 q-20 0 -22-32 q-6-26 -6-72 z"
+          fill="url(#elder-female-top-puff-sleeve-blouse__body)"/>
+  </g>
+
+  <!-- the floral, clipped to the body so it never leaks past the outline -->
+  <g clip-path="url(#elder-female-top-puff-sleeve-blouse__clip)">
+    <path d="M138 168 h124 v158 h-124 z"
+          fill="url(#elder-female-top-puff-sleeve-blouse__floral)"/>
+  </g>
+
+  <!-- gathered cuffs, the puff pulled tight on the forearm -->
+  <path d="M116 238 q16 6 32 0 v10 q-16 6 -32 0 z" fill="var(--c2, #8E6E96)"/>
+  <path d="M252 238 q16 6 32 0 v10 q-16 6 -32 0 z" fill="var(--c2, #8E6E96)"/>
+  <!-- gather lines at the cuff -->
+  <path d="M122 222 v14 M130 226 v12 M138 226 v12 M146 222 v14"
+        stroke="var(--c3, #BFA9C4)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 222 v14 M262 226 v12 M270 226 v12 M278 222 v14"
+        stroke="var(--c3, #BFA9C4)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- gather lines radiating at the sleeve head -->
+  <path d="M148 190 q-14 4 -24 12 M150 200 q-16 2 -28 6 M148 210 q-16 0 -26 -2"
+        stroke="var(--c2, #8E6E96)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 190 q14 4 24 12 M250 200 q16 2 28 6 M252 210 q16 0 26 -2"
+        stroke="var(--c2, #8E6E96)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- round neckline band -->
+  <path d="M172 182 q28 18 56 0 l5 10 q-33 20 -66 0 z" fill="var(--c2, #8E6E96)"/>
+  <!-- highlight -->
+  <path d="M112 194 q6 -14 20 -18" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M288 194 q-6 -14 -20 -18" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 216 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

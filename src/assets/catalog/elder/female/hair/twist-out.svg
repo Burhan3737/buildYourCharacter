@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Twist Out" data-family="twist-out" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME/TEXTURE of the outline (the hem and both sides
+       are a run of unequal overlapping lobes cut straight into the silhouette path, so the
+       spirals ARE the contour and nothing about it is smooth) and PARTING (none: one
+       continuous lifted crown with no part line anywhere).
+       Surface tools: pattern (a 16px two-strand coil laid over the back mass through the
+       hair2 variable) and structural detail (a paired S drawn on every visible twist, with
+       hair2 shading one side of each one). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-twist-out__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <pattern id="elder-female-hair-twist-out__coil" patternUnits="userSpaceOnUse"
+               x="0" y="0" width="16" height="16">
+        <path d="M3 -2 C10 3 10 11 3 18" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.34"
+              stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M13 -2 C6 3 6 11 13 18" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.22"
+              stroke-width="3" fill="none" stroke-linecap="round"/>
+      </pattern>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M200 52 C180 50 166 58 158 70
+               C144 68 132 80 134 94
+               C124 100 120 114 128 124
+               C118 134 118 150 128 158
+               C118 172 122 190 134 196
+               C130 212 140 228 154 228
+               C156 242 170 252 186 248
+               C194 256 210 254 218 246
+               C232 250 246 240 246 226
+               C258 222 268 206 260 194
+               C272 186 276 168 266 156
+               C276 144 274 128 262 120
+               C266 106 256 94 242 96
+               C240 82 228 70 214 74
+               C210 60 208 52 200 52 Z"
+            fill="url(#elder-female-hair-twist-out__back-g)"/>
+    </g>
+    <path d="M200 52 C180 50 166 58 158 70
+             C144 68 132 80 134 94
+             C124 100 120 114 128 124
+             C118 134 118 150 128 158
+             C118 172 122 190 134 196
+             C130 212 140 228 154 228
+             C156 242 170 252 186 248
+             C194 256 210 254 218 246
+             C232 250 246 240 246 226
+             C258 222 268 206 260 194
+             C272 186 276 168 266 156
+             C276 144 274 128 262 120
+             C266 106 256 94 242 96
+             C240 82 228 70 214 74
+             C210 60 208 52 200 52 Z"
+          fill="url(#elder-female-hair-twist-out__coil)"/>
+    <!-- undersides of the hem lobes: every lobe gets its own shadow, none the same -->
+    <path d="M132 190 C138 206 150 216 162 214 C148 224 130 212 126 196 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M152 222 C160 238 176 246 190 240 C176 252 154 244 148 228 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M196 242 C208 252 226 248 236 236 C234 252 206 258 192 248 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M244 214 C252 228 264 228 268 214 C270 232 246 236 240 222 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M122 128 C130 140 130 154 124 164 C116 152 116 136 118 126 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M278 128 C270 140 270 154 276 164 C284 152 284 136 282 126 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M156 74 C176 60 224 60 244 74" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="11" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-twist-out__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-twist-out__lock-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- lifted crown: three unequal lobes cut straight into the top edge, hairline at y99 -->
+      <path d="M200 46 C186 44 176 50 170 58
+               C158 52 146 58 146 70
+               C134 74 128 88 136 98
+               C126 106 124 118 132 130
+               C136 116 146 108 160 105
+               C170 101 184 99 200 99
+               C216 99 230 101 240 105
+               C254 108 264 116 268 130
+               C276 118 274 106 264 98
+               C272 88 266 74 254 70
+               C254 58 242 52 230 58
+               C224 50 214 44 200 46 Z"
+            fill="url(#elder-female-hair-twist-out__front-g)"/>
+      <!-- side locks: narrow, lobed, running out of the crown and past the jaw -->
+      <path d="M132 108 C122 122 118 142 120 162
+               C116 178 122 194 132 200
+               C124 212 130 226 142 228
+               C152 230 160 222 156 212
+               C150 196 146 176 148 156
+               C150 136 152 120 150 106 Z"
+            fill="url(#elder-female-hair-twist-out__lock-g)"/>
+      <path d="M268 108 C278 122 282 142 280 162
+               C284 178 278 194 268 200
+               C276 212 270 226 258 228
+               C248 230 240 222 244 212
+               C250 196 254 176 252 156
+               C250 136 248 120 250 106 Z"
+            fill="url(#elder-female-hair-twist-out__lock-g)"/>
+    </g>
+    <!-- two-strand definition: each twist is a paired S, hair2 on one side of every one -->
+    <path d="M166 62 C177 72 168 84 177 96" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M172 60 C182 71 174 83 182 95" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M200 54 C211 64 202 76 210 90" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M206 53 C216 63 208 75 215 89" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M234 60 C245 70 236 82 245 96" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.55"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M228 58 C238 69 230 81 238 95" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M136 126 C147 138 138 154 146 170" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.5"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M132 172 C143 184 134 200 142 216" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.45"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M264 126 C253 138 262 154 254 170" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.5"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M268 172 C257 184 266 200 258 216" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.45"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- hairline showing at the temples under the lifted crown -->
+    <path d="M156 112 C170 102 186 98 200 98 C182 102 166 108 158 120 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M244 112 C230 102 214 98 200 98 C218 102 234 108 242 120 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M152 106 C158 100 164 98 170 100" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M248 106 C242 100 236 98 230 100" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M164 60 C182 50 218 50 236 60" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

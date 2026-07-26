@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thick" data-family="thick" data-slot="brows"
+     data-layer="face" data-colors="hair2" data-hides="">
+  <!-- Dense, full-weight brow with a squared-off inner end and a straight lower edge; the
+       taper happens only in the last few pixels at the outer tail. Single-variable asset, so
+       the ramp is done with stop-opacity plus an ink shade overlay. -->
+  <defs>
+    <linearGradient id="elder-female-brows-thick__hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="elder-female-brows-thick__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3B2A22" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left brow: squared inner end at x196, straight lower edge, short taper at x162 -->
+    <path d="M196 110.5 L196 121 L172 121.5
+             C166 121.6 162 120.4 161.5 118.4
+             C161 116.2 164.5 114 170 113
+             L190 109.8 C193.6 109.2 196 109.2 196 110.5 Z"
+          fill="url(#elder-female-brows-thick__hair)"/>
+    <!-- right brow, mirrored about x=200 -->
+    <path d="M204 110.5 L204 121 L228 121.5
+             C234 121.6 238 120.4 238.5 118.4
+             C239 116.2 235.5 114 230 113
+             L210 109.8 C206.4 109.2 204 109.2 204 110.5 Z"
+          fill="url(#elder-female-brows-thick__hair)"/>
+
+    <path d="M196 110.5 L196 121 L172 121.5
+             C166 121.6 162 120.4 161.5 118.4
+             C161 116.2 164.5 114 170 113
+             L190 109.8 C193.6 109.2 196 109.2 196 110.5 Z"
+          fill="url(#elder-female-brows-thick__shade)"/>
+    <path d="M204 110.5 L204 121 L228 121.5
+             C234 121.6 238 120.4 238.5 118.4
+             C239 116.2 235.5 114 230 113
+             L210 109.8 C206.4 109.2 204 109.2 204 110.5 Z"
+          fill="url(#elder-female-brows-thick__shade)"/>
+  </g>
+
+  <!-- brushed-up hairs along the top edge, the cue that reads as density -->
+  <path d="M170 113.6 l-1.5 -3 M178 112 l-1 -3.2 M186 110.6 l-0.8 -3.2"
+        stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.75" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 113.6 l1.5 -3 M222 112 l1 -3.2 M214 110.6 l0.8 -3.2"
+        stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.75" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Platform Boots" data-family="platform-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SOLE DEPTH = a thick slab lifting the whole foot
+       (32px, y540-572, level front to back) and SHAFT HEIGHT = above the ankle at y500 on a
+       squared-off shaft.
+       Surface tools: trim (contrast slab and a pull loop at the back) and structural (lug
+       grooves across the slab, a lace ladder and a toe seam). -->
+  <defs>
+    <linearGradient id="elder-female-shoes-platform-boots__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F4756)"/>
+      <stop offset="1" stop-color="var(--c2, #2A303C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-shoes-platform-boots__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1E4CE)"/>
+      <stop offset="1" stop-color="var(--c3, #F1E4CE)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: squared shaft over a level slab -->
+    <path d="M161 504 q0-6 7-6 h26 q7 0 7 6 v34 q0 6 -7 6 h-26 q-7 0-7-6 z"
+          fill="url(#elder-female-shoes-platform-boots__upper)"/>
+    <path d="M154 540 h56 q6 0 6 8 v16 q0 8 -8 8 h-52 q-8 0-8-8 v-16 q0-8 6-8 z"
+          fill="url(#elder-female-shoes-platform-boots__slab)"/>
+    <!-- right -->
+    <path d="M199 504 q0-6 7-6 h26 q7 0 7 6 v34 q0 6 -7 6 h-26 q-7 0-7-6 z"
+          fill="url(#elder-female-shoes-platform-boots__upper)"/>
+    <path d="M192 540 h56 q6 0 6 8 v16 q0 8 -8 8 h-52 q-8 0-8-8 v-16 q0-8 6-8 z"
+          fill="url(#elder-female-shoes-platform-boots__slab)"/>
+  </g>
+
+  <!-- lug grooves across the slab -->
+  <path d="M150 556 h64 M188 556 h64" stroke="var(--c2, #2A303C)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M158 566 v6 M172 566 v6 M186 566 v6 M200 566 v6 M210 566 v6 M224 566 v6 M238 566 v6"
+        stroke="var(--c2, #2A303C)" stroke-opacity="0.35" stroke-width="3" fill="none"/>
+  <!-- lace ladder -->
+  <path d="M167 508 L189 516 M189 508 L167 516 M167 520 L189 528 M189 520 L167 528"
+        stroke="var(--c3, #F1E4CE)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M205 508 L227 516 M227 508 L205 516 M205 520 L227 528 M227 520 L205 528"
+        stroke="var(--c3, #F1E4CE)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- pull loops at the back -->
+  <path d="M196 500 h8 v10 h-8 z" fill="var(--c3, #F1E4CE)"/>
+  <path d="M234 500 h8 v10 h-8 z" fill="var(--c3, #F1E4CE)"/>
+  <!-- toe seam and highlight -->
+  <path d="M164 536 h28 M202 536 h28" stroke="var(--c3, #F1E4CE)" stroke-opacity="0.5"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M166 502 q14 -4 26 0 M204 502 q14 -4 26 0" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

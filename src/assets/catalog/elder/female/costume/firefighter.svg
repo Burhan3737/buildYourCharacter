@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Firefighter" data-family="firefighter" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: VOLUME = a heavy bulky turnout coat standing well off
+       the body, 136px through the chest with 52px sleeves and a stiff stepped outline, and HEM
+       = a mid-thigh coat hem swinging out over banded trousers. A high storm collar tops the
+       piece at y174 exactly. Surface tools: trim (two reflective bands across the body and one
+       round each sleeve and leg), panel blocking (storm collar and hem facing) and structural
+       (big clasp closures and flap pockets). Nothing is drawn above y172. -->
+  <defs>
+    <linearGradient id="elder-female-costume-firefighter__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E5866)"/>
+      <stop offset="1" stop-color="var(--c1, #2F353F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-firefighter__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #48525F)"/>
+      <stop offset="1" stop-color="var(--c1, #2A303A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-firefighter__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #454F5C)"/>
+      <stop offset="1" stop-color="var(--c1, #272C35)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-firefighter__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A5A2E)"/>
+      <stop offset="1" stop-color="var(--c2, #6A4322)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two bulky trousers, two boots, two bulky sleeves, the storm collar and the
+       heavy turnout coat. Every dimension stands off the body underneath. -->
+  <g class="sp-shadow">
+    <path d="M152 380 h48 v152 l-4 8 v18 q-22 8 -44 0 v-18 l-4-8 z"
+          fill="url(#elder-female-costume-firefighter__trouser)"/>
+    <path d="M248 380 h-48 v152 l4 8 v18 q22 8 44 0 v-18 l4-8 z"
+          fill="url(#elder-female-costume-firefighter__trouser)"/>
+    <path d="M150 522 h50 v34 q0 14 -16 14 h-18 q-16 0 -16-14 z"
+          fill="url(#elder-female-costume-firefighter__collar)"/>
+    <path d="M250 522 h-50 v34 q0 14 16 14 h18 q16 0 16-14 z"
+          fill="url(#elder-female-costume-firefighter__collar)"/>
+    <path d="M104 202 q0-26 22-26 q22 0 22 26 v76 l4 8 v54 q0 22 -26 22
+             q-26 0 -26-22 v-54 l4-8 z"
+          fill="url(#elder-female-costume-firefighter__sleeve)"/>
+    <path d="M296 202 q0-26 -22-26 q-22 0 -22 26 v76 l-4 8 v54 q0 22 26 22
+             q26 0 26-22 v-54 l-4-8 z"
+          fill="url(#elder-female-costume-firefighter__sleeve)"/>
+    <path d="M164 174 h72 q10 0 10 12 v16 q-46 12 -92 0 v-16 q0-12 10-12 z"
+          fill="url(#elder-female-costume-firefighter__collar)"/>
+    <path d="M138 198 q4-22 30-22 h64 q26 0 30 22 v24 l6 10 v190 q-68 16 -136 0 v-190 l6-10 z"
+          fill="url(#elder-female-costume-firefighter__coat)"/>
+  </g>
+
+  <!-- TRIM: two reflective bands across the coat body -->
+  <g fill="var(--c3, #EFE07C)">
+    <path d="M134 286 q66 14 132 0 v20 q-66 14 -132 0 z"/>
+    <path d="M134 322 q66 14 132 0 v20 q-66 14 -132 0 z"/>
+  </g>
+  <g fill="var(--c2, #6A4322)" fill-opacity="0.55">
+    <path d="M134 282 q66 14 132 0 v5 q-66 14 -132 0 z"/>
+    <path d="M134 342 q66 14 132 0 v5 q-66 14 -132 0 z"/>
+  </g>
+
+  <!-- TRIM: a reflective band round each sleeve and each trouser leg -->
+  <g fill="var(--c3, #EFE07C)">
+    <rect x="100" y="300" width="52" height="18" rx="8"/>
+    <rect x="248" y="300" width="52" height="18" rx="8"/>
+    <rect x="148" y="454" width="52" height="18" rx="8"/>
+    <rect x="200" y="454" width="52" height="18" rx="8"/>
+    <rect x="148" y="488" width="52" height="18" rx="8"/>
+    <rect x="200" y="488" width="52" height="18" rx="8"/>
+  </g>
+
+  <!-- PANEL BLOCKING: a coat hem facing in the collar colour -->
+  <path d="M132 396 q68 16 136 0 v24 q-68 16 -136 0 z" fill="var(--c2, #6A4322)"/>
+
+  <!-- STRUCTURAL: big clasp closures down the storm flap -->
+  <path d="M188 202 h24 v192 h-24 z" fill="var(--c2, #6A4322)" fill-opacity="0.5"/>
+  <g fill="var(--c3, #EFE07C)">
+    <rect x="182" y="220" width="36" height="18" rx="8"/>
+    <rect x="182" y="252" width="36" height="18" rx="8"/>
+    <rect x="182" y="360" width="36" height="18" rx="8"/>
+  </g>
+  <g fill="var(--c2, #6A4322)">
+    <rect x="194" y="224" width="12" height="10" rx="4"/>
+    <rect x="194" y="256" width="12" height="10" rx="4"/>
+    <rect x="194" y="364" width="12" height="10" rx="4"/>
+  </g>
+
+  <!-- STRUCTURAL: flap pockets on the skirt of the coat -->
+  <g fill="var(--c2, #6A4322)" fill-opacity="0.8">
+    <path d="M144 356 h34 q4 0 4 5 v14 q0 5 -4 5 h-34 q-4 0 -4-5 v-14 q0-5 4-5 z"/>
+    <path d="M256 356 h-34 q-4 0 -4 5 v14 q0 5 4 5 h34 q4 0 4-5 v-14 q0-5 -4-5 z"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M154 210 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 206 q-2 40 0 76" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 206 q2 40 0 76" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

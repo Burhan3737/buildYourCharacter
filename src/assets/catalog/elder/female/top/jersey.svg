@@ -1,31 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Jersey" data-family="jersey" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = short raglan — each sleeve is
+       its own major form, seamed from the neckline at x188 and x212 on y176 and
+       sweeping out over the shoulder and down the arm to y262, so there is no
+       shoulder seam anywhere on the garment — and VOLUME = boxy, a wide
+       flat-sided body from x134 to x266 dropping to a flat hem at y338.
+       Closed V-neck, hem at the hip.
+       Surface tools: panel blocking (the raglan sleeve panels in an accent
+       colour) and trim (a contrast V-neck bind and a contrast band down each
+       side seam). -->
   <defs>
     <linearGradient id="elder-female-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E9FB8)"/>
-      <stop offset="1" stop-color="var(--c2, #557E93)"/>
+      <stop offset="0" stop-color="var(--c1, #E8E2D4)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AF9A)"/>
     </linearGradient>
-    <linearGradient id="elder-female-top-jersey__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #6E9FB8)"/>
-      <stop offset="1" stop-color="var(--c2, #557E93)"/>
+    <linearGradient id="elder-female-top-jersey__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #46708C)"/>
+      <stop offset="1" stop-color="var(--c3, #46708C)" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="112" y="178" width="36" height="120" rx="18" fill="url(#elder-female-top-jersey__sleeve)"/>
-    <rect x="252" y="178" width="36" height="120" rx="18" fill="url(#elder-female-top-jersey__sleeve)"/>
-    <rect x="140" y="176" width="120" height="168" rx="32" fill="url(#elder-female-top-jersey__body)"/>
+    <!-- boxy body, flat sides and a flat hem -->
+    <path d="M134 200 q0-26 22-26 h88 q22 0 22 26 v126 q0 12 -10 12 h-112 q-10 0 -10-12 z"
+          fill="url(#elder-female-top-jersey__body)"/>
+    <!-- left raglan panel: neckline, over the shoulder, down the arm to the cuff -->
+    <path d="M188 176 Q140 180 116 206 L112 244 Q110 260 126 262 L142 260 Q152 258 150 244 L146 220 Q144 196 188 176 Z"
+          fill="url(#elder-female-top-jersey__raglan)"/>
+    <!-- right raglan panel -->
+    <path d="M212 176 Q260 180 284 206 L288 244 Q290 260 274 262 L258 260 Q248 258 250 244 L254 220 Q256 196 212 176 Z"
+          fill="url(#elder-female-top-jersey__raglan)"/>
   </g>
 
-  <!-- raglan seams from the neckline to the underarm -->
-  <path d="M186 178 Q160 200 148 226" stroke="var(--c2, #557E93)" stroke-width="3" fill="none"
-        stroke-linecap="round" opacity="0.6"/>
-  <path d="M214 178 Q240 200 252 226" stroke="var(--c2, #557E93)" stroke-width="3" fill="none"
-        stroke-linecap="round" opacity="0.6"/>
-  <path d="M182 178 Q200 190 218 178" fill="none" stroke="var(--c2, #557E93)" stroke-width="4"
-        stroke-linecap="round" opacity="0.55"/>
-
-  <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <!-- contrast V-neck bind -->
+  <path d="M182 176 L200 214 L218 176 h-10 L200 194 L192 176 z" fill="var(--c3, #46708C)"/>
+  <!-- contrast band down each side seam -->
+  <path d="M137 208 L147 204 L147 334 L137 334 z" fill="var(--c3, #46708C)" fill-opacity="0.85"/>
+  <path d="M263 208 L253 204 L253 334 L263 334 z" fill="var(--c3, #46708C)" fill-opacity="0.85"/>
+  <!-- raglan seam stitching, reading the neck to underarm line -->
+  <path d="M188 178 Q148 198 148 222 M212 178 Q252 198 252 222" stroke="var(--c2, #B9AF9A)"
+        stroke-opacity="0.6" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M162 214 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

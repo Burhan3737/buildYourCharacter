@@ -1,26 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: SHOULDER = a long shoulder-fastened cape hanging free
+       behind the whole figure, and HEM = the cape falling to a scalloped ankle edge over an
+       otherwise fitted bodysuit. Surface tools: panel blocking (cape, trunks) and trim (wide
+       belt, glove and boot cuffs). The chest is deliberately plain - no emblem, no device, no
+       insignia of any kind. Nothing is drawn above y182. -->
   <defs>
     <linearGradient id="elder-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+      <stop offset="0" stop-color="var(--c2, #F0C271)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9C4C)"/>
     </linearGradient>
     <linearGradient id="elder-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c1, #503759)"/>
     </linearGradient>
     <linearGradient id="elder-female-costume-caped-hero__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c1, #503759)"/>
     </linearGradient>
     <linearGradient id="elder-female-costume-caped-hero__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
+      <stop offset="0" stop-color="var(--c1, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c1, #503759)"/>
     </linearGradient>
     <linearGradient id="elder-female-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+      <stop offset="0" stop-color="var(--c2, #E8B762)"/>
+      <stop offset="1" stop-color="var(--c2, #C08F45)"/>
     </linearGradient>
   </defs>
 
@@ -45,19 +50,28 @@
 
   <!-- trunks over the hips -->
   <rect x="148" y="326" width="104" height="52" rx="22" fill="url(#elder-female-costume-caped-hero__trim)"/>
-  <!-- belt -->
-  <rect x="144" y="320" width="112" height="20" rx="9" fill="var(--c3, #F7C873)"/>
+  <!-- wide belt -->
+  <rect x="144" y="320" width="112" height="20" rx="9" fill="var(--c3, #3E8E82)"/>
+  <rect x="188" y="316" width="24" height="28" rx="9" fill="url(#elder-female-costume-caped-hero__trim)"/>
 
-  <!-- original chest mark: a soft four-point star, generic (not a real logo) -->
-  <path d="M200 208 q6 20 26 26 q-20 6 -26 26 q-6 -20 -26 -26 q20 -6 26 -26 z"
-        fill="var(--c3, #F7C873)"/>
+  <!-- shoulder fastenings holding the cape; the chest itself carries no mark -->
+  <circle cx="162" cy="196" r="9" fill="var(--c3, #3E8E82)"/>
+  <circle cx="238" cy="196" r="9" fill="var(--c3, #3E8E82)"/>
 
   <!-- gloves and boots -->
   <g class="sp-shadow">
-    <circle cx="130" cy="328" r="16" fill="var(--c2, #C4534B)"/>
-    <circle cx="270" cy="328" r="16" fill="var(--c2, #C4534B)"/>
+    <circle cx="130" cy="328" r="16" fill="var(--c2, #CE9C4C)"/>
+    <circle cx="270" cy="328" r="16" fill="var(--c2, #CE9C4C)"/>
     <rect x="160" y="534" width="42" height="26" rx="13" fill="url(#elder-female-costume-caped-hero__trim)"/>
     <rect x="198" y="534" width="42" height="26" rx="13" fill="url(#elder-female-costume-caped-hero__trim)"/>
+  </g>
+
+  <!-- glove and boot cuff bands -->
+  <g fill="var(--c3, #3E8E82)">
+    <rect x="114" y="306" width="32" height="9" rx="4.5"/>
+    <rect x="254" y="306" width="32" height="9" rx="4.5"/>
+    <rect x="158" y="524" width="46" height="10" rx="5"/>
+    <rect x="196" y="524" width="46" height="10" rx="5"/>
   </g>
 
   <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"

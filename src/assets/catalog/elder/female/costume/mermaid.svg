@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: HEM = a single sealed tail running from the waist to a
+       wide horizontal fluke at the ground line with no leg division anywhere, and SHOULDER =
+       narrow straps over an otherwise bare shoulder. Volume tapers to the knee and then flares
+       out to x120 and x280 at the fluke. Surface tools: pattern (scale fill over the tail),
+       panel blocking (contrast hip band and shell bodice) and trim (strap edges, fluke rays). -->
+  <defs>
+    <linearGradient id="elder-female-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FA6AF)"/>
+      <stop offset="1" stop-color="var(--c1, #2E7680)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-mermaid__fluke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58B3BC)"/>
+      <stop offset="1" stop-color="var(--c1, #2A6C77)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-mermaid__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4788F)"/>
+      <stop offset="1" stop-color="var(--c3, #BE5673)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-mermaid__scales" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="14">
+      <path d="M0 14 q8-16 16 0" fill="none" stroke="var(--c2, #1E5A63)"
+            stroke-width="2.2" stroke-opacity="0.5"/>
+      <path d="M-8 7 q8-16 16 0 M8 7 q8-16 16 0" fill="none" stroke="var(--c2, #1E5A63)"
+            stroke-width="2.2" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="elder-female-costume-mermaid__tailclip">
+      <path d="M150 286 q50-10 100 0 v34 q0 30 -8 60 q-10 40 -14 84 q-2 32 -4 62
+               q-24 8 -48 0 q-2-30 -4-62 q-4-44 -14-84 q-8-30 -8-60 z"/>
+    </clipPath>
+    <clipPath id="elder-female-costume-mermaid__flukeclip">
+      <path d="M200 512 q-14 14 -40 24 q-30 12 -40 34 q26 6 54 0 q16-4 26-12
+               q10 8 26 12 q28 6 54 0 q-10-22 -40-34 q-26-10 -40-24 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: the shell bodice, two shoulder straps, one undivided tail and the fluke -->
+  <g class="sp-shadow">
+    <path d="M200 512 q-14 14 -40 24 q-30 12 -40 34 q26 6 54 0 q16-4 26-12
+             q10 8 26 12 q28 6 54 0 q-10-22 -40-34 q-26-10 -40-24 z"
+          fill="url(#elder-female-costume-mermaid__fluke)"/>
+    <path d="M150 286 q50-10 100 0 v34 q0 30 -8 60 q-10 40 -14 84 q-2 32 -4 62
+             q-24 8 -48 0 q-2-30 -4-62 q-4-44 -14-84 q-8-30 -8-60 z"
+          fill="url(#elder-female-costume-mermaid__tail)"/>
+    <path d="M166 174 h15 l-7 28 h-13 z" fill="url(#elder-female-costume-mermaid__shell)"/>
+    <path d="M234 174 h-15 l7 28 h13 z" fill="url(#elder-female-costume-mermaid__shell)"/>
+    <path d="M150 208 q0-14 14-16 q36-6 72 0 q14 2 14 16 v52 q0 26 -50 26 q-50 0 -50-26 z"
+          fill="url(#elder-female-costume-mermaid__shell)"/>
+  </g>
+
+  <!-- PATTERN: scales over the tail and over the fluke -->
+  <g clip-path="url(#elder-female-costume-mermaid__tailclip)">
+    <path d="M150 286 q50-10 100 0 v34 q0 30 -8 60 q-10 40 -14 84 q-2 32 -4 62
+             q-24 8 -48 0 q-2-30 -4-62 q-4-44 -14-84 q-8-30 -8-60 z"
+          fill="url(#elder-female-costume-mermaid__scales)"/>
+  </g>
+  <g clip-path="url(#elder-female-costume-mermaid__flukeclip)">
+    <path d="M200 512 q-14 14 -40 24 q-30 12 -40 34 q26 6 54 0 q16-4 26-12
+             q10 8 26 12 q28 6 54 0 q-10-22 -40-34 q-26-10 -40-24 z"
+          fill="url(#elder-female-costume-mermaid__scales)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast hip band where the bodice meets the tail -->
+  <path d="M150 284 q50-10 100 0 v20 q-50-10 -100 0 z" fill="var(--c3, #D26A83)"/>
+  <path d="M152 306 q48-9 96 0 v9 q-48-9 -96 0 z" fill="var(--c2, #1E5A63)" fill-opacity="0.6"/>
+
+  <!-- STRUCTURAL: two shell cups with radiating ribs, drawn as plain generic shells -->
+  <g fill="none" stroke="var(--c2, #1E5A63)" stroke-opacity="0.42" stroke-width="2.6"
+     stroke-linecap="round">
+    <path d="M176 208 v54 M162 214 q6 30 14 48 M190 214 q-6 30 -14 48"/>
+    <path d="M224 208 v54 M210 214 q6 30 14 48 M238 214 q-6 30 -14 48"/>
+  </g>
+
+  <!-- TRIM: fluke rays -->
+  <g fill="none" stroke="var(--c2, #1E5A63)" stroke-opacity="0.4" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M186 530 q-24 16 -46 34 M196 536 q-14 14 -26 30 M214 530 q24 16 46 34
+             M204 536 q14 14 26 30"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M160 200 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 330 q6 80 4 140" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

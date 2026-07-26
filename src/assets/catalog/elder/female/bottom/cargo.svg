@@ -1,30 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Cargo" data-family="cargo" data-slot="bottom"
+     data-name="Cargo Trousers" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = relaxed wide, a 54px column the whole way
+       down with no taper at all, and HEM TREATMENT = a soft unfinished break pooling over the
+       shoe at y550. Natural rise, full length.
+       Surface tools: structural (big flapped thigh pockets with buttons, a knee seam) and
+       trim (a wide utility waistband with a webbing tab). -->
   <defs>
-    <linearGradient id="elder-female-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="elder-female-bottom-cargo__seat" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #A8AF7E)"/>
-      <stop offset="1" stop-color="var(--c2, #8A9163)"/>
+      <stop offset="1" stop-color="var(--c2, #838B5C)"/>
     </linearGradient>
     <linearGradient id="elder-female-bottom-cargo__leg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #A8AF7E)"/>
-      <stop offset="1" stop-color="var(--c2, #8A9163)"/>
+      <stop offset="1" stop-color="var(--c2, #838B5C)"/>
     </linearGradient>
   </defs>
 
-  <!-- relaxed utility trousers -->
   <g class="sp-shadow">
-    <rect x="164" y="380" width="36" height="160" rx="16" fill="url(#elder-female-bottom-cargo__leg)"/>
-    <rect x="200" y="380" width="36" height="160" rx="16" fill="url(#elder-female-bottom-cargo__leg)"/>
-    <rect x="146" y="324" width="108" height="58" rx="24" fill="url(#elder-female-bottom-cargo__hip)"/>
+    <!-- hip block, squarer and wider than the trouser families around it -->
+    <path d="M144 318 h112 q6 0 6 8 v28 q0 26 -22 26 h-80 q-22 0-22-26 v-28 q0-8 6-8 z"
+          fill="url(#elder-female-bottom-cargo__seat)"/>
+    <!-- left leg: a straight 54px column -->
+    <path d="M148 376 h54 v160 q0 14 -6 14 h-42 q-6 0-6-14 z"
+          fill="url(#elder-female-bottom-cargo__leg)"/>
+    <!-- right leg -->
+    <path d="M252 376 h-54 v160 q0 14 6 14 h42 q6 0 6-14 z"
+          fill="url(#elder-female-bottom-cargo__leg)"/>
   </g>
 
-  <rect x="146" y="324" width="108" height="19" rx="9" fill="var(--c2, #8A9163)"/>
-  <!-- cargo patch pockets on the outer thigh -->
-  <rect x="158" y="420" width="26" height="30" rx="6" fill="var(--c3, #F7C873)" opacity="0.9"/>
-  <rect x="216" y="420" width="26" height="30" rx="6" fill="var(--c3, #F7C873)" opacity="0.9"/>
-  <path d="M158 428 H184 M216 428 H242" stroke="var(--c2, #8A9163)" stroke-width="2" fill="none"/>
+  <!-- wide utility waistband with a webbing tab -->
+  <path d="M144 316 h112 v20 h-112 z" fill="var(--c2, #838B5C)"/>
+  <path d="M186 314 h28 v24 h-28 z" fill="var(--c3, #E9D9A8)"/>
+  <path d="M192 320 h16 v10 h-16 z" fill="var(--c2, #838B5C)"/>
 
-  <path d="M162 356 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+  <!-- flapped cargo pockets on the outer thigh -->
+  <path d="M152 428 h38 v50 q0 6 -6 6 h-26 q-6 0-6-6 z" fill="var(--c3, #E9D9A8)" opacity="0.92"/>
+  <path d="M210 428 h38 v50 q0 6 -6 6 h-26 q-6 0-6-6 z" fill="var(--c3, #E9D9A8)" opacity="0.92"/>
+  <path d="M150 424 h42 v14 q0 4 -5 4 h-32 q-5 0-5-4 z" fill="var(--c2, #838B5C)"/>
+  <path d="M208 424 h42 v14 q0 4 -5 4 h-32 q-5 0-5-4 z" fill="var(--c2, #838B5C)"/>
+  <circle cx="171" cy="444" r="3.2" fill="var(--c2, #838B5C)"/>
+  <circle cx="229" cy="444" r="3.2" fill="var(--c2, #838B5C)"/>
+
+  <!-- inseam, so the wide legs read apart rather than as one column -->
+  <path d="M200 380 v170" stroke="var(--c2, #838B5C)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- knee seams and hem reinforcement -->
+  <path d="M150 496 h52 M198 496 h52" stroke="var(--c2, #838B5C)" stroke-opacity="0.5"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M150 540 h52 M198 540 h52" stroke="var(--c3, #E9D9A8)" stroke-opacity="0.55"
+        stroke-width="2.6" stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M160 358 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

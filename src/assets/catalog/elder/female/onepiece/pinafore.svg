@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pinafore" data-family="pinafore" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: SHOULDER = none, two narrow bib straps leaving the arms
+       and the whole upper chest bare, and VOLUME = A-line flaring hard from a square bib to a
+       wide knee hem. Worn over a top.
+       Surface tools: trim (contrast bib binding and a deep hem band) and structural detail
+       (two big patch pockets, cross-over strap buttons at the bib corners, a bib seam). -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-pinafore__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A8AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #776889)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-pinafore__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A8AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #877696)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-pinafore__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E4D9)"/>
+      <stop offset="1" stop-color="var(--c3, #DCC9BC)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two shoulder straps and one bib-and-A-line-skirt panel. -->
+  <g class="sp-shadow">
+    <path d="M172 244 v-56 q0-14 9-14 q9 0 9 14 v56 z"
+          fill="url(#elder-female-onepiece-pinafore__strap)"/>
+    <path d="M210 244 v-56 q0-14 9-14 q9 0 9 14 v56 z"
+          fill="url(#elder-female-onepiece-pinafore__strap)"/>
+    <path d="M166 240 h68 q8 0 8 18 l10 66 q14 80 22 142 q-74 22 -148 0 q8-62 22-142 l10-66
+             q0-18 8-18 z"
+          fill="url(#elder-female-onepiece-pinafore__skirt)"/>
+  </g>
+
+  <!-- TRIM: binding across the top of the bib and a deep band at the A-line hem. -->
+  <path d="M164 238 h72 q6 2 6 12 h-84 q0-10 6-12 z"
+        fill="url(#elder-female-onepiece-pinafore__trim)"/>
+  <path d="M274 466 q-74 22 -148 0 l2-22 q72 22 144 0 z"
+        fill="url(#elder-female-onepiece-pinafore__trim)"/>
+
+  <!-- STRUCTURAL: two big patch pockets, the bib seam, and the cross-back strap buttons. -->
+  <path d="M148 342 h44 q4 0 4 6 v42 q0 6 -5 6 h-48 q-5 0 -4-7 l5-41 q1-6 4-6 z"
+        fill="var(--c2, #776889)" fill-opacity="0.55"/>
+  <path d="M252 342 h-44 q-4 0 -4 6 v42 q0 6 5 6 h48 q5 0 4-7 l-5-41 q-1-6 -4-6 z"
+        fill="var(--c2, #776889)" fill-opacity="0.55"/>
+  <g fill="none" stroke="var(--c3, #EADCD0)" stroke-opacity="0.7" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M150 348 h42"/>
+    <path d="M250 348 h-42"/>
+    <path d="M166 300 h68"/>
+  </g>
+  <g fill="var(--c3, #F2E4D9)">
+    <circle cx="176" cy="256" r="6"/>
+    <circle cx="224" cy="256" r="6"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M172 262 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 414 q56 16 112 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

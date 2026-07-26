@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Comfort Cardigan" data-family="cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = open front, two panels whose inner edges
+       fall from the shoulders to a wide V at y268 and then run parallel to the hem, showing
+       the layer beneath, and HEM = thigh (y374).
+       Long draped sleeves, unstructured volume.
+       Surface tools: trim (contrast bands running the whole front opening, ribbed cuffs),
+       pattern (a knit purl channel through the c2 variable, clipped to the panels) and
+       structural (two patch pockets). -->
+  <defs>
+    <linearGradient id="elder-female-top-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B49AC6)"/>
+      <stop offset="1" stop-color="var(--c2, #8F76A2)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-cardigan__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B49AC6)"/>
+      <stop offset="1" stop-color="var(--c2, #8F76A2)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-cardigan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1E7F6)"/>
+      <stop offset="1" stop-color="var(--c3, #F1E7F6)" stop-opacity="0.74"/>
+    </linearGradient>
+    <pattern id="elder-female-top-cardigan__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="15" height="15">
+      <path d="M7.5 2 v11" stroke="var(--c2, #8F76A2)" stroke-opacity="0.3"
+            stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M0 15 h15" stroke="var(--c2, #8F76A2)" stroke-opacity="0.16"
+            stroke-width="2" fill="none"/>
+    </pattern>
+    <clipPath id="elder-female-top-cardigan__clip">
+      <path d="M136 212 q0 -36 34 -36 h18 l12 92 v106 h-30 q-36 0 -36 -40 z"/>
+      <path d="M264 212 q0 -36 -34 -36 h-18 l-12 92 v106 h30 q36 0 36 -40 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long draped sleeves -->
+    <path d="M150 176 L114 194 Q108 197 108 210 L110 340 Q110 356 124 356 L138 356 Q150 356 150 342 Z"
+          fill="url(#elder-female-top-cardigan__arm)"/>
+    <path d="M250 176 L286 194 Q292 197 292 210 L290 340 Q290 356 276 356 L262 356 Q250 356 250 342 Z"
+          fill="url(#elder-female-top-cardigan__arm)"/>
+    <!-- left front panel, inner edge falling from the shoulder to the V -->
+    <path d="M136 212 q0 -36 34 -36 h18 l12 92 v106 h-30 q-36 0 -36 -40 z"
+          fill="url(#elder-female-top-cardigan__panel)"/>
+    <!-- right front panel -->
+    <path d="M264 212 q0 -36 -34 -36 h-18 l-12 92 v106 h30 q36 0 36 -40 z"
+          fill="url(#elder-female-top-cardigan__panel)"/>
+  </g>
+
+  <!-- knit purl channels across both panels -->
+  <g clip-path="url(#elder-female-top-cardigan__clip)">
+    <path d="M130 170 h144 v210 h-144 z" fill="url(#elder-female-top-cardigan__knit)"/>
+  </g>
+  <!-- contrast bands down the whole front opening -->
+  <path d="M188 176 l12 92 v106 h-11 v-105 l-12 -92 z" fill="url(#elder-female-top-cardigan__band)"/>
+  <path d="M212 176 l-12 92 v106 h11 v-105 l12 -92 z" fill="url(#elder-female-top-cardigan__band)"/>
+  <!-- two patch pockets -->
+  <path d="M146 300 h42 v32 q0 8 -8 8 h-26 q-8 0 -8 -8 z" fill="var(--c2, #8F76A2)"/>
+  <path d="M212 300 h42 v32 q0 8 -8 8 h-26 q-8 0 -8 -8 z" fill="var(--c2, #8F76A2)"/>
+  <path d="M152 309 h30 M218 309 h30" stroke="var(--c3, #F1E7F6)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <path d="M109 336 h41 v6 q0 14 -12 14 h-14 q-14 0 -14 -14 z"
+        fill="url(#elder-female-top-cardigan__band)"/>
+  <path d="M291 336 h-41 v6 q0 14 12 14 h14 q14 0 14 -14 z"
+        fill="url(#elder-female-top-cardigan__band)"/>
+  <path d="M118 340 v12 M128 341 v13 M138 341 v13 M262 341 v13 M272 341 v13 M282 340 v12"
+        stroke="var(--c2, #8F76A2)" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- shoulder highlight -->
+  <path d="M150 196 q20 10 36 12 M214 208 q20 -2 36 -12" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

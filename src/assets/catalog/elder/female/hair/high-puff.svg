@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Puff" data-family="high-puff" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns: GATHERING (every strand taken up into ONE gather above
+       the crown, so the sides of the head are bare, the ears are clear and the whole mass sits
+       above y90) and VOLUME/TEXTURE of the outline (the puff is seven unequal coily lobes
+       around a flattened core, topping out at y23 — never a smooth ball).
+       Surface tools: trim (the gather band at y88 that the puff stands on) and structural
+       detail (the exposed hairline with baby hairs at the temples and the sweep lines running
+       up into the gather, all through the hair2 variable). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-high-puff__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M168 58 C161 82 165 100 176 108 C193 116 207 116 224 108
+               C235 100 239 82 232 58 Z"
+            fill="url(#elder-female-hair-high-puff__back-g)"/>
+    </g>
+    <path d="M178 96 C188 106 212 106 222 96 C218 112 182 112 178 96 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-high-puff__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-high-puff__puff-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept-up base: the natural hairline stays exposed and the ears stay clear -->
+      <path d="M146 114 C144 88 162 70 200 70 C238 70 256 88 254 114
+               C246 98 232 90 200 90 C168 90 154 98 146 114 Z"
+            fill="url(#elder-female-hair-high-puff__front-g)"/>
+      <!-- the puff: flattened core plus seven unequal lobes -->
+      <ellipse cx="200" cy="56" rx="32" ry="26" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="174" cy="38" r="13" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="200" cy="35" r="12" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="226" cy="39" r="12" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="166" cy="62" r="14" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="234" cy="60" r="14" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="176" cy="77" r="12" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+      <circle cx="224" cy="78" r="11" fill="url(#elder-female-hair-high-puff__puff-g)"/>
+    </g>
+    <!-- gather band the puff stands on -->
+    <path d="M172 80 C184 90 216 90 228 80 C226 96 174 96 172 80 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- lobe undersides, so the coil edge reads from below -->
+    <circle cx="188" cy="79" r="9" fill="var(--hair2, #9AA3B2)"/>
+    <circle cx="212" cy="80" r="9" fill="var(--hair2, #9AA3B2)"/>
+    <circle cx="163" cy="70" r="8" fill="var(--hair2, #9AA3B2)"/>
+    <circle cx="237" cy="69" r="8" fill="var(--hair2, #9AA3B2)"/>
+    <!-- exposed hairline plus baby hairs at the temples -->
+    <path d="M152 106 C166 96 182 90 200 90 C182 94 166 100 154 112 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M248 106 C234 96 218 90 200 90 C218 94 234 100 246 112 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M150 110 C156 103 162 100 169 102" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M250 110 C244 103 238 100 231 102" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.6" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- sweep lines running up out of the hairline into the gather -->
+    <path d="M162 100 C174 90 188 84 200 82 C188 88 174 94 166 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M238 100 C226 90 212 84 200 82 C212 88 226 94 234 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M178 28 C188 22 208 22 218 28" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

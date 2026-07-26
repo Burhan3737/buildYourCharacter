@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo Shirt" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = half placket (a short two-button opening,
+       not a full front) and HEM = curved shirt tail, where the side seams stop at y328 and
+       the centre swings down to y348.
+       Short set-in sleeves ending y252, straight body.
+       Surface tools: trim (flat knit collar with two points lying on the chest, knit cuff
+       bands) and pattern (a scattered knit dot through the c3 variable, clipped to the body). -->
+  <defs>
+    <linearGradient id="elder-female-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4818A)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5F69)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-polo__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4818A)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5F69)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-polo__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9E5F69)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5F69)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="elder-female-top-polo__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #F6E9E4)" fill-opacity="0.65"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #F6E9E4)" fill-opacity="0.65"/>
+    </pattern>
+    <clipPath id="elder-female-top-polo__clip">
+      <path d="M148 206 q0 -30 30 -30 h44 q30 0 30 30 v122 q-26 20 -52 20 q-26 0 -52 -20 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <path d="M150 178 L120 190 Q114 193 114 204 L118 244 Q120 254 132 254 L142 254 Q150 254 150 244 Z"
+          fill="url(#elder-female-top-polo__arm)"/>
+    <path d="M250 178 L280 190 Q286 193 286 204 L282 244 Q280 254 268 254 L258 254 Q250 254 250 244 Z"
+          fill="url(#elder-female-top-polo__arm)"/>
+    <!-- straight body with a curved shirt tail: sides end y328, the centre dips to y348 -->
+    <path d="M148 206 q0 -30 30 -30 h44 q30 0 30 30 v122 q-26 20 -52 20 q-26 0 -52 -20 z"
+          fill="url(#elder-female-top-polo__body)"/>
+  </g>
+
+  <!-- scattered knit dot across the body -->
+  <g clip-path="url(#elder-female-top-polo__clip)">
+    <path d="M144 172 h112 v180 h-112 z" fill="url(#elder-female-top-polo__dot)"/>
+  </g>
+  <!-- half placket, two buttons -->
+  <path d="M191 186 h18 v52 h-18 z" fill="var(--c2, #9E5F69)"/>
+  <path d="M200 190 v46" stroke="var(--c3, #F6E9E4)" stroke-opacity="0.55" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="202" r="4" fill="var(--c3, #F6E9E4)"/>
+  <circle cx="200" cy="226" r="4" fill="var(--c3, #F6E9E4)"/>
+  <!-- flat knit collar: a back neck band and two points lying on the chest -->
+  <path d="M176 178 q24 -12 48 0 v10 q-24 -10 -48 0 z" fill="url(#elder-female-top-polo__collar)"/>
+  <path d="M174 178 H200 v10 L188 206 Q176 199 172 188 Z" fill="url(#elder-female-top-polo__collar)"/>
+  <path d="M226 178 H200 v10 L212 206 Q224 199 228 188 Z" fill="url(#elder-female-top-polo__collar)"/>
+  <path d="M180 186 L190 200 M220 186 L210 200" stroke="var(--c3, #F6E9E4)" stroke-opacity="0.45"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- knit cuff bands at the sleeve ends -->
+  <path d="M116 240 h34 v6 q0 8 -8 8 h-10 q-12 0 -14 -9 z" fill="var(--c3, #F6E9E4)" opacity="0.85"/>
+  <path d="M284 240 h-34 v6 q0 8 8 8 h10 q12 0 14 -9 z" fill="var(--c3, #F6E9E4)" opacity="0.85"/>
+  <path d="M124 243 v9 M134 244 v9 M266 244 v9 M276 243 v9"
+        stroke="var(--c2, #9E5F69)" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- side seams and the curved tail edge -->
+  <path d="M152 328 q48 22 96 0" stroke="var(--c2, #9E5F69)" stroke-opacity="0.35"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- chest highlight -->
+  <path d="M156 210 q18 10 32 10 M212 220 q18 0 32 -10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -2,61 +2,71 @@
      data-name="Curls" data-family="curls" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
   <g data-part="back">
-    <defs>
-      <linearGradient id="elder-female-hair-curls__back-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <ellipse cx="200" cy="146" rx="84" ry="78" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="130" cy="176" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="270" cy="176" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="144" cy="210" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="256" cy="210" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="176" cy="220" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="224" cy="220" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
-      <circle cx="200" cy="202" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-curls__back-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <ellipse cx="200" cy="146" rx="84" ry="78" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="130" cy="176" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="270" cy="176" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="144" cy="210" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="256" cy="210" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="176" cy="220" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="224" cy="220" r="28" fill="url(#elder-female-hair-curls__back-g)"/>
+        <circle cx="200" cy="202" r="30" fill="url(#elder-female-hair-curls__back-g)"/>
+      </g>
+      <circle cx="120" cy="196" r="16" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="280" cy="196" r="16" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="160" cy="238" r="15" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="240" cy="238" r="15" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="200" cy="232" r="14" fill="var(--hair2, #9AA3B2)"/>
+      <path d="M148 88 C172 70 228 70 252 88" stroke="#FFFFFF" stroke-opacity="0.24"
+            stroke-width="10" fill="none" stroke-linecap="round"/>
     </g>
-    <circle cx="120" cy="196" r="16" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="280" cy="196" r="16" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="160" cy="238" r="15" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="240" cy="238" r="15" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="200" cy="232" r="14" fill="var(--hair2, #9AA3B2)"/>
-    <path d="M148 88 C172 70 228 70 252 88" stroke="#FFFFFF" stroke-opacity="0.24"
-          stroke-width="10" fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
-    <defs>
-      <linearGradient id="elder-female-hair-curls__front-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <path d="M132 104 C130 42 162 16 200 16 C238 16 270 42 268 104 C252 82 232 74 200 74
-               C168 74 148 82 132 104 Z"
-            fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="200" cy="24" r="24" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="168" cy="32" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="232" cy="32" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="146" cy="60" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="254" cy="60" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="138" cy="92" r="20" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="262" cy="92" r="20" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="140" cy="120" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="260" cy="120" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="176" cy="60" r="17" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="224" cy="60" r="17" fill="url(#elder-female-hair-curls__front-g)"/>
-      <circle cx="200" cy="54" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-curls__front-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <path d="M132 104 C130 42 162 16 200 16 C238 16 270 42 268 104 C252 82 232 74 200 74
+                 C168 74 148 82 132 104 Z"
+              fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="200" cy="24" r="24" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="168" cy="32" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="232" cy="32" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="146" cy="60" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="254" cy="60" r="22" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="138" cy="92" r="20" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="262" cy="92" r="20" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="140" cy="120" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="260" cy="120" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="176" cy="60" r="17" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="224" cy="60" r="17" fill="url(#elder-female-hair-curls__front-g)"/>
+        <circle cx="200" cy="54" r="18" fill="url(#elder-female-hair-curls__front-g)"/>
+      </g>
+      <circle cx="134" cy="116" r="14" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="266" cy="116" r="14" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="150" cy="138" r="12" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="250" cy="138" r="12" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="188" cy="72" r="10" fill="var(--hair2, #9AA3B2)"/>
+      <circle cx="212" cy="72" r="10" fill="var(--hair2, #9AA3B2)"/>
+      <path d="M162 28 C180 14 216 12 236 24" stroke="#FFFFFF" stroke-opacity="0.30"
+            stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
-    <circle cx="134" cy="116" r="14" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="266" cy="116" r="14" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="150" cy="138" r="12" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="250" cy="138" r="12" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="188" cy="72" r="10" fill="var(--hair2, #9AA3B2)"/>
-    <circle cx="212" cy="72" r="10" fill="var(--hair2, #9AA3B2)"/>
-    <path d="M162 28 C180 14 216 12 236 24" stroke="#FFFFFF" stroke-opacity="0.30"
-          stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

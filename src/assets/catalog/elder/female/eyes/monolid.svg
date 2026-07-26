@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- Smooth single-fold lid: no crease line anywhere, a wide flattened aperture and one
+       even-weight lash line. The lid plane is a soft value shelf, not a drawn fold. -->
+  <defs>
+    <linearGradient id="elder-female-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-female-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="elder-female-eyes-monolid__clip-l">
+      <path d="M158 134 Q160 124 178 123 Q196 124 198 134 Q196 144 178 145 Q160 144 158 134 Z"/>
+    </clipPath>
+    <clipPath id="elder-female-eyes-monolid__clip-r">
+      <path d="M242 134 Q240 124 222 123 Q204 124 202 134 Q204 144 222 145 Q240 144 242 134 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide flattened aperture, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <path d="M158 134 Q160 124 178 123 Q196 124 198 134 Q196 144 178 145 Q160 144 158 134 Z"
+          fill="url(#elder-female-eyes-monolid__sclera)"/>
+    <path d="M242 134 Q240 124 222 123 Q204 124 202 134 Q204 144 222 145 Q240 144 242 134 Z"
+          fill="url(#elder-female-eyes-monolid__sclera)"/>
+  </g>
+
+  <g clip-path="url(#elder-female-eyes-monolid__clip-l)">
+    <circle cx="178" cy="134" r="9" fill="#3B2A22"/>
+    <circle cx="178" cy="134" r="9" fill="url(#elder-female-eyes-monolid__iris)"/>
+    <circle cx="178" cy="134" r="4.1" fill="#3B2A22"/>
+    <circle cx="174.6" cy="130.6" r="2.7" fill="#FFFFFF"/>
+    <circle cx="181.4" cy="138" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g clip-path="url(#elder-female-eyes-monolid__clip-r)">
+    <circle cx="222" cy="134" r="9" fill="#3B2A22"/>
+    <circle cx="222" cy="134" r="9" fill="url(#elder-female-eyes-monolid__iris)"/>
+    <circle cx="222" cy="134" r="4.1" fill="#3B2A22"/>
+    <circle cx="218.6" cy="130.6" r="2.7" fill="#FFFFFF"/>
+    <circle cx="225.4" cy="138" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- the defining feature: a wide flat lash line of even weight, running the full width -->
+  <path d="M158.5 131 Q178 122 197.5 131" stroke="#3B2A22" stroke-opacity="0.92"
+        stroke-width="4.6" fill="none" stroke-linecap="round"/>
+  <path d="M241.5 131 Q222 122 202.5 131" stroke="#3B2A22" stroke-opacity="0.92"
+        stroke-width="4.6" fill="none" stroke-linecap="round"/>
+
+  <!-- smooth lid plane: a value shelf above the lash line, deliberately with no crease -->
+  <path d="M159 122 Q178 115 197 122 Q178 119 159 122 Z" fill="var(--skin2, #E7B892)" opacity="0.4"/>
+  <path d="M241 122 Q222 115 203 122 Q222 119 241 122 Z" fill="var(--skin2, #E7B892)" opacity="0.4"/>
+
+  <!-- lower lash hint -->
+  <path d="M164 143.5 Q178 146.5 192 143.5" stroke="#3B2A22" stroke-opacity="0.26"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M236 143.5 Q222 146.5 208 143.5" stroke="#3B2A22" stroke-opacity="0.26"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

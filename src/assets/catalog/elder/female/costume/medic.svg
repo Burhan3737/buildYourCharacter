@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Medic" data-family="medic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: SHOULDER = short set-in sleeves ending at the elbow,
+       and CLOSURE = a deep V notch cut straight out of the neckline of a pull-on tunic with no
+       placket at all. Hem sits at the hip with two side slits; volume is straight. Surface
+       tools: pattern (scattered dot print over the tunic), trim (contrast V binding, sleeve
+       bands, drawstring waist) and structural (chest patch pocket, lanyard with a blank card).
+       The card carries no lettering and no symbol. Nothing is drawn above y174. -->
+  <defs>
+    <linearGradient id="elder-female-costume-medic__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55949C)"/>
+      <stop offset="1" stop-color="var(--c1, #3A6E76)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-medic__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A9BA3)"/>
+      <stop offset="1" stop-color="var(--c1, #427C84)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-medic__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E8B93)"/>
+      <stop offset="1" stop-color="var(--c1, #32656D)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-medic__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="4" cy="5" r="2.4" fill="var(--c3, #DCE9E4)" fill-opacity="0.45"/>
+      <circle cx="13" cy="13" r="1.8" fill="var(--c3, #DCE9E4)" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="elder-female-costume-medic__tunicclip">
+      <path d="M150 190 q6-16 26-16 l24 26 l24-26 q20 0 26 16 v14 l6 8 v130
+               q-56 14 -112 0 v-130 l6-8 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: drawstring trousers, soft clogs, two short sleeves and the V-neck tunic -->
+  <g class="sp-shadow">
+    <path d="M158 322 h44 v222 q-24 8 -44 0 z"
+          fill="url(#elder-female-costume-medic__trouser)"/>
+    <path d="M242 322 h-44 v222 q24 8 44 0 z"
+          fill="url(#elder-female-costume-medic__trouser)"/>
+    <path d="M154 534 h50 v24 q0 12 -14 12 h-24 q-12 0 -12-12 z"
+          fill="url(#elder-female-costume-medic__trouser)"/>
+    <path d="M246 534 h-50 v24 q0 12 14 12 h24 q12 0 12-12 z"
+          fill="url(#elder-female-costume-medic__trouser)"/>
+    <path d="M112 194 q2-20 20-20 q18 0 20 20 v52 q-20 8 -40 0 z"
+          fill="url(#elder-female-costume-medic__sleeve)"/>
+    <path d="M288 194 q-2-20 -20-20 q-18 0 -20 20 v52 q20 8 40 0 z"
+          fill="url(#elder-female-costume-medic__sleeve)"/>
+    <path d="M150 190 q6-16 26-16 l24 26 l24-26 q20 0 26 16 v14 l6 8 v130
+             q-56 14 -112 0 v-130 l6-8 z"
+          fill="url(#elder-female-costume-medic__tunic)"/>
+  </g>
+
+  <!-- PATTERN: scattered dot print over the tunic -->
+  <g clip-path="url(#elder-female-costume-medic__tunicclip)">
+    <rect x="140" y="174" width="120" height="188" fill="url(#elder-female-costume-medic__dots)"/>
+  </g>
+
+  <!-- TRIM: contrast binding following the V neckline -->
+  <path d="M176 174 l24 26 l24-26 l9 6 l-33 36 l-33-36 z" fill="var(--c2, #29555C)"/>
+  <!-- TRIM: sleeve bands and a hip-hem band -->
+  <g fill="var(--c2, #29555C)">
+    <rect x="112" y="236" width="40" height="12" rx="6"/>
+    <rect x="248" y="236" width="40" height="12" rx="6"/>
+    <rect x="152" y="326" width="96" height="14" rx="7"/>
+  </g>
+
+  <!-- TRIM: drawstring with two aglets at the trouser waist -->
+  <path d="M186 344 q-10 20 -14 34 M214 344 q10 20 14 34" stroke="var(--c3, #DCE9E4)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="171" cy="381" r="4.5" fill="var(--c3, #DCE9E4)"/>
+  <circle cx="229" cy="381" r="4.5" fill="var(--c3, #DCE9E4)"/>
+
+  <!-- STRUCTURAL: side slits at the tunic hem -->
+  <g fill="var(--c2, #29555C)" fill-opacity="0.55">
+    <rect x="149" y="316" width="6" height="34" rx="3"/>
+    <rect x="245" y="316" width="6" height="34" rx="3"/>
+  </g>
+
+  <!-- STRUCTURAL: chest patch pocket -->
+  <path d="M158 238 h44 q4 0 4 5 v34 q0 5 -5 5 h-38 q-5 0 -5-5 v-34 q0-5 4-5 z"
+        fill="var(--c2, #29555C)" fill-opacity="0.75"/>
+  <path d="M158 250 h48" stroke="var(--c3, #DCE9E4)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: lanyard cord and a plain blank card -->
+  <path d="M182 178 q-6 44 6 76 M218 178 q6 44 -6 76" stroke="var(--c2, #29555C)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="186" y="252" width="28" height="40" rx="6" fill="var(--c3, #DCE9E4)"/>
+  <rect x="192" y="258" width="16" height="6" rx="3" fill="var(--c2, #29555C)" fill-opacity="0.3"/>
+
+  <!-- house highlights -->
+  <path d="M156 206 q14 10 30 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 206 q-14 10 -30 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M120 200 q-2 22 0 40" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

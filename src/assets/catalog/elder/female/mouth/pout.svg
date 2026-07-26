@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pout" data-family="pout" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- Small pushed-forward mouth: a narrow upper lip with a soft cupid's bow over a distinctly
+       fuller, rounder lower lip, and a shadow beneath it so the push reads in value. -->
+  <defs>
+    <linearGradient id="elder-female-mouth-pout__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C9847B)" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="var(--lip1, #C9847B)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="elder-female-mouth-pout__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--lip1, #C9847B)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--lip1, #C9847B)" stop-opacity="0.76"/>
+    </linearGradient>
+    <linearGradient id="elder-female-mouth-pout__vol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow upper lip with a soft cupid's bow -->
+    <path d="M185 156 C188 148.5, 195 146.5, 200 149.5 C205 146.5, 212 148.5, 215 156
+             C208.5 154, 191.5 154, 185 156 Z"
+          fill="url(#elder-female-mouth-pout__upper)"/>
+    <!-- full lower lip, pushed forward and rounded -->
+    <path d="M185 156 C191.5 154, 208.5 154, 215 156
+             C215 167.5, 208.5 172.5, 200 172.5 C191.5 172.5, 185 167.5, 185 156 Z"
+          fill="url(#elder-female-mouth-pout__lower)"/>
+    <path d="M185 156 C191.5 154, 208.5 154, 215 156
+             C215 167.5, 208.5 172.5, 200 172.5 C191.5 172.5, 185 167.5, 185 156 Z"
+          fill="url(#elder-female-mouth-pout__vol)"/>
+  </g>
+
+  <!-- lip line -->
+  <path d="M186 155.6 Q200 158 214 155.6" stroke="#8E3A3A" stroke-opacity="0.55"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- highlight on the fullest part of the lower lip -->
+  <path d="M194 162 Q200 160 206 162" stroke="#FFFFFF" stroke-opacity="0.36"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- soft shadow under the pushed-forward lip -->
+  <path d="M192 175 Q200 177.5 208 175" stroke="#3B2A22" stroke-opacity="0.16"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,35 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Stripes" data-family="stripes" data-slot="top"
+     data-name="Breton Top" data-family="stripes" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = long set-in sleeves running
+       the full arm to y328, and NECKLINE within the closure axis = a boat neck,
+       wide and shallow, cut straight across from x168 to x232 and dipping only
+       to y184, so the collarbone width is open while the garment stays closed.
+       Slim straight body from x142 to x258, hem at the hip (y336). The banding
+       is the surface, not the identity.
+       Surface tools: pattern (an even 18px breton band, clipped to the body and
+       carried on across the sleeves) and trim (a contrast neckline bind and
+       contrast cuff bands). -->
   <defs>
     <linearGradient id="elder-female-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DB8B7E)"/>
+      <stop offset="0" stop-color="var(--c1, #EFE9DC)"/>
+      <stop offset="1" stop-color="var(--c3, #CFC5B0)"/>
     </linearGradient>
     <linearGradient id="elder-female-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #DB8B7E)"/>
+      <stop offset="0" stop-color="var(--c1, #EFE9DC)"/>
+      <stop offset="1" stop-color="var(--c3, #CFC5B0)"/>
     </linearGradient>
+    <pattern id="elder-female-top-stripes__breton"
+             patternUnits="userSpaceOnUse" x="0" y="188" width="18" height="18">
+      <path d="M0 0 h18 v9 h-18 z" fill="var(--c2, #35597E)"/>
+    </pattern>
+    <clipPath id="elder-female-top-stripes__clip">
+      <path d="M142 198 q0-22 22-22 h4 q32 8 64 0 h4 q22 0 22 22 v122 q0 16 -16 16 h-84 q-16 0 -16-16 z"/>
+      <path d="M150 192 q-2-18 -20-18 q-18 0 -18 20 v120 q0 14 14 14 h12 q14 0 13-14 z"/>
+      <path d="M250 192 q2-18 20-18 q18 0 18 20 v120 q0 14 -14 14 h-12 q-14 0 -13-14 z"/>
+    </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <rect x="112" y="178" width="36" height="120" rx="18" fill="url(#elder-female-top-stripes__sleeve)"/>
-    <rect x="252" y="178" width="36" height="120" rx="18" fill="url(#elder-female-top-stripes__sleeve)"/>
-    <rect x="140" y="176" width="120" height="168" rx="32" fill="url(#elder-female-top-stripes__body)"/>
+    <!-- long set-in sleeves -->
+    <path d="M150 192 q-2-18 -20-18 q-18 0 -18 20 v120 q0 14 14 14 h12 q14 0 13-14 z"
+          fill="url(#elder-female-top-stripes__sleeve)"/>
+    <path d="M250 192 q2-18 20-18 q18 0 18 20 v120 q0 14 -14 14 h-12 q-14 0 -13-14 z"
+          fill="url(#elder-female-top-stripes__sleeve)"/>
+    <!-- slim straight body with the wide shallow boat neck cut into the outline -->
+    <path d="M142 198 q0-22 22-22 h4 q32 8 64 0 h4 q22 0 22 22 v122 q0 16 -16 16 h-84 q-16 0 -16-16 z"
+          fill="url(#elder-female-top-stripes__body)"/>
   </g>
 
-  <!-- breton stripes, a soft cardigan knit -->
-  <rect x="142" y="212" width="116" height="12" rx="6" fill="var(--c3, #F7C873)"/>
-  <rect x="142" y="240" width="116" height="12" rx="6" fill="var(--c3, #F7C873)"/>
-  <rect x="142" y="268" width="116" height="12" rx="6" fill="var(--c3, #F7C873)"/>
-  <rect x="142" y="296" width="116" height="12" rx="6" fill="var(--c3, #F7C873)"/>
-  <rect x="114" y="216" width="32" height="9" rx="4.5" fill="var(--c3, #F7C873)"/>
-  <rect x="114" y="244" width="32" height="9" rx="4.5" fill="var(--c3, #F7C873)"/>
-  <rect x="254" y="216" width="32" height="9" rx="4.5" fill="var(--c3, #F7C873)"/>
-  <rect x="254" y="244" width="32" height="9" rx="4.5" fill="var(--c3, #F7C873)"/>
-
-  <path d="M182 178 Q200 190 218 178" fill="none" stroke="var(--c2, #DB8B7E)" stroke-width="4"
-        stroke-linecap="round" opacity="0.55"/>
-  <path d="M154 198 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <!-- breton banding, clipped to the body and both sleeves -->
+  <g clip-path="url(#elder-female-top-stripes__clip)">
+    <path d="M106 170 h188 v170 h-188 z" fill="url(#elder-female-top-stripes__breton)"/>
+  </g>
+  <!-- contrast bind following the boat neckline -->
+  <path d="M167 176 q33 9 66 0 l2 9 q-35 10 -70 0 z" fill="var(--c3, #CFC5B0)"/>
+  <!-- contrast cuff bands -->
+  <path d="M112 312 h38 v6 q0 10 -12 10 h-14 q-12 0 -12-10 z" fill="var(--c3, #CFC5B0)"/>
+  <path d="M250 312 h38 v6 q0 10 -12 10 h-14 q-12 0 -12-10 z" fill="var(--c3, #CFC5B0)"/>
+  <!-- shoulder seams, the set-in join the raglan jersey does not have -->
+  <path d="M152 182 q-3 14 -2 26 M248 182 q3 14 2 26" stroke="var(--c2, #35597E)"
+        stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 202 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,30 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tee" data-family="tee" data-slot="top"
      data-layer="top" data-colors="c1,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = a genuinely straight hip hem, cut
+       flat across at y340 with no band and no curve, and VOLUME = straight with
+       a slight taper — the side seams ease in to x146 and x254 at the waist and
+       come back out for the hip.
+       Short set-in sleeves, tapering from the shoulder to y250. Closed crew neck.
+       Surface tools: trim (a contrast crew-neck bind and a hem stitch) and
+       structural (visible shoulder seams), with a chest highlight arc. -->
   <defs>
     <linearGradient id="elder-female-top-tee__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #57A692)"/>
+      <stop offset="1" stop-color="var(--c2, #4A8E80)"/>
     </linearGradient>
     <linearGradient id="elder-female-top-tee__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #57A692)"/>
+      <stop offset="1" stop-color="var(--c2, #4A8E80)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <!-- short sleeves, overlapping the bare-arm anchors (x116-144 / x256-284) by 4px -->
-    <rect x="112" y="178" width="36" height="84" rx="17" fill="url(#elder-female-top-tee__sleeve)"/>
-    <rect x="252" y="178" width="36" height="84" rx="17" fill="url(#elder-female-top-tee__sleeve)"/>
-    <!-- relaxed crew body, overlapping the torso (x144-256 y180-336) by 4px on the sides,
-         4px at the shoulder and 8px past the torso bottom for a clean tuck -->
-    <rect x="140" y="176" width="120" height="168" rx="32" fill="url(#elder-female-top-tee__body)"/>
+    <!-- short set-in sleeves, wide at the shoulder and tapered at the opening -->
+    <path d="M152 196 q0-20 -20-20 h-8 q-13 0 -13 20 l3 38 q1 14 13 16 h14 q12-2 12-16 z"
+          fill="url(#elder-female-top-tee__sleeve)"/>
+    <path d="M248 196 q0-20 20-20 h8 q13 0 13 20 l-3 38 q-1 14 -13 16 h-14 q-12-2 -12-16 z"
+          fill="url(#elder-female-top-tee__sleeve)"/>
+    <!-- body: shaped side seams easing in at the waist, then a flat straight hem -->
+    <path d="M142 206 q0-30 24-30 h68 q24 0 24 30 q-2 34 -4 56 q-2 26 0 44 v34 h-108 v-34 q2-18 0-44 q-2-22 -4-56 z"
+          fill="url(#elder-female-top-tee__body)"/>
   </g>
 
-  <!-- crew neckline -->
-  <path d="M182 178 Q200 190 218 178" fill="none" stroke="var(--c2, #57A692)" stroke-width="4"
-        stroke-linecap="round" opacity="0.55"/>
+  <!-- contrast crew-neck bind -->
+  <path d="M177 176 q23 17 46 0 l5 9 q-28 20 -56 0 z" fill="var(--c2, #4A8E80)"/>
+  <!-- shoulder seams -->
+  <path d="M154 182 q-3 12 -2 24 M246 182 q3 12 2 24" stroke="var(--c2, #4A8E80)"
+        stroke-opacity="0.65" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- hem stitch, keeping the straight hem readable at thumbnail size -->
+  <path d="M149 331 h102" stroke="var(--c2, #4A8E80)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
   <!-- chest highlight -->
-  <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M156 202 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

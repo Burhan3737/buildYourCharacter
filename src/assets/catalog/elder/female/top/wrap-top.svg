@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = crossover wrap (two panels
+       cross diagonally, each running from one shoulder to the opposite hip, so
+       the deep V down to y268 is cut into the outline rather than painted on)
+       and SHOULDER = three-quarter sleeves, stopping short on the forearm at
+       y292.
+       Hem at the hip (y342), fitted and softly draped.
+       Surface tools: trim (contrast binding down both crossing edges) and
+       structural (tie belt with a knot and two hanging ends on one side, plus
+       gather folds radiating from the tie). -->
+  <defs>
+    <linearGradient id="elder-female-top-wrap-top__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08AA0)"/>
+      <stop offset="1" stop-color="var(--c2, #97627A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-wrap-top__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08AA0)"/>
+      <stop offset="1" stop-color="var(--c2, #97627A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-wrap-top__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08AA0)"/>
+      <stop offset="1" stop-color="var(--c2, #97627A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-wrap-top__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6E6EC)"/>
+      <stop offset="1" stop-color="var(--c3, #F6E6EC)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves, ending mid-forearm -->
+    <path d="M150 190 q-2-16 -18-16 q-20 0 -20 20 v82 q0 16 16 16 h10 q14 0 13-16 z"
+          fill="url(#elder-female-top-wrap-top__arm)"/>
+    <path d="M250 190 q2-16 18-16 q20 0 20 20 v82 q0 16 -16 16 h-10 q-14 0 -13-16 z"
+          fill="url(#elder-female-top-wrap-top__arm)"/>
+    <!-- under panel: left shoulder carried across to the right hip -->
+    <path d="M140 210 q0-36 28-36 h10 L258 262 v56 q0 24 -26 24 h-64 q-28 0 -28-24 z"
+          fill="url(#elder-female-top-wrap-top__under)"/>
+    <!-- over panel: right shoulder carried across to the left hip, laid on top -->
+    <path d="M260 210 q0-36 -28-36 h-10 L142 268 v50 q0 24 26 24 h64 q28 0 28-24 z"
+          fill="url(#elder-female-top-wrap-top__over)"/>
+  </g>
+
+  <!-- contrast binding. The over panel's edge runs the whole crossover; the
+       under panel's edge shows only above the crossing point at (201,199), so
+       the front reads as a wrap V and not a symmetric harness. -->
+  <path d="M178 174 L201 199 L190 209 L167 184 z" fill="url(#elder-female-top-wrap-top__bind)"/>
+  <path d="M222 174 L142 268 L153 277 L233 183 z" fill="url(#elder-female-top-wrap-top__bind)"/>
+  <!-- gather folds radiating from the tie -->
+  <path d="M232 262 q-30 16 -50 30 M244 282 q-32 8 -52 18" stroke="var(--c2, #97627A)"
+        stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 252 q16 24 22 40 M148 274 q18 16 26 26" stroke="var(--c2, #97627A)"
+        stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- tie belt drawn in at the waist -->
+  <path d="M142 294 q58 18 116 0 v18 q-58 18 -116 0 z" fill="var(--c2, #97627A)"/>
+  <!-- knot, sitting off centre where the wrap ties -->
+  <path d="M160 292 h26 q7 0 7 9 v13 q0 9 -7 9 h-26 q-7 0-7-9 v-13 q0-9 7-9 z"
+        fill="url(#elder-female-top-wrap-top__bind)"/>
+  <!-- two hanging ends on that same side -->
+  <path d="M164 322 q-10 20 -18 30" stroke="var(--c2, #97627A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 322 q-5 22 -8 32" stroke="var(--c2, #97627A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 190 q18 12 32 18 M248 190 q-18 12 -32 18" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

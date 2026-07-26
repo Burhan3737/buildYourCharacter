@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = structured square (the front
+       panels turn a crisp, extended corner at x136 and x264 on the y174 shoulder
+       line instead of a soft dome) and CLOSURE = open front, two separate
+       tailored panels with a widening gap that shows the shell beneath.
+       Long sleeves to y330, hem past the hip at y362, straight volume.
+       Surface tools: panel blocking (notched lapels folded back with a contrast
+       facing, plus the shell panel) and structural (two welt pockets at y296, a
+       single waist button, sleeve cuff buttons). -->
+  <defs>
+    <linearGradient id="elder-female-top-blazer__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8AA6)"/>
+      <stop offset="1" stop-color="var(--c2, #55617A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-blazer__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8AA6)"/>
+      <stop offset="1" stop-color="var(--c2, #55617A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-blazer__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EADDC6)"/>
+      <stop offset="1" stop-color="var(--c3, #EADDC6)" stop-opacity="0.74"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-blazer__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55617A)"/>
+      <stop offset="1" stop-color="var(--c1, #7C8AA6)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the shell showing between the open fronts -->
+    <path d="M180 176 q0-10 10-10 h20 q10 0 10 10 v170 q0 14 -12 14 h-16 q-12 0-12-14 z"
+          fill="url(#elder-female-top-blazer__shell)"/>
+    <!-- long sleeves, covering the bare arms x116-144 and x256-284 -->
+    <path d="M150 186 q0-14 -14-14 h-12 q-14 0 -14 16 v128 q0 14 14 14 h14 q14 0 13-14 z"
+          fill="url(#elder-female-top-blazer__arm)"/>
+    <path d="M250 186 q0-14 14-14 h12 q14 0 14 16 v128 q0 14 -14 14 h-14 q-14 0 -13-14 z"
+          fill="url(#elder-female-top-blazer__arm)"/>
+    <!-- left front panel: squared shoulder corner, hem past the hip -->
+    <path d="M136 186 q0-12 12-12 h50 l8 66 l-22 122 h-14 q-42 0 -42-40 z"
+          fill="url(#elder-female-top-blazer__panel)"/>
+    <!-- right front panel -->
+    <path d="M264 186 q0-12 -12-12 h-50 l-8 66 l22 122 h14 q42 0 42-40 z"
+          fill="url(#elder-female-top-blazer__panel)"/>
+  </g>
+
+  <!-- notched lapels folded back off each front, with a contrast facing edge -->
+  <path d="M194 178 L207 244 L179 233 L171 199 z" fill="url(#elder-female-top-blazer__lapel)"/>
+  <path d="M193 176 L172 195 L170 179 L188 174 z" fill="url(#elder-female-top-blazer__lapel)"/>
+  <path d="M206 178 L193 244 L221 233 L229 199 z" fill="url(#elder-female-top-blazer__lapel)"/>
+  <path d="M207 176 L228 195 L230 179 L212 174 z" fill="url(#elder-female-top-blazer__lapel)"/>
+  <path d="M192 182 L202 238 M208 182 L198 238" stroke="var(--c3, #EADDC6)" stroke-opacity="0.42"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- welt pockets -->
+  <path d="M148 296 h40 v9 h-40 z" fill="var(--c3, #EADDC6)"/>
+  <path d="M212 296 h40 v9 h-40 z" fill="var(--c3, #EADDC6)"/>
+  <!-- single waist button -->
+  <circle cx="194" cy="268" r="5" fill="var(--c3, #EADDC6)"/>
+  <!-- sleeve cuff buttons -->
+  <circle cx="127" cy="310" r="3.2" fill="var(--c3, #EADDC6)"/>
+  <circle cx="127" cy="320" r="3.2" fill="var(--c3, #EADDC6)"/>
+  <circle cx="273" cy="310" r="3.2" fill="var(--c3, #EADDC6)"/>
+  <circle cx="273" cy="320" r="3.2" fill="var(--c3, #EADDC6)"/>
+  <!-- structured shoulder seams -->
+  <path d="M152 178 q-3 24 -1 48 M248 178 q3 24 1 48" stroke="var(--c2, #55617A)"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M144 184 q16 8 30 12 M226 196 q16 -4 30 -12" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

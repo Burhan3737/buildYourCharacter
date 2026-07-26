@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: HEM TREATMENT = a short vertical side split cut into
+       each hem, and RISE = elasticated and gathered, so the waist reads as a rippled band
+       rather than a flat structured one. Mid-thigh, relaxed straight leg.
+       Surface tools: pattern (a small wave motif through the c3 variable) and trim (a
+       contrast hem binding and the gathered waist band). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-swim-trunks__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #367481)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E9AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #367481)"/>
+    </linearGradient>
+    <pattern id="elder-female-bottom-swim-trunks__waves" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="18">
+      <path d="M0 12 q5.5 -7 11 0 q5.5 7 11 0" stroke="var(--c3, #F6E2B8)" stroke-opacity="0.6"
+            stroke-width="3" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-female-bottom-swim-trunks__clip">
+      <path d="M152 372 h48 v78 q0 12 -8 12 h-32 q-8 0-8-12 z"/>
+      <path d="M248 372 h-48 v78 q0 12 8 12 h32 q8 0 8-12 z"/>
+      <path d="M148 322 h104 q6 0 6 8 v22 q0 26 -24 26 h-68 q-24 0-24-26 v-22 q0-8 6-8 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M148 322 h104 q6 0 6 8 v22 q0 26 -24 26 h-68 q-24 0-24-26 v-22 q0-8 6-8 z"
+          fill="url(#elder-female-bottom-swim-trunks__hip)"/>
+    <!-- left leg, relaxed straight to mid-thigh -->
+    <path d="M152 372 h48 v78 q0 12 -8 12 h-32 q-8 0-8-12 z"
+          fill="url(#elder-female-bottom-swim-trunks__leg)"/>
+    <!-- right leg -->
+    <path d="M248 372 h-48 v78 q0 12 8 12 h32 q8 0 8-12 z"
+          fill="url(#elder-female-bottom-swim-trunks__leg)"/>
+  </g>
+
+  <!-- wave motif over the whole garment -->
+  <g clip-path="url(#elder-female-bottom-swim-trunks__clip)">
+    <path d="M144 320 h112 v148 h-112 z" fill="url(#elder-female-bottom-swim-trunks__waves)"/>
+  </g>
+
+  <!-- gathered elasticated waist: a band plus radiating gather strokes -->
+  <path d="M148 320 h104 v16 h-104 z" fill="var(--c2, #367481)"/>
+  <path d="M154 337 v9 M164 336 v10 M174 337 v9 M184 336 v10 M194 337 v9 M206 337 v9
+           M216 336 v10 M226 337 v9 M236 336 v10 M246 337 v9"
+        stroke="var(--c2, #367481)" stroke-opacity="0.55" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 328 q18 -6 36 0" stroke="var(--c3, #F6E2B8)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- side splits -->
+  <path d="M154 434 v26 M246 434 v26" stroke="var(--c2, #367481)" stroke-opacity="0.6"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- contrast hem binding -->
+  <path d="M152 454 h48 v9 h-48 z M200 454 h48 v9 h-48 z" fill="var(--c3, #F6E2B8)" opacity="0.9"/>
+  <path d="M164 356 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

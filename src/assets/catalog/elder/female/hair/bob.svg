@@ -2,43 +2,53 @@
      data-name="Bob Cut" data-family="bob" data-slot="hair"
      data-layer="hair" data-colors="hair1,hair2" data-hides="">
   <g data-part="back">
-    <defs>
-      <linearGradient id="elder-female-hair-bob__back-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <path d="M141 52 C133 96 134 140 140 168 C146 178 254 178 260 168 C266 140 267 96 259 52 C240 30 160 30 141 52 Z"
-            fill="url(#elder-female-hair-bob__back-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-bob__back-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <path d="M141 52 C133 96 134 140 140 168 C146 178 254 178 260 168 C266 140 267 96 259 52 C240 30 160 30 141 52 Z"
+              fill="url(#elder-female-hair-bob__back-g)"/>
+      </g>
+      <path d="M144 146 C172 160 228 160 256 146 C252 172 148 172 144 146 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M154 56 C176 42 224 42 246 56" stroke="#FFFFFF" stroke-opacity="0.26"
+            stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
-    <path d="M144 146 C172 160 228 160 256 146 C252 172 148 172 144 146 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M154 56 C176 42 224 42 246 56" stroke="#FFFFFF" stroke-opacity="0.26"
-          stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
   <g data-part="front">
-    <defs>
-      <linearGradient id="elder-female-hair-bob__front-g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
-        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
-      </linearGradient>
-    </defs>
-    <g class="sp-shadow">
-      <path d="M136 98 C136 40 164 18 200 18 C236 18 264 40 264 98 C250 88 236 82 200 82 C164 82 150 88 136 98 Z"
-            fill="url(#elder-female-hair-bob__front-g)"/>
-      <path d="M137 72 C129 100 128 126 133 148 C135 158 148 162 158 156 C166 151 167 142 165 132 C161 112 161 92 165 72 Z"
-            fill="url(#elder-female-hair-bob__front-g)"/>
-      <path d="M263 72 C271 100 272 126 267 148 C265 158 252 162 242 156 C234 151 233 142 235 132 C239 112 239 92 235 72 Z"
-            fill="url(#elder-female-hair-bob__front-g)"/>
+    <!-- Alignment repair: this bundle's hair was drawn against the ADULT head (cy 91).
+         The elder-female skull sits at cy 125, so the whole style is shifted 34px down onto
+         it: crown y66, eye line y134. -->
+    <g transform="translate(0 34)">
+      <defs>
+        <linearGradient id="elder-female-hair-bob__front-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+          <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+        </linearGradient>
+      </defs>
+      <g class="sp-shadow">
+        <path d="M136 98 C136 40 164 18 200 18 C236 18 264 40 264 98 C250 88 236 82 200 82 C164 82 150 88 136 98 Z"
+              fill="url(#elder-female-hair-bob__front-g)"/>
+        <path d="M137 72 C129 100 128 126 133 148 C135 158 148 162 158 156 C166 151 167 142 165 132 C161 112 161 92 165 72 Z"
+              fill="url(#elder-female-hair-bob__front-g)"/>
+        <path d="M263 72 C271 100 272 126 267 148 C265 158 252 162 242 156 C234 151 233 142 235 132 C239 112 239 92 235 72 Z"
+              fill="url(#elder-female-hair-bob__front-g)"/>
+      </g>
+      <path d="M137 124 C142 138 145 148 145 156 C137 152 133 138 134 122 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M263 124 C258 138 255 148 255 156 C263 152 267 138 266 122 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M152 84 C170 76 230 76 248 84 C228 80 172 80 152 84 Z"
+            fill="var(--hair2, #9AA3B2)"/>
+      <path d="M164 42 C180 28 210 26 232 38" stroke="#FFFFFF" stroke-opacity="0.30"
+            stroke-width="9" fill="none" stroke-linecap="round"/>
     </g>
-    <path d="M137 124 C142 138 145 148 145 156 C137 152 133 138 134 122 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M263 124 C258 138 255 148 255 156 C263 152 267 138 266 122 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M152 84 C170 76 230 76 248 84 C228 80 172 80 152 84 Z"
-          fill="var(--hair2, #9AA3B2)"/>
-    <path d="M164 42 C180 28 210 26 232 38" stroke="#FFFFFF" stroke-opacity="0.30"
-          stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
 </svg>

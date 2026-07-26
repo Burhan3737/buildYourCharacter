@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = narrow spaghetti straps,
+       7px wide at x171 to x178 and x222 to x229 running y166 to y202, with the
+       whole shoulder and collarbone left open — and VOLUME = straight and
+       skimming, the body hanging from x148 at the chest and easing softly out
+       to x142 and x258 at the hem.
+       Hem at the hip (y350).
+       Surface tools: trim (a scalloped picot neckline band across the chest at
+       y198) and structural (a short side slit at the hem), with a satin sheen
+       highlight down the drape. -->
+  <defs>
+    <linearGradient id="elder-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D6A8B4)"/>
+      <stop offset="1" stop-color="var(--c2, #A9808E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D6A8B4)"/>
+      <stop offset="1" stop-color="var(--c2, #A9808E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-camisole__lace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6E7D8)"/>
+      <stop offset="1" stop-color="var(--c3, #F6E7D8)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- spaghetti straps, 7px wide -->
+    <path d="M171 202 V172 q0-6 3.5-6 q3.5 0 3.5 6 v30 z"
+          fill="url(#elder-female-top-camisole__strap)"/>
+    <path d="M222 202 V172 q0-6 3.5-6 q3.5 0 3.5 6 v30 z"
+          fill="url(#elder-female-top-camisole__strap)"/>
+    <!-- straight skimming body, widening a little towards the hip -->
+    <path d="M148 212 q0-18 15-18 h74 q15 0 15 18 q4 66 6 110 q1 28 -22 28 h-72 q-23 0 -22-28 q2-44 6-110 z"
+          fill="url(#elder-female-top-camisole__body)"/>
+  </g>
+
+  <!-- scalloped picot neckline band across the chest -->
+  <path d="M146 198 h108 v8 q-9 10 -18 0 q-9 10 -18 0 q-9 10 -18 0 q-9 10 -18 0 q-9 10 -18 0 q-9 10 -18 0 z"
+        fill="url(#elder-female-top-camisole__lace)"/>
+  <!-- picot dots along the straps -->
+  <circle cx="174.5" cy="180" r="2.2" fill="var(--c3, #F6E7D8)"/>
+  <circle cx="225.5" cy="180" r="2.2" fill="var(--c3, #F6E7D8)"/>
+  <!-- short side slit at the hem -->
+  <path d="M156 322 q-2 14 -3 28 h-6 q1-14 3-28 z" fill="var(--c2, #A9808E)" fill-opacity="0.7"/>
+  <!-- soft drape folds -->
+  <path d="M180 232 q-4 46 -6 96 M220 232 q4 46 6 96" stroke="var(--c2, #A9808E)"
+        stroke-opacity="0.35" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- satin sheen -->
+  <path d="M162 226 q-4 48 -4 100" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 222 q6 2 12 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

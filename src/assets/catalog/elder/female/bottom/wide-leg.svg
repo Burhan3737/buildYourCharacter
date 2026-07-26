@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide Leg Trousers" data-family="wide-leg" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: RISE = high, the waistband sitting at y310 well above
+       the natural waist, and LEG WIDTH = a wide straight column that flares slightly outward
+       from hip to hem so the outline is a trapezoid, not a tube. Full length, hem breaking
+       over the shoe.
+       Surface tools: trim (a self-fabric tie belt with two hanging ends and a wide waistband)
+       and structural (a pressed centre crease down each leg and two welt pockets). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-wide-leg__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7A7B8)"/>
+      <stop offset="1" stop-color="var(--c2, #A0819A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-wide-leg__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7A7B8)"/>
+      <stop offset="1" stop-color="var(--c2, #A0819A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- high waist over the hip -->
+    <path d="M152 310 h96 q6 0 6 8 v30 q0 28 -22 28 h-64 q-22 0-22-28 v-30 q0-8 6-8 z"
+          fill="url(#elder-female-bottom-wide-leg__hip)"/>
+    <!-- left leg: 52px at the top opening to 60px at the hem -->
+    <path d="M148 372 h52 v176 q0 6 -6 6 h-42 q-6 0-7-6 l-5-160 q-1-10 8-16 z"
+          fill="url(#elder-female-bottom-wide-leg__leg)"/>
+    <!-- right leg -->
+    <path d="M252 372 h-52 v176 q0 6 6 6 h42 q6 0 7-6 l5-160 q1-10 -8-16 z"
+          fill="url(#elder-female-bottom-wide-leg__leg)"/>
+  </g>
+
+  <!-- wide waistband and self tie belt -->
+  <path d="M152 308 h96 v18 q-48 6 -96 0 z" fill="var(--c2, #A0819A)"/>
+  <path d="M150 330 h100 v9 h-100 z" fill="var(--c3, #F3E7D6)"/>
+  <path d="M196 330 h12 v9 h-12 z" fill="var(--c2, #A0819A)"/>
+  <path d="M206 339 l10 26 M212 339 l6 26" stroke="var(--c3, #F3E7D6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- welt pockets -->
+  <path d="M156 348 h30 v7 h-30 z M214 348 h30 v7 h-30 z" fill="var(--c2, #A0819A)"/>
+  <!-- inseam, so the two legs read apart rather than as one column -->
+  <path d="M200 376 v178" stroke="var(--c2, #A0819A)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- pressed centre creases -->
+  <path d="M174 380 v168 M226 380 v168" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M162 358 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

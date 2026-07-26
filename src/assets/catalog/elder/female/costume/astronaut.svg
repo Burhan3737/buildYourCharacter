@@ -1,48 +1,107 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Astronaut" data-family="astronaut" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- Silhouette axes this family owns: VOLUME = a sealed pressure suit inflated well past the
+       body (132px through the chest against a 112px torso, 52px arms, 56px legs) whose outline
+       steps outward at every ribbed joint band, and SHOULDER = rounded dropped shoulder domes
+       standing outboard of the arm. Surface tools: trim (neck ring, convolute joint bands) and
+       structural (chest control panel, umbilical run, waist seal). No helmet and no art above
+       y172 - the suit stops at a soft neck ring sitting on the shoulder line. -->
   <defs>
-    <linearGradient id="elder-female-costume-astronaut__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
-      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    <linearGradient id="elder-female-costume-astronaut__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #ECEEF4)"/>
+      <stop offset="1" stop-color="var(--c1, #C6CCDA)"/>
     </linearGradient>
-    <linearGradient id="elder-female-costume-astronaut__leg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
-      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    <linearGradient id="elder-female-costume-astronaut__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E8F0)"/>
+      <stop offset="1" stop-color="var(--c1, #BEC5D6)"/>
     </linearGradient>
-    <linearGradient id="elder-female-costume-astronaut__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #E7E9EE)"/>
-      <stop offset="1" stop-color="var(--c1, #C7CBD6)"/>
+    <linearGradient id="elder-female-costume-astronaut__hard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B98B9)"/>
+      <stop offset="1" stop-color="var(--c2, #6F7DA2)"/>
     </linearGradient>
   </defs>
 
-  <!-- spacesuit bodysuit; no helmet, nothing above y=182 -->
+  <!-- MAJOR FORMS: a stepped pressure hull, a deep girdle, two thick stepped arms and two
+       thick stepped legs. Every dimension is oversized against the bare body underneath. -->
   <g class="sp-shadow">
-    <rect x="164" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-astronaut__leg)"/>
-    <rect x="200" y="374" width="36" height="170" rx="16" fill="url(#elder-female-costume-astronaut__leg)"/>
-    <rect x="146" y="328" width="108" height="58" rx="24" fill="url(#elder-female-costume-astronaut__body)"/>
-    <rect x="140" y="182" width="120" height="154" rx="28" fill="url(#elder-female-costume-astronaut__body)"/>
-    <rect x="112" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-astronaut__sleeve)"/>
-    <rect x="252" y="182" width="36" height="150" rx="18" fill="url(#elder-female-costume-astronaut__sleeve)"/>
+    <path d="M106 200 q0-26 22-26 q22 0 22 26 v26 l4 6 v34 l-4 6 v66 q0 18 -22 18
+             q-22 0 -22-18 v-66 l-4-6 v-34 l4-6 z"
+          fill="url(#elder-female-costume-astronaut__limb)"/>
+    <path d="M294 200 q0-26 -22-26 q-22 0 -22 26 v26 l-4 6 v34 l4 6 v66 q0 18 22 18
+             q22 0 22-18 v-66 l4-6 v-34 l-4-6 z"
+          fill="url(#elder-female-costume-astronaut__limb)"/>
+    <path d="M152 368 q0-8 8-8 h30 q8 0 8 8 v44 l4 6 v28 l-4 6 v72 q0 18 -24 18
+             q-24 0 -24-18 v-72 l-4-6 v-28 l4-6 z"
+          fill="url(#elder-female-costume-astronaut__limb)"/>
+    <path d="M248 368 q0-8 -8-8 h-30 q-8 0 -8 8 v44 l-4 6 v28 l4 6 v72 q0 18 24 18
+             q24 0 24-18 v-72 l4-6 v-28 l-4-6 z"
+          fill="url(#elder-female-costume-astronaut__limb)"/>
+    <path d="M136 320 q0-14 16-14 h96 q16 0 16 14 v42 q0 20 -22 20 h-84 q-22 0 -22-20 z"
+          fill="url(#elder-female-costume-astronaut__shell)"/>
+    <path d="M140 198 q0-24 30-24 h60 q30 0 30 24 v20 l6 8 v40 l-6 8 v32 q0 32 -34 32
+             h-52 q-34 0 -34-32 v-32 l-6-8 v-40 l6-8 z"
+          fill="url(#elder-female-costume-astronaut__shell)"/>
   </g>
 
-  <!-- collar ring -->
-  <rect x="172" y="182" width="56" height="16" rx="8" fill="var(--c2, #DC7A5A)"/>
-
-  <!-- chest control-panel emblem, entirely original -->
-  <rect x="180" y="212" width="40" height="30" rx="6" fill="var(--c2, #DC7A5A)"/>
-  <circle cx="190" cy="222" r="3.4" fill="var(--c3, #6BBFAD)"/>
-  <circle cx="202" cy="222" r="3.4" fill="var(--c3, #F7C873)"/>
-  <rect x="188" y="230" width="24" height="6" rx="3" fill="var(--c3, #6BBFAD)"/>
-
-  <!-- rounded glove and boot caps -->
+  <!-- hard glove domes and hard boot caps -->
   <g class="sp-shadow">
-    <circle cx="130" cy="328" r="17" fill="var(--c2, #DC7A5A)"/>
-    <circle cx="270" cy="328" r="17" fill="var(--c2, #DC7A5A)"/>
-    <rect x="158" y="532" width="44" height="30" rx="15" fill="var(--c2, #DC7A5A)"/>
-    <rect x="198" y="532" width="44" height="30" rx="15" fill="var(--c2, #DC7A5A)"/>
+    <path d="M128 322 q24 0 24 22 v6 q0 20 -24 20 q-24 0 -24-20 v-6 q0-22 24-22 z"
+          fill="url(#elder-female-costume-astronaut__hard)"/>
+    <path d="M272 322 q-24 0 -24 22 v6 q0 20 24 20 q24 0 24-20 v-6 q0-22 -24-22 z"
+          fill="url(#elder-female-costume-astronaut__hard)"/>
+    <path d="M148 518 h52 v28 q0 24 -22 24 h-8 q-22 0 -22-24 z"
+          fill="url(#elder-female-costume-astronaut__hard)"/>
+    <path d="M252 518 h-52 v28 q0 24 22 24 h8 q22 0 22-24 z"
+          fill="url(#elder-female-costume-astronaut__hard)"/>
   </g>
 
-  <path d="M154 210 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+  <!-- TRIM: the soft neck ring, top of the whole piece, sitting on the shoulder line -->
+  <rect x="168" y="174" width="64" height="18" rx="9" fill="var(--c3, #DC7A5A)"/>
+  <rect x="174" y="178" width="52" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.42"/>
+
+  <!-- TRIM: convolute joint bands at every articulation, the ribs the outline steps around -->
+  <g fill="var(--c2, #8B98B9)">
+    <rect x="102" y="228" width="52" height="8" rx="4"/>
+    <rect x="102" y="244" width="52" height="8" rx="4"/>
+    <rect x="102" y="260" width="52" height="8" rx="4"/>
+    <rect x="246" y="228" width="52" height="8" rx="4"/>
+    <rect x="246" y="244" width="52" height="8" rx="4"/>
+    <rect x="246" y="260" width="52" height="8" rx="4"/>
+    <rect x="146" y="414" width="56" height="9" rx="4.5"/>
+    <rect x="146" y="432" width="56" height="9" rx="4.5"/>
+    <rect x="198" y="414" width="56" height="9" rx="4.5"/>
+    <rect x="198" y="432" width="56" height="9" rx="4.5"/>
+  </g>
+
+  <!-- PANEL: rounded shoulder domes outboard of the arm -->
+  <path d="M100 212 q0-38 30-38 q20 0 24 24 q-28 8 -32 26 z"
+        fill="url(#elder-female-costume-astronaut__hard)"/>
+  <path d="M300 212 q0-38 -30-38 q-20 0 -24 24 q28 8 32 26 z"
+        fill="url(#elder-female-costume-astronaut__hard)"/>
+
+  <!-- STRUCTURAL: chest control panel, an original graphic and not an insignia -->
+  <rect x="164" y="212" width="72" height="52" rx="12" fill="var(--c2, #8B98B9)"/>
+  <rect x="171" y="219" width="58" height="15" rx="7" fill="#FFFFFF" fill-opacity="0.5"/>
+  <g fill="var(--c3, #DC7A5A)">
+    <rect x="171" y="242" width="16" height="15" rx="6"/>
+    <rect x="192" y="242" width="16" height="15" rx="6"/>
+    <rect x="213" y="242" width="16" height="15" rx="6"/>
+  </g>
+
+  <!-- STRUCTURAL: hard waist seal joining the girdle to the hull -->
+  <rect x="136" y="304" width="128" height="20" rx="10" fill="var(--c2, #8B98B9)"/>
+  <rect x="188" y="300" width="24" height="28" rx="9" fill="var(--c3, #DC7A5A)"/>
+
+  <!-- STRUCTURAL: umbilical run from the panel round to the girdle -->
+  <path d="M236 248 q30 12 26 44" stroke="var(--c3, #DC7A5A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M156 200 q44 18 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 210 q0 60 2 110" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 210 q0 60 -2 110" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sweat Shorts" data-family="sweat-shorts" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = loose and wide, the legs standing away
+       from the thigh with an open flapping hem, and HEM TREATMENT = raw with a side-seam
+       slit. Natural rise, above the knee at y472.
+       Surface tools: trim (a ribbed waistband with a drawcord and two aglets) and structural
+       (side-seam slits, a loopback rib pattern and a stitched hem). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-sweat-shorts__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C2A5B4)"/>
+      <stop offset="1" stop-color="var(--c2, #9B8092)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-sweat-shorts__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C2A5B4)"/>
+      <stop offset="1" stop-color="var(--c2, #9B8092)"/>
+    </linearGradient>
+    <pattern id="elder-female-bottom-sweat-shorts__loop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 3 v10" stroke="var(--c2, #9B8092)" stroke-opacity="0.24" stroke-width="3"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-female-bottom-sweat-shorts__clip">
+      <path d="M154 372 h48 v88 q0 12 -6 12 h-34 q-8 0-8-12 z"/>
+      <path d="M246 372 h-48 v88 q0 12 6 12 h34 q8 0 8-12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft jersey hip -->
+    <path d="M148 320 h104 q6 0 6 8 v26 q0 28 -24 28 h-68 q-24 0-24-28 v-26 q0-8 6-8 z"
+          fill="url(#elder-female-bottom-sweat-shorts__hip)"/>
+    <!-- left leg: loose, standing away from the thigh, flaring to the hem -->
+    <path d="M154 372 h48 v88 q0 12 -6 12 h-34 q-8 0-8-12 z"
+          fill="url(#elder-female-bottom-sweat-shorts__leg)"/>
+    <!-- right leg -->
+    <path d="M246 372 h-48 v88 q0 12 6 12 h34 q8 0 8-12 z"
+          fill="url(#elder-female-bottom-sweat-shorts__leg)"/>
+  </g>
+
+  <!-- loopback texture inside the legs -->
+  <g clip-path="url(#elder-female-bottom-sweat-shorts__clip)">
+    <path d="M150 370 h100 v106 h-100 z" fill="url(#elder-female-bottom-sweat-shorts__loop)"/>
+  </g>
+
+  <!-- ribbed waistband -->
+  <path d="M148 318 h104 v22 h-104 z" fill="var(--c2, #9B8092)"/>
+  <path d="M154 320 v18 M164 320 v18 M174 320 v18 M184 320 v18 M216 320 v18 M226 320 v18
+           M236 320 v18 M246 320 v18"
+        stroke="var(--c3, #F5E7D8)" stroke-opacity="0.45" stroke-width="2" fill="none"/>
+  <!-- drawcord with two aglets and a soft bow -->
+  <path d="M186 338 q-8 14 -16 20 M214 338 q8 14 16 20" stroke="var(--c3, #F5E7D8)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M186 336 q14 -8 28 0" stroke="var(--c3, #F5E7D8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="170" cy="360" r="3.4" fill="var(--c3, #F5E7D8)"/>
+  <circle cx="230" cy="360" r="3.4" fill="var(--c3, #F5E7D8)"/>
+  <!-- side-seam slits and stitched hems -->
+  <path d="M156 440 v26 M244 440 v26" stroke="var(--c2, #9B8092)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M156 464 h44 M200 464 h44" stroke="var(--c3, #F5E7D8)" stroke-opacity="0.5"
+        stroke-width="2.4" stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M164 356 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

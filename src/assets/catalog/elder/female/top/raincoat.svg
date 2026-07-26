@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Raincoat" data-family="raincoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME = A line flared, the shoulders at x142 and
+       x258 opening steadily to x116 and x284 at the hem, and HEM = thigh (y414).
+       Long sleeves, full snap placket down the centre front, a hood lying flat behind the
+       neck whose top edge stays at y168.
+       Surface tools: panel blocking (a contrast yoke across the chest at y224) and structural
+       (five snap studs, two patch pockets, a storm flap seam). -->
+  <defs>
+    <linearGradient id="elder-female-top-raincoat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E8C93)"/>
+      <stop offset="1" stop-color="var(--c2, #3F6B72)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-raincoat__arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E8C93)"/>
+      <stop offset="1" stop-color="var(--c2, #3F6B72)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-raincoat__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3F6B72)"/>
+      <stop offset="1" stop-color="var(--c1, #5E8C93)"/>
+    </linearGradient>
+    <clipPath id="elder-female-top-raincoat__clip">
+      <path d="M142 206 q0 -30 30 -30 h56 q30 0 30 30 L284 402 q2 12 -12 12 h-144 q-14 0 -12 -12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hood lying flat behind the neck and shoulders -->
+    <path d="M148 216 L150 182 Q152 168 168 170 Q200 180 232 170 Q248 168 250 182 L252 216 Q200 232 148 216 Z"
+          fill="url(#elder-female-top-raincoat__hood)"/>
+    <!-- long sleeves -->
+    <path d="M146 178 L114 192 Q108 195 108 208 L112 322 Q113 338 128 338 L140 338 Q150 338 150 324 Z"
+          fill="url(#elder-female-top-raincoat__arm)"/>
+    <path d="M254 178 L286 192 Q292 195 292 208 L288 322 Q287 338 272 338 L260 338 Q250 338 250 324 Z"
+          fill="url(#elder-female-top-raincoat__arm)"/>
+    <!-- A line coat body, flaring the whole way to a thigh hem -->
+    <path d="M142 206 q0 -30 30 -30 h56 q30 0 30 30 L284 402 q2 12 -12 12 h-144 q-14 0 -12 -12 z"
+          fill="url(#elder-female-top-raincoat__coat)"/>
+  </g>
+
+  <!-- contrast yoke panel across the chest -->
+  <g clip-path="url(#elder-female-top-raincoat__clip)">
+    <path d="M138 172 h124 v46 q-62 14 -124 0 z" fill="var(--c3, #F2D9A8)" opacity="0.9"/>
+  </g>
+  <!-- yoke seam -->
+  <path d="M140 220 q60 14 120 0" stroke="var(--c2, #3F6B72)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- full snap placket down the centre front, with five snap studs -->
+  <path d="M190 190 h20 v220 h-20 z" fill="var(--c2, #3F6B72)" opacity="0.75"/>
+  <path d="M200 194 v212" stroke="var(--c3, #F2D9A8)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="240" r="5" fill="var(--c3, #F2D9A8)"/>
+  <circle cx="200" cy="278" r="5" fill="var(--c3, #F2D9A8)"/>
+  <circle cx="200" cy="316" r="5" fill="var(--c3, #F2D9A8)"/>
+  <circle cx="200" cy="354" r="5" fill="var(--c3, #F2D9A8)"/>
+  <circle cx="200" cy="392" r="5" fill="var(--c3, #F2D9A8)"/>
+  <!-- two patch pockets -->
+  <path d="M140 330 h44 v34 q0 8 -8 8 h-28 q-8 0 -8 -8 z" fill="var(--c2, #3F6B72)"/>
+  <path d="M216 330 h44 v34 q0 8 -8 8 h-28 q-8 0 -8 -8 z" fill="var(--c2, #3F6B72)"/>
+  <path d="M146 339 h32 M222 339 h32" stroke="var(--c3, #F2D9A8)" stroke-opacity="0.5"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- hood edge binding -->
+  <path d="M152 184 q48 -12 96 0" stroke="var(--c3, #F2D9A8)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- sleeve tab straps -->
+  <path d="M110 312 h40 v9 h-40 z" fill="var(--c3, #F2D9A8)" opacity="0.8"/>
+  <path d="M290 312 h-40 v9 h40 z" fill="var(--c3, #F2D9A8)" opacity="0.8"/>
+  <!-- highlight over the flared shell -->
+  <path d="M154 244 q16 8 28 8 M218 252 q16 0 28 -8" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
