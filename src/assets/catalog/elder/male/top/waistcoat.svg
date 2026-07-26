@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Waistcoat" data-family="waistcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: NO sleeve / full button front with a deep V / POINTED hem at the
+       waist / fitted. Against puffer-vest it differs on closure and hem
+       shape; against blazer on shoulder and hem. The pointed hem sits high
+       at the natural waist, well above every other hem in the slot. -->
+  <defs>
+    <linearGradient id="elder-male-top-waistcoat__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5D5A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #423F4E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-waistcoat__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2EDE2)"/>
+      <stop offset="1" stop-color="var(--c3, #D9D2C4)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <path d="M174 176 h52 v48 l-26 30 l-26-30 z" fill="url(#elder-male-top-waistcoat__shirt)"/>
+    <path d="M140 204 q7-30 38-30 h6 l16 38 l16-38 h6 q31 0 38 30 v76 l-60 38 l-60-38 z"
+          fill="url(#elder-male-top-waistcoat__front)"/>
+  </g>
+  <!-- structural: button line running to the point of the hem -->
+  <path d="M200 224 V300" stroke="var(--c2, #423F4E)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="234" r="4" fill="var(--c3, #F2EDE2)"/>
+  <circle cx="200" cy="258" r="4" fill="var(--c3, #F2EDE2)"/>
+  <circle cx="200" cy="282" r="4" fill="var(--c3, #F2EDE2)"/>
+  <!-- structural: two welt pockets -->
+  <path d="M152 264 h26 l-3 9 h-26 z" fill="var(--c2, #423F4E)"/>
+  <path d="M248 264 h-26 l3 9 h26 z" fill="var(--c2, #423F4E)"/>
+  <!-- trim: bound armholes and a contrast edge along the pointed hem -->
+  <path d="M144 210 q10 9 10 38 q0 24 -5 36" stroke="var(--c2, #423F4E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 210 q-10 9 -10 38 q0 24 5 36" stroke="var(--c2, #423F4E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 284 L200 318 L256 284" stroke="var(--c3, #F2EDE2)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M160 200 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

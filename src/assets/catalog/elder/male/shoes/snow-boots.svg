@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Snow Boots" data-family="snow-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: VOLUME a bulky insulated shaft nearly half again the boot's width,
+       and SOLE a deep lugged block where the boot has a plain heel. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-snow-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #43506B)"/>
+      <stop offset="1" stop-color="var(--c2, #333D53)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-snow-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #43506B)"/>
+      <stop offset="1" stop-color="var(--c2, #333D53)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="157" y="490" width="47" height="60" rx="21" fill="url(#elder-male-shoes-snow-boots__shaft)"/>
+    <rect x="196" y="490" width="47" height="60" rx="21" fill="url(#elder-male-shoes-snow-boots__shaft)"/>
+    <rect x="146" y="528" width="60" height="38" rx="18" fill="url(#elder-male-shoes-snow-boots__foot)"/>
+    <rect x="194" y="528" width="60" height="38" rx="18" fill="url(#elder-male-shoes-snow-boots__foot)"/>
+  </g>
+
+  <!-- trim: the soft fleece cuff spilling over the top of the shaft -->
+  <path d="M153 494 q0-14 14-14 h28 q14 0 14 14 q-7 8 -14 4 q-9 6 -14 0 q-9 6 -14 0 q-7 4 -14 -4 z"
+        fill="var(--c3, #EDE6DA)"/>
+  <path d="M192 494 q0-14 14-14 h28 q14 0 14 14 q-7 8 -14 4 q-9 6 -14 0 q-9 6 -14 0 q-7 4 -14 -4 z"
+        fill="var(--c3, #EDE6DA)"/>
+
+  <!-- trim: deep lugged sole block, then the lug teeth -->
+  <rect x="144" y="554" width="64" height="16" rx="6" fill="var(--c3, #EDE6DA)"/>
+  <rect x="192" y="554" width="64" height="16" rx="6" fill="var(--c3, #EDE6DA)"/>
+  <path d="M152 562 v8 M164 562 v8 M176 562 v8 M188 562 v8 M200 562 v8"
+        stroke="var(--c2, #333D53)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M200 562 v8 M212 562 v8 M224 562 v8 M236 562 v8 M248 562 v8"
+        stroke="var(--c2, #333D53)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: a lace toggle across the shaft -->
+  <path d="M164 512 h34" stroke="var(--c3, #EDE6DA)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 512 h34" stroke="var(--c3, #EDE6DA)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M156 540 q22 7 44 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 540 q22 7 44 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

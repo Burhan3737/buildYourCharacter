@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Blazer" data-family="blazer" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: structured SQUARE shoulder / open front with notched lapels,
+       split into two panels / past hip / straight tailored. Against
+       cardigan it differs on shoulder and volume; against raincoat on
+       shoulder and hem (past hip vs thigh). Square-cornered shoulder tops,
+       almost no curve, read as structured rather than soft. -->
+  <defs>
+    <linearGradient id="elder-male-top-blazer__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3549)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-blazer__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A63)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3549)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-blazer__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE5D6)"/>
+      <stop offset="1" stop-color="var(--c3, #D2C7B2)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <path d="M132 188 h-24 q-8 0 -8 8 v146 q0 8 8 8 h24 z"
+          fill="url(#elder-male-top-blazer__sleeve)"/>
+    <path d="M268 188 h24 q8 0 8 8 v146 q0 8 -8 8 h-24 z"
+          fill="url(#elder-male-top-blazer__sleeve)"/>
+    <path d="M174 182 h52 v150 h-52 z" fill="url(#elder-male-top-blazer__shell)"/>
+    <path d="M132 196 q0-16 16-16 h50 l-24 52 v104 q0 10 -10 10 h-22 q-10 0-10-10 z"
+          fill="url(#elder-male-top-blazer__cloth)"/>
+    <path d="M268 196 q0-16 -16-16 h-50 l24 52 v104 q0 10 10 10 h22 q10 0 10-10 z"
+          fill="url(#elder-male-top-blazer__cloth)"/>
+  </g>
+  <!-- structural: notched lapels turned back off the front edges -->
+  <path d="M198 176 L174 226 L158 214 L168 176 Z" fill="var(--c2, #2B3549)"/>
+  <path d="M202 176 L226 226 L242 214 L232 176 Z" fill="var(--c2, #2B3549)"/>
+  <!-- structural: chest welt pocket and two hip flap pockets -->
+  <path d="M154 240 h26 l-3 9 h-26 z" fill="var(--c2, #2B3549)"/>
+  <path d="M140 292 h36 v13 q0 5 -5 5 h-26 q-5 0-5-5 z" fill="var(--c2, #2B3549)"/>
+  <path d="M260 292 h-36 v13 q0 5 5 5 h26 q5 0 5-5 z" fill="var(--c2, #2B3549)"/>
+  <!-- trim: two buttons -->
+  <circle cx="226" cy="262" r="4.2" fill="var(--c3, #EDE5D6)"/>
+  <circle cx="228" cy="290" r="4.2" fill="var(--c3, #EDE5D6)"/>
+  <path d="M150 198 q50 12 100 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

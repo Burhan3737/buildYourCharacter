@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Top Tuft" data-family="top-tuft" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs the rest of the slot:
+       (1) LENGTH — crop stops above the ear line everywhere, nothing behind the shoulders;
+       (2) VOLUME — one raised sprout breaking the outline above y42 over an otherwise
+           skull-tight cap, so the outline is a dome with a single spike. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-top-tuft__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <!-- nothing falls behind the shoulders: only a thin clipped nape -->
+    <g class="sp-shadow">
+      <path d="M 164 147 Q 200 159 236 147 Q 234 169 200 173 Q 166 169 164 147 Z"
+            fill="url(#elder-male-hair-top-tuft__back-grad)"/>
+    </g>
+    <path d="M 176 161 q 24 8 48 0" stroke="var(--hair2, #9AA3B2)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-top-tuft__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-top-tuft__tuft-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- close crop, hairline set high at y79 for a settled middle-aged read -->
+      <path d="M 140 117 Q 140 61 200 59 Q 260 61 260 117 Q 246 105 200 102 Q 154 105 140 117 Z"
+            fill="url(#elder-male-hair-top-tuft__front-grad)"/>
+      <!-- the sprout: the only part of this style that leaves the skull -->
+      <path d="M 188 69 C 182 53 190 37 204 35 C 214 37 214 49 210 61 C 218 53 230 53 234 61 C 230 73 218 79 206 79 C 198 79 190 75 188 69 Z"
+            fill="url(#elder-male-hair-top-tuft__tuft-grad)"/>
+    </g>
+
+    <!-- root shadow where the tuft leaves the crop -->
+    <path d="M 188 70 q 16 9 30 2" stroke="var(--hair2, #9AA3B2)" stroke-width="5"
+          fill="none" stroke-linecap="round" opacity="0.85"/>
+    <!-- temples receding a little, drawn as scalp reclaiming the corners -->
+    <path d="M 141 114 Q 150 103 165 100 Q 151 108 146 119 Z" fill="var(--skin1, #E7B892)" opacity="0.9"/>
+    <path d="M 259 114 Q 250 103 235 100 Q 249 108 254 119 Z" fill="var(--skin1, #E7B892)" opacity="0.9"/>
+    <!-- clipped hairline shading -->
+    <path d="M 156 105 Q 200 99 244 105" stroke="var(--hair2, #9AA3B2)" stroke-width="4"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 166 77 q 34 -12 62 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

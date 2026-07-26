@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tiered Skirt" data-family="tiered-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · no leg division · GATHERED tiers widening downward (three
+       stacked panels, not one flared cone) · RUFFLED mid-calf hem. Against pleated it
+       differs on leg width (gathered tiers vs a single pleated flare) and hem treatment;
+       against maxi-skirt on leg width and hem. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-tiered-skirt__t1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98393)"/>
+      <stop offset="1" stop-color="var(--c2, #976575)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-tiered-skirt__t2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98393)"/>
+      <stop offset="1" stop-color="var(--c2, #976575)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-tiered-skirt__t3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98393)"/>
+      <stop offset="1" stop-color="var(--c2, #976575)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M120 444 H280 L300 503 Q200 520 100 503 Z" fill="url(#elder-male-bottom-tiered-skirt__t3)"/>
+    <path d="M135 392 H265 L285 452 Q200 468 115 452 Z" fill="url(#elder-male-bottom-tiered-skirt__t2)"/>
+    <path d="M152 326 H248 L270 398 Q200 412 130 398 Z" fill="url(#elder-male-bottom-tiered-skirt__t1)"/>
+  </g>
+
+  <!-- trim: gathering band at the head of each tier -->
+  <path d="M135 396 H265" stroke="var(--c2, #976575)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M120 448 H280" stroke="var(--c2, #976575)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- structural: the gathers themselves, short strokes hanging off each band -->
+  <g stroke="var(--c2, #976575)" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M150 404 v18"/><path d="M172 404 v20"/><path d="M194 404 v20"/>
+    <path d="M216 404 v20"/><path d="M238 404 v20"/><path d="M258 404 v18"/>
+    <path d="M136 456 v20"/><path d="M162 456 v22"/><path d="M188 456 v22"/>
+    <path d="M212 456 v22"/><path d="M238 456 v22"/><path d="M262 456 v20"/>
+  </g>
+  <!-- trim: waistband and a ruffled picot edge at the hem -->
+  <rect x="152" y="324" width="96" height="18" rx="9" fill="var(--c2, #976575)"/>
+  <path d="M102 505 q11 11 22 0 q11 11 22 0 q11 11 22 0 q11 11 22 0 q11 11 22 0 q11 11 22 0 q11 11 20 0"
+        stroke="var(--c3, #F3E4E8)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M158 340 q42 10 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swimsuit" data-family="swimsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: strap shoulder · closed scoop back · HIGH-CUT leg at the hip · fitted
+       volume. No skirt or ruffle: one continuous maillot. Against sundress it
+       differs on hem and volume; against maxi-dress on hem and volume. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-swimsuit__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #1F6E86)"/>
+      <stop offset="1" stop-color="var(--c2, #14505F)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-swimsuit__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="2.6" fill="var(--c3, #F3E2C0)" opacity="0.6"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-swimsuit__clip">
+      <path d="M152 186 q-6 38 -4 76 q2 56 15 80 q15 26 33 26 q18 0 33-26 q13-24 15-80 q2-38 -4-76 q-44-14 -88 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M152 186 q-6 38 -4 76 q2 56 15 80 q15 26 33 26 q18 0 33-26 q13-24 15-80 q2-38 -4-76 q-44-14 -88 0 z"
+          fill="url(#elder-male-onepiece-swimsuit__suit)"/>
+  </g>
+
+  <!-- pattern: scattered dot across the body -->
+  <g clip-path="url(#elder-male-onepiece-swimsuit__clip)">
+    <rect x="144" y="222" width="112" height="60" fill="url(#elder-male-onepiece-swimsuit__dots)"/>
+  </g>
+
+  <!-- trim: bound scoop neckline and the two shoulder straps -->
+  <path d="M166 186 q34 18 68 0 q-6 20 -34 20 q-28 0-34-20 z" fill="var(--c3, #F3E2C0)"/>
+  <path d="M176 190 q-11-7 -22-9" stroke="var(--c3, #F3E2C0)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M224 190 q11-7 22-9" stroke="var(--c3, #F3E2C0)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trim: bound high-cut leg openings, the defining edge -->
+  <path d="M154 302 q13 32 32 44" stroke="var(--c3, #F3E2C0)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 302 q-13 32 -32 44" stroke="var(--c3, #F3E2C0)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: princess seams shaping the fitted body -->
+  <path d="M178 200 q-6 66 4 122" stroke="var(--c2, #14505F)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M222 200 q6 66 -4 122" stroke="var(--c2, #14505F)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M164 196 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

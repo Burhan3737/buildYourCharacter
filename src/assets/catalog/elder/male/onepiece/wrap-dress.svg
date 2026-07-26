@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Dress" data-family="wrap-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: three-quarter sleeve · CROSSOVER wrap bodice tied at the waist · knee
+       hem · flared skirt. Against shirt-dress it differs on closure (wrap vs
+       button placket) and sleeve length; against pinafore on closure and shoulder. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-wrap-dress__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F8C7A)"/>
+      <stop offset="1" stop-color="var(--c2, #446858)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-wrap-dress__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F8C7A)"/>
+      <stop offset="1" stop-color="var(--c2, #446858)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-wrap-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F8C7A)"/>
+      <stop offset="1" stop-color="var(--c2, #446858)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="108" y="186" width="32" height="110" rx="16" fill="url(#elder-male-onepiece-wrap-dress__sleeve)"/>
+    <rect x="260" y="186" width="32" height="110" rx="16" fill="url(#elder-male-onepiece-wrap-dress__sleeve)"/>
+    <path d="M128 200 q4-34 40-34 h30 L232 300 h-104 z" fill="url(#elder-male-onepiece-wrap-dress__bodice)"/>
+    <path d="M272 200 q-4-34 -40-34 h-30 L168 300 h104 z" fill="url(#elder-male-onepiece-wrap-dress__bodice)"/>
+    <path d="M136 300 H264 l22 168 q2 12 -13 12 h-158 q-15 0-13-12 z"
+          fill="url(#elder-male-onepiece-wrap-dress__skirt)"/>
+  </g>
+
+  <!-- trim: contrast binding along both wrap edges, meeting in a deep V -->
+  <path d="M198 166 L230 300" stroke="var(--c3, #EFE2C8)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M202 166 L170 300" stroke="var(--c3, #EFE2C8)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trim: tie belt knotted at the side of the waist -->
+  <rect x="134" y="292" width="136" height="18" rx="8" fill="var(--c3, #EFE2C8)"/>
+  <path d="M246 300 q16 10 22 30" stroke="var(--c3, #EFE2C8)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M252 296 q18 6 26 22" stroke="var(--c3, #EFE2C8)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- structural: the skirt's wrap opening and its soft folds -->
+  <path d="M212 312 q10 78 16 156" stroke="var(--c2, #446858)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M172 312 q-10 78 -16 156" stroke="var(--c2, #446858)" stroke-opacity="0.45"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- trim: bound three-quarter cuffs -->
+  <rect x="108" y="278" width="32" height="16" rx="8" fill="var(--c3, #EFE2C8)"/>
+  <rect x="260" y="278" width="32" height="16" rx="8" fill="var(--c3, #EFE2C8)"/>
+
+  <path d="M158 196 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

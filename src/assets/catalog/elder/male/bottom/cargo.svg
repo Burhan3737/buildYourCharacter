@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Cargo Pants" data-family="cargo" data-slot="bottom"
      data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · full length · RELAXED-WIDE leg (looser through the whole leg,
+       not just tapered) · ELASTICATED ankle cinch. Against jeans it differs on leg width
+       and hem treatment; against snow-pants on rise and leg width. -->
   <defs>
     <linearGradient id="elder-male-bottom-cargo__hip" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7FA98C)"/>
@@ -13,38 +16,41 @@
   </defs>
 
   <g class="sp-shadow">
-    <path d="M160 376 H198 V536 q0 12 -12 12 H172 q-12 0 -12 -12 Z"
-          fill="url(#elder-male-bottom-cargo__leg)"/>
-    <path d="M240 376 H202 V536 q0 12 12 12 H228 q12 0 12 -12 Z"
-          fill="url(#elder-male-bottom-cargo__leg)"/>
-    <rect x="148" y="328" width="104" height="50" rx="22"
-          fill="url(#elder-male-bottom-cargo__hip)"/>
+    <rect x="144" y="376" width="44" height="160" rx="14" fill="url(#elder-male-bottom-cargo__leg)"/>
+    <rect x="212" y="376" width="44" height="160" rx="14" fill="url(#elder-male-bottom-cargo__leg)"/>
+    <rect x="150" y="532" width="32" height="20" rx="10" fill="url(#elder-male-bottom-cargo__leg)"/>
+    <rect x="218" y="532" width="32" height="20" rx="10" fill="url(#elder-male-bottom-cargo__leg)"/>
+    <rect x="140" y="326" width="120" height="52" rx="24" fill="url(#elder-male-bottom-cargo__hip)"/>
   </g>
 
-  <rect x="148" y="328" width="104" height="20" rx="9" fill="var(--c2, #6D9178)"/>
-  <rect x="166" y="326" width="7" height="25" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="196" y="326" width="8" height="25" rx="3" fill="var(--c3, #55735F)"/>
-  <rect x="227" y="326" width="7" height="25" rx="3" fill="var(--c3, #55735F)"/>
+  <!-- trim: soft waistband -->
+  <rect x="140" y="326" width="120" height="18" rx="9" fill="var(--c2, #6D9178)"/>
 
-  <rect x="162" y="404" width="34" height="46" rx="8" fill="var(--c2, #6D9178)"/>
-  <rect x="204" y="404" width="34" height="46" rx="8" fill="var(--c2, #6D9178)"/>
-  <rect x="160" y="396" width="38" height="16" rx="7" fill="var(--c3, #55735F)"/>
-  <rect x="202" y="396" width="38" height="16" rx="7" fill="var(--c3, #55735F)"/>
-  <circle cx="179" cy="414" r="4" fill="var(--c3, #55735F)"/>
-  <circle cx="221" cy="414" r="4" fill="var(--c3, #55735F)"/>
+  <!-- structural: flapped thigh pockets, the cargo tell -->
+  <rect x="150" y="402" width="36" height="44" rx="8" fill="var(--c2, #6D9178)"/>
+  <rect x="214" y="402" width="36" height="44" rx="8" fill="var(--c2, #6D9178)"/>
+  <rect x="148" y="394" width="40" height="16" rx="7" fill="var(--c3, #E9E2C9)"/>
+  <rect x="212" y="394" width="40" height="16" rx="7" fill="var(--c3, #E9E2C9)"/>
+  <circle cx="168" cy="412" r="4" fill="var(--c3, #E9E2C9)"/>
+  <circle cx="232" cy="412" r="4" fill="var(--c3, #E9E2C9)"/>
 
-  <path d="M164 476 H194" stroke="var(--c2, #6D9178)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
-  <path d="M206 476 H236" stroke="var(--c2, #6D9178)" stroke-width="4"
-        fill="none" stroke-linecap="round"/>
+  <!-- structural: side seam pockets -->
+  <path d="M144 356 L154 380" stroke="var(--c2, #6D9178)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M256 356 L246 380" stroke="var(--c2, #6D9178)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: elasticated ribbed cinch at each ankle -->
+  <g stroke="var(--c3, #E9E2C9)" stroke-opacity="0.6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M156 536 v12"/><path d="M164 535 v14"/><path d="M172 535 v14"/>
+    <path d="M224 535 v14"/><path d="M232 535 v14"/><path d="M240 536 v12"/>
+  </g>
 
   <path d="M200 351 v28" stroke="var(--c2, #6D9178)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
-  <path d="M162 362 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+  <path d="M158 350 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
-  <path d="M168 396 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M156 400 v40" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <path d="M232 396 v30" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
+  <path d="M244 400 v40" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Monolid" data-family="monolid" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- smooth single-fold lid: no drawn crease, a wide shallow lens aperture
+       and a flat level lash line carried right out to both corners -->
+  <defs>
+    <linearGradient id="elder-male-eyes-monolid__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="elder-male-eyes-monolid__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6E5636)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6E5636)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="elder-male-eyes-monolid__clip-l">
+      <path d="M159 134 Q178 124.5 197 134 Q178 142.5 159 134 Z"/>
+    </clipPath>
+    <clipPath id="elder-male-eyes-monolid__clip-r">
+      <path d="M241 134 Q222 124.5 203 134 Q222 142.5 241 134 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M159 134 Q178 124.5 197 134 Q178 142.5 159 134 Z"
+          fill="url(#elder-male-eyes-monolid__sclera)"/>
+    <path d="M241 134 Q222 124.5 203 134 Q222 142.5 241 134 Z"
+          fill="url(#elder-male-eyes-monolid__sclera)"/>
+  </g>
+
+  <g clip-path="url(#elder-male-eyes-monolid__clip-l)">
+    <circle cx="178" cy="134.5" r="9.2" fill="#3B2A22"/>
+    <circle cx="178" cy="134.5" r="9.2" fill="url(#elder-male-eyes-monolid__iris)"/>
+    <circle cx="178" cy="134.5" r="4.2" fill="#3B2A22"/>
+    <circle cx="174.8" cy="131.4" r="2.7" fill="#FFFFFF"/>
+    <circle cx="181.4" cy="138" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <g clip-path="url(#elder-male-eyes-monolid__clip-r)">
+    <circle cx="222" cy="134.5" r="9.2" fill="#3B2A22"/>
+    <circle cx="222" cy="134.5" r="9.2" fill="url(#elder-male-eyes-monolid__iris)"/>
+    <circle cx="222" cy="134.5" r="4.2" fill="#3B2A22"/>
+    <circle cx="218.8" cy="131.4" r="2.7" fill="#FFFFFF"/>
+    <circle cx="225.4" cy="138" r="1.4" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- flat level lash line, no arch -->
+  <path d="M157.5 126.6 H198.5" stroke="#3B2A22" stroke-opacity="0.94" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242.5 126.6 H201.5" stroke="#3B2A22" stroke-opacity="0.94" stroke-width="5.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the single smooth fold: a soft shaded plane, never a drawn crease line -->
+  <path d="M160 120 Q178 116.4 196 120" stroke="var(--skin2, #C99A72)" stroke-opacity="0.42"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M240 120 Q222 116.4 204 120" stroke="var(--skin2, #C99A72)" stroke-opacity="0.42"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <path d="M164 144.4 H192" stroke="#3B2A22" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 144.4 H208" stroke="#3B2A22" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

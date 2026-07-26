@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="360 Waves" data-family="waves-360" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `buzz` and `taper-fade`:
+       (1) VOLUME — this is the shortest style in the slot: the mass never leaves the
+           skull, topping out 2px proud of it, with no raised top of any kind;
+       (2) PARTING — no part, but a hard cut front hairline stepped straight across the
+           brow at y87, so the outline is a flat-bottomed shell, not a dome.
+       The texture is six concentric hair2 ripples radiating from the crown. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-waves-360__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CDD6)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B7280)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M 156 139 Q 200 153 244 139 Q 240 165 200 171 Q 160 165 156 139 Z"
+            fill="url(#elder-male-hair-waves-360__back-grad)"/>
+    </g>
+    <path d="M 166 147 Q 200 159 234 147" stroke="var(--hair2, #6B7280)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 172 157 Q 200 166 228 157" stroke="var(--hair2, #6B7280)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-waves-360__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CDD6)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B7280)"/>
+      </linearGradient>
+      <clipPath id="elder-male-hair-waves-360__front-clip">
+        <path d="M 142 121 C 142 83 168 63 200 63 C 232 63 258 83 258 121 L 252 117 L 240 113 L 220 111 L 200 110 L 180 111 L 160 113 L 148 117 Z"/>
+      </clipPath>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M 142 121 C 142 83 168 63 200 63 C 232 63 258 83 258 121 L 252 117 L 240 113 L 220 111 L 200 110 L 180 111 L 160 113 L 148 117 Z"
+            fill="url(#elder-male-hair-waves-360__front-grad)"/>
+    </g>
+
+    <!-- the waves themselves: concentric ripples spinning out from the crown -->
+    <g clip-path="url(#elder-male-hair-waves-360__front-clip)">
+      <ellipse cx="200" cy="79" rx="15" ry="11" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.85"/>
+      <ellipse cx="200" cy="79" rx="25" ry="19" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.8"/>
+      <ellipse cx="200" cy="79" rx="35" ry="27" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.75"/>
+      <ellipse cx="200" cy="79" rx="45" ry="35" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.7"/>
+      <ellipse cx="200" cy="79" rx="55" ry="43" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.65"/>
+      <ellipse cx="200" cy="79" rx="66" ry="52" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3.2" opacity="0.6"/>
+      <ellipse cx="200" cy="79" rx="6" ry="4.5" fill="none"
+               stroke="var(--hair2, #6B7280)" stroke-width="3" opacity="0.9"/>
+    </g>
+
+    <!-- hard cut front hairline -->
+    <path d="M 160 112.5 H 240" stroke="var(--hair2, #6B7280)" stroke-width="3.4"
+          fill="none" stroke-linecap="butt"/>
+    <path d="M 144 119 L 160 113" stroke="var(--hair2, #6B7280)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M 256 119 L 240 113" stroke="var(--hair2, #6B7280)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M 172 71 q 28 -6 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

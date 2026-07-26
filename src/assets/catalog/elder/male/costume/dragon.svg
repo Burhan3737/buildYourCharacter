@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dragon" data-family="dragon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: shoulder carries WING STUBS · closed · ankle · ANGULAR PLATED volume.
+       Against dino (rounded soft belly-panel bodysuit, no wings) this differs on
+       shoulder (wing stubs here, none there) and volume (chamfered octagon plates
+       here vs a rounded oval mass there) - the two axes the family note requires. -->
+  <defs>
+    <linearGradient id="elder-male-costume-dragon__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B5FA8)"/>
+      <stop offset="1" stop-color="var(--c1, #5E4884)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-dragon__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B3A70)"/>
+      <stop offset="1" stop-color="var(--c2, #392C56)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-dragon__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B5FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4B3A70)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-dragon__scale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="12">
+      <path d="M8 1 L15 7 L8 11 L1 7 Z" fill="var(--c3, #E7C766)" opacity="0.4"/>
+    </pattern>
+    <clipPath id="elder-male-costume-dragon__clip">
+      <path d="M160 184 H240 L268 208 V320 L246 336 H154 L132 320 V208 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- angular tail, drawn behind the figure -->
+  <path d="M252 330 L302 372 L316 432 L302 476 L286 474 L280 430 L248 386 Z"
+        fill="url(#elder-male-costume-dragon__tail)"/>
+  <path d="M300 468 L316 462 L308 482 Z" fill="var(--c3, #E7C766)"/>
+
+  <g class="sp-shadow">
+    <!-- wing stubs -->
+    <path d="M112 196 L142 186 L128 226 Z" fill="url(#elder-male-costume-dragon__wing)"/>
+    <path d="M288 196 L258 186 L272 226 Z" fill="url(#elder-male-costume-dragon__wing)"/>
+    <!-- chamfered plated torso -->
+    <path d="M160 184 H240 L268 208 V320 L246 336 H154 L132 320 V208 Z"
+          fill="url(#elder-male-costume-dragon__body)"/>
+    <rect x="146" y="328" width="108" height="50" rx="12" fill="url(#elder-male-costume-dragon__body)"/>
+    <rect x="166" y="376" width="34" height="176" rx="8" fill="url(#elder-male-costume-dragon__body)"/>
+    <rect x="200" y="376" width="34" height="176" rx="8" fill="url(#elder-male-costume-dragon__body)"/>
+    <rect x="114" y="196" width="32" height="172" rx="6" fill="url(#elder-male-costume-dragon__body)"/>
+    <rect x="254" y="196" width="32" height="172" rx="6" fill="url(#elder-male-costume-dragon__body)"/>
+  </g>
+
+  <!-- pattern: hard scale plating over the torso -->
+  <g clip-path="url(#elder-male-costume-dragon__clip)">
+    <rect x="128" y="184" width="144" height="152" fill="url(#elder-male-costume-dragon__scale)"/>
+  </g>
+
+  <!-- structural: sharp dorsal crest -->
+  <path d="M192 198 L200 186 L208 198 Z" fill="var(--c3, #E7C766)"/>
+  <path d="M188 220 L200 202 L212 220 Z" fill="var(--c3, #E7C766)"/>
+  <path d="M186 258 L200 238 L214 258 Z" fill="var(--c3, #E7C766)"/>
+  <path d="M188 296 L200 278 L212 296 Z" fill="var(--c3, #E7C766)"/>
+
+  <!-- panel: hard-edged belly plate -->
+  <path d="M172 226 H228 V326 H172 Z" fill="var(--c3, #E7C766)" opacity="0.9"/>
+  <g stroke="var(--c2, #4B3A70)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M176 248 h44"/><path d="M176 272 h44"/><path d="M176 296 h44"/>
+  </g>
+
+  <!-- clawed feet -->
+  <g class="sp-shadow">
+    <path d="M150 534 H202 L198 560 q0 10 -12 10 h-30 q-12 0 -12-10 z" fill="url(#elder-male-costume-dragon__body)"/>
+    <path d="M250 534 H198 L202 560 q0 10 12 10 h30 q12 0 12-10 z" fill="url(#elder-male-costume-dragon__body)"/>
+  </g>
+  <g fill="var(--c3, #E7C766)">
+    <path d="M158 566 l6-10 l6 10 z"/><path d="M174 566 l6-10 l6 10 z"/><path d="M190 566 l6-10 l6 10 z"/>
+    <path d="M208 566 l6-10 l6 10 z"/><path d="M224 566 l6-10 l6 10 z"/><path d="M240 566 l6-10 l6 10 z"/>
+  </g>
+
+  <path d="M164 196 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

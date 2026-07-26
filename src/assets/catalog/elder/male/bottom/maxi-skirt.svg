@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Skirt" data-family="maxi-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · no leg division · NARROW straight column · ANKLE hem with a
+       single side slit. Against pencil-skirt it differs on rise and leg length; against
+       skirt (wrap kilt) on leg length and leg width. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-maxi-skirt__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #707C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5966)"/>
+    </linearGradient>
+    <pattern id="elder-male-bottom-maxi-skirt__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="2.6" fill="var(--c3, #D9CDBB)" opacity="0.55"/>
+      <circle cx="15" cy="14" r="1.8" fill="var(--c3, #D9CDBB)" opacity="0.4"/>
+    </pattern>
+    <clipPath id="elder-male-bottom-maxi-skirt__clip">
+      <path d="M154 326 H246 L242 545 Q200 553 158 545 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M154 326 H246 L242 545 Q200 553 158 545 Z" fill="url(#elder-male-bottom-maxi-skirt__column)"/>
+  </g>
+
+  <!-- pattern: scattered dot across the column -->
+  <g clip-path="url(#elder-male-bottom-maxi-skirt__clip)">
+    <rect x="152" y="322" width="96" height="234" fill="url(#elder-male-bottom-maxi-skirt__dot)"/>
+  </g>
+
+  <!-- structural: the single side slit, drawn as a real opening -->
+  <path d="M230 440 L236 544" stroke="var(--c2, #4F5966)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 444 L238 540" stroke="var(--c3, #D9CDBB)" stroke-opacity="0.55" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: long soft drape folds -->
+  <path d="M174 350 q-4 96 -6 190" stroke="var(--c2, #4F5966)" stroke-opacity="0.5" stroke-width="3.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 350 q2 100 2 194" stroke="var(--c2, #4F5966)" stroke-opacity="0.4" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: soft waistband and a bound hem -->
+  <rect x="154" y="324" width="92" height="16" rx="8" fill="var(--c2, #4F5966)"/>
+  <path d="M162 542 q38 9 76 -2" stroke="var(--c3, #D9CDBB)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 344 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Cardigan" data-family="sweater" data-slot="top"
+     data-name="Chunky Knit Sweater" data-family="sweater" data-slot="top"
      data-layer="top" data-colors="c1,c2" data-hides="">
+  <!-- axes: DROPPED long sleeve / closed / past hip on a deep ribbed hem band /
+       boxy. Against hoodie it differs on shoulder (dropped vs boxy set-in)
+       and hem (deep rib past hip vs hip); against oversized-long-sleeve on
+       hem depth and the ribbed cuff/hem treatment. -->
   <defs>
     <linearGradient id="elder-male-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #D9C39A)"/>
@@ -11,39 +15,34 @@
       <stop offset="1" stop-color="var(--c2, #B89A66)"/>
     </linearGradient>
     <clipPath id="elder-male-top-sweater__clip">
-      <path d="M132 214 q0-34 36-34 h64 q36 0 36 34 v100 q0 36 -36 36 h-64 q-36 0 -36-36 z"/>
-      <rect x="112" y="190" width="38" height="160" rx="19"/>
-      <rect x="250" y="190" width="38" height="160" rx="19"/>
+      <path d="M121 224 q0-30 34-38 h90 q34 8 34 38 v96 q0 22 -22 22 h-114 q-22 0-22-22 z"/>
+      <rect x="99" y="206" width="42" height="150" rx="20"/>
+      <rect x="259" y="206" width="42" height="150" rx="20"/>
     </clipPath>
   </defs>
   <g class="sp-shadow">
-    <!-- bulky long sleeves, a soft roomy cardigan fit -->
-    <rect x="112" y="190" width="38" height="160" rx="19" fill="url(#elder-male-top-sweater__sleeve)"/>
-    <rect x="250" y="190" width="38" height="160" rx="19" fill="url(#elder-male-top-sweater__sleeve)"/>
-    <path d="M132 214 q0-34 36-34 h64 q36 0 36 34 v100 q0 36 -36 36 h-64 q-36 0 -36-36 z"
+    <!-- dropped shoulder: the seam falls onto the upper arm, sleeves read wide and heavy -->
+    <rect x="99" y="206" width="42" height="150" rx="20" fill="url(#elder-male-top-sweater__sleeve)"/>
+    <rect x="259" y="206" width="42" height="150" rx="20" fill="url(#elder-male-top-sweater__sleeve)"/>
+    <path d="M121 224 q0-30 34-38 h90 q34 8 34 38 v96 q0 22 -22 22 h-114 q-22 0-22-22 z"
           fill="url(#elder-male-top-sweater__body)"/>
   </g>
-  <!-- ribbed hem band and cuffs, clipped to the knit silhouette -->
+  <!-- trim: deep ribbed hem band and ribbed cuffs, clipped to the knit silhouette -->
   <g clip-path="url(#elder-male-top-sweater__clip)">
-    <rect x="128" y="326" width="144" height="28" fill="var(--c2, #B89A66)"/>
-    <rect x="108" y="324" width="46" height="30" fill="var(--c2, #B89A66)"/>
-    <rect x="246" y="324" width="46" height="30" fill="var(--c2, #B89A66)"/>
-    <path d="M144 332 v16 M156 332 v16 M168 332 v16 M180 332 v16 M192 332 v16 M204 332 v16 M216 332 v16 M228 332 v16 M240 332 v16 M252 332 v16"
+    <rect x="123" y="330" width="154" height="34" fill="var(--c2, #B89A66)"/>
+    <rect x="97" y="326" width="46" height="34" fill="var(--c2, #B89A66)"/>
+    <rect x="257" y="326" width="46" height="34" fill="var(--c2, #B89A66)"/>
+    <path d="M138 336 v22 M150 336 v22 M162 336 v22 M174 336 v22 M186 336 v22 M198 336 v22 M210 336 v22 M222 336 v22 M234 336 v22 M246 336 v22 M258 336 v22"
           stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M121 330 v16 M131 330 v16 M141 330 v16 M259 330 v16 M269 330 v16 M279 330 v16"
+    <path d="M105 330 v22 M117 330 v22 M129 330 v22 M265 330 v22 M277 330 v22 M289 330 v22"
           stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
   </g>
-  <!-- open cardigan front: lapel V and a button placket -->
-  <path d="M166 178 L196 210 L226 178 q-30 -14 -60 0 z" fill="var(--c2, #B89A66)"/>
-  <path d="M182 182 L196 206 L210 182 q-14 -8 -28 0 z" fill="var(--skin2, #C99A72)"/>
-  <path d="M196 210 v130" stroke="var(--c2, #B89A66)" stroke-opacity="0.5" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
-  <circle cx="196" cy="240" r="4" fill="#3B2A22"/>
-  <circle cx="196" cy="270" r="4" fill="#3B2A22"/>
-  <circle cx="196" cy="300" r="4" fill="#3B2A22"/>
+  <!-- trim: ribbed crew neckband -->
+  <path d="M166 186 q34 24 68 0 q-4 16 -34 16 q-30 0-34-16 z" fill="var(--c2, #B89A66)"/>
+  <path d="M176 190 q24 14 48 0 z" fill="var(--skin2, #C99A72)"/>
   <!-- knit texture on the chest -->
-  <path d="M156 248 q44 12 88 0 M156 276 q44 12 88 0 M156 304 q44 12 88 0"
+  <path d="M148 244 q52 14 104 0 M148 272 q52 14 104 0 M148 300 q52 14 104 0"
         stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" fill="none" stroke-linecap="round"/>
-  <path d="M148 210 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+  <path d="M144 212 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

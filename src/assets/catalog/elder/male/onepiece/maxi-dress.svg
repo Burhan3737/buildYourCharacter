@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Maxi Dress" data-family="maxi-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: strap shoulder · closed · ANKLE hem · narrow fitted column volume.
+       Against sundress it differs on hem and volume; against kaftan on shoulder
+       (strap vs wide T-sleeve) and volume (fitted column vs A-line flare). -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-maxi-dress__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E5A7C)"/>
+      <stop offset="1" stop-color="var(--c2, #363F5A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-maxi-dress__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C0A4C4)"/>
+      <stop offset="1" stop-color="var(--c1, #4E5A7C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M156 188 q-4 32 -2 62 h92 q2-30 -2-62 q-44-14 -88 0 z"
+          fill="url(#elder-male-onepiece-maxi-dress__bodice)"/>
+    <path d="M154 250 h94 l8 288 q1 12 -13 12 h-84 q-14 0-13-12 z"
+          fill="url(#elder-male-onepiece-maxi-dress__column)"/>
+    <path d="M156 188 q-2-9 7-11 l7 11 z" fill="url(#elder-male-onepiece-maxi-dress__bodice)"/>
+    <path d="M244 188 q2-9 -7-11 l-7 11 z" fill="url(#elder-male-onepiece-maxi-dress__bodice)"/>
+  </g>
+
+  <!-- trim: narrow straps riding out over each shoulder -->
+  <path d="M172 188 q-10-8 -20-10" stroke="var(--c3, #C0A4C4)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M228 188 q10-8 20-10" stroke="var(--c3, #C0A4C4)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- trim: bound straight neckline -->
+  <path d="M160 186 h80" stroke="var(--c3, #C0A4C4)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trim: seam where the bodice meets the column -->
+  <rect x="154" y="244" width="94" height="14" rx="6" fill="var(--c3, #C0A4C4)"/>
+  <!-- structural: two long column folds and a slim hem band -->
+  <path d="M182 264 q-6 138 -8 282" stroke="var(--c2, #363F5A)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M218 264 q6 138 8 282" stroke="var(--c2, #363F5A)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M156 548 h88" stroke="var(--c3, #C0A4C4)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <path d="M166 194 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Boiler Suit" data-family="boiler-suit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: short rolled sleeve · centre ZIP closure · full-length straight legs ·
+       boxy utility volume. Against jumpsuit it differs on sleeve length (rolled
+       short vs long) and closure (visible zip vs plain front); the two straight
+       leg tubes are drawn as separate rects, not jumpsuit's tapered leg paths. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-boiler-suit__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B7F55)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6040)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-boiler-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B7F55)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6040)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-boiler-suit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B7F55)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6040)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="110" y="188" width="34" height="92" rx="17" fill="url(#elder-male-onepiece-boiler-suit__sleeve)"/>
+    <rect x="256" y="188" width="34" height="92" rx="17" fill="url(#elder-male-onepiece-boiler-suit__sleeve)"/>
+    <path d="M124 200 q0-34 38-34 h76 q38 0 38 34 v118 h-152 z" fill="url(#elder-male-onepiece-boiler-suit__body)"/>
+    <rect x="150" y="308" width="48" height="234" rx="14" fill="url(#elder-male-onepiece-boiler-suit__leg)"/>
+    <rect x="202" y="308" width="48" height="234" rx="14" fill="url(#elder-male-onepiece-boiler-suit__leg)"/>
+  </g>
+
+  <!-- structural: small stand collar and a centre zip running the torso -->
+  <path d="M172 168 h56 q6 0 6 10 v10 h-68 v-10 q0-10 6-10 z" fill="var(--c2, #5C6040)"/>
+  <rect x="194" y="188" width="12" height="124" rx="5" fill="var(--c3, #E7D9AE)"/>
+  <path d="M200 192 v116" stroke="var(--c2, #5C6040)" stroke-width="3.4" stroke-dasharray="4 4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="300" r="6" fill="var(--c3, #E7D9AE)"/>
+  <!-- structural: rope tie belt, knotted at the waist -->
+  <rect x="128" y="304" width="144" height="14" rx="7" fill="var(--c2, #5C6040)"/>
+  <circle cx="200" cy="311" r="10" fill="var(--c2, #5C6040)"/>
+  <path d="M200 316 q-14 14 -20 32" stroke="var(--c3, #E7D9AE)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M200 316 q14 14 20 32" stroke="var(--c3, #E7D9AE)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- structural: chest and thigh utility pockets -->
+  <path d="M148 214 h34 v26 h-34 z" fill="var(--c2, #5C6040)"/>
+  <path d="M218 214 h34 v26 h-34 z" fill="var(--c2, #5C6040)"/>
+  <path d="M156 388 h38 v42 q0 8 -8 8 h-22 q-8 0-8-8 z" fill="var(--c2, #5C6040)"/>
+  <path d="M244 388 h-38 v42 q0 8 8 8 h22 q8 0 8-8 z" fill="var(--c2, #5C6040)"/>
+  <!-- trim: rolled cuffs -->
+  <rect x="110" y="270" width="34" height="16" rx="8" fill="var(--c2, #5C6040)"/>
+  <rect x="256" y="270" width="34" height="16" rx="8" fill="var(--c2, #5C6040)"/>
+
+  <path d="M150 194 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

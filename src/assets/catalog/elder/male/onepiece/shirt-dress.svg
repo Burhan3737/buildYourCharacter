@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shirt Dress" data-family="shirt-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: long sleeve · full button-through placket · knee hem · straight volume.
+       Against jumpsuit it differs on hem (skirt, no leg division) and closure
+       (buttons vs plain front); against wrap-dress on closure and volume. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-shirt-dress__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A93A6)"/>
+      <stop offset="1" stop-color="var(--c2, #5A7386)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-shirt-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A93A6)"/>
+      <stop offset="1" stop-color="var(--c2, #5A7386)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="106" y="182" width="32" height="178" rx="16" fill="url(#elder-male-onepiece-shirt-dress__sleeve)"/>
+    <rect x="262" y="182" width="32" height="178" rx="16" fill="url(#elder-male-onepiece-shirt-dress__sleeve)"/>
+    <path d="M126 214 Q126 182 166 182 H234 Q274 182 274 214 V460 Q274 472 262 472 H138 Q126 472 126 460 Z"
+          fill="url(#elder-male-onepiece-shirt-dress__body)"/>
+  </g>
+
+  <!-- trim: pointed shirt collar over the full button placket -->
+  <path d="M168 178 L200 206 L232 178 L246 190 L228 210 L200 224 L172 210 L154 190 Z"
+        fill="var(--c2, #5A7386)"/>
+  <rect x="193" y="206" width="14" height="256" rx="5" fill="var(--c2, #5A7386)"/>
+  <g fill="var(--c3, #EFE6D2)">
+    <circle cx="200" cy="224" r="4"/><circle cx="200" cy="260" r="4"/>
+    <circle cx="200" cy="296" r="4"/><circle cx="200" cy="404" r="4"/>
+    <circle cx="200" cy="440" r="4"/>
+  </g>
+  <!-- trim: belt at the natural waist with a flat buckle -->
+  <rect x="128" y="328" width="144" height="20" rx="8" fill="var(--c3, #EFE6D2)"/>
+  <rect x="186" y="324" width="28" height="28" rx="7" fill="var(--c2, #5A7386)"/>
+  <!-- structural: chest patch pocket and buttoned cuffs -->
+  <path d="M148 228 h30 v24 q0 6 -6 6 h-18 q-6 0-6-6 z" fill="var(--c2, #5A7386)"/>
+  <rect x="106" y="346" width="32" height="18" rx="9" fill="var(--c2, #5A7386)"/>
+  <rect x="262" y="346" width="32" height="18" rx="9" fill="var(--c2, #5A7386)"/>
+
+  <path d="M152 202 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

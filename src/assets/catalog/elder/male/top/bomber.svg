@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: long sleeve / ZIP closure / WAIST hem sitting high on a deep rib
+       band / bloused. Against zip-jacket it differs on hem and volume;
+       against blazer on closure and volume. The body bulges outward above a
+       short, cinched hem - the shortest hem of any closed-front top here. -->
+  <defs>
+    <linearGradient id="elder-male-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46514C)"/>
+      <stop offset="1" stop-color="var(--c2, #313A36)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46514C)"/>
+      <stop offset="1" stop-color="var(--c2, #313A36)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D8A24C)"/>
+      <stop offset="1" stop-color="var(--c3, #B4802F)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="94" y="188" width="36" height="150" rx="18" fill="url(#elder-male-top-bomber__sleeve)"/>
+    <rect x="270" y="188" width="36" height="150" rx="18" fill="url(#elder-male-top-bomber__sleeve)"/>
+    <path d="M118 210 q4-40 44-40 h60 q40 0 44 40 q6 42 -12 54 q-36 12-62 12 q-26 0-62-12 q-18-12 -12-54 z"
+          fill="url(#elder-male-top-bomber__body)"/>
+    <path d="M166 160 h56 q9 0 9 9 v15 h-74 v-15 q0-9 9-9 z"
+          fill="url(#elder-male-top-bomber__rib)"/>
+  </g>
+  <!-- trim: deep ribbed hem band, the blouson tell, sitting high at the waist -->
+  <path d="M130 250 q62 18 124 0 v16 q0 11 -11 13 q-51 11 -102 0 q-11-2 -11-13 z"
+        fill="url(#elder-male-top-bomber__rib)"/>
+  <g stroke="var(--c2, #313A36)" stroke-opacity="0.35" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M145 258 v18"/><path d="M164 262 v18"/><path d="M183 264 v18"/>
+    <path d="M202 264 v18"/><path d="M221 262 v18"/><path d="M240 258 v18"/>
+  </g>
+  <!-- trim: ribbed cuffs -->
+  <rect x="94" y="322" width="36" height="18" rx="9" fill="url(#elder-male-top-bomber__rib)"/>
+  <rect x="270" y="322" width="36" height="18" rx="9" fill="url(#elder-male-top-bomber__rib)"/>
+  <!-- structural: zip line with a pull, and two welt pockets at the hem band -->
+  <path d="M200 188 v86" stroke="var(--c3, #D8A24C)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M200 192 v78" stroke="var(--c2, #313A36)" stroke-width="2.6" stroke-dasharray="4 4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="238" r="5.4" fill="var(--c3, #D8A24C)"/>
+  <path d="M146 232 h32 l-3 10 h-32 z" fill="var(--c2, #313A36)"/>
+  <path d="M254 232 h-32 l3 10 h32 z" fill="var(--c2, #313A36)"/>
+  <path d="M146 204 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thick" data-family="thick" data-slot="brows"
+     data-layer="face" data-colors="hair2" data-hides="">
+  <!-- dense straight-edged bar, roughly 12px deep, with a squared-off inner end
+       and a slightly tapered outer end -->
+  <defs>
+    <linearGradient id="elder-male-brows-thick__hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="elder-male-brows-thick__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B2A22" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3B2A22" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left brow: squared inner end at x195 -->
+    <path d="M195 108.8 L195 122.6 L168.5 121.4
+             C161 121 156.6 118.4 156.2 114.9
+             C155.8 111.2 161 108.2 168.5 108.6 Z"
+          fill="url(#elder-male-brows-thick__hair)"/>
+    <!-- right brow, mirrored about x=200 -->
+    <path d="M205 108.8 L205 122.6 L231.5 121.4
+             C239 121 243.4 118.4 243.8 114.9
+             C244.2 111.2 239 108.2 231.5 108.6 Z"
+          fill="url(#elder-male-brows-thick__hair)"/>
+  </g>
+
+  <!-- lower edge deepening -->
+  <path d="M195 108.8 L195 122.6 L168.5 121.4
+           C161 121 156.6 118.4 156.2 114.9
+           C155.8 111.2 161 108.2 168.5 108.6 Z"
+        fill="url(#elder-male-brows-thick__shade)"/>
+  <path d="M205 108.8 L205 122.6 L231.5 121.4
+           C239 121 243.4 118.4 243.8 114.9
+           C244.2 111.2 239 108.2 231.5 108.6 Z"
+        fill="url(#elder-male-brows-thick__shade)"/>
+
+  <!-- a few coarse hairs breaking the top edge, the older-brow tell -->
+  <path d="M172 108.8 q1.5 -4 4 -5.4 M182 108.4 q1 -4.4 3.4 -6
+           M162.5 110.6 q0.5 -3.6 2.6 -5.2"
+        stroke="var(--hair2, #9AA3B2)" stroke-width="1.6" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 108.8 q-1.5 -4 -4 -5.4 M218 108.4 q-1 -4.4 -3.4 -6
+           M237.5 110.6 q-0.5 -3.6 -2.6 -5.2"
+        stroke="var(--hair2, #9AA3B2)" stroke-width="1.6" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+</svg>

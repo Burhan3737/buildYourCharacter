@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Man Bun" data-family="man-bun" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `bun` and `ponytail`:
+       (1) PARTING — everything is swept straight back off an exposed forehead, so the
+           front mass is a band along the top of the skull with 26px of bare brow
+           beneath it, where `bun` brings a full fringe down to y90;
+       (2) GATHERING — the knot is small and sits HIGH, breaking the outline above the
+           crown at y14, instead of the low round bun at y118 behind the head.
+       Salt-and-pepper by default, which suits the age of this bundle. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-man-bun__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-man-bun__knot-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- hair pulled tight to the skull and gathered behind -->
+      <path d="M 150 79 Q 140 115 148 147 L 252 147 Q 260 115 250 79 Q 200 61 150 79 Z"
+            fill="url(#elder-male-hair-man-bun__back-grad)"/>
+      <!-- the knot, sitting high on the back of the crown -->
+      <circle cx="200" cy="63" r="26" fill="url(#elder-male-hair-man-bun__knot-grad)"/>
+    </g>
+    <!-- the wrap holding the knot, and the coil inside it -->
+    <path d="M 182 75 q 18 10 36 0 l 2 10 q -20 11 -40 0 z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M 188 59 C 188 51 212 51 212 61 C 212 69 194 71 192 65"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 186 49 q 14 -8 28 -1" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-man-bun__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept-back band: forehead left bare from y67 down -->
+      <path d="M 141 111 C 138 89 148 73 166 65 C 182 57 218 57 234 65 C 252 73 262 89 259 111 C 252 99 240 93 224 91 C 210 89 190 89 176 91 C 160 93 148 99 141 111 Z"
+            fill="url(#elder-male-hair-man-bun__front-grad)"/>
+      <!-- two strands escaping at the temples -->
+      <path d="M 146 101 C 140 117 139 135 143 151 C 147 157 153 156 154 149 C 152 135 152 119 156 105 Z"
+            fill="url(#elder-male-hair-man-bun__front-grad)"/>
+      <path d="M 254 103 C 260 119 261 139 257 155 C 253 161 247 160 246 153 C 248 139 248 121 244 107 Z"
+            fill="url(#elder-male-hair-man-bun__front-grad)"/>
+    </g>
+    <!-- comb marks running back from the hairline -->
+    <path d="M 156 101 Q 176 85 200 81" stroke="var(--hair2, #9AA3B2)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 244 101 Q 224 85 200 81" stroke="var(--hair2, #9AA3B2)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 172 95 Q 196 83 224 89" stroke="var(--hair2, #9AA3B2)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 164 75 C 182 65 218 65 236 75" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

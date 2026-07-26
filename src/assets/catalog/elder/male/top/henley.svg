@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: long sleeve PUSHED UP at the forearm / half placket, collarless /
+       hip / straight. Against button-up it differs on closure and sleeve
+       treatment; against tee on closure and sleeve length. The bare forearm
+       below the pushed-up roll is real geometry, not a texture. -->
+  <defs>
+    <linearGradient id="elder-male-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #5E7060)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #5E7060)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="112" y="194" width="28" height="94" rx="14" fill="url(#elder-male-top-henley__sleeve)"/>
+    <rect x="260" y="194" width="28" height="94" rx="14" fill="url(#elder-male-top-henley__sleeve)"/>
+    <path d="M135 216 q2-36 36-36 h58 q36 0 38 36 v50 q0 38 -38 38 h-58 q-36 0-36-38 z"
+          fill="url(#elder-male-top-henley__body)"/>
+  </g>
+  <!-- trim: contrast placket band, three buttons, no collar -->
+  <path d="M188 180 h24 v50 q0 5 -5 5 h-14 q-5 0-5-5 z" fill="var(--c3, #EAE0CD)"/>
+  <circle cx="200" cy="192" r="3.4" fill="var(--c2, #5E7060)"/>
+  <circle cx="200" cy="210" r="3.4" fill="var(--c2, #5E7060)"/>
+  <circle cx="200" cy="228" r="3.4" fill="var(--c2, #5E7060)"/>
+  <!-- trim: bound collarless neckline -->
+  <path d="M174 180 q26 16 52 0 q-4 11 -13 14 h-26 q-9-3 -13-14 z" fill="var(--c3, #EAE0CD)"/>
+  <!-- structural: the roll where the sleeve is pushed up at the forearm -->
+  <rect x="112" y="270" width="28" height="18" rx="9" fill="var(--c2, #5E7060)"/>
+  <rect x="260" y="270" width="28" height="18" rx="9" fill="var(--c2, #5E7060)"/>
+  <path d="M114 277 h24" stroke="var(--c3, #EAE0CD)" stroke-opacity="0.5" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M262 277 h24" stroke="var(--c3, #EAE0CD)" stroke-opacity="0.5" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M155 210 q45 16 90 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

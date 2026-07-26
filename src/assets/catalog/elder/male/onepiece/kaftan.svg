@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kaftan" data-family="kaftan" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: WIDE T-sleeve cut in one with the body · CLOSED slit neckline · calf
+       hem · A-line flare. Against robe it differs on closure (closed vs wrap)
+       and volume (flared column vs straight overlap); fronts never cross. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-kaftan__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9B25F)"/>
+      <stop offset="1" stop-color="var(--c2, #AE8940)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-kaftan__petal" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 q5 3 0 6 q5 3 0 6 q-5-3 0-6 q-5-3 0-6 z" fill="var(--c3, #3E4A5E)" opacity="0.65"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-kaftan__clip">
+      <path d="M100 190 Q100 176 114 176 H286 Q300 176 300 190 V216 Q300 230 286 230 H244 V392
+               Q307 408 313 520 Q314 532 301 532 H99 Q86 532 87 520 Q93 408 156 392 V230 H114
+               Q100 230 100 216 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M100 190 Q100 176 114 176 H286 Q300 176 300 190 V216 Q300 230 286 230 H244 V392
+             Q307 408 313 520 Q314 532 301 532 H99 Q86 532 87 520 Q93 408 156 392 V230 H114
+             Q100 230 100 216 Z"
+          fill="url(#elder-male-onepiece-kaftan__cloth)"/>
+  </g>
+
+  <!-- pattern: a woven floral band near the cuffs and at the hem -->
+  <g clip-path="url(#elder-male-onepiece-kaftan__clip)">
+    <rect x="96" y="200" width="208" height="20" fill="url(#elder-male-onepiece-kaftan__petal)"/>
+    <rect x="82" y="500" width="234" height="22" fill="url(#elder-male-onepiece-kaftan__petal)"/>
+  </g>
+
+  <!-- trim: the slit neckline, bound and running down the chest -->
+  <path d="M186 174 h28 v16 h-28 z" fill="var(--c3, #3E4A5E)"/>
+  <path d="M200 190 v56" stroke="var(--c3, #3E4A5E)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M200 194 v48" stroke="var(--c1, #D9B25F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- structural: the T-seam where the wide sleeve meets the body -->
+  <path d="M156 230 v162" stroke="var(--c2, #AE8940)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 230 v162" stroke="var(--c2, #AE8940)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: bound cuff edge on each wide sleeve -->
+  <path d="M104 222 h40" stroke="var(--c3, #3E4A5E)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M296 222 h-40" stroke="var(--c3, #3E4A5E)" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <path d="M146 200 q54 12 108 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

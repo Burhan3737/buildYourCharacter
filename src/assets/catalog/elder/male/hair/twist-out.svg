@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Twist Out" data-family="twist-out" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `curls` and `long-waves`:
+       (1) VOLUME/TEXTURE OF THE OUTLINE — the hem is built from eight spiral lobes of
+           unequal size cut straight into the silhouette path, so the outer contour is
+           irregular everywhere; nothing is drawn on top of a smooth shape;
+       (2) LENGTH — the defined spirals stop at the shoulder line around y196, between
+           the ear-length curls and the past-shoulder waves. No parting anywhere. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-twist-out__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #7E838F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M 132 93 C 118 129 114 171 122 203 C 130 219 148 217 151 201 C 158 221 176 225 182 209 C 190 227 210 227 217 210 C 224 225 244 222 249 206 C 260 219 275 212 276 197 C 282 163 279 127 268 93 C 244 65 156 65 132 93 Z"
+            fill="url(#elder-male-hair-twist-out__back-grad)"/>
+    </g>
+    <!-- the two-strand twist of each falling lobe -->
+    <path d="M 132 127 C 140 135 132 145 140 153 C 148 161 140 171 148 179"
+          stroke="var(--hair2, #7E838F)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M 164 131 C 172 139 164 149 172 157 C 180 165 172 175 180 185"
+          stroke="var(--hair2, #7E838F)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M 198 135 C 206 143 198 153 206 161 C 214 169 206 179 214 189"
+          stroke="var(--hair2, #7E838F)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M 232 131 C 240 139 232 149 240 157 C 248 165 240 175 248 183"
+          stroke="var(--hair2, #7E838F)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M 262 123 C 270 131 262 141 268 151" stroke="var(--hair2, #7E838F)"
+          stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-twist-out__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #7E838F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown volume, lobed all the way round the top edge -->
+      <path d="M 134 131 C 127 107 132 83 148 69 C 158 55 178 49 196 51 C 214 48 234 55 244 69 C 262 81 270 107 264 131 C 252 119 240 113 200 111 C 160 112 146 118 134 131 Z"
+            fill="url(#elder-male-hair-twist-out__front-grad)"/>
+    </g>
+    <!-- spiral definition across the crown, no parting drawn anywhere -->
+    <path d="M 152 107 C 144 101 150 91 158 93 C 166 95 166 85 158 81"
+          stroke="var(--hair2, #7E838F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 182 103 C 174 97 180 85 188 87 C 196 89 196 77 188 73"
+          stroke="var(--hair2, #7E838F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 214 103 C 222 97 216 85 208 87 C 200 89 200 77 208 73"
+          stroke="var(--hair2, #7E838F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 246 107 C 254 101 248 91 240 93 C 232 95 232 85 240 81"
+          stroke="var(--hair2, #7E838F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- hairline showing at the temples -->
+    <path d="M 136 123 Q 146 111 160 107 Q 146 115 140 127 Z" fill="var(--skin1, #E7B892)" opacity="0.9"/>
+    <path d="M 264 123 Q 254 111 240 107 Q 254 115 260 127 Z" fill="var(--skin1, #E7B892)" opacity="0.9"/>
+    <path d="M 164 65 C 182 53 216 53 234 65" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

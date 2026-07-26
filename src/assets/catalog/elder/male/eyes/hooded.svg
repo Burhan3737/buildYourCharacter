@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hooded" data-family="hooded" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <!-- heavy brow-side hood folding down over the crease, leaving only a short
+       strip of lid visible above the lash line -->
+  <defs>
+    <linearGradient id="elder-male-eyes-hooded__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFE4F0"/>
+    </linearGradient>
+    <linearGradient id="elder-male-eyes-hooded__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #6E5636)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #6E5636)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="elder-male-eyes-hooded__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #E7B892)"/>
+      <stop offset="1" stop-color="var(--skin2, #C99A72)"/>
+    </linearGradient>
+    <clipPath id="elder-male-eyes-hooded__clip-l">
+      <path d="M161 134.5 C163 127 175 124 187 127 C194.5 129 196 137.5 191.5 142.5
+               C182 147.5 167 144.5 161 134.5 Z"/>
+    </clipPath>
+    <clipPath id="elder-male-eyes-hooded__clip-r">
+      <path d="M239 134.5 C237 127 225 124 213 127 C205.5 129 204 137.5 208.5 142.5
+               C218 147.5 233 144.5 239 134.5 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M161 134.5 C163 127 175 124 187 127 C194.5 129 196 137.5 191.5 142.5
+             C182 147.5 167 144.5 161 134.5 Z"
+          fill="url(#elder-male-eyes-hooded__sclera)"/>
+    <path d="M239 134.5 C237 127 225 124 213 127 C205.5 129 204 137.5 208.5 142.5
+             C218 147.5 233 144.5 239 134.5 Z"
+          fill="url(#elder-male-eyes-hooded__sclera)"/>
+  </g>
+
+  <g clip-path="url(#elder-male-eyes-hooded__clip-l)">
+    <circle cx="177.5" cy="135" r="9" fill="#3B2A22"/>
+    <circle cx="177.5" cy="135" r="9" fill="url(#elder-male-eyes-hooded__iris)"/>
+    <circle cx="177.5" cy="135" r="4" fill="#3B2A22"/>
+    <circle cx="174.4" cy="132" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#elder-male-eyes-hooded__clip-r)">
+    <circle cx="222.5" cy="135" r="9" fill="#3B2A22"/>
+    <circle cx="222.5" cy="135" r="9" fill="url(#elder-male-eyes-hooded__iris)"/>
+    <circle cx="222.5" cy="135" r="4" fill="#3B2A22"/>
+    <circle cx="219.4" cy="132" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- lash line follows the top of the aperture -->
+  <path d="M161.5 133 C164 126 175.5 122.6 187.5 125.8" stroke="#3B2A22" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238.5 133 C236 126 224.5 122.6 212.5 125.8" stroke="#3B2A22" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the hood itself: a soft skin fold dropping over the outer half of the lid -->
+  <path d="M156 126 C159 116 174 111 190 114.5 C196 116 197.5 120 195 122.5
+           C182 118 168 120.5 161.5 128 C158.5 130.5 155 129.5 156 126 Z"
+        fill="url(#elder-male-eyes-hooded__hood)"/>
+  <path d="M244 126 C241 116 226 111 210 114.5 C204 116 202.5 120 205 122.5
+           C218 118 232 120.5 238.5 128 C241.5 130.5 245 129.5 244 126 Z"
+        fill="url(#elder-male-eyes-hooded__hood)"/>
+  <!-- the fold edge, which is what makes the hood read -->
+  <path d="M157 127.5 C160.5 118.5 175 114 191 117.5" stroke="var(--skin2, #C99A72)"
+        stroke-opacity="0.75" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M243 127.5 C239.5 118.5 225 114 209 117.5" stroke="var(--skin2, #C99A72)"
+        stroke-opacity="0.75" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M167 145 Q178 148 188 145.5" stroke="#3B2A22" stroke-opacity="0.18" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 145 Q222 148 212 145.5" stroke="#3B2A22" stroke-opacity="0.18" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+</svg>

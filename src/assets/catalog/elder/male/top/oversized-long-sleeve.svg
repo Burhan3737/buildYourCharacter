@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Long Sleeve" data-family="oversized-long-sleeve" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: DROPPED/OVERSIZED shoulder / closed / PAST HIP / boxy.
+       Against stripes it differs on shoulder and hem; against sweater on
+       shoulder and hem depth. The widest torso block in the bundle, its
+       shoulder seam falls onto the upper arm and the sleeve runs past the
+       wrist over the hand. -->
+  <defs>
+    <linearGradient id="elder-male-top-oversized-long-sleeve__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4B7A4)"/>
+      <stop offset="1" stop-color="var(--c2, #A2947E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-oversized-long-sleeve__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4B7A4)"/>
+      <stop offset="1" stop-color="var(--c2, #A2947E)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="90" y="202" width="40" height="182" rx="20" fill="url(#elder-male-top-oversized-long-sleeve__sleeve)"/>
+    <rect x="270" y="202" width="40" height="182" rx="20" fill="url(#elder-male-top-oversized-long-sleeve__sleeve)"/>
+    <path d="M112 216 q0-38 44-38 h88 q44 0 44 38 v88 q0 42 -44 42 h-88 q-44 0-44-42 z"
+          fill="url(#elder-male-top-oversized-long-sleeve__body)"/>
+  </g>
+  <!-- panel: contrast lower half, blocked at the natural waist -->
+  <path d="M113 288 h174 v16 q0 42 -44 42 h-88 q-44 0-44-42 z" fill="var(--c3, #6E6152)" opacity="0.92"/>
+  <!-- trim: dropped shoulder seams, drawn where the seam actually falls -->
+  <path d="M130 204 q4 20 0 40" stroke="var(--c2, #A2947E)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M270 204 q-4 20 0 40" stroke="var(--c2, #A2947E)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- trim: wide turned cuffs, well past the wrist -->
+  <rect x="90" y="356" width="40" height="24" rx="12" fill="var(--c3, #6E6152)"/>
+  <rect x="270" y="356" width="40" height="24" rx="12" fill="var(--c3, #6E6152)"/>
+  <!-- trim: wide ribbed neck bind -->
+  <path d="M160 178 h80 q6 14 -6 20 q-34 10 -68 0 q-12-6 -6-20 z" fill="var(--c3, #6E6152)"/>
+  <path d="M154 208 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

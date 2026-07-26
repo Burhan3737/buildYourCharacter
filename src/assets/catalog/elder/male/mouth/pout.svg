@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pout" data-family="pout" data-slot="mouth"
+     data-layer="face" data-colors="lip1" data-hides="">
+  <!-- small and pushed forward: a narrow 30px mouth whose lower lip carries
+       roughly twice the depth of the upper -->
+  <defs>
+    <linearGradient id="elder-male-mouth-pout__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="elder-male-mouth-pout__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2A22" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- upper lip: shallow, with a soft cupid's bow -->
+    <path d="M185.5 148 C189.5 142.3 196 140.8 200 143.8 C204 140.8 210.5 142.3 214.5 148
+             C208.5 150.2 191.5 150.2 185.5 148 Z"
+          fill="var(--lip1, #C46E5E)"/>
+    <!-- lower lip: pushed forward and clearly the fuller of the two -->
+    <path d="M185 149.6 C190.8 147 209.2 147 215 149.6
+             C216.6 160 209.8 166.4 200 166.4
+             C190.2 166.4 183.4 160 185 149.6 Z"
+          fill="var(--lip1, #C46E5E)"/>
+    <path d="M185.5 148 C189.5 142.3 196 140.8 200 143.8 C204 140.8 210.5 142.3 214.5 148
+             C208.5 150.2 191.5 150.2 185.5 148 Z"
+          fill="url(#elder-male-mouth-pout__upper)"/>
+    <path d="M185 149.6 C190.8 147 209.2 147 215 149.6
+             C216.6 160 209.8 166.4 200 166.4
+             C190.2 166.4 183.4 160 185 149.6 Z"
+          fill="url(#elder-male-mouth-pout__lower)"/>
+  </g>
+
+  <!-- lip seam -->
+  <path d="M187 148.7 Q200 151.2 213 148.7" stroke="#3B2A22" stroke-opacity="0.4"
+        stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- highlight on the crest of the full lower lip -->
+  <path d="M192.5 154.6 Q200 152.6 207.5 154.6" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- soft crease pulled in at each corner by the pushed-forward shape -->
+  <path d="M183.5 150 q-3.5 2.5 -4 6" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="1.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216.5 150 q3.5 2.5 4 6" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="1.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

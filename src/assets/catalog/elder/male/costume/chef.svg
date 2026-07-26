@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chef" data-family="chef" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: long set-in sleeve · DOUBLE-BREASTED closure · calf-length apron over
+       straight trousers · straight volume. Against medic it differs on closure
+       (double-breasted button rows vs an open V-neck) and hem (apron over full
+       trousers vs a short scrub tunic); against firefighter on volume and closure. -->
+  <defs>
+    <linearGradient id="elder-male-costume-chef__whites" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4F1E8)"/>
+      <stop offset="1" stop-color="var(--c1, #D9D4C6)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-chef__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6F7480)"/>
+      <stop offset="1" stop-color="var(--c2, #4E535E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-chef__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C4C9D2)"/>
+      <stop offset="1" stop-color="var(--c3, #A7ADB9)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="100" y="196" width="32" height="168" rx="16" fill="url(#elder-male-costume-chef__whites)"/>
+    <rect x="268" y="196" width="32" height="168" rx="16" fill="url(#elder-male-costume-chef__whites)"/>
+    <path d="M124 216 q4-32 40-32 h72 q36 0 40 32 v92 q0 36 -40 36 h-72 q-36 0-40-36 z"
+          fill="url(#elder-male-costume-chef__whites)"/>
+    <rect x="164" y="316" width="34" height="234" rx="14" fill="url(#elder-male-costume-chef__trouser)"/>
+    <rect x="202" y="316" width="34" height="234" rx="14" fill="url(#elder-male-costume-chef__trouser)"/>
+    <path d="M150 306 h100 q6 0 6 10 l6 154 q1 12 -13 12 h-94 q-14 0-13-12 l6-154 q0-10 6-10 z"
+          fill="url(#elder-male-costume-chef__apron)"/>
+  </g>
+
+  <!-- structural: the double-breasted button rows, the chef's-jacket tell -->
+  <path d="M178 188 q22 12 44 0 v10 q-22 12 -44 0 z" fill="var(--c1, #D9D4C6)"/>
+  <g fill="var(--c2, #6F7480)">
+    <circle cx="180" cy="222" r="4.2"/><circle cx="180" cy="250" r="4.2"/><circle cx="180" cy="278" r="4.2"/>
+    <circle cx="220" cy="222" r="4.2"/><circle cx="220" cy="250" r="4.2"/><circle cx="220" cy="278" r="4.2"/>
+  </g>
+  <path d="M200 204 q-20 6 -20 86" stroke="var(--c1, #D9D4C6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- trim: knotted neckerchief at the throat -->
+  <path d="M172 188 L200 214 L228 188 L221 185 L200 203 L179 185 Z" fill="var(--c3, #C4C9D2)"/>
+  <path d="M200 210 l-9 16 l9 6 l9-6 z" fill="var(--c3, #C4C9D2)"/>
+  <!-- structural: apron waist tie and a patch pocket -->
+  <path d="M150 320 h96" stroke="var(--c2, #6F7480)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M246 320 q16 8 20 26" stroke="var(--c2, #6F7480)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M176 388 h48 v38 q0 8 -8 8 h-32 q-8 0-8-8 z" fill="var(--c2, #6F7480)" opacity="0.5"/>
+  <path d="M200 392 v38" stroke="var(--c3, #A7ADB9)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- trim: turned-back cuffs and clogs -->
+  <rect x="100" y="336" width="32" height="18" rx="9" fill="var(--c2, #6F7480)"/>
+  <rect x="268" y="336" width="32" height="18" rx="9" fill="var(--c2, #6F7480)"/>
+  <g class="sp-shadow">
+    <rect x="152" y="544" width="50" height="26" rx="12" fill="url(#elder-male-costume-chef__whites)"/>
+    <rect x="198" y="544" width="50" height="26" rx="12" fill="url(#elder-male-costume-chef__whites)"/>
+  </g>
+
+  <path d="M150 200 q50 14 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

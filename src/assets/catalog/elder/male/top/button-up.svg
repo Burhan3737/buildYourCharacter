@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Button-Up Shirt" data-family="button-up" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: long cuffed sleeve / full button placket / hip / straight.
+       Against tee it differs on shoulder (long vs short) and closure (full
+       placket vs closed); a wider, taller single torso block with a flat
+       collar rather than a crew. -->
   <defs>
     <linearGradient id="elder-male-top-button-up__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #E3C48D)"/>
@@ -12,21 +16,26 @@
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <rect x="114" y="192" width="34" height="158" rx="17" fill="url(#elder-male-top-button-up__sleeve)"/>
-    <rect x="252" y="192" width="34" height="158" rx="17" fill="url(#elder-male-top-button-up__sleeve)"/>
-    <path d="M136 212 q0-32 34-32 h60 q34 0 34 32 v104 q0 34 -34 34 h-60 q-34 0 -34-34 z"
+    <rect x="112" y="190" width="30" height="160" rx="15" fill="url(#elder-male-top-button-up__sleeve)"/>
+    <rect x="258" y="190" width="30" height="160" rx="15" fill="url(#elder-male-top-button-up__sleeve)"/>
+    <path d="M133 210 q0-26 26-26 h82 q26 0 26 26 v96 q0 26 -26 26 h-82 q-26 0-26-26 z"
           fill="url(#elder-male-top-button-up__body)"/>
   </g>
-  <rect x="114" y="330" width="34" height="20" rx="10" fill="var(--c2, #C7A468)"/>
-  <rect x="252" y="330" width="34" height="20" rx="10" fill="var(--c2, #C7A468)"/>
-  <rect x="196" y="180" width="8" height="170" rx="3" fill="var(--c2, #C7A468)"/>
-  <path d="M174 180 L200 182 L196 212 L170 190 z" fill="var(--c2, #C7A468)"/>
-  <path d="M226 180 L200 182 L204 212 L230 190 z" fill="var(--c2, #C7A468)"/>
-  <circle cx="200" cy="228" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="260" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="292" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <circle cx="200" cy="324" r="4.5" fill="var(--c3, #3B2A22)"/>
-  <path d="M152 240 h28 v22 q0 6 -6 6 h-16 q-6 0 -6-6 z" fill="var(--c2, #C7A468)"/>
-  <path d="M150 208 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <!-- trim: flat collar, two points -->
+  <path d="M172 178 L200 200 L228 178 L242 190 L228 210 L200 222 L172 210 L158 190 Z"
+        fill="var(--c2, #C7A468)"/>
+  <path d="M182 184 L200 198 L218 184 L200 210 Z" fill="var(--skin2, #C99A72)"/>
+  <!-- structural: full button placket down the centre -->
+  <rect x="196" y="200" width="8" height="130" rx="3" fill="var(--c2, #C7A468)"/>
+  <circle cx="200" cy="216" r="4.2" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="244" r="4.2" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="272" r="4.2" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="300" r="4.2" fill="var(--c3, #3B2A22)"/>
+  <!-- trim: buttoned cuffs -->
+  <rect x="112" y="330" width="30" height="18" rx="9" fill="var(--c2, #C7A468)"/>
+  <rect x="258" y="330" width="30" height="18" rx="9" fill="var(--c2, #C7A468)"/>
+  <!-- structural: chest pocket -->
+  <path d="M148 236 h28 v22 q0 6 -6 6 h-16 q-6 0-6-6 z" fill="var(--c2, #C7A468)"/>
+  <path d="M151 202 q49 16 98 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

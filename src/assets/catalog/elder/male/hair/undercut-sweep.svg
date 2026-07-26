@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Undercut Sweep" data-family="undercut-sweep" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- silhouette axes vs `side-part` and `pixie`:
+       (1) PARTING — a deep disconnected part at x150: the left side is shaved to the
+           skin with the temple bare, and the whole top is thrown across it;
+       (2) VOLUME — deliberately asymmetric, with the swept mass piling up on the right
+           and falling to y150 past the ear while the left edge stops at y84. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-undercut-sweep__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #5F6470)"/>
+        <stop offset="1" stop-color="var(--hair2, #5F6470)" stop-opacity="0.3"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- shaved nape carrying round from the undercut -->
+      <path d="M 152 123 C 150 147 168 165 200 167 C 232 165 250 149 250 127 L 236 141 L 200 149 L 166 139 Z"
+            fill="url(#elder-male-hair-undercut-sweep__back-grad)"/>
+    </g>
+    <path d="M 168 141 Q 200 153 234 143" stroke="var(--hair2, #5F6470)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-undercut-sweep__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFCABF)"/>
+        <stop offset="1" stop-color="var(--hair2, #5F6470)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-undercut-sweep__shave-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #5F6470)" stop-opacity="0.85"/>
+        <stop offset="1" stop-color="var(--hair2, #5F6470)" stop-opacity="0.2"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the swept top: gathered low on the left, piled and falling on the right -->
+      <path d="M 148 107 C 144 79 168 55 202 55 C 240 55 266 75 267 113 C 270 139 264 161 252 173 C 256 147 249 129 236 119 C 224 111 204 107 186 105 C 170 103 156 103 148 107 Z"
+            fill="url(#elder-male-hair-undercut-sweep__front-grad)"/>
+      <!-- the undercut itself: clipper-short stubble, skin reading through it -->
+      <path d="M 143 111 C 144 127 148 139 156 147 C 164 141 168 129 168 115 C 160 111 151 109 143 111 Z"
+            fill="url(#elder-male-hair-undercut-sweep__shave-grad)"/>
+    </g>
+
+    <!-- the disconnected part line, cut hard between shave and sweep -->
+    <path d="M 147 109 Q 158 105 170 105" stroke="var(--hair2, #5F6470)" stroke-width="3.6"
+          fill="none" stroke-linecap="round"/>
+    <!-- the sweep, combed across from left to right -->
+    <path d="M 162 97 Q 206 75 250 97" stroke="var(--hair2, #5F6470)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M 168 113 Q 212 89 252 119" stroke="var(--hair2, #5F6470)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 240 131 Q 252 149 250 169" stroke="var(--hair2, #5F6470)" stroke-width="3"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- bare temple, so the undercut reads as skin and not as dark hair -->
+    <path d="M 144 119 Q 152 129 156 141 Q 147 135 143 123 Z"
+          fill="var(--skin1, #E7B892)" opacity="0.75"/>
+    <path d="M 180 69 C 206 59 236 65 252 83" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wizard" data-family="wizard" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: WIDE DRAPED sleeve · closed cowl neck · ankle/ground-length robe with
+       NO leg division at all · flared A-line volume. Against knight it differs on
+       volume (flared drape vs boxy plate) and hem (full-length vs thigh tabard). -->
+  <defs>
+    <linearGradient id="elder-male-costume-wizard__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B4A86)"/>
+      <stop offset="1" stop-color="var(--c1, #2F2E5C)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-wizard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B4A86)"/>
+      <stop offset="1" stop-color="var(--c1, #2F2E5C)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-wizard__stars" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M7 3 l2 4 l4 1 l-3 3 l1 4 l-4-2 l-4 2 l1-4 l-3-3 l4-1 z"
+            fill="var(--c3, #F2D06B)" opacity="0.6"/>
+      <circle cx="17" cy="15" r="1.6" fill="var(--c3, #F2D06B)" opacity="0.5"/>
+    </pattern>
+    <clipPath id="elder-male-costume-wizard__clip">
+      <path d="M136 204 q8-22 44-22 h40 q36 0 44 22 l34 372 q2 10 -14 10 h-160 q-16 0-14-10 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M136 184 h-28 q-16 0-18 16 l-14 130 q-2 18 16 18 h38 q16 0 16-18 v-128 z"
+          fill="url(#elder-male-costume-wizard__sleeve)"/>
+    <path d="M264 184 h28 q16 0 18 16 l14 130 q2 18 -16 18 h-38 q-16 0-16-18 v-128 z"
+          fill="url(#elder-male-costume-wizard__sleeve)"/>
+    <path d="M136 204 q8-22 44-22 h40 q36 0 44 22 l34 372 q2 10 -14 10 h-160 q-16 0-14-10 z"
+          fill="url(#elder-male-costume-wizard__robe)"/>
+  </g>
+
+  <!-- pattern: scattered star surface across the robe -->
+  <g clip-path="url(#elder-male-costume-wizard__clip)">
+    <rect x="100" y="184" width="200" height="410" fill="url(#elder-male-costume-wizard__stars)"/>
+  </g>
+
+  <!-- trim: wide banded hem and cuff edges -->
+  <path d="M112 570 h178" stroke="var(--c3, #F2D06B)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M78 316 h50" stroke="var(--c3, #F2D06B)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M322 316 h-50" stroke="var(--c3, #F2D06B)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- trim: cowl neck opening and a corded belt with a tassel -->
+  <path d="M176 184 h48 q6 18 -8 26 h-32 q-14-8 -8-26 z" fill="var(--c3, #F2D06B)"/>
+  <path d="M148 298 q52 16 104 0" stroke="var(--c3, #F2D06B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 306 q8 24 4 42" stroke="var(--c3, #F2D06B)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="213" cy="354" r="5.5" fill="var(--c3, #F2D06B)"/>
+  <!-- structural: long robe folds falling to the hem -->
+  <path d="M166 332 q-8 96 -14 190" stroke="var(--c2, #2F2E5C)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M234 332 q8 96 14 190" stroke="var(--c2, #2F2E5C)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 200 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

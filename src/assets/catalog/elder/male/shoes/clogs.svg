@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clogs" data-family="clogs" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: TOE a bulbous moulded dome and SOLE a deep single-piece block,
+       against the mary jane's flat round toe on a thin welt. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-clogs__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E86C8)"/>
+      <stop offset="1" stop-color="var(--c2, #566BA6)"/>
+    </linearGradient>
+    <pattern id="elder-male-shoes-clogs__vents" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="14">
+      <circle cx="8" cy="7" r="3" fill="var(--c3, #2F3A5C)"/>
+    </pattern>
+    <clipPath id="elder-male-shoes-clogs__clip-l">
+      <path d="M150 546 q0-22 26-22 h14 q22 0 22 24 v12 q0 6 -6 6 h-50 q-6 0 -6-6 z"/>
+    </clipPath>
+    <clipPath id="elder-male-shoes-clogs__clip-r">
+      <path d="M250 546 q0-22 -26-22 h-14 q-22 0 -22 24 v12 q0 6 6 6 h50 q6 0 6-6 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M150 546 q0-22 26-22 h14 q22 0 22 24 v12 q0 6 -6 6 h-50 q-6 0 -6-6 z"
+          fill="url(#elder-male-shoes-clogs__shell)"/>
+    <path d="M250 546 q0-22 -26-22 h-14 q-22 0 -22 24 v12 q0 6 6 6 h50 q6 0 6-6 z"
+          fill="url(#elder-male-shoes-clogs__shell)"/>
+  </g>
+
+  <!-- pattern: the ventilation holes over the moulded dome -->
+  <g clip-path="url(#elder-male-shoes-clogs__clip-l)" opacity="0.9">
+    <rect x="150" y="524" width="62" height="24" fill="url(#elder-male-shoes-clogs__vents)"/>
+  </g>
+  <g clip-path="url(#elder-male-shoes-clogs__clip-r)" opacity="0.9">
+    <rect x="188" y="524" width="62" height="24" fill="url(#elder-male-shoes-clogs__vents)"/>
+  </g>
+
+  <!-- trim: the deep moulded footbed block -->
+  <rect x="146" y="556" width="66" height="14" rx="6" fill="var(--c3, #2F3A5C)"/>
+  <rect x="188" y="556" width="66" height="14" rx="6" fill="var(--c3, #2F3A5C)"/>
+
+  <!-- structural: heel strap flipped back over the collar -->
+  <rect x="150" y="538" width="10" height="22" rx="5" fill="var(--c2, #566BA6)"/>
+  <rect x="240" y="538" width="10" height="22" rx="5" fill="var(--c2, #566BA6)"/>
+
+  <path d="M160 534 q22 7 44 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 534 q22 7 44 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

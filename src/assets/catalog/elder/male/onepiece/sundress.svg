@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Linen Robe" data-family="sundress" data-slot="onepiece"
+     data-name="Sundress" data-family="sundress" data-slot="onepiece"
      data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: STRAP shoulder · closed · knee hem · fitted bodice over an A-line
+       skirt. Against pinafore it differs on closure (closed scoop vs bib on
+       straps) and against maxi-dress on hem (knee vs ankle) and volume. -->
   <defs>
     <linearGradient id="elder-male-onepiece-sundress__bodice" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #E8DFC8)"/>
@@ -10,16 +13,16 @@
       <stop offset="0" stop-color="var(--c1, #E8DFC8)"/>
       <stop offset="1" stop-color="var(--c2, #C7BB9C)"/>
     </linearGradient>
-    <linearGradient id="elder-male-onepiece-sundress__sleeve" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="elder-male-onepiece-sundress__strap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #E8DFC8)"/>
       <stop offset="1" stop-color="var(--c2, #C7BB9C)"/>
     </linearGradient>
   </defs>
 
   <g class="sp-shadow">
-    <!-- short set-in sleeves -->
-    <rect x="114" y="192" width="34" height="40" rx="17" fill="url(#elder-male-onepiece-sundress__sleeve)"/>
-    <rect x="252" y="192" width="34" height="40" rx="17" fill="url(#elder-male-onepiece-sundress__sleeve)"/>
+    <!-- strap shoulders -->
+    <path d="M158 204 L146 184 L158 176 L172 198 Z" fill="url(#elder-male-onepiece-sundress__strap)"/>
+    <path d="M242 204 L254 184 L242 176 L228 198 Z" fill="url(#elder-male-onepiece-sundress__strap)"/>
     <!-- loose robe bodice -->
     <path d="M140 220 q0-20 20-20 q40 22 80 0 q20 0 20 20 V280 L252 306 Q200 314 148 306 L140 280 Z"
           fill="url(#elder-male-onepiece-sundress__bodice)"/>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Polo" data-family="polo" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: short set-in sleeve / HALF PLACKET under a flat knit collar /
+       hip with a curved shirttail hem / fitted. Against tee it differs on
+       closure and volume (fitted, curved hem vs straight tube); against
+       button-up on closure length and sleeve length. -->
+  <defs>
+    <linearGradient id="elder-male-top-polo__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FBF)"/>
+      <stop offset="1" stop-color="var(--c2, #52719E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-polo__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E8FBF)"/>
+      <stop offset="1" stop-color="var(--c2, #52719E)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-polo__pique" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #EBE2CE)" opacity="0.5"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #EBE2CE)" opacity="0.5"/>
+    </pattern>
+    <clipPath id="elder-male-top-polo__clip">
+      <path d="M139 212 q2-36 36-36 h50 q34 0 36 36 v40 q0 24 -9 36 q-12 18-52 18 q-40 0-52-18 q-9-12 -9-36 z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <rect x="117" y="192" width="28" height="60" rx="14" fill="url(#elder-male-top-polo__sleeve)"/>
+    <rect x="255" y="192" width="28" height="60" rx="14" fill="url(#elder-male-top-polo__sleeve)"/>
+    <path d="M139 212 q2-36 36-36 h50 q34 0 36 36 v40 q0 24 -9 36 q-12 18-52 18 q-40 0-52-18 q-9-12 -9-36 z"
+          fill="url(#elder-male-top-polo__body)"/>
+  </g>
+  <!-- pattern: fine pique dot, clipped to the body -->
+  <g clip-path="url(#elder-male-top-polo__clip)">
+    <rect x="132" y="168" width="140" height="140" fill="url(#elder-male-top-polo__pique)"/>
+  </g>
+  <!-- trim: flat knit collar with two points -->
+  <path d="M176 178 L200 204 L224 178 L237 188 L226 204 L200 216 L174 204 L163 188 Z"
+        fill="var(--c3, #EBE2CE)"/>
+  <!-- structural: short two-button half placket -->
+  <rect x="193" y="204" width="14" height="40" rx="4" fill="var(--c3, #EBE2CE)"/>
+  <circle cx="200" cy="214" r="3.2" fill="var(--c2, #52719E)"/>
+  <circle cx="200" cy="232" r="3.2" fill="var(--c2, #52719E)"/>
+  <!-- trim: knit sleeve bands -->
+  <rect x="117" y="234" width="28" height="13" rx="6.5" fill="var(--c3, #EBE2CE)"/>
+  <rect x="255" y="234" width="28" height="13" rx="6.5" fill="var(--c3, #EBE2CE)"/>
+  <path d="M155 204 q45 16 90 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

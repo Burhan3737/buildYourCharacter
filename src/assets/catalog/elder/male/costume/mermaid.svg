@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mermaid" data-family="mermaid" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- axes: strap shoulder (shell bodice, bare arms) · closed · ankle/ground with
+       NO LEG DIVISION at all - the tail is one form flaring to a fluke - fitted
+       tapering volume. Against every other costume in this bundle it differs on
+       shoulder and hem together, since the legs merge into a single tail. -->
+  <defs>
+    <linearGradient id="elder-male-costume-mermaid__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3FA9B5)"/>
+      <stop offset="1" stop-color="var(--c1, #2A7C88)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-mermaid__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0A9B4)"/>
+      <stop offset="1" stop-color="var(--c3, #D08592)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-mermaid__scale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="12">
+      <path d="M8 0 q8 6 0 12 q-8-6 0-12 z" fill="var(--c2, #1D5D67)" opacity="0.3"/>
+    </pattern>
+    <clipPath id="elder-male-costume-mermaid__clip">
+      <path d="M148 292 h104 q4 68 -12 122 q-14 48 -18 100 q-20 10 -40 0 q-4-52 -18-100 q-16-54 -12-122 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M148 292 h104 q4 68 -12 122 q-14 48 -18 100 q-20 10 -40 0 q-4-52 -18-100 q-16-54 -12-122 z"
+          fill="url(#elder-male-costume-mermaid__tail)"/>
+    <path d="M200 522 q-52 4 -66 32 q30 12 66 4 q36 8 66-4 q-14-28 -66-32 z"
+          fill="url(#elder-male-costume-mermaid__tail)"/>
+    <path d="M156 192 h88 q6 40 -8 60 h-72 q-14-20 -8-60 z" fill="url(#elder-male-costume-mermaid__bodice)"/>
+    <path d="M158 258 h84 q4 18 2 34 h-88 q-2-16 2-34 z" fill="url(#elder-male-costume-mermaid__tail)"/>
+  </g>
+
+  <!-- pattern: fish scales over the whole tail -->
+  <g clip-path="url(#elder-male-costume-mermaid__clip)">
+    <rect x="144" y="288" width="112" height="240" fill="url(#elder-male-costume-mermaid__scale)"/>
+  </g>
+
+  <!-- structural: the two shells of the bodice, drawn as ribbed fans -->
+  <path d="M180 204 q-20 8 -20 28 q20 10 40 0 q0-20-20-28 z" fill="var(--c3, #F0A9B4)"/>
+  <path d="M220 204 q20 8 20 28 q-20 10 -40 0 q0-20 20-28 z" fill="var(--c3, #F0A9B4)"/>
+  <g stroke="var(--c2, #2A7C88)" stroke-opacity="0.4" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M180 208 v26"/><path d="M170 214 l6 22"/><path d="M190 214 l-6 22"/>
+    <path d="M220 208 v26"/><path d="M230 214 l-6 22"/><path d="M210 214 l6 22"/>
+  </g>
+  <!-- trim: halter straps to the shoulder and a bound waist edge -->
+  <path d="M180 192 q4-6 8-8" stroke="var(--c3, #F0A9B4)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M220 192 q-4-6 -8-8" stroke="var(--c3, #F0A9B4)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M156 254 h88" stroke="var(--c3, #F0A9B4)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- structural: the fluke's ray lines -->
+  <g stroke="var(--c3, #F0A9B4)" stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M180 530 l-22 20"/><path d="M192 534 l-13 22"/>
+    <path d="M220 530 l22 20"/><path d="M208 534 l13 22"/>
+  </g>
+
+  <path d="M168 206 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wide Leg" data-family="wide-leg" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HIGH waist · full length · WIDE column falling straight from the hip, flaring
+       slightly wider still at the hem so it breaks over the shoe · raw hem. Against cargo
+       it differs on rise and leg width; against snow-pants on leg width and hem treatment. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-wide-leg__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3A48C)"/>
+      <stop offset="1" stop-color="var(--c2, #8F8268)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-wide-leg__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3A48C)"/>
+      <stop offset="1" stop-color="var(--c2, #8F8268)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M136 376 L194 376 L200 546 Q200 552 194 552 L146 552 Q140 552 138 546 Z"
+          fill="url(#elder-male-bottom-wide-leg__leg)"/>
+    <path d="M264 376 L206 376 L200 546 Q200 552 206 552 L254 552 Q260 552 262 546 Z"
+          fill="url(#elder-male-bottom-wide-leg__leg)"/>
+    <rect x="136" y="308" width="128" height="68" rx="28" fill="url(#elder-male-bottom-wide-leg__hip)"/>
+  </g>
+
+  <!-- trim: deep high-rise waistband with a self belt -->
+  <rect x="136" y="308" width="128" height="24" rx="12" fill="var(--c2, #8F8268)"/>
+  <rect x="186" y="312" width="28" height="16" rx="4" fill="var(--c3, #E8DCC3)"/>
+  <!-- structural: two release pleats falling into the wide column -->
+  <path d="M172 340 v34" stroke="var(--c2, #8F8268)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M228 340 v34" stroke="var(--c2, #8F8268)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- structural: long soft drape folds through the wide leg -->
+  <path d="M158 380 q-4 84 -8 168" stroke="var(--c3, #E8DCC3)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 380 q4 84 8 168" stroke="var(--c3, #E8DCC3)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: the hem break over the shoe -->
+  <path d="M140 540 q30 8 58 0" stroke="var(--c2, #8F8268)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M260 540 q-30 8 -58 0" stroke="var(--c2, #8F8268)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M148 344 q52 14 104 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

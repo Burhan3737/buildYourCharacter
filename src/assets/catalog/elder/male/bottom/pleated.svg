@@ -1,41 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
-     data-name="Pleated Trousers" data-family="pleated" data-slot="bottom"
-     data-layer="bottom" data-colors="c1,c2" data-hides="">
+     data-name="Knife-Pleated Skirt" data-family="pleated" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural rise · NO leg division (a skirt, not trousers) · FLARED knife-pleat
+       width · raw hem at the knee. Against skirt (wrap kilt) it differs on leg width — a
+       wider, evenly pleated flare rather than a wrapped cone — and sits lower at the hem;
+       against pencil-skirt on rise and width. -->
   <defs>
-    <linearGradient id="elder-male-bottom-pleated__hip" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #8B93A6)"/>
-      <stop offset="1" stop-color="var(--c2, #707893)"/>
-    </linearGradient>
-    <linearGradient id="elder-male-bottom-pleated__leg" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="elder-male-bottom-pleated__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #8B93A6)"/>
       <stop offset="1" stop-color="var(--c2, #707893)"/>
     </linearGradient>
   </defs>
 
-  <!-- pressed dress trousers with a crisp centre crease -->
   <g class="sp-shadow">
-    <path d="M164 376 H198 V534 q0 10 -10 10 H179 q-10 0 -10 -10 Z"
-          fill="url(#elder-male-bottom-pleated__leg)"/>
-    <path d="M236 376 H202 V534 q0 10 10 10 H221 q10 0 10 -10 Z"
-          fill="url(#elder-male-bottom-pleated__leg)"/>
-    <rect x="148" y="328" width="104" height="50" rx="22"
-          fill="url(#elder-male-bottom-pleated__hip)"/>
+    <path d="M148 326 H252 L280 462 Q200 480 120 462 Z"
+          fill="url(#elder-male-bottom-pleated__body)"/>
   </g>
 
-  <rect x="148" y="328" width="104" height="19" rx="9" fill="var(--c2, #707893)"/>
+  <!-- trim: waistband -->
+  <rect x="148" y="326" width="104" height="18" rx="8" fill="var(--c2, #707893)"/>
 
-  <!-- front pleats -->
-  <path d="M174 348 v186" stroke="var(--c2, #707893)" stroke-opacity="0.6" stroke-width="3"
-        fill="none" stroke-linecap="round"/>
-  <path d="M226 348 v186" stroke="var(--c2, #707893)" stroke-opacity="0.6" stroke-width="3"
+  <!-- structural: knife pleats fanning from waist to hem -->
+  <g stroke="var(--c2, #707893)" stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M158 348 L138 458"/>
+    <path d="M179 346 L166 460"/>
+    <path d="M200 346 L200 462"/>
+    <path d="M221 346 L234 460"/>
+    <path d="M242 348 L262 458"/>
+  </g>
+  <!-- trim: bound raw hem edge -->
+  <path d="M128 458 Q200 476 272 458" stroke="var(--c3, #E9E2D2)" stroke-width="4"
         fill="none" stroke-linecap="round"/>
 
-  <!-- pressed centre creases, running the full leg -->
-  <path d="M181 352 V534" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
-        fill="none" stroke-linecap="round"/>
-  <path d="M219 352 V534" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
-        fill="none" stroke-linecap="round"/>
-
-  <path d="M162 360 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+  <path d="M158 350 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
         fill="none" stroke-linecap="round"/>
 </svg>

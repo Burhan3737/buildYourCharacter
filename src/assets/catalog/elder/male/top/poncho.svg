@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Poncho" data-family="poncho" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: DRAPED shoulder with no sleeve division at all / closed / thigh /
+       flared. Differs from every other top in the slot on shoulder and
+       volume together; one trapezoid of cloth is the whole garment, with no
+       separate sleeve or panel forms whatsoever. -->
+  <defs>
+    <linearGradient id="elder-male-top-poncho__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A0574B)"/>
+      <stop offset="1" stop-color="var(--c2, #7C3F36)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-poncho__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M0 11 h22" stroke="var(--c3, #E9D6B4)" stroke-width="3" stroke-opacity="0.5" fill="none"/>
+      <path d="M11 0 v22" stroke="var(--c3, #E9D6B4)" stroke-width="2" stroke-opacity="0.28" fill="none"/>
+    </pattern>
+    <clipPath id="elder-male-top-poncho__clip">
+      <path d="M158 168 h84 q13 0 16 12 l34 218 q3 14 -12 14 h-164 q-15 0-12-14 l34-218 q3-12 16-12 z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <path d="M158 168 h84 q13 0 16 12 l34 218 q3 14 -12 14 h-164 q-15 0-12-14 l34-218 q3-12 16-12 z"
+          fill="url(#elder-male-top-poncho__cloth)"/>
+  </g>
+  <!-- pattern: woven banding across the cloth -->
+  <g clip-path="url(#elder-male-top-poncho__clip)">
+    <rect x="96" y="246" width="208" height="64" fill="url(#elder-male-top-poncho__weave)"/>
+    <rect x="96" y="352" width="208" height="40" fill="url(#elder-male-top-poncho__weave)"/>
+  </g>
+  <!-- trim: bound slit neck opening -->
+  <path d="M178 168 h44 q5 14 -7 19 q-15 5 -30 0 q-12-5 -7-19 z" fill="var(--c3, #E9D6B4)"/>
+  <!-- trim: fringed lower edge -->
+  <g stroke="var(--c3, #E9D6B4)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M122 400 v15"/><path d="M140 400 v17"/><path d="M158 400 v14"/>
+    <path d="M176 400 v17"/><path d="M194 400 v15"/><path d="M212 400 v17"/>
+    <path d="M230 400 v14"/><path d="M248 400 v17"/><path d="M266 400 v15"/>
+    <path d="M280 400 v16"/>
+  </g>
+  <path d="M164 194 q38 16 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

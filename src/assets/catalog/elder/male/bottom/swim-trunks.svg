@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Trunks" data-family="swim-trunks" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: natural elasticated rise · mid-thigh leg · relaxed width · SIDE-SPLIT hem.
+       Against sweat-shorts it differs on hem treatment; against bike-shorts on leg width
+       and hem treatment. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-swim-trunks__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C7A80)"/>
+      <stop offset="1" stop-color="var(--c2, #295A60)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-swim-trunks__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C7A80)"/>
+      <stop offset="1" stop-color="var(--c2, #295A60)"/>
+    </linearGradient>
+    <pattern id="elder-male-bottom-swim-trunks__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 12 q4.5 -7 9 0 q4.5 7 9 0" stroke="var(--c3, #E8DEC0)" stroke-width="2.4"
+            stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-male-bottom-swim-trunks__clip">
+      <rect x="146" y="376" width="42" height="82" rx="16"/>
+      <rect x="212" y="376" width="42" height="82" rx="16"/>
+      <rect x="140" y="326" width="120" height="50" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="146" y="376" width="42" height="82" rx="16" fill="url(#elder-male-bottom-swim-trunks__leg)"/>
+    <rect x="212" y="376" width="42" height="82" rx="16" fill="url(#elder-male-bottom-swim-trunks__leg)"/>
+    <rect x="140" y="326" width="120" height="50" rx="28" fill="url(#elder-male-bottom-swim-trunks__hip)"/>
+  </g>
+
+  <!-- pattern: small wave motif across the whole garment -->
+  <g clip-path="url(#elder-male-bottom-swim-trunks__clip)">
+    <rect x="136" y="322" width="122" height="140" fill="url(#elder-male-bottom-swim-trunks__wave)"/>
+  </g>
+
+  <!-- trim: elastic waistband with a flat tie -->
+  <rect x="140" y="326" width="120" height="16" rx="8" fill="var(--c2, #295A60)"/>
+  <path d="M188 342 q-10 12 -16 18" stroke="var(--c3, #E8DEC0)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M212 342 q10 12 16 18" stroke="var(--c3, #E8DEC0)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- structural: the short side split at each hem, the trunks' tell -->
+  <path d="M150 428 v28" stroke="var(--c2, #295A60)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M250 428 v28" stroke="var(--c2, #295A60)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- trim: contrast binding along the hem -->
+  <path d="M150 456 h36" stroke="var(--c3, #E8DEC0)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M214 456 h36" stroke="var(--c3, #E8DEC0)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 350 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
