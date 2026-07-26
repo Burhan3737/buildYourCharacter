@@ -16,6 +16,17 @@ describe('layer order', () => {
     expect(LAYER_Z['hair-front']).toBeGreaterThan(LAYER_Z.body)
   })
 
+  /**
+   * `docs/RESEARCH-HAIR.md` §D.2. Above `face` is forced — otherwise the mouth asset punches
+   * through every full beard and a moustache disappears behind the lip. Below `hair-front` is
+   * deliberate — long face-framing hair falls in front of the sideburn, so the only styles that
+   * interact with a beard at all are the ones where occlusion is the correct reading.
+   */
+  it('puts the beard above the face and below the front hair', () => {
+    expect(LAYER_Z.beard).toBeGreaterThan(LAYER_Z.face)
+    expect(LAYER_Z.beard).toBeLessThan(LAYER_Z['hair-front'])
+  })
+
   it('puts headwear above glasses and glasses above hair-front', () => {
     expect(LAYER_Z.headwear).toBeGreaterThan(LAYER_Z.glasses)
     expect(LAYER_Z.glasses).toBeGreaterThan(LAYER_Z['hair-front'])

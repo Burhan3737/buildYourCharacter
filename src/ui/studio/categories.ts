@@ -4,7 +4,9 @@ export interface Category { key: string; label: string; icon: string; slots: Slo
 
 export const CATEGORIES: Category[] = [
   { key: 'face', label: 'Face', icon: '🙂', slots: ['eyes', 'brows', 'mouth'] },
-  { key: 'hair', label: 'Hair', icon: '💇', slots: ['hair'] },
+  // Facial hair rides with the hair, as it does in Toca Boca World's own Face & hair cluster —
+  // one rail button, two sections, so beard and hair colour sit side by side.
+  { key: 'hair', label: 'Hair', icon: '💇', slots: ['hair', 'beard'] },
   { key: 'top', label: 'Tops', icon: '👕', slots: ['top'] },
   { key: 'bottom', label: 'Bottoms', icon: '👖', slots: ['bottom'] },
   { key: 'onepiece', label: 'Dresses', icon: '👗', slots: ['onepiece'] },

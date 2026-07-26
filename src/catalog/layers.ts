@@ -1,6 +1,6 @@
 export const LAYERS = [
   'hair-back', 'body', 'bottom', 'top', 'onepiece', 'shoes',
-  'face', 'hair-front', 'costume', 'necklace', 'earrings', 'glasses', 'headwear',
+  'face', 'beard', 'hair-front', 'costume', 'necklace', 'earrings', 'glasses', 'headwear',
 ] as const
 export type LayerName = (typeof LAYERS)[number]
 
@@ -13,6 +13,10 @@ export const LAYER_Z: Record<LayerName, number> = {
   onepiece: 45,
   shoes: 50,
   face: 60,
+  // Above `face` is forced: below it the mouth punches through every beard. Below `hair-front`
+  // is deliberate: long face-framing hair falls in front of the sideburn, which is what happens
+  // on a head. See `docs/RESEARCH-HAIR.md` §D.2.
+  beard: 65,
   'hair-front': 70,
   costume: 80,
   necklace: 85,

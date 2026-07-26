@@ -50,6 +50,10 @@ export function makeCatalog(): Catalog {
         svg('hair', 'hair', 'bob', '', 'hair1,hair2'),
       '/src/assets/catalog/adult/female/hair/curls.svg':
         svg('hair', 'hair', 'curls', '', 'hair1,hair2'),
+      // Facial hair rides in the hair category and declares the hair variables, so it takes
+      // the hair ramp through `paletteFor` without any slot-specific wiring.
+      '/src/assets/catalog/adult/female/beard/goatee.svg':
+        svg('beard', 'beard', 'goatee', '', 'hair1,hair2'),
       '/src/assets/catalog/adult/female/top/tee.svg': svg('top', 'top', 'tee'),
       '/src/assets/catalog/adult/female/top/hoodie.svg': svg('top', 'top', 'hoodie'),
       // Three declared variables: the case the tray used to collapse to one row.

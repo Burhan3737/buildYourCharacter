@@ -351,6 +351,7 @@ const AXES: Record<string, string> = {
   bottom: 'rise · leg length · leg width · hem treatment',
   shoes: 'shaft height · toe shape · fastening · sole depth',
   hair: 'length · volume/texture of the outline · parting · gathering',
+  beard: 'upper lip · chin & jaw coverage · cheek line · length',
   headwear: 'crown shape · brim · coverage · fastening/drape',
   glasses: 'lens shape · lens size · bridge · temple/strap',
   earrings: 'drop length · body shape · scale · attachment',
@@ -368,7 +369,7 @@ const axesFor = (slot: string) => AXES[slot] ?? 'outline · proportion · openin
  * thumbnail test in the contract instead.
  */
 const SILHOUETTE_SLOTS: ReadonlySet<string> = new Set([
-  'hair', 'top', 'bottom', 'onepiece', 'shoes', 'costume',
+  'hair', 'beard', 'top', 'bottom', 'onepiece', 'shoes', 'costume',
   'glasses', 'headwear', 'earrings', 'necklace',
 ])
 

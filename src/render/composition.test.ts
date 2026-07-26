@@ -33,6 +33,8 @@ const catalog = buildCatalog({
   '/src/assets/catalog/adult/female/bottom/jeans.svg': svg('bottom', 'bottom', 'jeans'),
   '/src/assets/catalog/adult/female/shoes/boots.svg': svg('shoes', 'shoes', 'boots'),
   '/src/assets/catalog/adult/female/hair/long.svg': svg('hair', 'hair', 'long'),
+  '/src/assets/catalog/adult/female/mouth/smile.svg': svg('mouth', 'face', 'smile'),
+  '/src/assets/catalog/adult/female/beard/full-beard.svg': svg('beard', 'beard', 'full-beard'),
   '/src/assets/catalog/adult/female/costume/thor.svg': svg('costume', 'costume', 'thor', 'top,bottom,shoes'),
   '/src/assets/catalog/adult/female/onepiece/dress.svg': svg('onepiece', 'onepiece', 'dress', 'top,bottom'),
   '/src/assets/accessories/adult/glasses/round.svg': svg('glasses', 'glasses', 'round'),
@@ -227,5 +229,76 @@ describe('composeCharacter', () => {
   it('produces stable unique keys', () => {
     const keys = composeCharacter(base, catalog).map((l) => l.key)
     expect(new Set(keys).size).toBe(keys.length)
+  })
+})
+
+/**
+ * Facial hair — `docs/RESEARCH-HAIR.md` §D.2 and §D.3. A beard takes the ordinary non-hair path
+ * through `composeCharacter`: one layer, at its authored coordinates, sorted into place by z.
+ */
+describe('composeCharacter with a beard', () => {
+  const bearded: Character = {
+    ...base,
+    slots: {
+      ...base.slots,
+      mouth: { assetId: 'adult-female-mouth-smile', colors: {} },
+      beard: { assetId: 'adult-female-beard-full-beard', colors: {} },
+    },
+  }
+
+  const order = (c: Character) => composeCharacter(c, catalog).map((l) => l.layer)
+
+  it('draws the beard over the mouth', () => {
+    const layers = order(bearded)
+    expect(layers).toContain('beard')
+    expect(layers.indexOf('beard')).toBeGreaterThan(layers.indexOf('face'))
+  })
+
+  it('draws long front hair over the beard', () => {
+    const layers = order(bearded)
+    expect(layers.indexOf('hair-front')).toBeGreaterThan(layers.indexOf('beard'))
+    // The back half of the hair still falls behind everything.
+    expect(layers.indexOf('hair-back')).toBeLessThan(layers.indexOf('beard'))
+  })
+
+  it('renders the beard as one group at its authored coordinates', () => {
+    const beard = composeCharacter(bearded, catalog).filter((l) => l.layer === 'beard')
+    expect(beard).toHaveLength(1)
+    // Per-bundle art, not head-mounted: no circle-to-circle transform.
+    expect(beard[0].transform).toBeUndefined()
+    expect(beard[0].markup).toContain('full-beard')
+  })
+
+  it('keeps the beard when a costume replaces the outfit', () => {
+    const c = {
+      ...bearded,
+      slots: { ...bearded.slots, costume: { assetId: 'adult-female-costume-thor', colors: {} } },
+    }
+    const layers = composeCharacter(c, catalog)
+    const names = layers.map((l) => l.layer)
+    expect(names).toContain('beard')
+    expect(names).not.toContain('top')
+    // A costume is confined below the shoulder line, but it still draws over a long beard's tip.
+    expect(names.indexOf('costume')).toBeGreaterThan(names.indexOf('beard'))
+  })
+
+  it('leaves the beard alone when headwear covers the hair', () => {
+    const c = {
+      ...bearded,
+      slots: {
+        ...bearded.slots,
+        headwear: { assetId: 'accessories-adult-headwear-hijab', colors: {} },
+      },
+    }
+    expect(hiddenSlots(c, catalog).has('beard')).toBe(false)
+    expect(order(c)).toContain('beard')
+  })
+
+  it('renders cleanly on a bundle whose beard pool is empty', () => {
+    // Nothing is authored for adult/male here, which is the state of the whole catalogue today.
+    const c: Character = { ...bearded, bodyType: 'male', slots: {} }
+    expect(catalog.bundle['adult-male'].beard).toEqual([])
+    expect(() => composeCharacter(c, catalog)).not.toThrow()
+    expect(order(c)).not.toContain('beard')
   })
 })

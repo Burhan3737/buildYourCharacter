@@ -74,6 +74,7 @@ scaling, no `preserveAspectRatio` trickery. So a backdrop is authored at the sta
 |---|---|
 | `eyes`, `brows`, `mouth` | `face` |
 | `hair` | `hair` (special — see below) |
+| `beard` | `beard` — z 65, above `face` and below `hair-front` (see "Facial hair" below) |
 | `top` | `top` |
 | `bottom` | `bottom` |
 | `onepiece` | `onepiece`, with `data-hides="top,bottom"` |
@@ -84,18 +85,57 @@ scaling, no `preserveAspectRatio` trickery. So a backdrop is authored at the sta
 | `earrings` | `earrings` |
 | `necklace` | `necklace` |
 
+## Facial hair
+
+The `beard` slot exists and holds one asset at a time. It covers every facial-hair shape —
+stubble, moustaches, goatees, partial and full beards — because each is reachable as a single
+family. See `docs/RESEARCH-HAIR.md` §D and §E for the reasoning and the family roster.
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Full Beard" data-family="full-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+```
+
+- **It is authored per bundle, not head-mounted.** A beard file lives at
+  `src/assets/catalog/<stage>/<bodyType>/beard/<family>.svg`, exactly like a garment. It is
+  **not** in `ACCESSORY_SLOTS` and gets no `headTransform`: a long beard reaches mid-chest, and
+  scaling it by the head ratio would land it wrong on any bundle whose head-to-torso proportion
+  differs from the reference.
+- **Anchor it to the jaw, chin and upper lip of your own bundle's drawn body**, not to a table.
+  The chin sits at `head.cy + head.ry`, the jaw corners at
+  `(head.cx ± 0.74·head.rx, head.cy + 0.53·head.ry)` with the chin as the control point, and the
+  sideburn roots at `ears[0]` / `ears[1]` — but clarification 2 below is binding: the drawn body
+  is the truth, so measure the jaw curve off `bodies/<stage>/<bodyType>/base.svg` and the mouth
+  box off that bundle's own `mouth/` art before drawing. Overlap every edge by 2–4px; never
+  leave a sliver of skin along the jaw. No beard falls below mid-torso (`torso.y + 0.5·torso.h`).
+- **Declare `hair1,hair2`, in that order.** `--hair1` is the lit mass, `--hair2` the shadow and
+  the texture-defining colour — the philtrum gap, the chin whorl. Declaring `hair*` is also what
+  gives the tray the hair colour ramp for free. The beard's colours are stored separately from
+  the head hair's and are never auto-matched, so a white beard on dark hair is allowed.
+- **One group, not two.** `data-part="back"` / `data-part="front"` is a `hair`-only requirement,
+  and so a root-level `<defs>` is safe here — the discard-the-defs trap applies only to
+  `data-layer="hair"`.
+- **`data-hides=""`, always.** A beard hides nothing, and nothing hides a beard: headwear that
+  declares `data-hides="hair"` covers the hair and leaves the chin alone.
+- **Newborn and toddler bundles must never author facial hair.** Do not create
+  `src/assets/catalog/newborn/*/beard/` or `src/assets/catalog/toddler/*/beard/` at all — not
+  stubble, not a joke asset, not a costume beard. The teen floor is the rule; the empty pool is
+  what enforces it, and it is what stops the randomiser and the stage-change remap from ever
+  producing a bearded infant.
+
 ## Slots that do not exist yet
 
 Three categories that the catalogue research proposes have **no slot to live in**, and an SVG
 author cannot create one. They are recorded here so nobody draws them into the wrong slot — a
-beard on the `costume` layer would sit above the face, and a wheelchair on `shoes` would draw
-in front of the legs and behind nothing.
+face marking on the `costume` layer would sit above the face, and a wheelchair on `shoes` would
+draw in front of the legs and behind nothing.
 
 **None of these appear in `docs/FAMILIES.md`'s rosters. Do not author them.**
 
 | Wanted | Not yet supported — the engineering change it needs |
 |---|---|
-| **facial hair** (`stubble`, `moustache`, `goatee`, `full-beard`, `long-beard`, `sideburns`) | A new `facial-hair` slot at z 65 — above `face` (60), below `hair-front` (70) so a long fringe still overlaps correctly. Add to `SLOTS` and `ACCESSORY_SLOTS` in `src/catalog/types.ts`, to `LAYERS`/`LAYER_Z` in `src/catalog/layers.ts`, and to the studio's category list. Authored per head-size class, realistically `teen` and `adult` only: 6 families × 2 classes = 12 files. |
 | **face markings** (`freckles`, `vitiligo`, `birthmark`, `blush-cheeks`, `beauty-spot`, `laugh-lines`, `scar`, `acne`) | A new `face-mark` slot at z 62 — above `face`, below `hair-front`. Same three files to touch. Markings scale with the head, so like `glasses` they are authored per head-size class: 8 families × 3 classes = 24 files. Note that `--skin1/2/3` are available to any asset, so these can paint through the character's own skin ramp for free. |
 | **mobility aids** (`cane`, `forearm-crutches`, `wheelchair`, `power-chair`, `walker`) | A new `mobility` slot. `cane` and `forearm-crutches` are single-layer — they sit beside the body — and need only a slot at z 55, above `shoes`, authored per bundle: 2 × 12 = 24 files. `wheelchair`, `power-chair` and `walker` are **not** single-layer: the frame and back wheel draw behind the body and the front wheel, footplate and armrest draw in front of it, so the slot must contribute to two layers (z 15 and z 55) using the same two-group file pattern `hair` already uses. That is a renderer change, not just a slot. |
 | **hearing technology worn *with* earrings** | An `ear-tech` slot at z 91, so `hearing-aid` and `ear-cuff` stop competing for one anchor. Until then `hearing-aid-studs` is the workaround family. |

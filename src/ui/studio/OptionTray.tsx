@@ -11,7 +11,8 @@ import { SwatchRow } from './SwatchRow'
 
 export const SLOT_LABELS: Record<Slot, string> = {
   eyes: 'Eyes', brows: 'Brows', mouth: 'Mouth',
-  hair: 'Hair', top: 'Top', bottom: 'Bottom', onepiece: 'Dress', shoes: 'Shoes',
+  hair: 'Hair', beard: 'Facial hair',
+  top: 'Top', bottom: 'Bottom', onepiece: 'Dress', shoes: 'Shoes',
   glasses: 'Glasses', headwear: 'Headwear', earrings: 'Earrings', necklace: 'Necklace',
   costume: 'Costume',
 }

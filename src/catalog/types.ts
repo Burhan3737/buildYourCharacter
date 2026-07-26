@@ -15,13 +15,20 @@ export const bundleKey = (stage: LifeStage, bodyType: BodyType): BundleKey =>
 
 export const SLOTS = [
   'eyes', 'brows', 'mouth',
-  'hair', 'top', 'bottom', 'onepiece', 'shoes',
+  'hair', 'beard', 'top', 'bottom', 'onepiece', 'shoes',
   'glasses', 'headwear', 'earrings', 'necklace',
   'costume',
 ] as const
 export type Slot = (typeof SLOTS)[number]
 
-/** Slots served by the shared head-mounted pool rather than a per-bundle folder. */
+/**
+ * Slots served by the shared head-mounted pool rather than a per-bundle folder.
+ *
+ * `beard` is deliberately absent: a long beard reaches mid-chest, and `headTransform` scales
+ * head-mounted art by the head ratio, which would land it wrong on any bundle whose
+ * head-to-torso proportion differs from the reference. Facial hair is authored per bundle,
+ * against that bundle's own drawn jaw. See `docs/RESEARCH-HAIR.md` §D.3.
+ */
 export const ACCESSORY_SLOTS: readonly Slot[] = ['glasses', 'headwear', 'earrings', 'necklace']
 
 /**

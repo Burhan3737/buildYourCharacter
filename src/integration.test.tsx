@@ -59,6 +59,26 @@ describe('the real catalog', () => {
     }
   })
 
+  /**
+   * No facial hair is authored yet (`docs/RESEARCH-HAIR.md` §D.7 also bars it from the newborn
+   * and toddler bundles permanently). An empty pool has to be an ordinary, renderable state
+   * rather than a crash — that emptiness is what keeps a bearded infant unreachable.
+   */
+  it('carries a renderable beard pool in every bundle, empty or not', () => {
+    for (const stage of LIFE_STAGES) {
+      for (const bodyType of BODY_TYPES) {
+        const key = bundleKey(stage, bodyType)
+        expect(Array.isArray(catalog.bundle[key].beard), `${key} has no beard pool`).toBe(true)
+        const character = {
+          id: 't', name: 't', stage, bodyType, skinToneId: 'sand',
+          slots: {}, createdAt: 0, updatedAt: 0,
+        }
+        expect(() => composeCharacter(character, catalog)).not.toThrow()
+        expect(composeCharacter(character, catalog).some((l) => l.layer === 'beard')).toBe(false)
+      }
+    }
+  })
+
   it('offers head-mounted accessories for every head size class', () => {
     for (const cls of ['toddler', 'teen', 'adult'] as const) {
       for (const slot of ['glasses', 'headwear', 'earrings', 'necklace'] as Slot[]) {

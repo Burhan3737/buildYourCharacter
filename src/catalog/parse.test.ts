@@ -1,11 +1,19 @@
 import { describe, expect, it } from 'vitest'
 import { assetIdFromPath, parseAsset, AssetParseError } from './parse'
+import { ACCESSORY_SLOTS, OVERRIDE_SLOTS, SLOTS } from './types'
 
 const top = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
   data-name="Hoodie" data-family="hoodie" data-slot="top"
   data-layer="top" data-colors="c1,c2" data-hides="">
   <g class="sp-shadow"><rect id="adult-female-top-hoodie__body" x="1" y="2" width="3" height="4" fill="var(--c1, #7E90DC)"/></g>
   <path d="M0 0" fill="var(--c2, #6B7FD0)"/>
+</svg>`
+
+const beard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+  data-name="Full Beard" data-family="full-beard" data-slot="beard"
+  data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <defs><linearGradient id="adult-male-beard-full-beard__mass"/></defs>
+  <g class="sp-shadow"><path d="M3 3" fill="var(--hair1, #43291F)"/></g>
 </svg>`
 
 const hair = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
@@ -86,5 +94,31 @@ describe('parseAsset', () => {
   it('throws when a hair asset is missing its part groups', () => {
     const bad = hair.replace('data-part="front"', 'data-part="middle"')
     expect(() => parseAsset('x', bad)).toThrow(/data-part="front"/)
+  })
+})
+
+/**
+ * Facial hair, per `docs/RESEARCH-HAIR.md` §D.1 and §D.3. A beard is an ordinary single-group,
+ * per-bundle asset: it is NOT head-mounted (a long beard reaches mid-chest and would be
+ * mis-scaled by the head ratio) and it neither hides anything nor is hidden by anything.
+ */
+describe('the beard slot', () => {
+  it('is a slot, and is neither head-mounted nor an override', () => {
+    expect(SLOTS).toContain('beard')
+    expect(ACCESSORY_SLOTS).not.toContain('beard')
+    expect(OVERRIDE_SLOTS).not.toContain('beard')
+  })
+
+  it('parses as a single-group asset on its own layer', () => {
+    const a = parseAsset('adult-male-beard-full-beard', beard)
+    expect(a.slot).toBe('beard')
+    expect(a.layer).toBe('beard')
+    expect(a.colors).toEqual(['hair1', 'hair2'])
+    expect(a.hides).toEqual([])
+    // One group, not two: `data-part` is a hair-only requirement.
+    expect(a.backMarkup).toBe('')
+    expect(a.markup).toContain('M3 3')
+    // And unlike hair, a beard keeps its root-level <defs> — it takes the innerMarkup path.
+    expect(a.markup).toContain('linearGradient')
   })
 })

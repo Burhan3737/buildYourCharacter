@@ -243,6 +243,52 @@ describe('StudioScreen colour rows', () => {
     expect(current().slots.hair?.colors.hair2).toBe(HAIR_PALETTE[3])
   })
 
+  /**
+   * `docs/RESEARCH-HAIR.md` §D.4: facial hair joins the existing hair category rather than
+   * taking a ninth rail button, which is also what Toca Boca World does.
+   */
+  it('puts facial hair in the hair category rather than on its own rail button', () => {
+    mount()
+    fireEvent.click(screen.getByTestId('rail-hair'))
+
+    expect(screen.getByTestId('section-hair')).toBeInTheDocument()
+    expect(screen.getByTestId('section-beard')).toHaveAttribute('aria-label', 'Facial hair')
+    expect(screen.queryByTestId('rail-beard')).toBeNull()
+    expect(screen.getByTestId('option-adult-female-beard-goatee')).toBeInTheDocument()
+  })
+
+  it('gives a beard the hair ramp, independently of the head hair', () => {
+    seed({
+      slots: {
+        hair: { assetId: 'adult-female-hair-bob', colors: {} },
+        beard: { assetId: 'adult-female-beard-goatee', colors: {} },
+      },
+    })
+    mount()
+    fireEvent.click(screen.getByTestId('rail-hair'))
+
+    const section = screen.getByTestId('section-beard')
+    expect(screen.getByTestId('swatch-label-beard-hair1')).toHaveTextContent('Hair')
+    expect(within(section).getAllByTestId(/^swatch-beard-hair1-/))
+      .toHaveLength(HAIR_PALETTE.length)
+    expect(screen.getByTestId('swatch-beard-hair1-0'))
+      .toHaveStyle({ backgroundColor: HAIR_PALETTE[0] })
+
+    fireEvent.click(screen.getByTestId('swatch-beard-hair2-3'))
+    expect(current().slots.beard?.colors.hair2).toBe(HAIR_PALETTE[3])
+    // The two slots keep separate colour records: a white beard on dark hair is allowed.
+    expect(current().slots.hair?.colors.hair2).toBeUndefined()
+  })
+
+  it('shows the empty-pool placeholder for a bundle with no facial hair', () => {
+    seed({ bodyType: 'male', slots: {} })
+    mount()
+    fireEvent.click(screen.getByTestId('rail-hair'))
+
+    expect(within(screen.getByTestId('section-beard')).getByText('Nothing here yet'))
+      .toBeInTheDocument()
+  })
+
   it('gives face slots their own rows without duplicating the skin-tone control', () => {
     seed({
       slots: {
