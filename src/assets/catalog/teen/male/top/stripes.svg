@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Rugby Stripes" data-family="stripes" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-top-stripes__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-stripes__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c2, #DFD8C7)"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-stripes__clip">
+      <path d="M168 190 h64 q34 0 34 34 v94 q0 34 -34 34 h-64 q-34 0 -34-34 v-94 q0-34 34-34 z"/>
+      <rect x="114" y="198" width="32" height="164" rx="16"/>
+      <rect x="254" y="198" width="32" height="164" rx="16"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long sleeves -->
+    <rect x="114" y="198" width="32" height="164" rx="16" fill="url(#teen-male-top-stripes__sleeve)"/>
+    <rect x="254" y="198" width="32" height="164" rx="16" fill="url(#teen-male-top-stripes__sleeve)"/>
+    <!-- body, hem at y352 -->
+    <path d="M168 190 h64 q34 0 34 34 v94 q0 34 -34 34 h-64 q-34 0 -34-34 v-94 q0-34 34-34 z"
+          fill="url(#teen-male-top-stripes__body)"/>
+  </g>
+  <!-- horizontal bands, clipped to the garment silhouette -->
+  <g clip-path="url(#teen-male-top-stripes__clip)">
+    <rect x="106" y="196" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="224" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="241" width="188" height="6" fill="var(--c3, #7E90DC)"/>
+    <rect x="106" y="252" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="280" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="308" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+    <rect x="106" y="336" width="188" height="14" fill="var(--c2, #DFD8C7)"/>
+  </g>
+  <!-- boat neckband -->
+  <path d="M168 187 q32 34 64 0 z" fill="var(--c2, #DFD8C7)"/>
+  <!-- neck opening -->
+  <path d="M177 190 q23 20 46 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M150 208 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

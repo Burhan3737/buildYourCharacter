@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sports Jersey" data-family="jersey" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-top-jersey__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C72B0)"/>
+      <stop offset="1" stop-color="var(--c2, #46599C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-jersey__shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.16"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-jersey__clip">
+      <path d="M168 190 h64 q34 0 34 34 v94 q0 34 -34 34 h-64 q-34 0 -34-34 v-94 q0-34 34-34 z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- body, hem at y352 -->
+    <path d="M168 190 h64 q34 0 34 34 v94 q0 34 -34 34 h-64 q-34 0 -34-34 v-94 q0-34 34-34 z"
+          fill="url(#teen-male-top-jersey__body)"/>
+    <!-- contrast short sleeves, raglan block colour -->
+    <rect x="114" y="198" width="32" height="74" rx="16" fill="var(--c2, #46599C)"/>
+    <rect x="254" y="198" width="32" height="74" rx="16" fill="var(--c2, #46599C)"/>
+    <!-- vertical shading over the sleeves -->
+    <rect x="114" y="198" width="32" height="74" rx="16" fill="url(#teen-male-top-jersey__shade)"/>
+    <rect x="254" y="198" width="32" height="74" rx="16" fill="url(#teen-male-top-jersey__shade)"/>
+  </g>
+  <!-- accent side stripes, clipped to the body -->
+  <g clip-path="url(#teen-male-top-jersey__clip)">
+    <rect x="140" y="200" width="10" height="140" fill="var(--c3, #F7C873)"/>
+    <rect x="250" y="200" width="10" height="140" fill="var(--c3, #F7C873)"/>
+  </g>
+  <!-- contrast V-neck yoke -->
+  <path d="M175 190 L200 236 L225 190 z" fill="var(--c3, #F7C873)"/>
+  <path d="M186 190 L200 218 L214 190 z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M152 210 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
