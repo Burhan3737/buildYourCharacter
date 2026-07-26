@@ -30,6 +30,7 @@ const catalog = buildCatalog({
   '/src/assets/catalog/adult/female/top/tee.svg': svg('top', 'top', 'tee'),
   '/src/assets/catalog/adult/female/bottom/jeans.svg': svg('bottom', 'bottom', 'jeans'),
   '/src/assets/catalog/adult/female/shoes/boots.svg': svg('shoes', 'shoes', 'boots'),
+  '/src/assets/catalog/adult/female/onepiece/sundress.svg': svg('onepiece', 'onepiece', 'sundress', 'top,bottom'),
   '/src/assets/catalog/adult/female/costume/thor.svg': svg('costume', 'costume', 'thor', 'top,bottom,shoes'),
   '/src/assets/accessories/adult/glasses/round.svg': svg('glasses', 'glasses', 'round'),
 }, { 'adult-female': spec })
@@ -94,5 +95,54 @@ describe('randomCharacter', () => {
 
   it('produces a usable name', () => {
     expect(randomCharacter(catalog, seeded(1)).name.length).toBeGreaterThan(0)
+  })
+
+  it('sometimes dresses the character in a one-piece', () => {
+    const rolled = Array.from({ length: 400 }, (_, i) =>
+      randomCharacter(catalog, seeded(i), { stage: 'adult', bodyType: 'female' }))
+    expect(rolled.some((c) => c.slots.onepiece)).toBe(true)
+  })
+
+  it('still usually rolls a separate top and bottom', () => {
+    const rolled = Array.from({ length: 400 }, (_, i) =>
+      randomCharacter(catalog, seeded(i), { stage: 'adult', bodyType: 'female' }))
+    expect(rolled.some((c) => c.slots.top && c.slots.bottom)).toBe(true)
+  })
+
+  it('never leaves a top or bottom visible under a one-piece', () => {
+    for (let i = 0; i < 400; i++) {
+      const c = randomCharacter(catalog, seeded(i), { stage: 'adult', bodyType: 'female' })
+      if (!c.slots.onepiece) continue
+      expect(c.slots.top).toBeUndefined()
+      expect(c.slots.bottom).toBeUndefined()
+      for (const slot of hiddenSlots(c, catalog)) expect(c.slots[slot]).toBeUndefined()
+    }
+  })
+
+  it('never combines a one-piece with a costume', () => {
+    for (let i = 0; i < 400; i++) {
+      const c = randomCharacter(catalog, seeded(i), { stage: 'adult', bodyType: 'female' })
+      expect(Boolean(c.slots.onepiece && c.slots.costume)).toBe(false)
+    }
+  })
+
+  it('still gives a one-piece wearer shoes sometimes, since it does not hide them', () => {
+    const withOnePiece = Array.from({ length: 400 }, (_, i) =>
+      randomCharacter(catalog, seeded(i), { stage: 'adult', bodyType: 'female' }))
+      .filter((c) => c.slots.onepiece)
+    expect(withOnePiece.length).toBeGreaterThan(0)
+    expect(withOnePiece.some((c) => c.slots.shoes)).toBe(true)
+  })
+
+  it('does not roll a one-piece when the bundle has none', () => {
+    const noOnePiece = buildCatalog({
+      '/src/assets/bodies/adult/female/base.svg': svg('eyes', 'body', 'base'),
+      '/src/assets/catalog/adult/female/top/tee.svg': svg('top', 'top', 'tee'),
+      '/src/assets/catalog/adult/female/bottom/jeans.svg': svg('bottom', 'bottom', 'jeans'),
+    }, { 'adult-female': spec })
+    for (let i = 0; i < 100; i++) {
+      const c = randomCharacter(noOnePiece, seeded(i), { stage: 'adult', bodyType: 'female' })
+      expect(c.slots.onepiece).toBeUndefined()
+    }
   })
 })

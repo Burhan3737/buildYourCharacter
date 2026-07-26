@@ -1,7 +1,8 @@
-import { useMemo, type CSSProperties } from 'react'
+import { useId, useMemo, type CSSProperties } from 'react'
 import type { Catalog } from '../catalog/build'
 import type { Character } from '../catalog/types'
 import { composeCharacter } from './composition'
+import { namespaceIds, sanitizeToken } from './namespaceIds'
 
 export interface CharacterSvgProps {
   character: Character
@@ -24,6 +25,15 @@ export function CharacterSvg({
     [character, catalog],
   )
 
+  // Asset ids are unique per asset, not per instance. Suffix them with a token unique
+  // to this rendered instance so two characters wearing the same asset do not share
+  // (and therefore steal) each other's gradients, clip paths and masks.
+  const token = sanitizeToken(useId())
+  const instanceLayers = useMemo(
+    () => layers.map((l) => ({ ...l, markup: namespaceIds(l.markup, token) })),
+    [layers, token],
+  )
+
   return (
     <svg
       viewBox="0 0 400 600"
@@ -31,7 +41,7 @@ export function CharacterSvg({
       role="img"
     >
       <title>{title ?? character.name}</title>
-      {layers.map((l) => (
+      {instanceLayers.map((l) => (
         <g
           key={l.key}
           style={toCssVars(l.colors)}
