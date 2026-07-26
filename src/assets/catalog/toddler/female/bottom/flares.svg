@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. wide leg trousers and jeans: rise=LOW, the waistband sitting well below the
+       natural waist, and leg width=CLOSE THROUGH THIGH AND KNEE THEN FLARING HARD from the
+       knee only, so the outline is an hourglass rather than a column. Tools: trim (contrast
+       waistband and a deep hem facing) plus structural (front yoke seam and outseams). -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-flares__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B87BC0)"/>
+      <stop offset="1" stop-color="var(--c2, #8C5795)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-flares__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B87BC0)"/>
+      <stop offset="1" stop-color="var(--c2, #8C5795)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- low seat block, then legs held close to the knee and belled hard below it -->
+  <g class="sp-shadow">
+    <path d="M168 484 h28 v28 l4 44 q0 6 -8 6 h-38 q-8 0 -7 -7 l13 -43 z"
+          fill="url(#toddler-female-bottom-flares__leg)"/>
+    <path d="M232 484 h-28 v28 l-4 44 q0 6 8 6 h38 q8 0 7 -7 l-13 -43 z"
+          fill="url(#toddler-female-bottom-flares__leg)"/>
+    <path d="M160 452 h80 q9 0 9 9 v13 q0 16 -18 16 h-62 q-18 0 -18 -16 v-13 q0 -9 9 -9 z"
+          fill="url(#toddler-female-bottom-flares__hip)"/>
+  </g>
+
+  <!-- low contrast waistband, sitting on the hip rather than the waist -->
+  <rect x="157" y="448" width="86" height="17" rx="8" fill="var(--c3, #F7DE9E)"/>
+  <path d="M162 453 h76" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- front yoke seam across the low seat -->
+  <path d="M160 470 q40 12 80 0" stroke="var(--c3, #F7DE9E)" stroke-opacity="0.85"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- outseams running the length of each leg, tracing the bell -->
+  <path d="M170 490 v22 l-11 42" stroke="var(--c3, #F7DE9E)" stroke-opacity="0.9"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M230 490 v22 l11 42" stroke="var(--c3, #F7DE9E)" stroke-opacity="0.9"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- deep hem facing on each wide floor-brushing hem -->
+  <path d="M148 550 h50 l1 6 q0 6 -8 6 h-38 q-8 0 -7 -7 z" fill="var(--c2, #8C5795)"/>
+  <path d="M252 550 h-50 l-1 6 q0 6 8 6 h38 q8 0 7 -7 z" fill="var(--c2, #8C5795)"/>
+  <path d="M150 553 h46" stroke="var(--c3, #F7DE9E)" stroke-opacity="0.8" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 553 h46" stroke="var(--c3, #F7DE9E)" stroke-opacity="0.8" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- knee break, where the bell starts -->
+  <path d="M172 514 h22" stroke="var(--c2, #8C5795)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 514 h22" stroke="var(--c2, #8C5795)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 478 q34 10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

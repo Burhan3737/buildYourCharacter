@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Everyday wrapped dress drawn as ordinary clothing, not costume. Plain cloth with a
+       simple border stripe; no community specific woven motif.
+       axes vs. maxi skirt and pencil skirt: hem treatment=AN ASYMMETRIC OVERLAP EDGE running
+       the whole length of one side under a knot at the hip, so the outline is unbalanced, and
+       leg length=MID CALF, between the pencil skirt's knee and the maxi skirt's ankle.
+       Tools: trim (border stripe and the knot) plus structural (the overlap panel and the
+       drape folds pulling toward the knot). -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-sarong__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0A85E)"/>
+      <stop offset="1" stop-color="var(--c2, #C27C3A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one length of cloth wrapped at the waist, falling straight to mid calf -->
+  <g class="sp-shadow">
+    <path d="M156 446 h88 q4 42 6 86 q-50 13 -100 0 q2 -44 6 -86 z"
+          fill="url(#toddler-female-bottom-sarong__cloth)"/>
+    <path d="M154 434 h92 q6 0 6 7 v10 q0 7 -6 7 h-92 q-6 0 -6 -7 v-10 q0 -7 6 -7 z"
+          fill="url(#toddler-female-bottom-sarong__cloth)"/>
+  </g>
+
+  <!-- the outer wrap panel, its raw edge running down one leg from the knot -->
+  <path d="M168 452 q-8 42 -10 84 l26 6 q4 -46 12 -90 z" fill="var(--c2, #C27C3A)"/>
+  <path d="M168 452 q-8 42 -10 84" stroke="var(--c3, #F8EBD3)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 452 q-8 44 -12 90" stroke="var(--c3, #F8EBD3)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the knot, tied high on one hip, with two short tails -->
+  <ellipse cx="166" cy="442" rx="13" ry="10" fill="var(--c3, #F8EBD3)" transform="rotate(-16 166 442)"/>
+  <ellipse cx="184" cy="442" rx="11" ry="9" fill="var(--c3, #F8EBD3)" transform="rotate(18 184 442)"/>
+  <circle cx="175" cy="443" r="6.5" fill="var(--c3, #F8EBD3)"/>
+  <path d="M172 452 q-4 14 -8 22 M182 452 q3 12 5 20" stroke="var(--c3, #F8EBD3)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- drape folds pulling diagonally toward the knot -->
+  <g stroke="var(--c2, #C27C3A)" stroke-opacity="0.5" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M212 456 Q206 494 204 528"/>
+    <path d="M228 458 Q228 494 230 526"/>
+    <path d="M242 460 Q246 492 248 522"/>
+  </g>
+
+  <!-- border stripe just above the mid calf hem -->
+  <path d="M152 518 q48 12 96 0" stroke="var(--c3, #F8EBD3)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 528 q48 12 96 0" stroke="var(--c3, #F8EBD3)" stroke-opacity="0.6"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M186 464 q28 9 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. wide leg trousers and the A line skirt: leg length=KNEE, cut off well above the
+       calf, and leg width=FLARED HARD from a high waist into two flat panels so wide they read
+       as one skirt until the narrow centre split shows. Tools: trim (deep high waistband and a
+       bound knee hem) plus structural (the centre split and pressed panel folds). -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-culottes__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9BD8)"/>
+      <stop offset="1" stop-color="var(--c2, #64749F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-bottom-culottes__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9BD8)"/>
+      <stop offset="1" stop-color="var(--c2, #64749F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two enormous flat panels flaring from a tall high-rise block to a knee hem -->
+  <g class="sp-shadow">
+    <path d="M158 474 H197 v38 q0 8 -9 8 h-48 q-11 0 -8 -11 l12 -28 q4 -7 14 -7 z"
+          fill="url(#toddler-female-bottom-culottes__panel)"/>
+    <path d="M242 474 H203 v38 q0 8 9 8 h48 q11 0 8 -11 l-12 -28 q-4 -7 -14 -7 z"
+          fill="url(#toddler-female-bottom-culottes__panel)"/>
+    <path d="M156 428 h88 q8 0 8 10 v32 q0 12 -14 12 h-76 q-14 0 -14 -12 v-32 q0 -10 8 -10 z"
+          fill="url(#toddler-female-bottom-culottes__hip)"/>
+  </g>
+
+  <!-- deep high waistband with one oversized front button -->
+  <rect x="152" y="424" width="96" height="24" rx="10" fill="var(--c3, #F5EDDA)"/>
+  <circle cx="200" cy="436" r="8" fill="var(--c2, #64749F)"/>
+  <circle cx="200" cy="436" r="3" fill="var(--c3, #F5EDDA)"/>
+  <path d="M158 430 h84" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the narrow centre split that gives the leg division away -->
+  <path d="M197 476 h6 v42 h-6 z" fill="var(--c2, #64749F)"/>
+
+  <!-- bound hem band across both flat panels -->
+  <path d="M132 512 h64 v9 h-64 q-4 0 -3 -5 z" fill="var(--c3, #F5EDDA)"/>
+  <path d="M268 512 h-64 v9 h64 q4 0 3 -5 z" fill="var(--c3, #F5EDDA)"/>
+
+  <!-- pressed folds fanning down each panel -->
+  <g stroke="var(--c2, #64749F)" stroke-opacity="0.5" stroke-width="3.2" fill="none"
+     stroke-linecap="round">
+    <path d="M172 482 l-10 30"/>
+    <path d="M186 482 l-4 30"/>
+    <path d="M228 482 l10 30"/>
+    <path d="M214 482 l4 30"/>
+  </g>
+
+  <path d="M164 460 q36 11 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

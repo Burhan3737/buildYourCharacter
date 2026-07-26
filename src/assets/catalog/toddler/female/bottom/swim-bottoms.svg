@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes vs. leggings and bike shorts: leg length=NONE AT ALL, a brief with the leg opening
+       cut high up over the hip, and hem treatment=A PLAIN BOUND EDGE following that high-cut
+       curve rather than a flat band across the thigh. Pairs with the swim top, whose hem stops
+       at the underbust; the midriff between them stays bare on purpose.
+       Tools: panel blocking (contrast side panels) plus trim (bound edges and a tie bow). -->
+  <defs>
+    <linearGradient id="toddler-female-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CC7C70)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-bottom-swim-bottoms__clip">
+      <path d="M156 434 q0 -6 8 -6 h72 q8 0 8 6 v16 q0 28 -20 38 q-9 5 -20 5 q-11 0 -20 -5
+               q-20 -10 -20 -38 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- high-rise brief, leg openings swept up over the hip -->
+  <g class="sp-shadow">
+    <path d="M156 434 q0 -6 8 -6 h72 q8 0 8 6 v16 q0 28 -20 38 q-9 5 -20 5 q-11 0 -20 -5
+             q-20 -10 -20 -38 z"
+          fill="url(#toddler-female-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- contrast side panels blocking the brief into three regions -->
+  <g clip-path="url(#toddler-female-bottom-swim-bottoms__clip)">
+    <path d="M156 428 h20 q-6 34 -4 62 h-22 z" fill="var(--c2, #CC7C70)"/>
+    <path d="M244 428 h-20 q6 34 4 62 h22 z" fill="var(--c2, #CC7C70)"/>
+  </g>
+
+  <!-- plain bound edge running the whole top edge and both high-cut leg openings -->
+  <path d="M156 436 q44 -12 88 0" stroke="var(--c3, #FBEFD9)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M157 452 q3 26 22 36 q9 5 21 5" stroke="var(--c3, #FBEFD9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M243 452 q-3 26 -22 36 q-9 5 -21 5" stroke="var(--c3, #FBEFD9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- small side tie bow, the only fastening -->
+  <ellipse cx="164" cy="442" rx="9" ry="6" fill="var(--c3, #FBEFD9)" transform="rotate(-22 164 442)"/>
+  <ellipse cx="178" cy="442" rx="9" ry="6" fill="var(--c3, #FBEFD9)" transform="rotate(22 178 442)"/>
+  <circle cx="171" cy="442" r="4" fill="var(--c3, #FBEFD9)"/>
+
+  <path d="M186 452 q26 8 52 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 478 q12 5 22 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>
