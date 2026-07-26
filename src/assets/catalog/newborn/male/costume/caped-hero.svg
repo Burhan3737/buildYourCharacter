@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Caped Hero" data-family="caped-hero" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="newborn-male-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
+      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #6272BE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cape, drawn first so it falls behind the whole figure; front edge stays below the shoulder line -->
+  <g class="sp-shadow">
+    <path d="M170 420 h60 q22 6 26 34 l8 108 q-9 8 -18 0 q-9 8 -18 0 q-9 8 -18 0 q-9 8 -18 0
+             q-9 8 -18 0 q-9 8 -18 0 l8-108 q4-28 26-34 z"
+          fill="url(#newborn-male-costume-caped-hero__cape)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <rect x="170" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-caped-hero__body)"/>
+    <rect x="202" y="518" width="28" height="46" rx="14" fill="url(#newborn-male-costume-caped-hero__body)"/>
+    <rect x="166" y="496" width="68" height="34" rx="17" fill="url(#newborn-male-costume-caped-hero__body)"/>
+    <path d="M154 442 q0-24 24-24 h44 q24 0 24 24 v58 q0 12 -12 12 h-68 q-12 0-12-12 z"
+          fill="url(#newborn-male-costume-caped-hero__body)"/>
+    <rect x="138" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-caped-hero__body)"/>
+    <rect x="242" y="412" width="20" height="84" rx="10" fill="url(#newborn-male-costume-caped-hero__body)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <rect x="170" y="550" width="30" height="20" rx="10" fill="var(--c2, #9E3E38)"/>
+    <rect x="200" y="550" width="30" height="20" rx="10" fill="var(--c2, #9E3E38)"/>
+  </g>
+
+  <!-- soft belt -->
+  <rect x="166" y="494" width="68" height="12" rx="6" fill="var(--c3, #F7C873)"/>
+
+  <!-- original chest star emblem -->
+  <path d="M200 448 q4 12 16 15 q-12 3 -16 15 q-4-12 -16-15 q12-3 16-15 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- small collar, well below the shoulder line -->
+  <path d="M180 420 q20 10 40 0 q-4 10 -20 10 q-16 0-20-10 z" fill="var(--c1, #6272BE)"/>
+
+  <path d="M164 438 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

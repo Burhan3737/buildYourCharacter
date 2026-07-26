@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleepy" data-family="sleepy" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-male-eyes-sleepy__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-eyes-sleepy__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #7E90DC)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #7E90DC)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- thin sliver of sclera peeking under heavy, drowsy lids -->
+  <g class="sp-shadow">
+    <ellipse cx="166" cy="352" rx="19" ry="5" fill="url(#newborn-male-eyes-sleepy__sclera)"/>
+    <ellipse cx="234" cy="352" rx="19" ry="5" fill="url(#newborn-male-eyes-sleepy__sclera)"/>
+  </g>
+
+  <!-- sliver of iris, visible only in the lower crescent -->
+  <ellipse cx="166" cy="354" rx="11" ry="3" fill="url(#newborn-male-eyes-sleepy__iris)"/>
+  <ellipse cx="234" cy="354" rx="11" ry="3" fill="url(#newborn-male-eyes-sleepy__iris)"/>
+  <circle cx="166" cy="354" r="1.8" fill="#3B2A22"/>
+  <circle cx="234" cy="354" r="1.8" fill="#3B2A22"/>
+
+  <!-- heavy drooping eyelid, skin-toned, covers the top of the eye -->
+  <path d="M146 352 A20 12 0 0 1 186 352 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M214 352 A20 12 0 0 1 254 352 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- lash crease, floating above the lid, not tracing its edge -->
+  <path d="M148 344 Q166 332 184 344" stroke="#3B2A22" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 344 Q234 332 252 344" stroke="#3B2A22" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

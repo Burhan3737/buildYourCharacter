@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Round" data-family="round" data-slot="eyes"
+     data-layer="face" data-colors="eye1" data-hides="">
+  <defs>
+    <linearGradient id="newborn-male-eyes-round__sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E1E5F0"/>
+    </linearGradient>
+    <linearGradient id="newborn-male-eyes-round__iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--eye1, #5B7BC4)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--eye1, #5B7BC4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- big round baby sclera, one shadow group for the pair -->
+  <g class="sp-shadow">
+    <circle cx="166" cy="352" r="21" fill="url(#newborn-male-eyes-round__sclera)"/>
+    <circle cx="234" cy="352" r="21" fill="url(#newborn-male-eyes-round__sclera)"/>
+  </g>
+
+  <!-- iris base: ink underlay reads through the semi-transparent lower stop -->
+  <circle cx="166" cy="353" r="13" fill="#3B2A22"/>
+  <circle cx="234" cy="353" r="13" fill="#3B2A22"/>
+  <circle cx="166" cy="353" r="13" fill="url(#newborn-male-eyes-round__iris)"/>
+  <circle cx="234" cy="353" r="13" fill="url(#newborn-male-eyes-round__iris)"/>
+
+  <!-- pupils -->
+  <circle cx="166" cy="353" r="6.5" fill="#3B2A22"/>
+  <circle cx="234" cy="353" r="6.5" fill="#3B2A22"/>
+
+  <!-- catchlights -->
+  <circle cx="161" cy="347" r="5" fill="#FFFFFF"/>
+  <circle cx="229" cy="347" r="5" fill="#FFFFFF"/>
+  <circle cx="171" cy="358" r="2.5" fill="#FFFFFF" opacity="0.65"/>
+  <circle cx="239" cy="358" r="2.5" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- upper lash line, floating above the sclera, not tracing it -->
+  <path d="M149 339 Q166 328 183 339" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 339 Q234 328 251 339" stroke="#3B2A22" stroke-opacity="0.9" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
