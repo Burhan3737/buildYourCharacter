@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs button up (nearest sibling): hem = KNEE (y440, against the button up's
+       hip) and closure = SHORT FRONT PLACKET under a band collar (against a full
+       placket). Deep side slits step the outline in by 20u a side from y352 down.
+       vs long coat: closure plus volume. vs dashiki: shoulder plus volume. -->
+  <defs>
+    <linearGradient id="teen-male-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8EDF2)"/>
+      <stop offset="1" stop-color="var(--c2, #C3CDD8)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8EDF2)"/>
+      <stop offset="1" stop-color="var(--c2, #C3CDD8)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-kurta__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E5A8C)"/>
+      <stop offset="1" stop-color="var(--c3, #3E5A8C)" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long straight sleeves -->
+    <path d="M118 220 q0-28 24-30 h24 v154 q0 16 -14 16 h-20 q-14 0 -14-16 z"
+          fill="url(#teen-male-top-kurta__sleeve)"/>
+    <path d="M282 220 q0-28 -24-30 h-24 v154 q0 16 14 16 h20 q14 0 14-16 z"
+          fill="url(#teen-male-top-kurta__sleeve)"/>
+    <!-- straight tunic to the upper knee, with the side slits stepped into the outline -->
+    <path d="M170 190 h60 q30 0 30 32 v130 h-20 v72 q0 16 -16 16 h-48 q-16 0 -16-16 v-72 h-20 v-130 q0-32 30-32 z"
+          fill="url(#teen-male-top-kurta__body)"/>
+  </g>
+
+  <!-- the slit edges, drawn as a fine seam so the notch reads as an opening -->
+  <path d="M160 356 v76 M240 356 v76" stroke="#3B2A22" stroke-opacity="0.2"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M142 352 h18 M240 352 h18" stroke="#3B2A22" stroke-opacity="0.16"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- short front placket with three small buttons -->
+  <path d="M188 200 h24 v76 h-24 z" fill="url(#teen-male-top-kurta__collar)"/>
+  <path d="M192 202 v72 M208 202 v72" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <g fill="var(--c1, #E8EDF2)">
+    <circle cx="200" cy="220" r="4"/><circle cx="200" cy="242" r="4"/>
+    <circle cx="200" cy="264" r="4"/>
+  </g>
+
+  <!-- band collar standing at the neck -->
+  <path d="M180 194 q20 12 40 0 v-14 q-20 10 -40 0 z" fill="url(#teen-male-top-kurta__collar)"/>
+  <path d="M181 186 q19 10 38 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a fine even topstitch round the collar and down the placket -->
+  <path d="M186 198 v80 M214 198 v80" stroke="#3B2A22" stroke-opacity="0.18"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- patch pocket at the chest -->
+  <path d="M148 250 h32 v34 q0 8 -8 8 h-16 q-8 0 -8-8 z" fill="var(--c2, #C3CDD8)"/>
+
+  <!-- plain sleeve hems -->
+  <path d="M118 342 h48 v18 q0 16 -14 16 h-20 q-14 0 -14-16 z" fill="var(--c2, #C3CDD8)"/>
+  <path d="M282 342 h-48 v18 q0 16 14 16 h20 q14 0 14-16 z" fill="var(--c2, #C3CDD8)"/>
+
+  <!-- hem topstitch -->
+  <path d="M166 430 h68" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M152 208 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

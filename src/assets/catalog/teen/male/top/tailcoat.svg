@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailcoat" data-family="tailcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes vs blazer (nearest sibling): hem = TWO SEPARATE TAILS TO THE BACK OF THE
+       KNEE (y480, with a 24u gap standing open between them at centre back, against
+       the blazer's single hip hem) and closure = CUTAWAY (the fronts stop dead on a
+       horizontal line at the natural waist, y334, and there is no fastening at all).
+       Square built-up shoulders under wide peaked lapels.
+       vs dinner jacket: closure plus hem. vs long coat: closure plus hem.
+       Formalwear belongs in top, never in costume, or the shoes would be hidden. -->
+  <defs>
+    <linearGradient id="teen-male-top-tailcoat__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241814)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-tailcoat__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241814)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-tailcoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241814)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-tailcoat__vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c3, #7E90DC)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the two tails, separate panels with an open gap between them at centre back -->
+    <path d="M140 328 h48 v134 q0 18 -14 18 h-20 q-14 0 -14-18 z"
+          fill="url(#teen-male-top-tailcoat__tail)"/>
+    <path d="M260 328 h-48 v134 q0 18 14 18 h20 q14 0 14-18 z"
+          fill="url(#teen-male-top-tailcoat__tail)"/>
+    <!-- the waistcoat worn under the cutaway front -->
+    <path d="M170 192 h60 q22 0 22 24 v122 h-104 v-122 q0-24 22-24 z"
+          fill="url(#teen-male-top-tailcoat__vest)"/>
+    <!-- square built-up shoulders on straight sleeves -->
+    <path d="M110 226 q0-32 30-34 h28 v144 q0 18 -16 18 h-24 q-18 0 -18-18 z"
+          fill="url(#teen-male-top-tailcoat__sleeve)"/>
+    <path d="M290 226 q0-32 -30-34 h-28 v144 q0 18 16 18 h24 q18 0 18-18 z"
+          fill="url(#teen-male-top-tailcoat__sleeve)"/>
+    <!-- the fronts, cutting away horizontally at the natural waist -->
+    <path d="M176 190 q-38 2 -38 30 v84 q0 30 28 30 h6 q12 0 20-24 l-16-90 z"
+          fill="url(#teen-male-top-tailcoat__front)"/>
+    <path d="M224 190 q38 2 38 30 v84 q0 30 -28 30 h-6 q-12 0 -20-24 l16-90 z"
+          fill="url(#teen-male-top-tailcoat__front)"/>
+  </g>
+
+  <!-- wide peaked lapels, the tailoring signal -->
+  <path d="M174 190 l30 44 l-10 30 l-30-38 l-8 -18 l14-6 z" fill="var(--c2, #241814)"/>
+  <path d="M226 190 l-30 44 l10 30 l30-38 l8 -18 l-14-6 z" fill="var(--c2, #241814)"/>
+  <path d="M168 194 l-2 30 M232 194 l2 30" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- collar band behind the neck -->
+  <path d="M176 190 q24 16 48 0 l-6-12 q-18 8 -36 0 z" fill="var(--c2, #241814)"/>
+
+  <!-- waistcoat buttons and its pointed hem -->
+  <g fill="var(--c1, #3B2A22)">
+    <circle cx="200" cy="268" r="4.5"/><circle cx="200" cy="292" r="4.5"/>
+    <circle cx="200" cy="316" r="4.5"/>
+  </g>
+  <path d="M176 330 h48 l-24 16 z" fill="var(--c3, #7E90DC)"/>
+
+  <!-- the two inner tail edges, so the open gap between them reads as an edge, not a seam -->
+  <path d="M185 340 v128 M215 340 v128" stroke="#FFFFFF" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- cutaway edge topstitch -->
+  <path d="M150 332 h34 M250 332 h-34" stroke="#FFFFFF" stroke-opacity="0.14"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- cuff buttons -->
+  <g fill="var(--c3, #7E90DC)">
+    <circle cx="126" cy="330" r="3.5"/><circle cx="126" cy="342" r="3.5"/>
+    <circle cx="274" cy="330" r="3.5"/><circle cx="274" cy="342" r="3.5"/>
+  </g>
+
+  <!-- highlight on the square shoulder -->
+  <path d="M144 204 q28-8 36 0 M256 204 q-28-8 -36 0" stroke="#FFFFFF"
+        stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

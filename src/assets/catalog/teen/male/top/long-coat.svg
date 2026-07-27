@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs raincoat (nearest sibling): hem = CALF (y506, against the raincoat's
+       thigh at y446) and volume = STRAIGHT COLUMN (x138 to x262 the whole way down,
+       against the raincoat's A line flare). Closure is a full button placket and the
+       collar is notched. A single back vent is cut 60u into the hem at centre.
+       vs duster cardigan: closure plus volume. vs cardigan: closure plus hem.
+       Note: this is a top asset, so a onepiece suppresses it. That is an engine
+       limitation and no dress is drawn into this file. -->
+  <defs>
+    <linearGradient id="teen-male-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7A63)"/>
+      <stop offset="1" stop-color="var(--c2, #665A48)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7A63)"/>
+      <stop offset="1" stop-color="var(--c2, #665A48)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-long-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #665A48)"/>
+      <stop offset="1" stop-color="var(--c1, #8A7A63)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-long-coat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <path d="M114 224 q2-30 26-32 h26 v144 q0 20 -20 20 h-14 q-20 0 -20-20 z"
+          fill="url(#teen-male-top-long-coat__sleeve)"/>
+    <path d="M286 224 q-2-30 -26-32 h-26 v144 q0 20 20 20 h14 q20 0 20-20 z"
+          fill="url(#teen-male-top-long-coat__sleeve)"/>
+    <!-- straight column to mid-calf, with the back vent notched out of the hem -->
+    <path d="M168 190 h64 q30 0 30 32 v264 q0 20 -20 20 h-30 v-60 h-24 v60 h-34 q-16 0 -16-20 v-264 q0-32 30-32 z"
+          fill="url(#teen-male-top-long-coat__body)"/>
+  </g>
+
+  <!-- full button placket running the whole front -->
+  <path d="M186 196 h28 v250 h-28 z" fill="url(#teen-male-top-long-coat__placket)"/>
+  <g fill="var(--c1, #8A7A63)">
+    <circle cx="200" cy="234" r="5.5"/><circle cx="200" cy="272" r="5.5"/>
+    <circle cx="200" cy="310" r="5.5"/><circle cx="200" cy="348" r="5.5"/>
+    <circle cx="200" cy="386" r="5.5"/><circle cx="200" cy="424" r="5.5"/>
+  </g>
+
+  <!-- notched collar sitting over the placket head -->
+  <path d="M170 190 l32 30 l-6 26 l-32-28 l-4-26 z" fill="url(#teen-male-top-long-coat__collar)"/>
+  <path d="M230 190 l-32 30 l6 26 l32-28 l4-26 z" fill="url(#teen-male-top-long-coat__collar)"/>
+  <path d="M168 192 q32 18 64 0 l-6-12 q-26 12 -52 0 z" fill="var(--c2, #665A48)"/>
+  <path d="M164 196 l-2 26 M236 196 l2 26" stroke="#3B2A22" stroke-opacity="0.24"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- welt pockets low on the front -->
+  <path d="M146 348 h34 v10 q0 5 -5 5 h-24 q-5 0 -5-5 z" fill="var(--c2, #665A48)"/>
+  <path d="M220 348 h34 v10 q0 5 -5 5 h-24 q-5 0 -5-5 z" fill="var(--c2, #665A48)"/>
+
+  <!-- belt strap across the waist -->
+  <path d="M140 320 h120 v16 h-120 z" fill="url(#teen-male-top-long-coat__placket)" fill-opacity="0.85"/>
+
+  <!-- vent edge -->
+  <path d="M189 448 v56 M211 448 v56" stroke="#3B2A22" stroke-opacity="0.28"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- cuff turnbacks -->
+  <path d="M112 334 h56 v22 q0 20 -20 20 h-14 q-20 0 -22-20 z" fill="var(--c2, #665A48)"/>
+  <path d="M288 334 h-56 v22 q0 20 20 20 h14 q20 0 22-20 z" fill="var(--c2, #665A48)"/>
+
+  <!-- highlight -->
+  <path d="M150 208 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

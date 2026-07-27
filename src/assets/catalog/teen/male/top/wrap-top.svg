@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tee (nearest sibling): closure = CROSSOVER WRAP (two diagonal fronts
+       crossing over a deep V that runs to y258) and shoulder/sleeve = THREE QUARTER
+       (sleeve ends at y318, above the wrist at y360). Hem waist, volume straight.
+       vs button up: closure plus sleeve. vs henley: closure plus sleeve. -->
+  <defs>
+    <linearGradient id="teen-male-top-wrap-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #43907F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #43907F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-wrap-top__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #43907F)"/>
+      <stop offset="1" stop-color="var(--c2, #43907F)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-wrap-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves, stopping at the forearm -->
+    <path d="M116 224 q2-26 26-28 h22 v102 q0 20 -18 20 h-14 q-18 0 -18-20 z"
+          fill="url(#teen-male-top-wrap-top__sleeve)"/>
+    <path d="M284 224 q-2-26 -26-28 h-22 v102 q0 20 18 20 h14 q18 0 18-20 z"
+          fill="url(#teen-male-top-wrap-top__sleeve)"/>
+    <!-- body cut with a deep V to y258, hem at the natural waist -->
+    <path d="M170 192 q-30 2 -30 32 v82 q0 34 32 34 h56 q32 0 32-34 v-82 q0-30 -30-32 L200 258 z"
+          fill="url(#teen-male-top-wrap-top__body)"/>
+  </g>
+
+  <!-- the crossover: two diagonal fronts, right lying over left at the waist -->
+  <path d="M170 192 q-30 2 -30 32 v82 q0 34 32 34 h28 v-82 z"
+        fill="url(#teen-male-top-wrap-top__panel)" fill-opacity="0.55"/>
+  <path d="M230 192 q30 2 30 32 v82 q0 34 -32 34 h-46 l18-84 z"
+        fill="url(#teen-male-top-wrap-top__panel)"/>
+  <path d="M228 196 L202 254" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 264 l-14 70" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- self-fabric tie belt with a knot and two short ends at the waist -->
+  <path d="M146 322 q54 16 108 0 v16 q-54 16 -108 0 z" fill="url(#teen-male-top-wrap-top__tie)"/>
+  <path d="M186 324 h28 q8 0 8 10 v10 q0 10 -8 10 h-28 q-8 0 -8-10 v-10 q0-10 8-10 z"
+        fill="var(--c3, #F7C873)"/>
+  <path d="M212 348 l26 24 l-11 11 l-24-24 z" fill="url(#teen-male-top-wrap-top__tie)"/>
+  <path d="M188 348 l-26 24 l11 11 l24-24 z" fill="url(#teen-male-top-wrap-top__tie)"/>
+
+  <!-- narrow cuff bands -->
+  <path d="M114 302 h50 v14 q0 20 -18 20 h-14 q-18 0 -18-20 z" fill="var(--c2, #43907F)"/>
+  <path d="M286 302 h-50 v14 q0 20 18 20 h14 q18 0 18-20 z" fill="var(--c2, #43907F)"/>
+
+  <!-- highlight -->
+  <path d="M154 208 q26 12 40 26 M246 208 q-26 12 -40 26" stroke="#FFFFFF"
+        stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

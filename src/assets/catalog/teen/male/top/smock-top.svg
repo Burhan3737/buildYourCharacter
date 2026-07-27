@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tee (nearest sibling): volume = GATHERED (a narrow 116u yoke with the
+       whole body gathered onto its seam at y240 and swinging out to 148u at the hem)
+       and hem = HIGH HIP (y352). Sleeve cap, closure closed.
+       vs puff sleeve blouse: shoulder plus volume. vs poncho: shoulder plus closure. -->
+  <defs>
+    <linearGradient id="teen-male-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #43907F)"/>
+      <stop offset="1" stop-color="var(--c3, #43907F)" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFD9B4)"/>
+      <stop offset="1" stop-color="var(--c2, #C9AE84)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-smock-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFD9B4)"/>
+      <stop offset="1" stop-color="var(--c2, #C9AE84)"/>
+    </linearGradient>
+    <pattern id="teen-male-top-smock-top__floral" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="5" r="3.4" fill="var(--c3, #43907F)" fill-opacity="0.55"/>
+      <circle cx="5" cy="11" r="3.4" fill="var(--c3, #43907F)" fill-opacity="0.55"/>
+      <circle cx="17" cy="11" r="3.4" fill="var(--c3, #43907F)" fill-opacity="0.55"/>
+      <circle cx="11" cy="17" r="3.4" fill="var(--c3, #43907F)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-male-top-smock-top__clip">
+      <path d="M144 236 q56-14 112 0 l18 92 q4 24 -22 24 h-104 q-26 0 -22-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- cap sleeves -->
+    <path d="M146 196 q-32 8 -30 30 l2 12 q2 12 14 12 h20 q12 0 12-14 l0-28 q0-14 -12-12 z"
+          fill="url(#teen-male-top-smock-top__sleeve)"/>
+    <path d="M254 196 q32 8 30 30 l-2 12 q-2 12 -14 12 h-20 q-12 0 -12-14 l0-28 q0-14 12-12 z"
+          fill="url(#teen-male-top-smock-top__sleeve)"/>
+    <!-- the narrow chest yoke, 116u across, that the body is gathered onto -->
+    <path d="M170 190 h60 q28 0 28 28 v24 h-116 v-24 q0-28 28-28 z"
+          fill="url(#teen-male-top-smock-top__yoke)"/>
+    <!-- the gathered body, swinging out to 148u at a high-hip hem -->
+    <path d="M144 236 q56-14 112 0 l18 92 q4 24 -22 24 h-104 q-26 0 -22-24 z"
+          fill="url(#teen-male-top-smock-top__body)"/>
+  </g>
+
+  <!-- four-petal floral on the gathered body -->
+  <g clip-path="url(#teen-male-top-smock-top__clip)">
+    <rect x="124" y="230" width="152" height="126" fill="url(#teen-male-top-smock-top__floral)"/>
+  </g>
+
+  <!-- the yoke seam at y240, with the gather ticks that hang the body off it -->
+  <path d="M142 240 q58-16 116 0" stroke="var(--c3, #43907F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 244 v22 M168 240 v24 M182 238 v26 M196 237 v27 M210 237 v27 M224 238 v26 M238 240 v24 M252 244 v22"
+        stroke="#3B2A22" stroke-opacity="0.2" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- yoke neckline bind -->
+  <path d="M176 190 q24 24 48 0 q-6 22 -24 22 q-18 0 -24-22 z" fill="var(--c1, #EFD9B4)"/>
+  <path d="M174 190 q26 28 52 0" stroke="var(--c2, #C9AE84)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cap sleeve bind -->
+  <path d="M116 236 h48 v6 q0 12 -12 12 h-22 q-12 0 -14-12 z" fill="var(--c3, #43907F)"/>
+  <path d="M284 236 h-48 v6 q0 12 12 12 h22 q12 0 14-12 z" fill="var(--c3, #43907F)"/>
+
+  <!-- hem bind -->
+  <path d="M128 340 q72 18 144 0" stroke="var(--c3, #43907F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight along the yoke -->
+  <path d="M152 206 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

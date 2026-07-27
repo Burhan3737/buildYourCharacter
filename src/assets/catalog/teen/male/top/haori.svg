@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs cardigan (nearest sibling): shoulder/sleeve = DRAPED SQUARE PANEL (two
+       flat 60u rectangles hanging free of the body from y198 to a squared bottom
+       corner at y330, not a tube round the arm) and hem = HIP (y364, against the
+       cardigan's thigh). Open front with no buttons, held only by a short chest cord.
+       The opening resolves onto an integral shell drawn in this file through c3.
+       vs poncho: sleeve plus closure. vs duster cardigan: sleeve plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-haori__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3350)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3350)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-haori__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8DFCB)"/>
+      <stop offset="1" stop-color="var(--c3, #E8DFCB)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the shell worn under the open haori, so the opening never voids -->
+    <path d="M172 192 h56 q24 0 24 24 v140 h-104 v-140 q0-24 24-24 z"
+          fill="url(#teen-male-top-haori__shell)"/>
+    <!-- wide square sleeve panels hanging free below the arm, squared bottom corners -->
+    <path d="M108 198 h46 v132 h-60 v-118 q0-14 14-14 z"
+          fill="url(#teen-male-top-haori__panel)"/>
+    <path d="M292 198 h-46 v132 h60 v-118 q0-14 -14-14 z"
+          fill="url(#teen-male-top-haori__panel)"/>
+    <!-- straight front edges falling to a hip hem -->
+    <path d="M178 190 q-40 2 -40 28 v122 q0 24 24 24 h20 q6 0 6-12 l0-134 z"
+          fill="url(#teen-male-top-haori__front)"/>
+    <path d="M222 190 q40 2 40 28 v122 q0 24 -24 24 h-20 q-6 0 -6-12 l0-134 z"
+          fill="url(#teen-male-top-haori__front)"/>
+  </g>
+
+  <!-- broad contrast facing running down both straight front edges -->
+  <path d="M178 190 l10 2 l-2 160 h-12 l-4-160 z" fill="var(--c3, #E8DFCB)" fill-opacity="0.9"/>
+  <path d="M222 190 l-10 2 l2 160 h12 l4-160 z" fill="var(--c3, #E8DFCB)" fill-opacity="0.9"/>
+
+  <!-- collar band round the back of the neck, joining the two facings -->
+  <path d="M176 190 q24 14 48 0 l-4-10 q-20 10 -40 0 z" fill="var(--c3, #E8DFCB)"/>
+
+  <!-- the short chest cord, the only fastening -->
+  <path d="M190 246 h20" stroke="var(--c3, #E8DFCB)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="190" cy="246" r="6" fill="var(--c3, #E8DFCB)"/>
+  <circle cx="210" cy="246" r="6" fill="var(--c3, #E8DFCB)"/>
+
+  <!-- the seam that separates each square sleeve panel from the body -->
+  <path d="M154 202 v126 M246 202 v126" stroke="#3B2A22" stroke-opacity="0.26"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M96 322 h58 M246 322 h58" stroke="#3B2A22" stroke-opacity="0.18"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight along the shoulder line -->
+  <path d="M112 208 q44-10 76-4 M288 208 q-44-10 -76-4" stroke="#FFFFFF"
+        stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

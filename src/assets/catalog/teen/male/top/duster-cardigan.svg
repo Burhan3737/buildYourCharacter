@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs cardigan (nearest sibling): hem = CALF (y508, against the cardigan's
+       thigh at y406) and shoulder/sleeve = DROPPED (the sleeve head falls to y224,
+       24u below the shoulder line, where the cardigan is set close to it). No collar
+       and no buttons, so the opening is a plain soft drape. The open front resolves
+       onto an integral knit shell drawn in this file and painted through c3.
+       vs long coat: closure plus volume. vs haori: hem plus sleeve. -->
+  <defs>
+    <linearGradient id="teen-male-top-duster-cardigan__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9AA6B8)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7A8C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9AA6B8)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7A8C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-duster-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="teen-male-top-duster-cardigan__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <path d="M2 12 L7 4 L12 12" stroke="var(--c2, #6E7A8C)" stroke-width="2.4"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="teen-male-top-duster-cardigan__clipL">
+      <path d="M176 190 q-34 4 -40 30 l-12 268 q-2 20 18 20 h34 q12 0 12-16 l0-142 z"/>
+    </clipPath>
+    <clipPath id="teen-male-top-duster-cardigan__clipR">
+      <path d="M224 190 q34 4 40 30 l12 268 q2 20 -18 20 h-34 q-12 0 -12-16 l0-142 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the knit shell worn under the open duster, drawn here so the opening never voids -->
+    <path d="M174 190 h52 q26 0 26 26 v128 h-104 v-128 q0-26 26-26 z"
+          fill="url(#teen-male-top-duster-cardigan__shell)"/>
+    <!-- dropped soft sleeves -->
+    <path d="M104 258 q4-36 34-38 l32 0 v138 q0 22 -22 22 h-24 q-20 0 -20-22 z"
+          fill="url(#teen-male-top-duster-cardigan__sleeve)"/>
+    <path d="M296 258 q-4-36 -34-38 l-32 0 v138 q0 22 22 22 h24 q20 0 20-22 z"
+          fill="url(#teen-male-top-duster-cardigan__sleeve)"/>
+    <!-- two long unfastened fronts hanging to mid-calf in a soft drape -->
+    <path d="M176 190 q-34 4 -40 30 l-12 268 q-2 20 18 20 h34 q12 0 12-16 l0-142 z"
+          fill="url(#teen-male-top-duster-cardigan__front)"/>
+    <path d="M224 190 q34 4 40 30 l12 268 q2 20 -18 20 h-34 q-12 0 -12-16 l0-142 z"
+          fill="url(#teen-male-top-duster-cardigan__front)"/>
+  </g>
+
+  <!-- knit texture over both fronts -->
+  <g clip-path="url(#teen-male-top-duster-cardigan__clipL)">
+    <rect x="120" y="188" width="90" height="330" fill="url(#teen-male-top-duster-cardigan__knit)" opacity="0.5"/>
+  </g>
+  <g clip-path="url(#teen-male-top-duster-cardigan__clipR)">
+    <rect x="190" y="188" width="90" height="330" fill="url(#teen-male-top-duster-cardigan__knit)" opacity="0.5"/>
+  </g>
+
+  <!-- two low patch pockets -->
+  <path d="M136 386 h44 v46 q0 10 -10 10 h-26 q-10 0 -9-10 z" fill="var(--c2, #6E7A8C)"/>
+  <path d="M264 386 h-44 v46 q0 10 10 10 h26 q10 0 9-10 z" fill="var(--c2, #6E7A8C)"/>
+  <path d="M142 396 h32 M226 396 h32" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft rib cuffs, the only trim on the garment -->
+  <path d="M102 356 h68 v22 q0 22 -22 22 h-24 q-22 0 -22-22 z" fill="var(--c2, #6E7A8C)"/>
+  <path d="M298 356 h-68 v22 q0 22 22 22 h24 q22 0 22-22 z" fill="var(--c2, #6E7A8C)"/>
+
+  <!-- ribbed neckline on the shell -->
+  <path d="M176 190 q24 22 48 0 q-6 20 -24 20 q-18 0 -24-20 z" fill="var(--c2, #6E7A8C)"/>
+
+  <!-- highlight -->
+  <path d="M148 206 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

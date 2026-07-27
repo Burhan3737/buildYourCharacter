@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tank (nearest sibling): shoulder/sleeve = SPAGHETTI STRAP (two 11u
+       ribbons set wide at x172 and x228, against the tank's 16u shoulder straps set
+       close) and hem = PAST HIP (y372, where the tank stops at y350), over a bias cut
+       body that skims from 92u at the upper edge out to 112u at the hem.
+       vs ribbed vest: shoulder plus volume. vs crop top: shoulder plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #8C99CC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #8C99CC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-camisole__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-camisole__clip">
+      <path d="M154 240 q10-10 46-10 q36 0 46 10 l10 108 q2 24 -22 24 h-68 q-24 0 -22-24 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps, set wide on the shoulder at x172 and x228 -->
+    <path d="M166 190 l12 0 l5 44 l-12 2 z" fill="url(#teen-male-top-camisole__strap)"/>
+    <path d="M234 190 l-12 0 l-5 44 l12 2 z" fill="url(#teen-male-top-camisole__strap)"/>
+    <!-- bias cut body: straight upper edge at y232, skimming out to a hem at y372 -->
+    <path d="M154 240 q10-10 46-10 q36 0 46 10 l10 108 q2 24 -22 24 h-68 q-24 0 -22-24 z"
+          fill="url(#teen-male-top-camisole__body)"/>
+  </g>
+
+  <!-- vertical bias seams, the drape note -->
+  <g clip-path="url(#teen-male-top-camisole__clip)">
+    <path d="M176 234 l-10 138 M224 234 l10 138" stroke="#3B2A22" stroke-opacity="0.13"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="146" y="230" width="12" height="146" fill="#3B2A22" fill-opacity="0.1"/>
+    <rect x="242" y="230" width="12" height="146" fill="#3B2A22" fill-opacity="0.1"/>
+  </g>
+
+  <!-- scalloped bind along the straight upper edge -->
+  <g fill="url(#teen-male-top-camisole__trim)">
+    <circle cx="160" cy="240" r="7"/><circle cx="176" cy="234" r="7"/>
+    <circle cx="192" cy="231" r="7"/><circle cx="208" cy="231" r="7"/>
+    <circle cx="224" cy="234" r="7"/><circle cx="240" cy="240" r="7"/>
+  </g>
+
+  <!-- matching bind at the hem -->
+  <g fill="url(#teen-male-top-camisole__trim)">
+    <circle cx="152" cy="360" r="7.5"/><circle cx="170" cy="368" r="7.5"/>
+    <circle cx="188" cy="372" r="7.5"/><circle cx="212" cy="372" r="7.5"/>
+    <circle cx="230" cy="368" r="7.5"/><circle cx="248" cy="360" r="7.5"/>
+  </g>
+
+  <!-- strap sliders -->
+  <path d="M165 208 h14 v7 h-14 z" fill="url(#teen-male-top-camisole__trim)"/>
+  <path d="M221 208 h14 v7 h-14 z" fill="url(#teen-male-top-camisole__trim)"/>
+
+  <!-- highlight -->
+  <path d="M166 244 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

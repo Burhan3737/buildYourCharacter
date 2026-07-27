@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs cardigan (nearest sibling): hem = CROPPED ABOVE THE WAIST (y300, well
+       clear of the natural waist at y336, against the cardigan's thigh at y406) and
+       shoulder/sleeve = THREE QUARTER (ending at y318). No fastening at all and the
+       front edges are curved. The opening resolves onto the wearer's own chest,
+       painted with the body's skin so it is never a hole.
+       vs blazer: hem plus sleeve. vs waistcoat: sleeve plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-bolero__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5A3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F5A)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5A3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-bolero__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #F6E3C8)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the wearer's own chest, showing down the unfastened front -->
+  <path d="M168 194 h64 q6 0 6 8 v98 q0 8 -8 8 h-60 q-8 0 -8-8 v-98 q0-8 6-8 z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M190 212 q10 8 20 0" stroke="var(--skin3, #C98F68)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves -->
+    <path d="M138 192 q-28 8 -26 32 l0 76 q0 20 18 20 h18 q14 0 14-18 l0-92 q0-18 -14-18 z"
+          fill="url(#teen-male-top-bolero__sleeve)"/>
+    <path d="M262 192 q28 8 26 32 l0 76 q0 20 -18 20 h-18 q-14 0 -14-18 l0-92 q0-18 14-18 z"
+          fill="url(#teen-male-top-bolero__sleeve)"/>
+    <!-- two short fronts with curved front edges, cut off above the natural waist -->
+    <path d="M180 190 q-42 4 -42 32 l-2 58 q0 20 22 20 h18 q-8-56 4-110 z"
+          fill="url(#teen-male-top-bolero__front)"/>
+    <path d="M220 190 q42 4 42 32 l2 58 q0 20 -22 20 h-18 q8-56 -4-110 z"
+          fill="url(#teen-male-top-bolero__front)"/>
+  </g>
+
+  <!-- contrast bind running the whole curved opening and round the hem -->
+  <path d="M180 190 q-12 54 -4 110 h-18 q-22 0 -22-20"
+        stroke="url(#teen-male-top-bolero__bind)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M220 190 q12 54 4 110 h18 q22 0 22-20"
+        stroke="url(#teen-male-top-bolero__bind)" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+  <!-- collarless neck bind across the back of the neck -->
+  <path d="M180 190 q20 12 40 0" stroke="url(#teen-male-top-bolero__bind)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- three-quarter cuff bands -->
+  <path d="M112 296 h50 v6 q0 20 -18 20 h-16 q-18 0 -16-20 z" fill="url(#teen-male-top-bolero__bind)"/>
+  <path d="M288 296 h-50 v6 q0 20 18 20 h16 q18 0 16-20 z" fill="url(#teen-male-top-bolero__bind)"/>
+
+  <!-- shoulder seam topstitch -->
+  <path d="M150 208 q20-8 28 0 M250 208 q-20-8 -28 0" stroke="#3B2A22" stroke-opacity="0.2"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M146 216 q20-10 32-2 M254 216 q-20-10 -32-2" stroke="#FFFFFF"
+        stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

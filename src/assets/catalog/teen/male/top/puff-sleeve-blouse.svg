@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tee (nearest sibling): shoulder/sleeve = PUFF (a balloon of cloth
+       ballooning to x74 and x326, a full 42u outboard of the arm at x116/x284,
+       gathered into a tight cuff at y292) and volume = FITTED (a narrow 104u body
+       against that shoulder mass). Hem hip, closure closed.
+       vs smock top: shoulder plus volume. vs wrap top: shoulder plus closure. -->
+  <defs>
+    <linearGradient id="teen-male-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c2, #D3C7B4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c2, #D3C7B4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-puff-sleeve-blouse__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c3, #7E90DC)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-puff-sleeve-blouse__bodyclip">
+      <path d="M176 192 q-28 2 -28 30 v96 q0 30 28 30 h48 q28 0 28-30 v-96 q0-28 -28-30 h-8 q-16 18 -32 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left balloon: shoulder volume projecting well outboard of the arm -->
+    <path d="M150 196 q-40 0 -60 26 q-16 22 -8 40 q10 22 40 24 q28 2 28-22 z"
+          fill="url(#teen-male-top-puff-sleeve-blouse__puff)"/>
+    <!-- right balloon -->
+    <path d="M250 196 q40 0 60 26 q16 22 8 40 q-10 22 -40 24 q-28 2 -28-22 z"
+          fill="url(#teen-male-top-puff-sleeve-blouse__puff)"/>
+    <!-- narrow blouse body -->
+    <path d="M176 192 q-28 2 -28 30 v96 q0 30 28 30 h48 q28 0 28-30 v-96 q0-28 -28-30 h-8 q-16 18 -32 0 z"
+          fill="url(#teen-male-top-puff-sleeve-blouse__body)"/>
+  </g>
+
+  <!-- gathering at the sleeve head, where the puff is set into the shoulder -->
+  <path d="M148 200 q-8 14 -14 26 M160 200 q-6 16 -10 28 M138 208 q-8 12 -12 24"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M252 200 q8 14 14 26 M240 200 q6 16 10 28 M262 208 q8 12 12 24"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- gathering into the tight cuff, and the cuff bands themselves -->
+  <path d="M108 268 q10 12 8 22 M124 276 q4 10 4 18 M142 280 q0 10 -2 16"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M292 268 q-10 12 -8 22 M276 276 q-4 10 -4 18 M258 280 q0 10 2 16"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M104 288 h52 v14 q0 10 -10 10 h-32 q-10 0 -10-10 z"
+        fill="url(#teen-male-top-puff-sleeve-blouse__cuff)"/>
+  <path d="M296 288 h-52 v14 q0 10 10 10 h32 q10 0 10-10 z"
+        fill="url(#teen-male-top-puff-sleeve-blouse__cuff)"/>
+
+  <!-- narrow contrast placket band and its button line down the fitted body -->
+  <path d="M191 206 h18 v134 h-18 z" fill="url(#teen-male-top-puff-sleeve-blouse__cuff)"/>
+  <g fill="var(--c2, #D3C7B4)">
+    <circle cx="200" cy="228" r="4"/><circle cx="200" cy="258" r="4"/>
+    <circle cx="200" cy="288" r="4"/><circle cx="200" cy="318" r="4"/>
+  </g>
+
+  <!-- gentle shading down the sides of the narrow body -->
+  <g clip-path="url(#teen-male-top-puff-sleeve-blouse__bodyclip)">
+    <rect x="148" y="192" width="12" height="180" fill="#3B2A22" fill-opacity="0.1"/>
+    <rect x="240" y="192" width="12" height="180" fill="#3B2A22" fill-opacity="0.1"/>
+  </g>
+
+  <!-- highlight over each puff -->
+  <path d="M112 216 q22-12 40-10 M288 216 q-22-12 -40-10" stroke="#FFFFFF"
+        stroke-opacity="0.32" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

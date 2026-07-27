@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes vs wrap top (nearest sibling): hem = CROPPED HIGH (y256, just below the
+       bust and a clear 80u above the wrap top's waist hem) and volume = BOXY with a
+       wide gently curved sleeve, against the wrap top's fitted straight body.
+       Closure is a crossover held by one long ribbon tie, wrapped LEFT OVER RIGHT
+       as the wearer wears it, so the visible edge falls to the viewer's left.
+       Its hem clears the top edge of the chima band at y264.
+       vs bolero: closure plus hem. vs tee: closure plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-jeogori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #8290C9)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #8290C9)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-jeogori__git" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-jeogori__ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8290C9)"/>
+      <stop offset="1" stop-color="var(--c2, #8290C9)" stop-opacity="0.86"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide gently curved sleeves -->
+    <path d="M140 188 q-34 4 -36 34 l-2 56 q0 22 20 22 h24 q16 0 16-20 l0-72 q0-20 -22-20 z"
+          fill="url(#teen-male-top-jeogori__sleeve)"/>
+    <path d="M260 188 q34 4 36 34 l2 56 q0 22 -20 22 h-24 q-16 0 -16-20 l0-72 q0-20 22-20 z"
+          fill="url(#teen-male-top-jeogori__sleeve)"/>
+    <!-- very short body with a deep crossover V, hem at y256 -->
+    <path d="M172 188 L200 236 L228 188 q34 0 34 28 v22 q0 18 -20 18 h-84 q-20 0 -20-18 v-22 q0-28 34-28 z"
+          fill="url(#teen-male-top-jeogori__body)"/>
+  </g>
+
+  <!-- the wearer's left panel lying over the right: its edge falls to the viewer's left -->
+  <path d="M228 188 L200 236 L166 256 h-8 q-20 0 -20-18 v-22 q0-28 34-28 z"
+        fill="var(--c2, #8290C9)" fill-opacity="0.55"/>
+
+  <!-- the git collar band, with the dongjeong strip along the crossover edge -->
+  <path d="M170 186 L200 238 L232 186 l14 8 L204 254 h-10 L156 194 z"
+        fill="url(#teen-male-top-jeogori__git)"/>
+  <path d="M176 190 L200 232 L226 190" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- goreum: one long ribbon tie knotted at the crossover, hanging down the front -->
+  <path d="M186 232 h30 q8 0 8 9 v10 q0 9 -8 9 h-30 q-8 0 -8-9 v-10 q0-9 8-9 z"
+        fill="url(#teen-male-top-jeogori__ribbon)"/>
+  <path d="M190 258 q-8 44 -4 84 l16 2 q-6-44 2-86 z" fill="url(#teen-male-top-jeogori__ribbon)"/>
+  <path d="M212 258 q10 36 22 60 l-14 8 q-14-28 -20-66 z" fill="url(#teen-male-top-jeogori__ribbon)"/>
+  <path d="M192 268 q-4 32 -2 62" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- kkeutdong cuff bands on both sleeves -->
+  <path d="M102 264 h56 v14 q0 22 -20 22 h-24 q-14 0 -14-22 z" fill="url(#teen-male-top-jeogori__git)"/>
+  <path d="M298 264 h-56 v14 q0 22 20 22 h24 q14 0 14-22 z" fill="url(#teen-male-top-jeogori__git)"/>
+
+  <!-- hem seam, sitting clear of the chima band -->
+  <path d="M148 252 h104" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight along the curved sleeve heads -->
+  <path d="M120 210 q30-14 46-6 M280 210 q-30-14 -46-6" stroke="#FFFFFF"
+        stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

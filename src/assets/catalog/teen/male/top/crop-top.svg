@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tee (nearest sibling): hem = CROPPED ABOVE THE WAIST (y300, a clear 36u
+       above the natural waist at y336, so the midriff is bare down to whatever the
+       bottom asset's waistband is) and volume = BOXY (a short wide 128u block rather
+       than a straight column). Sleeve short set in, closure closed.
+       vs tank: shoulder plus hem. vs henley: closure plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97264)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97264)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="teen-male-top-crop-top__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="6" cy="6" r="4.5" fill="var(--c3, #3B2A22)" fill-opacity="0.5"/>
+      <circle cx="17" cy="17" r="4.5" fill="var(--c3, #3B2A22)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-male-top-crop-top__clip">
+      <path d="M168 192 q-32 2 -32 32 v46 q0 30 30 30 h68 q30 0 30-30 v-46 q0-30 -32-32 h-12 q-20 18 -40 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves with a rolled edge -->
+    <path d="M142 194 q-30 8 -30 32 l0 30 q0 14 14 14 h24 q10 0 10-14 l0-48 q0-14 -10-14 z"
+          fill="url(#teen-male-top-crop-top__sleeve)"/>
+    <path d="M258 194 q30 8 30 32 l0 30 q0 14 -14 14 h-24 q-10 0 -10-14 l0-48 q0-14 10-14 z"
+          fill="url(#teen-male-top-crop-top__sleeve)"/>
+    <!-- boxy body cut off above the natural waist: nothing is drawn below y300 -->
+    <path d="M168 192 q-32 2 -32 32 v46 q0 30 30 30 h68 q30 0 30-30 v-46 q0-30 -32-32 h-12 q-20 18 -40 0 z"
+          fill="url(#teen-male-top-crop-top__body)"/>
+  </g>
+
+  <!-- scattered dot over the short body -->
+  <g clip-path="url(#teen-male-top-crop-top__clip)">
+    <rect x="134" y="190" width="134" height="112" fill="url(#teen-male-top-crop-top__dot)"/>
+  </g>
+
+  <!-- ribbed crew neck bind -->
+  <path d="M178 192 q22 20 44 0 v9 q-22 20 -44 0 z" fill="url(#teen-male-top-crop-top__band)"/>
+
+  <!-- contrast hem band: the cut line that makes the crop read -->
+  <path d="M138 282 h124 v18 q0 12 -14 12 h-96 q-14 0 -14-12 z"
+        fill="url(#teen-male-top-crop-top__band)"/>
+  <path d="M146 288 h108" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rolled sleeve cuffs -->
+  <path d="M112 250 h48 v6 q0 14 -14 14 h-20 q-14 0 -14-14 z" fill="url(#teen-male-top-crop-top__band)"/>
+  <path d="M288 250 h-48 v6 q0 14 14 14 h20 q14 0 14-14 z" fill="url(#teen-male-top-crop-top__band)"/>
+
+  <!-- highlight -->
+  <path d="M152 210 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

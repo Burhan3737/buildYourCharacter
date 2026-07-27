@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs blazer (nearest sibling): closure = CLOSED on a single button at the
+       natural waist under one unbroken rounded shawl roll with no notch anywhere in
+       it (the blazer hangs open on notched lapels) and hem = PAST HIP (y370, against
+       the blazer's y360 hip with a waisted cutaway front). No vent.
+       vs tailcoat: closure plus hem. vs button up: shoulder plus volume. -->
+  <defs>
+    <linearGradient id="teen-male-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F3446)"/>
+      <stop offset="1" stop-color="var(--c2, #1D212E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F3446)"/>
+      <stop offset="1" stop-color="var(--c2, #1D212E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-dinner-jacket__shawl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #1D212E)"/>
+      <stop offset="1" stop-color="var(--c1, #2F3446)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-dinner-jacket__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F2E9)"/>
+      <stop offset="1" stop-color="var(--c3, #F6F2E9)" stop-opacity="0.86"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straight sleeves under a square shoulder -->
+    <path d="M110 224 q4-32 30-34 h26 v148 q0 18 -18 18 h-20 q-18 0 -18-18 z"
+          fill="url(#teen-male-top-dinner-jacket__sleeve)"/>
+    <path d="M290 224 q-4-32 -30-34 h-26 v148 q0 18 18 18 h20 q18 0 18-18 z"
+          fill="url(#teen-male-top-dinner-jacket__sleeve)"/>
+    <!-- one closed body, hem just past the hip, no vent cut into it -->
+    <path d="M170 190 h60 q34 0 34 32 v112 q0 36 -30 36 h-68 q-30 0 -30-36 v-112 q0-32 34-32 z"
+          fill="url(#teen-male-top-dinner-jacket__body)"/>
+  </g>
+
+  <!-- the dress shirt showing in the shallow V above the button -->
+  <path d="M178 194 h44 v106 h-44 z" fill="url(#teen-male-top-dinner-jacket__shirt)"/>
+  <path d="M192 212 h16 v12 h-16 z" fill="var(--c2, #1D212E)"/>
+  <g fill="var(--c2, #1D212E)">
+    <circle cx="200" cy="252" r="3.4"/><circle cx="200" cy="276" r="3.4"/>
+  </g>
+
+  <!-- the shawl collar: one continuous rounded roll from the neck to the waist button,
+       with no notch anywhere along it -->
+  <path d="M178 188 q-18 46 -6 80 q8 32 28 46 q-34-4 -48-36 q-16-40 2-90 z"
+        fill="url(#teen-male-top-dinner-jacket__shawl)"/>
+  <path d="M222 188 q18 46 6 80 q-8 32 -28 46 q34-4 48-36 q16-40 -2-90 z"
+        fill="url(#teen-male-top-dinner-jacket__shawl)"/>
+  <path d="M176 188 q24 14 48 0 l-4-10 q-20 10 -40 0 z" fill="url(#teen-male-top-dinner-jacket__shawl)"/>
+  <path d="M174 194 q-14 42 -4 76 q8 28 26 40" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M226 194 q14 42 4 76 q-8 28 -26 40" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the single closed button at the natural waist -->
+  <circle cx="200" cy="322" r="7" fill="var(--c3, #F6F2E9)"/>
+  <circle cx="200" cy="322" r="3" fill="var(--c2, #1D212E)"/>
+
+  <!-- jetted pockets -->
+  <path d="M146 340 h40 v9 q0 4 -4 4 h-32 q-4 0 -4-4 z" fill="var(--c2, #1D212E)"/>
+  <path d="M214 340 h40 v9 q0 4 -4 4 h-32 q-4 0 -4-4 z" fill="var(--c2, #1D212E)"/>
+
+  <!-- pocket square -->
+  <path d="M152 250 h26 l-4 12 h-18 z" fill="var(--c3, #F6F2E9)"/>
+
+  <!-- cuff buttons -->
+  <g fill="var(--c3, #F6F2E9)">
+    <circle cx="124" cy="332" r="3.4"/><circle cx="124" cy="344" r="3.4"/>
+    <circle cx="276" cy="332" r="3.4"/><circle cx="276" cy="344" r="3.4"/>
+  </g>
+
+  <!-- highlight on the square shoulder -->
+  <path d="M146 202 q28-8 34 2 M254 202 q-28-8 -34 2" stroke="#FFFFFF"
+        stroke-opacity="0.24" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

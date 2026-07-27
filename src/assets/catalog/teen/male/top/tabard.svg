@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Axes vs tank (nearest sibling): closure = OPEN DOWN BOTH SIDES (a front panel
+       and a back panel joined ONLY by two narrow shoulder bridges, so the wearer's
+       own sides show between the panel edge and the arm) and volume = FLAT PANEL
+       (two boards hanging clear of the body, not a tube round it). No sleeve, hip hem.
+       vs ribbed vest: closure plus volume. vs waistcoat: closure plus sleeve. -->
+  <defs>
+    <linearGradient id="teen-male-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A244)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D9A244)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A244)" stop-opacity="0.84"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-tabard__bridge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A244)"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-tabard__clip">
+      <path d="M176 210 h48 q8 0 8 10 v128 q0 12 -10 12 h-44 q-10 0 -10-12 v-128 q0-10 8-10 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the back panel, hanging free and a little longer than the front -->
+    <path d="M168 196 h64 q8 0 8 10 v154 q0 12 -10 12 h-60 q-10 0 -10-12 v-154 q0-10 8-10 z"
+          fill="url(#teen-male-top-tabard__back)"/>
+    <!-- two narrow shoulder bridges: the only place the panels are joined -->
+    <path d="M172 186 h24 v34 h-24 z" fill="url(#teen-male-top-tabard__bridge)"/>
+    <path d="M228 186 h-24 v34 h24 z" fill="url(#teen-male-top-tabard__bridge)"/>
+    <!-- the flat front panel, well inboard of the torso so both sides read open -->
+    <path d="M176 210 h48 q8 0 8 10 v128 q0 12 -10 12 h-44 q-10 0 -10-12 v-128 q0-10 8-10 z"
+          fill="url(#teen-male-top-tabard__front)"/>
+  </g>
+
+  <!-- two bold horizontal bands, the hi-vis and sports-bib read -->
+  <g clip-path="url(#teen-male-top-tabard__clip)">
+    <rect x="164" y="248" width="76" height="26" fill="var(--c3, #3B2A22)"/>
+    <rect x="164" y="298" width="76" height="26" fill="var(--c3, #3B2A22)"/>
+    <rect x="164" y="278" width="76" height="6" fill="var(--c3, #3B2A22)" fill-opacity="0.45"/>
+  </g>
+
+  <!-- open side seam shadows: the edge of the panel standing off the body -->
+  <path d="M176 214 v144 M224 214 v144" stroke="#3B2A22" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- side ties knotted at the waist, all that holds the two panels together -->
+  <path d="M170 292 h-22 M230 292 h22" stroke="var(--c3, #3B2A22)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="146" cy="292" r="5" fill="var(--c3, #3B2A22)"/>
+  <circle cx="254" cy="292" r="5" fill="var(--c3, #3B2A22)"/>
+
+  <!-- shoulder bridge topstitch -->
+  <path d="M176 216 h16 M208 216 h16" stroke="#3B2A22" stroke-opacity="0.24"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M182 224 q18 10 36 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

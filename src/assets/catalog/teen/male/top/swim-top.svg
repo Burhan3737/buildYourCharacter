@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tank (nearest sibling): hem = CROPPED TO THE UNDERBUST (y276, a full
+       74u above the tank's y350) and shoulder/sleeve = NARROW TIE (two 14u diagonal
+       ties running from the neck out to the band, against the tank's vertical straps).
+       Closure closed, volume banded. The midriff below it is deliberately bare and
+       pairs with swim bottoms in the bottom slot.
+       vs camisole: hem plus volume. vs crop top: shoulder plus hem. -->
+  <defs>
+    <linearGradient id="teen-male-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3A8878)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3A8878)"/>
+    </linearGradient>
+    <pattern id="teen-male-top-swim-top__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="16">
+      <path d="M0 11 q6-8 12 0 q6 8 12 0" stroke="var(--c3, #F6F2E9)" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="teen-male-top-swim-top__clip">
+      <path d="M142 224 q0-10 12-10 h92 q12 0 12 10 v40 q0 12 -12 12 h-92 q-12 0 -12-12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow shoulder ties running from the neck out to the band -->
+    <path d="M180 184 l14 6 l-26 38 l-14-6 z" fill="url(#teen-male-top-swim-top__tie)"/>
+    <path d="M220 184 l-14 6 l26 38 l14-6 z" fill="url(#teen-male-top-swim-top__tie)"/>
+    <!-- the band itself: a straight upper edge, hem at the underbust -->
+    <path d="M142 224 q0-10 12-10 h92 q12 0 12 10 v40 q0 12 -12 12 h-92 q-12 0 -12-12 z"
+          fill="url(#teen-male-top-swim-top__band)"/>
+  </g>
+
+  <!-- wave pattern across the band -->
+  <g clip-path="url(#teen-male-top-swim-top__clip)">
+    <rect x="140" y="230" width="120" height="34" fill="url(#teen-male-top-swim-top__wave)" opacity="0.85"/>
+  </g>
+
+  <!-- contrast bind on both edges of the band -->
+  <path d="M148 217 h104" stroke="var(--c3, #F6F2E9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 272 h100" stroke="var(--c3, #F6F2E9)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the tie knot at the back of the neck, and its two short ends -->
+  <path d="M190 178 h20 q6 0 6 7 v8 q0 7 -6 7 h-20 q-6 0 -6-7 v-8 q0-7 6-7 z"
+        fill="var(--c3, #F6F2E9)"/>
+  <path d="M188 200 l-8 22 M212 200 l8 22" stroke="var(--c3, #F6F2E9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- side ruching, the structural note that says swimwear -->
+  <path d="M152 228 v34 M160 226 v38 M240 226 v38 M248 228 v34"
+        stroke="#3B2A22" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M164 230 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

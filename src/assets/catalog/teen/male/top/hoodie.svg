@@ -1,37 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Axes vs tee (nearest sibling): shoulder/sleeve = DROPPED (sleeve head falls to
+       y226, well below the y200 shoulder line) and hem = PAST HIP (y378, past the
+       hip landmark at y360). The hood is a rolled three dimensional mass standing
+       behind the neck, x148 to x252, so it widens the outline at the shoulders.
+       vs oversized long sleeve: closure plus volume. vs zip jacket: closure plus shoulder. -->
   <defs>
     <linearGradient id="teen-male-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6274C6)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB4)"/>
     </linearGradient>
     <linearGradient id="teen-male-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
-      <stop offset="1" stop-color="var(--c2, #6274C6)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB4)"/>
     </linearGradient>
+    <linearGradient id="teen-male-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5A6BB4)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-top-hoodie__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.78"/>
+    </linearGradient>
+    <clipPath id="teen-male-top-hoodie__bodyclip">
+      <path d="M166 192 h68 q32 0 32 34 v116 q0 36 -34 36 h-64 q-34 0 -34-36 v-116 q0-34 32-34 z"/>
+    </clipPath>
   </defs>
+
   <g class="sp-shadow">
-    <!-- long sleeves, oversized streetwear length, shoulder anchor y198 to near-wrist y360 -->
-    <rect x="112" y="198" width="34" height="162" rx="17" fill="url(#teen-male-top-hoodie__sleeve)"/>
-    <rect x="254" y="198" width="34" height="162" rx="17" fill="url(#teen-male-top-hoodie__sleeve)"/>
-    <!-- boxier oversized body, fitted to x138-262 y194-344, hem pushed to y358 -->
-    <path d="M165 190 h70 q32 0 32 32 v104 q0 32 -32 32 h-70 q-32 0 -32-32 v-104 q0-32 32-32 z"
+    <!-- the hood: a rolled volume standing proud behind the neck, 104u across -->
+    <path d="M148 226 q-10-44 30-48 h44 q40 4 30 48 q-52 24 -104 0 z"
+          fill="url(#teen-male-top-hoodie__hood)"/>
+    <!-- dropped sleeves: the head sits at y226, a full 26u below the shoulder line -->
+    <path d="M108 262 q2-34 30-36 l30 0 v128 q0 20 -20 20 h-20 q-20 0 -20-20 z"
+          fill="url(#teen-male-top-hoodie__sleeve)"/>
+    <path d="M292 262 q-2-34 -30-36 l-30 0 v128 q0 20 20 20 h20 q20 0 20-20 z"
+          fill="url(#teen-male-top-hoodie__sleeve)"/>
+    <!-- oversized body, hem carried past the hip to y378 -->
+    <path d="M166 192 h68 q32 0 32 34 v116 q0 36 -34 36 h-64 q-34 0 -34-36 v-116 q0-34 32-34 z"
           fill="url(#teen-male-top-hoodie__body)"/>
-    <!-- hood behind the neck -->
-    <path d="M168 190 q32 22 64 0 q-6 30 -32 30 q-26 0 -32-30 z" fill="var(--c2, #6274C6)"/>
   </g>
-  <!-- cuffs -->
-  <rect x="112" y="342" width="34" height="20" rx="10" fill="var(--c2, #6274C6)"/>
-  <rect x="254" y="342" width="34" height="20" rx="10" fill="var(--c2, #6274C6)"/>
+
+  <!-- hood opening, showing the lining, then the neck bind -->
+  <path d="M164 218 q36 20 72 0 q-8 22 -36 22 q-28 0 -36-22 z" fill="var(--c2, #5A6BB4)"/>
+  <path d="M172 222 q28 14 56 0" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep rib hem band, clipped to the body -->
+  <g clip-path="url(#teen-male-top-hoodie__bodyclip)">
+    <rect x="130" y="352" width="140" height="30" fill="url(#teen-male-top-hoodie__rib)"/>
+    <path d="M144 354 v26 M158 354 v26 M172 354 v26 M186 354 v26 M200 354 v26 M214 354 v26 M228 354 v26 M242 354 v26 M256 354 v26"
+          stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- rib cuffs -->
+  <path d="M108 356 h60 v6 q0 20 -20 20 h-20 q-20 0 -20-20 z" fill="url(#teen-male-top-hoodie__rib)"/>
+  <path d="M292 356 h-60 v6 q0 20 20 20 h20 q20 0 20-20 z" fill="url(#teen-male-top-hoodie__rib)"/>
+
   <!-- kangaroo pocket -->
-  <path d="M170 290 h60 v30 q0 8 -8 8 h-44 q-8 0 -8-8 z" fill="var(--c2, #6274C6)"/>
-  <!-- drawstrings -->
-  <path d="M188 220 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+  <path d="M162 296 h76 v34 q0 10 -12 10 h-52 q-12 0 -12-10 z" fill="var(--c2, #5A6BB4)"/>
+  <path d="M168 300 h64" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M212 220 v22" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5"
+
+  <!-- twin drawcords with aglets -->
+  <path d="M186 236 v40 M214 236 v40" stroke="var(--c3, #F7C873)" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <!-- highlight -->
-  <path d="M150 202 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+  <circle cx="186" cy="280" r="4" fill="#3B2A22" fill-opacity="0.55"/>
+  <circle cx="214" cy="280" r="4" fill="#3B2A22" fill-opacity="0.55"/>
+
+  <!-- highlight over the hood roll -->
+  <path d="M162 198 q38-8 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>
