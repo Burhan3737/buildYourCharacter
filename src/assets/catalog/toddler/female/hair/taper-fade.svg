@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: crown (skin-close tapered sides climbing to a low flat top) - parting/hem (a hard square hairline cut dead straight across the brow) -->
+  <!-- the fade is a real value gradient in the hair: hair1 at the top of the taper, hair2 thinning to skin at the bottom -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-female-hair-taper-fade__back-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.44" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.76" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.4"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the back of the fade: dense over the crown, worn away to nothing at the nape -->
+      <path d="M200 184 C150 184 120 216 120 268
+               C120 294 126 312 136 324
+               L264 324 C274 312 280 294 280 268
+               C280 216 250 184 200 184 Z"
+            fill="url(#toddler-female-hair-taper-fade__back-fade)"/>
+    </g>
+    <!-- the nape is squared off with a clipper line, not feathered -->
+    <path d="M142 308 L258 308 L258 316 L142 316 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M158 202 C176 190 224 190 242 202" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-female-hair-taper-fade__front-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.34" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.6" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.5"/>
+      </linearGradient>
+      <linearGradient id="toddler-female-hair-taper-fade__front-top" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded sides: one close cap over the whole skull, cut off dead straight
+           along the brow, so the hem IS the hairline and both temple corners are square -->
+      <path d="M124 236 C122 196 158 190 200 190 C242 190 278 196 276 236 Z"
+            fill="url(#toddler-female-hair-taper-fade__front-fade)"/>
+      <!-- the taper carrying on down in front of each ear, worn away to nothing -->
+      <path d="M124 230 C116 256 118 282 124 300 C134 280 139 256 141 230 Z"
+            fill="url(#toddler-female-hair-taper-fade__front-fade)"/>
+      <path d="M276 230 C284 256 282 282 276 300 C266 280 261 256 259 230 Z"
+            fill="url(#toddler-female-hair-taper-fade__front-fade)"/>
+      <!-- the flat top: a low slab, level across the top, flaring out to meet the taper -->
+      <path d="M158 176 q0 -14 14 -14 h56 q14 0 14 14 L254 216 q-54 10 -108 0 Z"
+            fill="url(#toddler-female-hair-taper-fade__front-top)"/>
+    </g>
+    <!-- the hairline: one hard straight cut with square ends, no feathering anywhere -->
+    <path d="M140 231 L260 231 L260 239 L140 239 Z" fill="var(--hair2, #331E16)"/>
+    <!-- the guideline where the longer top stops and the taper begins -->
+    <path d="M152 214 Q200 224 248 214" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <!-- the taper itself, sharpest just above each ear -->
+    <path d="M139 288 C143 264 151 246 163 236" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M261 288 C257 264 249 246 237 236" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <!-- comb grain across the flat top -->
+    <g stroke="var(--hair2, #331E16)" stroke-width="2.6" stroke-opacity="0.45"
+       fill="none" stroke-linecap="round">
+      <path d="M172 176 L166 210"/>
+      <path d="M186 172 L184 212"/>
+      <path d="M200 170 V213"/>
+      <path d="M214 172 L216 212"/>
+      <path d="M228 176 L234 210"/>
+    </g>
+    <path d="M170 174 C184 166 216 166 230 174" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

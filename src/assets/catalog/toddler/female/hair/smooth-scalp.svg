@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: crown (bare: no cap, no dome, no mass of any kind, ears and skull fully exposed) - parting/hem (none at all, only the soft shadow where a hairline and a nape would sit) -->
+  <!-- this is a haircut and it is also what alopecia areata looks like; it is drawn plainly, with no apology and no joke -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-female-hair-smooth-scalp__back-nape" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.32"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)" stop-opacity="0.08"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- no hair mass: only the soft shading the skull carries down toward the nape -->
+      <path d="M152 296 C146 314 154 332 172 338
+               L228 338 C246 332 254 314 248 296
+               C236 314 220 322 200 322
+               C180 322 164 314 152 296 Z"
+            fill="url(#toddler-female-hair-smooth-scalp__back-nape)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <!-- a ghost of the hairline, only just there: where hair would start if there were any -->
+    <path d="M138 264 C140 226 166 208 200 208 C234 208 260 226 262 264
+             C258 234 232 218 200 218 C168 218 142 234 138 264 Z"
+          fill="var(--hair1, #43291F)" opacity="0.15"/>
+    <!-- the two temple corners, a shade deeper than the rest of the ghost -->
+    <path d="M132 272 C132 252 136 236 144 226
+             C140 242 138 258 139 274 Z"
+          fill="var(--hair2, #331E16)" opacity="0.22"/>
+    <path d="M268 272 C268 252 264 236 256 226
+             C260 242 262 258 261 274 Z"
+          fill="var(--hair2, #331E16)" opacity="0.22"/>
+    <!-- the bare crown catches the light in one clean arc -->
+    <path d="M158 216 C176 198 224 198 242 216" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M172 200 C184 192 216 192 228 200" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
