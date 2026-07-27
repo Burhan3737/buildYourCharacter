@@ -1,59 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Hoodie" data-family="hoodie" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
-  <!-- axes vs the slot: hood lying flat behind the neck as its own major form (shoulder/closure)
-       + past-hip hem at y330 (hem). Long set-in sleeves, closed pullover front.
-       Tools: trim (ribbed cuffs and hem band, drawstrings with aglets) + structural (kangaroo pocket). -->
+  <!-- axes vs tee: DROPPED shoulder, the armhole falling to y176 out at x132/268 (shoulder)
+       + hem carried well past the hip to y354 (hem). Redraw for RESEARCH-GARMENTS section H.1:
+       the hood is no longer a flat patch behind the neck. It is two forms, a dome standing
+       proud above the shoulder line and a rolled front edge sitting on top of the body, so the
+       garment outline above the collarbone is the hood and not a neckline.
+       Tools: trim (ribbed cuffs and hem band, drawstrings with aglets) + structural (kangaroo
+       pocket, dropped armhole seams). -->
   <defs>
     <linearGradient id="adult-female-top-hoodie__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #A995DC)"/>
-      <stop offset="1" stop-color="var(--c2, #8571C2)"/>
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #6473BE)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-hoodie__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #A995DC)"/>
-      <stop offset="1" stop-color="var(--c2, #8571C2)"/>
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #6473BE)"/>
     </linearGradient>
-    <linearGradient id="adult-female-top-hoodie__hood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #8571C2)"/>
-      <stop offset="1" stop-color="var(--c1, #A995DC)"/>
+    <linearGradient id="adult-female-top-hoodie__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6473BE)"/>
+      <stop offset="1" stop-color="var(--c1, #8FA0E4)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-hoodie__roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #6473BE)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-hoodie__rib" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #8571C2)"/>
-      <stop offset="1" stop-color="var(--c1, #A995DC)"/>
+      <stop offset="0" stop-color="var(--c3, #F0E6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #6473BE)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <!-- long set-in sleeves to the wrist at y322 -->
-    <path d="M148 156 q-34 10 -34 40 v104 q0 20 18 22 q18-2 18-22 v-104 z"
+    <!-- hood dome, standing proud behind the neck: 152u across, cresting at y138, well above
+         the dropped shoulder seam so the topmost garment edge belongs to the hood -->
+    <path d="M126 208 C117 177 129 149 155 139 C170 133 185 139 200 139 C215 139 231 133 246 140 C271 150 282 177 273 208 C249 221 225 226 200 226 C175 226 150 221 126 208 Z"
+          fill="url(#adult-female-top-hoodie__dome)"/>
+    <!-- dropped long sleeves, armhole out at the shoulder point, cuff at y346 -->
+    <path d="M139 167 C112 176 103 195 103 221 L105 323 C107 343 117 351 132 349 C147 347 153 337 153 321 L152 207 Z"
           fill="url(#adult-female-top-hoodie__sleeve)"/>
-    <path d="M252 156 q34 10 34 40 v104 q0 20 -18 22 q-18-2 -18-22 v-104 z"
+    <path d="M261 167 C288 176 297 195 297 221 L295 323 C293 343 283 351 268 349 C253 347 247 337 247 321 L248 207 Z"
           fill="url(#adult-female-top-hoodie__sleeve)"/>
-    <!-- straight pullover body falling past the hip to y330 -->
-    <path d="M170 150 h60 q34 4 36 34 q2 46 0 92 q-1 30 0 54 q-58 14 -132 0 q1-24 0-54 q-2-46 0-92 q2-30 36-34 z"
+    <!-- dropped, roomy pullover body, hem past the hip at y354 -->
+    <path d="M173 151 H227 C253 154 268 167 269 191 L271 269 C269 307 267 331 265 354 C213 369 159 369 135 354 C133 331 131 307 129 269 L131 191 C132 167 147 154 173 151 Z"
           fill="url(#adult-female-top-hoodie__body)"/>
-    <!-- hood lying flat behind the neck -->
-    <path d="M160 156 q14-12 40-12 q26 0 40 12 q-2 32 -40 32 q-38 0 -40-32 z"
-          fill="url(#adult-female-top-hoodie__hood)"/>
+    <!-- rolled hood front edge, lying on the shoulders on top of the body -->
+    <path d="M147 199 C142 169 161 150 200 150 C239 150 258 169 253 199 C240 204 232 192 225 179 C217 165 210 161 200 161 C190 161 183 165 175 179 C168 192 160 204 147 199 Z"
+          fill="url(#adult-female-top-hoodie__roll)"/>
   </g>
-  <!-- hood opening -->
-  <path d="M176 154 q24 16 48 0 q-6 22 -24 22 q-18 0 -24-22 z" fill="var(--skin2, #E7B892)"/>
+  <!-- neck opening inside the rolled hood edge -->
+  <path d="M182 161 q18 13 36 0 q-6 20 -18 20 q-12 0 -18-20 z" fill="var(--skin2, #E7B892)"/>
   <!-- ribbed cuffs -->
-  <path d="M114 300 q18 10 36 0 v18 q0 4 -18 4 q-18 0 -18-4 z" fill="url(#adult-female-top-hoodie__rib)"/>
-  <path d="M250 300 q18 10 36 0 v18 q0 4 -18 4 q-18 0 -18-4 z" fill="url(#adult-female-top-hoodie__rib)"/>
-  <path d="M122 304 v14 M130 305 v14 M138 304 v14 M258 304 v14 M266 305 v14 M274 304 v14"
+  <path d="M104 320 q24 12 48 0 v20 q0 6 -24 6 q-24 0 -24-6 z" fill="url(#adult-female-top-hoodie__rib)"/>
+  <path d="M248 320 q24 12 48 0 v20 q0 6 -24 6 q-24 0 -24-6 z" fill="url(#adult-female-top-hoodie__rib)"/>
+  <path d="M114 326 v16 M126 328 v16 M138 326 v16 M258 326 v16 M270 328 v16 M282 326 v16"
         stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
   <!-- ribbed hem band -->
-  <path d="M136 306 q64 14 128 0 v20 q-64 14 -128 0 z" fill="url(#adult-female-top-hoodie__rib)"/>
+  <path d="M133 330 q67 15 134 0 v22 q-67 16 -134 0 z" fill="url(#adult-female-top-hoodie__rib)"/>
+  <path d="M148 338 v18 M164 340 v18 M180 341 v18 M196 342 v18 M212 342 v18 M228 341 v18 M244 339 v18"
+        stroke="var(--c2, #6473BE)" stroke-opacity="0.35" stroke-width="3.5" fill="none" stroke-linecap="round"/>
   <!-- kangaroo pocket -->
-  <path d="M158 244 q42 8 84 0 l-4 42 q-38 8 -76 0 z" fill="var(--c2, #8571C2)"/>
-  <path d="M158 244 q6 20 8 42 M242 244 q-6 20 -8 42"
+  <path d="M154 262 q46 9 92 0 l-5 46 q-41 9 -82 0 z" fill="var(--c2, #6473BE)"/>
+  <path d="M154 262 q7 22 9 46 M246 262 q-7 22 -9 46"
         stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <!-- drawstrings with aglets -->
-  <path d="M186 178 v34 M214 178 v34" stroke="var(--c3, #F4EEFF)" stroke-width="5"
+  <!-- dropped armhole seams -->
+  <path d="M156 176 q-4 22 -3 44 M244 176 q4 22 3 44"
+        stroke="var(--c2, #6473BE)" stroke-opacity="0.5" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <rect x="182" y="212" width="8" height="12" rx="3" fill="var(--c3, #F4EEFF)"/>
-  <rect x="210" y="212" width="8" height="12" rx="3" fill="var(--c3, #F4EEFF)"/>
+  <!-- drawstrings with aglets -->
+  <path d="M186 192 v36 M214 192 v36" stroke="var(--c3, #F0E6D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="182" y="228" width="8" height="13" rx="3" fill="var(--c3, #F0E6D2)"/>
+  <rect x="210" y="228" width="8" height="13" rx="3" fill="var(--c3, #F0E6D2)"/>
   <!-- highlight -->
-  <path d="M152 200 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M150 214 q50 19 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

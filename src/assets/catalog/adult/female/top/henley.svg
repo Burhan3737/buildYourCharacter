@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: long sleeves PUSHED UP and bunched at the forearm, ending at y266 with
+       a rolled band (shoulder/sleeve) + a collarless three-button placket cut into a round
+       neckline (closure). Straight body, hip hem at y322. Reads apart from polo, which is a
+       short sleeve under a flat knit collar, and from tee, which has no placket at all.
+       Tools: panel blocking (placket band painted through c3) + structural (three buttons,
+       pushed-up sleeve rolls, shoulder seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-henley__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F1E0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- sleeves pushed up: slim to the elbow, then swelling into a bunched roll at y240-266 -->
+    <path d="M152 155 C130 161 121 178 120 200 L119 236 C113 244 111 254 116 262 C126 270 142 269 149 260 C153 250 152 242 149 234 L151 198 Z"
+          fill="url(#adult-female-top-henley__sleeve)"/>
+    <path d="M248 155 C270 161 279 178 280 200 L281 236 C287 244 289 254 284 262 C274 270 258 269 251 260 C247 250 248 242 251 234 L249 198 Z"
+          fill="url(#adult-female-top-henley__sleeve)"/>
+    <!-- straight body under a round collarless neckline, hip hem at y322 -->
+    <path d="M177 148 C188 158 212 158 223 148 C244 151 256 164 258 188 L260 240 C258 274 256 300 254 322 C212 334 188 334 146 322 C144 300 142 274 140 240 L142 188 C144 164 156 151 177 148 Z"
+          fill="url(#adult-female-top-henley__body)"/>
+  </g>
+  <!-- three-button placket, cut straight down from the neckline -->
+  <path d="M188 152 h24 q3 0 3 5 v56 q0 5 -3 5 h-24 q-3 0 -3-5 v-56 q0-5 3-5 z"
+        fill="url(#adult-female-top-henley__placket)"/>
+  <path d="M200 156 v62" stroke="var(--c2, #8D9C77)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="170" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="190" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="210" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <!-- round neck bind -->
+  <path d="M177 146 C188 158 212 158 223 146 L227 152 C214 166 186 166 173 152 Z" fill="var(--c3, #F6F1E0)"/>
+  <path d="M184 160 q16 9 32 0 q-6 12 -16 12 q-10 0 -16-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- rolled cuff bands where the sleeve is pushed up -->
+  <path d="M113 240 q19 10 38 -2 l1 14 q-19 12 -40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <path d="M287 240 q-19 10 -38 -2 l-1 14 q19 12 40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <!-- push-up creases -->
+  <path d="M122 214 q14 6 26 0 M278 214 q-14 6 -26 0"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- set-in shoulder seams -->
+  <path d="M154 162 q4 18 2 36 M246 162 q-4 18 -2 36"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.5" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 196 q46 17 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,49 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Turtleneck" data-family="turtleneck" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
-  <!-- axes vs the slot: tall folded neck tube reaching the jaw drawn as its own major form
-       (shoulder/neckline) + close-fitting narrow body ending at the waist, y296 (hem/volume).
-       Tools: trim (fold band on the tube, cuff bands) + structural (fold line, princess seams). -->
+  <!-- axes vs tee: FITTED through the body, the side seam pulled in to the waist at x152/248
+       before it releases over the hip (volume) + hem carried past the hip to y338 (hem).
+       Redraw for RESEARCH-GARMENTS section H.1: the neck tube is now a raised cylinder 60u
+       wide and 42u tall standing clear of the shoulder seam, so the garment outline above the
+       collarbone is the tube, not a neckline. Top has no face ceiling, so the tube may rise to
+       the jaw at y150.
+       Tools: trim (fold band on the tube, ribbed cuffs) + structural (princess seams, waist
+       shaping darts). -->
   <defs>
     <linearGradient id="adult-female-top-turtleneck__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
-      <stop offset="1" stop-color="var(--c2, #37817A)"/>
+      <stop offset="0" stop-color="var(--c1, #C46B7E)"/>
+      <stop offset="1" stop-color="var(--c2, #9E4E60)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-turtleneck__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #4E9E96)"/>
-      <stop offset="1" stop-color="var(--c2, #37817A)"/>
+      <stop offset="0" stop-color="var(--c1, #C46B7E)"/>
+      <stop offset="1" stop-color="var(--c2, #9E4E60)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-turtleneck__tube" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c3, #DCF0EC)"/>
-      <stop offset="1" stop-color="var(--c1, #4E9E96)"/>
+      <stop offset="0" stop-color="var(--c1, #C46B7E)"/>
+      <stop offset="1" stop-color="var(--c2, #9E4E60)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-turtleneck__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBE7DC)"/>
+      <stop offset="1" stop-color="var(--c2, #9E4E60)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <!-- long close sleeves -->
-    <path d="M152 152 q-32 12 -34 40 v106 q0 16 16 18 q16-2 16-18 v-108 z"
+    <!-- close-cut long sleeves, following the arm to a cuff at y328 -->
+    <path d="M154 160 C134 168 125 185 124 206 L121 306 C121 322 129 330 141 329 C153 328 158 320 158 306 L157 202 Z"
           fill="url(#adult-female-top-turtleneck__sleeve)"/>
-    <path d="M248 152 q32 12 34 40 v106 q0 16 -16 18 q-16-2 -16-18 v-108 z"
+    <path d="M246 160 C266 168 275 185 276 206 L279 306 C279 322 271 330 259 329 C247 328 242 320 242 306 L243 202 Z"
           fill="url(#adult-female-top-turtleneck__sleeve)"/>
-    <!-- close-fitting body, hem at the waist y296 -->
-    <path d="M168 150 H232 C252 156 262 172 262 196 L262 246 C260 270 256 286 252 300 C216 310 184 310 148 300 C144 286 140 270 138 246 L138 196 C138 172 148 156 168 150 Z"
+    <!-- fitted body: bust x144/256, nipped to x152/248 at the natural waist y275,
+         released over the hip, hem past the hip at y338 -->
+    <path d="M175 158 H225 C243 162 254 176 256 198 L253 236 C250 254 249 264 249 275 C253 296 253 316 248 338 C214 350 186 350 152 338 C147 316 147 296 151 275 C151 264 150 254 147 236 L144 198 C146 176 157 162 175 158 Z"
           fill="url(#adult-female-top-turtleneck__body)"/>
-    <!-- tall folded neck tube, reaching the jaw -->
-    <path d="M176 128 h48 q8 0 8 8 v36 q0 8 -8 8 h-48 q-8 0 -8-8 v-36 q0-8 8-8 z"
+    <!-- raised neck tube, 60u across and 42u tall, standing clear of the shoulder seam -->
+    <path d="M178 150 H222 C228 150 232 155 232 162 L232 180 C232 189 227 193 219 193 H181 C173 193 168 189 168 180 L168 162 C168 155 172 150 178 150 Z"
           fill="url(#adult-female-top-turtleneck__tube)"/>
   </g>
-  <!-- horizontal fold line on the tube -->
-  <path d="M170 152 q30 8 60 0" stroke="var(--c2, #37817A)" stroke-opacity="0.55" stroke-width="5"
+  <!-- fold band around the top of the tube -->
+  <path d="M170 163 q30 9 60 0 v11 q-30 9 -60 0 z" fill="url(#adult-female-top-turtleneck__rib)"/>
+  <path d="M176 165 v13 M188 167 v13 M200 168 v13 M212 167 v13 M224 165 v13"
+        stroke="var(--c2, #9E4E60)" stroke-opacity="0.34" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <path d="M121 304 q19 11 38 0 v20 q-19 11 -38 0 z" fill="url(#adult-female-top-turtleneck__rib)"/>
+  <path d="M241 304 q19 11 38 0 v20 q-19 11 -38 0 z" fill="url(#adult-female-top-turtleneck__rib)"/>
+  <!-- princess seams tracing the fitted shaping -->
+  <path d="M174 202 C170 244 172 288 176 328 M226 202 C230 244 228 288 224 328"
+        stroke="var(--c2, #9E4E60)" stroke-opacity="0.4" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M170 145 q30 8 60 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <!-- waist darts -->
+  <path d="M164 258 q4 14 0 28 M236 258 q-4 14 0 28"
+        stroke="var(--c2, #9E4E60)" stroke-opacity="0.3" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <!-- cuff bands -->
-  <path d="M118 296 q17 10 34 0 v18 q-17 10 -34 0 z" fill="var(--c3, #DCF0EC)" opacity="0.9"/>
-  <path d="M248 296 q17 10 34 0 v18 q-17 10 -34 0 z" fill="var(--c3, #DCF0EC)" opacity="0.9"/>
-  <!-- princess seams -->
-  <path d="M172 190 q-4 52 0 102 M228 190 q4 52 0 102"
-        stroke="var(--c2, #37817A)" stroke-opacity="0.42" stroke-width="4"
+  <!-- tube highlight and body highlight -->
+  <path d="M176 158 q24 8 48 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
         fill="none" stroke-linecap="round"/>
-  <!-- highlight -->
-  <path d="M156 200 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <path d="M160 208 q40 15 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

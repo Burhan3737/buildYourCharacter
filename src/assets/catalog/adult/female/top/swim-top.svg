@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a hem at the UNDERBUST, y238 - the highest hem in the slot, so the whole
+       midriff is deliberately bare (hem) + a banded body with a straight upper edge at y184 on
+       10u shoulder ties, no sleeve and no neckline shaping at all (volume + shoulder/sleeve).
+       Against crop-top, the next shortest: that one is a closed cap-sleeve body with a bound
+       crew neck stopping above the natural waist. Against camisole: that is a narrow column on
+       spaghetti straps falling past the hip.
+       This is a finished garment worn alone, not underwear.
+       Tools: trim (contrast binding along the straight top edge and the underbust hem)
+       + structural (centre gather knot, underbust seam, tie shoulder straps). -->
+  <defs>
+    <linearGradient id="adult-female-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8697C)"/>
+      <stop offset="1" stop-color="var(--c2, #B84759)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8697C)"/>
+      <stop offset="1" stop-color="var(--c2, #B84759)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- narrow shoulder ties -->
+    <path d="M161 144 H172 L178 188 H167 Z" fill="url(#adult-female-top-swim-top__tie)"/>
+    <path d="M239 144 H228 L222 188 H233 Z" fill="url(#adult-female-top-swim-top__tie)"/>
+    <!-- banded body: straight upper edge, hem at the underbust -->
+    <path d="M141 184 H259 L258 212 C257 226 253 234 246 240 C214 249 186 249 154 240 C147 234 143 226 142 212 Z"
+          fill="url(#adult-female-top-swim-top__band)"/>
+  </g>
+  <!-- contrast binding along the straight upper edge -->
+  <path d="M141 182 H259 L259 194 H141 Z" fill="var(--c3, #FBEFDC)"/>
+  <!-- contrast binding along the underbust hem -->
+  <path d="M143 224 C186 236 214 236 257 224 L255 238 C214 250 186 250 145 238 Z"
+        fill="var(--c3, #FBEFDC)" opacity="0.92"/>
+  <!-- centre gather knot -->
+  <path d="M190 190 h20 q5 0 5 7 v14 q0 7 -5 7 h-20 q-5 0 -5-7 v-14 q0-7 5-7 z" fill="var(--c3, #FBEFDC)"/>
+  <path d="M192 196 q8 10 16 0 M192 208 q8-10 16 0"
+        stroke="var(--c2, #B84759)" stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- gathers running out of the knot -->
+  <path d="M182 200 q-14 6 -26 2 M218 200 q14 6 26 2 M184 214 q-14 8 -26 6 M216 214 q14 8 26 6"
+        stroke="var(--c2, #B84759)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- underbust seam -->
+  <path d="M152 226 q48 12 96 0" stroke="var(--c2, #B84759)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- tie ends knotted at the shoulder -->
+  <path d="M160 148 q6-8 13-2 M240 148 q-6-8 -13-2"
+        stroke="var(--c3, #FBEFDC)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 200 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

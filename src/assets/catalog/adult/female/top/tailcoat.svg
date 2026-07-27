@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailcoat" data-family="tailcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a front that cuts away HORIZONTALLY at the natural waist, y276, worn
+       open with no fastening (closure) + two long tails hanging behind to the back of the knee,
+       y458 (hem). The tails are two separate 50u panels with a 20u gap between them, which is
+       what says "tails" rather than "long coat" at tray size.
+       Formalwear lives in top, never in costume: costume hides the shoes and for formalwear the
+       shoes are the look.
+       Trademark note: this family stays clear of the clown-villain palette. The fallback is a
+       slate coat over a cream shirt from the house palette. Do not default it to purple, and
+       never pair it with an orange or green waistcoat and a white face.
+       Tools: panel blocking (wide peaked lapels through c2 over a shirt front through c3)
+       + structural (waist seam, two waist buttons at the tail heads, square built-up shoulders). -->
+  <defs>
+    <linearGradient id="adult-female-top-tailcoat__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5878)"/>
+      <stop offset="1" stop-color="var(--c2, #2D3750)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-tailcoat__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5878)"/>
+      <stop offset="1" stop-color="var(--c2, #2D3750)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-tailcoat__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2D3750)"/>
+      <stop offset="1" stop-color="var(--c1, #4A5878)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-tailcoat__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EBD9)"/>
+      <stop offset="1" stop-color="var(--c2, #2D3750)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- left tail, 50u wide, hanging to the back of the knee -->
+    <path d="M140 270 H190 L189 380 L187 452 C172 461 156 459 144 452 L141 380 Z"
+          fill="url(#adult-female-top-tailcoat__tail)"/>
+    <!-- right tail, 50u wide, with a 20u gap between the two -->
+    <path d="M260 270 H210 L211 380 L213 452 C228 461 244 459 256 452 L259 380 Z"
+          fill="url(#adult-female-top-tailcoat__tail)"/>
+    <!-- shirt front behind the open coat, drawn here so the opening is never a hole -->
+    <path d="M176 150 H224 L228 282 H172 Z" fill="url(#adult-female-top-tailcoat__shirt)"/>
+    <!-- square built-up shoulders and straight sleeves -->
+    <path d="M150 150 L124 162 L118 198 L120 302 L124 326 L156 326 L159 302 L157 194 Z"
+          fill="url(#adult-female-top-tailcoat__panel)"/>
+    <path d="M250 150 L276 162 L282 198 L280 302 L276 326 L244 326 L241 302 L243 194 Z"
+          fill="url(#adult-female-top-tailcoat__panel)"/>
+    <!-- left front, cut away horizontally at the natural waist -->
+    <path d="M190 150 L164 147 L141 158 L137 186 L136 240 L139 276 L176 276 L182 214 Z"
+          fill="url(#adult-female-top-tailcoat__panel)"/>
+    <!-- right front -->
+    <path d="M210 150 L236 147 L259 158 L263 186 L264 240 L261 276 L224 276 L218 214 Z"
+          fill="url(#adult-female-top-tailcoat__panel)"/>
+  </g>
+  <!-- wide peaked lapels -->
+  <path d="M186 148 L164 150 L155 180 L177 176 L172 202 L185 240 L193 176 Z"
+        fill="url(#adult-female-top-tailcoat__lapel)"/>
+  <path d="M214 148 L236 150 L245 180 L223 176 L228 202 L215 240 L207 176 Z"
+        fill="url(#adult-female-top-tailcoat__lapel)"/>
+  <!-- lapel peaks picked out -->
+  <path d="M177 176 L155 180 L170 166 Z" fill="var(--c1, #4A5878)"/>
+  <path d="M223 176 L245 180 L230 166 Z" fill="var(--c1, #4A5878)"/>
+  <!-- neck opening above the lapel roll -->
+  <path d="M188 146 q12 10 24 0 q-4 11 -12 11 q-8 0 -12-11 z" fill="var(--skin2, #E7B892)"/>
+  <!-- shirt front detail -->
+  <path d="M200 158 v112" stroke="var(--c2, #2D3750)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- horizontal cutaway seam at the natural waist -->
+  <path d="M138 274 h48 M214 274 h48"
+        stroke="var(--c2, #2D3750)" stroke-opacity="0.6" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- two waist buttons at the heads of the tails -->
+  <circle cx="176" cy="278" r="5" fill="var(--c3, #F4EBD9)"/>
+  <circle cx="224" cy="278" r="5" fill="var(--c3, #F4EBD9)"/>
+  <!-- the gap between the tails, read as depth -->
+  <path d="M196 296 v152 M204 296 v152"
+        stroke="var(--c2, #2D3750)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuff seams -->
+  <path d="M120 310 h38 M280 310 h-38"
+        stroke="var(--c2, #2D3750)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- built-up shoulder highlight -->
+  <path d="M146 164 q16-6 32 0 M222 164 q16-6 32 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

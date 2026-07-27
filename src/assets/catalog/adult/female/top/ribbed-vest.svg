@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: 28u wide straps over an armhole cut DEEP AND LOW into the ribs, the
+       scoop biting in to x168/232 at the chest and not reaching the side seam until y268
+       (shoulder/sleeve) + a boxy body hanging straight to a flat hip hem at y324 (volume).
+       That is the whole separation from tank, which sets narrow straps on a scooped neck over a
+       fitted hip body, and from camisole, which is a narrow column on 8u spaghetti straps.
+       The armhole depth is the outline change; the rib is only surface.
+       Tools: pattern (14u vertical rib painted through c2) + trim (contrast armhole binding,
+       neck bind and a flat hem band through c3). -->
+  <defs>
+    <linearGradient id="adult-female-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8676)"/>
+    </linearGradient>
+    <pattern id="adult-female-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="140" width="14" height="14">
+      <rect x="4" y="0" width="4" height="14" fill="var(--c2, #3E8676)"/>
+    </pattern>
+    <clipPath id="adult-female-top-ribbed-vest__clip">
+      <path d="M158 144 H186 C190 162 194 177 200 181 C206 177 210 162 214 144 H242 C238 178 232 210 236 238 C246 250 252 254 254 268 L255 324 C218 334 182 334 145 324 L146 268 C148 254 154 250 164 238 C168 210 162 178 158 144 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- one piece: wide straps, a deep low-cut armhole scoop on each side, boxy body -->
+    <path d="M158 144 H186 C190 162 194 177 200 181 C206 177 210 162 214 144 H242 C238 178 232 210 236 238 C246 250 252 254 254 268 L255 324 C218 334 182 334 145 324 L146 268 C148 254 154 250 164 238 C168 210 162 178 158 144 Z"
+          fill="url(#adult-female-top-ribbed-vest__body)"/>
+  </g>
+  <!-- vertical rib, clipped to the vest -->
+  <g clip-path="url(#adult-female-top-ribbed-vest__clip)">
+    <rect x="140" y="142" width="122" height="196" fill="url(#adult-female-top-ribbed-vest__rib)" opacity="0.5"/>
+  </g>
+  <!-- neck bind across the scoop between the straps -->
+  <path d="M186 144 C190 162 194 177 200 181 C206 177 210 162 214 144 L222 146 C218 168 212 186 200 191 C188 186 182 168 178 146 Z"
+        fill="var(--c3, #F7F0DA)"/>
+  <!-- contrast binding running the full length of the deep armhole -->
+  <path d="M158 146 C162 180 168 212 164 240 C154 252 149 256 147 270 L155 272 C158 260 162 256 172 242 C176 212 170 180 166 146 Z"
+        fill="var(--c3, #F7F0DA)" opacity="0.92"/>
+  <path d="M242 146 C238 180 232 212 236 240 C246 252 251 256 253 270 L245 272 C242 260 238 256 228 242 C224 212 230 180 234 146 Z"
+        fill="var(--c3, #F7F0DA)" opacity="0.92"/>
+  <!-- flat hem band -->
+  <path d="M145 302 q55 13 110 0 l-1 22 q-54 12 -108 0 z" fill="var(--c3, #F7F0DA)" opacity="0.88"/>
+  <!-- side seams reading the boxy body -->
+  <path d="M162 278 q-2 22 -1 42 M238 278 q2 22 1 42"
+        stroke="var(--c2, #3E8676)" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M180 208 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 274 q42 13 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

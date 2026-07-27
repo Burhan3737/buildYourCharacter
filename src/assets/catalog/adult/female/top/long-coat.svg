@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: a full button placket under a notched collar, the coat fastened all the
+       way down (closure) + a straight 126u column falling to MID-CALF at y500 (hem + volume).
+       Nothing else in the slot reaches past y380, and raincoat, the nearest read, is an A-line
+       snap shell stopping at mid-thigh.
+       Long set-in sleeves; one back vent, drawn as the centre-back release at the hem.
+       Tools: panel blocking (notched collar and placket band painted through c3)
+       + structural (five buttons, two welt pockets, back vent, sleeve cuff seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-long-coat__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B99C6E)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B99C6E)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-long-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3E7CE)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <path d="M152 154 C130 162 121 180 121 202 L119 316 C121 332 130 338 143 337 C156 336 160 327 160 313 L159 198 Z"
+          fill="url(#adult-female-top-long-coat__sleeve)"/>
+    <path d="M248 154 C270 162 279 180 279 202 L281 316 C279 332 270 338 257 337 C244 336 240 327 240 313 L241 198 Z"
+          fill="url(#adult-female-top-long-coat__sleeve)"/>
+    <!-- left front, a straight column to mid-calf -->
+    <path d="M206 150 H172 C150 154 142 168 141 190 L138 300 L137 402 L139 500 H206 Z"
+          fill="url(#adult-female-top-long-coat__panel)"/>
+    <!-- right front, overlapping the left down the centre so the placket never opens -->
+    <path d="M196 150 H228 C250 154 258 168 259 190 L262 300 L263 402 L261 500 H196 Z"
+          fill="url(#adult-female-top-long-coat__panel)"/>
+  </g>
+  <!-- notched collar, rolling back from the neck -->
+  <path d="M176 146 L200 154 L196 200 L182 176 L164 172 Z" fill="url(#adult-female-top-long-coat__collar)"/>
+  <path d="M224 146 L200 154 L204 200 L218 176 L236 172 Z" fill="url(#adult-female-top-long-coat__collar)"/>
+  <!-- collar notches -->
+  <path d="M182 176 L164 172 L178 164 Z" fill="var(--c2, #8B7145)"/>
+  <path d="M218 176 L236 172 L222 164 Z" fill="var(--c2, #8B7145)"/>
+  <!-- neck opening above the collar roll -->
+  <path d="M186 145 q14 10 28 0 q-5 11 -14 11 q-9 0 -14-11 z" fill="var(--skin2, #E7B892)"/>
+  <!-- full button placket -->
+  <path d="M188 194 h24 v300 h-24 z" fill="url(#adult-female-top-long-coat__collar)" opacity="0.85"/>
+  <circle cx="200" cy="216" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="272" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="328" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="384" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="440" r="5" fill="var(--c2, #8B7145)"/>
+  <!-- welt pockets at the hip -->
+  <path d="M150 330 h40 v11 h-40 z" fill="var(--c2, #8B7145)"/>
+  <path d="M210 330 h40 v11 h-40 z" fill="var(--c2, #8B7145)"/>
+  <!-- single back vent, releasing at the hem -->
+  <path d="M200 432 v66" stroke="var(--c2, #8B7145)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 436 v58" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- column seams -->
+  <path d="M158 214 L154 494 M242 214 L246 494"
+        stroke="var(--c2, #8B7145)" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuff seams -->
+  <path d="M121 312 q20 9 39 0 M279 312 q-20 9 -39 0"
+        stroke="var(--c2, #8B7145)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 202 q20 12 38 6 M210 208 q20 6 38-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

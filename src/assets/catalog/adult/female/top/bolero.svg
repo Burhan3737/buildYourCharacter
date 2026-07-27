@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero Jacket" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: worn open with no fastening at all, the two fronts curving away from
+       each other down a bowed edge (closure) + cut off above the natural waist at y258, the
+       shortest jacket hem in the slot, over three-quarter sleeves ending at y280
+       (hem + shoulder/sleeve). Against crop-top, the other short family: that one is a closed
+       cap-sleeve body with a bound crew neck.
+       The open front resolves onto SKIN: the chest and the whole midriff below y258 are the
+       body's own skin1/skin2, never a hole and never a hard-coded shell.
+       Tools: trim (contrast binding running the full curved front edge and round the hem)
+       + structural (turn-back sleeve cuffs, curved princess seams, shoulder seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAECB)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAECB)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-bolero__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves -->
+    <path d="M152 152 C132 158 123 174 122 196 L120 262 C122 276 131 282 143 280 C155 278 159 269 159 256 L158 192 Z"
+          fill="url(#adult-female-top-bolero__sleeve)"/>
+    <path d="M248 152 C268 158 277 174 278 196 L280 262 C278 276 269 282 257 280 C245 278 241 269 241 256 L242 192 Z"
+          fill="url(#adult-female-top-bolero__sleeve)"/>
+    <!-- left front, curving away from the centre -->
+    <path d="M188 150 H164 C144 154 136 168 136 190 L138 226 C140 242 145 252 152 258 C163 256 173 252 181 246 C176 214 179 180 188 150 Z"
+          fill="url(#adult-female-top-bolero__panel)"/>
+    <!-- right front -->
+    <path d="M212 150 H236 C256 154 264 168 264 190 L262 226 C260 242 255 252 248 258 C237 256 227 252 219 246 C224 214 221 180 212 150 Z"
+          fill="url(#adult-female-top-bolero__panel)"/>
+  </g>
+  <!-- contrast binding running the curved front edge and round the hem -->
+  <path d="M188 150 C179 180 176 214 181 246 C173 252 163 256 152 258 L149 250 C158 246 166 242 172 238 C168 208 172 176 180 149 Z"
+        fill="url(#adult-female-top-bolero__bind)"/>
+  <path d="M212 150 C221 180 224 214 219 246 C227 252 237 256 248 258 L251 250 C242 246 234 242 228 238 C232 208 228 176 220 149 Z"
+        fill="url(#adult-female-top-bolero__bind)"/>
+  <!-- turn-back sleeve cuffs -->
+  <path d="M121 256 q19 10 38 0 v18 q-19 10 -38 0 z" fill="var(--c3, #F6EEE0)" opacity="0.9"/>
+  <path d="M241 256 q19 10 38 0 v18 q-19 10 -38 0 z" fill="var(--c3, #F6EEE0)" opacity="0.9"/>
+  <!-- shoulder seams -->
+  <path d="M158 158 q-4 18 -3 36 M242 158 q4 18 3 36"
+        stroke="var(--c2, #63849F)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- curved princess seams following the front edge -->
+  <path d="M162 178 C158 206 158 234 162 252 M238 178 C242 206 242 234 238 252"
+        stroke="var(--c2, #63849F)" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M144 186 q18 12 34 4 M222 190 q18 8 34-4"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: the whole body GATHERED onto a shallow chest yoke and swinging out to a
+       176u hem, the widest hem in the slot (volume) + short cap sleeves cut level with the yoke
+       (shoulder/sleeve). Hem at the high hip, y308.
+       Against raincoat, the other flared family: that one is a long-sleeved A-line snap shell to
+       mid-thigh whose flare starts at the shoulder; here the flare starts at a hard yoke seam at
+       y190 and the sleeve is a cap.
+       Tools: panel blocking (yoke painted through c3) + structural (gather lines fanning off the
+       yoke seam, hem frill, waist ties). -->
+  <defs>
+    <linearGradient id="adult-female-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93C7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF3E2)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93C7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short cap sleeves -->
+    <path d="M150 154 C132 158 119 170 116 188 C114 198 116 206 121 210 C132 214 143 211 148 204 C146 186 147 168 150 154 Z"
+          fill="url(#adult-female-top-smock-top__cap)"/>
+    <path d="M250 154 C268 158 281 170 284 188 C286 198 284 206 279 210 C268 214 257 211 252 204 C254 186 253 168 250 154 Z"
+          fill="url(#adult-female-top-smock-top__cap)"/>
+    <!-- gathered body, swinging from the yoke seam out to a 176u hem -->
+    <path d="M154 186 C138 218 124 260 113 308 C171 323 229 323 287 308 C276 260 262 218 246 186 C214 197 186 197 154 186 Z"
+          fill="url(#adult-female-top-smock-top__body)"/>
+    <!-- shallow chest yoke the body is gathered onto -->
+    <path d="M170 146 C182 158 218 158 230 146 C242 150 250 162 251 178 L249 192 C214 203 186 203 151 192 L149 178 C150 162 158 150 170 146 Z"
+          fill="url(#adult-female-top-smock-top__yoke)"/>
+  </g>
+  <!-- yoke seam, where the gathers are set -->
+  <path d="M152 188 C186 199 214 199 248 188"
+        stroke="var(--c2, #64A08C)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- gathers fanning off the yoke -->
+  <path d="M164 194 L150 300 M182 198 L172 306 M200 200 L200 310 M218 198 L228 306 M236 194 L250 300"
+        stroke="var(--c2, #64A08C)" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck frill along the yoke edge -->
+  <path d="M170 146 C182 158 218 158 230 146 L235 153 C220 168 180 168 165 153 Z" fill="var(--c3, #FBF3E2)"/>
+  <path d="M182 164 q18 10 36 0 q-7 12 -18 12 q-11 0 -18-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- hem frill -->
+  <path d="M113 292 C171 308 229 308 287 292 L288 308 C229 324 171 324 112 308 Z"
+        fill="var(--c3, #FBF3E2)" opacity="0.85"/>
+  <!-- narrow ties falling from the yoke seam -->
+  <path d="M178 194 C174 214 176 234 182 252 M222 194 C226 214 224 234 218 252"
+        stroke="var(--c3, #FBF3E2)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M162 166 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 232 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

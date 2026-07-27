@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- West African everyday dress. The wide V neck panel is the identity, so it is drawn 96u
+       across the shoulders. Its border is deliberately GENERIC geometry - a plain run of even
+       squares between two straight rules. No named kente pattern and no Adinkra symbol is drawn
+       here, and none may be added.
+       axes vs the slot: short WIDE sleeves cut straight out of the body in one piece, so the
+       garment reads as a T with no armhole seam and a 200u span at y156 (shoulder/sleeve)
+       + a boxy square body falling to mid-thigh at y396 with short side vents (volume).
+       Against oversized-long-sleeve, the nearest boxy read: that has a long dropped sleeve
+       hanging to y352 and a bound crew neck.
+       Tools: panel blocking (the wide V panel painted through c3) + pattern (16u square border
+       run through c2) + structural (side vents, sleeve hem bands). -->
+  <defs>
+    <linearGradient id="adult-female-top-dashiki__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C6E9F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-dashiki__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C6E9F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-dashiki__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3B94F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <pattern id="adult-female-top-dashiki__border" patternUnits="userSpaceOnUse"
+             x="0" y="144" width="16" height="16">
+      <rect x="3" y="4" width="8" height="8" fill="var(--c2, #274F76)"/>
+    </pattern>
+    <clipPath id="adult-female-top-dashiki__panelclip">
+      <path d="M150 146 L178 146 L200 192 L222 146 L250 146 L200 258 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short wide sleeves cut straight out of the body, no armhole seam -->
+    <path d="M152 148 L102 156 L98 214 L106 234 L148 232 L154 212 Z"
+          fill="url(#adult-female-top-dashiki__sleeve)"/>
+    <path d="M248 148 L298 156 L302 214 L294 234 L252 232 L246 212 Z"
+          fill="url(#adult-female-top-dashiki__sleeve)"/>
+    <!-- boxy square body to mid-thigh -->
+    <path d="M156 146 H244 C258 150 266 162 266 184 L267 260 L266 330 L264 396 C222 408 178 408 136 396 L134 330 L133 260 L134 184 C134 162 142 150 156 146 Z"
+          fill="url(#adult-female-top-dashiki__body)"/>
+    <!-- wide V neck panel, 100u across the shoulders -->
+    <path d="M150 146 L178 146 L200 192 L222 146 L250 146 L200 258 Z"
+          fill="url(#adult-female-top-dashiki__panel)"/>
+  </g>
+  <!-- generic square border run inside the V panel -->
+  <g clip-path="url(#adult-female-top-dashiki__panelclip)">
+    <rect x="130" y="144" width="140" height="120" fill="url(#adult-female-top-dashiki__border)" opacity="0.7"/>
+  </g>
+  <!-- plain rules bounding the panel -->
+  <path d="M154 150 L200 254 L246 150" stroke="var(--c2, #274F76)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M181 150 L200 190 L219 150" stroke="var(--c2, #274F76)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening inside the panel -->
+  <path d="M178 146 L200 192 L222 146 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- sleeve hem bands -->
+  <path d="M100 220 L150 219 L149 231 L102 232 Z" fill="var(--c3, #E3B94F)" opacity="0.85"/>
+  <path d="M300 220 L250 219 L251 231 L298 232 Z" fill="var(--c3, #E3B94F)" opacity="0.85"/>
+  <!-- short side vents at the hem -->
+  <path d="M147 358 L148 400 M253 358 L252 400"
+        stroke="var(--c2, #274F76)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem band -->
+  <path d="M136 382 C178 394 222 394 264 382 L264 396 C222 408 178 408 136 396 Z"
+        fill="var(--c3, #E3B94F)" opacity="0.82"/>
+  <!-- highlight -->
+  <path d="M148 300 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M120 176 q16 8 30 4 M250 180 q16 4 30-4"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

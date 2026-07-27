@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- South Asian everyday dress. Drawn as clothes someone wore to the shops: a plain cotton
+       kurta, no community-specific woven motif of any kind, no borrowed embroidery.
+       axes vs the slot: a straight tunic column falling to mid-thigh at y418 with the side slits
+       stepping the outline in by 12u a side from the hip at y300 (hem + volume) + a standing
+       band collar over a short front placket, so the neck opening is a closed band and not a
+       crew, a V or a lapel (closure). Long straight sleeves.
+       Against long-coat, the other long family: that coat is a buttoned column to mid-calf under
+       a notched collar; against oversized-long-sleeve: that is a dropped boxy shoulder with no
+       collar and no placket.
+       Tools: trim (band collar, placket band, cuff bands and a hem piping through c3)
+       + structural (side slits, three placket buttons, straight side seams). -->
+  <defs>
+    <linearGradient id="adult-female-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D5)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D5)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-kurta__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3F5C6B)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long straight sleeves -->
+    <path d="M154 154 C134 160 126 176 125 198 L124 312 C126 328 134 334 146 333 C158 332 162 324 162 310 L161 196 Z"
+          fill="url(#adult-female-top-kurta__sleeve)"/>
+    <path d="M246 154 C266 160 274 176 275 198 L276 312 C274 328 266 334 254 333 C242 332 238 324 238 310 L239 196 Z"
+          fill="url(#adult-female-top-kurta__sleeve)"/>
+    <!-- straight tunic column, stepped in at the hip where the side slits open -->
+    <path d="M172 150 H228 C248 154 258 168 259 192 L262 260 L263 300 L251 302 L249 418 C232 428 168 428 151 418 L149 302 L137 300 L138 260 L141 192 C142 168 152 154 172 150 Z"
+          fill="url(#adult-female-top-kurta__body)"/>
+  </g>
+  <!-- deep side slits, running from the hip to the hem -->
+  <path d="M153 306 L155 416 M247 306 L245 416"
+        stroke="var(--c2, #C6BB9E)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- standing band collar -->
+  <path d="M180 142 H220 C223 148 224 158 222 168 H178 C176 158 177 148 180 142 Z"
+        fill="url(#adult-female-top-kurta__trim)"/>
+  <path d="M186 146 q14 8 28 0 q-3 12 -14 12 q-11 0 -14-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- short front placket under the band -->
+  <path d="M191 166 h18 q3 0 3 5 v50 q0 5 -3 5 h-18 q-3 0 -3-5 v-50 q0-5 3-5 z"
+        fill="url(#adult-female-top-kurta__trim)"/>
+  <circle cx="200" cy="180" r="4" fill="var(--c1, #EDE6D5)"/>
+  <circle cx="200" cy="198" r="4" fill="var(--c1, #EDE6D5)"/>
+  <circle cx="200" cy="216" r="4" fill="var(--c1, #EDE6D5)"/>
+  <!-- cuff bands -->
+  <path d="M124 312 q19 10 38 0 v14 q-19 10 -38 0 z" fill="var(--c3, #3F5C6B)" opacity="0.85"/>
+  <path d="M238 312 q19 10 38 0 v14 q-19 10 -38 0 z" fill="var(--c3, #3F5C6B)" opacity="0.85"/>
+  <!-- hem piping -->
+  <path d="M151 408 C168 418 232 418 249 408 L249 418 C232 428 168 428 151 418 Z"
+        fill="var(--c3, #3F5C6B)" opacity="0.8"/>
+  <!-- straight side seams -->
+  <path d="M158 210 L156 296 M242 210 L244 296"
+        stroke="var(--c2, #C6BB9E)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 200 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

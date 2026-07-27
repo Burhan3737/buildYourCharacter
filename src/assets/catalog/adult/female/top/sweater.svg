@@ -1,49 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Chunky Sweater" data-family="sweater" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
-  <!-- axes vs the slot: dropped long sleeve on an angular, widest-in-the-slot body x128-272
-       (shoulder/volume) + past-hip hem at y336 under a deep 28px rib band (hem).
-       Tools: trim (deep ribbed hem, ribbed cuffs, wide crew rib) + structural (knit seam rows). -->
+  <!-- axes vs tee: DROPPED shoulder, the sleeve head hung out at x136/264 and the cuff carried
+       to x102/298 (shoulder) + boxy volume that a 34u rib band draws in below the chest, and a
+       hem stopping at the natural waist, y288 (volume + hem). Redraw for RESEARCH-GARMENTS
+       section H.1: the chest measures 148u and the hem 100u, so the outline is a TRAPEZOID
+       narrowing downward rather than the old rectangle.
+       Tools: trim (deep ribbed hem, ribbed cuffs, wide crew rib) + structural (knit seam rows,
+       raised shoulder saddle). -->
   <defs>
     <linearGradient id="adult-female-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #E08B6E)"/>
-      <stop offset="1" stop-color="var(--c2, #C06E52)"/>
+      <stop offset="0" stop-color="var(--c1, #E0906E)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A4C)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #E08B6E)"/>
-      <stop offset="1" stop-color="var(--c2, #C06E52)"/>
+      <stop offset="0" stop-color="var(--c1, #E0906E)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A4C)"/>
     </linearGradient>
     <linearGradient id="adult-female-top-sweater__rib" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c3, #FBE3CE)"/>
-      <stop offset="1" stop-color="var(--c2, #C06E52)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A4C)"/>
     </linearGradient>
   </defs>
   <g class="sp-shadow">
-    <!-- dropped, angular sleeves -->
-    <path d="M136 168 L112 200 L110 306 Q112 330 132 332 Q152 330 154 306 L152 196 Z"
+    <!-- dropped sleeves, wide at the head and gathered into a cuff at y302 -->
+    <path d="M136 170 C110 181 102 201 102 227 L104 302 C106 320 118 328 132 326 C147 324 153 314 153 298 L152 211 Z"
           fill="url(#adult-female-top-sweater__sleeve)"/>
-    <path d="M264 168 L288 200 L290 306 Q288 330 268 332 Q248 330 246 306 L248 196 Z"
+    <path d="M264 170 C290 181 298 201 298 227 L296 302 C294 320 282 328 268 326 C253 324 247 314 247 298 L248 211 Z"
           fill="url(#adult-female-top-sweater__sleeve)"/>
-    <!-- angular boxy body, widest in the slot, hem at y336 -->
-    <path d="M166 146 H234 Q272 156 272 200 L268 252 Q270 296 272 336 Q200 350 128 336 Q130 296 132 252 L128 200 Q128 156 166 146 Z"
+    <!-- trapezoid body: 148u across the chest, drawn in to a 100u waist hem at y288 -->
+    <path d="M164 148 H236 C260 152 274 168 274 194 L272 232 C266 254 258 271 250 288 C214 299 186 299 150 288 C142 271 134 254 128 232 L126 194 C126 168 140 152 164 148 Z"
           fill="url(#adult-female-top-sweater__body)"/>
   </g>
-  <!-- deep 28px ribbed hem band -->
-  <path d="M130 308 Q200 322 270 308 L271 336 Q200 350 129 336 Z"
+  <!-- deep 34u ribbed hem band, narrower than the chest -->
+  <path d="M143 254 Q200 268 257 254 L250 288 Q200 299 150 288 Z"
         fill="url(#adult-female-top-sweater__rib)"/>
-  <path d="M144 316 v24 M158 318 v24 M172 320 v24 M186 321 v24 M200 322 v24 M214 321 v24 M228 320 v24 M242 318 v24 M256 316 v24"
-        stroke="var(--c2, #C06E52)" stroke-opacity="0.4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M158 262 L162 292 M174 266 L176 295 M190 268 L191 297 M206 268 L207 297 M222 266 L224 295 M238 262 L242 292"
+        stroke="var(--c2, #B96A4C)" stroke-opacity="0.4" stroke-width="4.5" fill="none" stroke-linecap="round"/>
   <!-- ribbed cuffs -->
-  <path d="M110 306 Q132 316 154 306 L154 326 Q132 336 110 326 Z" fill="url(#adult-female-top-sweater__rib)"/>
-  <path d="M246 306 Q268 316 290 306 L290 326 Q268 336 246 326 Z" fill="url(#adult-female-top-sweater__rib)"/>
+  <path d="M103 298 Q128 310 153 298 L153 320 Q128 332 104 320 Z" fill="url(#adult-female-top-sweater__rib)"/>
+  <path d="M247 298 Q272 310 297 298 L296 320 Q272 332 247 320 Z" fill="url(#adult-female-top-sweater__rib)"/>
   <!-- wide crew rib -->
-  <path d="M164 144 Q200 172 236 144 Q242 152 240 162 Q200 190 160 162 Q158 152 164 144 Z"
+  <path d="M168 146 Q200 174 232 146 Q240 154 238 166 Q200 194 162 166 Q160 154 168 146 Z"
         fill="url(#adult-female-top-sweater__rib)"/>
-  <path d="M176 150 Q200 168 224 150 Q214 176 200 176 Q186 176 176 150 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M178 152 Q200 170 222 152 Q213 178 200 178 Q187 178 178 152 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- dropped shoulder saddles -->
+  <path d="M150 178 q-4 18 -2 36 M250 178 q4 18 2 36"
+        stroke="var(--c2, #B96A4C)" stroke-opacity="0.45" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
   <!-- chunky knit seam rows -->
-  <path d="M146 214 Q200 226 254 214 M144 250 Q200 262 256 250 M144 286 Q200 298 256 286"
-        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M136 206 Q200 220 264 206 M133 232 Q200 246 267 232"
+        stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7" fill="none" stroke-linecap="round"/>
   <!-- highlight -->
-  <path d="M148 190 Q200 208 252 190" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+  <path d="M144 188 Q200 206 256 188" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

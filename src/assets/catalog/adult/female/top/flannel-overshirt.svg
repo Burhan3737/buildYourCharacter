@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: dropped shoulder on a deliberately oversized boxy shell (shoulder +
+       volume), worn OPEN with a squared straight hem at y344 (closure + hem). Reads apart from
+       cardigan, which is a soft set-in knit with a rounded hem, and from blazer, which is
+       structured with notched lapels to mid-thigh.
+       The open front is NOT a hole: the tee worn underneath is drawn in this same file and
+       painted through c3, so the player controls it and no shell colour is hard-coded.
+       Tools: pattern (20u plaid check painted through c2) + structural (two chest pockets with
+       flaps, squared hem, camp collar). -->
+  <defs>
+    <linearGradient id="adult-female-top-flannel-overshirt__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574E)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574E)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-flannel-overshirt__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE4D2)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <pattern id="adult-female-top-flannel-overshirt__check" patternUnits="userSpaceOnUse"
+             x="2" y="146" width="20" height="20">
+      <rect x="0" y="0" width="20" height="6" fill="var(--c2, #8E3A38)"/>
+      <rect x="0" y="0" width="6" height="20" fill="var(--c2, #8E3A38)"/>
+      <rect x="12" y="12" width="3" height="8" fill="var(--c2, #8E3A38)"/>
+    </pattern>
+    <clipPath id="adult-female-top-flannel-overshirt__clip">
+      <path d="M190 150 H166 C140 154 130 170 130 196 L128 274 C130 314 132 332 136 344 L192 344 Z"/>
+      <path d="M210 150 H234 C260 154 270 170 270 196 L272 274 C270 314 268 332 264 344 L208 344 Z"/>
+      <path d="M144 168 C118 178 108 196 108 222 L110 318 C112 336 122 342 136 340 C150 338 155 328 155 312 L154 204 Z"/>
+      <path d="M256 168 C282 178 292 196 292 222 L290 318 C288 336 278 342 264 340 C250 338 245 328 245 312 L246 204 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- the tee worn underneath, drawn in this file and painted through c3 -->
+    <path d="M180 152 H220 C234 156 240 168 240 186 L241 250 C240 292 238 320 236 350 C212 358 188 358 164 350 C162 320 160 292 159 250 L160 186 C160 168 166 156 180 152 Z"
+          fill="url(#adult-female-top-flannel-overshirt__shell)"/>
+    <!-- dropped, oversized sleeves -->
+    <path d="M144 168 C118 178 108 196 108 222 L110 318 C112 336 122 342 136 340 C150 338 155 328 155 312 L154 204 Z"
+          fill="url(#adult-female-top-flannel-overshirt__sleeve)"/>
+    <path d="M256 168 C282 178 292 196 292 222 L290 318 C288 336 278 342 264 340 C250 338 245 328 245 312 L246 204 Z"
+          fill="url(#adult-female-top-flannel-overshirt__sleeve)"/>
+    <!-- left front, hanging open, squared hem -->
+    <path d="M190 150 H166 C140 154 130 170 130 196 L128 274 C130 314 132 332 136 344 L192 344 Z"
+          fill="url(#adult-female-top-flannel-overshirt__panel)"/>
+    <!-- right front -->
+    <path d="M210 150 H234 C260 154 270 170 270 196 L272 274 C270 314 268 332 264 344 L208 344 Z"
+          fill="url(#adult-female-top-flannel-overshirt__panel)"/>
+  </g>
+  <!-- plaid check, clipped to the overshirt only -->
+  <g clip-path="url(#adult-female-top-flannel-overshirt__clip)">
+    <rect x="104" y="146" width="192" height="200" fill="url(#adult-female-top-flannel-overshirt__check)" opacity="0.72"/>
+  </g>
+  <!-- camp collar sitting flat over the shoulders -->
+  <path d="M178 148 L200 156 L192 186 L162 162 Z" fill="var(--c2, #8E3A38)"/>
+  <path d="M222 148 L200 156 L208 186 L238 162 Z" fill="var(--c2, #8E3A38)"/>
+  <!-- neck opening above the shell -->
+  <path d="M186 148 q14 11 28 0 q-5 12 -14 12 q-9 0 -14-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- chest pockets with flaps -->
+  <path d="M144 214 h36 v34 q0 6 -6 6 h-24 q-6 0 -6-6 z" fill="var(--c2, #8E3A38)"/>
+  <path d="M142 212 h40 v11 h-40 z" fill="var(--c1, #C4574E)"/>
+  <path d="M220 214 h36 v34 q0 6 -6 6 h-24 q-6 0 -6-6 z" fill="var(--c2, #8E3A38)"/>
+  <path d="M218 212 h40 v11 h-40 z" fill="var(--c1, #C4574E)"/>
+  <!-- front edge bands with unfastened buttons -->
+  <path d="M186 152 h8 v190 h-8 z" fill="var(--c2, #8E3A38)" opacity="0.8"/>
+  <path d="M206 152 h8 v190 h-8 z" fill="var(--c2, #8E3A38)" opacity="0.8"/>
+  <circle cx="190" cy="230" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <circle cx="190" cy="272" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <circle cx="190" cy="314" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <!-- cuff folds -->
+  <path d="M112 320 q21 9 42 0 M288 320 q-21 9 -42 0"
+        stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M138 190 q22 12 42 6 M220 196 q22 6 42-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

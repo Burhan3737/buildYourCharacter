@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: RAGLAN sleeves seamed from the neck point out to the underarm, so there
+       is no shoulder seam at all (shoulder/sleeve) + a blouson body that swells to 110u at y240
+       and is then pulled in by a 26u rib band to an 88u hem at the natural waist, y306
+       (volume + hem). Reads apart from zip-jacket, which is a set-in straight hip-length body,
+       and from jersey, whose raglan is a short sleeve on a squared boxy body.
+       Tools: trim (ribbed stand collar, ribbed cuffs and hem band, zip tape with a pull)
+       + structural (raglan seams, two slash pockets, blouson gather lines). -->
+  <defs>
+    <linearGradient id="adult-female-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8A6A)"/>
+      <stop offset="1" stop-color="var(--c2, #56634A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-bomber__raglan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C8A6A)"/>
+      <stop offset="1" stop-color="var(--c2, #56634A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8CE86)"/>
+      <stop offset="1" stop-color="var(--c2, #56634A)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- raglan sleeve panels, running from the neck point to the cuff in one piece -->
+    <path d="M184 149 C166 156 152 170 144 186 C126 196 118 212 118 234 L120 306 C122 322 132 328 145 326 C158 324 162 314 162 300 L160 214 C162 190 172 168 186 152 Z"
+          fill="url(#adult-female-top-bomber__raglan)"/>
+    <path d="M216 149 C234 156 248 170 256 186 C274 196 282 212 282 234 L280 306 C278 322 268 328 255 326 C242 324 238 314 238 300 L240 214 C238 190 228 168 214 152 Z"
+          fill="url(#adult-female-top-bomber__raglan)"/>
+    <!-- blouson body: swelling below the chest, then drawn in above the hem -->
+    <path d="M186 150 C168 158 156 174 150 194 L145 240 C142 258 146 272 156 286 C186 296 214 296 244 286 C254 272 258 258 255 240 L250 194 C244 174 232 158 214 150 Z"
+          fill="url(#adult-female-top-bomber__body)"/>
+    <!-- ribbed stand collar -->
+    <path d="M176 141 H224 C228 148 229 158 226 168 H174 C171 158 172 148 176 141 Z"
+          fill="url(#adult-female-top-bomber__rib)"/>
+  </g>
+  <!-- collar rib lines -->
+  <path d="M182 145 v20 M192 144 v22 M202 144 v22 M212 144 v22 M220 145 v20"
+        stroke="var(--c2, #56634A)" stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- ribbed hem band, narrower than the chest -->
+  <path d="M152 278 Q200 292 248 278 L245 304 Q200 318 155 304 Z" fill="url(#adult-female-top-bomber__rib)"/>
+  <path d="M166 286 v22 M180 289 v22 M194 291 v22 M208 291 v22 M222 289 v22 M234 286 v22"
+        stroke="var(--c2, #56634A)" stroke-opacity="0.35" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <path d="M118 300 q22 12 44 0 v18 q-22 12 -44 0 z" fill="url(#adult-female-top-bomber__rib)"/>
+  <path d="M238 300 q22 12 44 0 v18 q-22 12 -44 0 z" fill="url(#adult-female-top-bomber__rib)"/>
+  <!-- centre zip tape and pull -->
+  <path d="M195 158 h10 v128 h-10 z" fill="var(--c2, #56634A)"/>
+  <path d="M200 160 v124" stroke="var(--c3, #E8CE86)" stroke-opacity="0.9" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <rect x="194" y="222" width="12" height="10" rx="3" fill="var(--c3, #E8CE86)"/>
+  <path d="M200 232 v13" stroke="var(--c3, #E8CE86)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- raglan seams -->
+  <path d="M186 152 C176 168 168 190 166 214 M214 152 C224 168 232 190 234 214"
+        stroke="var(--c2, #56634A)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- slash pockets -->
+  <path d="M156 250 q18-6 30 2 l-3 10 q-14-6 -29-2 z" fill="var(--c2, #56634A)"/>
+  <path d="M244 250 q-18-6 -30 2 l3 10 q14-6 29-2 z" fill="var(--c2, #56634A)"/>
+  <!-- blouson gather lines above the hem band -->
+  <path d="M160 268 q40 12 80 0" stroke="var(--c2, #56634A)" stroke-opacity="0.32" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 196 q20 12 38 6 M204 202 q20 6 38-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
