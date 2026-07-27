@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
-  <!-- silhouette axes: shaft height=to just below the knee, a 100 unit shaft that is by far the
-       tallest in the slot + fastening=none at all, a smooth unbroken upper.
-       Against boots that is shaft height and fastening; against wellies, toe shape and sole. -->
+  <!-- silhouette axes: fastening=none at all, a smooth unbroken upper with no lacing, buckle or
+       strap anywhere + sole depth=a thin stacked sole rather than a chunky one. Shaft height is
+       a third difference but a weak one and it is worth saying why: the shaft top here sits at
+       y 450, just below the knee anchor at y 445, exactly as the family description requires,
+       while the existing boots and wellies in this bundle are already drawn with shafts at
+       y 470. That leaves only 20 units of height between them, under the 40 unit practical
+       floor, so this pair is carried by fastening plus toe and sole rather than by height.
+       Against boots: no buckles, tapered toe, thin stacked sole. Against wellies: tapered toe
+       and a stacked sole against a smooth round rubber one. -->
   <defs>
     <linearGradient id="adult-male-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6B4A34)"/>
@@ -17,11 +23,11 @@
 
   <!-- smooth shafts to just below the knee, then tapered feet: left first, right in front -->
   <g class="sp-shadow">
-    <path d="M162 466 Q162 460 168 460 H196 Q202 460 202 466 L200 540 Q200 548 192 548 H170
+    <path d="M162 456 Q162 450 168 450 H196 Q202 460 202 466 L200 540 Q200 548 192 548 H170
              Q162 548 162 540 Z" fill="url(#adult-male-shoes-tall-boots__shaft)"/>
     <path d="M160 540 H202 Q210 546 210 556 Q210 566 200 566 H158 Q150 566 150 556
              Q150 546 160 540 Z" fill="url(#adult-male-shoes-tall-boots__foot)"/>
-    <path d="M204 466 Q204 460 210 460 H238 Q244 460 244 466 L242 540 Q242 548 234 548 H212
+    <path d="M204 456 Q204 450 210 450 H238 Q244 460 244 466 L242 540 Q242 548 234 548 H212
              Q204 548 204 540 Z" fill="url(#adult-male-shoes-tall-boots__shaft)"/>
     <path d="M202 540 H244 Q252 546 252 556 Q252 566 242 566 H200 Q192 566 192 556
              Q192 546 202 540 Z" fill="url(#adult-male-shoes-tall-boots__foot)"/>
@@ -36,8 +42,8 @@
         fill="none" opacity="0.6"/>
 
   <!-- small pull tabs at the shaft top, the only hardware on the boot -->
-  <path d="M196 456 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
-  <path d="M238 456 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
+  <path d="M196 446 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
+  <path d="M238 446 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
 
   <!-- a soft cuff crease and a long shaft highlight, no seams and no lacing -->
   <path d="M164 478 Q182 484 200 478" stroke="var(--c2, #4B3324)" stroke-opacity="0.6"
