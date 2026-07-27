@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=BROAD FLAT DISC COLLAR lying on both shoulders, bare arms
+       closure=wrapped kilt, no fastening above the waist · hem=KNEE
+       volume=FLAT drape with one stiff triangular apron standing 42u proud of the kilt -->
+  <!-- kept deliberately flat: no moulded cuirass, no forward-folded shoulder flaps. That is the
+       separation from hoplite.
+       Drawn with the same matter-of-factness as chef. No cartouche, no crook, no flail, no
+       uraeus and no named ruler, and not the glamour version of any queen. The bare torso is
+       real skin painted through skin1 and skin2, never a hole and never a hard-coded colour. -->
+  <defs>
+    <linearGradient id="teen-female-costume-pharaonic__kilt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2EADA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2C4A6)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F8F2E6)"/>
+      <stop offset="1" stop-color="var(--c2, #CDBE9D)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-pharaonic__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3F8FA0)"/>
+      <stop offset="1" stop-color="var(--c3, #2C6B79)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-pharaonic__bare" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bare torso is real skin, painted through skin1 and skin2 -->
+  <path d="M146 220 q0 -26 24 -26 h60 q24 0 24 26 v96 q0 30 -24 30 h-60 q-24 0 -24 -30 z"
+        fill="url(#teen-female-costume-pharaonic__bare)"/>
+
+  <g class="sp-shadow">
+    <!-- knee-length wrapped linen kilt -->
+    <path d="M144 330 H256 Q258 356 254 386 L246 462 Q200 478 154 462 L146 386 Q142 356 144 330 Z"
+          fill="url(#teen-female-costume-pharaonic__kilt)"/>
+    <!-- stiff triangular front apron, standing flat and proud of the kilt on both sides -->
+    <path d="M200 320 Q212 320 216 336 L294 470 Q200 496 106 470 L184 336 Q188 320 200 320 Z"
+          fill="url(#teen-female-costume-pharaonic__apron)"/>
+    <!-- broad flat semicircular collar over both shoulders and the upper chest -->
+    <path d="M138 202 Q140 196 152 196 H182 Q184 214 200 216 Q216 214 218 196 H248
+             Q260 196 262 202 Q262 254 200 264 Q138 254 138 202 Z"
+          fill="url(#teen-female-costume-pharaonic__collar)"/>
+    <!-- wide plain armlets above each elbow -->
+    <path d="M122 262 h32 q4 14 0 28 h-32 q-4 -14 0 -28 z"
+          fill="url(#teen-female-costume-pharaonic__collar)"/>
+    <path d="M278 262 h-32 q-4 14 0 28 h32 q4 -14 0 -28 z"
+          fill="url(#teen-female-costume-pharaonic__collar)"/>
+  </g>
+
+  <!-- fine linen pleats on the apron -->
+  <g stroke="var(--c2, #D2C4A6)" stroke-width="4" stroke-opacity="0.8" fill="none" stroke-linecap="round">
+    <path d="M196 342 L126 466"/><path d="M198 342 L152 472"/><path d="M200 342 L178 476"/>
+    <path d="M202 342 L204 478"/><path d="M204 342 L230 476"/><path d="M206 342 L256 472"/>
+    <path d="M208 342 L276 466"/>
+  </g>
+  <!-- pleats on the kilt itself -->
+  <g stroke="var(--c2, #D2C4A6)" stroke-width="4" stroke-opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M156 344 l-4 118"/><path d="M170 344 l-2 122"/>
+    <path d="M230 344 l2 122"/><path d="M244 344 l4 118"/>
+  </g>
+
+  <!-- concentric bands on the flat collar -->
+  <g stroke="var(--c1, #F2EADA)" stroke-width="5" stroke-opacity="0.85" fill="none" stroke-linecap="round">
+    <path d="M144 212 Q146 242 200 250"/>
+    <path d="M256 212 Q254 242 200 250"/>
+    <path d="M148 228 Q154 246 200 254"/>
+    <path d="M252 228 Q246 246 200 254"/>
+  </g>
+
+  <!-- narrow beaded belt -->
+  <path d="M144 318 q56 14 112 0 v14 q-56 14 -112 0 z" fill="var(--c3, #3F8FA0)"/>
+  <g fill="var(--c1, #F2EADA)">
+    <circle cx="160" cy="326" r="3.5"/><circle cx="176" cy="329" r="3.5"/>
+    <circle cx="192" cy="330" r="3.5"/><circle cx="208" cy="330" r="3.5"/>
+    <circle cx="224" cy="329" r="3.5"/><circle cx="240" cy="326" r="3.5"/>
+  </g>
+
+  <!-- armlet highlight -->
+  <g stroke="var(--c1, #F2EADA)" stroke-width="4" stroke-opacity="0.8" fill="none" stroke-linecap="round">
+    <path d="M126 272 h24"/><path d="M274 272 h-24"/>
+  </g>
+
+  <path d="M162 208 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

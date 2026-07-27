@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker Pelt" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=SLEEVELESS pelt jerkin over a long-sleeved under-tunic · closure=OPEN FRONT
+       hem=deeply lobed at MID-THIGH over cross-bound trousers · volume=soft shaggy lobes -->
+  <!-- separated from satyr by hem and shoulder: a thigh-length jerkin over full trousers and
+       sleeves, against a bare chest and shag to the ankle.
+       Separated from frost-giant by volume: soft rounded fleece lobes, never angular spikes.
+       The shag is built into the silhouette path, not drawn on top of a smooth edge.
+       The knife is a sheath on the belt, not a held prop. There is no hand anchor in this project. -->
+  <defs>
+    <linearGradient id="teen-female-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A8523F)"/>
+      <stop offset="1" stop-color="var(--c3, #8A402F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-berserker__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A8523F)"/>
+      <stop offset="1" stop-color="var(--c3, #833A2B)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-berserker__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3E30)"/>
+      <stop offset="1" stop-color="var(--c2, #3A3025)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7C6A55)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3E30)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M168 342 h30 v194 q0 10 -8 10 h-14 q-8 0 -8 -10 z"
+          fill="url(#teen-female-costume-berserker__trouser)"/>
+    <path d="M232 342 h-30 v194 q0 10 8 10 h14 q8 0 8 -10 z"
+          fill="url(#teen-female-costume-berserker__trouser)"/>
+    <!-- long-sleeved under-tunic -->
+    <path d="M152 214 q0 -18 22 -18 h52 q22 0 22 18 v106 q0 22 -20 22 h-56 q-20 0 -20 -22 z"
+          fill="url(#teen-female-costume-berserker__tunic)"/>
+    <path d="M120 210 q0 -14 16 -14 h10 q14 0 14 16 v124 q0 16 -16 16 h-8 q-16 0 -16 -16 z"
+          fill="url(#teen-female-costume-berserker__sleeve)"/>
+    <path d="M280 210 q0 -14 -16 -14 h-10 q-14 0 -14 16 v124 q0 16 16 16 h8 q16 0 16 -16 z"
+          fill="url(#teen-female-costume-berserker__sleeve)"/>
+    <!-- open shaggy pelt jerkin, deeply lobed thigh hem -->
+    <path d="M154 198 Q140 214 146 244 Q136 268 146 296 Q138 322 148 350 Q140 380 150 404
+             Q146 424 156 440 Q168 452 176 434 Q186 446 192 428 V206 Q176 194 154 198 Z"
+          fill="url(#teen-female-costume-berserker__pelt)"/>
+    <path d="M246 198 Q260 214 254 244 Q264 268 254 296 Q262 322 252 350 Q260 380 250 404
+             Q254 424 244 440 Q232 452 224 434 Q214 446 208 428 V206 Q224 194 246 198 Z"
+          fill="url(#teen-female-costume-berserker__pelt)"/>
+  </g>
+
+  <!-- wide leather belt with a sheath and a pouch -->
+  <path d="M148 320 q52 16 104 0 v22 q-52 16 -104 0 z" fill="var(--c2, #4A3E30)"/>
+  <rect x="188" y="318" width="26" height="28" rx="7" fill="var(--c1, #7C6A55)"/>
+  <path d="M154 344 h22 l-4 40 q-7 5 -14 0 z" fill="var(--c2, #4A3E30)"/>
+  <path d="M228 344 h24 q4 20 -2 34 q-11 5 -22 0 q-6 -14 0 -34 z" fill="var(--c1, #7C6A55)"/>
+
+  <!-- leg wraps, cross-bound from knee to ankle -->
+  <g stroke="var(--c1, #7C6A55)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M168 466 L198 482 M198 466 L168 482"/>
+    <path d="M168 492 L198 508 M198 492 L168 508"/>
+    <path d="M168 518 L198 534 M198 518 L168 534"/>
+    <path d="M232 466 L202 482 M202 466 L232 482"/>
+    <path d="M232 492 L202 508 M202 492 L232 508"/>
+    <path d="M232 518 L202 534 M202 518 L232 534"/>
+  </g>
+
+  <!-- fleece hollows inside the lobes -->
+  <g stroke="var(--c2, #4A3E30)" stroke-width="4" stroke-opacity="0.55" fill="none" stroke-linecap="round">
+    <path d="M156 236 q14 8 24 0"/><path d="M154 288 q16 8 26 0"/><path d="M156 344 q14 8 24 0"/>
+    <path d="M220 236 q14 8 24 0"/><path d="M220 288 q16 8 26 0"/><path d="M220 344 q14 8 24 0"/>
+  </g>
+
+  <!-- under-tunic neckline -->
+  <path d="M178 196 q22 18 44 0 l4 12 q-26 22 -52 0 z" fill="var(--c2, #4A3E30)"/>
+
+  <path d="M180 224 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

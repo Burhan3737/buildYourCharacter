@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=ONE SHOULDER PINNED, the other shoulder and arm entirely bare
+       closure=single fibula at the right shoulder · hem=MID-THIGH · volume=short tunic with a
+       rectangular mantle swinging back and out, winged cuffs at both ankles -->
+  <!-- the ankle wings are soft cloth vanes, not metal and not feathered pinions. -->
+  <defs>
+    <linearGradient id="teen-female-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A8834F)"/>
+      <stop offset="1" stop-color="var(--c2, #86653A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D8B27A)"/>
+      <stop offset="1" stop-color="var(--c2, #A8834F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-winged-messenger__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7F0DC)"/>
+      <stop offset="1" stop-color="var(--c2, #A8834F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- rectangular mantle, pinned at the right shoulder, swinging back and out -->
+    <path d="M232 198 h20 q28 4 42 30 l40 156 q-24 22 -58 16 l-44 -190 z"
+          fill="url(#teen-female-costume-winged-messenger__mantle)"/>
+    <!-- winged cuffs at both ankles -->
+    <path d="M172 502 q-24 0 -42 14 q-8 6 0 10 q20 8 42 12 z"
+          fill="url(#teen-female-costume-winged-messenger__wing)"/>
+    <path d="M228 502 q24 0 42 14 q8 6 0 10 q-20 8 -42 12 z"
+          fill="url(#teen-female-costume-winged-messenger__wing)"/>
+    <!-- short single-shoulder tunic, right shoulder bare -->
+    <path d="M164 196 H200 L250 266 V344 Q250 362 244 372 L238 424 Q200 440 162 424 L156 372
+             Q150 362 150 344 V224 Q150 200 164 196 Z"
+          fill="url(#teen-female-costume-winged-messenger__tunic)"/>
+  </g>
+
+  <!-- the single round fibula at the right shoulder -->
+  <circle cx="250" cy="216" r="10" fill="var(--c3, #F7F0DC)"/>
+  <circle cx="250" cy="216" r="4" fill="var(--c2, #A8834F)"/>
+
+  <!-- waist cord with two hanging ends -->
+  <path d="M152 296 q48 16 92 2 l2 12 q-48 16 -94 0 z" fill="var(--c3, #F7F0DC)"/>
+  <path d="M186 312 q-4 22 2 36 M212 312 q6 22 0 36" stroke="var(--c3, #F7F0DC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- neckline binding on the covered shoulder -->
+  <path d="M166 200 L246 266" stroke="var(--c3, #F7F0DC)" stroke-width="7" stroke-opacity="0.9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ankle cuff bands the wings spring from -->
+  <g fill="var(--c3, #F7F0DC)">
+    <path d="M166 500 h34 v20 q-17 6 -34 0 z"/>
+    <path d="M234 500 h-34 v20 q17 6 34 0 z"/>
+  </g>
+  <g stroke="var(--c2, #A8834F)" stroke-width="3" stroke-opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M168 512 q-18 4 -32 10"/><path d="M168 524 q-16 4 -28 6"/>
+    <path d="M232 512 q18 4 32 10"/><path d="M232 524 q16 4 28 6"/>
+  </g>
+
+  <!-- mantle fold -->
+  <path d="M262 238 l34 148" stroke="var(--c3, #F7F0DC)" stroke-width="4" stroke-opacity="0.5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 212 q22 14 44 22" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

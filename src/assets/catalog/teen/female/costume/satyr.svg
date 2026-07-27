@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr Pelt" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=BARE CHEST with a single knotted skin over one shoulder
+       closure=none, the pelt simply begins at the waist · hem=ankle
+       volume=shaggy lobed pelt over both legs, with a long horse tail behind -->
+  <!-- CORRECTNESS, do not "fix" this back toward the source:
+       1. A satyr is a HORSE creature. Horse tail, horse ears. Goat legs and goat horns belong
+          to the Roman faun, not to the Greek satyr, and are wrong here.
+       2. Classical satyrs are nude with exaggerated genitalia. This is a children's dress-up
+          satyr: pelt from the waist down, an animal skin over one shoulder, and nothing else.
+          That is a deliberate decision, not an oversight.
+       3. The ears are head art and belong to a headwear family, not to this slot. Do not add
+          them here, and there is no room for them anyway under the costume face ceiling.
+       The shag is built INTO the silhouette path as overlapping lobes of unequal size. It is
+       never squiggles drawn inside a smooth leg. -->
+  <defs>
+    <linearGradient id="teen-female-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6A4A)"/>
+      <stop offset="1" stop-color="var(--c2, #57402C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6A4A)"/>
+      <stop offset="1" stop-color="var(--c2, #57402C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-satyr__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A7A57)"/>
+      <stop offset="1" stop-color="var(--c2, #57402C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9A87C)"/>
+      <stop offset="1" stop-color="var(--c2, #57402C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-satyr__bare" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long horse tail, falling behind from the small of the back -->
+    <path d="M244 344 q30 6 42 40 q10 40 2 92 q-4 14 -14 8 q-2 -48 -12 -80 q-10 -32 -30 -42 z"
+          fill="url(#teen-female-costume-satyr__tail)"/>
+  </g>
+
+  <!-- the bare chest is real skin, painted through skin1 and skin2, never a hole -->
+  <path d="M144 218 q0 -24 26 -24 h60 q26 0 26 24 v100 q0 34 -26 34 h-60 q-26 0 -26 -34 z"
+        fill="url(#teen-female-costume-satyr__bare)"/>
+
+  <g class="sp-shadow">
+    <!-- the pelt begins at the waist in a deeply lobed, irregular horizontal edge -->
+    <path d="M144 348 Q152 278 168 330 Q178 296 190 326 Q198 272 210 330 Q222 300 232 324
+             Q244 286 256 350 Q200 370 144 348 Z"
+          fill="url(#teen-female-costume-satyr__waist)"/>
+    <!-- shaggy legs: the lobes ARE the outline, unequal in size all the way down -->
+    <path d="M156 340 Q138 364 150 386 Q134 412 148 434 Q136 460 150 482 Q138 508 152 528
+             Q142 548 162 552 H196 Q200 522 196 496 Q202 468 196 442 Q200 414 196 388
+             Q202 362 196 340 Z"
+          fill="url(#teen-female-costume-satyr__pelt)"/>
+    <path d="M244 340 Q262 364 250 386 Q266 412 252 434 Q264 460 250 482 Q262 508 248 528
+             Q258 548 238 552 H204 Q200 522 204 496 Q198 468 204 442 Q200 414 204 388
+             Q198 362 204 340 Z"
+          fill="url(#teen-female-costume-satyr__pelt)"/>
+    <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
+    <path d="M156 196 h34 q6 6 4 16 L246 340 q-4 16 -18 18 q-14 2 -20 -10 L150 214
+             q-2 -12 6 -18 z"
+          fill="url(#teen-female-costume-satyr__skin)"/>
+  </g>
+
+  <!-- knot at the shoulder -->
+  <path d="M164 198 q18 -4 26 6 q-4 14 -18 14 q-14 0 -16 -10 z" fill="var(--c2, #57402C)"/>
+
+  <!-- pelt shading in the fleece hollows -->
+  <g stroke="var(--c2, #57402C)" stroke-width="4" stroke-opacity="0.6" fill="none" stroke-linecap="round">
+    <path d="M164 372 q14 8 24 0"/><path d="M162 424 q16 8 26 0"/>
+    <path d="M164 476 q14 8 24 0"/><path d="M166 522 q14 8 22 0"/>
+    <path d="M212 372 q14 8 24 0"/><path d="M212 424 q16 8 26 0"/>
+    <path d="M212 476 q14 8 24 0"/><path d="M212 522 q14 8 22 0"/>
+  </g>
+
+  <!-- tail hairs -->
+  <g stroke="var(--c2, #57402C)" stroke-width="3" stroke-opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M258 372 q18 40 16 96"/><path d="M268 384 q14 38 12 84"/>
+  </g>
+
+  <path d="M262 366 q16 26 20 60" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

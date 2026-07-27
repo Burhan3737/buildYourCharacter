@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=SLEEVELESS overdress on two short front straps over a long-sleeved underdress
+       closure=strap-and-brooch at the collarbone · hem=TWO HEMS, overdress at mid-calf with a
+       clear band of ankle-length underdress below it · volume=straight wool tube over a soft dress -->
+  <defs>
+    <linearGradient id="teen-female-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C39A)"/>
+      <stop offset="1" stop-color="var(--c3, #BCA57C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C39A)"/>
+      <stop offset="1" stop-color="var(--c3, #B29B72)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B6E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4A60)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length long-sleeved underdress -->
+    <path d="M158 218 Q158 196 180 196 H220 Q242 196 242 218 V330 Q246 360 250 396 L262 528
+             Q200 552 138 528 L150 396 Q154 360 158 330 Z"
+          fill="url(#teen-female-costume-apron-dress__under)"/>
+    <path d="M120 212 q0 -16 16 -16 h12 q12 0 12 16 v126 q0 16 -16 16 h-8 q-16 0 -16 -16 z"
+          fill="url(#teen-female-costume-apron-dress__sleeve)"/>
+    <path d="M280 212 q0 -16 -16 -16 h-12 q-12 0 -12 16 v126 q0 16 16 16 h8 q16 0 16 -16 z"
+          fill="url(#teen-female-costume-apron-dress__sleeve)"/>
+    <!-- shorter sleeveless woollen overdress, hem at mid-calf -->
+    <path d="M154 240 q0 -12 12 -14 h68 q12 2 12 14 l6 250 q-52 22 -104 0 z"
+          fill="url(#teen-female-costume-apron-dress__over)"/>
+  </g>
+
+  <!-- two short front straps rising to the brooches -->
+  <g fill="var(--c1, #5B6E8C)">
+    <path d="M170 208 h14 v34 h-14 z"/>
+    <path d="M216 208 h14 v34 h-14 z"/>
+  </g>
+
+  <!-- domed oval brooches at the collarbone -->
+  <ellipse cx="177" cy="208" rx="14" ry="10" fill="var(--c3, #D9C39A)"/>
+  <ellipse cx="223" cy="208" rx="14" ry="10" fill="var(--c3, #D9C39A)"/>
+  <ellipse cx="177" cy="208" rx="7" ry="4.5" fill="var(--c2, #3B4A60)"/>
+  <ellipse cx="223" cy="208" rx="7" ry="4.5" fill="var(--c2, #3B4A60)"/>
+
+  <!-- swag of beads strung between the brooches -->
+  <path d="M180 216 Q200 258 220 216" stroke="var(--c3, #D9C39A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #D9C39A)">
+    <circle cx="186" cy="230" r="4.5"/><circle cx="194" cy="240" r="4.5"/>
+    <circle cx="206" cy="240" r="4.5"/><circle cx="214" cy="230" r="4.5"/>
+    <circle cx="200" cy="243" r="4.5"/>
+  </g>
+
+  <!-- small cluster of tools on a chain at one hip -->
+  <path d="M240 330 q6 22 2 40" stroke="var(--c3, #D9C39A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #D9C39A)">
+    <ellipse cx="234" cy="380" rx="7" ry="11"/>
+    <path d="M246 372 h8 v22 h-8 z"/>
+    <circle cx="242" cy="396" r="6"/>
+  </g>
+
+  <!-- woven band at the overdress hem, the value break that makes the two hems read -->
+  <path d="M150 474 q50 20 100 0 l1 16 q-51 21 -102 0 z" fill="var(--c3, #D9C39A)"/>
+  <!-- underdress hem band -->
+  <path d="M140 512 q60 22 120 0 l1 16 q-61 23 -122 0 z" fill="var(--c2, #3B4A60)"/>
+
+  <!-- cuff bands -->
+  <g fill="var(--c1, #5B6E8C)">
+    <path d="M120 320 h40 v18 h-40 z"/><path d="M280 320 h-40 v18 h40 z"/>
+  </g>
+
+  <path d="M172 250 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=LONG SET-IN SLEEVES, fully covered · closure=closed tunic
+       hem=mid-thigh tunic over full-length trousers tucked into boots
+       volume=close and fully trousered, with a crescent shield slung flat across the back -->
+  <!-- deliberately drawn as a fully covered trousered rider: sleeves kept, trousers kept.
+       No bustier, no star of any size anywhere, no tiara, no matched metal bracers, no coiled
+       rope at the hip, and a sage and bone palette rather than red, blue and gold. -->
+  <defs>
+    <linearGradient id="teen-female-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4D5B0)"/>
+      <stop offset="1" stop-color="var(--c2, #3C5347)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E7C6B)"/>
+      <stop offset="1" stop-color="var(--c2, #3C5347)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shield-warrior__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E7C6B)"/>
+      <stop offset="1" stop-color="var(--c2, #35483E)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shield-warrior__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3C5347)"/>
+      <stop offset="1" stop-color="var(--c2, #2C3D34)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shield-warrior__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4D5B0)"/>
+      <stop offset="1" stop-color="var(--c3, #C2B18A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- crescent shield slung flat across the back, its horns showing past each hip -->
+    <path d="M96 408 Q92 286 200 270 Q308 286 304 408 Q286 404 282 348 Q272 300 200 296
+             Q128 300 118 348 Q114 404 96 408 Z"
+          fill="url(#teen-female-costume-shield-warrior__shield)"/>
+    <!-- narrow full-length trousers -->
+    <path d="M166 338 h32 v186 q0 10 -9 10 h-14 q-9 0 -9 -10 z"
+          fill="url(#teen-female-costume-shield-warrior__trouser)"/>
+    <path d="M234 338 h-32 v186 q0 10 9 10 h14 q9 0 9 -10 z"
+          fill="url(#teen-female-costume-shield-warrior__trouser)"/>
+    <!-- long-sleeved close tunic to mid-thigh -->
+    <path d="M150 216 Q150 196 172 196 H228 Q250 196 250 216 V330 Q250 352 244 366 L238 420
+             Q200 434 162 420 L156 366 Q150 352 150 330 Z"
+          fill="url(#teen-female-costume-shield-warrior__tunic)"/>
+    <path d="M122 208 q0 -12 14 -12 h12 q12 0 12 14 v128 q0 14 -14 14 h-10 q-14 0 -14 -14 z"
+          fill="url(#teen-female-costume-shield-warrior__sleeve)"/>
+    <path d="M278 208 q0 -12 -14 -12 h-12 q-12 0 -12 14 v128 q0 14 14 14 h10 q14 0 14 -14 z"
+          fill="url(#teen-female-costume-shield-warrior__sleeve)"/>
+    <!-- soft ankle boots -->
+    <path d="M158 508 h46 v50 q0 12 -14 12 h-20 q-12 0 -12 -12 z"
+          fill="url(#teen-female-costume-shield-warrior__boot)"/>
+    <path d="M242 508 h-46 v50 q0 12 14 12 h20 q12 0 12 -12 z"
+          fill="url(#teen-female-costume-shield-warrior__boot)"/>
+  </g>
+
+  <!-- wide diagonal baldric -->
+  <path d="M156 198 L248 328 q-8 14 -24 12 L142 214 q-2 -14 14 -16 z" fill="var(--c3, #E4D5B0)"/>
+  <path d="M164 214 L238 320" stroke="var(--c2, #3C5347)" stroke-width="3" stroke-opacity="0.55"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- shield rim and boss ribs, no star and no heraldry -->
+  <path d="M104 400 Q102 296 200 282 Q298 296 296 400" stroke="var(--c1, #5E7C6B)" stroke-width="6"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- waist belt -->
+  <path d="M150 314 q50 16 100 0 v18 q-50 16 -100 0 z" fill="var(--c2, #3C5347)"/>
+  <rect x="190" y="312" width="24" height="24" rx="7" fill="var(--c3, #E4D5B0)"/>
+
+  <!-- tunic neck and cuff bands -->
+  <path d="M174 196 q26 20 52 0 l4 14 q-30 24 -60 0 z" fill="var(--c3, #E4D5B0)"/>
+  <g fill="var(--c3, #E4D5B0)">
+    <path d="M122 320 h38 v18 h-38 z"/><path d="M278 320 h-38 v18 h38 z"/>
+  </g>
+
+  <!-- boot lacing -->
+  <g stroke="var(--c2, #3C5347)" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M166 522 h30 M166 538 h30 M166 554 h30"/>
+    <path d="M234 522 h-30 M234 538 h-30 M234 554 h-30"/>
+  </g>
+
+  <path d="M172 216 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

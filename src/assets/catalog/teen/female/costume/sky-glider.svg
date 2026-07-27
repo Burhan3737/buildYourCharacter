@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sky Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=fitted, membrane-webbed · closure=closed · hem=ankle
+       volume=ONE WIDE TRIANGLE from shoulder to ankle, 86u clear of the leg at the hem -->
+  <!-- the membranes are plain cloth with drawn rib seams. No mechanical wings, no feathers,
+       no metal pinions, no chest emblem. -->
+  <defs>
+    <linearGradient id="teen-female-costume-sky-glider__web" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5566A8)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-sky-glider__knee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B5B9B)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5566A8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-sky-glider__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4B5B9B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wrist-to-hip membranes, swept out to a triangle base at the ankle -->
+    <path d="M158 200 q-20 4 -26 26 L84 530 q-4 16 12 18 h84 q6 -2 6 -14 V214 q0 -14 -12 -14 z"
+          fill="url(#teen-female-costume-sky-glider__web)"/>
+    <path d="M242 200 q20 4 26 26 L316 530 q4 16 -12 18 h-84 q-6 -2 -6 -14 V214 q0 -14 12 -14 z"
+          fill="url(#teen-female-costume-sky-glider__web)"/>
+    <!-- the third membrane, spanning between the knees -->
+    <path d="M182 420 h36 q4 62 2 128 q-20 8 -40 0 q-2 -66 2 -128 z"
+          fill="url(#teen-female-costume-sky-glider__knee)"/>
+    <!-- fitted ankle-length bodysuit over the top -->
+    <path d="M166 336 h32 q4 106 -2 210 h-32 q-4 -106 2 -210 z"
+          fill="url(#teen-female-costume-sky-glider__limb)"/>
+    <path d="M234 336 h-32 q-4 106 2 210 h32 q4 -106 -2 -210 z"
+          fill="url(#teen-female-costume-sky-glider__limb)"/>
+    <path d="M148 212 q0 -18 22 -18 h60 q22 0 22 18 v112 q0 24 -14 32 v22 q0 16 -22 16 h-32
+             q-22 0 -22 -16 v-22 q-14 -8 -14 -32 z"
+          fill="url(#teen-female-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane -->
+  <g stroke="var(--c3, #E6ECFB)" stroke-width="4" stroke-opacity="0.55" fill="none" stroke-linecap="round">
+    <path d="M150 226 L104 528"/><path d="M156 232 L134 532"/><path d="M162 240 L162 534"/>
+    <path d="M250 226 L296 528"/><path d="M244 232 L266 532"/><path d="M238 240 L238 534"/>
+    <path d="M190 432 L190 542"/><path d="M210 432 L210 542"/>
+  </g>
+
+  <!-- membrane leading edge -->
+  <path d="M158 202 q-18 6 -24 26 L86 528" stroke="var(--c3, #E6ECFB)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M242 202 q18 6 24 26 L314 528" stroke="var(--c3, #E6ECFB)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- chest harness bands, no emblem -->
+  <path d="M150 258 q50 16 100 0 v14 q-50 16 -100 0 z" fill="var(--c3, #E6ECFB)" fill-opacity="0.85"/>
+  <path d="M150 300 q50 16 100 0 v14 q-50 16 -100 0 z" fill="var(--c3, #E6ECFB)" fill-opacity="0.85"/>
+
+  <path d="M170 206 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

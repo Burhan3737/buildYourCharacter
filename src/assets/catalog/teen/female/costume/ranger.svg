@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger Jerkin" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=SLEEVELESS jerkin over a long-sleeved under-layer · closure=OPEN FRONT
+       hem=split into two thigh tails · volume=layered, close trouser -->
+  <!-- the hood is worn DOWN, pooled in a thick roll at the nape, so the face stays clear.
+       Palette is deliberately rust and oat: not all-green-with-a-hood, not purple over black. -->
+  <!-- no bow, no quiver body, no prop of any kind. The strap across the chest is clothing. -->
+  <defs>
+    <linearGradient id="teen-female-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C5B3C)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3A26)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C5B3C)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3A26)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9B08A)"/>
+      <stop offset="1" stop-color="var(--c3, #AD9469)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-ranger__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6B3A26)"/>
+      <stop offset="1" stop-color="var(--c2, #4E2A1B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M164 340 h34 v192 q0 12 -10 12 h-16 q-10 0 -10 -12 z"
+          fill="url(#teen-female-costume-ranger__trouser)"/>
+    <path d="M236 340 h-34 v192 q0 12 10 12 h16 q10 0 10 -12 z"
+          fill="url(#teen-female-costume-ranger__trouser)"/>
+    <!-- long-sleeved under-layer -->
+    <path d="M154 214 q0 -18 20 -18 h52 q20 0 20 18 v104 q0 22 -22 22 h-48 q-22 0 -22 -22 z"
+          fill="url(#teen-female-costume-ranger__under)"/>
+    <path d="M120 214 q0 -18 16 -18 h10 q14 0 14 18 v122 q0 18 -18 18 h-6 q-16 0 -16 -18 z"
+          fill="url(#teen-female-costume-ranger__under)"/>
+    <path d="M280 214 q0 -18 -16 -18 h-10 q-14 0 -14 18 v122 q0 18 18 18 h6 q16 0 16 -18 z"
+          fill="url(#teen-female-costume-ranger__under)"/>
+    <!-- open jerkin, two panels, hem split into two tails at mid-thigh -->
+    <path d="M152 196 h40 v222 l-18 26 l-26 -14 v-208 q0 -24 4 -26 z"
+          fill="url(#teen-female-costume-ranger__jerkin)"/>
+    <path d="M248 196 h-40 v222 l18 26 l26 -14 v-208 q0 -24 -4 -26 z"
+          fill="url(#teen-female-costume-ranger__jerkin)"/>
+  </g>
+
+  <!-- the hood, worn DOWN and pooled in a thick roll at the nape, drawn over the jerkin.
+       It is notched open at the centre front so it never climbs toward the face. -->
+  <g class="sp-shadow">
+    <path d="M156 228 Q158 196 176 196 Q188 214 200 214 Q212 214 224 196 Q242 196 244 228
+             Q200 250 156 228 Z"
+          fill="url(#teen-female-costume-ranger__hood)"/>
+  </g>
+
+  <!-- diagonal quiver strap across the chest, clothing only -->
+  <path d="M158 200 L250 320 q-6 14 -20 12 L146 216 q0 -14 12 -16 z" fill="var(--c2, #6B3A26)"/>
+  <path d="M164 214 L242 316" stroke="var(--c3, #C9B08A)" stroke-width="3" stroke-opacity="0.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide bracer on one forearm -->
+  <path d="M118 288 h34 q4 26 0 52 h-34 q-4 -26 0 -52 z" fill="var(--c2, #6B3A26)"/>
+  <g stroke="var(--c3, #C9B08A)" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M122 298 L148 306 M148 298 L122 306"/>
+    <path d="M122 316 L148 324 M148 316 L122 324"/>
+  </g>
+
+  <!-- belt over the jerkin -->
+  <path d="M146 316 q54 16 108 0 v18 q-54 16 -108 0 z" fill="var(--c2, #6B3A26)"/>
+  <rect x="188" y="314" width="26" height="26" rx="7" fill="var(--c3, #C9B08A)"/>
+
+  <!-- hood roll seams -->
+  <g stroke="var(--c2, #6B3A26)" stroke-width="4" stroke-opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M164 228 q6 -18 14 -24"/><path d="M236 228 q-6 -18 -14 -24"/>
+    <path d="M170 240 q30 10 60 0"/>
+  </g>
+
+  <path d="M176 258 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

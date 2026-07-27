@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jarl Tunic" data-family="jarl" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=OFFSET CLOAK over the left shoulder only, right arm entirely free
+       closure=one plain ring brooch at the right shoulder · hem=KNEE tunic over narrow trousers
+       volume=fitted wool with deep woven trim bands at neck, cuff and hem -->
+  <!-- the brooch is a plain ring. There is no horned helmet and no winged helmet anywhere in
+       this family: both are 19th century Romantic invention rather than Norse archaeology, and
+       there is no room above the face ceiling for a helmet in this slot regardless. -->
+  <defs>
+    <linearGradient id="teen-female-costume-jarl__cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5E2F2C)"/>
+      <stop offset="1" stop-color="var(--c2, #47231F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-jarl__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B4A44)"/>
+      <stop offset="1" stop-color="var(--c2, #5E2F2C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-jarl__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B4A44)"/>
+      <stop offset="1" stop-color="var(--c2, #572926)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-jarl__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5E2F2C)"/>
+      <stop offset="1" stop-color="var(--c2, #40201D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow trousers -->
+    <path d="M166 430 h32 v106 q0 10 -10 10 h-12 q-10 0 -10 -10 z"
+          fill="url(#teen-female-costume-jarl__trouser)"/>
+    <path d="M234 430 h-32 v106 q0 10 10 10 h12 q10 0 10 -10 z"
+          fill="url(#teen-female-costume-jarl__trouser)"/>
+    <!-- knee-length fitted wool tunic -->
+    <path d="M148 218 Q148 196 172 196 H228 Q252 196 252 218 V330 Q252 350 248 366 L244 458
+             Q200 472 156 458 L152 366 Q148 350 148 330 Z"
+          fill="url(#teen-female-costume-jarl__tunic)"/>
+    <!-- long sleeves rucked past the wrist -->
+    <path d="M122 210 q0 -14 16 -14 h10 q14 0 14 16 v138 q0 16 -16 16 h-8 q-16 0 -16 -16 z"
+          fill="url(#teen-female-costume-jarl__sleeve)"/>
+    <path d="M278 210 q0 -14 -16 -14 h-10 q-14 0 -14 16 v138 q0 16 16 16 h8 q16 0 16 -16 z"
+          fill="url(#teen-female-costume-jarl__sleeve)"/>
+  </g>
+
+  <!-- woven trim at the free cuff -->
+  <path d="M278 332 h-40 v22 h40 z" fill="var(--c3, #D9CBB0)"/>
+  <!-- woven trim at the tunic hem -->
+  <path d="M154 428 q46 16 92 0 l2 22 q-48 17 -96 0 z" fill="var(--c3, #D9CBB0)"/>
+  <!-- belt -->
+  <path d="M150 316 q50 16 100 0 v18 q-50 16 -100 0 z" fill="var(--c2, #5E2F2C)"/>
+
+  <!-- trim pattern, plain running geometry only -->
+  <g stroke="var(--c2, #5E2F2C)" stroke-width="3" stroke-opacity="0.75" fill="none" stroke-linecap="round">
+    <path d="M186 438 l8 -8 l8 8 l8 -8 l8 8 l8 -8 l8 8 l8 -8 l8 8"/>
+    <path d="M274 342 l-7 -7 l-7 7 l-7 -7 l-7 7 l-7 -7"/>
+  </g>
+
+  <!-- rectangular cloak, hung offset over the left shoulder only and drawn LAST so it occludes
+       the tunic beneath it. The right arm is left entirely free. -->
+  <g class="sp-shadow">
+    <path d="M248 204 Q198 196 152 202 Q112 214 106 258 L92 452 Q134 474 176 456 L186 264
+             Q214 248 248 216 Z"
+          fill="url(#teen-female-costume-jarl__cloak)"/>
+  </g>
+  <path d="M132 250 l-14 196" stroke="var(--c1, #8B4A44)" stroke-width="4" stroke-opacity="0.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 262 l-8 190" stroke="var(--c1, #8B4A44)" stroke-width="4" stroke-opacity="0.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- woven band along the cloak edge -->
+  <path d="M190 266 L180 456" stroke="var(--c3, #D9CBB0)" stroke-width="8" stroke-opacity="0.9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep woven trim band at the neck, with the keyhole opening -->
+  <path d="M172 196 q28 22 56 0 l6 16 q-34 26 -68 0 z" fill="var(--c3, #D9CBB0)"/>
+  <path d="M194 208 h12 v30 q0 6 -6 6 q-6 0 -6 -6 z" fill="var(--c2, #5E2F2C)"/>
+  <circle cx="200" cy="212" r="9" fill="var(--c2, #5E2F2C)"/>
+
+  <!-- the plain ring brooch that pins the cloak at the right shoulder -->
+  <circle cx="240" cy="218" r="13" fill="none" stroke="var(--c3, #D9CBB0)" stroke-width="6"/>
+  <path d="M228 210 l24 16" stroke="var(--c3, #D9CBB0)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 240 q22 12 44 4" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

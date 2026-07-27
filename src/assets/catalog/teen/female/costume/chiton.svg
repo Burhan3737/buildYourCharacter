@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=SIX SMALL PINS down each arm making a scalloped pseudo-sleeve to the elbow
+       closure=closed draped tube · hem=ankle · volume=DOUBLE-BELTED with a bloused fold -->
+  <!-- the fastening point is the axis in this group: chiton pins the whole arm seam, peplos
+       takes one big pin per shoulder, winged-messenger pins one shoulder only. -->
+  <defs>
+    <linearGradient id="teen-female-costume-chiton__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #D0C0A0)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #C8B593)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-chiton__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D0C0A0)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length draped tube -->
+    <path d="M156 196 h88 q16 2 18 22 l14 312 q-76 22 -152 0 l14 -312 q2 -20 18 -22 z"
+          fill="url(#teen-female-costume-chiton__tube)"/>
+    <!-- scalloped pseudo-sleeves, hanging from the pinned arm seam to the elbow -->
+    <path d="M152 198 q-24 2 -32 24 l-6 56 q10 12 18 0 q8 12 16 0 q8 12 16 0 q8 12 16 0
+             l2 -78 q-2 -2 -30 -2 z"
+          fill="url(#teen-female-costume-chiton__sleeve)"/>
+    <path d="M248 198 q24 2 32 24 l6 56 q-10 12 -18 0 q-8 12 -16 0 q-8 12 -16 0 q-8 12 -16 0
+             l-2 -78 q2 -2 30 -2 z"
+          fill="url(#teen-female-costume-chiton__sleeve)"/>
+    <!-- bloused fold spilling over the upper belt -->
+    <path d="M148 236 q52 20 104 0 q6 24 2 42 q-54 22 -108 0 q-4 -18 2 -42 z"
+          fill="url(#teen-female-costume-chiton__blouse)"/>
+  </g>
+
+  <!-- the pin rows: six small round pins along the top of each arm -->
+  <g fill="var(--c3, #B4553F)">
+    <circle cx="122" cy="222" r="5"/><circle cx="134" cy="213" r="5"/><circle cx="146" cy="207" r="5"/>
+    <circle cx="158" cy="203" r="5"/><circle cx="170" cy="201" r="5"/><circle cx="182" cy="200" r="5"/>
+    <circle cx="278" cy="222" r="5"/><circle cx="266" cy="213" r="5"/><circle cx="254" cy="207" r="5"/>
+    <circle cx="242" cy="203" r="5"/><circle cx="230" cy="201" r="5"/><circle cx="218" cy="200" r="5"/>
+  </g>
+
+  <!-- belt one, under the bust -->
+  <path d="M146 262 q54 20 108 0 v14 q-54 20 -108 0 z" fill="var(--c3, #B4553F)"/>
+  <!-- belt two, at the natural waist -->
+  <path d="M144 312 q56 20 112 0 v14 q-56 20 -112 0 z" fill="var(--c3, #B4553F)"/>
+
+  <!-- vertical drape folds -->
+  <g stroke="var(--c2, #D0C0A0)" stroke-width="4" stroke-opacity="0.7" fill="none" stroke-linecap="round">
+    <path d="M166 340 l-8 190"/><path d="M186 342 l-4 194"/><path d="M214 342 l4 194"/>
+    <path d="M234 340 l8 190"/>
+  </g>
+
+  <path d="M170 210 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

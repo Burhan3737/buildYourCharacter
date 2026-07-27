@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant Coat" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=THICK SHAGGY COLLAR over a bulky closed coat · closure=closed, no opening
+       hem=KNEE, cut into uneven downward icicle teeth · volume=the bulkiest mass in the slot,
+       with angular rime plates jutting out of the outline -->
+  <!-- the fallback is MINT and that is deliberate. Blue is what makes a frost giant read as one
+       particular studio version, so this row has to work on silhouette alone.
+       Separated from berserker by volume and hem: hard angular spikes and icicle teeth at the
+       knee, against soft rounded fleece lobes at mid-thigh. -->
+  <defs>
+    <linearGradient id="teen-female-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-frost-giant__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FCDBC)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8F5F0)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-frost-giant__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E8C7C)"/>
+      <stop offset="1" stop-color="var(--c2, #2E6E62)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thickly wrapped legs below the coat -->
+    <path d="M158 440 h44 v100 q0 14 -14 14 h-18 q-12 0 -12 -14 z"
+          fill="url(#teen-female-costume-frost-giant__leg)"/>
+    <path d="M242 440 h-44 v100 q0 14 14 14 h18 q12 0 12 -14 z"
+          fill="url(#teen-female-costume-frost-giant__leg)"/>
+    <!-- angular rime plates jutting out of the coat outline -->
+    <path d="M124 256 L76 240 L120 288 L82 302 L124 322 L84 348 L126 360 Z"
+          fill="url(#teen-female-costume-frost-giant__rime)"/>
+    <path d="M276 256 L324 240 L280 288 L318 302 L276 322 L316 348 L274 360 Z"
+          fill="url(#teen-female-costume-frost-giant__rime)"/>
+    <!-- bulky closed overcoat with an uneven icicle hem -->
+    <path d="M118 250 Q120 208 160 200 H240 Q280 208 282 250 L290 406 Q292 438 284 458
+             L272 506 L258 468 L244 500 L230 464 L216 502 L202 470 L188 498 L174 464
+             L160 500 L146 468 L132 492 L116 458 Q108 438 110 406 Z"
+          fill="url(#teen-female-costume-frost-giant__coat)"/>
+    <!-- thick shaggy shoulder collar -->
+    <path d="M120 240 Q114 208 146 198 Q172 194 200 196 Q228 194 254 198 Q286 208 280 240
+             Q256 250 238 236 Q219 250 200 236 Q181 250 162 236 Q144 250 120 240 Z"
+          fill="url(#teen-female-costume-frost-giant__collar)"/>
+  </g>
+
+  <!-- rime facets on the chest, flat and angular -->
+  <g fill="var(--c3, #E8F5F0)" fill-opacity="0.9">
+    <path d="M166 262 L192 252 L200 278 L172 288 Z"/>
+    <path d="M206 256 L234 268 L228 292 L202 282 Z"/>
+    <path d="M160 300 L186 296 L182 322 L156 316 Z"/>
+    <path d="M212 302 L240 306 L236 330 L210 324 Z"/>
+  </g>
+
+  <!-- forearm rime cuffs -->
+  <g fill="var(--c3, #E8F5F0)">
+    <path d="M120 332 L156 326 L150 356 L124 356 Z"/>
+    <path d="M280 332 L244 326 L250 356 L276 356 Z"/>
+  </g>
+
+  <!-- icicle hem sparkle -->
+  <g stroke="var(--c3, #E8F5F0)" stroke-width="4" stroke-opacity="0.8" fill="none" stroke-linecap="round">
+    <path d="M136 462 L146 486"/><path d="M180 462 L188 490"/>
+    <path d="M220 462 L228 492"/><path d="M264 462 L272 496"/>
+  </g>
+
+  <!-- leg wrap binding -->
+  <g stroke="var(--c1, #6BBFAD)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M158 466 h44 M158 494 h44 M158 522 h44"/>
+    <path d="M198 466 h44 M198 494 h44 M198 522 h44"/>
+  </g>
+
+  <path d="M158 216 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

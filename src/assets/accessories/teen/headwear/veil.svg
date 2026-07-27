@@ -4,44 +4,62 @@
   <!-- this is a SHORT CROWN VEIL, not a cathedral one, and that is deliberate: the accessory -->
   <!-- transform budget is about 78 canvas units from the head centre, and a shoulder-length fall -->
   <!-- breaks it on the bundles whose head-to-torso proportion differs most. Do not lengthen it. -->
-  <!-- It is a decorative fall behind the hairline and never covers the face. -->
-  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60 -->
+  <!-- headwear draws at z 100, ABOVE the face, so the fall is drawn strictly OUTSIDE the head -->
+  <!-- ellipse (cx 200 cy 132 rx 60 ry 62) as two side panels and a crown sliver. Nothing at all -->
+  <!-- is drawn over the face: a sheer wash across the features reads as a bug, not as tulle. -->
   <defs>
     <linearGradient id="accessories-teen-headwear-veil__fall" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #FBF3E4)" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="var(--c2, #DCC9B4)" stop-opacity="0.42"/>
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="var(--c2, #D8C4AC)" stop-opacity="0.5"/>
     </linearGradient>
     <pattern id="accessories-teen-headwear-veil__tulle" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
-      <path d="M0 7 h14 M7 0 v14" stroke="var(--c2, #DCC9B4)" stroke-opacity="0.4" stroke-width="1.6" fill="none"/>
+      <path d="M0 7 h14 M7 0 v14" stroke="var(--c2, #D8C4AC)" stroke-opacity="0.45" stroke-width="1.6" fill="none"/>
     </pattern>
-    <clipPath id="accessories-teen-headwear-veil__clip">
-      <path d="M152 100 Q200 84 248 100 Q272 138 266 178 Q262 200 246 204
-               Q200 214 154 204 Q138 200 134 178 Q128 138 152 100 Z"/>
+    <clipPath id="accessories-teen-headwear-veil__clipL">
+      <path d="M150 92 Q126 112 122 152 Q118 186 130 204 Q146 212 156 202
+               Q142 176 142 148 Q142 118 158 100 Z"/>
+    </clipPath>
+    <clipPath id="accessories-teen-headwear-veil__clipR">
+      <path d="M250 92 Q274 112 278 152 Q282 186 270 204 Q254 212 244 202
+               Q258 176 258 148 Q258 118 242 100 Z"/>
     </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <path d="M152 100 Q200 84 248 100 Q272 138 266 178 Q262 200 246 204
-             Q200 214 154 204 Q138 200 134 178 Q128 138 152 100 Z"
+    <!-- left fall, hanging outside the head from the band to just past the jaw -->
+    <path d="M150 92 Q126 112 122 152 Q118 186 130 204 Q146 212 156 202
+             Q142 176 142 148 Q142 118 158 100 Z"
           fill="url(#accessories-teen-headwear-veil__fall)"/>
-    <g clip-path="url(#accessories-teen-headwear-veil__clip)">
-      <rect x="128" y="84" width="146" height="132" fill="url(#accessories-teen-headwear-veil__tulle)"/>
+    <!-- right fall -->
+    <path d="M250 92 Q274 112 278 152 Q282 186 270 204 Q254 212 244 202
+             Q258 176 258 148 Q258 118 242 100 Z"
+          fill="url(#accessories-teen-headwear-veil__fall)"/>
+    <!-- the crown sliver, standing just clear of the scalp between the two falls -->
+    <path d="M152 96 Q200 66 248 96 Q244 82 200 74 Q156 82 152 96 Z"
+          fill="url(#accessories-teen-headwear-veil__fall)"/>
+    <g clip-path="url(#accessories-teen-headwear-veil__clipL)">
+      <rect x="118" y="88" width="44" height="128" fill="url(#accessories-teen-headwear-veil__tulle)"/>
+    </g>
+    <g clip-path="url(#accessories-teen-headwear-veil__clipR)">
+      <rect x="238" y="88" width="44" height="128" fill="url(#accessories-teen-headwear-veil__tulle)"/>
     </g>
   </g>
 
   <!-- the narrow band at the hairline that the fall is gathered onto -->
-  <path d="M146 106 Q200 86 254 106 L252 118 Q200 100 148 118 Z" fill="var(--c3, #EBD9C2)"/>
-  <circle cx="200" cy="96" r="6" fill="var(--c3, #EBD9C2)"/>
-  <circle cx="176" cy="100" r="4" fill="var(--c3, #EBD9C2)"/>
-  <circle cx="224" cy="100" r="4" fill="var(--c3, #EBD9C2)"/>
+  <path d="M146 100 Q200 78 254 100 L252 112 Q200 92 148 112 Z" fill="var(--c3, #EBD9C2)"/>
+  <circle cx="200" cy="88" r="6" fill="var(--c3, #EBD9C2)"/>
+  <circle cx="174" cy="93" r="4" fill="var(--c3, #EBD9C2)"/>
+  <circle cx="226" cy="93" r="4" fill="var(--c3, #EBD9C2)"/>
 
-  <!-- gathers falling from the band, and the soft scalloped hem just past the jaw -->
-  <path d="M164 116 Q152 158 148 198" stroke="var(--c2, #DCC9B4)" stroke-opacity="0.5"
+  <!-- gathers falling from the band down each side, and the scalloped hem just past the jaw -->
+  <path d="M144 112 Q132 152 130 194" stroke="var(--c2, #D8C4AC)" stroke-opacity="0.6"
         stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M236 116 Q248 158 252 198" stroke="var(--c2, #DCC9B4)" stroke-opacity="0.5"
+  <path d="M256 112 Q268 152 270 194" stroke="var(--c2, #D8C4AC)" stroke-opacity="0.6"
         stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M138 194 Q168 212 200 210 Q232 212 262 194" stroke="var(--c3, #EBD9C2)"
-        stroke-opacity="0.8" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M162 100 Q186 90 210 92" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+  <path d="M124 190 Q136 208 152 204" stroke="var(--c3, #EBD9C2)" stroke-opacity="0.85"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M276 190 Q264 208 248 204" stroke="var(--c3, #EBD9C2)" stroke-opacity="0.85"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M162 92 Q186 80 210 82" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
         fill="none" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent Suit" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=ONE long sleeve, one bare arm · closure=ASYMMETRIC WRAP right over left to a
+       low hip fastening · hem=ankle · volume=skin-close with a narrow one-sided half-cape -->
+  <!-- no scalloped or winged cape hem, no pointed ears, no chest emblem. The whole read is the
+       asymmetry: one covered shoulder, one bare arm, one cape edge. -->
+  <defs>
+    <linearGradient id="teen-female-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2C2840)"/>
+      <stop offset="1" stop-color="var(--c2, #1E1B2E)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shadow-agent__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46405E)"/>
+      <stop offset="1" stop-color="var(--c2, #2C2840)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shadow-agent__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46405E)"/>
+      <stop offset="1" stop-color="var(--c2, #2C2840)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shadow-agent__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46405E)"/>
+      <stop offset="1" stop-color="var(--c2, #24213A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-shadow-agent__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A3552)"/>
+      <stop offset="1" stop-color="var(--c2, #24213A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow half-cape, hung from the single covered shoulder only, falling to the calf -->
+    <path d="M150 198 q-30 6 -38 32 l-24 268 q28 14 60 4 l14 -298 q-4 -6 -12 -6 z"
+          fill="url(#teen-female-costume-shadow-agent__cape)"/>
+    <!-- ankle-hem legs -->
+    <path d="M196 348 h-32 q-6 92 -4 196 h34 q4 -98 2 -196 z"
+          fill="url(#teen-female-costume-shadow-agent__leg)"/>
+    <path d="M204 348 h32 q6 92 4 196 h-34 q-4 -98 -2 -196 z"
+          fill="url(#teen-female-costume-shadow-agent__leg)"/>
+    <!-- asymmetric wrap-front torso: covered on the left, cut away on the right -->
+    <path d="M166 194 h30 L252 264 v72 q0 26 -26 26 h-56 q-26 0 -26 -26 v-108 q0 -34 22 -34 z"
+          fill="url(#teen-female-costume-shadow-agent__body)"/>
+    <!-- the single long sleeve, on the covered shoulder -->
+    <path d="M124 214 q0 -18 14 -18 h12 q12 0 12 18 v122 q0 16 -16 16 h-8 q-14 0 -14 -16 z"
+          fill="url(#teen-female-costume-shadow-agent__sleeve)"/>
+  </g>
+
+  <!-- the crossing wrap panel, right over left, closing low at the hip -->
+  <path d="M172 196 L248 336 q-8 16 -26 16 q-16 0 -22 -14 L154 214 q-2 -14 18 -18 z"
+        fill="url(#teen-female-costume-shadow-agent__wrap)"/>
+  <!-- low hip fastening -->
+  <circle cx="230" cy="344" r="10" fill="var(--c3, #6BBFAD)"/>
+  <path d="M230 354 q-6 22 -2 40" stroke="var(--c3, #6BBFAD)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide wrist wrap on the bare arm -->
+  <path d="M248 314 h30 q4 14 0 30 h-30 q-4 -16 0 -30 z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M248 322 h30 M248 334 h30" stroke="var(--c2, #2C2840)" stroke-width="3"
+        stroke-opacity="0.55" fill="none"/>
+
+  <!-- sash across the waist -->
+  <path d="M144 306 q54 18 106 2 l2 16 q-54 18 -108 0 z" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- cape lining edge -->
+  <path d="M104 264 l-14 232" stroke="var(--c3, #6BBFAD)" stroke-width="5" stroke-opacity="0.6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M170 208 q22 12 44 4" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

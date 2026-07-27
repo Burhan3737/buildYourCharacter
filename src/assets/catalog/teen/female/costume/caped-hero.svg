@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Skyguard" data-family="caped-hero" data-slot="costume"
      data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- fallback was periwinkle plus RED with a gold chest diamond, which is a banned pairing plus
+       an emblem. It is now periwinkle plus mint plus butter, and the chest is plain. -->
   <defs>
     <linearGradient id="teen-female-costume-caped-hero__cape" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #9E3E38)"/>
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8878)"/>
     </linearGradient>
     <linearGradient id="teen-female-costume-caped-hero__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
@@ -19,8 +22,8 @@
       <stop offset="1" stop-color="var(--c1, #6A7CCB)"/>
     </linearGradient>
     <linearGradient id="teen-female-costume-caped-hero__trim" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c2, #C4534B)"/>
-      <stop offset="1" stop-color="var(--c2, #A8443D)"/>
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9384)"/>
     </linearGradient>
   </defs>
 
@@ -50,15 +53,18 @@
   <rect x="144" y="326" width="112" height="20" rx="10" fill="var(--c3, #F7C873)"/>
   <rect x="188" y="324" width="24" height="24" rx="9" fill="var(--c3, #F7C873)"/>
 
-  <!-- original chest mark: a simple diamond -->
-  <path d="M200 216 L218 244 L200 272 L182 244 Z" fill="var(--c3, #F7C873)"/>
+  <!-- PLAIN CHEST. There is deliberately no emblem, crest or applied chest graphic here: a centred
+       chest motif on a heroic costume is an emblem, and an emblem is the trademark problem.
+       A diamond mark was removed from this file for exactly that reason. Do not put one back.
+       The chest carries a plain yoke seam instead, so the torso still has two regions to read. -->
+  <path d="M148 236 q52 18 104 0 v10 q-52 18 -104 0 z" fill="var(--c2, #6BBFAD)" fill-opacity="0.55"/>
 
   <!-- gloves and boots -->
   <g class="sp-shadow">
-    <rect x="123" y="316" width="28" height="18" rx="9" fill="var(--c2, #C4534B)"/>
-    <rect x="249" y="316" width="28" height="18" rx="9" fill="var(--c2, #C4534B)"/>
-    <circle cx="137" cy="346" r="15" fill="var(--c2, #C4534B)"/>
-    <circle cx="263" cy="346" r="15" fill="var(--c2, #C4534B)"/>
+    <rect x="123" y="316" width="28" height="18" rx="9" fill="var(--c2, #6BBFAD)"/>
+    <rect x="249" y="316" width="28" height="18" rx="9" fill="var(--c2, #6BBFAD)"/>
+    <circle cx="137" cy="346" r="15" fill="var(--c2, #6BBFAD)"/>
+    <circle cx="263" cy="346" r="15" fill="var(--c2, #6BBFAD)"/>
     <rect x="165" y="458" width="34" height="92" rx="17" fill="url(#teen-female-costume-caped-hero__trim)"/>
     <rect x="201" y="458" width="34" height="92" rx="17" fill="url(#teen-female-costume-caped-hero__trim)"/>
     <rect x="156" y="540" width="50" height="34" rx="16" fill="url(#teen-female-costume-caped-hero__trim)"/>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speedster Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=SLEEVELESS deep-scooped armhole with a high closed neck · closure=closed
+       hem=ankle · volume=skin-close with a pair of standing calf fin-vanes -->
+  <!-- deliberately no chest emblem, no crest and no bolt. The identity of this row lives in the
+       calf vanes and the single raked seam, which is what keeps it clear of published heroes. -->
+  <defs>
+    <linearGradient id="teen-female-costume-speedster__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB3C4)"/>
+      <stop offset="1" stop-color="var(--c2, #2C6F80)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-speedster__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2C6F80)"/>
+      <stop offset="1" stop-color="var(--c2, #235A69)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-speedster__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB3C4)"/>
+      <stop offset="1" stop-color="var(--c2, #2C6F80)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #2C6F80)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- swept fin-vanes standing off the outer calf of each leg, 50u clear of the shin -->
+    <path d="M168 444 q-30 12 -50 44 q-4 8 4 10 q28 4 46 22 z"
+          fill="url(#teen-female-costume-speedster__vane)"/>
+    <path d="M232 444 q30 12 50 44 q4 8 -4 10 q-28 4 -46 22 z"
+          fill="url(#teen-female-costume-speedster__vane)"/>
+    <!-- skin-close legs, ankle hem -->
+    <path d="M200 338 h-34 v184 q2 14 6 24 h22 q4 -10 6 -24 z"
+          fill="url(#teen-female-costume-speedster__leg)"/>
+    <path d="M200 338 h34 v184 q-2 14 -6 24 h-22 q-4 -10 -6 -24 z"
+          fill="url(#teen-female-costume-speedster__leg)"/>
+    <path d="M150 338 h100 q12 0 12 14 v20 q0 16 -20 16 h-84 q-20 0 -20 -16 v-20 q0 -14 12 -14 z"
+          fill="url(#teen-female-costume-speedster__hip)"/>
+    <!-- one-piece torso: narrow shoulder strap, deep scoop, high closed neck stopping at the jaw -->
+    <path d="M184 192 h32 v16 q26 2 34 26 q6 20 6 42 v50 q0 28 -26 28 h-60 q-26 0 -26 -28 v-50
+             q0 -22 6 -42 q8 -24 34 -26 z"
+          fill="url(#teen-female-costume-speedster__body)"/>
+  </g>
+
+  <!-- high collar band -->
+  <path d="M182 202 q18 9 36 0 v12 q-18 9 -36 0 z" fill="var(--c3, #F7C873)"/>
+  <!-- one raked diagonal seam across the suit, the only chest marking -->
+  <path d="M150 286 L248 222" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 306 L246 246" stroke="var(--c2, #2C6F80)" stroke-width="4" stroke-opacity="0.7"
+        fill="none" stroke-linecap="round"/>
+  <!-- waist band -->
+  <path d="M146 316 q54 18 108 0 v16 q-54 18 -108 0 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- vane ribs -->
+  <g stroke="var(--c2, #2C6F80)" stroke-width="3" fill="none" stroke-linecap="round" stroke-opacity="0.8">
+    <path d="M166 456 q-22 14 -34 32"/><path d="M166 480 q-18 10 -28 20"/>
+    <path d="M234 456 q22 14 34 32"/><path d="M234 480 q18 10 28 20"/>
+  </g>
+
+  <!-- ankle cuffs -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M168 512 q16 8 32 0 v14 q-16 8 -32 0 z"/>
+    <path d="M200 512 q16 8 32 0 v14 q-16 8 -32 0 z"/>
+  </g>
+
+  <path d="M176 208 q24 12 48 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
