@@ -1,44 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sandals" data-family="sandals" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- redrawn with a CLOSED HEEL COUNTER and an ANKLE BUCKLE, so the straps resolve into a sandal -->
+  <!-- rather than a third slide. slides stay backless; flip-flops keep the Y-thong -->
+  <!-- axes: shaft=closed heel counter to the ankle - toe=OPEN - fastening=ANKLE BUCKLE - sole=flat and thin -->
   <defs>
     <linearGradient id="teen-female-shoes-sandals__strap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
-      <stop offset="1" stop-color="var(--c2, #D8867A)"/>
+      <stop offset="1" stop-color="var(--c2, #C97C70)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-shoes-sandals__counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C97C70)"/>
     </linearGradient>
   </defs>
 
-  <!-- thin sole slabs: left first, right in front -->
   <g class="sp-shadow">
-    <rect x="152" y="562" width="52" height="8" rx="4" fill="var(--c2, #D8867A)"/>
-    <rect x="196" y="562" width="52" height="8" rx="4" fill="var(--c2, #D8867A)"/>
+    <path d="M152 532 Q150 548 152 562 L174 562 Q172 548 174 534 Q164 528 152 532 Z"
+          fill="url(#teen-female-shoes-sandals__counter)"/>
+    <path d="M248 532 Q250 548 248 562 L226 562 Q228 548 226 534 Q236 528 248 532 Z"
+          fill="url(#teen-female-shoes-sandals__counter)"/>
+    <path d="M150 562 H206 Q210 562 210 566 Q210 570 206 570 H150 Q146 570 146 566 Q146 562 150 562 Z"
+          fill="url(#teen-female-shoes-sandals__strap)"/>
+    <path d="M250 562 H194 Q190 562 190 566 Q190 570 194 570 H250 Q254 570 254 566 Q254 562 250 562 Z"
+          fill="url(#teen-female-shoes-sandals__strap)"/>
   </g>
 
-  <!-- toe straps -->
-  <rect x="158" y="552" width="40" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
-  <rect x="202" y="552" width="40" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
+  <!-- two instep straps over the open toe -->
+  <path d="M172 544 Q188 540 202 548 L202 556 Q188 549 172 552 Z" fill="var(--c1, #F4A79B)"/>
+  <path d="M176 556 Q190 553 204 560 L204 566 Q190 560 176 562 Z" fill="var(--c1, #F4A79B)"/>
+  <path d="M228 544 Q212 540 198 548 L198 556 Q212 549 228 552 Z" fill="var(--c1, #F4A79B)"/>
+  <path d="M224 556 Q210 553 196 560 L196 566 Q210 560 224 562 Z" fill="var(--c1, #F4A79B)"/>
 
-  <!-- instep straps -->
-  <rect x="160" y="540" width="38" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
-  <rect x="202" y="540" width="38" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
+  <!-- ankle strap round the closed counter, with a square buckle at the outside -->
+  <path d="M152 528 Q172 522 192 528 L192 538 Q172 532 152 538 Z" fill="var(--c1, #F4A79B)"/>
+  <path d="M248 528 Q228 522 208 528 L208 538 Q228 532 248 538 Z" fill="var(--c1, #F4A79B)"/>
+  <rect x="158" y="524" width="13" height="16" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="229" y="524" width="13" height="16" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="162" y="529" width="5" height="6" rx="1.5" fill="var(--c2, #C97C70)"/>
+  <rect x="233" y="529" width="5" height="6" rx="1.5" fill="var(--c2, #C97C70)"/>
 
-  <!-- ankle straps -->
-  <rect x="160" y="528" width="36" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
-  <rect x="204" y="528" width="36" height="10" rx="5" fill="url(#teen-female-shoes-sandals__strap)"/>
-
-  <!-- thin strappy ankle tie, trend detail -->
-  <rect x="166" y="518" width="24" height="7" rx="3.5" fill="url(#teen-female-shoes-sandals__strap)"/>
-  <rect x="210" y="518" width="24" height="7" rx="3.5" fill="url(#teen-female-shoes-sandals__strap)"/>
-
-  <!-- instep highlights -->
-  <path d="M164 544 q14 4 28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+  <path d="M176 548 q14 3 24 2" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-  <path d="M208 544 q14 4 28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+  <path d="M224 548 q-14 3 -24 2" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="4"
         fill="none" stroke-linecap="round"/>
-
-  <!-- little knot/buckle accents -->
-  <circle cx="178" cy="521" r="4" fill="var(--c3, #F7C873)"/>
-  <circle cx="222" cy="521" r="4" fill="var(--c3, #F7C873)"/>
-  <rect x="174" y="529" width="8" height="8" rx="2" fill="var(--c3, #F7C873)"/>
-  <rect x="218" y="529" width="8" height="8" rx="2" fill="var(--c3, #F7C873)"/>
 </svg>

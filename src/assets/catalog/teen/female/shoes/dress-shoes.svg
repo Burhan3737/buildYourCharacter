@@ -1,40 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dress Shoes" data-family="dress-shoes" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- redrawn toward the loafer read the description always permitted, so it stops colliding with -->
+  <!-- ballet-flats and stops leaving oxfords to do all the formal work -->
+  <!-- axes: shaft=low-cut slip-on - toe=TAPERED with an APRON SEAM - fastening=NONE, a raised vamp saddle - sole=low STACKED BLOCK heel -->
   <defs>
     <linearGradient id="teen-female-shoes-dress-shoes__upper" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
-      <stop offset="1" stop-color="var(--c2, #5CA495)"/>
+      <stop offset="1" stop-color="var(--c2, #43806F)"/>
     </linearGradient>
   </defs>
 
-  <!-- sleek low mary-jane uppers: left first, right in front -->
   <g class="sp-shadow">
-    <rect x="154" y="540" width="48" height="24" rx="12" fill="url(#teen-female-shoes-dress-shoes__upper)"/>
-    <rect x="198" y="540" width="48" height="24" rx="12" fill="url(#teen-female-shoes-dress-shoes__upper)"/>
+    <path d="M153 544 Q158 534 172 536 L190 540 Q204 544 209 554 L210 561
+             Q206 566 196 566 H160 Q153 566 153 558 Z"
+          fill="url(#teen-female-shoes-dress-shoes__upper)"/>
+    <path d="M247 544 Q242 534 228 536 L210 540 Q196 544 191 554 L190 561
+             Q194 566 204 566 H240 Q247 566 247 558 Z"
+          fill="url(#teen-female-shoes-dress-shoes__upper)"/>
   </g>
 
-  <!-- slim soles -->
-  <rect x="152" y="560" width="52" height="10" rx="5" fill="var(--c2, #5CA495)"/>
-  <rect x="196" y="560" width="52" height="10" rx="5" fill="var(--c2, #5CA495)"/>
+  <!-- the raised vamp saddle: the loafer signature -->
+  <path d="M170 540 Q184 536 196 544 Q198 552 190 552 Q176 550 168 548 Z" fill="var(--c3, #E8DCC0)"/>
+  <path d="M230 540 Q216 536 204 544 Q202 552 210 552 Q224 550 232 548 Z" fill="var(--c3, #E8DCC0)"/>
 
-  <!-- modest low heel wedges -->
-  <rect x="154" y="556" width="16" height="14" rx="4" fill="var(--c2, #5CA495)"/>
-  <rect x="230" y="556" width="16" height="14" rx="4" fill="var(--c2, #5CA495)"/>
-
-  <!-- instep highlights -->
-  <path d="M159 549 q18 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <!-- apron seam across the tapered toe -->
+  <path d="M196 546 Q204 554 208 562" stroke="var(--c2, #43806F)" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
-  <path d="M203 549 q18 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <path d="M204 546 Q196 554 192 562" stroke="var(--c2, #43806F)" stroke-width="3.5"
         fill="none" stroke-linecap="round"/>
 
-  <!-- mary-jane cross straps -->
-  <rect x="160" y="536" width="32" height="8" rx="4" fill="var(--c3, #3B2A22)"/>
-  <rect x="204" y="536" width="32" height="8" rx="4" fill="var(--c3, #3B2A22)"/>
+  <!-- thin outsole with a low stacked block heel at the back only -->
+  <rect x="150" y="562" width="62" height="8" rx="3" fill="var(--c2, #43806F)"/>
+  <rect x="188" y="562" width="62" height="8" rx="3" fill="var(--c2, #43806F)"/>
+  <path d="M151 552 h18 v18 h-18 z" fill="var(--c3, #E8DCC0)"/>
+  <path d="M231 552 h18 v18 h-18 z" fill="var(--c3, #E8DCC0)"/>
+  <path d="M151 558 h18" stroke="var(--c2, #43806F)" stroke-width="2.5" fill="none"/>
+  <path d="M231 558 h18" stroke="var(--c2, #43806F)" stroke-width="2.5" fill="none"/>
 
-  <!-- round buckle hardware -->
-  <circle cx="188" cy="540" r="4" fill="#FFFFFF"/>
-  <circle cx="232" cy="540" r="4" fill="#FFFFFF"/>
-  <circle cx="188" cy="540" r="2" fill="var(--c3, #3B2A22)"/>
-  <circle cx="232" cy="540" r="2" fill="var(--c3, #3B2A22)"/>
+  <path d="M172 548 q16 6 28 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 548 q-16 6 -28 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
 </svg>
