@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is jeans, which is also a full length two leg trouser.
+       Two axes differ:
+       RISE  low, the waistband sits at y344 under the natural waist rather than on it.
+       LEG WIDTH  close through thigh and knee at 32u, then a hard change of angle at the
+       knee y462 opening to a 60u floor brushing hem at y566. The break is a corner in the
+       outline, not a curve, so it survives thumbnail size.
+       No foot is drawn: shoes draw over the hem. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-flares__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B08055)"/>
+      <stop offset="1" stop-color="var(--c2, #8B6340)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-flares__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B08055)"/>
+      <stop offset="1" stop-color="var(--c2, #976C47)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M150 344 H198 L196 462 L200 566 H140 L164 462 Z"
+          fill="url(#teen-male-bottom-flares__leg)"/>
+    <path d="M250 344 H202 L204 462 L200 566 H260 L236 462 Z"
+          fill="url(#teen-male-bottom-flares__leg)"/>
+    <!-- low slung hip yoke -->
+    <path d="M148 342 h104 q6 0 6 8 v22 q-58 12 -116 0 v-22 q0-8 6-8 z"
+          fill="url(#teen-male-bottom-flares__yoke)"/>
+  </g>
+
+  <!-- low waistband, deliberately sitting below the natural waist -->
+  <rect x="146" y="340" width="108" height="17" rx="8" fill="var(--c2, #8B6340)"/>
+  <path d="M150 346 h100" stroke="var(--c3, #F2DCC0)" stroke-width="2.2"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+
+  <!-- corduroy wale, running down the leg and fanning out through the flare -->
+  <path d="M172 366 L170 462 L154 560" stroke="var(--c3, #F2DCC0)" stroke-width="2"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+  <path d="M184 366 L182 462 L176 560" stroke="var(--c3, #F2DCC0)" stroke-width="2"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+  <path d="M228 366 L230 462 L246 560" stroke="var(--c3, #F2DCC0)" stroke-width="2"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+  <path d="M216 366 L218 462 L224 560" stroke="var(--c3, #F2DCC0)" stroke-width="2"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+
+  <!-- the knee break marked as a seam so the corner reads even flat on -->
+  <path d="M164 462 H196" stroke="var(--c2, #8B6340)" stroke-width="3.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+  <path d="M236 462 H204" stroke="var(--c2, #8B6340)" stroke-width="3.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+
+  <!-- patch pockets on the low seat -->
+  <path d="M160 362 h24 v16 q0 6 -6 6 h-12 q-6 0 -6-6 z" fill="var(--c2, #8B6340)"/>
+  <path d="M216 362 h24 v16 q0 6 -6 6 h-12 q-6 0 -6-6 z" fill="var(--c2, #8B6340)"/>
+
+  <path d="M154 350 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 554 q24 6 46 4" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

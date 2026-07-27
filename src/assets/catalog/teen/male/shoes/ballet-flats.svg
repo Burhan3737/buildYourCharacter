@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ballet Flats" data-family="ballet-flats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is mary janes. Two axes differ:
+       SHAFT HEIGHT  the topline is scooped away to y558, leaving the whole instep bare and
+       the shoe only 22u tall, where mary janes covers the instep and stands 28u.
+       FASTENING  none at all. No strap, no buckle, nothing crosses the foot.
+       Toe stays rounded and the sole is barely thicker than the upper, so it also reads
+       flatter and lower than dress shoes. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-ballet-flats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6D)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-ballet-flats__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE7A6D)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 562 Q147 548 161 546 Q174 556 184 558 Q195 559 199 549 Q205 552 205 562 Q205 568 198 568 H152 Q145 568 146 562 Z"
+          fill="url(#teen-male-shoes-ballet-flats__upper)"/>
+    <path d="M254 562 Q253 548 239 546 Q226 556 216 558 Q205 559 201 549 Q195 552 195 562 Q195 568 202 568 H248 Q255 568 254 562 Z"
+          fill="url(#teen-male-shoes-ballet-flats__upper)"/>
+  </g>
+
+  <!-- the sole is only a rim: barely thicker than the upper -->
+  <path d="M146 564 Q147 570 154 570 H198 Q205 570 205 564 v3 q0 3 -5 3 h-50 q-4 0 -4-3 z"
+        fill="url(#teen-male-shoes-ballet-flats__sole)"/>
+  <path d="M254 564 Q253 570 246 570 H202 Q195 570 195 564 v3 q0 3 5 3 h50 q4 0 4-3 z"
+        fill="url(#teen-male-shoes-ballet-flats__sole)"/>
+
+  <!-- bound topline: the trim that draws the eye to how low the scoop sits -->
+  <path d="M160 546 Q174 557 184 558 Q195 560 200 549" stroke="var(--c3, #F7C873)"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M240 546 Q226 557 216 558 Q205 560 200 549" stroke="var(--c3, #F7C873)"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- rounded toe seam -->
+  <path d="M150 559 Q155 550 162 548" stroke="var(--c2, #CE7A6D)" stroke-width="2.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+  <path d="M250 559 Q245 550 238 548" stroke="var(--c2, #CE7A6D)" stroke-width="2.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+
+  <path d="M152 556 q10-6 20-4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 556 q-10-6 -20-4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

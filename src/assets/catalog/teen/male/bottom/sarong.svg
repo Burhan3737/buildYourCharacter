@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing: a length of plain cloth wrapped at the waist and knotted at one hip.
+       Drawn as cloth, a knot and an overlap, with no community specific woven design.
+       Nearest sibling in this slot is skirt. Two axes differ:
+       LEG LENGTH  mid calf, the hem runs to y512 rather than stopping above the knee.
+       HEM TREATMENT  asymmetric. The wrap drops from y468 on the open side to y512 under
+       the knot, a 44u step cut straight into the outline, and the free overlap edge runs
+       diagonally down one leg from the hip knot. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-sarong__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6D)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-sarong__overlap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CE7A6D)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-sarong__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the wrapped cloth, hem stepping 44u from the open side up under the knotted hip -->
+    <path d="M148 334 H252 Q260 420 258 502 q1 10 -9 10 H188 q-14 0 -14-10 L150 468 Q142 400 148 334 Z"
+          fill="url(#teen-male-bottom-sarong__cloth)"/>
+    <!-- the overlapping front panel, its free edge running down from the knot at the hip -->
+    <path d="M234 344 L256 352 L254 500 q1 10 -9 10 H190 L228 372 Z"
+          fill="url(#teen-male-bottom-sarong__overlap)"/>
+  </g>
+
+  <!-- the knot at one hip: two lobes and a short tail -->
+  <path d="M222 334 q16-8 26 4 q6 8 -2 14 q-10 8 -22 2 q-10-6 -2-20 z"
+        fill="url(#teen-male-bottom-sarong__knot)"/>
+  <path d="M240 344 q11-4 15 3 q3 6 -3 9 q-8 3 -14-3 z"
+        fill="url(#teen-male-bottom-sarong__knot)"/>
+  <path d="M244 358 q9 12 7 28 q-1 6 -7 4 q-6-2 -5-10 q1-10 -3-20 z"
+        fill="var(--c3, #6BBFAD)"/>
+
+  <!-- the wrapped top edge -->
+  <path d="M148 334 H252" stroke="var(--c3, #6BBFAD)" stroke-width="4"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+
+  <!-- fold lines pulling toward the knot, the structural tell that the cloth is wrapped -->
+  <path d="M158 356 Q196 372 224 356" stroke="var(--c2, #CE7A6D)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M154 386 Q192 404 222 386" stroke="var(--c2, #CE7A6D)" stroke-width="3"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+  <path d="M190 508 L232 372" stroke="var(--c2, #CE7A6D)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- the stepped hem, marked so the drop reads at tray size -->
+  <path d="M152 470 L174 502 H246" stroke="var(--c3, #6BBFAD)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 344 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 412 q10 32 8 54" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

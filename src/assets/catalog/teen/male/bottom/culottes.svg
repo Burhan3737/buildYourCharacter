@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is pleated, which is also knee length. Two axes differ:
+       RISE  high, the band tops out at y314 well above the natural waist y336.
+       LEG WIDTH  a genuinely divided leg, 164u across the hem, with a real centre notch
+       44u deep cut into the outline at x200. That notch is the whole family: without it
+       this is a skirt. It is drawn as a hole in the silhouette, never as a line. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-culottes__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47927F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #47927F)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left leg: flat and wide enough to read as half a skirt -->
+    <path d="M146 320 H200 V424 Q198 448 192 468 H124 Q116 468 118 458 L138 360 Q140 336 146 320 Z"
+          fill="url(#teen-male-bottom-culottes__panel)"/>
+    <!-- right leg -->
+    <path d="M254 320 H200 V424 Q202 448 208 468 H276 Q284 468 282 458 L262 360 Q260 336 254 320 Z"
+          fill="url(#teen-male-bottom-culottes__panel)"/>
+  </g>
+
+  <!-- high waistband sitting above the natural waist -->
+  <path d="M144 314 q56-8 112 0 v20 q-56 8 -112 0 z"
+        fill="url(#teen-male-bottom-culottes__band)"/>
+  <path d="M148 322 h104" stroke="var(--c3, #F7C873)" stroke-width="2.4"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+
+  <!-- flat front pleats: structural detail, one per leg either side of the split -->
+  <path d="M170 340 L152 462" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M186 340 L172 464" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M230 340 L248 462" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M214 340 L228 464" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- the inner seams that meet at the top of the notch, read together with the notch itself -->
+  <path d="M200 340 V420" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- turned hem facing on each leg -->
+  <path d="M124 458 H190" stroke="var(--c3, #F7C873)" stroke-width="3"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+  <path d="M276 458 H210" stroke="var(--c3, #F7C873)" stroke-width="3"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+
+  <path d="M152 330 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 448 q30 8 56 6" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

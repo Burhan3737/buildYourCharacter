@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oxfords" data-family="oxfords" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is dress shoes, which is drawn as a plain loafer.
+       Two axes differ:
+       FASTENING  closed lacing. Two quarters meet under the vamp and four short lace bars
+       run between them, where the loafer has no fastening at all.
+       TOE SHAPE  squared, with a vertical toe face and a clear cross seam cap, against the
+       loafer's rounded toe. The welt also projects as a visible rim around the sole. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-oxfords__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A4436)"/>
+      <stop offset="1" stop-color="var(--c2, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-oxfords__welt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c1, #5A4436)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M147 566 V548 Q147 540 156 538 L184 530 Q201 526 201 540 V558 Q201 566 195 566 Z"
+          fill="url(#teen-male-shoes-oxfords__upper)"/>
+    <path d="M253 566 V548 Q253 540 244 538 L216 530 Q199 526 199 540 V558 Q199 566 205 566 Z"
+          fill="url(#teen-male-shoes-oxfords__upper)"/>
+  </g>
+
+  <!-- welted sole: a rim that projects past the upper on every side -->
+  <path d="M147 559 H199 q6 0 6 6 q0 5 -6 5 H147 q-6 0 -6-5 q0-6 6-6 z"
+        fill="url(#teen-male-shoes-oxfords__welt)"/>
+  <path d="M253 559 H201 q-6 0 -6 6 q0 5 6 5 H253 q6 0 6-5 q0-6 -6-6 z"
+        fill="url(#teen-male-shoes-oxfords__welt)"/>
+
+  <!-- closed quarters either side of the lacing -->
+  <path d="M172 544 q12-6 24-8 v10 q-12 2 -24 8 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M172 556 q12-6 24-8 v9 q-12 2 -24 7 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M228 544 q-12-6 -24-8 v10 q12 2 24 8 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M228 556 q-12-6 -24-8 v9 q12 2 24 7 z" fill="var(--c2, #3B2A22)"/>
+
+  <!-- four short lace bars, closed under the vamp -->
+  <path d="M176 543 h20" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 550 h20" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M177 557 h19" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 543 h20" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 550 h20" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 557 h19" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- squared toe cap seam -->
+  <path d="M164 543 V563" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M236 543 V563" stroke="var(--c3, #E8DCC8)" stroke-width="2.6"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 546 q12-6 26-9" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 546 q-12-6 -26-9" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

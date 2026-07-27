@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is boots. Two axes differ:
+       SHAFT HEIGHT  a 116u column rising to just under the knee at y450, where boots stops
+       at the ankle.
+       FASTENING  none at all. There is no lace ladder and no strap: one unbroken smooth
+       column with a single pull tab at the top. Toe is tapered, sole is a thin stack. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-tall-boots__leather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55506B)"/>
+      <stop offset="1" stop-color="var(--c2, #3B3750)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-tall-boots__stack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3B3750)"/>
+      <stop offset="1" stop-color="var(--c1, #55506B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M164 450 H198 V536 L204 560 Q206 566 198 566 H152 Q144 566 145 558 L158 528 V456 Q158 450 164 450 Z"
+          fill="url(#teen-male-shoes-tall-boots__leather)"/>
+    <path d="M236 450 H202 V536 L196 560 Q194 566 202 566 H248 Q256 566 255 558 L242 528 V456 Q242 450 236 450 Z"
+          fill="url(#teen-male-shoes-tall-boots__leather)"/>
+  </g>
+
+  <!-- thin stacked sole -->
+  <rect x="144" y="560" width="62" height="10" rx="4" fill="url(#teen-male-shoes-tall-boots__stack)"/>
+  <rect x="194" y="560" width="62" height="10" rx="4" fill="url(#teen-male-shoes-tall-boots__stack)"/>
+
+  <!-- topline binding at the shaft mouth -->
+  <rect x="157" y="448" width="42" height="9" rx="4" fill="var(--c2, #3B3750)"/>
+  <rect x="201" y="448" width="42" height="9" rx="4" fill="var(--c2, #3B3750)"/>
+
+  <!-- one small pull tab each, the only hardware on the boot -->
+  <path d="M186 442 h10 q4 0 4 5 v8 h-14 v-8 q0-5 0-5 z" fill="var(--c3, #F7C873)"/>
+  <path d="M214 442 h-10 q-4 0 -4 5 v8 h14 v-8 q0-5 0-5 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- vamp seam curving over the instep, and the heel breast line -->
+  <path d="M158 528 Q176 522 196 526" stroke="var(--c2, #3B3750)" stroke-width="3"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+  <path d="M242 528 Q224 522 204 526" stroke="var(--c2, #3B3750)" stroke-width="3"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+  <path d="M196 538 V558" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+  <path d="M204 538 V558" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+
+  <path d="M162 462 q18 8 34 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 462 q-18 8 -34 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

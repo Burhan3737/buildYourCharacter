@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ice Skates" data-family="ice-skates" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is boots. Two axes differ:
+       SOLE DEPTH  a thin blade standing 14u clear of the sole plate on two narrow
+       stanchions, so there is real open air between the boot and the ground line. Nothing
+       else in this slot has a hole under the foot.
+       FASTENING  a long hooked lace ladder climbing the whole shaft, where boots has no
+       lacing at all. The padded boot tops out above the ankle at y500. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-ice-skates__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE7DE)"/>
+      <stop offset="1" stop-color="var(--c2, #C2B6A6)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-ice-skates__steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9FB2C6)"/>
+      <stop offset="1" stop-color="var(--c2, #C2B6A6)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- padded boots, shaft above the ankle -->
+    <path d="M160 508 Q160 500 169 500 H193 Q201 500 201 508 V534 Q201 544 194 546 H152 Q145 546 145 539 Q145 532 152 530 Q160 528 160 520 Z"
+          fill="url(#teen-male-shoes-ice-skates__boot)"/>
+    <path d="M240 508 Q240 500 231 500 H207 Q199 500 199 508 V534 Q199 544 206 546 H248 Q255 546 255 539 Q255 532 248 530 Q240 528 240 520 Z"
+          fill="url(#teen-male-shoes-ice-skates__boot)"/>
+    <!-- sole plates -->
+    <rect x="146" y="544" width="58" height="8" rx="3" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <rect x="196" y="544" width="58" height="8" rx="3" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <!-- stanchions: two per foot, leaving the gap that names the family -->
+    <rect x="155" y="552" width="9" height="14" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <rect x="186" y="552" width="9" height="14" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <rect x="205" y="552" width="9" height="14" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <rect x="236" y="552" width="9" height="14" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <!-- the blades -->
+    <rect x="146" y="566" width="58" height="4" rx="2" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+    <rect x="196" y="566" width="58" height="4" rx="2" fill="url(#teen-male-shoes-ice-skates__steel)"/>
+  </g>
+
+  <!-- padded collar roll at the shaft mouth -->
+  <path d="M158 498 q22-8 44 0 v9 q-22 8 -44 0 z" fill="var(--c2, #C2B6A6)"/>
+  <path d="M242 498 q-22-8 -44 0 v9 q22 8 44 0 z" fill="var(--c2, #C2B6A6)"/>
+
+  <!-- long hooked lace ladder up the shaft -->
+  <path d="M166 512 h28" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M165 520 h30" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 528 h32" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 536 h34" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 512 h28" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M205 520 h30" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 528 h32" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 536 h34" stroke="var(--c3, #9FB2C6)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- toe pick notches on the front of each blade -->
+  <path d="M148 562 v6" stroke="var(--c3, #9FB2C6)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 562 v6" stroke="var(--c3, #9FB2C6)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 508 q20 8 36 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 508 q-20 8 -36 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

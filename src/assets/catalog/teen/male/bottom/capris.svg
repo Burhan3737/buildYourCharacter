@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is jeans. Two axes differ:
+       LEG LENGTH  cropped, the leg stops dead at mid calf y502 instead of running to the ankle.
+       HEM TREATMENT  a deep single turn up band through c2, not a plain cut hem.
+       Rise stays natural and the leg stays narrow and straight, which is what makes the
+       cropped length and the cuff do all the identifying work.
+       No foot is drawn here: shoes draw over the hem. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-capris__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B8FC4)"/>
+      <stop offset="1" stop-color="var(--c2, #5B6C9E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-capris__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B8FC4)"/>
+      <stop offset="1" stop-color="var(--c2, #6376A8)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-capris__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5B6C9E)"/>
+      <stop offset="1" stop-color="var(--c1, #7B8FC4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hip and seat block, natural rise, covering the body hips x150-250 y336-384 -->
+    <path d="M148 330 q52-12 104 0 v40 q0 20 -22 20 h-60 q-22 0 -22-20 z"
+          fill="url(#teen-male-bottom-capris__seat)"/>
+    <!-- narrow straight legs, 40u at the thigh closing to 35u, stopping at mid calf -->
+    <path d="M158 356 H198 L196 496 q0 6 -7 6 h-24 q-7 0 -7-6 z"
+          fill="url(#teen-male-bottom-capris__leg)"/>
+    <path d="M242 356 H202 L204 496 q0 6 7 6 h24 q7 0 7-6 z"
+          fill="url(#teen-male-bottom-capris__leg)"/>
+  </g>
+
+  <!-- the turn ups: the hem treatment that names the family -->
+  <rect x="158" y="482" width="39" height="24" rx="7"
+        fill="url(#teen-male-bottom-capris__cuff)"/>
+  <rect x="203" y="482" width="39" height="24" rx="7"
+        fill="url(#teen-male-bottom-capris__cuff)"/>
+  <path d="M160 486 h35" stroke="var(--c3, #F7C873)" stroke-width="2.4"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+  <path d="M205 486 h35" stroke="var(--c3, #F7C873)" stroke-width="2.4"
+        stroke-opacity="0.85" fill="none" stroke-linecap="round"/>
+
+  <!-- structured waistband with loops and a topstitched fly -->
+  <rect x="146" y="328" width="108" height="20" rx="9" fill="var(--c2, #5B6C9E)"/>
+  <rect x="164" y="326" width="7" height="24" rx="3" fill="var(--c2, #5B6C9E)"/>
+  <rect x="196" y="326" width="7" height="24" rx="3" fill="var(--c2, #5B6C9E)"/>
+  <rect x="228" y="326" width="7" height="24" rx="3" fill="var(--c2, #5B6C9E)"/>
+  <path d="M200 350 v28" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- slant front pockets -->
+  <path d="M162 354 q10 16 22 20" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M238 354 q-10 16 -22 20" stroke="var(--c3, #F7C873)" stroke-width="2.2"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <path d="M154 340 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 380 q0 46 -2 92" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

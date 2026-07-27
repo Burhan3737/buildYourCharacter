@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing, drawn as clothes someone wears to the shops. Soft cotton, a fine
+       drawstring with two aglets and plain fold seams. No community specific woven motif.
+       Nearest sibling in this slot is wide leg. Two axes differ:
+       LEG WIDTH  a triangle, not a tube: 192u across at y432 collapsing to a 32u ankle,
+       where wide leg is a straight column of one width top to bottom.
+       HEM TREATMENT  a plain close ankle band that grips the leg, not an open hem.
+       No foot is drawn: shoes draw over the ankle band. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCCDB4)"/>
+      <stop offset="1" stop-color="var(--c2, #B49F80)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-shalwar__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B49F80)"/>
+      <stop offset="1" stop-color="var(--c1, #DCCDB4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one enormous gathered mass: widest at y432, narrowing hard into two close ankles -->
+    <path d="M152 334 H248 Q296 380 296 432 Q290 490 236 528 H204 L200 470 L196 528 H164 Q110 490 104 432 Q104 380 152 334 Z"
+          fill="url(#teen-male-bottom-shalwar__cloth)"/>
+  </g>
+
+  <!-- plain close ankle bands -->
+  <rect x="161" y="522" width="38" height="24" rx="9" fill="url(#teen-male-bottom-shalwar__cuff)"/>
+  <rect x="201" y="522" width="38" height="24" rx="9" fill="url(#teen-male-bottom-shalwar__cuff)"/>
+  <path d="M164 528 h32" stroke="var(--c3, #6BBFAD)" stroke-width="2.2"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M204 528 h32" stroke="var(--c3, #6BBFAD)" stroke-width="2.2"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- drawstring casing at the natural waist -->
+  <path d="M150 330 q50-10 100 0 v18 q-50 10 -100 0 z" fill="var(--c2, #B49F80)"/>
+
+  <!-- the drawstring itself, with two aglets -->
+  <path d="M188 346 q-4 16 -10 30" stroke="var(--c3, #6BBFAD)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 346 q5 15 12 28" stroke="var(--c3, #6BBFAD)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="174" y="374" width="7" height="13" rx="3" fill="var(--c3, #6BBFAD)"/>
+  <rect x="222" y="372" width="7" height="13" rx="3" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- radiating gather folds falling from the drawstring waist into the full thigh -->
+  <path d="M166 350 Q142 420 128 486" stroke="var(--c2, #B49F80)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M180 352 Q166 424 168 500" stroke="var(--c2, #B49F80)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M220 352 Q234 424 232 500" stroke="var(--c2, #B49F80)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M234 350 Q258 420 272 486" stroke="var(--c2, #B49F80)" stroke-width="3"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M200 356 Q200 424 200 466" stroke="var(--c2, #B49F80)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 340 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 420 q12 44 34 74" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

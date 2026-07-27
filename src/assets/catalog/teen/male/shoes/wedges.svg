@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wedges" data-family="wedges" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is heels. Two axes differ:
+       SOLE DEPTH  one continuous solid wedge, 10u under the toe ramping to 31u under the
+       heel with NO gap beneath the arch. Heels leaves open air under the arch and stands on
+       a slim column; platform boots is a flat slab of one thickness. This is a solid
+       triangle and that triangle is the whole family.
+       FASTENING  an ankle strap with a small buckle, where heels is an open court vamp. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-wedges__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D8B27A)"/>
+      <stop offset="1" stop-color="var(--c2, #A97F58)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-wedges__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #A97F58)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the solid wedge: a filled ramp from toe to heel, no arch gap -->
+    <path d="M146 570 H200 q6 0 6-6 V542 q0-5 -6-3 L152 560 q-8 3 -8 6 v1 q0 3 2 3 z"
+          fill="url(#teen-male-shoes-wedges__wedge)"/>
+    <path d="M254 570 H200 q-6 0 -6-6 V542 q0-5 6-3 L248 560 q8 3 8 6 v1 q0 3 -2 3 z"
+          fill="url(#teen-male-shoes-wedges__wedge)"/>
+    <!-- vamps over the toe -->
+    <path d="M148 560 Q152 546 168 543 Q183 541 191 547 Q196 551 191 555 L155 566 Q146 567 148 560 Z"
+          fill="url(#teen-male-shoes-wedges__upper)"/>
+    <path d="M252 560 Q248 546 232 543 Q217 541 209 547 Q204 551 209 555 L245 566 Q254 567 252 560 Z"
+          fill="url(#teen-male-shoes-wedges__upper)"/>
+    <!-- ankle straps -->
+    <path d="M158 528 q21-8 42 0 v11 q-21 8 -42 0 z"
+          fill="url(#teen-male-shoes-wedges__upper)"/>
+    <path d="M242 528 q-21-8 -42 0 v11 q21 8 42 0 z"
+          fill="url(#teen-male-shoes-wedges__upper)"/>
+  </g>
+
+  <!-- small buckles on the outside of each ankle -->
+  <rect x="158" y="527" width="11" height="13" rx="3" fill="var(--c3, #D8B27A)"/>
+  <rect x="231" y="527" width="11" height="13" rx="3" fill="var(--c3, #D8B27A)"/>
+  <path d="M163 527 v13" stroke="var(--c2, #A97F58)" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M237 527 v13" stroke="var(--c2, #A97F58)" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cork layering lines running along the ramp, so the wedge reads as solid stacked cork -->
+  <path d="M150 563 L200 546" stroke="var(--c2, #A97F58)" stroke-width="2.4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M150 568 L202 553" stroke="var(--c2, #A97F58)" stroke-width="2.4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M250 563 L200 546" stroke="var(--c2, #A97F58)" stroke-width="2.4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M250 568 L198 553" stroke="var(--c2, #A97F58)" stroke-width="2.4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- toe strap edge binding -->
+  <path d="M152 552 Q166 545 186 546" stroke="var(--c3, #D8B27A)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 552 Q234 545 214 546" stroke="var(--c3, #D8B27A)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M162 534 q18-6 34-2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 534 q-18-6 -34-2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

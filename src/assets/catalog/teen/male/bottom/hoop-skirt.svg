@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Exists so a player can build a gown out of separates instead of being pushed into a
+       one piece. Fallback palette is deliberately a house mint, NOT pale blue, NOT yellow,
+       NOT pink over a gold bodice: those are named animated princess palettes.
+       Nearest sibling in this slot is maxi skirt. Two axes differ:
+       LEG WIDTH  a rigid dome clearing the widest body point x150 to x250 by more than 90u
+       per side, reaching x106 and x294 on the ground line, where maxi skirt is a narrow
+       column that follows the leg.
+       HEM TREATMENT  a ground sweeping hem at y568 stiffened by four horizontal hoop
+       channel seams, where maxi skirt is a plain hem with a side slit. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47927F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-hoop-skirt__channel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #47927F)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-hoop-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #47927F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M152 328 H248 Q276 400 292 476 Q306 526 306 558 q0 10 -12 10 H106 q-12 0 -12-10 Q94 526 108 476 Q124 400 152 328 Z"
+          fill="url(#teen-male-bottom-hoop-skirt__dome)"/>
+  </g>
+
+  <!-- four hoop channels: the structural detail that says cage rather than cloth -->
+  <path d="M127 400 Q200 414 273 400 v13 Q200 427 127 413 z"
+        fill="url(#teen-male-bottom-hoop-skirt__channel)"/>
+  <path d="M113 452 Q200 468 287 452 v14 Q200 482 113 466 z"
+        fill="url(#teen-male-bottom-hoop-skirt__channel)"/>
+  <path d="M101 502 Q200 520 299 502 v15 Q200 535 101 517 z"
+        fill="url(#teen-male-bottom-hoop-skirt__channel)"/>
+  <path d="M97 540 Q200 558 303 540 v14 Q200 572 97 554 z"
+        fill="url(#teen-male-bottom-hoop-skirt__channel)"/>
+
+  <!-- high waistband -->
+  <path d="M148 320 q52-8 104 0 v20 q-52 8 -104 0 z"
+        fill="url(#teen-male-bottom-hoop-skirt__band)"/>
+  <path d="M152 328 h96" stroke="var(--c3, #F4A79B)" stroke-width="2.6"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+
+  <!-- vertical tape stays running between the channels -->
+  <path d="M150 344 Q126 440 104 540" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+  <path d="M250 344 Q274 440 296 540" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.6" fill="none" stroke-linecap="round"/>
+  <path d="M200 346 V536" stroke="var(--c2, #47927F)" stroke-width="3"
+        stroke-opacity="0.45" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 336 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M118 470 q-8 42 -8 72" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

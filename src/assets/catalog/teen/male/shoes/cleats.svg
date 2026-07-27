@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cleats" data-family="cleats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is sneakers. Two axes differ:
+       SOLE DEPTH  a rigid studded plate. Six conical studs, three per foot, drop 8u below
+       the plate so the bottom of the outline is toothed instead of a smooth cup sole.
+       FASTENING  the lace ladder is pulled off centre, sitting toward the outside of each
+       foot rather than running straight up the middle.
+       The upper is low and close fitting, well under the ankle bone. -->
+  <defs>
+    <linearGradient id="teen-male-shoes-cleats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D19A44)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-shoes-cleats__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D19A44)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close fitting low uppers -->
+    <path d="M149 552 Q149 536 166 531 L187 526 Q200 523 200 536 V550 Q200 554 195 554 Z"
+          fill="url(#teen-male-shoes-cleats__upper)"/>
+    <path d="M251 552 Q251 536 234 531 L213 526 Q200 523 200 536 V550 Q200 554 205 554 Z"
+          fill="url(#teen-male-shoes-cleats__upper)"/>
+    <!-- studded plate soles: the teeth are part of the outline -->
+    <path d="M152 550 H199 q5 0 5 6 v6 h-5 l-2 8 h-7 l-2-8 h-7 l-2 8 h-7 l-2-8 h-7 l-2 8 h-7 l-2-8 h-5 v-6 q0-6 5-6 z"
+          fill="url(#teen-male-shoes-cleats__plate)"/>
+    <path d="M248 550 H201 q-5 0 -5 6 v6 h5 l2 8 h7 l2-8 h7 l2 8 h7 l2-8 h7 l2 8 h7 l2-8 h5 v-6 q0-6 -5-6 z"
+          fill="url(#teen-male-shoes-cleats__plate)"/>
+  </g>
+
+  <!-- off centre lace ladder, pulled toward the outside of each foot -->
+  <path d="M158 542 L174 536" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 548 L175 542" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M161 554 L177 548" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 542 L226 536" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241 548 L225 542" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M239 554 L223 548" stroke="var(--c3, #3B2A22)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- moulded plate rim -->
+  <path d="M150 556 H202" stroke="var(--c3, #3B2A22)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M250 556 H198" stroke="var(--c3, #3B2A22)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- swooping side panel, painted through the shadow colour -->
+  <path d="M152 546 Q168 534 192 530 v7 q-22 4 -38 15 z" fill="var(--c2, #D19A44)"/>
+  <path d="M248 546 Q232 534 208 530 v7 q22 4 38 15 z" fill="var(--c2, #D19A44)"/>
+
+  <path d="M156 538 q14-8 30-10" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 538 q-14-8 -30-10" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

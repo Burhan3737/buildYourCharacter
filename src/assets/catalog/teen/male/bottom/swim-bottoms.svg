@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Nearest sibling in this slot is swim trunks. Two axes differ:
+       LEG LENGTH  none at all. There is no leg: the outer edge stops at y358 and the whole
+       thigh is bare, where the trunks run a boxed leg to mid thigh.
+       HEM TREATMENT  a plain bound edge following a steeply high cut leg opening, instead
+       of the trunks' side split hem.
+       Rise is high, the waist reads at y326. Pairs with swim top; the midriff between the
+       two is deliberately bare and this reads as a finished garment worn alone. -->
+  <defs>
+    <linearGradient id="teen-male-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8F80)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-swim-bottoms__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E8F80)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-bottom-swim-bottoms__side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8F80)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- skin close brief: waist y328, outer edge y358, lowest point at the crotch y393 -->
+    <path d="M152 328 H248 Q253 344 248 358 Q224 374 214 392 Q200 400 186 392 Q176 374 152 358 Q147 344 152 328 Z"
+          fill="url(#teen-male-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- contrast side panels: panel blocking, kept clear of the bound edges -->
+  <path d="M154 330 h14 q-4 18 -8 30 q-6-8 -8-16 q-2-8 2-14 z"
+        fill="url(#teen-male-bottom-swim-bottoms__side)"/>
+  <path d="M246 330 h-14 q4 18 8 30 q6-8 8-16 q2-8 -2-14 z"
+        fill="url(#teen-male-bottom-swim-bottoms__side)"/>
+
+  <!-- bound waist edge -->
+  <path d="M150 326 q50-9 100 0 v13 q-50 9 -100 0 z"
+        fill="url(#teen-male-bottom-swim-bottoms__band)"/>
+  <path d="M154 332 q46 8 92 0" stroke="var(--c3, #F7C873)" stroke-width="2.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+
+  <!-- bound leg openings, the trim that finishes the high cut -->
+  <path d="M151 356 Q176 372 187 391" stroke="var(--c3, #F7C873)" stroke-width="3.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+  <path d="M249 356 Q224 372 213 391" stroke="var(--c3, #F7C873)" stroke-width="3.4"
+        stroke-opacity="0.9" fill="none" stroke-linecap="round"/>
+
+  <path d="M158 340 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 372 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>
