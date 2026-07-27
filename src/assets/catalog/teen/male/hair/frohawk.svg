@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN — faded sides under one narrow central ridge, so the head reads as two close
+       cut panels either side of a raised strip, cut to a hard razored hairline straight across
+       at y 104. VOLUME — the ridge is 50u wide at the base and 82u tall, less than half the
+       width of the head, so it reads as a fin and not a cap; it tapers to a point at the nape.
+       Nearest sibling taper fade: one even short cap over the whole crown, no ridge, no centre
+       strip. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-male-hair-frohawk__back-fade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.2"/>
+        <stop offset="0.55" stop-color="var(--hair2, #331E16)" stop-opacity="0.8"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)"/>
+      </linearGradient>
+      <linearGradient id="teen-male-hair-frohawk__back-ridge" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M156 146 C154 168 160 184 172 192 L228 192 C240 184 246 168 244 146
+               C216 158 184 158 156 146 Z"
+            fill="url(#teen-male-hair-frohawk__back-fade)"/>
+      <path d="M182 118 C179 150 184 178 194 200 L200 216 L206 200
+               C216 178 221 150 218 118 C208 124 192 124 182 118 Z"
+            fill="url(#teen-male-hair-frohawk__back-ridge)"/>
+    </g>
+    <path d="M186 132 Q200 142 214 132" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M188 156 Q200 166 212 156" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M192 180 Q200 188 208 180" stroke="var(--hair2, #331E16)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <path d="M194 124 C198 150 198 172 200 190" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-male-hair-frohawk__front-fade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.15"/>
+        <stop offset="0.45" stop-color="var(--hair2, #331E16)" stop-opacity="0.72"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)"/>
+      </linearGradient>
+      <linearGradient id="teen-male-hair-frohawk__front-crest" x1="0.2" y1="0" x2="0.8" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.68" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M141 104 L178 104 C180 128 176 150 168 168 C152 152 141 128 141 104 Z"
+            fill="url(#teen-male-hair-frohawk__front-fade)"/>
+      <path d="M259 104 L222 104 C220 128 224 150 232 168 C248 152 259 128 259 104 Z"
+            fill="url(#teen-male-hair-frohawk__front-fade)"/>
+      <!-- the ridge: a tall narrow crest of coil lobes, taller than it is wide -->
+      <path d="M175 104 L225 104 Q233 98 228 88 Q231 76 224 68 Q230 56 221 48
+               Q222 36 212 32 Q210 22 200 24 Q190 22 188 32 Q178 36 179 48
+               Q170 56 176 68 Q169 76 172 88 Q167 98 175 104 Z"
+            fill="url(#teen-male-hair-frohawk__front-crest)"/>
+    </g>
+    <!-- the hard razored hairline the fade is cut to -->
+    <path d="M175 98 L225 98 L225 105 L175 105 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M141 98 L178 98 L178 105 L141 105 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M222 98 L259 98 L259 105 L222 105 Z" fill="var(--hair2, #331E16)"/>
+    <!-- coil undersides inside the ridge -->
+    <path d="M178 86 Q188 76 198 88 Q186 98 178 86 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M202 78 Q212 68 222 80 Q210 90 202 78 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M178 58 Q188 48 198 60 Q186 70 178 58 Z" fill="var(--hair2, #331E16)"
+          opacity="0.45"/>
+    <path d="M202 48 Q212 40 220 50 Q208 60 202 48 Z" fill="var(--hair2, #331E16)"
+          opacity="0.45"/>
+    <!-- ridge meets fade: the step down onto the shaved panel either side -->
+    <path d="M176 102 C175 90 175 80 178 70" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M224 102 C225 90 225 80 222 70" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M148 126 C152 142 156 156 161 168" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M252 126 C248 142 244 156 239 168" stroke="var(--hair2, #331E16)"
+          stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M186 36 C192 26 208 26 214 36" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

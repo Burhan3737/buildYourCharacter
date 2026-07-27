@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN — bare. There is no hair mass anywhere: the skull and both ears are fully
+       exposed and nothing is drawn that has an outline of its own.
+       VOLUME — none at all; the only marks are the soft shadow where a nape and a temple
+       hairline would sit, plus the sheen the bare crown catches. Nearest sibling buzz: a
+       continuous clipped cap with a drawn hairline and its own dome shaped silhouette. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-male-hair-smooth-scalp__back-nape" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.05"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.42"/>
+      </linearGradient>
+    </defs>
+    <!-- the soft shadow the nape sits in; deliberately no edge and no cap shape -->
+    <path d="M160 166 C156 186 166 202 182 208 C192 211 208 211 218 208
+             C234 202 244 186 240 166 C216 178 184 178 160 166 Z"
+          fill="url(#teen-male-hair-smooth-scalp__back-nape)"/>
+    <path d="M176 192 C186 200 214 200 224 192 C216 204 184 204 176 192 Z"
+          fill="var(--hair2, #331E16)" opacity="0.22"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-male-hair-smooth-scalp__front-temple" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.34"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.02"/>
+      </linearGradient>
+      <linearGradient id="teen-male-hair-smooth-scalp__front-sheen" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)" stop-opacity="0.26"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <!-- where a temple hairline would fall: two faint wedges, not a band across the brow -->
+    <path d="M148 98 C143 112 141 128 142 144 C148 132 153 116 157 102 Z"
+          fill="url(#teen-male-hair-smooth-scalp__front-temple)"/>
+    <path d="M252 98 C257 112 259 128 258 144 C252 132 247 116 243 102 Z"
+          fill="url(#teen-male-hair-smooth-scalp__front-temple)"/>
+    <!-- the crown catches the light; hair1 does the warm reflected band -->
+    <path d="M154 96 C168 74 232 74 246 96 C228 82 172 82 154 96 Z"
+          fill="url(#teen-male-hair-smooth-scalp__front-sheen)"/>
+    <path d="M166 82 C180 72 220 72 234 82" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M150 108 C147 120 146 132 147 142" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M250 108 C253 120 254 132 253 142" stroke="var(--hair2, #331E16)"
+          stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

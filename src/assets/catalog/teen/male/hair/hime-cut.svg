@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: PARTING/HEM — three razor straight horizontal hems at three different heights: the
+       fringe level at y 132, the two sidelocks squared off at y 172 and the back fall blunt at
+       y 330, with a hard vertical cut line where the sidelock leaves the fringe.
+       LENGTH — waist length behind, brow length in front. Nearest sibling bob: one continuous
+       jaw length hem all the way round with no separate sidelock. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-male-hair-hime-cut__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.72" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M136 92 C126 160 124 250 128 330 L272 330 C276 250 274 160 264 92
+               C242 70 158 70 136 92 Z"
+            fill="url(#teen-male-hair-hime-cut__back-g)"/>
+    </g>
+    <path d="M128 302 L272 302 L272 316 L128 316 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M156 130 C150 200 150 268 154 314" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M244 130 C250 200 250 268 246 314" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M152 100 C176 86 224 86 248 100" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-male-hair-hime-cut__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="teen-male-hair-hime-cut__front-side" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.66" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- blunt fringe, cut dead level at the brow -->
+      <path d="M141 132 C141 96 166 70 200 70 C234 70 259 96 259 132 Z"
+            fill="url(#teen-male-hair-hime-cut__front-g)"/>
+      <!-- sidelocks, squared off at the cheek -->
+      <path d="M137 116 L163 116 C165 138 165 156 164 172 L136 172
+               C135 156 135 138 137 116 Z"
+            fill="url(#teen-male-hair-hime-cut__front-side)"/>
+      <path d="M263 116 L237 116 C235 138 235 156 236 172 L264 172
+               C265 156 265 138 263 116 Z"
+            fill="url(#teen-male-hair-hime-cut__front-side)"/>
+    </g>
+    <!-- the cut edge of each hem, drawn dark so the three levels separate -->
+    <path d="M141 126 L259 126 L259 132 L141 132 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M136 164 L164 164 L164 172 L136 172 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M236 164 L264 164 L264 172 L236 172 Z" fill="var(--hair2, #331E16)"/>
+    <!-- the shadow each sidelock drops onto the long fall behind it, so the three
+         hems separate at a glance -->
+    <path d="M136 172 L164 172 L164 186 L136 186 Z" fill="var(--hair2, #331E16)"
+          opacity="0.6"/>
+    <path d="M236 172 L264 172 L264 186 L236 186 Z" fill="var(--hair2, #331E16)"
+          opacity="0.6"/>
+    <!-- the vertical cut where the sidelock is separated from the fringe -->
+    <path d="M163 118 C164 138 164 156 163 170" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M237 118 C236 138 236 156 237 170" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M162 90 C178 78 222 78 238 90" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

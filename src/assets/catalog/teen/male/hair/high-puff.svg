@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Puff" data-family="high-puff" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN — everything is gathered up into one puff standing 64u clear above the skull,
+       sides smoothed tight so the ears sit out in the open.
+       VOLUME — the puff contour is a run of thirteen unequal coil lobes, no two the same size,
+       so the outline itself is the texture. Nearest sibling afro: an even halo centred on the
+       head with no gather and no exposed side. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-male-hair-high-puff__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M166 148 C161 172 173 188 200 188 C227 188 239 172 234 148
+               C212 157 188 157 166 148 Z"
+            fill="url(#teen-male-hair-high-puff__back-g)"/>
+    </g>
+    <path d="M174 160 C186 172 214 172 226 160 C220 178 180 178 174 160 Z"
+          fill="var(--hair2, #331E16)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-male-hair-high-puff__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="teen-male-hair-high-puff__front-puff" x1="0.2" y1="0" x2="0.8" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.66" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- sides brushed flat to the scalp, hem kept above the ear -->
+      <path d="M146 120 C142 90 168 70 200 70 C232 70 258 90 254 120
+               C244 102 226 94 200 94 C174 94 156 102 146 120 Z"
+            fill="url(#teen-male-hair-high-puff__front-g)"/>
+      <!-- the puff: unequal coil lobes all the way round -->
+      <path d="M200 8 Q218 2 232 14 Q250 14 256 30 Q270 38 266 54 Q266 70 254 76
+               Q246 88 232 90 Q220 98 206 96 Q194 102 182 94 Q168 96 158 86
+               Q144 82 140 68 Q130 56 134 46 Q134 28 146 24 Q156 12 172 10
+               Q186 4 200 8 Z"
+            fill="url(#teen-male-hair-high-puff__front-puff)"/>
+    </g>
+    <!-- the underside of each coil lobe, which is what makes the mass read as coily -->
+    <path d="M154 62 Q166 52 176 64 Q166 74 154 62 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M186 70 Q200 60 212 72 Q198 82 186 70 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M222 60 Q236 50 246 62 Q232 72 222 60 Z" fill="var(--hair2, #331E16)"
+          opacity="0.55"/>
+    <path d="M168 32 Q182 22 192 34 Q178 44 168 32 Z" fill="var(--hair2, #331E16)"
+          opacity="0.45"/>
+    <path d="M208 28 Q222 18 232 30 Q218 40 208 28 Z" fill="var(--hair2, #331E16)"
+          opacity="0.45"/>
+    <!-- the gather where the puff is tied down onto the smoothed sides -->
+    <path d="M168 82 C182 94 218 94 232 82 L236 94 C220 108 180 108 164 94 Z"
+          fill="var(--hair2, #331E16)"/>
+    <!-- the sides are swept, not shaved: direction lines in hair2 -->
+    <g stroke="var(--hair2, #331E16)" stroke-width="2.6" stroke-opacity="0.6" fill="none"
+       stroke-linecap="round">
+      <path d="M150 114 C160 98 174 90 190 88"/>
+      <path d="M250 114 C240 98 226 90 210 88"/>
+      <path d="M158 118 C168 104 180 96 194 94"/>
+      <path d="M242 118 C232 104 220 96 206 94"/>
+    </g>
+    <path d="M164 26 C178 16 206 16 220 24" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
