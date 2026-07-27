@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=three-quarter sleeve · closure=OPEN, no fastening at all, curved front edges · hem=CROPPED above the natural waist · volume=fitted -->
+  <!-- the chest between the two curved fronts is bare: painted as skin, never as a phantom shirt -->
+  <defs>
+    <linearGradient id="teen-female-top-bolero__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6CB8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6CB8)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-bolero__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bare chest showing between the curved fronts -->
+  <path d="M172 196 h56 v104 h-56 z" fill="url(#teen-female-top-bolero__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves stopping well short of the wrist -->
+    <rect x="122" y="198" width="32" height="110" rx="16" fill="url(#teen-female-top-bolero__sleeve)"/>
+    <rect x="246" y="198" width="32" height="110" rx="16" fill="url(#teen-female-top-bolero__sleeve)"/>
+    <!-- two short fronts whose edges sweep away in a curve -->
+    <path d="M170 190 q-24 0 -26 26 v50 q0 30 14 34 q14 4 24-8 q-16-40 -12-102 z"
+          fill="url(#teen-female-top-bolero__jacket)"/>
+    <path d="M230 190 q24 0 26 26 v50 q0 30 -14 34 q-14 4 -24-8 q16-40 12-102 z"
+          fill="url(#teen-female-top-bolero__jacket)"/>
+  </g>
+
+  <!-- contrast binding running the whole curved front edge and round the cropped hem -->
+  <path d="M170 190 q-14 46 -10 100 q6 14 22 4" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 190 q14 46 10 100 q-6 14 -22 4" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 288 q10 14 26 8" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 288 q-10 14 -26 8" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turned-back sleeve cuffs -->
+  <path d="M122 286 h32 v14 q0 8 -10 8 h-12 q-10 0 -10-8 z" fill="var(--c3, #F7C873)"/>
+  <path d="M278 286 h-32 v14 q0 8 10 8 h12 q10 0 10-8 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- shoulder seam and a soft body shadow -->
+  <path d="M152 214 q-6 40 -2 74" stroke="var(--c2, #5A6CB8)" stroke-opacity="0.5" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 214 q6 40 2 74" stroke="var(--c2, #5A6CB8)" stroke-opacity="0.5" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M152 200 q16 8 22 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 200 q-16 8 -22 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

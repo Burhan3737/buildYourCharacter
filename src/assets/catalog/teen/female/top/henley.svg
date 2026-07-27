@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long sleeve PUSHED UP into a forearm roll · closure=HALF PLACKET, three buttons, no collar · hem=hip · volume=straight -->
+  <defs>
+    <linearGradient id="teen-female-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9686)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9686)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-henley__roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4B9686)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- sleeve running down only as far as the forearm -->
+    <rect x="124" y="204" width="30" height="88" rx="15" fill="url(#teen-female-top-henley__sleeve)"/>
+    <rect x="246" y="204" width="30" height="88" rx="15" fill="url(#teen-female-top-henley__sleeve)"/>
+    <!-- the bunched roll of fabric where the sleeve has been shoved up the forearm -->
+    <rect x="119" y="276" width="40" height="32" rx="14" fill="url(#teen-female-top-henley__roll)"/>
+    <rect x="241" y="276" width="40" height="32" rx="14" fill="url(#teen-female-top-henley__roll)"/>
+    <!-- straight body finishing at the hip -->
+    <path d="M143 214 q3-24 27-24 h60 q24 0 27 24 v116 q0 26 -25 26 h-64 q-25 0 -25-26 z"
+          fill="url(#teen-female-top-henley__body)"/>
+  </g>
+
+  <!-- collarless neckband -->
+  <path d="M172 188 q28 26 56 0 q-4 12 -12 14 q-16 8 -32 0 q-8-2 -12-14 z" fill="var(--c2, #4B9686)"/>
+  <path d="M182 190 q18 16 36 0 q-6 10 -18 10 q-12 0 -18-10 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- the short buttoned placket -->
+  <path d="M186 198 h28 l2 64 h-32 z" fill="var(--c2, #4B9686)"/>
+  <path d="M188 200 v58" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="214" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="236" r="5" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="256" r="5" fill="var(--c3, #F7C873)"/>
+
+  <!-- the top edge of each pushed-up roll -->
+  <path d="M122 284 h34" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 284 h34" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hip hem band -->
+  <path d="M146 338 q54 12 108 0 v10 q-54 12 -108 0 z" fill="var(--c2, #4B9686)"/>
+
+  <!-- highlight -->
+  <path d="M154 204 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

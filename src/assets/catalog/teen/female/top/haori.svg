@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=WIDE SQUARE SLEEVE PANELS hanging free below the arm · closure=open, two straight parallel front edges joined only by a short chest cord · hem=hip · volume=straight -->
+  <!-- the chest between the two fronts is bare: painted as skin, never as a phantom shirt -->
+  <defs>
+    <linearGradient id="teen-female-top-haori__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3350)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-haori__sode" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4A6B)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3350)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-haori__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bare chest between the open fronts -->
+  <path d="M186 196 h28 v156 h-28 z" fill="url(#teen-female-top-haori__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- the two sode: wide square panels of cloth hanging free off the arm -->
+    <path d="M150 202 h-46 q-8 0 -8 10 v112 q0 10 10 10 h44 z"
+          fill="url(#teen-female-top-haori__sode)"/>
+    <path d="M250 202 h46 q8 0 8 10 v112 q0 10 -10 10 h-44 z"
+          fill="url(#teen-female-top-haori__sode)"/>
+    <!-- two straight fronts, hanging open to the hip -->
+    <path d="M148 218 q2-28 28-28 h12 v176 h-28 q-14 0 -14-18 z"
+          fill="url(#teen-female-top-haori__cloth)"/>
+    <path d="M252 218 q-2-28 -28-28 h-12 v176 h28 q14 0 14-18 z"
+          fill="url(#teen-female-top-haori__cloth)"/>
+  </g>
+
+  <!-- the broad flat collar band folded back down both front edges -->
+  <path d="M176 190 h14 v174 h-14 z" fill="var(--c3, #C9C0AC)"/>
+  <path d="M210 190 h14 v174 h-14 z" fill="var(--c3, #C9C0AC)"/>
+
+  <!-- the short chest cord, the only thing joining the two fronts -->
+  <path d="M190 250 h20" stroke="var(--c3, #C9C0AC)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="188" cy="250" r="7" fill="var(--c3, #C9C0AC)"/>
+  <circle cx="212" cy="250" r="7" fill="var(--c3, #C9C0AC)"/>
+
+  <!-- the square sleeve openings, drawn so the sode reads as a hanging pouch -->
+  <path d="M104 244 h44" stroke="var(--c2, #2A3350)" stroke-opacity="0.5" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 244 h44" stroke="var(--c2, #2A3350)" stroke-opacity="0.5" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M100 320 h48" stroke="var(--c3, #C9C0AC)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 320 h48" stroke="var(--c3, #C9C0AC)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hem edge -->
+  <path d="M150 358 h38" stroke="var(--c2, #2A3350)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 358 h38" stroke="var(--c2, #2A3350)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M158 200 q16 8 20 12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 200 q-16 8 -20 12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

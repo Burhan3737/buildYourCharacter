@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=SHORT WIDE SLEEVE cut straight out of the body, no armhole seam · closure=pull-on, wide V panel · hem=mid-thigh with short side vents · volume=boxy -->
+  <!-- everyday clothing: the neck panel is plain concentric geometry, not any community's pattern -->
+  <defs>
+    <linearGradient id="teen-female-top-dashiki__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F8F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #1E6B5B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one piece: body and sleeve are the same rectangle of cloth -->
+    <path d="M118 200 H282 q12 0 12 12 V266 q0 12 -12 12 H258 V376 q0 8 -8 8 H234 V418 q0 8 -8 8 H174 q-8 0 -8-8 V384 H150 q-8 0 -8-8 V278 H118 q-12 0 -12-12 V212 q0-12 12-12 Z"
+          fill="url(#teen-female-top-dashiki__cloth)"/>
+  </g>
+
+  <!-- the wide V panel at the neck, built from concentric bands -->
+  <path d="M156 196 L200 286 L244 196 z" fill="var(--c3, #F2C14E)"/>
+  <path d="M168 196 L200 260 L232 196 z" fill="var(--c2, #1E6B5B)"/>
+  <path d="M178 196 L200 238 L222 196 z" fill="var(--c3, #F2C14E)"/>
+  <path d="M184 194 q16 24 32 0 q-4 28 -16 28 q-12 0 -16-28 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- plain running geometry edging the panel, the sleeve hems and the tunic hem -->
+  <g stroke="var(--c3, #F2C14E)" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M110 264 h32"/>
+    <path d="M258 264 h32"/>
+    <path d="M176 418 h48"/>
+  </g>
+  <g stroke="var(--c3, #F2C14E)" stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M110 252 h32"/>
+    <path d="M258 252 h32"/>
+    <path d="M150 356 h100"/>
+    <path d="M150 346 h100"/>
+  </g>
+
+  <!-- the two short side vents, edged so they read as splits -->
+  <path d="M166 384 v34" stroke="var(--c2, #1E6B5B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 384 v34" stroke="var(--c2, #1E6B5B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the straight underarm line, which is where the sleeve is cut from the body -->
+  <path d="M144 278 h-30" stroke="var(--c2, #1E6B5B)" stroke-opacity="0.6" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 278 h30" stroke="var(--c2, #1E6B5B)" stroke-opacity="0.6" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M116 212 q26 8 40 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 212 q-26 8 -40 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long set-in · closure=FULL BUTTON PLACKET, done up · hem=MID-CALF · volume=straight column -->
+  <defs>
+    <linearGradient id="teen-female-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7A6A)"/>
+      <stop offset="1" stop-color="var(--c2, #63564A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7A6A)"/>
+      <stop offset="1" stop-color="var(--c2, #63564A)"/>
+    </linearGradient>
+    <clipPath id="teen-female-top-long-coat__clip">
+      <path d="M144 216 q2-26 28-26 h56 q26 0 28 26 v272 q0 14 -14 14 h-30 v-44 h-24 v44 h-30 q-14 0 -14-14 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <rect x="117" y="200" width="34" height="154" rx="14" fill="url(#teen-female-top-long-coat__sleeve)"/>
+    <rect x="249" y="200" width="34" height="154" rx="14" fill="url(#teen-female-top-long-coat__sleeve)"/>
+    <!-- a straight column falling to mid-calf, split by a single vent at the hem -->
+    <path d="M144 216 q2-26 28-26 h56 q26 0 28 26 v272 q0 14 -14 14 h-30 v-44 h-24 v44 h-30 q-14 0 -14-14 z"
+          fill="url(#teen-female-top-long-coat__body)"/>
+  </g>
+
+  <!-- shadow either side of the vent so it reads as a split, not a stripe -->
+  <g clip-path="url(#teen-female-top-long-coat__clip)">
+    <path d="M186 458 h4 v46 h-4 z" fill="var(--c2, #63564A)"/>
+    <path d="M210 458 h4 v46 h-4 z" fill="var(--c2, #63564A)"/>
+  </g>
+
+  <!-- notched collar sitting on a small stand -->
+  <path d="M174 188 h52 q6 0 6 8 l-32 20 l-32-20 q0-8 6-8 z" fill="var(--c2, #63564A)"/>
+  <path d="M168 194 L200 216 L188 244 L160 214 z" fill="var(--c3, #E4D8C4)"/>
+  <path d="M232 194 L200 216 L212 244 L240 214 z" fill="var(--c3, #E4D8C4)"/>
+  <path d="M160 214 L170 210 L172 226 z" fill="var(--c2, #63564A)"/>
+  <path d="M240 214 L230 210 L228 226 z" fill="var(--c2, #63564A)"/>
+
+  <!-- the button placket running the whole front -->
+  <path d="M186 226 h28 v230 h-28 z" fill="var(--c2, #63564A)" fill-opacity="0.55"/>
+  <circle cx="200" cy="250" r="6" fill="var(--c3, #E4D8C4)"/>
+  <circle cx="200" cy="292" r="6" fill="var(--c3, #E4D8C4)"/>
+  <circle cx="200" cy="334" r="6" fill="var(--c3, #E4D8C4)"/>
+  <circle cx="200" cy="376" r="6" fill="var(--c3, #E4D8C4)"/>
+  <circle cx="200" cy="418" r="6" fill="var(--c3, #E4D8C4)"/>
+
+  <!-- deep flap pockets -->
+  <path d="M150 372 h40 v12 h-40 z" fill="var(--c2, #63564A)"/>
+  <path d="M210 372 h40 v12 h-40 z" fill="var(--c2, #63564A)"/>
+
+  <!-- turned-back cuffs -->
+  <path d="M117 328 h34 v20 q0 6 -8 6 h-18 q-8 0 -8-6 z" fill="var(--c2, #63564A)"/>
+  <path d="M283 328 h-34 v20 q0 6 8 6 h18 q8 0 8-6 z" fill="var(--c2, #63564A)"/>
+
+  <!-- highlight -->
+  <path d="M158 204 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long, full through the upper arm · closure=closed zip · hem=waist, on a deep rib band · volume=BLOUSON, bloused above the hem -->
+  <defs>
+    <linearGradient id="teen-female-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6B8C)"/>
+      <stop offset="1" stop-color="var(--c2, #35506D)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6B8C)"/>
+      <stop offset="1" stop-color="var(--c2, #35506D)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2D6A4)"/>
+      <stop offset="1" stop-color="var(--c2, #35506D)"/>
+    </linearGradient>
+    <clipPath id="teen-female-top-bomber__ribclip">
+      <path d="M150 326 q50 20 100 0 v22 q-50 20 -100 0 z"/>
+      <path d="M168 186 h64 q7 0 7 9 v16 q-39 12 -78 0 v-16 q0-9 7-9 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- full sleeves, gathering in toward the wrist -->
+    <path d="M150 196 q-26 2 -28 28 l-2 100 q0 14 14 14 h14 z"
+          fill="url(#teen-female-top-bomber__sleeve)"/>
+    <path d="M250 196 q26 2 28 28 l2 100 q0 14 -14 14 h-14 z"
+          fill="url(#teen-female-top-bomber__sleeve)"/>
+    <!-- body ballooning out over the hem band -->
+    <path d="M146 214 q2-24 26-24 h56 q24 0 26 24 v72 q4 30 -6 44 q-48 18 -96 0 q-10-14 -6-44 z"
+          fill="url(#teen-female-top-bomber__body)"/>
+    <!-- deep ribbed hem band, drawn as its own mass -->
+    <path d="M150 326 q50 20 100 0 v22 q-50 20 -100 0 z" fill="url(#teen-female-top-bomber__rib)"/>
+    <!-- ribbed stand collar -->
+    <path d="M168 186 h64 q7 0 7 9 v16 q-39 12 -78 0 v-16 q0-9 7-9 z"
+          fill="url(#teen-female-top-bomber__rib)"/>
+  </g>
+
+  <!-- rib texture on the collar and the hem band -->
+  <g clip-path="url(#teen-female-top-bomber__ribclip)" stroke="var(--c2, #35506D)"
+     stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M174 184 v34 M186 184 v34 M198 184 v34 M210 184 v34 M222 184 v34 M232 184 v34"/>
+    <path d="M158 322 v44 M172 322 v44 M186 322 v44 M200 322 v44 M214 322 v44 M228 322 v44 M242 322 v44"/>
+  </g>
+
+  <!-- ribbed cuffs -->
+  <path d="M122 326 h36 v14 q0 8 -10 8 h-18 q-8 0 -8-10 z" fill="url(#teen-female-top-bomber__rib)"/>
+  <path d="M278 326 h-36 v14 q0 8 10 8 h18 q8 0 8-10 z" fill="url(#teen-female-top-bomber__rib)"/>
+
+  <!-- centre zip with a pull tab -->
+  <path d="M200 202 v122" stroke="var(--c3, #F2D6A4)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 252 h8 v18 q0 5 -4 5 q-4 0 -4-5 z" fill="var(--c3, #F2D6A4)"/>
+
+  <!-- welt pockets angled into the side seams -->
+  <path d="M154 292 l30 8 v9 l-30-8 z" fill="var(--c2, #35506D)"/>
+  <path d="M246 292 l-30 8 v9 l30-8 z" fill="var(--c2, #35506D)"/>
+
+  <!-- highlight -->
+  <path d="M158 206 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

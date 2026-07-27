@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=NONE, two panels joined only across the shoulders · closure=completely OPEN down both sides · hem=hip · volume=flat, unshaped -->
+  <!-- the ribs either side are bare on purpose: the panels hang free and the torso shows between them -->
+  <defs>
+    <linearGradient id="teen-female-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9C24A)"/>
+      <stop offset="1" stop-color="var(--c2, #B8912B)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B8912B)"/>
+      <stop offset="1" stop-color="var(--c1, #E9C24A)"/>
+    </linearGradient>
+    <clipPath id="teen-female-top-tabard__clip">
+      <path d="M180 188 h40 q14 2 16 20 l2 142 q0 10 -10 10 h-56 q-10 0 -10-10 l2-142 q2-18 16-20 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the back panel, hanging free and showing only below the front hem -->
+    <path d="M182 194 h36 q14 2 16 20 l2 148 q0 12 -12 12 h-48 q-12 0 -12-12 l2-148 q2-18 16-20 z"
+          fill="url(#teen-female-top-tabard__back)"/>
+    <!-- the front panel, a flat slab joined to the back only over the shoulders -->
+    <path d="M180 188 h40 q14 2 16 20 l2 142 q0 10 -10 10 h-56 q-10 0 -10-10 l2-142 q2-18 16-20 z"
+          fill="url(#teen-female-top-tabard__front)"/>
+  </g>
+
+  <!-- two wide contrast bands across the front panel -->
+  <g clip-path="url(#teen-female-top-tabard__clip)">
+    <rect x="158" y="252" width="86" height="22" fill="var(--c3, #3B4A66)"/>
+    <rect x="158" y="300" width="86" height="22" fill="var(--c3, #3B4A66)"/>
+    <rect x="158" y="342" width="86" height="18" fill="var(--c3, #3B4A66)"/>
+  </g>
+
+  <!-- bound edges down both open sides, so the openness reads as a finished edge -->
+  <path d="M166 206 l-2 142" stroke="var(--c2, #B8912B)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 206 l2 142" stroke="var(--c2, #B8912B)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the shoulder join, the only place the two panels are attached -->
+  <path d="M180 190 h40" stroke="var(--c3, #3B4A66)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- neck opening cut through both panels -->
+  <path d="M186 188 q14 20 28 0 q-4 16 -14 16 q-10 0 -14-16 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- highlight -->
+  <path d="M176 202 q24 8 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

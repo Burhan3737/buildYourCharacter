@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=long boxy set-in · closure=OPEN, hanging unbuttoned over a tee · hem=hip, SQUARED off · volume=boxy -->
+  <!-- the tee underneath is drawn in this same file and painted through c3, so the opening is never a hole -->
+  <defs>
+    <linearGradient id="teen-female-top-flannel-overshirt__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574F)"/>
+      <stop offset="1" stop-color="var(--c2, #8F3B37)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574F)"/>
+      <stop offset="1" stop-color="var(--c2, #8F3B37)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-flannel-overshirt__tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E7D5)"/>
+      <stop offset="1" stop-color="var(--c2, #8F3B37)"/>
+    </linearGradient>
+    <!-- an even check: two crossed bands, generic geometry, no named sett -->
+    <pattern id="teen-female-top-flannel-overshirt__check" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <rect x="0" y="0" width="22" height="7" fill="var(--c2, #8F3B37)" fill-opacity="0.55"/>
+      <rect x="0" y="0" width="7" height="22" fill="var(--c2, #8F3B37)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-female-top-flannel-overshirt__clip">
+      <path d="M134 216 q0-26 28-26 h28 v168 h-56 z"/>
+      <path d="M266 216 q0-26 -28-26 h-28 v168 h56 z"/>
+      <rect x="112" y="208" width="38" height="150"/>
+      <rect x="250" y="208" width="38" height="150"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- squared boxy sleeves, barely rounded at the cuff -->
+    <rect x="112" y="208" width="38" height="150" rx="8" fill="url(#teen-female-top-flannel-overshirt__sleeve)"/>
+    <rect x="250" y="208" width="38" height="150" rx="8" fill="url(#teen-female-top-flannel-overshirt__sleeve)"/>
+    <!-- the tee worn underneath, showing through the whole open front -->
+    <path d="M168 194 q32 16 64 0 v154 q-32 10 -64 0 z" fill="url(#teen-female-top-flannel-overshirt__tee)"/>
+    <!-- the two shirt fronts, hanging open with a squared hem -->
+    <path d="M134 216 q0-26 28-26 h28 v168 h-56 z" fill="url(#teen-female-top-flannel-overshirt__cloth)"/>
+    <path d="M266 216 q0-26 -28-26 h-28 v168 h56 z" fill="url(#teen-female-top-flannel-overshirt__cloth)"/>
+  </g>
+
+  <!-- the check, clipped to the shirt only so the tee stays plain -->
+  <g clip-path="url(#teen-female-top-flannel-overshirt__clip)">
+    <rect x="106" y="186" width="188" height="180" fill="url(#teen-female-top-flannel-overshirt__check)"/>
+  </g>
+
+  <!-- tee neckline -->
+  <path d="M180 194 q20 16 40 0 q-6 12 -20 12 q-14 0 -20-12 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- flat shirt collar, falling open either side of the tee neck -->
+  <path d="M162 190 h28 l-16 36 q-16-8 -12-24 z" fill="var(--c2, #8F3B37)"/>
+  <path d="M238 190 h-28 l16 36 q16-8 12-24 z" fill="var(--c2, #8F3B37)"/>
+
+  <!-- two flap chest pockets -->
+  <path d="M142 252 h40 v34 h-40 z" fill="var(--c2, #8F3B37)"/>
+  <path d="M140 246 h44 v12 h-44 z" fill="var(--c3, #F2E7D5)"/>
+  <path d="M218 252 h40 v34 h-40 z" fill="var(--c2, #8F3B37)"/>
+  <path d="M216 246 h44 v12 h-44 z" fill="var(--c3, #F2E7D5)"/>
+
+  <!-- the unfastened button bands running down both front edges -->
+  <path d="M182 202 v152" stroke="var(--c3, #F2E7D5)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 202 v152" stroke="var(--c3, #F2E7D5)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- squared cuff turnbacks -->
+  <path d="M112 330 h38 v18 h-38 z" fill="var(--c2, #8F3B37)"/>
+  <path d="M250 330 h38 v18 h-38 z" fill="var(--c2, #8F3B37)"/>
+
+  <!-- highlight -->
+  <path d="M150 202 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

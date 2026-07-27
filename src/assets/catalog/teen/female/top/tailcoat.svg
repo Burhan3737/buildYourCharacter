@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailcoat" data-family="tailcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=SQUARE BUILT-UP · closure=worn open, no fastening, wide peaked lapels · hem=CUT AWAY at the natural waist with two long tails to the back of the knee · volume=structured straight -->
+  <!-- palette stays in the house family: navy over ivory, no purple with green or orange -->
+  <defs>
+    <linearGradient id="teen-female-top-tailcoat__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2E3350)"/>
+      <stop offset="1" stop-color="var(--c2, #1B1F35)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-tailcoat__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2E3350)"/>
+      <stop offset="1" stop-color="var(--c2, #1B1F35)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-tailcoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2E3350)"/>
+      <stop offset="1" stop-color="var(--c2, #1B1F35)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-tailcoat__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFE6D4)"/>
+      <stop offset="1" stop-color="var(--c2, #1B1F35)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the two tails, hanging behind with a clear gap between them -->
+    <path d="M154 306 h37 v162 q0 8 -8 8 h-21 q-8 0 -8-8 z" fill="url(#teen-female-top-tailcoat__tail)"/>
+    <path d="M246 306 h-37 v162 q0 8 8 8 h21 q8 0 8-8 z" fill="url(#teen-female-top-tailcoat__tail)"/>
+    <!-- the shirt front and waistcoat, drawn here so the open coat is never a hole -->
+    <path d="M184 190 h32 v138 h-32 z" fill="url(#teen-female-top-tailcoat__shirt)"/>
+    <!-- straight structured sleeves -->
+    <rect x="116" y="194" width="32" height="158" rx="10" fill="url(#teen-female-top-tailcoat__sleeve)"/>
+    <rect x="252" y="194" width="32" height="158" rx="10" fill="url(#teen-female-top-tailcoat__sleeve)"/>
+    <!-- the two coat fronts, cut away horizontally at the natural waist -->
+    <path d="M138 202 q0-16 18-16 h30 v130 q0 8 -10 8 h-26 q-12 0 -12-14 z"
+          fill="url(#teen-female-top-tailcoat__cloth)"/>
+    <path d="M262 202 q0-16 -18-16 h-30 v130 q0 8 10 8 h26 q12 0 12-14 z"
+          fill="url(#teen-female-top-tailcoat__cloth)"/>
+    <!-- square built-up shoulders -->
+    <path d="M132 188 h36 v22 h-36 z" fill="url(#teen-female-top-tailcoat__cloth)"/>
+    <path d="M232 188 h36 v22 h-36 z" fill="url(#teen-female-top-tailcoat__cloth)"/>
+  </g>
+
+  <!-- wide peaked lapels -->
+  <path d="M172 186 L198 204 L194 300 L176 250 L148 216 L166 212 z" fill="var(--c2, #1B1F35)"/>
+  <path d="M228 186 L202 204 L206 300 L224 250 L252 216 L234 212 z" fill="var(--c2, #1B1F35)"/>
+  <path d="M148 216 L166 212 L170 226 z" fill="var(--c3, #EFE6D4)"/>
+  <path d="M252 216 L234 212 L230 226 z" fill="var(--c3, #EFE6D4)"/>
+
+  <!-- wing collar and a bow at the throat -->
+  <path d="M186 186 h28 v14 h-28 z" fill="var(--c3, #EFE6D4)"/>
+  <path d="M186 196 l14 8 l14-8 v14 l-14 6 l-14-6 z" fill="var(--c2, #1B1F35)"/>
+
+  <!-- waistcoat buttons down the shirt front -->
+  <circle cx="200" cy="252" r="5" fill="var(--c2, #1B1F35)"/>
+  <circle cx="200" cy="282" r="5" fill="var(--c2, #1B1F35)"/>
+  <circle cx="200" cy="312" r="5" fill="var(--c2, #1B1F35)"/>
+
+  <!-- the cutaway edge, picked out so the horizontal cut reads -->
+  <path d="M148 322 h34" stroke="var(--c3, #EFE6D4)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 322 h34" stroke="var(--c3, #EFE6D4)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the gap between the tails, shaded on both inner edges -->
+  <path d="M188 316 v156" stroke="var(--c2, #1B1F35)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 316 v156" stroke="var(--c2, #1B1F35)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- covered buttons at each cuff -->
+  <circle cx="132" cy="336" r="4" fill="var(--c3, #EFE6D4)"/>
+  <circle cx="268" cy="336" r="4" fill="var(--c3, #EFE6D4)"/>
+
+  <!-- highlight -->
+  <path d="M152 196 q20 8 30 10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 196 q-20 8 -30 10" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

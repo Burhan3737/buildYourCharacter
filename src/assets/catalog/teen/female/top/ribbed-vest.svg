@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=WIDE STRAP, armhole cut deep and low into the ribs · closure=closed · hem=high hip · volume=boxy -->
+  <defs>
+    <linearGradient id="teen-female-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D19C43)"/>
+    </linearGradient>
+    <pattern id="teen-female-top-ribbed-vest__rib" patternUnits="userSpaceOnUse" x="0" y="0" width="13" height="13">
+      <rect x="0" y="0" width="5" height="13" fill="var(--c2, #D19C43)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-female-top-ribbed-vest__clip">
+      <path d="M150 192 H184 q16 18 32 0 H250 q-16 30 -12 54 q-4 22 14 38 v40 q0 22 -22 22 h-60 q-22 0 -22-22 v-40 q18-16 14-38 q4-24 -12-54 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one piece: wide straps, then the armhole scooping right down past the underbust -->
+    <path d="M150 192 H184 q16 18 32 0 H250 q-16 30 -12 54 q-4 22 14 38 v40 q0 22 -22 22 h-60 q-22 0 -22-22 v-40 q18-16 14-38 q4-24 -12-54 Z"
+          fill="url(#teen-female-top-ribbed-vest__body)"/>
+  </g>
+
+  <!-- heavy rib running the whole body -->
+  <g clip-path="url(#teen-female-top-ribbed-vest__clip)">
+    <rect x="144" y="188" width="114" height="164" fill="url(#teen-female-top-ribbed-vest__rib)"/>
+  </g>
+
+  <!-- bound edges: strap tops, the two deep armholes and the hem -->
+  <path d="M150 190 h34 v9 h-34 z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M216 190 h34 v9 h-34 z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M250 194 q-16 30 -12 54 q-4 22 14 38" stroke="var(--c3, #6BBFAD)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 194 q16 30 12 54 q4 22 -14 38" stroke="var(--c3, #6BBFAD)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 336 q48 12 96 0" stroke="var(--c3, #6BBFAD)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- scooped front neckline -->
+  <path d="M184 192 q16 18 32 0 q-4 16 -16 16 q-12 0 -16-16 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- highlight along the strap tops -->
+  <path d="M158 200 q14 10 22 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 200 q-14 10 -22 12" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

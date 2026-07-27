@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=CAP · closure=closed, pulled over the head · hem=high hip · volume=GATHERED onto a narrow yoke and swinging very wide -->
+  <defs>
+    <linearGradient id="teen-female-top-smock-top__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D2796C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBEBD5)"/>
+      <stop offset="1" stop-color="var(--c2, #D2796C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D2796C)"/>
+    </linearGradient>
+    <!-- scattered four-petal florets -->
+    <pattern id="teen-female-top-smock-top__floral" patternUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <path d="M12 6 q5 0 5 6 q5 0 5 6 q0 6 -5 6 q0 6 -5 6 q-5 0 -5-6 q-5 0 -5-6 q0-6 5-6 q0-6 5-6 z"
+            fill="var(--c3, #FBEBD5)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="teen-female-top-smock-top__clip">
+      <path d="M158 220 q42 14 84 0 l58 128 q-100 30 -200 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- cap sleeves, just capping the top of the arm -->
+    <path d="M158 194 q-32 2 -34 30 l-2 20 q24 12 42 0 l-4-32 z"
+          fill="url(#teen-female-top-smock-top__cap)"/>
+    <path d="M242 194 q32 2 34 30 l2 20 q-24 12 -42 0 l4-32 z"
+          fill="url(#teen-female-top-smock-top__cap)"/>
+    <!-- the whole body gathered onto the yoke and swinging out well past the arms -->
+    <path d="M158 220 q42 14 84 0 l58 128 q-100 30 -200 0 z"
+          fill="url(#teen-female-top-smock-top__cloth)"/>
+    <!-- the narrow yoke the gathers hang from -->
+    <path d="M156 194 q44 16 88 0 v26 q-44 14 -88 0 z"
+          fill="url(#teen-female-top-smock-top__yoke)"/>
+  </g>
+
+  <!-- scattered floral over the gathered skirt of the smock -->
+  <g clip-path="url(#teen-female-top-smock-top__clip)">
+    <rect x="98" y="218" width="204" height="164" fill="url(#teen-female-top-smock-top__floral)"/>
+  </g>
+
+  <!-- neckline -->
+  <path d="M178 194 q22 16 44 0 q-8 14 -22 14 q-14 0 -22-14 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- gathers spilling out of the yoke seam -->
+  <g stroke="var(--c2, #D2796C)" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M170 228 q-14 54 -32 108"/>
+    <path d="M186 230 q-6 56 -12 114"/>
+    <path d="M214 230 q6 56 12 114"/>
+    <path d="M230 228 q14 54 32 108"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M200 232 v112"/>
+    <path d="M158 232 q-12 50 -26 100"/>
+    <path d="M242 232 q12 50 26 100"/>
+  </g>
+
+  <!-- bound yoke edge -->
+  <path d="M156 216 q44 14 88 0" stroke="var(--c3, #FBEBD5)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight -->
+  <path d="M164 202 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
