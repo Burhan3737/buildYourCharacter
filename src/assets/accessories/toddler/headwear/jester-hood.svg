@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Hood" data-family="jester-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- Fallback is periwinkle and coral with butter bells, deliberately nowhere near the green
+       hair, purple tailcoat, orange waistcoat, white face and red grin combination that reads
+       as a specific clown villain.
+       axes vs. bonnet and beanie: contour=THREE SOFT POINTS standing off a close crown, one
+       forward over the brow and one to each side, each weighted by a bell, so the outline has
+       three separate lobes instead of one smooth dome; and hem=BELL WEIGHTED TIPS rather than
+       a gathered edge or a rolled brim.
+       The forward point stops at y 237 and its bell spans x 191 to 209 and y 237 to 255. The
+       eyes run to x 189 and from x 211 and their lash arcs top out at y 259, so both eyes and
+       both brows stay fully clear. The side points are outboard of x 140 and x 260. -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-jester-hood__hoodA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5B6CB4)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-jester-hood__hoodB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #F4A79B)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close crown covering the hair entirely -->
+    <path d="M124 244 q-2 -48 36 -66 q40 -18 80 0 q38 18 36 66 q-76 16 -152 0 z"
+          fill="url(#accessories-toddler-headwear-jester-hood__hoodA)"/>
+    <!-- the forward point, falling over the brow between the eyes -->
+    <path d="M184 214 h32 q-2 16 -7 26 q-9 6 -18 0 q-5 -10 -7 -26 z"
+          fill="url(#accessories-toddler-headwear-jester-hood__hoodB)"/>
+    <!-- the two side points, sweeping down and out well outboard of the eyes -->
+    <path d="M134 218 q-16 22 -24 44 q10 8 20 2 q10 -22 18 -38 z"
+          fill="url(#accessories-toddler-headwear-jester-hood__hoodB)"/>
+    <path d="M266 218 q16 22 24 44 q-10 8 -20 2 q-10 -22 -18 -38 z"
+          fill="url(#accessories-toddler-headwear-jester-hood__hoodB)"/>
+  </g>
+
+  <!-- the three bells -->
+  <circle cx="200" cy="246" r="9" fill="var(--c3, #F7C873)"/>
+  <circle cx="108" cy="268" r="10" fill="var(--c3, #F7C873)"/>
+  <circle cx="292" cy="268" r="10" fill="var(--c3, #F7C873)"/>
+  <g fill="var(--c2, #5B6CB4)">
+    <rect x="194" y="247" width="12" height="2.6" rx="1.3"/>
+    <rect x="101" y="269" width="14" height="2.8" rx="1.4"/>
+    <rect x="285" y="269" width="14" height="2.8" rx="1.4"/>
+  </g>
+  <circle cx="197" cy="243" r="2.6" fill="#FFFFFF" fill-opacity="0.5"/>
+  <circle cx="104" cy="264" r="3" fill="#FFFFFF" fill-opacity="0.5"/>
+  <circle cx="288" cy="264" r="3" fill="#FFFFFF" fill-opacity="0.5"/>
+
+  <!-- two-colour crown blocking so the hood reads split even at tray size -->
+  <path d="M200 178 q40 2 62 22 q16 16 16 44 q-38 8 -78 8 z"
+        fill="var(--c3, #F4A79B)" fill-opacity="0.9"/>
+
+  <!-- the brow roll where the crown is turned up -->
+  <path d="M124 236 q76 18 152 0 l-2 8 q-74 16 -148 0 z" fill="var(--c2, #5B6CB4)"/>
+
+  <path d="M152 202 q48 -20 96 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

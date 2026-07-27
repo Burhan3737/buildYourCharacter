@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Attic Helm" data-family="attic-helm" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- OPEN FACED, as headwear must be at z 100: no nasal bar, no visor, no cheek plate over
+       the cheekbone. The hinged cheek pieces are drawn swung UP and back against the sides of
+       the cap, which is the whole point of this family. No horns and no wings, ever.
+       axes vs. spangen cap and hard hat: crown=A TRANSVERSE CREST running ear to ear over the
+       top, a 150 unit ridge that changes the outline completely; and sides=TWO RAISED HINGED
+       FLAPS standing off the cap rather than a smooth continuous shell.
+       Lowest geometry across the face is y 242, so both eyes stay fully clear. -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-attic-helm__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #B98B36)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-attic-helm__crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #6BBFAD)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the transverse crest, running ear to ear over the crown -->
+    <path d="M126 236 Q136 176 200 168 Q264 176 274 236 q-12 6 -22 2 Q244 194 200 188
+             Q156 194 148 238 q-10 4 -22 -2 z"
+          fill="url(#accessories-toddler-headwear-attic-helm__crest)"/>
+    <!-- the rounded cap shell -->
+    <path d="M124 242 q-2 -44 34 -60 q42 -18 84 0 q36 16 34 60 q-76 16 -152 0 z"
+          fill="url(#accessories-toddler-headwear-attic-helm__shell)"/>
+    <!-- hinged cheek pieces swung up and back against the sides -->
+    <path d="M126 244 q-16 -4 -24 -22 q-6 -16 2 -30 q12 6 18 22 q5 14 4 30 z"
+          fill="url(#accessories-toddler-headwear-attic-helm__shell)"/>
+    <path d="M274 244 q16 -4 24 -22 q6 -16 -2 -30 q-12 6 -18 22 q-5 14 -4 30 z"
+          fill="url(#accessories-toddler-headwear-attic-helm__shell)"/>
+  </g>
+
+  <!-- brow band across the front of the shell -->
+  <path d="M124 236 q76 18 152 0 l-2 8 q-74 16 -148 0 z" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- hinge bosses where the cheek pieces pivot -->
+  <circle cx="132" cy="234" r="7" fill="var(--c3, #6BBFAD)"/>
+  <circle cx="268" cy="234" r="7" fill="var(--c3, #6BBFAD)"/>
+  <circle cx="132" cy="234" r="2.6" fill="var(--c2, #B98B36)"/>
+  <circle cx="268" cy="234" r="2.6" fill="var(--c2, #B98B36)"/>
+
+  <!-- raised seam where the crest is riveted to the shell -->
+  <path d="M150 232 Q158 196 200 190 Q242 196 250 232" stroke="var(--c2, #B98B36)"
+        stroke-opacity="0.55" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <path d="M156 212 q44 -18 88 -2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 178 q18 -6 36 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

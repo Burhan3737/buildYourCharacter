@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nemes Headcloth" data-family="nemes" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- Pharaonic Egypt is a historical period with no living community whose religious identity
+       is at stake, so it is in scope. NO URAEUS, no cartouche and no other marker of a
+       specific identifiable ruler: this is a striped linen headcloth and nothing more.
+       The lappets are SHORT by design and end at y 318, above the collarbone, because the
+       accessory transform budget is about 74 to 107 units from the head centre and a
+       shoulder length fall breaks it. Do not lengthen them.
+       axes vs. hijab and headwrap: hem=TWO STIFF FLAT LAPPETS hanging free in front of the
+       ears with a clear gap either side of the face, rather than a continuous drape round the
+       neck; and crown=A HARD FLAT BROW BAND over a smooth pleated cap, not a wrapped fold or
+       a knotted crown. Lowest geometry between x 140 and x 260 is y 246, eyes fully clear. -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-nemes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0E4C4)"/>
+      <stop offset="1" stop-color="var(--c2, #CBB88C)"/>
+    </linearGradient>
+    <pattern id="accessories-toddler-headwear-nemes__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="8" height="16" fill="var(--c3, #4C6EA8)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="accessories-toddler-headwear-nemes__capclip">
+      <path d="M124 246 q-2 -50 36 -68 q40 -18 80 0 q38 18 36 68 q-76 16 -152 0 z"/>
+    </clipPath>
+    <clipPath id="accessories-toddler-headwear-nemes__lapclip">
+      <path d="M110 244 h38 q6 44 4 68 q-3 8 -22 8 q-19 0 -22 -8 q-2 -24 2 -68 z"/>
+      <path d="M290 244 h-38 q-6 44 -4 68 q3 8 22 8 q19 0 22 -8 q2 -24 -2 -68 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the cap over the crown -->
+    <path d="M124 246 q-2 -50 36 -68 q40 -18 80 0 q38 18 36 68 q-76 16 -152 0 z"
+          fill="url(#accessories-toddler-headwear-nemes__cloth)"/>
+    <!-- two short stiff lappets hanging in front of the ears, well clear of the face -->
+    <path d="M110 244 h38 q6 44 4 68 q-3 8 -22 8 q-19 0 -22 -8 q-2 -24 2 -68 z"
+          fill="url(#accessories-toddler-headwear-nemes__cloth)"/>
+    <path d="M290 244 h-38 q-6 44 -4 68 q3 8 22 8 q19 0 22 -8 q2 -24 -2 -68 z"
+          fill="url(#accessories-toddler-headwear-nemes__cloth)"/>
+    <!-- the bound tail behind, kept short -->
+    <path d="M186 296 h28 q4 26 2 40 q-2 6 -16 6 q-14 0 -16 -6 q-2 -14 2 -40 z"
+          fill="url(#accessories-toddler-headwear-nemes__cloth)"/>
+  </g>
+
+  <!-- the stripe, running the cap and both lappets -->
+  <g clip-path="url(#accessories-toddler-headwear-nemes__capclip)">
+    <rect x="120" y="176" width="160" height="76" fill="url(#accessories-toddler-headwear-nemes__stripe)"/>
+  </g>
+  <g clip-path="url(#accessories-toddler-headwear-nemes__lapclip)">
+    <rect x="104" y="242" width="192" height="82" fill="url(#accessories-toddler-headwear-nemes__stripe)"/>
+  </g>
+
+  <!-- hard flat brow band across the front of the cap -->
+  <path d="M122 234 q78 18 156 0 l-2 12 q-76 16 -152 0 z" fill="var(--c3, #4C6EA8)"/>
+  <path d="M128 238 q72 14 144 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- lappet bindings and the tail tie -->
+  <path d="M110 250 h40" stroke="var(--c3, #4C6EA8)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M250 250 h40" stroke="var(--c3, #4C6EA8)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M112 306 h36" stroke="var(--c3, #4C6EA8)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M252 306 h36" stroke="var(--c3, #4C6EA8)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M186 302 h28" stroke="var(--c3, #4C6EA8)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+
+  <path d="M156 200 q44 -18 88 -2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

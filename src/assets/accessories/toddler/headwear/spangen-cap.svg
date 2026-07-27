@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Spangen Cap" data-family="spangen-cap" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="">
+  <!-- OPEN FACED: no nasal bar, no spectacle guard, no cheek plate, no horns, no wings. This
+       is the plain riveted four panel cap and nothing else.
+       axes vs. beanie and hard hat: crown=CONICAL, rising to a small apex disc rather than a
+       soft round dome or a flat shell; and fastening=A RIGID RIVETED BROW BAND, a hard flat
+       ring studded all round, against a rolled knit brim or a moulded peak.
+       Lowest geometry across the face is y 244, so both eyes stay fully clear. -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-spangen-cap__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B9C2CE)"/>
+      <stop offset="1" stop-color="var(--c2, #78838F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- conical cap of four panels, rising to a point -->
+    <path d="M126 244 Q128 206 158 190 Q180 178 200 172 Q220 178 242 190 Q272 206 274 244
+             q-74 16 -148 0 z"
+          fill="url(#accessories-toddler-headwear-spangen-cap__panel)"/>
+  </g>
+
+  <!-- the three visible panel ribs, running from the brow band to the apex -->
+  <g stroke="var(--c3, #F1E4C4)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M200 176 V246"/>
+    <path d="M200 176 Q166 190 142 240"/>
+    <path d="M200 176 Q234 190 258 240"/>
+  </g>
+  <g stroke="var(--c2, #78838F)" stroke-opacity="0.4" stroke-width="2.2" fill="none"
+     stroke-linecap="round">
+    <path d="M200 182 V244"/>
+    <path d="M200 182 Q168 194 146 238"/>
+    <path d="M200 182 Q232 194 254 238"/>
+  </g>
+
+  <!-- apex disc capping the four panels -->
+  <circle cx="200" cy="176" r="9" fill="var(--c3, #F1E4C4)"/>
+  <circle cx="200" cy="176" r="3.4" fill="var(--c2, #78838F)"/>
+
+  <!-- plain rigid brow band, riveted right round -->
+  <path d="M125 234 q75 18 150 0 l-1 12 q-74 16 -148 0 z" fill="var(--c3, #F1E4C4)"/>
+  <g fill="var(--c2, #78838F)">
+    <circle cx="140" cy="240" r="3.2"/><circle cx="160" cy="244" r="3.2"/>
+    <circle cx="180" cy="246" r="3.2"/><circle cx="200" cy="247" r="3.2"/>
+    <circle cx="220" cy="246" r="3.2"/><circle cx="240" cy="244" r="3.2"/>
+    <circle cx="260" cy="240" r="3.2"/>
+  </g>
+
+  <path d="M162 206 q38 -18 76 -2" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

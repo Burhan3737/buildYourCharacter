@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Beast Hood" data-family="beast-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c3,c2" data-hides="hair">
+  <!-- Drawn PUSHED BACK off the face, snout sitting on the crown like a cap: headwear draws at
+       z 100 above the face, so a muzzle or a closed jaw over the features is not available.
+       The open jaw ARCHES ABOVE THE BROW; its lowest edge across the face is y 238, so both
+       eyes stay fully clear.
+       axes vs. bonnet and hijab: crown=A SNOUT AND TWO STANDING EARS sitting proud of the
+       skull, so the outline reads as an animal head resting on top rather than a smooth
+       gathered bag; and hem=A RAGGED PELT EDGE falling behind the ears rather than a bound or
+       pinned one. Tools: panel blocking (muzzle and inner jaw against the pelt) plus
+       structural (tooth row and ear cups). -->
+  <defs>
+    <linearGradient id="accessories-toddler-headwear-beast-hood__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #7D5836)"/>
+    </linearGradient>
+    <linearGradient id="accessories-toddler-headwear-beast-hood__snout" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #7D5836)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the pelt, pushed back over the crown and falling ragged behind the ears -->
+    <path d="M124 240 q-4 -46 34 -66 q42 -20 84 0 q38 20 34 66
+             q-8 22 -16 34 q-6 -14 -10 -26 q-6 16 -14 28 q-6 -14 -8 -28
+             q-52 12 -100 0 q-2 14 -8 28 q-8 -12 -14 -28 q-4 12 -10 26 q-8 -12 -16 -34 z"
+          fill="url(#accessories-toddler-headwear-beast-hood__pelt)"/>
+    <!-- two rounded ears standing on the crown -->
+    <path d="M148 190 q-14 -30 4 -40 q22 4 26 34 q-16 8 -30 6 z"
+          fill="url(#accessories-toddler-headwear-beast-hood__pelt)"/>
+    <path d="M252 190 q14 -30 -4 -40 q-22 4 -26 34 q16 8 30 6 z"
+          fill="url(#accessories-toddler-headwear-beast-hood__pelt)"/>
+    <!-- the upper snout resting forward on the crown -->
+    <path d="M164 214 q6 -34 36 -36 q30 2 36 36 q-36 12 -72 0 z"
+          fill="url(#accessories-toddler-headwear-beast-hood__snout)"/>
+  </g>
+
+  <!-- inner ear cups -->
+  <path d="M154 186 q-8 -20 2 -28 q13 4 15 24 q-9 5 -17 4 z" fill="var(--c3, #F3E0CB)"/>
+  <path d="M246 186 q8 -20 -2 -28 q-13 4 -15 24 q9 5 17 4 z" fill="var(--c3, #F3E0CB)"/>
+
+  <!-- the open jaw, arching above the brow with its tooth row -->
+  <path d="M150 234 q10 -22 50 -24 q40 2 50 24 q-8 6 -18 4 q-10 -14 -32 -15
+           q-22 1 -32 15 q-10 2 -18 -4 z" fill="var(--c3, #F3E0CB)"/>
+  <g fill="var(--c3, #F3E0CB)">
+    <path d="M160 232 l7 8 l-9 -1 z"/>
+    <path d="M178 224 l6 9 l-9 -1 z"/>
+    <path d="M222 224 l-6 9 l9 -1 z"/>
+    <path d="M240 232 l-7 8 l9 -1 z"/>
+  </g>
+
+  <!-- snout ridge and nose pad -->
+  <path d="M186 194 q14 -6 28 0" stroke="var(--c2, #7D5836)" stroke-opacity="0.5"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="182" rx="12" ry="8" fill="var(--c2, #7D5836)"/>
+  <ellipse cx="196" cy="180" rx="3" ry="2.4" fill="#FFFFFF" fill-opacity="0.4"/>
+
+  <path d="M168 208 q32 -14 64 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
