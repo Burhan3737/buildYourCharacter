@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday Japanese summer dress drawn as ordinary clothing, not costume. Simple geometric
+       surface only; no community specific woven motif.
+       WRAPPED LEFT OVER RIGHT, meaning the wearer's own left panel lies on top. The wearer's
+       left is the viewer's right, so on this canvas the band coming from the right hand side
+       crosses OVER the one from the left. Right over left is how the dead are dressed; do not
+       flip it.
+       axes vs. robe and kaftan: shoulder=WIDE RECTANGULAR SLEEVE PANELS hanging as flat slabs
+       well below the arm, where the robe has soft tapered wide sleeves; and closure=A FLAT
+       OVERLAPPING BAND COLLAR under a broad flat sash, where the robe has a shawl collar and a
+       soft tie belt. Hem is ankle, where the robe stops at mid calf.
+       Tools: panel blocking (sash and collar bands against the body) plus pattern (a 20 unit
+       geometric scatter). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-yukata__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #566AB0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3DCA8)"/>
+      <stop offset="1" stop-color="var(--c3, #F3DCA8)" stop-opacity="0.84"/>
+    </linearGradient>
+    <pattern id="toddler-female-onepiece-yukata__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M4 10 h12 M10 4 v12" stroke="var(--c3, #F3DCA8)" stroke-opacity="0.5"
+            stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    </pattern>
+    <clipPath id="toddler-female-onepiece-yukata__clip">
+      <path d="M158 344 h84 q8 46 12 96 l8 96 q-62 18 -124 0 l8 -96 q4 -50 12 -96 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide rectangular sleeve panels, hanging as flat slabs well below the arm -->
+  <g class="sp-shadow">
+    <path d="M112 348 h48 v122 q0 6 -6 6 h-40 q-6 0 -6 -6 v-116 q0 -6 4 -6 z"
+          fill="url(#toddler-female-onepiece-yukata__cloth)"/>
+    <path d="M288 348 h-48 v122 q0 6 6 6 h40 q6 0 6 -6 v-116 q0 -6 -4 -6 z"
+          fill="url(#toddler-female-onepiece-yukata__cloth)"/>
+  </g>
+
+  <!-- the wrapped body, falling straight to the ankle -->
+  <g class="sp-shadow">
+    <path d="M158 344 h84 q8 46 12 96 l8 96 q-62 18 -124 0 l8 -96 q4 -50 12 -96 z"
+          fill="url(#toddler-female-onepiece-yukata__cloth)"/>
+  </g>
+
+  <!-- geometric weave scatter across the body -->
+  <g clip-path="url(#toddler-female-onepiece-yukata__clip)">
+    <rect x="132" y="344" width="136" height="196" fill="url(#toddler-female-onepiece-yukata__weave)"/>
+  </g>
+
+  <!-- flat band collar: the band from the VIEWER'S RIGHT crosses over the other one -->
+  <path d="M186 344 L200 396 L186 420 L172 396 Z" fill="var(--c3, #F3DCA8)"/>
+  <path d="M214 344 L200 400 L216 424 L232 396 Z" fill="var(--c3, #F3DCA8)"/>
+  <path d="M214 344 L200 400 L216 424 L232 396 Z" fill="#FFFFFF" fill-opacity="0.16"/>
+  <path d="M212 348 L200 396" stroke="var(--c2, #566AB0)" stroke-opacity="0.4"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- the broad flat sash, worn high on this body -->
+  <path d="M144 414 q56 14 112 0 v34 q-56 15 -112 0 z" fill="url(#toddler-female-onepiece-yukata__sash)"/>
+  <path d="M150 422 q50 12 100 0" stroke="var(--c2, #566AB0)" stroke-opacity="0.35"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M150 440 q50 12 100 0" stroke="var(--c2, #566AB0)" stroke-opacity="0.35"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M186 448 h28 v20 q0 6 -6 6 h-16 q-6 0 -6 -6 z" fill="var(--c3, #F3DCA8)"/>
+
+  <!-- the front overlap edge running from the sash to the hem -->
+  <path d="M208 452 q4 44 6 84" stroke="var(--c2, #566AB0)" stroke-opacity="0.5"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <path d="M164 366 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M120 372 q20 8 34 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M280 372 q-20 8 -34 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece, never in costume: a costume would hide the shoes and for
+       formalwear the shoes are the look. That is why this is here and not there.
+       Fallback is mauve on cream, deliberately clear of the pale blue, the yellow and the pink
+       with a gold bodice that belong to named animated princesses.
+       axes vs. party dress and sundress: shoulder=BARE, a straight strapless band across the
+       top of the bust with no strap and no sleeve at all; and volume=A HUGE DOME sweeping the
+       ground line. Hips are 84 units wide at x 158 to 242 and this hem runs x 100 to 300, so
+       the dome clears the widest point of the body by 58 units per side, well past the 40 unit
+       floor. Tools: panel blocking (bodice against skirt) plus trim (band edge and hem band). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-ball-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BB4)"/>
+      <stop offset="1" stop-color="var(--c2, #93577F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #93577F)"/>
+      <stop offset="1" stop-color="var(--c1, #C98BB4)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-onepiece-ball-gown__skirtclip">
+      <path d="M162 428 H238 C262 452 288 500 300 552 q3 14 -12 14 H112 q-15 0 -12 -14
+               C112 500 138 452 162 428 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the dome skirt, standing well away from the leg on all sides -->
+  <g class="sp-shadow">
+    <path d="M162 428 H238 C262 452 288 500 300 552 q3 14 -12 14 H112 q-15 0 -12 -14
+             C112 500 138 452 162 428 Z"
+          fill="url(#toddler-female-onepiece-ball-gown__skirt)"/>
+  </g>
+
+  <!-- fitted bodice, coming to a clear point at the waist -->
+  <g class="sp-shadow">
+    <path d="M152 368 h96 v34 q0 18 -12 26 q-16 10 -36 14 q-20 -4 -36 -14 q-12 -8 -12 -26 z"
+          fill="url(#toddler-female-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- the straight strapless band across the top of the bust -->
+  <path d="M150 364 h100 q4 0 4 5 v9 q0 5 -4 5 h-100 q-4 0 -4 -5 v-9 q0 -5 4 -5 z"
+        fill="var(--c3, #F6EEE0)"/>
+  <path d="M156 370 h88" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vertical bodice seams converging on the waist point -->
+  <g stroke="var(--c3, #F6EEE0)" stroke-opacity="0.75" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M172 384 q6 30 16 46"/>
+    <path d="M228 384 q-6 30 -16 46"/>
+  </g>
+
+  <!-- swagged drape and a deep hem band on the dome -->
+  <g clip-path="url(#toddler-female-onepiece-ball-gown__skirtclip)">
+    <g stroke="var(--c2, #93577F)" stroke-opacity="0.5" stroke-width="4" fill="none"
+       stroke-linecap="round">
+      <path d="M162 440 Q142 490 128 560"/>
+      <path d="M182 442 Q172 496 166 562"/>
+      <path d="M218 442 Q228 496 234 562"/>
+      <path d="M238 440 Q258 490 272 560"/>
+    </g>
+    <path d="M96 540 q104 24 208 0 v14 q-104 24 -208 0 z" fill="var(--c3, #F6EEE0)"/>
+  </g>
+
+  <path d="M168 382 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 452 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday Vietnamese dress drawn as ordinary clothing, not costume. Plain cloth with a
+       simple mandarin collar; no community specific woven motif.
+       The wide trousers are drawn INTO THIS FILE and painted through the c3 variable so the
+       player can still contrast them against the tunic. This slot hides bottom, so they cannot
+       come from anywhere else.
+       axes vs. thobe and maxi length robes: closure=SPLIT TO THE WAIST AT BOTH SIDES, so the
+       tunic reads as two long free panels front and back over a separate trouser leg on each
+       side; and volume=FITTED through the torso, where the thobe is a straight column.
+       Tools: panel blocking (trouser against tunic) plus trim (mandarin collar, panel edge
+       binding and narrow cuff bands). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-ao-dai__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F5EFE2)"/>
+      <stop offset="1" stop-color="var(--c3, #F5EFE2)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E58BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #B25E75)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- wide trousers, drawn under the tunic and painted through their own variable -->
+  <g class="sp-shadow">
+    <path d="M156 446 h44 v56 q0 8 -3 14 l-8 30 q-2 6 -9 6 h-24 q-8 0 -7 -8 l6 -30
+             q-4 -6 -4 -14 z"
+          fill="url(#toddler-female-onepiece-ao-dai__trouser)"/>
+    <path d="M244 446 h-44 v56 q0 8 3 14 l8 30 q2 6 9 6 h24 q8 0 7 -8 l-6 -30
+             q4 -6 4 -14 z"
+          fill="url(#toddler-female-onepiece-ao-dai__trouser)"/>
+  </g>
+
+  <!-- long narrow sleeves -->
+  <g class="sp-shadow">
+    <path d="M130 356 q4 -12 20 -12 h10 v92 q0 6 -7 6 h-16 q-8 0 -8 -9 z"
+          fill="url(#toddler-female-onepiece-ao-dai__tunic)"/>
+    <path d="M270 356 q-4 -12 -20 -12 h-10 v92 q0 6 7 6 h16 q8 0 8 -9 z"
+          fill="url(#toddler-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- fitted tunic torso, then two long free panels split to the waist -->
+  <g class="sp-shadow">
+    <path d="M158 356 q2 -12 16 -12 h52 q14 0 16 12 v58 q0 16 -8 22 h-68 q-8 -6 -8 -22 z"
+          fill="url(#toddler-female-onepiece-ao-dai__tunic)"/>
+    <path d="M164 432 h72 q4 46 6 92 q-42 12 -84 0 q2 -46 6 -92 z"
+          fill="url(#toddler-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- mandarin collar -->
+  <path d="M180 336 h40 q4 0 4 5 v14 q0 5 -4 5 h-40 q-4 0 -4 -5 v-14 q0 -5 4 -5 z"
+        fill="var(--c2, #B25E75)"/>
+  <path d="M184 342 h32" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 358 v14" stroke="var(--c3, #F5EFE2)" stroke-width="3.4" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- bound edges down both long panels, the split that makes the family -->
+  <g stroke="var(--c3, #F5EFE2)" stroke-width="4.6" fill="none" stroke-linecap="round">
+    <path d="M164 434 q-3 46 -4 90"/>
+    <path d="M236 434 q3 46 4 90"/>
+    <path d="M158 430 h84"/>
+  </g>
+
+  <!-- narrow cuff bands and a shoulder seam -->
+  <g stroke="var(--c3, #F5EFE2)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M131 434 h27"/>
+    <path d="M242 434 h27"/>
+  </g>
+  <g stroke="var(--c2, #B25E75)" stroke-opacity="0.55" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M160 350 v82"/>
+    <path d="M240 350 v82"/>
+  </g>
+
+  <path d="M172 370 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 460 q14 6 28 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

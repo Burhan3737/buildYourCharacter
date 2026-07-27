@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece, never in costume: a costume would hide the shoes and for
+       formalwear the shoes are the look.
+       THE VEIL IS HEAD ART AND LIVES IN HEADWEAR. Do not draw one here.
+       This gown must still read as a wedding gown when a player recolours it black. White is a
+       default, not an identity, so the TRUMPET LINE and the TRAIN carry it: the body is held
+       close from shoulder through hip to the knee and only then breaks hard outward, and the
+       train pools past the ground line behind one hip. Fallback is ivory on stone, clear of
+       the pale blue, yellow and pink with gold palettes that belong to named animated
+       princesses.
+       axes vs. ball gown and maxi length dresses: volume=FITTED TO THE KNEE THEN A HARD
+       TRUMPET FLARE, an hourglass rather than a dome that starts at the waist; and shoulder=
+       LONG SHEER SET-IN SLEEVES under a high round neckline, where the ball gown is strapless.
+       Tools: trim (neck binding, sleeve cuffs and a hem band) plus structural (princess seams
+       and the train). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-bridal-gown__satin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C8B2)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-bridal-gown__sheer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7F0E4)" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="var(--c2, #D6C8B2)" stop-opacity="0.44"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the train, pooling past the ground line behind one hip -->
+  <g class="sp-shadow">
+    <path d="M228 500 q46 22 68 56 q4 12 -12 12 h-72 q-10 -30 -4 -68 z"
+          fill="url(#toddler-female-onepiece-bridal-gown__satin)"/>
+  </g>
+
+  <!-- long sheer set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M128 358 q4 -14 22 -14 h10 v88 q0 8 -8 8 h-18 q-8 0 -8 -10 z"
+          fill="url(#toddler-female-onepiece-bridal-gown__sheer)"/>
+    <path d="M272 358 q-4 -14 -22 -14 h-10 v88 q0 8 8 8 h18 q8 0 8 -10 z"
+          fill="url(#toddler-female-onepiece-bridal-gown__sheer)"/>
+  </g>
+
+  <!-- body held close from shoulder through hip to the knee, then a hard trumpet flare -->
+  <g class="sp-shadow">
+    <path d="M160 354 q2 -10 16 -10 h48 q14 0 16 10 v58 q0 14 -4 22
+             q-2 46 -4 74
+             q22 12 34 46 q4 12 -10 12 h-120 q-14 0 -10 -12 q12 -34 34 -46
+             q-2 -28 -4 -74 q-4 -8 -4 -22 z"
+          fill="url(#toddler-female-onepiece-bridal-gown__satin)"/>
+  </g>
+
+  <!-- high round neckline, bound -->
+  <path d="M178 344 q22 20 44 0 q-6 18 -22 18 q-16 0 -22 -18 z" fill="var(--c2, #D6C8B2)"/>
+  <path d="M176 346 q24 22 48 0" stroke="var(--c1, #F7F0E4)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- princess seams running the whole fitted length and marking the trumpet break -->
+  <g stroke="var(--c2, #D6C8B2)" stroke-opacity="0.6" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M178 366 q-4 60 -6 104"/>
+    <path d="M222 366 q4 60 6 104"/>
+  </g>
+  <path d="M168 500 q32 10 64 0" stroke="var(--c3, #E7D2C6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- sheer sleeve cuffs -->
+  <g stroke="var(--c3, #E7D2C6)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M129 434 h29"/>
+    <path d="M242 434 h29"/>
+  </g>
+
+  <!-- hem band closing the trumpet and the train together -->
+  <path d="M118 552 q90 20 178 0 l2 10 q-92 20 -184 0 z" fill="var(--c3, #E7D2C6)"/>
+
+  <path d="M172 372 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 526 q22 8 42 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

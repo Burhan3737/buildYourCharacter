@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. kaftan and shirt dress: shoulder=A NARROW SET-IN YOKE with short cap sleeves
+       seamed onto it, so there is a hard horizontal seam across the chest where the kaftan has
+       one continuous T of cloth; and volume=NO WAIST WHATEVER, a soft straight fall from that
+       yoke to mid calf, where the shirt dress is belted at the natural waist.
+       Tools: panel blocking (yoke against body) plus trim (bound round neck, cuff binding and
+       a gathered lace hem edge). -->
+  <defs>
+    <linearGradient id="toddler-female-onepiece-nightgown__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EBD7E6)"/>
+      <stop offset="1" stop-color="var(--c2, #C4A9C0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F8F1E6)"/>
+      <stop offset="1" stop-color="var(--c3, #F8F1E6)" stop-opacity="0.85"/>
+    </linearGradient>
+    <pattern id="toddler-female-onepiece-nightgown__sprig" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="6" cy="6" r="2.6" fill="var(--c3, #F8F1E6)" fill-opacity="0.7"/>
+      <circle cx="15" cy="14" r="2.6" fill="var(--c3, #F8F1E6)" fill-opacity="0.7"/>
+    </pattern>
+    <clipPath id="toddler-female-onepiece-nightgown__clip">
+      <path d="M156 372 h88 q6 40 12 82 l10 76 q-66 18 -132 0 l10 -76 q6 -42 12 -82 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- short cap sleeves set into the yoke -->
+  <g class="sp-shadow">
+    <path d="M126 356 q10 -12 28 -12 v34 q-16 6 -30 0 q-4 -14 2 -22 z"
+          fill="url(#toddler-female-onepiece-nightgown__cloth)"/>
+    <path d="M274 356 q-10 -12 -28 -12 v34 q16 6 30 0 q4 -14 -2 -22 z"
+          fill="url(#toddler-female-onepiece-nightgown__cloth)"/>
+  </g>
+
+  <!-- one soft straight fall from the yoke to mid calf, no waist at all -->
+  <g class="sp-shadow">
+    <path d="M156 372 h88 q6 40 12 82 l10 76 q-66 18 -132 0 l10 -76 q6 -42 12 -82 z"
+          fill="url(#toddler-female-onepiece-nightgown__cloth)"/>
+  </g>
+
+  <!-- scattered sprig print -->
+  <g clip-path="url(#toddler-female-onepiece-nightgown__clip)">
+    <rect x="130" y="372" width="140" height="164" fill="url(#toddler-female-onepiece-nightgown__sprig)"/>
+  </g>
+
+  <!-- the narrow shoulder yoke and its plain round neck -->
+  <path d="M152 344 h96 q6 0 6 8 v14 q0 8 -6 8 h-96 q-6 0 -6 -8 v-14 q0 -8 6 -8 z"
+        fill="url(#toddler-female-onepiece-nightgown__yoke)"/>
+  <path d="M180 344 q20 20 40 0 q-6 18 -20 18 q-14 0 -20 -18 z" fill="var(--c2, #C4A9C0)"/>
+  <path d="M178 346 q22 22 44 0" stroke="var(--c3, #F8F1E6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 372 q48 12 96 0" stroke="var(--c3, #F8F1E6)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cap sleeve binding -->
+  <path d="M126 374 q14 8 28 2" stroke="var(--c3, #F8F1E6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M274 374 q-14 8 -28 2" stroke="var(--c3, #F8F1E6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gathered lace edge at the mid calf hem -->
+  <path d="M134 518 q66 18 132 0 l2 12 q-68 18 -136 0 z" fill="var(--c3, #F8F1E6)"/>
+  <g fill="var(--c3, #F8F1E6)">
+    <circle cx="142" cy="532" r="5"/><circle cx="160" cy="536" r="5"/>
+    <circle cx="180" cy="539" r="5"/><circle cx="200" cy="540" r="5"/>
+    <circle cx="220" cy="539" r="5"/><circle cx="240" cy="536" r="5"/>
+    <circle cx="258" cy="532" r="5"/>
+  </g>
+
+  <path d="M164 388 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
