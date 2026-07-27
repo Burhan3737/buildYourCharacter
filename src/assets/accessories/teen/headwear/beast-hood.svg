@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Beast Hood" data-family="beast-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- drawn PUSHED BACK off the face: the snout sits on the crown like a cap and the open jaw -->
+  <!-- arches ABOVE the brow. Headwear draws above the face, so nothing may cross the eyes. -->
+  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60 -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-beast-hood__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #7C5638)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-beast-hood__snout" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #7C5638)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the skin lying over the crown and down behind the ears, with a shaggy lobed lower edge -->
+    <path d="M136 152 Q128 106 150 82 Q174 60 200 60 Q226 60 250 82 Q272 106 264 152
+             Q256 142 250 154 Q242 144 234 156 Q226 146 218 156
+             L182 156 Q174 146 166 156 Q158 144 150 154 Q144 142 136 152 Z"
+          fill="url(#accessories-teen-headwear-beast-hood__pelt)"/>
+    <!-- the upper snout, resting forward on the crown -->
+    <path d="M168 92 Q200 62 232 92 Q236 104 228 108 L172 108 Q164 104 168 92 Z"
+          fill="url(#accessories-teen-headwear-beast-hood__snout)"/>
+    <!-- two rounded ears -->
+    <path d="M152 84 Q142 60 156 50 Q172 56 174 78 Z" fill="url(#accessories-teen-headwear-beast-hood__pelt)"/>
+    <path d="M248 84 Q258 60 244 50 Q228 56 226 78 Z" fill="url(#accessories-teen-headwear-beast-hood__pelt)"/>
+  </g>
+
+  <!-- the open jaw, arching above the brow: an upper tooth row and nothing below it -->
+  <path d="M166 106 Q200 96 234 106 L234 116 Q200 106 166 116 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M172 114 l5 8 l5 -8 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M190 112 l5 9 l5 -9 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M208 112 l5 9 l5 -9 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M224 114 l5 8 l5 -8 Z" fill="var(--c3, #FBF3E4)"/>
+
+  <!-- muzzle bridge and nose pad -->
+  <ellipse cx="200" cy="74" rx="12" ry="8" fill="var(--c2, #7C5638)"/>
+  <path d="M186 88 q14 -6 28 0" stroke="var(--c2, #7C5638)" stroke-opacity="0.7"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- inner ears -->
+  <path d="M156 78 Q152 62 160 58 Q168 64 166 76 Z" fill="var(--c2, #7C5638)"/>
+  <path d="M244 78 Q248 62 240 58 Q232 64 234 76 Z" fill="var(--c2, #7C5638)"/>
+  <path d="M172 84 Q186 70 200 68" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

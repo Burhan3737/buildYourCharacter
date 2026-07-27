@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Laurel Wreath" data-family="laurel-wreath" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60. The wreath follows the -->
+  <!-- hairline arc and is OPEN at the back of the crown, so it never becomes a solid cap -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-laurel-wreath__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8A78)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left spray: paired pointed leaves sweeping back from the brow toward the temple -->
+    <path d="M198 74 Q182 66 168 76 Q182 84 198 80 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M198 84 Q182 82 170 92 Q184 98 198 90 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M174 82 Q160 76 148 88 Q162 94 176 88 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M170 96 Q156 94 146 106 Q160 110 172 102 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M154 100 Q142 98 136 112 Q148 114 156 106 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M150 114 Q140 116 138 128 Q148 128 154 120 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <!-- right spray, mirrored -->
+    <path d="M202 74 Q218 66 232 76 Q218 84 202 80 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M202 84 Q218 82 230 92 Q216 98 202 90 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M226 82 Q240 76 252 88 Q238 94 224 88 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M230 96 Q244 94 254 106 Q240 110 228 102 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M246 100 Q258 98 264 112 Q252 114 244 106 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+    <path d="M250 114 Q260 116 262 128 Q252 128 246 120 Z" fill="url(#accessories-teen-headwear-laurel-wreath__leaf)"/>
+  </g>
+
+  <!-- the stem the leaves are bound to, and the small tie where the two sprays meet at the brow -->
+  <path d="M140 122 Q166 82 200 76 Q234 82 260 122" stroke="var(--c2, #3E8A78)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M193 72 h14 v8 h-14 z" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="76" r="5" fill="var(--c3, #F7C873)"/>
+
+  <!-- leaf ribs -->
+  <path d="M172 78 q10 4 20 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 78 q-10 4 -20 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 92 q10 2 18 -2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 92 q-10 2 -18 -2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+</svg>

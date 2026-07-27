@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Hood" data-family="jester-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- fallbacks kept clear of the clown-villain palette: periwinkle, coral and butter, never -->
+  <!-- green hair with purple and orange. The forward point stops at the brow and never reaches the eyes. -->
+  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60 -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-jester-hood__hoodA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6AB0)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-jester-hood__hoodB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6AB0)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close hood over the crown, colour-blocked down the centre so it reads at tray size -->
+    <path d="M200 60 Q166 60 150 82 Q134 104 137 132 L166 128 Q162 100 178 82 Q188 68 200 66 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodA)"/>
+    <path d="M200 60 Q234 60 250 82 Q266 104 263 132 L234 128 Q238 100 222 82 Q212 68 200 66 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodB)"/>
+    <path d="M166 128 Q162 100 178 82 Q188 68 200 66 Q212 68 222 82 Q238 100 234 128 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodA)"/>
+    <!-- the forward point, falling over the brow -->
+    <path d="M186 74 Q200 66 214 74 Q212 96 204 112 Q200 118 196 112 Q188 96 186 74 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodB)"/>
+    <!-- the two side points -->
+    <path d="M150 84 Q136 78 124 84 Q112 92 106 106 Q122 108 136 100 Q146 94 150 84 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodB)"/>
+    <path d="M250 84 Q264 78 276 84 Q288 92 294 106 Q278 108 264 100 Q254 94 250 84 Z"
+          fill="url(#accessories-teen-headwear-jester-hood__hoodA)"/>
+  </g>
+
+  <!-- three small round bells, one at each point -->
+  <circle cx="200" cy="118" r="7" fill="var(--c2, #5A6AB0)"/>
+  <circle cx="198" cy="116" r="2.6" fill="#FFFFFF" fill-opacity="0.7"/>
+  <circle cx="105" cy="108" r="7" fill="var(--c2, #5A6AB0)"/>
+  <circle cx="103" cy="106" r="2.6" fill="#FFFFFF" fill-opacity="0.7"/>
+  <circle cx="295" cy="108" r="7" fill="var(--c2, #5A6AB0)"/>
+  <circle cx="293" cy="106" r="2.6" fill="#FFFFFF" fill-opacity="0.7"/>
+
+  <!-- hood band at the hairline -->
+  <path d="M136 122 Q200 108 264 122 L264 132 Q200 118 136 132 Z" fill="var(--c2, #5A6AB0)"/>
+  <path d="M166 82 Q186 68 202 68" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

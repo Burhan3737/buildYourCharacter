@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Attic Helm" data-family="attic-helm" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- OPEN-FACED by construction: headwear draws above the face, so the cheek pieces are drawn -->
+  <!-- swung UP and back against the sides and nothing crosses the cheekbone. No nasal bar. -->
+  <!-- No horned and no winged helm: both are 19th-century Romantic invention and a trademark tell. -->
+  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60 -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-attic-helm__bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7B08A)"/>
+      <stop offset="1" stop-color="var(--c2, #8A7452)"/>
+    </linearGradient>
+    <linearGradient id="accessories-teen-headwear-attic-helm__crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B8543F)"/>
+      <stop offset="1" stop-color="var(--c2, #8A7452)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- rounded bowl over the crown -->
+    <path d="M141 128 Q140 78 172 66 Q200 58 228 66 Q260 78 259 128
+             Q230 118 200 118 Q170 118 141 128 Z"
+          fill="url(#accessories-teen-headwear-attic-helm__bowl)"/>
+    <!-- cheek pieces, hinged UP and back against the sides -->
+    <path d="M139 118 Q126 108 124 92 Q136 88 148 100 Q154 110 152 124 Z"
+          fill="url(#accessories-teen-headwear-attic-helm__bowl)"/>
+    <path d="M261 118 Q274 108 276 92 Q264 88 252 100 Q246 110 248 124 Z"
+          fill="url(#accessories-teen-headwear-attic-helm__bowl)"/>
+    <!-- transverse crest, running ear to ear over the crown -->
+    <path d="M150 108 Q168 62 200 56 Q232 62 250 108 Q240 108 232 88
+             Q216 66 200 64 Q184 66 168 88 Q160 108 150 108 Z"
+          fill="url(#accessories-teen-headwear-attic-helm__crest)"/>
+  </g>
+
+  <!-- plain brow rim -->
+  <path d="M139 118 Q200 106 261 118 L261 130 Q200 118 139 130 Z" fill="var(--c2, #8A7452)"/>
+  <!-- hinge rivets where the cheek pieces fold back -->
+  <circle cx="146" cy="112" r="4.5" fill="var(--c3, #B8543F)"/>
+  <circle cx="254" cy="112" r="4.5" fill="var(--c3, #B8543F)"/>
+  <!-- crest ribs -->
+  <path d="M176 78 Q200 68 224 78" stroke="var(--c2, #8A7452)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M164 94 Q200 80 236 94" stroke="var(--c2, #8A7452)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M160 92 Q178 74 196 70" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

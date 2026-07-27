@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nemes" data-family="nemes" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- the lappets are deliberately SHORT and end above the collarbone: the accessory transform -->
+  <!-- budget is about 78 canvas units from the head centre, and a chest-length lappet breaks it. -->
+  <!-- No cartouche, no uraeus and no identifiable ruler: this is the plain striped headcloth. -->
+  <!-- reference head for the teen accessory class: cx 200 cy 132 rx 60 -->
+  <defs>
+    <linearGradient id="accessories-teen-headwear-nemes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C9963F)"/>
+    </linearGradient>
+    <pattern id="accessories-teen-headwear-nemes__stripe" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="9" fill="var(--c3, #4A6FA8)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="accessories-teen-headwear-nemes__clip">
+      <path d="M138 128 Q136 88 164 72 Q200 56 236 72 Q264 88 262 128
+               L272 176 Q272 194 258 196 L240 194 L236 132 L164 132 L160 194 L142 196
+               Q128 194 128 176 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M138 128 Q136 88 164 72 Q200 56 236 72 Q264 88 262 128
+             L272 176 Q272 194 258 196 L240 194 L236 132 L164 132 L160 194 L142 196
+             Q128 194 128 176 Z"
+          fill="url(#accessories-teen-headwear-nemes__cloth)"/>
+    <g clip-path="url(#accessories-teen-headwear-nemes__clip)">
+      <rect x="126" y="56" width="150" height="142" fill="url(#accessories-teen-headwear-nemes__stripe)"/>
+    </g>
+  </g>
+
+  <!-- the bound brow band -->
+  <path d="M137 116 Q200 100 263 116 L263 130 Q200 114 137 130 Z" fill="var(--c3, #4A6FA8)"/>
+  <path d="M137 122 Q200 106 263 122" stroke="var(--c1, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the two short lappets in front of the ears, ending well above the collarbone -->
+  <path d="M128 176 Q130 190 142 194 L160 192 L162 176 Z" fill="var(--c2, #C9963F)"/>
+  <path d="M272 176 Q270 190 258 194 L240 192 L238 176 Z" fill="var(--c2, #C9963F)"/>
+  <path d="M164 78 Q186 66 208 68" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
