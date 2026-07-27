@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=DROPPED long · closure=OPEN FRONT, unbuttoned over a tee · hem=hip, SQUARED · volume=boxy -->
+  <!-- the tee worn underneath is drawn into this file and painted through c3, so the opening is never a hole -->
+  <defs>
+    <linearGradient id="toddler-female-top-flannel-overshirt__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4736B)"/>
+      <stop offset="1" stop-color="var(--c2, #96504A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4736B)"/>
+      <stop offset="1" stop-color="var(--c2, #96504A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-flannel-overshirt__tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E7D4)"/>
+      <stop offset="1" stop-color="var(--c3, #F2E7D4)" stop-opacity="0.78"/>
+    </linearGradient>
+    <!-- generic even plaid, 22px repeat, no clan sett -->
+    <pattern id="toddler-female-top-flannel-overshirt__plaid" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <rect x="0" y="0" width="22" height="7" fill="var(--c2, #96504A)" fill-opacity="0.55"/>
+      <rect x="0" y="0" width="7" height="22" fill="var(--c2, #96504A)" fill-opacity="0.55"/>
+      <rect x="14" y="0" width="2.6" height="22" fill="var(--c3, #F2E7D4)" fill-opacity="0.5"/>
+      <rect x="0" y="14" width="22" height="2.6" fill="var(--c3, #F2E7D4)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="toddler-female-top-flannel-overshirt__clip">
+      <path d="M140 372 q0-24 26-24 h24 v110 h-50 z"/>
+      <path d="M260 372 q0-24 -26-24 h-24 v110 h50 z"/>
+      <rect x="116" y="356" width="40" height="92" rx="14"/>
+      <rect x="244" y="356" width="40" height="92" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the tee underneath, longer than the overshirt so it shows at the neck and the hem -->
+    <path d="M168 366 q0-18 18-18 h28 q18 0 18 18 v82 q0 16 -16 16 h-32 q-16 0 -16-16 z"
+          fill="url(#toddler-female-top-flannel-overshirt__tee)"/>
+    <!-- dropped shoulder sleeves, long and square through the cuff -->
+    <rect x="116" y="356" width="40" height="92" rx="14" fill="url(#toddler-female-top-flannel-overshirt__sleeve)"/>
+    <rect x="244" y="356" width="40" height="92" rx="14" fill="url(#toddler-female-top-flannel-overshirt__sleeve)"/>
+    <!-- two boxy front panels hanging open, cut off square at the hip -->
+    <path d="M140 372 q0-24 26-24 h24 v110 h-50 z"
+          fill="url(#toddler-female-top-flannel-overshirt__panel)"/>
+    <path d="M260 372 q0-24 -26-24 h-24 v110 h50 z"
+          fill="url(#toddler-female-top-flannel-overshirt__panel)"/>
+  </g>
+
+  <!-- plaid over the panels and the sleeves -->
+  <g clip-path="url(#toddler-female-top-flannel-overshirt__clip)">
+    <rect x="112" y="344" width="176" height="124" fill="url(#toddler-female-top-flannel-overshirt__plaid)"/>
+  </g>
+
+  <!-- crew bind on the tee showing above the open front -->
+  <path d="M182 350 Q200 366 218 350" stroke="var(--c3, #F2E7D4)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat camp collar sitting open on the dropped shoulder line -->
+  <path d="M166 348 h26 l-8 22 -22 6 z" fill="var(--c2, #96504A)"/>
+  <path d="M234 348 h-26 l8 22 22 6 z" fill="var(--c2, #96504A)"/>
+
+  <!-- two chest patch pockets with flaps -->
+  <path d="M148 388 h30 v22 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #96504A)"/>
+  <path d="M222 388 h30 v22 q0 8 -8 8 h-14 q-8 0 -8-8 z" fill="var(--c2, #96504A)"/>
+  <path d="M147 394 h32 M221 394 h32" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turned back cuffs -->
+  <rect x="115" y="424" width="42" height="16" rx="7" fill="var(--c3, #F2E7D4)"/>
+  <rect x="243" y="424" width="42" height="16" rx="7" fill="var(--c3, #F2E7D4)"/>
+
+  <!-- dropped shoulder seams, sitting low on the arm -->
+  <path d="M158 372 q-6 6 -8 14 M242 372 q6 6 8 14" stroke="var(--c2, #96504A)"
+        stroke-opacity="0.5" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight -->
+  <path d="M150 372 q16 10 26 12 M224 384 q16-2 26-12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

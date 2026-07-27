@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sweater" data-family="sweater" data-slot="top"
      data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: shoulder=DROPPED · volume=TRAPEZOID, 120 wide at the chest and 82 at the hem -->
+  <!-- also: hem=WAIST at y432 · closure=closed. The deep rib pulls the hem narrower than the chest, so the -->
+  <!-- outline is a trapezoid rather than a rectangle. -->
   <defs>
     <linearGradient id="toddler-female-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #A79BE0)"/>
@@ -11,46 +14,53 @@
       <stop offset="1" stop-color="var(--c2, #8B7DC8)"/>
     </linearGradient>
     <clipPath id="toddler-female-top-sweater__clip">
-      <path d="M144 368 q0-26 26-26 h60 q26 0 26 26 v64 q0 26 -26 26 h-60 q-26 0 -26-26 z"/>
-      <rect x="120" y="348" width="38" height="88" rx="19"/>
-      <rect x="242" y="348" width="38" height="88" rx="19"/>
+      <path d="M140 372 q0-28 30-28 h60 q30 0 30 28 v24 l-14 26 q0 10 -10 10 h-72 q-10 0 -10-10 l-14-26 z"/>
+      <rect x="112" y="352" width="44" height="90" rx="22"/>
+      <rect x="244" y="352" width="44" height="90" rx="22"/>
     </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <!-- bulky knit sleeves -->
-    <rect x="120" y="348" width="38" height="88" rx="19" fill="url(#toddler-female-top-sweater__sleeve)"/>
-    <rect x="242" y="348" width="38" height="88" rx="19" fill="url(#toddler-female-top-sweater__sleeve)"/>
-    <!-- oversized knit body, x144-256 y342-458 -->
-    <path d="M144 368 q0-26 26-26 h60 q26 0 26 26 v64 q0 26 -26 26 h-60 q-26 0 -26-26 z"
+    <!-- bulky dropped sleeves -->
+    <rect x="112" y="352" width="44" height="90" rx="22" fill="url(#toddler-female-top-sweater__sleeve)"/>
+    <rect x="244" y="352" width="44" height="90" rx="22" fill="url(#toddler-female-top-sweater__sleeve)"/>
+    <!-- trapezoid body: wide across the chest, cut back in hard to a waist hem -->
+    <path d="M140 372 q0-28 30-28 h60 q30 0 30 28 v24 l-14 26 q0 10 -10 10 h-72 q-10 0 -10-10 l-14-26 z"
           fill="url(#toddler-female-top-sweater__body)"/>
   </g>
 
-  <!-- deep ribbed cuffs and hem -->
+  <!-- deep rib cuffs and the rib waistband that does the pulling in -->
   <g clip-path="url(#toddler-female-top-sweater__clip)">
-    <rect x="116" y="410" width="46" height="30" fill="var(--c2, #8B7DC8)"/>
-    <rect x="238" y="410" width="46" height="30" fill="var(--c2, #8B7DC8)"/>
-    <rect x="138" y="428" width="124" height="34" fill="var(--c2, #8B7DC8)"/>
+    <rect x="108" y="414" width="52" height="32" fill="var(--c2, #8B7DC8)"/>
+    <rect x="240" y="414" width="52" height="32" fill="var(--c2, #8B7DC8)"/>
+    <rect x="150" y="410" width="100" height="30" fill="var(--c2, #8B7DC8)"/>
     <g stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4" fill="none" stroke-linecap="round">
-      <path d="M126 415 v20 M136 415 v20 M146 415 v20 M156 415 v20"/>
-      <path d="M248 415 v20 M258 415 v20 M268 415 v20 M278 415 v20"/>
-      <path d="M150 434 v22 M164 434 v22 M178 434 v22 M192 434 v22 M206 434 v22 M220 434 v22 M234 434 v22 M248 434 v22"/>
+      <path d="M120 418 v22 M132 418 v22 M144 418 v22"/>
+      <path d="M256 418 v22 M268 418 v22 M280 418 v22"/>
+      <path d="M160 414 v22 M172 414 v22 M184 414 v22 M196 414 v22 M208 414 v22 M220 414 v22 M232 414 v22 M242 414 v22"/>
     </g>
   </g>
 
   <!-- chunky rolled crew collar -->
   <path d="M174 346 Q200 368 226 346" stroke="var(--c2, #8B7DC8)" stroke-width="12"
         fill="none" stroke-linecap="round"/>
+  <path d="M180 349 Q200 364 220 349" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
 
-  <!-- knitted chevron texture across the chest -->
-  <g stroke="var(--c3, #FFFFFF)" stroke-opacity="0.36" stroke-width="5" fill="none"
+  <!-- cable panels running down the trapezoid, following the taper -->
+  <g stroke="var(--c3, #FFFFFF)" stroke-opacity="0.34" stroke-width="5" fill="none"
      stroke-linecap="round" stroke-linejoin="round">
-    <path d="M158 382 l21 12 l21-12 l21 12 l21-12"/>
-    <path d="M158 400 l21 12 l21-12 l21 12 l21-12"/>
-    <path d="M158 418 l21 12 l21-12 l21 12 l21-12"/>
+    <path d="M168 372 q10 12 0 24 q-10 12 0 24"/>
+    <path d="M186 370 q10 12 0 24 q-10 12 0 24"/>
+    <path d="M214 370 q-10 12 0 24 q10 12 0 24"/>
+    <path d="M232 372 q-10 12 0 24 q10 12 0 24"/>
   </g>
 
-  <!-- soft shoulder highlight -->
-  <path d="M156 372 q44 15 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+  <!-- dropped shoulder seams -->
+  <path d="M160 372 q-8 6 -10 14 M240 372 q8 6 10 14" stroke="var(--c2, #8B7DC8)"
+        stroke-opacity="0.5" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft shoulder highlight across the widest point -->
+  <path d="M152 366 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

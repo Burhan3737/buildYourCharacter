@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=DROPPED raglan · closure=zip · hem=hip, deep rib band · volume=BLOUSON, bellied out above the band -->
+  <!-- separates from zip-jacket on shoulder and volume: the body swells to x138/x262 then is pulled in hard by the rib -->
+  <defs>
+    <linearGradient id="toddler-female-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA9C9)"/>
+      <stop offset="1" stop-color="var(--c2, #5D7C9C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA9C9)"/>
+      <stop offset="1" stop-color="var(--c2, #5D7C9C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-bomber__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #F1E3C8)" stop-opacity="0.82"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F1E3C8)"/>
+      <stop offset="1" stop-color="var(--c3, #F1E3C8)" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dropped raglan sleeves -->
+    <rect x="118" y="352" width="40" height="88" rx="20" fill="url(#toddler-female-top-bomber__sleeve)"/>
+    <rect x="242" y="352" width="40" height="88" rx="20" fill="url(#toddler-female-top-bomber__sleeve)"/>
+    <!-- blouson body: straight off the shoulder, bellying out at the ribs, drawn back in at the hem -->
+    <path d="M146 372 q0-28 28-28 h52 q28 0 28 28 v20 q8 20 6 34 q-2 16 -14 20 q-40 10 -80 0 q-12-4 -14-20 q-2-14 6-34 z"
+          fill="url(#toddler-female-top-bomber__body)"/>
+    <!-- ribbed stand collar -->
+    <path d="M172 340 q28-12 56 0 v18 q-28-10 -56 0 z"
+          fill="url(#toddler-female-top-bomber__collar)"/>
+  </g>
+
+  <!-- deep rib hem band, narrower than the belly above it -->
+  <path d="M158 440 h84 q0 12 -8 16 q-34 10 -68 0 q-8-4 -8-16 z"
+        fill="url(#toddler-female-top-bomber__rib)"/>
+  <g stroke="var(--c2, #5D7C9C)" stroke-opacity="0.34" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M166 442 v14 M178 442 v16 M190 442 v16 M202 442 v16 M214 442 v16 M226 442 v16 M236 442 v14"/>
+  </g>
+
+  <!-- rib cuffs -->
+  <rect x="117" y="422" width="42" height="18" rx="8" fill="url(#toddler-female-top-bomber__rib)"/>
+  <rect x="241" y="422" width="42" height="18" rx="8" fill="url(#toddler-female-top-bomber__rib)"/>
+
+  <!-- centre zip with a fat pull a toddler can grab -->
+  <rect x="196" y="346" width="9" height="98" rx="4" fill="var(--c3, #F1E3C8)"/>
+  <g stroke="var(--c2, #5D7C9C)" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round">
+    <path d="M198 356 h5 M198 368 h5 M198 380 h5 M198 392 h5 M198 404 h5 M198 416 h5 M198 428 h5"/>
+  </g>
+  <rect x="193" y="392" width="15" height="11" rx="5" fill="var(--c2, #5D7C9C)"/>
+  <path d="M200 403 v13" stroke="var(--c2, #5D7C9C)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+
+  <!-- raglan seams running from the collar out over the shoulder -->
+  <path d="M180 348 q-16 8 -24 26 M220 348 q16 8 24 26" stroke="var(--c2, #5D7C9C)"
+        stroke-opacity="0.5" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- welt pockets set into the belly of the blouson -->
+  <path d="M156 418 h26 M244 418 h-26" stroke="var(--c2, #5D7C9C)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight -->
+  <path d="M160 372 q18 10 30 12 M210 384 q18-2 30-12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

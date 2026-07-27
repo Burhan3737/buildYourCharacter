@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=LONG SLEEVE PUSHED UP, barrelled and stopping at the forearm · closure=SHORT THREE BUTTON PLACKET, no collar · hem=hip · volume=fitted -->
+  <!-- separates from tee on shoulder and closure; from polo on shoulder and volume -->
+  <defs>
+    <linearGradient id="toddler-female-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9C79A)"/>
+      <stop offset="1" stop-color="var(--c2, #C39B6C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9C79A)"/>
+      <stop offset="1" stop-color="var(--c2, #C39B6C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-henley__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F8F1E4)"/>
+      <stop offset="1" stop-color="var(--c3, #F8F1E4)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="toddler-female-top-henley__clip">
+      <path d="M150 370 q0-26 26-26 h48 q26 0 26 26 v40 q-2 22 -4 34 q-46 14 -92 0 q-2-12 -4-34 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- sleeves shoved up the arm: a barrelled tube that stops well short of the wrist -->
+    <path d="M128 366 q0-16 15-16 h14 q15 0 15 16 v22 q6 8 6 18 q0 12 -18 12 h-20 q-18 0 -18-12 q0-10 6-18 z"
+          fill="url(#toddler-female-top-henley__sleeve)"/>
+    <path d="M272 366 q0-16 -15-16 h-14 q-15 0 -15 16 v22 q-6 8 -6 18 q0 12 18 12 h20 q18 0 18-12 q0-10 -6-18 z"
+          fill="url(#toddler-female-top-henley__sleeve)"/>
+    <!-- fitted body drawing in through the ribs to a soft hip hem -->
+    <path d="M150 370 q0-26 26-26 h48 q26 0 26 26 v40 q-2 22 -4 34 q-46 14 -92 0 q-2-12 -4-34 z"
+          fill="url(#toddler-female-top-henley__body)"/>
+  </g>
+
+  <!-- fine slub knit running down the body -->
+  <g clip-path="url(#toddler-female-top-henley__clip)">
+    <g stroke="var(--c2, #C39B6C)" stroke-opacity="0.26" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M164 366 v78 M176 358 v88 M224 358 v88 M236 366 v78"/>
+    </g>
+  </g>
+
+  <!-- collarless bound neck: a plain rolled edge, no collar of any kind -->
+  <path d="M178 346 Q200 366 222 346" stroke="var(--c3, #F8F1E4)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- short placket with three big buttons -->
+  <rect x="190" y="356" width="20" height="52" rx="7" fill="url(#toddler-female-top-henley__band)"/>
+  <g fill="var(--c2, #C39B6C)">
+    <circle cx="200" cy="368" r="5"/>
+    <circle cx="200" cy="384" r="5"/>
+    <circle cx="200" cy="400" r="5"/>
+  </g>
+  <path d="M200 358 v48" stroke="var(--c2, #C39B6C)" stroke-opacity="0.3" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the pushed up roll: a fat turned back cuff sitting on the forearm -->
+  <path d="M122 400 q22 10 44 0 v12 q-22 10 -44 0 z" fill="url(#toddler-female-top-henley__band)"/>
+  <path d="M278 400 q-22 10 -44 0 v12 q22 10 44 0 z" fill="url(#toddler-female-top-henley__band)"/>
+  <g stroke="var(--c2, #C39B6C)" stroke-opacity="0.4" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M130 404 v10 M140 406 v10 M150 406 v10 M160 404 v10"/>
+    <path d="M270 404 v10 M260 406 v10 M250 406 v10 M240 404 v10"/>
+  </g>
+
+  <!-- hem band -->
+  <path d="M148 428 q52 16 104 0 q-2 12 -4 18 q-46 14 -92 0 q-2-6 -4-18 z"
+        fill="var(--c3, #F8F1E4)" fill-opacity="0.9"/>
+
+  <!-- soft chest highlight -->
+  <path d="M164 376 q14 8 22 10 M216 386 q14-2 22-10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

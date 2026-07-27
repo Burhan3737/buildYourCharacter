@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Camisole" data-family="camisole" data-slot="top"
      data-layer="top" data-colors="c1,c3,c2" data-hides="">
-  <!-- axes: shoulder=SPAGHETTI STRAP · closure=closed · hem=hip · volume=skimming straight -->
-  <!-- straight neckline held on two narrow straps, arms and shoulders bare -->
+  <!-- axes: hem=BELOW THE HIP at y474 · volume=skimming bias cut, widening slightly to the hem -->
+  <!-- also: shoulder=spaghetti ties set wide at x160 and x240 · closure=closed, straight scalloped upper edge -->
   <defs>
     <linearGradient id="toddler-female-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #A9C7EE)"/>
@@ -19,39 +19,44 @@
       <circle cx="12" cy="12" r="2.6" fill="var(--c3, #FBF3E4)" fill-opacity="0.8"/>
     </pattern>
     <clipPath id="toddler-female-top-camisole__clip">
-      <path d="M150 376 h100 v56 q0 22 -22 22 h-56 q-22 0 -22-22 z"/>
+      <path d="M152 372 h96 v72 q3 16 -1 24 q-47 12 -94 0 q-4-8 -1-24 z"/>
     </clipPath>
   </defs>
 
   <g class="sp-shadow">
-    <!-- narrow spaghetti straps -->
-    <rect x="169" y="344" width="10" height="34" rx="5" fill="url(#toddler-female-top-camisole__strap)"/>
-    <rect x="221" y="344" width="10" height="34" rx="5" fill="url(#toddler-female-top-camisole__strap)"/>
-    <!-- skimming body with a straight cut neckline at y376 -->
-    <path d="M150 376 h100 v56 q0 22 -22 22 h-56 q-22 0 -22-22 z"
+    <!-- spaghetti ties, set wide, almost at the shoulder point -->
+    <rect x="160" y="344" width="9" height="32" rx="4.5" fill="url(#toddler-female-top-camisole__strap)"/>
+    <rect x="231" y="344" width="9" height="32" rx="4.5" fill="url(#toddler-female-top-camisole__strap)"/>
+    <!-- skimming bias cut body, straight across the top, falling well past the hip -->
+    <path d="M152 372 h96 v72 q3 16 -1 24 q-47 12 -94 0 q-4-8 -1-24 z"
           fill="url(#toddler-female-top-camisole__body)"/>
   </g>
 
   <!-- dot scatter over the body -->
   <g clip-path="url(#toddler-female-top-camisole__clip)">
-    <rect x="148" y="374" width="104" height="82" fill="url(#toddler-female-top-camisole__dots)"/>
+    <rect x="148" y="370" width="104" height="112" fill="url(#toddler-female-top-camisole__dots)"/>
   </g>
 
-  <!-- scalloped lace trim along the straight neckline -->
-  <path d="M150 376 h100 v-4 q-8 9 -16 0 q-8 9 -17 0 q-8 9 -17 0 q-8 9 -17 0 q-8 9 -16 0 q-9 9 -17 0 z"
+  <!-- scalloped lace trim along the straight upper edge -->
+  <path d="M152 372 h96 v-4 q-8 9 -16 0 q-8 9 -16 0 q-8 9 -16 0 q-8 9 -16 0 q-8 9 -16 0 q-8 9 -16 0 z"
         fill="var(--c3, #FBF3E4)"/>
-  <path d="M154 372 q46 8 92 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.6"
+  <path d="M156 368 q44 8 88 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.6"
         fill="none" stroke-linecap="round"/>
 
-  <!-- matching scallop at the hem -->
-  <path d="M150 440 q22 10 50 10 q28 0 50-10 v-6 q0 22 -22 22 h-56 q-22 0 -22-22 z"
+  <!-- matching scallop along the bias hem -->
+  <path d="M151 456 q23 12 49 12 q26 0 49-12 v-12 q3 16 -1 24 q-47 12 -94 0 q-4-8 -1-24 z"
         fill="var(--c3, #FBF3E4)" fill-opacity="0.85"/>
 
-  <!-- little bow where each strap meets the neckline -->
-  <path d="M174 374 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
-  <path d="M226 374 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+  <!-- the bias seams running on the diagonal, which is what makes it drape -->
+  <g stroke="var(--c2, #7C9FCE)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M164 382 l30 84 M236 382 l-30 84"/>
+  </g>
+
+  <!-- little bow where each tie meets the edge -->
+  <path d="M164 370 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M236 370 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
 
   <!-- soft chest highlight -->
-  <path d="M160 390 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+  <path d="M162 390 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>

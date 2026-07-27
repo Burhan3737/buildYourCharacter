@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: hem=UNDERBUST, the highest hem in the slot · volume=BANDED and skin close, no sleeve -->
+  <!-- pairs with swim bottoms: the midriff between them is deliberately bare -->
+  <defs>
+    <linearGradient id="toddler-female-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #79C6D6)"/>
+      <stop offset="1" stop-color="var(--c2, #4C97A8)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #79C6D6)"/>
+      <stop offset="1" stop-color="var(--c2, #4C97A8)"/>
+    </linearGradient>
+    <!-- fine even stripe, 14px repeat -->
+    <pattern id="toddler-female-top-swim-top__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="6" height="14" fill="var(--c3, #FBEFD8)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="toddler-female-top-swim-top__clip">
+      <path d="M152 372 h96 v22 q0 10 -6 12 q-42 10 -84 0 q-6-2 -6-12 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow shoulder ties, set well in from the shoulder point -->
+    <path d="M176 344 h11 l-3 30 h-11 z" fill="url(#toddler-female-top-swim-top__tie)"/>
+    <path d="M224 344 h-11 l3 30 h11 z" fill="url(#toddler-female-top-swim-top__tie)"/>
+    <!-- one straight edged band, finishing at the underbust -->
+    <path d="M152 372 h96 v22 q0 10 -6 12 q-42 10 -84 0 q-6-2 -6-12 z"
+          fill="url(#toddler-female-top-swim-top__band)"/>
+  </g>
+
+  <!-- stripe over the band -->
+  <g clip-path="url(#toddler-female-top-swim-top__clip)">
+    <rect x="152" y="370" width="96" height="40" fill="url(#toddler-female-top-swim-top__stripe)"/>
+  </g>
+
+  <!-- bound top edge, dead straight, which is the whole read of the family -->
+  <path d="M154 374 h92" stroke="var(--c3, #FBEFD8)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 373 h84" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound lower edge -->
+  <path d="M156 400 q44 12 88 0" stroke="var(--c3, #FBEFD8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- little bow where each tie meets the band -->
+  <path d="M181 372 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBEFD8)"/>
+  <path d="M219 372 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBEFD8)"/>
+
+  <!-- soft highlight across the band -->
+  <path d="M164 386 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

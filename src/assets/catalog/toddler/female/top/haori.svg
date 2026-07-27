@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=WIDE SQUARE sleeve panel hanging free below the arm · closure=OPEN FRONT held only by a short chest cord -->
+  <!-- the straight front edges never meet, so the chest between them is painted as skin. -->
+  <defs>
+    <linearGradient id="toddler-female-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #405F86)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-haori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5F7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #405F86)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-top-haori__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the chest the open front leaves bare -->
+  <path d="M176 344 h48 v120 q-24 6 -48 0 z" fill="url(#toddler-female-top-haori__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- wide square sleeve panels, hanging free well below the arm -->
+    <path d="M110 358 q0-8 8-8 h34 q8 0 8 8 v76 q0 8 -8 8 h-34 q-8 0 -8-8 z"
+          fill="url(#toddler-female-top-haori__sleeve)"/>
+    <path d="M290 358 q0-8 -8-8 h-34 q-8 0 -8 8 v76 q0 8 8 8 h34 q8 0 8-8 z"
+          fill="url(#toddler-female-top-haori__sleeve)"/>
+    <!-- two straight front panels, squared at the hem, hanging parallel -->
+    <path d="M148 366 q0-16 16-16 h26 v112 h-42 z" fill="url(#toddler-female-top-haori__panel)"/>
+    <path d="M252 366 q0-16 -16-16 h-26 v112 h42 z" fill="url(#toddler-female-top-haori__panel)"/>
+  </g>
+
+  <!-- the collar band folded back down each front edge, broad at the neck -->
+  <path d="M176 350 h16 v112 h-12 z" fill="var(--c3, #EDE4D2)" fill-opacity="0.92"/>
+  <path d="M224 350 h-16 v112 h12 z" fill="var(--c3, #EDE4D2)" fill-opacity="0.92"/>
+  <path d="M186 356 v100 M214 356 v100" stroke="var(--c2, #405F86)" stroke-opacity="0.35"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- the short chest cord, the only thing holding the fronts together -->
+  <path d="M182 388 q18 10 36 0" stroke="var(--c3, #EDE4D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="188" cy="391" r="6" fill="var(--c3, #EDE4D2)"/>
+  <circle cx="212" cy="391" r="6" fill="var(--c3, #EDE4D2)"/>
+
+  <!-- the free hanging seam where each sleeve panel leaves the shoulder -->
+  <path d="M156 360 v76 M244 360 v76" stroke="var(--c2, #405F86)" stroke-opacity="0.45"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M112 434 h44 M288 434 h-44" stroke="var(--c2, #405F86)" stroke-opacity="0.45"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- squared hem line across both panels -->
+  <path d="M148 452 h42 M252 452 h-42" stroke="var(--c3, #EDE4D2)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M152 364 q14 8 22 10 M226 374 q14-2 22-10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
