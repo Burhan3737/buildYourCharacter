@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148. The jacket is exaggerated OUTWARD, to x 96 and
+       x 304, while its top edge stays flat on the shoulder line at y 152. -->
+  <!-- The open front resolves as an integral shirt drawn in this same file through c2. It is
+       never a hole and never a hard-coded shell colour. -->
+  <!-- axes vs disguise-coat: an open front with lapels and one button, against a coat buttoned
+       to the throat and belted (closure) + a wide sagging boxy mass with sleeves swallowing the
+       hands, against a straight narrow column (volume). -->
+  <defs>
+    <linearGradient id="adult-female-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6AB2)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-oversized-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8395DE)"/>
+      <stop offset="1" stop-color="var(--c1, #4F5FA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c2, #DAD0B9)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c3, #2A231D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- trousers, puddling in folds on the ground line -->
+    <path d="M154 302 H202 L200 420 L198 512 Q198 544 190 556 Q176 568 158 562
+             Q150 552 156 540 Q160 500 158 420 Z"
+          fill="url(#adult-female-costume-oversized-suit__trouser)"/>
+    <path d="M246 302 H198 L200 420 L202 512 Q202 544 210 556 Q224 568 242 562
+             Q250 552 244 540 Q240 500 242 420 Z"
+          fill="url(#adult-female-costume-oversized-suit__trouser)"/>
+    <!-- the integral shirt, which is what the open front resolves to -->
+    <path d="M172 152 H228 Q244 156 246 178 L250 240 Q252 288 246 316
+             Q200 332 154 316 Q148 288 150 240 L154 178 Q156 156 172 152 Z"
+          fill="url(#adult-female-costume-oversized-suit__shirt)"/>
+    <!-- enormous sleeves, swallowing the hands entirely -->
+    <path d="M152 154 Q114 158 102 200 L96 268 Q92 330 104 372 Q130 386 158 372
+             Q160 320 160 262 L162 190 Z"
+          fill="url(#adult-female-costume-oversized-suit__sleeve)"/>
+    <path d="M248 154 Q286 158 298 200 L304 268 Q308 330 296 372 Q270 386 242 372
+             Q240 320 240 262 L238 190 Z"
+          fill="url(#adult-female-costume-oversized-suit__sleeve)"/>
+    <!-- open jacket fronts, hem at mid-calf -->
+    <path d="M170 152 L198 216 L190 300 L186 470 Q166 480 146 470 Q144 380 150 280
+             L156 190 Q158 158 170 152 Z"
+          fill="url(#adult-female-costume-oversized-suit__jacket)"/>
+    <path d="M230 152 L202 216 L210 300 L214 470 Q234 480 254 470 Q256 380 250 280
+             L244 190 Q242 158 230 152 Z"
+          fill="url(#adult-female-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- lapels, folded back off the front edges -->
+  <path d="M172 154 L198 218 L184 226 L162 176 Z" fill="var(--c1, #6F7FC8)"/>
+  <path d="M228 154 L202 218 L216 226 L238 176 Z" fill="var(--c1, #6F7FC8)"/>
+  <!-- shirt placket and collar -->
+  <path d="M180 154 L200 194 L220 154" stroke="var(--c2, #C7BB9F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 200 H202 L203 312 H197 Z" fill="var(--c2, #C7BB9F)"/>
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="300" r="19" fill="url(#adult-female-costume-oversized-suit__trouser)"/>
+  <g fill="var(--c1, #8B9CE2)">
+    <circle cx="194" cy="294" r="3.2"/><circle cx="206" cy="294" r="3.2"/>
+    <circle cx="194" cy="306" r="3.2"/><circle cx="206" cy="306" r="3.2"/>
+  </g>
+  <!-- sleeve fold rucks, the sleeve is far too long -->
+  <g stroke="var(--c1, #43539A)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M100 320 q28 12 56 0 M100 346 q28 12 56 0"/>
+    <path d="M300 320 q-28 12 -56 0 M300 346 q-28 12 -56 0"/>
+  </g>
+  <!-- jacket hem and pocket flaps -->
+  <path d="M150 424 q20 8 34 2 M250 424 q-20 8 -34 2" stroke="var(--c1, #43539A)"
+        stroke-opacity="0.5" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trouser puddle folds -->
+  <g stroke="var(--c3, #17120E)" stroke-opacity="0.3" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M158 532 q16 8 34 2 M242 532 q-16 8 -34 2"/>
+    <path d="M156 550 q18 8 36 2 M244 550 q-18 8 -36 2"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M164 176 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

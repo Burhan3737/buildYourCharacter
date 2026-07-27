@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie Mail" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- NO HORNED AND NO WINGED HELMET, and no helmet of any kind. Both are nineteenth century
+       Romantic invention rather than anything worn, the winged version is a trademark tell, and
+       costume draws above the face in any case. Fallback is undyed wool, ink and brass, never
+       white with pale blue armour. -->
+  <!-- axes vs knight: a knee-length mail shirt split front for riding over an ankle-length
+       underdress, against a straight tabard panel over mail leggings (hem) + a flat shoulder cape
+       of overlapping plumes, against rounded pauldrons standing proud (shoulder/sleeve). -->
+  <defs>
+    <linearGradient id="adult-female-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E574C)"/>
+      <stop offset="1" stop-color="var(--c1, #38332C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-valkyrie__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DDD2B8)"/>
+      <stop offset="1" stop-color="var(--c2, #B3A88C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-valkyrie__plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E8DEC6)"/>
+      <stop offset="1" stop-color="var(--c2, #ADA184)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-valkyrie__brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B4832D)"/>
+    </linearGradient>
+    <pattern id="adult-female-costume-valkyrie__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="3.8" fill="none" stroke="var(--c3, #E4B15F)"
+              stroke-width="1.6" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="adult-female-costume-valkyrie__clip">
+      <path d="M164 152 H236 Q256 160 258 186 L262 260 Q264 350 260 440
+               Q232 452 210 446 L208 340 Q200 330 192 340 L190 446 Q168 452 140 440
+               Q136 350 138 260 L142 186 Q144 160 164 152 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- round shield slung behind, a disc edge showing past one hip -->
+    <circle cx="256" cy="336" r="58" fill="url(#adult-female-costume-valkyrie__wool)"/>
+    <!-- long-sleeved underdress to the ankle -->
+    <path d="M116 172 Q116 152 134 152 H148 Q166 152 166 172 L162 250 L160 330
+             Q138 340 116 330 L115 250 Z"
+          fill="url(#adult-female-costume-valkyrie__wool)"/>
+    <path d="M284 172 Q284 152 266 152 H252 Q234 152 234 172 L238 250 L240 330
+             Q262 340 284 330 L285 250 Z"
+          fill="url(#adult-female-costume-valkyrie__wool)"/>
+    <path d="M170 150 H230 Q248 156 250 178 L256 260 Q266 380 272 546
+             Q200 564 128 546 Q134 380 144 260 L150 178 Q152 156 170 150 Z"
+          fill="url(#adult-female-costume-valkyrie__wool)"/>
+    <!-- knee-length sleeveless mail shirt, split front for riding -->
+    <path d="M164 152 H236 Q256 160 258 186 L262 260 Q264 350 260 440
+             Q232 452 210 446 L208 340 Q200 330 192 340 L190 446 Q168 452 140 440
+             Q136 350 138 260 L142 186 Q144 160 164 152 Z"
+          fill="url(#adult-female-costume-valkyrie__mail)"/>
+    <!-- mail rings over the shirt -->
+    <g clip-path="url(#adult-female-costume-valkyrie__clip)">
+      <rect x="134" y="150" width="132" height="304"
+            fill="url(#adult-female-costume-valkyrie__rings)"/>
+    </g>
+    <!-- short shoulder cape of overlapping leaf-shaped plumes, lying flat -->
+    <path d="M132 152 H268 Q274 186 262 208 Q200 226 138 208 Q126 186 132 152 Z"
+          fill="url(#adult-female-costume-valkyrie__plume)"/>
+  </g>
+
+  <!-- the individual plumes, cut into the cape so the edge reads as overlapping leaves -->
+  <g fill="var(--c2, #C6BA9E)">
+    <path d="M136 158 Q148 176 144 206 Q132 200 130 178 Z"/>
+    <path d="M158 156 Q172 178 168 212 Q154 206 152 178 Z"/>
+    <path d="M182 154 Q196 178 192 218 Q178 212 176 178 Z"/>
+    <path d="M218 154 Q204 178 208 218 Q222 212 224 178 Z"/>
+    <path d="M242 156 Q228 178 232 212 Q246 206 248 178 Z"/>
+    <path d="M264 158 Q252 176 256 206 Q268 200 270 178 Z"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M138 166 Q146 186 143 202"/>
+    <path d="M184 164 Q194 188 190 212"/>
+    <path d="M216 164 Q206 188 210 212"/>
+    <path d="M262 166 Q254 186 257 202"/>
+  </g>
+  <!-- broad belt, carrying the shield behind -->
+  <path d="M138 288 Q200 306 262 288 L263 318 Q200 336 137 318 Z"
+        fill="url(#adult-female-costume-valkyrie__brass)"/>
+  <path d="M188 284 H212 Q216 302 212 322 H188 Q184 302 188 284 Z" fill="var(--c1, #38332C)"/>
+  <!-- shield rim and boss edge, showing past the hip -->
+  <path d="M292 306 Q300 336 292 368" stroke="var(--c3, #E4B15F)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 320 Q292 336 286 354" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- the riding split, banded so it reads at thumbnail size -->
+  <path d="M192 344 L190 442 M208 344 L210 442" stroke="var(--c3, #B4832D)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- mail shirt hem band -->
+  <path d="M140 432 Q166 446 190 440 M210 440 Q234 446 260 432" stroke="var(--c3, #B4832D)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- underdress hem band -->
+  <path d="M130 528 Q200 548 270 528" stroke="var(--c3, #E4B15F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M168 182 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

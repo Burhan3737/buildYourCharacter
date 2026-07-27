@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ice Skates" data-family="ice-skates" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: sole depth, the boot sole stops at y 552 and a thin blade runs along
+       the ground at y 562 to 570, so the shoe stands clear of its own sole on two stanchions,
+       plus fastening, a long hooked lace ladder of six crossings carried right up the shaft.
+       The stanchion band is drawn as a dark recess rather than open canvas so that no strip
+       of bare foot is left showing between the sole and the blade.
+       surface tools: panel blocking (pale boot against a steel blade and a dark chassis)
+       plus structural detail (lace ladder, hooks, eyelets) plus trim (topline binding). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-ice-skates__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4F1EA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2CBBE)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-ice-skates__blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8FA3B8)"/>
+      <stop offset="1" stop-color="var(--c3, #8FA3B8)" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two padded above ankle boots whose soles end at y 552, and the two thin
+       blades that carry them, protruding fore and aft of the boot -->
+  <g class="sp-shadow">
+    <path d="M161 498 C161 490 169 486 181 486 C193 486 201 490 201 498
+             L201 534 C206 536 208 540 208 545 L208 548 C208 551 205 552 201 552
+             L156 552 C150 552 148 549 148 544 L148 522 C148 510 154 502 161 498 Z"
+          fill="url(#adult-female-shoes-ice-skates__boot)"/>
+    <path d="M152 562 L206 562 C209 562 210 564 210 566 C210 569 208 570 205 570
+             L153 570 C149 570 146 568 146 566 C146 563 148 562 152 562 Z"
+          fill="url(#adult-female-shoes-ice-skates__blade)"/>
+    <path d="M239 498 C239 490 231 486 219 486 C207 486 199 490 199 498
+             L199 534 C194 536 192 540 192 545 L192 548 C192 551 195 552 199 552
+             L244 552 C250 552 252 549 252 544 L252 522 C252 510 246 502 239 498 Z"
+          fill="url(#adult-female-shoes-ice-skates__boot)"/>
+    <path d="M248 562 L194 562 C191 562 190 564 190 566 C190 569 192 570 195 570
+             L247 570 C251 570 254 568 254 566 C254 563 252 562 248 562 Z"
+          fill="url(#adult-female-shoes-ice-skates__blade)"/>
+  </g>
+
+  <!-- dark chassis recess between sole and blade -->
+  <rect x="150" y="551" width="58" height="12" rx="3" fill="#241C1A"/>
+  <rect x="192" y="551" width="58" height="12" rx="3" fill="#241C1A"/>
+
+  <!-- two stanchion posts per skate, carrying the blade -->
+  <rect x="156" y="550" width="12" height="14" rx="3" fill="var(--c3, #8FA3B8)"/>
+  <rect x="190" y="550" width="12" height="14" rx="3" fill="var(--c3, #8FA3B8)"/>
+  <rect x="198" y="550" width="12" height="14" rx="3" fill="var(--c3, #8FA3B8)"/>
+  <rect x="232" y="550" width="12" height="14" rx="3" fill="var(--c3, #8FA3B8)"/>
+
+  <!-- toe picks at the front of each blade -->
+  <path d="M204 562 h6 l-1 6 h-4 z" fill="var(--c3, #8FA3B8)"/>
+  <path d="M190 562 h6 l-1 6 h-4 z" fill="var(--c3, #8FA3B8)"/>
+
+  <!-- topline binding round the padded collar -->
+  <path d="M162 496 C168 488 194 488 200 496" stroke="var(--c3, #8FA3B8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 496 C232 488 206 488 200 496" stroke="var(--c3, #8FA3B8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long hooked lace ladder, six crossings up the shaft -->
+  <path d="M164 502 L196 512 M196 502 L164 512
+           M164 512 L196 522 M196 512 L164 522
+           M164 522 L196 532 M196 522 L164 532
+           M164 532 L196 540 M196 532 L164 540"
+        stroke="var(--c2, #D2CBBE)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M204 502 L236 512 M236 502 L204 512
+           M204 512 L236 522 M236 512 L204 522
+           M204 522 L236 532 M236 522 L204 532
+           M204 532 L236 540 M236 532 L204 540"
+        stroke="var(--c2, #D2CBBE)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- lace hooks at the top of each ladder -->
+  <path d="M164 500 q-5 1 -4 6" stroke="var(--c3, #8FA3B8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M196 500 q5 1 4 6" stroke="var(--c3, #8FA3B8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 500 q-5 1 -4 6" stroke="var(--c3, #8FA3B8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 500 q5 1 4 6" stroke="var(--c3, #8FA3B8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- eyelets down the lower shaft -->
+  <circle cx="164" cy="532" r="2.4" fill="var(--c3, #8FA3B8)"/>
+  <circle cx="196" cy="532" r="2.4" fill="var(--c3, #8FA3B8)"/>
+  <circle cx="204" cy="532" r="2.4" fill="var(--c3, #8FA3B8)"/>
+  <circle cx="236" cy="532" r="2.4" fill="var(--c3, #8FA3B8)"/>
+
+  <!-- leather sheen on the boot -->
+  <path d="M168 508 V534" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 508 V534" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 544 q22 5 42 1" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 544 q-22 5 -42 1" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

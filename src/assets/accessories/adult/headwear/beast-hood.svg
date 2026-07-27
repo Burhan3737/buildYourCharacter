@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Beast Hood" data-family="beast-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes vs animal-ears and the caps: CROWN SHAPE (a whole beast head sitting on the crown,
+       a pair of rounded ears projecting clear above the pelt line with the snout and the open
+       jaw arch stacked in front of them, against animal-ears' two bare ears on a slim band and
+       against any smooth dome) and COVERAGE (the pelt covers the scalp out to the temples and
+       hides the hair, against animal-ears' no coverage at all).
+       PUSHED BACK, deliberately. The skin is worn shoved off the face: the front hem rises to
+       y 62 across the brow while the sides come down to y 74 at the temples, so the open jaw
+       arch bottoms out at y 62 and nothing descends over the eyes at y 100, the cheeks at
+       y 108 or the mouth. It is not a mask and it is not a muzzle.
+       Transform budget: this pool is mapped onto every target head by a uniform circle to
+       circle transform, so every drawn coordinate stays inside a circle of radius 74 centred
+       on the head centre (200, 91). The left ear's outer edge at (166, 26) is the extreme,
+       radius 73.
+       Surface tools: panel blocking (the snout and jaw arch carried on their own variables
+       against the skin) and structural detail (the ears, the nose pad, the tooth row).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-beast-hood__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B08A6E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A6A52)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-beast-hood__snout" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6A52)"/>
+      <stop offset="1" stop-color="var(--c1, #B08A6E)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-beast-hood__jaw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6A52)"/>
+      <stop offset="1" stop-color="var(--c3, #6A4F3C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the skin over the crown: high across the brow, coming down at the temples -->
+    <path d="M144 74 C138 56, 150 44, 170 35 C180 31, 220 31, 230 35
+             C250 44, 262 56, 256 74 C240 66, 220 62, 200 62
+             C180 62, 160 66, 144 74 Z"
+          fill="url(#accessories-adult-headwear-beast-hood__pelt)"/>
+    <!-- left rounded ear on the crown -->
+    <path d="M166 44 C160 38, 160 30, 166 26 C174 24, 182 27, 184 35
+             C185 41, 181 46, 175 46 Z"
+          fill="url(#accessories-adult-headwear-beast-hood__pelt)"/>
+    <!-- right rounded ear -->
+    <path d="M234 44 C240 38, 240 30, 234 26 C226 24, 218 27, 216 35
+             C215 41, 219 46, 225 46 Z"
+          fill="url(#accessories-adult-headwear-beast-hood__pelt)"/>
+    <!-- the upper snout, lying forward along the crown -->
+    <path d="M186 40 C190 36, 210 36, 214 40 C218 46, 218 54, 212 58
+             C206 61, 194 61, 188 58 C182 54, 182 46, 186 40 Z"
+          fill="url(#accessories-adult-headwear-beast-hood__snout)"/>
+    <!-- the open jaw, arching above the brow -->
+    <path d="M152 42 C154 54, 174 62, 200 62 C226 62, 246 54, 248 42
+             C244 50, 224 55, 200 55 C176 55, 156 50, 152 42 Z"
+          fill="url(#accessories-adult-headwear-beast-hood__jaw)"/>
+  </g>
+
+  <!-- inner ear hollows -->
+  <path d="M169 42 C166 38, 166 32, 170 30 C175 29, 179 32, 180 37 C180 41, 176 44, 172 44 Z"
+        fill="var(--c3, #6A4F3C)"/>
+  <path d="M231 42 C234 38, 234 32, 230 30 C225 29, 221 32, 220 37 C220 41, 224 44, 228 44 Z"
+        fill="var(--c3, #6A4F3C)"/>
+  <!-- nose pad at the front of the snout -->
+  <path d="M194 39 C197 36, 203 36, 206 39 C206 43, 203 45, 200 45 C197 45, 194 43, 194 39 Z"
+        fill="var(--c3, #6A4F3C)"/>
+  <!-- the tooth row along the open jaw -->
+  <path d="M162 49 l4 7 l4 -6 Z" fill="#F6F2E9"/>
+  <path d="M176 54 l4 7 l4 -6 Z" fill="#F6F2E9"/>
+  <path d="M192 57 l4 7 l4 -6 Z" fill="#F6F2E9"/>
+  <path d="M212 57 l4 6 l4 -7 Z" fill="#F6F2E9"/>
+  <path d="M228 54 l4 6 l4 -7 Z" fill="#F6F2E9"/>
+  <!-- fur direction across the pelt -->
+  <path d="M158 62 Q164 50 176 42 M242 62 Q236 50 224 42"
+        stroke="#3B2A22" stroke-opacity="0.13" stroke-width="3" fill="none"
+        stroke-linecap="round"/>
+  <!-- highlight over the crown of the pelt -->
+  <path d="M174 40 Q200 33 226 40" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

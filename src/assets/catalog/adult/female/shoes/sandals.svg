@@ -1,38 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Sandals" data-family="sandals" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: fastening, a buckled ankle strap closing over a closed heel counter,
+       which is what parts it from the backless slides and the toe post of the flip flops,
+       plus sole depth, the thinnest flat slab in the slot under a cupped heel that rises 26
+       units above it. Redrawn so the straps stop reading as a third slide.
+       surface tools: trim (two instep straps, ankle strap, buckle, sole edge stripe) plus
+       structural detail (heel counter seam, strap keeper). -->
   <defs>
+    <linearGradient id="adult-female-shoes-sandals__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D29085)"/>
+      <stop offset="1" stop-color="var(--c2, #D29085)" stop-opacity="0.76"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-sandals__counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D29085)"/>
+    </linearGradient>
     <linearGradient id="adult-female-shoes-sandals__strap" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
       <stop offset="1" stop-color="var(--c2, #D29085)"/>
     </linearGradient>
   </defs>
 
-  <!-- thin sole slabs: left first, right in front -->
+  <!-- major forms: two thin flat sole slabs, each with a closed heel counter cupping the
+       back of the foot -->
   <g class="sp-shadow">
-    <rect x="152" y="562" width="52" height="8" rx="4" fill="var(--c2, #D29085)"/>
-    <rect x="196" y="562" width="52" height="8" rx="4" fill="var(--c2, #D29085)"/>
+    <path d="M151 564 C151 562 154 561 159 561 L203 562 C208 562 210 564 210 566
+             C210 569 207 570 202 570 L156 570 C152 570 151 567 151 564 Z"
+          fill="url(#adult-female-shoes-sandals__sole)"/>
+    <path d="M247 564 C247 562 244 561 239 561 L195 562 C190 562 188 564 188 566
+             C188 569 191 570 196 570 L242 570 C246 570 247 567 247 564 Z"
+          fill="url(#adult-female-shoes-sandals__sole)"/>
+    <path d="M149 558 C149 546 154 539 163 539 C172 539 178 546 179 556
+             L179 564 C179 567 176 568 172 568 L155 568 C151 568 149 565 149 561 Z"
+          fill="url(#adult-female-shoes-sandals__counter)"/>
+    <path d="M249 558 C249 546 244 539 235 539 C226 539 220 546 219 556
+             L219 564 C219 567 222 568 226 568 L243 568 C247 568 249 565 249 561 Z"
+          fill="url(#adult-female-shoes-sandals__counter)"/>
   </g>
 
-  <!-- toe straps -->
-  <rect x="158" y="552" width="40" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
-  <rect x="202" y="552" width="40" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <!-- two instep straps over the exposed toes -->
+  <path d="M176 552 C182 550 190 552 199 555 C204 556 207 558 206 561
+           C205 564 201 564 196 562 C188 559 181 558 176 559 C172 560 170 558 170 555
+           C170 553 172 552 176 552 Z" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <path d="M224 552 C218 550 210 552 201 555 C196 556 193 558 194 561
+           C195 564 199 564 204 562 C212 559 219 558 224 559 C228 560 230 558 230 555
+           C230 553 228 552 224 552 Z" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <path d="M172 543 C180 541 190 544 200 548 C205 550 207 552 206 555
+           C205 558 201 557 196 555 C188 552 180 550 174 551 C170 552 167 550 167 547
+           C167 545 169 543 172 543 Z" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <path d="M228 543 C220 541 210 544 200 548 C195 550 193 552 194 555
+           C195 558 199 557 204 555 C212 552 220 550 226 551 C230 552 233 550 233 547
+           C233 545 231 543 228 543 Z" fill="url(#adult-female-shoes-sandals__strap)"/>
 
-  <!-- instep straps -->
-  <rect x="160" y="540" width="38" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
-  <rect x="202" y="540" width="38" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <!-- ankle straps closing round the shin above the counter -->
+  <path d="M160 528 C160 525 163 523 167 523 L195 523 C199 523 201 526 201 530
+           L201 534 C201 537 198 539 194 539 L166 539 C162 539 160 536 160 532 Z"
+        fill="url(#adult-female-shoes-sandals__strap)"/>
+  <path d="M238 528 C238 525 235 523 231 523 L203 523 C199 523 197 526 197 530
+           L197 534 C197 537 200 539 204 539 L232 539 C236 539 238 536 238 532 Z"
+        fill="url(#adult-female-shoes-sandals__strap)"/>
 
-  <!-- ankle straps -->
-  <rect x="160" y="528" width="36" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
-  <rect x="204" y="528" width="36" height="10" rx="5" fill="url(#adult-female-shoes-sandals__strap)"/>
+  <!-- ankle buckles with a pin -->
+  <rect x="180" y="524" width="12" height="14" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="183" y="527" width="6" height="8" rx="2" fill="var(--c2, #D29085)"/>
+  <rect x="208" y="524" width="12" height="14" rx="3" fill="var(--c3, #F7C873)"/>
+  <rect x="211" y="527" width="6" height="8" rx="2" fill="var(--c2, #D29085)"/>
 
-  <!-- instep highlights -->
-  <path d="M164 544 q14 4 28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+  <!-- strap keepers on the outer side -->
+  <rect x="164" y="522" width="6" height="18" rx="2.5" fill="var(--c3, #F7C873)"/>
+  <rect x="230" y="522" width="6" height="18" rx="2.5" fill="var(--c3, #F7C873)"/>
+
+  <!-- heel counter seam -->
+  <path d="M154 546 V564" stroke="var(--c2, #D29085)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-  <path d="M208 544 q14 4 28 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+  <path d="M244 546 V564" stroke="var(--c2, #D29085)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- little buckles -->
-  <rect x="174" y="529" width="8" height="8" rx="2" fill="var(--c3, #F7C873)"/>
-  <rect x="218" y="529" width="8" height="8" rx="2" fill="var(--c3, #F7C873)"/>
+  <!-- sole edge stripes -->
+  <rect x="153" y="565" width="54" height="3" rx="1.5" fill="var(--c3, #F7C873)"/>
+  <rect x="191" y="565" width="54" height="3" rx="1.5" fill="var(--c3, #F7C873)"/>
+
+  <!-- strap sheen -->
+  <path d="M172 546 q16 3 28 8" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 546 q-16 3 -28 8" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 527 H194" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 527 H206" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
 </svg>

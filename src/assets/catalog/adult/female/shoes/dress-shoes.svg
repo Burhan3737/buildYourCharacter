@@ -1,38 +1,85 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Dress Shoes" data-family="dress-shoes" data-slot="shoes"
      data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: toe shape, a tapered toe carrying a raised apron seam that loops up
+       and over the vamp, plus sole depth, a low stacked block heel under the back of the
+       shoe on a separate thin forepart sole. Redrawn as a loafer so it stops reading as a
+       slip on flat next to the ballet flats and leaves the lace up work to the oxfords.
+       surface tools: trim (saddle band across the raised vamp, stacked heel lifts) plus
+       structural detail (apron seam stitching, heel stack lines). -->
   <defs>
     <linearGradient id="adult-female-shoes-dress-shoes__upper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
-      <stop offset="1" stop-color="var(--c2, #33241D)"/>
+      <stop offset="0" stop-color="var(--c1, #7C3B32)"/>
+      <stop offset="1" stop-color="var(--c2, #5A2A24)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-dress-shoes__heel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5A2A24)"/>
+      <stop offset="1" stop-color="var(--c2, #5A2A24)" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
 
-  <!-- sleek low uppers: left first, right in front -->
+  <!-- major forms: two loafers with a raised vamp and a tapered toe, each sitting on its own
+       low stacked block heel -->
   <g class="sp-shadow">
-    <rect x="154" y="540" width="48" height="24" rx="12" fill="url(#adult-female-shoes-dress-shoes__upper)"/>
-    <rect x="198" y="540" width="48" height="24" rx="12" fill="url(#adult-female-shoes-dress-shoes__upper)"/>
+    <path d="M150 544 C150 536 155 532 163 532 L194 533 C202 534 208 540 209 549
+             L210 559 C210 564 206 566 200 566 L157 566 C152 566 150 562 150 557 Z"
+          fill="url(#adult-female-shoes-dress-shoes__upper)"/>
+    <path d="M149 556 L173 556 C176 556 177 559 177 562 L177 567
+             C177 569 175 570 172 570 L154 570 C150 570 147 568 147 564
+             L147 560 C147 557 147 556 149 556 Z"
+          fill="url(#adult-female-shoes-dress-shoes__heel)"/>
+    <path d="M248 544 C248 536 243 532 235 532 L204 533 C196 534 190 540 189 549
+             L188 559 C188 564 192 566 198 566 L241 566 C246 566 248 562 248 557 Z"
+          fill="url(#adult-female-shoes-dress-shoes__upper)"/>
+    <path d="M249 556 L225 556 C222 556 221 559 221 562 L221 567
+             C221 569 223 570 226 570 L244 570 C248 570 251 568 251 564
+             L251 560 C251 557 251 556 249 556 Z"
+          fill="url(#adult-female-shoes-dress-shoes__heel)"/>
   </g>
 
-  <!-- slim soles -->
-  <rect x="152" y="560" width="52" height="10" rx="5" fill="var(--c2, #33241D)"/>
-  <rect x="196" y="560" width="52" height="10" rx="5" fill="var(--c2, #33241D)"/>
+  <!-- thin forepart soles -->
+  <path d="M172 562 H206 C209 562 211 564 211 567 C211 569 209 570 206 570
+           L172 570 Z" fill="var(--c2, #5A2A24)"/>
+  <path d="M226 562 H192 C189 562 187 564 187 567 C187 569 189 570 192 570
+           L226 570 Z" fill="var(--c2, #5A2A24)"/>
 
-  <!-- heel wedges under the back -->
-  <rect x="154" y="556" width="16" height="14" rx="4" fill="var(--c2, #33241D)"/>
-  <rect x="230" y="556" width="16" height="14" rx="4" fill="var(--c2, #33241D)"/>
+  <!-- apron seam looping over the tapered toe -->
+  <path d="M180 536 C190 538 200 544 204 554 C206 559 205 562 202 564"
+        stroke="var(--c2, #5A2A24)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M181 540 C190 542 198 548 201 556 C202 560 202 562 200 563"
+        stroke="var(--c3, #D9B45C)" stroke-opacity="0.85" stroke-width="2.4"
+        stroke-dasharray="4 3.5" fill="none" stroke-linecap="round"/>
+  <path d="M220 536 C210 538 200 544 196 554 C194 559 195 562 198 564"
+        stroke="var(--c2, #5A2A24)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M219 540 C210 542 202 548 199 556 C198 560 198 562 200 563"
+        stroke="var(--c3, #D9B45C)" stroke-opacity="0.85" stroke-width="2.4"
+        stroke-dasharray="4 3.5" fill="none" stroke-linecap="round"/>
 
-  <!-- instep highlights -->
-  <path d="M159 549 q18 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <!-- saddle band across the raised vamp -->
+  <path d="M158 534 C158 532 160 531 163 531 L180 532 C183 532 185 534 185 537
+           L185 546 C185 549 183 550 180 550 L162 549 C159 549 158 547 158 544 Z"
+        fill="var(--c2, #5A2A24)"/>
+  <path d="M242 534 C242 532 240 531 237 531 L220 532 C217 532 215 534 215 537
+           L215 546 C215 549 217 550 220 550 L238 549 C241 549 242 547 242 544 Z"
+        fill="var(--c2, #5A2A24)"/>
+  <path d="M161 540 H182" stroke="var(--c3, #D9B45C)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
-  <path d="M203 549 q18 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+  <path d="M239 540 H218" stroke="var(--c3, #D9B45C)" stroke-width="3"
         fill="none" stroke-linecap="round"/>
 
-  <!-- tiny bows -->
-  <ellipse cx="170" cy="547" rx="7" ry="5" fill="var(--c3, #F4A79B)"/>
-  <ellipse cx="186" cy="547" rx="7" ry="5" fill="var(--c3, #F4A79B)"/>
-  <rect x="175" y="543" width="6" height="8" rx="3" fill="var(--c3, #F4A79B)"/>
-  <ellipse cx="214" cy="547" rx="7" ry="5" fill="var(--c3, #F4A79B)"/>
-  <ellipse cx="230" cy="547" rx="7" ry="5" fill="var(--c3, #F4A79B)"/>
-  <rect x="219" y="543" width="6" height="8" rx="3" fill="var(--c3, #F4A79B)"/>
+  <!-- stacked lifts in the block heel -->
+  <path d="M149 561 H176" stroke="var(--c3, #D9B45C)" stroke-opacity="0.55" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M149 566 H176" stroke="var(--c3, #D9B45C)" stroke-opacity="0.4" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M249 561 H222" stroke="var(--c3, #D9B45C)" stroke-opacity="0.55" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M249 566 H222" stroke="var(--c3, #D9B45C)" stroke-opacity="0.4" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- polished sheen on the raised vamp -->
+  <path d="M156 553 q20 6 38 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 553 q-20 6 -38 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
 </svg>

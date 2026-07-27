@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Serpent Locks" data-family="serpent-locks" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes vs every other family in this pool: CROWN SHAPE (a deeply lobed radiating contour
+       of twelve separate tapering ropes, no dome and no continuous edge anywhere, against the
+       smooth closed crowns of beanie, bandana, durag and the caps) and COVERAGE (it replaces
+       the hair entirely rather than sitting on top of it, so it declares data-hides="hair").
+       The lobes are the silhouette: each snake is its own filled major form inside the shadow
+       group, so the outline is irregular by construction, not by squiggles drawn inside a
+       smooth dome.
+       OPEN FACED. headwear draws at z 100, above the face, so the twelve ropes are fanned
+       between 197 and 340 degrees only, none of them running out horizontally at eye height,
+       and the scalp's lower edge is cut at y 93. Nothing reaches the eye line at y 100, the
+       cheeks at y 108 or the mouth at y 120 to 134.
+       Transform budget: this pool is authored once for the adult head-size class and mapped
+       onto every target head by a uniform circle to circle transform, so every drawn
+       coordinate stays inside a circle of radius 74 centred on the head centre (200, 91).
+       Worst radius here is 71, at a snake head over the crown.
+       This is the head half of the pairing with the gorgon costume; the costume is authored
+       separately and nothing here reaches below the jaw.
+       Surface tools: pattern fill (the scale pattern over the scalp) and structural detail
+       (the twelve ropes, their heads and their eyes).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-serpent-locks__rope" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6FB98A)"/>
+      <stop offset="1" stop-color="var(--c2, #4B8A63)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-serpent-locks__scalp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B8A63)"/>
+      <stop offset="1" stop-color="var(--c1, #6FB98A)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-headwear-serpent-locks__scale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M8 3 C12 5, 12 11, 8 13 C4 11, 4 5, 8 3 Z" fill="none"
+            stroke="var(--c3, #F7C873)" stroke-width="1.8"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the scalp the snakes grow out of, cut clear of the eye line -->
+    <path d="M148 86 C146 48, 170 30, 200 30 C230 30, 254 48, 252 86 Q200 93 148 86 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__scalp)"/>
+    <!-- twelve short thick snakes, radiating, irregular lengths and curls -->
+<path d="M178.3 75.1 C174.2 71.1, 168.1 69.9, 162.9 67.4 C158.1 65.1, 152.4 66.3, 147.1 65.8 C143.1 65.5, 142.3 74.4, 146.3 74.8 C150.2 75.2, 153.1 78.8, 156.6 80.5 C160.1 82.2, 161.5 86.6, 164.3 89.4 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M173.6 66 C170.5 66.1, 167.5 68.6, 164.6 67.6 C161.8 66.6, 158.1 67.5, 156 65.4 C153.1 62.6, 146.8 69, 149.7 71.9 C153 75.1, 155.5 79.8, 159.8 81.3 C164.7 83, 169.3 86.2, 174.5 86 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M187.7 67.9 C186.2 62.3, 181.4 58.2, 177.9 53.6 C174.8 49.3, 169.1 47.9, 164.5 45.4 C161 43.4, 156.6 51.3, 160.1 53.2 C163.3 55, 164.1 59.3, 166.3 62.2 C168.5 65.2, 167.4 69.6, 168.4 73.2 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M187.8 57.2 C184 55.3, 179 55.1, 176.1 52 C173.2 49, 168.8 47, 167.2 43.1 C165.7 39.4, 157.4 42.7, 158.8 46.4 C160.9 51.7, 161.7 57.9, 165.5 62 C169.8 66.5, 173.2 72.2, 178.7 75 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M199.1 64.8 C200 59.6, 197.5 54.4, 196.5 49.3 C195.6 44.6, 191.3 41.3, 188.6 37.5 C186.3 34.1, 178.9 39.2, 181.2 42.6 C183 45.2, 181.7 48.9, 182.3 52 C182.8 55.1, 180 58, 179.4 61.2 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M204.4 56.1 C202.2 52.6, 198.1 50.1, 197 46.1 C195.9 42, 192.7 38.4, 192.9 34.2 C193 30.2, 184 29.9, 183.9 33.9 C183.7 39.3, 181.6 44.8, 183 49.9 C184.5 55.4, 184.3 61.6, 187.3 66.5 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M211.5 65.6 C214.2 60.3, 213.7 53.9, 214.9 48 C216.1 42.5, 213.7 36.8, 213.3 31.2 C213 27.2, 204 27.8, 204.3 31.9 C204.7 36.4, 201.6 40.6, 200.7 45 C199.8 49.4, 195.7 52.6, 193.7 56.6 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M219 60.3 C218.3 57, 215.4 54, 215.8 50.7 C216.3 47.4, 214.8 43.5, 216.5 40.7 C218.6 37.2, 210.9 32.6, 208.8 36 C206.3 40.2, 202.2 43.8, 201.5 48.6 C200.7 53.9, 198.4 59.4, 199.5 64.6 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M220.5 73.9 C225.8 70.8, 228.9 64.9, 232.9 60.2 C236.6 55.9, 237 49.7, 238.8 44.3 C240.1 40.5, 231.5 37.6, 230.2 41.5 C228.9 45.4, 224.6 47.6, 221.9 50.8 C219.1 54.1, 214.1 54.5, 210.4 56.6 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M230.7 70.8 C231.2 67.8, 229.3 64.3, 230.9 61.7 C232.4 59.3, 232.4 55.6, 234.9 54.2 C238.4 52.2, 233.9 44.3, 230.4 46.4 C226.3 48.7, 221.1 50.1, 218.6 54.1 C215.8 58.6, 211.7 62.8, 210.9 68 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M226 84.6 C231.6 84.2, 236.3 80.3, 241.5 78 C246.2 76, 248.8 70.8, 252.4 67.2 C255.3 64.3, 248.9 58, 246.1 60.8 C243.4 63.5, 239 63.3, 235.6 64.8 C232.2 66.3, 228.1 64.4, 224.3 64.7 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <path d="M235.1 87.9 C238 85.2, 239.4 80.7, 242.9 78.9 C246.4 77, 249.2 73.2, 253.1 72.6 C257.1 71.9, 255.5 63, 251.6 63.7 C246.5 64.6, 240.8 63.6, 236.2 66 C231.2 68.6, 225.3 69.7, 221.2 73.5 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__rope)"/>
+    <!-- scale texture, painted straight onto a second copy of the scalp so that no drawn
+         coordinate anywhere in this file sits outside the head transform budget -->
+    <path d="M148 86 C146 48, 170 30, 200 30 C230 30, 254 48, 252 86 Q200 93 148 86 Z"
+          fill="url(#accessories-adult-headwear-serpent-locks__scale)" opacity="0.4"/>
+  </g>
+
+  <!-- a small blunt head at the tip of every rope -->
+<circle cx="141.5" cy="69.8" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="149.1" cy="65" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="157.8" cy="46.8" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="161.1" cy="39.9" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="182" cy="35.7" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="188.5" cy="28.9" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="208.4" cy="26.4" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="215.4" cy="33.9" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="236.2" cy="38" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="237.2" cy="47.7" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="252.9" cy="60.3" r="6" fill="var(--c2, #4B8A63)"/>
+  <circle cx="257.5" cy="67.2" r="6" fill="var(--c2, #4B8A63)"/>
+  <!-- and an eye on each -->
+<circle cx="140.2" cy="67.3" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="149.7" cy="62.2" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="157.6" cy="43.9" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="162.8" cy="37.6" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="183" cy="33.1" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="191" cy="27.3" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="210.7" cy="24.6" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="218.3" cy="33.8" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="238.9" cy="37.2" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="239.8" cy="49" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="255.7" cy="60.9" r="1.8" fill="var(--c3, #F7C873)"/>
+  <circle cx="259.4" cy="69.3" r="1.8" fill="var(--c3, #F7C873)"/>
+
+  <!-- highlight across the crown -->
+  <path d="M170 46 Q200 34 230 46" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

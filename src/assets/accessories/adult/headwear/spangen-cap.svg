@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Spangen Cap" data-family="spangen-cap" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs hard-hat and attic-helm: CROWN SHAPE (four separate flat riveted wedges meeting
+       at a point on top, so the crown is faceted rather than a single smooth shell, against
+       hard-hat's one moulded dome and attic-helm's bowl carrying a crest) and BRIM (a plain
+       brow band flush with the head and no projection at all, against hard-hat's stiff
+       all-round lip).
+       No nasal and no guard of any kind, per the family description, and no horns and no
+       wings, which are a 19th century invention. Fully open faced: the lowest drawn point is
+       the brow band at y 84, well above the eye line at y 100.
+       Transform budget: this pool is mapped onto every target head by a uniform circle to
+       circle transform, so every drawn coordinate stays inside a circle of radius 74 centred
+       on the head centre (200, 91). The apex at (200, 25) is the extreme, radius 66.
+       Surface tools: panel blocking (alternating wedges painted through c1 and c2 so the four
+       panels read as four) and trim (the brow band in c3) plus structural detail (the rivets).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-spangen-cap__panelA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C8B48A)"/>
+      <stop offset="1" stop-color="var(--c2, #9C8660)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-spangen-cap__panelB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9C8660)"/>
+      <stop offset="1" stop-color="var(--c1, #C8B48A)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-spangen-cap__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6E5B3E)"/>
+      <stop offset="1" stop-color="var(--c3, #6E5B3E)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- panel 1, the far left wedge -->
+    <path d="M200 25 C182 28, 162 42, 150 65 L176 67 C180 50, 190 34, 200 25 Z"
+          fill="url(#accessories-adult-headwear-spangen-cap__panelA)"/>
+    <!-- panel 2 -->
+    <path d="M200 25 C190 34, 180 50, 176 67 L200 68 C199 52, 199 36, 200 25 Z"
+          fill="url(#accessories-adult-headwear-spangen-cap__panelB)"/>
+    <!-- panel 3 -->
+    <path d="M200 25 C201 36, 201 52, 200 68 L224 67 C220 50, 210 34, 200 25 Z"
+          fill="url(#accessories-adult-headwear-spangen-cap__panelA)"/>
+    <!-- panel 4, the far right wedge -->
+    <path d="M200 25 C210 34, 220 50, 224 67 L250 65 C238 42, 218 28, 200 25 Z"
+          fill="url(#accessories-adult-headwear-spangen-cap__panelB)"/>
+    <!-- the plain brow band the four panels are riveted under -->
+    <path d="M144 62 Q200 74, 256 62 Q256 76, 200 84 Q144 76, 144 62 Z"
+          fill="url(#accessories-adult-headwear-spangen-cap__band)"/>
+  </g>
+
+  <!-- the apex boss the four wedges meet under -->
+  <circle cx="200" cy="27" r="4.6" fill="var(--c3, #6E5B3E)"/>
+  <!-- rivets down each seam -->
+  <circle cx="182" cy="46" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <circle cx="177" cy="60" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <circle cx="200" cy="47" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <circle cx="200" cy="61" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <circle cx="218" cy="46" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <circle cx="223" cy="60" r="2.2" fill="var(--c3, #6E5B3E)"/>
+  <!-- rivets round the brow band -->
+  <circle cx="156" cy="71" r="2.4" fill="#3B2A22" fill-opacity="0.34"/>
+  <circle cx="178" cy="77" r="2.4" fill="#3B2A22" fill-opacity="0.34"/>
+  <circle cx="200" cy="79" r="2.4" fill="#3B2A22" fill-opacity="0.34"/>
+  <circle cx="222" cy="77" r="2.4" fill="#3B2A22" fill-opacity="0.34"/>
+  <circle cx="244" cy="71" r="2.4" fill="#3B2A22" fill-opacity="0.34"/>
+  <!-- highlight down the lit wedge -->
+  <path d="M192 34 C182 44, 174 54, 170 64" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

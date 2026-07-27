@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: shaft height, a smooth unbroken shaft carried to just below the knee
+       at y 458, the tallest in the slot at about 110 units from top edge to ground, plus
+       fastening, none at all, no lace ladder and no buckle, only a pull loop.
+       surface tools: trim (thin stacked sole with a welt line, topline binding, pull loop)
+       plus structural detail (moulded shin seam, heel counter seam). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B4A57)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3441)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-tall-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7B4A57)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3441)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two smooth shafts to just under the knee, each running into a tapered
+       boot foot. left pair first, right pair in front -->
+  <g class="sp-shadow">
+    <path d="M163 470 C163 462 171 458 182 458 C193 458 201 462 201 470
+             L201 540 L157 540 L157 486 C157 476 159 472 163 470 Z"
+          fill="url(#adult-female-shoes-tall-boots__shaft)"/>
+    <path d="M157 536 L201 536 C206 537 209 542 209 549 L209 558
+             C209 563 205 566 198 566 L157 566 C151 566 148 562 148 555
+             L148 544 C148 539 151 536 157 536 Z"
+          fill="url(#adult-female-shoes-tall-boots__foot)"/>
+    <path d="M237 470 C237 462 229 458 218 458 C207 458 199 462 199 470
+             L199 540 L243 540 L243 486 C243 476 241 472 237 470 Z"
+          fill="url(#adult-female-shoes-tall-boots__shaft)"/>
+    <path d="M243 536 L199 536 C194 537 191 542 191 549 L191 558
+             C191 563 195 566 202 566 L243 566 C249 566 252 562 252 555
+             L252 544 C252 539 249 536 243 536 Z"
+          fill="url(#adult-female-shoes-tall-boots__foot)"/>
+  </g>
+
+  <!-- thin stacked soles, only 8 units deep -->
+  <rect x="146" y="562" width="65" height="8" rx="4" fill="var(--c2, #5C3441)"/>
+  <rect x="189" y="562" width="65" height="8" rx="4" fill="var(--c2, #5C3441)"/>
+  <rect x="148" y="563" width="61" height="3" rx="1.5" fill="var(--c3, #E5C88F)"/>
+  <rect x="191" y="563" width="61" height="3" rx="1.5" fill="var(--c3, #E5C88F)"/>
+
+  <!-- topline binding at the shaft mouth -->
+  <path d="M159 466 C166 458 198 458 199 466" stroke="var(--c3, #E5C88F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241 466 C234 458 202 458 201 466" stroke="var(--c3, #E5C88F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- pull loops at the outer edge of each shaft -->
+  <rect x="152" y="464" width="9" height="20" rx="4.5" fill="var(--c3, #E5C88F)"/>
+  <rect x="239" y="464" width="9" height="20" rx="4.5" fill="var(--c3, #E5C88F)"/>
+
+  <!-- moulded shin seams down the smooth shaft -->
+  <path d="M166 484 V536" stroke="var(--c2, #5C3441)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 484 V536" stroke="var(--c2, #5C3441)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- heel counter seams -->
+  <path d="M156 542 V562" stroke="var(--c2, #5C3441)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 542 V562" stroke="var(--c2, #5C3441)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- leather sheen down the shaft and over the instep -->
+  <path d="M178 480 V528" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M222 480 V528" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 550 q22 6 42 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 550 q-22 6 -42 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

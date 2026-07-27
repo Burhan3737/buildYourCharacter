@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime Stripes" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148. Nothing is drawn on the face: the whiteface is
+       face-mark art that does not exist in this project yet, and costume draws above the face
+       so it could not be drawn here in any case. -->
+  <!-- axes vs the slot: two narrow braces over a close banded body, breaking the torso into a
+       strapped upper and a plain lower (closure) + high-waisted trousers cropped clear above the
+       ankle, so a band of bare shin shows above the ground (hem). -->
+  <defs>
+    <linearGradient id="adult-female-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5F0E2)"/>
+      <stop offset="1" stop-color="var(--c1, #DDD5C0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-mime__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0EADC)"/>
+      <stop offset="1" stop-color="var(--c1, #D4CBB6)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c2, #2A231D)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CE7C6E)"/>
+    </linearGradient>
+    <clipPath id="adult-female-costume-mime__clip">
+      <path d="M170 150 H230 Q250 154 252 174 L256 234 Q258 262 252 282
+               Q200 298 148 282 Q142 262 144 234 L148 174 Q150 154 170 150 Z"/>
+      <path d="M116 166 Q116 150 132 150 H146 Q160 150 160 166 L157 244 L154 316
+               Q134 326 116 316 L115 244 Z"/>
+      <path d="M284 166 Q284 150 268 150 H254 Q240 150 240 166 L243 244 L246 316
+               Q266 326 284 316 L285 244 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close boat-neck long-sleeve body -->
+    <path d="M116 166 Q116 150 132 150 H146 Q160 150 160 166 L157 244 L154 316
+             Q134 326 116 316 L115 244 Z"
+          fill="url(#adult-female-costume-mime__sleeve)"/>
+    <path d="M284 166 Q284 150 268 150 H254 Q240 150 240 166 L243 244 L246 316
+             Q266 326 284 316 L285 244 Z"
+          fill="url(#adult-female-costume-mime__sleeve)"/>
+    <path d="M170 150 H230 Q250 154 252 174 L256 234 Q258 262 252 282
+             Q200 298 148 282 Q142 262 144 234 L148 174 Q150 154 170 150 Z"
+          fill="url(#adult-female-costume-mime__body)"/>
+    <!-- the bands, drawn as real blocking clipped to the body and sleeves -->
+    <g clip-path="url(#adult-female-costume-mime__clip)">
+      <g fill="url(#adult-female-costume-mime__trouser)">
+        <path d="M110 168 H292 V190 H110 Z"/>
+        <path d="M110 212 H292 V234 H110 Z"/>
+        <path d="M110 256 H292 V278 H110 Z"/>
+        <path d="M110 300 H292 V322 H110 Z"/>
+      </g>
+    </g>
+    <!-- high-waisted straight trousers, cropped clear above the ankle -->
+    <path d="M154 272 H200 L199 386 L198 502 Q176 510 155 502 L154 386 Z"
+          fill="url(#adult-female-costume-mime__trouser)"/>
+    <path d="M200 272 H246 L245 386 L244 502 Q223 510 202 502 L201 386 Z"
+          fill="url(#adult-female-costume-mime__trouser)"/>
+  </g>
+
+  <!-- two narrow braces over the shoulders -->
+  <path d="M172 152 H186 L184 232 L182 286 H170 L170 232 Z"
+        fill="url(#adult-female-costume-mime__brace)"/>
+  <path d="M228 152 H214 L216 232 L218 286 H230 L230 232 Z"
+        fill="url(#adult-female-costume-mime__brace)"/>
+  <!-- brace buttons at the waistband -->
+  <g fill="var(--c1, #F5F0E2)">
+    <circle cx="176" cy="284" r="5"/><circle cx="224" cy="284" r="5"/>
+  </g>
+  <!-- high waistband -->
+  <path d="M152 266 H248 Q252 278 248 290 H152 Q148 278 152 266 Z" fill="var(--c2, #2A231D)"/>
+  <!-- wrist cuff bands, reading as glove edges -->
+  <path d="M114 302 Q135 312 156 302 L157 322 Q135 332 113 322 Z"
+        fill="url(#adult-female-costume-mime__brace)"/>
+  <path d="M286 302 Q265 312 244 302 L243 322 Q265 332 287 322 Z"
+        fill="url(#adult-female-costume-mime__brace)"/>
+  <!-- cropped trouser hem edges -->
+  <path d="M156 494 q22 8 42 0 M202 494 q22 8 42 0" stroke="var(--c1, #F5F0E2)"
+        stroke-opacity="0.6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- boat neckline bind -->
+  <path d="M170 154 q30 10 60 0" stroke="var(--c2, #2A231D)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M166 200 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

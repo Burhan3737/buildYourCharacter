@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Motley" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- The cap-and-bells is a companion headwear family, never drawn here: costume draws above the
+       face. The identity lives in the dagged hem and cuffs instead. -->
+  <!-- axes vs the slot: a hip hem cut into four deep pointed tabs, each ending in a bell (hem)
+       + cuffs cut into the same points, so the sleeve ends in bells too (shoulder/sleeve).
+       TRADEMARK: deliberately coral, periwinkle and butter. Never default this family to
+       purple with green or purple with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="adult-female-costume-jester__a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D98A7C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jester__b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jester__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D19A44)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close hose -->
+    <path d="M158 330 H202 L200 438 L198 546 Q180 554 162 546 L160 438 Z"
+          fill="url(#adult-female-costume-jester__b)"/>
+    <path d="M198 330 H242 L242 438 L240 546 Q222 554 204 546 L202 438 Z"
+          fill="url(#adult-female-costume-jester__a)"/>
+    <!-- pointed sleeve dags with bells -->
+    <path d="M112 296 L124 334 L136 296 L148 336 L160 296 Z"
+          fill="url(#adult-female-costume-jester__b)"/>
+    <path d="M288 296 L276 334 L264 296 L252 336 L240 296 Z"
+          fill="url(#adult-female-costume-jester__a)"/>
+    <!-- sleeves -->
+    <path d="M112 168 Q112 150 130 150 H148 Q166 150 166 168 L162 234 L160 300
+             Q136 310 112 300 L111 234 Z"
+          fill="url(#adult-female-costume-jester__b)"/>
+    <path d="M288 168 Q288 150 270 150 H252 Q234 150 234 168 L238 234 L240 300
+             Q264 310 288 300 L289 234 Z"
+          fill="url(#adult-female-costume-jester__a)"/>
+    <!-- four deep pointed hip tabs, 46 units each -->
+    <path d="M146 294 L160 340 L173 294 L187 342 L200 294 L214 339 L227 294 L241 341 L254 294 Z"
+          fill="url(#adult-female-costume-jester__a)"/>
+    <!-- boxy doublet -->
+    <path d="M164 152 H236 Q252 152 252 172 L254 236 L254 298 H146 L146 236 L148 172
+             Q148 152 164 152 Z"
+          fill="url(#adult-female-costume-jester__a)"/>
+  </g>
+
+  <!-- panel blocking: the doublet and tabs split left and right, the way motley is cut -->
+  <path d="M164 152 H200 V298 H146 L146 236 L148 172 Q148 152 164 152 Z"
+        fill="url(#adult-female-costume-jester__b)"/>
+  <path d="M146 294 L160 340 L173 294 L187 342 L200 294 Z"
+        fill="url(#adult-female-costume-jester__b)"/>
+  <!-- dagged collar, points down, well clear of the jaw -->
+  <path d="M166 150 H234 L226 180 L214 158 L206 182 L194 158 L186 182 L174 158 Z"
+        fill="url(#adult-female-costume-jester__bell)"/>
+  <!-- the bells -->
+  <g fill="url(#adult-female-costume-jester__bell)">
+    <circle cx="160" cy="348" r="9"/><circle cx="187" cy="350" r="9"/>
+    <circle cx="214" cy="347" r="9"/><circle cx="241" cy="349" r="9"/>
+    <circle cx="124" cy="342" r="8"/><circle cx="148" cy="344" r="8"/>
+    <circle cx="276" cy="342" r="8"/><circle cx="252" cy="344" r="8"/>
+    <circle cx="226" cy="188" r="7"/><circle cx="206" cy="190" r="7"/>
+    <circle cx="186" cy="190" r="7"/><circle cx="174" cy="166" r="7"/>
+  </g>
+  <!-- waist cord -->
+  <path d="M146 268 Q200 284 254 268 L255 284 Q200 300 145 284 Z"
+        fill="url(#adult-female-costume-jester__bell)"/>
+  <!-- doublet seam -->
+  <path d="M200 156 V294" stroke="var(--c3, #D19A44)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 176 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

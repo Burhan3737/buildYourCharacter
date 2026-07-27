@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148. The turned-up collar frames the jaw FROM BELOW: its
+       top edge is y 150 and it is notched open at the centre front so it never crosses the chin. -->
+  <!-- axes vs oversized-suit: buttoned to the throat and belted at the waist, against an open
+       lapelled front (closure) + a straight narrow column, against a wide sagging boxy mass
+       (volume). -->
+  <defs>
+    <linearGradient id="adult-female-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D2B084)"/>
+      <stop offset="1" stop-color="var(--c1, #A98354)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-disguise-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A67A)"/>
+      <stop offset="1" stop-color="var(--c1, #9E7849)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-disguise-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCBD94)"/>
+      <stop offset="1" stop-color="var(--c1, #B08B5C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-disguise-coat__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c2, #29221C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-disguise-coat__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6B5540)"/>
+      <stop offset="1" stop-color="var(--c3, #453423)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow trousers and low shoes under the coat -->
+    <path d="M164 470 H200 L199 512 L198 546 Q182 554 166 546 L165 512 Z"
+          fill="url(#adult-female-costume-disguise-coat__leg)"/>
+    <path d="M200 470 H236 L235 512 L234 546 Q218 554 202 546 L201 512 Z"
+          fill="url(#adult-female-costume-disguise-coat__leg)"/>
+    <path d="M158 540 Q182 550 206 540 Q210 558 205 568 H160 Q154 558 158 540 Z"
+          fill="url(#adult-female-costume-disguise-coat__leg)"/>
+    <path d="M194 540 Q218 550 242 540 Q246 558 241 568 H196 Q190 558 194 540 Z"
+          fill="url(#adult-female-costume-disguise-coat__leg)"/>
+    <!-- long sleeves ending in pocket openings, no hands visible -->
+    <path d="M114 176 Q114 152 134 152 H150 Q168 152 168 176 L164 250 L160 344
+             Q136 356 114 344 L112 250 Z"
+          fill="url(#adult-female-costume-disguise-coat__sleeve)"/>
+    <path d="M286 176 Q286 152 266 152 H250 Q232 152 232 176 L236 250 L240 344
+             Q264 356 286 344 L288 250 Z"
+          fill="url(#adult-female-costume-disguise-coat__sleeve)"/>
+    <!-- long straight over-wide coat, closed to the throat, hem at mid-calf -->
+    <path d="M170 150 H230 Q256 156 260 184 L266 260 Q270 360 268 460 Q270 486 264 502
+             Q200 522 136 502 Q130 486 132 460 Q130 360 134 260 L140 184 Q144 156 170 150 Z"
+          fill="url(#adult-female-costume-disguise-coat__coat)"/>
+    <!-- wide collar turned up around the jaw, notched open at the front -->
+    <path d="M158 196 Q156 154 180 150 L200 178 L220 150 Q244 154 242 196
+             Q200 214 158 196 Z"
+          fill="url(#adult-female-costume-disguise-coat__collar)"/>
+  </g>
+
+  <!-- collar roll -->
+  <path d="M166 190 Q182 176 196 186 M234 190 Q218 176 204 186" stroke="#FFFFFF"
+        stroke-opacity="0.28" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- button line running to the throat -->
+  <g fill="var(--c3, #453423)">
+    <circle cx="200" cy="204" r="6"/><circle cx="200" cy="238" r="6"/>
+    <circle cx="200" cy="272" r="6"/><circle cx="200" cy="384" r="6"/>
+    <circle cx="200" cy="418" r="6"/><circle cx="200" cy="452" r="6"/>
+  </g>
+  <!-- closed front edge -->
+  <path d="M186 196 L184 496" stroke="var(--c1, #99733F)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- tie belt, knotted at the front -->
+  <path d="M134 286 Q200 306 266 286 L267 312 Q200 332 133 312 Z"
+        fill="url(#adult-female-costume-disguise-coat__belt)"/>
+  <path d="M182 284 Q200 274 218 284 Q226 300 218 316 Q200 326 182 316 Q174 300 182 284 Z"
+        fill="url(#adult-female-costume-disguise-coat__belt)"/>
+  <path d="M216 310 Q238 328 240 362 M226 306 Q248 320 254 352" stroke="var(--c3, #453423)"
+        stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- pocket openings, where the hands would be -->
+  <path d="M116 330 q22 12 44 0" stroke="var(--c3, #453423)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M284 330 q-22 12 -44 0" stroke="var(--c3, #453423)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- welt pockets on the coat -->
+  <path d="M148 372 h40 M212 372 h40" stroke="var(--c1, #99733F)" stroke-opacity="0.6"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 226 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

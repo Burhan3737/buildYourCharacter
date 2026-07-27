@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Attic Helm" data-family="attic-helm" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs hard-hat and spangen-cap: CROWN SHAPE (a rounded bowl carrying a raised
+       transverse crest that arches ear to ear over the top, against hard-hat's single smooth
+       dome with a fore-and-aft rib and spangen-cap's four flat riveted wedges) and
+       FASTENING/DRAPE (hinged cheek pieces swung UP and back against the sides of the bowl,
+       against hard-hat's chin strap and spangen-cap's nothing).
+       OPEN FACED by construction: the cheek pieces are drawn in the raised position, standing
+       proud of the bowl at x 132 to 155 and x 245 to 268, y 43 to 78, which is also what gives
+       this family its eared profile at tray size. Nothing reaches the eye line at y 100, the
+       cheeks at y 108 or the mouth at y 120 to 134. No nasal bar, no visor and no guard of any
+       kind, and no horns and no wings, which are a 19th century invention and not evidenced.
+       Transform budget: this pool is mapped onto every target head by a uniform circle to
+       circle transform, so every drawn coordinate stays inside a circle of radius 74 centred
+       on the head centre (200, 91). The crest apex at (200, 21) is the extreme, radius 70.
+       Surface tools: panel blocking (the crest painted through its own darker variable) and
+       trim (the brow band) plus structural detail (the rivet line and the hinge bosses).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-attic-helm__bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6C9D2)"/>
+      <stop offset="1" stop-color="var(--c2, #9BA0AD)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-attic-helm__crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9564F)"/>
+      <stop offset="1" stop-color="var(--c3, #C9564F)" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-attic-helm__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9BA0AD)"/>
+      <stop offset="1" stop-color="var(--c1, #C6C9D2)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the transverse crest, arching from above one ear to above the other -->
+    <path d="M154 72 C154 42, 180 21, 200 21 C220 21, 246 42, 246 72
+             L234 72 C234 48, 218 31, 200 31 C182 31, 166 48, 166 72 Z"
+          fill="url(#accessories-adult-headwear-attic-helm__crest)"/>
+    <!-- the rounded bowl -->
+    <path d="M146 68 C144 46, 166 34, 200 34 C234 34, 256 46, 254 68
+             C254 76, 244 80, 200 80 C156 80, 146 76, 146 68 Z"
+          fill="url(#accessories-adult-headwear-attic-helm__bowl)"/>
+    <!-- left cheek piece, hinged and swung UP and back against the bowl -->
+    <path d="M150 78 C136 76, 132 66, 138 54 C144 46, 149 43, 154 50
+             C157 59, 157 70, 155 78 Z"
+          fill="url(#accessories-adult-headwear-attic-helm__band)"/>
+    <!-- right cheek piece, likewise raised -->
+    <path d="M250 78 C264 76, 268 66, 262 54 C256 46, 251 43, 246 50
+             C243 59, 243 70, 245 78 Z"
+          fill="url(#accessories-adult-headwear-attic-helm__band)"/>
+    <!-- the brow band running round the lower edge of the bowl -->
+    <path d="M147 66 C170 74, 230 74, 253 66 C253 74, 244 80, 200 80
+             C156 80, 147 74, 147 66 Z"
+          fill="var(--c2, #9BA0AD)"/>
+  </g>
+
+  <!-- hinge bosses where the cheek pieces pivot -->
+  <circle cx="152" cy="73" r="3.4" fill="var(--c3, #C9564F)"/>
+  <circle cx="248" cy="73" r="3.4" fill="var(--c3, #C9564F)"/>
+  <!-- rivet line along the brow band -->
+  <path d="M160 74 h2 M176 77 h2 M200 78 h2 M222 77 h2 M238 74 h2"
+        stroke="#3B2A22" stroke-opacity="0.3" stroke-width="3.4" fill="none"
+        stroke-linecap="round"/>
+  <!-- the raised edge of the crest catching the light -->
+  <path d="M162 60 C166 40, 182 26, 200 25" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight across the bowl -->
+  <path d="M158 58 Q172 44 190 40" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

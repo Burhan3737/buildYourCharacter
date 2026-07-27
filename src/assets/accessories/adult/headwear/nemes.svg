@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nemes Headcloth" data-family="nemes" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3,hair1" data-hides="hair">
+  <!-- axes vs hijab and headwrap: FASTENING/DRAPE (two stiff flat lappets hanging free in
+       front of the ears with a bound queue behind, against hijab's continuous pinned drape
+       closing under the chin and headwrap's knotted fan standing above the crown) and CROWN
+       SHAPE (a low flat headcloth that follows the skull with a squared lower edge, against
+       headwrap's tall knot and hijab's rounded cowl).
+       SHORT LAPPETS, deliberately. This pool is mapped onto every target head by a uniform
+       circle to circle transform, so every drawn coordinate has to stay inside a circle of
+       radius 74 centred on the head centre (200, 91). A shoulder-length lappet breaks that
+       budget, so these end at y 150, level with the jaw, and no further. Do not lengthen them.
+       Same reason for the bound tail: a centred queue is invisible in a front view, so it is
+       drawn emerging past the head silhouette on one side.
+       Lappets stay off the face proper. Their inner edge is held at x 154 and x 246 through
+       the cheek band, so nothing crosses the eye line at y 100, the drawn cheek blush at
+       x 155 to 177 and x 223 to 245, or the mouth at y 120 to 134. The corridor between the
+       head silhouette and the transform budget is only about 24 units wide, which is what
+       sets the lappets' width; the bound queue is tucked outboard of the left one.
+       Declares its own hair1 so a little of the wearer's own hair shows at the nape,
+       independently of the hidden hair asset's colours.
+       Surface tools: pattern fill (the woven stripe over cloth and lappets) and trim (the
+       banded brow and the binding rings on the tail).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-nemes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8D9A6)"/>
+      <stop offset="1" stop-color="var(--c2, #C9B478)"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-nemes__lappet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C9B478)"/>
+      <stop offset="1" stop-color="var(--c1, #E8D9A6)"/>
+    </linearGradient>
+    <pattern id="accessories-adult-headwear-nemes__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <rect x="0" y="0" width="6" height="14" fill="var(--c3, #3F6FA8)"/>
+    </pattern>
+  </defs>
+
+  <!-- a little of the wearer's own hair at the nape, under the cloth -->
+  <path d="M150 84 C146 96, 146 108, 150 118 C144 110, 142 96, 146 84 Z"
+        fill="var(--hair1, #43291F)"/>
+  <path d="M250 84 C254 96, 254 108, 250 118 C256 110, 258 96, 254 84 Z"
+        fill="var(--hair1, #43291F)"/>
+
+  <g class="sp-shadow">
+    <!-- the bound queue, emerging past the head silhouette so it reads from the front -->
+    <path d="M150 84 C140 88, 132 100, 133 113 C135 122, 140 127, 145 125
+             C146 112, 146 96, 152 88 Z"
+          fill="url(#accessories-adult-headwear-nemes__lappet)"/>
+    <!-- left lappet, falling in front of the ear and stopping level with the jaw -->
+    <path d="M144 62 C138 84, 137 108, 141 126 C145 138, 152 145, 158 148
+             C165 146, 168 139, 164 131 C152 112, 148 86, 149 62 Z"
+          fill="url(#accessories-adult-headwear-nemes__lappet)"/>
+    <!-- right lappet -->
+    <path d="M256 62 C262 84, 263 108, 259 126 C255 138, 248 145, 242 148
+             C235 146, 232 139, 236 131 C248 112, 252 86, 251 62 Z"
+          fill="url(#accessories-adult-headwear-nemes__lappet)"/>
+    <!-- the headcloth over the crown, squared off at its lower edge -->
+    <path d="M138 82 C140 50, 164 30, 200 30 C236 30, 260 50, 262 82
+             C262 88, 250 92, 200 92 C150 92, 138 88, 138 82 Z"
+          fill="url(#accessories-adult-headwear-nemes__cloth)"/>
+    <!-- the woven stripe, painted straight onto second copies of the cloth and both lappets
+         so that no drawn coordinate anywhere in this file sits outside the head transform
+         budget -->
+    <path d="M138 82 C140 50, 164 30, 200 30 C236 30, 260 50, 262 82
+             C262 88, 250 92, 200 92 C150 92, 138 88, 138 82 Z"
+          fill="url(#accessories-adult-headwear-nemes__stripe)" opacity="0.5"/>
+    <path d="M144 62 C138 84, 137 108, 141 126 C145 138, 152 145, 158 148
+             C165 146, 168 139, 164 131 C152 112, 148 86, 149 62 Z"
+          fill="url(#accessories-adult-headwear-nemes__stripe)" opacity="0.5"/>
+    <path d="M256 62 C262 84, 263 108, 259 126 C255 138, 248 145, 242 148
+             C235 146, 232 139, 236 131 C248 112, 252 86, 251 62 Z"
+          fill="url(#accessories-adult-headwear-nemes__stripe)" opacity="0.5"/>
+  </g>
+
+  <!-- the banded brow, the stiffened front edge of the cloth -->
+  <path d="M139 76 C160 84, 240 84, 261 76 C261 86, 248 92, 200 92
+           C152 92, 139 86, 139 76 Z" fill="var(--c3, #3F6FA8)"/>
+  <!-- binding rings on the queue -->
+  <path d="M135 100 q9 -4 13 -2 M134 112 q9 -4 12 -2"
+        stroke="var(--c3, #3F6FA8)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- the stiff outer fold of each lappet -->
+  <path d="M147 72 C142 92, 142 114, 147 132" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M253 72 C258 92, 258 114, 253 132" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlight over the crown -->
+  <path d="M162 48 Q200 34 238 48" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wedges" data-family="wedges" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: sole depth, one continuous solid wedge that climbs from a 12 unit toe
+       to a 26 unit heel and meets the ground along its whole length, with no gap at all under
+       the arch, which is exactly what parts it from the heels, plus fastening, a buckled
+       ankle strap carried round the shin instead of no fastening at all.
+       surface tools: panel blocking (pale cork wedge under a leather upper) plus trim
+       (ankle strap, buckle, sole edge rib) plus structural detail (stacked cork layer
+       lines, vamp seam). -->
+  <defs>
+    <linearGradient id="adult-female-shoes-wedges__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9704F)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5238)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-shoes-wedges__cork" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8CFA0)"/>
+      <stop offset="1" stop-color="var(--c3, #E8CFA0)" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two solid wedges, thick under the heel and thinning to the toe, each
+       under a low leather upper -->
+  <g class="sp-shadow">
+    <path d="M154 544 L200 558 C205 559 209 563 209 566 C209 569 206 570 201 570
+             L157 570 C152 570 149 567 149 562 L149 550 C149 546 151 544 154 544 Z"
+          fill="url(#adult-female-shoes-wedges__cork)"/>
+    <path d="M151 546 C151 539 156 535 163 535 L198 536 C204 537 207 541 207 547
+             L207 556 C207 559 204 560 200 560 L162 558 C155 557 151 553 151 548 Z"
+          fill="url(#adult-female-shoes-wedges__upper)"/>
+    <path d="M244 544 L198 558 C193 559 189 563 189 566 C189 569 192 570 197 570
+             L241 570 C246 570 249 567 249 562 L249 550 C249 546 247 544 244 544 Z"
+          fill="url(#adult-female-shoes-wedges__cork)"/>
+    <path d="M247 546 C247 539 242 535 235 535 L200 536 C194 537 191 541 191 547
+             L191 556 C191 559 194 560 198 560 L236 558 C243 557 247 553 247 548 Z"
+          fill="url(#adult-female-shoes-wedges__upper)"/>
+  </g>
+
+  <!-- stacked cork layer lines up the solid wedge -->
+  <path d="M151 552 L200 563" stroke="var(--c2, #9E5238)" stroke-opacity="0.4"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M150 560 L202 568" stroke="var(--c2, #9E5238)" stroke-opacity="0.4"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M247 552 L198 563" stroke="var(--c2, #9E5238)" stroke-opacity="0.4"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M248 560 L196 568" stroke="var(--c2, #9E5238)" stroke-opacity="0.4"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- sole edge rib along the ground -->
+  <rect x="151" y="566" width="56" height="3" rx="1.5" fill="var(--c2, #9E5238)"/>
+  <rect x="191" y="566" width="56" height="3" rx="1.5" fill="var(--c2, #9E5238)"/>
+
+  <!-- buckled ankle straps round the shin -->
+  <path d="M162 528 C162 524 165 522 170 522 L196 522 C200 522 202 525 202 529
+           L202 534 C202 537 199 539 195 539 L169 539 C165 539 162 536 162 532 Z"
+        fill="url(#adult-female-shoes-wedges__upper)"/>
+  <path d="M236 528 C236 524 233 522 228 522 L202 522 C198 522 196 525 196 529
+           L196 534 C196 537 199 539 203 539 L229 539 C233 539 236 536 236 532 Z"
+        fill="url(#adult-female-shoes-wedges__upper)"/>
+  <rect x="182" y="524" width="12" height="14" rx="3" fill="var(--c3, #E8CFA0)"/>
+  <rect x="185" y="527" width="6" height="8" rx="2" fill="var(--c2, #9E5238)"/>
+  <rect x="206" y="524" width="12" height="14" rx="3" fill="var(--c3, #E8CFA0)"/>
+  <rect x="209" y="527" width="6" height="8" rx="2" fill="var(--c2, #9E5238)"/>
+
+  <!-- vamp seams -->
+  <path d="M186 541 q7 5 12 3" stroke="var(--c2, #9E5238)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 541 q-7 5 -12 3" stroke="var(--c2, #9E5238)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- leather sheen over the vamp and along the ankle strap -->
+  <path d="M158 543 q20 5 38 3" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 543 q-20 5 -38 3" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 527 H196" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 527 H202" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

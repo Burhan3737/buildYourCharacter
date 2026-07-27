@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Hood" data-family="jester-hood" data-slot="headwear"
+     data-layer="headwear" data-colors="c1,c2,c3" data-hides="hair">
+  <!-- axes vs bonnet and beast-hood: CROWN SHAPE (a close hood carrying three long soft points,
+       one forward over the brow and one to each side, so the outline is three-lobed rather than
+       a single closed bag) and FASTENING/DRAPE (each point hangs free and ends in a small round
+       bell, against bonnet's elasticated hem and beast-hood's stacked snout and jaw).
+       Each point is at least 30 canvas units long: the forward point runs 46 units from the
+       crown seam to its tip, the side points 48 units each, so all three survive the 64 pixel
+       tray thumbnail.
+       Open faced: the forward bell bottoms out at y 91, nine units clear of the eye line at
+       y 100, and the side bells hang outside the head silhouette entirely.
+       Trademark: the fallback triple is periwinkle, coral and butter from the house palette,
+       deliberately clear of the clown-villain combination of green hair with purple, orange
+       and a white face.
+       Transform budget: this pool is mapped onto every target head by a uniform circle to
+       circle transform, so every drawn coordinate stays inside a circle of radius 74 centred
+       on the head centre (200, 91). The side bells at radius 73 are the extreme, which is why
+       the points sweep down rather than straight out.
+       Surface tools: panel blocking (the hood split into two contrasting halves down the
+       centre seam, each point taking the colour of its own half) and trim (the brow band)
+       plus structural detail (the three bells).
+  -->
+  <defs>
+    <linearGradient id="accessories-adult-headwear-jester-hood__a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="accessories-adult-headwear-jester-hood__b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #F4A79B)" stop-opacity="0.8"/>
+    </linearGradient>
+    <clipPath id="accessories-adult-headwear-jester-hood__left">
+      <rect x="120" y="10" width="80" height="110"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left point, sweeping out and down past the temple -->
+    <path d="M158 44 C146 52, 140 68, 140 84 C140 92, 137 98, 138 103
+             C142 105, 147 101, 150 96 C156 84, 162 70, 168 60 Z"
+          fill="url(#accessories-adult-headwear-jester-hood__a)"/>
+    <!-- right point -->
+    <path d="M242 44 C254 52, 260 68, 260 84 C260 92, 263 98, 262 103
+             C258 105, 253 101, 250 96 C244 84, 238 70, 232 60 Z"
+          fill="url(#accessories-adult-headwear-jester-hood__b)"/>
+    <!-- forward point, falling over the brow -->
+    <path d="M186 44 C186 56, 190 66, 194 74 C196 78, 195 82, 196 84
+             L204 84 C205 82, 204 78, 206 74 C210 66, 214 56, 214 44 Z"
+          fill="url(#accessories-adult-headwear-jester-hood__b)"/>
+    <!-- the close hood itself -->
+    <path d="M142 82 C142 48, 166 28, 200 28 C234 28, 258 48, 258 82
+             C240 90, 160 90, 142 82 Z"
+          fill="url(#accessories-adult-headwear-jester-hood__a)"/>
+    <!-- the contrasting half, split down the centre seam -->
+    <g clip-path="url(#accessories-adult-headwear-jester-hood__left)">
+      <path d="M142 82 C142 48, 166 28, 200 28 C234 28, 258 48, 258 82
+               C240 90, 160 90, 142 82 Z"
+            fill="url(#accessories-adult-headwear-jester-hood__b)"/>
+    </g>
+    <!-- the brow band gathering the hood -->
+    <path d="M143 76 C165 86, 235 86, 257 76 C255 86, 240 92, 200 92
+             C160 92, 145 86, 143 76 Z"
+          fill="var(--c3, #F7C873)"/>
+  </g>
+
+  <!-- the three bells -->
+  <circle cx="200" cy="84" r="7" fill="var(--c3, #F7C873)"/>
+  <circle cx="134" cy="104" r="6.4" fill="var(--c3, #F7C873)"/>
+  <circle cx="266" cy="104" r="6.4" fill="var(--c3, #F7C873)"/>
+  <!-- bell slits -->
+  <path d="M196 86 h8 M130 106 h8 M262 106 h8" stroke="#3B2A22" stroke-opacity="0.4"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- the centre seam -->
+  <path d="M200 28 C199 44, 199 62, 200 88" stroke="#3B2A22" stroke-opacity="0.15"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- gathers pulling into each point -->
+  <path d="M156 50 Q150 66 146 82 M244 50 Q250 66 254 82"
+        stroke="#3B2A22" stroke-opacity="0.13" stroke-width="2.6" fill="none"
+        stroke-linecap="round"/>
+  <!-- highlight over the crown -->
+  <path d="M166 44 Q200 32 234 44" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148. The suit gathers into a neck ring at y 152 and
+       stops there: nothing rises past the jaw. -->
+  <!-- axes vs the slot: a near-spherical body from armpit to knee, the widest mass in the whole
+       slot (volume) + narrow ribbed tube arms held out and away from the body instead of hanging
+       along it (shoulder/sleeve). -->
+  <defs>
+    <linearGradient id="adult-female-costume-inflatable-suit__ball" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D19A44)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-inflatable-suit__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2BE62)"/>
+      <stop offset="1" stop-color="var(--c1, #C68F3B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-inflatable-suit__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c3, #29221C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow ribbed tube legs -->
+    <path d="M166 436 H198 L196 500 L194 552 Q180 560 168 552 L166 500 Z"
+          fill="url(#adult-female-costume-inflatable-suit__tube)"/>
+    <path d="M202 436 H234 L234 500 L232 552 Q220 560 206 552 L204 500 Z"
+          fill="url(#adult-female-costume-inflatable-suit__tube)"/>
+    <!-- the near-spherical body, armpit to knee -->
+    <path d="M200 172 Q292 190 292 330 Q292 430 244 452 Q200 464 156 452
+             Q108 430 108 330 Q108 190 200 172 Z"
+          fill="url(#adult-female-costume-inflatable-suit__ball)"/>
+    <!-- narrow ribbed tube arms, carried in front and held out away from the body,
+         ending clear of the sphere so the outline reads as arms, not as a ball -->
+    <path d="M182 188 Q150 240 126 316 Q112 362 104 400 Q100 414 88 410 Q76 406 80 392
+             Q90 348 106 300 Q130 224 158 180 Z"
+          fill="url(#adult-female-costume-inflatable-suit__tube)"/>
+    <path d="M218 188 Q250 240 274 316 Q288 362 296 400 Q300 414 312 410 Q324 406 320 392
+             Q310 348 294 300 Q270 224 242 180 Z"
+          fill="url(#adult-female-costume-inflatable-suit__tube)"/>
+    <!-- tight neck ring, the top of the piece -->
+    <path d="M176 152 H224 Q232 164 224 176 Q200 186 176 176 Q168 164 176 152 Z"
+          fill="url(#adult-female-costume-inflatable-suit__ring)"/>
+  </g>
+
+  <!-- gathering pleats radiating out of the neck ring -->
+  <g stroke="var(--c1, #C68F3B)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M180 182 Q158 208 142 244"/>
+    <path d="M192 186 Q184 216 178 250"/>
+    <path d="M208 186 Q216 216 222 250"/>
+    <path d="M220 182 Q242 208 258 244"/>
+  </g>
+  <!-- inflation seam around the equator -->
+  <path d="M112 302 Q200 330 288 302" stroke="var(--c2, #C88C2C)" stroke-opacity="0.5"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M118 366 Q200 392 282 366" stroke="var(--c2, #C88C2C)" stroke-opacity="0.4"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- arm ribbing -->
+  <g stroke="var(--c2, #C88C2C)" stroke-opacity="0.55" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M172 218 L148 208 M156 254 L132 244 M142 292 L118 282
+             M128 332 L104 322 M116 372 L92 362"/>
+    <path d="M228 218 L252 208 M244 254 L268 244 M258 292 L282 282
+             M272 332 L296 322 M284 372 L308 362"/>
+  </g>
+  <!-- leg ribbing -->
+  <g stroke="var(--c2, #C88C2C)" stroke-opacity="0.5" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M167 460 h30 M167 486 h29 M168 512 h27"/>
+    <path d="M203 460 h30 M204 486 h29 M205 512 h27"/>
+  </g>
+  <!-- small round fan pod at the waist -->
+  <circle cx="252" cy="386" r="19" fill="url(#adult-female-costume-inflatable-suit__ring)"/>
+  <circle cx="252" cy="386" r="10" fill="var(--c2, #C88C2C)"/>
+  <path d="M244 386 h16 M252 378 v16" stroke="var(--c3, #29221C)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M146 224 q28 -22 62 -26" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="12"
+        fill="none" stroke-linecap="round"/>
+</svg>
