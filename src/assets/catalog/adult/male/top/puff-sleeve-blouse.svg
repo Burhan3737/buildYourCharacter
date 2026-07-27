@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = puff (a balloon of cloth 58 units wide over each shoulder,
+       collapsing into a tight cuff band at y244), VOLUME = fitted narrow body against it.
+       Also hem = hip, closure = closed round neck. -->
+  <defs>
+    <linearGradient id="adult-male-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #D2BCA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #C8AE95)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one narrow fitted body and two huge gathered sleeve balloons -->
+  <g class="sp-shadow">
+    <path d="M140 182 Q140 150 172 148 H228 Q260 150 260 182 L256 250 Q252 288 250 306 Q250 318 238 318 H162 Q150 318 150 306 Q148 288 144 250 Z"
+          fill="url(#adult-male-top-puff-sleeve-blouse__body)"/>
+    <path d="M134 160 Q92 156 84 200 Q80 232 104 244 L122 244 Q138 236 138 210 L138 174 Q138 162 134 160 Z"
+          fill="url(#adult-male-top-puff-sleeve-blouse__puff)"/>
+    <path d="M266 160 Q308 156 316 200 Q320 232 296 244 L278 244 Q262 236 262 210 L262 174 Q262 162 266 160 Z"
+          fill="url(#adult-male-top-puff-sleeve-blouse__puff)"/>
+  </g>
+
+  <!-- gathers radiating from the shoulder head into the balloon -->
+  <g stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M132 168 Q108 184 100 216"/>
+    <path d="M136 186 Q116 200 110 230"/>
+    <path d="M268 168 Q292 184 300 216"/>
+    <path d="M264 186 Q284 200 290 230"/>
+  </g>
+  <!-- gathers pulling into the cuff -->
+  <g stroke="var(--c2, #D2BCA6)" stroke-opacity="0.45" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M96 230 Q104 238 108 244"/>
+    <path d="M118 232 Q118 240 118 244"/>
+    <path d="M304 230 Q296 238 292 244"/>
+    <path d="M282 232 Q282 240 282 244"/>
+  </g>
+
+  <!-- the tight cuff bands the balloons collapse into -->
+  <rect x="96" y="238" width="30" height="20" rx="9" fill="var(--c3, #F4A79B)"/>
+  <rect x="274" y="238" width="30" height="20" rx="9" fill="var(--c3, #F4A79B)"/>
+
+  <!-- round neck, bound in the accent -->
+  <path d="M176 146 Q200 170 224 146 Q222 160 200 164 Q178 160 176 146 Z" fill="var(--c3, #F4A79B)"/>
+  <path d="M184 148 Q200 162 216 148 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- a narrow front panel keeps the body reading as slim -->
+  <path d="M188 164 H212 L210 314 H190 Z" fill="var(--c2, #D2BCA6)" fill-opacity="0.45"/>
+  <path d="M188 164 H212" stroke="var(--c3, #F4A79B)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- narrow waist seams -->
+  <path d="M152 250 Q154 288 156 308" stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M248 250 Q246 288 244 308" stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M156 182 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M96 186 q-14 16 -10 34" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M304 186 q14 16 10 34" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

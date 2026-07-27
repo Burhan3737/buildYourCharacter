@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = cropped just below the bust at y238, clear of a chima band, and
+       CLOSURE = wide crossover held by a single long ribbon. Also shoulder = gently curved.
+       WRAP DIRECTION: the wearer's LEFT panel lies over the right, which mirrors to the
+       viewer as the panel from the upper RIGHT of the image crossing down to the LEFT, with
+       the goreum hanging on the viewer's left. Right over left is how the dead are dressed,
+       so this must never be flipped. (The brief's sample knot coordinate was mirrored; the
+       geometry here follows the correct wrap.) -->
+  <defs>
+    <linearGradient id="adult-male-top-jeogori__outer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFDCC9)"/>
+      <stop offset="1" stop-color="var(--c2, #6FA085)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-jeogori__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8DB79F)"/>
+      <stop offset="1" stop-color="var(--c2, #5E8B72)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFDCC9)"/>
+      <stop offset="1" stop-color="var(--c2, #6FA085)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two curved sleeves, the under panel and the outer crossover panel -->
+  <g class="sp-shadow">
+    <path d="M136 156 Q102 160 98 200 Q96 232 108 250 Q120 256 132 248 Q140 224 140 188 Z"
+          fill="url(#adult-male-top-jeogori__sleeve)"/>
+    <path d="M264 156 Q298 160 302 200 Q304 232 292 250 Q280 256 268 248 Q260 224 260 188 Z"
+          fill="url(#adult-male-top-jeogori__sleeve)"/>
+    <!-- under panel: the wearer's right side, tucked beneath -->
+    <path d="M166 150 Q130 152 130 190 L128 220 Q128 238 142 238 L238 238 Q246 236 244 224 L174 154 Z"
+          fill="url(#adult-male-top-jeogori__under)"/>
+    <!-- outer panel: the wearer's left side, lying on top and closing to the wearer's right -->
+    <path d="M234 150 Q270 152 270 190 L272 220 Q272 238 258 238 L160 238 Q152 234 158 224 L226 154 Z"
+          fill="url(#adult-male-top-jeogori__outer)"/>
+  </g>
+
+  <!-- git: the clean contrast collar band, running the whole crossover -->
+  <path d="M226 150 L240 158 L172 236 L158 228 Z" fill="var(--c3, #F7F4EC)"/>
+  <path d="M174 152 L188 150 L214 178 L202 188 Z" fill="var(--c3, #F7F4EC)" fill-opacity="0.85"/>
+  <path d="M172 148 Q200 139 230 148 L228 159 Q200 151 176 159 Z" fill="var(--c3, #F7F4EC)"/>
+  <path d="M182 150 Q200 158 218 150 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- goreum: one long ribbon with a soft knot at the closure -->
+  <ellipse cx="168" cy="236" rx="14" ry="10" fill="var(--c2, #6FA085)"/>
+  <path d="M160 242 Q152 286 157 322 Q166 331 175 322 Q179 284 177 242 Z"
+        fill="var(--c2, #6FA085)"/>
+  <path d="M178 240 Q189 272 187 298 Q179 305 172 298 Q170 270 168 242 Z"
+        fill="var(--c2, #5E8B72)"/>
+  <path d="M160 250 Q157 288 161 318" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- kkeutdong: contrast cuff band at each curved sleeve end -->
+  <path d="M99 230 Q120 244 139 231 L139 244 Q120 257 100 244 Z" fill="var(--c3, #F7F4EC)"/>
+  <path d="M301 230 Q280 244 261 231 L261 244 Q280 257 300 244 Z" fill="var(--c3, #F7F4EC)"/>
+
+  <!-- hem binding, held at y238 so the pair with a chima reads -->
+  <path d="M130 230 Q200 244 270 230 L270 236 Q200 250 130 236 Z"
+        fill="var(--c2, #6FA085)" fill-opacity="0.6"/>
+
+  <!-- gently curved sleeve line, drawn as a soft seam -->
+  <path d="M138 172 Q118 184 110 214" stroke="var(--c2, #6FA085)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M262 172 Q282 184 290 214" stroke="var(--c2, #6FA085)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M148 174 q30 14 56 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 174 q-14 8 -26 12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

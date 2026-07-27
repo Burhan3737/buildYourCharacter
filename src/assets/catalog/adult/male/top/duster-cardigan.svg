@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = open front (no collar, no buttons, a 26 unit gap down the
+       centre), SHOULDER = dropped, seamed outboard at x118 and x282. Also hem = mid-calf,
+       volume = soft drape. The opening is resolved by an integral scoop-neck shell in c3. -->
+  <defs>
+    <linearGradient id="adult-male-top-duster-cardigan__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8AE9C)"/>
+      <stop offset="1" stop-color="var(--c2, #7C8472)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8AE9C)"/>
+      <stop offset="1" stop-color="var(--c2, #6F7766)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-duster-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7DFD0)"/>
+      <stop offset="1" stop-color="var(--c3, #CDC4B2)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-duster-cardigan__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="5" height="16" fill="var(--c2, #7C8472)" fill-opacity="0.3"/>
+    </pattern>
+    <clipPath id="adult-male-top-duster-cardigan__clipL">
+      <path d="M120 198 Q122 160 160 160 L188 172 L190 470 Q190 490 176 492 L130 496 Q112 494 112 474 Q108 330 120 198 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-top-duster-cardigan__clipR">
+      <path d="M280 198 Q278 160 240 160 L212 172 L210 470 Q210 490 224 492 L270 496 Q288 494 288 474 Q292 330 280 198 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the integral shell, two dropped sleeves and two long open fronts -->
+  <g class="sp-shadow">
+    <path d="M156 168 Q200 196 244 168 Q268 174 268 206 V320 Q268 334 254 334 H146 Q132 334 132 320 V206 Q132 174 156 168 Z"
+          fill="url(#adult-male-top-duster-cardigan__shell)"/>
+    <rect x="94" y="178" width="44" height="172" rx="22" fill="url(#adult-male-top-duster-cardigan__sleeve)"/>
+    <rect x="262" y="178" width="44" height="172" rx="22" fill="url(#adult-male-top-duster-cardigan__sleeve)"/>
+    <path d="M120 198 Q122 160 160 160 L188 172 L190 470 Q190 490 176 492 L130 496 Q112 494 112 474 Q108 330 120 198 Z"
+          fill="url(#adult-male-top-duster-cardigan__knit)"/>
+    <path d="M280 198 Q278 160 240 160 L212 172 L210 470 Q210 490 224 492 L270 496 Q288 494 288 474 Q292 330 280 198 Z"
+          fill="url(#adult-male-top-duster-cardigan__knit)"/>
+  </g>
+
+  <!-- knit rib surface, clipped to each front -->
+  <g clip-path="url(#adult-male-top-duster-cardigan__clipL)">
+    <rect x="104" y="156" width="92" height="344" fill="url(#adult-male-top-duster-cardigan__rib)"/>
+  </g>
+  <g clip-path="url(#adult-male-top-duster-cardigan__clipR)">
+    <rect x="204" y="156" width="92" height="344" fill="url(#adult-male-top-duster-cardigan__rib)"/>
+  </g>
+
+  <!-- shell neckline, bound so the two garments read apart -->
+  <path d="M156 168 Q200 196 244 168" stroke="var(--c2, #7C8472)" stroke-opacity="0.45"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M172 166 Q200 184 228 166 Q222 194 200 196 Q178 194 172 166 Z"
+        fill="var(--skin2, #E7B892)"/>
+
+  <!-- two low patch pockets -->
+  <rect x="130" y="400" width="52" height="50" rx="9" fill="var(--c2, #7C8472)" fill-opacity="0.45"/>
+  <rect x="218" y="400" width="52" height="50" rx="9" fill="var(--c2, #7C8472)" fill-opacity="0.45"/>
+  <path d="M130 410 h52" stroke="var(--c1, #A8AE9C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 410 h52" stroke="var(--c1, #A8AE9C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs at the dropped sleeve ends -->
+  <rect x="94" y="326" width="44" height="24" rx="12" fill="var(--c2, #7C8472)"/>
+  <rect x="262" y="326" width="44" height="24" rx="12" fill="var(--c2, #7C8472)"/>
+
+  <!-- dropped shoulder seams, sitting outboard on the arm -->
+  <path d="M138 196 Q148 176 172 166" stroke="var(--c2, #7C8472)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M262 196 Q252 176 228 166" stroke="var(--c2, #7C8472)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft drape folds curving out towards the hem -->
+  <g stroke="var(--c2, #7C8472)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M150 240 Q142 360 138 470"/>
+    <path d="M250 240 Q258 360 262 470"/>
+  </g>
+
+  <!-- upper-surface highlight on the shell and the fronts -->
+  <path d="M160 208 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 202 q12 -18 32 -26" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M268 202 q-12 -18 -32 -26" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

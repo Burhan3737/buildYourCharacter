@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: VOLUME = gathered (a narrow 100 unit yoke with the whole body swinging
+       out to 164 units at the hem), SHOULDER = cap sleeve hung off a flat chest yoke.
+       Also hem = high hip, closure = closed. -->
+  <defs>
+    <linearGradient id="adult-male-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB0)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6A7BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5A9B)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6A7BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5A9B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one flared gathered body, the flat yoke band and two cap sleeves -->
+  <g class="sp-shadow">
+    <path d="M152 184 H248 Q262 190 268 226 L282 306 Q284 318 272 318 H128 Q116 318 118 306 L132 226 Q138 190 152 184 Z"
+          fill="url(#adult-male-top-smock-top__body)"/>
+    <rect x="150" y="148" width="100" height="36" rx="10" fill="url(#adult-male-top-smock-top__yoke)"/>
+    <rect x="112" y="154" width="40" height="44" rx="20" fill="url(#adult-male-top-smock-top__cap)"/>
+    <rect x="248" y="154" width="40" height="44" rx="20" fill="url(#adult-male-top-smock-top__cap)"/>
+  </g>
+
+  <!-- the gathers: nine folds radiating out of the yoke's lower edge -->
+  <g stroke="var(--c2, #5A6BB0)" stroke-opacity="0.45" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M156 188 Q142 244 130 308"/>
+    <path d="M168 188 Q158 244 150 310"/>
+    <path d="M180 188 Q175 246 170 312"/>
+    <path d="M191 188 Q189 246 187 312"/>
+    <path d="M209 188 Q211 246 213 312"/>
+    <path d="M220 188 Q225 246 230 312"/>
+    <path d="M232 188 Q242 244 250 310"/>
+    <path d="M244 188 Q258 244 270 308"/>
+  </g>
+  <!-- gather puckers right under the yoke seam -->
+  <g stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M158 190 q6 8 4 16"/>
+    <path d="M182 190 q6 8 4 16"/>
+    <path d="M218 190 q-6 8 -4 16"/>
+    <path d="M242 190 q-6 8 -4 16"/>
+  </g>
+
+  <!-- yoke seam and its contrast piping -->
+  <path d="M150 184 H250" stroke="var(--c3, #F7E9D0)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound round neck cut into the yoke -->
+  <path d="M176 146 Q200 172 224 146 Q222 164 200 168 Q178 164 176 146 Z"
+        fill="var(--c3, #F7E9D0)"/>
+  <path d="M184 148 Q200 164 216 148 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- cap sleeve binding -->
+  <path d="M114 190 Q132 200 150 192" stroke="var(--c3, #F7E9D0)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 190 Q268 200 250 192" stroke="var(--c3, #F7E9D0)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- swing hem, bound in the same accent -->
+  <path d="M120 302 Q200 316 280 302 L282 310 Q200 324 118 310 Z" fill="var(--c3, #F7E9D0)"/>
+
+  <!-- upper-surface highlight across the flat yoke -->
+  <path d="M160 162 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = a band finishing at the underbust, whole abdomen bare, and
+       SHOULDER = two narrow ties running over the shoulders. Also closure = none,
+       volume = close banded. -->
+  <defs>
+    <linearGradient id="adult-male-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3FA9D9)"/>
+      <stop offset="1" stop-color="var(--c2, #2A7CA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58BAE4)"/>
+      <stop offset="1" stop-color="var(--c2, #2A7CA6)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-swim-top__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="16">
+      <path d="M0 11 Q5 4 10 11 Q15 18 20 11" fill="none" stroke="var(--c3, #F7F3E8)"
+            stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-male-top-swim-top__clip">
+      <path d="M138 218 Q140 208 152 208 H248 Q260 208 262 218 L262 244 Q262 254 250 257 Q200 264 150 257 Q138 254 138 244 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: one horizontal band and two narrow shoulder ties -->
+  <g class="sp-shadow">
+    <path d="M146 214 L156 217 L177 152 Q178 148 171 148 Q165 148 164 153 Z"
+          fill="url(#adult-male-top-swim-top__tie)"/>
+    <path d="M254 214 L244 217 L223 152 Q222 148 229 148 Q235 148 236 153 Z"
+          fill="url(#adult-male-top-swim-top__tie)"/>
+    <path d="M138 218 Q140 208 152 208 H248 Q260 208 262 218 L262 244 Q262 254 250 257 Q200 264 150 257 Q138 254 138 244 Z"
+          fill="url(#adult-male-top-swim-top__band)"/>
+  </g>
+
+  <!-- wave motif, clipped to the band -->
+  <g clip-path="url(#adult-male-top-swim-top__clip)">
+    <rect x="134" y="222" width="132" height="32" fill="url(#adult-male-top-swim-top__wave)"/>
+  </g>
+
+  <!-- contrast bound edge, top and bottom -->
+  <path d="M138 218 Q140 208 152 208 H248 Q260 208 262 218 L262 222 Q200 214 138 222 Z"
+        fill="var(--c3, #F7F3E8)"/>
+  <path d="M138 246 Q200 258 262 246 L262 250 Q262 256 250 258 Q200 265 150 258 Q138 256 138 250 Z"
+        fill="var(--c3, #F7F3E8)"/>
+
+  <!-- tie ends, bound where they meet the band -->
+  <path d="M146 212 L158 216 L156 224 L144 220 Z" fill="var(--c3, #F7F3E8)"/>
+  <path d="M254 212 L242 216 L244 224 L256 220 Z" fill="var(--c3, #F7F3E8)"/>
+  <!-- shoulder loops at the top of each tie -->
+  <path d="M164 154 Q171 146 178 154" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 154 Q229 146 222 154" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a shaped centre seam on the band -->
+  <path d="M200 212 V258" stroke="var(--c2, #2A7CA6)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 212 Q168 236 172 256" stroke="var(--c2, #2A7CA6)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230 212 Q232 236 228 256" stroke="var(--c2, #2A7CA6)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- skin shading under the band where the abdomen is bare -->
+  <path d="M150 258 Q200 268 250 258 Q200 276 150 258 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.6"/>
+
+  <!-- upper-surface highlight along the straight top edge -->
+  <path d="M156 228 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

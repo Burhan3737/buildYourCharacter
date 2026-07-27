@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = an unbroken rounded shawl roll fastened on one button at the
+       natural waist (closed front, no notch and no peak anywhere), HEM = just past the hip at
+       y348 with no vent. Also shoulder = square, volume = straight.
+       Against `blazer` this differs on closure and hem: that one is open with notched lapels. -->
+  <defs>
+    <linearGradient id="adult-male-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #1F2433)"/>
+      <stop offset="1" stop-color="var(--c2, #12151F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #262C3D)"/>
+      <stop offset="1" stop-color="var(--c2, #101320)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-dinner-jacket__shawl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4E5670)"/>
+      <stop offset="1" stop-color="var(--c3, #363D53)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two straight sleeves and one closed square-shouldered body -->
+  <g class="sp-shadow">
+    <rect x="112" y="154" width="32" height="186" rx="16" fill="url(#adult-male-top-dinner-jacket__sleeve)"/>
+    <rect x="256" y="154" width="32" height="186" rx="16" fill="url(#adult-male-top-dinner-jacket__sleeve)"/>
+    <path d="M124 170 Q124 148 146 146 H254 Q276 148 276 170 V330 Q276 348 258 348 H210 L200 322 L190 348 H142 Q124 348 124 330 Z"
+          fill="url(#adult-male-top-dinner-jacket__body)"/>
+  </g>
+
+  <!-- the shawl collar: one continuous rounded band, neck to button, no notch, no peak -->
+  <path d="M200 146 Q166 146 156 176 Q146 214 158 262 Q170 296 200 304 Q230 296 242 262 Q254 214 244 176 Q234 146 200 146 Z"
+        fill="url(#adult-male-top-dinner-jacket__shawl)"/>
+  <path d="M200 168 Q182 168 176 190 Q168 222 178 258 Q187 282 200 288 Q213 282 222 258 Q232 222 224 190 Q218 168 200 168 Z"
+        fill="url(#adult-male-top-dinner-jacket__body)"/>
+  <path d="M200 150 Q172 150 164 178 Q156 214 166 256" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M200 150 Q228 150 236 178 Q244 214 234 256" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M184 150 Q200 164 216 150 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- the single closed button at the natural waist -->
+  <circle cx="200" cy="302" r="6.5" fill="var(--c3, #4E5670)"/>
+  <circle cx="200" cy="302" r="2.5" fill="var(--c2, #12151F)"/>
+
+  <!-- the front is closed above the button and opens only slightly below it -->
+  <path d="M200 308 L206 340 L200 346 L194 340 Z" fill="var(--c2, #12151F)"/>
+
+  <!-- jetted pockets, bound in the same satin as the collar -->
+  <rect x="140" y="292" width="42" height="10" rx="5" fill="var(--c3, #4E5670)"/>
+  <rect x="218" y="292" width="42" height="10" rx="5" fill="var(--c3, #4E5670)"/>
+  <!-- breast welt -->
+  <rect x="146" y="228" width="30" height="8" rx="4" fill="var(--c3, #4E5670)"/>
+
+  <!-- square shoulder line and straight side seams -->
+  <path d="M128 156 H160" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 156 H240" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M127 196 V332" stroke="var(--c2, #12151F)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M273 196 V332" stroke="var(--c2, #12151F)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuff buttons -->
+  <g fill="var(--c3, #4E5670)">
+    <circle cx="128" cy="318" r="3.5"/>
+    <circle cx="128" cy="330" r="3.5"/>
+    <circle cx="272" cy="318" r="3.5"/>
+    <circle cx="272" cy="330" r="3.5"/>
+  </g>
+
+  <!-- upper-surface highlight, running clear of the shawl roll -->
+  <path d="M136 178 q14 12 28 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 178 q-14 12 -28 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

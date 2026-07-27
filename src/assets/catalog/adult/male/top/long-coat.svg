@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = mid-calf (a straight column to y500), CLOSURE = full button
+       placket under a notched collar. Also shoulder = long set-in, volume = straight. -->
+  <defs>
+    <linearGradient id="adult-male-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A56)"/>
+      <stop offset="1" stop-color="var(--c2, #8A6236)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B98A56)"/>
+      <stop offset="1" stop-color="var(--c2, #7F5A31)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-long-coat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6236)"/>
+      <stop offset="1" stop-color="var(--c2, #6E4C28)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two long set-in sleeves and one straight column to mid-calf -->
+  <g class="sp-shadow">
+    <rect x="100" y="156" width="40" height="184" rx="10" fill="url(#adult-male-top-long-coat__sleeve)"/>
+    <rect x="260" y="156" width="40" height="184" rx="10" fill="url(#adult-male-top-long-coat__sleeve)"/>
+    <path d="M124 186 Q124 152 158 150 H242 Q276 152 276 186 V486 Q276 500 262 500 H138 Q124 500 124 486 Z"
+          fill="url(#adult-male-top-long-coat__body)"/>
+  </g>
+
+  <!-- full centre placket, a contrast band the whole length of the closure -->
+  <rect x="188" y="152" width="24" height="282" rx="6" fill="url(#adult-male-top-long-coat__placket)"/>
+  <path d="M200 156 V430" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- five buttons down the front -->
+  <g fill="var(--c3, #3A2C20)">
+    <circle cx="200" cy="200" r="6"/>
+    <circle cx="200" cy="250" r="6"/>
+    <circle cx="200" cy="300" r="6"/>
+    <circle cx="200" cy="350" r="6"/>
+    <circle cx="200" cy="400" r="6"/>
+  </g>
+
+  <!-- notched collar: an upper leaf and a lower lapel with the notch between them -->
+  <path d="M172 148 L200 158 L196 180 L164 168 Z" fill="var(--c3, #3A2C20)"/>
+  <path d="M228 148 L200 158 L204 180 L236 168 Z" fill="var(--c3, #3A2C20)"/>
+  <path d="M164 172 L196 186 L192 224 L158 200 Z" fill="var(--c3, #3A2C20)" fill-opacity="0.82"/>
+  <path d="M236 172 L204 186 L208 224 L242 200 Z" fill="var(--c3, #3A2C20)" fill-opacity="0.82"/>
+  <path d="M184 152 Q200 166 216 152 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- two welt pockets low on the column -->
+  <rect x="140" y="366" width="44" height="12" rx="6" fill="var(--c3, #3A2C20)"/>
+  <rect x="216" y="366" width="44" height="12" rx="6" fill="var(--c3, #3A2C20)"/>
+  <path d="M140 378 h44 v6 h-44 z" fill="var(--c2, #8A6236)" fill-opacity="0.5"/>
+  <path d="M216 378 h44 v6 h-44 z" fill="var(--c2, #8A6236)" fill-opacity="0.5"/>
+
+  <!-- single back vent, opening from the hem -->
+  <path d="M194 440 H206 V496 Q206 500 200 500 Q194 500 194 496 Z"
+        fill="var(--c2, #8A6236)"/>
+  <path d="M200 442 V498" stroke="var(--c3, #3A2C20)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turned cuffs -->
+  <rect x="100" y="314" width="40" height="26" rx="9" fill="var(--c2, #8A6236)"/>
+  <rect x="260" y="314" width="40" height="26" rx="9" fill="var(--c2, #8A6236)"/>
+
+  <!-- straight side seams, no waist shaping -->
+  <path d="M126 210 V478" stroke="var(--c2, #8A6236)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M274 210 V478" stroke="var(--c2, #8A6236)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M146 178 Q166 192 186 184" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 178 Q234 192 214 184" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

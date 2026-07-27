@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = none, a flat panel joined only by two narrow shoulder
+       bridges, and CLOSURE = completely open down both sides. Also hem = hip, volume = flat.
+       The open sides stay bare torso: 24 units of skin each side, arms entirely free. -->
+  <defs>
+    <linearGradient id="adult-male-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4F7A52)"/>
+      <stop offset="1" stop-color="var(--c2, #35573A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #35573A)"/>
+      <stop offset="1" stop-color="var(--c2, #27412B)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-tabard__diamond" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 3 L19 11 L11 19 L3 11 Z" fill="none" stroke="var(--c3, #D8C58A)"
+            stroke-opacity="0.55" stroke-width="2.6" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="adult-male-top-tabard__clip">
+      <path d="M164 150 H180 Q184 176 200 178 Q216 176 220 150 H236 Q240 152 240 168 L238 314 Q238 330 226 330 H174 Q162 330 162 314 L160 168 Q160 152 164 150 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the open sides are bare torso: a soft skin shadow under each panel edge, nothing more -->
+  <path d="M158 180 Q154 240 158 306 L150 306 Q146 240 150 180 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+  <path d="M242 180 Q246 240 242 306 L250 306 Q254 240 250 180 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+  <path d="M133 190 V282" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 190 V282" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- major forms: the flat front panel with the back panel peeking behind each side -->
+  <g class="sp-shadow">
+    <rect x="154" y="164" width="10" height="148" rx="4" fill="url(#adult-male-top-tabard__back)"/>
+    <rect x="236" y="164" width="10" height="148" rx="4" fill="url(#adult-male-top-tabard__back)"/>
+    <path d="M164 150 H180 Q184 176 200 178 Q216 176 220 150 H236 Q240 152 240 168 L238 314 Q238 330 226 330 H174 Q162 330 162 314 L160 168 Q160 152 164 150 Z"
+          fill="url(#adult-male-top-tabard__front)"/>
+  </g>
+
+  <!-- woven diamond field, clipped to the front panel -->
+  <g clip-path="url(#adult-male-top-tabard__clip)">
+    <rect x="158" y="196" width="84" height="88" fill="url(#adult-male-top-tabard__diamond)"/>
+  </g>
+
+  <!-- broad contrast bands top and bottom of the field -->
+  <g clip-path="url(#adult-male-top-tabard__clip)">
+    <rect x="156" y="186" width="88" height="8" fill="var(--c3, #D8C58A)"/>
+    <rect x="156" y="288" width="88" height="8" fill="var(--c3, #D8C58A)"/>
+    <rect x="156" y="300" width="88" height="4" fill="var(--c3, #D8C58A)" fill-opacity="0.6"/>
+  </g>
+
+  <!-- bound edges down both open sides, the treatment that says "no side seam" -->
+  <path d="M161 170 L161 316" stroke="var(--c3, #D8C58A)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M239 170 L239 316" stroke="var(--c3, #D8C58A)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound neck scoop between the two shoulder bridges -->
+  <path d="M180 150 Q184 178 200 180 Q216 178 220 150" stroke="var(--c3, #D8C58A)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- bound hem -->
+  <path d="M162 320 Q200 328 238 320" stroke="var(--c3, #D8C58A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight across the two shoulder bridges -->
+  <path d="M166 160 q8 6 14 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 160 q-8 6 -14 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 200 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

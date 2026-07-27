@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = knee (a straight column to y446 split by deep side slits from
+       y330), CLOSURE = band collar over a short front placket. Also shoulder = long straight
+       sleeve, volume = straight with no waist shaping. -->
+  <defs>
+    <linearGradient id="adult-male-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCE4D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B4BFA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCE4D2)"/>
+      <stop offset="1" stop-color="var(--c2, #AAB69B)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-kurta__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6E7A5E)"/>
+      <stop offset="1" stop-color="var(--c3, #57604A)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-kurta__selfstripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="3" height="16" fill="var(--c2, #B4BFA6)" fill-opacity="0.34"/>
+    </pattern>
+    <clipPath id="adult-male-top-kurta__clip">
+      <path d="M126 186 Q126 152 160 150 H240 Q274 152 274 186 V330 H266 V438 Q266 446 258 446 H142 Q134 446 134 438 V330 H126 Z"/>
+      <rect x="104" y="160" width="34" height="180" rx="10"/>
+      <rect x="262" y="160" width="34" height="180" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two long straight sleeves and one knee-length column with side slits -->
+  <g class="sp-shadow">
+    <rect x="104" y="160" width="34" height="180" rx="10" fill="url(#adult-male-top-kurta__sleeve)"/>
+    <rect x="262" y="160" width="34" height="180" rx="10" fill="url(#adult-male-top-kurta__sleeve)"/>
+    <path d="M126 186 Q126 152 160 150 H240 Q274 152 274 186 V330 H266 V438 Q266 446 258 446 H142 Q134 446 134 438 V330 H126 Z"
+          fill="url(#adult-male-top-kurta__body)"/>
+  </g>
+
+  <!-- fine tonal self-stripe, clipped to the garment -->
+  <g clip-path="url(#adult-male-top-kurta__clip)">
+    <rect x="100" y="146" width="200" height="304" fill="url(#adult-male-top-kurta__selfstripe)"/>
+  </g>
+
+  <!-- band collar -->
+  <path d="M174 140 Q200 133 226 140 L226 158 Q200 168 174 158 Z"
+        fill="url(#adult-male-top-kurta__collar)"/>
+  <path d="M182 145 Q200 152 218 145 L218 156 Q200 163 182 156 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- short front placket with three small buttons -->
+  <rect x="189" y="152" width="22" height="60" rx="5" fill="var(--c3, #6E7A5E)"/>
+  <path d="M200 156 V208" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="166" r="4" fill="var(--c1, #DCE4D2)"/>
+  <circle cx="200" cy="184" r="4" fill="var(--c1, #DCE4D2)"/>
+  <circle cx="200" cy="202" r="4" fill="var(--c1, #DCE4D2)"/>
+
+  <!-- narrow cuffs -->
+  <rect x="104" y="320" width="34" height="20" rx="8" fill="var(--c3, #6E7A5E)"/>
+  <rect x="262" y="320" width="34" height="20" rx="8" fill="var(--c3, #6E7A5E)"/>
+
+  <!-- the side slits, bound so the split reads at a glance -->
+  <path d="M131 332 V440" stroke="var(--c3, #6E7A5E)" stroke-opacity="0.75" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M269 332 V440" stroke="var(--c3, #6E7A5E)" stroke-opacity="0.75" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 334 V438" stroke="var(--c2, #B4BFA6)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 334 V438" stroke="var(--c2, #B4BFA6)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- straight side seams and a plain hem edge -->
+  <path d="M128 210 V326" stroke="var(--c2, #B4BFA6)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 210 V326" stroke="var(--c2, #B4BFA6)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 434 H260" stroke="var(--c2, #B4BFA6)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M148 176 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

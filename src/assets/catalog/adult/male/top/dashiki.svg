@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = short wide sleeve cut in one with the body, a T with no
+       armhole seam, and VOLUME = boxy to mid-thigh with short side vents.
+       Also hem = mid-thigh, closure = pull-on with a wide V panel.
+       The V panel border is a plain geometric band, not any community's woven design. -->
+  <defs>
+    <linearGradient id="adult-male-top-dashiki__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98F3C)"/>
+      <stop offset="1" stop-color="var(--c2, #A8631F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-dashiki__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #2E6E63)"/>
+      <stop offset="1" stop-color="var(--c3, #21534B)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-dashiki__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 4 L16 10 L10 16 L4 10 Z" fill="none" stroke="var(--c2, #6B3A18)"
+            stroke-opacity="0.7" stroke-width="2.6" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="adult-male-top-dashiki__vclip">
+      <path d="M158 158 H242 L200 244 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one boxy T-shaped tunic, sleeve cut in one with the body -->
+  <g class="sp-shadow">
+    <path d="M96 168 Q96 158 108 158 H292 Q304 158 304 168 V222 Q304 232 292 232 H274 V370 H266 V392 Q266 400 256 400 H144 Q134 400 134 392 V370 H126 V232 H108 Q96 232 96 222 Z"
+          fill="url(#adult-male-top-dashiki__cloth)"/>
+  </g>
+
+  <!-- the wide V panel: a broad geometric field, the identity of the garment -->
+  <path d="M146 158 H254 L200 264 Z" fill="var(--c2, #6B3A18)"/>
+  <path d="M158 158 H242 L200 244 Z" fill="url(#adult-male-top-dashiki__panel)"/>
+  <g clip-path="url(#adult-male-top-dashiki__vclip)">
+    <rect x="156" y="158" width="88" height="88" fill="url(#adult-male-top-dashiki__motif)"/>
+  </g>
+  <!-- inner border line of the panel -->
+  <path d="M162 164 L238 164 L200 238" stroke="var(--c2, #6B3A18)" stroke-opacity="0.75"
+        stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+
+  <!-- neck opening cut through the panel -->
+  <path d="M178 156 Q200 178 222 156 Q218 172 200 176 Q182 172 178 156 Z"
+        fill="var(--c2, #6B3A18)"/>
+  <path d="M184 157 Q200 172 216 157 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- matching border band at each cut-in-one sleeve opening -->
+  <rect x="96" y="216" width="34" height="16" rx="4" fill="var(--c2, #6B3A18)"/>
+  <rect x="270" y="216" width="34" height="16" rx="4" fill="var(--c2, #6B3A18)"/>
+  <path d="M100 224 h26" stroke="var(--c3, #2E6E63)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M274 224 h26" stroke="var(--c3, #2E6E63)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- matching border band above the hem -->
+  <rect x="128" y="348" width="144" height="16" fill="var(--c2, #6B3A18)"/>
+  <path d="M132 356 H268" stroke="var(--c3, #2E6E63)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the short side vents -->
+  <path d="M130 372 V396" stroke="var(--c2, #6B3A18)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 372 V396" stroke="var(--c2, #6B3A18)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the cut-in-one seam: a single fold line where a set-in armhole would be -->
+  <path d="M132 234 V344" stroke="var(--c2, #A8631F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M268 234 V344" stroke="var(--c2, #A8631F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 232 H274" stroke="var(--c2, #A8631F)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight across the T shoulder -->
+  <path d="M112 180 q34 12 34 -12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M288 180 q-34 12 -34 -12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

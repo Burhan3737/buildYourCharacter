@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
      data-name="Chunky Sweater" data-family="sweater" data-slot="top"
-     data-layer="top" data-colors="c1,c2" data-hides="">
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes vs the `tee` baseline: SHOULDER = dropped, VOLUME = boxy, HEM = waist.
+       A deep 26 unit rib band pulls the hem in to 108 units against a 156 unit chest, so the
+       outline is a TRAPEZOID rather than a rectangle. That is the read at tray size. -->
   <defs>
     <linearGradient id="adult-male-top-sweater__body" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
@@ -8,39 +11,71 @@
     </linearGradient>
     <linearGradient id="adult-male-top-sweater__sleeve" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c1, #7FA88C)"/>
-      <stop offset="1" stop-color="var(--c2, #628A71)"/>
+      <stop offset="1" stop-color="var(--c2, #557C63)"/>
     </linearGradient>
+    <linearGradient id="adult-male-top-sweater__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E1EBDD)"/>
+      <stop offset="1" stop-color="var(--c3, #C2D2BE)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-sweater__knit" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M2 13 Q9 3 16 13" fill="none" stroke="var(--c2, #628A71)"
+            stroke-opacity="0.3" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
     <clipPath id="adult-male-top-sweater__clip">
-      <path d="M122 184 q0-46 46-46 h64 q46 0 46 46 v78 q2 38 -14 58 h-128 q-2-38-14-58 z"/>
-      <rect x="100" y="154" width="38" height="162" rx="19"/>
-      <rect x="262" y="154" width="38" height="162" rx="19"/>
+      <path d="M122 182 Q124 146 160 144 H240 Q276 146 278 182 L254 296 Q252 306 242 306 H158 Q148 306 146 296 Z"/>
     </clipPath>
   </defs>
+
+  <!-- major forms: two dropped bulky sleeves and one trapezoid body drawn in at the waist -->
   <g class="sp-shadow">
-    <!-- bulky long sleeves -->
-    <rect x="100" y="154" width="38" height="162" rx="19" fill="url(#adult-male-top-sweater__sleeve)"/>
-    <rect x="262" y="154" width="38" height="162" rx="19" fill="url(#adult-male-top-sweater__sleeve)"/>
-    <!-- bulky torso block, hem at y320 -->
-    <path d="M122 184 q0-46 46-46 h64 q46 0 46 46 v78 q2 38 -14 58 h-128 q-2-38-14-58 z"
+    <rect x="96" y="150" width="44" height="180" rx="22" fill="url(#adult-male-top-sweater__sleeve)"/>
+    <rect x="260" y="150" width="44" height="180" rx="22" fill="url(#adult-male-top-sweater__sleeve)"/>
+    <path d="M122 182 Q124 146 160 144 H240 Q276 146 278 182 L254 296 Q252 306 242 306 H158 Q148 306 146 296 Z"
           fill="url(#adult-male-top-sweater__body)"/>
   </g>
-  <!-- ribbed hem band and cuffs, clipped to the knit silhouette -->
+
+  <!-- cable-knit surface, clipped to the trapezoid -->
   <g clip-path="url(#adult-male-top-sweater__clip)">
-    <rect x="130" y="296" width="140" height="28" fill="var(--c2, #628A71)"/>
-    <rect x="96" y="292" width="46" height="30" fill="var(--c2, #628A71)"/>
-    <rect x="258" y="292" width="46" height="30" fill="var(--c2, #628A71)"/>
-    <path d="M144 300 v16 M156 300 v16 M168 300 v16 M180 300 v16 M192 300 v16 M204 300 v16 M216 300 v16 M228 300 v16 M240 300 v16 M252 300 v16"
-          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M108 296 v18 M120 296 v18 M132 296 v18 M268 296 v18 M280 296 v18 M292 296 v18"
-          stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="118" y="160" width="164" height="130" fill="url(#adult-male-top-sweater__knit)"/>
   </g>
+
+  <!-- the deep rib band: 26 units, and narrower than the chest, which makes the trapezoid -->
+  <path d="M150 280 H250 L254 296 Q252 306 242 306 H158 Q148 306 146 296 Z"
+        fill="url(#adult-male-top-sweater__rib)"/>
+  <g stroke="var(--c2, #628A71)" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round">
+    <path d="M158 284 V302"/><path d="M172 284 V303"/><path d="M186 284 V303"/>
+    <path d="M200 284 V303"/><path d="M214 284 V303"/><path d="M228 284 V303"/>
+    <path d="M242 284 V302"/>
+  </g>
+  <path d="M150 280 H250" stroke="var(--c2, #628A71)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs -->
+  <rect x="96" y="306" width="44" height="24" rx="12" fill="url(#adult-male-top-sweater__rib)"/>
+  <rect x="260" y="306" width="44" height="24" rx="12" fill="url(#adult-male-top-sweater__rib)"/>
+  <g stroke="var(--c2, #628A71)" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <path d="M106 312 V324"/><path d="M118 312 V324"/><path d="M130 312 V324"/>
+    <path d="M270 312 V324"/><path d="M282 312 V324"/><path d="M294 312 V324"/>
+  </g>
+
   <!-- wide ribbed crew collar -->
-  <path d="M166 136 q34 34 68 0 z" fill="var(--c2, #628A71)"/>
-  <path d="M180 140 q20 16 40 0 z" fill="var(--skin2, #E7B892)"/>
-  <!-- knit texture on the chest -->
-  <path d="M150 214 q50 12 100 0 M150 242 q50 12 100 0 M150 270 q50 12 100 0"
-        stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M168 142 Q200 172 232 142 Q230 158 200 162 Q170 158 168 142 Z"
+        fill="url(#adult-male-top-sweater__rib)"/>
+  <path d="M180 145 Q200 162 220 145 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- dropped shoulder seams: the sleeve head sits out on the arm, not on the shoulder -->
+  <path d="M140 176 Q150 158 174 150" stroke="var(--c2, #628A71)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 176 Q250 158 226 150" stroke="var(--c2, #628A71)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- the tapering side seams that make the trapezoid legible -->
+  <path d="M126 200 L152 288" stroke="var(--c2, #628A71)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M274 200 L248 288" stroke="var(--c2, #628A71)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
   <!-- highlight -->
-  <path d="M148 178 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+  <path d="M148 174 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
         fill="none" stroke-linecap="round"/>
 </svg>

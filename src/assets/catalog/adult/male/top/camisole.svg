@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = narrow spaghetti strap set wide, with a bare chest band
+       above a straight upper edge at y196, and HEM = past hip, falling to y340 on a bias.
+       Also volume = skimming, closure = none. Cut for this chest: straps at x152 and x241. -->
+  <defs>
+    <linearGradient id="adult-male-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCD6E4)"/>
+      <stop offset="1" stop-color="var(--c2, #ABA3BC)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCD6E4)"/>
+      <stop offset="1" stop-color="var(--c2, #ABA3BC)"/>
+    </linearGradient>
+    <pattern id="adult-male-top-camisole__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 12 Q9 2 18 12" fill="none" stroke="var(--c3, #6E6480)"
+            stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-male-top-camisole__clip">
+      <path d="M146 196 H254 Q264 200 264 216 L269 300 Q272 328 258 340 Q200 350 146 330 Q132 322 134 300 L136 216 Q136 200 146 196 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two narrow straps and one skimming bias-cut body -->
+  <g class="sp-shadow">
+    <rect x="152" y="148" width="7" height="50" rx="3.5" fill="url(#adult-male-top-camisole__strap)"/>
+    <rect x="241" y="148" width="7" height="50" rx="3.5" fill="url(#adult-male-top-camisole__strap)"/>
+    <path d="M146 196 H254 Q264 200 264 216 L269 300 Q272 328 258 340 Q200 350 146 330 Q132 322 134 300 L136 216 Q136 200 146 196 Z"
+          fill="url(#adult-male-top-camisole__body)"/>
+  </g>
+
+  <!-- lace scallop bands, clipped to the body -->
+  <g clip-path="url(#adult-male-top-camisole__clip)">
+    <rect x="128" y="196" width="146" height="20" fill="url(#adult-male-top-camisole__scallop)"/>
+    <rect x="128" y="300" width="146" height="42" fill="url(#adult-male-top-camisole__scallop)"/>
+  </g>
+
+  <!-- scalloped bound upper edge, the trim that reads at the chest -->
+  <path d="M146 200 Q158 190 170 200 Q182 190 194 200 Q206 190 218 200 Q230 190 242 200 Q252 194 256 202 L256 208 Q200 200 144 208 Z"
+        fill="var(--c3, #6E6480)"/>
+  <!-- strap bindings where the straps meet the edge -->
+  <rect x="150" y="190" width="11" height="9" rx="4" fill="var(--c3, #6E6480)"/>
+  <rect x="239" y="190" width="11" height="9" rx="4" fill="var(--c3, #6E6480)"/>
+  <rect x="150" y="148" width="11" height="7" rx="3" fill="var(--c3, #6E6480)"/>
+  <rect x="239" y="148" width="11" height="7" rx="3" fill="var(--c3, #6E6480)"/>
+
+  <!-- bound hem, cut on a shallow diagonal -->
+  <path d="M136 322 Q200 344 266 320 L268 330 Q200 354 136 332 Z" fill="var(--c3, #6E6480)"/>
+
+  <!-- bias seams: the fall of the cloth, not a fitted side seam -->
+  <g stroke="var(--c2, #ABA3BC)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M168 208 Q160 268 152 322"/>
+    <path d="M232 206 Q244 264 254 316"/>
+    <path d="M200 210 Q198 272 196 336"/>
+  </g>
+
+  <!-- upper-surface highlight along the straight edge -->
+  <path d="M154 214 q46 12 92 -2" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

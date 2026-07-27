@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = crossover (two front panels tied at the waist, deep V),
+       SHOULDER = three-quarter sleeve ending mid-forearm at y290.
+       Also hem = hip, volume = fitted. Wrapped right over left, knot on the wearer's left. -->
+  <defs>
+    <linearGradient id="adult-male-top-wrap-top__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5E75)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-wrap-top__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9A5E75)"/>
+      <stop offset="1" stop-color="var(--c2, #83495F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5E75)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the deep V is resolved as skin: bare chest between the two crossing edges -->
+  <path d="M166 148 C178 196 190 230 200 254 C210 230 222 196 234 148 Z"
+        fill="var(--skin1, #F7D2B0)"/>
+  <path d="M180 190 C186 214 194 232 200 250 C206 232 214 214 220 190 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.55"/>
+
+  <!-- major forms: two three-quarter sleeves and two crossing front panels -->
+  <g class="sp-shadow">
+    <rect x="106" y="158" width="32" height="132" rx="16" fill="url(#adult-male-top-wrap-top__sleeve)"/>
+    <rect x="262" y="158" width="32" height="132" rx="16" fill="url(#adult-male-top-wrap-top__sleeve)"/>
+    <!-- under panel: hangs from the wearer's left shoulder, tucked beneath -->
+    <path d="M236 150 C224 200 210 232 182 296 L176 316 Q176 326 190 326 L254 324 Q270 324 270 304 L268 188 Q266 150 236 150 Z"
+          fill="url(#adult-male-top-wrap-top__under)"/>
+    <!-- outer panel: crosses the body and carries the knot -->
+    <path d="M164 150 C176 200 190 232 218 296 L224 316 Q224 326 210 326 L146 324 Q130 324 130 304 L132 188 Q134 150 164 150 Z"
+          fill="url(#adult-male-top-wrap-top__panel)"/>
+  </g>
+
+  <!-- bound edge running the whole crossover, the trim that names the garment -->
+  <path d="M164 150 C176 200 190 232 218 296 L206 300 C180 236 166 202 154 152 Z"
+        fill="var(--c3, #F2DCE2)"/>
+  <path d="M236 150 C226 198 214 228 192 282 L182 276 C204 224 216 196 226 150 Z"
+        fill="var(--c3, #F2DCE2)" fill-opacity="0.7"/>
+
+  <!-- the knot at the waist, with two short tie ends -->
+  <ellipse cx="218" cy="298" rx="14" ry="10" fill="var(--c3, #F2DCE2)"/>
+  <path d="M224 302 Q248 308 258 326 Q246 330 236 320 Q226 312 220 306 Z" fill="var(--c2, #9A5E75)"/>
+  <path d="M214 304 Q206 320 210 336 Q198 332 196 318 Q196 308 206 302 Z" fill="var(--c2, #9A5E75)"/>
+
+  <!-- three-quarter sleeve bands -->
+  <rect x="104" y="274" width="36" height="16" rx="8" fill="var(--c3, #F2DCE2)"/>
+  <rect x="260" y="274" width="36" height="16" rx="8" fill="var(--c3, #F2DCE2)"/>
+
+  <!-- gather lines pulling from the knot across the waist -->
+  <g stroke="var(--c2, #9A5E75)" stroke-opacity="0.4" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M206 296 Q176 288 148 292"/>
+    <path d="M208 306 Q178 302 150 308"/>
+    <path d="M228 292 Q248 286 264 288"/>
+  </g>
+
+  <!-- upper-surface highlight, broken by the open V -->
+  <path d="M144 178 Q158 192 172 190" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 178 Q242 192 228 190" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

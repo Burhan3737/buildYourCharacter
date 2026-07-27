@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = cropped high above the natural waist (y246), CLOSURE = open front
+       with curved sweeping edges and no fastening. Also shoulder = three-quarter sleeve.
+       The open chest is resolved as skin, painted through the body's own skin variables. -->
+  <defs>
+    <linearGradient id="adult-male-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E4A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #653244)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E4A5E)"/>
+      <stop offset="1" stop-color="var(--c2, #5A2A3B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the open chest, resolved as skin so there is never a hole -->
+  <path d="M172 148 H228 Q226 200 228 252 H172 Q174 200 172 148 Z" fill="var(--skin1, #F7D2B0)"/>
+  <path d="M180 196 Q200 210 220 196 Q216 232 200 240 Q184 232 180 196 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.6"/>
+
+  <!-- major forms: two curved cropped fronts and two three-quarter sleeves -->
+  <g class="sp-shadow">
+    <path d="M130 196 Q132 150 170 150 Q186 154 190 172 Q170 200 168 246 L144 248 Q128 246 128 228 Z"
+          fill="url(#adult-male-top-bolero__panel)"/>
+    <path d="M270 196 Q268 150 230 150 Q214 154 210 172 Q230 200 232 246 L256 248 Q272 246 272 228 Z"
+          fill="url(#adult-male-top-bolero__panel)"/>
+    <rect x="104" y="154" width="36" height="132" rx="10" fill="url(#adult-male-top-bolero__sleeve)"/>
+    <rect x="260" y="154" width="36" height="132" rx="10" fill="url(#adult-male-top-bolero__sleeve)"/>
+  </g>
+
+  <!-- contrast binding following the curved front edges the whole way round -->
+  <path d="M190 172 Q170 200 168 246 L156 247 Q158 198 180 166 Z" fill="var(--c3, #E8C77A)"/>
+  <path d="M210 172 Q230 200 232 246 L244 247 Q242 198 220 166 Z" fill="var(--c3, #E8C77A)"/>
+  <path d="M170 150 Q186 154 190 172 L180 166 Q176 158 166 156 Z" fill="var(--c3, #E8C77A)"/>
+  <path d="M230 150 Q214 154 210 172 L220 166 Q224 158 234 156 Z" fill="var(--c3, #E8C77A)"/>
+  <!-- cropped hem binding -->
+  <path d="M128 236 Q148 246 168 244 L168 252 Q146 254 128 246 Z" fill="var(--c3, #E8C77A)"/>
+  <path d="M272 236 Q252 246 232 244 L232 252 Q254 254 272 246 Z" fill="var(--c3, #E8C77A)"/>
+
+  <!-- three-quarter sleeve cuffs -->
+  <rect x="102" y="268" width="40" height="18" rx="8" fill="var(--c3, #E8C77A)"/>
+  <rect x="258" y="268" width="40" height="18" rx="8" fill="var(--c3, #E8C77A)"/>
+
+  <!-- princess seams giving the short panels their curve -->
+  <path d="M150 168 Q146 206 148 240" stroke="var(--c2, #653244)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M250 168 Q254 206 252 240" stroke="var(--c2, #653244)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- set-in shoulder seams -->
+  <path d="M140 178 Q150 158 170 154" stroke="var(--c2, #653244)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 178 Q250 158 230 154" stroke="var(--c2, #653244)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight on each short front -->
+  <path d="M140 176 Q158 190 176 182" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 176 Q242 190 224 182" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

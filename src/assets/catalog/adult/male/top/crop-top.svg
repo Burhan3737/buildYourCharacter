@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = cropped well above the natural waist (hem y252, bare midriff
+       from 252 to the hip), VOLUME = fitted. Also shoulder = short set-in, closure = closed. -->
+  <defs>
+    <linearGradient id="adult-male-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7D96A)"/>
+      <stop offset="1" stop-color="var(--c2, #96A945)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7D96A)"/>
+      <stop offset="1" stop-color="var(--c2, #8C9E3E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3F4A22)"/>
+      <stop offset="1" stop-color="var(--c3, #2E3618)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one short fitted body and two short set-in sleeves -->
+  <g class="sp-shadow">
+    <rect x="104" y="158" width="34" height="54" rx="17" fill="url(#adult-male-top-crop-top__sleeve)"/>
+    <rect x="262" y="158" width="34" height="54" rx="17" fill="url(#adult-male-top-crop-top__sleeve)"/>
+    <path d="M132 178 Q132 148 164 148 H236 Q268 148 268 178 L264 236 Q264 252 250 252 H150 Q136 252 136 236 Z"
+          fill="url(#adult-male-top-crop-top__body)"/>
+  </g>
+
+  <!-- contrast shoulder yoke: the upper block of the two-panel split -->
+  <path d="M132 178 Q132 148 164 148 H236 Q268 148 268 178 L268 190 Q200 206 132 190 Z"
+        fill="url(#adult-male-top-crop-top__band)"/>
+  <path d="M132 190 Q200 206 268 190" stroke="var(--c1, #C7D96A)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the deep contrast hem band that marks where the crop stops -->
+  <path d="M136 230 Q200 244 264 230 L264 236 Q264 252 250 252 H150 Q136 252 136 236 Z"
+        fill="url(#adult-male-top-crop-top__band)"/>
+  <path d="M136 230 Q200 244 264 230" stroke="var(--c1, #C7D96A)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- sleeve tipping in the same accent -->
+  <rect x="104" y="198" width="34" height="14" rx="7" fill="var(--c3, #3F4A22)"/>
+  <rect x="262" y="198" width="34" height="14" rx="7" fill="var(--c3, #3F4A22)"/>
+
+  <!-- crew neckband and the neck opening -->
+  <path d="M176 146 Q200 168 224 146 Q221 159 200 162 Q179 159 176 146 Z" fill="var(--c3, #3F4A22)"/>
+  <path d="M185 148 Q200 160 215 148 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- visible fitted side seams -->
+  <path d="M137 196 Q136 218 138 234" stroke="var(--c2, #96A945)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M263 196 Q264 218 262 234" stroke="var(--c2, #96A945)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- shoulder seams -->
+  <path d="M138 164 Q152 150 166 149" stroke="var(--c1, #C7D96A)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M262 164 Q248 150 234 149" stroke="var(--c1, #C7D96A)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight -->
+  <path d="M150 172 Q200 190 250 172" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

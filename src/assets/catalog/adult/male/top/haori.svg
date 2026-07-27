@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = a wide square sleeve panel hanging free below the arm,
+       clearly separate from the body, and CLOSURE = open front with straight vertical edges
+       and a short chest cord. Also hem = hip at y330, volume = straight.
+       The centre opening is resolved by an integral shell drawn in c3. -->
+  <defs>
+    <linearGradient id="adult-male-top-haori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3E4E7A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3654)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46578A)"/>
+      <stop offset="1" stop-color="var(--c2, #232E48)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-top-haori__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3D9C2)"/>
+      <stop offset="1" stop-color="var(--c3, #C6BA9F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the shell, two straight front panels and two hanging square sleeves -->
+  <g class="sp-shadow">
+    <path d="M164 158 Q200 182 236 158 Q262 164 262 194 V320 Q262 332 250 332 H150 Q138 332 138 320 V194 Q138 164 164 158 Z"
+          fill="url(#adult-male-top-haori__shell)"/>
+    <path d="M132 178 Q132 154 156 152 L186 152 L186 330 L146 330 Q132 330 132 316 Z"
+          fill="url(#adult-male-top-haori__body)"/>
+    <path d="M268 178 Q268 154 244 152 L214 152 L214 330 L254 330 Q268 330 268 316 Z"
+          fill="url(#adult-male-top-haori__body)"/>
+    <path d="M86 158 H136 V300 H98 Q86 300 86 288 Z" fill="url(#adult-male-top-haori__panel)"/>
+    <path d="M314 158 H264 V300 H302 Q314 300 314 288 Z" fill="url(#adult-male-top-haori__panel)"/>
+  </g>
+
+  <!-- broad flat collar band running down each straight front edge -->
+  <path d="M168 150 L186 152 L186 330 L170 330 Z" fill="var(--c2, #2A3654)"/>
+  <path d="M232 150 L214 152 L214 330 L230 330 Z" fill="var(--c2, #2A3654)"/>
+  <path d="M168 150 Q200 142 232 150 L232 160 Q200 152 168 160 Z" fill="var(--c2, #2A3654)"/>
+  <path d="M178 152 Q200 160 222 152 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M178 166 V326" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M222 166 V326" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- short chest cord tying the two fronts, the only fastening -->
+  <path d="M186 208 Q200 216 214 208" stroke="var(--c3, #E3D9C2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="208" r="5" fill="var(--c3, #E3D9C2)"/>
+  <circle cx="214" cy="208" r="5" fill="var(--c3, #E3D9C2)"/>
+  <path d="M200 214 Q198 228 202 240" stroke="var(--c3, #E3D9C2)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the hanging sleeve panels read as separate cloth: a fold line and a weighted lower edge -->
+  <path d="M100 168 V292" stroke="var(--c2, #2A3654)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M300 168 V292" stroke="var(--c2, #2A3654)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <rect x="86" y="286" width="50" height="14" rx="5" fill="var(--c3, #E3D9C2)" fill-opacity="0.75"/>
+  <rect x="264" y="286" width="50" height="14" rx="5" fill="var(--c3, #E3D9C2)" fill-opacity="0.75"/>
+  <path d="M136 158 V300" stroke="var(--c2, #2A3654)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 158 V300" stroke="var(--c2, #2A3654)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- plain hem edge across both fronts -->
+  <path d="M136 322 H186" stroke="var(--c2, #2A3654)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 322 H264" stroke="var(--c2, #2A3654)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight on the fronts and the sleeve panels -->
+  <path d="M142 172 q18 -12 36 -14" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 172 q-18 -12 -36 -14" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M94 172 h34" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 172 h34" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
