@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+       silhouette axes: shoulder=ONE large pin per shoulder over completely bare arms, and
+       closure=open down one whole side, a real vertical slit from the hem to the hip.
+       The deep overfold reads as a second horizontal hem at y 300, 132 units wide, which is the
+       feature that separates it from chiton at tray size. -->
+  <defs>
+    <linearGradient id="adult-male-costume-peplos__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A9B8)"/>
+      <stop offset="1" stop-color="var(--c2, #96788A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D4B7C4)"/>
+      <stop offset="1" stop-color="var(--c2, #96788A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the ankle length rectangle, open down the right side from the hip to the hem -->
+  <g class="sp-shadow">
+    <path d="M152 158 H248 Q256 200 254 260 L258 330 L258 544 Q230 552 200 552
+             Q170 552 142 544 L140 330 L146 260 Q144 200 152 158 Z"
+          fill="url(#adult-male-costume-peplos__cloth)"/>
+    <path d="M148 158 H252 Q262 210 260 262 Q266 284 264 302 Q200 314 136 302
+             Q134 284 140 262 Q138 210 148 158 Z"
+          fill="url(#adult-male-costume-peplos__fold)"/>
+  </g>
+
+  <!-- one large pin at each shoulder, and nothing else holding it -->
+  <g fill="var(--c3, #E3C98E)">
+    <circle cx="154" cy="158" r="13"/>
+    <circle cx="246" cy="158" r="13"/>
+  </g>
+  <circle cx="154" cy="158" r="5" fill="var(--c2, #96788A)"/>
+  <circle cx="246" cy="158" r="5" fill="var(--c2, #96788A)"/>
+
+  <!-- the overfold hem, the second horizontal line, bound so it reads at tray size -->
+  <path d="M137 300 Q200 312 263 300" stroke="var(--c3, #E3C98E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- belt worn OVER the fold -->
+  <path d="M140 282 Q200 294 260 282" stroke="var(--c2, #96788A)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 282 Q200 293 258 282" stroke="var(--c3, #E3C98E)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the open right side: a genuine vertical slit from the hip to the hem -->
+  <path d="M259 330 V544" stroke="var(--c3, #E3C98E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M247 334 V546" stroke="var(--c2, #96788A)" stroke-width="4"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- drape folds -->
+  <g stroke="var(--c2, #96788A)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M160 320 Q154 430 150 538"/>
+    <path d="M186 320 Q184 430 182 546"/>
+    <path d="M214 320 Q216 430 218 546"/>
+    <path d="M162 176 Q160 230 158 274"/>
+    <path d="M238 176 Q240 230 242 274"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M156 546 H202 Q206 556 204 568 H158 Q152 556 156 546 Z" fill="var(--c3, #E3C98E)"/>
+  <path d="M198 546 H244 Q248 556 246 568 H200 Q194 556 198 546 Z" fill="var(--c3, #E3C98E)"/>
+  <path d="M166 178 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+       silhouette axes: shoulder=a broad flat plate yoke slab over each shoulder, and
+       closure=open down both sides and cross laced from armpit to waist, so bare skin shows
+       through the lacing on both flanks. The chest carries no emblem and no applied graphic. -->
+  <defs>
+    <linearGradient id="adult-male-costume-strongarm__vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C7B5C)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5C4636)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6B4F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two flat shoulder plates, a narrow front vest panel, and straight trousers -->
+  <g class="sp-shadow">
+    <path d="M124 152 H176 Q182 152 182 160 V186 Q182 194 174 194 H126 Q118 194 118 184
+             L118 162 Q118 152 124 152 Z" fill="url(#adult-male-costume-strongarm__plate)"/>
+    <path d="M276 152 H224 Q218 152 218 160 V186 Q218 194 226 194 H274 Q282 194 282 184
+             L282 162 Q282 152 276 152 Z" fill="url(#adult-male-costume-strongarm__plate)"/>
+    <path d="M154 150 H246 Q252 178 250 210 L248 290 Q246 300 236 300 H164 Q154 300 152 290
+             L150 210 Q148 178 154 150 Z" fill="url(#adult-male-costume-strongarm__vest)"/>
+    <path d="M152 316 H198 Q200 420 196 526 Q196 534 188 534 H164 Q156 534 156 526
+             Q152 420 152 316 Z" fill="url(#adult-male-costume-strongarm__trouser)"/>
+    <path d="M248 316 H202 Q200 420 204 526 Q204 534 212 534 H236 Q244 534 244 526
+             Q248 420 248 316 Z" fill="url(#adult-male-costume-strongarm__trouser)"/>
+  </g>
+
+  <!-- the open sides: five cross lacing bars over bare skin on each flank -->
+  <g stroke="var(--c3, #E4E0D2)" stroke-width="4.4" stroke-linecap="round" fill="none">
+    <path d="M132 206 L152 216 M152 206 L132 216"/>
+    <path d="M132 226 L152 236 M152 226 L132 236"/>
+    <path d="M132 246 L152 256 M152 246 L132 256"/>
+    <path d="M132 266 L152 276 M152 266 L132 276"/>
+    <path d="M132 284 L152 292 M152 284 L132 292"/>
+    <path d="M268 206 L248 216 M248 206 L268 216"/>
+    <path d="M268 226 L248 236 M248 226 L268 236"/>
+    <path d="M268 246 L248 256 M248 246 L268 256"/>
+    <path d="M268 266 L248 276 M248 266 L268 276"/>
+    <path d="M268 284 L248 292 M248 284 L268 292"/>
+  </g>
+
+  <!-- wide buckled belt -->
+  <path d="M138 288 H262 Q266 300 264 316 H136 Q134 300 138 288 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M186 284 H214 Q218 300 216 320 H184 Q182 300 186 284 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M192 296 H208" stroke="var(--c2, #5C4636)" stroke-width="4" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- turned trouser cuffs and integral boots -->
+  <path d="M150 522 H198 V538 H150 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M202 522 H250 V538 H202 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M154 534 H202 Q208 550 206 568 H156 Q148 550 154 534 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M198 534 H246 Q252 550 250 568 H200 Q192 550 198 534 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- plate rivets and the yoke bevel -->
+  <g fill="var(--c3, #E4E0D2)">
+    <circle cx="130" cy="162" r="3.4"/><circle cx="130" cy="184" r="3.4"/>
+    <circle cx="170" cy="162" r="3.4"/><circle cx="170" cy="184" r="3.4"/>
+    <circle cx="270" cy="162" r="3.4"/><circle cx="270" cy="184" r="3.4"/>
+    <circle cx="230" cy="162" r="3.4"/><circle cx="230" cy="184" r="3.4"/>
+  </g>
+  <path d="M124 158 H176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 158 H276" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 176 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

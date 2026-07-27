@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+       silhouette axes: shoulder=a row of six small round pins along the top of each arm, so the
+       cloth falls in a scalloped pseudo sleeve to the elbow, and closure=belted TWICE with a
+       bloused fold spilling over the upper belt.
+       In this Greek group the fastening point IS the axis: chiton has a row of six pins per
+       arm, peplos has one large pin per shoulder, winged-messenger has one pin on one shoulder
+       only. Do not blur that distinction. -->
+  <defs>
+    <linearGradient id="adult-male-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the draped tube, ankle length, and the two scalloped pseudo sleeves hanging to the elbow -->
+  <g class="sp-shadow">
+    <path d="M154 150 H246 Q256 190 254 240 L258 340 Q264 450 262 544 Q200 556 138 544
+             Q136 450 142 340 L146 240 Q144 190 154 150 Z"
+          fill="url(#adult-male-costume-chiton__cloth)"/>
+    <path d="M150 156 H100 Q94 200 96 236 Q104 250 112 238 Q120 250 128 238 Q136 250 144 238
+             Q150 246 152 232 Q148 192 150 156 Z"
+          fill="url(#adult-male-costume-chiton__sleeve)"/>
+    <path d="M250 156 H300 Q306 200 304 236 Q296 250 288 238 Q280 250 272 238 Q264 250 256 238
+             Q250 246 248 232 Q252 192 250 156 Z"
+          fill="url(#adult-male-costume-chiton__sleeve)"/>
+  </g>
+
+  <!-- the row of six small round pins along the top of each arm -->
+  <g fill="var(--c3, #C4A46A)">
+    <circle cx="146" cy="158" r="6"/><circle cx="132" cy="160" r="6"/>
+    <circle cx="118" cy="162" r="6"/><circle cx="104" cy="164" r="6"/>
+    <circle cx="254" cy="158" r="6"/><circle cx="268" cy="160" r="6"/>
+    <circle cx="282" cy="162" r="6"/><circle cx="296" cy="164" r="6"/>
+  </g>
+
+  <!-- upper belt, under the bust, with the bloused fold spilling over it -->
+  <path d="M144 232 Q200 246 256 232 Q258 248 254 262 Q200 274 146 262 Q142 248 144 232 Z"
+        fill="var(--c2, #C3B99F)"/>
+  <path d="M142 236 H258" stroke="var(--c3, #C4A46A)" stroke-width="8" stroke-linecap="round"
+        fill="none"/>
+  <!-- lower belt at the waist -->
+  <path d="M142 296 H258" stroke="var(--c3, #C4A46A)" stroke-width="10" stroke-linecap="round"
+        fill="none"/>
+  <path d="M144 306 H256" stroke="var(--c2, #C3B99F)" stroke-width="4" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- vertical drape folds, running from the lower belt to the ankle hem -->
+  <g stroke="var(--c2, #C3B99F)" stroke-opacity="0.55" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M162 316 Q156 430 152 536"/>
+    <path d="M182 316 Q180 430 178 542"/>
+    <path d="M218 316 Q220 430 222 542"/>
+    <path d="M238 316 Q244 430 248 536"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M156 544 H202 Q206 556 204 568 H158 Q152 556 156 544 Z" fill="var(--c3, #C4A46A)"/>
+  <path d="M198 544 H244 Q248 556 246 568 H200 Q194 556 198 544 Z" fill="var(--c3, #C4A46A)"/>
+  <path d="M162 178 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

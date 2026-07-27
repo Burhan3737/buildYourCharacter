@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+       The hood is drawn WORN DOWN as a thick fabric roll behind the neck, which is the
+       sanctioned hood pattern for this catalogue and keeps the face clear.
+       silhouette axes: hem=split into two tails at mid thigh with a real gap between them, and
+       closure=an open sleeveless jerkin over a sleeved under layer.
+       Trademark: the fallback is brown dominant with a sage accent, deliberately NOT all green
+       with a hood. There is no bow, no prop of any kind, and no chest emblem. -->
+  <defs>
+    <linearGradient id="adult-male-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7A8B6F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hood pooled in a thick roll at the nape, top edge at the ceiling and no higher -->
+  <g class="sp-shadow">
+    <path d="M156 150 H244 Q248 168 240 182 Q200 194 160 182 Q152 168 156 150 Z"
+          fill="url(#adult-male-costume-ranger__hood)"/>
+  </g>
+
+  <!-- long sleeved under layer, then the open jerkin over it, then close trousers -->
+  <g class="sp-shadow">
+    <path d="M158 154 H242 Q252 172 250 200 L248 300 Q246 314 234 314 H166 Q154 314 152 300
+             L150 200 Q148 172 158 154 Z" fill="url(#adult-male-costume-ranger__under)"/>
+    <path d="M108 166 H136 Q140 180 138 204 L136 324 Q136 336 122 336 Q110 336 108 324
+             L106 204 Q104 180 108 166 Z" fill="url(#adult-male-costume-ranger__under)"/>
+    <path d="M292 166 H264 Q260 180 262 204 L264 324 Q264 336 278 336 Q290 336 292 324
+             L294 204 Q296 180 292 166 Z" fill="url(#adult-male-costume-ranger__under)"/>
+    <path d="M154 158 H190 L186 320 L194 398 H140 Q134 398 134 388 L138 300 Q132 216 154 158 Z"
+          fill="url(#adult-male-costume-ranger__jerkin)"/>
+    <path d="M246 158 H210 L214 320 L206 398 H260 Q266 398 266 388 L262 300 Q268 216 246 158 Z"
+          fill="url(#adult-male-costume-ranger__jerkin)"/>
+    <path d="M156 330 H196 Q198 434 194 528 Q194 536 186 536 H166 Q158 536 158 528
+             Q154 434 156 330 Z" fill="url(#adult-male-costume-ranger__jerkin)"/>
+    <path d="M244 330 H204 Q202 434 206 528 Q206 536 214 536 H234 Q242 536 242 528
+             Q246 434 244 330 Z" fill="url(#adult-male-costume-ranger__jerkin)"/>
+  </g>
+
+  <!-- diagonal quiver strap across the chest, a worn item and not a prop -->
+  <path d="M152 162 L254 302" stroke="var(--c2, #5C4636)" stroke-width="17"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 162 L254 302" stroke="var(--c3, #7A8B6F)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- a quiver body carried on the back, showing past the shoulder -->
+  <path d="M254 176 H278 Q282 196 278 216 H254 Q250 196 254 176 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- wide bracer on one forearm only -->
+  <path d="M104 288 H140 Q144 308 140 330 H104 Q100 308 104 288 Z" fill="var(--c2, #5C4636)"/>
+  <g stroke="var(--c3, #7A8B6F)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M108 296 H136"/><path d="M108 308 H136"/><path d="M108 320 H136"/>
+  </g>
+
+  <!-- belt at the waist, and integral boots -->
+  <path d="M144 292 H256 Q260 302 258 316 H142 Q140 302 144 292 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M154 528 H200 Q206 546 204 568 H156 Q148 546 154 528 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M200 528 H246 Q252 546 250 568 H202 Q194 546 200 528 Z" fill="var(--c2, #5C4636)"/>
+
+  <path d="M164 176 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

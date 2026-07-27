@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speedster Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+       silhouette axes: shoulder=sleeveless with a deep scooped armhole, and volume=skin close
+       with a pair of swept fin vanes standing 26 units clear of each calf.
+       Trademark: the chest is PLAIN. No lightning bolt, no emblem, no chest motif of any kind.
+       Fallback is house periwinkle and butter, deliberately clear of the banned pairings. -->
+  <defs>
+    <linearGradient id="adult-male-costume-speedster__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-speedster__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- skin close bodysuit: a high closed neck stopping at the ceiling, deep armholes, ankle hem -->
+  <g class="sp-shadow">
+    <path d="M186 148 H214 Q234 148 244 160 Q252 172 250 196 L252 268 Q254 300 246 312 H154
+             Q146 300 148 268 L150 196 Q148 172 156 160 Q166 148 186 148 Z"
+          fill="url(#adult-male-costume-speedster__suit)"/>
+    <path d="M152 308 H248 Q252 322 250 340 H150 Q148 322 152 308 Z"
+          fill="url(#adult-male-costume-speedster__suit)"/>
+    <path d="M160 336 H196 Q198 440 194 540 Q194 548 186 548 H168 Q160 548 160 540
+             Q158 440 160 336 Z" fill="url(#adult-male-costume-speedster__leg)"/>
+    <path d="M240 336 H204 Q202 440 206 540 Q206 548 214 548 H232 Q240 548 240 540
+             Q242 440 240 336 Z" fill="url(#adult-male-costume-speedster__leg)"/>
+    <path d="M160 462 Q142 470 128 486 Q140 492 152 494 Q156 480 162 470 Z"
+          fill="url(#adult-male-costume-speedster__vane)"/>
+    <path d="M160 494 Q144 500 132 512 Q144 516 156 516 Q157 506 161 498 Z"
+          fill="url(#adult-male-costume-speedster__vane)"/>
+    <path d="M240 462 Q258 470 272 486 Q260 492 248 494 Q244 480 238 470 Z"
+          fill="url(#adult-male-costume-speedster__vane)"/>
+    <path d="M240 494 Q256 500 268 512 Q256 516 244 516 Q243 506 239 498 Z"
+          fill="url(#adult-male-costume-speedster__vane)"/>
+  </g>
+
+  <!-- one raked diagonal seam across the torso, and NOT an emblem -->
+  <path d="M154 240 L246 196" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 254 L246 210" stroke="var(--c2, #4E5C9E)" stroke-width="4"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- deep armhole bind and the high neck bind -->
+  <path d="M156 162 Q148 190 150 212" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 162 Q252 190 250 212" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 151 H214" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ankle cuff bands and integral soles -->
+  <path d="M160 528 H196" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M204 528 H240" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M156 546 H202 Q206 556 204 568 H158 Q152 556 156 546 Z" fill="var(--c2, #4E5C9E)"/>
+  <path d="M198 546 H244 Q248 556 246 568 H200 Q194 556 198 546 Z" fill="var(--c2, #4E5C9E)"/>
+
+  <path d="M162 176 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148
+
+       CORRECTNESS NOTE, so the next agent does not "correct" this back toward the source.
+       HORSE tail and horse ears, not goat. Goat legs and horns are the Roman faun, not the
+       Greek satyr. And this is a CHILDREN'S DRESS UP satyr: pelt from the waist down, an animal
+       skin over one shoulder, nothing else. Classical satyrs are nude with exaggerated
+       genitalia; we are not drawing that and never will.
+
+       silhouette axes: hem=shag all the way to the ankle in a bumpy uneven outline, and
+       shoulder=one knotted skin over an otherwise bare chest.
+       Against berserker: berserker is a thigh length jerkin over trousers with a sleeved under
+       tunic. This is bare above the waist and shaggy to the ankle. Two axes.
+       The shag lobes are built INTO the silhouette path, never drawn as squiggles inside a
+       smooth leg. -->
+  <defs>
+    <linearGradient id="adult-male-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A98356)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5335)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9A277)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5335)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5335)"/>
+      <stop offset="1" stop-color="var(--c1, #A98356)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the long horse tail, falling behind from the small of the back -->
+  <g class="sp-shadow">
+    <path d="M254 312 Q276 326 288 366 Q300 414 302 468 Q294 476 284 470
+             Q280 418 268 380 Q258 344 246 328 Z" fill="url(#adult-male-costume-satyr__tail)"/>
+  </g>
+
+  <!-- the pelt: a deeply lobed waist edge, then both legs to the ankle in a bumpy contour -->
+  <g class="sp-shadow">
+    <path d="M138 300 Q152 314 166 298 Q180 316 194 300 Q206 318 218 300 Q232 316 246 298
+             Q258 314 268 302 Q276 350 270 396 Q280 434 268 470 Q278 508 264 544
+             Q240 554 214 546 Q210 470 208 396 Q200 388 192 396 Q190 470 186 546
+             Q160 554 136 544 Q124 508 132 470 Q120 434 130 396 Q124 350 138 300 Z"
+          fill="url(#adult-male-costume-satyr__pelt)"/>
+  </g>
+
+  <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
+  <g class="sp-shadow">
+    <path d="M146 150 H178 Q200 208 244 292 Q248 310 232 316 Q214 318 208 302
+             Q176 224 144 176 Z" fill="url(#adult-male-costume-satyr__skin)"/>
+  </g>
+
+  <!-- the knot at the shoulder -->
+  <path d="M148 148 Q170 144 180 158 Q170 174 152 172 Q140 162 148 148 Z"
+        fill="var(--c2, #6E5335)"/>
+
+  <!-- shag texture: value only, the OUTLINE is already lobed and does the identifying -->
+  <g stroke="var(--c2, #6E5335)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M148 330 Q142 380 146 430"/>
+    <path d="M170 336 Q166 390 170 448"/>
+    <path d="M232 336 Q236 390 232 448"/>
+    <path d="M254 330 Q260 380 256 430"/>
+    <path d="M152 470 Q148 506 152 538"/>
+    <path d="M248 470 Q252 506 248 538"/>
+  </g>
+  <path d="M154 208 Q184 258 216 300" stroke="var(--c2, #6E5335)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- small hooves reading as integral footwear -->
+  <path d="M150 542 H198 Q202 556 200 568 H152 Q146 556 150 542 Z" fill="var(--c2, #6E5335)"/>
+  <path d="M202 542 H250 Q254 556 252 568 H204 Q198 556 202 542 Z" fill="var(--c2, #6E5335)"/>
+
+  <path d="M162 322 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
