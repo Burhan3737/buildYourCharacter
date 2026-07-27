@@ -30,7 +30,7 @@
     </linearGradient>
     <linearGradient id="teen-female-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--c3, #C9A87C)"/>
-      <stop offset="1" stop-color="var(--c2, #57402C)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6A4A)"/>
     </linearGradient>
     <linearGradient id="teen-female-costume-satyr__bare" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
@@ -40,7 +40,7 @@
 
   <g class="sp-shadow">
     <!-- long horse tail, falling behind from the small of the back -->
-    <path d="M244 344 q30 6 42 40 q10 40 2 92 q-4 14 -14 8 q-2 -48 -12 -80 q-10 -32 -30 -42 z"
+    <path d="M244 344 q36 6 50 42 q12 44 4 100 q-4 16 -16 8 q-2 -52 -14 -86 q-12 -34 -32 -44 z"
           fill="url(#teen-female-costume-satyr__tail)"/>
   </g>
 
@@ -62,14 +62,20 @@
              Q258 548 238 552 H204 Q200 522 204 496 Q198 468 204 442 Q200 414 204 388
              Q198 362 204 340 Z"
           fill="url(#teen-female-costume-satyr__pelt)"/>
-    <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
-    <path d="M156 196 h34 q6 6 4 16 L246 340 q-4 16 -18 18 q-14 2 -20 -10 L150 214
-             q-2 -12 6 -18 z"
+    <!-- animal skin knotted over one shoulder, hanging FLAT to the opposite hip. It is drawn as a
+         broad hide that WIDENS as it falls, with a lobed lower edge, never as a tapering tube:
+         a narrow dark diagonal band across a bare chest reads as something else entirely. -->
+    <path d="M152 196 h44 L252 316 q-8 14 -22 16 q-10 12 -22 4 q-10 10 -20 0 q-12 8 -20 -6
+             L146 216 q-2 -14 6 -20 z"
           fill="url(#teen-female-costume-satyr__skin)"/>
   </g>
 
   <!-- knot at the shoulder -->
-  <path d="M164 198 q18 -4 26 6 q-4 14 -18 14 q-14 0 -16 -10 z" fill="var(--c2, #57402C)"/>
+  <path d="M162 196 q22 -4 32 6 q-5 16 -21 16 q-16 0 -18 -12 z" fill="var(--c2, #57402C)"/>
+  <!-- hide markings, so the drape reads as a flat skin rather than a strap -->
+  <ellipse cx="186" cy="252" rx="9" ry="7" fill="var(--c2, #57402C)" fill-opacity="0.4"/>
+  <ellipse cx="208" cy="286" rx="8" ry="6" fill="var(--c2, #57402C)" fill-opacity="0.4"/>
+  <ellipse cx="172" cy="228" rx="7" ry="5" fill="var(--c2, #57402C)" fill-opacity="0.35"/>
 
   <!-- pelt shading in the fleece hollows -->
   <g stroke="var(--c2, #57402C)" stroke-width="4" stroke-opacity="0.6" fill="none" stroke-linecap="round">
@@ -81,9 +87,9 @@
 
   <!-- tail hairs -->
   <g stroke="var(--c2, #57402C)" stroke-width="3" stroke-opacity="0.7" fill="none" stroke-linecap="round">
-    <path d="M258 372 q18 40 16 96"/><path d="M268 384 q14 38 12 84"/>
+    <path d="M270 384 q18 42 14 100"/><path d="M280 398 q12 40 10 88"/>
   </g>
 
-  <path d="M262 366 q16 26 20 60" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+  <path d="M266 372 q18 28 22 62" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
         fill="none" stroke-linecap="round"/>
 </svg>
