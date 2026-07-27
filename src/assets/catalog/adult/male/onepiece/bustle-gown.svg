@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bustle Gown" data-family="bustle-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = front-to-back asymmetric, a large draped mass projecting
+       sharply behind the hip and clearing it by more than fifty units; HEM = a narrow front
+       column to the ground with a short train pooling behind.
+       The only asymmetric outline in the slot. Differs from `ball-gown` on bodice + skirt,
+       from `bridal-gown` on volume + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-bustle-gown__bustle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A80A4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F5273)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-bustle-gown__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A91B6)"/>
+      <stop offset="1" stop-color="var(--c2, #46597C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-bustle-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A91B6)"/>
+      <stop offset="1" stop-color="var(--c2, #3F5273)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-bustle-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A80A4)"/>
+      <stop offset="1" stop-color="var(--c2, #3F5273)"/>
+    </linearGradient>
+    <clipPath id="adult-male-onepiece-bustle-gown__bustleclip">
+      <path d="M234 292 Q292 310 312 362 Q328 442 306 508 Q292 546 268 556 Q261 568 276 568
+               H322 Q334 568 331 554 Q348 460 337 384 Q322 314 262 288 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the bustle: a big draped mass thrown out behind the hip, falling to a short train -->
+    <path d="M234 292 Q292 310 312 362 Q328 442 306 508 Q292 546 268 556 Q261 568 276 568
+             H322 Q334 568 331 554 Q348 460 337 384 Q322 314 262 288 Z"
+          fill="url(#adult-male-onepiece-bustle-gown__bustle)"/>
+    <!-- narrow flat front skirt, straight from the waist to the ground -->
+    <path d="M152 296 H238 Q244 430 241 566 H149 Q146 430 152 296 Z"
+          fill="url(#adult-male-onepiece-bustle-gown__front)"/>
+    <!-- long fitted sleeves -->
+    <path d="M136 158 Q106 162 104 184 L107 332 Q107 346 120 346 Q133 346 133 332 L135 190 Z"
+          fill="url(#adult-male-onepiece-bustle-gown__sleeve)"/>
+    <path d="M264 158 Q294 162 296 184 L293 332 Q293 346 280 346 Q267 346 267 332 L265 190 Z"
+          fill="url(#adult-male-onepiece-bustle-gown__sleeve)"/>
+    <!-- high closed neckline over a tightly fitted bodice -->
+    <path d="M132 180 Q132 150 164 148 H236 Q268 150 268 180 V268 Q268 302 252 302 H148
+             Q132 302 132 268 Z"
+          fill="url(#adult-male-onepiece-bustle-gown__bodice)"/>
+  </g>
+
+  <!-- five swagged drape folds across the bustle -->
+  <g clip-path="url(#adult-male-onepiece-bustle-gown__bustleclip)" fill="none"
+     stroke="var(--c2, #3F5273)" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round">
+    <path d="M238 306 Q290 322 322 356"/>
+    <path d="M240 344 Q296 364 328 400"/>
+    <path d="M242 392 Q300 414 330 452"/>
+    <path d="M244 444 Q296 468 324 504"/>
+    <path d="M246 496 Q290 520 314 550"/>
+  </g>
+
+  <!-- the bustle's leading edge, bound in the accent -->
+  <path d="M236 294 Q300 316 320 386 Q336 470 322 556" stroke="var(--c3, #E4E0D2)"
+        stroke-opacity="0.75" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- high closed collar -->
+  <path d="M174 136 Q200 148 226 136 V152 Q200 164 174 152 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M182 141 q18 9 36 0 v8 q-18 9 -36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- centre-front buttons up the closed bodice -->
+  <g fill="var(--c3, #E4E0D2)">
+    <circle cx="200" cy="172" r="4.4"/>
+    <circle cx="200" cy="196" r="4.4"/>
+    <circle cx="200" cy="220" r="4.4"/>
+    <circle cx="200" cy="244" r="4.4"/>
+    <circle cx="200" cy="268" r="4.4"/>
+  </g>
+
+  <!-- pointed waist band, narrow at the front -->
+  <path d="M140 288 Q200 306 260 288 L262 300 Q200 320 138 300 Z" fill="var(--c3, #E4E0D2)"/>
+
+  <!-- flat front skirt panelling, deliberately plain against the bustle -->
+  <g fill="none" stroke="var(--c2, #3F5273)" stroke-opacity="0.35" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M174 318 L172 556"/>
+    <path d="M212 318 L214 556"/>
+  </g>
+  <path d="M150 548 H240" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.7" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuffs and the upper-chest highlight -->
+  <path d="M107 334 H133" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 334 H293" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 200 q30 12 60 4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

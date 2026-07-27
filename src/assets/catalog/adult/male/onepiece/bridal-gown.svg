@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = fitted through the hip to the knee and then flaring hard into
+       a trumpet; HEM = ground, with a train sweeping out behind. The trumpet line and the
+       train are the identity, so it still reads as a bridal gown in any colour.
+       Differs from `ball-gown` on bodice + skirt shape, from `maxi-dress` on shoulder + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-bridal-gown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DC)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BCA6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-bridal-gown__train" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFC5B0)"/>
+      <stop offset="1" stop-color="var(--c2, #A99E88)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-bridal-gown__sheer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D8CFBC)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BCA6)"/>
+    </linearGradient>
+    <pattern id="adult-male-onepiece-bridal-gown__lace" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="5" fill="none" stroke="var(--c3, #D8CFBC)"
+              stroke-opacity="0.6" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="3" fill="none" stroke="var(--c3, #D8CFBC)"
+              stroke-opacity="0.45" stroke-width="1.6"/>
+      <circle cx="18" cy="18" r="3" fill="none" stroke="var(--c3, #D8CFBC)"
+              stroke-opacity="0.45" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="adult-male-onepiece-bridal-gown__bodyclip">
+      <path d="M138 180 Q138 150 168 150 H232 Q262 150 262 180 L262 330 Q240 388 240 445
+               Q272 500 288 566 H112 Q128 500 160 445 Q160 388 138 330 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- train, sweeping out behind and pooling on the floor -->
+    <path d="M164 372 Q116 452 96 528 Q88 556 88 566 H312 Q312 556 304 528 Q284 452 236 372 Z"
+          fill="url(#adult-male-onepiece-bridal-gown__train)"/>
+    <!-- long sheer set-in sleeves, the skin reading through -->
+    <path d="M138 158 Q108 162 106 184 L109 330 Q109 344 122 344 Q135 344 135 330 L137 190 Z"
+          fill="url(#adult-male-onepiece-bridal-gown__sheer)" fill-opacity="0.55"/>
+    <path d="M262 158 Q292 162 294 184 L291 330 Q291 344 278 344 Q265 344 265 330 L263 190 Z"
+          fill="url(#adult-male-onepiece-bridal-gown__sheer)" fill-opacity="0.55"/>
+    <!-- high round neck, fitted to the knee, then hard into a trumpet -->
+    <path d="M138 180 Q138 150 168 150 H232 Q262 150 262 180 L262 330 Q240 388 240 445
+             Q272 500 288 566 H112 Q128 500 160 445 Q160 388 138 330 Z"
+          fill="url(#adult-male-onepiece-bridal-gown__body)"/>
+  </g>
+
+  <!-- lace over the bodice and the sheer sleeves -->
+  <g clip-path="url(#adult-male-onepiece-bridal-gown__bodyclip)">
+    <rect x="130" y="150" width="140" height="150" fill="url(#adult-male-onepiece-bridal-gown__lace)"/>
+  </g>
+  <path d="M110 166 Q108 250 110 328" stroke="var(--c3, #D8CFBC)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M290 166 Q292 250 290 328" stroke="var(--c3, #D8CFBC)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- high round neckline, bound -->
+  <path d="M170 150 Q200 166 230 150" stroke="var(--c3, #D8CFBC)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long princess seams running through the fitted body into the flare -->
+  <g fill="none" stroke="var(--c2, #C6BCA6)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M170 194 Q166 330 172 445 Q152 508 138 556"/>
+    <path d="M230 194 Q234 330 228 445 Q248 508 262 556"/>
+  </g>
+
+  <!-- the flare seam: where the trumpet breaks away from the knee -->
+  <path d="M160 444 Q200 458 240 444" stroke="var(--c3, #D8CFBC)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- narrow waist band and the train's own edge -->
+  <rect x="138" y="292" width="124" height="14" rx="6" fill="var(--c3, #D8CFBC)"/>
+  <path d="M92 548 Q200 572 308 548" stroke="var(--c3, #D8CFBC)" stroke-opacity="0.8"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M116 552 Q200 570 284 552" stroke="var(--c2, #C6BCA6)" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M156 190 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 486 q30 14 60 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

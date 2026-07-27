@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari, Nivi Drape" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = an unstitched draped wrap, pleated by hand at the waist and
+       held by nothing but the tuck; SHOULDER = a single broad pallu carried diagonally across
+       the body and over the left shoulder, then falling free behind.
+       Choli and petticoat are drawn into this same file. Everyday clothing, plain cloth with
+       a generic border. Differs from `maxi-dress` on shoulder + closure. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C05A7A)"/>
+      <stop offset="1" stop-color="var(--c2, #8A3A57)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CB6786)"/>
+      <stop offset="1" stop-color="var(--c2, #8A3A57)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9E4463)"/>
+      <stop offset="1" stop-color="var(--c2, #74304A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C09456)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the pallu falling free behind, from the shoulder down past the hip -->
+    <path d="M148 178 L108 404 Q105 422 122 424 H146 Q156 422 157 408 L192 176 Z"
+          fill="url(#adult-male-onepiece-sari__pallu)"/>
+    <!-- petticoat, showing below the draped cloth -->
+    <path d="M146 300 H254 L258 542 Q200 556 142 542 Z"
+          fill="url(#adult-male-onepiece-sari__petticoat)"/>
+    <!-- the draped sari cloth over the petticoat -->
+    <path d="M134 296 H266 L278 522 Q200 540 122 522 Z"
+          fill="url(#adult-male-onepiece-sari__cloth)"/>
+    <!-- short choli sleeves -->
+    <path d="M136 158 Q108 162 106 184 Q104 208 122 210 H142 Q140 184 136 158 Z"
+          fill="url(#adult-male-onepiece-sari__choli)"/>
+    <path d="M264 158 Q292 162 294 184 Q296 208 278 210 H258 Q260 184 264 158 Z"
+          fill="url(#adult-male-onepiece-sari__choli)"/>
+    <!-- short fitted choli, leaving the midriff bare -->
+    <path d="M132 180 Q132 150 162 148 H238 Q268 150 268 180 V226 Q200 244 132 226 Z"
+          fill="url(#adult-male-onepiece-sari__choli)"/>
+    <!-- the pallu crossing the body diagonally, over the left shoulder -->
+    <path d="M270 300 Q276 330 246 344 L150 190 Q142 166 164 150 Z"
+          fill="url(#adult-male-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- soft shading where the bare midriff meets the choli hem -->
+  <path d="M140 230 Q200 250 260 230 Q200 262 140 230 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+
+  <!-- generic woven border along the long edges of the pallu -->
+  <path d="M164 150 L150 190 L246 344" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M148 180 L110 406" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M110 418 Q132 428 154 416" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- hand-gathered centre-front pleats, fanning from the tuck at the waist -->
+  <g fill="none" stroke="var(--c2, #8A3A57)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M200 306 L156 516"/>
+    <path d="M200 306 L168 518"/>
+    <path d="M200 306 L180 520"/>
+    <path d="M200 306 L192 522"/>
+    <path d="M200 306 L206 522"/>
+    <path d="M200 306 L218 520"/>
+    <path d="M200 306 L230 518"/>
+    <path d="M200 306 L242 516"/>
+  </g>
+
+  <!-- the waist tuck, and the border along the sari hem -->
+  <path d="M136 300 Q200 316 264 300" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 512 Q200 532 274 512" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- petticoat edge showing below -->
+  <path d="M144 534 Q200 548 256 534" stroke="var(--c3, #F7C873)" stroke-opacity="0.7"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- choli neckline and sleeve binding -->
+  <path d="M176 148 Q200 172 224 148 Q222 178 200 180 Q178 178 176 148 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M174 148 Q200 176 226 148" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M108 204 H140" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 204 H292" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M206 192 q26 10 44 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

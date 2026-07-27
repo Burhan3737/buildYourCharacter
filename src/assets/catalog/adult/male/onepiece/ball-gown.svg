@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = none, a straight strapless band across the top of the bust
+       with the shoulders left bare; VOLUME = a huge bouffant dome springing from a pointed
+       waist out to x 86..314 on the ground line, 56 units clear of the hip each side.
+       Differs from every other gown here on bodice (strapless point) and skirt (dome). -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-ball-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A5A80)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3A56)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9A6890)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3A56)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #5C3A56)"/>
+    </linearGradient>
+    <clipPath id="adult-male-onepiece-ball-gown__domeclip">
+      <path d="M152 294 H248 Q290 372 306 470 Q314 532 314 568 H86 Q86 532 94 470
+               Q110 372 152 294 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the dome: from the pointed waist straight out over the floor -->
+    <path d="M152 294 H248 Q290 372 306 470 Q314 532 314 568 H86 Q86 532 94 470
+             Q110 372 152 294 Z"
+          fill="url(#adult-male-onepiece-ball-gown__skirt)"/>
+    <!-- fitted strapless bodice, coming to a V point at the waist -->
+    <path d="M142 196 H258 V246 Q258 284 238 298 L200 312 L162 298 Q142 284 142 246 Z"
+          fill="url(#adult-male-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- straight strapless band across the top of the bust -->
+  <rect x="142" y="196" width="116" height="18" rx="7"
+        fill="url(#adult-male-onepiece-ball-gown__band)"/>
+  <path d="M144 214 H256" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- pointed waist edge, bound in the accent -->
+  <path d="M143 268 Q170 300 200 312 Q230 300 257 268" stroke="var(--c3, #E4E0D2)"
+        stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ten radiating skirt gathers fanning from the waist point -->
+  <g clip-path="url(#adult-male-onepiece-ball-gown__domeclip)" fill="none"
+     stroke="var(--c2, #5C3A56)" stroke-opacity="0.38" stroke-width="4" stroke-linecap="round">
+    <path d="M198 314 Q160 400 108 556"/>
+    <path d="M199 314 Q168 400 136 558"/>
+    <path d="M200 314 Q182 400 166 560"/>
+    <path d="M200 314 Q194 400 190 560"/>
+    <path d="M200 314 Q206 400 210 560"/>
+    <path d="M200 314 Q218 400 234 560"/>
+    <path d="M201 314 Q232 400 264 558"/>
+    <path d="M202 314 Q240 400 292 556"/>
+  </g>
+  <!-- bodice seaming, echoing the gathers -->
+  <g fill="none" stroke="var(--c2, #5C3A56)" stroke-opacity="0.35" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M172 216 Q168 266 186 302"/>
+    <path d="M228 216 Q232 266 214 302"/>
+  </g>
+
+  <!-- deep hem band over the floor -->
+  <path d="M88 540 Q200 562 312 540" stroke="var(--c3, #E4E0D2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M156 224 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 396 q68 26 136 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

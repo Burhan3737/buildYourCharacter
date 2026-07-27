@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = two narrow straps over bare shoulders; VOLUME = a dead
+       straight tube with no waist shaping at all, cut off by a horizontal hip seam at y 340
+       with a separate fringed panel band hanging from it to mid-calf.
+       Differs from `maxi-dress` on hem + volume, from `sundress` on volume + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-flapper-dress__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4056)"/>
+      <stop offset="1" stop-color="var(--c2, #2F2639)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-flapper-dress__fringe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #59485F)"/>
+      <stop offset="1" stop-color="var(--c2, #2A2233)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-flapper-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #59485F)"/>
+      <stop offset="1" stop-color="var(--c2, #2F2639)"/>
+    </linearGradient>
+    <pattern id="adult-male-onepiece-flapper-dress__beads" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 13 L9 4 L18 13" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.5" stroke-width="2.4" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-male-onepiece-flapper-dress__tubeclip">
+      <path d="M146 200 H254 Q260 200 260 206 V340 H140 V206 Q140 200 146 200 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps over bare shoulders -->
+    <rect x="156" y="150" width="9" height="54" rx="4"
+          fill="url(#adult-male-onepiece-flapper-dress__strap)"/>
+    <rect x="235" y="150" width="9" height="54" rx="4"
+          fill="url(#adult-male-onepiece-flapper-dress__strap)"/>
+    <!-- the tube: dead straight, no bust shaping, no waist -->
+    <path d="M146 200 H254 Q260 200 260 206 V340 H140 V206 Q140 200 146 200 Z"
+          fill="url(#adult-male-onepiece-flapper-dress__tube)"/>
+    <!-- the fringed panel band: eighteen loose strands hanging to mid-calf -->
+    <path d="M138 340 H143.4 V500 Q140.7 506 138 500 Z
+             M144.9 340 H150.3 V494 Q147.6 500 144.9 494 Z
+             M151.8 340 H157.2 V506 Q154.5 512 151.8 506 Z
+             M158.7 340 H164.1 V498 Q161.4 504 158.7 498 Z
+             M165.6 340 H171 V508 Q168.3 514 165.6 508 Z
+             M172.4 340 H177.8 V492 Q175.1 498 172.4 492 Z
+             M179.3 340 H184.7 V502 Q182 508 179.3 502 Z
+             M186.2 340 H191.6 V496 Q188.9 502 186.2 496 Z
+             M193.1 340 H198.5 V506 Q195.8 512 193.1 506 Z
+             M200 340 H205.4 V500 Q202.7 506 200 500 Z
+             M206.9 340 H212.3 V494 Q209.6 500 206.9 494 Z
+             M213.8 340 H219.2 V504 Q216.5 510 213.8 504 Z
+             M220.7 340 H226.1 V498 Q223.4 504 220.7 498 Z
+             M227.6 340 H233 V508 Q230.3 514 227.6 508 Z
+             M234.4 340 H239.8 V492 Q237.1 498 234.4 492 Z
+             M241.3 340 H246.7 V502 Q244 508 241.3 502 Z
+             M248.2 340 H253.6 V496 Q250.9 502 248.2 496 Z
+             M255.1 340 H260.5 V500 Q257.8 506 255.1 500 Z"
+          fill="url(#adult-male-onepiece-flapper-dress__fringe)"/>
+  </g>
+
+  <!-- beaded chevrons over the tube -->
+  <g clip-path="url(#adult-male-onepiece-flapper-dress__tubeclip)">
+    <rect x="136" y="196" width="128" height="148"
+          fill="url(#adult-male-onepiece-flapper-dress__beads)"/>
+  </g>
+
+  <!-- straight bound top edge of the tube -->
+  <path d="M142 202 H258" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 152 V202" stroke="var(--c3, #F7C873)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 152 V202" stroke="var(--c3, #F7C873)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the horizontal hip seam the fringe hangs from -->
+  <rect x="136" y="334" width="128" height="12" rx="5" fill="var(--c3, #F7C873)"/>
+  <path d="M136 346 H264" stroke="var(--c2, #2F2639)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a second short fringe tier just under the seam, catching the light -->
+  <g fill="none" stroke="var(--c3, #F7C873)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M141 350 V372"/>
+    <path d="M155 350 V368"/>
+    <path d="M169 350 V374"/>
+    <path d="M183 350 V368"/>
+    <path d="M197 350 V374"/>
+    <path d="M211 350 V368"/>
+    <path d="M225 350 V374"/>
+    <path d="M239 350 V368"/>
+    <path d="M253 350 V372"/>
+  </g>
+
+  <!-- upper-chest highlight across the straight top of the tube -->
+  <path d="M158 216 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 296 q36 10 72 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

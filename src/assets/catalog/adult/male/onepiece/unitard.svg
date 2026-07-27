@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = skin-close and unbroken, following the body from shoulder to
+       ankle with four units of ease and no waist seam anywhere; CLOSURE = none at all.
+       Differs from `swimsuit` on hem + volume, from `jumpsuit` on closure + volume. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8E7E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-unitard__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B2A1)"/>
+      <stop offset="1" stop-color="var(--c2, #34796B)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8E7E)"/>
+    </linearGradient>
+    <clipPath id="adult-male-onepiece-unitard__torsoclip">
+      <path d="M126 180 Q126 148 160 148 H172 Q176 182 200 182 Q224 182 228 148 H240
+               Q274 148 274 180 V272 Q274 314 258 314 H142 Q126 314 126 272 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- skin-close legs running to the ankle -->
+    <path d="M156 296 H200 V524 Q200 542 187 542 H169 Q156 542 156 524 Z"
+          fill="url(#adult-male-onepiece-unitard__leg)"/>
+    <path d="M244 296 H200 V524 Q200 542 213 542 H231 Q244 542 244 524 Z"
+          fill="url(#adult-male-onepiece-unitard__leg)"/>
+    <!-- skin-close sleeves to the wrist -->
+    <path d="M136 158 Q106 162 105 184 L107 330 Q107 344 120 344 Q133 344 133 330 L135 190 Z"
+          fill="url(#adult-male-onepiece-unitard__sleeve)"/>
+    <path d="M264 158 Q294 162 295 184 L293 330 Q293 344 280 344 Q267 344 267 330 L265 190 Z"
+          fill="url(#adult-male-onepiece-unitard__sleeve)"/>
+    <!-- one unbroken torso, deep scoop neck cut into it, no seam at the waist -->
+    <path d="M126 180 Q126 148 160 148 H172 Q176 182 200 182 Q224 182 228 148 H240
+             Q274 148 274 180 V272 Q274 314 258 314 H142 Q126 314 126 272 Z"
+          fill="url(#adult-male-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- broad contrast panel down each flank, the only break in the surface -->
+  <g clip-path="url(#adult-male-onepiece-unitard__torsoclip)">
+    <path d="M126 168 Q142 172 148 200 L146 316 H124 Z" fill="var(--c2, #3E8E7E)"/>
+    <path d="M274 168 Q258 172 252 200 L254 316 H276 Z" fill="var(--c2, #3E8E7E)"/>
+  </g>
+  <path d="M156 300 Q152 420 158 540" stroke="var(--c2, #3E8E7E)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 300 Q248 420 242 540" stroke="var(--c2, #3E8E7E)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound scoop neckline -->
+  <path d="M170 150 Q176 186 200 186 Q224 186 230 150" stroke="var(--c3, #E4E0D2)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- bound cuffs and ankles -->
+  <path d="M107 332 H133" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 332 H293" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M157 530 H199" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M201 530 H243" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- body sheen, following the unbroken column -->
+  <path d="M158 200 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 250 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 360 V510" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 360 V510" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

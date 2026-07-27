@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = open front, two panels whose inner edges simply meet with no
+       button, tie or belt anywhere; HEM = ankle, falling dead straight from the shoulder with
+       no waist. Everyday clothing, plain cloth. Differs from `thobe` on closure + volume,
+       from `kaftan` on hem + sleeve, from `robe` on closure + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #443D4F)"/>
+      <stop offset="1" stop-color="var(--c2, #2A2534)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B9A78C)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7C68)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C4459)"/>
+      <stop offset="1" stop-color="var(--c2, #2A2534)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under-layer, so the meeting front edges never open onto a hole -->
+    <path d="M138 172 H262 L268 546 Q200 558 132 546 Z"
+          fill="url(#adult-male-onepiece-abaya__under)"/>
+    <!-- long straight sleeves -->
+    <path d="M134 158 Q100 161 100 184 L102 334 Q102 348 117 348 H121 Q136 348 135 334 Z"
+          fill="url(#adult-male-onepiece-abaya__sleeve)"/>
+    <path d="M266 158 Q300 161 300 184 L298 334 Q298 348 283 348 H279 Q264 348 265 334 Z"
+          fill="url(#adult-male-onepiece-abaya__sleeve)"/>
+    <!-- the two front panels, falling straight from the shoulder to the ankle -->
+    <path d="M126 182 Q126 150 156 150 H194 L196 546 Q158 552 120 544 Z"
+          fill="url(#adult-male-onepiece-abaya__panel)"/>
+    <path d="M274 182 Q274 150 244 150 H206 L204 546 Q242 552 280 544 Z"
+          fill="url(#adult-male-onepiece-abaya__panel)"/>
+  </g>
+
+  <!-- fine contrast border band down each front edge -->
+  <path d="M188 156 L190 544" stroke="var(--c3, #B9A78C)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 156 L210 544" stroke="var(--c3, #B9A78C)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <path d="M188 160 L190 540" stroke="var(--c2, #2A2534)" stroke-opacity="0.35"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M212 160 L210 540" stroke="var(--c2, #2A2534)" stroke-opacity="0.35"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- the two edges simply meeting: no button, no tie, no belt anywhere -->
+  <path d="M200 160 V540" stroke="var(--c2, #2A2534)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the same border round each cuff -->
+  <path d="M102 330 H135" stroke="var(--c3, #B9A78C)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <path d="M265 330 H298" stroke="var(--c3, #B9A78C)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder line and the plain round neck opening it hangs from -->
+  <path d="M160 150 Q200 164 240 150" stroke="var(--c3, #B9A78C)" stroke-opacity="0.8"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M178 148 q22 14 44 0 v6 q-22 16 -44 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- long unbroken drape folds; there is no waist anywhere -->
+  <g fill="none" stroke="var(--c2, #2A2534)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M152 210 L146 534"/>
+    <path d="M170 230 L166 536"/>
+    <path d="M230 230 L234 536"/>
+    <path d="M248 210 L254 534"/>
+  </g>
+
+  <!-- hem edge -->
+  <path d="M126 532 Q160 546 194 546" stroke="var(--c3, #B9A78C)" stroke-opacity="0.6"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M274 532 Q240 546 206 546" stroke="var(--c3, #B9A78C)" stroke-opacity="0.6"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M150 194 q22 10 40 8" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 202 q22 2 40 -8" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

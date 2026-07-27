@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = a closed flat shoulder yoke with a plain round neck and no
+       opening anywhere; VOLUME = one soft straight waistless column from the yoke to mid-calf.
+       Differs from `maxi-dress` on shoulder + hem, from `kaftan` on shoulder + hem. -->
+  <defs>
+    <linearGradient id="adult-male-onepiece-nightgown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8E4F0)"/>
+      <stop offset="1" stop-color="var(--c2, #BDB5D2)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #BDB5D2)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-onepiece-nightgown__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8E4F0)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BEDA)"/>
+    </linearGradient>
+    <pattern id="adult-male-onepiece-nightgown__sprig" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 V18 M11 9 L5 6 M11 9 L17 6 M11 14 L6 12 M11 14 L16 12"
+            fill="none" stroke="var(--c3, #F4A79B)" stroke-opacity="0.5"
+            stroke-width="2.2" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-male-onepiece-nightgown__clip">
+      <path d="M132 176 H268 L278 494 Q200 512 122 494 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft cap sleeves, ending just below the armhole -->
+    <path d="M136 162 Q108 168 105 190 Q103 206 120 206 H142 Q138 184 136 162 Z"
+          fill="url(#adult-male-onepiece-nightgown__cap)"/>
+    <path d="M264 162 Q292 168 295 190 Q297 206 280 206 H258 Q262 184 264 162 Z"
+          fill="url(#adult-male-onepiece-nightgown__cap)"/>
+    <!-- one straight waistless column, widening only gently to the mid-calf hem -->
+    <path d="M132 176 H268 L278 494 Q200 512 122 494 Z"
+          fill="url(#adult-male-onepiece-nightgown__body)"/>
+    <!-- flat shoulder yoke sitting across the top of the column -->
+    <path d="M156 148 H244 Q252 148 252 156 V188 H148 V156 Q148 148 156 148 Z"
+          fill="url(#adult-male-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- sprigged cloth over the column only, the yoke stays plain -->
+  <g clip-path="url(#adult-male-onepiece-nightgown__clip)">
+    <rect x="118" y="190" width="164" height="310"
+          fill="url(#adult-male-onepiece-nightgown__sprig)"/>
+  </g>
+
+  <!-- plain round neck opening -->
+  <path d="M174 148 Q200 172 226 148 Q224 178 200 180 Q176 178 174 148 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M172 148 Q200 176 228 148" stroke="var(--c3, #F4A79B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- yoke seam and the gather rows hanging from it -->
+  <path d="M146 186 H254" stroke="var(--c3, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #BDB5D2)" stroke-opacity="0.55" stroke-width="3.2"
+     stroke-linecap="round">
+    <path d="M154 192 q6 12 0 24"/>
+    <path d="M172 192 q6 12 0 24"/>
+    <path d="M190 192 q6 12 0 24"/>
+    <path d="M208 192 q6 12 0 24"/>
+    <path d="M226 192 q6 12 0 24"/>
+    <path d="M244 192 q6 12 0 24"/>
+  </g>
+
+  <!-- long quiet drape folds, no waist anywhere -->
+  <g fill="none" stroke="var(--c2, #BDB5D2)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M162 226 L152 486"/>
+    <path d="M200 230 V500"/>
+    <path d="M238 226 L248 486"/>
+  </g>
+
+  <!-- hem band -->
+  <path d="M126 486 Q200 504 274 486" stroke="var(--c3, #F4A79B)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M158 206 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
