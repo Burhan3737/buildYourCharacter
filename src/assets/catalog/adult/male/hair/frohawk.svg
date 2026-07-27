@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: VOLUME/TEXTURE OF THE OUTLINE - one narrow lobed ridge of coils standing 40px proud
+       of the skull, widest over the forehead and closing to a point at the nape at y140, over
+       sides that lie flat against the skin. PARTING - the disconnect is a hard clean line at
+       the temple, and the sides are a value ramp from hair2 at the skin line up to hair1.
+       Differs from high top fade (a squared column with vertical walls, full head width) and
+       from taper fade (no ridge at all) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-frohawk__ridgeback" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="1" stop-color="var(--hair2, #1C1512)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-frohawk__napefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #1C1512)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #1C1512)"/>
+        <stop offset="1" stop-color="var(--hair1, #2A1F1B)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded nape, close to the skin, dark at the bottom edge -->
+      <path d="M156 108 C158 128 166 142 178 150 L222 150
+               C234 142 242 128 244 108 C228 120 172 120 156 108 Z"
+            fill="url(#adult-male-hair-frohawk__napefade)"/>
+      <!-- the ridge running back and down, closing to a point at the nape -->
+      <path d="M177 38 C166 52 172 70 176 84
+               C168 96 178 110 184 116
+               C182 128 192 141 200 140
+               C209 139 217 127 215 116
+               C224 110 230 96 222 84
+               C228 70 232 52 223 38
+               C212 32 187 32 177 38 Z"
+            fill="url(#adult-male-hair-frohawk__ridgeback)"/>
+    </g>
+    <path d="M186 60 C190 82 188 106 194 128" stroke="var(--hair2, #1C1512)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M214 60 C210 82 212 106 206 128" stroke="var(--hair2, #1C1512)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M164 138 C178 146 222 146 236 138" stroke="var(--hair2, #1C1512)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-frohawk__ridgefront" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="1" stop-color="var(--hair2, #1C1512)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-frohawk__sidefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #1C1512)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #1C1512)"/>
+        <stop offset="1" stop-color="var(--hair1, #2A1F1B)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left side, clipped to the skin all the way up to the disconnect -->
+      <path d="M174 44 C160 44 148 56 142 80
+               C138 100 144 116 152 128
+               C162 122 166 112 168 100
+               C165 78 166 58 174 44 Z"
+            fill="url(#adult-male-hair-frohawk__sidefade)"/>
+      <!-- right side -->
+      <path d="M226 44 C240 44 252 56 258 80
+               C262 100 256 116 248 128
+               C238 122 234 112 232 100
+               C235 78 234 58 226 44 Z"
+            fill="url(#adult-male-hair-frohawk__sidefade)"/>
+      <!-- the ridge front section: lobed coils rising to a peak above the forehead -->
+      <path d="M175 74 C167 62 172 50 180 43
+               C173 32 181 20 193 20
+               C196 10 210 9 215 19
+               C226 22 230 35 223 44
+               C231 53 230 66 224 76
+               C210 70 189 70 175 74 Z"
+            fill="url(#adult-male-hair-frohawk__ridgefront)"/>
+    </g>
+    <!-- the hard front hairline of the ridge and of the clipped sides -->
+    <path d="M176 70 C190 65 212 65 224 70 C210 68 190 68 176 70 Z"
+          fill="var(--hair2, #1C1512)"/>
+    <path d="M143 78 C147 66 154 58 164 53 C155 60 149 69 146 82 Z"
+          fill="var(--hair2, #1C1512)"/>
+    <path d="M257 78 C253 66 246 58 236 53 C245 60 251 69 254 82 Z"
+          fill="var(--hair2, #1C1512)"/>
+    <!-- the disconnect: bare skin between the ridge and the clipped side -->
+    <path d="M170 74 C167 60 169 48 176 40 C172 50 171 62 173 76 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <path d="M230 74 C233 60 231 48 224 40 C228 50 229 62 227 76 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <!-- coil seams down the ridge -->
+    <path d="M190 30 C194 42 190 54 194 66" stroke="var(--hair2, #1C1512)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M212 30 C208 42 212 54 208 66" stroke="var(--hair2, #1C1512)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M144 96 C147 108 151 118 156 126" stroke="var(--hair2, #1C1512)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M256 96 C253 108 249 118 244 126" stroke="var(--hair2, #1C1512)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M186 26 C194 18 210 17 218 24" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

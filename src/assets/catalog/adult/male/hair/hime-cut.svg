@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: PARTING/HEM - three stepped horizontal hems, all dead level and all hard edged: the
+       fringe at y56, the two square cut sidelocks at y118, and the long fall at y268. Nothing on
+       this asset is a curve at its hem. LENGTH - the three masses are three different lengths in
+       one outline, which is the whole identity. Differs from fringe bowl (one even hem all the
+       way round) and from curtain long (a soft rounded taper, centre parted) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-hime-cut__fallgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="1" stop-color="var(--hair2, #1C1512)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the long straight fall, hem blunt and level at y268 -->
+      <path d="M200 22 C168 22 150 40 147 78
+               C143 130 142 190 142 268
+               L258 268
+               C258 190 257 130 253 78
+               C250 40 232 22 200 22 Z"
+            fill="url(#adult-male-hair-hime-cut__fallgrad)"/>
+    </g>
+    <!-- the blunt cut edge and the straight weight lines that make it read as poker straight -->
+    <path d="M142 258 H258 V268 H142 Z" fill="var(--hair2, #1C1512)"/>
+    <path d="M160 96 L156 258" stroke="var(--hair2, #1C1512)" stroke-width="4"
+          fill="none" stroke-linecap="butt" opacity="0.7"/>
+    <path d="M182 92 L180 258" stroke="var(--hair2, #1C1512)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.55"/>
+    <path d="M218 92 L220 258" stroke="var(--hair2, #1C1512)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.55"/>
+    <path d="M240 96 L244 258" stroke="var(--hair2, #1C1512)" stroke-width="4"
+          fill="none" stroke-linecap="butt" opacity="0.7"/>
+    <path d="M158 52 C178 38 222 38 242 52" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-hime-cut__fringegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="1" stop-color="var(--hair2, #1C1512)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-hime-cut__lockgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #2A1F1B)"/>
+        <stop offset="1" stop-color="var(--hair2, #1C1512)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the blunt fringe, hem dead level at y56 -->
+      <path d="M160 56 L160 40 C164 26 180 18 200 18 C220 18 236 26 240 40 L240 56 Z"
+            fill="url(#adult-male-hair-hime-cut__fringegrad)"/>
+      <!-- left sidelock, cut square at the cheek at y118 -->
+      <path d="M138 118 L138 62 C139 46 148 34 162 28 L166 40 L166 118 Z"
+            fill="url(#adult-male-hair-hime-cut__lockgrad)"/>
+      <!-- right sidelock -->
+      <path d="M262 118 L262 62 C261 46 252 34 238 28 L234 40 L234 118 Z"
+            fill="url(#adult-male-hair-hime-cut__lockgrad)"/>
+    </g>
+    <!-- the three hems, drawn as hard bands so they read at thumbnail size -->
+    <path d="M160 48 H240 V56 H160 Z" fill="var(--hair2, #1C1512)"/>
+    <path d="M138 110 H166 V118 H138 Z" fill="var(--hair2, #1C1512)"/>
+    <path d="M234 110 H262 V118 H234 Z" fill="var(--hair2, #1C1512)"/>
+    <!-- straight combed strands in the fringe -->
+    <path d="M176 26 V50" stroke="var(--hair2, #1C1512)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M200 22 V50" stroke="var(--hair2, #1C1512)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M224 26 V50" stroke="var(--hair2, #1C1512)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M146 60 V108" stroke="var(--hair2, #1C1512)" stroke-width="2.6"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M254 60 V108" stroke="var(--hair2, #1C1512)" stroke-width="2.6"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M168 30 C182 22 218 22 232 30" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

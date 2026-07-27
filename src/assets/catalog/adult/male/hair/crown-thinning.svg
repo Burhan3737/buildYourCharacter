@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: PARTING - the hairline has receded into two deep temple bays and the whole crown
+       between them, roughly 50 units across, is genuine negative space in the path rather than
+       a lighter patch drawn on top. VOLUME/TEXTURE OF THE OUTLINE - what is left is a dense
+       horseshoe, thick at the temples and round the nape and absent above y96 in the middle, so
+       the outline is a broken ring. Drawn matter of factly. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-crown-thinning__bandgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the rear arm of the horseshoe, dense round the nape -->
+      <path d="M142 96 C140 118 146 138 158 150
+               C176 158 224 158 242 150
+               C254 138 260 118 258 96
+               C240 112 160 112 142 96 Z"
+            fill="url(#adult-male-hair-crown-thinning__bandgrad)"/>
+    </g>
+    <path d="M150 140 C172 152 228 152 250 140 C244 156 156 156 150 140 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M152 106 C174 118 226 118 248 106" stroke="var(--hair2, #4E3527)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-crown-thinning__armgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="0.65" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left front arm: its inner edge is the bay, running back to y50 -->
+      <path d="M139 118 C136 84 140 58 152 50
+               C162 56 170 74 176 96
+               L176 112
+               C162 106 148 108 139 118 Z"
+            fill="url(#adult-male-hair-crown-thinning__armgrad)"/>
+      <!-- right front arm -->
+      <path d="M261 118 C264 84 260 58 248 50
+               C238 56 230 74 224 96
+               L224 112
+               C238 106 252 108 261 118 Z"
+            fill="url(#adult-male-hair-crown-thinning__armgrad)"/>
+    </g>
+    <!-- the bays themselves, painted in skin so the recession reads at thumbnail size -->
+    <path d="M176 96 C170 74 162 56 152 50 C166 54 176 70 182 92 Z"
+          fill="var(--skin1, #F7D2B0)"/>
+    <path d="M224 96 C230 74 238 56 248 50 C234 54 224 70 218 92 Z"
+          fill="var(--skin1, #F7D2B0)"/>
+    <!-- the fringe of the remaining hair along each bay -->
+    <path d="M150 54 C158 62 166 78 172 96 C170 78 162 62 152 52 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M250 54 C242 62 234 78 228 96 C230 78 238 62 248 52 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M141 104 C142 110 144 114 147 116 C144 112 142 108 142 102 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M259 104 C258 110 256 114 253 116 C256 112 258 108 258 102 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M144 96 C147 78 151 64 156 56" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M256 96 C253 78 249 64 244 56" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

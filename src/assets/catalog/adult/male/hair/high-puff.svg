@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="High Puff" data-family="high-puff" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: GATHERING - every strand is taken up into one gather above the crown, so the whole
+       mass sits clear of the skull with a clean hairline and both ears exposed.
+       VOLUME/TEXTURE OF THE OUTLINE - the puff contour is eleven unequal coil lobes, never a
+       circle. Differs from afro (a halo all round the head, no gather) and from bun (a smooth
+       ball) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-high-puff__puffgrad" x1="0.1" y1="0" x2="0.6" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A2E1E)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #4A2E1E)"/>
+        <stop offset="1" stop-color="var(--hair2, #26170E)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the puff: eleven coil lobes, no two the same size -->
+      <path d="M198 2 C212 0 224 6 226 15
+               C240 11 252 21 248 33
+               C257 41 253 53 241 56
+               C237 65 223 68 214 62
+               C205 68 193 66 186 60
+               C175 66 162 61 161 50
+               C149 49 144 36 153 28
+               C148 16 158 5 170 8
+               C175 1 187 0 198 2 Z"
+            fill="url(#adult-male-hair-high-puff__puffgrad)"/>
+    </g>
+    <!-- undersides of the lower coils, which is what stops the puff reading as a ball -->
+    <path d="M166 47 C176 58 192 63 208 61 C190 68 170 62 162 50 Z"
+          fill="var(--hair2, #26170E)"/>
+    <path d="M236 45 C230 56 220 62 210 63 C224 63 236 57 242 47 Z"
+          fill="var(--hair2, #26170E)"/>
+    <circle cx="178" cy="24" r="11" fill="var(--hair2, #26170E)" fill-opacity="0.45"/>
+    <circle cx="220" cy="20" r="12" fill="var(--hair2, #26170E)" fill-opacity="0.45"/>
+    <circle cx="203" cy="42" r="10" fill="var(--hair2, #26170E)" fill-opacity="0.45"/>
+    <path d="M172 12 C186 4 208 3 222 11" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-high-puff__sweepgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4A2E1E)"/>
+        <stop offset="1" stop-color="var(--hair2, #26170E)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- scalp close sweep: hairline clean at y56 in the centre, dropping past the temples -->
+      <path d="M146 88 C144 58 166 32 200 32 C234 32 256 58 254 88
+               C246 70 232 60 214 56 C204 53 196 53 186 56
+               C168 60 154 70 146 88 Z"
+            fill="url(#adult-male-hair-high-puff__sweepgrad)"/>
+    </g>
+    <!-- the gather band at the base of the puff -->
+    <rect x="176" y="30" width="48" height="13" rx="6.5" fill="var(--hair2, #26170E)"/>
+    <!-- sweep lines running back into the gather -->
+    <path d="M154 80 C164 66 178 58 192 55" stroke="var(--hair2, #26170E)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M246 80 C236 66 222 58 208 55" stroke="var(--hair2, #26170E)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M168 78 C176 64 188 56 198 53" stroke="var(--hair2, #26170E)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M232 78 C224 64 212 56 202 53" stroke="var(--hair2, #26170E)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <!-- clean hairline shadow -->
+    <path d="M172 57 C184 52 216 52 228 57 C214 55 186 55 172 57 Z"
+          fill="var(--hair2, #26170E)"/>
+    <path d="M160 76 C172 62 186 54 198 51" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

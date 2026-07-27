@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mullet" data-family="mullet" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: LENGTH - two lengths in one outline, cropped tight everywhere above y120 and then a
+       single narrow tail dropping to y206 over the collar, with the change made abruptly rather
+       than as a taper. VOLUME/TEXTURE OF THE OUTLINE - both hems are razored into uneven points,
+       a choppy fringe on the brow and five unequal spikes at the bottom of the tail. Differs
+       from mop shag (one even chin length hem all round) and from taper fade (nothing hangs at
+       all) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-mullet__capgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B4830)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-mullet__tailgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="0.62" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B4830)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- everything above the nape stays clipped short -->
+      <path d="M148 62 C144 90 148 112 156 124
+               C172 132 228 132 244 124
+               C252 112 256 90 252 62
+               C232 74 168 74 148 62 Z"
+            fill="url(#adult-male-hair-mullet__capgrad)"/>
+      <!-- the tail: narrow, longer, cut into uneven points -->
+      <path d="M170 116 C166 146 168 176 172 200
+               L178 186 L184 204 L192 188 L200 206 L208 188 L216 202 L222 186 L228 198
+               C232 174 234 146 230 116
+               C214 124 186 124 170 116 Z"
+            fill="url(#adult-male-hair-mullet__tailgrad)"/>
+    </g>
+    <!-- the abrupt step where the crop stops and the tail starts -->
+    <path d="M158 116 C176 126 224 126 242 116 C236 128 164 128 158 116 Z"
+          fill="var(--hair2, #6B4830)"/>
+    <path d="M178 130 C176 158 178 182 182 198" stroke="var(--hair2, #6B4830)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M222 130 C224 158 222 182 218 198" stroke="var(--hair2, #6B4830)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M156 66 C176 54 224 54 244 66" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-mullet__cropgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #8B5E3C)"/>
+        <stop offset="1" stop-color="var(--hair2, #6B4830)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-mullet__eargrad" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #6B4830)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #6B4830)"/>
+        <stop offset="1" stop-color="var(--hair1, #8B5E3C)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- short crop with a choppy fringe cut across the brow -->
+      <path d="M143 86 C141 48 167 24 200 24 C233 24 259 48 257 86
+               C250 72 242 64 233 60
+               L228 52 L222 62 L214 50 L206 60 L198 48 L190 60 L182 52 L174 62 L168 54
+               C158 62 149 72 143 86 Z"
+            fill="url(#adult-male-hair-mullet__cropgrad)"/>
+      <!-- clipped close over the ears, so the ears stay visible -->
+      <path d="M142 82 C139 98 140 112 145 122 C150 114 151 98 150 82 Z"
+            fill="url(#adult-male-hair-mullet__eargrad)"/>
+      <path d="M258 82 C261 98 260 112 255 122 C250 114 249 98 250 82 Z"
+            fill="url(#adult-male-hair-mullet__eargrad)"/>
+    </g>
+    <!-- the cut edge of the fringe -->
+    <path d="M172 58 L178 66 L186 56 L194 64 L202 54 L210 64 L218 56 L226 66 L232 58
+             C222 62 182 62 172 58 Z"
+          fill="var(--hair2, #6B4830)"/>
+    <path d="M144 96 C147 106 149 114 152 120" stroke="var(--hair2, #6B4830)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M256 96 C253 106 251 114 248 120" stroke="var(--hair2, #6B4830)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M180 40 V56" stroke="var(--hair2, #6B4830)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M200 36 V52" stroke="var(--hair2, #6B4830)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M220 40 V56" stroke="var(--hair2, #6B4830)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M164 40 C182 28 218 28 236 40" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

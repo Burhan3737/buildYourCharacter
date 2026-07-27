@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Curtain Long" data-family="curtain-long" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: LENGTH - the back mass runs to the waist at y302, the longest hair in this bundle.
+       PARTING - a hard centre part at x200 cut as real negative space from the crown to the
+       hairline, feeding two mirrored curtain sweeps that fall past the jaw to y200 with a
+       curved inner edge framing the cheek. Differs from long waves (no part, one continuous
+       fall) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-curtain-long__backgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- broad waist length fall, softly rounded and slightly tapered at the hem -->
+      <path d="M200 30 C158 30 140 60 138 106
+               C134 160 138 220 146 268
+               C152 292 168 302 200 302
+               C232 302 248 292 254 268
+               C262 220 266 160 262 106
+               C260 60 242 30 200 30 Z"
+            fill="url(#adult-male-hair-curtain-long__backgrad)"/>
+    </g>
+    <path d="M150 118 C142 172 144 232 152 282 C158 230 152 174 158 120 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M250 118 C258 172 256 232 248 282 C242 230 248 174 242 120 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M188 200 C182 244 184 278 192 298 C204 276 202 242 198 200 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M156 62 C178 46 222 46 244 62" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-curtain-long__frontgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-curtain-long__sweepgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.62" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown, left of the part -->
+      <path d="M197 26 C168 28 146 48 140 92
+               C148 78 164 68 180 62 C186 48 192 34 197 26 Z"
+            fill="url(#adult-male-hair-curtain-long__frontgrad)"/>
+      <!-- crown, right of the part -->
+      <path d="M203 26 C232 28 254 48 260 92
+               C252 78 236 68 220 62 C214 48 208 34 203 26 Z"
+            fill="url(#adult-male-hair-curtain-long__frontgrad)"/>
+      <!-- left curtain: inner edge curves away from the cheek, hem at y198 -->
+      <path d="M140 88 C132 122 132 164 140 198
+               C150 206 168 204 174 194
+               C166 160 164 122 172 84
+               C160 76 148 80 140 88 Z"
+            fill="url(#adult-male-hair-curtain-long__sweepgrad)"/>
+      <!-- right curtain -->
+      <path d="M260 88 C268 122 268 164 260 198
+               C250 206 232 204 226 194
+               C234 160 236 122 228 84
+               C240 76 252 80 260 88 Z"
+            fill="url(#adult-male-hair-curtain-long__sweepgrad)"/>
+    </g>
+    <!-- the part itself: scalp, 6px wide, crown to hairline -->
+    <path d="M197 26 H203 V66 H197 Z" fill="var(--skin1, #F7D2B0)"/>
+    <path d="M200 28 V64" stroke="var(--skin2, #E7B892)" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- weight lines down the curtains -->
+    <path d="M143 108 C138 140 139 172 146 194 C150 168 147 138 150 108 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M257 108 C262 140 261 172 254 194 C250 168 253 138 250 108 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M168 96 C164 130 164 164 170 190 C176 162 174 128 176 96 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <path d="M232 96 C236 130 236 164 230 190 C224 162 226 128 224 96 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <path d="M192 32 C178 40 164 54 156 72" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M208 32 C222 40 236 54 244 72" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Half Up Knot" data-family="half-up" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: GATHERING - only the top section is taken up into a small knot above the crown while
+       the rest is left hanging, so the outline is one loose mass with a bead on top of it.
+       LENGTH - the loose mass stops at y240, well short of the waist but well past the shoulder
+       line. Differs from ponytail (one narrow tail behind a cap) and man-bun (nothing hangs) on
+       both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-male-hair-half-up__backgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the loose half: cut narrow for this torso, hugging the neck, soft wavy hem -->
+      <path d="M200 34 C164 34 142 58 140 100
+               C138 140 144 184 154 216
+               C160 230 170 224 180 232
+               C190 240 200 226 210 232
+               C220 238 232 228 240 218
+               C250 190 258 148 258 104
+               C256 58 236 34 200 34 Z"
+            fill="url(#adult-male-hair-half-up__backgrad)"/>
+    </g>
+    <!-- weight lines inside the loose mass, and the shadow the knot throws on it -->
+    <path d="M152 108 C144 152 148 194 156 222 C160 188 154 148 160 110 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M246 108 C254 152 250 194 242 222 C238 188 244 148 238 110 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M192 168 C186 198 188 218 194 232 C202 216 200 194 198 168 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M158 62 C178 48 222 48 242 62" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-male-hair-half-up__frontgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+      <linearGradient id="adult-male-hair-half-up__knotgrad" x1="0.15" y1="0" x2="0.9" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B4A3A)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E3527)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- soft sweep partly covering the forehead, ears left clear -->
+      <path d="M139 94 C137 48 165 26 200 26 C235 26 263 48 261 94
+               C253 76 240 64 222 59 C206 69 178 75 156 71
+               C148 77 143 85 139 94 Z"
+            fill="url(#adult-male-hair-half-up__frontgrad)"/>
+      <!-- the gathered top section, wound into a small knot at the crown -->
+      <path d="M183 27 C180 13 190 4 202 5 C215 6 221 16 217 27
+               C214 38 203 43 196 40 C188 37 184 33 183 27 Z"
+            fill="url(#adult-male-hair-half-up__knotgrad)"/>
+      <!-- side hair left down over the temples -->
+      <path d="M140 88 C134 108 134 126 139 140 C145 134 147 116 149 94 Z"
+            fill="url(#adult-male-hair-half-up__frontgrad)"/>
+      <path d="M260 88 C266 108 266 126 261 140 C255 134 253 116 251 94 Z"
+            fill="url(#adult-male-hair-half-up__frontgrad)"/>
+    </g>
+    <!-- the tie, and the gather lines running up into the knot -->
+    <rect x="184" y="34" width="32" height="11" rx="5.5" fill="var(--hair2, #4E3527)"/>
+    <path d="M188 21 C193 13 208 13 213 21 C206 17 195 17 188 21 Z" fill="var(--hair2, #4E3527)"/>
+    <path d="M158 62 C170 50 182 42 194 38" stroke="var(--hair2, #4E3527)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M172 68 C182 56 192 46 198 41" stroke="var(--hair2, #4E3527)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M242 62 C230 50 218 42 206 38" stroke="var(--hair2, #4E3527)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M228 68 C218 56 208 46 202 41" stroke="var(--hair2, #4E3527)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M141 112 C140 126 142 136 146 144 C149 132 147 122 148 110 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M259 112 C260 126 258 136 254 144 C251 132 253 122 252 110 Z"
+          fill="var(--hair2, #4E3527)"/>
+    <path d="M162 52 C182 36 218 34 238 46" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
