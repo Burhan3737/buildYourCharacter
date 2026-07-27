@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mutton Chops" data-family="mutton-chops" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs every full-coverage family: CHIN AND JAW COVERAGE (two separate
+       cheek wedges with a wide bare gap between them, the chin never reached) and CHEEK LINE
+       (joined at 100 percent, each chop starting flush at the ear anchor y 95 and running the
+       full depth of the cheek).
+       Upper lip bare, chin bare. Each chop is 44px wide and 47px deep, so the pair still reads
+       at thumbnail size.
+       hair1 lights the outer sweep of each chop; hair2 draws the shaded inner edge, the
+       broadened flare at the jaw corner and the sideburn root at the ear. -->
+  <defs>
+    <linearGradient id="adult-female-beard-mutton-chops__chop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two wedges, narrow at the ear, broadening toward the jaw corner, stopping short of the chin -->
+  <g class="sp-shadow">
+    <path d="M144 95 C142 110, 146 124, 155 133 C161 140, 175 142, 182 135
+             C186 131, 183 125, 176 122 C166 118, 161 109, 159 95
+             C154 96, 148 95, 144 95 Z"
+          fill="url(#adult-female-beard-mutton-chops__chop)"/>
+    <path d="M256 95 C258 110, 254 124, 245 133 C239 140, 225 142, 218 135
+             C214 131, 217 125, 224 122 C234 118, 239 109, 241 95
+             C246 96, 252 95, 256 95 Z"
+          fill="url(#adult-female-beard-mutton-chops__chop)"/>
+  </g>
+
+  <!-- hair2: the shaded inner edge of each chop, facing the bare cheek -->
+  <path d="M159 95 C161 109, 166 118, 176 122 C183 125, 186 131, 182 135
+           C183 130, 180 127, 173 124 C163 120, 158 110, 156 95 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M241 95 C239 109, 234 118, 224 122 C217 125, 214 131, 218 135
+           C217 130, 220 127, 227 124 C237 120, 242 110, 244 95 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the broadened flare where each chop reaches the jaw corner -->
+  <path d="M152 129 C158 137, 172 141, 181 134 C177 141, 161 141, 155 134
+           C153.5 132.4, 152.6 130.8, 152 129 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M248 129 C242 137, 228 141, 219 134 C223 141, 239 141, 245 134
+           C246.5 132.4, 247.4 130.8, 248 129 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the sideburn root, tucked in front of the ear -->
+  <path d="M144 95 C149 95.4, 155 95.4, 159 95 L158.7 98.6 C154.6 97.4, 148.6 97.4, 144.3 98.6 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M256 95 C251 95.4, 245 95.4, 241 95 L241.3 98.6 C245.4 97.4, 251.4 97.4, 255.7 98.6 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <path d="M147 102 C147 114, 150 125, 158 132" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M253 102 C253 114, 250 125, 242 132" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

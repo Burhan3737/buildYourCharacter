@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs moustache and handlebar: LENGTH (44px deep, drooping past the lower
+       lip to y 146, against a 15px bar and a 24px sweep) and UPPER LIP (overhanging the lip
+       and covering the whole mouth, against a bar that stops clear of it and a pair of wings
+       that lift away from it). Chin, jaw and cheeks bare, so no cheek line.
+       hair1 lights the crown of the droop; hair2 draws the centre parting, the heavy shaded
+       underside of both lobes and the hanging strand grooves. -->
+  <defs>
+    <linearGradient id="adult-female-beard-walrus__droop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a thick untrimmed mass drooping over the whole mouth -->
+  <g class="sp-shadow">
+    <path d="M169 111 C175 105, 189 102, 200 106 C211 102, 225 105, 231 111
+             C236 121, 234 133, 226 140 C218 146, 209 144, 206 137
+             C204 133, 202 131, 200 131 C198 131, 196 133, 194 137
+             C191 144, 182 146, 174 140 C166 133, 164 121, 169 111 Z"
+          fill="url(#adult-female-beard-walrus__droop)"/>
+  </g>
+
+  <!-- hair2: the centre parting running down from the philtrum -->
+  <path d="M197.4 107 C199.4 113, 199.4 122, 198.4 130 L201.6 130
+           C200.6 122, 200.6 113, 202.6 107 Z" fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the shaded underside of each drooping lobe -->
+  <path d="M172 128 C174 137, 179 143, 187 143 C192 143, 195 140, 197 135
+           C195 143, 190 146, 183 145 C176 144, 172 137, 172 128 Z"
+        fill="var(--hair2, #331E16)"/>
+  <path d="M228 128 C226 137, 221 143, 213 143 C208 143, 205 140, 203 135
+           C205 143, 210 146, 217 145 C224 144, 228 137, 228 128 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: hanging strand grooves -->
+  <path d="M181 116 C181 126, 182 134, 186 140" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M190 114 C189 124, 190 131, 192 137" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M219 116 C219 126, 218 134, 214 140" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M210 114 C211 124, 210 131, 208 137" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <path d="M176 110 C186 105, 194 106, 198 108" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M224 110 C214 105, 206 106, 202 108" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

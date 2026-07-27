@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stubble" data-family="stubble" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs the rest of the slot: LENGTH (shadow, the shortest reading in the
+       slot, nothing stands off the face) and UPPER LIP (shadow only, never a drawn bar).
+       Cheek line: low and clipped, 25 percent of the 27px jaw to ear span, so y about 115.
+       hair1 is the lit wash; hair2 is the grit scatter, the philtrum groove and the darker
+       band under the jaw, so both colours carry real drawing. -->
+  <defs>
+    <linearGradient id="adult-female-beard-stubble__wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+    <pattern id="adult-female-beard-stubble__grit" width="14" height="14"
+             patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3.5" r="1.5" fill="var(--hair2, #331E16)"/>
+      <circle cx="10.5" cy="6" r="1.2" fill="var(--hair2, #331E16)"/>
+      <circle cx="6" cy="11" r="1.4" fill="var(--hair2, #331E16)"/>
+      <circle cx="12.5" cy="12.5" r="1" fill="var(--hair2, #331E16)"/>
+      <circle cx="1.5" cy="8.5" r="0.9" fill="var(--hair2, #331E16)"/>
+    </pattern>
+    <clipPath id="adult-female-beard-stubble__area">
+      <path d="M146 113 C148.9 120.4, 153.1 127.2, 158.5 132.9
+               C163.9 138.7, 170.4 143.2, 177.5 146.3
+               C184.6 149.4, 192.3 151, 200 151
+               C207.7 151, 215.4 149.4, 222.5 146.3
+               C229.6 143.2, 236.1 138.7, 241.5 132.9
+               C246.9 127.2, 251.1 120.4, 254 113
+               C245 118, 235 119, 226 116 C218 113.5, 210 108, 200 108
+               C190 108, 182 113.5, 174 116 C165 119, 155 118, 146 113 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the soft major form: an edgeless wash over lip, chin, jaw and lower cheeks -->
+  <g class="sp-shadow">
+    <path d="M146 113 C148.9 120.4, 153.1 127.2, 158.5 132.9
+               C163.9 138.7, 170.4 143.2, 177.5 146.3
+               C184.6 149.4, 192.3 151, 200 151
+               C207.7 151, 215.4 149.4, 222.5 146.3
+               C229.6 143.2, 236.1 138.7, 241.5 132.9
+               C246.9 127.2, 251.1 120.4, 254 113
+               C245 118, 235 119, 226 116 C218 113.5, 210 108, 200 108
+               C190 108, 182 113.5, 174 116 C165 119, 155 118, 146 113 Z"
+          fill="url(#adult-female-beard-stubble__wash)" opacity="0.4"/>
+  </g>
+
+  <!-- grit scatter, painted through the hair2 variable -->
+  <g clip-path="url(#adult-female-beard-stubble__area)">
+    <rect x="140" y="104" width="122" height="54"
+          fill="url(#adult-female-beard-stubble__grit)" opacity="0.6"/>
+    <!-- denser growth along the underside of the jaw -->
+    <path d="M153 128 C159 139, 173 147, 200 149 C227 147, 241 139, 247 128
+             C245 143, 226 152, 200 152 C174 152, 155 143, 153 128 Z"
+          fill="var(--hair2, #331E16)" opacity="0.3"/>
+    <!-- philtrum groove: the centre parting the growth never fills -->
+    <path d="M197 108 C199 112, 199 116, 197.5 120 L202.5 120 C201 116, 201 112, 203 108 Z"
+          fill="var(--hair2, #331E16)" opacity="0.35"/>
+    <!-- chin whorl -->
+    <path d="M191 140 C195 145, 205 145, 209 140 C207 147, 193 147, 191 140 Z"
+          fill="var(--hair2, #331E16)" opacity="0.32"/>
+  </g>
+
+  <path d="M160 122 C172 132, 186 137, 200 137" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

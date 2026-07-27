@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs circle-beard: UPPER LIP (completely bare, no bar of any kind, against
+       circle-beard's joined moustache) and CHIN AND JAW COVERAGE (chin only, a closed rounded
+       mass with no ring and no connection to the mouth corners).
+       There is a deliberate 2px clear gap between the lower lip at y 133 and the top of the
+       tuft at y 135, so the mass reads as disconnected from the lip. Jaw and cheeks bare, so
+       no cheek line.
+       hair1 lights the top of the tuft; hair2 draws the chin whorl, the shaded hanging
+       underside below the chin point and the separated strand ends. -->
+  <defs>
+    <linearGradient id="adult-female-beard-goatee__tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a rounded chin mass, hugging the chin at y 146 and hanging free below y 150 -->
+  <g class="sp-shadow">
+    <path d="M200 135 C210 135, 218 139, 220 146 C222 154, 218 166, 200 168
+             C182 166, 178 154, 180 146 C182 139, 190 135, 200 135 Z"
+          fill="url(#adult-female-beard-goatee__tuft)"/>
+  </g>
+
+  <!-- hair2: the chin whorl, the growth pattern that centres the tuft -->
+  <path d="M200 141 C205 141, 208 145, 206 149 C204 152, 199 152, 197 149
+           C196 147, 197 145, 199 145 C198 147, 199 149, 201 149
+           C203 149, 205 147, 203 144 C202 142.5, 201 142, 200 141 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the hanging underside, below the drawn chin point at y 150 -->
+  <path d="M181 152 C184 162, 191 167, 200 167.5 C209 167, 216 162, 219 152
+           C219 161, 212 168.5, 200 169 C188 168.5, 181 161, 181 152 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: separated strand ends -->
+  <path d="M191 155 C192 160, 194 164, 196 166.5" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M209 155 C208 160, 206 164, 204 166.5" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <path d="M188 140 C194 136.5, 206 136.5, 212 140" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

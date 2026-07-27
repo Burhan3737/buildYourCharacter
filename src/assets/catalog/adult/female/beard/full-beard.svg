@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Full Beard" data-family="full-beard" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs long-beard: LENGTH (to the throat, the hem stopping at y 174 on the
+       neck, against a beard falling to y 228 at mid-chest) and UPPER LIP (a moustache trimmed
+       clear of the lip, its lower edge cut at y 117 with the upper lip band starting at y 118,
+       against an untrimmed moustache overhanging the lip).
+       Cheek line: natural, 55 percent of the 27px jaw to ear span, so y about 107.
+       The hem is softly irregular in the silhouette path itself, three shallow lobes across the
+       throat, not squiggles drawn inside a smooth outline.
+       hair1 lights the cheeks; hair2 draws the philtrum groove, the chin whorl and the shaded
+       underside of the hem. -->
+  <defs>
+    <linearGradient id="adult-female-beard-full-beard__mass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- full cheeks, jaw and chin to the throat, with an evenodd window round the mouth -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M143 99
+             C141 115, 145 132, 154 144
+             C160 153, 168 160, 177 164
+             C181 172, 191 174, 196 166
+             C200 172, 209 171, 213 164
+             C223 160, 232 152, 239 143
+             C249 131, 258 115, 257 99
+             C250 104, 242 108, 233 108
+             C221 109, 211 105, 200 103
+             C189 105, 179 109, 167 108
+             C158 108, 150 104, 143 99 Z
+             M177 117 C186 115, 214 115, 223 117
+             C227 124, 227 132, 223 138
+             C214 140, 186 140, 177 138
+             C173 132, 173 124, 177 117 Z"
+          fill="url(#adult-female-beard-full-beard__mass)"/>
+  </g>
+
+  <!-- hair2: the philtrum groove above the trimmed moustache -->
+  <path d="M197.6 104.5 C199.4 108, 199.4 112, 198.4 116.2 L201.6 116.2
+           C200.6 112, 200.6 108, 202.4 104.5 Z" fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the trimmed lower edge of the moustache, the reason it reads as cut clear -->
+  <path d="M178 113 C187 111, 213 111, 222 113 C223.6 114.4, 224.4 115.7, 224.8 117.4
+           C215.2 114.8, 184.8 114.8, 175.2 117.4 C175.6 115.7, 176.4 114.4, 178 113 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the chin whorl below the mouth window -->
+  <path d="M200 143 C206 143, 210 147, 208 152 C206 156, 199 156, 197 152
+           C196 149.6, 197.6 147.6, 199.6 147.6 C198.4 149.6, 199.4 152, 201.6 152
+           C204 152, 205.6 149.6, 203.6 146.4 C202.6 144.8, 201.4 143.8, 200 143 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: the shaded underside of the softly irregular hem -->
+  <path d="M158 150 C164 159, 171 165, 179 168 C183 175, 192 177, 197 169
+           C201 175, 210 174, 214 167 C222 164, 229 158, 235 150
+           C231 162, 222 169, 214 171 C209 178, 200 179, 196 172
+           C191 179, 182 177, 178 170 C169 167, 162 160, 158 150 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- hair2: strand grooves through the cheek mass -->
+  <path d="M158 112 C160 126, 165 140, 174 152" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.7" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M242 112 C240 126, 235 140, 226 152" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.7" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 108 C156 122, 164 134, 174 143" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <path d="M250 108 C244 122, 236 134, 226 143" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5.5" fill="none" stroke-linecap="round"/>
+</svg>
