@@ -1,0 +1,39 @@
+<!-- Axes vs its nearest sibling, chin curtain: CHIN AND JAW COVERAGE is a narrow 13u band tracking
+     the jawline rather than a broad under jaw curtain, and the LENGTH is clipped short against
+     the bone instead of hanging to y 210. Upper lip bare on both, cheek line jaw only.
+     The band runs ear to ear along the drawn head ellipse, 2u proud of it so no skin shows at
+     the jaw; the bare cheek inside the band is negative space, not a painted shape. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-chin-strap__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M138.6 140.9 C142.9 172.5 169.1 196 200 196
+             C230.9 196 257.1 172.5 261.4 140.9
+             L248.5 139.1 C245.1 164.3 224.4 183 200 183
+             C175.6 183 154.9 164.3 151.5 139.1 Z"
+          fill="url(#teen-male-beard-chin-strap__band)"/>
+  </g>
+
+  <!-- inner hem shadow, which is what makes the band read as a strap laid on the jaw -->
+  <path d="M151.5 141 C155 165 176 183 200 183 C224 183 245 165 248.5 141
+           C246 164 224 179 200 179 C176 179 154 164 151.5 141 Z"
+        fill="var(--hair2, #331E16)" opacity="0.65"/>
+  <!-- the two sideburn roots at the ears -->
+  <path d="M139 141 C143 142 148 142 152 140 C150 148 142 148 139 141 Z"
+        fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <path d="M261 141 C257 142 252 142 248 140 C250 148 258 148 261 141 Z"
+        fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <path d="M160 168 C172 184 186 191 200 192" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M240 168 C228 184 214 191 200 192" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

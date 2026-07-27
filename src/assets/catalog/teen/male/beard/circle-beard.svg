@@ -1,0 +1,42 @@
+<!-- Axes vs its nearest sibling, goatee: the UPPER LIP carries a moustache instead of being bare,
+     and CHIN AND JAW COVERAGE closes the two round both corners of the mouth into a continuous
+     ring rather than leaving a disconnected chin tuft. Jaw and cheeks stay bare, so there is no
+     cheek line. The mouth aperture inside the ring is cut out of the path as negative space, so
+     the mouth art reads straight through it. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Circle Beard" data-family="circle-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-circle-beard__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M200 144 C213 144 223 148 227 156 C232 166 231 181 224 192
+             C217 202 209 207 200 207 C191 207 183 202 176 192
+             C169 181 168 166 173 156 C177 148 187 144 200 144 Z
+             M200 156 C210 156 218 160 218 166 C218 174 210 178 200 178
+             C190 178 182 174 182 166 C182 160 190 156 200 156 Z"
+          fill="url(#teen-male-beard-circle-beard__ring)"/>
+  </g>
+
+  <!-- philtrum gap on the upper arc of the ring -->
+  <path d="M197 145 C199 149 199 153 198 156 C202 156 203 149 201 145 Z"
+        fill="var(--hair2, #331E16)" opacity="0.85"/>
+  <!-- chin whorl at the bottom of the ring -->
+  <path d="M200 184 C207 184 211 190 209 196 C207 202 201 204 196 202
+           C200 203 205 200 206 195 C207 190 204 186 200 184 Z"
+        fill="var(--hair2, #331E16)" opacity="0.78"/>
+  <!-- the two joins at the mouth corners, kept in shadow so the ring closes visibly -->
+  <path d="M176 164 C179 168 179 174 177 179 C174 174 174 168 176 164 Z"
+        fill="var(--hair2, #331E16)" opacity="0.6"/>
+  <path d="M224 164 C221 168 221 174 223 179 C226 174 226 168 224 164 Z"
+        fill="var(--hair2, #331E16)" opacity="0.6"/>
+  <path d="M182 150 C190 146 210 146 218 150" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

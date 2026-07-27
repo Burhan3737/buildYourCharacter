@@ -1,0 +1,32 @@
+<!-- Axes vs its nearest sibling, circle beard: CHIN AND JAW COVERAGE is chin only, with the mass
+     clearly disconnected from the lip instead of joined round both mouth corners into a closed
+     ring, and the UPPER LIP is bare rather than carrying a moustache.
+     A full 8u band of bare skin sits between the mouth hem at y 166 and the top of the tuft at
+     y 174; the mass is 48u wide and hangs 16u below the chin point. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-goatee__tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M200 174 C211 174 220 179 222 187 C224 196 217 208 200 210
+             C183 208 176 196 178 187 C180 179 189 174 200 174 Z"
+          fill="url(#teen-male-beard-goatee__tuft)"/>
+  </g>
+
+  <!-- chin whorl: the hair turning about a centre, which is what makes a tuft a tuft -->
+  <path d="M200 182 C207 182 211 187 209 193 C207 199 201 202 195 200
+           C199 201 205 198 206 193 C207 188 204 184 200 182 Z"
+        fill="var(--hair2, #331E16)" opacity="0.8"/>
+  <path d="M182 194 C187 204 194 208 200 209 C193 210 185 204 182 194 Z"
+        fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <path d="M186 181 C192 177 208 177 214 181" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

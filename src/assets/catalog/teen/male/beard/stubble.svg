@@ -1,0 +1,56 @@
+<!-- Axes vs its nearest sibling, full beard: LENGTH is a shadow rather than growth to the
+     throat, and the UPPER LIP is a soft shadow rather than a trimmed bar. No mass stands off
+     the face anywhere; the boundary is a gradient fade plus a speckle field, never an edge.
+     Cheek line is the low value, top at y 158 over the cheeks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stubble" data-family="stubble"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <radialGradient id="teen-male-beard-stubble__field" cx="0.5" cy="0.56" r="0.66">
+      <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.46"/>
+      <stop offset="0.52" stop-color="var(--hair2, #331E16)" stop-opacity="0.4"/>
+      <stop offset="0.82" stop-color="var(--hair2, #331E16)" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="teen-male-beard-stubble__speck" width="14" height="14"
+             patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3.5" r="1.5" fill="var(--hair1, #43291F)" opacity="0.55"/>
+      <circle cx="10.5" cy="6" r="1.2" fill="var(--hair1, #43291F)" opacity="0.45"/>
+      <circle cx="6.5" cy="10.5" r="1.4" fill="var(--hair1, #43291F)" opacity="0.5"/>
+      <circle cx="12.5" cy="12.5" r="1.1" fill="var(--hair1, #43291F)" opacity="0.4"/>
+      <circle cx="1.5" cy="8" r="1" fill="var(--hair1, #43291F)" opacity="0.35"/>
+    </pattern>
+    <clipPath id="teen-male-beard-stubble__clip">
+      <path clip-rule="evenodd"
+            d="M141 151 C149 178 173 196 200 196 C227 196 251 178 259 151
+               C252 156 243 160 231 158 C221 151 211 149 200 149
+               C189 149 179 151 169 158 C157 160 148 156 141 151 Z
+               M200 155 C210 155 218 158 218 162 C218 167 210 170 200 170
+               C190 170 182 167 182 162 C182 158 190 155 200 155 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M141 151 C149 178 173 196 200 196 C227 196 251 178 259 151
+             C252 156 243 160 231 158 C221 151 211 149 200 149
+             C189 149 179 151 169 158 C157 160 148 156 141 151 Z
+             M200 155 C210 155 218 158 218 162 C218 167 210 170 200 170
+             C190 170 182 167 182 162 C182 158 190 155 200 155 Z"
+          fill="url(#teen-male-beard-stubble__field)"/>
+  </g>
+
+  <!-- fine speckle, clipped to the same field so it fades out with it -->
+  <g clip-path="url(#teen-male-beard-stubble__clip)">
+    <rect x="138" y="146" width="124" height="52" fill="url(#teen-male-beard-stubble__speck)"
+          opacity="0.6"/>
+  </g>
+  <!-- a touch denser under the lip and along the jaw, still no edge -->
+  <path d="M186 176 C193 174 207 174 214 176" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.18" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M152 168 C160 182 176 191 190 193" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M248 168 C240 182 224 191 210 193" stroke="var(--hair2, #331E16)"
+        stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

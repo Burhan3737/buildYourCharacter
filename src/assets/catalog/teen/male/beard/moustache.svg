@@ -1,0 +1,33 @@
+<!-- Axes vs its nearest sibling, handlebar: LENGTH is clipped short with the ends stopping level
+     with the corners of the mouth, and the UPPER LIP reads as a trimmed bar rather than flared,
+     swept ends. Chin, jaw and cheeks bare, so there is no cheek line at all.
+     Deliberately wide and low: 50u across against a 16u rise, ends at x 175 and x 225, well
+     outside the 190 to 210 nose width. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Moustache" data-family="moustache"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-moustache__bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.62" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M175 154 C177 148 186 145 194 148 C197 149 203 149 206 148
+             C214 145 223 148 225 154 C222 159 212 161 200 161
+             C188 161 178 159 175 154 Z"
+          fill="url(#teen-male-beard-moustache__bar)"/>
+  </g>
+
+  <!-- philtrum gap: the notch under the nose that keeps the bar from reading as one slab -->
+  <path d="M196 147 C198 151 198 155 197 158 C201 158 202 152 200 147 Z"
+        fill="var(--hair2, #331E16)" opacity="0.85"/>
+  <!-- clipped hem, sitting on the lip -->
+  <path d="M178 158 C186 161 214 161 222 158 C214 162 186 162 178 158 Z"
+        fill="var(--hair2, #331E16)" opacity="0.8"/>
+  <path d="M181 151 C190 147 210 147 219 151" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

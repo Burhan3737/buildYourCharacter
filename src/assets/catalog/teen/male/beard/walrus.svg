@@ -1,0 +1,36 @@
+<!-- Axes vs its nearest sibling, moustache: the UPPER LIP overhangs, the mass hanging right over
+     the mouth instead of sitting clipped above it, and the LENGTH runs past the lower lip to
+     y 182 rather than stopping short at y 161. Chin, jaw and cheeks bare, no cheek line.
+     The mouth is deliberately covered, and the hem is a soft irregular droop with a lower lobe
+     on each side. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus" data-family="walrus"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-walrus__droop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M170 151 C176 145 188 143 200 144 C212 143 224 145 230 151
+             C236 158 237 170 231 177 C225 182 219 179 215 172
+             C210 177 190 177 185 172 C181 179 175 182 169 177
+             C163 170 164 158 170 151 Z"
+          fill="url(#teen-male-beard-walrus__droop)"/>
+  </g>
+
+  <!-- hem shadow: the underside of the droop, and the notch between the two lobes -->
+  <path d="M169 172 C174 179 180 180 184 174 C190 179 210 179 216 174
+           C220 180 226 179 231 172 C230 180 224 183 216 178
+           C210 182 190 182 184 178 C176 183 170 180 169 172 Z"
+        fill="var(--hair2, #331E16)" opacity="0.75"/>
+  <!-- philtrum gap, short because the mass overhangs it -->
+  <path d="M197 145 C199 149 199 154 198 158 C202 158 203 150 201 145 Z"
+        fill="var(--hair2, #331E16)" opacity="0.8"/>
+  <path d="M178 150 C188 145 212 145 222 150" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,40 @@
+<!-- Axes vs its nearest sibling, moustache: the UPPER LIP has flared, swept ends instead of a
+     trimmed bar, and the LENGTH runs past the jaw corners of the mouth rather than stopping at
+     them. Chin, jaw and cheeks bare, so there is no cheek line.
+     Tips reach x 158 and x 242, that is 24u past each mouth corner, 84u overall, and curl up to
+     y 140, well clear of the 40u thumbnail floor. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Handlebar" data-family="handlebar"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-handlebar__sweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.58" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M200 147 C209 147 216 149 222 152 C228 147 235 143 242 140
+             C240 149 234 156 226 160 C218 163 208 158 200 158
+             C192 158 182 163 174 160 C166 156 160 149 158 140
+             C165 143 172 147 178 152 C184 149 191 147 200 147 Z"
+          fill="url(#teen-male-beard-handlebar__sweep)"/>
+  </g>
+
+  <!-- the curl of each tip, read in shadow so the sweep survives at thumbnail size -->
+  <path d="M238 143 C234 150 229 155 223 158 C231 156 238 150 240 143 Z"
+        fill="var(--hair2, #331E16)" opacity="0.9"/>
+  <path d="M162 143 C166 150 171 155 177 158 C169 156 162 150 160 143 Z"
+        fill="var(--hair2, #331E16)" opacity="0.9"/>
+  <!-- philtrum gap -->
+  <path d="M197 148 C199 151 199 155 198 157 C202 157 203 151 201 148 Z"
+        fill="var(--hair2, #331E16)" opacity="0.85"/>
+  <path d="M180 152 C190 148 210 148 220 152" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M228 152 C233 149 237 146 240 143" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M172 152 C167 149 163 146 160 143" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

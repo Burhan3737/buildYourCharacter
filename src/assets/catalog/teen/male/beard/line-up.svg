@@ -1,0 +1,45 @@
+<!-- The barbering edge up: the natural partner to a taper fade or 360 waves, and the one family
+     in this slot whose edges are razor straight by definition, so it is exempt from the
+     irregular hem rule. Drawn with straight segments only on every visible edge.
+     Axes vs its nearest sibling, full beard: the CHEEK LINE is joined to the sideburn at y 136
+     and cut as a single straight segment from the sideburn root (146,140) to the jaw at
+     (166,168), rather than a soft natural line at 55 percent, and the LENGTH is clipped short to
+     a hard horizontal neck line at y 200 rather than growing out to the throat.
+     The mouth aperture is cut from the path so the hard edged moustache sits above a visible
+     lip line. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Line Up" data-family="line-up"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <defs>
+    <linearGradient id="teen-male-beard-line-up__mass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M138 130 L166 168 L176 162 L179 150 L193 147 L200 150 L207 147 L221 150
+             L224 162 L234 168 L262 130
+             C261 152 252 172 240 182 L232 200 L168 200 L160 182
+             C148 172 139 152 138 130 Z
+             M182 159 L218 159 L219 167 L200 171 L181 167 Z"
+          fill="url(#teen-male-beard-line-up__mass)"/>
+  </g>
+
+  <!-- the cheek line stated as a crisp shadow bevel, straight on both sides -->
+  <path d="M140 132 L166 167 L162 170 L137 136 Z" fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <path d="M260 132 L234 167 L238 170 L263 136 Z" fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <!-- the neck line, hard and horizontal -->
+  <path d="M168 195 L232 195 L232 200 L168 200 Z" fill="var(--hair2, #331E16)" opacity="0.7"/>
+  <!-- philtrum gap, squared off to match the edge work -->
+  <path d="M197 148 L203 148 L202 158 L198 158 Z" fill="var(--hair2, #331E16)" opacity="0.85"/>
+  <path d="M182 154 L218 154" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 148 C154 168 162 182 174 190" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M250 148 C246 168 238 182 226 190" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
