@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder=STRAPLESS bare · volume=HUGE STANDING DOME · hem=ground sweep · closure=closed back -->
+  <!-- dome reaches x 86 and x 314, clearing the arms (x 126 / 274) by 40 units a side -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-ball-gown__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7D)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7D)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FDF3E7)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7D)"/>
+    </linearGradient>
+    <clipPath id="teen-female-onepiece-ball-gown__domeclip">
+      <path d="M164 310 H236 C286 346 316 458 314 518 Q314 550 300 560 Q200 578 100 560 Q86 550 86 518 C84 458 114 346 164 310 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- contact shadow under the sweeping hem, a plain shape and not a shadow group -->
+  <ellipse cx="200" cy="566" rx="120" ry="14" fill="var(--c2, #3E8C7D)" opacity="0.26"/>
+
+  <g class="sp-shadow">
+    <path d="M164 310 H236 C286 346 316 458 314 518 Q314 550 300 560 Q200 578 100 560 Q86 550 86 518 C84 458 114 346 164 310 Z"
+          fill="url(#teen-female-onepiece-ball-gown__dome)"/>
+    <path d="M152 214 H248 V266 Q246 302 200 338 Q154 302 152 266 Z"
+          fill="url(#teen-female-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- gathers radiating from the pointed waist across the dome -->
+  <g clip-path="url(#teen-female-onepiece-ball-gown__domeclip)" stroke="var(--c2, #3E8C7D)"
+     stroke-opacity="0.42" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M196 330 Q150 420 118 548"/>
+    <path d="M198 330 Q172 424 158 556"/>
+    <path d="M202 330 Q228 424 242 556"/>
+    <path d="M204 330 Q250 420 282 548"/>
+  </g>
+
+  <!-- straight strapless band across the top of the bust -->
+  <path d="M152 210 H248 V232 H152 Z" fill="url(#teen-female-onepiece-ball-gown__band)"/>
+
+  <!-- pointed waist piping and the hem band -->
+  <path d="M154 268 Q176 306 200 332 Q224 306 246 268" stroke="var(--c3, #FDF3E7)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M92 536 Q200 566 308 536" stroke="var(--c3, #FDF3E7)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M170 224 q30 8 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M118 400 Q168 348 200 344" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

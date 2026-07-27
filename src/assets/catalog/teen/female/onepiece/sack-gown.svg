@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack-Back Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=ELBOW PAGODA SLEEVE with stacked ruffle cuffs · closure=OPEN ROBE FRONT over a stomacher · volume=held wide side to side, flat front to back · hem=ground -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-sack-gown__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7A3D4)"/>
+      <stop offset="1" stop-color="var(--c2, #9B7BAE)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sack-gown__pleat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7A3D4)"/>
+      <stop offset="1" stop-color="var(--c2, #9B7BAE)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sack-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7A3D4)"/>
+      <stop offset="1" stop-color="var(--c2, #9B7BAE)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sack-gown__petti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EADD)"/>
+      <stop offset="1" stop-color="var(--c2, #9B7BAE)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sack-gown__stom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EADD)"/>
+      <stop offset="1" stop-color="var(--c2, #9B7BAE)"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="200" cy="562" rx="122" ry="13" fill="var(--c2, #9B7BAE)" opacity="0.24"/>
+
+  <g class="sp-shadow">
+    <!-- two box pleats falling loose from the shoulders at the back, seen at the sides -->
+    <path d="M150 190 Q134 196 130 232 L124 310 L154 310 L156 200 Z"
+          fill="url(#teen-female-onepiece-sack-gown__pleat)"/>
+    <path d="M250 190 Q266 196 270 232 L276 310 L246 310 L244 200 Z"
+          fill="url(#teen-female-onepiece-sack-gown__pleat)"/>
+    <!-- petticoat wedge, visible where the robe front hangs open -->
+    <path d="M176 292 H224 L262 560 Q200 572 138 560 Z"
+          fill="url(#teen-female-onepiece-sack-gown__petti)"/>
+    <!-- robe fronts, held out wide side to side and flat front to back -->
+    <path d="M150 214 Q152 192 176 192 H190 L182 302 L172 560 Q126 568 96 556 Q80 500 84 452 Q92 364 150 306 Z"
+          fill="url(#teen-female-onepiece-sack-gown__robe)"/>
+    <path d="M250 214 Q248 192 224 192 H210 L218 302 L228 560 Q274 568 304 556 Q320 500 316 452 Q308 364 250 306 Z"
+          fill="url(#teen-female-onepiece-sack-gown__robe)"/>
+    <!-- triangular stomacher filling the open front -->
+    <path d="M176 194 H224 L210 312 H190 Z" fill="url(#teen-female-onepiece-sack-gown__stom)"/>
+    <!-- elbow-length pagoda sleeves, flaring to the elbow -->
+    <path d="M150 202 L120 212 Q108 216 106 234 L100 268 Q98 286 116 290 L152 294 Z"
+          fill="url(#teen-female-onepiece-sack-gown__sleeve)"/>
+    <path d="M250 202 L280 212 Q292 216 294 234 L300 268 Q302 286 284 290 L248 294 Z"
+          fill="url(#teen-female-onepiece-sack-gown__sleeve)"/>
+  </g>
+
+  <!-- three stacked ruffle cuffs at each elbow -->
+  <g fill="var(--c3, #F6EADD)">
+    <path d="M100 282 Q126 296 154 288 L156 302 Q126 312 98 296 Z"/>
+    <path d="M100 300 Q126 314 154 306 L156 320 Q126 330 98 314 Z"/>
+    <path d="M102 318 Q126 330 152 324 L154 338 Q126 346 100 332 Z"/>
+    <path d="M300 282 Q274 296 246 288 L244 302 Q274 312 302 296 Z"/>
+    <path d="M300 300 Q274 314 246 306 L244 320 Q274 330 302 314 Z"/>
+    <path d="M298 318 Q274 330 248 324 L246 338 Q274 346 300 332 Z"/>
+  </g>
+
+  <!-- stomacher lacing and the robings binding the open front edges -->
+  <g stroke="var(--c2, #9B7BAE)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M182 214 L216 226"/><path d="M184 240 L214 252"/>
+    <path d="M186 266 L212 278"/><path d="M190 292 L208 302"/>
+  </g>
+  <path d="M188 194 L180 302 L172 452" stroke="var(--c3, #F6EADD)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 194 L220 302 L228 452" stroke="var(--c3, #F6EADD)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flounce running along both skirt hems -->
+  <path d="M100 540 Q136 560 172 552" stroke="var(--c3, #F6EADD)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M300 540 Q264 560 228 552" stroke="var(--c3, #F6EADD)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 556 Q200 566 252 556" stroke="var(--c2, #9B7BAE)" stroke-opacity="0.6"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <path d="M110 400 Q126 348 158 316" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M168 208 q14 6 26 2" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

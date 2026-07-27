@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: volume=FITTED TUNIC SPLIT TO THE WAIST over wide trousers · closure=mandarin collar with a side seam · hem=ankle · shoulder=long narrow set-in -->
+  <!-- the wide trousers are drawn into this file and painted through c3, a tunable of their own -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9607E)"/>
+      <stop offset="1" stop-color="var(--c2, #A8465F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-ao-dai__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9607E)"/>
+      <stop offset="1" stop-color="var(--c2, #A8465F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-ao-dai__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF3E6)"/>
+      <stop offset="1" stop-color="var(--c2, #A8465F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide trousers, drawn under the tunic and visible either side of the split -->
+    <path d="M150 328 H200 V546 Q200 558 186 558 H146 Q132 558 132 546 L140 420 Z"
+          fill="url(#teen-female-onepiece-ao-dai__trouser)"/>
+    <path d="M250 328 H200 V546 Q200 558 214 558 H254 Q268 558 268 546 L260 420 Z"
+          fill="url(#teen-female-onepiece-ao-dai__trouser)"/>
+    <!-- long narrow sleeves -->
+    <path d="M150 204 H130 Q122 204 122 214 V338 Q122 348 132 348 H150 Z"
+          fill="url(#teen-female-onepiece-ao-dai__sleeve)"/>
+    <path d="M250 204 H270 Q278 204 278 214 V338 Q278 348 268 348 H250 Z"
+          fill="url(#teen-female-onepiece-ao-dai__sleeve)"/>
+    <!-- fitted tunic, splitting at the waist into a narrow ankle-length front panel -->
+    <path d="M150 216 Q150 194 174 194 H226 Q250 194 250 216 V306 Q250 320 236 322 L244 546 Q200 558 156 546 L164 322 Q150 320 150 306 Z"
+          fill="url(#teen-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- mandarin collar, a standing band at the neck -->
+  <path d="M180 178 H220 Q226 178 226 184 V202 Q200 210 174 202 V184 Q174 178 180 178 Z"
+        fill="var(--c3, #FBF3E6)"/>
+  <path d="M198 180 V204" stroke="var(--c2, #A8465F)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- diagonal front closure running from the collar to the right underarm, with small frog knots -->
+  <path d="M212 200 Q234 216 246 240" stroke="var(--c3, #FBF3E6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #FBF3E6)">
+    <circle cx="222" cy="208" r="4.4"/>
+    <circle cx="236" cy="224" r="4.4"/>
+  </g>
+
+  <!-- the side split: a bound edge running from the waist down both sides of the panel -->
+  <path d="M164 324 L156 544" stroke="var(--c3, #FBF3E6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 324 L244 544" stroke="var(--c3, #FBF3E6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 546 Q200 558 242 546" stroke="var(--c3, #FBF3E6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuff bands and a soft trouser drape fold -->
+  <rect x="120" y="330" width="32" height="16" rx="7" fill="var(--c3, #FBF3E6)"/>
+  <rect x="248" y="330" width="32" height="16" rx="7" fill="var(--c3, #FBF3E6)"/>
+  <g stroke="var(--c2, #A8465F)" stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M148 372 Q142 462 140 540"/>
+    <path d="M252 372 Q258 462 260 540"/>
+  </g>
+
+  <path d="M172 212 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 340 q-2 96 -4 190" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

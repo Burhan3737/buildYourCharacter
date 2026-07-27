@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: volume=SKIN-CLOSE, no waist seam · hem=ANKLE with a full leg · closure=NONE · shoulder=long set-in -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3B7A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-unitard__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3B7A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3B7A)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-unitard__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3B7A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="124" y="202" width="26" height="150" rx="13" fill="url(#teen-female-onepiece-unitard__sleeve)"/>
+    <rect x="250" y="202" width="26" height="150" rx="13" fill="url(#teen-female-onepiece-unitard__sleeve)"/>
+    <path d="M150 346 H200 V538 Q200 550 188 550 H168 Q158 550 158 538 V420 Q158 380 150 346 Z"
+          fill="url(#teen-female-onepiece-unitard__leg)"/>
+    <path d="M250 346 H200 V538 Q200 550 212 550 H232 Q242 550 242 538 V420 Q242 380 250 346 Z"
+          fill="url(#teen-female-onepiece-unitard__leg)"/>
+    <path d="M146 216 Q146 192 172 192 H228 Q254 192 254 216 V312 Q254 332 250 350 H150 Q146 332 146 312 Z"
+          fill="url(#teen-female-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- contrast side panel running unbroken from the underarm to the ankle: no waist seam anywhere -->
+  <path d="M148 220 Q142 268 148 316 Q152 356 160 420 V536 H172 V420 Q164 354 160 314 Q156 266 160 220 Z"
+        fill="var(--c3, #6BBFAD)" opacity="0.9"/>
+  <path d="M252 220 Q258 268 252 316 Q248 356 240 420 V536 H228 V420 Q236 354 240 314 Q244 266 240 220 Z"
+        fill="var(--c3, #6BBFAD)" opacity="0.9"/>
+
+  <!-- scoop neck, bound -->
+  <path d="M166 194 Q200 232 234 194" stroke="var(--c3, #6BBFAD)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs at the wrist and the ankle -->
+  <rect x="122" y="332" width="30" height="20" rx="9" fill="url(#teen-female-onepiece-unitard__cuff)"/>
+  <rect x="248" y="332" width="30" height="20" rx="9" fill="url(#teen-female-onepiece-unitard__cuff)"/>
+  <rect x="156" y="528" width="46" height="20" rx="9" fill="url(#teen-female-onepiece-unitard__cuff)"/>
+  <rect x="198" y="528" width="46" height="20" rx="9" fill="url(#teen-female-onepiece-unitard__cuff)"/>
+
+  <!-- princess seams, drawn as a stitch line rather than a waist -->
+  <g stroke="var(--c2, #4A3B7A)" stroke-opacity="0.5" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M180 200 Q174 274 180 344"/>
+    <path d="M220 200 Q226 274 220 344"/>
+  </g>
+
+  <path d="M172 220 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 380 q-2 74 -4 140" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Empire Gown" data-family="empire-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=SHORT PUFFED CAP · closure=horizontal seam DIRECTLY UNDER THE BUST at y 262 · hem=ankle · volume=gathered narrow skirt from that seam -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-empire-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C9B0)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-empire-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C9B0)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-empire-gown__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C9B0)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-empire-gown__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C9B0)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short puffed cap sleeves, rounded well outside the arm -->
+    <path d="M158 200 Q134 196 122 212 Q112 228 122 242 Q142 254 162 242 Z"
+          fill="url(#teen-female-onepiece-empire-gown__puff)"/>
+    <path d="M242 200 Q266 196 278 212 Q288 228 278 242 Q258 254 238 242 Z"
+          fill="url(#teen-female-onepiece-empire-gown__puff)"/>
+    <!-- very short bodice: shoulder to the underbust and no further -->
+    <path d="M154 212 Q158 194 180 194 H220 Q242 194 246 212 V266 H154 Z"
+          fill="url(#teen-female-onepiece-empire-gown__bodice)"/>
+    <!-- gathered narrow skirt falling straight from the underbust seam to the ankle -->
+    <path d="M154 258 H246 L252 542 Q200 554 148 542 Z"
+          fill="url(#teen-female-onepiece-empire-gown__skirt)"/>
+  </g>
+
+  <!-- the horizontal underbust seam, worn as a broad sash: this is the family's identity -->
+  <path d="M152 254 H248 Q252 254 252 258 V274 Q252 278 248 278 H152 Q148 278 148 274 V258 Q148 254 152 254 Z"
+        fill="url(#teen-female-onepiece-empire-gown__sash)"/>
+  <path d="M212 278 Q220 306 216 336" stroke="var(--c3, #7E90DC)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 278 Q236 304 234 330" stroke="var(--c3, #7E90DC)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gathers radiating down from the seam -->
+  <g stroke="var(--c2, #D6C9B0)" stroke-opacity="0.7" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M166 280 Q160 400 158 528"/>
+    <path d="M182 280 Q179 400 178 530"/>
+    <path d="M200 280 V532"/>
+    <path d="M218 280 Q221 400 222 530"/>
+    <path d="M234 280 Q240 400 242 528"/>
+  </g>
+
+  <!-- bound square neckline and puff cuff bands -->
+  <path d="M162 200 Q200 214 238 200" stroke="var(--c3, #7E90DC)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 240 Q142 250 162 240" stroke="var(--c3, #7E90DC)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M276 240 Q258 250 238 240" stroke="var(--c3, #7E90DC)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 528 Q200 542 250 528" stroke="var(--c3, #7E90DC)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 210 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 210 q14-6 24 2" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

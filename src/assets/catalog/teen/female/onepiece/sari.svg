@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari, Nivi Drape" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: closure=DRAPED, pallu carried diagonally over the shoulder · shoulder=short fitted blouse sleeve · hem=ankle · volume=wrapped with hand-gathered waist pleats -->
+  <!-- Nivi drape: waist pleats at the centre front, pallu over the wearer LEFT shoulder. -->
+  <!-- The choli and the petticoat are drawn into this file and painted through c3 so they contrast. -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0705C)"/>
+      <stop offset="1" stop-color="var(--c2, #AE4C3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0705C)"/>
+      <stop offset="1" stop-color="var(--c2, #AE4C3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2C46A)"/>
+      <stop offset="1" stop-color="var(--c2, #AE4C3C)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-sari__petti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2C46A)"/>
+      <stop offset="1" stop-color="var(--c2, #AE4C3C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- petticoat, worn under the drape and showing as a band at the hem -->
+    <path d="M160 300 H240 L252 552 Q200 566 148 552 Z"
+          fill="url(#teen-female-onepiece-sari__petti)"/>
+    <!-- the draped cloth, wrapped at the waist and falling to the ankle -->
+    <path d="M150 288 H250 L262 526 Q200 542 138 526 Z"
+          fill="url(#teen-female-onepiece-sari__cloth)"/>
+    <!-- fitted short blouse, hem well above the waist -->
+    <path d="M150 214 Q152 192 176 192 H224 Q248 192 250 214 V250 Q200 262 150 250 Z"
+          fill="url(#teen-female-onepiece-sari__choli)"/>
+    <path d="M150 202 H128 Q120 202 120 212 V240 Q120 250 130 250 H152 Z"
+          fill="url(#teen-female-onepiece-sari__choli)"/>
+    <path d="M250 202 H272 Q280 202 280 212 V240 Q280 250 270 250 H248 Z"
+          fill="url(#teen-female-onepiece-sari__choli)"/>
+    <!-- pallu carried up over the wearer left shoulder, which is the viewer right -->
+    <path d="M234 188 L274 202 L190 376 L142 356 Z"
+          fill="url(#teen-female-onepiece-sari__pallu)"/>
+    <path d="M230 182 Q254 176 278 194 L274 214 L232 200 Z"
+          fill="url(#teen-female-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- plain contrast border running the length of the pallu and round the hem -->
+  <path d="M234 188 L142 356" stroke="var(--c3, #F2C46A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M274 202 L190 376" stroke="var(--c3, #F2C46A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 518 Q200 536 258 518" stroke="var(--c3, #F2C46A)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 544 Q200 558 250 544" stroke="var(--c2, #AE4C3C)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- hand-gathered waist pleats fanning from the tuck at the centre front -->
+  <g stroke="var(--c2, #AE4C3C)" stroke-opacity="0.6" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M182 306 Q174 410 168 512"/>
+    <path d="M192 306 Q189 410 186 512"/>
+    <path d="M202 306 Q203 410 204 512"/>
+    <path d="M212 306 Q217 410 222 512"/>
+  </g>
+  <path d="M164 292 Q200 306 236 292 V310 Q200 324 164 310 Z" fill="var(--c3, #F2C46A)"/>
+
+  <!-- choli hem and neck binding -->
+  <path d="M170 196 Q200 214 230 196" stroke="var(--c2, #AE4C3C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 246 Q200 258 248 246" stroke="var(--c2, #AE4C3C)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M244 204 q16 12 22 26" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 218 q22 8 44 2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -2,7 +2,9 @@
      data-name="Line Up" data-family="line-up" data-slot="beard"
      data-layer="beard" data-colors="hair1,hair2" data-hides="">
   <!-- axes: upper lip=HARD-EDGED BAR - coverage=full jaw and cheeks - cheek line=JOINED to the sideburn, razor straight - length=clipped short -->
-  <!-- the edge-up: every boundary in this file is a straight line, by definition of the family -->
+  <!-- the edge-up: every boundary in this file is a straight line, by definition of the family. -->
+  <!-- this bundle has a very large low-set eye, bottom edge at y 155 over x 163 to 190 and its -->
+  <!-- mirror, so the cheek line runs from the temple down to y 158 before it turns in toward the lip. -->
   <defs>
     <linearGradient id="teen-female-beard-line-up__beard" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="var(--hair1, #43291F)"/>
@@ -12,17 +14,19 @@
 
   <g class="sp-shadow">
     <path fill-rule="evenodd"
-          d="M139 124 L176 155 L200 151 L224 155 L261 124 L261 152 L241 184 L200 201 L159 184 L139 152 Z
-             M179 160 L221 160 L221 175 L179 175 Z"
+          d="M139 128 L158 150 L178 159 L200 153 L222 159 L242 150 L261 128
+             L261 152 L241 184 L200 201 L159 184 L139 152 Z
+             M181 162 L219 162 L219 177 L181 177 Z"
           fill="url(#teen-female-beard-line-up__beard)"/>
   </g>
 
-  <!-- the sharp neck line and the two hard cheek lines, restated in the shadow colour -->
-  <path d="M139 124 L176 155 L172 159 L137 130 Z" fill="var(--hair2, #331E16)"/>
-  <path d="M261 124 L224 155 L228 159 L263 130 Z" fill="var(--hair2, #331E16)"/>
+  <!-- the two razor-straight cheek lines, restated in the shadow colour -->
+  <path d="M139 128 L158 150 L154 155 L136 132 Z" fill="var(--hair2, #331E16)"/>
+  <path d="M261 128 L242 150 L246 155 L264 132 Z" fill="var(--hair2, #331E16)"/>
+  <!-- the sharp neck line -->
   <path d="M159 184 L200 201 L241 184 L241 190 L200 207 L159 190 Z" fill="var(--hair2, #331E16)"/>
   <!-- hard-edged moustache bar -->
-  <path d="M176 155 L200 151 L224 155 L224 160 L200 156 L176 160 Z" fill="var(--hair2, #331E16)"/>
-  <path d="M160 148 L200 160 L240 148" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
+  <path d="M178 159 L200 153 L222 159 L222 164 L200 158 L178 164 Z" fill="var(--hair2, #331E16)"/>
+  <path d="M162 158 L200 168 L238 158" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"
         fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

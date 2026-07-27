@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=SHORT SET-IN cap · volume=NO WAIST AT ALL, falls from a yoke · hem=mid-calf · closure=closed round neck -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-nightgown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C70)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FDF1E7)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-nightgown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C70)"/>
+    </linearGradient>
+    <pattern id="teen-female-onepiece-nightgown__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="2.8" fill="var(--c3, #FDF1E7)"/>
+      <circle cx="15" cy="15" r="2.8" fill="var(--c3, #FDF1E7)"/>
+    </pattern>
+    <clipPath id="teen-female-onepiece-nightgown__clip">
+      <path d="M152 236 H248 L264 498 Q200 518 136 498 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M150 210 L118 220 Q110 222 110 232 V250 Q110 260 120 260 H152 Z"
+          fill="url(#teen-female-onepiece-nightgown__sleeve)"/>
+    <path d="M250 210 L282 220 Q290 222 290 232 V250 Q290 260 280 260 H248 Z"
+          fill="url(#teen-female-onepiece-nightgown__sleeve)"/>
+    <path d="M152 236 H248 L264 498 Q200 518 136 498 Z"
+          fill="url(#teen-female-onepiece-nightgown__body)"/>
+    <path d="M150 216 Q150 192 174 192 H226 Q250 192 250 216 V242 H150 Z"
+          fill="url(#teen-female-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- scattered dot ground on the body only, the yoke stays plain -->
+  <g clip-path="url(#teen-female-onepiece-nightgown__clip)">
+    <rect x="130" y="236" width="140" height="286" fill="url(#teen-female-onepiece-nightgown__dots)"
+          opacity="0.75"/>
+  </g>
+
+  <!-- plain round neck, bound in the yoke colour -->
+  <path d="M174 194 Q200 216 226 194" stroke="var(--c3, #FDF1E7)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- teen detail: a drawcord bow at the yoke seam with two aglets -->
+  <path d="M190 244 Q178 232 168 244 Q178 252 190 244 Z" fill="var(--c3, #FDF1E7)"/>
+  <path d="M210 244 Q222 232 232 244 Q222 252 210 244 Z" fill="var(--c3, #FDF1E7)"/>
+  <circle cx="200" cy="244" r="6" fill="var(--c3, #FDF1E7)"/>
+  <path d="M194 250 Q188 268 184 282" stroke="var(--c3, #FDF1E7)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 250 Q212 268 216 282" stroke="var(--c3, #FDF1E7)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- yoke seam and a scalloped hem trim -->
+  <path d="M152 240 H248" stroke="var(--c2, #CE7C70)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M138 490 q16 12 32 0 q16 12 32 0 q16 12 32 0 q16 12 32 0" stroke="var(--c3, #FDF1E7)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <path d="M170 206 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

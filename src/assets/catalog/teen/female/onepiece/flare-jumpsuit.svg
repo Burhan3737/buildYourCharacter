@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: shoulder=HALTER, shoulders and upper back bare · volume=fitted then a HARD BELL FROM THE KNEE · hem=above the sole so the shoe still reads · closure=closed -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-flare-jumpsuit__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9714E)"/>
+      <stop offset="1" stop-color="var(--c2, #A34E33)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-flare-jumpsuit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9714E)"/>
+      <stop offset="1" stop-color="var(--c2, #A34E33)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- bell legs: fitted through the thigh, then flaring hard from the knee at y 462 -->
+    <path d="M148 336 H200 V540 H118 Q124 496 152 462 Q158 398 148 336 Z"
+          fill="url(#teen-female-onepiece-flare-jumpsuit__leg)"/>
+    <path d="M252 336 H200 V540 H282 Q276 496 248 462 Q242 398 252 336 Z"
+          fill="url(#teen-female-onepiece-flare-jumpsuit__leg)"/>
+    <!-- halter torso: the straps converge at the neck and the shoulders stay bare -->
+    <path d="M200 174 Q184 176 180 192 L156 212 Q144 222 144 240 V316 Q144 338 156 344 H244 Q256 338 256 316 V240 Q256 222 244 212 L220 192 Q216 176 200 174 Z"
+          fill="url(#teen-female-onepiece-flare-jumpsuit__torso)"/>
+  </g>
+
+  <!-- halter neck band with a knot at the throat -->
+  <path d="M184 190 Q194 176 200 172 Q206 176 216 190" stroke="var(--c3, #F3D9A8)"
+        stroke-width="9" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="182" r="8" fill="var(--c3, #F3D9A8)"/>
+
+  <!-- contrast waist seam joining the torso to the legs -->
+  <path d="M146 322 Q200 336 254 322 V342 Q200 356 146 342 Z" fill="var(--c3, #F3D9A8)"/>
+  <circle cx="200" cy="332" r="7" fill="var(--c2, #A34E33)"/>
+
+  <!-- welt hip pockets and a topstitched centre seam down each bell -->
+  <path d="M158 356 H186 Q190 356 190 360 V370 Q190 374 186 374 H158 Q154 374 154 370 V360 Q154 356 158 356 Z"
+        fill="var(--c2, #A34E33)"/>
+  <path d="M214 356 H242 Q246 356 246 360 V370 Q246 374 242 374 H214 Q210 374 210 370 V360 Q210 356 214 356 Z"
+        fill="var(--c2, #A34E33)"/>
+  <g stroke="var(--c2, #A34E33)" stroke-opacity="0.55" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M172 386 Q166 462 152 534"/>
+    <path d="M228 386 Q234 462 248 534"/>
+  </g>
+
+  <!-- bell hem bands, stopping above the sole line at y 570 -->
+  <path d="M120 532 H198" stroke="var(--c3, #F3D9A8)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M280 532 H202" stroke="var(--c3, #F3D9A8)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 222 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 400 q-8 68 -26 122" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

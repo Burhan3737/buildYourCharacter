@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: volume=STRAIGHT TUBE, no waist shaping at all · hem=SEPARATE FRINGED PANEL to mid-calf · shoulder=narrow straps, bare shoulders · closure=closed -->
+  <defs>
+    <linearGradient id="teen-female-onepiece-flapper-dress__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3B6E)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2447)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-flapper-dress__fringe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3B6E)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2447)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-onepiece-flapper-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3B6E)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2447)"/>
+    </linearGradient>
+    <pattern id="teen-female-onepiece-flapper-dress__bead" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 L15 9 L9 15 L3 9 Z" fill="none" stroke="var(--c3, #F7C873)" stroke-width="2.2"/>
+    </pattern>
+    <clipPath id="teen-female-onepiece-flapper-dress__clip">
+      <path d="M156 220 Q156 210 166 208 H234 Q244 210 244 220 V366 H156 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <rect x="178" y="166" width="10" height="50" rx="5" fill="url(#teen-female-onepiece-flapper-dress__strap)"/>
+    <rect x="212" y="166" width="10" height="50" rx="5" fill="url(#teen-female-onepiece-flapper-dress__strap)"/>
+    <!-- separate fringed panel band, hung from the hip seam to mid-calf -->
+    <path d="M152 358 H248 V470 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 l-6 38 l-6-38 Z"
+          fill="url(#teen-female-onepiece-flapper-dress__fringe)"/>
+    <!-- straight tube, identical width from the bust to the hip seam -->
+    <path d="M156 220 Q156 210 166 208 H234 Q244 210 244 220 V366 H156 Z"
+          fill="url(#teen-female-onepiece-flapper-dress__tube)"/>
+  </g>
+
+  <g clip-path="url(#teen-female-onepiece-flapper-dress__clip)">
+    <rect x="150" y="206" width="102" height="164" fill="url(#teen-female-onepiece-flapper-dress__bead)"
+          opacity="0.8"/>
+  </g>
+
+  <!-- dropped-waist band marking the horizontal hip seam -->
+  <path d="M150 352 H250 Q256 352 256 358 V374 Q256 380 250 380 H150 Q144 380 144 374 V358 Q144 352 150 352 Z"
+        fill="var(--c3, #F7C873)"/>
+  <path d="M150 366 H250" stroke="var(--c2, #2E2447)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long loose fringe strands hanging over the panel -->
+  <g stroke="var(--c3, #F7C873)" stroke-opacity="0.85" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M158 380 Q156 448 154 512"/>
+    <path d="M176 380 Q175 450 174 516"/>
+    <path d="M194 380 V518"/>
+    <path d="M212 380 Q213 450 214 518"/>
+    <path d="M230 380 Q233 450 236 514"/>
+    <path d="M246 380 Q250 448 252 508"/>
+  </g>
+
+  <!-- straight bound neckline across the bare shoulders -->
+  <path d="M158 212 H242" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 224 q30 8 58 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 250 q-4 60 -4 100" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
