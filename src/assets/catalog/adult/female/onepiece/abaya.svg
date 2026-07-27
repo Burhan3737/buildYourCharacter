@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: an open front whose two edges simply meet, with no fastening at all,
+       resolved onto an integral under layer drawn in this file through the c2 variable (closure)
+       + falling straight off the shoulder to the ankle with no waist anywhere (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2B2F3E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5266)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A5266)"/>
+      <stop offset="1" stop-color="var(--c1, #2B2F3E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2B2F3E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5266)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under layer: the open front resolves onto this, never onto a hole -->
+    <path d="M170 150 H230 q14 0 14 16 l6 372 q-50 14 -100 0 l6-372 q0-16 14-16 Z"
+          fill="url(#adult-female-onepiece-abaya__under)"/>
+    <!-- long straight sleeves -->
+    <path d="M112 172 q0-18 19-18 h15 q19 0 19 18 v162 q0 14 -19 14 h-15 q-19 0 -19-14 Z"
+          fill="url(#adult-female-onepiece-abaya__sleeve)"/>
+    <path d="M288 172 q0-18 -19-18 h-15 q-19 0 -19 18 v162 q0 14 19 14 h15 q19 0 19-14 Z"
+          fill="url(#adult-female-onepiece-abaya__sleeve)"/>
+    <!-- the two open fronts, meeting down the centre without a fastening -->
+    <path d="M186 150 H158 q-24 0 -26 24 L128 544 q26 10 50 8 L200 300 L200 244 Z"
+          fill="url(#adult-female-onepiece-abaya__panel)"/>
+    <path d="M214 150 H242 q24 0 26 24 L272 544 q-26 10 -50 8 L200 300 L200 244 Z"
+          fill="url(#adult-female-onepiece-abaya__panel)"/>
+  </g>
+
+  <!-- edging running the whole length of both open fronts -->
+  <path d="M187 152 L200 246 L200 300 L179 546" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 152 L200 246 L200 300 L221 546" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- shoulder yoke seams -->
+  <path d="M150 164 q22 8 36 4 M250 164 q-22 8 -36 4" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- cuff bands -->
+  <rect x="112" y="326" width="53" height="20" rx="9" fill="var(--c2, #4A5266)"/>
+  <rect x="235" y="326" width="53" height="20" rx="9" fill="var(--c2, #4A5266)"/>
+  <path d="M118 332 q26 8 42 0 M282 332 q-26 8 -42 0" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- the straight fall of the panels -->
+  <path d="M156 200 l-14 336 M244 200 l14 336" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ankle hem edging -->
+  <path d="M132 512 q34 12 60 12 M268 512 q-34 12 -60 12" stroke="var(--c3, #C8A55E)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 178 q28 10 40 6 M248 178 q-28 10 -40 6" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M150 380 q22 8 34 6 M250 380 q-22 8 -34 6" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: bare shoulders under a straight strapless band (shoulder/sleeve)
+       + a bouffant dome standing 50 units clear of the hip and sweeping the ground (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-ball-gown__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3C7E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C3C7E)"/>
+      <stop offset="1" stop-color="var(--c1, #6E5AA8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3C7E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dome skirt: out to x 99 and x 301, sweeping the ground line at y 568 -->
+    <path d="M152 258 C104 316, 88 432, 100 548 Q200 588 300 548 C312 432, 296 316, 248 258 Z"
+          fill="url(#adult-female-onepiece-ball-gown__dome)"/>
+    <!-- strapless bodice coming to a point at the waist -->
+    <path d="M138 182 H262 q7 4 6 16 l-4 64 q-6 24 -64 42 q-58 -18 -64 -42 l-4-64 q-1-12 6-16 Z"
+          fill="url(#adult-female-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- the straight strapless band across the top of the bust -->
+  <rect x="136" y="176" width="128" height="15" rx="7"
+        fill="url(#adult-female-onepiece-ball-gown__band)"/>
+  <!-- boned seams running down to the waist point -->
+  <path d="M170 194 q6 60 30 106 M230 194 q-6 60 -30 106 M200 196 v104"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- piped waist point -->
+  <path d="M156 268 q44 34 88 0" stroke="var(--c3, #D9C4EE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- skirt gathers radiating off the waist -->
+  <path d="M176 300 C150 372, 128 460, 124 536
+           M200 306 C198 386, 198 464, 200 546
+           M224 300 C250 372, 272 460, 276 536"
+        stroke="#3B2A22" stroke-opacity="0.13" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- hem band riding the ground sweep -->
+  <path d="M104 528 Q200 566 296 528" stroke="var(--c3, #D9C4EE)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 198 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 390 q68 34 136 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

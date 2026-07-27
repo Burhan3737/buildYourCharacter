@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Onesie" data-family="sleep-onesie" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: a full length front zip from the throat to the crotch (closure)
+       + closed feet, so the hem runs past the ankle and over the foot itself (hem) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-sleep-onesie__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sleep-onesie__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sleep-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6A83C4)"/>
+      <stop offset="1" stop-color="var(--c1, #8AA4E8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sleep-onesie__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hood, drawn as a band around the face opening -->
+    <path d="M124 182 C124 56, 150 18, 200 18 C250 18, 276 56, 276 182 L250 182
+             C250 76, 232 44, 200 44 C168 44, 150 76, 150 182 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__hood)"/>
+    <!-- long sleeves -->
+    <path d="M108 174 q0-22 20-22 h18 q20 0 20 22 v152 q0 14 -20 14 h-18 q-20 0 -20-14 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__sleeve)"/>
+    <path d="M292 174 q0-22 -20-22 h-18 q-20 0 -20 22 v152 q0 14 20 14 h18 q20 0 20-14 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__sleeve)"/>
+    <!-- closed foot legs: the hem runs on over the drawn foot and rounds off at the sole -->
+    <path d="M148 306 H200 V546 q0 18 -12 22 h-34 q-14 -2 -14 -18 l6-112 q4-56 4-138 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__leg)"/>
+    <path d="M252 306 H200 V546 q0 18 12 22 h34 q14 -2 14 -18 l-6-112 q-4-56 -4-138 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__leg)"/>
+    <!-- softly bloused body from the throat to the crotch -->
+    <path d="M150 176 q50 20 100 0 q16 4 16 24 l6 82 q2 26 -14 32 q-58 16 -116 0
+             q-16-6 -14-32 l6-82 q0-20 16-24 Z"
+          fill="url(#adult-female-onepiece-sleep-onesie__body)"/>
+  </g>
+
+  <!-- closed feet, contrast soles -->
+  <path d="M144 540 q0-10 12-10 h34 q10 0 10 12 v12 q0 14 -14 14 h-30 q-12 0 -12-14 Z"
+        fill="var(--c3, #F7DCA8)"/>
+  <path d="M256 540 q0-10 -12-10 h-34 q-10 0 -10 12 v12 q0 14 14 14 h30 q12 0 12-14 Z"
+        fill="var(--c3, #F7DCA8)"/>
+  <!-- full length centre zip, throat to crotch, with a pull tab -->
+  <path d="M200 168 V330" stroke="var(--c3, #F7DCA8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 170 V328" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2.4"
+        stroke-dasharray="5 5" fill="none"/>
+  <rect x="193" y="292" width="14" height="22" rx="5" fill="var(--c3, #F7DCA8)"/>
+  <!-- ribbed cuffs at the wrist and the hood edge -->
+  <rect x="108" y="316" width="40" height="20" rx="9" fill="var(--c2, #6A83C4)"/>
+  <rect x="252" y="316" width="40" height="20" rx="9" fill="var(--c2, #6A83C4)"/>
+  <path d="M112 322 v8 M120 320 v10 M128 320 v10 M136 320 v10 M144 322 v8
+           M256 322 v8 M264 320 v10 M272 320 v10 M280 320 v10 M288 322 v8"
+        stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M152 174 C152 82, 170 48, 200 48 C230 48, 248 82, 248 174"
+        stroke="var(--c3, #F7DCA8)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- blousing at the hip -->
+  <path d="M148 292 q52 18 104 0" stroke="#3B2A22" stroke-opacity="0.14" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M138 92 q22 -40 58 -46" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 208 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 380 v120 M230 380 v120" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

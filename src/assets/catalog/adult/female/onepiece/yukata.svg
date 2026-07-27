@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: wrapped LEFT OVER RIGHT, so the wearer's left panel lies on top and its
+       flat band collar runs from the neck down to the viewer's left waist (closure)
+       + wide rectangular sleeve panels hanging 52 units below the arm with a straight lower
+       edge, over a full length hem (shoulder/sleeve) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-yukata__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #364A78)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-yukata__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #26355A)"/>
+      <stop offset="1" stop-color="var(--c1, #364A78)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-yukata__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #364A78)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3D7BE)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <pattern id="adult-female-onepiece-yukata__specks" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M4 14 l6-8 M14 18 l4-6" stroke="var(--c3, #E3D7BE)" stroke-width="2.2"
+            stroke-linecap="round" fill="none"/>
+    </pattern>
+    <clipPath id="adult-female-onepiece-yukata__clip">
+      <path d="M212 152 H242 q22 0 24 22 l16 382 q-70 20 -140 2 L146 290 Z"/>
+      <path d="M100 170 q0-16 18-16 H160 V400 H116 q-16 0 -16-16 Z"/>
+      <path d="M300 170 q0-16 -18-16 H240 V400 H284 q16 0 16-16 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide rectangular sleeve panels, straight lower edge at y 400 -->
+    <path d="M100 170 q0-16 18-16 H160 V400 H116 q-16 0 -16-16 Z"
+          fill="url(#adult-female-onepiece-yukata__panel)"/>
+    <path d="M300 170 q0-16 -18-16 H240 V400 H284 q16 0 16-16 Z"
+          fill="url(#adult-female-onepiece-yukata__panel)"/>
+    <!-- the wearer's RIGHT panel goes in first, underneath -->
+    <path d="M204 152 H162 q-20 0 -22 20 l-2 386 q42 14 84 6 Z"
+          fill="url(#adult-female-onepiece-yukata__under)"/>
+    <!-- the wearer's LEFT panel crosses over it, edge running down to the viewer's left waist -->
+    <path d="M212 152 H242 q22 0 24 22 l16 382 q-70 20 -140 2 L146 290 Z"
+          fill="url(#adult-female-onepiece-yukata__over)"/>
+    <!-- scattered speck weave over the panels -->
+    <g clip-path="url(#adult-female-onepiece-yukata__clip)">
+      <rect x="96" y="150" width="208" height="424"
+            fill="url(#adult-female-onepiece-yukata__specks)" opacity="0.34"/>
+    </g>
+  </g>
+
+  <!-- flat overlapping band collar, neck to waist -->
+  <path d="M182 146 L196 150 L206 216 L192 220 Z" fill="var(--c2, #26355A)"/>
+  <path d="M204 146 L218 152 L158 296 L142 288 Z" fill="var(--c3, #E3D7BE)"/>
+  <!-- broad flat sash -->
+  <rect x="128" y="272" width="144" height="36" rx="8"
+        fill="url(#adult-female-onepiece-yukata__sash)"/>
+  <rect x="184" y="266" width="32" height="48" rx="8" fill="var(--c2, #26355A)"/>
+  <path d="M132 282 h136" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- straight sleeve hems -->
+  <path d="M104 392 h52 M296 392 h-52" stroke="var(--c3, #E3D7BE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem band sweeping the floor -->
+  <path d="M142 536 q68 22 138 0" stroke="var(--c3, #E3D7BE)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M112 176 q22 -8 42 -4 M288 176 q-22 -8 -42 -4" stroke="#FFFFFF"
+        stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M158 400 q46 16 94 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

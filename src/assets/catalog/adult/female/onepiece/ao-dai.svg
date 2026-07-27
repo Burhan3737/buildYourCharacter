@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: a fitted tunic split to the waist at BOTH sides, showing 44 units of
+       trouser from y 282 down to the tunic hem at y 496 (volume)
+       + the trousers are drawn into the same file, so the hem is a wide ankle leg
+       under a knee deep tunic panel (hem) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-ao-dai__trouserL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-ao-dai__trouserR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-ao-dai__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide trousers, drawn into the same file and painted through the c3 variable -->
+    <path d="M142 278 H200 V548 h-82 l-4 -78 C122 412, 134 352, 142 278 Z"
+          fill="url(#adult-female-onepiece-ao-dai__trouserL)"/>
+    <path d="M258 278 H200 V548 h82 l4 -78 C278 412, 266 352, 258 278 Z"
+          fill="url(#adult-female-onepiece-ao-dai__trouserR)"/>
+    <!-- long narrow sleeves -->
+    <path d="M116 166 q0-16 17-16 h12 q17 0 17 16 v162 q0 12 -17 12 h-12 q-17 0 -17-12 Z"
+          fill="url(#adult-female-onepiece-ao-dai__sleeve)"/>
+    <path d="M284 166 q0-16 -17-16 h-12 q-17 0 -17 16 v162 q0 12 17 12 h12 q17 0 17-12 Z"
+          fill="url(#adult-female-onepiece-ao-dai__sleeve)"/>
+    <!-- fitted tunic, split away at both sides from y 282 to the hem -->
+    <path d="M154 152 H246 q18 0 19 18 l5 86 q0 10 -4 18 L242 286 V496 q-42 12 -84 0 V286
+             L134 272 q-4-8 -4-18 l5-86 q1-18 19-18 Z"
+          fill="url(#adult-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- mandarin collar -->
+  <path d="M178 136 h44 q7 0 7 7 v16 q-29 8 -58 0 v-16 q0-7 7-7 Z" fill="var(--c2, #BC6B26)"/>
+  <path d="M200 140 v22" stroke="var(--c3, #F4EDE2)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- diagonal front seam from the collar to the right underarm -->
+  <path d="M204 162 q30 12 56 30" stroke="var(--c3, #F4EDE2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound edges around both side splits, the identity of the family -->
+  <path d="M158 290 V492 M242 290 V492" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound tunic hem and narrow cuffs -->
+  <path d="M160 486 q40 12 80 0" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <rect x="116" y="320" width="46" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <rect x="238" y="320" width="46" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <!-- trouser fall lines -->
+  <path d="M144 350 l-16 190 M256 350 l16 190" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M160 180 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 360 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 460 q10 4 18 2 M268 460 q-10 4 -18 2" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: no fastening anywhere and no waist seam, one skin close skin (closure)
+       + skin close legs running to the ankle with an open centre gap (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-unitard__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-unitard__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A6F4A)"/>
+      <stop offset="1" stop-color="var(--c1, #4C8C5E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set in sleeves, cut close to the arm -->
+    <path d="M114 170 q0-18 17-18 h13 q17 0 17 18 v46 q0 10 -17 10 h-13 q-17 0 -17-10 Z"
+          fill="url(#adult-female-onepiece-unitard__sleeve)"/>
+    <path d="M286 170 q0-18 -17-18 h-13 q-17 0 -17 18 v46 q0 10 17 10 h13 q17 0 17-10 Z"
+          fill="url(#adult-female-onepiece-unitard__sleeve)"/>
+    <!-- skin close legs, straight to the ankle, with a real gap down the centre -->
+    <path d="M165 300 H198 V536 q0 12 -10 12 h-14 q-9 0 -9-12 Z"
+          fill="url(#adult-female-onepiece-unitard__legL)"/>
+    <path d="M235 300 H202 V536 q0 12 9 12 h14 q10 0 10-12 Z"
+          fill="url(#adult-female-onepiece-unitard__legR)"/>
+    <!-- one skin from the shoulder over the hip, scoop neck, no waist seam -->
+    <path d="M150 176 q50 22 100 0 q12 4 12 18 v86 q0 20 -6 30 l-4 34 q0 10 -12 10 h-80
+             q-12 0 -12-10 l-4-34 q-6-10 -6-30 v-86 q0-14 12-18 Z"
+          fill="url(#adult-female-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- contrast side panels, hip to ankle, blocked through the c2 variable -->
+  <path d="M165 306 h9 l-4 240 h-5 q-9 0 -9-12 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M235 306 h-9 l4 240 h5 q9 0 9-12 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M140 200 l6 130 h-8 v-130 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M260 200 l-6 130 h8 v-130 Z" fill="var(--c2, #3A6F4A)"/>
+  <!-- bound scoop neck and sleeve edges -->
+  <path d="M152 178 q48 22 96 0" stroke="var(--c3, #E7D9A8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 218 q26 10 50 0 M284 218 q-26 10 -50 0" stroke="var(--c3, #E7D9A8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- ankle binding -->
+  <path d="M166 528 q16 6 32 0 M234 528 q-16 6 -32 0" stroke="var(--c3, #E7D9A8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- the centre gap read as a shadow, plus the inner leg seams -->
+  <path d="M200 356 V546" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 316 v218 M218 316 v218" stroke="#3B2A22" stroke-opacity="0.11" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M158 198 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 380 v130 M224 380 v130" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: a boxy straight tube with no waist shaping anywhere, seamed across at
+       the hip at y 305 (volume)
+       + below that seam a separate 203 unit fringe band whose strands are cut into the
+       silhouette itself and stop at mid calf (hem) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-flapper-dress__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-flapper-dress__fringe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #241F2E)"/>
+      <stop offset="1" stop-color="var(--c1, #3A3346)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-flapper-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <pattern id="adult-female-onepiece-flapper-dress__beads" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #D9B85C)"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #D9B85C)"/>
+    </pattern>
+    <clipPath id="adult-female-onepiece-flapper-dress__clip">
+      <path d="M144 190 q56 18 112 0 q6 4 6 12 v104 q0 6 -6 6 h-112 q-6 0 -6-6 v-104
+               q0-8 6-12 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps over bare shoulders -->
+    <path d="M176 192 L178 148 q0-4 5-4 h6 q5 0 5 4 L192 192 Z"
+          fill="url(#adult-female-onepiece-flapper-dress__strap)"/>
+    <path d="M224 192 L222 148 q0-4 -5-4 h-6 q-5 0 -5 4 L208 192 Z"
+          fill="url(#adult-female-onepiece-flapper-dress__strap)"/>
+    <!-- straight boxy tube, no waist shaping at all, seamed at the hip -->
+    <path d="M144 190 q56 18 112 0 q6 4 6 12 v104 q0 6 -6 6 h-112 q-6 0 -6-6 v-104 q0-8 6-12 Z"
+          fill="url(#adult-female-onepiece-flapper-dress__tube)"/>
+    <!-- separate fringe band: real strands cut into the lower edge -->
+    <path d="M140 302 H260 L262 440
+             v66 h-13 v-66 h-4 v66 h-13 v-66 h-4 v66 h-13 v-66 h-4
+             v66 h-13 v-66 h-4 v66 h-13 v-66 h-4 v66 h-13 v-66 h-4
+             v66 h-13 v-66 h-4 L138 302 Z"
+          fill="url(#adult-female-onepiece-flapper-dress__fringe)"/>
+    <!-- beadwork over the tube -->
+    <g clip-path="url(#adult-female-onepiece-flapper-dress__clip)">
+      <rect x="136" y="188" width="128" height="128"
+            fill="url(#adult-female-onepiece-flapper-dress__beads)" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- the hip seam the fringe band hangs from -->
+  <rect x="136" y="298" width="128" height="14" rx="6" fill="var(--c3, #D9B85C)"/>
+  <!-- a second bead row marking the top of the strands -->
+  <path d="M140 432 h122" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound straight neckline -->
+  <path d="M144 192 q56 18 112 0" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- chevron beading down the tube -->
+  <path d="M152 236 L200 254 L248 236 M152 268 L200 286 L248 268" stroke="var(--c3, #D9B85C)"
+        stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- strand shadows so the fringe reads as separate threads -->
+  <path d="M150 320 v104 M180 320 v104 M220 320 v104 M250 320 v104" stroke="#3B2A22"
+        stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 210 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 360 q52 12 104 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

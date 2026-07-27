@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari (Nivi Drape)" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: one uncut length wrapped at the waist, with the pallu carried diagonally
+       over the wearer's LEFT shoulder as a 67 unit band, so one shoulder is draped and the other
+       carries only the short blouse (shoulder/sleeve)
+       + hand gathered waist pleats over a petticoat, no fastening anywhere (closure)
+       Nivi is the common everyday drape; over eighty regional drapes exist, so the family is
+       named for the one it draws. The choli and the petticoat are drawn into this file. -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4E9E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4E9E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3C579)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A356F)"/>
+      <stop offset="1" stop-color="var(--c1, #6B4E9E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sari__pleats" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A356F)"/>
+      <stop offset="1" stop-color="var(--c1, #6B4E9E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- petticoat, drawn into the same file and painted through the c3 variable -->
+    <path d="M152 288 H248 q8 0 9 12 l7 244 q-58 16 -116 0 l-5 -244 q1-12 9-12 Z"
+          fill="url(#adult-female-onepiece-sari__petticoat)"/>
+    <!-- the wrapped lower drape, tucked at the waist -->
+    <path d="M148 268 H252 q12 0 13 14 l9 212 q-70 20 -140 0 l1 -212 q1-14 12-14 Z"
+          fill="url(#adult-female-onepiece-sari__cloth)"/>
+    <!-- hand gathered pleat fan at the centre front -->
+    <path d="M176 292 H224 l10 216 q-34 8 -68 0 Z"
+          fill="url(#adult-female-onepiece-sari__pleats)"/>
+    <!-- fitted short blouse -->
+    <path d="M148 150 q52 20 104 0 q10 4 10 16 v40 q-62 20 -124 0 v-40 q0-12 10-16 Z"
+          fill="url(#adult-female-onepiece-sari__choli)"/>
+    <path d="M114 164 q0-14 16-14 h12 q16 0 16 14 v28 q0 10 -16 10 h-12 q-16 0 -16-10 Z"
+          fill="url(#adult-female-onepiece-sari__choli)"/>
+    <path d="M286 164 q0-14 -16-14 h-12 q-16 0 -16 14 v28 q0 10 16 10 h12 q16 0 16-10 Z"
+          fill="url(#adult-female-onepiece-sari__choli)"/>
+    <!-- the pallu: carried from the wearer's right hip diagonally over the LEFT shoulder -->
+    <path d="M212 148 H272 q12 0 10 14 L174 350 q-4 12 -18 6 L130 326 q-10-6 -4-16 Z"
+          fill="url(#adult-female-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- plain woven border on the pallu edges, no community motif -->
+  <path d="M212 150 L126 312" stroke="var(--c3, #E3C579)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M280 162 L172 350" stroke="var(--c3, #E3C579)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- pleat folds in the fan -->
+  <path d="M186 300 l4 202 M200 300 v204 M214 300 l-4 202" stroke="#3B2A22"
+        stroke-opacity="0.2" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- the waist tuck the pleats are set into -->
+  <path d="M142 288 q58 16 116 0" stroke="var(--c3, #E3C579)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- choli hem and sleeve edges -->
+  <path d="M142 202 q58 16 116 0" stroke="var(--c3, #E3C579)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M118 194 q22 8 38 0 M282 194 q-22 8 -38 0" stroke="var(--c3, #E3C579)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- border on the drape hem, and the petticoat showing below it -->
+  <path d="M138 486 q62 18 126 0" stroke="var(--c3, #E3C579)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M156 168 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 384 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 180 L184 274" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

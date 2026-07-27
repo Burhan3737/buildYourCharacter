@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes vs the slot: the robe front hangs open over a triangular stomacher and a petticoat
+       wedge, so there is no fastening down the centre (closure)
+       + a skirt held out wide side to side and flat front to back, near vertical sides from
+       x 94 to x 306 at the ground, on elbow length pagoda sleeves (volume) -->
+  <defs>
+    <linearGradient id="adult-female-onepiece-sack-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sack-gown__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sack-gown__pleat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7F9970)"/>
+      <stop offset="1" stop-color="var(--c1, #9FB98C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sack-gown__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E6CE)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-onepiece-sack-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two box pleats falling loose from the shoulders at the back -->
+    <path d="M158 150 q-22 2 -28 20 l-8 148 q16 10 42 6 l-2 -174 Z"
+          fill="url(#adult-female-onepiece-sack-gown__pleat)"/>
+    <path d="M242 150 q22 2 28 20 l8 148 q-16 10 -42 6 l2 -174 Z"
+          fill="url(#adult-female-onepiece-sack-gown__pleat)"/>
+    <!-- the skirt: wide side to side, flat front to back, reaching the ground -->
+    <path d="M152 276 L248 276 C282 300, 300 330, 302 372 L306 552 Q200 588 94 552 L98 372
+             C100 330, 118 300, 152 276 Z"
+          fill="url(#adult-female-onepiece-sack-gown__skirt)"/>
+    <!-- petticoat wedge revealed by the open robe front -->
+    <path d="M200 286 L246 552 q-46 12 -92 0 Z"
+          fill="url(#adult-female-onepiece-sack-gown__wedge)"/>
+    <!-- triangular stomacher -->
+    <path d="M186 150 H214 L230 172 L200 296 L170 172 Z"
+          fill="url(#adult-female-onepiece-sack-gown__wedge)"/>
+    <!-- robe fronts hanging open on either side of it -->
+    <path d="M188 150 H158 q-22 0 -24 22 L128 288 q26 16 62 14 L200 292 L172 170 Z"
+          fill="url(#adult-female-onepiece-sack-gown__panel)"/>
+    <path d="M212 150 H242 q22 0 24 22 L272 288 q-26 16 -62 14 L200 292 L228 170 Z"
+          fill="url(#adult-female-onepiece-sack-gown__panel)"/>
+    <!-- elbow length pagoda sleeves -->
+    <path d="M156 156 q-20-4 -32 10 l-24 60 q16 16 46 10 l14-40 Z"
+          fill="url(#adult-female-onepiece-sack-gown__sleeve)"/>
+    <path d="M244 156 q20-4 32 10 l24 60 q-16 16 -46 10 l-14-40 Z"
+          fill="url(#adult-female-onepiece-sack-gown__sleeve)"/>
+  </g>
+
+  <!-- stacked ruffle cuffs at the pagoda openings -->
+  <path d="M102 224 q24 18 46 8 l3 15 q-27 12 -54 -8 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M99 243 q27 19 51 8 l3 16 q-30 13 -60 -9 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M298 224 q-24 18 -46 8 l-3 15 q27 12 54 -8 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M301 243 q-27 19 -51 8 l-3 16 q30 13 60 -9 Z" fill="var(--c3, #F2E6CE)"/>
+  <!-- stomacher lacing bars -->
+  <path d="M180 184 h40 M177 208 h46 M180 232 h40 M186 256 h28"
+        stroke="var(--c2, #7F9970)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- robe front edges, bound -->
+  <path d="M172 168 L200 292 M228 168 L200 292" stroke="var(--c3, #F2E6CE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- skirt pleat channels over the panniers -->
+  <path d="M132 320 l-24 218 M164 300 l-14 240 M236 300 l14 240 M268 320 l24 218"
+        stroke="#3B2A22" stroke-opacity="0.12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- flounced hem band riding the ground sweep -->
+  <path d="M100 530 Q200 566 300 530" stroke="var(--c3, #F2E6CE)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M150 178 q22 8 42 2 M250 178 q-22 8 -42 2" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M118 396 q82 30 164 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>
