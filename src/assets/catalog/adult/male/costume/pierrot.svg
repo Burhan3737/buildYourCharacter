@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: shoulder (a draped three quarter bell sleeve, flaring to an open mouth) and
+       volume (a straight column widest at the SHOULDER, against the clown's gathered barrel
+       widest at the hip). -->
+  <!-- The collaret is a FLAT frilled disc lying ON the shoulders, spreading outward from the
+       ceiling rather than standing up: under 25 units of projection above the collarbone.
+       A separate ruff family ships in the necklace slot and necklace draws ABOVE costume, so
+       a worn ruff has to layer over this disc and read as one piece. -->
+  <defs>
+    <linearGradient id="adult-male-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE0)"/>
+      <stop offset="1" stop-color="var(--c1, #D9D1C0)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-pierrot__pantaloon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D8)"/>
+      <stop offset="1" stop-color="var(--c1, #CFC6B3)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-pierrot__collaret" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C3CDEA)"/>
+      <stop offset="1" stop-color="var(--c2, #9FADD4)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-pierrot__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #C2A2BE)"/>
+      <stop offset="1" stop-color="var(--c4, #A183A0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- very wide gathered pantaloons: a straight column to the ankle -->
+  <g class="sp-shadow">
+    <path d="M124 302 H276 Q280 400 278 480 L276 540 Q240 550 206 540 Q200 528 194 540 Q160 550 124 540 L122 480 Q120 400 124 302 Z"
+          fill="url(#adult-male-costume-pierrot__pantaloon)"/>
+  </g>
+  <!-- eight gather folds -->
+  <g stroke="var(--c3, #9C8C6F)" stroke-width="3" stroke-opacity="0.45" fill="none" stroke-linecap="round">
+    <path d="M138 318 q-4 108 0 214"/>
+    <path d="M156 318 q-4 108 0 216"/>
+    <path d="M174 318 q-3 108 0 218"/>
+    <path d="M192 318 q-2 108 0 218"/>
+    <path d="M208 318 q2 108 0 218"/>
+    <path d="M226 318 q3 108 0 218"/>
+    <path d="M244 318 q4 108 0 216"/>
+    <path d="M262 318 q4 108 0 214"/>
+  </g>
+
+  <!-- loose straight blouse to the hip, widest at the shoulder -->
+  <g class="sp-shadow">
+    <path d="M134 152 H266 Q268 180 264 214 L258 330 H142 L136 214 Q132 180 134 152 Z"
+          fill="url(#adult-male-costume-pierrot__blouse)"/>
+  </g>
+
+  <!-- wide three quarter bell sleeves, forearms left bare -->
+  <g class="sp-shadow">
+    <path d="M138 160 Q118 200 106 240 Q98 266 96 286 Q124 296 152 286 Q152 244 156 206 Q158 178 164 160 Z"
+          fill="url(#adult-male-costume-pierrot__blouse)"/>
+    <path d="M262 160 Q282 200 294 240 Q302 266 304 286 Q276 296 248 286 Q248 244 244 206 Q242 178 236 160 Z"
+          fill="url(#adult-male-costume-pierrot__blouse)"/>
+  </g>
+  <path d="M98 284 q28 8 52 0" stroke="var(--c2, #9FADD4)" stroke-width="5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M302 284 q-28 8 -52 0" stroke="var(--c2, #9FADD4)" stroke-width="5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <!-- soft sash at the low waist -->
+  <path d="M140 296 q60 16 120 0 q2 12 0 20 q-60 16 -120 0 Z" fill="var(--c3, #9C8C6F)" fill-opacity="0.85"/>
+
+  <!-- the large FLAT frilled disc collaret, lying on the shoulders -->
+  <g class="sp-shadow">
+    <path d="M128 166 Q128 151 146 150 H254 Q272 151 272 166 Q272 182 252 188 Q200 192 148 186 Q128 182 128 166 Z"
+          fill="url(#adult-male-costume-pierrot__collaret)"/>
+  </g>
+  <g fill="url(#adult-male-costume-pierrot__collaret)">
+    <circle cx="132" cy="176" r="10"/>
+    <circle cx="152" cy="186" r="10"/>
+    <circle cx="176" cy="190" r="10"/>
+    <circle cx="200" cy="192" r="10"/>
+    <circle cx="224" cy="190" r="10"/>
+    <circle cx="248" cy="186" r="10"/>
+    <circle cx="268" cy="176" r="10"/>
+  </g>
+  <path d="M138 168 q62 14 124 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- integral soft slippers -->
+  <g class="sp-shadow">
+    <path d="M150 534 H198 V564 Q198 570 192 570 H144 Q134 570 133 561 Q134 546 148 540 Z"
+          fill="url(#adult-male-costume-pierrot__slipper)"/>
+    <path d="M250 534 H202 V564 Q202 570 208 570 H256 Q266 570 267 561 Q266 546 252 540 Z"
+          fill="url(#adult-male-costume-pierrot__slipper)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 208 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

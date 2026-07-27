@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: volume (a near spherical body from armpit to knee) and shoulder (narrow ribbed
+       tube arms held out away from the body at about 45 degrees). -->
+  <!-- The neck ring gathers the sphere at y 158 and goes no higher. -->
+  <defs>
+    <linearGradient id="adult-male-costume-inflatable-suit__ball" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9DC3DE)"/>
+      <stop offset="1" stop-color="var(--c1, #7EA2BF)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-inflatable-suit__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8CCE5)"/>
+      <stop offset="1" stop-color="var(--c1, #85A9C6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-inflatable-suit__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EDE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #D2CDBB)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-inflatable-suit__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #4B4238)"/>
+      <stop offset="1" stop-color="var(--c4, #37302A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow ribbed tube arms, held out at 45 degrees -->
+  <g class="sp-shadow">
+    <path d="M129 226 L151 246 L89 310 Q78 321 68 311 Q58 300 67 290 Z"
+          fill="url(#adult-male-costume-inflatable-suit__tube)"/>
+    <path d="M271 226 L249 246 L311 310 Q322 321 332 311 Q342 300 333 290 Z"
+          fill="url(#adult-male-costume-inflatable-suit__tube)"/>
+  </g>
+  <g stroke="var(--c2, #D2CDBB)" stroke-width="3.4" stroke-opacity="0.75"
+     fill="none" stroke-linecap="round">
+    <path d="M138.1 256.5 L119.5 238.5"/>
+    <path d="M129.5 265.5 L110.9 247.5"/>
+    <path d="M120.8 274.4 L102.2 256.4"/>
+    <path d="M112.1 283.4 L93.5 265.4"/>
+    <path d="M103.4 292.4 L84.8 274.4"/>
+    <path d="M94.7 301.3 L76.1 283.3"/>
+    <path d="M261.9 256.5 L280.5 238.5"/>
+    <path d="M270.5 265.5 L289.1 247.5"/>
+    <path d="M279.2 274.4 L297.8 256.4"/>
+    <path d="M287.9 283.4 L306.5 265.4"/>
+    <path d="M296.6 292.4 L315.2 274.4"/>
+    <path d="M305.3 301.3 L323.9 283.3"/>
+  </g>
+
+  <!-- narrow ribbed tube legs -->
+  <g class="sp-shadow">
+    <rect x="164" y="396" width="32" height="146" rx="14" fill="url(#adult-male-costume-inflatable-suit__tube)"/>
+    <rect x="204" y="396" width="32" height="146" rx="14" fill="url(#adult-male-costume-inflatable-suit__tube)"/>
+  </g>
+  <g stroke="var(--c2, #D2CDBB)" stroke-width="3.4" stroke-opacity="0.75"
+     fill="none" stroke-linecap="round">
+    <path d="M166 420 h28 M166 444 h28 M166 468 h28 M166 492 h28 M166 516 h28"/>
+    <path d="M206 420 h28 M206 444 h28 M206 468 h28 M206 492 h28 M206 516 h28"/>
+  </g>
+
+  <!-- the gathered neck funnel, from the ring down into the sphere -->
+  <g class="sp-shadow">
+    <path d="M182 164 H218 L248 226 H152 Z" fill="url(#adult-male-costume-inflatable-suit__ball)"/>
+  </g>
+
+  <!-- the near spherical body -->
+  <g class="sp-shadow">
+    <circle cx="200" cy="310" r="104" fill="url(#adult-male-costume-inflatable-suit__ball)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M136 236 q64 -22 128 0"/>
+    <path d="M110 300 q90 -18 180 0"/>
+    <path d="M126 362 q74 20 148 0"/>
+  </g>
+
+  <!-- tight neck ring -->
+  <rect x="183" y="158" width="34" height="20" rx="10" fill="url(#adult-male-costume-inflatable-suit__ring)"/>
+
+  <!-- small round fan pod at the waist -->
+  <circle cx="272" cy="392" r="15" fill="var(--c3, #5C6B94)"/>
+  <circle cx="272" cy="392" r="7" fill="var(--c2, #EDE9DA)" fill-opacity="0.7"/>
+  <path d="M262 380 q10 -6 20 0" stroke="var(--c2, #EDE9DA)" stroke-width="3"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- integral shoes -->
+  <g class="sp-shadow">
+    <path d="M160 534 H200 V566 Q200 570 194 570 H152 Q142 570 142 561 Q143 546 160 534 Z"
+          fill="url(#adult-male-costume-inflatable-suit__shoe)"/>
+    <path d="M240 534 H200 V566 Q200 570 206 570 H248 Q258 570 258 561 Q257 546 240 534 Z"
+          fill="url(#adult-male-costume-inflatable-suit__shoe)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 244 q52 22 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

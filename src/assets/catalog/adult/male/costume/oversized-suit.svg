@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: closure (open front, one enormous button at the waist) and volume (wide sagging
+       and boxy, with trouser hems puddling in folds at the ground line). -->
+  <!-- The shoulder pads exaggerate OUTWARD, not up: their top edge is y 150 and no higher,
+       so the face stays clear. No cane, no prop. -->
+  <defs>
+    <linearGradient id="adult-male-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C7E5E)"/>
+      <stop offset="1" stop-color="var(--c1, #7E6547)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-oversized-suit__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A6886A)"/>
+      <stop offset="1" stop-color="var(--c1, #856C4E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-oversized-suit__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A9869F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFEADC)"/>
+      <stop offset="1" stop-color="var(--c3, #D5CFBE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shoes, sitting deep inside the puddled hems -->
+  <g class="sp-shadow">
+    <path d="M158 552 H196 V566 Q196 570 191 570 H154 Q148 570 148 565 Q149 557 158 552 Z"
+          fill="var(--c4, #3F362C)"/>
+    <path d="M242 552 H204 V566 Q204 570 209 570 H246 Q252 570 252 565 Q251 557 242 552 Z"
+          fill="var(--c4, #3F362C)"/>
+  </g>
+
+  <!-- trousers, hems puddling into soft folds at the ground line -->
+  <g class="sp-shadow">
+    <path d="M156 340 H198 Q200 460 198 520 Q204 546 194 566 Q168 570 146 564 Q140 550 148 526 Q152 440 156 340 Z"
+          fill="url(#adult-male-costume-oversized-suit__lapel)"/>
+    <path d="M244 340 H202 Q200 460 202 520 Q196 546 206 566 Q232 570 254 564 Q260 550 252 526 Q248 440 244 340 Z"
+          fill="url(#adult-male-costume-oversized-suit__lapel)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M148 544 q22 8 44 2"/>
+    <path d="M150 556 q20 8 42 2"/>
+    <path d="M252 544 q-22 8 -44 2"/>
+    <path d="M250 556 q-20 8 -42 2"/>
+  </g>
+
+  <!-- shirt showing in the open front -->
+  <rect x="174" y="154" width="52" height="200" rx="10" fill="url(#adult-male-costume-oversized-suit__shirt)"/>
+  <path d="M200 168 v170" stroke="var(--c1, #7E6547)" stroke-width="2.5"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder pads: projecting OUTWARD to x 98 and x 302, never upward -->
+  <g class="sp-shadow">
+    <path d="M98 172 Q98 150 122 150 H150 Q156 168 154 188 Q126 190 104 186 Q98 180 98 172 Z"
+          fill="url(#adult-male-costume-oversized-suit__pad)"/>
+    <path d="M302 172 Q302 150 278 150 H250 Q244 168 246 188 Q274 190 296 186 Q302 180 302 172 Z"
+          fill="url(#adult-male-costume-oversized-suit__pad)"/>
+  </g>
+
+  <!-- sleeves swallowing the hands: wide open mouths at y 372, no hand visible -->
+  <g class="sp-shadow">
+    <path d="M104 186 H154 Q158 250 156 310 L154 356 Q152 372 128 372 Q102 372 100 356 L100 310 Q98 250 104 186 Z"
+          fill="url(#adult-male-costume-oversized-suit__jacket)"/>
+    <path d="M296 186 H246 Q242 250 244 310 L246 356 Q248 372 272 372 Q298 372 300 356 L300 310 Q302 250 296 186 Z"
+          fill="url(#adult-male-costume-oversized-suit__jacket)"/>
+  </g>
+  <path d="M104 356 q26 10 50 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M296 356 q-26 10 -50 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- the jacket body: open fronted, hem at mid calf -->
+  <g class="sp-shadow">
+    <path d="M116 152 H284 Q290 176 288 210 L286 500 H222 L220 206 Q200 190 180 206 L178 500 H114 L112 210 Q110 176 116 152 Z"
+          fill="url(#adult-male-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- wide lapels -->
+  <g fill="url(#adult-male-costume-oversized-suit__lapel)">
+    <path d="M120 158 L180 206 L172 272 L140 234 Q124 196 120 158 Z"/>
+    <path d="M280 158 L220 206 L228 272 L260 234 Q276 196 280 158 Z"/>
+  </g>
+
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="300" r="17" fill="var(--c4, #3F362C)"/>
+  <circle cx="200" cy="300" r="9" fill="#FFFFFF" fill-opacity="0.22"/>
+  <g fill="var(--c3, #D5CFBE)">
+    <circle cx="195" cy="296" r="2.4"/>
+    <circle cx="205" cy="296" r="2.4"/>
+    <circle cx="195" cy="305" r="2.4"/>
+    <circle cx="205" cy="305" r="2.4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M136 200 q64 20 128 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

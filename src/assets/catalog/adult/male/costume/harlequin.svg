@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: closure (a 12 unit waist seam plus a throat ruff break the suit into THREE
+       regions) and volume (skin close, with wrists and ankles visibly tapered). -->
+  <!-- Checked against the existing web-runner: web-runner is one unbroken lattice over a
+       rectangular sleeve and leg set; this is a three region suit built from tapered paths,
+       so no major form is shared. -->
+  <!-- The throat ruff is deliberately SMALL and shallow (under 25 units of projection past
+       the neck) because a separate ruff family ships in the necklace slot and necklace draws
+       ABOVE costume: a worn ruff must layer over this one and read as a single bigger ruff. -->
+  <defs>
+    <linearGradient id="adult-male-costume-harlequin__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c1, #A886A4)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BE99BA)"/>
+      <stop offset="1" stop-color="var(--c1, #9E7C9A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-harlequin__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6C7CA6)"/>
+      <stop offset="1" stop-color="var(--c3, #55648B)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-harlequin__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c4, #362E28)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-harlequin__lozenge" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 0 L22 11 L11 22 L0 11 Z" fill="var(--c2, #EFE7D6)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="adult-male-costume-harlequin__upperclip">
+      <path d="M138 176 Q140 152 166 150 H234 Q260 152 262 176 V294 H138 Z"/>
+    </clipPath>
+    <clipPath id="adult-male-costume-harlequin__lowerclip">
+      <path d="M138 306 H262 Q268 336 258 356 H142 Q132 336 138 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- REGION ONE: the bodice, from the standing collar to the waist seam -->
+  <g class="sp-shadow">
+    <path d="M138 176 Q140 152 166 150 H234 Q260 152 262 176 V294 H138 Z"
+          fill="url(#adult-male-costume-harlequin__suit)"/>
+  </g>
+  <g clip-path="url(#adult-male-costume-harlequin__upperclip)">
+    <rect x="132" y="150" width="140" height="152" fill="url(#adult-male-costume-harlequin__lozenge)"/>
+  </g>
+
+  <!-- tapered sleeves, narrowing visibly to the wrist -->
+  <g class="sp-shadow">
+    <path d="M104 164 H138 Q142 196 138 222 L130 318 Q128 330 118 330 Q108 330 107 318 L104 222 Q100 196 104 164 Z"
+          fill="url(#adult-male-costume-harlequin__suit)"/>
+    <path d="M296 164 H262 Q258 196 262 222 L270 318 Q272 330 282 330 Q292 330 293 318 L296 222 Q300 196 296 164 Z"
+          fill="url(#adult-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- REGION TWO: hip yoke below the seam -->
+  <g class="sp-shadow">
+    <path d="M138 306 H262 Q268 336 258 356 H142 Q132 336 138 306 Z"
+          fill="url(#adult-male-costume-harlequin__lower)"/>
+  </g>
+  <g clip-path="url(#adult-male-costume-harlequin__lowerclip)">
+    <rect x="132" y="302" width="140" height="60" fill="url(#adult-male-costume-harlequin__lozenge)"/>
+  </g>
+
+  <!-- REGION THREE: tapered legs to a narrow ankle -->
+  <g class="sp-shadow">
+    <path d="M148 346 H197 Q199 440 195 520 Q194 534 186 534 H170 Q162 534 161 520 Q154 440 148 346 Z"
+          fill="url(#adult-male-costume-harlequin__lower)"/>
+    <path d="M252 346 H203 Q201 440 205 520 Q206 534 214 534 H230 Q238 534 239 520 Q246 440 252 346 Z"
+          fill="url(#adult-male-costume-harlequin__lower)"/>
+  </g>
+
+  <!-- the waist seam: a clear 12 unit band across the full 130 unit width -->
+  <rect x="135" y="294" width="130" height="12" rx="4" fill="url(#adult-male-costume-harlequin__band)"/>
+
+  <!-- narrow standing collar: rises to the ceiling line and stops -->
+  <path d="M174 150 H226 Q228 160 226 170 H174 Q172 160 174 150 Z"
+        fill="url(#adult-male-costume-harlequin__band)"/>
+
+  <!-- small soft gathered ruff, shallow so a necklace ruff layers over it -->
+  <g class="sp-shadow">
+    <path d="M164 158 Q200 150 236 158 Q240 170 232 178 Q200 186 168 178 Q160 170 164 158 Z"
+          fill="var(--c2, #EFE7D6)"/>
+  </g>
+  <g fill="var(--c2, #EFE7D6)">
+    <circle cx="170" cy="176" r="7"/>
+    <circle cx="185" cy="180" r="7"/>
+    <circle cx="200" cy="182" r="7"/>
+    <circle cx="215" cy="180" r="7"/>
+    <circle cx="230" cy="176" r="7"/>
+  </g>
+
+  <!-- tapered wrist and ankle bindings -->
+  <g fill="url(#adult-male-costume-harlequin__band)">
+    <rect x="106" y="318" width="24" height="12" rx="6"/>
+    <rect x="270" y="318" width="24" height="12" rx="6"/>
+    <rect x="162" y="520" width="32" height="12" rx="6"/>
+    <rect x="206" y="520" width="32" height="12" rx="6"/>
+  </g>
+
+  <!-- integral soft slippers -->
+  <g class="sp-shadow">
+    <path d="M160 526 H198 V566 Q198 570 192 570 H152 Q140 570 138 560 Q138 542 154 538 Z"
+          fill="url(#adult-male-costume-harlequin__slipper)"/>
+    <path d="M240 526 H202 V566 Q202 570 208 570 H248 Q260 570 262 560 Q262 542 246 538 Z"
+          fill="url(#adult-male-costume-harlequin__slipper)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 194 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

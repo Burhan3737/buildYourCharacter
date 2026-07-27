@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Food Costume" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: shoulder (two narrow straps carrying one free hanging slab) and volume (a single
+       convex slab with the arms and legs entirely OUTSIDE it). -->
+  <!-- The stalk finial tops out at y 160, well clear of the ceiling. -->
+  <defs>
+    <linearGradient id="adult-male-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F8CE7F)"/>
+      <stop offset="1" stop-color="var(--c1, #DCA948)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-food-costume__flesh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0E3C4)"/>
+      <stop offset="1" stop-color="var(--c3, #D9C79F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7CCBB8)"/>
+      <stop offset="1" stop-color="var(--c2, #559C8B)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-food-costume__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6E7CA8)"/>
+      <stop offset="1" stop-color="var(--c4, #55628B)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-food-costume__pips" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="24">
+      <ellipse cx="12" cy="12" rx="4" ry="6" fill="var(--c2, #559C8B)" fill-opacity="0.45"/>
+    </pattern>
+    <clipPath id="adult-male-costume-food-costume__fleshclip">
+      <path d="M200 214 Q262 214 262 300 Q262 386 200 386 Q138 386 138 300 Q138 214 200 214 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- two narrow shoulder straps -->
+  <g class="sp-shadow">
+    <path d="M152 152 H164 L174 200 H158 Z" fill="url(#adult-male-costume-food-costume__strap)"/>
+    <path d="M248 152 H236 L226 200 H242 Z" fill="url(#adult-male-costume-food-costume__strap)"/>
+  </g>
+
+  <!-- the stalk and leaf finial, standing at the top edge of the slab -->
+  <g class="sp-shadow">
+    <path d="M193 188 Q192 168 200 160 Q208 168 207 188 Z" fill="url(#adult-male-costume-food-costume__leaf)"/>
+    <path d="M194 172 Q166 160 158 176 Q170 190 194 180 Z" fill="url(#adult-male-costume-food-costume__leaf)"/>
+    <path d="M206 172 Q234 160 242 176 Q230 190 206 180 Z" fill="url(#adult-male-costume-food-costume__leaf)"/>
+  </g>
+  <path d="M166 172 q14 4 24 8 M234 172 q-14 4 -24 8" stroke="#FFFFFF" stroke-opacity="0.35"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- ONE large convex slab, hung free from the straps, torso to mid thigh -->
+  <g class="sp-shadow">
+    <path d="M200 186 Q288 186 288 300 Q288 410 200 410 Q112 410 112 300 Q112 186 200 186 Z"
+          fill="url(#adult-male-costume-food-costume__slab)"/>
+  </g>
+
+  <!-- inner flesh field with a soft pip rhythm -->
+  <path d="M200 214 Q262 214 262 300 Q262 386 200 386 Q138 386 138 300 Q138 214 200 214 Z"
+        fill="url(#adult-male-costume-food-costume__flesh)"/>
+  <g clip-path="url(#adult-male-costume-food-costume__fleshclip)">
+    <rect x="136" y="212" width="128" height="176" fill="url(#adult-male-costume-food-costume__pips)"/>
+  </g>
+  <path d="M138 300 q62 -14 124 0" stroke="var(--c1, #DCA948)" stroke-width="4"
+        stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+
+  <!-- strap buckles where the straps meet the slab -->
+  <g fill="var(--c4, #55628B)">
+    <rect x="156" y="192" width="20" height="12" rx="5"/>
+    <rect x="224" y="192" width="20" height="12" rx="5"/>
+  </g>
+
+  <!-- arms and legs stay bare and OUTSIDE the slab: only simple shoes are drawn -->
+  <g class="sp-shadow">
+    <path d="M158 538 H200 V566 Q200 570 194 570 H148 Q140 570 140 562 Q141 548 158 538 Z"
+          fill="url(#adult-male-costume-food-costume__strap)"/>
+    <path d="M242 538 H200 V566 Q200 570 206 570 H252 Q260 570 260 562 Q259 548 242 538 Z"
+          fill="url(#adult-male-costume-food-costume__strap)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 226 q52 22 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: closure (two narrow braces worn over a high waist) and hem (a straight trouser
+       cropped clear above the ankle, leaving 24 units of bare leg above the shoe). -->
+  <defs>
+    <linearGradient id="adult-male-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6580)"/>
+      <stop offset="1" stop-color="var(--c1, #444E66)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6E6152)"/>
+      <stop offset="1" stop-color="var(--c4, #564B3F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B0743C)"/>
+      <stop offset="1" stop-color="var(--c3, #8E5B2C)"/>
+    </linearGradient>
+    <pattern id="adult-male-costume-mime__bands" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="8" fill="var(--c2, #E4E0D2)" fill-opacity="0.85"/>
+    </pattern>
+    <clipPath id="adult-male-costume-mime__bodyclip">
+      <path d="M158 156 Q136 158 134 180 L132 286 H268 L266 180 Q264 158 242 156 Z"/>
+      <path d="M107 166 H137 Q141 194 139 220 L137 328 Q136 340 122 340 Q108 340 107 328 Z"/>
+      <path d="M293 166 H263 Q259 194 261 220 L263 328 Q264 340 278 340 Q292 340 293 328 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- high waisted straight trousers, cropped clear above the ankle -->
+  <g class="sp-shadow">
+    <rect x="134" y="286" width="132" height="58" rx="16" fill="url(#adult-male-costume-mime__trouser)"/>
+    <rect x="158" y="338" width="40" height="178" rx="8" fill="url(#adult-male-costume-mime__trouser)"/>
+    <rect x="202" y="338" width="40" height="178" rx="8" fill="url(#adult-male-costume-mime__trouser)"/>
+  </g>
+  <path d="M162 510 h32 M206 510 h32" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- close boat neck long sleeve banded body -->
+  <g class="sp-shadow">
+    <path d="M158 156 Q136 158 134 180 L132 286 H268 L266 180 Q264 158 242 156 Z"
+          fill="url(#adult-male-costume-mime__body)"/>
+    <path d="M107 166 H137 Q141 194 139 220 L137 328 Q136 340 122 340 Q108 340 107 328 Z"
+          fill="url(#adult-male-costume-mime__body)"/>
+    <path d="M293 166 H263 Q259 194 261 220 L263 328 Q264 340 278 340 Q292 340 293 328 Z"
+          fill="url(#adult-male-costume-mime__body)"/>
+  </g>
+  <!-- the banding: a 16 unit rhythm read through c2 -->
+  <g clip-path="url(#adult-male-costume-mime__bodyclip)">
+    <rect x="104" y="156" width="192" height="188" fill="url(#adult-male-costume-mime__bands)"/>
+  </g>
+  <!-- boat neck bind -->
+  <path d="M158 157 H242" stroke="var(--c2, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- two narrow braces, over the shoulders and down to the high waist -->
+  <g class="sp-shadow">
+    <path d="M164 288 H178 V196 Q178 170 170 158 L156 162 Q164 176 164 200 Z"
+          fill="url(#adult-male-costume-mime__brace)"/>
+    <path d="M236 288 H222 V196 Q222 170 230 158 L244 162 Q236 176 236 200 Z"
+          fill="url(#adult-male-costume-mime__brace)"/>
+  </g>
+  <g fill="var(--c3, #8E5B2C)">
+    <rect x="162" y="278" width="18" height="14" rx="4"/>
+    <rect x="220" y="278" width="18" height="14" rx="4"/>
+  </g>
+
+  <!-- wrist cuff bands, reading as a glove edge -->
+  <g fill="var(--c3, #B0743C)">
+    <rect x="105" y="326" width="34" height="14" rx="7"/>
+    <rect x="261" y="326" width="34" height="14" rx="7"/>
+  </g>
+
+  <!-- integral flat shoes -->
+  <g class="sp-shadow">
+    <path d="M154 540 H200 V566 Q200 570 195 570 H146 Q138 570 138 562 Q138 548 154 540 Z"
+          fill="url(#adult-male-costume-mime__trouser)"/>
+    <path d="M246 540 H200 V566 Q200 570 205 570 H254 Q262 570 262 562 Q262 548 246 540 Z"
+          fill="url(#adult-male-costume-mime__trouser)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M150 184 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

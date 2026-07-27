@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: hem (a skirt of nine separate overlapping strips with genuine visible gaps) and
+       volume (a moulded cuirass narrowing sharply at the waist). -->
+  <!-- The hoplite is NOT the helmet. There is no helmet in this file, ever. -->
+  <defs>
+    <linearGradient id="adult-male-costume-hoplite__cuirass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C68B4A)"/>
+      <stop offset="1" stop-color="var(--c1, #A26B33)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-hoplite__strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9B7A56)"/>
+      <stop offset="1" stop-color="var(--c2, #7A5D3F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-hoplite__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EAE4D2)"/>
+      <stop offset="1" stop-color="var(--c3, #CFC7B0)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-hoplite__greave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9455)"/>
+      <stop offset="1" stop-color="var(--c1, #A77037)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short under tunic beneath the cuirass -->
+  <g class="sp-shadow">
+    <path d="M142 288 H258 Q262 312 260 332 H140 Q138 312 142 288 Z"
+          fill="url(#adult-male-costume-hoplite__tunic)"/>
+  </g>
+
+  <!-- NINE separate overlapping strips with genuine gaps between them -->
+  <g class="sp-shadow">
+    <path d="M117 316 H131 Q133 346 131 372 H117 Q115 346 117 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M136 316 H150 Q152 346 150 372 H136 Q134 346 136 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M155 316 H169 Q171 346 169 372 H155 Q153 346 155 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M174 316 H188 Q190 346 188 372 H174 Q172 346 174 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M193 316 H207 Q209 346 207 372 H193 Q191 346 193 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M212 316 H226 Q228 346 226 372 H212 Q210 346 212 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M231 316 H245 Q247 346 245 372 H231 Q229 346 231 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M250 316 H264 Q266 346 264 372 H250 Q248 346 250 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+    <path d="M269 316 H283 Q285 346 283 372 H269 Q267 346 269 316 Z" fill="url(#adult-male-costume-hoplite__strip)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M119 362 h10 M138 362 h10 M157 362 h10 M176 362 h10 M195 362 h10
+             M214 362 h10 M233 362 h10 M252 362 h10 M271 362 h10"/>
+  </g>
+
+  <!-- sleeveless moulded cuirass, narrowing sharply to the waist -->
+  <g class="sp-shadow">
+    <path d="M132 150 H268 Q272 178 270 206 L262 268 Q256 292 252 302 H148 Q144 292 138 268 L130 206 Q128 178 132 150 Z"
+          fill="url(#adult-male-costume-hoplite__cuirass)"/>
+  </g>
+  <!-- moulded pectoral and abdominal modelling, no emblem -->
+  <g fill="none" stroke="var(--c2, #7A5D3F)" stroke-width="4" stroke-opacity="0.5" stroke-linecap="round">
+    <path d="M156 208 q22 18 44 0 q22 18 44 0"/>
+    <path d="M166 240 q34 12 68 0"/>
+    <path d="M170 268 q30 10 60 0"/>
+    <path d="M200 214 v76"/>
+  </g>
+
+  <!-- two stiff shoulder flaps folded forward from the back, laced down to the chest -->
+  <g class="sp-shadow">
+    <path d="M134 150 H184 Q186 176 182 198 Q158 200 136 196 Q130 174 134 150 Z"
+          fill="url(#adult-male-costume-hoplite__cuirass)"/>
+    <path d="M266 150 H216 Q214 176 218 198 Q242 200 264 196 Q270 174 266 150 Z"
+          fill="url(#adult-male-costume-hoplite__cuirass)"/>
+  </g>
+  <g stroke="var(--c3, #CFC7B0)" stroke-width="4.5" fill="none" stroke-linecap="round">
+    <path d="M148 198 q4 16 2 30"/>
+    <path d="M170 200 q4 16 2 30"/>
+    <path d="M252 198 q-4 16 -2 30"/>
+    <path d="M230 200 q-4 16 -2 30"/>
+  </g>
+  <g fill="var(--c3, #EAE4D2)">
+    <circle cx="150" cy="230" r="5"/>
+    <circle cx="172" cy="232" r="5"/>
+    <circle cx="250" cy="230" r="5"/>
+    <circle cx="228" cy="232" r="5"/>
+  </g>
+
+  <!-- hard greave plates down each shin -->
+  <g class="sp-shadow">
+    <path d="M156 448 H198 Q200 490 198 520 Q196 534 178 534 Q160 534 158 520 Q154 490 156 448 Z"
+          fill="url(#adult-male-costume-hoplite__greave)"/>
+    <path d="M244 448 H202 Q200 490 202 520 Q204 534 222 534 Q240 534 242 520 Q246 490 244 448 Z"
+          fill="url(#adult-male-costume-hoplite__greave)"/>
+  </g>
+  <path d="M178 460 v64 M222 460 v64" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- integral sandals -->
+  <g class="sp-shadow">
+    <path d="M158 538 H200 V562 Q200 570 192 570 H152 Q144 570 144 562 Q146 548 158 538 Z"
+          fill="var(--c4, #6E5C46)"/>
+    <path d="M242 538 H200 V562 Q200 570 208 570 H248 Q256 570 256 562 Q254 548 242 538 Z"
+          fill="var(--c4, #6E5C46)"/>
+  </g>
+  <g stroke="var(--c4, #6E5C46)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M162 534 q16 6 32 0"/>
+    <path d="M238 534 q-16 6 -32 0"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 184 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

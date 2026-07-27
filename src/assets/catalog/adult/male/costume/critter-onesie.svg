@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Critter Onesie" data-family="critter-onesie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: closure (a full length centre zip, with the hood worn DOWN and lying flat across
+       the shoulders) and volume (thick plush, with a round tail breaking the hip outline). -->
+  <!-- The hood is worn down on purpose: costume draws above the face, so a hood up would
+       erase the character. A flat mass pooled behind the neck reads as hooded from the
+       silhouette alone. Its top edge is y 150. -->
+  <defs>
+    <linearGradient id="adult-male-costume-critter-onesie__plush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B29B78)"/>
+      <stop offset="1" stop-color="var(--c1, #93805F)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-critter-onesie__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EDE7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #D3CBB6)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-critter-onesie__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6BCB1)"/>
+      <stop offset="1" stop-color="var(--c3, #E09C90)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-critter-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A08B6B)"/>
+      <stop offset="1" stop-color="var(--c1, #83714F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short round plush tail, standing clear of the hip outline -->
+  <g class="sp-shadow">
+    <circle cx="280" cy="338" r="22" fill="url(#adult-male-costume-critter-onesie__hood)"/>
+  </g>
+
+  <!-- plush legs -->
+  <g class="sp-shadow">
+    <path d="M148 336 H196 Q200 440 196 528 H152 Q146 440 148 336 Z"
+          fill="url(#adult-male-costume-critter-onesie__plush)"/>
+    <path d="M252 336 H204 Q200 440 204 528 H248 Q254 440 252 336 Z"
+          fill="url(#adult-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- plush sleeves -->
+  <g class="sp-shadow">
+    <path d="M104 176 Q100 200 102 226 L106 326 Q108 340 122 340 Q136 340 136 326 L134 226 Q136 200 132 176 Z"
+          fill="url(#adult-male-costume-critter-onesie__plush)"/>
+    <path d="M296 176 Q300 200 298 226 L294 326 Q292 340 278 340 Q264 340 264 326 L266 226 Q264 200 268 176 Z"
+          fill="url(#adult-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- thick plush all in one body -->
+  <g class="sp-shadow">
+    <path d="M126 180 Q128 152 156 150 H244 Q272 152 274 180 V300 Q274 330 254 340 H146 Q126 330 126 300 Z"
+          fill="url(#adult-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- contrast belly panel -->
+  <ellipse cx="200" cy="260" rx="42" ry="60" fill="url(#adult-male-costume-critter-onesie__belly)"/>
+  <path d="M172 232 q28 -8 56 0 M172 288 q28 8 56 0" stroke="#FFFFFF" stroke-opacity="0.35"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft hood, lying FLAT DOWN across the shoulders -->
+  <g class="sp-shadow">
+    <path d="M148 150 H252 Q254 172 240 182 Q200 190 160 182 Q146 170 148 150 Z"
+          fill="url(#adult-male-costume-critter-onesie__hood)"/>
+  </g>
+  <path d="M156 158 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- full length centre zip with a small pull -->
+  <path d="M200 152 V330" stroke="var(--c4, #4C4034)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 156 V326" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <rect x="193" y="326" width="14" height="18" rx="6" fill="var(--c4, #4C4034)"/>
+  <circle cx="200" cy="348" r="6" fill="var(--c4, #4C4034)"/>
+
+  <!-- bulky cuffed wrists -->
+  <g fill="url(#adult-male-costume-critter-onesie__cuff)">
+    <rect x="100" y="322" width="40" height="22" rx="11"/>
+    <rect x="260" y="322" width="40" height="22" rx="11"/>
+  </g>
+  <!-- bulky cuffed ankles -->
+  <g fill="url(#adult-male-costume-critter-onesie__cuff)">
+    <rect x="142" y="520" width="58" height="24" rx="12"/>
+    <rect x="200" y="520" width="58" height="24" rx="12"/>
+  </g>
+
+  <!-- padded feet -->
+  <g class="sp-shadow">
+    <path d="M150 538 H198 V562 Q198 570 190 570 H142 Q132 570 132 560 Q133 546 150 538 Z"
+          fill="url(#adult-male-costume-critter-onesie__cuff)"/>
+    <path d="M250 538 H202 V562 Q202 570 210 570 H258 Q268 570 268 560 Q267 546 250 538 Z"
+          fill="url(#adult-male-costume-critter-onesie__cuff)"/>
+  </g>
+  <g fill="var(--c3, #E09C90)">
+    <circle cx="148" cy="558" r="7"/>
+    <circle cx="163" cy="562" r="6"/>
+    <circle cx="178" cy="562" r="6"/>
+    <circle cx="252" cy="558" r="7"/>
+    <circle cx="237" cy="562" r="6"/>
+    <circle cx="222" cy="562" r="6"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M146 202 q54 20 108 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

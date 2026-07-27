@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for adult/male: no geometry above y 148 -->
+  <!-- Axes: volume (a hugely oversized gathered barrel, widest at the hip, the biggest mass
+       in the slot) and shoulder (dropped, with sleeves ballooning to a gathered wrist cuff). -->
+  <!-- The ruff spans 45 units past the neck on each side ALONG THE SHOULDER LINE but stays
+       only 26 units deep, hugging the collarbone rather than standing up. A separate ruff
+       family ships in the necklace slot, and necklace draws ABOVE costume, so a worn ruff has
+       to layer over this one and read as one bigger ruff, not two colliding ones. -->
+  <defs>
+    <linearGradient id="adult-male-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ACCBA)"/>
+      <stop offset="1" stop-color="var(--c1, #5FAB9A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-clown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #74C6B4)"/>
+      <stop offset="1" stop-color="var(--c1, #59A494)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-clown__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F1E5)"/>
+      <stop offset="1" stop-color="var(--c2, #DED6C3)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-costume-clown__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #A2825E)"/>
+      <stop offset="1" stop-color="var(--c4, #7E6547)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ballooning legs, gathered hard at the ankle -->
+  <g class="sp-shadow">
+    <path d="M146 328 Q132 396 136 466 Q138 506 152 530 H194 Q198 496 196 458 Q194 392 200 328 Z"
+          fill="url(#adult-male-costume-clown__romper)"/>
+    <path d="M254 328 Q268 396 264 466 Q262 506 248 530 H206 Q202 496 204 458 Q206 392 200 328 Z"
+          fill="url(#adult-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- ballooning sleeves, dropped from the shoulder -->
+  <g class="sp-shadow">
+    <path d="M128 172 Q96 200 90 260 Q86 304 102 334 H140 Q132 300 136 256 Q140 204 150 180 Z"
+          fill="url(#adult-male-costume-clown__sleeve)"/>
+    <path d="M272 172 Q304 200 310 260 Q314 304 298 334 H260 Q268 300 264 256 Q260 204 250 180 Z"
+          fill="url(#adult-male-costume-clown__sleeve)"/>
+  </g>
+
+  <!-- the barrel body: the widest mass in the slot, x 96 to 304 at the hip -->
+  <g class="sp-shadow">
+    <path d="M154 152 Q112 166 102 224 Q96 282 108 332 Q200 358 292 332 Q304 282 298 224 Q288 166 246 152 Z"
+          fill="url(#adult-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- gathered wrist cuffs -->
+  <g fill="url(#adult-male-costume-clown__trim)">
+    <rect x="98" y="318" width="44" height="20" rx="10"/>
+    <rect x="258" y="318" width="44" height="20" rx="10"/>
+  </g>
+  <path d="M104 322 v12 M114 321 v14 M124 321 v14 M134 322 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <path d="M264 322 v12 M274 321 v14 M284 321 v14 M294 322 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <circle cx="120" cy="346" r="14" fill="var(--skin1, #F7D2B0)"/>
+  <circle cx="280" cy="346" r="14" fill="var(--skin1, #F7D2B0)"/>
+
+  <!-- gathered ankle cuffs -->
+  <g fill="url(#adult-male-costume-clown__trim)">
+    <rect x="148" y="518" width="48" height="22" rx="11"/>
+    <rect x="204" y="518" width="48" height="22" rx="11"/>
+  </g>
+
+  <!-- big rounded shoes -->
+  <g class="sp-shadow">
+    <path d="M150 536 H198 V566 Q198 570 192 570 H130 Q118 570 118 558 Q120 544 136 540 Z"
+          fill="url(#adult-male-costume-clown__shoe)"/>
+    <path d="M250 536 H202 V566 Q202 570 208 570 H270 Q282 570 282 558 Q280 544 264 540 Z"
+          fill="url(#adult-male-costume-clown__shoe)"/>
+  </g>
+
+  <!-- deep gathered ruff: wide along the shoulder line, shallow in depth -->
+  <g class="sp-shadow">
+    <path d="M112 152 H288 Q289 164 280 170 Q243 176 200 176 Q157 176 120 170 Q111 164 112 152 Z"
+          fill="url(#adult-male-costume-clown__trim)"/>
+  </g>
+  <g fill="url(#adult-male-costume-clown__trim)">
+    <circle cx="118" cy="168" r="10"/>
+    <circle cx="140" cy="172" r="10"/>
+    <circle cx="162" cy="175" r="10"/>
+    <circle cx="184" cy="177" r="10"/>
+    <circle cx="206" cy="177" r="10"/>
+    <circle cx="228" cy="175" r="10"/>
+    <circle cx="250" cy="172" r="10"/>
+    <circle cx="272" cy="168" r="10"/>
+  </g>
+  <path d="M126 160 q36 12 74 13 q38 -1 74 -13" stroke="var(--c1, #59A494)" stroke-width="2.6"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- three oversized pom pom buttons in a vertical line down the centre front -->
+  <g fill="var(--c3, #F4A79B)">
+    <circle cx="200" cy="210" r="13"/>
+    <circle cx="200" cy="254" r="13"/>
+    <circle cx="200" cy="298" r="13"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <circle cx="196" cy="205" r="4"/>
+    <circle cx="196" cy="249" r="4"/>
+    <circle cx="196" cy="293" r="4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M140 196 q60 22 120 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>
