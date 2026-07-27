@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. Viking age Scandinavia, a historical period, drawn as dress up.
+       No horned and no winged helmet, here or in any companion family: that is a nineteenth
+       century Romantic invention and is not drawn on this project at all.
+       axes: shoulder=TWO SHORT FRONT STRAPS meeting a pair of domed oval brooches at the
+       collarbone, over a long sleeved underdress · hem=two hems, the sleeveless overdress
+       stopping at mid calf and leaving a clear band of ankle length underdress below it. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #5C6DBE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C6AC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-apron-dress__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #D6C6AC)"/>
+      <stop offset="0.45" stop-color="var(--c2, #F7EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C6AC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-apron-dress__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6DBE)"/>
+      <stop offset="1" stop-color="var(--c1, #45539B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle length long sleeved underdress -->
+    <path d="M160 344 H240 Q248 380 246 424 L252 548 Q200 562 148 548 L154 424 Q152 380 160 344 Z"
+          fill="url(#toddler-female-costume-apron-dress__under)"/>
+    <rect x="120" y="348" width="38" height="104" rx="18" fill="url(#toddler-female-costume-apron-dress__sleeve)"/>
+    <rect x="242" y="348" width="38" height="104" rx="18" fill="url(#toddler-female-costume-apron-dress__sleeve)"/>
+    <!-- shorter sleeveless woollen overdress, hem at mid calf -->
+    <path d="M168 386 H232 Q244 424 242 458 L248 522 Q200 536 152 522 L158 458 Q156 424 168 386 Z"
+          fill="url(#toddler-female-costume-apron-dress__over)"/>
+    <!-- soft turnshoes -->
+    <rect x="158" y="552" width="44" height="18" rx="7" fill="url(#toddler-female-costume-apron-dress__shoe)"/>
+    <rect x="198" y="552" width="44" height="18" rx="7" fill="url(#toddler-female-costume-apron-dress__shoe)"/>
+  </g>
+
+  <!-- the two short front straps -->
+  <g fill="var(--c1, #5C6DBE)">
+    <rect x="166" y="364" width="14" height="28" rx="5"/>
+    <rect x="221" y="364" width="14" height="28" rx="5"/>
+  </g>
+
+  <!-- a pair of domed oval brooches at the collarbone -->
+  <g>
+    <ellipse cx="172" cy="364" rx="14" ry="11" fill="var(--c3, #E0AA55)"/>
+    <ellipse cx="172" cy="361" rx="8" ry="5.5" fill="var(--c3, #F6CE83)"/>
+    <ellipse cx="228" cy="364" rx="14" ry="11" fill="var(--c3, #E0AA55)"/>
+    <ellipse cx="228" cy="361" rx="8" ry="5.5" fill="var(--c3, #F6CE83)"/>
+  </g>
+
+  <!-- the bead swag strung between the brooches -->
+  <path d="M174 370 Q200 404 226 370" stroke="var(--c3, #C08D34)" stroke-width="3" fill="none"
+        stroke-linecap="round"/>
+  <g fill="var(--c3, #F6CE83)">
+    <circle cx="180" cy="377" r="4.6"/>
+    <circle cx="187" cy="383" r="4.6"/>
+    <circle cx="193" cy="386" r="4.6"/>
+    <circle cx="200" cy="387" r="4.6"/>
+    <circle cx="207" cy="386" r="4.6"/>
+    <circle cx="213" cy="383" r="4.6"/>
+    <circle cx="220" cy="377" r="4.6"/>
+  </g>
+
+  <!-- small cluster of tools on a chain at one hip -->
+  <path d="M170 374 Q160 406 156 438" stroke="var(--c3, #C08D34)" stroke-width="3.4" fill="none"
+        stroke-linecap="round"/>
+  <g fill="var(--c3, #E0AA55)">
+    <rect x="146" y="436" width="10" height="26" rx="5"/>
+    <rect x="158" y="436" width="10" height="20" rx="5"/>
+    <circle cx="153" cy="470" r="7"/>
+  </g>
+
+  <!-- woven trim band at the overdress hem and a band at each cuff -->
+  <path d="M152 508 Q200 522 248 508 L249 520 Q200 534 151 520 Z" fill="var(--c3, #C08D34)"/>
+  <g fill="var(--c3, #C08D34)">
+    <rect x="120" y="436" width="38" height="11" rx="5"/>
+    <rect x="242" y="436" width="38" height="11" rx="5"/>
+  </g>
+  <g stroke="var(--c1, #45539B)" stroke-opacity="0.5" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M158 512 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8"/>
+  </g>
+
+  <path d="M170 404 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

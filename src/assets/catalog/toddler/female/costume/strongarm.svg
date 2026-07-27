@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. The shoulder plates spread OUTWARD, never upward.
+       axes: shoulder=BROAD FLAT PLATE YOKE reaching well past the arm on each side ·
+       closure=open down both sides, cross laced armpit to waist over full length trousers.
+       No emblem, no chest disc, no insignia anywhere on the harness. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-strongarm__vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9A6C)"/>
+      <stop offset="1" stop-color="var(--c1, #9A6A44)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #55402F)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c2, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-strongarm__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3629)"/>
+      <stop offset="1" stop-color="var(--c3, #2C1F19)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straight full length trousers -->
+    <rect x="160" y="438" width="40" height="112" rx="9" fill="url(#toddler-female-costume-strongarm__trouser)"/>
+    <rect x="200" y="438" width="40" height="112" rx="9" fill="url(#toddler-female-costume-strongarm__trouser)"/>
+    <!-- narrow harness vest front, open down both sides -->
+    <path d="M176 346 H224 Q234 358 232 376 V428 Q232 452 200 460 Q168 452 168 428 V376 Q166 358 176 346 Z"
+          fill="url(#toddler-female-costume-strongarm__vest)"/>
+    <!-- broad flat plate yokes, spread outward past the arms -->
+    <path d="M108 372 Q108 348 132 346 H172 Q180 348 180 360 V376 Q142 388 112 380 Z"
+          fill="url(#toddler-female-costume-strongarm__plate)"/>
+    <path d="M292 372 Q292 348 268 346 H228 Q220 348 220 360 V376 Q258 388 288 380 Z"
+          fill="url(#toddler-female-costume-strongarm__plate)"/>
+    <!-- heavy flat boots -->
+    <rect x="154" y="546" width="48" height="24" rx="9" fill="url(#toddler-female-costume-strongarm__boot)"/>
+    <rect x="198" y="546" width="48" height="24" rx="9" fill="url(#toddler-female-costume-strongarm__boot)"/>
+  </g>
+
+  <!-- chunky cross lacing closing the open sides from armpit to waist -->
+  <g stroke="var(--c3, #3B2A22)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M154 384 L170 402 M170 384 L154 402"/>
+    <path d="M154 404 L170 422 M170 404 L154 422"/>
+    <path d="M154 424 L170 442 M170 424 L154 442"/>
+    <path d="M246 384 L230 402 M230 384 L246 402"/>
+    <path d="M246 404 L230 422 M230 404 L246 422"/>
+    <path d="M246 424 L230 442 M230 424 L246 442"/>
+  </g>
+
+  <!-- wide belt with one oversized buckle plate -->
+  <path d="M150 442 q50 16 100 0 v26 q-50 16 -100 0 z" fill="var(--c1, #9A6A44)"/>
+  <rect x="184" y="440" width="32" height="32" rx="8" fill="var(--c2, #4FA694)"/>
+  <rect x="192" y="448" width="16" height="16" rx="5" fill="var(--c1, #CE9A6C)"/>
+
+  <!-- plate rivet rows across each yoke, structural not decorative -->
+  <g fill="var(--c1, #CE9A6C)">
+    <circle cx="122" cy="362" r="4.4"/>
+    <circle cx="140" cy="359" r="4.4"/>
+    <circle cx="158" cy="358" r="4.4"/>
+    <circle cx="278" cy="362" r="4.4"/>
+    <circle cx="260" cy="359" r="4.4"/>
+    <circle cx="242" cy="358" r="4.4"/>
+  </g>
+
+  <!-- turned trouser cuffs -->
+  <g fill="var(--c2, #7FD0BD)">
+    <rect x="156" y="524" width="48" height="20" rx="8"/>
+    <rect x="196" y="524" width="48" height="20" rx="8"/>
+  </g>
+
+  <!-- vest centre seam and edge binding -->
+  <path d="M200 356 V452" stroke="var(--c1, #9A6A44)" stroke-width="5" fill="none"
+        stroke-linecap="round"/>
+  <path d="M176 386 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

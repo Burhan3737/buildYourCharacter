@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c2,c1,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. The hood is worn DOWN, pooled in a thick roll at the nape, and never
+       goes over the head.
+       axes: closure=SLEEVELESS JERKIN WORN OPEN over a long sleeved under layer ·
+       hem=jerkin split into two long tails at mid thigh over close trousers.
+       No bow, no arrow, no quiver body: the diagonal strap alone. There is no hand anchor. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B6A52)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4234)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-ranger__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #5C4234)"/>
+      <stop offset="0.45" stop-color="var(--c2, #8B6A52)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4234)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D3A247)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #C79438)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-ranger__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E382C)"/>
+      <stop offset="1" stop-color="var(--c2, #33241C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeved under layer -->
+    <path d="M156 368 q0-24 24-24 h40 q24 0 24 24 v78 q0 28 -28 28 h-32 q-28 0 -28-28 z"
+          fill="url(#toddler-female-costume-ranger__under)"/>
+    <rect x="122" y="350" width="36" height="100" rx="17" fill="url(#toddler-female-costume-ranger__sleeve)"/>
+    <rect x="242" y="350" width="36" height="100" rx="17" fill="url(#toddler-female-costume-ranger__sleeve)"/>
+    <!-- close trousers and low boots -->
+    <rect x="168" y="466" width="32" height="86" rx="14" fill="url(#toddler-female-costume-ranger__under)"/>
+    <rect x="200" y="466" width="32" height="86" rx="14" fill="url(#toddler-female-costume-ranger__under)"/>
+    <rect x="160" y="524" width="44" height="46" rx="12" fill="url(#toddler-female-costume-ranger__boot)"/>
+    <rect x="196" y="524" width="44" height="46" rx="12" fill="url(#toddler-female-costume-ranger__boot)"/>
+    <!-- the hood, worn down as a thick roll behind the neck -->
+    <path d="M144 372 Q146 348 200 348 Q254 348 256 372 Q252 396 200 398 Q148 396 144 372 Z"
+          fill="url(#toddler-female-costume-ranger__hood)"/>
+    <!-- open jerkin: two front panels running to two tails at mid thigh -->
+    <path d="M146 348 H188 V456 L182 500 Q166 510 152 498 L146 452 Z"
+          fill="url(#toddler-female-costume-ranger__jerkin)"/>
+    <path d="M254 348 H212 V456 L218 500 Q234 510 248 498 L254 452 Z"
+          fill="url(#toddler-female-costume-ranger__jerkin)"/>
+  </g>
+
+  <!-- diagonal carry strap across the chest -->
+  <path d="M154 350 L246 448 L236 462 L144 364 Z" fill="var(--c3, #6BBFAD)"/>
+  <rect x="188" y="396" width="24" height="18" rx="6" fill="var(--c2, #5C4234)"/>
+
+  <!-- one wide forearm bracer -->
+  <rect x="240" y="402" width="40" height="32" rx="10" fill="var(--c3, #6BBFAD)"/>
+  <path d="M244 412 q18 8 34 0 M244 424 q18 8 34 0" stroke="var(--c2, #5C4234)"
+        stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- boot cuffs and jerkin edge stitching -->
+  <g fill="var(--c3, #6BBFAD)">
+    <rect x="158" y="518" width="48" height="12" rx="6"/>
+    <rect x="194" y="518" width="48" height="12" rx="6"/>
+  </g>
+  <g stroke="var(--c2, #33241C)" stroke-opacity="0.5" stroke-width="3" fill="none"
+     stroke-linecap="round" stroke-dasharray="7 7">
+    <path d="M186 356 V456"/>
+    <path d="M214 356 V456"/>
+  </g>
+
+  <path d="M170 410 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

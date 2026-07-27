@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No beast head worn up, no hood over the face, and no horned or winged
+       helmet anywhere: that helmet is a nineteenth century Romantic invention and is never drawn
+       on this project. Viking age Scandinavia, a historical period, drawn as dress up.
+       axes: closure=SLEEVELESS PELT JERKIN WORN OPEN over a long sleeved under tunic ·
+       hem=deeply lobed pelt edge at mid thigh over close trousers cross bound to the ankle.
+       The lobes are SOFT and rounded on purpose: the frost giant family carries the hard angular
+       spikes, and softness is half of what separates the two. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CFB794)"/>
+      <stop offset="1" stop-color="var(--c1, #A18B6A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4715F)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5344)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-berserker__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #9A5344)"/>
+      <stop offset="0.45" stop-color="var(--c2, #C4715F)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5344)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-berserker__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4C382D)"/>
+      <stop offset="1" stop-color="var(--c3, #2C1F19)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long sleeved under tunic -->
+    <path d="M156 366 q0-22 22-22 h44 q22 0 22 22 v76 q0 26 -26 26 h-36 q-26 0 -26-26 z"
+          fill="url(#toddler-female-costume-berserker__tunic)"/>
+    <rect x="124" y="350" width="34" height="98" rx="16" fill="url(#toddler-female-costume-berserker__sleeve)"/>
+    <rect x="242" y="350" width="34" height="98" rx="16" fill="url(#toddler-female-costume-berserker__sleeve)"/>
+    <!-- close trousers and low turnshoes -->
+    <rect x="168" y="462" width="32" height="90" rx="13" fill="url(#toddler-female-costume-berserker__tunic)"/>
+    <rect x="200" y="462" width="32" height="90" rx="13" fill="url(#toddler-female-costume-berserker__tunic)"/>
+    <rect x="160" y="548" width="44" height="22" rx="9" fill="url(#toddler-female-costume-berserker__boot)"/>
+    <rect x="196" y="548" width="44" height="22" rx="9" fill="url(#toddler-female-costume-berserker__boot)"/>
+    <!-- open pelt jerkin, soft lobed outline and a soft lobed hem at mid thigh -->
+    <path d="M146 348 H186 L184 462 Q190 486 178 496 Q164 508 152 496 Q140 502 138 484 Q146 462 140 440 Q132 418 140 396 Q132 372 146 348 Z"
+          fill="url(#toddler-female-costume-berserker__pelt)"/>
+    <path d="M254 348 H214 L216 462 Q210 486 222 496 Q236 508 248 496 Q260 502 262 484 Q254 462 260 440 Q268 418 260 396 Q268 372 254 348 Z"
+          fill="url(#toddler-female-costume-berserker__pelt)"/>
+  </g>
+
+  <!-- wide leather belt cinching the jerkin -->
+  <path d="M148 436 q52 16 104 0 v22 q-52 16 -104 0 z" fill="var(--c3, #3B2A22)"/>
+  <rect x="188" y="434" width="26" height="28" rx="7" fill="var(--c1, #CFB794)"/>
+
+  <!-- pouch and sheathed knife hanging from the belt -->
+  <path d="M162 460 h26 q6 0 6 8 v18 q0 10 -12 10 h-14 q-12 0 -12-10 v-18 q0-8 6-8 z"
+        fill="var(--c3, #3B2A22)"/>
+  <path d="M224 462 h16 l-4 34 q-4 8 -8 0 z" fill="var(--c3, #3B2A22)"/>
+  <path d="M222 458 h20 v8 h-20 z" fill="var(--c1, #A18B6A)"/>
+
+  <!-- leg wraps, cross bound knee to ankle -->
+  <g stroke="var(--c3, #3B2A22)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M170 510 L198 526 M198 510 L170 526"/>
+    <path d="M170 528 L198 544 M198 528 L170 544"/>
+    <path d="M202 510 L230 526 M230 510 L202 526"/>
+    <path d="M202 528 L230 544 M230 528 L202 544"/>
+  </g>
+
+  <!-- soft fur strands lying along the pelt, following the lobes -->
+  <g stroke="var(--c1, #8D7554)" stroke-opacity="0.55" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M152 366 Q146 396 152 424"/>
+    <path d="M168 372 Q162 408 168 446"/>
+    <path d="M248 366 Q254 396 248 424"/>
+    <path d="M232 372 Q238 408 232 446"/>
+  </g>
+
+  <!-- tunic neck binding -->
+  <path d="M178 344 h44 v12 q-22 8 -44 0 z" fill="var(--c3, #3B2A22)"/>
+
+  <path d="M182 372 q18 10 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

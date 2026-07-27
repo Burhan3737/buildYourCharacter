@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. Classical Greece, a historical period, drawn as dress up.
+       axes: shoulder=A ROW OF FIVE SMALL PINS along the top of each arm, the cloth falling in a
+       scalloped pseudo sleeve to the elbow · volume=ankle length draped tube belted TWICE, under
+       the bust and at the waist, with a bloused fold spilling over the upper belt.
+       Pin count and position is the axis that separates this from peplos and winged messenger. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7EEE0)"/>
+      <stop offset="1" stop-color="var(--c1, #D9C6AB)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-chiton__drape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E5D2)"/>
+      <stop offset="1" stop-color="var(--c1, #CFBA9C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-chiton__sandal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F72)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle length draped tube -->
+    <path d="M152 348 H248 Q254 392 252 440 L260 550 Q200 566 140 550 L148 440 Q146 392 152 348 Z"
+          fill="url(#toddler-female-costume-chiton__cloth)"/>
+    <!-- scalloped pseudo sleeves falling from the pin rows to the elbow -->
+    <path d="M112 356 Q118 348 176 350 L178 404 Q168 396 160 406 Q150 396 142 406 Q132 396 124 406 Q116 398 112 392 Z"
+          fill="url(#toddler-female-costume-chiton__drape)"/>
+    <path d="M288 356 Q282 348 224 350 L222 404 Q232 396 240 406 Q250 396 258 406 Q268 396 276 406 Q284 398 288 392 Z"
+          fill="url(#toddler-female-costume-chiton__drape)"/>
+    <!-- flat sandals -->
+    <rect x="160" y="550" width="44" height="20" rx="8" fill="url(#toddler-female-costume-chiton__sandal)"/>
+    <rect x="196" y="550" width="44" height="20" rx="8" fill="url(#toddler-female-costume-chiton__sandal)"/>
+  </g>
+
+  <!-- upper belt, under the bust -->
+  <path d="M148 378 q52 16 104 0 v13 q-52 16 -104 0 z" fill="var(--c2, #E2907F)"/>
+
+  <!-- the bloused fold spilling over the upper belt -->
+  <path d="M146 392 Q168 414 186 398 Q202 416 220 400 Q238 414 254 392 L254 404 Q200 420 146 404 Z"
+        fill="var(--c1, #CFBA9C)"/>
+
+  <!-- lower belt, at the waist -->
+  <path d="M150 424 q50 16 100 0 v14 q-50 16 -100 0 z" fill="var(--c2, #E2907F)"/>
+
+  <!-- deep hem band -->
+  <path d="M144 532 Q200 550 256 532 L258 546 Q200 564 142 546 Z" fill="var(--c2, #E2907F)"/>
+
+  <!-- FIVE small round pins along the top of each arm: the countable identity -->
+  <g fill="var(--c3, #D9A24E)">
+    <circle cx="118" cy="357" r="6.5"/>
+    <circle cx="132" cy="354" r="6.5"/>
+    <circle cx="146" cy="353" r="6.5"/>
+    <circle cx="160" cy="353" r="6.5"/>
+    <circle cx="174" cy="353" r="6.5"/>
+    <circle cx="282" cy="357" r="6.5"/>
+    <circle cx="268" cy="354" r="6.5"/>
+    <circle cx="254" cy="353" r="6.5"/>
+    <circle cx="240" cy="353" r="6.5"/>
+    <circle cx="226" cy="353" r="6.5"/>
+  </g>
+
+  <!-- vertical drape folds down the skirt -->
+  <g stroke="var(--c1, #C4AF90)" stroke-width="4" fill="none" stroke-linecap="round"
+     stroke-opacity="0.7">
+    <path d="M168 444 L162 538"/>
+    <path d="M200 446 L200 542"/>
+    <path d="M232 444 L238 538"/>
+  </g>
+
+  <path d="M166 366 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No winged cap and no helmet of any kind: the wings live at the
+       ankles, where they are safely inside the slot. Classical Greece, a historical period.
+       axes: shoulder=SINGLE SHOULDER tunic pinned on ONE side only, the other shoulder and arm
+       entirely bare · hem=mid thigh, with a rectangular mantle swinging back and out.
+       One pin on one shoulder only, against the chiton's five per arm and the peplos' one each. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C6AC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-winged-messenger__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFBB63)"/>
+      <stop offset="1" stop-color="var(--c3, #C58F35)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-winged-messenger__sandal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6274C4)"/>
+      <stop offset="1" stop-color="var(--c1, #4B5BA4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- rectangular mantle, pinned at one shoulder and swinging back and out -->
+    <path d="M228 346 H266 Q306 396 302 448 L294 500 Q262 508 248 484 L240 382 Z"
+          fill="url(#toddler-female-costume-winged-messenger__mantle)"/>
+    <!-- single shoulder tunic to mid thigh -->
+    <path d="M150 346 H194 L246 394 Q254 440 252 470 L246 502 Q200 516 154 500 L150 440 Z"
+          fill="url(#toddler-female-costume-winged-messenger__tunic)"/>
+    <!-- winged cuffs at both ankles -->
+    <path d="M170 520 Q140 512 114 526 Q128 532 122 542 Q138 542 134 552 Q152 550 150 560 Q166 556 172 552 Z"
+          fill="url(#toddler-female-costume-winged-messenger__wing)"/>
+    <path d="M230 520 Q260 512 286 526 Q272 532 278 542 Q262 542 266 552 Q248 550 250 560 Q234 556 228 552 Z"
+          fill="url(#toddler-female-costume-winged-messenger__wing)"/>
+    <!-- flat sandals -->
+    <rect x="160" y="548" width="44" height="22" rx="9" fill="url(#toddler-female-costume-winged-messenger__sandal)"/>
+    <rect x="196" y="548" width="44" height="22" rx="9" fill="url(#toddler-female-costume-winged-messenger__sandal)"/>
+  </g>
+
+  <!-- ONE round fibula at the mantle shoulder -->
+  <circle cx="240" cy="358" r="10" fill="var(--c3, #EFBB63)"/>
+  <circle cx="240" cy="358" r="4.4" fill="var(--c1, #4B5BA4)"/>
+
+  <!-- ankle cuff bands the wings spring from -->
+  <g fill="var(--c3, #C58F35)">
+    <rect x="163" y="516" width="40" height="13" rx="6"/>
+    <rect x="197" y="516" width="40" height="13" rx="6"/>
+  </g>
+
+  <!-- tunic hem band and waist cord -->
+  <path d="M154 486 Q200 502 248 486 L246 500 Q200 516 154 500 Z" fill="var(--c3, #C58F35)"/>
+  <path d="M156 424 Q200 440 246 424" stroke="var(--c3, #EFBB63)" stroke-width="8" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- mantle edge binding and drape folds -->
+  <path d="M252 486 Q272 500 292 496" stroke="var(--c3, #C58F35)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <g stroke="var(--c2, #C6B393)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M258 366 L268 486"/>
+    <path d="M280 384 L286 490"/>
+  </g>
+
+  <!-- wing feather separations -->
+  <g stroke="var(--c1, #4B5BA4)" stroke-opacity="0.4" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M164 526 L126 528"/>
+    <path d="M166 540 L136 544"/>
+    <path d="M236 526 L274 528"/>
+    <path d="M234 540 L264 544"/>
+  </g>
+
+  <path d="M168 372 q32 12 62 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

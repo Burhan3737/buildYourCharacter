@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No helmet, no circlet, no headband: the head is out of slot.
+       axes: shoulder=LONG SLEEVED close tunic, fully covered · hem=mid thigh over narrow full
+       length trousers tucked into soft ankle boots, with a crescent shield slung flat across the
+       back so a curved horn shows past each hip.
+       Deliberately the opposite of the warrior princess on every axis: trousered, long sleeved,
+       fully covered. No star anywhere, no bustier, no paired metal bracers, no coiled rope, and
+       the fallback palette is mint over ink with a butter shield. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c1, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-shield-warrior__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #4FA694)"/>
+      <stop offset="0.45" stop-color="var(--c1, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c1, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-shield-warrior__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C382D)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #CE9A3E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- crescent shield slung flat across the back, horns showing past both hips -->
+    <path d="M116 432 Q200 376 284 432 Q276 494 258 508 Q250 436 200 430 Q150 436 142 508 Q124 494 116 432 Z"
+          fill="url(#toddler-female-costume-shield-warrior__shield)"/>
+    <!-- narrow full length trousers and soft ankle boots -->
+    <rect x="170" y="468" width="28" height="70" rx="10" fill="url(#toddler-female-costume-shield-warrior__trouser)"/>
+    <rect x="202" y="468" width="28" height="70" rx="10" fill="url(#toddler-female-costume-shield-warrior__trouser)"/>
+    <rect x="160" y="526" width="44" height="44" rx="13" fill="url(#toddler-female-costume-shield-warrior__trouser)"/>
+    <rect x="196" y="526" width="44" height="44" rx="13" fill="url(#toddler-female-costume-shield-warrior__trouser)"/>
+    <!-- close long sleeved tunic to mid thigh -->
+    <path d="M154 370 q2-26 26-26 h40 q24 0 26 26 l6 128 q-52 18 -104 0 z"
+          fill="url(#toddler-female-costume-shield-warrior__tunic)"/>
+    <rect x="124" y="350" width="32" height="104" rx="15" fill="url(#toddler-female-costume-shield-warrior__sleeve)"/>
+    <rect x="244" y="350" width="32" height="104" rx="15" fill="url(#toddler-female-costume-shield-warrior__sleeve)"/>
+  </g>
+
+  <!-- shield rim and boss ribs, structural only, no device of any kind -->
+  <g stroke="var(--c2, #2E211A)" stroke-opacity="0.4" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M124 434 Q200 386 276 434"/>
+    <path d="M150 500 Q152 452 200 442"/>
+    <path d="M250 500 Q248 452 200 442"/>
+  </g>
+
+  <!-- wide diagonal baldric across the chest -->
+  <path d="M250 358 L154 452 L138 434 L234 344 Z" fill="var(--c3, #CE9A3E)"/>
+  <path d="M244 360 L156 446" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- tunic hem band and boot cuffs -->
+  <path d="M150 482 Q200 500 250 482 L252 496 Q200 514 148 496 Z" fill="var(--c3, #CE9A3E)"/>
+  <g fill="var(--c3, #CE9A3E)">
+    <rect x="158" y="520" width="48" height="13" rx="6"/>
+    <rect x="194" y="520" width="48" height="13" rx="6"/>
+  </g>
+
+  <!-- keyhole neck slit -->
+  <path d="M194 346 h12 v18 q-6 6 -12 0 z" fill="var(--c2, #2E211A)"/>
+
+  <path d="M166 376 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

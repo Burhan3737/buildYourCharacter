@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No ears and no horns are drawn here: the head is out of slot, and a
+       companion headwear family carries it.
+       CORRECTNESS, please do not "fix" this back toward the source: a classical Greek satyr has a
+       HORSE tail and horse ears. Goat legs and goat horns belong to the Roman faun and are wrong
+       here. Classical satyrs are also nude with exaggerated genitalia; this is a children's dress
+       up satyr, so it is pelt from the waist down, one animal skin over the shoulder, and nothing
+       else. Keep it that way.
+       axes: shoulder=BARE CHEST with a single knotted skin over one shoulder ·
+       hem=shaggy pelt from the waist to the ankle in a bumpy, deeply lobed outline.
+       The shag is built into the silhouette path itself, not drawn on top of a smooth leg. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C09965)"/>
+      <stop offset="1" stop-color="var(--c1, #8B6A42)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-satyr__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B58E5C)"/>
+      <stop offset="1" stop-color="var(--c1, #7E5E39)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-satyr__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E4E3A)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3226)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-satyr__fur" patternUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+      <path d="M3 14 q3 -12 6 -2 M9 15 q4 -11 6 -3" fill="none" stroke="var(--c2, #6E4E3A)"
+            stroke-width="2.2" stroke-opacity="0.4" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-satyr__peltclip">
+      <path d="M148 442 Q156 420 168 440 Q180 418 192 440 Q202 420 214 440 Q226 418 238 440 Q248 422 252 442 L254 480 Q200 494 146 480 Z"/>
+      <path d="M162 476 Q150 496 160 508 Q146 522 158 534 Q144 550 156 562 Q170 572 186 566 Q202 562 202 548 Q196 532 202 516 Q194 500 200 488 Q198 476 188 474 Z"/>
+      <path d="M238 476 Q250 496 240 508 Q254 522 242 534 Q256 550 244 562 Q230 572 214 566 Q198 562 198 548 Q204 532 198 516 Q206 500 200 488 Q202 476 212 474 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- long horse tail falling from the small of the back -->
+  <g class="sp-shadow">
+    <path d="M238 448 Q290 460 302 512 Q308 548 294 568 Q288 548 280 554 Q274 568 266 552 Q260 566 254 550 Q270 520 260 494 Q250 470 232 464 Z"
+          fill="url(#toddler-female-costume-satyr__hide)"/>
+  </g>
+
+  <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
+  <g class="sp-shadow">
+    <path d="M146 348 H182 L244 442 Q250 462 232 464 Q220 456 210 442 L148 374 Z"
+          fill="url(#toddler-female-costume-satyr__hide)"/>
+  </g>
+
+  <!-- shaggy pelt: deeply lobed waist edge, bumpy uneven legs to the ankle -->
+  <g class="sp-shadow">
+    <path d="M148 442 Q156 420 168 440 Q180 418 192 440 Q202 420 214 440 Q226 418 238 440 Q248 422 252 442 L254 480 Q200 494 146 480 Z"
+          fill="url(#toddler-female-costume-satyr__pelt)"/>
+    <path d="M162 476 Q150 496 160 508 Q146 522 158 534 Q144 550 156 562 Q170 572 186 566 Q202 562 202 548 Q196 532 202 516 Q194 500 200 488 Q198 476 188 474 Z"
+          fill="url(#toddler-female-costume-satyr__leg)"/>
+    <path d="M238 476 Q250 496 240 508 Q254 522 242 534 Q256 550 244 562 Q230 572 214 566 Q198 562 198 548 Q204 532 198 516 Q206 500 200 488 Q202 476 212 474 Z"
+          fill="url(#toddler-female-costume-satyr__leg)"/>
+    <rect x="162" y="556" width="42" height="14" rx="6" fill="url(#toddler-female-costume-satyr__hide)"/>
+    <rect x="196" y="556" width="42" height="14" rx="6" fill="url(#toddler-female-costume-satyr__hide)"/>
+  </g>
+
+  <!-- fur tick texture inside the pelt outline -->
+  <g clip-path="url(#toddler-female-costume-satyr__peltclip)">
+    <rect x="140" y="416" width="120" height="156" fill="url(#toddler-female-costume-satyr__fur)"/>
+  </g>
+
+  <!-- fat cord tied at the waist, with a knot and two hanging ends -->
+  <path d="M148 456 q52 16 104 0 v12 q-52 16 -104 0 z" fill="var(--c3, #F7C873)"/>
+  <circle cx="200" cy="466" r="11" fill="var(--c3, #F7C873)"/>
+  <path d="M194 476 q-4 20 -10 30 M208 476 q4 20 10 28" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder knot holding the skin -->
+  <circle cx="166" cy="360" r="12" fill="var(--c3, #F7C873)"/>
+  <circle cx="166" cy="360" r="5" fill="var(--c2, #4A3226)"/>
+
+  <!-- tail strand separations -->
+  <g stroke="var(--c1, #8B6A42)" stroke-opacity="0.45" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M256 478 Q282 512 282 552"/>
+    <path d="M246 468 Q268 508 266 544"/>
+  </g>
+
+  <path d="M158 366 q26 26 48 52" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

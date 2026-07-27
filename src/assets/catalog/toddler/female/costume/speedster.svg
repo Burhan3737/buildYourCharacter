@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speedster Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No mask, no cowl, no helmet, no goggles.
+       axes: shoulder=NONE, deep scooped armholes leaving both arms bare · volume=skin close
+       bodysuit to the ankle whose identity is four swept fin vanes standing off the outer calves.
+       No chest emblem, no bolt mark, no disc: one raked seam and the calf vanes carry it. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-speedster__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-speedster__leg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #6274C4)"/>
+      <stop offset="0.45" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c2, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-speedster__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4FA694)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8878)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- four swept fin vanes, each over 40 units wide, standing off the outer calves -->
+    <path d="M170 500 L116 484 Q124 508 138 524 L170 530 Z" fill="url(#toddler-female-costume-speedster__vane)"/>
+    <path d="M170 528 L128 524 Q134 544 148 558 L170 560 Z" fill="url(#toddler-female-costume-speedster__vane)"/>
+    <path d="M230 500 L284 484 Q276 508 262 524 L230 530 Z" fill="url(#toddler-female-costume-speedster__vane)"/>
+    <path d="M230 528 L272 524 Q266 544 252 558 L230 560 Z" fill="url(#toddler-female-costume-speedster__vane)"/>
+    <!-- skin close legs to the ankle -->
+    <rect x="167" y="476" width="32" height="76" rx="15" fill="url(#toddler-female-costume-speedster__leg)"/>
+    <rect x="201" y="476" width="32" height="76" rx="15" fill="url(#toddler-female-costume-speedster__leg)"/>
+    <!-- bodysuit shell: high closed neck, deep scooped armholes, both arms bare -->
+    <path d="M176 344 H224 L250 350 Q230 376 248 406 V452 Q248 482 222 482 H178 Q152 482 152 452 V406 Q170 376 150 350 Z"
+          fill="url(#toddler-female-costume-speedster__body)"/>
+    <!-- low soft shoe caps, flat to the ground line -->
+    <rect x="161" y="546" width="44" height="24" rx="11" fill="url(#toddler-female-costume-speedster__shoe)"/>
+    <rect x="195" y="546" width="44" height="24" rx="11" fill="url(#toddler-female-costume-speedster__shoe)"/>
+  </g>
+
+  <!-- panel blocking: contrast lower block across the hip -->
+  <path d="M152 428 q48 14 96 0 v24 q0 30 -26 30 h-44 q-26 0 -26-30 z"
+        fill="var(--c2, #4FA694)"/>
+
+  <!-- one raked diagonal seam across the chest, no mark of any kind -->
+  <path d="M158 400 L242 362" stroke="var(--c2, #4FA694)" stroke-width="7" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- trim: closed neck band, waist band and ankle cuffs -->
+  <path d="M176 344 h48 v12 q-24 8 -48 0 z" fill="var(--c3, #F7C873)"/>
+  <path d="M152 420 q48 14 96 0 v11 q-48 14 -96 0 z" fill="var(--c3, #F7C873)"/>
+  <g fill="var(--c3, #F7C873)">
+    <rect x="165" y="540" width="36" height="9" rx="4.5"/>
+    <rect x="199" y="540" width="36" height="9" rx="4.5"/>
+  </g>
+
+  <!-- vane ribs -->
+  <g stroke="var(--c3, #F7C873)" stroke-width="3.4" fill="none" stroke-linecap="round"
+     stroke-opacity="0.85">
+    <path d="M166 506 L128 494"/>
+    <path d="M166 534 L138 530"/>
+    <path d="M234 506 L272 494"/>
+    <path d="M234 534 L262 530"/>
+  </g>
+
+  <path d="M166 374 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

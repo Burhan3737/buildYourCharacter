@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c2,c1,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. No helmet, no goggles, no hood.
+       axes: shoulder=CLOTH MEMBRANE stretched wrist to hip, swallowing the whole arm ·
+       volume=one wide triangle from shoulder to ankle, with a third membrane bridging the knees.
+       The membranes are plain cloth with drawn rib seams. No metal wing, no feather, no plate. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-sky-glider__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F8B4A8)"/>
+      <stop offset="1" stop-color="var(--c2, #DA7F6E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-sky-glider__leg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #6274C4)"/>
+      <stop offset="0.45" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wrist to hip membranes: the arms live inside them -->
+    <path d="M152 350 Q100 424 108 486 L124 556 Q148 562 162 548 L168 480 Q158 412 158 356 Z"
+          fill="url(#toddler-female-costume-sky-glider__wing)"/>
+    <path d="M248 350 Q300 424 292 486 L276 556 Q252 562 238 548 L232 480 Q242 412 242 356 Z"
+          fill="url(#toddler-female-costume-sky-glider__wing)"/>
+    <!-- fitted bodysuit through the middle -->
+    <path d="M172 344 h56 q22 2 22 26 v82 q0 28 -28 28 h-44 q-28 0 -28-28 v-82 q0-24 22-26 z"
+          fill="url(#toddler-female-costume-sky-glider__suit)"/>
+    <rect x="168" y="474" width="30" height="82" rx="14" fill="url(#toddler-female-costume-sky-glider__leg)"/>
+    <rect x="202" y="474" width="30" height="82" rx="14" fill="url(#toddler-female-costume-sky-glider__leg)"/>
+    <!-- the third membrane, bridging knee to knee -->
+    <path d="M172 508 Q200 486 228 508 L232 556 Q200 566 168 556 Z"
+          fill="url(#toddler-female-costume-sky-glider__wing)"/>
+    <rect x="160" y="548" width="44" height="22" rx="10" fill="url(#toddler-female-costume-sky-glider__suit)"/>
+    <rect x="196" y="548" width="44" height="22" rx="10" fill="url(#toddler-female-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane -->
+  <g stroke="var(--c3, #E6A94A)" stroke-width="4" fill="none" stroke-linecap="round"
+     stroke-opacity="0.9">
+    <path d="M156 366 Q126 420 118 478"/>
+    <path d="M156 402 Q134 450 128 502"/>
+    <path d="M158 438 Q142 482 138 530"/>
+    <path d="M244 366 Q274 420 282 478"/>
+    <path d="M244 402 Q266 450 272 502"/>
+    <path d="M242 438 Q258 482 262 530"/>
+    <path d="M186 512 Q184 536 182 556"/>
+    <path d="M214 512 Q216 536 218 556"/>
+  </g>
+
+  <!-- suit trim: closed neck band, waist band, ankle binding -->
+  <path d="M174 344 h52 v12 q-26 8 -52 0 z" fill="var(--c3, #E6A94A)"/>
+  <path d="M152 424 q48 14 96 0 v12 q-48 14 -96 0 z" fill="var(--c3, #E6A94A)"/>
+  <g fill="var(--c3, #E6A94A)">
+    <rect x="122" y="550" width="42" height="10" rx="5"/>
+    <rect x="236" y="550" width="42" height="10" rx="5"/>
+  </g>
+
+  <path d="M170 372 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
