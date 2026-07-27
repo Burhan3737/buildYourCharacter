@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (a halter neck leaving both shoulders and the upper back completely bare,
+       a single narrow strap up to the nape, against jumpsuit's covered shoulder and centre
+       front closure) and volume (fitted hard through torso and thigh then flaring from the KNEE
+       into a wide bell, so the outline breaks at y462 rather than running straight).
+       The bell stops at y544, above the sole, so platform boots still read underneath it. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-flare-jumpsuit__crepe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C96F52)"/>
+      <stop offset="1" stop-color="var(--c2, #A2543C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-flare-jumpsuit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C96F52)"/>
+      <stop offset="1" stop-color="var(--c2, #A2543C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- halter strap running up to the nape; both shoulders stay bare -->
+  <g class="sp-shadow">
+    <path d="M186 186 h28 l10 42 h-48 z" fill="url(#teen-male-onepiece-flare-jumpsuit__crepe)"/>
+  </g>
+
+  <!-- fitted torso from the halter down to the waist -->
+  <g class="sp-shadow">
+    <path d="M166 224 q34 16 68 0 q22 6 22 30 v66 q0 24 -18 28 h-76 q-18 -4 -18 -28 v-66
+             q0 -24 22 -30 z"
+          fill="url(#teen-male-onepiece-flare-jumpsuit__crepe)"/>
+  </g>
+
+  <!-- legs: close through the thigh, breaking hard into a bell at the knee -->
+  <g class="sp-shadow">
+    <path d="M154 328 H198 V462 L196 544 H118 L150 462 Z"
+          fill="url(#teen-male-onepiece-flare-jumpsuit__leg)"/>
+    <path d="M246 328 H202 V462 L204 544 H282 L250 462 Z"
+          fill="url(#teen-male-onepiece-flare-jumpsuit__leg)"/>
+  </g>
+
+  <!-- waist seam band and a stacked buckle, the teen fastening register -->
+  <path d="M144 322 Q200 338 256 322 l2 18 Q200 358 142 340 Z" fill="var(--c3, #F2E2B8)"/>
+  <rect x="190" y="322" width="20" height="22" rx="4" fill="var(--c3, #F2E2B8)"/>
+  <rect x="194" y="327" width="12" height="12" rx="3" fill="var(--c2, #A2543C)"/>
+
+  <!-- halter bind at the nape and the neckline edge -->
+  <path d="M186 188 h28" stroke="var(--c3, #F2E2B8)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 226 q34 16 68 0" stroke="var(--c3, #F2E2B8)" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the knee break, drawn as a topstitched seam so the flare point reads -->
+  <g fill="none" stroke="var(--c3, #F2E2B8)" stroke-opacity="0.8" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M150 462 H198 M202 462 H250"/>
+  </g>
+
+  <!-- fall lines down the bells -->
+  <g fill="none" stroke="var(--c2, #A2543C)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M166 472 L142 538 M182 472 L172 540 M218 472 L228 540 M234 472 L258 538"/>
+  </g>
+
+  <path d="M176 240 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

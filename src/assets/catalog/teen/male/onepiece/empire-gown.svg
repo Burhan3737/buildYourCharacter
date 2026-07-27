@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Empire Gown" data-family="empire-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (a horizontal seam sitting directly under the bust, so the bodice is only
+       about 46 units tall and the outline changes high on the chest, against every other gown
+       here which seams at the natural waist or not at all) and shoulder (short puffed cap
+       sleeves standing clear of the arm, against bridal gown's long sheer sleeve and ball
+       gown's bare shoulder).
+       The skirt below the seam is gathered but narrow: it falls straight to the ankle and never
+       flares, which is what keeps it clear of ball gown. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-empire-gown__muslin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3D2)"/>
+      <stop offset="1" stop-color="var(--c2, #CBBBA2)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-empire-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3D2)"/>
+      <stop offset="1" stop-color="var(--c2, #CBBBA2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short puffed cap sleeves, standing clear of the arm -->
+  <g class="sp-shadow">
+    <path d="M152 202 q-34 -4 -42 18 q-8 22 10 32 q22 8 38 -8 z"
+          fill="url(#teen-male-onepiece-empire-gown__bodice)"/>
+    <path d="M248 202 q34 -4 42 18 q8 22 -10 32 q-22 8 -38 -8 z"
+          fill="url(#teen-male-onepiece-empire-gown__bodice)"/>
+  </g>
+
+  <!-- narrow gathered skirt falling straight from the under-bust seam to the ankle -->
+  <g class="sp-shadow">
+    <path d="M158 258 H242 L250 542 Q200 556 150 542 Z"
+          fill="url(#teen-male-onepiece-empire-gown__muslin)"/>
+  </g>
+
+  <!-- the very short bodice, ending at the under-bust seam -->
+  <g class="sp-shadow">
+    <path d="M164 210 q16 12 36 12 q20 0 36 -12 q22 4 22 24 v30 q-58 16 -116 0 v-30
+             q0 -20 22 -24 z"
+          fill="url(#teen-male-onepiece-empire-gown__bodice)"/>
+  </g>
+
+  <!-- the under-bust seam itself, with the gather ticks that hang from it -->
+  <path d="M158 258 Q200 272 242 258 l1 12 Q200 284 157 270 Z" fill="var(--c3, #B4869B)"/>
+  <g fill="none" stroke="var(--c2, #CBBBA2)" stroke-opacity="0.7" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M168 274 v18 M182 277 v20 M196 279 v20 M210 279 v20 M224 277 v20 M236 274 v18"/>
+  </g>
+
+  <!-- neckline bind, sleeve puff gathers, and a narrow hem band -->
+  <path d="M164 210 q16 12 36 12 q20 0 36 -12" stroke="var(--c3, #B4869B)" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #CBBBA2)" stroke-opacity="0.65" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M124 210 L120 246 M138 204 L136 244 M276 210 L280 246 M262 204 L264 244"/>
+  </g>
+  <path d="M152 528 Q200 542 248 528" stroke="var(--c3, #B4869B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long soft fall lines in the narrow skirt -->
+  <g fill="none" stroke="var(--c2, #CBBBA2)" stroke-opacity="0.42" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M176 286 L168 532 M200 288 L200 540 M224 286 L232 532"/>
+  </g>
+
+  <path d="M170 224 q30 10 60 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

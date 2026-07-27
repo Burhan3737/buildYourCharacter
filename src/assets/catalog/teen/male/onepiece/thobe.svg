@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thobe" data-family="thobe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (narrow long set-in sleeve tubes with a real armhole seam, against
+       kaftan's wide draped T cut and abaya's open shouldered fall) and closure (a stand band
+       collar over a short buttoned placket, against kaftan's plain slit neckline).
+       Hem sits at the ankle, clear of the shoe, and there is no waist anywhere.
+       This is everyday clothing. Drawn plainly and accurately, with a fine self coloured
+       topstitch rather than any community's woven motif. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-thobe__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC3AC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-thobe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC3AC)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow long set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 200 q-34 2 -35 24 l-3 138 q18 10 36 0 l8 -140 z"
+          fill="url(#teen-male-onepiece-thobe__sleeve)"/>
+    <path d="M250 200 q34 2 35 24 l3 138 q-18 10 -36 0 l-8 -140 z"
+          fill="url(#teen-male-onepiece-thobe__sleeve)"/>
+  </g>
+
+  <!-- one straight ankle length column, no waist -->
+  <g class="sp-shadow">
+    <path d="M152 194 H248 Q266 194 267 216 L262 538 Q200 554 138 538 L133 216 Q134 194 152 194 Z"
+          fill="url(#teen-male-onepiece-thobe__linen)"/>
+  </g>
+
+  <!-- stand band collar over a short buttoned placket -->
+  <path d="M181 186 h38 q5 0 5 8 v10 q-24 8 -48 0 v-10 q0 -8 5 -8 z" fill="var(--c3, #B79E77)"/>
+  <path d="M191 204 h18 v56 h-18 z" fill="var(--c3, #B79E77)" fill-opacity="0.55"/>
+  <g fill="var(--c3, #B79E77)">
+    <circle cx="200" cy="216" r="3.4"/>
+    <circle cx="200" cy="234" r="3.4"/>
+    <circle cx="200" cy="252" r="3.4"/>
+  </g>
+
+  <!-- armhole seams and a fine topstitch down the placket and round the cuffs -->
+  <g fill="none" stroke="var(--c2, #CFC3AC)" stroke-opacity="0.75" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M152 200 L146 330 M248 200 L254 330"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #B79E77)" stroke-opacity="0.6" stroke-width="2"
+     stroke-linecap="round">
+    <path d="M188 204 V262 M212 204 V262 M113 350 q18 8 34 0 M287 350 q-18 8 -34 0"/>
+  </g>
+
+  <!-- chest patch pocket, and the hem edge -->
+  <path d="M226 240 h26 q4 0 4 5 v26 q0 5 -4 5 h-26 q-4 0 -4 -5 v-26 q0 -5 4 -5 z"
+        fill="var(--c2, #CFC3AC)"/>
+  <path d="M139 530 Q200 546 261 530" stroke="var(--c2, #CFC3AC)" stroke-width="4"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <path d="M162 212 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

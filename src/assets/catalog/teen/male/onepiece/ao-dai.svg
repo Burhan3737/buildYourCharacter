@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: hem (a tunic split to the waist at BOTH sides so the outline breaks into two long
+       free panels over trousers, against every other closed one piece here) and volume (fitted
+       hard through the torso above wide floating trouser legs, two different volumes in one
+       garment, against maxi dress's single narrow column).
+       The trousers are drawn into this same file and painted through c2 so the player can still
+       contrast them against the tunic. The side splits start at the waist, y336, and are real
+       notches in the outline rather than drawn lines. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #F4A79B)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-ao-dai__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #EFE7D8)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <!-- wide trousers, drawn first so the tunic panels float over them -->
+  <g class="sp-shadow">
+    <path d="M144 334 h54 l-4 216 q-28 8 -56 0 z"
+          fill="url(#teen-male-onepiece-ao-dai__trouser)"/>
+    <path d="M256 334 h-54 l4 216 q28 8 56 0 z"
+          fill="url(#teen-male-onepiece-ao-dai__trouser)"/>
+  </g>
+
+  <!-- long narrow sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 198 q-33 4 -34 24 l-3 142 q17 10 34 0 l8 -144 z"
+          fill="url(#teen-male-onepiece-ao-dai__tunic)"/>
+    <path d="M250 198 q33 4 34 24 l3 142 q-17 10 -34 0 l-8 -144 z"
+          fill="url(#teen-male-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- fitted tunic bodice down to the waist -->
+  <g class="sp-shadow">
+    <path d="M156 194 H244 Q262 196 262 220 V300 Q262 326 250 340 H150 Q138 326 138 300 V220
+             Q138 196 156 194 Z"
+          fill="url(#teen-male-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- the two free panels, split to the waist at both sides -->
+  <g class="sp-shadow">
+    <path d="M162 330 H238 L234 486 Q200 500 166 486 Z"
+          fill="url(#teen-male-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- mandarin collar -->
+  <path d="M180 184 h40 q6 0 6 8 v12 q-26 8 -52 0 v-12 q0 -8 6 -8 z" fill="var(--c3, #B4576A)"/>
+  <path d="M200 192 v14" stroke="var(--c3, #B4576A)" stroke-width="3" fill="none"/>
+
+  <!-- diagonal front opening with its piped edge and three small fastenings -->
+  <path d="M204 200 Q236 214 258 224" stroke="var(--c3, #B4576A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 224 L256 336" stroke="var(--c3, #B4576A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #B4576A)">
+    <circle cx="222" cy="208" r="3.2"/>
+    <circle cx="244" cy="219" r="3.2"/>
+    <circle cx="257" cy="252" r="3.2"/>
+  </g>
+
+  <!-- split edges piped so the notches read at tray size, and the panel hem -->
+  <g fill="none" stroke="var(--c3, #B4576A)" stroke-opacity="0.7" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M163 336 L167 482 M237 336 L233 482 M166 482 Q200 496 234 482"/>
+  </g>
+
+  <!-- trouser hem edges and highlight -->
+  <path d="M142 540 q28 8 54 0 M258 540 q-28 8 -54 0" stroke="var(--c2, #EFE7D8)"
+        stroke-opacity="0.9" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M164 212 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

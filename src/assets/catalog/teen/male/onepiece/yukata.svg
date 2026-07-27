@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (wide flat rectangular sleeve panels hanging well below the arm with a
+       squared lower corner, against robe's soft gathered wide sleeve) and closure (a flat
+       overlapping band collar running neck to waist under a broad flat sash, against robe's
+       shawl collar and soft tie belt).
+       WRAP DIRECTION: closed left over right. The wearer's left front panel lies on top, which
+       in this front facing view is the screen right panel, so its leading edge is drawn last
+       and crosses down to the screen left hip. Right over left is how the dead are dressed.
+       Hem at the ankle, clear of the shoe. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-yukata__cotton" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5F9E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-yukata__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5F9E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-yukata__obi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.74"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-yukata__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="2.4" fill="var(--c3, #F7C873)" fill-opacity="0.45"/>
+      <circle cx="15" cy="15" r="2.4" fill="var(--c3, #F7C873)" fill-opacity="0.45"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-yukata__clip">
+      <path d="M152 194 H248 Q268 194 269 218 L266 546 Q200 562 134 546 L131 218 Q132 194 152 194 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- wide rectangular sleeve panels hanging free well below the arm, squared at the corner -->
+  <g class="sp-shadow">
+    <path d="M100 200 h52 v138 q0 8 -8 8 h-36 q-8 0 -8 -8 z"
+          fill="url(#teen-male-onepiece-yukata__cotton)"/>
+    <path d="M300 200 h-52 v138 q0 8 8 8 h36 q8 0 8 -8 z"
+          fill="url(#teen-male-onepiece-yukata__cotton)"/>
+  </g>
+
+  <!-- the wrapped body, ankle length -->
+  <g class="sp-shadow">
+    <path d="M152 194 H248 Q268 194 269 218 L266 546 Q200 562 134 546 L131 218 Q132 194 152 194 Z"
+          fill="url(#teen-male-onepiece-yukata__cotton)"/>
+  </g>
+
+  <!-- the overlapping panel: the wearer's LEFT front, screen right, lying on top and crossing
+       down to the screen left hip -->
+  <g class="sp-shadow">
+    <path d="M248 194 Q268 194 269 218 L266 546 Q234 554 200 552 L192 330 Z"
+          fill="url(#teen-male-onepiece-yukata__over)"/>
+  </g>
+
+  <!-- small even dot over the whole robe -->
+  <g clip-path="url(#teen-male-onepiece-yukata__clip)">
+    <rect x="130" y="194" width="140" height="366" fill="url(#teen-male-onepiece-yukata__dot)"/>
+  </g>
+
+  <!-- flat band collar: the under band first, the over band last so the overlap reads -->
+  <path d="M186 192 L176 214 L188 330 L198 328 L196 214 Z" fill="var(--c3, #F7C873)"
+        fill-opacity="0.72"/>
+  <path d="M214 192 L226 214 L200 330 L188 328 L204 214 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- broad flat sash -->
+  <g class="sp-shadow">
+    <path d="M138 320 Q200 336 262 320 l2 38 Q200 374 136 358 Z"
+          fill="url(#teen-male-onepiece-yukata__obi)"/>
+  </g>
+  <path d="M140 340 Q200 356 260 340" stroke="var(--c2, #4F5F9E)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- hem edge and highlight -->
+  <path d="M136 534 Q200 550 264 534" stroke="var(--c2, #4F5F9E)" stroke-width="4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M108 212 q22 10 40 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M292 212 q-22 10 -40 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

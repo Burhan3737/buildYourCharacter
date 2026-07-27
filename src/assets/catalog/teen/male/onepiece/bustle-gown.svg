@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bustle Gown" data-family="bustle-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: volume (flat at the front with the entire mass thrown behind the hip, the only
+       front to back asymmetric outline in the catalogue) and hem (a short train off the back
+       of the bustle while the front skirt stays narrow to the ground).
+       Floor check: the hip's back edge is x250 and the bustle mass reaches x306, so it clears
+       the hip line by 56 units, past the 50 unit minimum for this family. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-bustle-gown__faille" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6B8C)"/>
+      <stop offset="1" stop-color="var(--c2, #33506E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-bustle-gown__swag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--c2, #33506E)"/>
+      <stop offset="1" stop-color="var(--c2, #33506E)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bustle: a stepped draped mass projecting sharply behind the hip, falling to a
+       short train -->
+  <g class="sp-shadow">
+    <path d="M238 318 Q292 322 306 386 Q310 452 288 508 Q268 546 240 552 L232 430 Z"
+          fill="url(#teen-male-onepiece-bustle-gown__swag)"/>
+  </g>
+
+  <!-- long fitted sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 198 q-33 4 -34 24 l-3 140 q17 10 34 0 l8 -142 z"
+          fill="url(#teen-male-onepiece-bustle-gown__faille)"/>
+    <path d="M250 198 q33 4 34 24 l3 140 q-17 10 -34 0 l-8 -142 z"
+          fill="url(#teen-male-onepiece-bustle-gown__faille)"/>
+  </g>
+
+  <!-- narrow front skirt, flat to the ground -->
+  <g class="sp-shadow">
+    <path d="M158 330 H244 L250 560 Q200 574 148 560 Z"
+          fill="url(#teen-male-onepiece-bustle-gown__faille)"/>
+  </g>
+
+  <!-- fitted bodice with a high closed neckline -->
+  <g class="sp-shadow">
+    <path d="M164 190 q16 8 36 8 q20 0 36 -8 q24 4 24 30 V300 Q260 328 246 340 H154
+             Q140 328 140 300 V220 Q140 194 164 190 Z"
+          fill="url(#teen-male-onepiece-bustle-gown__faille)"/>
+  </g>
+
+  <!-- swag folds across the bustle, the thing that says draped rather than padded -->
+  <g fill="none" stroke="var(--c1, #4E6B8C)" stroke-opacity="0.55" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M242 344 Q286 356 298 396"/>
+    <path d="M240 386 Q288 396 302 434"/>
+    <path d="M240 430 Q286 442 296 480"/>
+  </g>
+
+  <!-- high collar band, centre front button line and a waist band -->
+  <path d="M180 184 h40 q6 0 6 8 v10 q-26 8 -52 0 v-10 q0 -8 6 -8 z" fill="var(--c3, #C9B27E)"/>
+  <g fill="var(--c3, #C9B27E)">
+    <circle cx="200" cy="222" r="3.2"/>
+    <circle cx="200" cy="244" r="3.2"/>
+    <circle cx="200" cy="266" r="3.2"/>
+    <circle cx="200" cy="288" r="3.2"/>
+    <circle cx="200" cy="310" r="3.2"/>
+  </g>
+  <path d="M142 322 Q200 338 258 322 l2 18 Q200 358 140 340 Z" fill="var(--c3, #C9B27E)"
+        fill-opacity="0.85"/>
+
+  <!-- front skirt fall lines and the train edge -->
+  <g fill="none" stroke="var(--c2, #33506E)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M174 348 L164 554 M200 348 L200 562 M226 348 L236 554"/>
+  </g>
+  <path d="M240 548 Q268 546 288 508" stroke="var(--c3, #C9B27E)" stroke-width="4"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <path d="M166 206 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

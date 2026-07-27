@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (open front, the two edges meeting without any fastening at all, against
+       thobe's buttoned placket and kaftan's closed slit neck) and hem (ankle length, against
+       kaftan's mid calf and robe's calf).
+       The opening is resolved by an integral under layer drawn into this same file and painted
+       through c2, per the contract: never a hole, never a hard coded shell colour.
+       Everyday clothing, drawn plainly. No community specific woven motif. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-abaya__robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E5A6E)"/>
+      <stop offset="1" stop-color="var(--c1, #434052)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9AA3C4)"/>
+      <stop offset="1" stop-color="var(--c2, #9AA3C4)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- integral under layer showing through the open front -->
+  <g class="sp-shadow">
+    <path d="M170 192 h60 q12 0 12 16 l6 328 q-48 12 -96 0 l6 -328 q0 -16 12 -16 z"
+          fill="url(#teen-male-onepiece-abaya__under)"/>
+  </g>
+
+  <!-- long straight sleeves -->
+  <g class="sp-shadow">
+    <path d="M148 198 q-36 4 -37 26 l-4 140 q19 10 38 0 l9 -142 z"
+          fill="url(#teen-male-onepiece-abaya__robe)"/>
+    <path d="M252 198 q36 4 37 26 l4 140 q-19 10 -38 0 l-9 -142 z"
+          fill="url(#teen-male-onepiece-abaya__robe)"/>
+  </g>
+
+  <!-- the two open front panels, falling straight from the shoulder with no waist -->
+  <g class="sp-shadow">
+    <path d="M150 192 H196 L192 548 Q158 546 130 538 L134 216 Q134 192 150 192 Z"
+          fill="url(#teen-male-onepiece-abaya__robe)"/>
+    <path d="M250 192 H204 L208 548 Q242 546 270 538 L266 216 Q266 192 250 192 Z"
+          fill="url(#teen-male-onepiece-abaya__robe)"/>
+  </g>
+
+  <!-- narrow edge banding down both front edges and round the neckline -->
+  <g fill="none" stroke="var(--c3, #C9B27E)" stroke-width="4.4" stroke-linecap="round">
+    <path d="M195 198 L191 542"/>
+    <path d="M205 198 L209 542"/>
+    <path d="M152 192 Q176 202 196 198 M248 192 Q224 202 204 198"/>
+  </g>
+
+  <!-- cuff bands and a soft vertical drape seam in each panel -->
+  <path d="M108 348 q19 10 38 0 l-1 20 q-19 10 -38 0 z" fill="var(--c3, #C9B27E)"/>
+  <path d="M292 348 q-19 10 -38 0 l1 20 q19 10 38 0 z" fill="var(--c3, #C9B27E)"/>
+  <g fill="none" stroke="var(--c1, #434052)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M162 240 L156 522 M238 240 L244 522"/>
+  </g>
+
+  <!-- hem band and highlight -->
+  <path d="M132 528 Q162 540 190 540 M210 540 Q238 540 268 528" stroke="var(--c3, #C9B27E)"
+        stroke-width="3.4" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M156 212 q20 10 38 6 M244 212 q-20 10 -38 6" stroke="#FFFFFF"
+        stroke-opacity="0.24" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

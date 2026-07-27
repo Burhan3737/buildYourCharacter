@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: volume (skin close the whole way, no ease anywhere, against boiler suit's straight
+       utility leg and sleep onesie's bloused body) and closure (none at all and no waist seam,
+       one continuous tube from the scoop neck to the ankle, against jumpsuit's centre front
+       closure and belted waist).
+       The hem stops at the ankle so the shoe still draws over the foot. Identity is carried by
+       the outline plus the side stripe, because there is nothing else on it by definition. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-unitard__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-unitard__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E8C7C)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long narrow sleeves, skin close to the wrist -->
+  <g class="sp-shadow">
+    <path d="M148 200 q-32 4 -33 26 l-2 138 q16 10 32 0 l9 -140 z"
+          fill="url(#teen-male-onepiece-unitard__knit)"/>
+    <path d="M252 200 q32 4 33 26 l2 138 q-16 10 -32 0 l-9 -140 z"
+          fill="url(#teen-male-onepiece-unitard__knit)"/>
+  </g>
+
+  <!-- torso, scooped at the neck and hugging the ribs with no waist seam -->
+  <g class="sp-shadow">
+    <path d="M164 192 q16 16 36 16 q20 0 36 -16 q26 4 26 30 v92 q0 34 -26 40 h-72
+             q-26 -6 -26 -40 v-92 q0 -26 26 -30 z"
+          fill="url(#teen-male-onepiece-unitard__knit)"/>
+  </g>
+
+  <!-- legs, skin close to the ankle, foot left bare for the shoe -->
+  <g class="sp-shadow">
+    <path d="M164 336 h36 v198 q0 10 -18 10 q-18 0 -18 -10 z"
+          fill="url(#teen-male-onepiece-unitard__leg)"/>
+    <path d="M200 336 h36 v198 q0 10 -18 10 q-18 0 -18 -10 z"
+          fill="url(#teen-male-onepiece-unitard__leg)"/>
+  </g>
+
+  <!-- the side stripe: one continuous line from underarm to ankle, uninterrupted because
+       there is no waist seam for it to cross -->
+  <g fill="none" stroke="var(--c3, #F7C873)" stroke-width="6" stroke-linecap="round">
+    <path d="M152 232 L149 330 L167 344 L167 536"/>
+    <path d="M248 232 L251 330 L233 344 L233 536"/>
+  </g>
+
+  <!-- scoop neck bind and wrist binds -->
+  <path d="M164 192 q16 16 36 16 q20 0 36 -16" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M113 356 q16 10 32 0" stroke="var(--c3, #F7C873)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M287 356 q-16 10 -32 0" stroke="var(--c3, #F7C873)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M170 216 q30 14 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 350 q0 60 -2 120" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

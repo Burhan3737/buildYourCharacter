@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Onesie" data-family="sleep-onesie" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (a full length centre zip from throat to crotch, against boiler suit's
+       collared utility front and unitard's no closure at all) and hem (closed feet swallowing
+       the foot entirely to the ground line, against every other one piece here which stops at
+       the ankle or above and leaves the shoe reading).
+       The hood is drawn worn down as a fabric roll behind the neck, the sanctioned pattern for
+       the whole catalogue, so the character's face stays visible. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-sleep-onesie__fleece" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-sleep-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5A6BB4)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB4)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hood pooled in a thick roll behind the neck -->
+  <g class="sp-shadow">
+    <path d="M158 192 q42 26 84 0 q10 22 -2 38 q-40 16 -80 0 q-12 -16 -2 -38 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__hood)"/>
+  </g>
+
+  <!-- sleeves, softly bloused down to a ribbed cuff -->
+  <g class="sp-shadow">
+    <path d="M150 198 q-38 6 -40 34 l-4 118 q24 14 46 2 l10 -120 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__fleece)"/>
+    <path d="M250 198 q38 6 40 34 l4 118 q-24 14 -46 2 l-10 -120 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__fleece)"/>
+  </g>
+
+  <!-- bloused body from the shoulder to the crotch -->
+  <g class="sp-shadow">
+    <path d="M162 194 h76 q28 4 28 32 v104 q0 34 -30 40 h-72 q-30 -6 -30 -40 v-104 q0 -28 28 -32 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__fleece)"/>
+  </g>
+
+  <!-- legs ending in closed feet -->
+  <g class="sp-shadow">
+    <path d="M151 356 h51 v168 q0 46 -25.5 46 q-25.5 0 -25.5 -46 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__fleece)"/>
+    <path d="M198 356 h51 v168 q0 46 -25.5 46 q-25.5 0 -25.5 -46 z"
+          fill="url(#teen-male-onepiece-sleep-onesie__fleece)"/>
+  </g>
+
+  <!-- the zip: a full length centre line with a visible pull at the throat -->
+  <path d="M200 200 V368" stroke="var(--c3, #F2E2B8)" stroke-width="4.6"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #5A6BB4)" stroke-opacity="0.55" stroke-width="2.4">
+    <path d="M194 208 V364 M206 208 V364"/>
+  </g>
+  <rect x="195" y="204" width="10" height="16" rx="4" fill="var(--c3, #F2E2B8)"/>
+  <path d="M200 220 v12" stroke="var(--c3, #F2E2B8)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ribbed cuffs at the wrists, and a rib band at each ankle -->
+  <path d="M107 330 q24 14 45 2 l-1 22 q-22 12 -45 -2 z" fill="var(--c3, #F2E2B8)"/>
+  <path d="M293 330 q-24 14 -45 2 l1 22 q22 12 45 -2 z" fill="var(--c3, #F2E2B8)"/>
+  <g fill="none" stroke="var(--c3, #F2E2B8)" stroke-width="3.2" stroke-opacity="0.85"
+     stroke-linecap="round">
+    <path d="M154 512 h44 M202 512 h44"/>
+  </g>
+
+  <!-- hood draw seam and the upper-surface highlight -->
+  <path d="M164 206 q36 20 72 0" stroke="var(--c3, #F2E2B8)" stroke-width="3.6"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M156 236 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

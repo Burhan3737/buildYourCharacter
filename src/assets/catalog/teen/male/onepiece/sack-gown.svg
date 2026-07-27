@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (the robe front hangs open over a separate triangular stomacher and a
+       petticoat wedge, three visible layers, against ball gown's single closed strapless
+       bodice) and shoulder (elbow length pagoda sleeves ending in stacked ruffle cuffs,
+       against ball gown's bare shoulder and bridal gown's long sheer sleeve).
+       The skirt is held wide side to side and flat front to back: it reaches x92 and x308 at
+       the ground, clearing the hip by 58 units per side. Two box pleats fall loose from the
+       shoulders at the back and show past the body on both sides.
+       No powdered wig: that is hair and out of scope. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-sack-gown__silk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B79CC8)"/>
+      <stop offset="1" stop-color="var(--c2, #8E74A0)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-sack-gown__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E2B8)"/>
+      <stop offset="1" stop-color="var(--c3, #F2E2B8)" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the two back box pleats, falling loose from the shoulders and showing past the body -->
+  <g class="sp-shadow">
+    <path d="M150 196 h20 l-8 148 q-18 4 -32 -2 z" fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+    <path d="M250 196 h-20 l8 148 q18 4 32 -2 z" fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- the wide flat sided skirt -->
+  <g class="sp-shadow">
+    <path d="M152 328 Q98 372 92 566 Q200 582 308 566 Q302 372 248 328 Z"
+          fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- the petticoat wedge showing through the open robe front -->
+  <g class="sp-shadow">
+    <path d="M180 326 H220 L254 562 Q200 574 146 562 Z"
+          fill="url(#teen-male-onepiece-sack-gown__petticoat)"/>
+  </g>
+
+  <!-- elbow length pagoda sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 198 q-34 6 -38 30 l-10 66 q28 16 56 4 l4 -70 z"
+          fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+    <path d="M250 198 q34 6 38 30 l10 66 q-28 16 -56 4 l-4 -70 z"
+          fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- the robe front, open down the centre over the stomacher -->
+  <g class="sp-shadow">
+    <path d="M154 194 H182 L176 336 Q158 342 142 334 L140 220 Q140 196 154 194 Z"
+          fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+    <path d="M246 194 H218 L224 336 Q242 342 258 334 L260 220 Q260 196 246 194 Z"
+          fill="url(#teen-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- the triangular stomacher between the robe fronts -->
+  <g class="sp-shadow">
+    <path d="M178 200 H222 L206 336 H194 Z" fill="url(#teen-male-onepiece-sack-gown__petticoat)"/>
+  </g>
+
+  <!-- stacked ruffle cuffs, two tiers at each elbow -->
+  <path d="M102 288 q28 16 56 4 l-2 18 q-28 12 -56 -4 z" fill="var(--c3, #F2E2B8)"/>
+  <path d="M100 306 q28 16 56 4 l-2 18 q-28 12 -56 -4 z" fill="var(--c3, #F2E2B8)"
+        fill-opacity="0.8"/>
+  <path d="M298 288 q-28 16 -56 4 l2 18 q28 12 56 -4 z" fill="var(--c3, #F2E2B8)"/>
+  <path d="M300 306 q-28 16 -56 4 l2 18 q28 12 56 -4 z" fill="var(--c3, #F2E2B8)"
+        fill-opacity="0.8"/>
+
+  <!-- stomacher lacing, robe front edge piping, skirt fall seams -->
+  <g fill="none" stroke="var(--c2, #8E74A0)" stroke-width="3" stroke-linecap="round">
+    <path d="M182 216 L218 224 M182 240 L217 248 M183 264 L215 272 M186 288 L212 296"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #F2E2B8)" stroke-opacity="0.85" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M177 200 L175 336 M223 200 L225 336"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #8E74A0)" stroke-opacity="0.42" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M136 372 L108 552 M164 350 L142 560 M236 350 L258 560 M264 372 L292 552"/>
+  </g>
+
+  <path d="M158 210 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

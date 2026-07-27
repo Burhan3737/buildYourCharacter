@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: volume (a straight tube with no waist shaping at all, dropping to a horizontal
+       seam at the HIP rather than the waist, against maxi dress's fitted bodice) and hem (a
+       separate fringed panel hanging below that seam as a row of individual strands, so the
+       lower half of the outline is broken rather than continuous).
+       The fringe is real negative space, not a texture: twenty three separate strands with an
+       uneven hem, each long enough to read at tray size. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-flapper-dress__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6D6A8E)"/>
+      <stop offset="1" stop-color="var(--c2, #4E4B6B)"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-flapper-dress__bead" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2" fill="var(--c3, #F7C873)" fill-opacity="0.6"/>
+      <circle cx="12" cy="12" r="2" fill="var(--c3, #F7C873)" fill-opacity="0.6"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-flapper-dress__clip">
+      <path d="M160 214 H240 L242 374 H158 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- narrow straps over bare shoulders -->
+  <g class="sp-shadow">
+    <path d="M172 192 h10 l4 26 h-12 z" fill="url(#teen-male-onepiece-flapper-dress__shell)"/>
+    <path d="M218 192 h10 l-2 26 h-12 z" fill="url(#teen-male-onepiece-flapper-dress__shell)"/>
+  </g>
+
+  <!-- the straight tube, no waist, down to a horizontal hip seam -->
+  <g class="sp-shadow">
+    <path d="M160 214 H240 L242 374 H158 Z" fill="url(#teen-male-onepiece-flapper-dress__shell)"/>
+  </g>
+
+  <!-- the separate fringe panel: individual strands to mid calf -->
+  <g class="sp-shadow">
+    <path d="M156 372 h88 v10 h-88 z" fill="url(#teen-male-onepiece-flapper-dress__shell)"/>
+    <path d="M157 382 h6 v122 h-6 z M167 382 h6 v116 h-6 z M177 382 h6 v124 h-6 z
+             M187 382 h6 v114 h-6 z M197 382 h6 v126 h-6 z M207 382 h6 v116 h-6 z
+             M217 382 h6 v122 h-6 z M227 382 h6 v112 h-6 z M237 382 h6 v120 h-6 z"
+          fill="url(#teen-male-onepiece-flapper-dress__shell)"/>
+  </g>
+
+  <!-- second, offset fringe row so the band reads dense rather than combed -->
+  <g fill="var(--c2, #4E4B6B)">
+    <path d="M162 384 h5 v112 h-5 z M172 384 h5 v120 h-5 z M182 384 h5 v110 h-5 z
+             M192 384 h5 v122 h-5 z M202 384 h5 v112 h-5 z M212 384 h5 v120 h-5 z
+             M222 384 h5 v108 h-5 z M232 384 h5 v118 h-5 z"/>
+  </g>
+
+  <!-- bead scatter over the tube only -->
+  <g clip-path="url(#teen-male-onepiece-flapper-dress__clip)">
+    <rect x="156" y="212" width="90" height="164" fill="url(#teen-male-onepiece-flapper-dress__bead)"/>
+  </g>
+
+  <!-- straight upper edge bind and the hip seam band -->
+  <path d="M160 216 H240" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 370 h88 v10 h-88 z" fill="var(--c3, #F7C873)"/>
+  <path d="M172 194 h10 M218 194 h10" stroke="var(--c3, #F7C873)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 228 q32 10 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

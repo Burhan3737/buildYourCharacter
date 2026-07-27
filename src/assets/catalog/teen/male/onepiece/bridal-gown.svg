@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: volume (fitted hard through the hip to the knee and then flaring into a trumpet, a
+       break in the outline no other gown here has) and hem (a train sweeping past the ground
+       line behind the figure, against ball gown's even dome sweep).
+       It must read as a wedding gown when recoloured black: white is a default, not an
+       identity, so the trumpet break and the train do the work a palette never could.
+       The veil is head art and lives in headwear. No veil is drawn here. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-bridal-gown__satin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE2)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC2B2)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-bridal-gown__train" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFC2B2)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC2B2)" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-bridal-gown__sheer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE2)" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="var(--c1, #F2ECE2)" stop-opacity="0.34"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-bridal-gown__lace" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="4.2" fill="none" stroke="var(--c3, #C9B27E)"
+              stroke-width="1.6" stroke-opacity="0.6"/>
+      <circle cx="9" cy="9" r="1.4" fill="var(--c3, #C9B27E)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-bridal-gown__bodclip">
+      <path d="M160 194 H240 Q258 196 258 222 L252 340 L247 466 H153 L148 340 L142 222
+               Q142 196 160 194 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the train, drawn first so it reads behind the skirt -->
+  <g class="sp-shadow">
+    <path d="M158 452 Q102 512 76 566 Q120 580 180 570 L186 470 Z"
+          fill="url(#teen-male-onepiece-bridal-gown__train)"/>
+  </g>
+
+  <!-- long sheer set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M148 198 q-34 4 -35 26 l-4 142 q18 10 36 0 l9 -144 z"
+          fill="url(#teen-male-onepiece-bridal-gown__sheer)"/>
+    <path d="M252 198 q34 4 35 26 l4 142 q-18 10 -36 0 l-9 -144 z"
+          fill="url(#teen-male-onepiece-bridal-gown__sheer)"/>
+  </g>
+
+  <!-- the trumpet: it opens only below the knee -->
+  <g class="sp-shadow">
+    <path d="M153 458 H247 L272 562 Q200 578 128 562 Z"
+          fill="url(#teen-male-onepiece-bridal-gown__satin)"/>
+  </g>
+
+  <!-- the sheath: high round neck, fitted through the hip to the knee -->
+  <g class="sp-shadow">
+    <path d="M160 194 H240 Q258 196 258 222 L252 340 L247 466 H153 L148 340 L142 222
+             Q142 196 160 194 Z"
+          fill="url(#teen-male-onepiece-bridal-gown__satin)"/>
+  </g>
+
+  <!-- lace over the fitted bodice only -->
+  <g clip-path="url(#teen-male-onepiece-bridal-gown__bodclip)">
+    <rect x="140" y="194" width="120" height="132" fill="url(#teen-male-onepiece-bridal-gown__lace)"/>
+  </g>
+
+  <!-- high round neckline bind, princess seams, and the trumpet break seam -->
+  <path d="M176 192 q24 14 48 0" stroke="var(--c3, #C9B27E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #CFC2B2)" stroke-opacity="0.6" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M172 214 L168 452 M228 214 L232 452"/>
+  </g>
+  <path d="M153 458 H247" stroke="var(--c3, #C9B27E)" stroke-width="4" stroke-opacity="0.75"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- fall lines in the trumpet and the train -->
+  <g fill="none" stroke="var(--c2, #CFC2B2)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M176 466 L156 556 M200 466 L200 566 M224 466 L244 556 M150 480 L104 560"/>
+  </g>
+
+  <path d="M168 212 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

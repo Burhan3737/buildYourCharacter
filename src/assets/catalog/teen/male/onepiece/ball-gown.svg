@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (bare, a straight strapless band across the top of the bust, against every
+       other gown here which carries a sleeve or a strap) and volume (a bouffant dome standing
+       clear of the leg on both sides, against the narrow columns of maxi dress and empire gown).
+       Floor check: the hip is x150 to x250 and the dome reaches x108 and x292 at the ground, so
+       it clears the widest point of the body by 42 units per side, past the 40 unit minimum.
+       Trademark: the fallback is mint over butter, deliberately clear of the pale blue, yellow
+       and pink with a gold bodice defaults that name specific animated princesses. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-ball-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E8C7C)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)" stop-opacity="0.78"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-ball-gown__brocade" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 Q13 10 10 17 Q7 10 10 3 Z" fill="var(--c3, #F7C873)" fill-opacity="0.5"/>
+      <path d="M3 10 Q10 13 17 10 Q10 7 3 10 Z" fill="var(--c3, #F7C873)" fill-opacity="0.34"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-ball-gown__skirtclip">
+      <path d="M158 322 C120 358 102 468 106 556 Q200 580 294 556 C298 468 280 358 242 322 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the dome, drawn first so the bodice point sits over it -->
+  <g class="sp-shadow">
+    <path d="M158 322 C120 358 102 468 106 556 Q200 580 294 556 C298 468 280 358 242 322 Z"
+          fill="url(#teen-male-onepiece-ball-gown__skirt)"/>
+  </g>
+
+  <!-- strapless bodice coming to a point at the waist -->
+  <g class="sp-shadow">
+    <path d="M150 236 Q200 227 250 236 L247 296 Q239 338 200 358 Q161 338 153 296 Z"
+          fill="url(#teen-male-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- brocade over the dome only -->
+  <g clip-path="url(#teen-male-onepiece-ball-gown__skirtclip)">
+    <rect x="100" y="320" width="200" height="256" fill="url(#teen-male-onepiece-ball-gown__brocade)"/>
+  </g>
+
+  <!-- straight band across the top of the bust -->
+  <path d="M150 236 Q200 227 250 236 l0 12 Q200 239 150 248 Z" fill="var(--c3, #F7C873)"/>
+
+  <!-- boning seams down the bodice and drape seams down the dome -->
+  <g fill="none" stroke="var(--c1, #6BBFAD)" stroke-opacity="0.45" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M176 244 L180 330 M200 242 L200 348 M224 244 L220 330"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #3E8C7C)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M152 340 L124 548 M180 336 L166 562 M220 336 L234 562 M248 340 L276 548"/>
+  </g>
+
+  <!-- hem sweep band and the upper-surface highlight -->
+  <path d="M106 548 Q200 572 294 548" stroke="var(--c3, #F7C873)" stroke-width="6"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M162 244 Q200 236 238 244" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 380 Q200 356 264 380" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

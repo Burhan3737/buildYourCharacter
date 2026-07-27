@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: closure (none at all, a closed pull on gown hanging from a shoulder yoke, against
+       shirt dress's button through front and wrap dress's crossover) and volume (no waist
+       anywhere, one soft unbroken fall from the yoke seam to mid calf, against maxi dress's
+       fitted bodice over a narrow column).
+       Quiet is not the same as frumpy: the yoke is a real panel, the floral is a real pattern
+       and the neck bind is a real trim. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-nightgown__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D28073)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D28073)"/>
+      <stop offset="1" stop-color="var(--c2, #D28073)" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-nightgown__floral" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="6" r="3" fill="var(--c3, #F7C873)" fill-opacity="0.55"/>
+      <circle cx="6" cy="12" r="3" fill="var(--c3, #F7C873)" fill-opacity="0.55"/>
+      <circle cx="16" cy="12" r="3" fill="var(--c3, #F7C873)" fill-opacity="0.55"/>
+      <circle cx="11" cy="17" r="3" fill="var(--c3, #F7C873)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-nightgown__clip">
+      <path d="M158 240 L145 492 Q200 508 255 492 L242 240 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- short set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M150 202 q-30 2 -34 26 l-4 30 q22 12 42 2 l6 -34 z"
+          fill="url(#teen-male-onepiece-nightgown__cloth)"/>
+    <path d="M250 202 q30 2 34 26 l4 30 q-22 12 -42 2 l-6 -34 z"
+          fill="url(#teen-male-onepiece-nightgown__cloth)"/>
+  </g>
+
+  <!-- the body: one straight soft fall from the yoke seam to mid calf, no waist -->
+  <g class="sp-shadow">
+    <path d="M158 240 L145 492 Q200 508 255 492 L242 240 Z"
+          fill="url(#teen-male-onepiece-nightgown__cloth)"/>
+  </g>
+
+  <!-- the shoulder yoke it hangs from -->
+  <g class="sp-shadow">
+    <path d="M162 196 h76 q14 0 15 14 l3 30 q-56 14 -112 0 l3 -30 q1 -14 15 -14 z"
+          fill="url(#teen-male-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- scattered floral over the fall only -->
+  <g clip-path="url(#teen-male-onepiece-nightgown__clip)">
+    <rect x="142" y="256" width="118" height="248" fill="url(#teen-male-onepiece-nightgown__floral)"/>
+  </g>
+
+  <!-- plain round neck with a bound edge, and gather ticks under the yoke seam -->
+  <path d="M182 194 q18 16 36 0 q4 12 -18 20 q-22 -8 -18 -20 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M180 194 q20 18 40 0" stroke="var(--c3, #F7C873)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #D28073)" stroke-opacity="0.6" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M166 244 v14 M182 244 v16 M200 244 v16 M218 244 v16 M234 244 v14"/>
+  </g>
+
+  <!-- hem binding and highlight -->
+  <path d="M146 486 Q200 502 254 486" stroke="var(--c3, #F7C873)" stroke-width="5"
+        stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+  <path d="M166 210 Q200 200 234 210" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

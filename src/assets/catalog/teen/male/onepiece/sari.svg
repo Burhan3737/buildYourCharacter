@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari (Nivi Drape)" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: shoulder (a single wide draped pallu carried diagonally over one shoulder and
+       nothing on the other, an asymmetric shoulder no other one piece here has) and closure
+       (draped and tucked, no seam, no fastening and no armhole, against wrap dress's tied
+       crossover).
+       This is the common NIVI drape and is named as such in data-name: hand gathered pleats at
+       the centre front waist, pallu over the LEFT shoulder, which in this front facing view is
+       the screen right shoulder. Over eighty regional drapes exist and no single one is "the"
+       sari.
+       The choli and the petticoat are drawn into this same file and painted through c2 and c3
+       so the player can still contrast them. Everyday clothing, drawn as clothes. No community
+       specific woven motif. -->
+  <defs>
+    <linearGradient id="teen-male-onepiece-sari__silk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C85F7A)"/>
+      <stop offset="1" stop-color="var(--c1, #A64460)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8C7C)"/>
+    </linearGradient>
+    <pattern id="teen-male-onepiece-sari__border" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 L15 9 L9 15 L3 9 Z" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-width="2" stroke-opacity="0.8"/>
+    </pattern>
+    <clipPath id="teen-male-onepiece-sari__palluclip">
+      <path d="M254 196 L286 214 L228 316 L184 402 L150 384 L206 288 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- petticoat under the drape -->
+  <g class="sp-shadow">
+    <path d="M158 334 H242 L248 546 Q200 560 152 546 Z"
+          fill="url(#teen-male-onepiece-sari__petticoat)"/>
+  </g>
+
+  <!-- the fitted short blouse, short sleeved, ending above the waist -->
+  <g class="sp-shadow">
+    <path d="M156 194 H244 Q262 196 262 218 V262 Q262 278 246 280 H154 Q138 278 138 262 V218
+             Q138 196 156 194 Z"
+          fill="url(#teen-male-onepiece-sari__choli)"/>
+    <path d="M150 200 q-32 4 -33 24 l-2 42 q17 10 34 0 l7 -46 z"
+          fill="url(#teen-male-onepiece-sari__choli)"/>
+    <path d="M250 200 q32 4 33 24 l2 42 q-17 10 -34 0 l-7 -46 z"
+          fill="url(#teen-male-onepiece-sari__choli)"/>
+  </g>
+
+  <!-- the wrapped lower drape, waist to ankle -->
+  <g class="sp-shadow">
+    <path d="M150 320 H250 L258 548 Q200 564 142 548 Z"
+          fill="url(#teen-male-onepiece-sari__silk)"/>
+  </g>
+
+  <!-- the hand gathered pleat fan at the centre front -->
+  <g class="sp-shadow">
+    <path d="M178 326 H222 L236 544 Q200 552 164 544 Z"
+          fill="url(#teen-male-onepiece-sari__silk)"/>
+  </g>
+
+  <!-- the pallu, carried diagonally over the wearer's left shoulder (screen right) -->
+  <g class="sp-shadow">
+    <path d="M254 196 L286 214 L228 316 L184 402 L150 384 L206 288 Z"
+          fill="url(#teen-male-onepiece-sari__silk)"/>
+  </g>
+
+  <!-- woven border along the pallu edge and round the hem -->
+  <g clip-path="url(#teen-male-onepiece-sari__palluclip)">
+    <rect x="146" y="192" width="144" height="216" fill="url(#teen-male-onepiece-sari__border)"/>
+  </g>
+  <path d="M254 196 L286 214 L184 402 L150 384 Z" fill="none" stroke="var(--c3, #F7C873)"
+        stroke-width="4" stroke-linejoin="round"/>
+  <path d="M144 534 Q200 550 256 534" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- individual pleat folds in the fan, and the waist tuck -->
+  <g fill="none" stroke="var(--c3, #F7C873)" stroke-opacity="0.6" stroke-width="2.6"
+     stroke-linecap="round">
+    <path d="M186 330 L176 540 M196 330 L192 544 M206 330 L210 544 M216 330 L226 540"/>
+  </g>
+  <path d="M150 322 Q200 336 250 322" stroke="var(--c1, #A64460)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <path d="M160 210 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
