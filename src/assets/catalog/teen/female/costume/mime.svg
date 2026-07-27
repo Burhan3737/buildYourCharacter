@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=long set-in under two narrow braces - closure=closed BOAT NECK - hem=cropped clear above the ankle - volume=FITTED -->
+  <!-- the painted face is the other readable half of a mime and cannot be drawn: it needs a -->
+  <!-- face-mark slot that does not exist. The banded body, the braces and the cropped trouser carry it. -->
+  <defs>
+    <linearGradient id="teen-female-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C8B4)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #D6C8B4)"/>
+    </linearGradient>
+    <pattern id="teen-female-costume-mime__band" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="9" fill="var(--c3, #3B2A22)" fill-opacity="0.85"/>
+    </pattern>
+    <clipPath id="teen-female-costume-mime__clip">
+      <path d="M152 196 H248 L250 306 Q200 316 150 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- high-waisted straight trousers, cropped clear above the ankle -->
+    <path d="M154 298 H199 L197 500 Q182 506 168 500 L162 400 Z" fill="url(#teen-female-costume-mime__trouser)"/>
+    <path d="M246 298 H201 L203 500 Q218 506 232 500 L238 400 Z" fill="url(#teen-female-costume-mime__trouser)"/>
+    <!-- long close sleeves -->
+    <path d="M150 200 L126 208 L124 344 Q134 352 146 346 L152 214 Z" fill="url(#teen-female-costume-mime__body)"/>
+    <path d="M250 200 L274 208 L276 344 Q266 352 254 346 L248 214 Z" fill="url(#teen-female-costume-mime__body)"/>
+    <!-- close banded body with a wide boat neck cutting across the shoulder points -->
+    <path d="M152 196 H248 L250 306 Q200 316 150 306 Z" fill="url(#teen-female-costume-mime__body)"/>
+    <g clip-path="url(#teen-female-costume-mime__clip)">
+      <rect x="150" y="194" width="100" height="124" fill="url(#teen-female-costume-mime__band)"/>
+    </g>
+  </g>
+
+  <!-- the boat neckline, bound and running right out to the shoulder points -->
+  <path d="M152 196 Q200 208 248 196 L248 206 Q200 218 152 206 Z" fill="var(--c3, #3B2A22)"/>
+
+  <!-- two narrow braces over the shoulders to the waistband -->
+  <path d="M170 200 L166 300 L176 300 L180 200 Z" fill="var(--c3, #3B2A22)"/>
+  <path d="M230 200 L234 300 L224 300 L220 200 Z" fill="var(--c3, #3B2A22)"/>
+  <rect x="152" y="296" width="96" height="14" rx="5" fill="var(--c3, #3B2A22)"/>
+
+  <!-- glove-edge cuff band at each wrist -->
+  <rect x="122" y="334" width="26" height="12" rx="5" fill="var(--c1, #FBF3E4)"/>
+  <rect x="252" y="334" width="26" height="12" rx="5" fill="var(--c1, #FBF3E4)"/>
+  <!-- cropped trouser hems -->
+  <rect x="164" y="490" width="34" height="10" rx="4" fill="var(--c2, #D6C8B4)"/>
+  <rect x="202" y="490" width="34" height="10" rx="4" fill="var(--c2, #D6C8B4)"/>
+  <path d="M164 214 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

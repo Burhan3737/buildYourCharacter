@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=DRAPED three-quarter bell sleeve - closure=closed - hem=hip over ankle pantaloons - volume=STRAIGHT column widest at the shoulder -->
+  <!-- the collaret is a FLAT DISC spreading outward from the ceiling, never upward. It is kept -->
+  <!-- shallow so a ruff necklace layered over it reads as one bigger ruff rather than two colliding ones. -->
+  <!-- against clown: dropped-and-gathered barrel widest at the hip there, draped column widest at the shoulder here. -->
+  <defs>
+    <linearGradient id="teen-female-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC0AC)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-pierrot__pant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC0AC)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- very wide gathered pantaloons falling as one straight column to the ankle -->
+    <path d="M154 330 H246 L262 460 L258 540 Q228 550 204 544 L200 420 L196 544
+             Q172 550 142 540 L138 460 Z"
+          fill="url(#teen-female-costume-pierrot__pant)"/>
+    <!-- three-quarter bell sleeves, flaring hard at the elbow -->
+    <path d="M150 210 L138 262 Q108 292 104 322 Q126 336 156 322 Q164 288 168 226 Z"
+          fill="url(#teen-female-costume-pierrot__blouse)"/>
+    <path d="M250 210 L262 262 Q292 292 296 322 Q274 336 244 322 Q236 288 232 226 Z"
+          fill="url(#teen-female-costume-pierrot__blouse)"/>
+    <!-- loose straight blouse to the hip -->
+    <path d="M166 194 H234 Q248 200 250 216 L252 350 Q200 364 148 350 L150 216 Q152 200 166 194 Z"
+          fill="url(#teen-female-costume-pierrot__blouse)"/>
+  </g>
+
+  <!-- the large flat frilled disc collaret, lying on the shoulders -->
+  <path d="M200 196 Q152 198 146 214 Q152 232 200 234 Q248 232 254 214 Q248 198 200 196 Z"
+        fill="var(--c3, #7E90DC)"/>
+  <path d="M154 210 q8 14 14 16 M172 202 q4 18 4 22 M192 198 q1 20 1 24
+           M208 198 q-1 20 -1 24 M228 202 q-4 18 -4 22 M246 210 q-8 14 -14 16"
+        stroke="var(--c1, #FBF3E4)" stroke-opacity="0.7" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- three large flat pompons down the front -->
+  <circle cx="200" cy="262" r="13" fill="var(--c3, #7E90DC)"/>
+  <circle cx="200" cy="304" r="13" fill="var(--c3, #7E90DC)"/>
+  <circle cx="200" cy="346" r="13" fill="var(--c3, #7E90DC)"/>
+
+  <!-- bell-sleeve hem bands and the pantaloon gathers -->
+  <path d="M104 318 Q130 332 156 318 L156 328 Q130 342 104 328 Z" fill="var(--c3, #7E90DC)"/>
+  <path d="M296 318 Q270 332 244 318 L244 328 Q270 342 296 328 Z" fill="var(--c3, #7E90DC)"/>
+  <path d="M172 344 Q166 440 160 534" stroke="var(--c2, #CFC0AC)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M228 344 Q234 440 240 534" stroke="var(--c2, #CFC0AC)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M168 224 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

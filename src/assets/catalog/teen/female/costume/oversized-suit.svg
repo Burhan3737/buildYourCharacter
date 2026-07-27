@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=projecting far OUTSIDE the body, exaggerated outward and never upward -->
+  <!-- closure=OPEN FRONT with one enormous button - hem=mid-calf - volume=wide and sagging -->
+  <!-- the open front resolves as an integral shirt drawn in this file and painted through c3, never a phantom layer -->
+  <!-- against disguise-coat: that one is belted and closed to the throat in a narrow straight column -->
+  <defs>
+    <linearGradient id="teen-female-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #56649F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #56649F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- trousers puddling in folds at the ground line -->
+    <path d="M156 340 H199 L196 540 Q194 562 176 564 Q152 566 146 552 L150 440 Z"
+          fill="url(#teen-female-costume-oversized-suit__trouser)"/>
+    <path d="M244 340 H201 L204 540 Q206 562 224 564 Q248 566 254 552 L250 440 Z"
+          fill="url(#teen-female-costume-oversized-suit__trouser)"/>
+    <!-- the integral shirt behind the open front -->
+    <path d="M172 198 H228 L230 340 Q200 350 170 340 Z" fill="var(--c3, #FBF3E4)"/>
+    <!-- sleeves swallowing the hands -->
+    <path d="M128 202 L100 218 L94 392 Q116 406 140 394 L146 226 Z"
+          fill="url(#teen-female-costume-oversized-suit__jacket)"/>
+    <path d="M272 202 L300 218 L306 392 Q284 406 260 394 L254 226 Z"
+          fill="url(#teen-female-costume-oversized-suit__jacket)"/>
+    <!-- left jacket panel, shoulder projecting well outside the body -->
+    <path d="M104 200 H188 L176 258 L166 340 L162 508 Q136 516 116 506 L108 340 Z"
+          fill="url(#teen-female-costume-oversized-suit__jacket)"/>
+    <!-- right jacket panel -->
+    <path d="M296 200 H212 L224 258 L234 340 L238 508 Q264 516 284 506 L292 340 Z"
+          fill="url(#teen-female-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- wide notched lapels rolling down from the shoulder -->
+  <path d="M172 198 L188 200 L178 262 L162 250 Z" fill="var(--c2, #56649F)"/>
+  <path d="M228 198 L212 200 L222 262 L238 250 Z" fill="var(--c2, #56649F)"/>
+
+  <!-- a single enormous button at the waist -->
+  <circle cx="200" cy="322" r="18" fill="var(--c3, #FBF3E4)"/>
+  <circle cx="194" cy="317" r="3.5" fill="var(--c2, #56649F)"/>
+  <circle cx="206" cy="317" r="3.5" fill="var(--c2, #56649F)"/>
+
+  <!-- the sag: fold lines through the too-big body and the puddling hems -->
+  <path d="M126 300 Q142 312 158 306" stroke="var(--c2, #56649F)" stroke-opacity="0.5"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M274 300 Q258 312 242 306" stroke="var(--c2, #56649F)" stroke-opacity="0.5"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M150 528 Q170 544 192 536" stroke="var(--c2, #56649F)" stroke-opacity="0.6"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M250 528 Q230 544 208 536" stroke="var(--c2, #56649F)" stroke-opacity="0.6"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M118 216 q28 12 52 6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

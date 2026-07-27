@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=narrow ribbed tube arms held OUT at 45 degrees - closure=gathered to a tight neck ring - hem=ankle - volume=NEAR-SPHERICAL -->
+  <defs>
+    <linearGradient id="teen-female-costume-inflatable-suit__ball" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9C41)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-inflatable-suit__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #CE9C41)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow ribbed tube arms, held well away from the body -->
+    <path d="M152 246 Q118 274 96 322 Q90 340 106 346 Q120 350 128 336 Q146 296 170 268 Z"
+          fill="url(#teen-female-costume-inflatable-suit__tube)"/>
+    <path d="M248 246 Q282 274 304 322 Q310 340 294 346 Q280 350 272 336 Q254 296 230 268 Z"
+          fill="url(#teen-female-costume-inflatable-suit__tube)"/>
+    <!-- narrow ribbed tube legs -->
+    <path d="M170 440 Q160 490 164 540 Q178 548 192 540 Q192 490 196 442 Z"
+          fill="url(#teen-female-costume-inflatable-suit__tube)"/>
+    <path d="M230 440 Q240 490 236 540 Q222 548 208 540 Q208 490 204 442 Z"
+          fill="url(#teen-female-costume-inflatable-suit__tube)"/>
+    <!-- the near-spherical body, armpit to knee -->
+    <path d="M200 216 Q136 220 108 288 Q86 350 116 412 Q148 470 200 470
+             Q252 470 284 412 Q314 350 292 288 Q264 220 200 216 Z"
+          fill="url(#teen-female-costume-inflatable-suit__ball)"/>
+  </g>
+
+  <!-- tight neck ring gathering the whole balloon -->
+  <path d="M172 196 Q200 190 228 196 Q232 210 200 214 Q168 210 172 196 Z" fill="var(--c3, #3B2A22)"/>
+  <path d="M176 214 Q200 222 224 214" stroke="var(--c3, #3B2A22)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- inflation seam rings across the sphere -->
+  <path d="M112 300 Q200 278 288 300" stroke="var(--c2, #CE9C41)" stroke-opacity="0.55"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M104 354 Q200 334 296 354" stroke="var(--c2, #CE9C41)" stroke-opacity="0.55"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M116 408 Q200 390 284 408" stroke="var(--c2, #CE9C41)" stroke-opacity="0.55"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- tube ribbing -->
+  <path d="M148 276 l-10 12 M132 296 l-10 12 M118 318 l-12 10"
+        stroke="var(--c2, #CE9C41)" stroke-opacity="0.6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M252 276 l10 12 M268 296 l10 12 M282 318 l12 10"
+        stroke="var(--c2, #CE9C41)" stroke-opacity="0.6" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- the small round fan pod at the waist -->
+  <circle cx="272" cy="392" r="16" fill="var(--c3, #3B2A22)"/>
+  <circle cx="272" cy="392" r="8" fill="var(--c1, #F7C873)"/>
+  <path d="M138 270 Q168 244 208 240" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="14"
+        fill="none" stroke-linecap="round"/>
+</svg>

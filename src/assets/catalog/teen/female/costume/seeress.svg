@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Seeress" data-family="seeress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- no staff: there is no prop or hand anchor in this project, and a staff would not align with -->
+  <!-- the hand on any bundle. The pouch and the charm belt are worn and are fine. -->
+  <!-- axes: shoulder=flat FUR COLLAR over both shoulders - closure=OPEN FRONT, one strap across the chest -->
+  <!-- hem=ankle, weighted by a stone band - volume=straight, with the mantle hanging free at the sides -->
+  <defs>
+    <linearGradient id="teen-female-costume-seeress__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E6AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #494575)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-seeress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9B79A)"/>
+      <stop offset="1" stop-color="var(--c2, #494575)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long straight underdress -->
+    <path d="M164 200 H236 Q246 208 246 228 L250 380 L248 522 Q200 534 152 522 L150 380 L154 228
+             Q154 208 164 200 Z"
+          fill="url(#teen-female-costume-seeress__under)"/>
+    <!-- the two open mantle panels, hanging free from the shoulders to the ankle -->
+    <path d="M158 204 Q136 214 128 250 L118 380 L120 528 Q142 538 166 530 L162 380 L164 234 Z"
+          fill="url(#teen-female-costume-seeress__mantle)"/>
+    <path d="M242 204 Q264 214 272 250 L282 380 L280 528 Q258 538 234 530 L238 380 L236 234 Z"
+          fill="url(#teen-female-costume-seeress__mantle)"/>
+    <!-- tall laced boots ending in heavy round knobs -->
+    <path d="M164 470 H196 L194 552 Q178 560 164 552 Z" fill="url(#teen-female-costume-seeress__mantle)"/>
+    <path d="M236 470 H204 L206 552 Q222 560 236 552 Z" fill="url(#teen-female-costume-seeress__mantle)"/>
+    <!-- flat fur collar lying across both shoulders -->
+    <path d="M150 200 Q200 192 250 200 Q262 216 258 236 Q240 226 224 234 Q200 244 176 234
+             Q160 226 142 236 Q138 216 150 200 Z"
+          fill="url(#teen-female-costume-seeress__mantle)"/>
+  </g>
+
+  <!-- the single strap that closes the mantle across the chest -->
+  <path d="M156 246 Q200 260 244 246 L246 262 Q200 276 154 262 Z" fill="var(--c3, #C9B79A)"/>
+  <circle cx="200" cy="254" r="9" fill="var(--c2, #494575)"/>
+
+  <!-- deep fur-turned cuffs -->
+  <path d="M120 322 Q142 336 166 324 L164 350 Q140 364 118 348 Z" fill="var(--c3, #C9B79A)"/>
+  <path d="M280 322 Q258 336 234 324 L236 350 Q260 364 282 348 Z" fill="var(--c3, #C9B79A)"/>
+
+  <!-- linked charm belt with one large pouch hanging from it -->
+  <path d="M152 344 Q200 358 248 344 L248 356 Q200 370 152 356 Z" fill="var(--c3, #C9B79A)"/>
+  <circle cx="170" cy="352" r="5" fill="var(--c2, #494575)"/>
+  <circle cx="188" cy="356" r="5" fill="var(--c2, #494575)"/>
+  <circle cx="212" cy="356" r="5" fill="var(--c2, #494575)"/>
+  <circle cx="230" cy="352" r="5" fill="var(--c2, #494575)"/>
+  <path d="M222 362 H256 Q262 366 260 384 Q256 408 238 410 Q220 408 218 384 Q216 366 222 362 Z"
+        fill="var(--c3, #C9B79A)"/>
+  <path d="M222 372 h36" stroke="var(--c2, #494575)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- the mantle hem weighted by a band of small set stones -->
+  <path d="M118 506 Q142 518 164 512 L166 528 Q140 538 118 526 Z" fill="var(--c3, #C9B79A)"/>
+  <path d="M282 506 Q258 518 236 512 L234 528 Q260 538 282 526 Z" fill="var(--c3, #C9B79A)"/>
+  <circle cx="128" cy="518" r="4" fill="var(--c2, #494575)"/>
+  <circle cx="144" cy="521" r="4" fill="var(--c2, #494575)"/>
+  <circle cx="158" cy="520" r="4" fill="var(--c2, #494575)"/>
+  <circle cx="272" cy="518" r="4" fill="var(--c2, #494575)"/>
+  <circle cx="256" cy="521" r="4" fill="var(--c2, #494575)"/>
+  <circle cx="242" cy="520" r="4" fill="var(--c2, #494575)"/>
+
+  <!-- boot lacing and the heavy round knobs at the toe -->
+  <path d="M168 488 L192 496 M192 488 L168 496 M168 510 L192 518 M192 510 L168 518"
+        stroke="var(--c3, #C9B79A)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M232 488 L208 496 M208 488 L232 496 M232 510 L208 518 M208 510 L232 518"
+        stroke="var(--c3, #C9B79A)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="172" cy="556" r="12" fill="var(--c2, #494575)"/>
+  <circle cx="228" cy="556" r="12" fill="var(--c2, #494575)"/>
+  <!-- fur texture on the collar -->
+  <path d="M158 208 q6 12 4 22 M182 202 q4 14 2 26 M218 202 q-4 14 -2 26 M242 208 q-6 12 -4 22"
+        stroke="var(--c2, #494575)" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M166 216 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

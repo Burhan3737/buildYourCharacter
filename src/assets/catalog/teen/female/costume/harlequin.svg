@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=long, skin-close - closure=closed with a NARROW STANDING COLLAR - hem=ankle - volume=FITTED, broken by one horizontal waist seam -->
+  <!-- the 22 unit diamonds are 2.4 screen pixels in the tray and are therefore a bonus only. -->
+  <!-- The identity in the picker is the outline: standing collar, horizontal waist seam, small ruff, -->
+  <!-- tapered wrists and ankles. That is what separates it from web-runner, the closest pair in the slot. -->
+  <!-- The built-in ruff projects 24 units so a ruff necklace layered over it reads as one bigger ruff. -->
+  <defs>
+    <linearGradient id="teen-female-costume-harlequin__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8878)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3F8878)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <pattern id="teen-female-costume-harlequin__diamond" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M11 0 L22 11 L11 22 L0 11 Z" fill="var(--c3, #F7C873)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="teen-female-costume-harlequin__clipU">
+      <path d="M156 194 H244 Q252 200 252 214 L248 318 H152 L148 214 Q148 200 156 194 Z"/>
+    </clipPath>
+    <clipPath id="teen-female-costume-harlequin__clipL">
+      <path d="M152 322 H248 L238 440 L232 534 Q218 540 206 534 L200 400 L194 534
+               Q182 540 168 534 L162 440 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- skin-close sleeves tapering to the wrist -->
+    <path d="M148 202 L128 210 L124 336 Q132 344 142 340 L152 214 Z"
+          fill="url(#teen-female-costume-harlequin__upper)"/>
+    <path d="M252 202 L272 210 L276 336 Q268 344 258 340 L248 214 Z"
+          fill="url(#teen-female-costume-harlequin__upper)"/>
+    <!-- upper region: collar to the waist seam -->
+    <path d="M156 194 H244 Q252 200 252 214 L248 318 H152 L148 214 Q148 200 156 194 Z"
+          fill="url(#teen-female-costume-harlequin__upper)"/>
+    <!-- lower region: waist seam to the tapered ankles -->
+    <path d="M152 322 H248 L238 440 L232 534 Q218 540 206 534 L200 400 L194 534
+             Q182 540 168 534 L162 440 Z"
+          fill="url(#teen-female-costume-harlequin__lower)"/>
+    <g clip-path="url(#teen-female-costume-harlequin__clipU)">
+      <rect x="146" y="192" width="108" height="130" fill="url(#teen-female-costume-harlequin__diamond)"/>
+    </g>
+    <g clip-path="url(#teen-female-costume-harlequin__clipL)">
+      <rect x="150" y="320" width="100" height="222" fill="url(#teen-female-costume-harlequin__diamond)"/>
+    </g>
+  </g>
+
+  <!-- the single horizontal waist seam, the strongest thing in the outline -->
+  <path d="M150 318 H250 V326 H150 Z" fill="var(--c3, #F7C873)"/>
+  <!-- narrow standing collar, stopping at the ceiling -->
+  <path d="M180 192 H220 V206 H180 Z" fill="var(--c3, #F7C873)"/>
+  <!-- small soft gathered ruff, 24 units of projection each side and no more -->
+  <path d="M162 200 Q200 190 238 200 Q234 214 200 216 Q166 214 162 200 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M172 202 q8 10 8 12 M188 199 q4 12 4 14 M212 199 q-4 12 -4 14 M228 202 q-8 10 -8 12"
+        stroke="var(--c2, #3F8878)" stroke-opacity="0.5" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- tapered wrist and ankle bands -->
+  <rect x="122" y="330" width="22" height="10" rx="5" fill="var(--c3, #F7C873)"/>
+  <rect x="256" y="330" width="22" height="10" rx="5" fill="var(--c3, #F7C873)"/>
+  <rect x="166" y="526" width="30" height="10" rx="5" fill="var(--c3, #F7C873)"/>
+  <rect x="204" y="526" width="30" height="10" rx="5" fill="var(--c3, #F7C873)"/>
+  <path d="M160 208 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

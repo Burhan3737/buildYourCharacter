@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- NO horned and NO winged helm: both are 19th-century Romantic invention rather than Norse -->
+  <!-- archaeology, and the winged version is a trademark tell besides. There is no helmet here in -->
+  <!-- any case, because of the face ceiling. The identity is the split mail shirt, the plume cape -->
+  <!-- and the shield disc showing past one hip. No sword and no spear: there is no hand anchor. -->
+  <!-- axes: shoulder=sleeveless mail over LONG SLEEVES beneath - closure=closed, SPLIT front and back -->
+  <!-- hem=knee over an ankle underdress - volume=straight -->
+  <defs>
+    <linearGradient id="teen-female-costume-valkyrie__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8E5B4A)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7683)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #AEB7C3)"/>
+      <stop offset="1" stop-color="var(--c2, #6E7683)"/>
+    </linearGradient>
+    <pattern id="teen-female-costume-valkyrie__ring" patternUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="4" fill="none" stroke="var(--c2, #6E7683)" stroke-opacity="0.6" stroke-width="2"/>
+    </pattern>
+    <clipPath id="teen-female-costume-valkyrie__clip">
+      <path d="M154 208 H246 L250 340 L246 462 H206 L204 380 L196 380 L194 462 H154 L150 340 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long-sleeved underdress to the ankle -->
+    <path d="M146 200 L124 210 L120 348 Q134 358 150 350 L154 216 Z" fill="url(#teen-female-costume-valkyrie__under)"/>
+    <path d="M254 200 L276 210 L280 348 Q266 358 250 350 L246 216 Z" fill="url(#teen-female-costume-valkyrie__under)"/>
+    <path d="M158 196 H242 Q252 204 252 224 L258 380 L260 534 Q200 548 140 534 L142 380 L148 224
+             Q148 204 158 196 Z"
+          fill="url(#teen-female-costume-valkyrie__under)"/>
+    <!-- knee-length mail shirt, split front and back for riding -->
+    <path d="M154 208 H246 L250 340 L246 462 H206 L204 380 L196 380 L194 462 H154 L150 340 Z"
+          fill="url(#teen-female-costume-valkyrie__mail)"/>
+    <g clip-path="url(#teen-female-costume-valkyrie__clip)">
+      <rect x="148" y="206" width="104" height="258" fill="url(#teen-female-costume-valkyrie__ring)"/>
+    </g>
+    <!-- short shoulder cape of overlapping leaf-shaped plumes, lying flat across the upper back -->
+    <path d="M146 200 Q200 192 254 200 Q258 224 248 240 Q200 252 152 240 Q142 224 146 200 Z"
+          fill="url(#teen-female-costume-valkyrie__mail)"/>
+  </g>
+
+  <!-- the individual plumes in the cape -->
+  <path d="M160 206 Q168 226 164 242 Q154 230 156 206 Z" fill="var(--c1, #AEB7C3)"/>
+  <path d="M182 202 Q190 226 186 246 Q176 232 178 202 Z" fill="var(--c1, #AEB7C3)"/>
+  <path d="M204 200 Q212 226 208 250 Q198 234 200 200 Z" fill="var(--c1, #AEB7C3)"/>
+  <path d="M226 202 Q234 226 230 246 Q220 232 222 202 Z" fill="var(--c1, #AEB7C3)"/>
+  <path d="M244 206 Q250 226 246 242 Q238 230 240 206 Z" fill="var(--c1, #AEB7C3)"/>
+
+  <!-- broad belt -->
+  <path d="M146 316 Q200 330 254 316 L256 344 Q200 358 144 344 Z" fill="var(--c3, #8E5B4A)"/>
+  <rect x="190" y="320" width="20" height="24" rx="5" fill="var(--c1, #AEB7C3)"/>
+
+  <!-- a round shield slung behind, so only a disc edge shows past one hip -->
+  <path d="M256 322 Q296 340 296 396 Q296 446 258 462 Q276 424 276 392 Q276 350 256 322 Z"
+        fill="var(--c3, #8E5B4A)"/>
+  <path d="M268 344 Q286 372 286 396 Q286 424 268 444" stroke="var(--c1, #AEB7C3)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M160 214 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

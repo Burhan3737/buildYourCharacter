@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- the Corinthian helmet is out of this slot by definition: it would erase the face. The identity -->
+  <!-- is the moulded cuirass and the strip skirt, pushed down into the body. No spear and no shield: -->
+  <!-- there is no prop or hand anchor in this project. -->
+  <!-- axes: shoulder=SLEEVELESS with two stiff flaps folded forward - closure=laced down the chest -->
+  <!-- hem=hip, broken into nine separate strips - volume=MOULDED, narrowing sharply at the waist -->
+  <defs>
+    <linearGradient id="teen-female-costume-hoplite__cuirass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9BC7E)"/>
+      <stop offset="1" stop-color="var(--c2, #9C7F45)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-hoplite__strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8C4636)"/>
+      <stop offset="1" stop-color="var(--c2, #9C7F45)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- nine overlapping rectangular strips at the hip, with visible gaps between them -->
+    <path d="M138 330 h24 l-3 82 h-20 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <path d="M166 330 h24 l-2 84 h-20 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <path d="M194 330 h24 l0 86 h-24 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <path d="M222 330 h24 l2 84 h-20 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <path d="M250 330 h22 l3 80 h-20 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <path d="M126 330 h20 l-4 76 h-18 z" fill="url(#teen-female-costume-hoplite__strip)"/>
+    <!-- hard greave plate down each shin -->
+    <path d="M164 452 H196 L194 542 Q180 550 166 542 Z" fill="url(#teen-female-costume-hoplite__cuirass)"/>
+    <path d="M236 452 H204 L206 542 Q220 550 234 542 Z" fill="url(#teen-female-costume-hoplite__cuirass)"/>
+    <!-- the moulded cuirass, narrowing sharply at the waist and flaring again at the hip -->
+    <path d="M154 194 H246 Q258 202 260 226 L254 268 Q248 300 236 312 L232 336 H168 L164 312
+             Q152 300 146 268 L140 226 Q142 202 154 194 Z"
+          fill="url(#teen-female-costume-hoplite__cuirass)"/>
+    <!-- two stiff shoulder flaps folded forward from the back and laced down to the chest -->
+    <path d="M150 194 H184 L180 240 L146 236 Z" fill="url(#teen-female-costume-hoplite__cuirass)"/>
+    <path d="M250 194 H216 L220 240 L254 236 Z" fill="url(#teen-female-costume-hoplite__cuirass)"/>
+  </g>
+
+  <!-- the lacing that pulls the flaps down to the chest -->
+  <path d="M182 240 L204 252 M204 240 L182 252 M218 240 L196 252 M196 240 L218 252"
+        stroke="var(--c3, #8C4636)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- moulded torso relief: a pectoral line and the waist pinch, no emblem -->
+  <path d="M166 252 Q184 268 200 268 Q216 268 234 252" stroke="var(--c2, #9C7F45)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M168 300 Q200 312 232 300" stroke="var(--c2, #9C7F45)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- the belt the strips hang from -->
+  <path d="M136 320 Q200 336 264 320 L266 334 Q200 350 134 334 Z" fill="var(--c3, #8C4636)"/>
+  <!-- greave straps -->
+  <path d="M166 476 h28 M166 508 h28" stroke="var(--c3, #8C4636)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 476 h28 M206 508 h28" stroke="var(--c3, #8C4636)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 210 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

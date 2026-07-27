@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Gorgon" data-family="gorgon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- the snake hair is head art and ships as the serpent-locks headwear family, not here. -->
+  <!-- axes: shoulder=SLEEVELESS with a high plain neckline - closure=closed - hem=BROKEN INTO FOUR SERPENT COILS -->
+  <!-- volume=close column above, splayed wide on the ground line below -->
+  <defs>
+    <linearGradient id="teen-female-costume-gorgon__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3D7566)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-gorgon__coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3D7566)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- four thick tapering coils, curling outward and resting splayed on the ground line -->
+    <path d="M164 486 Q136 508 108 528 Q88 544 96 560 Q110 570 128 560 Q108 556 118 544
+             Q142 524 174 508 Z" fill="url(#teen-female-costume-gorgon__coil)"/>
+    <path d="M236 486 Q264 508 292 528 Q312 544 304 560 Q290 570 272 560 Q292 556 282 544
+             Q258 524 226 508 Z" fill="url(#teen-female-costume-gorgon__coil)"/>
+    <path d="M182 496 Q166 528 140 548 Q126 560 136 568 Q152 572 164 562 Q148 558 156 550
+             Q182 532 196 504 Z" fill="url(#teen-female-costume-gorgon__coil)"/>
+    <path d="M218 496 Q234 528 260 548 Q274 560 264 568 Q248 572 236 562 Q252 558 244 550
+             Q218 532 204 504 Z" fill="url(#teen-female-costume-gorgon__coil)"/>
+    <!-- close column dress with a high plain neckline and bare arms -->
+    <path d="M162 194 H238 Q248 202 248 220 L246 300 L242 400 L238 500 Q200 514 162 500
+             L158 400 L154 300 L152 220 Q152 202 162 194 Z"
+          fill="url(#teen-female-costume-gorgon__column)"/>
+  </g>
+
+  <!-- the wide belt of interlaced snakes at the waist -->
+  <path d="M150 306 Q200 320 250 306 L252 342 Q200 356 148 342 Z" fill="var(--c3, #3B2A22)"/>
+  <path d="M154 316 Q172 336 190 316 Q208 336 226 316 Q244 336 250 320"
+        stroke="var(--c1, #6BBFAD)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M154 336 Q172 316 190 336 Q208 316 226 336 Q244 316 250 330"
+        stroke="var(--c1, #6BBFAD)" stroke-opacity="0.7" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- scale banding on the coils, and the coil heads at the tips -->
+  <ellipse cx="120" cy="562" rx="11" ry="8" fill="var(--c3, #3B2A22)"/>
+  <ellipse cx="280" cy="562" rx="11" ry="8" fill="var(--c3, #3B2A22)"/>
+  <ellipse cx="158" cy="564" rx="9" ry="7" fill="var(--c3, #3B2A22)"/>
+  <ellipse cx="242" cy="564" rx="9" ry="7" fill="var(--c3, #3B2A22)"/>
+  <path d="M150 512 q-14 10 -26 20" stroke="var(--c2, #3D7566)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M250 512 q14 10 26 20" stroke="var(--c2, #3D7566)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- high plain neckline and a long drape fold -->
+  <path d="M162 198 Q200 208 238 198" stroke="var(--c2, #3D7566)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 356 q-4 74 -6 140" stroke="var(--c2, #3D7566)" stroke-opacity="0.45"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M166 212 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

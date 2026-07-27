@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=long set-in - closure=closed - hem=HIP, cut into deep pointed tabs - volume=BOXY doublet over close hose -->
+  <!-- the hem tabs are 38 units deep so they read at a 64px thumbnail; the bells are a bonus -->
+  <!-- fallbacks kept well clear of the clown-villain palette: periwinkle, coral and butter -->
+  <defs>
+    <linearGradient id="teen-female-costume-jester__a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #55639E)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-jester__b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #55639E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close hose, colour-blocked leg for leg -->
+    <path d="M166 340 H199 L197 548 Q182 554 168 548 Z" fill="url(#teen-female-costume-jester__b)"/>
+    <path d="M234 340 H201 L203 548 Q218 554 232 548 Z" fill="url(#teen-female-costume-jester__a)"/>
+    <!-- long sleeves, ending in pointed cuffs past the hand -->
+    <path d="M140 198 L120 336 L134 366 L150 340 L156 206 Z" fill="url(#teen-female-costume-jester__b)"/>
+    <path d="M260 198 L280 336 L266 366 L250 340 L244 206 Z" fill="url(#teen-female-costume-jester__a)"/>
+    <!-- boxy doublet, halved down the centre, with five deep pointed hem tabs -->
+    <path d="M200 192 H150 Q140 192 140 206 L142 348
+             L152 386 L162 348 L172 386 L182 348 L192 386 L200 350 Z"
+          fill="url(#teen-female-costume-jester__a)"/>
+    <path d="M200 192 H250 Q260 192 260 206 L258 348
+             L248 386 L238 348 L228 386 L218 348 L208 386 L200 350 Z"
+          fill="url(#teen-female-costume-jester__b)"/>
+  </g>
+
+  <!-- a bell at every hem point and at every cuff point -->
+  <circle cx="152" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="172" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="192" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="208" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="228" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="248" cy="391" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="134" cy="371" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="150" cy="345" r="6" fill="var(--c2, #55639E)"/>
+  <circle cx="266" cy="371" r="7" fill="var(--c2, #55639E)"/>
+  <circle cx="250" cy="345" r="6" fill="var(--c2, #55639E)"/>
+
+  <!-- the doublet centre seam and a lace-through front -->
+  <path d="M200 200 V348" stroke="var(--c2, #55639E)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M188 220 L212 232 M212 220 L188 232 M188 244 L212 256 M212 244 L188 256
+           M188 268 L212 280 M212 268 L188 280"
+        stroke="var(--c3, #F4A79B)" stroke-opacity="0.9" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M156 206 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

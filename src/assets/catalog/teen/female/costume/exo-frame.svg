@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- the chest plate is a PLAIN BEVELLED PANEL. No glowing circular chest reactor, and no -->
+  <!-- red-plus-gold-with-a-disc fallback: that combination is a specific armoured-tech character. -->
+  <!-- axes: shoulder=RING-JOINTED HARD CAPS - closure=none, a sealed shell - hem=ankle - volume=segmented and rigid -->
+  <!-- the identity is the visible dark under-layer band at every joint, which is why this family is Older tier -->
+  <defs>
+    <linearGradient id="teen-female-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C0CC)"/>
+      <stop offset="1" stop-color="var(--c2, #78828F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-exo-frame__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C0CC)"/>
+      <stop offset="1" stop-color="var(--c2, #78828F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the dark under-layer: every shell above sits on this, so a narrow band of it shows at every joint -->
+  <rect x="118" y="196" width="164" height="376" rx="30" fill="var(--c3, #3B2A22)" fill-opacity="0.9"/>
+
+  <g class="sp-shadow">
+    <!-- moulded chest plate -->
+    <path d="M158 200 H242 Q252 208 252 226 L248 306 Q200 320 152 306 L148 226 Q148 208 158 200 Z"
+          fill="url(#teen-female-costume-exo-frame__plate)"/>
+    <!-- abdominal shell, separated from the chest by the under-layer band -->
+    <path d="M156 318 H244 L240 366 Q200 380 160 366 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <!-- ring-jointed shoulder caps -->
+    <path d="M112 224 Q112 198 138 198 Q164 198 164 224 Q164 244 138 246 Q112 244 112 224 Z"
+          fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <path d="M288 224 Q288 198 262 198 Q236 198 236 224 Q236 244 262 246 Q288 244 288 224 Z"
+          fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <!-- upper arm shells -->
+    <path d="M118 258 H158 L156 312 H120 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <path d="M282 258 H242 L244 312 H280 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <!-- forearm gauntlets -->
+    <path d="M118 324 H158 L156 372 Q136 380 120 372 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <path d="M282 324 H242 L244 372 Q264 380 280 372 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <!-- thigh plates -->
+    <path d="M156 384 H198 L196 460 H158 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <path d="M244 384 H202 L204 460 H242 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <!-- shin plates -->
+    <path d="M160 476 H196 L194 552 Q178 560 162 552 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+    <path d="M240 476 H204 L206 552 Q222 560 238 552 Z" fill="url(#teen-female-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- bevels on the plain chest panel, no emblem and no disc -->
+  <path d="M166 214 H234 L228 246 H172 Z" fill="var(--c2, #78828F)"/>
+  <path d="M172 258 H228 L224 288 H176 Z" fill="var(--c2, #78828F)"/>
+  <!-- joint rivets -->
+  <circle cx="138" cy="222" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="262" cy="222" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="177" cy="470" r="5" fill="var(--c3, #3B2A22)"/>
+  <circle cx="223" cy="470" r="5" fill="var(--c3, #3B2A22)"/>
+  <path d="M162 212 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 264 v40" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

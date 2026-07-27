@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=DROPPED - closure=closed - hem=ankle with gathered cuffs - volume=hugely GATHERED, widest at the hip -->
+  <!-- the whiteface and the painted features are the other readable half of a clown and cannot be -->
+  <!-- drawn: they need a face-mark slot that does not exist. This costume is designed to stand without them. -->
+  <!-- the ruff projects 24 units so a ruff necklace layered over it reads as one bigger ruff, not two. -->
+  <!-- fallbacks kept clear of the clown-villain palette: no green plus purple plus orange. -->
+  <defs>
+    <linearGradient id="teen-female-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6E)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-clown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7A6E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ballooning sleeves, dropped from well outside the shoulder -->
+    <path d="M152 206 Q112 226 100 290 Q94 326 116 340 Q136 348 148 330 Q152 280 162 240 Z"
+          fill="url(#teen-female-costume-clown__sleeve)"/>
+    <path d="M248 206 Q288 226 300 290 Q306 326 284 340 Q264 348 252 330 Q248 280 238 240 Z"
+          fill="url(#teen-female-costume-clown__sleeve)"/>
+    <!-- ballooning legs gathered at the ankle -->
+    <path d="M196 360 Q150 386 142 452 Q136 508 162 526 Q184 534 194 518 Q198 440 198 380 Z"
+          fill="url(#teen-female-costume-clown__romper)"/>
+    <path d="M204 360 Q250 386 258 452 Q264 508 238 526 Q216 534 206 518 Q202 440 202 380 Z"
+          fill="url(#teen-female-costume-clown__romper)"/>
+    <!-- the barrel body: widest at the hip, dropped shoulders -->
+    <path d="M164 194 H236 Q252 200 262 236 Q286 300 284 348 Q282 396 240 404
+             Q200 412 160 404 Q118 396 116 348 Q114 300 138 236 Q148 200 164 194 Z"
+          fill="url(#teen-female-costume-clown__romper)"/>
+  </g>
+
+  <!-- deep gathered ruff, kept low and shallow at 24 units of projection -->
+  <path d="M162 198 Q200 188 238 198 Q234 216 200 220 Q166 216 162 198 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M174 200 q6 12 6 16 M190 196 q3 14 3 18 M210 196 q-3 14 -3 18 M226 200 q-6 12 -6 16"
+        stroke="var(--c2, #CE7A6E)" stroke-opacity="0.45" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+  <!-- three oversized pom-pom buttons down the centre front -->
+  <circle cx="200" cy="252" r="17" fill="var(--c3, #FBF3E4)"/>
+  <circle cx="200" cy="308" r="17" fill="var(--c3, #FBF3E4)"/>
+  <circle cx="200" cy="364" r="17" fill="var(--c3, #FBF3E4)"/>
+  <circle cx="194" cy="246" r="5" fill="#FFFFFF" fill-opacity="0.55"/>
+  <circle cx="194" cy="302" r="5" fill="#FFFFFF" fill-opacity="0.55"/>
+  <circle cx="194" cy="358" r="5" fill="#FFFFFF" fill-opacity="0.55"/>
+
+  <!-- gathered cuffs at wrist and ankle -->
+  <path d="M110 330 Q132 346 152 332 L150 348 Q130 362 108 346 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M290 330 Q268 346 248 332 L250 348 Q270 362 292 346 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M144 512 Q170 530 194 514 L194 532 Q168 548 140 530 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M256 512 Q230 530 206 514 L206 532 Q232 548 260 530 Z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M166 214 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

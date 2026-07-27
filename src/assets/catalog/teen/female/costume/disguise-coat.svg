@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- the turned-up collar frames the jaw FROM BELOW and stops dead at y 192. It never reaches the mouth. -->
+  <!-- axes: shoulder=long set-in, sleeves ending in pocket openings - closure=BUTTONED TO THE THROAT and belted -->
+  <!-- hem=mid-calf - volume=STRAIGHT NARROW column -->
+  <defs>
+    <linearGradient id="teen-female-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A882)"/>
+      <stop offset="1" stop-color="var(--c2, #97794F)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-disguise-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #97794F)"/>
+      <stop offset="1" stop-color="var(--c1, #C9A882)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long straight over-wide sleeves, ending in pocket openings with no hands showing -->
+    <path d="M138 200 L116 212 L112 380 Q128 392 146 384 L150 220 Z"
+          fill="url(#teen-female-costume-disguise-coat__coat)"/>
+    <path d="M262 200 L284 212 L288 380 Q272 392 254 384 L250 220 Z"
+          fill="url(#teen-female-costume-disguise-coat__coat)"/>
+    <!-- the straight narrow column, buttoned to the throat -->
+    <path d="M160 200 H240 Q254 206 256 226 L262 380 L264 508 Q200 522 136 508 L138 380 L144 226
+             Q146 206 160 200 Z"
+          fill="url(#teen-female-costume-disguise-coat__coat)"/>
+    <!-- collar turned UP around the jaw line, framing from below and stopping at the ceiling -->
+    <path d="M166 226 L176 194 H224 L234 226 Q220 208 200 208 Q180 208 166 226 Z"
+          fill="url(#teen-female-costume-disguise-coat__collar)"/>
+  </g>
+
+  <!-- button line up the centre front to the throat -->
+  <circle cx="200" cy="238" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="266" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="294" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="366" r="6" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="394" r="6" fill="var(--c3, #3B2A22)"/>
+
+  <!-- tie belt, knotted at the front -->
+  <path d="M140 314 Q200 328 260 314 L262 336 Q200 350 138 336 Z" fill="var(--c2, #97794F)"/>
+  <path d="M188 320 q-16 10 -22 24 q16 -4 26 -16 z" fill="var(--c3, #3B2A22)"/>
+  <path d="M212 320 q16 10 22 24 q-16 -4 -26 -16 z" fill="var(--c3, #3B2A22)"/>
+  <circle cx="200" cy="325" r="9" fill="var(--c3, #3B2A22)"/>
+
+  <!-- the pocket openings the sleeves disappear into -->
+  <path d="M114 372 q16 10 32 4" stroke="var(--c3, #3B2A22)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 372 q-16 10 -32 4" stroke="var(--c3, #3B2A22)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- collar notch and highlight -->
+  <path d="M180 196 v26 M220 196 v26" stroke="var(--c2, #97794F)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M152 224 q30 12 40 6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

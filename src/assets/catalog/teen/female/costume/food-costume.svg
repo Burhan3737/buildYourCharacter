@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Food Costume" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for teen/female: all art at y >= 192 -->
+  <!-- axes: shoulder=TWO NARROW STRAPS, arms entirely outside the garment - closure=none, hung free - hem=mid-thigh - volume=one convex SLAB -->
+  <!-- generic produce, not a branded product: a plain convex slab with a stalk and one leaf -->
+  <defs>
+    <linearGradient id="teen-female-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CD6F63)"/>
+    </linearGradient>
+    <linearGradient id="teen-female-costume-food-costume__stalk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #CD6F63)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one large convex slab hung free, torso to mid-thigh, arms and legs entirely outside it -->
+    <path d="M200 216 Q142 222 126 292 Q112 356 138 404 Q166 442 200 442
+             Q234 442 262 404 Q288 356 274 292 Q258 222 200 216 Z"
+          fill="url(#teen-female-costume-food-costume__slab)"/>
+    <!-- the stalk-and-leaf finial standing at the top edge -->
+    <path d="M194 196 Q198 208 197 220 L205 220 Q204 206 208 196 Q202 190 194 196 Z"
+          fill="url(#teen-female-costume-food-costume__stalk)"/>
+    <path d="M206 202 Q232 194 246 206 Q228 220 206 214 Z"
+          fill="url(#teen-female-costume-food-costume__stalk)"/>
+  </g>
+
+  <!-- two narrow shoulder straps -->
+  <path d="M168 198 L162 224 L172 226 L178 198 Z" fill="var(--c2, #CD6F63)"/>
+  <path d="M232 198 L238 224 L228 226 L222 198 Z" fill="var(--c2, #CD6F63)"/>
+
+  <!-- the convex form stated with a rim shadow and a broad highlight, not with a print -->
+  <path d="M140 300 Q126 356 150 396" stroke="var(--c2, #CD6F63)" stroke-opacity="0.55"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M260 300 Q274 356 250 396" stroke="var(--c2, #CD6F63)" stroke-opacity="0.55"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M152 268 Q176 240 208 236" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="14"
+        fill="none" stroke-linecap="round"/>
+  <!-- leaf vein -->
+  <path d="M212 208 q16 -2 26 0" stroke="var(--c2, #CD6F63)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
