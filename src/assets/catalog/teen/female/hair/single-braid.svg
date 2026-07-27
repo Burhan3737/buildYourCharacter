@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Single Braid" data-family="single-braid" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: gathering (everything drawn smooth off the face into one plait on the centre line)
+       hem (the plait narrows all the way down and finishes in a tie, never a blunt edge) -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-female-hair-single-braid__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+      <linearGradient id="teen-female-hair-single-braid__plait-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.55" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the smooth gathered head, no volume at all: it is all going into the plait -->
+      <path d="M148 92 C138 122 140 154 150 178 C170 190 230 190 250 178
+               C260 154 262 122 252 92 C224 78 176 78 148 92 Z"
+            fill="url(#teen-female-hair-single-braid__back-g)"/>
+      <!-- the plait: three strands, so both edges scallop and the whole rope narrows -->
+      <path d="M180 176 C176 200 186 208 182 228 C178 250 190 258 186 280
+               C182 300 194 308 190 328 C192 342 208 342 210 328
+               C206 308 218 300 214 280 C210 258 222 250 218 228
+               C214 208 224 200 220 178 Z"
+            fill="url(#teen-female-hair-single-braid__plait-g)"/>
+      <!-- the tie, and the wisp of hair below it -->
+      <path d="M187 330 q13 6 26 0 q2 11 -13 13 q-15-2 -13-13 z"
+            fill="url(#teen-female-hair-single-braid__back-g)"/>
+    </g>
+    <!-- the crossings, drawn where the strands actually change sides -->
+    <g stroke="var(--hair2, #2A1710)" stroke-width="2.6" stroke-opacity="0.6" fill="none" stroke-linecap="round">
+      <path d="M182 196 C192 204 208 204 218 196"/>
+      <path d="M184 224 C193 232 207 232 216 224"/>
+      <path d="M186 250 C194 258 206 258 214 250"/>
+      <path d="M187 276 C195 284 205 284 213 276"/>
+      <path d="M189 302 C196 310 204 310 211 302"/>
+    </g>
+    <path d="M193 345 C195 356 197 364 196 372" stroke="var(--hair2, #2A1710)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M206 345 C205 356 204 364 206 370" stroke="var(--hair2, #2A1710)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M164 96 C182 86 218 86 236 96" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-female-hair-single-braid__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- pulled tight, with the part cut into the shape itself -->
+      <path d="M140 118 C136 78 168 56 200 56 C232 56 264 78 260 118
+               C248 96 226 86 204 86 L204 58 L196 58 L196 86 C174 86 152 96 140 118 Z"
+            fill="url(#teen-female-hair-single-braid__front-g)"/>
+    </g>
+    <path d="M200 58 L200 88" stroke="var(--skin2, #E7B892)" stroke-width="4"
+          stroke-linecap="round" fill="none"/>
+    <g stroke="var(--hair2, #2A1710)" stroke-width="2.4" stroke-opacity="0.5" fill="none" stroke-linecap="round">
+      <path d="M196 62 C182 70 166 84 152 106"/>
+      <path d="M197 72 C186 80 172 92 158 112"/>
+      <path d="M204 62 C218 70 234 84 248 106"/>
+      <path d="M203 72 C214 80 228 92 242 112"/>
+    </g>
+    <path d="M164 78 C176 68 190 62 197 60" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M236 78 C224 68 210 62 203 60" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

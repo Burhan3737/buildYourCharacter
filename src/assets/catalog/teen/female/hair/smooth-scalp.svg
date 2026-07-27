@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: length (none at all, so the skull and both ears are fully exposed)
+       parting (no crown shape of any kind, only the shadow where a hairline and a nape would sit) -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-female-hair-smooth-scalp__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <!-- nothing is worn here: only the soft shadow the nape casts on the neck -->
+    <path d="M164 174 C170 190 180 199 200 199 C220 199 230 190 236 174
+             C226 185 214 190 200 190 C186 190 174 185 164 174 Z"
+          fill="url(#teen-female-hair-smooth-scalp__back-g)" fill-opacity="0.4"/>
+  </g>
+  <g data-part="front">
+    <!-- a faint hairline shadow at each temple, and nothing between them -->
+    <path d="M145 134 C147 108 158 88 172 78 C160 94 153 114 151 136 Z"
+          fill="var(--hair2, #2A1710)" fill-opacity="0.3"/>
+    <path d="M255 134 C253 108 242 88 228 78 C240 94 247 114 249 136 Z"
+          fill="var(--hair2, #2A1710)" fill-opacity="0.3"/>
+    <path d="M176 78 C186 74 214 74 224 78 C212 76 188 76 176 78 Z"
+          fill="var(--hair2, #2A1710)" fill-opacity="0.22"/>
+    <!-- the sheen the bare skull picks up -->
+    <path d="M166 88 C180 74 220 74 234 88" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M158 108 C168 94 182 86 196 84" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

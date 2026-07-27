@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes: parting (no part, because the hairline has gone back into two clear temple bays)
+       volume (a dense horseshoe round the temples and nape with an open crown between them) -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="teen-female-hair-crown-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the back of the horseshoe: dense across the nape, joining the two temple arms -->
+      <path d="M141 150 C141 174 152 193 172 201 C190 207 210 207 228 201
+               C248 193 259 174 259 150 C251 178 230 191 200 191 C170 191 149 178 141 150 Z"
+            fill="url(#teen-female-hair-crown-thinning__back-g)"/>
+    </g>
+    <path d="M152 178 C172 190 228 190 248 178 C238 194 162 194 152 178 Z"
+          fill="var(--hair2, #2A1710)" fill-opacity="0.7"/>
+    <path d="M156 160 C176 172 224 172 244 160" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="teen-female-hair-crown-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #2A1710)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the two arms of the horseshoe. The bay is the bare wedge each one has retreated from -->
+      <path d="M139 166 C135 130 141 102 155 84 C163 75 176 78 180 90
+               C171 103 165 122 163 143 C162 153 162 160 162 168 Z"
+            fill="url(#teen-female-hair-crown-thinning__front-g)"/>
+      <path d="M261 166 C265 130 259 102 245 84 C237 75 224 78 220 90
+               C229 103 235 122 237 143 C238 153 238 160 238 168 Z"
+            fill="url(#teen-female-hair-crown-thinning__front-g)"/>
+    </g>
+    <!-- the recession line: the crown side of each arm reads as a cut edge, not a fade -->
+    <path d="M178 90 C170 104 165 124 163 146" stroke="var(--hair2, #2A1710)"
+          stroke-width="3.4" stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+    <path d="M222 90 C230 104 235 124 237 146" stroke="var(--hair2, #2A1710)"
+          stroke-width="3.4" stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+    <!-- a few surviving hairs bridging each bay, so the edge is not a wall -->
+    <g stroke="var(--hair2, #2A1710)" stroke-width="2.2" stroke-opacity="0.42" fill="none" stroke-linecap="round">
+      <path d="M172 94 C180 88 188 84 196 82"/>
+      <path d="M168 112 C178 104 188 99 198 96"/>
+      <path d="M228 94 C220 88 212 84 204 82"/>
+      <path d="M232 112 C222 104 212 99 202 96"/>
+    </g>
+    <path d="M148 122 C152 104 160 92 170 84" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M252 122 C248 104 240 92 230 84" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
