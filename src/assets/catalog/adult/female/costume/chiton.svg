@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- axes vs peplos and winged-messenger: the fastening IS the axis in this group. The chiton is
+       pinned by a ROW of six small pins along the top of BOTH arms, so the cloth falls in a
+       scalloped pseudo-sleeve to the elbow (shoulder/sleeve) + it is belted twice, under the bust
+       and at the waist, with a bloused fold spilling over the upper belt (volume). -->
+  <defs>
+    <linearGradient id="adult-female-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c1, #D9CFB8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE7D6)"/>
+      <stop offset="1" stop-color="var(--c1, #D2C7AE)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-chiton__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE4D0)"/>
+      <stop offset="1" stop-color="var(--c1, #CBBFA5)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-chiton__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length draped tube -->
+    <path d="M156 152 H244 Q256 200 258 260 Q262 360 268 452 Q272 508 274 546
+             Q200 566 126 546 Q128 508 132 452 Q138 360 142 260 Q144 200 156 152 Z"
+          fill="url(#adult-female-costume-chiton__cloth)"/>
+    <!-- pseudo-sleeves: pinned cloth falling to the elbow in scallops -->
+    <path d="M106 152 H168 V214 q-9 26 -19 26 q-10 0 -12 -20 q-8 24 -18 24
+             q-10 0 -12 -20 q-1 -6 -1 -10 Z"
+          fill="url(#adult-female-costume-chiton__sleeve)"/>
+    <path d="M294 152 H232 V214 q9 26 19 26 q10 0 12 -20 q8 24 18 24
+             q10 0 12 -20 q1 -6 1 -10 Z"
+          fill="url(#adult-female-costume-chiton__sleeve)"/>
+    <!-- upper belt, under the bust, drawn before the fold that spills over it -->
+    <path d="M148 204 Q200 220 252 204 L253 222 Q200 238 147 222 Z"
+          fill="url(#adult-female-costume-chiton__belt)"/>
+    <!-- bloused fold spilling over the upper belt -->
+    <path d="M146 210 Q200 228 254 210 q2 26 -4 44 q-12 8 -20 -6 q-10 18 -22 10
+             q-8 14 -18 4 q-10 14 -20 2 q-12 10 -20 -4 q-6 -18 -4 -50 Z"
+          fill="url(#adult-female-costume-chiton__blouse)"/>
+  </g>
+
+  <!-- the row of six small round pins along the top of each arm -->
+  <g fill="var(--c3, #D9A24E)">
+    <circle cx="114" cy="163" r="6"/><circle cx="126" cy="161" r="6"/>
+    <circle cx="138" cy="160" r="6"/><circle cx="150" cy="159" r="6"/>
+    <circle cx="162" cy="158" r="6"/><circle cx="174" cy="157" r="6"/>
+    <circle cx="286" cy="163" r="6"/><circle cx="274" cy="161" r="6"/>
+    <circle cx="262" cy="160" r="6"/><circle cx="250" cy="159" r="6"/>
+    <circle cx="238" cy="158" r="6"/><circle cx="226" cy="157" r="6"/>
+  </g>
+  <!-- lower belt, at the natural waist -->
+  <path d="M142 268 Q200 286 258 268 L259 288 Q200 306 141 288 Z"
+        fill="url(#adult-female-costume-chiton__belt)"/>
+  <path d="M190 266 H210 Q214 288 210 308 H190 Q186 288 190 266 Z" fill="var(--c3, #D9A24E)"/>
+  <!-- drape folds down the skirt -->
+  <g stroke="var(--c2, #5F6FB8)" stroke-opacity="0.28" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M164 306 Q158 410 152 528"/>
+    <path d="M186 308 Q184 412 182 536"/>
+    <path d="M214 308 Q216 412 218 536"/>
+    <path d="M236 306 Q242 410 248 528"/>
+  </g>
+  <!-- hem border band -->
+  <path d="M130 528 Q200 548 270 528" stroke="var(--c3, #D9A24E)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- sleeve scallop shading -->
+  <path d="M112 220 q22 16 52 -6 M288 220 q-22 16 -52 -6" stroke="var(--c2, #5F6FB8)"
+        stroke-opacity="0.25" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 176 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

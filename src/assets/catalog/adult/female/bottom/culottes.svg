@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: leg width, a pair of panels so wide and flat that the outline reads as
+       a short skirt out to x 130 and x 270, plus leg length, cut off at the knee at y 456.
+       The centre split runs 54 units up from the hem to give the pair away -->
+  <defs>
+    <linearGradient id="adult-female-bottom-culottes__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7F8E)"/>
+      <stop offset="0.55" stop-color="var(--c1, #6E7F8E)"/>
+      <stop offset="1" stop-color="var(--c2, #55636F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55636F)"/>
+      <stop offset="1" stop-color="var(--c1, #6E7F8E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two very wide flat panels hung from a high yoke, split at the centre from
+       y 402 down to the knee hem -->
+  <g class="sp-shadow">
+    <path d="M148 268 H200 V402 L189 456 H136 Q129 457 130 446 L142 278 Q143 268 148 268 Z"
+          fill="url(#adult-female-bottom-culottes__panel)"/>
+    <path d="M252 268 H200 V402 L211 456 H264 Q271 457 270 446 L258 278 Q257 268 252 268 Z"
+          fill="url(#adult-female-bottom-culottes__panel)"/>
+  </g>
+
+  <!-- the split reads as a shadowed notch between the two panels -->
+  <path d="M192 404 L189 452 H211 L208 404 Z" fill="#3B2A22" opacity="0.22"/>
+
+  <!-- deep high rise waistband -->
+  <path d="M148 268 H252 Q257 268 258 278 L259 296 H141 L142 278 Q143 268 148 268 Z"
+        fill="url(#adult-female-bottom-culottes__band)"/>
+  <path d="M143 288 H257" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 278 H256" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- knife pleats falling from the yoke to the hem -->
+  <path d="M166 300 L152 450" stroke="var(--c2, #55636F)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M184 300 L173 452" stroke="var(--c2, #55636F)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 300 L248 450" stroke="var(--c2, #55636F)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 300 L227 452" stroke="var(--c2, #55636F)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat hem facing across each panel -->
+  <path d="M134 446 H188" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 446 H266" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- split edges -->
+  <path d="M192 406 L190 452" stroke="var(--c2, #55636F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 406 L210 452" stroke="var(--c2, #55636F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the flat fall of the outer edges -->
+  <path d="M160 310 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 320 L136 438" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 320 L264 438" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

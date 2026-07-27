@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: leg length, none at all, the garment stops at the crotch around y 352
+       with a leg opening cut high onto the hip, plus hem treatment, a plain bound edge instead
+       of a band or a cuff. Worn with swim top the midriff is meant to stay bare -->
+  <defs>
+    <linearGradient id="adult-female-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="0.6" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D98A7C)"/>
+    </linearGradient>
+    <pattern id="adult-female-bottom-swim-bottoms__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M-2 12 a8 8 0 0 1 8 -8 a8 8 0 0 1 8 8" stroke="var(--c3, #FBF1E6)"
+            stroke-opacity="0.55" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="adult-female-bottom-swim-bottoms__clip">
+      <path d="M156 268 Q150 268 150 274 L148 316 Q166 330 178 350 Q186 360 200 360
+               Q214 360 222 350 Q234 330 252 316 L250 274 Q250 268 244 268 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one high rise brief, the leg openings scooped away up onto the hip -->
+  <g class="sp-shadow">
+    <path d="M156 268 Q150 268 150 274 L148 316 Q166 330 178 350 Q186 360 200 360
+             Q214 360 222 350 Q234 330 252 316 L250 274 Q250 268 244 268 Z"
+          fill="url(#adult-female-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- scallop pattern clipped inside the brief -->
+  <g clip-path="url(#adult-female-bottom-swim-bottoms__clip)">
+    <rect x="144" y="264" width="112" height="100"
+          fill="url(#adult-female-bottom-swim-bottoms__scallop)"/>
+  </g>
+
+  <!-- contrast side panels, cut on the same high line as the leg opening -->
+  <path d="M156 268 Q150 268 150 274 L148 316 Q158 324 166 334 L170 286 Q170 270 162 268 Z"
+        fill="var(--c2, #D98A7C)" opacity="0.75"/>
+  <path d="M244 268 Q250 268 250 274 L252 316 Q242 324 234 334 L230 286 Q230 270 238 268 Z"
+        fill="var(--c2, #D98A7C)" opacity="0.75"/>
+
+  <!-- plain bound edge along the waist and both leg openings -->
+  <path d="M150 274 H250" stroke="var(--c3, #FBF1E6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M149 314 Q167 329 179 349 Q187 358 200 358" stroke="var(--c3, #FBF1E6)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M251 314 Q233 329 221 349 Q213 358 200 358" stroke="var(--c3, #FBF1E6)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- small centre knot at the waist -->
+  <path d="M190 280 q-8 8 -14 12" stroke="var(--c3, #FBF1E6)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 280 q8 8 14 12" stroke="var(--c3, #FBF1E6)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="279" r="6" fill="var(--c3, #FBF1E6)"/>
+
+  <!-- soft upper highlight -->
+  <path d="M164 294 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 320 q14 14 28 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

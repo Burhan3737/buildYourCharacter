@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent Suit" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- axes vs caped-hero (the other cape in the slot): asymmetric, one long sleeve and one bare
+       arm (shoulder/sleeve) + a wrap front crossing right over left to a low hip fastening
+       instead of a closed front (closure). caped-hero is symmetric with a full-width cape.
+       Deliberately not cowled: no scalloped hem, no points, no ears, no chest mark. -->
+  <defs>
+    <linearGradient id="adult-female-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6F7FC8)"/>
+      <stop offset="1" stop-color="var(--c1, #4E5C9C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shadow-agent__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6676C0)"/>
+      <stop offset="1" stop-color="var(--c1, #45538F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #453529)"/>
+      <stop offset="1" stop-color="var(--c2, #2A1E16)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shadow-agent__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #4A9382)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow half cape, one shoulder only, straight hem at the calf -->
+    <path d="M148 150 Q172 152 178 160 L166 252 L150 374 L138 498 Q122 506 106 496
+             L120 372 L132 250 L138 176 Q140 156 148 150 Z"
+          fill="url(#adult-female-costume-shadow-agent__cape)"/>
+    <!-- ankle-length legs -->
+    <path d="M158 332 L200 332 L198 440 L196 544 Q178 552 160 544 L158 440 Z"
+          fill="url(#adult-female-costume-shadow-agent__limb)"/>
+    <path d="M200 332 L242 332 L242 440 L240 544 Q222 552 204 544 L202 440 Z"
+          fill="url(#adult-female-costume-shadow-agent__limb)"/>
+    <!-- hip block, fastening low on the right -->
+    <path d="M146 290 Q200 306 254 290 Q259 314 253 340 Q200 356 147 340 Q141 314 146 290 Z"
+          fill="url(#adult-female-costume-shadow-agent__suit)"/>
+    <!-- wrap-front torso: the deep V is the crossing edge, right over left -->
+    <path d="M166 150 Q152 154 146 178 L138 240 Q136 280 142 312 Q200 332 258 312
+             Q264 280 262 240 L254 178 Q248 154 234 150 L206 196 Z"
+          fill="url(#adult-female-costume-shadow-agent__suit)"/>
+    <!-- one long sleeve; the other arm stays bare -->
+    <path d="M150 156 Q150 150 138 150 Q116 150 114 168 L110 250 L112 328
+             Q130 338 148 328 L150 250 Z"
+          fill="url(#adult-female-costume-shadow-agent__limb)"/>
+  </g>
+
+  <!-- the crossing edge, shoulder to the low hip fastening -->
+  <path d="M232 152 L206 198 L216 210 L244 160 Z" fill="var(--c2, #453529)"/>
+  <path d="M212 206 Q236 246 244 292 L228 296 Q220 250 200 214 Z" fill="var(--c2, #453529)"/>
+  <!-- low hip fastening: a single flat disc, no buckle prongs -->
+  <circle cx="240" cy="302" r="13" fill="url(#adult-female-costume-shadow-agent__wrap)"/>
+  <circle cx="240" cy="302" r="5" fill="var(--c2, #2A1E16)"/>
+  <!-- wide wrist wrap on the bare arm -->
+  <path d="M250 300 H288 V326 Q269 336 250 326 Z"
+        fill="url(#adult-female-costume-shadow-agent__wrap)"/>
+  <path d="M252 310 h34 M252 318 h34" stroke="var(--c2, #2A1E16)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- covered-side cuff -->
+  <path d="M112 306 Q131 314 150 306 L150 326 Q131 336 112 326 Z"
+        fill="url(#adult-female-costume-shadow-agent__wrap)"/>
+  <!-- ankle bindings -->
+  <path d="M158 520 q20 8 40 0 l0 16 q-20 8 -40 0 Z" fill="var(--c2, #453529)"/>
+  <path d="M202 520 q20 8 40 0 l0 16 q-20 8 -40 0 Z" fill="var(--c2, #453529)"/>
+  <!-- house highlight -->
+  <path d="M172 178 q22 22 44 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

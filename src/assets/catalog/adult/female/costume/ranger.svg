@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger Jerkin" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- The hood is drawn WORN DOWN, as a thick roll at the nape, so nothing crosses the face. -->
+  <!-- axes vs the slot: a sleeveless jerkin hanging open over a long-sleeved under-layer
+       (closure) + a hem split into two long tails at mid-thigh (hem).
+       Palette is butter and ink, not the banned all-green-with-a-hood archer pairing, and there
+       is no chevron anywhere. -->
+  <defs>
+    <linearGradient id="adult-female-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A24E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2BE62)"/>
+      <stop offset="1" stop-color="var(--c1, #CE9440)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C3B31)"/>
+      <stop offset="1" stop-color="var(--c2, #2F231B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-ranger__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #48937F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M160 330 Q182 340 202 330 L200 440 L198 530 Q180 538 162 530 L160 440 Z"
+          fill="url(#adult-female-costume-ranger__under)"/>
+    <path d="M198 330 Q220 340 240 330 L240 440 L238 530 Q220 538 202 530 L200 440 Z"
+          fill="url(#adult-female-costume-ranger__under)"/>
+    <!-- long-sleeved under-layer -->
+    <path d="M116 158 Q116 152 128 152 H142 Q152 152 152 162 L150 246 L148 330
+             Q133 340 118 330 L116 246 Z"
+          fill="url(#adult-female-costume-ranger__under)"/>
+    <path d="M284 158 Q284 152 272 152 H258 Q248 152 248 162 L250 246 L252 330
+             Q267 340 282 330 L284 246 Z"
+          fill="url(#adult-female-costume-ranger__under)"/>
+    <path d="M170 152 H230 Q252 158 254 182 L258 240 Q260 282 254 308 Q200 326 146 308
+             Q140 282 142 240 L146 182 Q148 158 170 152 Z"
+          fill="url(#adult-female-costume-ranger__under)"/>
+    <!-- open jerkin, left panel, tail at mid-thigh; the under-sleeve stays clear outboard -->
+    <path d="M164 150 Q152 158 148 186 L144 250 L142 326 L148 404 Q162 412 174 400
+             L178 318 L182 240 L186 170 Q178 152 164 150 Z"
+          fill="url(#adult-female-costume-ranger__jerkin)"/>
+    <!-- open jerkin, right panel, tail at mid-thigh -->
+    <path d="M236 150 Q248 158 252 186 L256 250 L258 326 L252 404 Q238 412 226 400
+             L222 318 L218 240 L214 170 Q222 152 236 150 Z"
+          fill="url(#adult-female-costume-ranger__jerkin)"/>
+    <!-- the hood, pooled in a thick roll at the nape -->
+    <path d="M168 154 Q200 150 232 154 Q246 172 234 190 Q200 202 166 190 Q154 172 168 154 Z"
+          fill="url(#adult-female-costume-ranger__hood)"/>
+  </g>
+
+  <!-- hood roll fold -->
+  <path d="M172 172 q28 12 56 0" stroke="var(--c1, #C08D3B)" stroke-opacity="0.7"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- diagonal quiver strap across the chest -->
+  <path d="M154 196 L250 288 L238 302 L142 210 Z"
+        fill="url(#adult-female-costume-ranger__strap)"/>
+  <!-- wide bracer on one forearm -->
+  <path d="M248 268 H286 V318 Q267 328 248 318 Z"
+        fill="url(#adult-female-costume-ranger__strap)"/>
+  <path d="M252 282 h30 M252 296 h30 M252 308 h30" stroke="var(--c2, #2F231B)"
+        stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- narrow waist belt under the jerkin -->
+  <path d="M182 286 H218 Q222 300 218 314 H182 Q178 300 182 286 Z" fill="var(--c3, #6BBFAD)"/>
+  <!-- jerkin front edge binding -->
+  <path d="M184 174 L180 316 M216 174 L220 316" stroke="var(--c1, #C08D3B)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- trouser lacing at the shin -->
+  <g stroke="var(--c3, #6BBFAD)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M164 452 L196 466 M164 466 L196 452"/>
+    <path d="M164 484 L196 498 M164 498 L196 484"/>
+    <path d="M204 452 L236 466 M204 466 L236 452"/>
+    <path d="M204 484 L236 498 M204 498 L236 484"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M152 200 q18 26 26 44" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

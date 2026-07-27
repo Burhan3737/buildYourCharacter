@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- TRADEMARK NOTE, do not "improve" this file back toward the thing it avoids. Deliberately
+       absent, and each one must stay absent: no strapless bustier (this is a long-sleeved closed
+       tunic), no star motif at any size anywhere, no tiara, no matching metal bracers on the
+       wrists, no coiled rope or lasso at the hip, and no red, blue or gold in the fallback.
+       KEEP THE TROUSERS AND KEEP THE SLEEVES: the fully covered trousered rider is the opposite
+       of that character on every axis, which is why this silhouette was chosen.
+       Fallback is mint + ink + butter. -->
+  <!-- axes vs the slot: a crescent shield slung flat across the back so a curved edge shows well
+       past each hip (volume) + narrow trousers tucked into soft ankle boots under a mid-thigh
+       tunic (hem). -->
+  <defs>
+    <linearGradient id="adult-female-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4A9382)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shield-warrior__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B7A5)"/>
+      <stop offset="1" stop-color="var(--c1, #428A79)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shield-warrior__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A30)"/>
+      <stop offset="1" stop-color="var(--c2, #2C211A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #543F33)"/>
+      <stop offset="1" stop-color="var(--c2, #302319)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-shield-warrior__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- crescent shield, slung flat across the back, horns showing past each hip -->
+    <path d="M100 332 Q106 238 200 230 Q294 238 300 332 Q302 376 292 400
+             Q282 412 278 396 Q276 350 268 326 Q258 268 200 264 Q142 268 132 326
+             Q124 350 122 396 Q118 412 108 400 Q98 376 100 332 Z"
+          fill="url(#adult-female-costume-shield-warrior__shield)"/>
+    <!-- narrow trousers -->
+    <path d="M162 330 Q182 340 200 332 L198 430 L196 512 Q180 518 164 512 L163 430 Z"
+          fill="url(#adult-female-costume-shield-warrior__dark)"/>
+    <path d="M200 332 Q218 340 238 330 L237 430 L236 512 Q220 518 204 512 L202 430 Z"
+          fill="url(#adult-female-costume-shield-warrior__dark)"/>
+    <!-- soft ankle boots, the trousers tuck into them -->
+    <path d="M152 506 Q178 518 204 506 Q210 538 205 568 Q178 576 151 568 Q146 538 152 506 Z"
+          fill="url(#adult-female-costume-shield-warrior__dark)"/>
+    <path d="M196 506 Q222 518 248 506 Q254 538 249 568 Q222 576 195 568 Q190 538 196 506 Z"
+          fill="url(#adult-female-costume-shield-warrior__dark)"/>
+    <!-- long sleeves, close to the arm -->
+    <path d="M112 168 Q114 152 132 152 H144 Q160 152 160 170 L156 250 L152 330
+             Q132 340 114 330 L112 250 Z"
+          fill="url(#adult-female-costume-shield-warrior__sleeve)"/>
+    <path d="M288 168 Q286 152 268 152 H256 Q240 152 240 170 L244 250 L248 330
+             Q268 340 286 330 L288 250 Z"
+          fill="url(#adult-female-costume-shield-warrior__sleeve)"/>
+    <!-- closed tunic to mid-thigh -->
+    <path d="M170 150 H230 Q254 154 258 180 Q266 240 262 300 Q266 350 258 398
+             Q200 414 142 398 Q134 350 138 300 Q134 240 142 180 Q146 154 170 150 Z"
+          fill="url(#adult-female-costume-shield-warrior__tunic)"/>
+  </g>
+
+  <!-- shield rim highlight along the visible horns, plain: no device, no boss, no motif -->
+  <path d="M105 344 Q104 376 110 392" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M295 344 Q296 376 290 392" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M114 316 Q136 250 200 246 Q264 250 286 316" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- wide diagonal baldric -->
+  <path d="M152 168 L254 300 L238 314 L136 182 Z"
+        fill="url(#adult-female-costume-shield-warrior__dark)"/>
+  <path d="M228 292 H254 Q258 306 254 320 H228 Q224 306 228 292 Z"
+        fill="url(#adult-female-costume-shield-warrior__trim)"/>
+  <!-- neck bind, woven trim -->
+  <path d="M172 150 H228 L230 166 Q200 176 170 166 Z"
+        fill="url(#adult-female-costume-shield-warrior__trim)"/>
+  <!-- tunic hem band, woven trim -->
+  <path d="M140 378 Q200 396 260 378 L261 398 Q200 416 139 398 Z"
+        fill="url(#adult-female-costume-shield-warrior__trim)"/>
+  <path d="M148 386 l10 10 l10 -10 l10 10 l10 -10 l10 10 l10 -10 l10 10 l10 -10
+           l10 10 l10 -10 l10 10 l10 -10" stroke="var(--c2, #2C211A)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- boot top binding -->
+  <path d="M154 512 q24 10 48 0 M198 512 q24 10 48 0" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M162 180 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

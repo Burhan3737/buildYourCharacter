@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr Pelt" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- CORRECTNESS NOTE, please do not "correct" this back. A Greek satyr has a HORSE tail and
+       horse ears, not goat ones. Goat legs and horns belong to the Roman faun, which is a
+       different creature. The ears are a companion headwear family, never drawn here, because
+       costume draws above the face.
+       Second note: classical satyrs are nude with exaggerated genitalia. This is a children's
+       dress-up satyr: pelt from the waist down, a skin over one shoulder, and nothing else. -->
+  <!-- axes vs berserker (the other shaggy family): the shag starts at the waist and runs all the
+       way to the ankle over both legs (hem) + the upper body is bare but for one knotted skin,
+       against berserker's full sleeveless jerkin over a sleeved tunic (shoulder/sleeve). -->
+  <defs>
+    <linearGradient id="adult-female-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B0824F)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6339)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-satyr__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5238)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3524)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5238)"/>
+      <stop offset="1" stop-color="var(--c2, #3E2C1D)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-satyr__cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D19A44)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long horse tail, broad at the root and switching to a taper behind the hip -->
+    <path d="M226 300 Q252 282 272 300 Q300 342 304 404 Q308 466 294 512
+             Q286 540 268 544 Q252 546 252 528 Q266 482 266 430 Q266 370 250 340
+             Q238 316 226 300 Z"
+          fill="url(#adult-female-costume-satyr__tail)"/>
+    <!-- the pelt: deeply lobed at the waist, bumpy outline all the way to the ankle -->
+    <path d="M140 292
+             q12 -14 24 -2 q12 12 24 -4 q11 -14 22 4 q12 12 23 -6 q13 -12 27 8
+             q22 24 6 54 q-20 26 8 52 q10 30 -12 54 q-16 26 2 48 q8 24 -14 42
+             q-22 12 -46 0
+             q-4 -90 2 -180
+             q-6 -12 -12 0
+             q6 90 2 180
+             q-22 12 -46 0
+             q-22 -18 -8 -44 q16 -24 -6 -50 q-18 -26 6 -50 q18 -26 -8 -50 q-12 -28 6 -56 Z"
+          fill="url(#adult-female-costume-satyr__pelt)"/>
+    <!-- animal skin knotted over one shoulder, hanging to the opposite hip.
+         The hip end is cut into the ragged paw flaps of a whole skin. -->
+    <path d="M144 150 H208 L256 264 q8 18 -8 26 l-10 -14 l-6 18 l-12 -16 l-8 16
+             q-14 -4 -18 -18 L144 194 Z"
+          fill="url(#adult-female-costume-satyr__hide)"/>
+  </g>
+
+  <!-- shag texture inside the pelt, following the lobes -->
+  <g stroke="var(--c1, #7A5730)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M150 320 q10 22 -2 44 q-10 22 2 44"/>
+    <path d="M170 330 q8 26 -2 52 q-8 26 2 50"/>
+    <path d="M232 328 q-8 26 2 52 q8 26 -2 50"/>
+    <path d="M250 318 q-10 22 2 44 q10 22 -2 44"/>
+    <path d="M152 436 q10 24 -2 48"/>
+    <path d="M248 434 q-10 24 2 48"/>
+  </g>
+  <!-- lobed waist edge shading -->
+  <path d="M144 296 q22 -12 44 -2 q22 10 44 -4" stroke="var(--c2, #4A3524)"
+        stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cord belt, low over the pelt so the lobed waist edge stays clear above it -->
+  <path d="M144 318 Q200 338 256 318 L256 332 Q200 352 144 332 Z"
+        fill="url(#adult-female-costume-satyr__cord)"/>
+  <path d="M198 326 q16 10 16 32 M214 328 q10 14 8 32" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- cord knotting the skin at the shoulder -->
+  <path d="M148 164 q28 10 44 -4 M152 182 q28 10 44 -4" stroke="var(--c3, #F7C873)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M172 158 q-6 16 2 32" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- tail hair strokes -->
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M256 316 q24 48 24 114 q0 54 -8 90"/>
+    <path d="M282 340 q14 48 12 104 q-2 42 -8 62"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M158 316 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

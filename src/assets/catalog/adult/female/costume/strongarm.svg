@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- axes vs the slot: broad flat plate yokes standing square across each shoulder with the
+       whole side of the body open (shoulder/sleeve) + cross-laced side opening from armpit to
+       waist instead of a front closure (closure).
+       No chest graphic: the vest front is plain, the lacing is at the sides. -->
+  <defs>
+    <linearGradient id="adult-female-costume-strongarm__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9784E)"/>
+      <stop offset="1" stop-color="var(--c1, #865D3B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-strongarm__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFC178)"/>
+      <stop offset="1" stop-color="var(--c3, #C08D3B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A30)"/>
+      <stop offset="1" stop-color="var(--c2, #2E231C)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-strongarm__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E0AC58)"/>
+      <stop offset="1" stop-color="var(--c3, #BC8735)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- full-length straight trousers -->
+    <path d="M152 328 H202 V520 Q202 538 184 538 H170 Q152 538 152 520 Z"
+          fill="url(#adult-female-costume-strongarm__trouser)"/>
+    <path d="M198 328 H248 V520 Q248 538 230 538 H216 Q198 538 198 520 Z"
+          fill="url(#adult-female-costume-strongarm__trouser)"/>
+    <!-- hip block under the belt -->
+    <path d="M146 286 H254 Q259 312 254 338 H146 Q141 312 146 286 Z"
+          fill="url(#adult-female-costume-strongarm__trouser)"/>
+    <!-- vest front, open down both sides so the flank reads as skin -->
+    <path d="M166 152 H234 Q243 178 241 212 Q239 256 235 298 Q200 312 165 298
+             Q161 256 159 212 Q157 178 166 152 Z"
+          fill="url(#adult-female-costume-strongarm__hide)"/>
+    <!-- broad flat plate yokes, squared across each shoulder -->
+    <path d="M134 158 Q138 150 150 150 H190 Q196 150 196 162 V186 Q163 194 132 184
+             Q127 170 134 158 Z"
+          fill="url(#adult-female-costume-strongarm__yoke)"/>
+    <path d="M266 158 Q262 150 250 150 H210 Q204 150 204 162 V186 Q237 194 268 184
+             Q273 170 266 158 Z"
+          fill="url(#adult-female-costume-strongarm__yoke)"/>
+  </g>
+
+  <!-- yoke plate ridges -->
+  <path d="M140 172 q26 -12 50 -6 M260 172 q-26 -12 -50 -6" stroke="#FFFFFF"
+        stroke-opacity="0.32" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cross lacing, armpit to waist, both sides -->
+  <g stroke="var(--c3, #E0AC58)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M158 198 L142 224 M142 198 L158 224"/>
+    <path d="M159 232 L143 258 M143 232 L159 258"/>
+    <path d="M160 266 L144 290 M144 266 L160 290"/>
+    <path d="M242 198 L258 224 M258 198 L242 224"/>
+    <path d="M241 232 L257 258 M257 232 L241 258"/>
+    <path d="M240 266 L256 290 M256 266 L240 290"/>
+  </g>
+  <!-- wide buckled belt over the vest hem -->
+  <path d="M140 284 H260 Q264 300 260 316 H140 Q136 300 140 284 Z"
+        fill="url(#adult-female-costume-strongarm__belt)"/>
+  <path d="M186 280 H214 Q218 300 214 320 H186 Q182 300 186 280 Z"
+        fill="var(--c2, #2E231C)"/>
+  <path d="M192 292 h16 v16 h-16 Z" fill="url(#adult-female-costume-strongarm__belt)"/>
+  <!-- turned trouser cuffs, in the harness hide -->
+  <path d="M150 502 H204 V524 Q204 534 194 534 H160 Q150 534 150 524 Z"
+        fill="url(#adult-female-costume-strongarm__hide)"/>
+  <path d="M196 502 H250 V524 Q250 534 240 534 H206 Q196 534 196 524 Z"
+        fill="url(#adult-female-costume-strongarm__hide)"/>
+  <!-- vest hem stitch -->
+  <path d="M168 292 q32 10 64 0" stroke="var(--c2, #2E231C)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M172 168 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

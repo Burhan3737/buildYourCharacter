@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- axes vs the slot: two layers with the sleeveless overdress hem stopping at mid-calf and a
+       clear 48 unit band of the sleeved underdress showing below it (hem) + the overdress hangs
+       from two short front straps meeting a pair of oval brooches at the collarbone, with the
+       whole upper chest left as underdress (shoulder/sleeve). -->
+  <defs>
+    <linearGradient id="adult-female-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #5566AF)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c2, #D3C8AF)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #CCC0A6)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-apron-dress__brooch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B9862F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length underdress -->
+    <path d="M164 152 H236 Q252 158 254 184 L262 300 Q272 420 278 548
+             Q200 566 122 548 Q128 420 138 300 L146 184 Q148 158 164 152 Z"
+          fill="url(#adult-female-costume-apron-dress__under)"/>
+    <!-- long underdress sleeves -->
+    <path d="M114 172 Q114 152 134 152 H146 Q164 152 164 172 L162 250 L160 330
+             Q138 342 116 330 L115 250 Z"
+          fill="url(#adult-female-costume-apron-dress__sleeve)"/>
+    <path d="M286 172 Q286 152 266 152 H254 Q236 152 236 172 L238 250 L240 330
+             Q262 342 284 330 L285 250 Z"
+          fill="url(#adult-female-costume-apron-dress__sleeve)"/>
+    <!-- two short front straps -->
+    <path d="M172 156 H188 V186 H172 Z" fill="url(#adult-female-costume-apron-dress__over)"/>
+    <path d="M212 156 H228 V186 H212 Z" fill="url(#adult-female-costume-apron-dress__over)"/>
+    <!-- sleeveless woollen overdress, hem at mid-calf -->
+    <path d="M166 178 H234 Q248 202 250 242 L256 340 Q262 430 264 500
+             Q200 516 136 500 Q138 430 144 340 L150 242 Q152 202 166 178 Z"
+          fill="url(#adult-female-costume-apron-dress__over)"/>
+  </g>
+
+  <!-- the pair of domed oval brooches at the collarbone -->
+  <ellipse cx="180" cy="182" rx="15" ry="11"
+           fill="url(#adult-female-costume-apron-dress__brooch)"/>
+  <ellipse cx="220" cy="182" rx="15" ry="11"
+           fill="url(#adult-female-costume-apron-dress__brooch)"/>
+  <path d="M172 178 q8 -6 16 0 M212 178 q8 -6 16 0" stroke="#FFFFFF" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- swag of beads strung between the brooches -->
+  <path d="M182 190 Q200 224 218 190" stroke="var(--c3, #E4B15F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="188" cy="200" r="4.5"/><circle cx="195" cy="208" r="4.5"/>
+    <circle cx="205" cy="208" r="4.5"/><circle cx="212" cy="200" r="4.5"/>
+    <circle cx="200" cy="211" r="4.5"/>
+  </g>
+  <!-- tool cluster on a chain at one hip -->
+  <path d="M178 190 Q168 240 160 290" stroke="var(--c3, #E4B15F)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 288 H170 Q174 296 170 302 H152 Q148 296 152 288 Z"
+        fill="url(#adult-female-costume-apron-dress__brooch)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <path d="M154 302 h7 l-1 32 q-3 5 -6 0 Z"/>
+    <path d="M164 302 h7 l2 26 q-3 6 -7 1 Z"/>
+    <path d="M158 336 q6 -4 10 2 q3 8 -4 10 q-8 1 -8 -6 Z"/>
+  </g>
+  <!-- overdress hem band, the strong horizontal that marks mid-calf -->
+  <path d="M138 486 Q200 504 262 486 L263 502 Q200 520 137 502 Z" fill="var(--c3, #E4B15F)"/>
+  <!-- underdress hem band, 48 units below it -->
+  <path d="M124 534 Q200 554 276 534" stroke="var(--c3, #E4B15F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- woven trim at the underdress cuffs -->
+  <path d="M116 314 q22 10 44 0 M284 314 q-22 10 -44 0" stroke="var(--c3, #E4B15F)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- wool folds on the overdress -->
+  <g stroke="var(--c1, #4E5EA5)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M168 236 Q160 360 156 486"/>
+    <path d="M200 240 Q200 364 200 494"/>
+    <path d="M232 236 Q240 360 244 486"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M168 200 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

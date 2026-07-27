@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- The ankle wings are cloth-and-feather ornament at the ankle, far below the face. Nothing is
+       drawn on the head: no winged helm anywhere in this file. -->
+  <!-- axes vs chiton and peplos: the fastening IS the axis in this group. This one is pinned at
+       ONE shoulder only, leaving the other shoulder and arm entirely bare (shoulder/sleeve)
+       + the hem stops at mid-thigh instead of the ankle (hem). -->
+  <defs>
+    <linearGradient id="adult-female-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c1, #D6CBB2)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7C6E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-winged-messenger__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D09843)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- rectangular mantle, pinned at the right shoulder, swinging back and out -->
+    <path d="M232 152 Q262 156 276 186 L304 300 Q316 372 308 430 Q288 444 270 430
+             Q276 366 266 300 L246 200 Q240 170 232 152 Z"
+          fill="url(#adult-female-costume-winged-messenger__mantle)"/>
+    <!-- short single-shoulder tunic, hem at mid-thigh -->
+    <path d="M212 150 H244 Q258 158 260 184 L264 250 Q268 330 262 392
+             Q200 408 138 392 Q132 330 136 250 L140 202 Q158 194 178 176 Q196 160 212 150 Z"
+          fill="url(#adult-female-costume-winged-messenger__tunic)"/>
+    <!-- winged cuff, left ankle -->
+    <path d="M162 516 Q136 512 112 490 Q104 482 114 480 Q142 488 164 500 Z"
+          fill="url(#adult-female-costume-winged-messenger__wing)"/>
+    <!-- winged cuff, right ankle -->
+    <path d="M238 516 Q264 512 288 490 Q296 482 286 480 Q258 488 236 500 Z"
+          fill="url(#adult-female-costume-winged-messenger__wing)"/>
+  </g>
+
+  <!-- the single round fibula, at the pinned shoulder only -->
+  <circle cx="238" cy="168" r="12" fill="url(#adult-female-costume-winged-messenger__wing)"/>
+  <circle cx="238" cy="168" r="4.5" fill="var(--c2, #CE7C6E)"/>
+  <!-- neckline binding running from the bare shoulder to the pin -->
+  <path d="M142 204 Q161 194 180 177 Q197 162 212 155" stroke="var(--c3, #F7C873)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- narrow waist cord -->
+  <path d="M142 272 Q200 292 260 272 L261 286 Q200 306 141 286 Z" fill="var(--c3, #F7C873)"/>
+  <!-- tunic hem band -->
+  <path d="M138 386 Q200 404 262 386" stroke="var(--c3, #F7C873)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- mantle folds -->
+  <g stroke="var(--c1, #D6CBB2)" stroke-opacity="0.45" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M256 208 Q278 300 282 402"/>
+    <path d="M272 216 Q294 306 298 400"/>
+  </g>
+  <!-- ankle cuff bands -->
+  <path d="M160 500 H200 V524 Q180 532 160 524 Z" fill="var(--c3, #F7C873)"/>
+  <path d="M240 500 H200 V524 Q220 532 240 524 Z" fill="var(--c3, #F7C873)"/>
+  <!-- feather ribs on the ankle wings -->
+  <g stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M158 506 L126 490"/>
+    <path d="M154 496 L134 484"/>
+    <path d="M242 506 L274 490"/>
+    <path d="M246 496 L266 484"/>
+  </g>
+  <!-- drape folds on the tunic -->
+  <g stroke="var(--c2, #CE7C6E)" stroke-opacity="0.28" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M166 220 Q160 306 158 384"/>
+    <path d="M200 216 Q200 306 200 396"/>
+    <path d="M232 214 Q238 302 240 384"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M170 208 q32 12 62 -4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

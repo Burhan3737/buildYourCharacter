@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jarl Tunic" data-family="jarl" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- No helmet is drawn, horned or otherwise: costume draws above the face, and a horned helm is
+       banned outright in any case. The rank reads from the cloak and the woven trim bands. -->
+  <!-- axes vs the slot: a rectangular cloak worn offset over the left shoulder only, leaving the
+       right arm entirely free (shoulder/sleeve) + a knee-length fitted tunic with a keyhole neck
+       over narrow trousers (hem). -->
+  <defs>
+    <linearGradient id="adult-female-costume-jarl__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E9585)"/>
+      <stop offset="1" stop-color="var(--c1, #3E6B60)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jarl__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #578C7D)"/>
+      <stop offset="1" stop-color="var(--c1, #386258)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jarl__cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFC3A8)"/>
+      <stop offset="1" stop-color="var(--c2, #A2957A)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jarl__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B9AC91)"/>
+      <stop offset="1" stop-color="var(--c2, #8D8067)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-jarl__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B9862F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow trousers -->
+    <path d="M162 336 H200 L198 440 L196 542 Q178 550 162 542 L161 440 Z"
+          fill="url(#adult-female-costume-jarl__trouser)"/>
+    <path d="M200 336 H238 L238 440 L236 542 Q220 550 204 542 L202 440 Z"
+          fill="url(#adult-female-costume-jarl__trouser)"/>
+    <!-- long sleeves, rucked past the wrist -->
+    <path d="M114 172 Q114 152 132 152 H146 Q164 152 164 172 L160 250 L158 322
+             Q158 344 138 346 Q116 346 116 322 L115 250 Z"
+          fill="url(#adult-female-costume-jarl__sleeve)"/>
+    <path d="M286 172 Q286 152 268 152 H254 Q236 152 236 172 L240 250 L242 322
+             Q242 344 262 346 Q284 346 284 322 L285 250 Z"
+          fill="url(#adult-female-costume-jarl__sleeve)"/>
+    <!-- knee-length fitted tunic with a keyhole neck -->
+    <path d="M172 150 Q186 176 200 178 Q214 176 228 150 Q248 156 250 180 L254 244
+             Q256 320 252 380 Q254 420 248 456 Q200 472 152 456 Q146 420 148 380
+             Q144 320 146 244 L150 180 Q152 156 172 150 Z"
+          fill="url(#adult-female-costume-jarl__wool)"/>
+    <!-- rectangular cloak, hanging in front of the left arm only -->
+    <path d="M190 152 H150 Q126 158 118 190 L104 320 Q96 402 100 476
+             Q140 490 180 476 Q176 400 180 320 L188 200 Z"
+          fill="url(#adult-female-costume-jarl__cloak)"/>
+    <!-- the corner of the cloak coming over the right shoulder to the pin, arm left free -->
+    <path d="M214 152 H246 Q256 162 254 184 Q234 200 212 190 Z"
+          fill="url(#adult-female-costume-jarl__cloak)"/>
+  </g>
+
+  <!-- the keyhole slit itself, resolved as skin -->
+  <path d="M194 176 H206 Q210 192 206 208 Q200 214 194 208 Q190 192 194 176 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <!-- woven trim band at the neck, round the keyhole -->
+  <path d="M173 156 Q186 181 200 183 Q214 181 227 156" stroke="var(--c3, #E4B15F)"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M194 182 Q188 196 194 212 M206 182 Q212 196 206 212" stroke="var(--c3, #E4B15F)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- single ring brooch at the pinned shoulder -->
+  <circle cx="244" cy="172" r="14" fill="none" stroke="var(--c3, #E4B15F)" stroke-width="7"/>
+  <path d="M232 182 L256 162" stroke="var(--c3, #E4B15F)" stroke-width="5"
+        stroke-linecap="round" fill="none"/>
+  <!-- deep woven trim band at the hem -->
+  <path d="M150 430 Q200 448 250 430 L251 452 Q200 470 149 452 Z"
+        fill="url(#adult-female-costume-jarl__trim)"/>
+  <path d="M156 440 l9 9 l9 -9 l9 9 l9 -9 l9 9 l9 -9 l9 9 l9 -9 l9 9 l9 -9"
+        stroke="var(--c1, #35594F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- deep woven trim band at each cuff, over the rucked sleeve -->
+  <path d="M116 316 Q138 328 158 316 L159 336 Q138 348 116 336 Z"
+        fill="url(#adult-female-costume-jarl__trim)"/>
+  <path d="M284 316 Q262 328 242 316 L241 336 Q262 348 284 336 Z"
+        fill="url(#adult-female-costume-jarl__trim)"/>
+  <!-- rucked concertina at the wrists -->
+  <path d="M118 306 q20 12 40 0 M282 306 q-20 12 -40 0" stroke="var(--c1, #35594F)"
+        stroke-opacity="0.5" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- narrow belt -->
+  <path d="M148 288 Q200 304 252 288 L253 306 Q200 322 147 306 Z" fill="var(--c3, #E4B15F)"/>
+  <!-- cloak folds -->
+  <g stroke="var(--c2, #8D8067)" stroke-opacity="0.45" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M136 210 Q120 330 116 462"/>
+    <path d="M162 208 Q152 330 152 466"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M206 190 q22 6 34 -6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

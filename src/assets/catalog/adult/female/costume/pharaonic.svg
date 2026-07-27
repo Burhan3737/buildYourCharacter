@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148. The broad collar sits on the shoulders and upper
+       chest and its top edge stops at y 152, clear of the jaw. -->
+  <!-- CULTURAL NOTE. Pharaonic Egypt is in scope because it is a historical period with no living
+       community whose religious identity is at stake. What is deliberately NOT drawn: any
+       identifiable ruler, a cartouche, a crook and flail, a uraeus, or the "glamour Cleopatra"
+       version. This is a knee-length pleated linen kilt and a bead collar, drawn with the same
+       matter-of-factness as the chef whites. The nemes headcloth is a companion headwear family
+       and is never drawn here. -->
+  <!-- axes vs a moulded cuirass: this is flat drape with one hard triangular projection standing
+       out from the body (volume) + a wide flat disc collar lying on the shoulders rather than
+       forward-folded shoulder flaps (shoulder/sleeve). -->
+  <defs>
+    <linearGradient id="adult-female-costume-pharaonic__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5EFE0)"/>
+      <stop offset="1" stop-color="var(--c1, #DCD2BA)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c1, #D5CAB0)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-pharaonic__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B9862F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-pharaonic__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #58AC9B)"/>
+      <stop offset="1" stop-color="var(--c2, #3D8474)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- finely pleated linen kilt, to the knee -->
+    <path d="M144 292 Q200 306 256 292 Q262 366 266 446 Q200 462 134 446
+             Q138 366 144 292 Z"
+          fill="url(#adult-female-costume-pharaonic__linen)"/>
+    <!-- stiff triangular front apron, standing out flat from the body -->
+    <path d="M172 294 H228 L262 474 H138 Z"
+          fill="url(#adult-female-costume-pharaonic__apron)"/>
+    <!-- broad flat semicircular collar over both shoulders and the upper chest -->
+    <path d="M134 152 Q136 224 200 228 Q264 224 266 152 L222 152 Q220 174 200 176
+             Q180 174 178 152 Z"
+          fill="url(#adult-female-costume-pharaonic__collar)"/>
+    <!-- wide plain armlets above each elbow -->
+    <path d="M110 226 Q130 236 150 226 L151 254 Q130 264 109 254 Z"
+          fill="url(#adult-female-costume-pharaonic__collar)"/>
+    <path d="M290 226 Q270 236 250 226 L249 254 Q270 264 291 254 Z"
+          fill="url(#adult-female-costume-pharaonic__collar)"/>
+  </g>
+
+  <!-- concentric bead rows on the collar -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M143 158 Q146 210 200 214" stroke="var(--c2, #58AC9B)" stroke-width="8"/>
+    <path d="M257 158 Q254 210 200 214" stroke="var(--c2, #58AC9B)" stroke-width="8"/>
+    <path d="M155 158 Q158 198 200 202" stroke="var(--c1, #F5EFE0)" stroke-width="7"/>
+    <path d="M245 158 Q242 198 200 202" stroke="var(--c1, #F5EFE0)" stroke-width="7"/>
+    <path d="M167 158 Q170 186 200 190" stroke="var(--c2, #3D8474)" stroke-width="7"/>
+    <path d="M233 158 Q230 186 200 190" stroke="var(--c2, #3D8474)" stroke-width="7"/>
+    <path d="M136 154 Q138 222 200 226" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"/>
+  </g>
+  <!-- collar outer rim -->
+  <path d="M134 220 Q160 236 200 238 Q240 236 266 220" stroke="var(--c2, #3D8474)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- narrow beaded belt -->
+  <path d="M140 284 Q200 300 260 284 L261 298 Q200 314 139 298 Z"
+        fill="url(#adult-female-costume-pharaonic__band)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="158" cy="294" r="4"/><circle cx="176" cy="298" r="4"/>
+    <circle cx="194" cy="300" r="4"/><circle cx="212" cy="300" r="4"/>
+    <circle cx="230" cy="297" r="4"/><circle cx="246" cy="293" r="4"/>
+  </g>
+  <!-- fine pleats on the kilt, drawn either side of the apron -->
+  <g stroke="var(--c2, #3D8474)" stroke-opacity="0.3" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M148 306 L142 440"/>
+    <path d="M158 308 L153 442"/>
+    <path d="M166 310 L162 444"/>
+    <path d="M252 306 L258 440"/>
+    <path d="M242 308 L247 442"/>
+    <path d="M234 310 L238 444"/>
+  </g>
+  <!-- apron pleats, hard and straight to read as a stiff panel -->
+  <g stroke="var(--c2, #3D8474)" stroke-opacity="0.28" stroke-width="4"
+     fill="none" stroke-linecap="butt">
+    <path d="M186 300 L166 468"/>
+    <path d="M200 300 L200 468"/>
+    <path d="M214 300 L234 468"/>
+  </g>
+  <!-- apron border band, the hard bottom edge -->
+  <path d="M141 458 H259 L262 474 H138 Z" fill="url(#adult-female-costume-pharaonic__band)"/>
+  <!-- armlet rims -->
+  <path d="M110 232 q20 10 40 0 M290 232 q-20 10 -40 0" stroke="var(--c2, #3D8474)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M160 168 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: leg width, a rigid dome with no leg division at all reaching x 106 and
+       x 294, which clears the widest point of the body at x 150 to 250 by well over 40 units a
+       side, plus hem treatment, the dome sweeps the ground line at y 568 over four horizontal
+       hoop channel seams. House palette periwinkle, deliberately not a named princess palette -->
+  <defs>
+    <linearGradient id="adult-female-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="0.55" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-hoop-skirt__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5F6FB8)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one rigid dome standing clear of the leg on every side, plus the high
+       waist block it is hung from -->
+  <g class="sp-shadow">
+    <path d="M152 288 H248 C272 342 294 458 294 524 Q294 556 262 566 Q200 570 138 566
+             Q106 556 106 524 C106 458 128 342 152 288 Z"
+          fill="url(#adult-female-bottom-hoop-skirt__dome)"/>
+    <path d="M156 264 Q150 264 150 270 L148 296 H252 L250 270 Q250 264 244 264 Z"
+          fill="url(#adult-female-bottom-hoop-skirt__waist)"/>
+  </g>
+
+  <!-- stiffened hem sweep -->
+  <path d="M107 528 Q107 556 138 566 Q200 570 262 566 Q293 556 293 528 Q291 550 262 556
+           Q200 561 138 556 Q109 550 107 528 Z" fill="var(--c2, #5F6FB8)"/>
+
+  <!-- four horizontal hoop channel seams, each spanning the full width of the dome -->
+  <path d="M139 356 Q200 366 261 356" stroke="var(--c2, #5F6FB8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M127 406 Q200 418 273 406" stroke="var(--c2, #5F6FB8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M118 462 Q200 476 282 462" stroke="var(--c2, #5F6FB8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 514 Q200 530 286 514" stroke="var(--c2, #5F6FB8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M141 349 Q200 359 259 349" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M130 399 Q200 411 270 399" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M121 455 Q200 469 279 455" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M117 507 Q200 523 283 507" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- high waistband trim -->
+  <path d="M156 264 Q150 264 150 270 L149 284 H251 L250 270 Q250 264 244 264 Z"
+        fill="var(--c2, #5F6FB8)"/>
+  <path d="M151 277 H249" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.75" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vertical panel seams over the dome -->
+  <path d="M172 300 L130 556" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 300 L270 556" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the light down the front of the dome -->
+  <path d="M164 302 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 320 L162 530" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

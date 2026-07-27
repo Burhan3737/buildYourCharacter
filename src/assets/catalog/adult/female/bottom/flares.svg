@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes vs the slot: rise, a low band sitting on the hip line at y 300 well under every
+       other trouser here, plus leg width, close through thigh and knee and then a hard change
+       of direction at y 448 into a floor brushing hem at x 128 and x 272 that clears the
+       ankle by 40 units a side -->
+  <defs>
+    <linearGradient id="adult-female-bottom-flares__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="0.55" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-flares__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-bottom-flares__kick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFE3E8)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a low hip block and two legs that run close to the knee and then break
+       sharply outward to a wide hem -->
+  <g class="sp-shadow">
+    <path d="M162 340 H199 V448 L188 566 H128 L158 448 Z"
+          fill="url(#adult-female-bottom-flares__cloth)"/>
+    <path d="M238 340 H201 V448 L212 566 H272 L242 448 Z"
+          fill="url(#adult-female-bottom-flares__cloth)"/>
+    <path d="M154 300 Q150 300 150 306 L148 348 H252 L250 306 Q250 300 246 300 Z"
+          fill="url(#adult-female-bottom-flares__hip)"/>
+  </g>
+
+  <!-- colour blocked kick panels below the knee break -->
+  <path d="M158 450 L130 562 H186 L197 450 Z" fill="url(#adult-female-bottom-flares__kick)"/>
+  <path d="M242 450 L270 562 H214 L203 450 Z" fill="url(#adult-female-bottom-flares__kick)"/>
+
+  <!-- low waistband -->
+  <path d="M154 300 Q150 300 150 306 L150 320 H250 L250 306 Q250 300 246 300 Z"
+        fill="var(--c2, #A2505F)"/>
+  <path d="M152 314 H248" stroke="var(--c3, #FFE3E8)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="167" y="298" width="8" height="24" rx="3" fill="var(--c2, #A2505F)"/>
+  <rect x="225" y="298" width="8" height="24" rx="3" fill="var(--c2, #A2505F)"/>
+
+  <!-- the knee break, called out with a contrast seam across each leg -->
+  <path d="M159 449 H197" stroke="var(--c2, #A2505F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 449 H241" stroke="var(--c2, #A2505F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- outer seams following the close thigh and the flare -->
+  <path d="M164 352 L160 444" stroke="var(--c2, #A2505F)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 352 L240 444" stroke="var(--c2, #A2505F)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 456 L134 556" stroke="var(--c2, #A2505F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 456 L266 556" stroke="var(--c2, #A2505F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 316 v30" stroke="var(--c2, #A2505F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide hem facing -->
+  <path d="M135 556 H184" stroke="var(--c2, #A2505F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 556 H265" stroke="var(--c2, #A2505F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the fall of the flare -->
+  <path d="M162 330 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 360 V440" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M175 460 L160 552" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M225 460 L240 552" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

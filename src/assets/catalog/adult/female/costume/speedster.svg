@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speed Runner Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- adult/female costume ceiling: y >= 148 -->
+  <!-- axes vs web-runner (the other skin-close suit): sleeveless with deep-scooped armholes and
+       bare arms (shoulder/sleeve) + swept fin vanes standing off the outer calf so the lower
+       outline is a wide dart rather than a smooth sheath (volume).
+       No chest mark of any kind: the raked seam runs corner to corner, it is not an emblem. -->
+  <defs>
+    <linearGradient id="adult-female-costume-speedster__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-speedster__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B5A3)"/>
+      <stop offset="1" stop-color="var(--c1, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+    <linearGradient id="adult-female-costume-speedster__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #46362C)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- calf vanes: the identity, swept blades 120 units long standing off each outer calf -->
+    <path d="M166 424 L162 508 L104 402 Q98 391 110 394 Z"
+          fill="url(#adult-female-costume-speedster__vane)"/>
+    <path d="M234 424 L238 508 L296 402 Q302 391 290 394 Z"
+          fill="url(#adult-female-costume-speedster__vane)"/>
+    <!-- skin-close legs to an ankle hem -->
+    <path d="M162 334 L202 334 L200 444 L198 542 Q182 550 166 542 L164 444 Z"
+          fill="url(#adult-female-costume-speedster__leg)"/>
+    <path d="M198 334 L238 334 L236 444 L234 542 Q218 550 202 542 L200 444 Z"
+          fill="url(#adult-female-costume-speedster__leg)"/>
+    <!-- hip block -->
+    <path d="M146 290 Q200 306 254 290 Q260 314 254 340 Q200 356 146 340 Q140 314 146 290 Z"
+          fill="url(#adult-female-costume-speedster__suit)"/>
+    <!-- sleeveless torso, deep-scooped armholes, high closed neck -->
+    <path d="M180 150 H220 Q229 151 233 166 Q246 196 260 226 Q264 266 256 304
+             Q200 324 144 304 Q136 266 140 226 Q154 196 167 166 Q171 151 180 150 Z"
+          fill="url(#adult-female-costume-speedster__suit)"/>
+  </g>
+
+  <!-- one raked diagonal seam across the torso, corner to corner -->
+  <path d="M141 254 L259 202 L262 220 L143 272 Z"
+        fill="url(#adult-female-costume-speedster__band)"/>
+  <!-- high closed neck band -->
+  <path d="M178 150 H222 L224 168 Q200 178 176 168 Z"
+        fill="url(#adult-female-costume-speedster__band)"/>
+  <!-- armhole binding -->
+  <path d="M233 166 Q246 196 259 224" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 166 Q154 196 141 224" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- ankle cuffs -->
+  <path d="M164 522 Q182 530 200 522 L200 540 Q182 548 164 540 Z"
+        fill="url(#adult-female-costume-speedster__band)"/>
+  <path d="M200 522 Q218 530 236 522 L236 540 Q218 548 200 540 Z"
+        fill="url(#adult-female-costume-speedster__band)"/>
+  <!-- vane ribs -->
+  <g stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M162 484 L118 404"/>
+    <path d="M163 456 L134 414"/>
+    <path d="M238 484 L282 404"/>
+    <path d="M237 456 L266 414"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M162 180 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
