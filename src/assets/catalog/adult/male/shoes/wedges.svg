@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wedges" data-family="wedges" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: sole depth=one continuous solid wedge rising from toe to heel with no
+       gap beneath the arch + fastening=an ankle strap with a buckle over an open arch.
+       Against heels that is sole depth (solid vs an open arch under a thin column) and
+       fastening; against platform-boots, shaft height and the raked sole. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-wedges__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A06A)"/>
+      <stop offset="1" stop-color="var(--c2, #94714A)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-shoes-wedges__vamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #5C4636)"/>
+      <stop offset="1" stop-color="var(--c2, #94714A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- solid wedges, deepest at the heel, filled right down to the ground with no arch opening -->
+  <g class="sp-shadow">
+    <path d="M204 556 Q206 562 206 570 H156 Q150 570 150 564 L152 536 Q152 530 160 530
+             Q166 530 168 538 Q176 550 204 556 Z" fill="url(#adult-male-shoes-wedges__wedge)"/>
+    <path d="M244 556 Q246 562 246 570 H196 Q190 570 190 564 L192 536 Q192 530 200 530
+             Q206 530 208 538 Q216 550 244 556 Z" fill="url(#adult-male-shoes-wedges__wedge)"/>
+    <path d="M180 552 Q192 548 204 552 Q208 556 205 560 Q190 564 176 560 Q174 555 180 552 Z"
+          fill="url(#adult-male-shoes-wedges__vamp)"/>
+    <path d="M220 552 Q232 548 244 552 Q248 556 245 560 Q230 564 216 560 Q214 555 220 552 Z"
+          fill="url(#adult-male-shoes-wedges__vamp)"/>
+  </g>
+
+  <!-- ankle straps with a small buckle, over an open arch that shows skin -->
+  <path d="M154 532 Q170 526 186 532" stroke="var(--c3, #5C4636)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M194 532 Q210 526 226 532" stroke="var(--c3, #5C4636)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <rect x="176" y="526" width="11" height="12" rx="3" fill="var(--c3, #5C4636)"/>
+  <rect x="216" y="526" width="11" height="12" rx="3" fill="var(--c3, #5C4636)"/>
+
+  <!-- the wedge is one piece: a rope-wrap texture across it, and no sole break anywhere -->
+  <g stroke="var(--c2, #94714A)" stroke-opacity="0.55" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M153 544 Q178 552 204 560"/>
+    <path d="M152 552 Q178 558 205 564"/>
+    <path d="M193 544 Q218 552 244 560"/>
+    <path d="M192 552 Q218 558 245 564"/>
+  </g>
+  <path d="M151 566 H205" stroke="var(--c3, #5C4636)" stroke-width="4" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+  <path d="M191 566 H245" stroke="var(--c3, #5C4636)" stroke-width="4" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <path d="M158 538 q12 6 24 8" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 538 q12 6 24 8" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

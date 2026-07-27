@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: shaft height=to just below the knee, a 100 unit shaft that is by far the
+       tallest in the slot + fastening=none at all, a smooth unbroken upper.
+       Against boots that is shaft height and fastening; against wellies, toe shape and sole. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4A34)"/>
+      <stop offset="1" stop-color="var(--c2, #4B3324)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-shoes-tall-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4A34)"/>
+      <stop offset="1" stop-color="var(--c2, #4B3324)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- smooth shafts to just below the knee, then tapered feet: left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M162 466 Q162 460 168 460 H196 Q202 460 202 466 L200 540 Q200 548 192 548 H170
+             Q162 548 162 540 Z" fill="url(#adult-male-shoes-tall-boots__shaft)"/>
+    <path d="M160 540 H202 Q210 546 210 556 Q210 566 200 566 H158 Q150 566 150 556
+             Q150 546 160 540 Z" fill="url(#adult-male-shoes-tall-boots__foot)"/>
+    <path d="M204 466 Q204 460 210 460 H238 Q244 460 244 466 L242 540 Q242 548 234 548 H212
+             Q204 548 204 540 Z" fill="url(#adult-male-shoes-tall-boots__shaft)"/>
+    <path d="M202 540 H244 Q252 546 252 556 Q252 566 242 566 H200 Q192 566 192 556
+             Q192 546 202 540 Z" fill="url(#adult-male-shoes-tall-boots__foot)"/>
+  </g>
+
+  <!-- thin stacked sole -->
+  <path d="M150 558 H210 Q212 566 206 570 H154 Q148 566 150 558 Z" fill="var(--c2, #4B3324)"/>
+  <path d="M192 558 H252 Q254 566 248 570 H196 Q190 566 192 558 Z" fill="var(--c2, #4B3324)"/>
+  <path d="M152 566 H206" stroke="var(--c3, #E0C08A)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+  <path d="M194 566 H248" stroke="var(--c3, #E0C08A)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+
+  <!-- small pull tabs at the shaft top, the only hardware on the boot -->
+  <path d="M196 456 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
+  <path d="M238 456 h8 q4 0 4 5 v10 q0 5 -4 5 h-8 Z" fill="var(--c3, #E0C08A)"/>
+
+  <!-- a soft cuff crease and a long shaft highlight, no seams and no lacing -->
+  <path d="M164 478 Q182 484 200 478" stroke="var(--c2, #4B3324)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M206 478 Q224 484 242 478" stroke="var(--c2, #4B3324)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M172 490 V534" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 490 V534" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 550 q20 5 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 550 q20 5 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cleats" data-family="cleats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: sole depth=a rigid studded plate with six countable conical studs
+       hanging below it, the only broken sole edge in the slot + fastening=laces crossing off
+       centre, down the outer side of each vamp. Against sneakers that is sole and fastening. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-cleats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E7C6E)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-shoes-cleats__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E7C6E)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- close-fitting low uppers over rigid plate soles: left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M157 546 Q164 540 176 539 H196 Q204 539 205 548 L205 556 Q205 562 198 562 H160
+             Q153 562 153 555 Q153 549 157 546 Z" fill="url(#adult-male-shoes-cleats__upper)"/>
+    <path d="M152 556 H206 Q209 560 209 564 L209 566 H150 L150 564 Q150 560 152 556 Z"
+          fill="url(#adult-male-shoes-cleats__plate)"/>
+    <path d="M197 546 Q204 540 216 539 H236 Q244 539 245 548 L245 556 Q245 562 238 562 H200
+             Q193 562 193 555 Q193 549 197 546 Z" fill="url(#adult-male-shoes-cleats__upper)"/>
+    <path d="M192 556 H246 Q249 560 249 564 L249 566 H190 L190 564 Q190 560 192 556 Z"
+          fill="url(#adult-male-shoes-cleats__plate)"/>
+  </g>
+
+  <!-- six conical studs per plate, countable at tray size -->
+  <g fill="var(--c3, #2B3A44)">
+    <path d="M152 566 h10 l-3 8 h-4 Z"/>
+    <path d="M170 566 h10 l-3 8 h-4 Z"/>
+    <path d="M188 566 h10 l-3 8 h-4 Z"/>
+    <path d="M192 566 h10 l-3 8 h-4 Z"/>
+    <path d="M212 566 h10 l-3 8 h-4 Z"/>
+    <path d="M232 566 h10 l-3 8 h-4 Z"/>
+  </g>
+
+  <!-- off-centre lace ladder, down the outer side of each vamp -->
+  <path d="M166 540 Q160 550 162 560 L188 560 Q186 548 190 540 Z" fill="var(--c2, #3E7C6E)"
+        opacity="0.65"/>
+  <path d="M206 540 Q200 550 202 560 L228 560 Q226 548 230 540 Z" fill="var(--c2, #3E7C6E)"
+        opacity="0.65"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <path d="M166 543 L180 548 M180 543 L166 548"/>
+    <path d="M164 551 L180 556 M180 551 L164 556"/>
+    <path d="M206 543 L220 548 M220 543 L206 548"/>
+    <path d="M204 551 L220 556 M220 551 L204 556"/>
+  </g>
+
+  <!-- heel counter panel and instep highlight -->
+  <path d="M153 548 Q150 554 153 560 H162 V546 Z" fill="var(--c3, #2B3A44)" opacity="0.8"/>
+  <path d="M193 548 Q190 554 193 560 H202 V546 Z" fill="var(--c3, #2B3A44)" opacity="0.8"/>
+  <path d="M170 545 q16 4 30 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 545 q16 4 30 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

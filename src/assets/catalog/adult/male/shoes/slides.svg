@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Slides" data-family="slides" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: shaft height=backless, one broad band across the instep and nothing at
+       all behind the heel + sole depth=a thick contoured footbed with a raised heel lip.
+       Against flip-flops that is fastening and sole; against sandals, fastening and heel. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-slides__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6B94)"/>
+      <stop offset="1" stop-color="var(--c2, #3F4B6C)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-shoes-slides__bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6B94)"/>
+      <stop offset="1" stop-color="var(--c2, #3F4B6C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one broad instep band per foot, and a thick contoured footbed with a raised heel lip -->
+  <g class="sp-shadow">
+    <path d="M164 540 H202 Q206 546 206 554 Q206 562 200 562 H166 Q160 562 160 554
+             Q160 546 164 540 Z" fill="url(#adult-male-shoes-slides__band)"/>
+    <path d="M156 552 Q154 542 162 540 Q166 546 166 554 H206 Q210 560 210 566 Q210 570 204 570
+             H160 Q154 570 154 564 Z" fill="url(#adult-male-shoes-slides__bed)"/>
+    <path d="M204 540 H242 Q246 546 246 554 Q246 562 240 562 H206 Q200 562 200 554
+             Q200 546 204 540 Z" fill="url(#adult-male-shoes-slides__band)"/>
+    <path d="M196 552 Q194 542 202 540 Q206 546 206 554 H246 Q250 560 250 566 Q250 570 244 570
+             H200 Q194 570 194 564 Z" fill="url(#adult-male-shoes-slides__bed)"/>
+  </g>
+
+  <!-- contrast stripe across the instep band, no lettering of any kind -->
+  <path d="M164 548 H202" stroke="var(--c3, #F7C873)" stroke-width="6" stroke-linecap="round"
+        fill="none"/>
+  <path d="M204 548 H242" stroke="var(--c3, #F7C873)" stroke-width="6" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- footbed arch contour, and the raised heel lip that says the heel is open -->
+  <path d="M162 562 Q180 558 202 562" stroke="var(--c2, #3F4B6C)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M202 562 Q220 558 242 562" stroke="var(--c2, #3F4B6C)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M158 544 Q156 552 158 560" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M198 544 Q196 552 198 560" stroke="var(--c3, #F7C873)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- instep highlights; the heel region above the footbed is left as bare skin -->
+  <path d="M166 544 q16 5 32 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 544 q16 5 32 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

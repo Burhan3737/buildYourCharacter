@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ruff" data-family="ruff" data-slot="necklace"
+     data-layer="necklace" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: BODY SHAPE = a wide flat disc encircling the neck with a scalloped rim
+       built from eighteen figure of eight pleat lobes, and SCALE = 160 wide by 72 deep,
+       projecting evenly on every side. Differs from bib on shape (a disc round the neck rather
+       than a panel hanging on the chest) and on attachment; from choker on scale.
+
+       The disc clears the neck (x 186 to 214) by 66 canvas units on each side, inside the
+       45 to 70 brief, and stays inside the head transform budget.
+
+       Because necklace draws ABOVE top and costume, this one file makes every garment in the
+       catalogue wearable in a comedy register. The built in neck treatments on clown,
+       harlequin and pierrot are drawn low and shallow for exactly this reason, so a ruff
+       layered over them reads as one bigger ruff rather than two colliding ones.
+
+       Historically a ruff was a detachable item laundered separately, so the slot is correct. -->
+  <defs>
+    <linearGradient id="accessories-adult-necklace-ruff__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F1E6)"/>
+      <stop offset="1" stop-color="var(--c2, #C9C0AC)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the pleated disc: outer scalloped contour, with the neck opening as a real hole -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd" fill="url(#accessories-adult-necklace-ruff__cloth)"
+          d="M261.0 152.0 Q278.8 158.3 257.3 161.2 Q269.3 170.0 246.7 169.4 Q251.4 179.6 230.5 175.4
+             Q227.4 185.8 210.6 178.6 Q200.0 188.0 189.4 178.6 Q172.6 185.8 169.5 175.4
+             Q148.6 179.6 153.3 169.4 Q130.7 170.0 142.7 161.2 Q121.2 158.3 139.0 152.0
+             Q121.2 145.7 142.7 142.8 Q130.7 134.0 153.3 134.6 Q148.6 124.4 169.5 128.6
+             Q172.6 118.2 189.4 125.4 Q200.0 116.0 210.6 125.4 Q227.4 118.2 230.5 128.6
+             Q251.4 124.4 246.7 134.6 Q269.3 134.0 257.3 142.8 Q278.8 145.7 261.0 152.0 Z
+             M221.0 152.0 L219.7 147.2 L216.1 143.0 L210.5 139.9 L203.6 138.2 L196.4 138.2
+             L189.5 139.9 L183.9 143.0 L180.3 147.2 L179.0 152.0 L180.3 156.8 L183.9 161.0
+             L189.5 164.1 L196.4 165.8 L203.6 165.8 L210.5 164.1 L216.1 161.0 L219.7 156.8 Z"/>
+  </g>
+
+  <!-- pleat shadows: one spoke per lobe, radiating from the neck band to the rim -->
+  <g stroke="var(--c2, #C9C0AC)" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"
+     fill="none">
+    <path d="M224.0 152.0 L269.0 152.0"/>
+    <path d="M222.6 157.8 L264.8 162.6"/>
+    <path d="M218.4 162.9 L252.9 171.9"/>
+    <path d="M212.0 166.7 L234.5 178.8"/>
+    <path d="M204.2 168.7 L212.0 182.5"/>
+    <path d="M195.8 168.7 L188.0 182.5"/>
+    <path d="M188.0 166.7 L165.5 178.8"/>
+    <path d="M181.6 162.9 L147.1 171.9"/>
+    <path d="M177.4 157.8 L135.2 162.6"/>
+    <path d="M176.0 152.0 L131.0 152.0"/>
+    <path d="M177.4 146.2 L135.2 141.4"/>
+    <path d="M181.6 141.1 L147.1 132.1"/>
+    <path d="M188.0 137.3 L165.5 125.2"/>
+    <path d="M195.8 135.3 L188.0 121.5"/>
+    <path d="M204.2 135.3 L212.0 121.5"/>
+    <path d="M212.0 137.3 L234.5 125.2"/>
+    <path d="M218.4 141.1 L252.9 132.1"/>
+    <path d="M222.6 146.2 L264.8 141.4"/>
+  </g>
+
+  <!-- bound rim edge, drawn just inside the scalloped contour -->
+  <path fill="none" stroke="var(--c3, #C4A46A)" stroke-width="3" stroke-linejoin="round"
+        d="M256.0 152.0 Q272.0 157.6 252.8 160.2 Q263.4 168.0 243.4 167.5 Q247.5 176.5 229.0 172.8
+           Q226.3 182.0 211.4 175.6 Q202.0 184.0 192.6 175.6 Q177.7 182.0 175.0 172.8
+           Q156.5 176.5 160.6 167.5 Q140.6 168.0 151.2 160.2 Q132.0 157.6 148.0 152.0
+           Q132.0 146.4 151.2 143.8 Q140.6 136.0 160.6 136.5 Q156.5 127.5 175.0 131.2
+           Q177.7 122.0 192.6 128.4 Q202.0 120.0 211.4 128.4 Q226.3 122.0 229.0 131.2
+           Q247.5 127.5 243.4 136.5 Q263.4 136.0 252.8 143.8 Q272.0 146.4 256.0 152.0 Z"/>
+
+  <!-- neck band and the upper highlight -->
+  <path d="M179 149 Q200 141 221 149" stroke="var(--c3, #C4A46A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 138 Q200 126 246 138" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

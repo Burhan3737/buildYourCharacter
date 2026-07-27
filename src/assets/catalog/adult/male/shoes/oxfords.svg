@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oxfords" data-family="oxfords" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: fastening=closed lacing, the quarters stitched down UNDER the vamp
+       rather than lapping over it + sole depth=a visible welt standing proud of the upper on
+       every side. Against sneakers that is toe shape and sole; against dress-shoes, fastening
+       and sole; against high-tops, shaft height and fastening. -->
+  <defs>
+    <linearGradient id="adult-male-shoes-oxfords__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c2, #322722)"/>
+    </linearGradient>
+    <linearGradient id="adult-male-shoes-oxfords__welt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #322722)"/>
+      <stop offset="1" stop-color="var(--c1, #4A3B33)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- low-cut uppers with a squared toe box, then the welted soles beneath them -->
+  <g class="sp-shadow">
+    <path d="M158 548 Q166 542 178 542 H198 Q206 542 206 550 V558 Q206 564 199 564 H160
+             Q154 564 154 557 Q154 551 158 548 Z" fill="url(#adult-male-shoes-oxfords__upper)"/>
+    <path d="M152 558 H208 Q212 562 212 566 Q212 570 206 570 H156 Q149 570 149 565
+             Q149 561 152 558 Z" fill="url(#adult-male-shoes-oxfords__welt)"/>
+    <path d="M198 548 Q206 542 218 542 H238 Q246 542 246 550 V558 Q246 564 239 564 H200
+             Q194 564 194 557 Q194 551 198 548 Z" fill="url(#adult-male-shoes-oxfords__upper)"/>
+    <path d="M192 558 H248 Q252 562 252 566 Q252 570 246 570 H196 Q189 570 189 565
+             Q189 561 192 558 Z" fill="url(#adult-male-shoes-oxfords__welt)"/>
+  </g>
+
+  <!-- squared toe-cap seam -->
+  <path d="M190 543 V562" stroke="var(--c2, #322722)" stroke-width="3.4" stroke-linecap="round"
+        fill="none"/>
+  <path d="M230 543 V562" stroke="var(--c2, #322722)" stroke-width="3.4" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- closed lacing: the quarters tuck UNDER the vamp, so only a short ladder shows -->
+  <path d="M160 546 Q168 542 178 543 V560 Q166 560 158 556 Z" fill="var(--c2, #322722)"/>
+  <path d="M200 546 Q208 542 218 543 V560 Q206 560 198 556 Z" fill="var(--c2, #322722)"/>
+  <g stroke="var(--c3, #E6D2B4)" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <path d="M163 547 H176"/>
+    <path d="M162 552 H177"/>
+    <path d="M162 557 H177"/>
+    <path d="M203 547 H216"/>
+    <path d="M202 552 H217"/>
+    <path d="M202 557 H217"/>
+  </g>
+
+  <!-- welt stitch line running round the sole edge -->
+  <path d="M152 563 H208" stroke="var(--c3, #E6D2B4)" stroke-width="2.2" stroke-dasharray="5 4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M192 563 H248" stroke="var(--c3, #E6D2B4)" stroke-width="2.2" stroke-dasharray="5 4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 549 q18 5 34 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 549 q18 5 34 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>
