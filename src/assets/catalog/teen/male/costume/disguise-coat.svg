@@ -1,0 +1,108 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs oversized-suit: CLOSURE (buttoned right to the throat and pulled in by a knotted
+     tie belt, against an open front on a single waist button) and VOLUME (a straight narrow
+     column of constant width, against wide sagging boxy).
+     The turned up collar frames the jaw FROM BELOW and stops dead at y 192: it never rises
+     past the jaw line and never becomes a hood. Sleeves end in pocket openings, no hands. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4AC8A)"/>
+      <stop offset="1" stop-color="var(--c1, #9A8464)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-disguise-coat__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A7355)"/>
+      <stop offset="1" stop-color="var(--c2, #6A5740)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-disguise-coat__hard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3A31)"/>
+      <stop offset="1" stop-color="var(--c3, #2C201A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- trouser shin and shoes below the mid calf hem -->
+  <g class="sp-shadow">
+    <path d="M166 492 H198 L196 540 H168 Z"
+          fill="url(#teen-male-costume-disguise-coat__hard)"/>
+    <path d="M234 492 H202 L204 540 H232 Z"
+          fill="url(#teen-male-costume-disguise-coat__hard)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <path d="M158 534 H200 Q206 552 200 564 Q170 570 144 560 Q136 546 148 538 Z"
+          fill="url(#teen-male-costume-disguise-coat__hard)"/>
+    <path d="M242 534 H200 Q194 552 200 564 Q230 570 256 560 Q264 546 252 538 Z"
+          fill="url(#teen-male-costume-disguise-coat__hard)"/>
+  </g>
+
+  <!-- straight sleeves ending in pocket openings: no hands anywhere -->
+  <g class="sp-shadow">
+    <path d="M150 206 Q116 212 114 244 L108 372 Q106 394 126 398 Q148 398 150 376 L152 250 Z"
+          fill="url(#teen-male-costume-disguise-coat__coat)"/>
+    <path d="M250 206 Q284 212 286 244 L292 372 Q294 394 274 398 Q252 398 250 376 L248 250 Z"
+          fill="url(#teen-male-costume-disguise-coat__coat)"/>
+  </g>
+
+  <!-- the coat: a long straight over wide column, hem at mid calf -->
+  <g class="sp-shadow">
+    <path d="M164 196 H236 Q268 202 270 236 L272 480 Q272 502 258 506 H142 Q128 502 128 480
+             L130 236 Q132 202 164 196 Z"
+          fill="url(#teen-male-costume-disguise-coat__coat)"/>
+  </g>
+
+  <!-- wide collar turned UP around the jaw, framing it from below and stopping at y 192 -->
+  <g class="sp-shadow">
+    <path d="M154 244 Q148 204 170 192 L190 196 Q178 218 180 244 Z"
+          fill="url(#teen-male-costume-disguise-coat__belt)"/>
+    <path d="M246 244 Q252 204 230 192 L210 196 Q222 218 220 244 Z"
+          fill="url(#teen-male-costume-disguise-coat__belt)"/>
+    <path d="M180 198 H220 Q224 220 220 240 H180 Q176 220 180 198 Z"
+          fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  </g>
+
+  <!-- centre placket, buttoned all the way to the throat -->
+  <path d="M186 200 H214 L216 500 H184 Z" fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <g fill="url(#teen-male-costume-disguise-coat__hard)">
+    <circle cx="200" cy="242" r="8"/><circle cx="200" cy="282" r="8"/>
+    <circle cx="200" cy="392" r="8"/><circle cx="200" cy="432" r="8"/>
+    <circle cx="200" cy="472" r="8"/>
+  </g>
+
+  <!-- tie belt, knotted at the front, with hanging tails -->
+  <path d="M128 326 Q200 340 272 326 L273 356 Q200 370 127 356 Z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <path d="M182 324 Q200 316 218 324 Q226 342 218 362 Q200 370 182 362 Q174 342 182 324 Z"
+        fill="url(#teen-male-costume-disguise-coat__hard)"/>
+  <path d="M192 362 Q182 402 174 436 L192 430 Q198 396 200 364 Z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <path d="M208 362 Q218 402 226 436 L208 430 Q202 396 200 364 Z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <rect x="192" y="330" width="18" height="14" rx="5" fill="var(--c2, #6A5740)"/>
+
+  <!-- slanted pocket openings the sleeve ends disappear into -->
+  <path d="M140 356 L172 366 L170 384 L138 374 Z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <path d="M260 356 L228 366 L230 384 L262 374 Z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+
+  <!-- storm yoke seam and cuff straps -->
+  <path d="M132 246 Q200 262 268 246 l1 16 Q200 278 131 262 Z"
+        fill="var(--c2, #6A5740)" fill-opacity="0.55"/>
+  <path d="M108 356 q20 12 42 2 l1 18 q-22 12 -44 -2 z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <path d="M292 356 q-20 12 -42 2 l-1 18 q22 12 44 -2 z"
+        fill="url(#teen-male-costume-disguise-coat__belt)"/>
+  <rect x="120" y="360" width="16" height="12" rx="4" fill="var(--c3, #2C201A)"/>
+  <rect x="264" y="360" width="16" height="12" rx="4" fill="var(--c3, #2C201A)"/>
+
+  <!-- vertical drape down the straight column -->
+  <g fill="none" stroke="var(--c1, #9A8464)" stroke-opacity="0.45" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M154 386 l-4 106 M246 386 l4 106"/>
+  </g>
+
+  <path d="M158 222 q42 -14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

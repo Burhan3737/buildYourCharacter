@@ -1,0 +1,88 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs wizard: VOLUME (one large convex slab hung free in front of the body, with the
+     arms and legs left entirely outside it, against wizard's flared robe that encloses the
+     whole figure) and CLOSURE (open, carried on two narrow shoulder straps, against a
+     closed robe). Generic garden vegetable read: no brand, no lettering, no emblem. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Food Costume" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A244)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-food-costume__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c3, #5A6AB4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #468F7D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the close under layer: torso and legs, so the slab can hang clear of both -->
+  <g class="sp-shadow">
+    <path d="M170 194 H230 Q256 200 258 226 L256 320 Q254 348 230 352 H170 Q146 348 144 320
+             L142 226 Q146 200 170 194 Z"
+          fill="url(#teen-male-costume-food-costume__under)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <path d="M152 344 H198 L196 542 Q176 552 156 542 Z"
+          fill="url(#teen-male-costume-food-costume__under)"/>
+    <path d="M248 344 H202 L204 542 Q224 552 244 542 Z"
+          fill="url(#teen-male-costume-food-costume__under)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <path d="M148 534 H198 Q204 552 198 564 Q168 570 140 560 Q134 546 144 538 Z"
+          fill="url(#teen-male-costume-food-costume__leaf)"/>
+    <path d="M252 534 H202 Q196 552 202 564 Q232 570 260 560 Q266 546 256 538 Z"
+          fill="url(#teen-male-costume-food-costume__leaf)"/>
+  </g>
+
+  <!-- ONE large convex slab, 150 units across, hung free from torso to mid thigh -->
+  <g class="sp-shadow">
+    <path d="M200 212 Q136 216 126 300 Q118 376 160 414 Q200 428 240 414 Q282 376 274 300
+             Q264 216 200 212 Z"
+          fill="url(#teen-male-costume-food-costume__slab)"/>
+  </g>
+
+  <!-- the arms hang in front of the slab, outside its mass -->
+  <g class="sp-shadow">
+    <path d="M150 202 Q108 212 100 262 Q94 310 108 350 Q124 366 144 356 Q128 322 128 282
+             Q132 240 142 216 Z"
+          fill="url(#teen-male-costume-food-costume__under)"/>
+    <path d="M250 202 Q292 212 300 262 Q306 310 292 350 Q276 366 256 356 Q272 322 272 282
+             Q268 240 258 216 Z"
+          fill="url(#teen-male-costume-food-costume__under)"/>
+  </g>
+
+  <!-- two narrow shoulder straps carrying the slab -->
+  <path d="M164 194 H182 L185 226 H167 Z" fill="url(#teen-male-costume-food-costume__slab)"/>
+  <path d="M236 194 H218 L215 226 H233 Z" fill="url(#teen-male-costume-food-costume__slab)"/>
+  <rect x="163" y="216" width="24" height="12" rx="5" fill="var(--c1, #D9A244)"/>
+  <rect x="213" y="216" width="24" height="12" rx="5" fill="var(--c1, #D9A244)"/>
+
+  <!-- stalk and leaf finial standing at the top edge, clear of the jaw -->
+  <path d="M242 218 Q236 202 246 196 Q256 194 254 206 L250 220 Z"
+        fill="url(#teen-male-costume-food-costume__leaf)"/>
+  <path d="M252 200 Q280 194 294 208 Q276 224 254 214 Z"
+        fill="url(#teen-male-costume-food-costume__leaf)"/>
+  <path d="M258 206 q18 2 30 6" stroke="var(--c2, #468F7D)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- convex ribs across the slab -->
+  <g fill="none" stroke="var(--c1, #D9A244)" stroke-opacity="0.5" stroke-width="6"
+     stroke-linecap="round">
+    <path d="M164 232 q-16 84 -6 166 M200 224 q-6 90 0 178 M236 232 q16 84 6 166"/>
+  </g>
+
+  <!-- cuff bands on the under layer -->
+  <path d="M104 340 q18 12 38 4 l2 16 q-22 10 -42 -4 z" fill="var(--c3, #5A6AB4)"/>
+  <path d="M296 340 q-18 12 -38 4 l-2 16 q22 10 42 -4 z" fill="var(--c3, #5A6AB4)"/>
+
+  <path d="M156 250 q44 -18 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

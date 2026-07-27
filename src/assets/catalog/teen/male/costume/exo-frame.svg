@@ -1,0 +1,117 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs astronaut: VOLUME (small separate angular hard shells with a dark under-layer
+     band showing at every joint, against astronaut's single sealed bulky pressure suit) and
+     SHOULDER (ring-jointed shoulder caps sitting clear of the torso shell, against
+     astronaut's continuous shoulder).
+     The chest plate is a PLAIN bevelled panel: no reactor, no glow, no disc, no emblem.
+     Fallback is blue-grey over charcoal with a mint edge, never red+gold and never a
+     seamless chrome monochrome. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A6B7C9)"/>
+      <stop offset="1" stop-color="var(--c1, #77899C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-exo-frame__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3C424B)"/>
+      <stop offset="1" stop-color="var(--c2, #23272D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark under-layer: everything the shells do not cover shows as a joint band -->
+  <g class="sp-shadow">
+    <path d="M176 194 h48 q28 4 32 28 q6 24 6 52 l0 44 q2 30 -6 44 q4 12 0 24
+             q-56 12 -112 0 q-4 -12 0 -24 q-8 -14 -6 -44 l0 -44 q0 -28 6 -52
+             q4 -24 32 -28 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+    <path d="M144 206 q-30 4 -30 30 l-2 122 q2 16 18 16 q16 0 18 -16 l2 -124 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+    <path d="M256 206 q30 4 30 30 l2 122 q-2 16 -18 16 q-16 0 -18 -16 l-2 -124 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+    <path d="M156 380 q22 -6 42 0 l0 84 q-2 44 -4 84 q-14 6 -28 0 q-4 -40 -6 -84 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+    <path d="M244 380 q-22 -6 -42 0 l0 84 q2 44 4 84 q14 6 28 0 q4 -40 6 -84 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+  </g>
+
+  <!-- ring jointed shoulder caps -->
+  <g class="sp-shadow">
+    <path d="M108 222 q2 -28 22 -28 q20 0 22 26 q2 12 -2 22 q-22 8 -44 0 q-4 -10 2 -20 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M292 222 q-2 -28 -22 -28 q-20 0 -22 26 q-2 12 2 22 q22 8 44 0 q4 -10 -2 -20 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- torso shells: chest plate, abdomen plate, pelvis plate, each with a joint gap -->
+  <g class="sp-shadow">
+    <path d="M168 210 q32 -12 64 0 q6 32 2 62 q-34 12 -68 0 q-4 -30 2 -62 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M164 294 q36 -8 72 0 q4 16 0 30 q-36 10 -72 0 q-4 -14 0 -30 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M154 344 q46 -10 92 0 q4 20 -2 36 q-44 10 -88 0 q-6 -16 -2 -36 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- forearm gauntlets -->
+  <g class="sp-shadow">
+    <path d="M112 302 q18 -6 36 0 q6 30 2 54 q-4 12 -20 12 q-16 0 -20 -12 q-4 -24 2 -54 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M288 302 q-18 -6 -36 0 q-6 30 -2 54 q4 12 20 12 q16 0 20 -12 q4 -24 -2 -54 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- separate thigh and shin plates -->
+  <g class="sp-shadow">
+    <path d="M158 398 q20 -6 38 0 q4 30 0 56 q-18 8 -38 0 q-4 -26 0 -56 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M242 398 q-20 -6 -38 0 q-4 30 0 56 q18 8 38 0 q4 -26 0 -56 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M160 478 q18 -6 34 0 q4 28 0 54 q-16 8 -34 0 q-4 -26 0 -54 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+    <path d="M240 478 q-18 -6 -34 0 q-4 28 0 54 q16 8 34 0 q4 -26 0 -54 z"
+          fill="url(#teen-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- shell boots -->
+  <g class="sp-shadow">
+    <path d="M158 544 q20 -6 38 0 q2 12 2 18 q0 8 -8 8 h-38 q-8 0 -6 -10 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+    <path d="M242 544 q-20 -6 -38 0 q-2 12 -2 18 q0 8 8 8 h38 q8 0 6 -10 z"
+          fill="url(#teen-male-costume-exo-frame__under)"/>
+  </g>
+
+  <!-- plain bevel on the chest plate: an inset step, nothing circular -->
+  <path d="M176 220 q24 -8 48 0 q4 24 2 46 q-26 8 -52 0 q-2 -22 2 -46 z"
+        fill="var(--c1, #B7C6D6)" fill-opacity="0.5"/>
+  <path d="M200 216 v62" stroke="var(--c2, #23272D)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- mint edge strip along the leading edge of each shell -->
+  <g fill="var(--c3, #7ECBB8)">
+    <path d="M168 210 q32 -12 64 0 l1 9 q-33 -11 -66 0 z"/>
+    <path d="M164 294 q36 -8 72 0 l0 8 q-36 -8 -72 0 z"/>
+    <path d="M154 344 q46 -10 92 0 l0 8 q-46 -10 -92 0 z"/>
+    <path d="M158 398 q20 -6 38 0 l0 8 q-19 -6 -38 0 z"/>
+    <path d="M242 398 q-20 -6 -38 0 l0 8 q19 -6 38 0 z"/>
+    <path d="M160 478 q18 -6 34 0 l0 8 q-17 -6 -34 0 z"/>
+    <path d="M240 478 q-18 -6 -34 0 l0 8 q17 -6 34 0 z"/>
+    <path d="M112 302 q18 -6 36 0 l0 8 q-18 -6 -36 0 z"/>
+    <path d="M288 302 q-18 -6 -36 0 l0 8 q18 -6 36 0 z"/>
+  </g>
+
+  <!-- shoulder cap rings -->
+  <path d="M110 240 q22 8 44 0 l-1 9 q-22 8 -43 0 z" fill="var(--c3, #7ECBB8)"/>
+  <path d="M290 240 q-22 8 -44 0 l1 9 q22 8 43 0 z" fill="var(--c3, #7ECBB8)"/>
+
+  <!-- under-layer joint ribs, visible in every gap -->
+  <g fill="none" stroke="var(--c1, #77899C)" stroke-opacity="0.35" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M118 262 h28 M118 276 h28 M254 262 h28 M254 276 h28"/>
+    <path d="M164 464 h34 M202 464 h34 M166 538 h30 M204 538 h30"/>
+  </g>
+
+  <path d="M176 206 q24 -8 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

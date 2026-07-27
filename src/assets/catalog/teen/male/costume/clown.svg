@@ -1,0 +1,90 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs pierrot: SHOULDER (dropped shoulders with sleeves ballooning to a gathered
+     wrist cuff, against pierrot's draped three quarter bell) and VOLUME (a closed gathered
+     barrel widest at the hip, against a straight column widest at the shoulder).
+     The ruff is wide but only 20 units deep so a necklace slot ruff stacks cleanly over it.
+     Mint, butter and coral. No whiteface, no painted features, no purple, no green pairing:
+     the identity is the ballooning romper and the ruff. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown Romper" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4C9483)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-clown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D9A244)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-clown__pom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CE7C71)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ballooning legs, gathered at the ankle -->
+  <g class="sp-shadow">
+    <path d="M134 390 H192 Q188 450 184 500 Q182 528 168 538 Q142 546 124 536
+             Q110 522 112 486 Q116 436 134 390 Z"
+          fill="url(#teen-male-costume-clown__romper)"/>
+    <path d="M266 390 H208 Q212 450 216 500 Q218 528 232 538 Q258 546 276 536
+             Q290 522 288 486 Q284 436 266 390 Z"
+          fill="url(#teen-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- outsized round shoes -->
+  <g class="sp-shadow">
+    <path d="M122 530 H176 Q180 550 174 562 Q138 570 108 560 Q96 548 104 538 Q112 530 122 530 Z"
+          fill="url(#teen-male-costume-clown__band)"/>
+    <path d="M278 530 H224 Q220 550 226 562 Q262 570 292 560 Q304 548 296 538 Q288 530 278 530 Z"
+          fill="url(#teen-male-costume-clown__band)"/>
+  </g>
+
+  <!-- dropped shoulder sleeves, ballooning outward then gathered at the wrist -->
+  <g class="sp-shadow">
+    <path d="M128 210 Q86 218 74 268 Q60 318 66 350 Q92 364 118 350 Q118 296 132 246 Z"
+          fill="url(#teen-male-costume-clown__romper)"/>
+    <path d="M272 210 Q314 218 326 268 Q340 318 334 350 Q308 364 282 350 Q282 296 268 246 Z"
+          fill="url(#teen-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- the closed romper: a gathered barrel, widest at the hip -->
+  <g class="sp-shadow">
+    <path d="M160 196 H240 Q280 202 280 240 Q292 294 292 348 Q294 384 270 394
+             Q200 414 130 394 Q106 384 108 348 Q108 294 120 240 Q120 202 160 196 Z"
+          fill="url(#teen-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- gathered wrist cuffs -->
+  <path d="M64 344 q26 16 56 0 l2 20 q-30 18 -60 0 z" fill="url(#teen-male-costume-clown__band)"/>
+  <path d="M336 344 q-26 16 -56 0 l-2 20 q30 18 60 0 z" fill="url(#teen-male-costume-clown__band)"/>
+
+  <!-- gathered ankle cuffs -->
+  <path d="M112 500 q32 16 70 0 l-2 22 q-36 16 -70 0 z" fill="url(#teen-male-costume-clown__band)"/>
+  <path d="M288 500 q-32 16 -70 0 l2 22 q36 16 70 0 z" fill="url(#teen-male-costume-clown__band)"/>
+
+  <!-- deep gathered ruff: 54 units of projection each side, only 20 units deep -->
+  <path d="M134 198 Q200 194 266 198 Q270 210 258 216 Q200 228 142 216 Q130 210 134 198 Z"
+        fill="url(#teen-male-costume-clown__band)"/>
+  <g fill="var(--c2, #D9A244)">
+    <circle cx="140" cy="208" r="12"/><circle cx="163" cy="212" r="12"/>
+    <circle cx="186" cy="214" r="12"/><circle cx="214" cy="214" r="12"/>
+    <circle cx="237" cy="212" r="12"/><circle cx="260" cy="208" r="12"/>
+  </g>
+
+  <!-- three oversized pom pom buttons down the centre front -->
+  <circle cx="200" cy="256" r="17" fill="url(#teen-male-costume-clown__pom)"/>
+  <circle cx="200" cy="304" r="17" fill="url(#teen-male-costume-clown__pom)"/>
+  <circle cx="200" cy="352" r="17" fill="url(#teen-male-costume-clown__pom)"/>
+
+  <!-- gather folds radiating from the hip -->
+  <g fill="none" stroke="var(--c1, #4C9483)" stroke-opacity="0.4" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M146 250 q-12 70 -14 128 M254 250 q12 70 14 128 M170 396 q-6 60 -14 100
+             M230 396 q6 60 14 100"/>
+  </g>
+
+  <path d="M156 234 q44 -14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

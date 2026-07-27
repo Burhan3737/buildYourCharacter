@@ -1,0 +1,107 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs mermaid: HEM (the column breaks at mid calf into four thick tapering coils that
+     splay out and rest on the ground line, against mermaid's single closed tail) and
+     VOLUME (a close straight column dress rather than a flared fluke).
+     Serpent hair belongs to the head and is NOT drawn here: costume draws above the face.
+     The heads are stylised, rounded and gentle, with a soft eye dot and no fangs. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Gorgon" data-family="gorgon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-gorgon__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A98BB6)"/>
+      <stop offset="1" stop-color="var(--c1, #7C5F8C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-gorgon__deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6B4E7C)"/>
+      <stop offset="1" stop-color="var(--c2, #46325A)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-gorgon__snake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8FC4AE)"/>
+      <stop offset="1" stop-color="var(--c3, #5C9682)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-gorgon__scale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="14">
+      <path d="M0 14 q8 -14 16 0" fill="none" stroke="var(--c2, #46325A)"
+            stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M-8 7 q8 -14 16 0 M8 7 q8 -14 16 0" fill="none" stroke="var(--c2, #46325A)"
+            stroke-opacity="0.35" stroke-width="2"/>
+    </pattern>
+    <clipPath id="teen-male-costume-gorgon__dressClip">
+      <path d="M178 193 h44 q22 3 28 23 q8 24 6 46 q-4 40 -12 68 q10 22 8 48 q-4 46 -6 92
+               l-2 35 q-44 10 -88 0 l-2 -35 q-2 -46 -6 -92 q-2 -26 8 -48 q-8 -28 -12 -68
+               q-2 -22 6 -46 q6 -20 28 -23 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- covered lower legs and flat shoes under the hem -->
+  <g class="sp-shadow">
+    <path d="M166 496 h28 v50 q-14 6 -28 0 z" fill="url(#teen-male-costume-gorgon__deep)"/>
+    <path d="M206 496 h28 v50 q-14 6 -28 0 z" fill="url(#teen-male-costume-gorgon__deep)"/>
+    <path d="M160 544 q20 -6 36 0 q4 12 0 20 q-2 6 -12 6 h-26 q-8 0 -6 -10 z"
+          fill="url(#teen-male-costume-gorgon__deep)"/>
+    <path d="M240 544 q-20 -6 -36 0 q-4 12 0 20 q2 6 12 6 h26 q8 0 6 -10 z"
+          fill="url(#teen-male-costume-gorgon__deep)"/>
+  </g>
+
+  <!-- sleeveless close column dress with a high plain neckline -->
+  <g class="sp-shadow">
+    <path d="M178 193 h44 q22 3 28 23 q8 24 6 46 q-4 40 -12 68 q10 22 8 48 q-4 46 -6 92
+             l-2 35 q-44 10 -88 0 l-2 -35 q-2 -46 -6 -92 q-2 -26 8 -48 q-8 -28 -12 -68
+             q-2 -22 6 -46 q6 -20 28 -23 z"
+          fill="url(#teen-male-costume-gorgon__dress)"/>
+  </g>
+
+  <!-- four thick tapering serpent coils, splayed on the ground line -->
+  <g class="sp-shadow">
+    <path d="M168 486 q-30 18 -52 44 q-14 14 -10 26 q6 14 24 10 q4 -12 -6 -18
+             q6 -16 20 -32 q12 -10 28 -18 z"
+          fill="url(#teen-male-costume-gorgon__snake)"/>
+    <path d="M182 504 q-18 16 -30 36 q-8 12 -2 20 q10 10 24 4 q2 -12 -8 -16
+             q4 -14 14 -26 q6 -8 12 -14 z"
+          fill="url(#teen-male-costume-gorgon__snake)"/>
+    <path d="M218 504 q18 16 30 36 q8 12 2 20 q-10 10 -24 4 q-2 -12 8 -16
+             q-4 -14 -14 -26 q-6 -8 -12 -14 z"
+          fill="url(#teen-male-costume-gorgon__snake)"/>
+    <path d="M232 486 q30 18 52 44 q14 14 10 26 q-6 14 -24 10 q-4 -12 6 -18
+             q-6 -16 -20 -32 q-12 -10 -28 -18 z"
+          fill="url(#teen-male-costume-gorgon__snake)"/>
+  </g>
+
+  <!-- soft scale texture over the dress -->
+  <g clip-path="url(#teen-male-costume-gorgon__dressClip)">
+    <rect x="140" y="193" width="120" height="327" fill="url(#teen-male-costume-gorgon__scale)"/>
+  </g>
+
+  <!-- gentle rounded serpent heads with a single soft eye dot -->
+  <g fill="var(--c3, #5C9682)">
+    <circle cx="126" cy="560" r="9"/><circle cx="170" cy="560" r="8"/>
+    <circle cx="230" cy="560" r="8"/><circle cx="274" cy="560" r="9"/>
+  </g>
+  <g fill="var(--c1, #A98BB6)">
+    <circle cx="124" cy="557" r="3"/><circle cx="169" cy="557" r="3"/>
+    <circle cx="231" cy="557" r="3"/><circle cx="276" cy="557" r="3"/>
+  </g>
+
+  <!-- wide belt of interlaced snakes at the waist -->
+  <path d="M144 322 q56 16 112 0 l0 30 q-56 16 -112 0 z"
+        fill="url(#teen-male-costume-gorgon__deep)"/>
+  <g fill="none" stroke="var(--c3, #8FC4AE)" stroke-width="5" stroke-linecap="round">
+    <path d="M148 332 q14 -10 28 0 q14 10 28 0 q14 -10 28 0 q14 10 24 0"/>
+    <path d="M148 346 q14 10 28 0 q14 -10 28 0 q14 10 28 0 q14 -10 24 0"/>
+  </g>
+
+  <!-- plain high neckline binding, stopping at the jaw -->
+  <path d="M178 193 h44 l3 16 q-24 6 -50 0 z" fill="url(#teen-male-costume-gorgon__deep)"/>
+
+  <!-- hem band where the column breaks into the coils -->
+  <path d="M156 494 q44 12 88 0 l2 18 q-46 12 -92 0 z"
+        fill="url(#teen-male-costume-gorgon__deep)"/>
+
+  <!-- centre drape fold -->
+  <path d="M200 356 v134" stroke="var(--c2, #46325A)" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 216 q36 -10 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

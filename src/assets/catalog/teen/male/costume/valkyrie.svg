@@ -1,0 +1,127 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs knight: HEM (a knee length mail shirt cut with a deep riding split front and
+     back, over an underdress that continues to the ankle, against knight's hip length body
+     and hanging tabard) and SHOULDER (a short cape of overlapping leaf plumes lying flat
+     across the shoulders, against knight's domed pauldrons).
+     NO winged and NO horned helm, at any size: the helm is a 19th century invention and a
+     trademark tell, and costume draws above the face in any case. The plume cape and the
+     crescent of shield edge past one hip are the two identifying forms.
+     Fallback is steel over warm brown, never white with pale blue armour.
+     Authored on the male body deliberately: body type may change the drape, never the
+     availability. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A2AEBE)"/>
+      <stop offset="1" stop-color="var(--c1, #75839A)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-valkyrie__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6A54)"/>
+      <stop offset="1" stop-color="var(--c2, #5D4433)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-valkyrie__plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4D3A0)"/>
+      <stop offset="1" stop-color="var(--c3, #BFA96F)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-valkyrie__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="12">
+      <path d="M2 6 q6 -8 12 0 M-6 12 q6 -8 12 0 M10 12 q6 -8 12 0" fill="none"
+            stroke="var(--c2, #5D4433)" stroke-opacity="0.4" stroke-width="2"/>
+    </pattern>
+    <clipPath id="teen-male-costume-valkyrie__mailClip">
+      <path d="M174 196 h52 q24 4 28 26 q6 26 4 52 l-2 44 q0 28 4 44 l6 60 q4 26 4 42
+               q-24 8 -48 8 l-2 -60 h-40 l-2 60 q-24 0 -48 -8 q0 -16 4 -42 l6 -60
+               q4 -16 4 -44 l-2 -44 q-2 -26 4 -52 q4 -22 28 -26 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- round shield slung behind, a crescent of rim showing past one hip -->
+  <g class="sp-shadow">
+    <path d="M250 320 q56 8 60 62 q4 54 -50 60 q34 -26 32 -62 q-2 -38 -42 -60 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+  </g>
+
+  <!-- long sleeved underdress to the ankle -->
+  <g class="sp-shadow">
+    <path d="M180 194 h40 q26 3 32 24 q8 26 6 54 l-2 46 q0 26 2 42 q6 44 4 88 q4 50 2 100
+             q-64 12 -128 0 q-2 -50 2 -100 q-2 -44 4 -88 q-2 -16 2 -42 l-2 -46
+             q-2 -28 6 -54 q6 -21 32 -24 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+    <path d="M150 202 q-32 6 -34 32 l-2 128 q4 16 22 16 q18 0 20 -16 l4 -130 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+    <path d="M250 202 q32 6 34 32 l2 128 q-4 16 -22 16 q-18 0 -20 -16 l-4 -130 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+  </g>
+
+  <!-- sleeveless knee length mail shirt, split front and back for riding -->
+  <g class="sp-shadow">
+    <path d="M174 196 h52 q24 4 28 26 q6 26 4 52 l-2 44 q0 28 4 44 l6 60 q4 26 4 42
+             q-24 8 -48 8 l-2 -60 h-40 l-2 60 q-24 0 -48 -8 q0 -16 4 -42 l6 -60
+             q4 -16 4 -44 l-2 -44 q-2 -26 4 -52 q4 -22 28 -26 z"
+          fill="url(#teen-male-costume-valkyrie__mail)"/>
+  </g>
+
+  <!-- mail ring texture -->
+  <g clip-path="url(#teen-male-costume-valkyrie__mailClip)">
+    <rect x="128" y="194" width="144" height="282" fill="url(#teen-male-costume-valkyrie__rings)"/>
+  </g>
+
+  <!-- short shoulder cape of overlapping leaf plumes, lying flat across the shoulders -->
+  <g class="sp-shadow">
+    <path d="M144 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M163 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M182 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M200 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M218 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M237 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+    <path d="M256 194 q18 12 16 32 q-2 18 -16 28 q-14 -10 -16 -28 q-2 -20 16 -32 z"
+          fill="url(#teen-male-costume-valkyrie__plume)"/>
+  </g>
+
+  <!-- boots -->
+  <g class="sp-shadow">
+    <path d="M162 528 q20 -8 38 -2 l2 26 q4 8 0 16 h-46 q-4 -10 0 -18 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+    <path d="M238 528 q-20 -8 -38 -2 l-2 26 q-4 8 0 16 h46 q4 -10 0 -18 z"
+          fill="url(#teen-male-costume-valkyrie__cloth)"/>
+  </g>
+
+  <!-- shield rim and boss ring, read as a crescent past the hip -->
+  <path d="M262 328 q44 12 46 56 q2 42 -40 52 l-4 -12 q34 -10 32 -42 q-2 -34 -38 -44 z"
+        fill="url(#teen-male-costume-valkyrie__plume)"/>
+
+  <!-- broad belt with stacked fittings -->
+  <path d="M142 336 q58 14 116 0 l0 28 q-58 14 -116 0 z"
+        fill="url(#teen-male-costume-valkyrie__cloth)"/>
+  <path d="M184 332 h32 q6 0 6 8 v24 q0 8 -6 8 h-32 q-6 0 -6 -8 v-24 q0 -8 6 -8 z"
+        fill="url(#teen-male-costume-valkyrie__plume)"/>
+  <path d="M192 342 h16 v20 h-16 z" fill="var(--c2, #5D4433)"/>
+  <g fill="var(--c3, #BFA96F)">
+    <circle cx="156" cy="350" r="5"/><circle cx="168" cy="350" r="5"/>
+    <circle cx="232" cy="350" r="5"/><circle cx="244" cy="350" r="5"/>
+  </g>
+
+  <!-- plume rachis lines -->
+  <g fill="none" stroke="var(--c2, #5D4433)" stroke-opacity="0.4" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M144 200 v48 M163 200 v48 M182 200 v48 M200 200 v48
+             M218 200 v48 M237 200 v48 M256 200 v48"/>
+  </g>
+
+  <!-- mail hem band and riding split binding -->
+  <path d="M130 456 q34 12 70 12 q36 0 70 -12 l0 12 q-34 12 -70 12 q-36 0 -70 -12 z"
+        fill="url(#teen-male-costume-valkyrie__plume)" fill-opacity="0.85"/>
+  <path d="M178 412 h44 v8 h-44 z" fill="url(#teen-male-costume-valkyrie__plume)"
+        fill-opacity="0.85"/>
+
+  <path d="M170 256 q30 8 60 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

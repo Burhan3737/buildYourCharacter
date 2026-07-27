@@ -1,0 +1,93 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs caped-hero: CLOSURE (an asymmetric wrap front crossing right over left to a
+     single low fastening at one hip, against caped-hero's closed symmetrical body) and
+     SHOULDER (one long sleeve and one bare arm, with a narrow half-cape hanging from the
+     single covered shoulder only).
+     No scalloped or winged hem, no pointed ear shapes, no chest marking. The hem of the
+     half-cape is a plain sweep. Fallback is aubergine and slate, never black+yellow. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent Suit" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #58466E)"/>
+      <stop offset="1" stop-color="var(--c1, #3A2E4C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A3450)"/>
+      <stop offset="1" stop-color="var(--c2, #221E33)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-shadow-agent__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A9DCD2)"/>
+      <stop offset="1" stop-color="var(--c3, #77B6AB)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow half-cape from the single covered shoulder, hanging to the calf -->
+  <g class="sp-shadow">
+    <path d="M248 196 q34 2 44 26 l22 288 q-26 14 -58 4 l-20 -282 z"
+          fill="url(#teen-male-costume-shadow-agent__cape)"/>
+  </g>
+
+  <!-- wrap-front bodysuit, hem slanted low on the fastening side -->
+  <g class="sp-shadow">
+    <path d="M178 193 h44 q22 2 30 19 q8 26 6 50 q-2 30 -4 56 q-6 18 -4 34 q8 20 6 38
+             q-56 14 -112 -8 q6 -14 6 -30 q2 -16 -4 -34 q-2 -26 -6 -56 q0 -24 6 -50
+             q10 -17 32 -19 z"
+          fill="url(#teen-male-costume-shadow-agent__suit)"/>
+  </g>
+
+  <!-- the single long sleeve -->
+  <g class="sp-shadow">
+    <path d="M248 206 q32 4 34 32 l4 108 q-2 16 -20 18 q-18 2 -22 -14 l-8 -112 z"
+          fill="url(#teen-male-costume-shadow-agent__suit)"/>
+  </g>
+
+  <!-- legs to an ankle hem -->
+  <g class="sp-shadow">
+    <path d="M148 376 h48 q4 44 -2 88 q-4 42 -6 80 q-16 8 -32 2 q-4 -40 -6 -82
+             q-6 -44 -2 -88 z"
+          fill="url(#teen-male-costume-shadow-agent__suit)"/>
+    <path d="M252 376 h-48 q-4 44 2 88 q4 42 6 80 q16 8 32 2 q4 -40 6 -82 q6 -44 2 -88 z"
+          fill="url(#teen-male-costume-shadow-agent__suit)"/>
+  </g>
+
+  <!-- flat soled boots -->
+  <g class="sp-shadow">
+    <path d="M152 542 h44 v20 q0 8 -8 8 h-42 q-8 0 -6 -10 z"
+          fill="url(#teen-male-costume-shadow-agent__cape)"/>
+    <path d="M248 542 h-44 v20 q0 8 8 8 h42 q8 0 6 -10 z"
+          fill="url(#teen-male-costume-shadow-agent__cape)"/>
+  </g>
+
+  <!-- the wrap edge: right over left, running to one low hip fastening -->
+  <path d="M238 200 q-16 62 -46 106 q-24 34 -50 74 l-2 -22 q24 -38 46 -70 q28 -42 42 -92 z"
+        fill="url(#teen-male-costume-shadow-agent__cape)"/>
+  <path d="M232 198 q-14 60 -44 104 q-22 32 -46 70 l-6 -6 q22 -36 44 -68 q28 -42 42 -100 z"
+        fill="url(#teen-male-costume-shadow-agent__wrap)" fill-opacity="0.9"/>
+
+  <!-- single low hip fastening, with its keeper strap -->
+  <path d="M144 356 h34 q6 0 6 8 v14 q0 8 -6 8 h-34 q-6 0 -6 -8 v-14 q0 -8 6 -8 z"
+        fill="url(#teen-male-costume-shadow-agent__wrap)"/>
+  <path d="M152 364 h18 v14 h-18 z" fill="var(--c2, #221E33)"/>
+
+  <!-- wide wrist wrap on the bare arm -->
+  <path d="M112 330 q18 -6 34 0 q4 18 0 34 q-18 6 -34 0 q-4 -18 0 -34 z"
+        fill="url(#teen-male-costume-shadow-agent__wrap)"/>
+  <path d="M112 340 q18 -6 34 0 M112 352 q18 -6 34 0" stroke="var(--c2, #221E33)"
+        stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- gauntlet cuff on the sleeved arm -->
+  <path d="M250 326 q20 4 34 0 l2 26 q-18 6 -34 0 z"
+        fill="url(#teen-male-costume-shadow-agent__cape)"/>
+
+  <!-- stand collar, stopping at the jaw -->
+  <path d="M180 193 h40 l4 18 q-24 6 -48 0 z"
+        fill="url(#teen-male-costume-shadow-agent__cape)"/>
+
+  <!-- cape shoulder clasp -->
+  <circle cx="256" cy="212" r="8" fill="var(--c3, #A9DCD2)"/>
+
+  <path d="M166 216 q34 10 62 -2" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

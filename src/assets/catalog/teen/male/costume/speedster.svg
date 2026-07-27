@@ -1,0 +1,86 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs web-runner: SHOULDER (sleeveless, cut away to a deep scooped armhole with a low
+     armpit, against web-runner's long fitted raglan sleeves) and VOLUME (a swept fin-vane
+     stands 44 units clear of each outer calf, so the outline breaks below the knee instead
+     of staying skin-close all the way down).
+     Nothing is drawn on the chest: no bolt, no disc, no marking. One raked diagonal seam and
+     the two calf vanes carry the family. Fallback is slate violet, never red or red+gold. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speed Runner Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-speedster__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6273C9)"/>
+      <stop offset="1" stop-color="var(--c1, #3E4B92)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-speedster__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #333A63)"/>
+      <stop offset="1" stop-color="var(--c2, #1F2340)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7CCFBD)"/>
+      <stop offset="1" stop-color="var(--c3, #4C9A8A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- swept calf vanes, drawn behind the legs so they read as standing off the outer calf -->
+  <g class="sp-shadow">
+    <path d="M150 452 q-30 14 -46 62 q-4 12 6 12 q22 -4 40 -20 q6 -26 0 -54 z"
+          fill="url(#teen-male-costume-speedster__vane)"/>
+    <path d="M250 452 q30 14 46 62 q4 12 -6 12 q-22 -4 -40 -20 q-6 -26 0 -54 z"
+          fill="url(#teen-male-costume-speedster__vane)"/>
+  </g>
+
+  <!-- sleeveless bodysuit: deep scooped armholes notch the outline at the armpit -->
+  <g class="sp-shadow">
+    <path d="M178 193 h44 q16 3 20 20 q-14 22 -18 44 q14 14 26 26 q6 26 2 54 q10 22 4 50
+             q-56 14 -112 0 q-6 -28 4 -50 q-4 -28 2 -54 q12 -12 26 -26 q-4 -22 -18 -44
+             q4 -17 20 -20 z"
+          fill="url(#teen-male-costume-speedster__suit)"/>
+  </g>
+
+  <!-- skin-close legs to an ankle hem -->
+  <g class="sp-shadow">
+    <path d="M146 380 q26 -8 50 -2 l-2 78 q-2 46 -8 88 q-18 6 -34 0 q-4 -44 -6 -86 z"
+          fill="url(#teen-male-costume-speedster__suit)"/>
+    <path d="M254 380 q-26 -8 -50 -2 l2 78 q2 46 8 88 q18 6 34 0 q4 -44 6 -86 z"
+          fill="url(#teen-male-costume-speedster__suit)"/>
+  </g>
+
+  <!-- low sprint shoes -->
+  <g class="sp-shadow">
+    <path d="M152 526 q24 -8 44 -2 l2 30 q2 14 -4 16 h-44 q-6 -20 2 -44 z"
+          fill="url(#teen-male-costume-speedster__dark)"/>
+    <path d="M248 526 q-24 -8 -44 -2 l-2 30 q-2 14 4 16 h44 q6 -20 -2 -44 z"
+          fill="url(#teen-male-costume-speedster__dark)"/>
+  </g>
+
+  <!-- high closed neck, stopping at the jaw line -->
+  <path d="M178 193 h44 l2 20 q-24 6 -48 0 z"
+        fill="url(#teen-male-costume-speedster__dark)"/>
+
+  <!-- one raked diagonal seam, hip to opposite ribs -->
+  <path d="M152 252 L250 306 L250 322 L152 268 z" fill="var(--c3, #7CCFBD)" fill-opacity="0.85"/>
+
+  <!-- armhole binding: the scoop drawn as a contrast edge on each side -->
+  <path d="M198 194 q-14 24 -20 46 q-12 12 -22 24 l-12 -8 q12 -14 22 -26 q6 -22 32 -36 z"
+        fill="url(#teen-male-costume-speedster__dark)"/>
+  <path d="M202 194 q14 24 20 46 q12 12 22 24 l12 -8 q-12 -14 -22 -26 q-6 -22 -32 -36 z"
+        fill="url(#teen-male-costume-speedster__dark)"/>
+
+  <!-- waist band and ankle bands -->
+  <path d="M146 332 q54 16 108 0 l2 20 q-56 16 -112 0 z"
+        fill="url(#teen-male-costume-speedster__dark)"/>
+  <path d="M150 508 q18 8 36 2 l-2 18 q-18 6 -36 -2 z" fill="var(--c3, #4C9A8A)"/>
+  <path d="M250 508 q-18 8 -36 2 l2 18 q18 6 36 -2 z" fill="var(--c3, #4C9A8A)"/>
+
+  <!-- vane rib seams -->
+  <g fill="none" stroke="var(--c2, #1F2340)" stroke-opacity="0.35" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M144 466 q-20 16 -28 42 M150 484 q-16 12 -22 30"/>
+    <path d="M256 466 q20 16 28 42 M250 484 q16 12 22 30"/>
+  </g>
+
+  <path d="M162 214 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

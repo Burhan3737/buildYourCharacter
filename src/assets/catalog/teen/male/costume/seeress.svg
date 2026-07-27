@@ -1,0 +1,130 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs valkyrie: CLOSURE (a full length mantle worn open down the whole front and held
+     by a single chest strap, against valkyrie's closed mail shirt) and VOLUME (two straight
+     hanging mantle panels over a straight underdress, against valkyrie's split flaring mail
+     over a swept underdress).
+     No staff and no prop of any kind: there is no hand anchor in this slot. The flat fur
+     collar lies across the shoulders and stops well below the jaw. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Seeress" data-family="seeress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-seeress__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A7C90)"/>
+      <stop offset="1" stop-color="var(--c1, #3A5568)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-seeress__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7A6350)"/>
+      <stop offset="1" stop-color="var(--c2, #4F3F32)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-seeress__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E6D5AE)"/>
+      <stop offset="1" stop-color="var(--c3, #C0A97B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long straight underdress with long sleeves -->
+  <g class="sp-shadow">
+    <path d="M178 194 h44 q24 4 28 24 q6 24 4 50 l-2 48 q0 24 2 42 q6 44 4 88 q4 50 2 96
+             q-64 12 -128 0 q0 -46 2 -96 q6 -44 4 -88 q4 -14 4 -38 l-2 -48
+             q-2 -26 4 -50 q4 -20 28 -24 z"
+          fill="url(#teen-male-costume-seeress__dress)"/>
+    <path d="M152 200 q-30 8 -32 32 l-2 122 q4 14 20 14 q16 0 18 -14 l4 -124 z"
+          fill="url(#teen-male-costume-seeress__dress)"/>
+    <path d="M248 200 q30 8 32 32 l2 122 q-4 14 -20 14 q-16 0 -18 -14 l-4 -124 z"
+          fill="url(#teen-male-costume-seeress__dress)"/>
+  </g>
+
+  <!-- tall laced boots, ending in heavy round knobs -->
+  <g class="sp-shadow">
+    <path d="M160 470 q22 -8 42 0 l2 66 q10 6 8 18 q-2 12 -18 14 q-18 2 -32 -2
+             q-12 -4 -10 -16 q2 -10 6 -14 z"
+          fill="url(#teen-male-costume-seeress__mantle)"/>
+    <path d="M240 470 q-22 -8 -42 0 l-2 66 q-10 6 -8 18 q2 12 18 14 q18 2 32 -2
+             q12 -4 10 -16 q-2 -10 -6 -14 z"
+          fill="url(#teen-male-costume-seeress__mantle)"/>
+    <circle cx="158" cy="556" r="14" fill="url(#teen-male-costume-seeress__fur)"/>
+    <circle cx="242" cy="556" r="14" fill="url(#teen-male-costume-seeress__fur)"/>
+  </g>
+
+  <!-- open fronted mantle: two full length panels hanging clear of the centre -->
+  <g class="sp-shadow">
+    <path d="M158 196 q-26 8 -30 34 q-8 54 -8 106 q-2 56 2 108 l4 104 q26 8 50 0
+             q4 -52 4 -104 q2 -54 2 -108 q0 -54 2 -106 q0 -26 2 -34 z"
+          fill="url(#teen-male-costume-seeress__mantle)"/>
+    <path d="M242 196 q26 8 30 34 q8 54 8 106 q2 56 -2 108 l-4 104 q-26 8 -50 0
+             q-4 -52 -4 -104 q-2 -54 -2 -108 q0 -54 -2 -106 q0 -26 -2 -34 z"
+          fill="url(#teen-male-costume-seeress__mantle)"/>
+  </g>
+
+  <!-- flat fur collar lying across both shoulders -->
+  <g class="sp-shadow">
+    <path d="M144 214 q14 -20 56 -20 q42 0 56 20 q8 14 -4 22 q-52 16 -104 0
+             q-12 -8 -4 -22 z"
+          fill="url(#teen-male-costume-seeress__fur)"/>
+  </g>
+
+  <!-- deep fur turned cuffs -->
+  <g class="sp-shadow">
+    <path d="M112 336 q26 -8 50 0 q4 20 0 34 q-26 10 -52 0 q-2 -18 2 -34 z"
+          fill="url(#teen-male-costume-seeress__fur)"/>
+    <path d="M288 336 q-26 -8 -50 0 q-4 20 0 34 q26 10 52 0 q2 -18 -2 -34 z"
+          fill="url(#teen-male-costume-seeress__fur)"/>
+  </g>
+
+  <!-- fur pile: short strokes, not an outline -->
+  <g fill="none" stroke="var(--c2, #4F3F32)" stroke-opacity="0.35" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M156 220 v18 M172 214 v22 M188 211 v24 M204 211 v24 M220 214 v22 M236 220 v18"/>
+    <path d="M120 342 v22 M134 340 v26 M148 342 v22
+             M252 342 v22 M266 340 v26 M280 342 v22"/>
+  </g>
+
+  <!-- single strap across the chest, the mantle's only closure -->
+  <path d="M156 240 q44 16 88 0 l2 20 q-46 16 -92 0 z"
+        fill="url(#teen-male-costume-seeress__dress)"/>
+  <path d="M188 234 h24 q6 0 6 8 v22 q0 8 -6 8 h-24 q-6 0 -6 -8 v-22 q0 -8 6 -8 z"
+        fill="url(#teen-male-costume-seeress__fur)"/>
+  <circle cx="200" cy="253" r="6" fill="var(--c1, #3A5568)"/>
+
+  <!-- mantle hem weighted by a band of small set stones -->
+  <path d="M120 516 q28 8 56 0 l2 22 q-30 8 -58 0 z"
+        fill="url(#teen-male-costume-seeress__fur)"/>
+  <path d="M280 516 q-28 8 -56 0 l-2 22 q30 8 58 0 z"
+        fill="url(#teen-male-costume-seeress__fur)"/>
+  <g fill="var(--c1, #3A5568)">
+    <circle cx="132" cy="528" r="4"/><circle cx="146" cy="530" r="4"/>
+    <circle cx="160" cy="530" r="4"/><circle cx="172" cy="528" r="4"/>
+    <circle cx="228" cy="528" r="4"/><circle cx="240" cy="530" r="4"/>
+    <circle cx="254" cy="530" r="4"/><circle cx="268" cy="528" r="4"/>
+  </g>
+
+  <!-- linked charm belt with one large pouch -->
+  <path d="M152 340 q48 12 96 0 l0 14 q-48 12 -96 0 z"
+        fill="url(#teen-male-costume-seeress__fur)"/>
+  <g fill="var(--c1, #3A5568)">
+    <circle cx="164" cy="349" r="5"/><circle cx="182" cy="352" r="5"/>
+    <circle cx="218" cy="352" r="5"/><circle cx="236" cy="349" r="5"/>
+  </g>
+  <path d="M216 358 h34 q6 0 6 8 l2 34 q0 8 -8 8 h-32 q-8 0 -8 -8 l-2 -34 q0 -8 8 -8 z"
+        fill="url(#teen-male-costume-seeress__dress)"/>
+  <path d="M216 358 h34 q6 0 6 8 l1 8 q-24 8 -48 0 l0 -8 q0 -8 7 -8 z"
+        fill="url(#teen-male-costume-seeress__fur)"/>
+
+  <!-- boot lacing -->
+  <g fill="none" stroke="var(--c3, #C0A97B)" stroke-width="4" stroke-linecap="round">
+    <path d="M166 486 L196 496 M196 486 L166 496 M166 504 L196 514 M196 504 L166 514
+             M166 522 L196 532 M196 522 L166 532"/>
+    <path d="M234 486 L204 496 M204 486 L234 496 M234 504 L204 514 M204 504 L234 514
+             M234 522 L204 532 M204 522 L234 532"/>
+  </g>
+
+  <!-- mantle front edge binding -->
+  <path d="M180 200 q4 100 2 200 q-2 76 -4 146 l-10 0 q4 -72 6 -148 q2 -98 -2 -198 z"
+        fill="url(#teen-male-costume-seeress__fur)" fill-opacity="0.55"/>
+  <path d="M220 200 q-4 100 -2 200 q2 76 4 146 l10 0 q-4 -72 -6 -148 q-2 -98 2 -198 z"
+        fill="url(#teen-male-costume-seeress__fur)" fill-opacity="0.55"/>
+
+  <path d="M166 208 q34 -10 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,111 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs jarl: HEM (two stacked hems, an overdress stopping at mid calf over an ankle length
+     underdress) and SHOULDER (a sleeveless overdress hung from two short front straps onto a
+     pair of domed oval brooches, over the underdress's long sleeves).
+     Authored on the male body on purpose: a body type may change how a garment drapes, it may
+     never change which garments are offered. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A2726A)"/>
+      <stop offset="1" stop-color="var(--c1, #7C5450)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D5CBB2)"/>
+      <stop offset="1" stop-color="var(--c2, #B8AC90)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CEC3A8)"/>
+      <stop offset="1" stop-color="var(--c2, #ACA084)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-apron-dress__brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCB863)"/>
+      <stop offset="1" stop-color="var(--c3, #A98A3B)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-apron-dress__twill" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M-2 14 l16 -16 M6 22 l16 -16" fill="none" stroke="var(--c3, #A98A3B)"
+            stroke-opacity="0.28" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="teen-male-costume-apron-dress__overClip">
+      <path d="M152 238 h96 q8 0 9 12 l11 250 q-68 18 -136 0 l11 -250 q1 -12 9 -12 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- soft turnshoes below the underdress hem -->
+  <g class="sp-shadow">
+    <path d="M154 540 h46 q8 14 4 26 q-26 6 -54 0 q-4 -14 4 -26 z"
+          fill="url(#teen-male-costume-apron-dress__brass)"/>
+    <path d="M200 540 h46 q8 14 4 26 q-26 6 -54 0 q-4 -14 4 -26 z"
+          fill="url(#teen-male-costume-apron-dress__brass)"/>
+  </g>
+
+  <!-- the long sleeved ankle length underdress -->
+  <g class="sp-shadow">
+    <path d="M140 202 q-26 8 -28 34 l-6 138 q24 12 48 0 l2 -138 z"
+          fill="url(#teen-male-costume-apron-dress__sleeve)"/>
+    <path d="M260 202 q26 8 28 34 l6 138 q-24 12 -48 0 l-2 -138 z"
+          fill="url(#teen-male-costume-apron-dress__sleeve)"/>
+    <path d="M162 194 h76 q26 6 28 38 v106 q0 22 -4 40 l18 168 q-42 14 -80 14
+             q-38 0 -80 -14 l18 -168 q-4 -18 -4 -40 v-106 q2 -32 28 -38 z"
+          fill="url(#teen-male-costume-apron-dress__under)"/>
+  </g>
+
+  <!-- the sleeveless woollen overdress, hem stopping clear at mid calf -->
+  <g class="sp-shadow">
+    <path d="M152 238 h96 q8 0 9 12 l11 250 q-68 18 -136 0 l11 -250 q1 -12 9 -12 z"
+          fill="url(#teen-male-costume-apron-dress__over)"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-apron-dress__overClip)">
+    <rect x="130" y="236" width="140" height="286"
+          fill="url(#teen-male-costume-apron-dress__twill)"/>
+  </g>
+
+  <!-- the two short front straps -->
+  <path d="M163 212 h16 v32 h-16 z" fill="url(#teen-male-costume-apron-dress__over)"/>
+  <path d="M221 212 h16 v32 h-16 z" fill="url(#teen-male-costume-apron-dress__over)"/>
+
+  <!-- the bead swag slung between the brooches -->
+  <path d="M172 218 q28 42 56 0" stroke="var(--c3, #A98A3B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <g fill="url(#teen-male-costume-apron-dress__brass)">
+    <circle cx="178" cy="230" r="5"/>
+    <circle cx="188" cy="240" r="5"/>
+    <circle cx="200" cy="244" r="5"/>
+    <circle cx="212" cy="240" r="5"/>
+    <circle cx="222" cy="230" r="5"/>
+  </g>
+
+  <!-- the pair of domed oval brooches at the collarbone -->
+  <g class="sp-shadow">
+    <ellipse cx="171" cy="212" rx="16" ry="12"
+             fill="url(#teen-male-costume-apron-dress__brass)"/>
+    <ellipse cx="229" cy="212" rx="16" ry="12"
+             fill="url(#teen-male-costume-apron-dress__brass)"/>
+  </g>
+  <g fill="none" stroke="var(--c1, #7C5450)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M162 212 h18 M222 212 h18 M171 205 v14 M229 205 v14"/>
+  </g>
+
+  <!-- a small cluster of tools on a chain at one hip -->
+  <path d="M146 330 q-4 22 2 38" stroke="var(--c3, #A98A3B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <g fill="url(#teen-male-costume-apron-dress__brass)">
+    <path d="M138 366 h10 v30 q-5 8 -10 0 z"/>
+    <path d="M152 366 h9 l3 26 q-6 8 -11 0 z"/>
+    <path d="M143 368 q12 8 12 24 q-8 8 -14 -2 z" fill-opacity="0.6"/>
+    <circle cx="147" cy="364" r="7"/>
+  </g>
+
+  <!-- the two hem lines, the stack that names this family -->
+  <path d="M133 496 q68 18 134 0 l2 12 q-68 20 -138 0 z"
+        fill="url(#teen-male-costume-apron-dress__brass)" fill-opacity="0.75"/>
+  <path d="M122 542 q78 16 156 0 l2 10 q-80 18 -160 0 z"
+        fill="url(#teen-male-costume-apron-dress__brass)" fill-opacity="0.45"/>
+
+  <path d="M160 232 q40 -12 80 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

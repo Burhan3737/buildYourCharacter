@@ -1,0 +1,95 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs harlequin: HEM (a high waisted trouser cropped clear above the ankle over bare
+     shin, against a continuous one piece running to the ankle) and CLOSURE (a banded body
+     tucked under two narrow braces, against a closed one piece gathered at a throat ruff).
+     The banding is pattern; the braces and the cropped hem carry the outline.
+     No whiteface and no painted features: the face slot is not this asset. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2EDE4)"/>
+      <stop offset="1" stop-color="var(--c1, #D3CCBF)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-mime__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A31)"/>
+      <stop offset="1" stop-color="var(--c2, #2C201A)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CE7C71)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-mime__bands" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="9" fill="var(--c2, #2C201A)" fill-opacity="0.82"/>
+    </pattern>
+    <clipPath id="teen-male-costume-mime__bodyClip">
+      <path d="M158 198 Q200 194 242 198 Q262 202 264 226 L262 300 Q262 330 236 334 H164
+               Q138 330 138 300 L136 226 Q138 202 158 198 Z"/>
+      <path d="M146 206 Q118 210 116 238 L110 344 Q124 356 144 350 L150 240 Z"/>
+      <path d="M254 206 Q282 210 284 238 L290 344 Q276 356 256 350 L250 240 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- high waisted straight trousers, cropped clear above the ankle -->
+  <g class="sp-shadow">
+    <path d="M144 320 H256 Q262 350 258 384 H142 Q138 350 144 320 Z"
+          fill="url(#teen-male-costume-mime__dark)"/>
+    <path d="M146 380 H196 L193 500 H151 Z" fill="url(#teen-male-costume-mime__dark)"/>
+    <path d="M254 380 H204 L207 500 H249 Z" fill="url(#teen-male-costume-mime__dark)"/>
+  </g>
+
+  <!-- flat shoes, the shin left bare between hem and shoe -->
+  <g class="sp-shadow">
+    <path d="M152 530 H196 Q200 552 194 564 Q168 570 144 562 Q138 546 148 534 Z"
+          fill="url(#teen-male-costume-mime__dark)"/>
+    <path d="M248 530 H204 Q200 552 206 564 Q232 570 256 562 Q262 546 252 534 Z"
+          fill="url(#teen-male-costume-mime__dark)"/>
+  </g>
+
+  <!-- close long sleeves -->
+  <g class="sp-shadow">
+    <path d="M146 206 Q118 210 116 238 L110 344 Q124 356 144 350 L150 240 Z"
+          fill="url(#teen-male-costume-mime__body)"/>
+    <path d="M254 206 Q282 210 284 238 L290 344 Q276 356 256 350 L250 240 Z"
+          fill="url(#teen-male-costume-mime__body)"/>
+  </g>
+
+  <!-- close boat neck banded body, tucked in at the waist -->
+  <g class="sp-shadow">
+    <path d="M158 198 Q200 194 242 198 Q262 202 264 226 L262 300 Q262 330 236 334 H164
+             Q138 330 138 300 L136 226 Q138 202 158 198 Z"
+          fill="url(#teen-male-costume-mime__body)"/>
+  </g>
+
+  <!-- the banding -->
+  <g clip-path="url(#teen-male-costume-mime__bodyClip)">
+    <rect x="108" y="194" width="184" height="164" fill="url(#teen-male-costume-mime__bands)"/>
+  </g>
+
+  <!-- boat neck bind -->
+  <path d="M158 198 Q200 194 242 198 l1 12 q-43 -4 -85 0 z"
+        fill="url(#teen-male-costume-mime__dark)"/>
+
+  <!-- two narrow braces over the tucked waistband -->
+  <path d="M162 196 H180 L184 332 H168 Z" fill="url(#teen-male-costume-mime__brace)"/>
+  <path d="M238 196 H220 L216 332 H232 Z" fill="url(#teen-male-costume-mime__brace)"/>
+  <rect x="164" y="308" width="22" height="14" rx="4" fill="var(--c2, #2C201A)"/>
+  <rect x="214" y="308" width="22" height="14" rx="4" fill="var(--c2, #2C201A)"/>
+
+  <!-- high waistband over the braces -->
+  <path d="M144 318 H256 l2 18 H142 Z" fill="url(#teen-male-costume-mime__dark)"/>
+  <rect x="190" y="316" width="20" height="22" rx="5" fill="var(--c3, #CE7C71)"/>
+
+  <!-- cuff bands reading as the edge of a glove -->
+  <path d="M109 336 L150 330 L152 348 L111 354 Z" fill="url(#teen-male-costume-mime__dark)"/>
+  <path d="M291 336 L250 330 L248 348 L289 354 Z" fill="url(#teen-male-costume-mime__dark)"/>
+
+  <!-- cropped trouser turn ups -->
+  <path d="M146 484 H194 l-1 18 H147 Z" fill="var(--c2, #2C201A)"/>
+  <path d="M254 484 H206 l1 18 H253 Z" fill="var(--c2, #2C201A)"/>
+
+  <path d="M160 218 q40 -10 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

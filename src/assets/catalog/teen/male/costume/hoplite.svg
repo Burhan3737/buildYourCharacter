@@ -1,0 +1,110 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs knight: VOLUME (a moulded three dimensional cuirass that narrows sharply at the
+     waist and swells again over the chest, against knight's straight plated mail body) and
+     HEM (a skirt of nine separate hanging strips with dark gaps between them, against
+     knight's single unbroken tabard panel).
+     Separation from pharaonic: pharaonic is a flat drape with a hard triangular front
+     projection and a wide flat disc collar. This is modelled body armour with forward folded
+     shoulder flaps and a strip skirt, and it carries pectoral and abdominal modelling so the
+     chest and waist read as a solid three dimensional shell.
+     The helmet is out of scope: costume draws above the face, so the identity lives entirely
+     in the cuirass, the strip skirt and the shin greaves. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-hoplite__bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9C57)"/>
+      <stop offset="1" stop-color="var(--c1, #96682F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-hoplite__deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7A5326)"/>
+      <stop offset="1" stop-color="var(--c2, #4E3417)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-hoplite__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E6D8B4)"/>
+      <stop offset="1" stop-color="var(--c3, #C3B187)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark under-tunic, so every gap between the strips reads as a gap -->
+  <g class="sp-shadow">
+    <path d="M146 330 q54 -12 108 0 q6 32 2 62 q-56 12 -112 0 q-4 -30 2 -62 z"
+          fill="url(#teen-male-costume-hoplite__deep)"/>
+  </g>
+
+  <!-- sandals -->
+  <g class="sp-shadow">
+    <path d="M156 548 q22 -6 42 0 q2 10 0 16 q-2 6 -12 6 h-30 q-8 0 -6 -10 z"
+          fill="url(#teen-male-costume-hoplite__deep)"/>
+    <path d="M244 548 q-22 -6 -42 0 q-2 10 0 16 q2 6 12 6 h30 q8 0 6 -10 z"
+          fill="url(#teen-male-costume-hoplite__deep)"/>
+  </g>
+
+  <!-- the strip skirt: nine separate overlapping strips with visible gaps -->
+  <g class="sp-shadow">
+    <path d="M143 336 h11 v44 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M156 336 h11 v54 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M169 336 h11 v62 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M182 336 h11 v68 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M195 336 h11 v72 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M208 336 h11 v68 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M221 336 h11 v62 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M234 336 h11 v54 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+    <path d="M246 336 h11 v44 q-6 9 -11 0 z" fill="url(#teen-male-costume-hoplite__linen)"/>
+  </g>
+
+  <!-- moulded cuirass, sharply waisted -->
+  <g class="sp-shadow">
+    <path d="M170 194 h60 q22 2 26 24 q6 26 4 46 q-2 30 -14 52 q-6 12 -8 24
+             q-38 10 -76 0 q-2 -12 -8 -24 q-12 -22 -14 -52 q-2 -20 4 -46
+             q4 -22 26 -24 z"
+          fill="url(#teen-male-costume-hoplite__bronze)"/>
+  </g>
+
+  <!-- shoulder flaps folded forward from the back and laced down to the chest -->
+  <g class="sp-shadow">
+    <path d="M148 212 q4 -18 22 -18 h20 q8 0 8 10 l0 44 q-2 10 -12 10 h-24 q-10 0 -10 -10 z"
+          fill="url(#teen-male-costume-hoplite__bronze)"/>
+    <path d="M252 212 q-4 -18 -22 -18 h-20 q-8 0 -8 10 l0 44 q2 10 12 10 h24 q10 0 10 -10 z"
+          fill="url(#teen-male-costume-hoplite__bronze)"/>
+  </g>
+
+  <!-- hard greave plate down each shin -->
+  <g class="sp-shadow">
+    <path d="M162 466 q18 -8 34 0 q4 34 2 62 q0 12 -8 14 q-12 4 -22 -2 q-8 -2 -8 -14
+             q-2 -28 2 -60 z"
+          fill="url(#teen-male-costume-hoplite__bronze)"/>
+    <path d="M238 466 q-18 -8 -34 0 q-4 34 -2 62 q0 12 8 14 q12 4 22 -2 q8 -2 8 -14
+             q2 -28 -2 -60 z"
+          fill="url(#teen-male-costume-hoplite__bronze)"/>
+  </g>
+
+  <!-- pectoral and abdominal modelling: the cuirass reads as a solid shell, not a drape -->
+  <g fill="none" stroke="var(--c2, #4E3417)" stroke-opacity="0.45" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M200 230 q-22 4 -30 26 q-4 12 6 18 M200 230 q22 4 30 26 q4 12 -6 18"/>
+    <path d="M200 284 v52 M176 290 h48 M178 306 h44 M180 322 h40"/>
+  </g>
+  <path d="M154 268 q46 -14 92 0" stroke="var(--c2, #4E3417)" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- flap lacing down to the chest -->
+  <g fill="none" stroke="var(--c3, #E6D8B4)" stroke-width="4" stroke-linecap="round">
+    <path d="M156 232 L188 244 M188 232 L156 244 M156 248 L188 260 M188 248 L156 260"/>
+    <path d="M244 232 L212 244 M212 232 L244 244 M244 248 L212 260 M212 248 L244 260"/>
+  </g>
+
+  <!-- waist band and skirt header -->
+  <path d="M160 326 q40 12 80 0 l0 16 q-40 12 -80 0 z"
+        fill="url(#teen-male-costume-hoplite__deep)"/>
+  <path d="M142 330 q58 12 116 0 l0 10 q-58 12 -116 0 z"
+        fill="url(#teen-male-costume-hoplite__bronze)"/>
+
+  <!-- greave rims -->
+  <path d="M162 470 q18 -8 34 0 l0 9 q-17 -8 -34 0 z" fill="url(#teen-male-costume-hoplite__deep)"/>
+  <path d="M238 470 q-18 -8 -34 0 l0 9 q17 -8 34 0 z" fill="url(#teen-male-costume-hoplite__deep)"/>
+
+  <path d="M162 216 q38 -14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

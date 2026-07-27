@@ -1,0 +1,106 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs disguise-coat: CLOSURE (open fronted on one enormous waist button, the shirt
+     showing the whole way down, against a coat belted and buttoned right up to the throat)
+     and VOLUME (wide sagging and boxy, shoulders thrown out to x 98 and x 302, against a
+     straight narrow column). Sleeves swallow the hands. No cane and no prop of any kind. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-oversized-suit__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9BE0)"/>
+      <stop offset="1" stop-color="var(--c1, #64739F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #66739F)"/>
+      <stop offset="1" stop-color="var(--c1, #47517A)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F5F1E8)"/>
+      <stop offset="1" stop-color="var(--c2, #D7D0C2)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-oversized-suit__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3A31)"/>
+      <stop offset="1" stop-color="var(--c3, #2C201A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shoes, mostly buried under the puddling hem -->
+  <g class="sp-shadow">
+    <path d="M126 538 H186 Q196 556 190 568 Q152 570 116 564 Q106 552 116 542 Z"
+          fill="url(#teen-male-costume-oversized-suit__dark)"/>
+    <path d="M274 538 H214 Q204 556 210 568 Q248 570 284 564 Q294 552 284 542 Z"
+          fill="url(#teen-male-costume-oversized-suit__dark)"/>
+  </g>
+
+  <!-- trousers, puddling into folds at the ground line -->
+  <g class="sp-shadow">
+    <path d="M146 336 H254 Q260 372 256 396 H144 Q140 372 146 336 Z"
+          fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+    <path d="M144 390 H198 L196 522 Q198 548 178 558 Q146 568 118 558 Q104 550 114 534
+             Q130 508 132 452 Z"
+          fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+    <path d="M256 390 H202 L204 522 Q202 548 222 558 Q254 568 282 558 Q296 550 286 534
+             Q270 508 268 452 Z"
+          fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  </g>
+
+  <!-- the shirt, visible the whole way down the open front -->
+  <g class="sp-shadow">
+    <path d="M172 194 H228 Q244 200 246 224 L244 340 H156 L154 224 Q156 200 172 194 Z"
+          fill="url(#teen-male-costume-oversized-suit__shirt)"/>
+  </g>
+
+  <!-- the jacket: two open front panels, shoulders thrown well outside the body -->
+  <g class="sp-shadow">
+    <path d="M176 194 Q150 194 132 208 Q114 222 108 244 Q100 310 98 384 Q97 444 102 506
+             H168 Q170 420 172 330 Q174 250 176 194 Z"
+          fill="url(#teen-male-costume-oversized-suit__cloth)"/>
+    <path d="M224 194 Q250 194 268 208 Q286 222 292 244 Q300 310 302 384 Q303 444 298 506
+             H232 Q230 420 228 330 Q226 250 224 194 Z"
+          fill="url(#teen-male-costume-oversized-suit__cloth)"/>
+  </g>
+
+  <!-- sleeves swallowing the hands entirely -->
+  <g class="sp-shadow">
+    <path d="M118 220 Q86 236 80 292 L70 372 Q68 396 88 402 Q112 406 118 386 L126 300
+             Q130 250 138 226 Z"
+          fill="url(#teen-male-costume-oversized-suit__cloth)"/>
+    <path d="M282 220 Q314 236 320 292 L330 372 Q332 396 312 402 Q288 406 282 386 L274 300
+             Q270 250 262 226 Z"
+          fill="url(#teen-male-costume-oversized-suit__cloth)"/>
+  </g>
+
+  <!-- huge notched lapels -->
+  <path d="M176 194 Q200 198 204 214 L186 262 L166 296 L170 230 Z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  <path d="M224 194 Q200 198 196 214 L214 262 L234 296 L230 230 Z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  <path d="M178 200 L170 288 M222 200 L230 288" stroke="var(--c2, #D7D0C2)"
+        stroke-opacity="0.55" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- one enormous button at the waist -->
+  <circle cx="174" cy="344" r="21" fill="url(#teen-male-costume-oversized-suit__dark)"/>
+  <circle cx="174" cy="344" r="10" fill="var(--c2, #D7D0C2)" fill-opacity="0.8"/>
+  <path d="M226 336 h20 v16 h-20 z" fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+
+  <!-- sagging flap pockets and a turned back cuff on each sleeve -->
+  <path d="M112 398 h50 q4 22 -2 32 q-26 8 -50 0 q-2 -18 2 -32 z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  <path d="M288 398 h-50 q-4 22 2 32 q26 8 50 0 q2 -18 -2 -32 z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  <path d="M70 366 q24 14 48 2 l1 22 q-25 14 -50 -2 z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+  <path d="M330 366 q-24 14 -48 2 l-1 22 q25 14 50 -2 z"
+        fill="url(#teen-male-costume-oversized-suit__trouser)"/>
+
+  <!-- fold breaks where the trousers stack on the ground -->
+  <g fill="none" stroke="var(--c1, #47517A)" stroke-opacity="0.5" stroke-width="6"
+     stroke-linecap="round">
+    <path d="M124 512 q28 12 62 4 M118 534 q32 12 66 2 M216 512 q28 -8 60 -4
+             M216 536 q32 10 66 -2"/>
+  </g>
+
+  <path d="M140 226 q60 -22 120 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

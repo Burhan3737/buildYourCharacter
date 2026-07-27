@@ -1,0 +1,115 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs berserker: HEM (a fitted knee length tunic, not a mid thigh jerkin) and SHOULDER
+     (a rectangular cloak worn offset over the LEFT shoulder only and pinned at the right with a
+     single ring brooch, leaving the right arm entirely free, over long sleeves rucked past the
+     wrist). Trim bands are a plain geometric chevron: never a named clan or community sett. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jarl" data-family="jarl" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-jarl__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E828F)"/>
+      <stop offset="1" stop-color="var(--c1, #43616D)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-jarl__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #587A87)"/>
+      <stop offset="1" stop-color="var(--c1, #3D5A65)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-jarl__cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8E6C4A)"/>
+      <stop offset="1" stop-color="var(--c2, #664C33)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-jarl__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCB863)"/>
+      <stop offset="1" stop-color="var(--c3, #A5853A)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-jarl__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M0 13 l8 -9 l8 9" fill="none" stroke="var(--c2, #664C33)"
+            stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="teen-male-costume-jarl__bandClip">
+      <path d="M138 202 q62 -8 124 0 l2 26 q-64 10 -128 0 z"/>
+      <path d="M126 440 q74 18 148 0 l3 26 q-76 20 -154 0 z"/>
+      <path d="M102 366 q24 14 50 0 l2 20 q-26 16 -54 0 z"/>
+      <path d="M298 366 q-24 14 -50 0 l-2 20 q26 16 54 0 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- low leather shoes -->
+  <g class="sp-shadow">
+    <path d="M158 530 h44 q10 18 4 34 q-26 8 -52 0 q-4 -18 4 -34 z"
+          fill="url(#teen-male-costume-jarl__cloak)"/>
+    <path d="M198 530 h44 q10 18 4 34 q-26 8 -52 0 q-4 -18 4 -34 z"
+          fill="url(#teen-male-costume-jarl__cloak)"/>
+  </g>
+
+  <!-- narrow trousers under the knee length tunic -->
+  <g class="sp-shadow">
+    <path d="M158 380 h42 l-6 154 h-32 z" fill="url(#teen-male-costume-jarl__sleeve)"/>
+    <path d="M200 380 h42 l-4 154 h-32 z" fill="url(#teen-male-costume-jarl__sleeve)"/>
+  </g>
+
+  <!-- the fitted knee length tunic with long rucked sleeves -->
+  <g class="sp-shadow">
+    <path d="M138 200 q-26 8 -28 34 l-8 150 q24 14 50 0 l4 -152 z"
+          fill="url(#teen-male-costume-jarl__sleeve)"/>
+    <path d="M262 200 q26 8 28 34 l8 150 q-24 14 -50 0 l-4 -152 z"
+          fill="url(#teen-male-costume-jarl__sleeve)"/>
+    <path d="M164 194 h72 q32 8 32 40 v98 q0 20 -4 34 l12 96 q-76 18 -152 0 l12 -96
+             q-4 -14 -4 -34 v-98 q0 -32 32 -40 z"
+          fill="url(#teen-male-costume-jarl__tunic)"/>
+  </g>
+
+  <!-- the keyhole neck opening -->
+  <path d="M192 196 h16 v40 q-8 8 -16 0 z" fill="url(#teen-male-costume-jarl__cloak)"/>
+  <circle cx="200" cy="238" r="9" fill="url(#teen-male-costume-jarl__cloak)"/>
+  <circle cx="200" cy="238" r="4" fill="url(#teen-male-costume-jarl__trim)"/>
+
+  <!-- deep woven trim bands at neck, cuff and hem -->
+  <g fill="url(#teen-male-costume-jarl__trim)">
+    <path d="M138 202 q62 -8 124 0 l2 26 q-64 10 -128 0 z"/>
+    <path d="M126 440 q74 18 148 0 l3 26 q-76 20 -154 0 z"/>
+    <path d="M102 366 q24 14 50 0 l2 20 q-26 16 -54 0 z"/>
+    <path d="M298 366 q-24 14 -50 0 l-2 20 q26 16 54 0 z"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-jarl__bandClip)">
+    <rect x="100" y="196" width="200" height="276"
+          fill="url(#teen-male-costume-jarl__chevron)"/>
+  </g>
+
+  <!-- sleeves rucked past the wrist -->
+  <g fill="none" stroke="var(--c1, #3D5A65)" stroke-opacity="0.45" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M104 338 q24 12 48 0 M104 352 q24 12 48 0
+             M296 338 q-24 12 -48 0 M296 352 q-24 12 -48 0"/>
+  </g>
+
+  <!-- the cloak: over the left shoulder only, pinned at the right -->
+  <g class="sp-shadow">
+    <path d="M258 198 q-16 22 -46 34 q-32 12 -46 40 l-8 88 l6 116 q-30 10 -60 0
+             l-8 -122 l10 -96 q10 -48 60 -60 q46 -4 92 0 z"
+          fill="url(#teen-male-costume-jarl__cloak)"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #A5853A)" stroke-opacity="0.6" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M120 268 l-8 92 l6 108 M148 250 l-6 106 l6 116"/>
+  </g>
+  <path d="M104 468 q30 10 60 0 l2 12 q-32 12 -64 0 z"
+        fill="url(#teen-male-costume-jarl__trim)"/>
+
+  <!-- the single ring brooch at the right shoulder -->
+  <circle cx="252" cy="212" r="15" fill="none" stroke="var(--c3, #A5853A)" stroke-width="7"/>
+  <path d="M238 206 l30 14" stroke="var(--c3, #DCB863)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- belt over the tunic -->
+  <path d="M136 328 q64 16 128 0 l3 20 q-66 18 -134 0 z"
+        fill="url(#teen-male-costume-jarl__cloak)"/>
+  <path d="M190 326 h22 q4 12 0 26 h-22 q-4 -14 0 -26 z"
+        fill="url(#teen-male-costume-jarl__trim)"/>
+
+  <path d="M212 214 q28 -6 46 4" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

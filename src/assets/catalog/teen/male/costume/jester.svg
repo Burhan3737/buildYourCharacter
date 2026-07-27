@@ -1,0 +1,99 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs harlequin: VOLUME (a boxy doublet standing away from a close hose, against
+     harlequin's skin-close continuous one-piece) and HEM (a hip hem cut into five deep
+     pointed tabs, each ending in a bell, against a plain ankle hem).
+     Periwinkle, coral and butter: deliberately clear of any purple-plus-green read. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-jester__doublet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6AB4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-jester__accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07C71)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-jester__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A244)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-jester__doubletClip">
+      <path d="M164 194 h72 q34 0 34 32 v130 l-14 36 l-14 -36 l-14 36 l-14 -36 l-14 36
+               l-14 -36 l-14 36 l-14 -36 l-14 36 l-14 -36 v-130 q0 -32 34 -32 z"/>
+    </clipPath>
+    <clipPath id="teen-male-costume-jester__hoseClip">
+      <path d="M166 336 q16 -6 32 0 l-4 208 q-14 5 -26 0 z"/>
+      <path d="M234 336 q-16 -6 -32 0 l4 208 q14 5 26 0 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- close hose -->
+  <g class="sp-shadow">
+    <path d="M166 336 q16 -6 32 0 l-4 208 q-14 5 -26 0 z"
+          fill="url(#teen-male-costume-jester__doublet)"/>
+    <path d="M234 336 q-16 -6 -32 0 l4 208 q14 5 26 0 z"
+          fill="url(#teen-male-costume-jester__doublet)"/>
+  </g>
+
+  <!-- curl toed soft shoes -->
+  <g class="sp-shadow">
+    <path d="M166 534 h32 v24 q0 12 -14 12 h-30 q-14 0 -14 -10 q0 -8 12 -12 q14 -5 14 -14 z"
+          fill="url(#teen-male-costume-jester__accent)"/>
+    <path d="M234 534 h-32 v24 q0 12 14 12 h30 q14 0 14 -10 q0 -8 -12 -12 q-14 -5 -14 -14 z"
+          fill="url(#teen-male-costume-jester__accent)"/>
+  </g>
+
+  <!-- long sleeves ending in dagged points -->
+  <g class="sp-shadow">
+    <path d="M148 204 q-36 4 -36 34 v98 l9 30 l9 -30 l9 30 l9 -30 v-132 z"
+          fill="url(#teen-male-costume-jester__doublet)"/>
+    <path d="M252 204 q36 4 36 34 v98 l-9 30 l-9 -30 l-9 30 l-9 -30 v-132 z"
+          fill="url(#teen-male-costume-jester__doublet)"/>
+  </g>
+
+  <!-- the boxy doublet: hip hem cut into five deep pointed tabs, bell on every point -->
+  <g class="sp-shadow">
+    <path d="M164 194 h72 q34 0 34 32 v130 l-14 36 l-14 -36 l-14 36 l-14 -36 l-14 36
+             l-14 -36 l-14 36 l-14 -36 l-14 36 l-14 -36 v-130 q0 -32 34 -32 z"
+          fill="url(#teen-male-costume-jester__doublet)"/>
+    <circle cx="256" cy="398" r="10" fill="url(#teen-male-costume-jester__bell)"/>
+    <circle cx="228" cy="398" r="10" fill="url(#teen-male-costume-jester__bell)"/>
+    <circle cx="200" cy="398" r="10" fill="url(#teen-male-costume-jester__bell)"/>
+    <circle cx="172" cy="398" r="10" fill="url(#teen-male-costume-jester__bell)"/>
+    <circle cx="144" cy="398" r="10" fill="url(#teen-male-costume-jester__bell)"/>
+  </g>
+
+  <!-- panel blocking: the right half of the doublet and the left sleeve carry c2 -->
+  <g clip-path="url(#teen-male-costume-jester__doubletClip)">
+    <rect x="200" y="194" width="80" height="210" fill="url(#teen-male-costume-jester__accent)"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-jester__hoseClip)">
+    <rect x="120" y="330" width="80" height="224" fill="url(#teen-male-costume-jester__accent)"/>
+  </g>
+  <path d="M148 204 q-36 4 -36 34 v98 l9 30 l9 -30 l9 30 l9 -30 v-132 z"
+        fill="url(#teen-male-costume-jester__accent)"/>
+
+  <!-- cuff bells -->
+  <circle cx="121" cy="371" r="9" fill="url(#teen-male-costume-jester__bell)"/>
+  <circle cx="139" cy="371" r="9" fill="url(#teen-male-costume-jester__bell)"/>
+  <circle cx="279" cy="371" r="9" fill="url(#teen-male-costume-jester__bell)"/>
+  <circle cx="261" cy="371" r="9" fill="url(#teen-male-costume-jester__bell)"/>
+
+  <!-- scalloped neck band and a laced centre seam -->
+  <path d="M166 196 q34 -4 68 0 q4 12 -2 20 q-8 10 -20 4 q-12 8 -24 0 q-12 6 -20 -4
+           q-6 -8 -2 -20 z" fill="url(#teen-male-costume-jester__bell)"/>
+  <path d="M200 220 v130" stroke="var(--c3, #D9A244)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 244 l28 14 M214 244 l-28 14 M186 276 l28 14 M214 276 l-28 14
+           M186 308 l28 14 M214 308 l-28 14" stroke="var(--c3, #D9A244)" stroke-opacity="0.65"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- hose garters -->
+  <path d="M164 356 q34 -8 34 0 l-1 14 q-2 8 -34 0 z" fill="url(#teen-male-costume-jester__bell)"/>
+  <path d="M236 356 q-34 -8 -34 0 l1 14 q2 8 34 0 z" fill="url(#teen-male-costume-jester__bell)"/>
+
+  <path d="M158 216 q42 -14 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

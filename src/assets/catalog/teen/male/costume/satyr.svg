@@ -1,0 +1,97 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs berserker: HEM (shag runs all the way to the ankle, not a thigh length jerkin over
+     trousers) and SHOULDER (one animal skin knotted over a single shoulder, bare chest, rather
+     than a full sleeveless jerkin over a sleeved tunic). -->
+<!-- Correctness note, please do not "fix" this back toward the source: a satyr has a HORSE tail
+     and horse ears, not a goat's. Goat legs and horns belong to the Roman faun. The ears are a
+     companion headwear family and are not drawn here. Classical satyrs are also nude with
+     exaggerated genitalia; this is a CHILDREN'S DRESS UP SATYR, so it is a pelt from the waist
+     down and a skin over the shoulder and nothing else. Feet are left bare on purpose. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B99062)"/>
+      <stop offset="1" stop-color="var(--c1, #957048)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-satyr__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7E5A3A)"/>
+      <stop offset="1" stop-color="var(--c2, #5B3E26)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-satyr__cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EBDBBC)"/>
+      <stop offset="1" stop-color="var(--c3, #CDB88F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long horse tail falling from the small of the back -->
+  <g class="sp-shadow">
+    <path d="M244 336 q52 16 64 70 q12 54 2 102 q-6 20 -16 26 q-12 -12 -18 4
+             q-10 -14 -16 2 q12 -66 0 -118 q-12 -50 -32 -74 z"
+          fill="url(#teen-male-costume-satyr__hide)"/>
+  </g>
+
+  <!-- bare chest, painted through the skin variables -->
+  <g class="sp-shadow">
+    <path d="M140 224 q2 -30 32 -30 h56 q30 0 30 30 v84 q0 36 -30 36 h-58 q-30 0 -30 -36 z"
+          fill="url(#teen-male-costume-satyr__skin)"/>
+  </g>
+
+  <!-- the pelt: a deeply lobed waist edge and a bumpy shaggy leg outline to the ankle -->
+  <g class="sp-shadow">
+    <path d="M134 348 q10 -18 22 -6 q10 -22 22 -4 q12 -20 24 -2 q12 -18 22 -4
+             q12 -16 22 2 q10 -14 20 8 l6 46 q-72 20 -144 0 z"
+          fill="url(#teen-male-costume-satyr__pelt)"/>
+    <path d="M154 382 q-10 12 -2 24 q-14 14 -4 26 q-12 14 -2 26 q-14 16 -4 28
+             q-12 14 -2 26 q-12 16 -2 30 q26 12 54 0 l6 -160 z"
+          fill="url(#teen-male-costume-satyr__pelt)"/>
+    <path d="M246 382 q10 12 2 24 q14 14 4 26 q12 14 2 26 q14 16 4 28
+             q12 14 2 26 q12 16 2 30 q-26 12 -54 0 l-6 -160 z"
+          fill="url(#teen-male-costume-satyr__pelt)"/>
+  </g>
+
+  <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
+  <g class="sp-shadow">
+    <path d="M142 196 q26 -2 42 6 l72 128 q10 18 -2 30 q-14 -10 -22 4 q-12 -12 -22 2
+             l-78 -140 q-6 -20 10 -30 z"
+          fill="url(#teen-male-costume-satyr__hide)"/>
+  </g>
+
+  <!-- knot and cord at the shoulder -->
+  <path d="M150 198 q18 -4 26 8 q-6 12 -20 12 q-14 -2 -16 -12 q2 -6 10 -8 z"
+        fill="url(#teen-male-costume-satyr__cord)"/>
+  <path d="M144 214 q14 8 30 4" stroke="var(--c3, #CDB88F)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- tufted highlights bedded into the shag, never drawn on top of a smooth edge -->
+  <g fill="url(#teen-male-costume-satyr__cord)" fill-opacity="0.4">
+    <path d="M148 400 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M142 452 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M138 506 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M236 400 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M242 452 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M246 506 q10 -6 16 4 q-8 12 -18 6 z"/>
+    <path d="M170 350 q12 -8 20 4 q-10 14 -22 8 z"/>
+    <path d="M214 346 q12 -8 20 4 q-10 14 -22 8 z"/>
+  </g>
+
+  <!-- pelt seam and the parting between the two shaggy legs -->
+  <g fill="none" stroke="var(--c2, #5B3E26)" stroke-opacity="0.3" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M200 392 l0 148 M158 396 l-8 132 M242 396 l8 132"/>
+  </g>
+
+  <!-- horse tail streaks -->
+  <g fill="none" stroke="var(--c1, #957048)" stroke-opacity="0.35" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M268 374 q28 48 22 134 M286 392 q16 44 10 108"/>
+  </g>
+
+  <path d="M158 216 q42 -14 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

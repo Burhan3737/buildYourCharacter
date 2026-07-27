@@ -1,0 +1,120 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs hoplite: VOLUME (a flat pleated linen drape with one hard triangular projection,
+     not a moulded three dimensional cuirass) and SHOULDER (a wide flat semicircular disc collar
+     lying on the shoulders, not forward folded shoulder flaps). Hem at the knee, torso bare. -->
+<!-- Cultural note: pharaonic Egypt is in scope because it is a historical period with no living
+     community whose religious identity is at stake. This is a knee length linen kilt and a broad
+     collar, drawn with the same matter of factness as the chef. It is deliberately NOT a
+     specific identifiable ruler: no cartouche, no crook and flail, no uraeus, and none of the
+     glamour Cleopatra costume. The bare torso is painted through the skin variables. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-pharaonic__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pharaonic__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E5DCC3)"/>
+      <stop offset="1" stop-color="var(--c1, #C9BC9E)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c1, #D8CDB4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pharaonic__bead" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5FBDB2)"/>
+      <stop offset="1" stop-color="var(--c2, #3D8E86)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pharaonic__gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8C878)"/>
+      <stop offset="1" stop-color="var(--c3, #B8963F)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-pharaonic__kiltClip">
+      <path d="M138 330 q62 -12 124 0 l8 130 q-70 16 -140 0 z"/>
+    </clipPath>
+    <clipPath id="teen-male-costume-pharaonic__collarClip">
+      <path d="M126 202 q74 -8 148 0 l4 16 q-6 58 -78 62 q-72 -4 -78 -62 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- bare torso, painted through the skin variables -->
+  <g class="sp-shadow">
+    <path d="M141 226 q1 -32 33 -32 h52 q32 0 33 32 v80 q0 38 -32 38 h-54 q-32 0 -32 -38 z"
+          fill="url(#teen-male-costume-pharaonic__skin)"/>
+  </g>
+
+  <!-- the flat pleated linen kilt, knee hem -->
+  <g class="sp-shadow">
+    <path d="M138 330 q62 -12 124 0 l8 130 q-70 16 -140 0 z"
+          fill="url(#teen-male-costume-pharaonic__linen)"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-pharaonic__kiltClip)" fill="none"
+     stroke="var(--c3, #B8963F)" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round">
+    <path d="M146 336 l-6 128 M158 334 l-4 130 M170 332 l-3 132 M182 331 l-2 133
+             M218 331 l2 133 M230 332 l3 132 M242 334 l4 130 M254 336 l6 128"/>
+  </g>
+
+  <!-- the stiff triangular front apron, standing flat and clear of the kilt hem -->
+  <g class="sp-shadow">
+    <path d="M200 330 l46 172 h-92 z" fill="url(#teen-male-costume-pharaonic__apron)"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #B8963F)" stroke-opacity="0.4" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M200 344 l0 158 M188 372 l-8 130 M212 372 l8 130 M176 410 l-10 92
+             M224 410 l10 92"/>
+  </g>
+  <path d="M154 502 h92 l3 12 h-98 z" fill="url(#teen-male-costume-pharaonic__gold)"/>
+  <!-- gold edging down both slants, so the hard triangle reads against the flat kilt -->
+  <path d="M200 330 l46 172 h-14 l-32 -120 l-32 120 h-14 z"
+        fill="url(#teen-male-costume-pharaonic__gold)"/>
+
+  <!-- narrow beaded belt -->
+  <path d="M136 324 q64 -14 128 0 l2 18 q-66 -12 -132 0 z"
+        fill="url(#teen-male-costume-pharaonic__bead)"/>
+  <g fill="url(#teen-male-costume-pharaonic__gold)">
+    <circle cx="152" cy="332" r="4"/>
+    <circle cx="172" cy="329" r="4"/>
+    <circle cx="192" cy="327" r="4"/>
+    <circle cx="212" cy="327" r="4"/>
+    <circle cx="232" cy="329" r="4"/>
+    <circle cx="252" cy="332" r="4"/>
+  </g>
+
+  <!-- the broad flat semicircular collar over both shoulders and the upper chest -->
+  <g class="sp-shadow">
+    <path d="M126 202 q74 -8 148 0 l4 16 q-6 58 -78 62 q-72 -4 -78 -62 z"
+          fill="url(#teen-male-costume-pharaonic__gold)"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-pharaonic__collarClip)">
+    <path d="M132 216 q68 -8 136 0 l0 14 q-68 -8 -136 0 z"
+          fill="url(#teen-male-costume-pharaonic__bead)"/>
+    <path d="M134 240 q66 -8 132 0 l-2 14 q-64 -8 -128 0 z"
+          fill="url(#teen-male-costume-pharaonic__linen)"/>
+    <path d="M138 264 q62 -8 124 0 l-4 14 q-58 -8 -116 0 z"
+          fill="url(#teen-male-costume-pharaonic__bead)"/>
+  </g>
+  <path d="M124 214 q76 -10 152 0" stroke="var(--c1, #DCD2BB)" stroke-opacity="0.65"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- wide plain armlets above each elbow -->
+  <g class="sp-shadow">
+    <path d="M112 270 h34 q4 16 0 32 h-34 q-4 -16 0 -32 z"
+          fill="url(#teen-male-costume-pharaonic__gold)"/>
+    <path d="M254 270 h34 q4 16 0 32 h-34 q-4 -16 0 -32 z"
+          fill="url(#teen-male-costume-pharaonic__gold)"/>
+  </g>
+
+  <!-- plain flat sandals -->
+  <g fill="url(#teen-male-costume-pharaonic__gold)">
+    <path d="M156 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+    <path d="M200 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #3D8E86)" stroke-width="4" stroke-linecap="round">
+    <path d="M162 550 h32 M206 550 h32"/>
+  </g>
+
+  <path d="M158 294 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

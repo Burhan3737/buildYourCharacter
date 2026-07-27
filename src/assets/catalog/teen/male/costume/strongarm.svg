@@ -1,0 +1,101 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs knight: SHOULDER (two broad flat slab yokes lying across each shoulder, against
+     knight's domed pauldrons) and CLOSURE (open down both sides and cross-laced from armpit
+     to waist, against knight's closed mail body under a hanging tabard).
+     No emblem, no crest: the plate yokes, the lacing ladder and the stacked belt hardware
+     are the whole personality. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-strongarm__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08F62)"/>
+      <stop offset="1" stop-color="var(--c1, #96683F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9C6C)"/>
+      <stop offset="1" stop-color="var(--c1, #8C6039)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-strongarm__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6B5140)"/>
+      <stop offset="1" stop-color="var(--c2, #47342A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- full length straight trousers, drawn first so the belt stacks over them -->
+  <g class="sp-shadow">
+    <path d="M148 328 q26 -6 52 0 v212 q-26 8 -52 0 z"
+          fill="url(#teen-male-costume-strongarm__cloth)"/>
+    <path d="M252 328 q-26 -6 -52 0 v212 q26 8 52 0 z"
+          fill="url(#teen-male-costume-strongarm__cloth)"/>
+  </g>
+
+  <!-- heavy boots -->
+  <g class="sp-shadow">
+    <path d="M146 546 q28 -8 56 0 q6 14 4 24 h-64 q-2 -14 4 -24 z"
+          fill="url(#teen-male-costume-strongarm__cloth)"/>
+    <path d="M254 546 q-28 -8 -56 0 q-6 14 -4 24 h64 q2 -14 -4 -24 z"
+          fill="url(#teen-male-costume-strongarm__cloth)"/>
+  </g>
+
+  <!-- sleeveless harness vest: a narrow front panel, open down both sides -->
+  <g class="sp-shadow">
+    <path d="M166 194 h68 q10 2 10 18 l-4 38 q-2 30 2 54 q2 18 6 34 q-48 12 -96 0
+             q4 -16 6 -34 q4 -24 2 -54 l-4 -38 q0 -16 10 -18 z"
+          fill="url(#teen-male-costume-strongarm__hide)"/>
+  </g>
+
+  <!-- broad flat plate yoke across each shoulder -->
+  <g class="sp-shadow">
+    <path d="M116 214 q0 -20 24 -20 h56 q6 0 6 8 v26 q0 8 -6 8 h-58 q-22 0 -22 -22 z"
+          fill="url(#teen-male-costume-strongarm__plate)"/>
+    <path d="M284 214 q0 -20 -24 -20 h-56 q-6 0 -6 8 v26 q0 8 6 8 h58 q22 0 22 -22 z"
+          fill="url(#teen-male-costume-strongarm__plate)"/>
+  </g>
+
+  <!-- cross lacing down both open sides, armpit to waist -->
+  <g fill="none" stroke="var(--c3, #E6C179)" stroke-width="5" stroke-linecap="round">
+    <path d="M154 244 L140 262 M140 244 L154 262
+             M154 266 L140 284 M140 266 L154 284
+             M154 288 L140 306 M140 288 L154 306
+             M154 310 L140 328 M140 310 L154 328"/>
+    <path d="M246 244 L260 262 M260 244 L246 262
+             M246 266 L260 284 M260 266 L246 284
+             M246 288 L260 306 M260 288 L246 306
+             M246 310 L260 328 M260 310 L246 328"/>
+  </g>
+
+  <!-- yoke rivet line and plate bevel -->
+  <path d="M122 216 q34 -12 72 -8 l0 10 q-38 -4 -72 8 z" fill="var(--c2, #47342A)"
+        fill-opacity="0.4"/>
+  <path d="M278 216 q-34 -12 -72 -8 l0 10 q38 -4 72 8 z" fill="var(--c2, #47342A)"
+        fill-opacity="0.4"/>
+  <g fill="var(--c3, #E6C179)">
+    <circle cx="130" cy="230" r="4"/><circle cx="150" cy="228" r="4"/>
+    <circle cx="170" cy="227" r="4"/><circle cx="190" cy="227" r="4"/>
+    <circle cx="270" cy="230" r="4"/><circle cx="250" cy="228" r="4"/>
+    <circle cx="230" cy="227" r="4"/><circle cx="210" cy="227" r="4"/>
+  </g>
+
+  <!-- wide buckled belt with stacked hardware -->
+  <path d="M142 330 q58 14 116 0 l0 32 q-58 14 -116 0 z"
+        fill="url(#teen-male-costume-strongarm__cloth)"/>
+  <path d="M182 326 h36 q6 0 6 8 v28 q0 8 -6 8 h-36 q-6 0 -6 -8 v-28 q0 -8 6 -8 z"
+        fill="var(--c3, #E6C179)"/>
+  <path d="M190 336 h20 v24 h-20 z" fill="var(--c2, #47342A)"/>
+  <path d="M148 342 h20 v12 h-20 z" fill="var(--c3, #E6C179)" fill-opacity="0.75"/>
+  <path d="M232 342 h20 v12 h-20 z" fill="var(--c3, #E6C179)" fill-opacity="0.75"/>
+
+  <!-- turned trouser cuffs -->
+  <path d="M142 522 q30 10 60 0 l0 26 q-30 10 -60 0 z"
+        fill="url(#teen-male-costume-strongarm__hide)"/>
+  <path d="M258 522 q-30 10 -60 0 l0 26 q30 10 60 0 z"
+        fill="url(#teen-male-costume-strongarm__hide)"/>
+
+  <!-- vest centre seam -->
+  <path d="M200 216 v112" stroke="var(--c2, #47342A)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M172 210 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

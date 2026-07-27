@@ -1,0 +1,100 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs peplos: SHOULDER (a row of six small pins along BOTH arms making a scalloped
+     pseudo sleeve to the elbow, not one big pin per bare shoulder) and CLOSURE (belted twice,
+     under the bust and again at the waist, with a bloused fold spilling over the upper belt). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-chiton__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0E6D2)"/>
+      <stop offset="1" stop-color="var(--c1, #D6C7AC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EADFC8)"/>
+      <stop offset="1" stop-color="var(--c1, #CDBC9F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-chiton__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4826A)"/>
+      <stop offset="1" stop-color="var(--c2, #9E6650)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-chiton__pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D7B25C)"/>
+      <stop offset="1" stop-color="var(--c3, #A98836)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-chiton__tubeClip">
+      <path d="M164 194 h72 q22 4 26 34 v70 q-2 24 -8 40 l16 206 q-70 20 -140 0 l16 -206
+               q-6 -16 -8 -40 v-70 q4 -30 26 -34 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- sandalled feet under the ankle hem -->
+  <g class="sp-shadow">
+    <path d="M154 538 h46 q10 20 2 32 q-26 8 -50 0 q-8 -18 2 -32 z"
+          fill="url(#teen-male-costume-chiton__belt)"/>
+    <path d="M200 538 h46 q10 20 2 32 q-26 8 -50 0 q-8 -18 2 -32 z"
+          fill="url(#teen-male-costume-chiton__belt)"/>
+  </g>
+
+  <!-- the pinned pseudo sleeves: cloth falling off a pin row, scalloped to the elbow -->
+  <g class="sp-shadow">
+    <path d="M164 194 q-42 4 -56 34 l-8 54 q6 20 12 0 q6 20 12 0 q6 20 12 0 q6 20 12 0
+             l8 -62 q4 -22 8 -26 z"
+          fill="url(#teen-male-costume-chiton__sleeve)"/>
+    <path d="M236 194 q42 4 56 34 l8 54 q-6 20 -12 0 q-6 20 -12 0 q-6 20 -12 0 q-6 20 -12 0
+             l-8 -62 q-4 -22 -8 -26 z"
+          fill="url(#teen-male-costume-chiton__sleeve)"/>
+  </g>
+
+  <!-- the draped tube, shoulder to ankle -->
+  <g class="sp-shadow">
+    <path d="M164 194 h72 q22 4 26 34 v70 q-2 24 -8 40 l16 206 q-70 20 -140 0 l16 -206
+             q-6 -16 -8 -40 v-70 q4 -30 26 -34 z"
+          fill="url(#teen-male-costume-chiton__linen)"/>
+  </g>
+
+  <!-- vertical drape folds down the column -->
+  <g clip-path="url(#teen-male-costume-chiton__tubeClip)" fill="none"
+     stroke="var(--c2, #9E6650)" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round">
+    <path d="M160 268 l-10 268 M182 262 l-4 274 M218 262 l4 274 M240 268 l10 268
+             M200 350 l0 186"/>
+  </g>
+
+  <!-- bloused fold spilling over the upper belt -->
+  <path d="M142 226 q58 16 116 0 l6 32 q-14 14 -30 6 q-16 12 -30 2 q-14 12 -30 2
+           q-16 10 -28 -4 z"
+        fill="url(#teen-male-costume-chiton__sleeve)"/>
+
+  <!-- belt one: under the bust -->
+  <path d="M142 254 q58 16 116 0 l2 20 q-60 18 -120 0 z"
+        fill="url(#teen-male-costume-chiton__belt)"/>
+  <!-- belt two: at the waist -->
+  <path d="M144 328 q56 16 112 0 l3 22 q-58 18 -118 0 z"
+        fill="url(#teen-male-costume-chiton__belt)"/>
+  <path d="M188 326 h24 q4 12 0 26 h-24 q-4 -14 0 -26 z"
+        fill="url(#teen-male-costume-chiton__pin)"/>
+
+  <!-- the pin rows: six small round pins out along the top of each arm -->
+  <g fill="url(#teen-male-costume-chiton__pin)">
+    <circle cx="157" cy="203" r="6"/>
+    <circle cx="144" cy="207" r="6"/>
+    <circle cx="132" cy="214" r="6"/>
+    <circle cx="121" cy="223" r="6"/>
+    <circle cx="112" cy="235" r="6"/>
+    <circle cx="106" cy="250" r="6"/>
+    <circle cx="243" cy="203" r="6"/>
+    <circle cx="256" cy="207" r="6"/>
+    <circle cx="268" cy="214" r="6"/>
+    <circle cx="279" cy="223" r="6"/>
+    <circle cx="288" cy="235" r="6"/>
+    <circle cx="294" cy="250" r="6"/>
+  </g>
+
+  <!-- sandal thongs -->
+  <g fill="none" stroke="var(--c3, #A98836)" stroke-width="4" stroke-linecap="round">
+    <path d="M160 548 h34 M164 560 h30 M206 548 h34 M210 560 h30"/>
+  </g>
+
+  <path d="M158 212 q42 -14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

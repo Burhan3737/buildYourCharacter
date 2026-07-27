@@ -1,0 +1,98 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs web-runner: VOLUME (three plain cloth membranes turn the whole standing figure
+     into one wide triangle, 200 units across at the ankle, against web-runner's skin-close
+     column) and HEM (the leg hems are bridged by a knee-to-knee membrane instead of ending
+     as two separate ankle cuffs).
+     Plain cloth with drawn rib seams only: no mechanical wing, no feather, no metal spar,
+     no chest marking. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sky Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c1, #6376BE)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-sky-glider__web" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B5A9E)"/>
+      <stop offset="1" stop-color="var(--c2, #2F3A6E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the three cloth membranes: wrist to hip either side, knee to knee between -->
+  <g class="sp-shadow">
+    <path d="M146 202 q-22 4 -26 26 l-14 138 q-8 92 -6 182 q34 8 66 0 q6 -48 -2 -96
+             q-8 -60 -18 -250 z"
+          fill="url(#teen-male-costume-sky-glider__web)"/>
+    <path d="M254 202 q22 4 26 26 l14 138 q8 92 6 182 q-34 8 -66 0 q-6 -48 2 -96
+             q8 -60 18 -250 z"
+          fill="url(#teen-male-costume-sky-glider__web)"/>
+    <path d="M188 400 q12 -4 24 0 q6 60 4 148 q-16 6 -32 0 q-2 -88 4 -148 z"
+          fill="url(#teen-male-costume-sky-glider__web)"/>
+  </g>
+
+  <!-- fitted bodysuit torso -->
+  <g class="sp-shadow">
+    <path d="M180 194 h40 q26 2 34 22 q8 26 6 56 l-2 48 q2 28 -6 42 q4 20 -2 26
+             q-50 14 -100 0 q-6 -6 -2 -26 q-8 -14 -6 -42 l-2 -48 q-2 -30 6 -56
+             q8 -20 34 -22 z"
+          fill="url(#teen-male-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- fitted sleeves over the membrane -->
+  <g class="sp-shadow">
+    <path d="M148 204 q-28 6 -30 30 l-4 126 q6 14 22 14 q16 0 20 -14 l4 -128 z"
+          fill="url(#teen-male-costume-sky-glider__suit)"/>
+    <path d="M252 204 q28 6 30 30 l4 126 q-6 14 -22 14 q-16 0 -20 -14 l-4 -128 z"
+          fill="url(#teen-male-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- fitted legs to the ankle -->
+  <g class="sp-shadow">
+    <path d="M154 384 q22 -6 44 0 l-2 80 q-2 44 -6 82 q-14 6 -28 0 q-4 -38 -6 -82 z"
+          fill="url(#teen-male-costume-sky-glider__suit)"/>
+    <path d="M246 384 q-22 -6 -44 0 l2 80 q2 44 6 82 q14 6 28 0 q4 -38 6 -82 z"
+          fill="url(#teen-male-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- soft slipper boots -->
+  <g class="sp-shadow">
+    <path d="M158 544 q22 -6 40 0 q4 12 2 20 q-2 6 -12 6 h-30 q-8 0 -6 -10 z"
+          fill="url(#teen-male-costume-sky-glider__web)"/>
+    <path d="M242 544 q-22 -6 -40 0 q-4 12 -2 20 q2 6 12 6 h30 q8 0 6 -10 z"
+          fill="url(#teen-male-costume-sky-glider__web)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane -->
+  <g fill="none" stroke="var(--c3, #F3D08C)" stroke-opacity="0.75" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M148 238 q-24 66 -36 154 M152 286 q-26 62 -34 148
+             M156 336 q-24 62 -30 144 M160 388 q-20 56 -22 132
+             M164 442 q-14 46 -14 100"/>
+    <path d="M252 238 q24 66 36 154 M248 286 q26 62 34 148
+             M244 336 q24 62 30 144 M240 388 q20 56 22 132
+             M236 442 q14 46 14 100"/>
+    <path d="M196 430 v112 M204 430 v112"/>
+  </g>
+
+  <!-- membrane leading-edge binding, wrist to hip -->
+  <path d="M120 228 l-14 138 l12 2 l14 -138 z" fill="var(--c1, #6376BE)" fill-opacity="0.6"/>
+  <path d="M280 228 l14 138 l-12 2 l-14 -138 z" fill="var(--c1, #6376BE)" fill-opacity="0.6"/>
+
+  <!-- suit yoke panel and waist seam -->
+  <path d="M156 220 q44 -18 88 0 l4 26 q-48 -18 -96 0 z"
+        fill="url(#teen-male-costume-sky-glider__web)"/>
+  <path d="M148 330 q52 14 104 0 l2 18 q-54 14 -108 0 z"
+        fill="url(#teen-male-costume-sky-glider__web)"/>
+
+  <!-- closed neck, stopping at the jaw -->
+  <path d="M180 194 h40 l3 18 q-22 6 -46 0 z"
+        fill="url(#teen-male-costume-sky-glider__web)"/>
+
+  <!-- wrist and ankle cuffs -->
+  <path d="M116 340 q18 6 36 0 l-2 18 q-16 6 -34 0 z" fill="var(--c3, #F3D08C)"/>
+  <path d="M284 340 q-18 6 -36 0 l2 18 q16 6 34 0 z" fill="var(--c3, #F3D08C)"/>
+
+  <path d="M166 212 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

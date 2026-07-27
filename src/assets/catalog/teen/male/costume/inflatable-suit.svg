@@ -1,0 +1,103 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs astronaut: VOLUME (one near spherical mass 204 units across running from armpit
+     to knee, against a stepped straight pressure suit) and SHOULDER (narrow ribbed tube arms
+     carried out at about 45 degrees, well off the body's own arm line, against vertical
+     set in sleeves). Gathered to a tight neck ring at the throat; a fan pod at the waist. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-inflatable-suit__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #55649F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-inflatable-suit__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C6CFF0)"/>
+      <stop offset="1" stop-color="var(--c2, #9AA7D8)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-inflatable-suit__pod" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A244)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow ribbed tube legs -->
+  <g class="sp-shadow">
+    <path d="M164 440 H196 L194 542 Q178 552 162 542 Z"
+          fill="url(#teen-male-costume-inflatable-suit__skin)"/>
+    <path d="M236 440 H204 L206 542 Q222 552 238 542 Z"
+          fill="url(#teen-male-costume-inflatable-suit__skin)"/>
+  </g>
+
+  <!-- rounded inflated boots -->
+  <g class="sp-shadow">
+    <path d="M158 532 H198 Q204 552 198 564 Q168 570 142 560 Q134 546 146 536 Z"
+          fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+    <path d="M242 532 H202 Q196 552 202 564 Q232 570 258 560 Q266 546 254 536 Z"
+          fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+  </g>
+
+  <!-- narrow ribbed tube arms, swept out at about 45 degrees -->
+  <g class="sp-shadow">
+    <path d="M154 202 Q114 208 104 244 Q98 268 82 288 L54 320 Q42 334 50 348 Q64 360 76 348
+             L110 310 Q132 292 144 268 Q152 246 158 226 Z"
+          fill="url(#teen-male-costume-inflatable-suit__skin)"/>
+    <path d="M246 202 Q286 208 296 244 Q302 268 318 288 L346 320 Q358 334 350 348 Q336 360 324 348
+             L290 310 Q268 292 256 268 Q248 246 242 226 Z"
+          fill="url(#teen-male-costume-inflatable-suit__skin)"/>
+  </g>
+
+  <!-- the gathered gorget running from the neck ring down onto the sphere -->
+  <g class="sp-shadow">
+    <path d="M180 196 H220 Q240 200 252 226 Q200 214 148 226 Q160 200 180 196 Z"
+          fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+  </g>
+
+  <!-- the near spherical body: armpit to knee -->
+  <g class="sp-shadow">
+    <path d="M200 218 Q302 218 302 336 Q302 454 200 454 Q98 454 98 336 Q98 218 200 218 Z"
+          fill="url(#teen-male-costume-inflatable-suit__skin)"/>
+  </g>
+
+  <!-- tight neck ring -->
+  <rect x="178" y="194" width="44" height="18" rx="9"
+        fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+
+  <!-- ribbing across the arms -->
+  <g fill="none" stroke="var(--c2, #9AA7D8)" stroke-opacity="0.75" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M128 258 l-16 -14 M112 276 l-18 -14 M94 294 l-18 -14 M76 312 l-18 -14
+             M272 258 l16 -14 M288 276 l18 -14 M306 294 l18 -14 M324 312 l18 -14"/>
+  </g>
+
+  <!-- ribbing across the legs -->
+  <g fill="none" stroke="var(--c2, #9AA7D8)" stroke-opacity="0.7" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M164 466 h32 M164 492 h31 M163 518 h31 M204 466 h32 M205 492 h31 M206 518 h31"/>
+  </g>
+
+  <!-- inflation seams over the sphere -->
+  <g fill="none" stroke="var(--c2, #9AA7D8)" stroke-opacity="0.55" stroke-width="6"
+     stroke-linecap="round">
+    <path d="M148 246 q-24 88 4 184 M252 246 q24 88 -4 184 M200 226 v220"/>
+  </g>
+
+  <!-- wrist and ankle rings -->
+  <path d="M58 320 q14 -14 26 -4 l-14 16 q-10 -6 -12 -12 z"
+        fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+  <path d="M342 320 q-14 -14 -26 -4 l14 16 q10 -6 12 -12 z"
+        fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+  <path d="M162 512 h34 l-1 18 h-32 z" fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+  <path d="M238 512 h-34 l1 18 h32 z" fill="url(#teen-male-costume-inflatable-suit__rib)"/>
+
+  <!-- small round fan pod at the waist -->
+  <circle cx="272" cy="346" r="24" fill="url(#teen-male-costume-inflatable-suit__pod)"/>
+  <circle cx="272" cy="346" r="13" fill="var(--c2, #9AA7D8)"/>
+  <g fill="none" stroke="var(--c3, #D9A244)" stroke-opacity="0.85" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M264 340 q8 6 16 0 M264 348 q8 6 16 0 M264 356 q8 6 16 0"/>
+  </g>
+
+  <path d="M150 264 q50 -30 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

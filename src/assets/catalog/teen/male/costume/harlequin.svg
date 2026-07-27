@@ -1,0 +1,110 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs web-runner: VOLUME (a real horizontal waist seam splits the suit into a bodice,
+     a hip band and softly tapered limbs, against web-runner's one unbroken torso to hip
+     form) and CLOSURE (a gathered throat ruff and a seamed waist break the body into three
+     regions, against a single continuous lattice).
+     The diamond pattern is a bonus at stage size; the identity is the outline.
+     Coral, ink and butter: no purple, no green, nothing near a clown villain palette. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-harlequin__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #CF7E73)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-harlequin__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A244)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-harlequin__diamonds" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 0 L22 11 L11 22 L0 11 Z" fill="var(--c2, #3B2A22)" fill-opacity="0.55"/>
+      <path d="M11 4 L18 11 L11 18 L4 11 Z" fill="var(--c1, #F4A79B)" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="teen-male-costume-harlequin__suitClip">
+      <path d="M172 196 h56 q30 2 34 28 l6 66 q2 30 -6 48 h-124 q-8 -18 -6 -48 l6 -66
+               q4 -26 34 -28 z"/>
+      <path d="M144 344 q56 -8 112 0 q6 24 0 44 q-56 8 -112 0 q-6 -20 0 -44 z"/>
+      <path d="M148 384 h48 q-2 84 -6 156 q-16 6 -32 0 q-6 -76 -10 -156 z"/>
+      <path d="M252 384 h-48 q2 84 6 156 q16 6 32 0 q6 -76 10 -156 z"/>
+      <path d="M150 206 q-34 4 -36 34 l-4 96 q-2 18 2 28 q16 6 30 0 q0 -10 2 -28 l6 -96 z"/>
+      <path d="M250 206 q34 4 36 34 l4 96 q2 18 -2 28 q-16 6 -30 0 q0 -10 -2 -28 l-6 -96 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- narrow standing collar -->
+  <g class="sp-shadow">
+    <path d="M178 194 h44 q8 0 8 10 v12 q-30 -8 -60 0 v-12 q0 -10 8 -10 z"
+          fill="url(#teen-male-costume-harlequin__trim)"/>
+  </g>
+
+  <!-- upper region: the bodice, ending at a real waist seam -->
+  <g class="sp-shadow">
+    <path d="M172 196 h56 q30 2 34 28 l6 66 q2 30 -6 48 h-124 q-8 -18 -6 -48 l6 -66
+             q4 -26 34 -28 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- middle region: the hip band below the waist seam -->
+  <g class="sp-shadow">
+    <path d="M144 344 q56 -8 112 0 q6 24 0 44 q-56 8 -112 0 q-6 -20 0 -44 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- softly tapered sleeves, narrowing to the wrist -->
+  <g class="sp-shadow">
+    <path d="M150 206 q-34 4 -36 34 l-4 96 q-2 18 2 28 q16 6 30 0 q0 -10 2 -28 l6 -96 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+    <path d="M250 206 q34 4 36 34 l4 96 q2 18 -2 28 q-16 6 -30 0 q0 -10 -2 -28 l-6 -96 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- lower region: legs tapering from 48 units at the thigh to 32 at the ankle -->
+  <g class="sp-shadow">
+    <path d="M148 384 h48 q-2 84 -6 156 q-16 6 -32 0 q-6 -76 -10 -156 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+    <path d="M252 384 h-48 q2 84 6 156 q16 6 32 0 q6 -76 10 -156 z"
+          fill="url(#teen-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- soft mitts and flat slippers -->
+  <g class="sp-shadow">
+    <path d="M112 366 q16 -8 30 0 q8 12 2 22 q-16 8 -30 0 q-6 -12 -2 -22 z"
+          fill="url(#teen-male-costume-harlequin__trim)"/>
+    <path d="M288 366 q-16 -8 -30 0 q-8 12 -2 22 q16 8 30 0 q6 -12 2 -22 z"
+          fill="url(#teen-male-costume-harlequin__trim)"/>
+    <path d="M156 536 q22 -8 42 0 q6 20 2 32 q-24 8 -46 0 q-4 -14 2 -32 z"
+          fill="url(#teen-male-costume-harlequin__trim)"/>
+    <path d="M244 536 q-22 -8 -42 0 q-6 20 -2 32 q24 8 46 0 q4 -14 -2 -32 z"
+          fill="url(#teen-male-costume-harlequin__trim)"/>
+  </g>
+
+  <!-- argyle diamonds over the three regions -->
+  <g clip-path="url(#teen-male-costume-harlequin__suitClip)">
+    <rect x="106" y="194" width="182" height="360"
+          fill="url(#teen-male-costume-harlequin__diamonds)"/>
+  </g>
+
+  <!-- the waist seam itself, piped -->
+  <path d="M134 336 q66 14 132 0 l2 14 q-68 16 -136 0 z"
+        fill="url(#teen-male-costume-harlequin__trim)"/>
+
+  <!-- small soft gathered ruff at the throat, low and shallow so an accessory ruff stacks -->
+  <path d="M164 202 q36 -10 72 0 q4 10 -4 14 q-32 10 -64 0 q-8 -4 -4 -14 z"
+        fill="url(#teen-male-costume-harlequin__trim)"/>
+  <g fill="var(--c3, #D9A244)">
+    <circle cx="170" cy="212" r="8"/><circle cx="185" cy="215" r="8"/>
+    <circle cx="200" cy="216" r="8"/><circle cx="215" cy="215" r="8"/>
+    <circle cx="230" cy="212" r="8"/>
+  </g>
+
+  <!-- tapered wrist and ankle bands -->
+  <path d="M110 340 q16 8 32 2 l-1 14 q-16 6 -32 -2 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M290 340 q-16 8 -32 2 l1 14 q16 6 32 -2 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M154 518 q18 6 36 0 l-1 14 q-18 6 -36 0 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M246 518 q-18 6 -36 0 l1 14 q18 6 36 0 z" fill="var(--c2, #3B2A22)"/>
+
+  <path d="M160 216 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

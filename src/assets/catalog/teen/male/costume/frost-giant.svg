@@ -1,0 +1,120 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs berserker: VOLUME (a bulky CLOSED overcoat crusted with hard angular rime plates
+     that jut outward from the outline, against soft shaggy lobes) and HEM (a knee length hem
+     cut into uneven downward pointing icicle teeth, not a lobed thigh edge).
+     The fallback is MINT on purpose. This family is never defaulted to blue: blue is what makes
+     a frost giant read as one studio's character, and a silhouette that only works in one hue
+     is not a silhouette. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FC9B6)"/>
+      <stop offset="1" stop-color="var(--c1, #57A692)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-frost-giant__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #76C0AD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C88)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-frost-giant__deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C8375)"/>
+      <stop offset="1" stop-color="var(--c2, #2F5A50)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0FAF5)"/>
+      <stop offset="1" stop-color="var(--c3, #CBE4DA)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- heavy boots -->
+  <g class="sp-shadow">
+    <path d="M148 528 h50 q12 20 6 38 q-30 8 -60 0 q-6 -20 4 -38 z"
+          fill="url(#teen-male-costume-frost-giant__deep)"/>
+    <path d="M202 528 h50 q12 20 6 38 q-30 8 -60 0 q-6 -20 4 -38 z"
+          fill="url(#teen-male-costume-frost-giant__deep)"/>
+  </g>
+
+  <!-- thickly wrapped legs -->
+  <g class="sp-shadow">
+    <path d="M150 388 q23 -8 46 0 l-2 152 q-20 8 -40 0 z"
+          fill="url(#teen-male-costume-frost-giant__deep)"/>
+    <path d="M204 388 q23 -8 46 0 l-2 152 q-20 8 -40 0 z"
+          fill="url(#teen-male-costume-frost-giant__deep)"/>
+  </g>
+
+  <!-- bulky closed overcoat, hem cut into uneven icicle teeth -->
+  <g class="sp-shadow">
+    <path d="M134 202 q-28 10 -30 38 l-10 128 q26 14 54 0 l4 -130 z"
+          fill="url(#teen-male-costume-frost-giant__sleeve)"/>
+    <path d="M266 202 q28 10 30 38 l10 128 q-26 14 -54 0 l-4 -130 z"
+          fill="url(#teen-male-costume-frost-giant__sleeve)"/>
+    <path d="M162 194 h76 q32 8 34 42 v106 l22 124
+             l-12 34 l-12 -34 l-11 26 l-12 -26 l-12 40 l-11 -40 l-12 28 l-12 -28
+             l-12 36 l-11 -36 l-12 24 l-12 -24 l-11 38 l-12 -38 l-12 30 l-12 -30
+             l22 -124 v-106 q2 -34 34 -42 z"
+          fill="url(#teen-male-costume-frost-giant__coat)"/>
+  </g>
+
+  <!-- the thick shaggy shoulder collar -->
+  <g class="sp-shadow">
+    <path d="M136 200 q30 -6 64 -6 q34 0 64 6 q22 8 24 30 q-6 26 -22 20
+             q-16 22 -30 4 q-16 20 -32 2 q-16 20 -32 -2 q-16 20 -30 -6
+             q-18 4 -22 -20 q0 -22 16 -28 z"
+          fill="url(#teen-male-costume-frost-giant__deep)"/>
+  </g>
+
+  <!-- rime spikes jutting outward past the forearms -->
+  <g class="sp-shadow">
+    <path d="M100 246 L74 230 L92 262 L70 276 L104 274 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+    <path d="M96 300 L76 294 L88 322 L72 336 L102 328 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+    <path d="M100 344 L78 348 L92 372 L106 366 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+    <path d="M300 246 L326 230 L308 262 L330 276 L296 274 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+    <path d="M304 300 L324 294 L312 322 L328 336 L298 328 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+    <path d="M300 344 L322 348 L308 372 L294 366 Z"
+          fill="url(#teen-male-costume-frost-giant__rime)"/>
+  </g>
+
+  <!-- an irregular crust of rime plates over the chest, scattered and never centred -->
+  <g fill="url(#teen-male-costume-frost-giant__rime)">
+    <path d="M142 268 L172 240 L182 264 L166 292 L150 288 Z"/>
+    <path d="M192 234 L226 250 L230 280 L204 288 L198 260 Z"/>
+    <path d="M240 258 L266 250 L262 286 L244 300 L236 278 Z"/>
+    <path d="M156 302 L184 288 L192 314 L170 330 L160 320 Z"/>
+    <path d="M210 300 L244 310 L232 340 L212 332 L216 316 Z"/>
+    <path d="M132 320 L156 340 L142 360 L128 342 Z"/>
+    <path d="M256 316 L274 334 L260 356 L246 336 Z"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #2F5A50)" stroke-opacity="0.35" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M164 262 l14 12 M206 254 l14 14 M246 274 l12 12 M172 302 l12 12
+             M220 312 l10 12"/>
+  </g>
+
+  <!-- icicle tips picked out along the coat hem -->
+  <g fill="url(#teen-male-costume-frost-giant__rime)" fill-opacity="0.85">
+    <path d="M282 468 l-6 30 l-6 -30 z"/>
+    <path d="M235 468 l-6 36 l-5 -36 z"/>
+    <path d="M188 468 l-6 32 l-5 -32 z"/>
+    <path d="M142 468 l-6 34 l-5 -34 z"/>
+  </g>
+
+  <!-- wrap bands on the legs and heavy cuffs -->
+  <g fill="none" stroke="var(--c1, #4E9C88)" stroke-opacity="0.55" stroke-width="6"
+     stroke-linecap="round">
+    <path d="M152 424 h42 M152 456 h42 M152 488 h42 M152 520 h42
+             M206 424 h42 M206 456 h42 M206 488 h42 M206 520 h42"/>
+  </g>
+  <path d="M94 356 q26 14 54 0 l-2 20 q-24 16 -52 0 z"
+        fill="url(#teen-male-costume-frost-giant__deep)"/>
+  <path d="M306 356 q-26 14 -54 0 l2 20 q24 16 52 0 z"
+        fill="url(#teen-male-costume-frost-giant__deep)"/>
+
+  <path d="M156 226 q44 -12 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

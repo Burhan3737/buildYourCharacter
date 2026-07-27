@@ -1,0 +1,88 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs peplos: HEM (a short tunic stopping at mid thigh, not an ankle column) and
+     SHOULDER (pinned at ONE shoulder only, the other shoulder and whole arm left bare, with a
+     rectangular mantle swinging back and out from a single fibula). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0E7D6)"/>
+      <stop offset="1" stop-color="var(--c1, #D5C8B0)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C4785C)"/>
+      <stop offset="1" stop-color="var(--c2, #9A5741)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-winged-messenger__gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2CE86)"/>
+      <stop offset="1" stop-color="var(--c3, #C8A052)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-winged-messenger__tunicClip">
+      <path d="M146 194 h38 q34 26 66 68 q12 14 12 36 v46 q-2 22 -10 40 l10 42
+               q-62 20 -124 0 l8 -44 q-12 -18 -12 -42 v-114 q0 -28 12 -32 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the mantle, pinned at the right shoulder and swinging back and out -->
+  <g class="sp-shadow">
+    <path d="M248 196 q40 2 56 28 l18 96 q0 56 -16 96 q-14 16 -22 -4 q-14 16 -24 -6
+             l-6 -116 q-2 -54 -12 -94 z"
+          fill="url(#teen-male-costume-winged-messenger__mantle)"/>
+  </g>
+
+  <!-- single shoulder tunic: covered on one side, wholly bare on the other, mid thigh hem -->
+  <g class="sp-shadow">
+    <path d="M146 194 h38 q34 26 66 68 q12 14 12 36 v46 q-2 22 -10 40 l10 42
+             q-62 20 -124 0 l8 -44 q-12 -18 -12 -42 v-114 q0 -28 12 -32 z"
+          fill="url(#teen-male-costume-winged-messenger__tunic)"/>
+  </g>
+
+  <!-- winged ankle cuffs: cloth bands with feather lobes breaking the outline -->
+  <g class="sp-shadow">
+    <path d="M164 512 q-28 -6 -44 8 q18 12 38 10 z"
+          fill="url(#teen-male-costume-winged-messenger__gold)"/>
+    <path d="M164 526 q-24 -2 -38 12 q18 8 36 2 z"
+          fill="url(#teen-male-costume-winged-messenger__gold)"/>
+    <path d="M236 512 q28 -6 44 8 q-18 12 -38 10 z"
+          fill="url(#teen-male-costume-winged-messenger__gold)"/>
+    <path d="M236 526 q24 -2 38 12 q-18 8 -36 2 z"
+          fill="url(#teen-male-costume-winged-messenger__gold)"/>
+    <path d="M160 506 h44 q6 14 4 28 h-50 q-4 -14 2 -28 z"
+          fill="url(#teen-male-costume-winged-messenger__mantle)"/>
+    <path d="M196 506 h44 q6 14 2 28 h-50 q-2 -14 4 -28 z"
+          fill="url(#teen-male-costume-winged-messenger__mantle)"/>
+  </g>
+
+  <!-- drape folds gathered from the single pinned shoulder -->
+  <g clip-path="url(#teen-male-costume-winged-messenger__tunicClip)" fill="none"
+     stroke="var(--c2, #9A5741)" stroke-opacity="0.24" stroke-width="5" stroke-linecap="round">
+    <path d="M156 214 l22 210 M182 226 l10 198 M206 258 l2 166 M232 292 l-6 132"/>
+  </g>
+
+  <!-- the diagonal pinned edge, banded so the single shoulder reads -->
+  <path d="M146 194 h38 q34 26 66 68 l-16 16 q-32 -40 -62 -62 z"
+        fill="url(#teen-male-costume-winged-messenger__gold)" fill-opacity="0.85"/>
+
+  <!-- waist cord and hem band -->
+  <path d="M136 318 q64 18 128 0 l2 18 q-66 20 -132 0 z"
+        fill="url(#teen-male-costume-winged-messenger__mantle)"/>
+  <path d="M140 406 q60 18 122 0 l4 20 q-64 20 -130 0 z"
+        fill="url(#teen-male-costume-winged-messenger__gold)"/>
+
+  <!-- the single round fibula at the right shoulder -->
+  <circle cx="256" cy="212" r="13" fill="url(#teen-male-costume-winged-messenger__gold)"/>
+  <circle cx="256" cy="212" r="5" fill="var(--c2, #9A5741)"/>
+
+  <!-- flat sandals on both bare feet -->
+  <g fill="url(#teen-male-costume-winged-messenger__mantle)">
+    <path d="M156 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+    <path d="M200 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #C8A052)" stroke-width="4" stroke-linecap="round">
+    <path d="M162 550 h32 M206 550 h32"/>
+  </g>
+
+  <path d="M148 210 q26 -6 44 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

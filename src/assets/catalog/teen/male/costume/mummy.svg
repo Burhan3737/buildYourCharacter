@@ -1,0 +1,112 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs pharaonic: VOLUME (a whole body bound in overlapping strips, arms and legs wrapped
+     separately to the wrist and ankle, against a bare torso over a flat drape) and CLOSURE
+     (no closure and no fastening anywhere, against a belt, a collar and armlets). -->
+<!-- Cultural note: the family key stays "mummy" because that is the retail category the picker
+     has to be findable under, but the display name is Bandage Wrap and this is CLOTH ONLY.
+     No exposed remains, no skull, no decay, no green pallor. The head is not wrapped and there
+     are no face bandages: the wrapped collar stops at the ceiling and the face stays visible. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandage Wrap" data-family="mummy" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-mummy__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9E0C9)"/>
+      <stop offset="1" stop-color="var(--c1, #CCC0A3)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-mummy__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E2D8C0)"/>
+      <stop offset="1" stop-color="var(--c1, #C3B79A)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-mummy__loose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3ECDA)"/>
+      <stop offset="1" stop-color="var(--c2, #D6CBAF)"/>
+    </linearGradient>
+    <pattern id="teen-male-costume-mummy__wrapA" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20" patternTransform="rotate(34)">
+      <rect x="0" y="0" width="20" height="11" fill="var(--c2, #F3ECDA)" fill-opacity="0.55"/>
+      <path d="M0 11.5 h20" stroke="var(--c3, #A2937A)" stroke-opacity="0.55"
+            stroke-width="2.4" fill="none"/>
+    </pattern>
+    <pattern id="teen-male-costume-mummy__wrapB" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20" patternTransform="rotate(-34)">
+      <rect x="0" y="0" width="20" height="11" fill="var(--c2, #F3ECDA)" fill-opacity="0.55"/>
+      <path d="M0 11.5 h20" stroke="var(--c3, #A2937A)" stroke-opacity="0.55"
+            stroke-width="2.4" fill="none"/>
+    </pattern>
+    <clipPath id="teen-male-costume-mummy__clipA">
+      <path d="M162 194 h76 q30 6 30 34 v118 q0 34 -30 36 h-76 q-30 -2 -30 -36 v-118
+               q0 -28 30 -34 z"/>
+      <path d="M136 200 q-26 6 -28 32 l-6 148 q24 14 48 0 l4 -150 z"/>
+      <path d="M202 372 h44 l-2 168 h-40 z"/>
+    </clipPath>
+    <clipPath id="teen-male-costume-mummy__clipB">
+      <path d="M264 200 q26 6 28 32 l6 148 q-24 14 -48 0 l-4 -150 z"/>
+      <path d="M154 372 h44 l-2 168 h-40 z"/>
+      <path d="M150 536 h50 q10 16 6 32 q-30 8 -60 0 q-6 -18 4 -32 z"/>
+      <path d="M200 536 h50 q10 16 6 32 q-30 8 -60 0 q-6 -18 4 -32 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- separately bound limbs and feet -->
+  <g class="sp-shadow">
+    <path d="M136 200 q-26 6 -28 32 l-6 148 q24 14 48 0 l4 -150 z"
+          fill="url(#teen-male-costume-mummy__limb)"/>
+    <path d="M264 200 q26 6 28 32 l6 148 q-24 14 -48 0 l-4 -150 z"
+          fill="url(#teen-male-costume-mummy__limb)"/>
+    <path d="M154 372 h44 l-2 168 h-40 z" fill="url(#teen-male-costume-mummy__limb)"/>
+    <path d="M202 372 h44 l-2 168 h-40 z" fill="url(#teen-male-costume-mummy__limb)"/>
+    <path d="M150 536 h50 q10 16 6 32 q-30 8 -60 0 q-6 -18 4 -32 z"
+          fill="url(#teen-male-costume-mummy__limb)"/>
+    <path d="M200 536 h50 q10 16 6 32 q-30 8 -60 0 q-6 -18 4 -32 z"
+          fill="url(#teen-male-costume-mummy__limb)"/>
+  </g>
+
+  <!-- the wrapped body -->
+  <g class="sp-shadow">
+    <path d="M162 194 h76 q30 6 30 34 v118 q0 34 -30 36 h-76 q-30 -2 -30 -36 v-118
+             q0 -28 30 -34 z"
+          fill="url(#teen-male-costume-mummy__cloth)"/>
+  </g>
+
+  <!-- alternating diagonal strip runs -->
+  <g clip-path="url(#teen-male-costume-mummy__clipA)">
+    <rect x="96" y="194" width="212" height="382" fill="url(#teen-male-costume-mummy__wrapA)"/>
+  </g>
+  <g clip-path="url(#teen-male-costume-mummy__clipB)">
+    <rect x="96" y="194" width="212" height="382" fill="url(#teen-male-costume-mummy__wrapB)"/>
+  </g>
+
+  <!-- the wrapped collar: it stops at the ceiling and the face stays fully visible -->
+  <path d="M168 194 h64 q16 4 16 16 q-48 10 -96 0 q0 -12 16 -16 z"
+        fill="url(#teen-male-costume-mummy__loose)"/>
+  <path d="M164 208 q36 12 72 0 l2 12 q-38 12 -76 0 z"
+        fill="url(#teen-male-costume-mummy__cloth)"/>
+
+  <!-- ragged loose ends trailing free from forearm, hip and calf -->
+  <g class="sp-shadow">
+    <path d="M114 336 q-20 12 -28 34 q-8 22 -4 36 q10 -16 20 -32 q10 -18 22 -24 z"
+          fill="url(#teen-male-costume-mummy__loose)"/>
+    <path d="M142 342 q-16 14 -20 36 q-4 22 2 32 q2 -20 10 -34 q8 -14 18 -20 z"
+          fill="url(#teen-male-costume-mummy__loose)"/>
+    <path d="M254 350 q22 10 30 34 q8 24 2 40 q-6 -18 -16 -34 q-10 -16 -24 -24 z"
+          fill="url(#teen-male-costume-mummy__loose)"/>
+    <path d="M158 468 q-20 16 -26 40 q-6 22 0 34 q4 -20 14 -36 q10 -16 20 -24 z"
+          fill="url(#teen-male-costume-mummy__loose)"/>
+    <path d="M244 484 q18 14 24 36 q6 20 0 32 q-4 -18 -12 -32 q-8 -14 -18 -20 z"
+          fill="url(#teen-male-costume-mummy__loose)"/>
+  </g>
+
+  <!-- overlapped strip edges, bedded into the wrap rather than ruled over it -->
+  <g fill="none" stroke="var(--c3, #A2937A)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M134 246 l132 34 M132 292 l134 30 M136 330 l130 -26"/>
+    <path d="M104 262 l44 -12 M104 310 l44 -12 M104 356 l44 -12"/>
+    <path d="M252 250 l44 12 M252 298 l44 12 M252 344 l44 12"/>
+    <path d="M156 410 l40 -10 M156 456 l40 -10 M156 502 l40 -10"/>
+    <path d="M204 400 l40 10 M204 446 l40 10 M204 492 l40 10"/>
+  </g>
+
+  <path d="M156 226 q44 -10 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

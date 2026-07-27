@@ -1,0 +1,108 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs dino: CLOSURE (a full length centre zip splitting the front, against dino's
+     closed pull on body) and SHOULDER (a soft hood lying flat down across the shoulders
+     with its ears carried out sideways, against dino's bare shoulder and ridged crest).
+     The hood is worn DOWN: it is a fabric roll behind and across the neck, never up. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Critter Onesie" data-family="critter-onesie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-critter-onesie__plush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #CE7C71)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-critter-onesie__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7E6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #E0C8AC)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-critter-onesie__zip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3A31)"/>
+      <stop offset="1" stop-color="var(--c3, #2C201A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short round tail at the hip -->
+  <g class="sp-shadow">
+    <circle cx="306" cy="372" r="26" fill="url(#teen-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- plush legs -->
+  <g class="sp-shadow">
+    <path d="M134 386 H198 L197 520 Q196 536 176 540 Q148 544 138 532 Q130 520 130 496 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+    <path d="M266 386 H202 L203 520 Q204 536 224 540 Q252 544 262 532 Q270 520 270 496 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- plush booties -->
+  <g class="sp-shadow">
+    <path d="M138 526 H192 Q198 550 190 564 Q158 570 128 560 Q120 544 128 532 Z"
+          fill="url(#teen-male-costume-critter-onesie__belly)"/>
+    <path d="M262 526 H208 Q202 550 210 564 Q242 570 272 560 Q280 544 272 532 Z"
+          fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  </g>
+
+  <!-- plush sleeves -->
+  <g class="sp-shadow">
+    <path d="M134 214 Q100 222 96 256 L88 344 Q106 358 132 350 L138 256 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+    <path d="M266 214 Q300 222 304 256 L312 344 Q294 358 268 350 L262 256 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- the all in one body: soft even plush volume -->
+  <g class="sp-shadow">
+    <path d="M158 202 H242 Q276 210 280 246 L286 348 Q288 384 258 392 H142 Q112 384 114 348
+             L120 246 Q124 210 158 202 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- the hood, lying flat DOWN across the shoulders, ears carried out sideways -->
+  <g class="sp-shadow">
+    <circle cx="140" cy="228" r="24" fill="url(#teen-male-costume-critter-onesie__plush)"/>
+    <circle cx="260" cy="228" r="24" fill="url(#teen-male-costume-critter-onesie__plush)"/>
+    <path d="M120 212 Q200 194 280 212 Q296 242 276 258 Q200 274 124 258 Q104 242 120 212 Z"
+          fill="url(#teen-male-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- inner ears and hood lining -->
+  <circle cx="140" cy="228" r="13" fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  <circle cx="260" cy="228" r="13" fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  <path d="M138 244 q62 16 124 0 l-4 14 q-58 14 -116 0 z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+
+  <!-- contrast belly panel -->
+  <path d="M200 268 Q240 268 242 314 Q244 364 200 374 Q156 364 158 314 Q160 268 200 268 Z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+
+  <!-- full length centre zip with a visible pull -->
+  <path d="M193 264 h14 l2 122 h-18 z" fill="url(#teen-male-costume-critter-onesie__zip)"/>
+  <g fill="none" stroke="var(--c2, #F7E6D2)" stroke-opacity="0.7" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M194 276 h12 M194 292 h12 M194 308 h12 M194 324 h12 M194 340 h12
+             M194 356 h12 M194 372 h12"/>
+  </g>
+  <rect x="192" y="256" width="16" height="20" rx="6"
+        fill="url(#teen-male-costume-critter-onesie__zip)"/>
+  <rect x="196" y="272" width="8" height="24" rx="4" fill="var(--c3, #2C201A)"/>
+
+  <!-- bulky cuffed wrists and ankles -->
+  <path d="M89 334 q22 14 44 4 l-1 20 q-24 12 -46 -2 z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  <path d="M311 334 q-22 14 -44 4 l1 20 q24 12 46 -2 z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  <path d="M131 494 q34 12 66 0 l-1 22 q-32 12 -64 0 z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+  <path d="M269 494 q-34 12 -66 0 l1 22 q32 12 64 0 z"
+        fill="url(#teen-male-costume-critter-onesie__belly)"/>
+
+  <!-- plush pile texture on the body sides -->
+  <g fill="none" stroke="var(--c1, #CE7C71)" stroke-opacity="0.45" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M134 282 q-6 42 -6 84 M266 282 q6 42 6 84 M150 402 q-4 46 -6 84
+             M250 402 q4 46 6 84"/>
+  </g>
+
+  <path d="M158 292 q42 -12 84 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

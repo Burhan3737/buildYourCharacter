@@ -1,0 +1,90 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs clown: SHOULDER (a draped three quarter bell sleeve flaring away from a set
+     shoulder, against clown's dropped shoulder gathered to a wrist cuff) and VOLUME (a
+     straight column widest at the shoulder, against a gathered barrel widest at the hip).
+     The collaret is a flat disc spreading outward, 24 units deep, so a necklace slot ruff
+     still stacks over it. No painted face: the identity is the blouse and pantaloons. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-pierrot__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2EDE4)"/>
+      <stop offset="1" stop-color="var(--c1, #D3CCBF)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pierrot__frill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6AB4)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-pierrot__pom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CE7C71)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- very wide gathered pantaloons, a straight column to the ankle -->
+  <g class="sp-shadow">
+    <path d="M114 338 H198 V520 Q198 540 176 544 Q148 550 130 542 Q112 536 112 518 Z"
+          fill="url(#teen-male-costume-pierrot__cloth)"/>
+    <path d="M286 338 H202 V520 Q202 540 224 544 Q252 550 270 542 Q288 536 288 518 Z"
+          fill="url(#teen-male-costume-pierrot__cloth)"/>
+  </g>
+
+  <!-- flat soft slippers -->
+  <g class="sp-shadow">
+    <path d="M126 538 H180 Q186 556 178 566 Q148 570 120 562 Q112 550 118 542 Z"
+          fill="url(#teen-male-costume-pierrot__frill)"/>
+    <path d="M274 538 H220 Q214 556 222 566 Q252 570 280 562 Q288 550 282 542 Z"
+          fill="url(#teen-male-costume-pierrot__frill)"/>
+  </g>
+
+  <!-- wide three quarter bell sleeves, flaring away from the shoulder -->
+  <g class="sp-shadow">
+    <path d="M138 202 Q108 208 100 246 Q84 296 78 322 Q104 340 140 328 Q142 268 148 216 Z"
+          fill="url(#teen-male-costume-pierrot__cloth)"/>
+    <path d="M262 202 Q292 208 300 246 Q316 296 322 322 Q296 340 260 328 Q258 268 252 216 Z"
+          fill="url(#teen-male-costume-pierrot__cloth)"/>
+  </g>
+
+  <!-- the loose straight blouse, widest at the shoulder, hem past the hip -->
+  <g class="sp-shadow">
+    <path d="M156 194 H244 Q278 198 278 226 L272 360 Q272 376 252 380 H148 Q128 376 128 360
+             L122 226 Q122 198 156 194 Z"
+          fill="url(#teen-male-costume-pierrot__cloth)"/>
+  </g>
+
+  <!-- large flat frilled disc collaret lying on the shoulders -->
+  <g fill="url(#teen-male-costume-pierrot__frill)">
+    <circle cx="130" cy="206" r="13"/><circle cx="153" cy="211" r="13"/>
+    <circle cx="177" cy="214" r="13"/><circle cx="200" cy="215" r="13"/>
+    <circle cx="223" cy="214" r="13"/><circle cx="247" cy="211" r="13"/>
+    <circle cx="270" cy="206" r="13"/>
+  </g>
+  <path d="M200 194 Q142 194 124 206 Q138 218 200 218 Q262 218 276 206 Q258 194 200 194 Z"
+        fill="url(#teen-male-costume-pierrot__cloth)"/>
+
+  <!-- bell sleeve hem frills -->
+  <path d="M78 322 q30 18 62 6 l-2 20 q-34 12 -64 -6 z"
+        fill="url(#teen-male-costume-pierrot__frill)"/>
+  <path d="M322 322 q-30 18 -62 6 l2 20 q34 12 64 -6 z"
+        fill="url(#teen-male-costume-pierrot__frill)"/>
+
+  <!-- pantaloon gathers at the ankle -->
+  <path d="M114 500 q42 14 84 0 l-1 18 q-42 14 -83 0 z"
+        fill="url(#teen-male-costume-pierrot__frill)"/>
+  <path d="M286 500 q-42 14 -84 0 l1 18 q42 14 83 0 z"
+        fill="url(#teen-male-costume-pierrot__frill)"/>
+
+  <!-- two large pom poms down the blouse front -->
+  <circle cx="200" cy="266" r="18" fill="url(#teen-male-costume-pierrot__pom)"/>
+  <circle cx="200" cy="326" r="18" fill="url(#teen-male-costume-pierrot__pom)"/>
+
+  <!-- soft vertical drape folds -->
+  <g fill="none" stroke="var(--c2, #5A6AB4)" stroke-opacity="0.25" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M156 244 l-4 122 M244 244 l4 122 M148 366 l-8 130 M252 366 l8 130"/>
+  </g>
+
+  <path d="M156 236 q44 -12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

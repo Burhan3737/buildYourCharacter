@@ -1,0 +1,115 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs winged messenger: SHOULDER (close long sleeves to the wrist on BOTH arms, nothing
+     bare) and VOLUME (narrow full length trousers tucked into soft ankle boots, plus a crescent
+     shield slung flat across the back so a curved edge shows past each hip).
+     Deliberately trousered, long sleeved and fully covered: no bustier, no star of any size,
+     no tiara, no matched metal bracers, no coiled rope at the hip, and the fallback triple is
+     sage, leather and bone, never red plus blue plus gold. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E9A87)"/>
+      <stop offset="1" stop-color="var(--c1, #5D7767)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-shield-warrior__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #758F7E)"/>
+      <stop offset="1" stop-color="var(--c1, #56705F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-shield-warrior__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A6A4E)"/>
+      <stop offset="1" stop-color="var(--c2, #63492F)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-shield-warrior__bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EADFC4)"/>
+      <stop offset="1" stop-color="var(--c3, #CBBB99)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-shield-warrior__tunicClip">
+      <path d="M164 194 h72 q30 6 30 34 v104 q0 20 -6 36 l8 56 q-68 18 -136 0 l8 -56
+               q-6 -16 -6 -36 v-104 q0 -28 30 -34 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- crescent shield carried flat across the back: only the two horns clear the hips -->
+  <g class="sp-shadow">
+    <path d="M96 400 q2 -50 52 -58 q30 -6 52 28 q22 -34 52 -28 q50 8 52 58
+             q-2 54 -52 66 q-52 12 -104 0 q-50 -12 -52 -66 z"
+          fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  </g>
+  <path d="M96 400 q2 -50 52 -58 l4 18 q-38 8 -40 42 q2 40 40 52 l-6 18
+           q-48 -14 -50 -72 z"
+        fill="url(#teen-male-costume-shield-warrior__bone)"/>
+  <path d="M304 400 q-2 -50 -52 -58 l-4 18 q38 8 40 42 q-2 40 -40 52 l6 18
+           q48 -14 50 -72 z"
+        fill="url(#teen-male-costume-shield-warrior__bone)"/>
+
+  <!-- narrow full length trousers, drawn under the tunic -->
+  <g class="sp-shadow">
+    <path d="M158 380 q20 -6 40 0 l-2 152 h-36 z"
+          fill="url(#teen-male-costume-shield-warrior__hide)"/>
+    <path d="M202 380 q20 -6 40 0 l2 152 h-36 z"
+          fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  </g>
+
+  <!-- close long sleeved tunic to mid thigh -->
+  <g class="sp-shadow">
+    <path d="M138 200 q-24 6 -26 32 l-8 132 q22 12 44 0 l4 -134 z"
+          fill="url(#teen-male-costume-shield-warrior__sleeve)"/>
+    <path d="M262 200 q24 6 26 32 l8 132 q-22 12 -44 0 l-4 -134 z"
+          fill="url(#teen-male-costume-shield-warrior__sleeve)"/>
+    <path d="M164 194 h72 q30 6 30 34 v104 q0 20 -6 36 l8 56 q-68 18 -136 0 l8 -56
+             q-6 -16 -6 -36 v-104 q0 -28 30 -34 z"
+          fill="url(#teen-male-costume-shield-warrior__tunic)"/>
+  </g>
+
+  <!-- the character's own hands, put back over the shield rim -->
+  <circle cx="127" cy="378" r="17" fill="var(--skin2, #E7B892)"/>
+  <circle cx="273" cy="378" r="17" fill="var(--skin2, #E7B892)"/>
+
+  <!-- soft ankle boots -->
+  <g class="sp-shadow">
+    <path d="M156 514 h44 q8 14 6 30 v20 q-28 6 -56 0 v-20 q-2 -16 6 -30 z"
+          fill="url(#teen-male-costume-shield-warrior__hide)"/>
+    <path d="M200 514 h44 q8 14 6 30 v20 q-28 6 -56 0 v-20 q-2 -16 6 -30 z"
+          fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  </g>
+
+  <!-- seam and pleat structure in the tunic body -->
+  <g clip-path="url(#teen-male-costume-shield-warrior__tunicClip)" fill="none"
+     stroke="var(--c2, #63492F)" stroke-opacity="0.28" stroke-width="4" stroke-linecap="round">
+    <path d="M156 240 l-8 190 M244 240 l8 190 M200 232 l0 60"/>
+  </g>
+
+  <!-- the wide diagonal baldric, shoulder to opposite hip -->
+  <path d="M142 202 l32 -8 l96 178 l-30 14 z"
+        fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  <path d="M148 212 l20 -6 l86 160 l-19 9 z"
+        fill="url(#teen-male-costume-shield-warrior__bone)" fill-opacity="0.35"/>
+  <g fill="url(#teen-male-costume-shield-warrior__bone)">
+    <path d="M170 244 l22 -10 l8 15 l-22 10 z"/>
+    <path d="M196 292 l22 -10 l8 15 l-22 10 z"/>
+    <path d="M222 340 l22 -10 l8 15 l-22 10 z"/>
+  </g>
+
+  <!-- waist band and boot cuffs -->
+  <path d="M136 328 q64 18 128 0 l3 22 q-66 20 -134 0 z"
+        fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  <g fill="url(#teen-male-costume-shield-warrior__bone)">
+    <path d="M154 512 h48 q4 8 2 16 h-52 q-2 -8 2 -16 z"/>
+    <path d="M198 512 h48 q4 8 2 16 h-52 q-2 -8 2 -16 z"/>
+  </g>
+  <g fill="none" stroke="var(--c2, #63492F)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M156 540 h44 M200 540 h44 M162 556 h32 M206 556 h32"/>
+  </g>
+
+  <!-- cuff bands at both wrists, deliberately soft cloth and not matched metal -->
+  <path d="M104 344 q22 12 44 0 l-2 18 q-20 12 -40 0 z"
+        fill="url(#teen-male-costume-shield-warrior__hide)"/>
+  <path d="M296 344 q-22 12 -44 0 l2 18 q20 12 40 0 z"
+        fill="url(#teen-male-costume-shield-warrior__hide)"/>
+
+  <path d="M156 212 q44 -14 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

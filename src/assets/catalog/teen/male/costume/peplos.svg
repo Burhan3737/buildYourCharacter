@@ -1,0 +1,83 @@
+<!-- teen/male costume face ceiling: all art at y >= 192 -->
+<!-- axes vs chiton: SHOULDER (bare arms, one large pin per shoulder, no sleeve cloth at all)
+     and VOLUME (open down one whole side from hem to hip, so the column is asymmetric and one
+     leg is left bare, under a deep overfold that reads as a second horizontal hem). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <defs>
+    <linearGradient id="teen-male-costume-peplos__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98A6E)"/>
+      <stop offset="1" stop-color="var(--c1, #A66B52)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D69B7E)"/>
+      <stop offset="1" stop-color="var(--c1, #B4785C)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-peplos__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8E5A46)"/>
+      <stop offset="1" stop-color="var(--c2, #6B4132)"/>
+    </linearGradient>
+    <linearGradient id="teen-male-costume-peplos__bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFE6D0)"/>
+      <stop offset="1" stop-color="var(--c3, #D3C6A8)"/>
+    </linearGradient>
+    <clipPath id="teen-male-costume-peplos__colClip">
+      <path d="M160 194 h80 q24 4 24 30 v114 q-6 18 -28 22 l-34 2 v186 q-36 12 -70 -2
+               l16 -186 q-14 -4 -16 -22 v-114 q0 -26 28 -30 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the pinned rectangle: ankle hem on one side, open down the whole other side -->
+  <g class="sp-shadow">
+    <path d="M160 194 h80 q24 4 24 30 v114 q-6 18 -28 22 l-34 2 v186 q-36 12 -70 -2
+             l16 -186 q-14 -4 -16 -22 v-114 q0 -26 28 -30 z"
+          fill="url(#teen-male-costume-peplos__wool)"/>
+    <path d="M138 200 q26 -6 62 -6 q36 0 62 6 l6 146 q-68 18 -136 0 z"
+          fill="url(#teen-male-costume-peplos__fold)"/>
+  </g>
+
+  <!-- vertical drape folds in the closed half -->
+  <g clip-path="url(#teen-male-costume-peplos__colClip)" fill="none"
+     stroke="var(--c2, #6B4132)" stroke-opacity="0.24" stroke-width="5" stroke-linecap="round">
+    <path d="M152 372 l-10 168 M176 370 l-6 174 M200 370 l-2 176"/>
+  </g>
+
+  <!-- the apoptygma hem: the second horizontal hem that identifies this family -->
+  <path d="M131 332 q69 22 138 0 l3 18 q-72 24 -144 0 z"
+        fill="url(#teen-male-costume-peplos__belt)"/>
+
+  <!-- belted OVER the fold -->
+  <path d="M134 292 q66 20 132 0 l3 24 q-68 22 -138 0 z"
+        fill="url(#teen-male-costume-peplos__belt)"/>
+  <path d="M186 290 h28 q4 14 0 30 h-28 q-4 -16 0 -30 z"
+        fill="url(#teen-male-costume-peplos__bone)"/>
+
+  <!-- one large pin at each shoulder -->
+  <g class="sp-shadow">
+    <circle cx="154" cy="206" r="12" fill="url(#teen-male-costume-peplos__bone)"/>
+    <circle cx="246" cy="206" r="12" fill="url(#teen-male-costume-peplos__bone)"/>
+  </g>
+  <circle cx="154" cy="206" r="5" fill="var(--c2, #6B4132)"/>
+  <circle cx="246" cy="206" r="5" fill="var(--c2, #6B4132)"/>
+
+  <!-- the open side: a trim band running the full length of the free edge -->
+  <path d="M236 358 l34 -2 l4 22 l-38 2 z" fill="url(#teen-male-costume-peplos__bone)"/>
+  <path d="M202 362 h10 v186 h-10 z" fill="url(#teen-male-costume-peplos__bone)"/>
+
+  <!-- hem trim on the closed half -->
+  <path d="M132 528 q34 12 70 2 v18 q-38 12 -74 -2 z"
+        fill="url(#teen-male-costume-peplos__bone)"/>
+
+  <!-- flat sandals on both bare feet -->
+  <g fill="url(#teen-male-costume-peplos__belt)">
+    <path d="M156 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+    <path d="M200 556 h44 q6 8 0 14 q-24 6 -48 0 q-4 -8 4 -14 z"/>
+  </g>
+  <g fill="none" stroke="var(--c3, #D3C6A8)" stroke-width="4" stroke-linecap="round">
+    <path d="M162 550 h32 M206 550 h32 M178 542 l0 12 M222 542 l0 12"/>
+  </g>
+
+  <path d="M160 216 q40 -14 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
