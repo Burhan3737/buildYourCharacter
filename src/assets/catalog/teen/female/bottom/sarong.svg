@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise=NATURAL, wrapped and knotted at one hip - leg length=mid-calf - leg width=straight - hem=raw with a visible OVERLAP edge down one leg -->
+  <defs>
+    <linearGradient id="teen-female-bottom-sarong__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #46907F)"/>
+    </linearGradient>
+    <pattern id="teen-female-bottom-sarong__band" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M0 11 h22" stroke="var(--c3, #F7C873)" stroke-opacity="0.5" stroke-width="4" fill="none"/>
+    </pattern>
+    <clipPath id="teen-female-bottom-sarong__clip">
+      <path d="M146 320 H254 L262 470 L258 506 Q200 520 142 506 L138 470 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <path d="M146 320 H254 L262 470 L258 506 Q200 520 142 506 L138 470 Z"
+          fill="url(#teen-female-bottom-sarong__cloth)"/>
+    <g clip-path="url(#teen-female-bottom-sarong__clip)">
+      <rect x="136" y="318" width="128" height="204" fill="url(#teen-female-bottom-sarong__band)"/>
+    </g>
+  </g>
+
+  <!-- the overlap edge, running diagonally from the hip knot down the left leg -->
+  <path d="M164 340 L142 508 L156 510 L176 344 Z" fill="var(--c2, #46907F)"/>
+  <path d="M166 342 L146 508" stroke="var(--c3, #F7C873)" stroke-opacity="0.8"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the knot at the left hip: the fastening that names the family -->
+  <path d="M148 316 q-14 -8 -24 2 q10 12 26 10 z" fill="var(--c1, #6BBFAD)"/>
+  <path d="M150 328 q-16 6 -22 18 q14 -2 24 -12 z" fill="var(--c2, #46907F)"/>
+  <ellipse cx="156" cy="326" rx="13" ry="11" fill="var(--c1, #6BBFAD)"/>
+
+  <!-- wrapped upper edge -->
+  <path d="M146 318 Q200 330 254 318 L254 330 Q200 342 146 330 Z" fill="var(--c2, #46907F)"/>
+  <path d="M212 350 q6 74 8 150" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 334 q38 10 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
