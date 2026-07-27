@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. No mask of any kind. -->
+  <!-- axes: closure=A SINGLE HORIZONTAL WAIST SEAM plus a soft throat ruff, breaking the suit
+       into three regions · volume=skin-close one-piece, softly tapered to wrist and ankle.
+       The diamonds are a 22 unit pattern and are a bonus at stage size only: the identity is
+       the outline. Butter over periwinkle, never purple with green, and no batte or prop. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-harlequin__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBD98F)"/>
+      <stop offset="1" stop-color="var(--c1, #E5B355)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F70C0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-harlequin__armL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #E5B355)"/>
+      <stop offset="0.45" stop-color="var(--c1, #FBD98F)"/>
+      <stop offset="1" stop-color="var(--c1, #E5B355)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-harlequin__legL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #5F70C0)"/>
+      <stop offset="0.45" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F70C0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-harlequin__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFF6E6)"/>
+      <stop offset="1" stop-color="var(--c3, #E4D6BE)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-harlequin__diamond" patternUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+      <path d="M11 0 L22 11 L11 22 L0 11 Z" fill="var(--c3, #FFF6E6)" fill-opacity="0.3"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-harlequin__suitclip">
+      <path d="M150 366 q0-22 22-22 h56 q22 0 22 22 v62 h-100 z"/>
+      <path d="M150 428 h100 v34 q0 22 -22 22 h-56 q-22 0 -22-22 z"/>
+      <path d="M164 478 h36 l-4 70 q-14 6 -28 0 z"/>
+      <path d="M236 478 h-36 l4 70 q14 6 28 0 z"/>
+      <path d="M124 348 h32 l-4 96 q-12 6 -24 0 z"/>
+      <path d="M276 348 h-32 l4 96 q12 6 24 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- upper region: throat to waist seam -->
+    <path d="M150 366 q0-22 22-22 h56 q22 0 22 22 v62 h-100 z"
+          fill="url(#toddler-female-costume-harlequin__upper)"/>
+    <!-- lower region: waist seam to crotch -->
+    <path d="M150 428 h100 v34 q0 22 -22 22 h-56 q-22 0 -22-22 z"
+          fill="url(#toddler-female-costume-harlequin__lower)"/>
+    <!-- softly tapered arms and legs, continuous with the body -->
+    <path d="M124 348 h32 l-4 96 q-12 6 -24 0 z" fill="url(#toddler-female-costume-harlequin__armL)"/>
+    <path d="M276 348 h-32 l4 96 q12 6 24 0 z" fill="url(#toddler-female-costume-harlequin__armL)"/>
+    <path d="M164 478 h36 l-4 70 q-14 6 -28 0 z" fill="url(#toddler-female-costume-harlequin__legL)"/>
+    <path d="M236 478 h-36 l4 70 q14 6 28 0 z" fill="url(#toddler-female-costume-harlequin__legL)"/>
+    <!-- soft slippers -->
+    <path d="M166 544 h34 v14 q0 12 -14 12 h-8 q-14 0 -14-12 z" fill="url(#toddler-female-costume-harlequin__ruff)"/>
+    <path d="M234 544 h-34 v14 q0 12 14 12 h8 q14 0 14-12 z" fill="url(#toddler-female-costume-harlequin__ruff)"/>
+  </g>
+
+  <!-- diamond lattice across the whole one-piece -->
+  <g clip-path="url(#toddler-female-costume-harlequin__suitclip)">
+    <rect x="120" y="344" width="160" height="216" fill="url(#toddler-female-costume-harlequin__diamond)"/>
+  </g>
+
+  <!-- the single horizontal waist seam: the load-bearing feature of this outline -->
+  <path d="M148 422 h104 v12 h-104 z" fill="var(--c3, #E4D6BE)"/>
+  <path d="M150 428 h100" stroke="var(--c3, #FFF6E6)" stroke-width="3" fill="none" stroke-opacity="0.8"/>
+
+  <!-- narrow standing collar at the ceiling, and a small soft gathered ruff below it -->
+  <path d="M176 344 q24 10 48 0 v10 q-24 10 -48 0 z" fill="var(--c2, #5F70C0)"/>
+  <g fill="url(#toddler-female-costume-harlequin__ruff)">
+    <circle cx="172" cy="355" r="9"/>
+    <circle cx="186" cy="358" r="9"/>
+    <circle cx="200" cy="359" r="9"/>
+    <circle cx="214" cy="358" r="9"/>
+    <circle cx="228" cy="355" r="9"/>
+  </g>
+
+  <!-- tapered wrist and ankle bands -->
+  <g fill="var(--c3, #E4D6BE)">
+    <path d="M128 434 h24 v8 h-24 z"/>
+    <path d="M248 434 h24 v8 h-24 z"/>
+    <path d="M168 538 h28 v8 h-28 z"/>
+    <path d="M204 538 h28 v8 h-28 z"/>
+  </g>
+
+  <path d="M166 364 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

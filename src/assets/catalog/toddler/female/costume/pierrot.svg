@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. The collaret is a FLAT DISC that
+       spreads outward along the ceiling; it never rises toward the mouth. -->
+  <!-- axes: shoulder=WIDE DRAPED THREE-QUARTER BELL sleeve, widest point of the whole figure ·
+       volume=straight column, widest at the SHOULDER and falling plumb to the ankle.
+       That is the split from the clown romper, which balloons out to its widest at the hip. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FCF5E8)"/>
+      <stop offset="1" stop-color="var(--c1, #DFD3BC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pierrot__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE4CE)"/>
+      <stop offset="1" stop-color="var(--c1, #C3B497)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pierrot__panta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9DDC5)"/>
+      <stop offset="1" stop-color="var(--c1, #BFAF92)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pierrot__collaret" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9AA9E9)"/>
+      <stop offset="1" stop-color="var(--c2, #6273C6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pierrot__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5566B4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- very wide gathered pantaloons, a straight column to the ankle -->
+    <path d="M138 450 H196 V540 q0 16 -18 18 q-24 2 -30-14 q-8-20 -10-54 z"
+          fill="url(#toddler-female-costume-pierrot__panta)"/>
+    <path d="M262 450 H204 V540 q0 16 18 18 q24 2 30-14 q8-20 10-54 z"
+          fill="url(#toddler-female-costume-pierrot__panta)"/>
+
+    <!-- loose straight blouse to the hip, no waist shaping at all -->
+    <path d="M156 344 H244 q12 0 12 14 v106 q-56 16 -112 0 V358 q0-14 12-14 z"
+          fill="url(#toddler-female-costume-pierrot__blouse)"/>
+
+    <!-- wide three-quarter bell sleeves, draped off the shoulder and stopping at the forearm -->
+    <path d="M154 346 q-34 14 -52 68 q26 22 76 4 q-10-38 -6-72 z"
+          fill="url(#toddler-female-costume-pierrot__bell)"/>
+    <path d="M246 346 q34 14 52 68 q-26 22 -76 4 q10-38 6-72 z"
+          fill="url(#toddler-female-costume-pierrot__bell)"/>
+
+    <!-- soft slippers -->
+    <path d="M156 548 h44 v10 q0 12 -14 12 h-16 q-14 0 -14-12 z" fill="url(#toddler-female-costume-pierrot__slipper)"/>
+    <path d="M244 548 h-44 v10 q0 12 14 12 h16 q14 0 14-12 z" fill="url(#toddler-female-costume-pierrot__slipper)"/>
+
+    <!-- large FLAT frilled disc collaret lying on the shoulders, only 24 units deep -->
+    <ellipse cx="200" cy="356" rx="64" ry="12" fill="url(#toddler-female-costume-pierrot__collaret)"/>
+  </g>
+
+  <!-- frilled rim of the collaret -->
+  <g fill="var(--c2, #8B9CE2)">
+    <circle cx="142" cy="358" r="8"/>
+    <circle cx="161" cy="361" r="8"/>
+    <circle cx="180" cy="362" r="8"/>
+    <circle cx="200" cy="362" r="8"/>
+    <circle cx="220" cy="362" r="8"/>
+    <circle cx="239" cy="361" r="8"/>
+    <circle cx="258" cy="358" r="8"/>
+  </g>
+  <path d="M148 352 q52 -6 104 0" stroke="#FFFFFF" stroke-opacity="0.36" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- frilled bell-sleeve edging, riding the curve of the sleeve hem -->
+  <g fill="var(--c2, #8B9CE2)">
+    <circle cx="107" cy="414" r="9"/>
+    <circle cx="123" cy="423" r="9"/>
+    <circle cx="141" cy="427" r="9"/>
+    <circle cx="159" cy="426" r="9"/>
+    <circle cx="175" cy="419" r="9"/>
+    <circle cx="293" cy="414" r="9"/>
+    <circle cx="277" cy="423" r="9"/>
+    <circle cx="259" cy="427" r="9"/>
+    <circle cx="241" cy="426" r="9"/>
+    <circle cx="225" cy="419" r="9"/>
+  </g>
+
+  <!-- blouse hem frill sitting on the pantaloons -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M142 452 q58 18 116 0 v12 q-58 18 -116 0 z"/>
+  </g>
+  <path d="M146 462 q14 12 19 0 q14 12 19 0 q14 12 19 0 q14 12 19 0 q14 12 19 0"
+        stroke="var(--c3, #DFA945)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- gathering at the pantaloon ankles -->
+  <g fill="var(--c3, #F7C873)">
+    <path d="M146 534 q25 12 50 0 v12 q-25 12 -50 0 z"/>
+    <path d="M254 534 q-25 12 -50 0 v12 q25 12 50 0 z"/>
+  </g>
+
+  <!-- the split between the two pantaloon legs -->
+  <path d="M200 484 v74" stroke="var(--c1, #B7A88C)" stroke-width="6" fill="none"
+        stroke-linecap="round" stroke-opacity="0.75"/>
+
+  <!-- long straight column seams down the blouse -->
+  <g stroke="var(--c1, #C9BAA0)" stroke-width="3" fill="none" stroke-opacity="0.7" stroke-linecap="round">
+    <path d="M176 384 v76 M200 380 v80 M224 384 v76"/>
+  </g>
+
+  <path d="M158 378 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

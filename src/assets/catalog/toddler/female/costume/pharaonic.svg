@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. The broad collar stops at the ceiling. -->
+  <!-- axes: shoulder=NONE, a bare torso with only a flat broad collar lying on it ·
+       hem=knee-length pleated linen kilt with a stiff triangular apron standing out in front.
+       Generic period dress only: no cartouche, no crook, no flail, no uraeus, no ruler. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-pharaonic__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFDF)"/>
+      <stop offset="1" stop-color="var(--c1, #DBCFB4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A248)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pharaonic__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7FCFBE)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9F8E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-pharaonic__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FAD68F)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A248)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-costume-pharaonic__kiltclip">
+      <path d="M154 426 h92 q10 0 11 12 l7 70 q-64 18 -128 0 l7-70 q1-12 11-12 z"/>
+    </clipPath>
+    <clipPath id="toddler-female-costume-pharaonic__collarclip">
+      <path d="M144 346 q0 66 56 66 q56 0 56-66 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- finely pleated linen kilt, waist to knee -->
+    <path d="M154 426 h92 q10 0 11 12 l7 70 q-64 18 -128 0 l7-70 q1-12 11-12 z"
+          fill="url(#toddler-female-costume-pharaonic__linen)"/>
+
+    <!-- stiff triangular front apron standing out flat from the body, clear of the kilt hem -->
+    <path d="M186 430 h28 l26 98 q-40 14 -80 0 z" fill="url(#toddler-female-costume-pharaonic__apron)"/>
+
+    <!-- broad flat semicircular collar over both shoulders and the upper chest, 112 units across -->
+    <path d="M144 346 q0 66 56 66 q56 0 56-66 z" fill="url(#toddler-female-costume-pharaonic__collar)"/>
+
+    <!-- wide plain armlets above each elbow -->
+    <rect x="120" y="374" width="38" height="24" rx="8" fill="url(#toddler-female-costume-pharaonic__band)"/>
+    <rect x="242" y="374" width="38" height="24" rx="8" fill="url(#toddler-female-costume-pharaonic__band)"/>
+
+    <!-- flat sandal soles; the legs and feet stay bare -->
+    <rect x="162" y="558" width="42" height="12" rx="6" fill="url(#toddler-female-costume-pharaonic__band)"/>
+    <rect x="196" y="558" width="42" height="12" rx="6" fill="url(#toddler-female-costume-pharaonic__band)"/>
+  </g>
+
+  <!-- fine knife pleats down the kilt -->
+  <g clip-path="url(#toddler-female-costume-pharaonic__kiltclip)">
+    <g stroke="var(--c1, #C6B896)" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M152 428 L145 516"/>
+      <path d="M164 428 L159 518"/>
+      <path d="M176 428 L173 520"/>
+      <path d="M188 428 L187 522"/>
+      <path d="M200 428 L200 522"/>
+      <path d="M212 428 L213 522"/>
+      <path d="M224 428 L227 520"/>
+      <path d="M236 428 L241 518"/>
+      <path d="M248 428 L255 516"/>
+    </g>
+  </g>
+
+  <!-- concentric collar rows, alternating -->
+  <g clip-path="url(#toddler-female-costume-pharaonic__collarclip)">
+    <path d="M156 346 q0 44 44 44 q44 0 44-44 z" fill="var(--c3, #F7C873)" fill-opacity="0.95"/>
+    <path d="M168 346 q0 28 32 28 q32 0 32-28 z" fill="var(--c2, #4E9F8E)" fill-opacity="0.9"/>
+    <g stroke="var(--c1, #F6EFDF)" stroke-width="3.5" fill="none" stroke-opacity="0.75">
+      <path d="M150 346 q0 60 50 60 q50 0 50-60"/>
+      <path d="M162 346 q0 38 38 38 q38 0 38-38"/>
+    </g>
+  </g>
+
+  <!-- narrow beaded belt at the kilt waist -->
+  <path d="M150 420 q50 12 100 0 v14 q-50 12 -100 0 z" fill="url(#toddler-female-costume-pharaonic__band)"/>
+  <g fill="var(--c2, #4E9F8E)">
+    <circle cx="162" cy="428" r="4"/>
+    <circle cx="178" cy="430" r="4"/>
+    <circle cx="194" cy="431" r="4"/>
+    <circle cx="210" cy="431" r="4"/>
+    <circle cx="226" cy="430" r="4"/>
+    <circle cx="242" cy="428" r="4"/>
+  </g>
+
+  <!-- apron edge binding -->
+  <path d="M188 434 l-24 92 M212 434 l24 92" stroke="var(--c2, #4E9F8E)" stroke-width="5"
+        fill="none" stroke-linecap="round" stroke-opacity="0.85"/>
+
+  <path d="M172 358 q28 14 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

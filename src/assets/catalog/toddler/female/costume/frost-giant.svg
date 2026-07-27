@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. No helm, no hood, no mask. -->
+  <!-- axes: closure=CLOSED buttonless knee-length overcoat · volume=bulky and HARD, an angular
+       rime crust breaking out past the outline in spikes over an icicle-tooth hem.
+       Fallback is mint, never blue: the identity is the spikes and the toothed hem, not a colour. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-frost-giant__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #46907F)"/>
+      <stop offset="0.45" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E4F5EE)"/>
+      <stop offset="1" stop-color="var(--c2, #B3DACC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-frost-giant__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7A7469)"/>
+      <stop offset="1" stop-color="var(--c3, #565149)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-frost-giant__chip" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <path d="M4 14 L10 4 L15 13 Z" fill="var(--c2, #E4F5EE)" fill-opacity="0.24"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-frost-giant__coatclip">
+      <path d="M164 344 H236 q26 4 30 34 L272 500 L261 544 L248 498 L234 538 L218 502 L204 548 L188 498 L174 536 L158 500 L145 542 L134 498 L138 378 q4-30 26-34 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thickly wrapped legs, drawn first so the coat teeth fall over them -->
+    <path d="M158 466 h42 v86 q0 18 -14 18 h-14 q-14 0 -14-18 z" fill="url(#toddler-female-costume-frost-giant__wrap)"/>
+    <path d="M242 466 h-42 v86 q0 18 14 18 h14 q14 0 14-18 z" fill="url(#toddler-female-costume-frost-giant__wrap)"/>
+
+    <!-- closed knee-length overcoat, hem cut into uneven icicle teeth 38 to 46 units deep -->
+    <path d="M164 344 H236 q26 4 30 34 L272 500 L261 544 L248 498 L234 538 L218 502 L204 548 L188 498 L174 536 L158 500 L145 542 L134 498 L138 378 q4-30 26-34 z"
+          fill="url(#toddler-female-costume-frost-giant__coat)"/>
+
+    <!-- bulky sleeves and mittens -->
+    <rect x="110" y="348" width="44" height="110" rx="20" fill="url(#toddler-female-costume-frost-giant__sleeve)"/>
+    <rect x="246" y="348" width="44" height="110" rx="20" fill="url(#toddler-female-costume-frost-giant__sleeve)"/>
+    <circle cx="132" cy="458" r="19" fill="url(#toddler-female-costume-frost-giant__sleeve)"/>
+    <circle cx="268" cy="458" r="19" fill="url(#toddler-female-costume-frost-giant__sleeve)"/>
+
+    <!-- angular rime plates breaking OUT past the outline, 26 to 32 units clear -->
+    <g fill="url(#toddler-female-costume-frost-giant__rime)">
+      <path d="M112 356 L84 366 L112 384 z"/>
+      <path d="M110 392 L78 404 L112 420 z"/>
+      <path d="M114 428 L88 446 L118 458 z"/>
+      <path d="M136 470 L106 482 L138 498 z"/>
+      <path d="M288 356 L316 366 L288 384 z"/>
+      <path d="M290 392 L322 404 L288 420 z"/>
+      <path d="M286 428 L312 446 L282 458 z"/>
+      <path d="M264 470 L294 482 L262 498 z"/>
+    </g>
+
+    <!-- thick shaggy shoulder collar: a band at the ceiling plus a hanging tuft fringe -->
+    <path d="M144 344 q56 28 112 0 v22 q-56 30 -112 0 z" fill="url(#toddler-female-costume-frost-giant__rime)"/>
+    <g fill="var(--c2, #AFD6C7)">
+      <path d="M148 370 L154 394 L162 372 z"/>
+      <path d="M162 372 L170 398 L178 375 z"/>
+      <path d="M178 375 L186 400 L194 377 z"/>
+      <path d="M194 377 L202 400 L210 377 z"/>
+      <path d="M210 377 L218 398 L226 374 z"/>
+      <path d="M226 374 L234 394 L242 370 z"/>
+    </g>
+  </g>
+
+  <!-- frost chip texture across the coat -->
+  <g clip-path="url(#toddler-female-costume-frost-giant__coatclip)">
+    <rect x="132" y="344" width="142" height="206" fill="url(#toddler-female-costume-frost-giant__chip)"/>
+  </g>
+
+  <!-- angular chest crust: flat shards sitting on the coat front -->
+  <g fill="var(--c2, #E4F5EE)" fill-opacity="0.6">
+    <path d="M152 418 L186 392 L190 416 L168 442 z"/>
+    <path d="M198 396 L236 390 L234 416 L206 428 z"/>
+    <path d="M160 448 L198 430 L196 456 L170 466 z"/>
+    <path d="M210 436 L244 426 L246 450 L214 458 z"/>
+  </g>
+
+  <!-- narrow stone waist band -->
+  <path d="M142 470 q58 14 116 0 v12 q-58 14 -116 0 z" fill="var(--c3, #8B857A)"/>
+
+  <!-- crossed leg bindings -->
+  <g stroke="var(--c3, #3F3B35)" stroke-width="5" fill="none" stroke-linecap="round" stroke-opacity="0.65">
+    <path d="M160 486 q20 10 40 0 M160 508 q20 10 40 0 M160 530 q20 10 40 0"/>
+    <path d="M200 486 q20 10 40 0 M200 508 q20 10 40 0 M200 530 q20 10 40 0"/>
+  </g>
+
+  <path d="M164 362 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

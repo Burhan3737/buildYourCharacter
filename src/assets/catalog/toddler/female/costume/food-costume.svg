@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Food Costume" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. The stalk finial stops well below it. -->
+  <!-- axes: shoulder=TWO NARROW STRAPS ONLY, the garment hangs free off them and touches
+       nothing else · volume=one large convex slab, 144 units across, with the arms and legs
+       entirely OUTSIDE it. Generic fruit shape only: no brand, no character, no face on it. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F9B4A6)"/>
+      <stop offset="1" stop-color="var(--c1, #D06E5B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #85D3C1)"/>
+      <stop offset="1" stop-color="var(--c2, #4A9683)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-food-costume__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FDF3DF)"/>
+      <stop offset="1" stop-color="var(--c3, #DECFAF)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-food-costume__skin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)"/>
+      <stop offset="0.45" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <clipPath id="toddler-female-costume-food-costume__slabclip">
+      <path d="M200 366 q56 0 70 44 q14 44 -6 74 q-22 30 -64 30 q-42 0 -64-30 q-20-30 -6-74 q14-44 70-44 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two narrow shoulder straps -->
+    <rect x="169" y="344" width="15" height="44" rx="7" fill="url(#toddler-female-costume-food-costume__strap)"/>
+    <rect x="216" y="344" width="15" height="44" rx="7" fill="url(#toddler-female-costume-food-costume__strap)"/>
+
+    <!-- one large convex slab hung free, torso to mid-thigh -->
+    <path d="M200 366 q56 0 70 44 q14 44 -6 74 q-22 30 -64 30 q-42 0 -64-30 q-20-30 -6-74 q14-44 70-44 z"
+          fill="url(#toddler-female-costume-food-costume__slab)"/>
+
+    <!-- stalk and leaf finial standing at the top edge of the slab -->
+    <path d="M196 386 h10 v-30 q0-6 -5-6 q-5 0 -5 6 z" fill="url(#toddler-female-costume-food-costume__leaf)"/>
+    <path d="M204 356 q20-10 32 -2 q-12 14 -32 4 z" fill="url(#toddler-female-costume-food-costume__leaf)"/>
+  </g>
+
+  <!-- rind seams following the convex face of the slab -->
+  <g clip-path="url(#toddler-female-costume-food-costume__slabclip)">
+    <g stroke="var(--c1, #B85C4A)" stroke-width="4" fill="none" stroke-opacity="0.4" stroke-linecap="round">
+      <path d="M200 372 q-34 68 -6 142"/>
+      <path d="M200 372 q34 68 6 142"/>
+      <path d="M200 372 q-64 62 -52 130"/>
+      <path d="M200 372 q64 62 52 130"/>
+    </g>
+    <path d="M160 400 q34-24 74-22" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="12"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- strap buckle tabs where the straps meet the slab -->
+  <g fill="var(--c3, #C8B892)">
+    <rect x="166" y="374" width="21" height="11" rx="5"/>
+    <rect x="213" y="374" width="21" height="11" rx="5"/>
+  </g>
+
+  <!-- the arms and the legs are OUTSIDE the slab: they are repainted over it in skin so that
+       the "board hung round the neck" read survives at thumbnail size -->
+  <g fill="url(#toddler-female-costume-food-costume__skin)">
+    <rect x="126" y="350" width="26" height="92" rx="13"/>
+    <rect x="248" y="350" width="26" height="92" rx="13"/>
+    <circle cx="139" cy="442" r="15"/>
+    <circle cx="261" cy="442" r="15"/>
+    <rect x="169" y="500" width="28" height="46" rx="14"/>
+    <rect x="203" y="500" width="28" height="46" rx="14"/>
+    <rect x="166" y="544" width="34" height="26" rx="13"/>
+    <rect x="200" y="544" width="34" height="26" rx="13"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="3" fill="none" stroke-opacity="0.36" stroke-linecap="round">
+    <path d="M172 548 h22 M206 548 h22"/>
+  </g>
+</svg>

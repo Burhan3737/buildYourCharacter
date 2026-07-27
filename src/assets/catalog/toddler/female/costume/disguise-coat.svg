@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       The turned-up collar rises to the ceiling and STOPS: it frames the jaw from the sides and
+       never reaches the mouth. Nothing in this file has any geometry above y = 344. -->
+  <!-- axes: closure=BUTTONED TO THE THROAT and belted shut, no opening anywhere · volume=a
+       straight over-wide column falling plumb from the shoulder to a mid-calf hem, with no
+       hands visible: the sleeves end in pocket openings. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DED2B4)"/>
+      <stop offset="1" stop-color="var(--c1, #B0A17E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-disguise-coat__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #B0A17E)"/>
+      <stop offset="0.45" stop-color="var(--c1, #DED2B4)"/>
+      <stop offset="1" stop-color="var(--c1, #B0A17E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-disguise-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9C927B)"/>
+      <stop offset="1" stop-color="var(--c2, #746B57)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-disguise-coat__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #837A64)"/>
+      <stop offset="1" stop-color="var(--c2, #5C5443)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-disguise-coat__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7B6AA)"/>
+      <stop offset="1" stop-color="var(--c3, #D0705E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- boots, showing below the mid-calf hem -->
+    <path d="M158 522 h44 v36 q0 12 -14 12 h-16 q-14 0 -14-12 z" fill="url(#toddler-female-costume-disguise-coat__boot)"/>
+    <path d="M242 522 h-44 v36 q0 12 14 12 h16 q14 0 14-12 z" fill="url(#toddler-female-costume-disguise-coat__boot)"/>
+
+    <!-- long straight over-wide coat, closed all the way up, hem at mid-calf -->
+    <path d="M156 344 h88 q16 0 16 20 v168 q-60 16 -120 0 V364 q0-20 16-20 z"
+          fill="url(#toddler-female-costume-disguise-coat__coat)"/>
+
+    <!-- sleeves ending in pocket openings: no hands anywhere -->
+    <rect x="112" y="350" width="42" height="122" rx="18" fill="url(#toddler-female-costume-disguise-coat__sleeve)"/>
+    <rect x="246" y="350" width="42" height="122" rx="18" fill="url(#toddler-female-costume-disguise-coat__sleeve)"/>
+
+    <!-- wide collar turned UP around the jaw line, stopping dead at the ceiling -->
+    <path d="M160 392 q0-48 32-48 h8 v34 q-22 4 -40 14 z" fill="url(#toddler-female-costume-disguise-coat__collar)"/>
+    <path d="M240 392 q0-48 -32-48 h-8 v34 q22 4 40 14 z" fill="url(#toddler-female-costume-disguise-coat__collar)"/>
+  </g>
+
+  <!-- collar roll edge -->
+  <g stroke="var(--c1, #EFE5CB)" stroke-width="4" fill="none" stroke-opacity="0.6" stroke-linecap="round">
+    <path d="M166 388 q4-36 28-40"/>
+    <path d="M234 388 q-4-36 -28-40"/>
+  </g>
+
+  <!-- two oversized buttons closing the coat right up to the throat -->
+  <g fill="url(#toddler-female-costume-disguise-coat__belt)">
+    <circle cx="200" cy="384" r="10"/>
+    <circle cx="200" cy="414" r="10"/>
+  </g>
+  <path d="M200 376 v82" stroke="var(--c1, #90836B)" stroke-width="4" fill="none"
+        stroke-opacity="0.45" stroke-linecap="round"/>
+
+  <!-- tie belt knotted at the front, tails hanging free -->
+  <path d="M139 436 q61 14 122 0 v18 q-61 14 -122 0 z" fill="url(#toddler-female-costume-disguise-coat__belt)"/>
+  <path d="M186 434 q14-6 28 0 q4 14 -3 20 q-11 5 -22 0 q-7-6 -3-20 z" fill="var(--c3, #F7B6AA)"/>
+  <g fill="var(--c3, #D0705E)">
+    <path d="M190 454 h9 l-2 24 h-6 z"/>
+    <path d="M201 454 h9 l2 24 h-6 z"/>
+  </g>
+
+  <!-- pocket openings where the hands would be -->
+  <g fill="var(--c2, #6B6250)">
+    <rect x="112" y="452" width="42" height="14" rx="6"/>
+    <rect x="246" y="452" width="42" height="14" rx="6"/>
+  </g>
+
+  <!-- welted slash pockets low on the coat -->
+  <g fill="var(--c2, #6B6250)" fill-opacity="0.55">
+    <path d="M150 478 h36 v12 h-36 z"/>
+    <path d="M214 478 h36 v12 h-36 z"/>
+  </g>
+
+  <!-- straight column seams: the coat never breaks its vertical -->
+  <g stroke="var(--c1, #968867)" stroke-width="3" fill="none" stroke-opacity="0.45" stroke-linecap="round">
+    <path d="M162 400 v128 M238 400 v128"/>
+  </g>
+
+  <!-- deep hem band -->
+  <path d="M140 512 q60 16 120 0 v20 q-60 16 -120 0 z" fill="var(--c2, #8B8168)"/>
+
+  <path d="M168 366 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

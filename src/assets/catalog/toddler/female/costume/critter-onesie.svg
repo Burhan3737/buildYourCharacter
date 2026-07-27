@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Critter Onesie" data-family="critter-onesie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/female costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. The hood is worn DOWN as a thick
+       fabric roll lying flat across the shoulders: no ears, no muzzle, no snout, nothing over
+       the face. Animal ears are a separate headwear family. -->
+  <!-- axes: closure=FULL-LENGTH CENTRE ZIP from throat to seat · volume=thick straight-sided
+       plush all-in-one running unbroken from the shoulder to the ground.
+       That is the split from the dino onesie, which is a soft seamless egg with no closure. -->
+  <defs>
+    <linearGradient id="toddler-female-costume-critter-onesie__plush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8B75E)"/>
+      <stop offset="1" stop-color="var(--c1, #B98736)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-critter-onesie__limb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #B98736)"/>
+      <stop offset="0.45" stop-color="var(--c1, #E8B75E)"/>
+      <stop offset="1" stop-color="var(--c1, #B98736)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-critter-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C99841)"/>
+      <stop offset="1" stop-color="var(--c1, #96692A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-critter-onesie__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FDF3DF)"/>
+      <stop offset="1" stop-color="var(--c2, #E4D5B6)"/>
+    </linearGradient>
+    <linearGradient id="toddler-female-costume-critter-onesie__zip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7B6AA)"/>
+      <stop offset="1" stop-color="var(--c3, #D97C6B)"/>
+    </linearGradient>
+    <pattern id="toddler-female-costume-critter-onesie__fleck" patternUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+      <path d="M3 12 q5 -9 10 0" fill="none" stroke="var(--c2, #FDF3DF)"
+            stroke-width="2.4" stroke-opacity="0.4"/>
+    </pattern>
+    <clipPath id="toddler-female-costume-critter-onesie__bodyclip">
+      <path d="M144 374 q0-30 28-30 h56 q28 0 28 30 v82 q0 26 -28 26 h-56 q-28 0 -28-26 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft hood lying FLAT DOWN across the shoulders, a thick fabric roll behind the neck -->
+    <path d="M150 344 q50 30 100 0 q10 34 -14 50 q-36 16 -72 0 q-24-16 -14-50 z"
+          fill="url(#toddler-female-costume-critter-onesie__hood)"/>
+
+    <!-- short round tail at the hip -->
+    <circle cx="270" cy="466" r="23" fill="url(#toddler-female-costume-critter-onesie__belly)"/>
+
+    <!-- thick plush all-in-one: straight sides, shoulder to seat -->
+    <path d="M144 374 q0-30 28-30 h56 q28 0 28 30 v82 q0 26 -28 26 h-56 q-28 0 -28-26 z"
+          fill="url(#toddler-female-costume-critter-onesie__plush)"/>
+
+    <!-- bulky plush arms and legs, straight to the ground -->
+    <rect x="110" y="348" width="44" height="102" rx="21" fill="url(#toddler-female-costume-critter-onesie__limb)"/>
+    <rect x="246" y="348" width="44" height="102" rx="21" fill="url(#toddler-female-costume-critter-onesie__limb)"/>
+    <rect x="154" y="474" width="45" height="96" rx="21" fill="url(#toddler-female-costume-critter-onesie__limb)"/>
+    <rect x="201" y="474" width="45" height="96" rx="21" fill="url(#toddler-female-costume-critter-onesie__limb)"/>
+  </g>
+
+  <!-- plush fleck texture over the body -->
+  <g clip-path="url(#toddler-female-costume-critter-onesie__bodyclip)">
+    <rect x="142" y="344" width="116" height="142" fill="url(#toddler-female-costume-critter-onesie__fleck)"/>
+  </g>
+
+  <!-- contrast belly panel -->
+  <path d="M170 384 q30-10 60 0 v62 q0 28 -30 28 q-30 0 -30-28 z"
+        fill="url(#toddler-female-costume-critter-onesie__belly)"/>
+
+  <!-- full-length centre zip, throat to seat, with a fat pull -->
+  <rect x="194" y="352" width="12" height="120" rx="5" fill="url(#toddler-female-costume-critter-onesie__zip)"/>
+  <path d="M200 356 v112" stroke="var(--c1, #8C6524)" stroke-width="2.6" fill="none"
+        stroke-opacity="0.55" stroke-linecap="round"/>
+  <rect x="192" y="348" width="16" height="14" rx="5" fill="var(--c3, #D97C6B)"/>
+  <rect x="196" y="358" width="8" height="18" rx="4" fill="var(--c3, #F7B6AA)"/>
+
+  <!-- bulky cuffed wrists and ankles -->
+  <g fill="url(#toddler-female-costume-critter-onesie__belly)">
+    <rect x="108" y="428" width="48" height="20" rx="9"/>
+    <rect x="244" y="428" width="48" height="20" rx="9"/>
+    <rect x="150" y="530" width="52" height="20" rx="9"/>
+    <rect x="198" y="530" width="52" height="20" rx="9"/>
+  </g>
+
+  <!-- hood roll seam, sitting on the shoulders -->
+  <path d="M156 356 q44 30 88 0" stroke="var(--c2, #F6EAD2)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-opacity="0.85"/>
+
+  <!-- tail highlight -->
+  <path d="M258 456 q12 -6 22 2" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M166 400 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
