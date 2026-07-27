@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes vs the slot: CROWN - bare. There is no cap, no dome and no mass of any kind; the
+       skull and both ears are fully exposed and the only drawn forms are a soft shadow at the
+       nape and a faint trace at each temple where the hairline used to sit.
+       VOLUME of the outline - none. Nothing in this file rises above the skull or clears its
+       edge, which is exactly what separates it from the shortest crop in the slot. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-female-hair-smooth-scalp__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #6B584C)"/>
+        <stop offset="1" stop-color="var(--hair2, #3B2E26)"/>
+      </linearGradient>
+    </defs>
+    <!-- a soft shadow sitting where the nape would be, not a skull cap -->
+    <g class="sp-shadow">
+      <path d="M160 118 C156 134 164 148 180 154 C193 158 207 158 220 154 C236 148 244 134 240 118
+               C232 132 216 140 200 140 C184 140 168 132 160 118 Z"
+            fill="url(#adult-female-hair-smooth-scalp__back-g)" fill-opacity="0.75"/>
+    </g>
+    <path d="M170 130 C182 140 218 140 230 130 C224 148 176 148 170 130 Z"
+          fill="var(--hair2, #3B2E26)" fill-opacity="0.5"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-female-hair-smooth-scalp__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #3B2E26)" stop-opacity="0.55"/>
+        <stop offset="1" stop-color="var(--hair2, #3B2E26)" stop-opacity="0.05"/>
+      </linearGradient>
+    </defs>
+    <!-- the faint trace of a hairline at each temple, and nothing else -->
+    <g class="sp-shadow">
+      <path d="M148 62 C143 71 141 82 143 93 C147 84 151 73 158 66 Z"
+            fill="url(#adult-female-hair-smooth-scalp__front-g)"/>
+      <path d="M252 62 C257 71 259 82 257 93 C253 84 249 73 242 66 Z"
+            fill="url(#adult-female-hair-smooth-scalp__front-g)"/>
+    </g>
+    <!-- where the hairline would have run, read as a whisper rather than an edge -->
+    <path d="M152 76 C168 58 232 58 248 76" stroke="var(--hair2, #3B2E26)"
+          stroke-opacity="0.28" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M164 86 C178 74 222 74 236 86" stroke="var(--hair1, #6B584C)"
+          stroke-opacity="0.16" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the bare crown catching the light -->
+    <path d="M166 46 C184 32 216 32 234 46" stroke="#FFFFFF" stroke-opacity="0.32"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M176 60 C188 52 212 52 224 60" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

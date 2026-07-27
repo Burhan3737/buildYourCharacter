@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes vs the slot: CROWN - faded sides under a slightly longer flat top, with a hard
+       ruler straight front hairline and squared temple corners, no part anywhere.
+       VOLUME of the outline - skull close all round, nothing clears the temples, and the
+       side panels thin to nothing at the skin line. The fade is a value ramp built into the
+       hair itself: the hair2 shadow sits at the skin line and climbs to hair1 at the crop. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-female-hair-taper-fade__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3A2A20)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #1D140F)"/>
+        <stop offset="1" stop-color="var(--hair2, #1D140F)" stop-opacity="0.28"/>
+      </linearGradient>
+    </defs>
+    <!-- the nape taper: the same value ramp wrapping round the back of the head -->
+    <g class="sp-shadow">
+      <path d="M170 118 C164 134 172 150 186 156 C195 159 205 159 214 156 C228 150 236 134 230 118
+               C222 132 208 138 200 138 C192 138 178 132 170 118 Z"
+            fill="url(#adult-female-hair-taper-fade__back-f)"/>
+    </g>
+    <path d="M176 126 C186 136 214 136 224 126 C220 142 180 142 176 126 Z"
+          fill="var(--hair2, #1D140F)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-female-hair-taper-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3A2A20)"/>
+        <stop offset="1" stop-color="var(--hair2, #1D140F)"/>
+      </linearGradient>
+      <!-- the fade: lit hair at the top of the panel, bare shadow at the skin line -->
+      <linearGradient id="adult-female-hair-taper-fade__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3A2A20)"/>
+        <stop offset="0.42" stop-color="var(--hair2, #1D140F)"/>
+        <stop offset="1" stop-color="var(--hair2, #1D140F)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the slightly longer flat top, cut off square at the front hairline -->
+      <path d="M151 63 C150 45 157 33 175 30 C192 27 208 27 225 30 C243 33 250 45 249 63 Z"
+            fill="url(#adult-female-hair-taper-fade__front-g)"/>
+      <!-- faded temple panels, thinning away at the skin line -->
+      <path d="M150 61 C143 73 140 90 141 107 C142 114 152 114 153 107 C153 90 156 75 162 65 Z"
+            fill="url(#adult-female-hair-taper-fade__front-f)"/>
+      <path d="M250 61 C257 73 260 90 259 107 C258 114 248 114 247 107 C247 90 244 75 238 65 Z"
+            fill="url(#adult-female-hair-taper-fade__front-f)"/>
+    </g>
+    <!-- the lineup: a razor straight hairline seam with squared temple corners -->
+    <rect x="152" y="57" width="96" height="6" fill="var(--hair2, #1D140F)"/>
+    <path d="M152 63 L152 46 C152 39 158 35 166 33 C158 36 155 40 155 47 L155 63 Z"
+          fill="var(--hair2, #1D140F)"/>
+    <path d="M248 63 L248 46 C248 39 242 35 234 33 C242 36 245 40 245 47 L245 63 Z"
+          fill="var(--hair2, #1D140F)"/>
+    <!-- the taper over the ear: the last of the shadow before bare skin -->
+    <path d="M144 84 C142 94 142 102 143 108 C146 100 147 92 149 84 Z"
+          fill="var(--hair2, #1D140F)"/>
+    <path d="M256 84 C258 94 258 102 257 108 C254 100 253 92 251 84 Z"
+          fill="var(--hair2, #1D140F)"/>
+    <path d="M170 38 C184 33 216 33 230 38" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M156 70 C154 82 153 94 154 104" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M244 70 C246 82 247 94 246 104" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

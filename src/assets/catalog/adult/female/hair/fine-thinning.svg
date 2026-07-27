@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fine Thinning" data-family="fine-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes vs the slot: VOLUME and texture of the outline - the mass is cut into separated
+       veils with real air between them, so the scalp is negative space in the silhouette itself
+       rather than a texture laid over a solid shape. The hairline stays intact as one unbroken
+       band, so there are no temple bays.
+       LENGTH - kept full, falling to the waist, but each veil stops at its own height so the hem
+       is a stagger rather than a line. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-female-hair-fine-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #9C9088)"/>
+        <stop offset="1" stop-color="var(--hair2, #635850)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M132 92 C122 142 120 192 126 234 L152 236 C146 192 146 144 150 94 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+      <path d="M158 86 C150 140 149 196 155 242 L180 240 C174 196 173 140 178 88 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+      <path d="M182 84 C177 138 177 198 182 250 L196 248 C193 198 192 138 194 86 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+      <path d="M206 86 C209 138 210 198 205 250 L219 252 C224 198 224 138 218 88 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+      <path d="M222 88 C228 140 229 196 223 242 L248 244 C254 196 253 140 242 90 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+      <path d="M250 92 C260 142 262 192 256 234 L278 232 C284 192 282 144 270 94 Z"
+            fill="url(#adult-female-hair-fine-thinning__back-g)"/>
+    </g>
+    <!-- the shaded inner edge of each veil: what little weight is left reads as depth -->
+    <path d="M144 116 C137 162 137 206 142 236 C144 204 142 162 148 118 Z"
+          fill="var(--hair2, #635850)"/>
+    <path d="M166 112 C161 160 161 208 166 242 C168 206 166 160 170 114 Z"
+          fill="var(--hair2, #635850)"/>
+    <path d="M234 112 C239 160 239 208 234 242 C232 206 234 160 230 114 Z"
+          fill="var(--hair2, #635850)"/>
+    <path d="M256 116 C263 162 263 206 258 234 C256 204 258 162 252 118 Z"
+          fill="var(--hair2, #635850)"/>
+    <path d="M156 66 C176 54 224 54 244 66" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-female-hair-fine-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #9C9088)"/>
+        <stop offset="1" stop-color="var(--hair2, #635850)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the hairline survives as one unbroken band: no bays, no recession -->
+      <path d="M142 96 C144 84 152 76 166 72 C180 68 220 68 234 72 C248 76 256 84 258 96
+               C252 86 242 80 228 78 C214 75 186 75 172 78 C158 80 148 86 142 96 Z"
+            fill="url(#adult-female-hair-fine-thinning__front-g)"/>
+      <!-- four broad crown veils; the scalp shows in the gaps cut between them -->
+      <path d="M194 32 C176 40 158 52 148 66 C144 74 142 80 142 86 L166 86
+               C167 78 172 68 181 58 C190 47 198 38 200 34 Z"
+            fill="url(#adult-female-hair-fine-thinning__front-g)"/>
+      <path d="M197 26 C190 38 182 52 176 64 C171 74 170 80 170 86 L197 86
+               C197 76 198 62 199 48 C200 36 200 28 200 26 Z"
+            fill="url(#adult-female-hair-fine-thinning__front-g)"/>
+      <path d="M203 26 C210 38 218 52 224 64 C229 74 230 80 230 86 L203 86
+               C203 76 202 62 201 48 C200 36 200 28 200 26 Z"
+            fill="url(#adult-female-hair-fine-thinning__front-g)"/>
+      <path d="M206 32 C224 40 242 52 252 66 C256 74 258 80 258 86 L234 86
+               C233 78 228 68 219 58 C210 47 202 38 200 34 Z"
+            fill="url(#adult-female-hair-fine-thinning__front-g)"/>
+    </g>
+    <!-- the parting: bare scalp on the centre line, widening across the crown -->
+    <path d="M200 30 C199 46 199 64 200 82" stroke="var(--skin1, #F7D2B0)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M188 42 C182 52 178 64 176 80" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M212 42 C218 52 222 64 224 80" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- the shadow the sparse hairline casts on the forehead -->
+    <path d="M148 90 C168 80 232 80 252 90 C232 84 168 84 148 90 Z"
+          fill="var(--hair2, #635850)"/>
+    <path d="M172 32 C186 26 214 26 228 32" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

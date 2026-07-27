@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Undercut Sweep" data-family="undercut-sweep" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- axes vs the slot: CROWN - a hard horizontal disconnect at y 62 with shaved skin close
+       sides below it, the whole top section rooted on the left of that line. VOLUME of the
+       outline - the mass is deliberately one sided, all of it swept across and falling past the
+       right cheek to y 158, so the silhouette is asymmetric where every other crop in the slot
+       is balanced. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="adult-female-hair-undercut-sweep__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4B3B58)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #241B2E)"/>
+        <stop offset="1" stop-color="var(--hair2, #241B2E)" stop-opacity="0.3"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the shaved nape carrying the same value ramp round the back -->
+      <path d="M156 100 C150 118 158 138 176 146 C190 152 210 152 224 146 C242 138 250 118 244 100
+               C236 120 220 130 200 130 C180 130 164 120 156 100 Z"
+            fill="url(#adult-female-hair-undercut-sweep__back-f)"/>
+    </g>
+    <path d="M164 116 C176 130 224 130 236 116 C230 138 170 138 164 116 Z"
+          fill="var(--hair2, #241B2E)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="adult-female-hair-undercut-sweep__front-g" x1="0" y1="0" x2="0.6" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4B3B58)"/>
+        <stop offset="1" stop-color="var(--hair2, #241B2E)"/>
+      </linearGradient>
+      <linearGradient id="adult-female-hair-undercut-sweep__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #241B2E)"/>
+        <stop offset="1" stop-color="var(--hair2, #241B2E)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the swept top: rooted at the left disconnect, falling past the right cheek -->
+      <path d="M148 64 C146 38 164 20 196 20 C230 20 256 36 262 66 C268 96 268 124 260 148
+               C256 158 244 158 242 148 C248 122 248 96 240 76 C226 62 198 58 172 62
+               C162 64 152 66 148 64 Z"
+            fill="url(#adult-female-hair-undercut-sweep__front-g)"/>
+      <!-- the shaved left side, below the disconnect -->
+      <path d="M150 66 C142 80 139 98 142 116 C144 122 152 122 153 114 C151 96 154 80 161 68 Z"
+            fill="url(#adult-female-hair-undercut-sweep__front-f)"/>
+    </g>
+    <!-- the disconnect line itself, and the sweep grain running across the top -->
+    <rect x="146" y="60" width="20" height="5" rx="2.5" fill="var(--hair2, #241B2E)"/>
+    <path d="M160 60 C186 52 216 54 238 68 C216 60 186 58 160 66 Z"
+          fill="var(--hair2, #241B2E)"/>
+    <path d="M252 84 C258 108 259 132 254 152 C252 132 252 108 246 86 Z"
+          fill="var(--hair2, #241B2E)"/>
+    <path d="M144 92 C143 104 144 112 146 118 C147 108 145 100 147 92 Z"
+          fill="var(--hair2, #241B2E)"/>
+    <path d="M170 44 C196 30 230 34 248 56" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M254 92 C260 114 261 134 257 150" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
