@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece, never in costume: a costume would hide the shoes and for
+       formalwear the shoes are the look.
+       THE VEIL IS HEAD ART AND LIVES IN HEADWEAR. Do not draw one here.
+       This gown must still read as a wedding gown when a player recolours it black. White is a
+       default, not an identity, so the TRUMPET LINE and the TRAIN carry it, and both are drawn
+       to measure rather than implied. The column is 64 units wide at x 168 to 232 and holds
+       that width unbroken from the shoulder to y 504, which is level with this bundle's knee
+       at y 513; it then breaks at a hard angle to 180 units at x 110 to 290 on the ground line.
+       The train is a separate fan sweeping out behind one hip to x 344. Fallback is ivory on
+       stone, clear of the pale blue, yellow and pink with gold palettes that belong to named
+       animated princesses.
+       axes vs. ball gown and the maxi length dresses: volume=FITTED TO THE KNEE THEN A HARD
+       TRUMPET BREAK, an hourglass where the ball gown is a dome springing from the waist;
+       and shoulder=LONG SHEER SET-IN SLEEVES under a high round neck, where the ball gown is
+       strapless. Tools: trim (neck binding, cuffs and hem band) plus structural (princess
+       seams and the train). -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-bridal-gown__satin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #CFBDA2)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-bridal-gown__train" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #CFBDA2)"/>
+      <stop offset="1" stop-color="var(--c1, #F7F0E4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-bridal-gown__sheer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7F0E4)" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="var(--c2, #CFBDA2)" stop-opacity="0.46"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the train, a fan sweeping out behind one hip and pooling on the ground line -->
+  <g class="sp-shadow">
+    <path d="M226 478 C280 494 322 528 340 558 q6 8 -4 10 H236 q-8 -46 -10 -90 Z"
+          fill="url(#toddler-male-onepiece-bridal-gown__train)"/>
+  </g>
+
+  <!-- long sheer set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M122 358 q4 -14 24 -14 h12 v88 q0 8 -8 8 h-21 q-8 0 -8 -10 z"
+          fill="url(#toddler-male-onepiece-bridal-gown__sheer)"/>
+    <path d="M278 358 q-4 -14 -24 -14 h-12 v88 q0 8 8 8 h21 q8 0 8 -10 z"
+          fill="url(#toddler-male-onepiece-bridal-gown__sheer)"/>
+  </g>
+
+  <!-- a narrow column held unbroken to the knee, then a hard trumpet break -->
+  <g class="sp-shadow">
+    <path d="M168 352 Q168 344 178 344 H222 Q232 344 232 352
+             V430 Q234 470 232 504
+             L272 540 Q288 554 290 564 q2 6 -8 6 H118 q-10 0 -8 -6
+             Q112 554 128 540 L168 504
+             Q166 470 168 430 Z"
+          fill="url(#toddler-male-onepiece-bridal-gown__satin)"/>
+  </g>
+
+  <!-- high round neckline, bound -->
+  <path d="M180 344 q20 20 40 0 q-6 18 -20 18 q-14 0 -20 -18 z" fill="var(--c2, #CFBDA2)"/>
+  <path d="M178 346 q22 22 44 0" stroke="var(--c3, #E7D2C6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- princess seams running the whole fitted column into the break -->
+  <g stroke="var(--c2, #CFBDA2)" stroke-opacity="0.65" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M184 366 q-3 68 -3 134"/>
+    <path d="M216 366 q3 68 3 134"/>
+  </g>
+
+  <!-- the trumpet break itself, marked hard so it reads in any colour -->
+  <path d="M168 504 q32 8 64 0" stroke="var(--c3, #E7D2C6)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <g stroke="var(--c2, #CFBDA2)" stroke-opacity="0.45" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M164 514 L136 554"/>
+    <path d="M236 514 L264 554"/>
+    <path d="M200 510 V560"/>
+  </g>
+
+  <!-- sheer sleeve cuffs -->
+  <g stroke="var(--c3, #E7D2C6)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M123 434 h34"/>
+    <path d="M243 434 h34"/>
+  </g>
+
+  <!-- hem band tying the trumpet and the train together on the ground line -->
+  <path d="M112 556 q92 18 176 0 q28 4 52 4 l0 10 h-232 z" fill="var(--c3, #E7D2C6)"/>
+
+  <path d="M176 372 q24 8 48 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 532 q16 6 30 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

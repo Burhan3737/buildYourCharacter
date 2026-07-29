@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece, never in costume: a costume would hide the shoes and for
+       formalwear the shoes are the look.
+       DO NOT ADD A POWDERED WIG. That is hair and it is out of scope for this file.
+       axes vs. ball gown and party dress: volume=HELD WIDE SIDE TO SIDE ON A PANIER, so the
+       skirt juts almost horizontally out of the waist to x 104 and x 296 by y 490 and then
+       drops nearly vertically to the ground, giving a mushroom rather than the ball gown's
+       cone; and closure=THE ROBE FRONT HANGS OPEN over a triangular stomacher, so the front is
+       three blocks rather than one closed bodice. Sleeves are elbow length pagodas in stacked
+       ruffle cuffs, against bare shoulders and cap sleeves respectively.
+       Tools: panel blocking (stomacher and petticoat wedge against the robe) plus structural
+       (three stacked cuff ruffles and two loose box pleats from the shoulders). -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-sack-gown__silk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #55669C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-onepiece-sack-gown__petti" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EEE0)"/>
+      <stop offset="1" stop-color="var(--c3, #F6EEE0)" stop-opacity="0.86"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the panier skirt: out fast to the sides, then almost straight down to the ground -->
+  <g class="sp-shadow">
+    <path d="M152 424 H248 Q278 428 288 458 Q298 478 296 498 Q300 534 298 560
+             q2 8 -8 8 H110 q-10 0 -8 -8 Q100 534 104 498 Q102 478 112 458
+             Q122 428 152 424 Z"
+          fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- the petticoat wedge showing through the open robe front -->
+  <g class="sp-shadow">
+    <path d="M175 436 h50 q10 60 15 122 h-80 q5 -62 15 -122 z"
+          fill="url(#toddler-male-onepiece-sack-gown__petti)"/>
+  </g>
+
+  <!-- the robe bodice, worn open: a back block with two front panels laid over it -->
+  <g class="sp-shadow">
+    <path d="M150 352 q2 -8 16 -8 h68 q14 0 16 8 v58 q0 16 -6 22 h-88 q-6 -6 -6 -22 z"
+          fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- elbow length pagoda sleeves -->
+  <g class="sp-shadow">
+    <path d="M120 358 q6 -14 28 -14 h10 v34 q-2 14 -18 18 h-20 q-8 0 -8 -10 z"
+          fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+    <path d="M280 358 q-6 -14 -28 -14 h-10 v34 q2 14 18 18 h20 q8 0 8 -10 z"
+          fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+  </g>
+
+  <!-- three stacked ruffle cuffs at each elbow, each wider than the one above -->
+  <g fill="url(#toddler-male-onepiece-sack-gown__petti)">
+    <path d="M112 392 h52 q3 12 -6 14 h-42 q-9 -2 -4 -14 z"/>
+    <path d="M106 406 h60 q3 12 -6 14 h-50 q-9 -2 -4 -14 z"/>
+    <path d="M100 420 h68 q3 12 -6 14 h-58 q-9 -2 -4 -14 z"/>
+    <path d="M288 392 h-52 q-3 12 6 14 h42 q9 -2 4 -14 z"/>
+    <path d="M294 406 h-60 q-3 12 6 14 h50 q9 -2 4 -14 z"/>
+    <path d="M300 420 h-68 q-3 12 6 14 h58 q9 -2 4 -14 z"/>
+  </g>
+
+  <!-- the triangular stomacher filling the open robe front -->
+  <path d="M171 348 h58 l-14 62 q-15 8 -30 0 z" fill="url(#toddler-male-onepiece-sack-gown__petti)"/>
+  <g stroke="var(--c2, #55669C)" stroke-opacity="0.5" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M179 362 h42"/><path d="M181 378 h38"/><path d="M185 394 h30"/>
+  </g>
+
+  <!-- the two open robe fronts, laid over the bodice either side of the stomacher -->
+  <path d="M148 346 h27 l-6 66 q-12 12 -25 14 q-2 -42 4 -80 z"
+        fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+  <path d="M252 346 h-27 l6 66 q12 12 25 14 q2 -42 -4 -80 z"
+        fill="url(#toddler-male-onepiece-sack-gown__silk)"/>
+  <g stroke="var(--c3, #F6EEE0)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M175 348 l-6 64"/>
+    <path d="M225 348 l6 64"/>
+  </g>
+
+  <!-- two box pleats falling loose from the shoulders and down over the panier -->
+  <g stroke="var(--c2, #55669C)" stroke-opacity="0.55" stroke-width="4.4" fill="none"
+     stroke-linecap="round">
+    <path d="M159 352 q-6 44 -10 76"/>
+    <path d="M241 352 q6 44 10 76"/>
+    <path d="M144 442 q-16 44 -18 112"/>
+    <path d="M256 442 q16 44 18 112"/>
+  </g>
+
+  <!-- flat hem band across the whole panier -->
+  <path d="M104 548 q96 16 192 0 l2 10 q-98 16 -196 0 z" fill="var(--c3, #F6EEE0)"/>
+
+  <path d="M171 364 q29 8 58 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 470 q28 10 46 4" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

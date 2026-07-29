@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes vs. jumpsuit and swimsuit: closure=NONE AT ALL, no zip, no placket, no belt and no
+       waist seam anywhere, so the body is one unbroken skin-close column; and volume=FITTED,
+       skimming the torso and each leg individually where the jumpsuit is straight and belted.
+       Tools: panel blocking (a contrast side stripe panel running shoulder to ankle) plus trim
+       (bound scoop neck and bound ankle edges). -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-unitard__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #41897A)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-onepiece-unitard__clip">
+      <path d="M154 358 q0 -14 18 -14 h56 q18 0 18 14 v66 q0 20 -8 30 h-76 q-8 -10 -8 -30 z"/>
+      <path d="M163 450 h35 v88 q0 8 -7 8 h-21 q-7 0 -7 -8 z"/>
+      <path d="M237 450 h-35 v88 q0 8 7 8 h21 q7 0 7 -8 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- long narrow sleeves, skimming the arm -->
+  <g class="sp-shadow">
+    <path d="M124 356 q4 -12 22 -12 h10 v90 q0 6 -8 6 h-19 q-8 0 -8 -8 z"
+          fill="url(#toddler-male-onepiece-unitard__knit)"/>
+    <path d="M276 356 q-4 -12 -22 -12 h-10 v90 q0 6 8 6 h19 q8 0 8 -8 z"
+          fill="url(#toddler-male-onepiece-unitard__knit)"/>
+  </g>
+
+  <!-- one unbroken torso, no waist seam -->
+  <g class="sp-shadow">
+    <path d="M154 358 q0 -14 18 -14 h56 q18 0 18 14 v66 q0 20 -8 30 h-76 q-8 -10 -8 -30 z"
+          fill="url(#toddler-male-onepiece-unitard__knit)"/>
+  </g>
+
+  <!-- skin-close legs to the ankle -->
+  <g class="sp-shadow">
+    <path d="M163 450 h35 v88 q0 8 -7 8 h-21 q-7 0 -7 -8 z"
+          fill="url(#toddler-male-onepiece-unitard__knit)"/>
+    <path d="M237 450 h-35 v88 q0 8 7 8 h21 q7 0 7 -8 z"
+          fill="url(#toddler-male-onepiece-unitard__knit)"/>
+  </g>
+
+  <!-- contrast side panels running shoulder to ankle without a break -->
+  <g clip-path="url(#toddler-male-onepiece-unitard__clip)">
+    <path d="M154 344 h17 v112 h-17 z" fill="var(--c3, #F7C873)"/>
+    <path d="M246 344 h-17 v112 h17 z" fill="var(--c3, #F7C873)"/>
+    <path d="M163 450 h13 v96 h-13 z" fill="var(--c3, #F7C873)"/>
+    <path d="M237 450 h-13 v96 h13 z" fill="var(--c3, #F7C873)"/>
+  </g>
+
+  <!-- bound scoop neck -->
+  <path d="M172 344 q28 26 56 0 q-8 24 -28 24 q-20 0 -28 -24 z" fill="var(--c2, #41897A)"/>
+  <path d="M170 346 q30 28 60 0" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound ankle and wrist edges, the only edges in the file -->
+  <g stroke="var(--c3, #F7C873)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M126 436 h28"/>
+    <path d="M246 436 h28"/>
+    <path d="M165 542 h31"/>
+    <path d="M204 542 h31"/>
+  </g>
+
+  <path d="M171 366 q29 10 58 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M175 470 v54" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M225 470 v54" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

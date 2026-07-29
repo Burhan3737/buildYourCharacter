@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thobe" data-family="thobe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday Arab dress drawn as ordinary clothing, not costume. Plain cloth, a band collar
+       and a short placket with two oversized toddler buttons; no community specific woven
+       motif anywhere.
+       axes vs. kaftan and robe: shoulder=NARROW LONG SET-IN SLEEVES with a visible armhole
+       seam, where the kaftan is one continuous T of cloth with wide draped sleeves and the
+       robe has soft wide ones; and hem=ANKLE, where both of those stop at mid calf.
+       Tools: trim (band collar, placket band and cuff bands) plus structural (armhole seams
+       and a straight side seam running the full column). -->
+  <defs>
+    <linearGradient id="toddler-male-onepiece-thobe__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #D6CBB4)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow long set-in sleeves -->
+  <g class="sp-shadow">
+    <path d="M122 358 q4 -14 24 -14 h12 v92 q0 8 -8 8 h-21 q-8 0 -8 -10 z"
+          fill="url(#toddler-male-onepiece-thobe__cloth)"/>
+    <path d="M278 358 q-4 -14 -24 -14 h-12 v92 q0 8 8 8 h21 q8 0 8 -10 z"
+          fill="url(#toddler-male-onepiece-thobe__cloth)"/>
+  </g>
+
+  <!-- one straight column, shoulder to ankle, with no waist -->
+  <g class="sp-shadow">
+    <path d="M156 356 q2 -12 18 -12 h52 q16 0 18 12 q6 52 11 104 l6 78 q-60 16 -120 0
+             l6 -78 q5 -52 11 -104 z"
+          fill="url(#toddler-male-onepiece-thobe__cloth)"/>
+  </g>
+
+  <!-- band collar standing at the neck -->
+  <path d="M180 340 h40 q4 0 4 5 v12 q0 5 -4 5 h-40 q-4 0 -4 -5 v-12 q0 -5 4 -5 z"
+        fill="var(--c3, #B8A278)"/>
+  <path d="M184 346 h32" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- short front placket with two oversized toddler buttons -->
+  <path d="M190 362 h20 v40 h-20 z" fill="var(--c3, #B8A278)"/>
+  <circle cx="200" cy="374" r="6" fill="var(--c2, #D6CBB4)"/>
+  <circle cx="200" cy="392" r="6" fill="var(--c2, #D6CBB4)"/>
+
+  <!-- armhole seams and cuff bands -->
+  <g stroke="var(--c2, #D6CBB4)" stroke-opacity="0.65" stroke-width="3.2" fill="none"
+     stroke-linecap="round">
+    <path d="M159 348 v98"/>
+    <path d="M241 348 v98"/>
+  </g>
+  <path d="M120 424 h38 v16 q0 8 -8 8 h-22 q-8 0 -8 -8 z" fill="var(--c3, #B8A278)"/>
+  <path d="M280 424 h-38 v16 q0 8 8 8 h22 q8 0 8 -8 z" fill="var(--c3, #B8A278)"/>
+
+  <!-- long straight side seams and a flat hem band -->
+  <g stroke="var(--c2, #D6CBB4)" stroke-opacity="0.45" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M171 410 q-4 62 -6 118"/>
+    <path d="M229 410 q4 62 6 118"/>
+  </g>
+  <path d="M141 522 q59 15 118 0 l1 11 q-60 15 -120 0 z" fill="var(--c3, #B8A278)"/>
+
+  <path d="M169 372 q31 10 62 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
