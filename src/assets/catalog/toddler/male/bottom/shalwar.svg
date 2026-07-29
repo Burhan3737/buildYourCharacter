@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Everyday South Asian dress drawn as ordinary clothing, not costume: soft cotton
+       shalwar, plain cloth with a simple geometric border. No community specific woven motif.
+       axes vs. joggers and wide leg trousers: leg width=ENORMOUSLY FULL through hip and thigh
+       and then closing sharply, so the outline is a triangle rather than a tube, and hem
+       treatment=A PLAIN FLAT ANKLE BAND, a bound cuff rather than a gathered elastic one.
+       The fullness is measured, not implied: this bundle's hips are 76 units wide at x 162 to
+       238 and this garment runs x 106 to 294 at the thigh, so it stands 56 units clear on
+       each side before drawing in to a 32 unit ankle. That is the triangle.
+       Tools: trim (drawstring waist, ankle bands, border stripe) plus structural (deep
+       pleats radiating from the waist). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #47907F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two vast triangular legs, standing far clear at the thigh and closing to the ankle -->
+  <g class="sp-shadow">
+    <path d="M154 444 H198 V504 Q198 516 192 522 V548 H164 V522 Q158 516 158 504
+             C120 500 104 482 108 462 C112 446 130 442 154 444 Z"
+          fill="url(#toddler-male-bottom-shalwar__cloth)"/>
+    <path d="M246 444 H202 V504 Q202 516 208 522 V548 H236 V522 Q242 516 242 504
+             C280 500 296 482 292 462 C288 446 270 442 246 444 Z"
+          fill="url(#toddler-male-bottom-shalwar__cloth)"/>
+    <path d="M148 432 h104 q7 0 7 8 v10 q0 8 -7 8 h-104 q-7 0 -7 -8 v-10 q0 -8 7 -8 z"
+          fill="url(#toddler-male-bottom-shalwar__cloth)"/>
+  </g>
+
+  <!-- drawstring waist casing with a fat knotted cord -->
+  <rect x="141" y="430" width="118" height="16" rx="7" fill="var(--c3, #F5E7C4)"/>
+  <path d="M192 446 q-6 14 -10 22 M208 446 q6 14 10 22" stroke="var(--c3, #F5E7C4)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="182" cy="472" r="4.6" fill="var(--c3, #F5E7C4)"/>
+  <circle cx="218" cy="472" r="4.6" fill="var(--c3, #F5E7C4)"/>
+
+  <!-- deep pleats radiating out of the waist into the fullness -->
+  <g stroke="var(--c2, #47907F)" stroke-opacity="0.5" stroke-width="3.6" fill="none"
+     stroke-linecap="round">
+    <path d="M168 456 C140 468 122 480 118 494"/>
+    <path d="M182 458 Q168 488 166 514"/>
+    <path d="M218 458 Q232 488 234 514"/>
+    <path d="M232 456 C260 468 278 480 282 494"/>
+  </g>
+
+  <!-- plain flat ankle bands, bound not gathered, with a simple border stripe above each -->
+  <path d="M160 528 h36 q3 0 3 4 v14 q0 4 -3 4 h-36 q-3 0 -3 -4 v-14 q0 -4 3 -4 z"
+        fill="var(--c3, #F5E7C4)"/>
+  <path d="M204 528 h36 q3 0 3 4 v14 q0 4 -3 4 h-36 q-3 0 -3 -4 v-14 q0 -4 3 -4 z"
+        fill="var(--c3, #F5E7C4)"/>
+  <path d="M162 537 h32 M206 537 h32" stroke="var(--c2, #47907F)" stroke-opacity="0.5"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M158 522 h40 M202 522 h40" stroke="var(--c3, #F5E7C4)" stroke-opacity="0.9"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 462 q50 14 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

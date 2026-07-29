@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Formalwear lives in top, bottom and onepiece, never in costume: a costume would hide the
+       shoes and for formalwear the shoes are the look. This is the ball skirt a player builds
+       a gown from as separates.
+       axes vs. the A line skirt and the tiered skirt: leg length=SWEEPING THE GROUND LINE and
+       leg width=A RIGID DOME standing well clear of the body on all sides. This bundle's hips
+       are 76 units wide at x 162 to 238; this hem runs x 104 to 296, so the dome clears the
+       widest point of the body by 58 units per side, comfortably past the 40 unit floor.
+       Fallback is mint on ink, deliberately clear of the pale blue, yellow and pink with gold
+       palettes that belong to named animated princesses.
+       Tools: trim (waistband and hem band) plus structural (four horizontal hoop channels). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #48907E)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-bottom-hoop-skirt__clip">
+      <path d="M160 444 H240 C260 470 286 512 296 556 q2 12 -10 12 H114 q-12 0 -10 -12
+               C114 512 140 470 160 444 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the rigid dome, standing clear of the leg on all sides and sweeping the ground -->
+  <g class="sp-shadow">
+    <path d="M160 444 H240 C260 470 286 512 296 556 q2 12 -10 12 H114 q-12 0 -10 -12
+             C114 512 140 470 160 444 Z"
+          fill="url(#toddler-male-bottom-hoop-skirt__dome)"/>
+    <path d="M158 424 h84 q8 0 8 8 v10 q0 8 -8 8 h-84 q-8 0 -8 -8 v-10 q0 -8 8 -8 z"
+          fill="url(#toddler-male-bottom-hoop-skirt__dome)"/>
+  </g>
+
+  <!-- four horizontal hoop channels, the structure that holds the dome out -->
+  <g clip-path="url(#toddler-male-bottom-hoop-skirt__clip)">
+    <g stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="7" fill="none"
+       stroke-linecap="round">
+      <path d="M138 476 q62 12 124 0"/>
+      <path d="M126 506 q74 14 148 0"/>
+      <path d="M114 534 q86 15 172 0"/>
+      <path d="M104 558 q96 16 192 0"/>
+    </g>
+    <g stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M138 470 q62 12 124 0"/>
+      <path d="M126 500 q74 14 148 0"/>
+      <path d="M114 528 q86 15 172 0"/>
+    </g>
+  </g>
+
+  <!-- flat waistband over the top of the dome -->
+  <rect x="155" y="422" width="90" height="18" rx="8" fill="var(--c3, #3B2A22)"/>
+  <path d="M160 428 h80" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vertical panel seams running the dome, sparse so the hoops stay dominant -->
+  <g clip-path="url(#toddler-male-bottom-hoop-skirt__clip)">
+    <g stroke="var(--c2, #48907E)" stroke-opacity="0.5" stroke-width="3.4" fill="none"
+       stroke-linecap="round">
+      <path d="M175 448 Q160 504 150 566"/>
+      <path d="M225 448 Q240 504 250 566"/>
+      <path d="M200 450 V566"/>
+    </g>
+  </g>
+
+  <path d="M167 456 q33 10 66 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

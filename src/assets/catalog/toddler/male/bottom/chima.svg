@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- Everyday Korean dress drawn as ordinary clothing, not costume. Plain cloth with a simple
+       hem band; no community specific woven motif.
+       The band sits HIGH ON THE CHEST. Its top edge is fixed at y 396 on this bundle so the
+       jeogori hem, which falls at y 404 to 410, always clears it. Change one and the pair
+       stops reading.
+       axes vs. maxi skirt and tiered skirt: rise=WELL ABOVE THE NATURAL WAIST, a chest band
+       rather than a hip waistband, and volume=ONE GATHERED COLUMN swinging wide from that
+       band to the ankle rather than a narrow slit column or stacked ruffle tiers.
+       Tools: trim (band, hem band and a long ribbon tie) plus structural (gather folds). -->
+  <defs>
+    <linearGradient id="toddler-male-bottom-chima__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98BB4)"/>
+      <stop offset="1" stop-color="var(--c2, #9C6089)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EEE0)"/>
+      <stop offset="1" stop-color="var(--c3, #F6EEE0)" stop-opacity="0.84"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one gathered column falling from the chest band to the ankle -->
+  <g class="sp-shadow">
+    <path d="M152 422 h96 q10 52 15 112 q-63 15 -126 0 q5 -60 15 -112 z"
+          fill="url(#toddler-male-bottom-chima__column)"/>
+    <path d="M150 396 h100 q6 0 6 8 v14 q0 8 -6 8 h-100 q-6 0 -6 -8 v-14 q0 -8 6 -8 z"
+          fill="url(#toddler-male-bottom-chima__column)"/>
+  </g>
+
+  <!-- the flat chest band, top edge locked at y 396 -->
+  <path d="M150 396 h100 q6 0 6 8 v13 q0 7 -6 7 h-100 q-6 0 -6 -7 v-13 q0 -8 6 -8 z"
+        fill="url(#toddler-male-bottom-chima__band)"/>
+  <path d="M156 402 h88" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long ribbon tie falling from the band down the front -->
+  <path d="M186 420 q-3 44 -5 76 l12 2 q3 -40 5 -78 z" fill="var(--c3, #F6EEE0)"/>
+  <path d="M198 420 q2 30 3 52 l11 -2 q-3 -26 -4 -50 z" fill="var(--c3, #F6EEE0)"/>
+  <circle cx="192" cy="422" r="9" fill="var(--c3, #F6EEE0)"/>
+
+  <!-- deep gather folds pulled out of the band -->
+  <g stroke="var(--c2, #9C6089)" stroke-opacity="0.5" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M164 426 Q155 478 149 528"/>
+    <path d="M177 426 Q173 478 169 532"/>
+    <path d="M223 426 Q227 478 231 532"/>
+    <path d="M236 426 Q245 478 251 528"/>
+  </g>
+
+  <!-- plain hem band closing the column -->
+  <path d="M139 526 q61 15 122 0 l1 12 q-62 15 -124 0 z" fill="var(--c3, #F6EEE0)"/>
+
+  <path d="M163 412 q37 10 74 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 448 q3 40 5 76" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
