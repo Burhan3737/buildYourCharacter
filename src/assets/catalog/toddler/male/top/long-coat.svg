@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: hem=MID CALF, the longest thing in this slot · volume=long straight column -->
+  <!-- also: shoulder=long set-in · closure=full button placket under a notched collar -->
+  <defs>
+    <linearGradient id="toddler-male-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9B183)"/>
+      <stop offset="1" stop-color="var(--c2, #AE8756)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9B183)"/>
+      <stop offset="1" stop-color="var(--c2, #AE8756)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-long-coat__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #AE8756)"/>
+      <stop offset="1" stop-color="var(--c1, #D9B183)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <rect x="114" y="350" width="40" height="96" rx="20" fill="url(#toddler-male-top-long-coat__sleeve)"/>
+    <rect x="246" y="350" width="40" height="96" rx="20" fill="url(#toddler-male-top-long-coat__sleeve)"/>
+    <!-- one uninterrupted column from the shoulder to mid calf -->
+    <path d="M148 374 q0-30 28-30 h48 q28 0 28 30 v120 q0 24 -6 28 q-46 10 -92 0 q-6-4 -6-28 z"
+          fill="url(#toddler-male-top-long-coat__body)"/>
+  </g>
+
+  <!-- notched collar sitting flat across the shoulder line -->
+  <path d="M171 344 h25 l-8 21 -23 10 -4-21 z" fill="url(#toddler-male-top-long-coat__lapel)"/>
+  <path d="M229 344 h-25 l8 21 23 10 4-21 z" fill="url(#toddler-male-top-long-coat__lapel)"/>
+  <path d="M188 365 l-6 12 M212 365 l6 12" stroke="var(--c2, #AE8756)" stroke-opacity="0.55"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- full button placket, top to hem, with three oversized buttons -->
+  <rect x="190" y="367" width="20" height="150" rx="7" fill="var(--c2, #AE8756)" fill-opacity="0.55"/>
+  <g fill="var(--c3, #5C4A3A)">
+    <circle cx="200" cy="386" r="6.4"/>
+    <circle cx="200" cy="425" r="6.4"/>
+    <circle cx="200" cy="464" r="6.4"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.45">
+    <circle cx="200" cy="386" r="2.2"/>
+    <circle cx="200" cy="425" r="2.2"/>
+    <circle cx="200" cy="464" r="2.2"/>
+  </g>
+
+  <!-- single back vent breaking the hem at the centre -->
+  <path d="M200 490 v34" stroke="var(--c3, #5C4A3A)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- welt pockets low on the column -->
+  <path d="M156 446 h32 M244 446 h-32" stroke="var(--c2, #AE8756)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a soft tie belt knotted at the high waist -->
+  <path d="M150 420 h100 v14 h-100 z" fill="var(--c3, #5C4A3A)" fill-opacity="0.85"/>
+  <path d="M186 416 h28 v22 h-28 z" fill="var(--c3, #5C4A3A)"/>
+  <path d="M214 430 l25 27 q-8 6 -14 0 z M186 430 l-25 27 q8 6 14 0 z"
+        fill="var(--c3, #5C4A3A)" fill-opacity="0.85"/>
+
+  <!-- turned back cuffs -->
+  <rect x="113" y="426" width="42" height="16" rx="7" fill="var(--c2, #AE8756)"/>
+  <rect x="245" y="426" width="42" height="16" rx="7" fill="var(--c2, #AE8756)"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M156 370 q17 10 27 12 M217 382 q17-2 27-12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

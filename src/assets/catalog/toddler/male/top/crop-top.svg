@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=short set-in · closure=closed · hem=CROPPED above the waist at y404 · volume=fitted -->
+  <!-- midriff deliberately bare: the short body is the whole silhouette -->
+  <defs>
+    <linearGradient id="toddler-male-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ECBE0)"/>
+      <stop offset="1" stop-color="var(--c2, #52A6BE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ECBE0)"/>
+      <stop offset="1" stop-color="var(--c2, #52A6BE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-crop-top__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #F7C873)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves -->
+    <rect x="116" y="350" width="36" height="40" rx="18" fill="url(#toddler-male-top-crop-top__sleeve)"/>
+    <rect x="248" y="350" width="36" height="40" rx="18" fill="url(#toddler-male-top-crop-top__sleeve)"/>
+    <!-- short fitted body finishing well above the waist -->
+    <path d="M150 368 q0-24 24-24 h52 q24 0 24 24 v22 q0 14 -19 14 h-62 q-19 0 -19-14 z"
+          fill="url(#toddler-male-top-crop-top__body)"/>
+  </g>
+
+  <!-- one applied graphic: a rainbow arc, wide but shallow so it fits the cropped body -->
+  <path d="M169 392 a31 18 0 0 1 62 0" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M177 392 a23 13 0 0 1 46 0" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 392 a14 8 0 0 1 28 0" stroke="var(--c2, #52A6BE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- rolled hem band along the cropped edge -->
+  <path d="M150 386 h100 q0 14 -19 14 h-62 q-19 0 -19-14 z" fill="url(#toddler-male-top-crop-top__trim)"/>
+
+  <!-- neck and sleeve binds -->
+  <path d="M177 346 Q200 367 223 346" stroke="var(--c3, #F7C873)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <rect x="115" y="379" width="38" height="10" rx="5" fill="url(#toddler-male-top-crop-top__trim)"/>
+  <rect x="247" y="379" width="38" height="10" rx="5" fill="url(#toddler-male-top-crop-top__trim)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M161 374 q10 6 17 7 M222 381 q10-1 17-7" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

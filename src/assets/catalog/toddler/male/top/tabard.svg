@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=NONE, two flat panels hung from the shoulders only · closure=COMPLETELY OPEN DOWN BOTH SIDES -->
+  <!-- the back panel shows past the front one at the sides and the hem, and the ribs are bare between them -->
+  <defs>
+    <linearGradient id="toddler-male-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FB2D8)"/>
+      <stop offset="1" stop-color="var(--c2, #55869F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55869F)"/>
+      <stop offset="1" stop-color="var(--c2, #55869F)" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-tabard__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FB2D8)"/>
+      <stop offset="1" stop-color="var(--c2, #55869F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-tabard__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bare ribs, seen straight through the open sides -->
+  <path d="M148 356 h24 v98 q-12 6 -24 0 z" fill="url(#toddler-male-top-tabard__skin)"/>
+  <path d="M252 356 h-24 v98 q12 6 24 0 z" fill="url(#toddler-male-top-tabard__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- the back panel, hanging lower and a little wider than the front -->
+    <path d="M168 360 h64 v116 h-64 z" fill="url(#toddler-male-top-tabard__back)"/>
+    <!-- the front panel: a flat slab, squared off, joined to the back only over the shoulders -->
+    <path d="M174 362 q0-6 6-6 h40 q6 0 6 6 v96 q0 6 -6 6 h-40 q-6 0 -6-6 z"
+          fill="url(#toddler-male-top-tabard__front)"/>
+    <!-- the two shoulder joins, the only place the panels meet -->
+    <rect x="166" y="344" width="26" height="24" rx="7" fill="url(#toddler-male-top-tabard__strap)"/>
+    <rect x="208" y="344" width="26" height="24" rx="7" fill="url(#toddler-male-top-tabard__strap)"/>
+  </g>
+
+  <!-- side ties spanning the open sides, one per side -->
+  <path d="M149 422 h29 M251 422 h-29" stroke="var(--c3, #F4EEE0)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="174" cy="422" r="6" fill="var(--c3, #F4EEE0)"/>
+  <circle cx="226" cy="422" r="6" fill="var(--c3, #F4EEE0)"/>
+  <path d="M154 422 l-8 12 M246 422 l8 12" stroke="var(--c3, #F4EEE0)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- broad band across the slab -->
+  <path d="M174 390 h52 v18 h-52 z" fill="var(--c3, #F4EEE0)" fill-opacity="0.9"/>
+  <path d="M174 446 h52 v10 h-52 z" fill="var(--c3, #F4EEE0)" fill-opacity="0.7"/>
+
+  <!-- topstitching around the slab edge -->
+  <path d="M181 366 v86 M219 366 v86" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft highlight on the upper slab -->
+  <path d="M181 378 q19 8 38 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: hem=CROPPED above the natural waist at y402 · closure=OPEN FRONT, curved edges, no fastening -->
+  <!-- also: shoulder=three quarter sleeve. The chest inside the curve is painted as skin. -->
+  <!-- fitted to the toddler male trunk: x150 to 250, corner radius 26, arms at x118 and x250. -->
+  <defs>
+    <linearGradient id="toddler-male-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EBC0D4)"/>
+      <stop offset="1" stop-color="var(--c2, #BE8FA5)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EBC0D4)"/>
+      <stop offset="1" stop-color="var(--c2, #BE8FA5)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-bolero__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the chest the open curve leaves bare -->
+  <path d="M172 344 h56 v42 q-28 12 -56 0 z" fill="url(#toddler-male-top-bolero__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- three quarter sleeves, finishing between elbow and wrist -->
+    <rect x="114" y="356" width="40" height="66" rx="20" fill="url(#toddler-male-top-bolero__sleeve)"/>
+    <rect x="246" y="356" width="40" height="66" rx="20" fill="url(#toddler-male-top-bolero__sleeve)"/>
+    <!-- two short panels whose front edges curve away from each other -->
+    <path d="M148 376 q2-32 30-32 h20 l-17 28 q-6 12 -4 28 q-17 8 -30 0 q-4-13 1-24 z"
+          fill="url(#toddler-male-top-bolero__panel)"/>
+    <path d="M252 376 q-2-32 -30-32 h-20 l17 28 q6 12 4 28 q17 8 30 0 q4-13 -1-24 z"
+          fill="url(#toddler-male-top-bolero__panel)"/>
+  </g>
+
+  <!-- contrast bind tracing both curved front edges and the cropped hem -->
+  <path d="M198 346 l-17 28 q-6 12 -4 28" stroke="var(--c3, #F8F1E6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 346 l17 28 q6 12 4 28" stroke="var(--c3, #F8F1E6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 400 q15 8 30 0 M252 400 q-15 8 -30 0" stroke="var(--c3, #F8F1E6)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- knit texture on the short panels -->
+  <g stroke="var(--c2, #BE8FA5)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M157 364 v34 M168 356 v42 M232 356 v42 M243 364 v34"/>
+  </g>
+
+  <!-- turned back cuff bands -->
+  <rect x="113" y="404" width="42" height="16" rx="8" fill="var(--c3, #F8F1E6)"/>
+  <rect x="245" y="404" width="42" height="16" rx="8" fill="var(--c3, #F8F1E6)"/>
+
+  <!-- shoulder seams -->
+  <path d="M170 348 l-13 11 M230 348 l13 11" stroke="var(--c2, #BE8FA5)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M154 368 q13 8 19 10 M227 378 q13-2 19-10" stroke="#FFFFFF" stroke-opacity="0.30"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

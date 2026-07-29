@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=three quarter · closure=CROSSOVER WRAP · hem=WAIST · volume=fitted -->
+  <!-- two diagonal fronts crossing at the centre leave a deep V; tied at the waist -->
+  <defs>
+    <linearGradient id="toddler-male-top-wrap-top__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F73)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-wrap-top__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F73)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F73)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves -->
+    <rect x="116" y="354" width="36" height="66" rx="18" fill="url(#toddler-male-top-wrap-top__sleeve)"/>
+    <rect x="248" y="354" width="36" height="66" rx="18" fill="url(#toddler-male-top-wrap-top__sleeve)"/>
+    <!-- under front, crossing left to right -->
+    <path d="M150 374 q2-28 28-30 l60 64 v34 q-44 12 -88 0 z"
+          fill="url(#toddler-male-top-wrap-top__front)"/>
+    <!-- over front, crossing right to left and lying on top -->
+    <path d="M250 374 q-2-28 -28-30 l-60 64 v34 q44 12 88 0 z"
+          fill="url(#toddler-male-top-wrap-top__over)"/>
+  </g>
+
+  <!-- contrast bound edge tracing the crossover -->
+  <path d="M222 346 l-60 64" stroke="var(--c3, #F7E6D2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M178 346 l22 23" stroke="var(--c3, #F7E6D2)" stroke-width="8" stroke-opacity="0.7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the wrap tie, knotted at the waist -->
+  <path d="M156 426 q44 12 88 0 v13 q-44 12 -88 0 z" fill="var(--c3, #F7E6D2)"/>
+  <path d="M196 426 q4 10 0 20 q-8 3 -12-2 q6-9 4-18 z" fill="var(--c2, #D07F73)"/>
+  <path d="M204 426 q-4 10 0 20 q8 3 12-2 q-6-9 -4-18 z" fill="var(--c2, #D07F73)"/>
+  <path d="M206 442 l17 23 q-8 6 -14 0 z M194 442 l-17 23 q8 6 14 0 z" fill="var(--c3, #F7E6D2)"/>
+
+  <!-- soft gather lines running from the knot -->
+  <g stroke="var(--c2, #D07F73)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M185 422 l-17-21 M215 422 l17-21 M181 416 l-21-10 M219 416 l21-10"/>
+  </g>
+
+  <!-- soft chest highlight -->
+  <path d="M159 382 q15 8 23 10 M218 392 q15-2 23-10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

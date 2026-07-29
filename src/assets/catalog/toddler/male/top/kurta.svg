@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: hem=MID THIGH tunic with deep side slits stepping the outline in at the hip · closure=BAND COLLAR over a short front placket -->
+  <!-- everyday clothing. Generic contrast trim only, no community specific woven design. -->
+  <!-- mid thigh on this bundle is y502: the legs run y482 to y544. -->
+  <defs>
+    <linearGradient id="toddler-male-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3C8)"/>
+      <stop offset="1" stop-color="var(--c2, #CBBB98)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3C8)"/>
+      <stop offset="1" stop-color="var(--c2, #CBBB98)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-kurta__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6B8FA8)"/>
+      <stop offset="1" stop-color="var(--c3, #6B8FA8)" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long straight sleeves, low ease, squared through the cuff -->
+    <rect x="114" y="352" width="40" height="90" rx="11" fill="url(#toddler-male-top-kurta__sleeve)"/>
+    <rect x="246" y="352" width="40" height="90" rx="11" fill="url(#toddler-male-top-kurta__sleeve)"/>
+    <!-- straight tunic to mid thigh, stepping in at the hip where the side slits open -->
+    <path d="M150 372 q0-28 26-28 h48 q26 0 26 28 v90 h-15 v32 q0 8 -8 8 h-54 q-8 0 -8-8 v-32 h-15 z"
+          fill="url(#toddler-male-top-kurta__body)"/>
+  </g>
+
+  <!-- band collar standing at the neck -->
+  <path d="M179 336 q21-8 42 0 v14 q-21-6 -42 0 z" fill="url(#toddler-male-top-kurta__trim)"/>
+  <path d="M184 340 q16-5 32 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- short front placket dropping out of the collar, two oversized buttons -->
+  <rect x="191" y="350" width="18" height="46" rx="6" fill="url(#toddler-male-top-kurta__trim)"/>
+  <circle cx="200" cy="362" r="5" fill="var(--c1, #EFE3C8)"/>
+  <circle cx="200" cy="382" r="5" fill="var(--c1, #EFE3C8)"/>
+
+  <!-- the side slits themselves, opening from the hip -->
+  <path d="M165 466 v36 M235 466 v36" stroke="var(--c2, #CBBB98)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- narrow contrast border round the hem and up each slit -->
+  <path d="M165 488 h70 v6 q0 8 -8 8 h-54 q-8 0 -8-8 z" fill="var(--c3, #6B8FA8)" fill-opacity="0.9"/>
+  <path d="M150 452 h100" stroke="var(--c3, #6B8FA8)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuff bands -->
+  <rect x="113" y="426" width="42" height="14" rx="5" fill="var(--c3, #6B8FA8)"/>
+  <rect x="245" y="426" width="42" height="14" rx="5" fill="var(--c3, #6B8FA8)"/>
+
+  <!-- plain vertical seam either side of the placket -->
+  <g stroke="var(--c2, #CBBB98)" stroke-opacity="0.5" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <path d="M185 356 v94 M215 356 v94"/>
+  </g>
+
+  <!-- soft chest highlight -->
+  <path d="M161 374 q16 8 25 10 M214 384 q16-2 25-10" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

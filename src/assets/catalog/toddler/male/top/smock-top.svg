@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: volume=GATHERED onto a yoke, swinging wide · shoulder=CAP sleeve set over a yoke seam -->
+  <!-- the yoke is a shallow 34px band across the chest; everything below it is gathered onto its lower -->
+  <!-- edge and swings out to x128 and x272, which is 42px wider than the body on each side -->
+  <defs>
+    <linearGradient id="toddler-male-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2B7C6)"/>
+      <stop offset="1" stop-color="var(--c2, #CB8598)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF3E4)"/>
+      <stop offset="1" stop-color="var(--c3, #FBF3E4)" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2B7C6)"/>
+      <stop offset="1" stop-color="var(--c2, #CB8598)"/>
+    </linearGradient>
+    <!-- small scattered dot, 18px repeat -->
+    <pattern id="toddler-male-top-smock-top__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="5" cy="5" r="2.8" fill="var(--c3, #FBF3E4)" fill-opacity="0.7"/>
+      <circle cx="14" cy="13" r="2.8" fill="var(--c3, #FBF3E4)" fill-opacity="0.7"/>
+    </pattern>
+    <clipPath id="toddler-male-top-smock-top__clip">
+      <path d="M148 378 h104 q11 45 20 96 q-72 18 -144 0 q9-51 20-96 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- cap sleeves, barely reaching past the top of the arm -->
+    <path d="M171 346 q-50 0 -52 24 q-2 15 15 17 q17 2 23-13 q4-15 14-28 z"
+          fill="url(#toddler-male-top-smock-top__cap)"/>
+    <path d="M229 346 q50 0 52 24 q2 15 -15 17 q-17 2 -23-13 q-4-15 -14-28 z"
+          fill="url(#toddler-male-top-smock-top__cap)"/>
+    <!-- shallow yoke across the chest -->
+    <path d="M148 370 q0-26 26-26 h52 q26 0 26 26 v10 h-104 z"
+          fill="url(#toddler-male-top-smock-top__yoke)"/>
+    <!-- everything below the yoke is gathered onto it and swings wide -->
+    <path d="M148 378 h104 q11 45 20 96 q-72 18 -144 0 q9-51 20-96 z"
+          fill="url(#toddler-male-top-smock-top__body)"/>
+  </g>
+
+  <!-- dot scatter across the swing -->
+  <g clip-path="url(#toddler-male-top-smock-top__clip)">
+    <rect x="124" y="376" width="152" height="114" fill="url(#toddler-male-top-smock-top__dots)"/>
+  </g>
+
+  <!-- the gathers themselves, fanning out of the yoke seam -->
+  <g stroke="var(--c2, #CB8598)" stroke-opacity="0.5" stroke-width="3.4" fill="none" stroke-linecap="round">
+    <path d="M161 386 l-19 86 M180 386 l-10 90 M200 386 v92 M220 386 l10 90 M239 386 l19 86"/>
+  </g>
+
+  <!-- gathering stitch along the yoke seam -->
+  <path d="M150 379 h100" stroke="var(--c3, #FBF3E4)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 379 q46 8 92 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound neck edge across the top of the yoke -->
+  <path d="M177 346 q23 14 46 0" stroke="var(--c3, #FBF3E4)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- narrow hem bind following the swing -->
+  <path d="M130 470 q70 18 140 0 l2 6 q-72 18 -144 0 z" fill="var(--c3, #FBF3E4)" fill-opacity="0.9"/>
+
+  <!-- cap sleeve binds -->
+  <path d="M122 376 q17 12 34 2 M278 376 q-17 12 -34 2" stroke="var(--c3, #FBF3E4)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight across the yoke -->
+  <path d="M161 362 q39 10 78 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

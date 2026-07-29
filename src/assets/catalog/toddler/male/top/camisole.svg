@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: hem=BELOW THE HIP at y476 · volume=skimming bias cut, widening slightly to the hem -->
+  <!-- also: shoulder=spaghetti ties set wide at x159 and x232 · closure=closed, straight scalloped upper edge -->
+  <!-- cut for the toddler male chest: straight through, no bust shaping, ties set to the wider shoulder line. -->
+  <defs>
+    <linearGradient id="toddler-male-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C7EE)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9FCE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9C7EE)"/>
+      <stop offset="1" stop-color="var(--c2, #7C9FCE)"/>
+    </linearGradient>
+    <!-- fine dot scatter, 16px repeat -->
+    <pattern id="toddler-male-top-camisole__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.6" fill="var(--c3, #FBF3E4)" fill-opacity="0.8"/>
+      <circle cx="12" cy="12" r="2.6" fill="var(--c3, #FBF3E4)" fill-opacity="0.8"/>
+    </pattern>
+    <clipPath id="toddler-male-top-camisole__clip">
+      <path d="M150 372 h100 v74 q3 16 -1 25 q-49 12 -98 0 q-4-9 -1-25 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- spaghetti ties, set wide, almost at the shoulder point -->
+    <rect x="159" y="344" width="9" height="32" rx="4.5" fill="url(#toddler-male-top-camisole__strap)"/>
+    <rect x="232" y="344" width="9" height="32" rx="4.5" fill="url(#toddler-male-top-camisole__strap)"/>
+    <!-- skimming bias cut body, straight across the top, falling well past the hip -->
+    <path d="M150 372 h100 v74 q3 16 -1 25 q-49 12 -98 0 q-4-9 -1-25 z"
+          fill="url(#toddler-male-top-camisole__body)"/>
+  </g>
+
+  <!-- dot scatter over the body -->
+  <g clip-path="url(#toddler-male-top-camisole__clip)">
+    <rect x="146" y="370" width="108" height="114" fill="url(#toddler-male-top-camisole__dots)"/>
+  </g>
+
+  <!-- scalloped lace trim along the straight upper edge -->
+  <path d="M150 372 h100 v-4 q-8 9 -17 0 q-8 9 -16 0 q-9 9 -17 0 q-8 9 -16 0 q-9 9 -17 0 q-8 9 -17 0 z"
+        fill="var(--c3, #FBF3E4)"/>
+  <path d="M154 368 q46 8 92 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- matching scallop along the bias hem -->
+  <path d="M149 458 q24 12 51 12 q27 0 51-12 v-12 q3 16 -1 25 q-49 12 -98 0 q-4-9 -1-25 z"
+        fill="var(--c3, #FBF3E4)" fill-opacity="0.85"/>
+
+  <!-- the bias seams running on the diagonal, which is what makes it drape -->
+  <g stroke="var(--c2, #7C9FCE)" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M163 382 l31 86 M237 382 l-31 86"/>
+  </g>
+
+  <!-- little bow where each tie meets the edge -->
+  <path d="M163 370 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+  <path d="M237 370 q-9-6 -9 1 q0 7 9 1 q9 6 9-1 q0-7 -9 -1 z" fill="var(--c3, #FBF3E4)"/>
+
+  <!-- soft chest highlight -->
+  <path d="M161 390 q39 12 78 0" stroke="#FFFFFF" stroke-opacity="0.30" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

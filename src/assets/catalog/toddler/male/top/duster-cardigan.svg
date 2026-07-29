@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: hem=MID CALF · shoulder=DROPPED and unstructured -->
+  <!-- also: closure=open front, no collar and no buttons. The opening is painted as skin, never a phantom shirt. -->
+  <!-- mid calf on this bundle is y524: the legs run y482 to y544. -->
+  <defs>
+    <linearGradient id="toddler-male-top-duster-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C3BBD6)"/>
+      <stop offset="1" stop-color="var(--c2, #978FB1)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C3BBD6)"/>
+      <stop offset="1" stop-color="var(--c2, #978FB1)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-duster-cardigan__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the chest the open front leaves bare -->
+  <path d="M175 344 h50 v120 q-25 6 -50 0 z" fill="url(#toddler-male-top-duster-cardigan__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- dropped shoulder sleeves: no armhole structure, they simply hang -->
+    <rect x="106" y="362" width="52" height="96" rx="26" fill="url(#toddler-male-top-duster-cardigan__sleeve)"/>
+    <rect x="242" y="362" width="52" height="96" rx="26" fill="url(#toddler-male-top-duster-cardigan__sleeve)"/>
+    <!-- two long knit panels falling to mid calf in a soft drape -->
+    <path d="M142 386 q0-42 36-42 h9 v180 q-23 8 -45 0 z"
+          fill="url(#toddler-male-top-duster-cardigan__panel)"/>
+    <path d="M258 386 q0-42 -36-42 h-9 v180 q23 8 45 0 z"
+          fill="url(#toddler-male-top-duster-cardigan__panel)"/>
+  </g>
+
+  <!-- knitted rib running the length of each front edge -->
+  <path d="M187 348 v180 M213 348 v180" stroke="var(--c2, #978FB1)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- two low patch pockets, sitting well below the hip -->
+  <path d="M146 470 h31 v29 q0 9 -9 9 h-13 q-9 0 -9-9 z" fill="var(--c2, #978FB1)"/>
+  <path d="M223 470 h31 v29 q0 9 -9 9 h-13 q-9 0 -9-9 z" fill="var(--c2, #978FB1)"/>
+  <path d="M147 477 h29 M224 477 h29" stroke="var(--c3, #EFE8DC)" stroke-opacity="0.75"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+  <!-- chunky knit columns down the drape -->
+  <g stroke="var(--c3, #EFE8DC)" stroke-opacity="0.34" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M152 398 v114 M165 394 v122 M235 394 v122 M248 398 v114"/>
+  </g>
+
+  <!-- turned back cuffs -->
+  <rect x="105" y="438" width="54" height="18" rx="9" fill="var(--c3, #EFE8DC)"/>
+  <rect x="241" y="438" width="54" height="18" rx="9" fill="var(--c3, #EFE8DC)"/>
+
+  <!-- soft shoulder highlight -->
+  <path d="M150 374 q17 10 27 12 M223 386 q17-2 27-12" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

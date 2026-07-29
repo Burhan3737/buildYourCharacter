@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: shoulder=WIDE SLEEVE CUT ON from the body, no armhole seam at all · hem=MID THIGH, boxy, short side vents -->
+  <!-- everyday clothing. Trim is a generic diamond and chevron border, not any community's woven design. -->
+  <defs>
+    <linearGradient id="toddler-male-top-dashiki__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FA6A0)"/>
+      <stop offset="1" stop-color="var(--c2, #327C77)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-top-dashiki__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <!-- generic diamond border, 20px repeat -->
+    <pattern id="toddler-male-top-dashiki__diamond" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 L17 10 L10 17 L3 10 z" fill="none" stroke="var(--c3, #F2C86A)"
+            stroke-opacity="0.9" stroke-width="3" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="toddler-male-top-dashiki__neckclip">
+      <path d="M169 346 h62 l-8 25 q-23 20 -46 0 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one cut-on T: the sleeves are simply the body carried straight out to x108 and x292 -->
+    <path d="M108 358 q0-12 12-12 h160 q12 0 12 12 v40 q0 12 -12 12 h-26 v62 h-6 v22 q0 8 -8 8 h-80 q-8 0 -8-8 v-22 h-6 v-62 h-26 q-12 0 -12-12 z"
+          fill="url(#toddler-male-top-dashiki__body)"/>
+  </g>
+
+  <!-- the neck opening, cut wide and shallow, showing the chest -->
+  <path d="M169 346 h62 l-8 25 q-23 20 -46 0 z" fill="url(#toddler-male-top-dashiki__skin)"/>
+
+  <!-- the wide V panel at the neck: the family's identity, drawn as a broad bordered yoke -->
+  <path d="M160 346 h80 l-10 38 q-30 30 -60 0 z" fill="none"
+        stroke="var(--c3, #F2C86A)" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M154 386 q46 34 92 0 l6 12 q-52 40 -104 0 z" fill="var(--c3, #F2C86A)" fill-opacity="0.5"/>
+  <g clip-path="url(#toddler-male-top-dashiki__neckclip)">
+    <rect x="158" y="344" width="84" height="36" fill="url(#toddler-male-top-dashiki__diamond)"/>
+  </g>
+
+  <!-- chevron border along the wide sleeve hems -->
+  <g stroke="var(--c3, #F2C86A)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M114 398 l10-8 l10 8 l10-8 l10 8"/>
+    <path d="M286 398 l-10-8 l-10 8 l-10-8 l-10 8"/>
+  </g>
+  <path d="M112 404 h38 M288 404 h-38" stroke="var(--c3, #F2C86A)" stroke-opacity="0.85"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- matching border round the hem, broken by the side vents -->
+  <path d="M152 476 h96 v10 h-96 z" fill="var(--c3, #F2C86A)" fill-opacity="0.75"/>
+  <g stroke="var(--c3, #F2C86A)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M158 464 l10-8 l10 8 l10-8 l10 8 l10-8 l10 8 l10-8 l10 8"/>
+  </g>
+
+  <!-- short side vents at the hem -->
+  <path d="M158 468 v28 M242 468 v28" stroke="var(--c2, #327C77)" stroke-opacity="0.75"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- soft chest highlight below the panel -->
+  <path d="M165 414 q35 12 70 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
