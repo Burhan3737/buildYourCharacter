@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN - bare. No cap, no dome, no mass of any kind; the ears and the whole skull
+       stay exposed, which no other family in the slot does.
+       PARTING/HEM - none at all, only the soft shadow where a hairline and a nape would sit. -->
+  <!-- this is a haircut and it is also what alopecia areata looks like; it is drawn plainly,
+       with no apology and no joke -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-smooth-scalp__back-nape" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #331E16)" stop-opacity="0.32"/>
+        <stop offset="1" stop-color="var(--hair1, #43291F)" stop-opacity="0.08"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- no hair mass: only the soft shading the skull carries down toward the nape -->
+      <path d="M151 297 C145 316 153 334 172 340
+               L228 340 C247 334 255 316 249 297
+               C237 316 220 324 200 324
+               C180 324 163 316 151 297 Z"
+            fill="url(#toddler-male-hair-smooth-scalp__back-nape)"/>
+    </g>
+  </g>
+  <g data-part="front">
+    <!-- a ghost of the hairline, only just there: where hair would start if there were any -->
+    <path d="M137 265 C139 226 165 207 200 207 C235 207 261 226 263 265
+             C259 234 232 217 200 217 C168 217 141 234 137 265 Z"
+          fill="var(--hair1, #43291F)" opacity="0.15"/>
+    <!-- the two temple corners, a shade deeper than the rest of the ghost -->
+    <path d="M131 273 C131 252 135 236 143 225
+             C139 242 137 258 138 275 Z"
+          fill="var(--hair2, #331E16)" opacity="0.22"/>
+    <path d="M269 273 C269 252 265 236 257 225
+             C261 242 263 258 262 275 Z"
+          fill="var(--hair2, #331E16)" opacity="0.22"/>
+    <!-- the bare crown catches the light in one clean arc -->
+    <path d="M157 215 C176 196 224 196 243 215" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M171 198 C184 190 216 190 229 198" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

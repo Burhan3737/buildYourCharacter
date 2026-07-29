@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN - a single narrow ridge standing over close-faded sides, widest above the
+       brow and tapering back to a point at the nape.
+       VOLUME - the ridge contour is built from overlapping coil lobes, no two the same size,
+       so the outline is bumpy rather than a smooth crest with squiggles drawn inside it.
+       The fade is a real value ramp in the hair, hair2 at the skin line up to hair1, with a
+       hard clean front hairline. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-frohawk__back-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.48" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.4"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the close fade round the back, its inner edge broken by the roots of the ridge -->
+      <path d="M114 294 C110 228 152 190 200 190 C248 190 290 228 286 294
+               C280 263 263 240 240 229
+               q-13 11 -23 0 q-11 11 -21 0 q-11 -11 -21 0 q-10 9 -19 -2
+               C137 240 120 263 114 294 Z"
+            fill="url(#toddler-male-hair-frohawk__back-fade)"/>
+    </g>
+    <!-- the ridge carries on over the crown and narrows to a point behind -->
+    <path d="M187 184 Q177 209 185 232 Q177 259 187 283
+             Q181 310 196 332 Q202 347 206 330
+             Q215 307 209 283 Q217 259 209 232 Q217 209 207 184 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M156 209 C169 198 186 192 200 192" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-frohawk__front-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.42" stop-color="var(--hair2, #331E16)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)" stop-opacity="0.34"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-frohawk__front-ridge" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.66" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the close fade: skin-tight over the whole skull, its hem lobed where the
+           short coils meet the skin rather than cut in a line -->
+      <path d="M120 249 C118 199 155 188 200 188 C245 188 282 199 280 249
+               q-14 -11 -28 -6 q-15 6 -28 0 q-15 -8 -28 -2 q-15 8 -28 2 q-15 -6 -28 4 Z"
+            fill="url(#toddler-male-hair-frohawk__front-fade)"/>
+      <!-- the fade running on down in front of each ear -->
+      <path d="M120 245 C114 265 116 286 122 302 C131 284 135 263 137 243 Z"
+            fill="url(#toddler-male-hair-frohawk__front-fade)"/>
+      <path d="M280 245 C286 263 284 282 278 298 C269 282 265 263 263 243 Z"
+            fill="url(#toddler-male-hair-frohawk__front-fade)"/>
+      <!-- the ridge: a narrow crest, widest at the brow and tapering as it runs back.
+           its contour is nothing but overlapping coil lobes, no two the same size -->
+      <path d="M155 247
+               C146 213 153 186 167 168
+               Q175 149 181 168
+               Q190 147 197 164
+               Q205 143 213 162
+               Q223 148 229 169
+               C241 189 249 215 243 247
+               Q200 259 155 247 Z"
+            fill="url(#toddler-male-hair-frohawk__front-ridge)"/>
+    </g>
+    <!-- the hard edge where the ridge stops and the fade begins, either side -->
+    <path d="M155 237 C151 211 157 185 173 170" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M245 237 C249 211 243 185 227 170" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the undersides of the coil lobes, which is what makes the ridge read as coils -->
+    <g fill="var(--hair2, #331E16)" fill-opacity="0.45">
+      <path d="M162 221 q11 -9 19 2 q-9 11 -19 -2 Z"/>
+      <path d="M185 211 q12 -10 21 1 q-10 12 -21 -1 Z"/>
+      <path d="M210 223 q11 -9 19 2 q-9 11 -19 -2 Z"/>
+      <path d="M172 189 q10 -8 17 2 q-8 10 -17 -2 Z"/>
+      <path d="M195 180 q11 -9 19 2 q-9 11 -19 -2 Z"/>
+      <path d="M213 195 q10 -8 17 2 q-8 10 -17 -2 Z"/>
+      <path d="M185 156 q9 -7 15 2 q-7 9 -15 -2 Z"/>
+    </g>
+    <!-- the fade line, sharpest at each temple -->
+    <path d="M124 286 C130 259 143 234 163 217" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M278 286 C272 261 259 236 241 219" stroke="var(--hair2, #331E16)"
+          stroke-width="3" stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M185 148 C191 142 209 142 215 148" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

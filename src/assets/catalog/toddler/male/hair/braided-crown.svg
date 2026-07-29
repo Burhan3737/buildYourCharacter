@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Braided Crown" data-family="braided-crown" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN - one plait rope wound right round the hairline like a band, drawn as eleven
+       overlapping segments with the seam between each pair cut in hair2, so the band is
+       scalloped and countable rather than a smooth hoop. Everything else is tucked under it.
+       PARTING/HEM - nothing hangs at all; the tucked roll turns under at the nape at y320 and
+       the hem stops well above the shoulder line at y352. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-braided-crown__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the remainder, rolled up and tucked away behind the band -->
+      <path d="M200 170 C152 170 116 202 112 254
+               C109 290 119 316 136 332
+               C179 344 221 344 264 332
+               C281 316 291 290 288 254
+               C284 202 248 170 200 170 Z"
+            fill="url(#toddler-male-hair-braided-crown__back-g)"/>
+    </g>
+    <!-- the tucked roll turns under at the nape -->
+    <path d="M136 304 C169 320 231 320 264 304 C257 330 143 330 136 304 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M158 204 C179 190 221 190 242 204" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-braided-crown__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-braided-crown__braid-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.72" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- smooth hair behind the band, combed back off the face -->
+      <path d="M200 174 C156 174 130 202 130 244
+               C143 235 153 223 167 213
+               C179 203 192 197 200 194
+               C208 197 221 203 233 213
+               C247 223 257 235 270 244
+               C270 202 244 174 200 174 Z"
+            fill="url(#toddler-male-hair-braided-crown__front-g)"/>
+      <!-- the plait itself, wrapped round the hairline temple to temple -->
+      <path d="M114 276 C112 214 152 188 200 188
+               C248 188 288 214 286 276
+               L266 276 C268 227 240 210 200 210
+               C160 210 132 227 134 276 Z"
+            fill="url(#toddler-male-hair-braided-crown__braid-g)"/>
+      <!-- a wisp of hair escaping in front of each ear -->
+      <path d="M122 268 C118 290 120 310 126 324
+               C134 314 132 290 134 266 Z"
+            fill="url(#toddler-male-hair-braided-crown__front-g)"/>
+      <path d="M278 268 C282 290 280 310 274 324
+               C266 314 268 290 266 266 Z"
+            fill="url(#toddler-male-hair-braided-crown__front-g)"/>
+    </g>
+    <!-- the plait segments: the crossovers that make it a braid and not a headband -->
+    <g stroke="var(--hair2, #331E16)" stroke-width="3" stroke-opacity="0.75"
+       fill="none" stroke-linecap="round">
+      <path d="M133.6 262.4 Q124.6 270.2 116.6 273.1"/>
+      <path d="M138.4 246.2 Q127.8 251.4 119.2 252"/>
+      <path d="M146.8 232.2 Q135.1 234.4 126.4 232.6"/>
+      <path d="M158.4 220.8 Q146.4 219.9 138.4 216"/>
+      <path d="M172.6 212.6 Q161.1 208.8 154.1 202.8"/>
+      <path d="M189.4 208.4 Q179 201.6 173.6 194"/>
+      <path d="M206.8 208.6 Q198.2 199.4 194.6 190.7"/>
+      <path d="M223.6 213.2 Q217.2 202.2 215.6 192.8"/>
+      <path d="M238.8 221.6 Q235.1 209.4 235.6 200"/>
+      <path d="M251.6 233.6 Q250.8 220.9 253.4 212"/>
+      <path d="M261 248 Q263.1 235.7 267.8 227.9"/>
+      <path d="M266.4 264.2 Q271.5 253 277.7 246.6"/>
+    </g>
+    <!-- the shadow under the plait, following its inner edge so it sits proud -->
+    <path d="M134 270 C136 224 161 208 200 208 C239 208 264 224 266 270
+             L261 270 C259 229 236 214 200 214 C164 214 141 229 139 270 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M152 210 C175 196 225 196 248 210" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

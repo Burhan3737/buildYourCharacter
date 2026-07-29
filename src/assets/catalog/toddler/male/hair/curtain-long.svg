@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Curtain Long" data-family="curtain-long" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN - a hard centre part, drawn as a real wedge of scalp shadow between two
+       separate crown halves rather than a painted line.
+       LENGTH - the longest family in the slot. The back mass is z10 and draws UNDER the body
+       at z20, so the length that actually reads is carried forward: each front curtain runs
+       past the shoulder line at y352 and down the chest to y412, clear of the torso block. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-curtain-long__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- waist-length mass, widening a little as it falls -->
+      <path d="M200 166 C146 166 114 200 110 256
+               C106 312 104 368 108 416
+               C110 450 114 470 122 482
+               C137 490 153 484 157 470
+               C171 482 190 486 200 480
+               C210 486 229 482 243 470
+               C247 484 263 490 278 482
+               C286 470 290 450 292 416
+               C296 368 294 312 290 256
+               C286 200 254 166 200 166 Z"
+            fill="url(#toddler-male-hair-curtain-long__back-g)"/>
+    </g>
+    <!-- the long sheets, each turning under along its own channel -->
+    <path d="M142 282 C132 332 130 392 136 448 C147 392 145 334 153 284 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M258 282 C268 332 270 392 264 448 C253 392 255 334 247 284 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M195 322 C189 368 191 416 200 454 C213 416 209 366 205 322 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M150 202 C175 184 225 184 250 202" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="11" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-curtain-long__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left curtain: from the centre part, out round the temple and down over the chest -->
+      <path d="M200 168 C175 168 148 181 134 206
+               C122 227 118 253 118 286
+               C118 326 122 370 128 408
+               C141 421 158 415 158 400
+               C149 364 145 324 147 290
+               C149 259 157 234 172 215
+               C182 201 192 189 200 181 Z"
+            fill="url(#toddler-male-hair-curtain-long__front-g)"/>
+      <!-- right curtain, swept a little wider so the pair is not a mirror -->
+      <path d="M200 168 C225 168 252 181 266 206
+               C278 227 284 253 284 288
+               C284 330 280 374 274 412
+               C261 425 244 419 244 404
+               C253 366 257 326 255 292
+               C253 259 245 234 229 215
+               C219 201 208 189 200 181 Z"
+            fill="url(#toddler-male-hair-curtain-long__front-g)"/>
+    </g>
+    <!-- the part itself: a real wedge of scalp shadow at centre -->
+    <path d="M196 172 C193 183 190 191 186 199 C193 191 198 183 200 174 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M204 172 C207 183 210 191 214 199 C207 191 202 183 200 174 Z"
+          fill="var(--hair2, #331E16)"/>
+    <!-- the inner edge of each curtain turns away from the light -->
+    <path d="M149 252 C141 291 141 344 147 390 C155 346 151 294 157 254 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M251 254 C259 293 259 346 253 394 C245 348 249 296 243 256 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M163 192 C175 182 190 176 197 176" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M237 192 C225 182 210 176 203 176" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M128 252 C124 294 124 344 130 386" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M274 254 C278 296 278 346 272 390" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

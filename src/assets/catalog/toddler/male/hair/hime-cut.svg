@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Axes: CROWN - three separate masses, a blunt fringe, two square sidelocks and the fall
+       behind, each cut as its own slab rather than blended into one shape.
+       PARTING/HEM - every hem is a hard level cut, three of them at three different heights:
+       the fringe at y246, the sidelocks at y308 and y302, the back fall at y414. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="toddler-male-hair-hime-cut__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the third mass: a long straight fall with dead-level ends, sides almost parallel -->
+      <path d="M200 158
+               C145 158 110 199 110 256
+               L110 414 q0 10 10 10 h160 q10 0 10 -10 L290 256
+               C290 199 255 158 200 158 Z"
+            fill="url(#toddler-male-hair-hime-cut__back-g)"/>
+    </g>
+    <!-- the fall hangs in flat sheets, each turning under along its own edge -->
+    <path d="M138 270 C132 318 132 370 136 412
+             C145 370 143 318 149 272 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M262 270 C268 318 268 370 264 412
+             C255 370 257 318 251 272 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M195 302 C191 342 193 384 200 414
+             C211 384 207 340 205 302 Z"
+          fill="var(--hair2, #331E16)"/>
+    <!-- the blunt weight line just above the level hem -->
+    <path d="M116 402 L284 402 L284 412 L116 412 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <path d="M150 198 C175 180 225 180 250 198" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="11" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="toddler-male-hair-hime-cut__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="toddler-male-hair-hime-cut__front-lock" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- first mass: the fringe, one slab cut level right across the brow -->
+      <path d="M200 152 C150 152 120 189 120 240
+               L120 246 L280 246 L280 240
+               C280 189 250 152 200 152 Z"
+            fill="url(#toddler-male-hair-hime-cut__front-g)"/>
+      <!-- second mass: two straight sidelocks, cut square at the cheek -->
+      <path d="M116 240 h32 v72 q0 4 -4 4 h-24 q-4 0 -4 -4 Z"
+            fill="url(#toddler-male-hair-hime-cut__front-lock)"/>
+      <path d="M252 240 h32 v68 q0 4 -4 4 h-24 q-4 0 -4 -4 Z"
+            fill="url(#toddler-male-hair-hime-cut__front-lock)"/>
+    </g>
+    <!-- the blunt cut edge of the fringe, a dense band of weight -->
+    <path d="M130 232 L270 232 L270 244 L130 244 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <!-- the square ends of the two sidelocks -->
+    <path d="M116 302 L148 302 L148 312 L116 312 Z" fill="var(--hair2, #331E16)"/>
+    <path d="M252 298 L284 298 L284 308 L252 308 Z" fill="var(--hair2, #331E16)"/>
+    <!-- the gap where each sidelock separates from the fringe above it -->
+    <path d="M144 246 L148 246 L148 308 L144 308 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <path d="M252 246 L256 246 L256 304 L252 304 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <!-- a few cut lines showing the fringe is one solid slab -->
+    <g stroke="var(--hair2, #331E16)" stroke-width="3" stroke-opacity="0.35"
+       fill="none" stroke-linecap="round">
+      <path d="M166 194 V236"/>
+      <path d="M200 188 V236"/>
+      <path d="M234 194 V236"/>
+    </g>
+    <path d="M146 186 C171 168 229 168 254 186" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
