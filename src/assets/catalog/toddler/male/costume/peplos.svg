@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. Nothing in this file has
+       geometry above y 344. Classical Greece, a historical period, drawn as dress up.
+       axes: shoulder=ONE LARGE PIN PER SHOULDER over bare arms · hem=ankle length but open down
+       one whole side, a vertical slit running hem to hip, with a deep overfold reading as a
+       second horizontal hem across the chest.
+       One big pin each side, against the chiton's row of five. That count is the axis. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-peplos__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c1, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EE9885)"/>
+      <stop offset="1" stop-color="var(--c2, #CB6F5E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-peplos__sandal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #45907F)"/>
+      <stop offset="1" stop-color="var(--c1, #33705F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle length rectangle, open down one whole side from hem to hip -->
+    <path d="M152 346 H248 Q256 400 254 450 L231 462 L229 556 Q185 566 144 554 L148 440 Q146 392 152 346 Z"
+          fill="url(#toddler-male-costume-peplos__cloth)"/>
+    <!-- the deep overfold, hanging to the waist -->
+    <path d="M150 344 H250 Q258 380 256 408 Q200 426 144 408 Q142 380 150 344 Z"
+          fill="url(#toddler-male-costume-peplos__fold)"/>
+    <!-- flat sandals -->
+    <rect x="156" y="552" width="48" height="18" rx="7" fill="url(#toddler-male-costume-peplos__sandal)"/>
+    <rect x="196" y="552" width="48" height="18" rx="7" fill="url(#toddler-male-costume-peplos__sandal)"/>
+  </g>
+
+  <!-- belt worn over the fold -->
+  <path d="M146 386 q54 16 108 0 v18 q-54 16 -108 0 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- ONE large pin at each shoulder: the countable identity -->
+  <g>
+    <circle cx="165" cy="356" r="10" fill="var(--c3, #F7C873)"/>
+    <circle cx="165" cy="356" r="4.4" fill="var(--c2, #CB6F5E)"/>
+    <circle cx="235" cy="356" r="10" fill="var(--c3, #F7C873)"/>
+    <circle cx="235" cy="356" r="4.4" fill="var(--c2, #CB6F5E)"/>
+  </g>
+
+  <!-- binding down the open side and along the fold hem -->
+  <path d="M233 464 L231 552" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M148 410 Q200 428 254 410" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- vertical drape folds down the closed side -->
+  <g stroke="var(--c1, #3E8574)" stroke-width="4" fill="none" stroke-linecap="round"
+     stroke-opacity="0.65">
+    <path d="M165 440 L158 542"/>
+    <path d="M196 442 L193 550"/>
+  </g>
+
+  <path d="M165 362 q35 12 70 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
