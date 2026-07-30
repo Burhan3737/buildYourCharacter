@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = CLOSED, one unbroken body fastened by a
+       single button at the natural waist, y306, under a rounded shawl collar that rolls in one
+       piece from the back of the neck all the way down to that button with no notch, no step
+       and no lapel point anywhere, and HEM = a continuous unbroken sweep past the hip at y362
+       with no vent and no side split. Against the elder blazer, the nearest read in this slot:
+       that one hangs open as two separate tailored panels under notched lapels, so its hem is
+       two free front edges rather than one closed sweep, and its front shows the shell.
+       Long set in sleeves under a square shoulder, straight volume.
+       Refitted to the elder body: shoulder line y176 rather than y150, square shoulder cut flat
+       from x148 to x252 then chamfered to x136 and x264 by y186, sleeve outer edge x112 so the
+       y182 arm cap is covered, cuff at y330 just clear of the y328 hand centre.
+       Formalwear lives in top, never in costume: costume hides the shoes and for formalwear
+       the shoes are the look.
+       Surface tools: panel blocking (the shawl collar through c2 over a shirt front through c3)
+       and structural (single waist button, jetted pockets, breast welt, cuff seams). -->
+  <defs>
+    <linearGradient id="elder-female-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4038)"/>
+      <stop offset="1" stop-color="var(--c2, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E4038)"/>
+      <stop offset="1" stop-color="var(--c2, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-dinner-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c1, #4E4038)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-dinner-jacket__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E6D2)"/>
+      <stop offset="1" stop-color="var(--c2, #3B2A22)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straight sleeves hanging from a square shoulder -->
+    <path d="M148 176 L114 184 L112 208 L113 302 L119 330 L156 330 L159 302 L157 212 Z"
+          fill="url(#elder-female-top-dinner-jacket__sleeve)"/>
+    <path d="M252 176 L286 184 L288 208 L287 302 L281 330 L244 330 L241 302 L243 212 Z"
+          fill="url(#elder-female-top-dinner-jacket__sleeve)"/>
+    <!-- one closed body, square shoulders, unbroken hem past the hip -->
+    <path d="M148 176 H252 L264 186 L266 212 L267 268 L265 314 L262 356 C216 364 184 364 138 356 L135 314 L133 268 L134 212 L136 186 Z"
+          fill="url(#elder-female-top-dinner-jacket__body)"/>
+    <!-- shirt front sitting inside the collar roll -->
+    <path d="M190 180 C174 222 176 266 194 296 L200 303 L206 296 C224 266 226 222 210 180 Z"
+          fill="url(#elder-female-top-dinner-jacket__shirt)"/>
+    <!-- unbroken rounded shawl collar, neck to waist button in one piece -->
+    <path d="M176 176 C160 196 152 230 155 268 C158 292 168 306 182 314 L194 296 C176 266 174 222 190 180 H210 C226 222 224 266 206 296 L218 314 C232 306 242 292 245 268 C248 230 240 196 224 176 Z"
+          fill="url(#elder-female-top-dinner-jacket__collar)"/>
+  </g>
+
+  <!-- satin roll highlight following the collar, the mark of a shawl -->
+  <path d="M172 190 C160 216 158 250 164 280 M228 190 C240 216 242 250 236 280"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- neck opening at the top of the roll, on the neck column x182 to x210 -->
+  <path d="M188 176 L200 196 L212 176 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- single closed button at the natural waist -->
+  <circle cx="200" cy="306" r="6" fill="var(--c3, #F2E6D2)"/>
+  <!-- shirt placket and studs, in the middle third of the torso -->
+  <path d="M200 190 v100" stroke="var(--c2, #3B2A22)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="232" r="3.5" fill="var(--c2, #3B2A22)"/>
+  <circle cx="200" cy="264" r="3.5" fill="var(--c2, #3B2A22)"/>
+  <!-- jetted hip pockets -->
+  <path d="M146 320 h40 v10 h-40 z" fill="var(--c2, #3B2A22)"/>
+  <path d="M214 320 h40 v10 h-40 z" fill="var(--c2, #3B2A22)"/>
+  <!-- breast welt -->
+  <path d="M150 250 h26 v8 h-26 z" fill="var(--c2, #3B2A22)"/>
+  <!-- cuff seams -->
+  <path d="M115 310 h42 M285 310 h-42"
+        stroke="var(--c2, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- square shoulder highlight -->
+  <path d="M146 192 q16 -6 32 0 M222 192 q16 -6 32 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

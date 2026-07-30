@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       VOLUME and texture of the outline. One narrow ridge of dense coils standing clear above
+       the drawn skull top at y66, its edge built from unequal overlapping coil lobes so the
+       contour itself is bumpy, widest above the forehead at x168..234 and tapering to a point
+       at the nape.
+       CROWN. Faded skin close sides with a hard front hairline and a bare temple either side of
+       the ridge, so the head reads narrow and tall rather than capped.
+       THE FADE IS A REAL VALUE GRADIENT IN THE HAIR, not a squiggle: the side panels are
+       painted through a userSpaceOnUse ramp that puts hair2 exactly on the skin line at y150
+       and reaches hair1 at y96, and the hairline where the panel meets bare temple skin is a
+       hard drawn edge, not a soft fade out.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, ears (149,129), eye line y134. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-frohawk__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.3"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-frohawk__back-r" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded occipital, wrapping just past the skull edge -->
+      <path d="M148 110 C144 132 150 152 162 164 C174 172 226 172 238 164
+               C250 152 256 132 252 110 C244 136 226 148 200 148 C174 148 156 136 148 110 Z"
+            fill="url(#elder-female-hair-frohawk__back-f)"/>
+      <!-- the ridge running on behind the crown and tapering to a point at the nape -->
+      <path d="M188 58 C179 70 175 88 178 108 C180 138 189 164 200 184
+               C211 164 220 138 222 108 C225 88 221 70 212 58 C206 65 194 65 188 58 Z"
+            fill="url(#elder-female-hair-frohawk__back-r)"/>
+    </g>
+    <path d="M190 98 C194 132 196 154 200 172 C204 154 206 132 210 98 C206 112 194 112 190 98 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M162 138 C178 152 222 152 238 138 C230 160 170 160 162 138 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-frohawk__front-r" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <!-- the fade: hair1 at the crest of the panel, hair2 landing on the skin line at y150 -->
+      <linearGradient id="elder-female-hair-frohawk__front-f"
+                      gradientUnits="userSpaceOnUse" x1="0" y1="152" x2="0" y2="94">
+        <stop offset="0" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.3"/>
+        <stop offset="0.42" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair1, #D9D2C5)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the ridge: lobed coil contour, widest at the forehead, standing 62u off the skull -->
+      <path d="M172 104 C163 90 162 68 168 54 C170 44 175 40 180 45
+               C182 35 189 33 192 40 C195 30 202 30 204 38 C207 30 214 32 216 40
+               C219 33 226 35 227 45 C233 42 237 49 235 59
+               C241 73 238 91 231 104 C224 99 215 102 208 97
+               C203 103 196 103 190 97 C183 102 178 99 172 104 Z"
+            fill="url(#elder-female-hair-frohawk__front-r)"/>
+      <!-- faded sides, thinning away to nothing at the skin line under the ear -->
+      <path d="M166 98 C151 107 142 128 142 150 C142 162 155 164 157 152
+               C158 132 164 118 175 108 Z"
+            fill="url(#elder-female-hair-frohawk__front-f)"/>
+      <path d="M234 98 C249 107 258 128 258 150 C258 162 245 164 243 152
+               C242 132 236 118 225 108 Z"
+            fill="url(#elder-female-hair-frohawk__front-f)"/>
+    </g>
+    <!-- coil channels running up the crest, so the ridge reads as a strip of dense coils -->
+    <path d="M182 50 C176 70 174 88 175 104 C169 88 171 66 178 47 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M200 38 C199 62 199 82 200 104 C195 82 195 60 196 38 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M218 50 C224 70 226 88 225 104 C231 88 229 66 222 47 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M190 42 C188 66 187 86 188 104 C184 86 185 62 187 40 Z"
+          fill="var(--hair2, #9AA3B2)" fill-opacity="0.6"/>
+    <path d="M210 42 C212 66 213 86 212 104 C216 86 215 62 213 40 Z"
+          fill="var(--hair2, #9AA3B2)" fill-opacity="0.6"/>
+    <!-- the HARD hairline where the faded panel meets bare temple skin, a cut and not a blur -->
+    <path d="M168 98 C155 108 147 124 145 142 C149 124 158 112 172 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M232 98 C245 108 253 124 255 142 C251 124 242 112 228 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the last of the shadow just above bare skin, where the clipper ran out -->
+    <path d="M145 132 C143 142 143 148 144 152 C147 145 148 138 150 132 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M255 132 C257 142 257 148 256 152 C253 145 252 138 250 132 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M184 45 C194 38 208 38 216 45" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M150 124 C149 134 148 142 149 150" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M250 124 C251 134 252 142 251 150" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

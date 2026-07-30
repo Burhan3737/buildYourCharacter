@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece and never in costume, because costume hides the shoes and
+       for formalwear the shoes are the look. This slot draws under the face, so there is no
+       ceiling constraint on this file at all.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = a halter neck that leaves both
+       shoulders and the whole upper back bare, rising to a narrow band at the throat at y172
+       from a V at y230, and VOLUME = fitted through the torso and the thigh and then flaring
+       HARD out of the knee into a wide bell.
+       THE KNEE BREAK AND THE BELL, measured on this body. The drawn leg rect is y374 to y544,
+       so the knee is 374 plus 170 over 2 = y459 and the flare is broken at y458, not at the
+       adult file's y444. At the break the fitted leg edge is x154; the bell reaches x102 at its
+       widest and x108 at the hem. That is 154 minus 102 = 52 units of flare on each side.
+       THE BELL STOPS ABOVE THE SOLE. The drawn feet run y544 to y570, so the hem is set at y546
+       and the whole foot still reads underneath it, which is the point of the rule.
+       Against the closed centre front all in one already in this bundle: that one has covered
+       shoulders, a belted waist and straight legs. This one is backless at the top and 104 units
+       wide at the ankle.
+       Elder fit, re-derived off the drawn body: shoulder line y176, torso x144 to x256 running
+       y180 to y336, arms x116 to x144 and x256 to x284 left entirely bare, hips x150 to x250 at
+       y328 to y382, legs x168 to x196 and x204 to x232. The two leg panels are picked up at
+       y326 and carried to x146 and x254 so the hip block is covered with 4 units to spare, and
+       the bodice runs to y330 so the two overlap. The bare shoulders and upper chest are the
+       body's own skin1 and skin2 and never a phantom shirt.
+       Surface tools: panel blocking (a contrast waist band and two hip pockets through c3 and
+       c2) and trim (the halter neck band and its two straps, the knee break seam and both bell
+       hems), plus structural centre and side seams down the flares. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-flare-jumpsuit__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A05C3C)"/>
+      <stop offset="1" stop-color="var(--c2, #77402A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-flare-jumpsuit__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A05C3C)"/>
+      <stop offset="1" stop-color="var(--c2, #77402A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-flare-jumpsuit__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A05C3C)"/>
+      <stop offset="1" stop-color="var(--c2, #77402A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- fitted thigh breaking into a wide bell out of the y459 knee, hem stopping above the sole -->
+    <path d="M146 326 H200 V546 H108 l-6 -44 C116 476 146 470 154 458 L150 392 L146 326 Z"
+          fill="url(#elder-female-onepiece-flare-jumpsuit__legL)"/>
+    <path d="M254 326 H200 V546 H292 l6 -44 C284 476 254 470 246 458 L250 392 L254 326 Z"
+          fill="url(#elder-female-onepiece-flare-jumpsuit__legR)"/>
+    <!-- halter bodice rising to a narrow band at the throat, shoulders left bare -->
+    <path d="M164 230 L190 178 q10-6 20 0 L236 230 q26 0 26 18 l-2 60 q0 16 -8 22 h-104
+             q-8-6 -8-22 l-2-60 q0-18 26-18 Z"
+          fill="url(#elder-female-onepiece-flare-jumpsuit__bodice)"/>
+  </g>
+
+  <!-- halter neck band running up round the neck, and the two straps feeding it -->
+  <path d="M186 180 q14-14 28 0" stroke="var(--c3, #EFD9A8)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 180 L168 230 M210 180 L232 230" stroke="var(--c3, #EFD9A8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast waist band, blocked through c3 -->
+  <rect x="142" y="306" width="116" height="20" rx="8" fill="var(--c3, #EFD9A8)"/>
+  <rect x="190" y="302" width="22" height="28" rx="7" fill="var(--c2, #77402A)"/>
+  <!-- front hip pockets -->
+  <path d="M156 332 h28 l-6 26 q-2 6 -8 6 h-16 q-6 0 -6-6 Z" fill="var(--c2, #77402A)"/>
+  <path d="M244 332 h-28 l6 26 q2 6 8 6 h16 q6 0 6-6 Z" fill="var(--c2, #77402A)"/>
+  <!-- the knee break at y458, called out on both legs -->
+  <path d="M156 458 q22 8 40 2 M244 458 q-22 8 -40 2" stroke="var(--c3, #EFD9A8)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- bell hems, stopping above the y544 sole -->
+  <path d="M110 536 h86 M290 536 h-86" stroke="var(--c3, #EFD9A8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- centre and side seams down the flares -->
+  <path d="M200 336 V546" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 392 l-30 148 M238 392 l30 148" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M172 236 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 400 l-18 128 M230 400 l18 128" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

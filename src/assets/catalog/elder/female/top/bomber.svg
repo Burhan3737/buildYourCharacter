@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bomber Jacket" data-family="bomber" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME = bloused, the body swelling out past the side
+       seam to x141 and x259 at y250 and then gathering hard over a deep rib band so the cloth
+       puffs above it, and CLOSURE = a full centre zip running the whole front from the stand
+       collar at y196 down to the band at y302. Long set in sleeves, hem at the waist, y336.
+       Refitted to the elder body rather than copied: the adult file is a raglan on a y150
+       shoulder, this one is a genuine set in sleeve seamed inboard at x152 and x248 on the
+       y176 elder shoulder, with a softened head domed out to x114 by y192 so the y182 arm cap
+       is covered. Cuffs land at y332, just clear of the y328 hand centre.
+       Surface tools: trim (ribbed stand collar, ribbed cuffs, deep rib hem band, zip tape with
+       a pull) and structural (set in seams, two slash pockets, blouson gather lines). -->
+  <defs>
+    <linearGradient id="elder-female-top-bomber__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5F9E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-bomber__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5F9E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-bomber__rib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #4F5F9E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long set in sleeves, seam inboard at x152 and x248, cuff at y332 -->
+    <path d="M152 176 C138 173 122 177 114 192 C110 202 109 214 110 228 L111 310 C112 324 122 331 135 329 C148 327 153 319 152 305 L151 208 Z"
+          fill="url(#elder-female-top-bomber__sleeve)"/>
+    <path d="M248 176 C262 173 278 177 286 192 C290 202 291 214 290 228 L289 310 C288 324 278 331 265 329 C252 327 247 319 248 305 L249 208 Z"
+          fill="url(#elder-female-top-bomber__sleeve)"/>
+    <!-- blouson body, swelling below the chest and gathering over the rib band -->
+    <path d="M152 176 H248 C254 184 258 196 258 214 L259 250 C262 274 258 292 248 308 C216 320 184 320 152 308 C142 292 138 274 141 250 L142 214 C142 196 146 184 152 176 Z"
+          fill="url(#elder-female-top-bomber__body)"/>
+    <!-- ribbed stand collar, covering the neck column x182 to x210 -->
+    <path d="M176 170 H224 C228 178 229 190 226 200 H174 C171 190 172 178 176 170 Z"
+          fill="url(#elder-female-top-bomber__rib)"/>
+  </g>
+
+  <!-- collar rib lines -->
+  <path d="M182 174 v22 M192 173 v24 M202 173 v24 M212 173 v24 M220 174 v22"
+        stroke="var(--c2, #4F5F9E)" stroke-opacity="0.32" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- deep rib hem band at the waist, drawn in narrower than the bloused chest -->
+  <path d="M152 300 Q200 316 248 300 L246 328 Q200 342 154 328 Z"
+        fill="url(#elder-female-top-bomber__rib)"/>
+  <path d="M166 308 v22 M180 311 v22 M194 313 v22 M208 313 v22 M222 311 v22 M234 308 v22"
+        stroke="var(--c2, #4F5F9E)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- ribbed cuffs -->
+  <path d="M110 306 q22 12 43 0 v18 q-22 12 -43 0 z" fill="url(#elder-female-top-bomber__rib)"/>
+  <path d="M290 306 q-22 12 -43 0 v18 q22 12 43 0 z" fill="url(#elder-female-top-bomber__rib)"/>
+  <!-- full centre zip: tape, teeth and a pull sitting in the middle third of the torso -->
+  <path d="M196 196 h8 v106 h-8 z" fill="var(--c2, #4F5F9E)"/>
+  <path d="M200 198 v102" stroke="var(--c3, #F7C873)" stroke-opacity="0.9" stroke-width="3"
+        fill="none" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <rect x="194" y="240" width="12" height="10" rx="3" fill="var(--c3, #F7C873)"/>
+  <path d="M200 250 v13" stroke="var(--c3, #F7C873)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- set in shoulder seams -->
+  <path d="M154 182 q-4 18 -3 34 M246 182 q4 18 3 34"
+        stroke="var(--c2, #4F5F9E)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- slash pockets -->
+  <path d="M154 262 q19 -6 32 2 l-3 11 q-15 -6 -31 -2 z" fill="var(--c2, #4F5F9E)"/>
+  <path d="M246 262 q-19 -6 -32 2 l3 11 q15 -6 31 -2 z" fill="var(--c2, #4F5F9E)"/>
+  <!-- blouson gather lines, the cloth puffing out above the band -->
+  <path d="M154 288 q46 14 92 0" stroke="var(--c2, #4F5F9E)" stroke-opacity="0.32"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M160 296 q40 12 80 0" stroke="var(--c2, #4F5F9E)" stroke-opacity="0.22"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M156 210 q20 12 36 6 M208 216 q20 6 36 -6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

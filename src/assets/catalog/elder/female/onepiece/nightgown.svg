@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = short set-in cap sleeves hung off a
+       seamed shoulder yoke that reads as its own band across the chest, and VOLUME = one loose
+       fall from that yoke seam to the hem with no waist anywhere at all.
+       Hem is mid-calf at the elder anchor y501 (the drawn leg rect is y374 to y544, so mid-calf
+       is y501); closure is none, a plain round neck pulled on.
+       Against kaftan, the other mid-calf one-piece in this bundle: that is a T-shape falling
+       from wide draped sleeves with a slit neckline, no yoke and no sleeve head. This one has a
+       distinct yoke band and small set-in caps.
+       Surface tools: trim (bound round neckline, a contrast yoke seam, sleeve edge binding and
+       a mid-calf hem band) and structural detail (the gathers pulled out of the yoke seam and
+       three long soft fall folds).
+       Elder fit: shoulder line y176, torso x144 to x256, yoke seam dropped so the sleeve head
+       sits inboard and soft. Longer at the hem than the reference. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-nightgown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FD2C4)"/>
+      <stop offset="1" stop-color="var(--c2, #63A897)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #63A897)"/>
+      <stop offset="1" stop-color="var(--c1, #8FD2C4)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-nightgown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FD2C4)"/>
+      <stop offset="1" stop-color="var(--c2, #63A897)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two cap sleeves, one loose body, and the yoke it hangs from -->
+  <g class="sp-shadow">
+    <path d="M110 198 q0-22 22-22 h14 q22 0 22 22 v20 q0 12 -22 12 h-14 q-22 0 -22-12 Z"
+          fill="url(#elder-female-onepiece-nightgown__sleeve)"/>
+    <path d="M290 198 q0-22 -22-22 h-14 q-22 0 -22 22 v20 q0 12 22 12 h14 q22 0 22-12 Z"
+          fill="url(#elder-female-onepiece-nightgown__sleeve)"/>
+    <path d="M146 204 H254 C264 204 266 210 266 220 L272 498 Q200 516 128 498 L134 220
+             C134 210 136 204 146 204 Z"
+          fill="url(#elder-female-onepiece-nightgown__body)"/>
+    <path d="M158 176 h20 q0 18 22 18 q22 0 22-18 h20 q20 0 20 18 v26 q-62 18 -124 0 v-26
+             q0-18 20-18 Z"
+          fill="url(#elder-female-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- TRIM: bound round neckline -->
+  <path d="M177 178 q4 20 23 20 q19 0 23-20" stroke="var(--c3, #F2E5C8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- TRIM: the contrast yoke seam the whole body hangs from -->
+  <path d="M140 218 q60 18 120 0" stroke="var(--c3, #F2E5C8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- STRUCTURAL: gathers pulled out of the yoke seam -->
+  <path d="M164 226 v22 M182 228 v20 M200 229 v20 M218 228 v20 M236 226 v22"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- TRIM: sleeve edge binding -->
+  <path d="M112 222 q26 12 54 0 M288 222 q-26 12 -54 0" stroke="var(--c3, #F2E5C8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- STRUCTURAL: long soft fall folds, and the mid-calf hem band at y501 -->
+  <path d="M170 240 l-8 250 M200 242 v248 M230 240 l8 250" stroke="#3B2A22"
+        stroke-opacity="0.1" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M132 494 q68 20 136 0" stroke="var(--c3, #F2E5C8)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M158 194 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 340 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

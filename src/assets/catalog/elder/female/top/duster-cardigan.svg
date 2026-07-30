@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = dropped, the armhole carried right out to
+       x104 and the sleeve head hung low and soft with no set in seam at x152, and HEM = MID
+       CALF at y501, recomputed off the elder leg rect y374 to y544 rather than copied from the
+       adult file's y502. Open front with NO buttons, NO collar and no fastening of any kind;
+       soft straight knit drape.
+       Against any long coat sibling that also falls to mid calf: that is a buttoned, collared,
+       set in sleeve column. This one is unmistakably an unfastened knit, dropped at the
+       shoulder, hanging free either side of a 40 unit gap.
+       The bared chest and ribs resolve onto the body's own skin1 and skin2, painted here on the
+       torso ramp y180 to y336 so it matches the drawn body exactly, and below y336 the open
+       gap simply shows the hip and whatever bottom the player is wearing. Never a phantom
+       shirt and never a hole.
+       Surface tools: trim (contrast cuff bands and pocket bands through c3) and structural
+       (two low patch pockets at y400, knit rows, soft drape folds, front edge bands). -->
+  <defs>
+    <linearGradient id="elder-female-top-duster-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #46897B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #46897B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-duster-cardigan__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3E7CC)"/>
+      <stop offset="1" stop-color="var(--c2, #46897B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-duster-cardigan__skin" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="180" x2="0" y2="336">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bared chest and ribs, on the body's exact vertical ramp -->
+  <rect x="179" y="176" width="42" height="160" fill="url(#elder-female-top-duster-cardigan__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- dropped soft sleeves, armhole hung right out to x104 -->
+    <path d="M150 176 C132 174 116 182 108 200 C104 210 103 220 104 234 L105 310 C107 328 118 336 132 334 C146 332 152 322 152 306 L151 210 Z"
+          fill="url(#elder-female-top-duster-cardigan__sleeve)"/>
+    <path d="M250 176 C268 174 284 182 292 200 C296 210 297 220 296 234 L295 310 C293 328 282 336 268 334 C254 332 248 322 248 306 L249 210 Z"
+          fill="url(#elder-female-top-duster-cardigan__sleeve)"/>
+    <!-- left front, hanging unfastened to mid calf -->
+    <path d="M182 176 H150 C136 182 128 198 127 222 L125 320 L123 412 L127 501 H180 C178 412 178 320 180 222 Z"
+          fill="url(#elder-female-top-duster-cardigan__panel)"/>
+    <!-- right front -->
+    <path d="M218 176 H250 C264 182 272 198 273 222 L275 320 L277 412 L273 501 H220 C222 412 222 320 220 222 Z"
+          fill="url(#elder-female-top-duster-cardigan__panel)"/>
+  </g>
+
+  <!-- soft knit bands down each open edge; no buttons and no collar anywhere -->
+  <path d="M182 176 C179 280 178 400 180 501 H170 C168 400 169 280 172 176 Z"
+        fill="var(--c2, #46897B)" opacity="0.55"/>
+  <path d="M218 176 C221 280 222 400 220 501 H230 C232 400 231 280 228 176 Z"
+        fill="var(--c2, #46897B)" opacity="0.55"/>
+  <!-- two low patch pockets at y400 -->
+  <path d="M136 400 h42 v50 q0 7 -7 7 h-28 q-7 0 -7 -7 z" fill="var(--c2, #46897B)"/>
+  <path d="M222 400 h42 v50 q0 7 -7 7 h-28 q-7 0 -7 -7 z" fill="var(--c2, #46897B)"/>
+  <path d="M134 400 h46 v10 h-46 z M220 400 h46 v10 h-46 z"
+        fill="url(#elder-female-top-duster-cardigan__band)"/>
+  <!-- knit rows across the fronts, in the middle third of the torso -->
+  <path d="M132 238 q22 8 46 4 M222 242 q22 4 46 -4 M130 272 q24 8 48 4 M222 276 q24 4 48 -4"
+        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- soft drape folds -->
+  <path d="M146 320 L142 494 M254 320 L258 494"
+        stroke="var(--c2, #46897B)" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- contrast cuff bands -->
+  <path d="M105 306 q23 10 46 0 v14 q-23 10 -46 0 z"
+        fill="url(#elder-female-top-duster-cardigan__band)"/>
+  <path d="M295 306 q-23 10 -46 0 v14 q23 10 46 0 z"
+        fill="url(#elder-female-top-duster-cardigan__band)"/>
+  <!-- highlight on the upper surface of the fronts -->
+  <path d="M134 208 q20 12 38 6 M228 214 q20 6 38 -6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

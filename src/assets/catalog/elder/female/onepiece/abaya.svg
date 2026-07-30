@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday dress worn across the Gulf, North Africa and much of the Muslim world, drawn
+       under its own endonym as ordinary clothing: plain cloth with a plain geometric edging
+       run down both fronts. No ceremonial detail, no community weave, no face covering of any
+       kind, and none may be added.
+       Silhouette axes this family owns: CLOSURE = an open front whose two edges simply meet
+       down the centre with NO fastening at all, not a button, not a tie and not a placket, and
+       VOLUME = flared, an A line whose hem reaches x118 and x282 against a 112 unit torso at
+       x144 to x256, so it stands 26 units wider than the body on each side at the ground.
+       Against the column already in this bundle that shares the ankle hem: that one is closed
+       by a band collar over a buttoned placket, is a straight column with no flare, and its
+       sleeves are narrow set in tubes cut close to the arm. This one is open, flared, and hung
+       from a dropped shoulder on wide straight sleeves 52 units across at x104 to x156.
+       Against the calf length T shaped robe in this bundle: that one is mid calf with draped
+       sleeves cut in one piece with the body. This is ankle at y546.
+       Elder fit, re-derived off the drawn body: shoulder line y176, torso x144 to x256 running
+       y180 to y336, arms x116 to x144 and x256 to x284 running y182 to y332, hips x150 to x250
+       at y328 to y382, legs y374 to y544 so the ankle is y544 and the hem is set at y546. The
+       shoulder seam is soft and dropped, the sleeve is cut loose through the upper arm, and the
+       hem is long, as this stage asks. A front opening rather than an overhead pull on is
+       exactly what this family already is.
+       The open front is NOT a hole and NOT a phantom shirt: the layer worn underneath is drawn
+       in this same file and painted through c2, so the player controls it.
+       Surface tools: panel blocking (two open fronts over an integral under layer) and trim
+       (a plain edging run down the whole length of both fronts, shoulder yoke seams, cuff
+       bands and a hem edging), plus structural detail in the straight fall lines. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5266)"/>
+      <stop offset="1" stop-color="var(--c2, #2B2F3E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #2B2F3E)"/>
+      <stop offset="1" stop-color="var(--c1, #4A5266)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A5266)"/>
+      <stop offset="1" stop-color="var(--c2, #2B2F3E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under layer: the open front resolves onto this, never onto a hole -->
+    <path d="M170 176 H230 q15 0 16 18 l8 352 q-54 14 -108 0 l8-352 q1-18 16-18 Z"
+          fill="url(#elder-female-onepiece-abaya__under)"/>
+    <!-- wide straight sleeves on a soft dropped shoulder, 52 units across -->
+    <path d="M156 176 H124 C112 180 104 192 104 210 L106 322 C108 336 118 342 132 341
+             C148 340 156 332 155 316 L156 240 Z"
+          fill="url(#elder-female-onepiece-abaya__sleeve)"/>
+    <path d="M244 176 H276 C288 180 296 192 296 210 L294 322 C292 336 282 342 268 341
+             C252 340 244 332 245 316 L244 240 Z"
+          fill="url(#elder-female-onepiece-abaya__sleeve)"/>
+    <!-- the two open fronts, meeting down the centre with no fastening, flared to the hem -->
+    <path d="M186 176 H158 q-26 0 -28 26 L118 546 q28 10 54 8 L200 300 L200 244 Z"
+          fill="url(#elder-female-onepiece-abaya__panel)"/>
+    <path d="M214 176 H242 q26 0 28 26 L282 546 q-28 10 -54 8 L200 300 L200 244 Z"
+          fill="url(#elder-female-onepiece-abaya__panel)"/>
+  </g>
+
+  <!-- plain edging running the whole length of both open fronts -->
+  <path d="M187 178 L200 246 L200 300 L169 548" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 178 L200 246 L200 300 L231 548" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- shoulder yoke seams, pulled inboard onto the elder shoulder -->
+  <path d="M152 190 q22 8 34 4 M248 190 q-22 8 -34 4" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- cuff bands -->
+  <rect x="105" y="318" width="50" height="20" rx="9" fill="var(--c2, #2B2F3E)"/>
+  <rect x="245" y="318" width="50" height="20" rx="9" fill="var(--c2, #2B2F3E)"/>
+  <path d="M110 324 q22 8 40 0 M290 324 q-22 8 -40 0" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- the straight fall of both flaring panels -->
+  <path d="M158 230 l-22 306 M242 230 l22 306" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ankle hem edging on each front -->
+  <path d="M122 516 q32 14 58 16 M278 516 q-32 14 -58 16" stroke="var(--c3, #C8A55E)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 202 q28 10 40 6 M248 202 q-28 10 -40 6" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M148 400 q22 8 34 6 M252 400 q-22 8 -34 6" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

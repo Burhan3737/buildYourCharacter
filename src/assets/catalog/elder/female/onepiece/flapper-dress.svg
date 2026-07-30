@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece and never in costume, because costume hides the shoes and
+       for formalwear the shoes are the look. This slot draws under the face, so there is no
+       ceiling constraint on this file at all.
+       Silhouette axes this family owns: VOLUME = a straight boxy tube with NO waist shaping
+       anywhere at all, held between x138 and x262 from y216 to a horizontal seam at the hip,
+       and HEM = a separate fringed panel band hanging below that seam, whose seven strands are
+       cut into the silhouette path itself and stop at mid calf.
+       BOTH MEASURED ON THIS BODY. The hip block is y328 to y382, so the hip seam is drawn at
+       y340 and the tube carries to y346 under it. The drawn leg rect is y374 to y544, so mid
+       calf is 374 plus 0.75 times 170 = y501.5, and the strands are cut from y442 down to y501
+       exactly. Each strand is 13 units wide with a 4 unit gap: seven strands and six gaps is
+       7 times 13 plus 6 times 4 = 115 units, run from x258 back to x143, which centres the
+       fringe on the x200 centreline.
+       Against the strappy fitted A line already in this bundle: that one has a shaped bodice
+       over a flared knee length skirt. This one has no waist and no flare, and half its length
+       is loose thread.
+       Elder fit, re-derived off the drawn body: shoulder line y176, torso x144 to x256 running
+       y180 to y336, hips x150 to x250. The straps cross the shoulder at y176 and the tube's
+       scooped upper edge is dropped to y216, so the shoulders and the upper chest are the
+       body's own skin1 and skin2 and never a phantom shirt. The tube is carried to x138 and
+       x262 so the y328 hip block is covered with 12 units to spare.
+       Surface tools: pattern (a 16 unit bead scatter through c3, clipped to the tube, over the
+       gradient beneath) and trim (the hip seam band, a bound straight neckline and a second
+       bead row at the top of the strands), plus structural strand shadows and chevron beading. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-flapper-dress__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-flapper-dress__fringe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #241F2E)"/>
+      <stop offset="1" stop-color="var(--c1, #3A3346)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-flapper-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <pattern id="elder-female-onepiece-flapper-dress__beads" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #D9B85C)"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #D9B85C)"/>
+    </pattern>
+    <clipPath id="elder-female-onepiece-flapper-dress__clip">
+      <path d="M144 216 q56 18 112 0 q6 4 6 12 v112 q0 6 -6 6 h-112 q-6 0 -6-6 v-112
+               q0-8 6-12 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps crossing the y176 shoulder over bare skin -->
+    <path d="M176 218 L178 174 q0-4 5-4 h6 q5 0 5 4 L192 218 Z"
+          fill="url(#elder-female-onepiece-flapper-dress__strap)"/>
+    <path d="M224 218 L222 174 q0-4 -5-4 h-6 q-5 0 -5 4 L208 218 Z"
+          fill="url(#elder-female-onepiece-flapper-dress__strap)"/>
+    <!-- straight boxy tube, no waist shaping at all, seamed across at the hip -->
+    <path d="M144 216 q56 18 112 0 q6 4 6 12 v112 q0 6 -6 6 h-112 q-6 0 -6-6 v-112 q0-8 6-12 Z"
+          fill="url(#elder-female-onepiece-flapper-dress__tube)"/>
+    <!-- the fringed panel band: seven real strands cut into the lower edge, ending at y501 -->
+    <path d="M138 338 H262 L262 442 L258 442
+             v59 h-13 v-59 h-4 v59 h-13 v-59 h-4 v59 h-13 v-59 h-4
+             v59 h-13 v-59 h-4 v59 h-13 v-59 h-4 v59 h-13 v-59
+             L138 338 Z"
+          fill="url(#elder-female-onepiece-flapper-dress__fringe)"/>
+    <!-- beadwork over the tube, clipped to it -->
+    <g clip-path="url(#elder-female-onepiece-flapper-dress__clip)">
+      <rect x="136" y="214" width="128" height="136"
+            fill="url(#elder-female-onepiece-flapper-dress__beads)" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- the hip seam the fringe band hangs from -->
+  <rect x="136" y="334" width="128" height="14" rx="6" fill="var(--c3, #D9B85C)"/>
+  <!-- a second bead row marking the top of the strands -->
+  <path d="M142 436 h118" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound straight neckline -->
+  <path d="M144 218 q56 18 112 0" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- chevron beading down the tube -->
+  <path d="M152 262 L200 280 L248 262 M152 300 L200 318 L248 300" stroke="var(--c3, #D9B85C)"
+        stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- strand shadows so the fringe reads as separate threads -->
+  <path d="M152 356 v92 M181 356 v92 M219 356 v92 M248 356 v92" stroke="#3B2A22"
+        stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 236 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 390 q52 12 104 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

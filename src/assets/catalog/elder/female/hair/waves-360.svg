@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="360 Waves" data-family="waves-360" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       VOLUME of the outline, a near shaved coat hugging the skull exactly, with the RIPPLE
+       CUT INTO THE CONTOUR ITSELF. The lower edge of the front mass is a run of six wave
+       crests between y104 and y116, not a smooth arc with squiggles laid over it, and the
+       hairline is the crest line of that same wave.
+       LENGTH. The coat carries right round past the ear line at y129 to the nape at y179, so
+       the head reads brushed the whole way round. The faded crop in this slot stops its side
+       panels dead at y142 with a ruler straight hairline and a flat top standing at y64; this
+       one has no straight edge anywhere.
+       THE FADE IS A VALUE RAMP IN THE HAIR, hair1 at the crown falling to hair2 at the skin
+       line, with the five concentric brush rows painted in hair2 so the shadow colour is doing
+       the texture work rather than sitting under it.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, so skull top y66, chin y184, x143 to
+       x257 at the eye line y134, ears (149,129) and (251,129). The skull half width is 57 times
+       the square root of 1 minus ((y minus 125) over 59) squared, giving x145 to x255 at y110
+       and x154 to x246 at y90; the coat is drawn 2 to 5 units proud of that so no sliver of
+       skin shows along the edge. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-waves-360__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <!-- the coat carrying round the back of the head, 108 units across at y140 -->
+    <g class="sp-shadow">
+      <path d="M146 140 C142 154 150 168 164 174 C176 179 224 179 236 174
+               C250 168 258 154 254 140 C248 154 232 162 200 162
+               C168 162 152 154 146 140 Z"
+            fill="url(#elder-female-hair-waves-360__back-g)"/>
+    </g>
+    <!-- the ripple carrying round the nape -->
+    <path d="M152 154 C168 166 232 166 248 154 C240 172 160 172 152 154 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-waves-360__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- one skull close veil. Its outer contour ripples and its lower edge IS the wave
+           crest line: six crests cut into the path between y104 and y116. -->
+      <path d="M147 146 C140 130 138 110 143 96 C145 84 153 74 165 68
+               C177 62 190 61 200 61 C210 61 223 64 235 68
+               C247 74 255 84 257 96 C262 110 260 130 253 146
+               C251 152 244 152 244 145 C243 134 241 124 236 116
+               C232 122 225 112 218 108 C212 112 205 104 198 106
+               C191 104 185 112 179 110 C173 114 167 120 162 116
+               C157 124 155 134 155 145 C155 152 149 152 147 146 Z"
+            fill="url(#elder-female-hair-waves-360__front-g)"/>
+    </g>
+    <!-- five concentric brush rows radiating out from the crown, painted in the shadow colour -->
+    <path d="M180 78 C190 72 210 72 220 78" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M170 88 C186 78 214 78 230 88" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M162 100 C180 86 220 86 238 100" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M154 114 C176 94 224 94 246 114" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M148 130 C172 104 228 104 252 130" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the wave crests catching the light -->
+    <path d="M176 72 C188 67 212 67 224 72" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M164 94 C182 82 218 82 236 94" stroke="#FFFFFF" stroke-opacity="0.11"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M174 67 C186 63 208 63 218 66" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = no sleeve and no side seam, two flat panels
+       joined ONLY over the shoulders, and CLOSURE = completely open down both sides, no
+       fastening of any kind anywhere on the garment.
+       Flat straight panels, hip hem at y350 on the front and y356 on the back.
+       Measured on this file: the front panel is x169 to x231, 62 units, and the back panel is
+       x159 to x241, 82 units, against a 112 unit elder torso that runs x144 to x256. That
+       leaves 15 units of the wearer's own ribs bare down each flank from the underarm to the
+       hip. That skin is the BODY'S OWN skin1 and skin2 showing through, painted by the body
+       layer, with the darker back panel drawn in behind so the gap reads as depth and not as a
+       hole. No shell colour is hard coded and there is no phantom shirt.
+       Against waistcoat, the other sleeveless family: that one is buttoned shut down a deep V
+       with a pointed hem and covered shoulders.
+       Surface tools: panel blocking (front panel through c1 over a back panel through c2) and
+       trim (contrast binding round every edge of the front panel plus a flat waist band). -->
+  <defs>
+    <linearGradient id="elder-female-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E9A5A)"/>
+      <stop offset="1" stop-color="var(--c2, #46693A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #46693A)"/>
+      <stop offset="1" stop-color="var(--c1, #6E9A5A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-tabard__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #46693A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- back panel, hanging free behind, seen past the edges of the front one -->
+    <path d="M162 178 H184 C182 192 187 205 200 208 C213 205 218 192 216 178 H238 L240 232 L241 292 L239 356 H161 L159 292 L160 232 Z"
+          fill="url(#elder-female-top-tabard__back)"/>
+    <!-- front panel, joined to the back only across the shoulders -->
+    <path d="M172 176 H186 C185 195 190 211 200 216 C210 211 215 195 214 176 H228 L230 232 L231 292 L229 350 H171 L169 292 L170 232 Z"
+          fill="url(#elder-female-top-tabard__front)"/>
+  </g>
+
+  <!-- neck opening between the two shoulder joins: the wearer's own skin, never a shirt -->
+  <path d="M186 176 C185 195 190 211 200 216 C210 211 215 195 214 176 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <!-- contrast binding round every edge of the front panel -->
+  <path d="M172 176 H180 L178 232 L177 292 L179 350 H171 L169 292 L170 232 Z" fill="url(#elder-female-top-tabard__bind)"/>
+  <path d="M228 176 H220 L222 232 L223 292 L221 350 H229 L231 292 L230 232 Z" fill="url(#elder-female-top-tabard__bind)"/>
+  <path d="M171 338 H229 L229 350 H171 Z" fill="url(#elder-female-top-tabard__bind)"/>
+  <path d="M172 176 H186 L185 187 H171 Z" fill="var(--c3, #3B2A22)"/>
+  <path d="M228 176 H214 L215 187 H229 Z" fill="var(--c3, #3B2A22)"/>
+  <!-- shoulder join seams, the only place the two panels are attached -->
+  <path d="M175 183 h8 M217 183 h8"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- open side shading on the back panel edges, so the flanks read as a gap -->
+  <path d="M162 216 C159 260 159 306 161 352 M238 216 C241 260 241 306 239 352"
+        stroke="var(--c2, #46693A)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- flat waist band across the front panel, in the readable middle third -->
+  <path d="M171 266 h58 v14 h-58 z" fill="var(--c3, #3B2A22)" opacity="0.55"/>
+  <!-- highlight -->
+  <path d="M180 232 q20 9 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

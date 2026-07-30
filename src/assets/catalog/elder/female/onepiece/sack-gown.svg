@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: CLOSURE = the robe front hangs OPEN the whole way down
+       over a triangular stomacher and a petticoat wedge, so there is no fastening at the centre
+       at all, and VOLUME = a skirt held out wide side to side and flat front to back, with near
+       vertical sides reaching x102 and x298 at the ground.
+       Measured against the elder female body: the hip block is x150 to x250, so the skirt stands
+       48 units clear of the widest point of the body on each side (150 minus 102 = 48; 298 minus
+       250 = 48). That is comfortably past the 40 unit floor and is what separates it in the tray
+       from the round dome of the ball gown, which is bouffant front to back as well as sideways.
+       Shoulder is elbow-length pagoda sleeves ending in two stacked ruffle cuffs; hem is the
+       ground at y564, above the y570 line.
+       NO POWDERED WIG. That is hair and out of scope for this slot.
+       Surface tools: panel blocking (robe fronts, stomacher and petticoat wedge as three
+       separately blocked regions) and trim (stacked ruffle cuffs, bound robe front edges and a
+       flounced hem band), plus structural detail in the stomacher lacing bars and the pleat
+       channels over the skirt.
+       Elder fit: shoulder line y176, torso x144 to x256, arms x116 to x144 and x256 to x284;
+       the elbow sits at about y257 on the drawn arm rect y182 to y332, so the pagoda sleeve
+       stops there and the ruffles fall below it. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-sack-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #96637A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sack-gown__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #96637A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sack-gown__pleat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #96637A)"/>
+      <stop offset="1" stop-color="var(--c1, #C08BA0)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sack-gown__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4E7D2)"/>
+      <stop offset="1" stop-color="var(--c2, #96637A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sack-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C08BA0)"/>
+      <stop offset="1" stop-color="var(--c2, #96637A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS -->
+  <g class="sp-shadow">
+    <!-- two box pleats falling loose from the shoulders at the back -->
+    <path d="M158 176 q-22 2 -28 20 l-8 138 q16 10 42 6 l-2 -164 Z"
+          fill="url(#elder-female-onepiece-sack-gown__pleat)"/>
+    <path d="M242 176 q22 2 28 20 l8 138 q-16 10 -42 6 l2 -164 Z"
+          fill="url(#elder-female-onepiece-sack-gown__pleat)"/>
+    <!-- the skirt: wide side to side, flat front to back, reaching the ground at y564 -->
+    <path d="M152 310 L248 310 C284 334 296 364 298 404 L294 550 Q200 584 106 550 L102 404
+             C104 364 116 334 152 310 Z"
+          fill="url(#elder-female-onepiece-sack-gown__skirt)"/>
+    <!-- petticoat wedge revealed by the open robe front -->
+    <path d="M200 320 L244 552 q-44 12 -88 0 Z"
+          fill="url(#elder-female-onepiece-sack-gown__wedge)"/>
+    <!-- triangular stomacher -->
+    <path d="M186 176 H214 L228 198 L200 322 L172 198 Z"
+          fill="url(#elder-female-onepiece-sack-gown__wedge)"/>
+    <!-- robe fronts hanging open on either side of it -->
+    <path d="M188 176 H158 q-22 0 -24 22 L128 314 q26 16 62 14 L200 318 L172 196 Z"
+          fill="url(#elder-female-onepiece-sack-gown__panel)"/>
+    <path d="M212 176 H242 q22 0 24 22 L272 314 q-26 16 -62 14 L200 318 L228 196 Z"
+          fill="url(#elder-female-onepiece-sack-gown__panel)"/>
+    <!-- elbow length pagoda sleeves, stopping at the elbow anchor y257 -->
+    <path d="M156 182 q-20-4 -32 10 l-22 55 q16 16 44 10 l14-38 Z"
+          fill="url(#elder-female-onepiece-sack-gown__sleeve)"/>
+    <path d="M244 182 q20-4 32 10 l22 55 q-16 16 -44 10 l-14-38 Z"
+          fill="url(#elder-female-onepiece-sack-gown__sleeve)"/>
+  </g>
+
+  <!-- TRIM: two stacked ruffle cuffs at each pagoda opening -->
+  <path d="M104 249 q24 18 44 8 l3 15 q-26 12 -52 -8 Z" fill="var(--c3, #F4E7D2)"/>
+  <path d="M101 268 q26 19 49 8 l3 16 q-29 13 -58 -9 Z" fill="var(--c3, #F4E7D2)"/>
+  <path d="M296 249 q-24 18 -44 8 l-3 15 q26 12 52 -8 Z" fill="var(--c3, #F4E7D2)"/>
+  <path d="M299 268 q-26 19 -49 8 l-3 16 q29 13 58 -9 Z" fill="var(--c3, #F4E7D2)"/>
+
+  <!-- STRUCTURAL: stomacher lacing bars, in the middle third of the torso -->
+  <path d="M180 212 h40 M177 236 h46 M180 260 h40 M186 284 h28"
+        stroke="var(--c2, #96637A)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: the robe front edges, bound -->
+  <path d="M172 196 L200 318 M228 196 L200 318" stroke="var(--c3, #F4E7D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: skirt pleat channels running over the panniers -->
+  <path d="M132 350 l-24 186 M164 330 l-14 210 M236 330 l14 210 M268 350 l24 186"
+        stroke="#3B2A22" stroke-opacity="0.12" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: flounced hem band riding the ground sweep -->
+  <path d="M106 528 Q200 562 294 528" stroke="var(--c3, #F4E7D2)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M150 204 q22 8 42 2 M250 204 q-22 8 -42 2" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M120 412 q80 30 160 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

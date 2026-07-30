@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero Jacket" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = cropped high above the natural waist, the two
+       fronts stopping dead at y262, the shortest jacket hem anywhere in this slot, and
+       SHOULDER/SLEEVE = a three quarter sleeve ending at y286, well clear of the y328 hand.
+       Open front with no fastening of any kind, curved front edges, fitted volume.
+       Refitted to the elder body, not copied from the adult file: shoulder line y176 rather
+       than y150, set in seam pulled inboard to x152 and x248, sleeve head softened and domed
+       out to x114 by y192 so the y182 arm cap is covered with no sliver, side seam eased to
+       x142 and x258 for the 112 wide torso.
+       The open chest and the whole bare midriff below y262 resolve onto the body's own skin1
+       and skin2, painted here on the torso ramp y180 to y336 so it matches the drawn body
+       exactly. Never a phantom shirt and never a hole.
+       Surface tools: trim (contrast binding down the full curved front edge, turn back sleeve
+       cuffs) and structural (curved princess seams, softened shoulder seams). -->
+  <defs>
+    <linearGradient id="elder-female-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C2705F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C2705F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-bolero__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #C2705F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-bolero__skin" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="180" x2="0" y2="336">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the open chest, carrying the wearer's own skin on the body's exact vertical ramp -->
+  <rect x="188" y="176" width="24" height="88" fill="url(#elder-female-top-bolero__skin)"/>
+
+  <g class="sp-shadow">
+    <!-- three quarter sleeves, softened head, ending y286 -->
+    <path d="M152 176 C138 173 122 177 114 192 C110 202 109 214 110 228 L110 266 C111 279 121 286 134 284 C147 282 152 274 151 260 L150 208 Z"
+          fill="url(#elder-female-top-bolero__sleeve)"/>
+    <path d="M248 176 C262 173 278 177 286 192 C290 202 291 214 290 228 L290 266 C289 279 279 286 266 284 C253 282 248 274 249 260 L250 208 Z"
+          fill="url(#elder-female-top-bolero__sleeve)"/>
+    <!-- left front, bowing away from the centre to a cropped y262 hem -->
+    <path d="M190 176 H152 C144 182 142 194 142 212 L143 236 C145 250 151 258 160 262 C172 260 182 255 189 249 C183 222 184 198 190 176 Z"
+          fill="url(#elder-female-top-bolero__panel)"/>
+    <!-- right front -->
+    <path d="M210 176 H248 C256 182 258 194 258 212 L257 236 C255 250 249 258 240 262 C228 260 218 255 211 249 C217 222 216 198 210 176 Z"
+          fill="url(#elder-female-top-bolero__panel)"/>
+  </g>
+
+  <!-- contrast binding, running the curved front edge and turning the corner at the hem -->
+  <path d="M190 176 C184 198 183 222 189 249 C182 255 172 260 160 262 L157 254 C166 250 174 246 180 242 C175 216 176 196 181 176 Z"
+        fill="url(#elder-female-top-bolero__bind)"/>
+  <path d="M210 176 C216 198 217 222 211 249 C218 255 228 260 240 262 L243 254 C234 250 226 246 220 242 C225 216 224 196 219 176 Z"
+        fill="url(#elder-female-top-bolero__bind)"/>
+  <!-- turn back sleeve cuffs at the three quarter opening -->
+  <path d="M110 258 q21 10 41 0 v16 q-21 10 -41 0 z" fill="var(--c3, #FBF0E4)" opacity="0.9"/>
+  <path d="M290 258 q-21 10 -41 0 v16 q21 10 41 0 z" fill="var(--c3, #FBF0E4)" opacity="0.9"/>
+  <!-- softened shoulder seams, sitting inboard on the elder shoulder -->
+  <path d="M154 182 q-4 16 -3 32 M246 182 q4 16 3 32"
+        stroke="var(--c2, #C2705F)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- curved princess seams following the front edge -->
+  <path d="M163 202 C159 224 159 244 163 258 M237 202 C241 224 241 244 237 258"
+        stroke="var(--c2, #C2705F)" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight on the upper surface of the fronts -->
+  <path d="M147 200 q18 12 34 4 M219 204 q18 8 34 -4"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN, bare. There is no cap, no dome and no mass of any kind anywhere in this file.
+       The skull and both ears are fully exposed and the only drawn forms are a soft shadow
+       sitting where the nape would be and a faint trace at each temple where the hairline
+       used to run. This is a haircut, and it is also what alopecia areata looks like. It is
+       drawn plainly and it is finished.
+       VOLUME of the outline, none. Nothing here rises above the drawn skull top at y66 or
+       clears the skull edge by more than the 2 units of overlap the contract asks for, which
+       is exactly what parts it from the shortest crop in this slot: that one is a closed cap
+       standing from y56 to y110 over the whole vault.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, so skull top y66 and chin y184, and
+       the skull half width at a given y is 57 times the square root of 1 minus ((y minus 125)
+       over 59) squared. That gives x150 to x250 at y96, x145 to x255 at y110, x148 to x252 at
+       y150 and x159 to x241 at y84, and every coordinate below is placed on those figures.
+       Ears (149,129) and (251,129) are left completely uncovered. Eye line y134.
+       Both variables do real work: hair1 lights the nape shadow and the lower whisper, hair2
+       carries the nape underside and both temple traces. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-smooth-scalp__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <!-- a soft shadow where the nape sits, 84 units across. Not a skull cap: its top edge is
+         y150, well below the skull top at y66, and it never closes over the vault. -->
+    <g class="sp-shadow">
+      <path d="M158 150 C154 168 164 184 182 190 C194 194 206 194 218 190
+               C236 184 246 168 242 150 C232 168 218 176 200 176
+               C182 176 168 168 158 150 Z"
+            fill="url(#elder-female-hair-smooth-scalp__back-g)" fill-opacity="0.7"/>
+    </g>
+    <path d="M170 164 C182 176 218 176 230 164 C224 186 176 186 170 164 Z"
+          fill="var(--hair2, #9AA3B2)" fill-opacity="0.5"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <!-- one variable ramped by opacity, which is the sanctioned way to fade a single
+           colour: the trace is strongest against the skull edge and gone by the cheekbone -->
+      <linearGradient id="elder-female-hair-smooth-scalp__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.5"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.05"/>
+      </linearGradient>
+    </defs>
+    <!-- the faint trace of a hairline at each temple, hugging the skull edge, and nothing else -->
+    <g class="sp-shadow">
+      <path d="M148 96 C143 105 141 116 143 127 C147 118 151 107 158 100 Z"
+            fill="url(#elder-female-hair-smooth-scalp__front-g)"/>
+      <path d="M252 96 C257 105 259 116 257 127 C253 118 249 107 242 100 Z"
+            fill="url(#elder-female-hair-smooth-scalp__front-g)"/>
+    </g>
+    <!-- where the hairline would have run, read as a whisper and never as an edge -->
+    <path d="M152 110 C168 92 232 92 248 110" stroke="var(--hair2, #9AA3B2)"
+          stroke-opacity="0.26" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M164 120 C178 108 222 108 236 120" stroke="var(--hair1, #D9D2C5)"
+          stroke-opacity="0.18" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the bare crown catching the light, kept inside the skull edge at every y -->
+    <path d="M172 84 C186 74 214 74 228 84" stroke="#FFFFFF" stroke-opacity="0.32"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M180 98 C192 90 208 90 220 98" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN, a horseshoe. The whole top of the skull is bare and the hair survives only as two
+       dense arms round the temples joined by a band at the nape, with the hairline pulled back
+       into two clear temple bays. Nothing at all is drawn above y78 on the centre line, where
+       the drawn skull top is y66, so the bare crown is genuinely open scalp and not a thin cap.
+       VOLUME of the outline, a ring: the widest point sits down at the drawn ear line y129
+       rather than over the crown, so the profile reads as a band around a bare dome.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, ears (149,129) and (251,129), eye line
+       y134, chin y184.
+       This is real, unembarrassed hair. It is dense and lit where it grows.
+       Surface tools: panel blocking (the two temple arms against the nape band) and structural
+       detail (the receded front edge of each arm IS the temple bay, cut into the outline). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-crown-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the back of the horseshoe: a band across the nape joining the two arms -->
+      <path d="M150 126 C146 147 154 166 170 175 C184 182 216 182 230 175
+               C246 166 254 147 250 126 C243 149 226 160 200 160 C174 160 157 149 150 126 Z"
+            fill="url(#elder-female-hair-crown-thinning__back-g)"/>
+    </g>
+    <!-- the shaded inner face of the nape band -->
+    <path d="M160 146 C176 160 224 160 240 146 C234 172 166 172 160 146 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M166 172 C180 180 220 180 234 172 C226 184 174 184 166 172 Z"
+          fill="var(--hair2, #9AA3B2)" opacity="0.7"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-crown-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the two dense arms; the high inner corner of each one is the temple bay -->
+      <path d="M170 80 C154 88 145 108 142 130 C140 152 149 169 164 177
+               C177 184 189 177 184 166 C169 157 160 142 160 124
+               C160 106 166 91 177 82 Z"
+            fill="url(#elder-female-hair-crown-thinning__front-g)"/>
+      <path d="M230 80 C246 88 255 108 258 130 C260 152 251 169 236 177
+               C223 184 211 177 216 166 C231 157 240 142 240 124
+               C240 106 234 91 223 82 Z"
+            fill="url(#elder-female-hair-crown-thinning__front-g)"/>
+    </g>
+    <!-- the receded front edge of each arm: this line IS the temple bay -->
+    <path d="M175 84 C164 95 160 110 160 126 C155 110 162 92 170 81 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M225 84 C236 95 240 110 240 126 C245 110 238 92 230 81 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the shaded lower turn of each arm as it hands over to the nape band -->
+    <path d="M162 148 C168 161 175 170 184 175 C171 178 160 166 158 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M238 148 C232 161 225 170 216 175 C229 178 240 166 242 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the two temple bays: bare scalp cut back behind each arm -->
+    <path d="M175 82 C186 73 198 69 206 69 C190 74 180 82 174 95 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <path d="M225 82 C214 73 202 69 194 69 C210 74 220 82 226 95 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <!-- the bare crown catching the light between the two arms -->
+    <path d="M180 76 C190 68 210 68 220 76" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M150 104 C145 120 145 140 150 156" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M250 104 C255 120 255 140 250 156" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

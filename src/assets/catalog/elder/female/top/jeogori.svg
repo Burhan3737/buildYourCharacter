@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Korean everyday dress, the upper half of hanbok. Drawn plainly and respectfully: the
+       collar band (git) with its pale edging strip, the crossover front, and one long ribbon
+       tie (goreum). Plain cloth, generic geometric trim, no ceremonial or ritual detail and no
+       community specific woven design.
+       WRAP DIRECTION: wrapped LEFT OVER RIGHT. The wearer's left front is the one drawn on
+       top, which on a front view is the panel entering from the VIEWER'S RIGHT and crossing
+       down to the viewer's left. Right over left is how the dead are dressed and is never
+       drawn. Direction taken from the adult female jeogori; the coordinates are all new.
+       SHARED LINE WITH chima, re-derived for the elder body: the chima skirt in the bottom
+       slot carries a wrapped chest band whose TOP EDGE IS AT y244 and which runs 30 units deep
+       to y274. This jeogori's HEM IS THEREFORE LOCKED AT y269, inside that band's depth and
+       overlapping it, so the pair never reads as a jacket tucked into a strapless dress.
+       (The elder torso is y180 to y336; 40.6 percent down it is y244, matching the adult
+       female pair which used band top y215 with hem y240.)
+       Silhouette axes this family owns: CLOSURE = a crossover wrap front held only by one long
+       ribbon tie, no button and no zip, and HEM = y269, just below the bust, the shortest
+       jacket body in the slot. Fitted short volume on a gently curved sleeve line to a cuff
+       at y286.
+       Surface tools: trim (collar band with its pale edging strip, contrasting cuff bands)
+       and structural (curved sleeve seam, ribbon tie with two hanging ends, wrap seam). -->
+  <defs>
+    <linearGradient id="elder-female-top-jeogori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E3D0)"/>
+      <stop offset="1" stop-color="var(--c2, #CFB79C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-jeogori__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E3D0)"/>
+      <stop offset="1" stop-color="var(--c2, #CFB79C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E3D0)"/>
+      <stop offset="1" stop-color="var(--c2, #CFB79C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-jeogori__git" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9C3F58)"/>
+      <stop offset="1" stop-color="var(--c2, #CFB79C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-jeogori__ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9C3F58)"/>
+      <stop offset="1" stop-color="var(--c2, #CFB79C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- sleeves on a gently curved underarm line, softened head set inboard at x160 / x240,
+         cuff at y286 over the wider set elder arms -->
+    <path d="M160 176 H128 C116 180 112 196 112 216 L113 252 C116 272 130 286 152 286 C165 286 170 277 167 265 C157 251 155 228 158 200 Z"
+          fill="url(#elder-female-top-jeogori__sleeve)"/>
+    <path d="M240 176 H272 C284 180 288 196 288 216 L287 252 C284 272 270 286 248 286 C235 286 230 277 233 265 C243 251 245 228 242 200 Z"
+          fill="url(#elder-female-top-jeogori__sleeve)"/>
+    <!-- the wearer's RIGHT front, laid UNDER, entering from the viewer's left -->
+    <path d="M186 176 H170 C154 180 145 194 143 216 L142 258 C168 270 200 272 226 266 L232 228 Z"
+          fill="url(#elder-female-top-jeogori__body)"/>
+    <!-- the wearer's LEFT front, laid OVER: left over right, crossing to the viewer's left -->
+    <path d="M214 176 H230 C246 180 255 194 257 216 L258 258 C232 270 200 272 174 266 L168 228 Z"
+          fill="url(#elder-female-top-jeogori__over)"/>
+  </g>
+
+  <!-- collar band on the under front, disappearing beneath the over front -->
+  <path d="M186 176 L200 204 L192 212 L176 178 Z" fill="url(#elder-female-top-jeogori__git)"/>
+  <!-- collar band on the over front, running the full crossover edge down to the hem -->
+  <path d="M214 176 L168 228 L174 266 L186 264 L182 232 L224 180 Z"
+        fill="url(#elder-female-top-jeogori__git)"/>
+  <!-- pale edging strip along the over collar -->
+  <path d="M216 180 L174 230 L178 260" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck opening between the two collar bands -->
+  <path d="M186 176 L200 202 L214 176 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- the ribbon tie, knotted where the fronts cross and hanging long over the chima -->
+  <path d="M176 234 h28 q6 0 6 8 v13 q0 8 -6 8 h-28 q-6 0 -6-8 v-13 q0-8 6-8 z"
+        fill="url(#elder-female-top-jeogori__ribbon)"/>
+  <path d="M178 262 C172 296 170 330 174 362 L190 360 C186 328 188 296 194 264 Z"
+        fill="var(--c3, #9C3F58)"/>
+  <path d="M198 262 C202 292 206 320 214 344 L228 338 C220 316 214 290 212 264 Z"
+        fill="var(--c3, #9C3F58)" opacity="0.86"/>
+  <!-- contrasting cuff bands -->
+  <path d="M113 258 C117 274 131 286 152 286 C165 286 170 277 167 265 L157 262 C158 270 155 276 149 276 C134 275 124 266 120 254 Z"
+        fill="var(--c3, #9C3F58)" opacity="0.9"/>
+  <path d="M287 258 C283 274 269 286 248 286 C235 286 230 277 233 265 L243 262 C242 270 245 276 251 276 C266 275 276 266 280 254 Z"
+        fill="var(--c3, #9C3F58)" opacity="0.9"/>
+  <!-- wrap seam under the over front, at the locked hem line -->
+  <path d="M188 260 C206 265 220 265 236 260"
+        stroke="var(--c2, #CFB79C)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 212 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

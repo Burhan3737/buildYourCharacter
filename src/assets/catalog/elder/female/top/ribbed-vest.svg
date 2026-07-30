@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: SHOULDER = no sleeve at all on 30 unit WIDE STRAPS
+       over an armhole cut DEEP AND LOW INTO THE RIBS, the scoop biting in to x161 / x239 at
+       the chest and not reaching the side seam until y252, and VOLUME = a boxy body hanging
+       straight from the underarm to a flat hip hem at y344, closed all round.
+       That is the whole separation from tank, which sets its wide straps over a rounded
+       armhole on a body that follows the waist, and from camisole. The armhole depth is the
+       outline change; the rib is only surface.
+       Re-derived for the elder body: the torso is x144 to x256, so the side seams sit at x145
+       and x255 and the straps run x154 to x184 and x216 to x246, all 8 units narrower than the
+       adult female pattern.
+       Surface tools: pattern (14 unit vertical rib painted through c2) and trim (contrast
+       armhole binding, neck bind and a flat hem band through c3). -->
+  <defs>
+    <linearGradient id="elder-female-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C4913A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-ribbed-vest__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #45372A)"/>
+      <stop offset="1" stop-color="var(--c2, #C4913A)"/>
+    </linearGradient>
+    <pattern id="elder-female-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="170" width="14" height="14">
+      <rect x="4" y="0" width="4" height="14" fill="var(--c2, #C4913A)"/>
+    </pattern>
+    <clipPath id="elder-female-top-ribbed-vest__clip">
+      <path d="M154 176 H184 C188 192 192 206 200 210 C208 206 212 192 216 176 H246 C243 200 237 224 239 240 C247 246 252 250 254 252 L255 338 C218 348 182 348 145 338 L146 252 C148 250 153 246 161 240 C163 224 157 200 154 176 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- one piece: wide straps, a deep low cut armhole scoop on each side, boxy body -->
+    <path d="M154 176 H184 C188 192 192 206 200 210 C208 206 212 192 216 176 H246 C243 200 237 224 239 240 C247 246 252 250 254 252 L255 338 C218 348 182 348 145 338 L146 252 C148 250 153 246 161 240 C163 224 157 200 154 176 Z"
+          fill="url(#elder-female-top-ribbed-vest__body)"/>
+    <!-- vertical rib, clipped to the vest -->
+    <g clip-path="url(#elder-female-top-ribbed-vest__clip)">
+      <rect x="140" y="172" width="122" height="182" fill="url(#elder-female-top-ribbed-vest__rib)" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- neck bind across the scoop between the straps, covering x176 to x224 at the shoulder -->
+  <path d="M184 176 C188 192 192 206 200 210 C208 206 212 192 216 176 L224 178 C220 200 214 216 200 221 C186 216 180 200 176 178 Z"
+        fill="var(--c3, #45372A)"/>
+  <!-- contrast binding running the full length of the deep armhole -->
+  <path d="M154 178 C157 200 163 224 161 240 C153 246 148 250 146 254 L154 257 C157 251 161 247 169 242 C172 224 166 200 162 178 Z"
+        fill="url(#elder-female-top-ribbed-vest__bind)"/>
+  <path d="M246 178 C243 200 237 224 239 240 C247 246 252 250 254 254 L246 257 C243 251 239 247 231 242 C228 224 234 200 238 178 Z"
+        fill="url(#elder-female-top-ribbed-vest__bind)"/>
+  <!-- flat hem band at the hip -->
+  <path d="M146 318 q54 12 108 0 l1 20 q-54 11 -110 0 z" fill="var(--c3, #45372A)" opacity="0.86"/>
+  <!-- side seams reading the boxy body -->
+  <path d="M162 268 q-2 24 -1 46 M238 268 q2 24 1 46"
+        stroke="var(--c2, #C4913A)" stroke-opacity="0.32" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M180 228 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 292 q42 13 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

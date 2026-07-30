@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       PARTING and hem. Three separate blunt cut lines in one head: a fringe cut dead level
+       across the brow at y122, two sidelocks squared off at the cheek at y152, and a flat hem
+       on the long fall. All of them are ruler straight, which is what separates this from every
+       lobed or tapered family in the slot.
+       LENGTH. The fall carries to the hip while the two front masses stop at the cheek, so the
+       outline steps twice on the way down.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, eye line y134 so the fringe hem at
+       y122 sits level with the brow, jaw corners y156 so the sidelocks square off just above
+       them, drawn shoulder line y180.
+       LENGTH TRAP FIXED HERE. The adult/female reference puts the whole long fall in the back
+       group, which is z10 and draws UNDER the body at z20, so its length renders as nothing.
+       In this version two long straight outboard falls are carried FORWARD in
+       data-part="front", down past the shoulder line at y180 and outside the torso block at
+       x144..256, to a blunt hem at y298. The back group keeps the mass. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-hime-cut__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M200 60 C152 60 124 94 122 146 C118 206 120 274 124 334 L276 334
+               C280 274 282 206 278 146 C276 94 248 60 200 60 Z"
+            fill="url(#elder-female-hair-hime-cut__back-g)"/>
+    </g>
+    <!-- straight fall lines, and the blunt hem edge -->
+    <path d="M138 164 C130 224 130 280 136 332 L146 332 C142 280 142 224 148 166 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M262 164 C270 224 270 280 264 332 L254 332 C258 280 258 224 252 166 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M194 202 C190 258 191 300 195 332 L203 332 C201 300 200 258 200 202 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <rect x="124" y="326" width="152" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M150 92 C172 76 228 76 250 92" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M154 254 C176 266 224 266 246 254" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-hime-cut__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-hime-cut__front-f" x1="0" y1="0" x2="0.15" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the fringe, cut dead level at the brow -->
+      <path d="M200 52 C166 52 148 72 150 100 L150 122 L250 122 L250 100
+               C252 72 234 52 200 52 Z"
+            fill="url(#elder-female-hair-hime-cut__front-g)"/>
+      <!-- two sidelocks, squared off at the cheek just above the jaw corners at y156 -->
+      <path d="M152 94 C142 98 134 106 133 118 L133 152 L159 152 L159 118
+               C159 108 156 100 152 94 Z"
+            fill="url(#elder-female-hair-hime-cut__front-g)"/>
+      <path d="M248 94 C258 98 266 106 267 118 L267 152 L241 152 L241 118
+               C241 108 244 100 248 94 Z"
+            fill="url(#elder-female-hair-hime-cut__front-g)"/>
+      <!-- THE FIX: two long outboard falls carried past the shoulder line to a blunt hem -->
+      <path d="M133 128 C126 178 124 236 128 290 L128 298 L160 298 L160 290
+               C156 236 156 178 160 130 Z"
+            fill="url(#elder-female-hair-hime-cut__front-f)"/>
+      <path d="M267 128 C274 178 276 236 272 290 L272 298 L240 298 L240 290
+               C244 236 244 178 240 130 Z"
+            fill="url(#elder-female-hair-hime-cut__front-f)"/>
+    </g>
+    <!-- the three blunt cut edges: fringe, sidelock, and the hem of the long fall -->
+    <rect x="150" y="114" width="100" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="133" y="144" width="26" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="241" y="144" width="26" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="128" y="290" width="32" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="240" y="290" width="32" height="8" fill="var(--hair2, #9AA3B2)"/>
+    <!-- the gap between fringe and sidelock, and the straight grain of each mass -->
+    <path d="M152 96 L156 122 L150 122 L148 98 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M248 96 L244 122 L250 122 L252 98 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M172 78 C170 96 170 110 171 120 L177 120 C176 108 176 94 178 78 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M228 78 C230 96 230 110 229 120 L223 120 C224 108 224 94 222 78 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M140 156 C136 210 136 254 140 288 L146 288 C143 254 143 210 146 156 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M260 156 C264 210 264 254 260 288 L254 288 C257 254 257 210 254 156 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M168 72 C186 60 214 60 232 72" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M162 102 C180 96 220 96 238 102" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

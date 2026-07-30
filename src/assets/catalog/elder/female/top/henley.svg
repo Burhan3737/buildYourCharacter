@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: CLOSURE = a collarless THREE BUTTON HALF PLACKET cut
+       straight into a plain round neckline, running y182 to y252, with no collar of any kind
+       anywhere on the garment, and SHOULDER/SLEEVE = long sleeves PUSHED UP and bunched into a
+       roll at the forearm, the roll swelling out to x105 and x295 between y284 and y308 and
+       leaving 24 units of bare forearm above the y332 wrist.
+       Against the collared full placket shirt in this slot: that one fastens the whole way down
+       and its sleeves run to a flat cuff at the wrist. Against the short sleeve knit collar
+       family: that one stops at y252 and swings down to a curved shirt tail at y348. This body
+       is straight and its hem is cut flat across the hip at y352.
+       Refitted to the elder body rather than copied from the adult file: shoulder line y176
+       rather than y150, torso x144 to x256 running y180 to y336, arms x116 to x144 and x256 to
+       x284 running y182 to y332 with the elbow at y257. The set in seam is pulled inboard to
+       x152 and x248 and the sleeve head is softened and domed out to x114 by y214, so the
+       y182 arm cap is covered with no sliver. The hem is dropped to y352 on the y328 to y382
+       hip block, longer than the reference as the stage asks, and the body is cut with a
+       little more ease through the upper arm.
+       A front opening rather than an overhead pull on is what this stage prefers, and the
+       placket is the reason this family is a good fit for it.
+       Surface tools: panel blocking (the placket band and the neck bind through c3) and
+       structural detail (three buttons, the rolled push up cuffs, the push up creases and the
+       softened set in shoulder seams). -->
+  <defs>
+    <linearGradient id="elder-female-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-henley__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F1E0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- sleeves pushed up: slim past the y257 elbow, then swelling into a bunched roll -->
+    <path d="M152 176 C134 180 116 192 114 214 L113 280 C107 286 105 298 109 306
+             C120 314 139 313 148 304 C151 294 150 286 147 280 L151 214 Z"
+          fill="url(#elder-female-top-henley__sleeve)"/>
+    <path d="M248 176 C266 180 284 192 286 214 L287 280 C293 286 295 298 291 306
+             C280 314 261 313 252 304 C249 294 250 286 253 280 L249 214 Z"
+          fill="url(#elder-female-top-henley__sleeve)"/>
+    <!-- straight body under a round collarless neckline, flat hip hem at y352 -->
+    <path d="M172 176 C184 188 216 188 228 176 C248 180 258 194 259 218 L261 272
+             C259 306 257 330 255 352 C214 364 186 364 145 352 C143 330 141 306 139 272
+             L141 218 C143 194 152 180 172 176 Z"
+          fill="url(#elder-female-top-henley__body)"/>
+  </g>
+
+  <!-- three button half placket, cut straight down from the neckline -->
+  <path d="M186 182 h28 q3 0 3 5 v60 q0 5 -3 5 h-28 q-3 0 -3-5 v-60 q0-5 3-5 z"
+        fill="url(#elder-female-top-henley__placket)"/>
+  <path d="M200 188 v58" stroke="var(--c2, #8D9C77)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="198" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="218" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="238" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <!-- round neck bind, no collar -->
+  <path d="M172 174 C184 188 216 188 228 174 L232 182 C218 196 182 196 168 182 Z"
+        fill="var(--c3, #F6F1E0)"/>
+  <path d="M182 188 q18 10 36 0 q-7 14 -18 14 q-11 0 -18-14 z" fill="var(--skin2, #E7B892)"/>
+  <!-- rolled cuff bands where the sleeve is pushed up off the forearm -->
+  <path d="M110 284 q20 10 38 -2 l1 15 q-20 12 -40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <path d="M290 284 q-20 10 -38 -2 l-1 15 q20 12 40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <!-- push up creases above each roll -->
+  <path d="M120 256 q14 6 26 0 M280 256 q-14 6 -26 0"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- softened set in shoulder seams, pulled inboard onto the elder shoulder -->
+  <path d="M154 188 q4 20 2 40 M246 188 q-4 20 -2 40"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- flat hem stitch, no band and no curve -->
+  <path d="M148 342 q52 14 104 0" stroke="var(--c2, #8D9C77)" stroke-opacity="0.45"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 220 q46 17 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

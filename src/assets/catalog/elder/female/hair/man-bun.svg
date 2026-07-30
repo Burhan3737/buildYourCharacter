@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Man Bun" data-family="man-bun" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN. No part at all, and the hairline swept straight back to sit at y82, so the whole
+       forehead stays bare between y82 and the drawn eye line at y134. The knot family already
+       in this slot keeps a low cap over the brow; this one exposes it entirely.
+       PARTING and hem. Everything is wound up into one small coiled knot sitting high and
+       BEHIND the crown, at y36..80 above the drawn skull top of y66, with two escaped strands
+       of deliberately unequal length left hanging at the temples, so the hem reads as knotted
+       plus loose rather than as a closed cap.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, ears (149,129), eye
+       line y134. The escaped strands fall to y200 and y184, past the ear line but well short
+       of the drawn shoulder at y180 on the outboard side, so they read as strands and not as
+       length. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-man-bun__back-k" x1="0" y1="0" x2="0.7" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-man-bun__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the knot: three overlapping wound lobes, not a smooth ball -->
+      <path d="M200 36 C212 34 222 38 226 46 C236 50 238 62 231 70
+               C226 80 210 84 198 80 C186 82 174 76 173 65
+               C165 58 170 45 181 42 C186 36 193 35 200 36 Z"
+            fill="url(#elder-female-hair-man-bun__back-k)"/>
+      <!-- the gathered root the knot is wound onto -->
+      <path d="M184 74 C180 86 184 96 192 100 C198 103 204 103 210 100
+               C218 96 221 86 217 74 C210 81 191 81 184 74 Z"
+            fill="url(#elder-female-hair-man-bun__back-g)"/>
+    </g>
+    <path d="M188 60 C190 51 197 45 206 46 C213 47 218 52 219 59
+             C215 52 209 49 202 50 C195 51 190 54 188 60 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M180 54 C176 62 178 70 184 75 C179 68 178 61 179 54 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M186 42 C193 37 203 37 210 41" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-man-bun__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- swept back band: the inner edge sits at y82 so the forehead is fully exposed -->
+      <path d="M144 140 C139 96 166 60 200 60 C234 60 261 96 256 140
+               C254 148 240 148 238 138 C236 110 222 84 200 82
+               C178 84 164 110 162 138 C160 148 146 148 144 140 Z"
+            fill="url(#elder-female-hair-man-bun__front-g)"/>
+      <!-- two escaped strands, deliberately unequal -->
+      <path d="M148 132 C142 152 142 178 148 200 C152 206 158 204 157 196
+               C152 174 152 152 156 134 Z"
+            fill="url(#elder-female-hair-man-bun__front-g)"/>
+      <path d="M252 132 C258 148 259 166 255 184 C252 190 246 188 247 180
+               C250 162 249 148 245 134 Z"
+            fill="url(#elder-female-hair-man-bun__front-g)"/>
+    </g>
+    <!-- the sweep lines feeding the knot, and the shaded underside of each strand -->
+    <path d="M168 112 C180 94 190 86 200 84 C188 90 178 100 170 116 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M232 112 C220 94 210 86 200 84 C212 90 222 100 230 116 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M150 68 C160 78 164 92 166 106 C162 90 156 78 147 72 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M250 68 C240 78 236 92 234 106 C238 90 244 78 253 72 Z" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M147 150 C145 168 146 186 151 199 C152 182 150 166 152 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M253 150 C255 164 255 176 252 186 C251 172 251 160 249 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the swept back hairline edge, the cue that the forehead is bare by choice -->
+    <path d="M164 92 C180 80 220 80 236 92 C218 86 182 86 164 92 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M166 96 C182 76 208 68 226 72" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

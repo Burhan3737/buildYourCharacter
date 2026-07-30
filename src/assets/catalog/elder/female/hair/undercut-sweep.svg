@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Undercut Sweep" data-family="undercut-sweep" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN, a hard horizontal disconnect at y96 with a skin close shaved side below it on the
+       viewer's left, and the whole top section rooted on that line rather than parted.
+       VOLUME of the outline, deliberately ONE SIDED. Every other crop in this slot is
+       symmetrical about x200; here the mass is swept across to the viewer's right and the
+       falling lock carries down to y208 outboard of the head, so the profile is asymmetric.
+       LENGTH CARRIED FORWARD ON PURPOSE. hair-back is z10 and the body is z20, so anything
+       drawn down the centre back renders under the torso and reads as nothing. The sweep is
+       therefore drawn in the FRONT group and falls past the drawn shoulder line at y180 to
+       y208, 28 units clear of it, where it renders over the torso and the sweep actually
+       reads. The back group carries only the shaved nape.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, chin y184, eye line
+       y134, ears (149,129) and (251,129) spanning y116 to y142. The shaved panel covers the
+       left ear from x139 to x161 and the falling lock covers the right one, which is what an
+       undercut does. Torso x144 to x256 from y180, so the lock hangs over its right shoulder.
+       Surface tools: panel blocking (the swept mass against the shaved panel, split by the
+       disconnect) and structural detail (the disconnect bar, the sweep grain and the shaded
+       underside of the lock), with the shaved side painted as a hair2 ramp fading out at the
+       skin line rather than as a flat block. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-undercut-sweep__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.3"/>
+      </linearGradient>
+    </defs>
+    <!-- the shaved nape, 94 units across, carrying the same value ramp round the back -->
+    <g class="sp-shadow">
+      <path d="M156 134 C150 152 158 172 176 180 C190 186 210 186 224 180
+               C242 172 250 152 244 134 C236 154 220 164 200 164
+               C180 164 164 154 156 134 Z"
+            fill="url(#elder-female-hair-undercut-sweep__back-f)"/>
+    </g>
+    <path d="M164 150 C176 164 224 164 236 150 C230 172 170 172 164 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-undercut-sweep__front-g" x1="0" y1="0" x2="0.6" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-undercut-sweep__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the swept top: rooted at the left disconnect at y96, carried across the crown and
+           falling past the right cheek and over the shoulder line to y208 -->
+      <path d="M148 98 C146 72 164 54 196 54 C230 54 256 70 262 100
+               C268 132 269 166 261 196 C257 208 244 208 242 196
+               C249 168 249 134 240 110 C226 96 198 92 172 96
+               C162 98 152 100 148 98 Z"
+            fill="url(#elder-female-hair-undercut-sweep__front-g)"/>
+      <!-- the shaved left side, below the disconnect, thinning out at the skin line -->
+      <path d="M150 100 C142 114 139 132 142 150 C144 156 152 156 153 148
+               C151 130 154 114 161 102 Z"
+            fill="url(#elder-female-hair-undercut-sweep__front-f)"/>
+    </g>
+    <!-- the disconnect line itself, and the sweep grain running across the top -->
+    <rect x="146" y="94" width="20" height="5" rx="2.5" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M160 94 C186 86 216 88 238 102 C216 94 186 92 160 100 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the shaded underside of the falling lock, and the clipper shadow on the shaved side -->
+    <path d="M252 118 C258 144 259 172 254 198 C252 172 252 144 246 120 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M144 126 C143 138 144 146 146 152 C147 142 145 134 147 126 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M170 78 C196 64 230 68 248 90" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M254 126 C260 150 261 174 257 194" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

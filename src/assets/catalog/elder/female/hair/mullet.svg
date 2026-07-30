@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mullet" data-family="mullet" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       LENGTH. Two lengths in one head, cropped close at the fringe and cut away above the drawn
+       ear at y116, then a loose tail carrying on past the collar to y252.
+       VOLUME of the outline. The profile is narrow at the temples and swells only BELOW the
+       drawn shoulder line at y180, so the mass sits entirely behind and below the head.
+       The tail is carried FORWARD in data-part="front" on both sides of the neck, past the
+       shoulder line and over the torso block at x144..256, because hair-back is z10 and draws
+       under the body at z20; length kept only in the back group would render as nothing.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, ears y116..142, jaw
+       corners y156, chin y184, shoulder line y180. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-mullet__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the tail: narrow at the nape, spreading over the collar, hem left ragged -->
+      <path d="M164 80 C154 126 152 166 158 204 C160 230 168 246 176 252 L182 240
+               L190 256 L198 242 L206 258 L214 242 L222 254 L230 240
+               C238 232 240 218 242 204 C248 166 246 126 236 80 Z"
+            fill="url(#elder-female-hair-mullet__back-g)"/>
+      <!-- the short underlayer where the crop hands over to the tail -->
+      <path d="M152 96 C146 126 148 152 158 168 C172 176 228 176 242 168
+               C252 152 254 126 248 96 Z"
+            fill="url(#elder-female-hair-mullet__back-g)"/>
+    </g>
+    <path d="M172 144 C166 184 166 220 174 248 C178 218 174 182 178 146 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M228 144 C234 184 234 220 226 248 C222 218 226 182 222 146 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M198 164 C194 200 195 230 200 252 C206 230 205 198 202 164 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M162 154 C176 166 224 166 238 154 C232 176 168 176 162 154 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M166 92 C182 80 218 80 234 92" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M186 186 C194 194 206 194 214 186" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-mullet__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- cropped fringe and sides, cut away clear above the drawn ear at y116 -->
+      <path d="M146 116 C143 78 170 58 200 58 C230 58 257 78 254 116
+               C250 112 246 108 242 106 C238 110 234 112 230 108
+               C216 96 184 96 170 108 C166 112 162 110 158 106
+               C154 108 150 112 146 116 Z"
+            fill="url(#elder-female-hair-mullet__front-g)"/>
+      <!-- the tail spilling out from behind the jaw onto the collar, either side of the neck -->
+      <path d="M162 158 C150 176 144 200 146 220 C148 232 152 242 160 248 L169 236
+               L179 246 L187 232 C189 214 185 188 178 174 C173 164 168 158 162 158 Z"
+            fill="url(#elder-female-hair-mullet__front-g)"/>
+      <path d="M238 158 C250 176 256 200 254 220 C252 232 248 242 240 248 L231 236
+               L221 246 L213 232 C211 214 215 188 222 174 C227 164 232 158 238 158 Z"
+            fill="url(#elder-female-hair-mullet__front-g)"/>
+    </g>
+    <!-- the fall of the tail, and its shaded inner edge against the neck -->
+    <path d="M176 174 C182 198 184 224 180 242 C178 222 176 196 172 176 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M224 174 C218 198 216 224 220 242 C222 222 224 196 228 176 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M150 188 C148 210 152 230 160 244 C156 228 152 210 154 188 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M250 188 C252 210 248 230 240 244 C244 228 248 210 246 188 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the scissor cut edge of the crop and the sideburn point in front of each ear -->
+    <path d="M158 104 C176 94 224 94 242 104 C222 98 178 98 158 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M147 112 C147 122 148 130 150 134 C151 126 149 118 150 110 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M253 112 C253 122 252 130 250 134 C249 126 251 118 250 110 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M170 100 C180 94 190 92 200 92 C190 94 180 98 172 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M230 100 C220 94 210 92 200 92 C210 94 220 98 228 104 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M166 74 C182 64 216 62 234 72" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

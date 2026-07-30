@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: HEM = the UNDERBUST at y258, the highest hem in the
+       slot, so the whole midriff is deliberately bare, and SHOULDER = no sleeve and no
+       neckline shaping at all, only two 6 unit NARROW SHOULDER TIES running from the band up
+       to x188 and x212 on the y176 shoulder line.
+       Closed banded body, fitted, with a straight upper edge at y210.
+       Re-derived for the elder body: the shoulder line is y176 and the torso runs y180 to
+       y336, so the straight top edge sits at y210 and the underbust hem at y258, a 48 unit
+       band across a torso that is x142 to x258 at that height.
+       Against crop-top, the next shortest: that one is a closed cap sleeve body with a bound
+       crew neck stopping above the natural waist. This is a finished garment worn alone.
+       Surface tools: trim (contrast binding along the straight top edge and along the
+       underbust hem) and structural (centre gather knot, gathers, underbust seam, tie ends). -->
+  <defs>
+    <linearGradient id="elder-female-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB3C6)"/>
+      <stop offset="1" stop-color="var(--c2, #2C7C90)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4FB3C6)"/>
+      <stop offset="1" stop-color="var(--c2, #2C7C90)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-swim-top__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBEFDC)"/>
+      <stop offset="1" stop-color="var(--c2, #2C7C90)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow shoulder ties, 6 units wide, landing at x188 and x212 on the shoulder line -->
+    <path d="M185 176 H191 L172 210 H166 Z" fill="url(#elder-female-top-swim-top__tie)"/>
+    <path d="M215 176 H209 L228 210 H234 Z" fill="url(#elder-female-top-swim-top__tie)"/>
+    <!-- banded body: straight upper edge at y210, hem at the underbust y258 -->
+    <path d="M142 210 H258 L257 232 C256 244 252 248 246 252 C214 260 186 260 154 252 C148 248 144 244 143 232 Z"
+          fill="url(#elder-female-top-swim-top__band)"/>
+  </g>
+
+  <!-- contrast binding along the straight upper edge -->
+  <path d="M142 208 H258 L258 221 H142 Z" fill="url(#elder-female-top-swim-top__bind)"/>
+  <!-- contrast binding along the underbust hem -->
+  <path d="M144 240 C186 252 214 252 256 240 L255 252 C214 260 186 260 145 252 Z"
+        fill="var(--c3, #FBEFDC)" opacity="0.92"/>
+  <!-- centre gather knot, sitting in the readable middle third of the torso -->
+  <path d="M190 218 h20 q5 0 5 7 v14 q0 7 -5 7 h-20 q-5 0 -5-7 v-14 q0-7 5-7 z" fill="var(--c3, #FBEFDC)"/>
+  <path d="M192 224 q8 10 16 0 M192 236 q8-10 16 0"
+        stroke="var(--c2, #2C7C90)" stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- gathers running out of the knot -->
+  <path d="M182 228 q-14 6 -26 2 M218 228 q14 6 26 2 M184 241 q-14 8 -26 6 M216 241 q14 8 26 6"
+        stroke="var(--c2, #2C7C90)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- underbust seam -->
+  <path d="M152 244 q48 10 96 0" stroke="var(--c2, #2C7C90)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- tie ends knotted at the shoulder -->
+  <path d="M184 181 q6-8 12-2 M216 181 q-6-8 -12-2"
+        stroke="var(--c3, #FBEFDC)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 226 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

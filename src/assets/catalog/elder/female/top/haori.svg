@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Japanese everyday dress: the short open jacket worn over other clothes. Drawn plainly as
+       ordinary clothing, with no crest, no family mon and no ceremonial marking of any kind.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = draped, two wide SQUARE sleeve
+       panels hanging free below the arm as their own 54 by 130 unit rectangles from x102 to
+       x156 and x244 to x298, y178 to y308, standing 14 units outboard of the y182 arm and
+       never closing into a tube or a cuff, and VOLUME = straight and narrow, the two fronts
+       running x140 to x260 over a 112 unit torso, which is only 4 units of ease a side and no
+       waist shaping at all.
+       Against the open overshirt already in this slot: that one is deliberately oversized and
+       boxy at x134 to x266 on long SET IN sleeve tubes. This one is a narrow straight jacket
+       whose sleeves are hanging panels. Closure is an open front with straight parallel edges
+       and no button anywhere, held only by a short cord across the chest. Hem at the hip, y350.
+       Refitted to the elder body rather than copied from the adult file: shoulder line y176
+       rather than y150, torso x144 to x256, arms x116 to x144 and x256 to x284 running y182 to
+       y332 with hands at y312 to y344, so the sode hem is set at y308 and the hand emerges
+       below it. The hip block is y328 to y382 and the hem is dropped to y350 on it, longer
+       than the reference as the stage asks.
+       The 24 unit opening from x188 to x212 is NOT a hole and NOT a phantom shirt: the layer
+       worn underneath is drawn in this same file and painted through c3, so the player
+       controls it and no colour is hard coded.
+       Surface tools: panel blocking (two front panels over an under layer through c3) and trim
+       (wide flat collar bands down both front edges), plus structural detail in the chest cord,
+       the sleeve panel hems and the free hanging edge of each sode. -->
+  <defs>
+    <linearGradient id="elder-female-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6274)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-haori__sode" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6274)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-haori__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EADCC2)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the layer worn underneath, seen through the open front, painted through c3 -->
+    <path d="M176 176 H224 C232 184 236 198 236 216 L235 288 L233 350 H167 L165 288 L164 216
+             C164 198 168 184 176 176 Z"
+          fill="url(#elder-female-top-haori__under)"/>
+    <!-- wide square sleeve panels, hanging free below the arm, hem at y308 -->
+    <path d="M102 178 H156 L157 292 C155 303 148 308 139 308 H119 C110 308 103 303 102 292 Z"
+          fill="url(#elder-female-top-haori__sode)"/>
+    <path d="M298 178 H244 L243 292 C245 303 252 308 261 308 H281 C290 308 297 303 298 292 Z"
+          fill="url(#elder-female-top-haori__sode)"/>
+    <!-- left front: straight edge, no fastening, outer side seam held at x140 -->
+    <path d="M188 176 H166 C150 180 140 196 140 220 L138 288 L139 350 H186 L188 288 Z"
+          fill="url(#elder-female-top-haori__panel)"/>
+    <!-- right front -->
+    <path d="M212 176 H234 C250 180 260 196 260 220 L262 288 L261 350 H214 L212 288 Z"
+          fill="url(#elder-female-top-haori__panel)"/>
+  </g>
+
+  <!-- wide flat collar bands down both front edges -->
+  <path d="M188 176 L186 350 H172 L174 176 Z" fill="var(--c2, #303F4C)"/>
+  <path d="M212 176 L214 350 H228 L226 176 Z" fill="var(--c2, #303F4C)"/>
+  <path d="M180 182 L179 344 M220 182 L221 344"
+        stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening above the under layer, resolved onto the body's own skin -->
+  <path d="M188 174 q12 12 24 0 q-4 14 -12 14 q-8 0 -12-14 z" fill="var(--skin2, #E7B892)"/>
+  <!-- short chest cord holding the fronts together, in the readable middle third of the torso -->
+  <path d="M186 248 h28" stroke="var(--c3, #EADCC2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="248" r="6" fill="var(--c3, #EADCC2)"/>
+  <circle cx="214" cy="248" r="6" fill="var(--c3, #EADCC2)"/>
+  <!-- the free hanging hem of each sleeve panel -->
+  <path d="M104 290 h50 M296 290 h-50"
+        stroke="var(--c2, #303F4C)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M130 192 v104 M270 192 v104"
+        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- hem lines on both fronts -->
+  <path d="M141 336 h44 M215 336 h44"
+        stroke="var(--c2, #303F4C)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M146 202 q20 12 38 6 M216 208 q20 6 38 -6"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

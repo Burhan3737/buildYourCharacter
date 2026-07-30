@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Ordinary Japanese summer dress, drawn under its own endonym as everyday clothing: plain
+       indigo cloth, a plain flat sash and a generic scattered speck weave. No family crest, no
+       ceremonial detail, no community specific woven design.
+       WRAP DIRECTION, which is the thing people notice. This yukata is wrapped LEFT OVER RIGHT:
+       the wearer's left panel lies on top, so on this front view the panel entering from the
+       VIEWER'S RIGHT at x212 crosses over and its collar edge runs down to the viewer's LEFT at
+       x150 by y314. Right over left is how the dead are dressed and must never be drawn.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = wide rectangular sleeve panels
+       hanging 60 units below the arm on a straight lower edge at y392, and CLOSURE = a wrapped
+       front with a flat overlapping band collar running neck to waist under a broad flat sash,
+       no button and no tie belt.
+       Against robe, the other wrapped one-piece in this bundle: that one has a rolled shawl
+       collar, a soft knotted tie belt and a calf hem. This one is ankle at y548, its collar is
+       flat and banded, its sash is a wide stiff rectangle, and its sleeves are hanging panels.
+       Surface tools: panel blocking (the two crossing fronts and the broad sash) and pattern (a
+       20 unit speck weave clipped to the panels over a gradient), plus trim on the sleeve hems.
+       Elder fit: shoulder line y176, torso x144 to x256, arms x116 to x144 and x256 to x284. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-yukata__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A6FA5)"/>
+      <stop offset="1" stop-color="var(--c2, #31507C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-yukata__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #31507C)"/>
+      <stop offset="1" stop-color="var(--c1, #4A6FA5)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-yukata__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A6FA5)"/>
+      <stop offset="1" stop-color="var(--c2, #31507C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8DCC2)"/>
+      <stop offset="1" stop-color="var(--c2, #31507C)"/>
+    </linearGradient>
+    <pattern id="elder-female-onepiece-yukata__specks" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M4 14 l6-8 M14 18 l4-6" stroke="var(--c3, #E8DCC2)" stroke-width="2.2"
+            stroke-linecap="round" fill="none"/>
+    </pattern>
+    <clipPath id="elder-female-onepiece-yukata__clip">
+      <path d="M212 176 H242 q20 0 22 22 l14 350 q-68 20 -136 2 L150 314 Z"/>
+      <path d="M102 194 q0-18 18-18 H162 V392 H118 q-16 0 -16-16 Z"/>
+      <path d="M298 194 q0-18 -18-18 H238 V392 H282 q16 0 16-16 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: two hanging sleeve panels, then the under panel, then the over panel -->
+  <g class="sp-shadow">
+    <path d="M102 194 q0-18 18-18 H162 V392 H118 q-16 0 -16-16 Z"
+          fill="url(#elder-female-onepiece-yukata__panel)"/>
+    <path d="M298 194 q0-18 -18-18 H238 V392 H282 q16 0 16-16 Z"
+          fill="url(#elder-female-onepiece-yukata__panel)"/>
+    <!-- the wearer's RIGHT front goes in first, underneath, from the viewer's left -->
+    <path d="M204 176 H162 q-20 0 -22 20 l-2 354 q42 14 84 6 Z"
+          fill="url(#elder-female-onepiece-yukata__under)"/>
+    <!-- the wearer's LEFT front crosses OVER it, entering from the viewer's RIGHT and running
+         down to the viewer's left waist: left over right -->
+    <path d="M212 176 H242 q20 0 22 22 l14 350 q-68 20 -136 2 L150 314 Z"
+          fill="url(#elder-female-onepiece-yukata__over)"/>
+    <!-- PATTERN: scattered speck weave over the panels, clipped, on the gradient beneath -->
+    <g clip-path="url(#elder-female-onepiece-yukata__clip)">
+      <rect x="98" y="174" width="204" height="396"
+            fill="url(#elder-female-onepiece-yukata__specks)" opacity="0.34"/>
+    </g>
+  </g>
+
+  <!-- flat overlapping band collar, neck to waist. The under collar is short and stops where
+       the over panel covers it; the over collar runs the whole crossover edge. -->
+  <path d="M184 172 L198 176 L208 244 L194 248 Z" fill="var(--c2, #31507C)"/>
+  <path d="M206 172 L220 178 L162 320 L146 312 Z" fill="var(--c3, #E8DCC2)"/>
+
+  <!-- PANEL BLOCKING: the broad flat sash and its knot -->
+  <rect x="128" y="306" width="144" height="36" rx="8"
+        fill="url(#elder-female-onepiece-yukata__sash)"/>
+  <rect x="184" y="300" width="32" height="48" rx="8" fill="var(--c2, #31507C)"/>
+  <path d="M132 316 h136" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: straight sleeve panel hems and the ankle hem band -->
+  <path d="M106 384 h52 M294 384 h-52" stroke="var(--c3, #E8DCC2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 532 q66 22 132 0" stroke="var(--c3, #E8DCC2)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M114 200 q22 -8 42 -4 M286 200 q-22 -8 -42 -4" stroke="#FFFFFF"
+        stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M158 400 q46 16 94 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN, clipper faded sides under a slightly longer flat top, with a ruler straight
+       front hairline cut dead level at y96 from x152 to x248 and squared temple corners at
+       x152 and x248. No part anywhere.
+       VOLUME of the outline, skull close all round. The top clears the drawn skull top of y66
+       by only 2 units at y64 and the side panels thin away to nothing at the skin line, so
+       nothing in this file stands off the head. The tall flat column already in this slot
+       stands to y40, a full 26 units proud of the skull, and reads as a completely different
+       profile at tray size.
+       THE FADE IS A VALUE RAMP IN THE HAIR ITSELF, not a squiggle over a smooth contour: the
+       temple panel is painted hair1 at its top edge y95, reaches hair2 by roughly y118 and
+       thins to a 25 percent hair2 at the skin line y149. The hairline stays hard.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, chin y184, eye line
+       y134, ears (149,129) and (251,129) spanning y116 to y142, which is why the temple panel
+       stops at y142 and the ear is covered rather than half cut. The skull half width is 57
+       times the square root of 1 minus ((y minus 125) over 59) squared, giving x150 to x250 at
+       y97 and x145 to x255 at y110.
+       Surface tools: panel blocking (the dense flat top against the two faded side panels) and
+       trim (the hard hairline seam and the two squared corners). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-taper-fade__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.28"/>
+      </linearGradient>
+    </defs>
+    <!-- the nape taper, 60 units across: the same ramp wrapping round the back of the head -->
+    <g class="sp-shadow">
+      <path d="M170 142 C164 158 172 174 186 180 C195 183 205 183 214 180
+               C228 174 236 158 230 142 C222 156 208 162 200 162
+               C192 162 178 156 170 142 Z"
+            fill="url(#elder-female-hair-taper-fade__back-f)"/>
+    </g>
+    <path d="M176 150 C186 160 214 160 224 150 C220 166 180 166 176 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-taper-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <!-- the fade: lit hair at the top of the panel, bare shadow thinning out at the skin -->
+      <linearGradient id="elder-female-hair-taper-fade__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.42" stop-color="var(--hair2, #9AA3B2)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the slightly longer flat top, cut off square on the hairline at y97 -->
+      <path d="M151 97 C150 79 157 67 175 64 C192 61 208 61 225 64 C243 67 250 79 249 97 Z"
+            fill="url(#elder-female-hair-taper-fade__front-g)"/>
+      <!-- faded temple panels, running y95 to y142 and thinning away at the skin line -->
+      <path d="M150 95 C143 108 140 125 141 142 C142 149 152 149 153 142
+               C153 125 156 110 162 99 Z"
+            fill="url(#elder-female-hair-taper-fade__front-f)"/>
+      <path d="M250 95 C257 108 260 125 259 142 C258 149 248 149 247 142
+               C247 125 244 110 238 99 Z"
+            fill="url(#elder-female-hair-taper-fade__front-f)"/>
+    </g>
+    <!-- the line up: a razor straight hairline seam, 96 units across, dead level at y91 to y97 -->
+    <rect x="152" y="91" width="96" height="6" fill="var(--hair2, #9AA3B2)"/>
+    <!-- the squared temple corners, the cue that this was cut with a line up -->
+    <path d="M152 97 L152 80 C152 73 158 69 166 67 C158 70 155 74 155 81 L155 97 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M248 97 L248 80 C248 73 242 69 234 67 C242 70 245 74 245 81 L245 97 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the taper over the ear: the last of the shadow before bare skin at y142 -->
+    <path d="M144 118 C142 128 142 136 143 142 C146 134 147 126 149 118 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M256 118 C258 128 258 136 257 142 C254 134 253 126 251 118 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M170 72 C184 67 216 67 230 72" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M156 104 C154 116 153 128 154 138" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M244 104 C246 116 247 128 246 138" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

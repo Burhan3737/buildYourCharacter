@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fulani Braids" data-family="fulani-braids" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       CROWN. A clean centre part of REAL SCALP, painted in skin1 and skin2, running from y56
+       above the drawn skull top at y66 back to the hairline at y112, with three scalp rows to a
+       side fanning back from it. The channels between the rows are left as OPEN SCALP, 4px
+       wide, painted in skin2 and cut as negative space between the row shapes. There is no
+       hatch pattern anywhere in this file.
+       PARTING and hem. Only the outer sections are released; they fall free past the drawn
+       shoulder line at y180 to a beaded cuff, so the outline is close at the crown and long at
+       the edges rather than uniform.
+       The released braids are drawn in data-part="front" so they carry past the shoulder and
+       over the torso block at x144..256, where they actually render; the back group carries the
+       rest of the fall.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, ears (149,129), eye
+       line y134. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-fulani-braids__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M158 74 C148 110 150 146 160 168 C174 178 226 178 240 168
+               C250 146 252 110 242 74 Z"
+            fill="url(#elder-female-hair-fulani-braids__back-g)"/>
+      <path d="M150 142 C140 190 138 242 143 286 L150 310 L157 284
+               C158 240 156 188 162 142 Z"
+            fill="url(#elder-female-hair-fulani-braids__back-g)"/>
+      <path d="M172 146 C166 198 165 254 170 302 L177 326 L184 300
+               C184 252 180 196 184 146 Z"
+            fill="url(#elder-female-hair-fulani-braids__back-g)"/>
+      <path d="M216 146 C214 196 214 250 218 296 L225 320 L232 294
+               C232 248 230 196 228 146 Z"
+            fill="url(#elder-female-hair-fulani-braids__back-g)"/>
+      <path d="M238 142 C240 188 242 236 246 280 L253 304 L260 278
+               C258 234 254 186 250 142 Z"
+            fill="url(#elder-female-hair-fulani-braids__back-g)"/>
+    </g>
+    <!-- three strand crossings down each free braid -->
+    <path d="M141 174 C147 170 152 170 157 174 M139 214 C145 210 150 210 155 214
+             M139 254 C145 250 150 250 155 254"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <path d="M167 186 C173 182 179 182 184 186 M166 234 C172 230 178 230 183 234
+             M167 280 C173 276 179 276 184 280"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <path d="M215 186 C221 182 227 182 232 186 M215 232 C221 228 227 228 232 232
+             M216 276 C222 272 228 272 233 276"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <path d="M240 180 C246 176 252 176 257 180 M242 224 C248 220 254 220 259 224
+             M244 264 C250 260 256 260 261 264"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <!-- beaded cuffs at the ends -->
+    <rect x="141" y="282" width="18" height="10" rx="5" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="168" y="298" width="18" height="10" rx="5" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="215" y="292" width="18" height="10" rx="5" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="242" y="276" width="18" height="10" rx="5" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M145 286 h10 M172 302 h10 M219 296 h10 M246 280 h10" stroke="#FFFFFF"
+          stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M164 86 C180 76 220 76 236 86" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-fulani-braids__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-fulani-braids__front-b" x1="0" y1="0" x2="0.25" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- six scalp rows running back from the part; the channels between them are open scalp -->
+      <path d="M197 58 C194 68 192 78 191 88 C190 96 190 104 191 110 L202 108
+               C201 102 201 94 202 84 C203 74 203 64 203 60 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <path d="M194 62 C185 70 177 82 172 94 C168 104 166 112 166 122 L178 122
+               C178 112 180 104 185 94 C190 84 196 74 200 68 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <path d="M188 68 C174 74 162 86 154 100 C147 112 144 124 143 136 L155 138
+               C156 126 159 114 166 102 C174 89 183 79 192 74 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <path d="M203 58 C206 68 208 78 209 88 C210 96 210 104 209 110 L198 108
+               C199 102 199 94 198 84 C197 74 197 64 197 60 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <path d="M206 62 C215 70 223 82 228 94 C232 104 234 112 234 122 L222 122
+               C222 112 220 104 215 94 C210 84 204 74 200 68 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <path d="M212 68 C226 74 238 86 246 100 C253 112 256 124 257 136 L245 138
+               C244 126 241 114 234 102 C226 89 217 79 208 74 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-g)"/>
+      <!-- the two released braids, carried past the shoulder line at y180 to a cuff -->
+      <path d="M143 136 C136 178 134 216 137 250 C138 262 148 264 152 254
+               C150 216 150 178 155 138 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-b)"/>
+      <path d="M257 136 C264 174 266 208 263 238 C262 250 252 252 248 242
+               C250 208 250 174 245 138 Z"
+            fill="url(#elder-female-hair-fulani-braids__front-b)"/>
+    </g>
+    <!-- the clean centre part: REAL SCALP from above the crown back to the hairline -->
+    <path d="M200 56 C199 76 199 94 200 108" stroke="var(--skin1, #F7D2B0)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- the scalp channels between the rows, open negative space 4px wide -->
+    <path d="M190 66 C182 76 176 88 172 100" stroke="var(--skin2, #E7B892)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M184 74 C172 84 162 96 156 110" stroke="var(--skin2, #E7B892)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M210 66 C218 76 224 88 228 100" stroke="var(--skin2, #E7B892)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M216 74 C228 84 238 96 244 110" stroke="var(--skin2, #E7B892)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- braid bumps along each row -->
+    <ellipse cx="196" cy="76" rx="5" ry="4" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="195" cy="96" rx="5" ry="4" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="204" cy="76" rx="5" ry="4" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="205" cy="96" rx="5" ry="4" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="182" cy="84" rx="6" ry="4" transform="rotate(-40 182 84)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="172" cy="108" rx="6" ry="4" transform="rotate(-72 172 108)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="218" cy="84" rx="6" ry="4" transform="rotate(40 218 84)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="228" cy="108" rx="6" ry="4" transform="rotate(72 228 108)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="166" cy="92" rx="6" ry="4" transform="rotate(-40 166 92)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="150" cy="120" rx="6" ry="4" transform="rotate(-76 150 120)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="234" cy="92" rx="6" ry="4" transform="rotate(40 234 92)" fill="var(--hair2, #9AA3B2)"/>
+    <ellipse cx="250" cy="120" rx="6" ry="4" transform="rotate(76 250 120)" fill="var(--hair2, #9AA3B2)"/>
+    <!-- crossings and cuffs on the released braids -->
+    <path d="M136 168 C142 164 148 164 153 168 M135 204 C141 200 147 200 152 204
+             M136 236 C142 232 148 232 153 236"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <path d="M247 168 C253 164 259 164 264 168 M248 202 C254 198 260 198 265 202
+             M250 232 C256 228 262 228 264 232"
+          stroke="var(--hair2, #9AA3B2)" stroke-width="3" fill="none"/>
+    <rect x="135" y="242" width="20" height="11" rx="5.5" fill="var(--hair2, #9AA3B2)"/>
+    <rect x="246" y="230" width="20" height="11" rx="5.5" fill="var(--hair2, #9AA3B2)"/>
+    <path d="M139 247 h12 M250 235 h12" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M182 64 C190 60 196 60 198 62" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M218 64 C210 60 204 60 202 62" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

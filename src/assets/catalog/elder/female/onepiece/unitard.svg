@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Silhouette axes this family owns: CLOSURE = none at all, no zip, no placket and no waist
+       seam anywhere, one continuous skin from the shoulder to the ankle, and HEM = ankle at
+       y544, skin-close legs running the whole length of the leg with a real open gap down the
+       centre at x200.
+       Against swimsuit, the other skin-close one-piece in this bundle: that one stops at a
+       high-cut leg opening at the hip and has a scooped back. This one carries on to the ankle,
+       which is a 200 unit difference in outline and the thing that reads at tray size.
+       Shoulder is a scoop neck over long close sleeves; volume is skin-close throughout.
+       Surface tools: panel blocking (contrast side panels blocked down the outer arm and the
+       outer leg through c2) and trim (bound scoop neck, sleeve edges and ankle bindings), plus
+       structural inner leg seams.
+       Elder fit: shoulder line y176, torso x144 to x256, arms x116 to x144 and x256 to x284,
+       legs x168 to x196 and x204 to x232 running y374 to y544. Sleeve seams sit inboard and the
+       body is cut with a little more ease through the upper arm than the reference. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A69AE)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-unitard__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A69AE)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-unitard__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5A69AE)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A69AE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two close sleeves, two skin-close legs to the ankle, one continuous body -->
+  <g class="sp-shadow">
+    <path d="M112 194 q0-18 18-18 h14 q18 0 18 18 v144 q0 10 -18 10 h-14 q-18 0 -18-10 Z"
+          fill="url(#elder-female-onepiece-unitard__sleeve)"/>
+    <path d="M288 194 q0-18 -18-18 h-14 q-18 0 -18 18 v144 q0 10 18 10 h14 q18 0 18-10 Z"
+          fill="url(#elder-female-onepiece-unitard__sleeve)"/>
+    <path d="M164 336 H198 V532 q0 12 -10 12 h-14 q-10 0 -10-12 Z"
+          fill="url(#elder-female-onepiece-unitard__legL)"/>
+    <path d="M236 336 H202 V532 q0 12 10 12 h14 q10 0 10-12 Z"
+          fill="url(#elder-female-onepiece-unitard__legR)"/>
+    <path d="M150 202 q50 22 100 0 q12 4 12 18 v82 q0 20 -6 30 l-4 32 q0 10 -12 10 h-80
+             q-12 0 -12-10 l-4-32 q-6-10 -6-30 v-82 q0-14 12-18 Z"
+          fill="url(#elder-female-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast side panels down the outer leg and the outer arm -->
+  <path d="M164 342 h9 l-4 202 h-5 q-10 0 -10-12 Z" fill="var(--c2, #5A69AE)"/>
+  <path d="M236 342 h-9 l4 202 h5 q10 0 10-12 Z" fill="var(--c2, #5A69AE)"/>
+  <path d="M140 226 l6 118 h-8 v-118 Z" fill="var(--c2, #5A69AE)"/>
+  <path d="M260 226 l-6 118 h8 v-118 Z" fill="var(--c2, #5A69AE)"/>
+
+  <!-- TRIM: bound scoop neck, sleeve edges and ankle bindings -->
+  <path d="M152 204 q48 22 96 0" stroke="var(--c3, #F2E7C4)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 336 q22 8 38 0 M284 336 q-22 8 -38 0" stroke="var(--c3, #F2E7C4)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M166 528 q16 6 30 0 M234 528 q-16 6 -30 0" stroke="var(--c3, #F2E7C4)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: the open centre gap read as a shadow, plus the inner leg seams -->
+  <path d="M200 388 V544" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 350 v182 M218 350 v182" stroke="#3B2A22" stroke-opacity="0.11" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M158 224 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 400 v104 M224 400 v104" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

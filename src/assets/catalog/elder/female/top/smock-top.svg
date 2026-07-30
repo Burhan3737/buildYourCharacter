@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: VOLUME = the whole body GATHERED onto a narrow chest
+       yoke and swinging out to x128 / x272 at the hem, a 144 unit sweep over a 112 unit torso
+       and the widest hem in the slot, and SHOULDER = short set in cap sleeves cut level with
+       the yoke, opening at y240.
+       Closed, pulled on over a narrow yoke that runs y176 to y214. Hem at the HIGH HIP, y352.
+       Re-derived for the elder body: the shoulder line is y176, so the yoke seam falls at y214
+       and the gathers fan from there; the elder hip block starts at y328, so a high hip hem is
+       y352 and not the adult female y308.
+       Surface tools: panel blocking (yoke painted through c3) and structural (gather lines
+       fanning off the yoke seam, hem frill, two narrow ties). -->
+  <defs>
+    <linearGradient id="elder-female-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C89AC4)"/>
+      <stop offset="1" stop-color="var(--c2, #96659A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C89AC4)"/>
+      <stop offset="1" stop-color="var(--c2, #96659A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF2E8)"/>
+      <stop offset="1" stop-color="var(--c2, #96659A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set in cap sleeves, softened head, opening at y240 -->
+    <path d="M156 176 H128 C116 182 112 196 112 214 C111 226 115 236 122 240 C134 244 148 241 153 233 C151 212 152 190 156 176 Z"
+          fill="url(#elder-female-top-smock-top__cap)"/>
+    <path d="M244 176 H272 C284 182 288 196 288 214 C289 226 285 236 278 240 C266 244 252 241 247 233 C249 212 248 190 244 176 Z"
+          fill="url(#elder-female-top-smock-top__cap)"/>
+    <!-- gathered body, swinging from the yoke seam out to a 144 unit hem -->
+    <path d="M154 210 C140 244 132 294 128 342 C176 355 224 355 272 342 C268 294 260 244 246 210 C214 222 186 222 154 210 Z"
+          fill="url(#elder-female-top-smock-top__body)"/>
+    <!-- narrow chest yoke the body is gathered onto -->
+    <path d="M172 176 C184 188 216 188 228 176 C242 180 250 192 251 204 L249 214 C214 226 186 226 151 214 L149 204 C150 192 158 180 172 176 Z"
+          fill="url(#elder-female-top-smock-top__yoke)"/>
+  </g>
+
+  <!-- yoke seam, where the gathers are set -->
+  <path d="M152 216 C186 228 214 228 248 216"
+        stroke="var(--c2, #96659A)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- gathers fanning off the yoke seam through the readable middle third -->
+  <path d="M162 222 L143 332 M182 226 L173 344 M200 228 L200 348 M218 226 L227 344 M238 222 L257 332"
+        stroke="var(--c2, #96659A)" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck frill along the yoke edge, spanning x167 to x233 across the neck line -->
+  <path d="M172 176 C184 188 216 188 228 176 L233 184 C218 199 182 199 167 184 Z" fill="var(--c3, #FBF2E8)"/>
+  <path d="M182 192 q18 10 36 0 q-7 12 -18 12 q-11 0 -18-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- hem frill at the high hip -->
+  <path d="M128 328 C176 344 224 344 272 328 L272 342 C224 355 176 355 128 342 Z"
+        fill="var(--c3, #FBF2E8)" opacity="0.85"/>
+  <!-- narrow ties falling from the yoke seam -->
+  <path d="M178 220 C174 244 176 268 182 290 M222 220 C226 244 224 268 218 290"
+        stroke="var(--c3, #FBF2E8)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M162 192 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 262 q54 16 108 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

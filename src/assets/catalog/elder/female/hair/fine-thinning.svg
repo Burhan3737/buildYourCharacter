@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fine Thinning" data-family="fine-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       VOLUME and texture of the outline. The mass is cut into separated veils with real air
+       between them, so the scalp is negative space in the silhouette path itself rather than a
+       texture laid over a solid shape. The hairline stays intact as one unbroken band, so there
+       are no temple bays; that is what separates this from crown-thinning, which is the
+       horseshoe pattern and has them.
+       LENGTH. Kept full, falling past the waist, but each veil stops at its own height so the
+       hem is a stagger rather than a line.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, eye line y134, drawn
+       shoulder line y180 with the torso x144..256.
+       LENGTH TRAP FIXED HERE. The adult/female reference puts every veil in the back group,
+       which is z10 and draws UNDER the body at z20, so its length renders as nothing. In this
+       version the two outermost veils per side are carried FORWARD in data-part="front", down
+       past the shoulder line at y180 and over the chest to y268 and y246, outboard of the torso
+       edge, so the length is actually visible. The back group still carries the mass.
+       This is real, unembarrassed hair, kept at its own full length.
+       Surface tools: structural detail (each veil has its own hair2 shaded inner edge) and
+       trim (the intact hairline band and the shadow it casts on the forehead). -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-fine-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M136 126 C126 176 124 226 130 268 L156 270 C150 226 150 178 154 128 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+      <path d="M162 120 C154 174 153 230 159 276 L184 274 C178 230 177 174 182 122 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+      <path d="M186 118 C181 172 181 232 186 284 L200 282 C197 232 196 172 198 120 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+      <path d="M210 120 C213 172 214 232 209 284 L223 286 C228 232 228 172 222 122 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+      <path d="M226 122 C232 174 233 230 227 276 L252 278 C258 230 257 174 246 124 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+      <path d="M250 126 C260 176 262 226 256 268 L278 266 C284 226 282 178 270 128 Z"
+            fill="url(#elder-female-hair-fine-thinning__back-g)"/>
+    </g>
+    <!-- the shaded inner edge of each veil: what little weight is left reads as depth -->
+    <path d="M148 150 C141 196 141 240 146 270 C148 238 146 196 152 152 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M170 146 C165 194 165 242 170 276 C172 240 170 194 174 148 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M230 146 C235 194 235 242 230 276 C228 240 230 194 226 148 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M252 150 C259 196 259 240 254 270 C252 238 254 196 248 152 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M160 100 C180 88 220 88 240 100" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-fine-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-fine-thinning__front-v" x1="0" y1="0" x2="0.2" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the hairline survives as one unbroken band: no bays, no recession -->
+      <path d="M146 130 C148 118 156 110 170 106 C184 102 216 102 230 106
+               C244 110 252 118 254 130 C248 120 238 114 224 112
+               C210 109 190 109 176 112 C162 114 152 120 146 130 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-g)"/>
+      <!-- four broad crown veils; the scalp shows in the gaps cut between them -->
+      <path d="M194 66 C176 74 158 86 148 100 C144 108 142 114 142 120 L166 120
+               C167 112 172 102 181 92 C190 81 198 72 200 68 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-g)"/>
+      <path d="M197 60 C190 72 182 86 176 98 C171 108 170 114 170 120 L197 120
+               C197 110 198 96 199 82 C200 70 200 62 200 60 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-g)"/>
+      <path d="M203 60 C210 72 218 86 224 98 C229 108 230 114 230 120 L203 120
+               C203 110 202 96 201 82 C200 70 200 62 200 60 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-g)"/>
+      <path d="M206 66 C224 74 242 86 252 100 C256 108 258 114 258 120 L234 120
+               C233 112 228 102 219 92 C210 81 202 72 200 68 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-g)"/>
+      <!-- THE FIX: two long veils per side carried forward past the shoulder line at y180,
+           outboard of the torso block at x144..256, so the length actually renders -->
+      <path d="M147 122 C133 168 128 216 132 254 L146 268 L156 250
+               C150 214 152 166 159 124 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-v)"/>
+      <path d="M164 126 C156 170 154 208 158 238 L168 250 L177 234
+               C173 204 172 168 176 128 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-v)"/>
+      <path d="M253 122 C267 168 272 216 268 254 L254 268 L244 250
+               C250 214 248 166 241 124 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-v)"/>
+      <path d="M236 126 C244 170 246 204 242 232 L232 244 L223 228
+               C227 200 228 166 224 128 Z"
+            fill="url(#elder-female-hair-fine-thinning__front-v)"/>
+    </g>
+    <!-- the parting: bare scalp on the centre line, widening across the crown -->
+    <path d="M200 64 C199 82 199 100 200 118" stroke="var(--skin1, #F7D2B0)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M188 76 C182 86 178 98 176 114" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M212 76 C218 86 222 98 224 114" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- air between the forward veils, so the scalp and shoulder read through the fall -->
+    <path d="M160 130 C154 172 153 208 157 240" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="2.4" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M240 130 C246 172 247 208 243 240" stroke="var(--hair2, #9AA3B2)"
+          stroke-width="2.4" fill="none" stroke-linecap="round" stroke-opacity="0.7"/>
+    <!-- the shaded inner edge of each forward veil -->
+    <path d="M150 146 C140 190 138 230 143 258 C144 228 144 190 154 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M250 146 C260 190 262 230 257 258 C256 228 256 190 246 150 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the shadow the sparse hairline casts on the forehead -->
+    <path d="M152 124 C172 114 228 114 248 124 C228 118 172 118 152 124 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M172 66 C186 60 214 60 228 66" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

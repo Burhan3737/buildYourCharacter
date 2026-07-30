@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Single Braid" data-family="single-braid" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes this family owns, vs the rest of the elder/female hair slot:
+       PARTING and hem. Everything is drawn smooth off the face with no fringe and no part, into
+       ONE plait whose edge is scalloped left and right by the three strand crossings, finished
+       with a tie and a tassel point. The two plait family already in this slot carries two
+       tails; this carries one.
+       LENGTH. The plait runs to waist depth, its tassel tip at y306, where the two plait family
+       stops at the collar.
+       LENGTH TRAP FIXED HERE. The adult/female reference runs the plait straight down the
+       CENTRE BACK inside data-part="back", which is z10 and draws under the body at z20, so the
+       entire plait renders as nothing. In this version the plait is gathered at the nape and
+       swung FORWARD over the wearer's right shoulder in data-part="front", crossing the drawn
+       shoulder line at y180 out at x232..262 and falling down the chest, outboard of the torso
+       centre and clear over the arm at x256..284, where it genuinely renders. The back group
+       keeps only the smooth gathered mass.
+       Drawn to THIS bundle: head cx200 cy125 rx57 ry59, skull top y66, ears (149,129), jaw
+       corners y156, chin y184, shoulder line y180, torso x144..256, arms x116..144 and
+       x256..284. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-female-hair-single-braid__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the smooth gathered mass: no length is trusted to this group -->
+      <path d="M200 60 C156 60 130 90 128 138 C126 168 134 192 152 204
+               C172 214 228 214 248 204 C266 192 274 168 272 138
+               C270 90 244 60 200 60 Z"
+            fill="url(#elder-female-hair-single-braid__back-g)"/>
+    </g>
+    <path d="M152 180 C170 196 230 196 248 180 C242 206 158 206 152 180 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M170 192 C182 202 218 202 230 192 C226 210 174 210 170 192 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the gather itself, where every strand is pulled to the right side of the nape -->
+    <path d="M206 196 C220 200 232 198 240 192 C234 204 216 208 204 202 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M152 92 C174 76 226 76 248 92" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-female-hair-single-braid__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+      <linearGradient id="elder-female-hair-single-braid__front-p" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- drawn smooth off the face: no fringe, no part, a clean rounded hairline -->
+      <path d="M200 54 C156 54 132 86 134 136 C146 120 156 108 170 100
+               C180 92 190 86 200 86 C210 86 220 92 230 100
+               C244 108 254 120 266 136 C268 86 244 54 200 54 Z"
+            fill="url(#elder-female-hair-single-braid__front-g)"/>
+      <!-- THE FIX: the plait swung forward over the shoulder, crossings cut into the outline -->
+      <path d="M234 150 C224 168 240 178 234 196 C228 214 246 224 242 242
+               C238 260 254 268 254 282 L262 300 L272 288
+               C270 274 284 266 278 248 C272 230 288 222 280 204
+               C272 186 286 176 276 158 C266 148 244 144 234 150 Z"
+            fill="url(#elder-female-hair-single-braid__front-p)"/>
+    </g>
+    <!-- the sweep grain running back off the temples -->
+    <path d="M148 122 C158 106 172 94 188 88 C172 96 158 110 150 128 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M250 122 C240 106 226 94 210 88 C226 96 240 110 248 128 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M176 96 C188 90 212 90 224 96 C210 92 190 92 176 96 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the strand that crosses over on each turn of the plait -->
+    <path d="M233 168 C242 160 264 158 276 166 C268 178 244 180 233 168 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M234 198 C243 190 265 188 278 196 C270 208 245 210 234 198 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M240 228 C249 220 269 218 280 226 C272 238 251 240 240 228 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M246 258 C254 250 272 248 280 256 C273 268 256 270 246 258 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <!-- the tie, and the tassel of loose ends below it -->
+    <rect x="248" y="276" width="30" height="12" rx="6" transform="rotate(12 263 282)"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M256 292 C258 298 261 302 264 306 C267 300 270 296 271 290 Z"
+          fill="var(--hair2, #9AA3B2)"/>
+    <path d="M252 280 h20" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+          fill="none" stroke-linecap="round" transform="rotate(12 262 280)"/>
+    <path d="M162 112 C174 100 186 92 196 89" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M168 72 C184 62 216 62 232 72" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

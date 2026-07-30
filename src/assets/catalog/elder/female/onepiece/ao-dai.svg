@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday Vietnamese dress, drawn under its own endonym as ordinary clothing: plain cloth,
+       a plain mandarin collar and plain bound edges. No community specific woven design and no
+       ceremonial detail of any kind.
+       Silhouette axes this family owns: VOLUME = a fitted tunic SPLIT TO THE WAIST AT BOTH
+       SIDES, so below y362 the outline separates into a narrow 84 unit front panel at x158 to
+       x242 with the trouser leg showing free on either side of it for 140 units down to the
+       tunic hem at y502, and HEM = the trousers, which are drawn INTO this file because this
+       slot hides bottom, running wide to the ankle at y548 and reaching x116 and x284.
+       Against the closed ankle column and the open ankle robe in this bundle: neither has a
+       trouser, neither has a side split, and both are one unbroken sweep of cloth to the floor.
+       Elder fit, re-derived off the drawn body: shoulder line y176, torso x144 to x256 running
+       y180 to y336, arms x116 to x144 and x256 to x284 running y182 to y332, hips x150 to x250
+       at y328 to y382, legs x168 to x196 and x204 to x232 running y374 to y544. The side split
+       is opened at y362 on that hip block rather than at the adult file's y282, the tunic hem
+       is dropped to y502 which is the mid calf y501 landmark, and the sleeve seam is pulled
+       inboard with a softened head. Longer and looser than the reference, as this stage asks.
+       The trousers are painted through c3 so the player can contrast them against the tunic.
+       Surface tools: panel blocking (tunic over two trouser legs through c3) and trim (bound
+       edges round both splits, a bound tunic hem, narrow cuffs and a mandarin collar), plus
+       structural detail in the diagonal front seam and the trouser fall lines. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-ao-dai__trouserL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-ao-dai__trouserR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-ao-dai__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide trousers, drawn into this same file and painted through c3 -->
+    <path d="M146 326 H200 V548 H116 l-4 -74 C120 452 136 392 146 326 Z"
+          fill="url(#elder-female-onepiece-ao-dai__trouserL)"/>
+    <path d="M254 326 H200 V548 H284 l4 -74 C280 452 264 392 254 326 Z"
+          fill="url(#elder-female-onepiece-ao-dai__trouserR)"/>
+    <!-- long narrow sleeves, seamed inboard with a softened head -->
+    <path d="M112 194 q0-18 18-18 h14 q18 0 18 18 v130 q0 12 -18 12 h-14 q-18 0 -18-12 Z"
+          fill="url(#elder-female-onepiece-ao-dai__sleeve)"/>
+    <path d="M288 194 q0-18 -18-18 h-14 q-18 0 -18 18 v130 q0 12 18 12 h14 q18 0 18-12 Z"
+          fill="url(#elder-female-onepiece-ao-dai__sleeve)"/>
+    <!-- fitted tunic, split away at both sides from y362 to the mid calf hem at y502 -->
+    <path d="M154 176 H246 q18 0 19 18 l5 104 q0 10 -4 18 L242 362 V502 q-42 12 -84 0 V362
+             L134 316 q-4-8 -4-18 l5-104 q1-18 19-18 Z"
+          fill="url(#elder-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- mandarin collar, standing on the y166 to y200 neck -->
+  <path d="M178 166 h44 q7 0 7 7 v16 q-29 8 -58 0 v-16 q0-7 7-7 Z" fill="var(--c2, #BC6B26)"/>
+  <path d="M200 170 v22" stroke="var(--c3, #F4EDE2)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- diagonal front seam from the collar to the right underarm -->
+  <path d="M204 192 q32 14 58 34" stroke="var(--c3, #F4EDE2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound edges round both side splits, which are the identity of this family -->
+  <path d="M158 366 V498 M242 366 V498" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound tunic hem and narrow cuffs -->
+  <path d="M160 492 q40 12 80 0" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <rect x="112" y="316" width="48" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <rect x="240" y="316" width="48" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <!-- trouser fall lines -->
+  <path d="M144 396 l-16 144 M256 396 l16 144" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M160 204 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 300 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M130 470 q10 4 18 2 M270 470 q-10 4 -18 2" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

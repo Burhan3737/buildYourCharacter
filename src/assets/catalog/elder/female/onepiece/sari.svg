@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari (Nivi Drape)" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Everyday South Asian dress, drawn under its own endonym as ordinary clothing: plain
+       cloth with a plain woven border along the pallu and hem. No community specific motif, no
+       named weave, no ceremonial detail.
+       DRAPE DIRECTION, which is the thing people notice. This is the Nivi drape and the pallu
+       is carried over the WEARER'S LEFT shoulder, which on this front view is the VIEWER'S
+       RIGHT. So the broad band starts at x212 to x270 on the viewer's right at y176 and runs
+       diagonally DOWN AND LEFT across the body to x134 at the hip. Over eighty regional drapes
+       exist, so the family is named for the one it draws.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = one broad 66 unit pallu band draped
+       over a single shoulder while the other carries only the short choli, and CLOSURE = no
+       fastening anywhere at all, the whole garment held by the waist tuck.
+       Hem is ankle at y546; the choli and the petticoat are drawn INTO this file and painted
+       through c2 and c3 so the player can still contrast them.
+       Surface tools: panel blocking (pallu, wrapped drape, pleat fan and petticoat as four
+       separate blocked regions) and trim (the plain woven borders and the waist tuck line),
+       plus structural detail in the hand gathered pleat folds.
+       Elder fit: shoulder line y176, torso x144 to x256, hips x150 to x250 at y328 to y382. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B8506A)"/>
+      <stop offset="1" stop-color="var(--c2, #8A3A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B8506A)"/>
+      <stop offset="1" stop-color="var(--c2, #8A3A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E9C97E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A3A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A3A50)"/>
+      <stop offset="1" stop-color="var(--c1, #B8506A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-sari__pleats" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8A3A50)"/>
+      <stop offset="1" stop-color="var(--c1, #B8506A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS -->
+  <g class="sp-shadow">
+    <!-- petticoat, drawn into this same file and painted through the c3 variable -->
+    <path d="M152 320 H248 q8 0 9 12 l7 214 q-58 16 -116 0 l-5 -214 q1-12 9-12 Z"
+          fill="url(#elder-female-onepiece-sari__petticoat)"/>
+    <!-- the wrapped lower drape, tucked at the waist -->
+    <path d="M148 302 H252 q12 0 13 14 l9 184 q-70 20 -140 0 l1 -184 q1-14 12-14 Z"
+          fill="url(#elder-female-onepiece-sari__cloth)"/>
+    <!-- hand gathered pleat fan at the centre front -->
+    <path d="M176 324 H224 l10 190 q-34 8 -68 0 Z"
+          fill="url(#elder-female-onepiece-sari__pleats)"/>
+    <!-- fitted short choli, leaving the midriff bare through the skin variables -->
+    <path d="M148 176 q52 20 104 0 q10 4 10 16 v40 q-62 20 -124 0 v-40 q0-12 10-16 Z"
+          fill="url(#elder-female-onepiece-sari__choli)"/>
+    <path d="M112 190 q0-14 16-14 h14 q16 0 16 14 v28 q0 10 -16 10 h-14 q-16 0 -16-10 Z"
+          fill="url(#elder-female-onepiece-sari__choli)"/>
+    <path d="M288 190 q0-14 -16-14 h-14 q-16 0 -16 14 v28 q0 10 16 10 h14 q16 0 16-10 Z"
+          fill="url(#elder-female-onepiece-sari__choli)"/>
+    <!-- THE PALLU: from the wearer's right hip, carried diagonally UP over the wearer's LEFT
+         shoulder, which is the viewer's RIGHT. Nivi drape. -->
+    <path d="M212 176 H270 q12 0 10 14 L176 368 q-4 12 -18 6 L134 346 q-10-6 -4-16 Z"
+          fill="url(#elder-female-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- TRIM: plain woven borders along the pallu edges, no community motif -->
+  <path d="M212 178 L130 332" stroke="var(--c3, #E9C97E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M278 190 L174 368" stroke="var(--c3, #E9C97E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: pleat folds in the hand gathered fan -->
+  <path d="M186 332 l4 176 M200 332 v178 M214 332 l-4 176" stroke="#3B2A22"
+        stroke-opacity="0.2" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: the waist tuck the pleats are set into, the choli hem and the sleeve edges -->
+  <path d="M142 320 q58 16 116 0" stroke="var(--c3, #E9C97E)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 228 q58 16 116 0" stroke="var(--c3, #E9C97E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 220 q22 8 38 0 M284 220 q-22 8 -38 0" stroke="var(--c3, #E9C97E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: border on the drape hem, with the petticoat showing below it -->
+  <path d="M138 496 q62 18 126 0" stroke="var(--c3, #E9C97E)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M156 194 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 400 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 206 L190 296" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

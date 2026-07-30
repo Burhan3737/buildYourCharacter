@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Empire Gown" data-family="empire-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- Formalwear lives in onepiece and never in costume, because costume hides the shoes and
+       for formalwear the shoes are the look. This slot draws under the face, so there is no
+       ceiling constraint on this file at all.
+       Silhouette axes this family owns: SHOULDER/SLEEVE = short PUFFED cap sleeves ballooning
+       out to x112 and x288 and standing genuinely off the shoulder between y174 and y236, and
+       VOLUME = gathered, the skirt springing to 124 units wide at the under bust seam and then
+       settling to a narrow 108 unit column, so the widest point of this gown is at the ribs and
+       not at the hip.
+       THE UNDER BUST SEAM IS PINNED TO THIS BODY. The drawn torso runs y180 to y336, so it is
+       156 units tall and the under bust sits about 30 percent down it: 180 plus 0.3 times 156 =
+       226.8, and the seam is drawn at y228, not at the adult file's y225. The bodice above it is
+       only 52 units deep, which is what makes this an empire line rather than a waisted dress.
+       Against the fitted ankle column already in this bundle: that one is held between x152 and
+       x248 for its whole length with almost no flare and hangs from small flat cap sleeves. This
+       one is 124 wide at the seam on puffed sleeves that stand 32 units clear of the y182 arm.
+       Elder fit, re-derived off the drawn body: shoulder line y176, torso x144 to x256, arms
+       x116 to x144 and x256 to x284, hips x150 to x250 at y328 to y382, legs y374 to y544 so
+       the ankle is y544 and the hem is set at y546. The column is carried out to x146 and x254
+       at y312 so it covers the hip block with 4 units to spare rather than pinching in and
+       showing a sliver. The hem sweep is a quadratic from (255,546) through (201,562) to
+       (147,546), bottoming at y554, above the y570 ground line.
+       Surface tools: panel blocking (the contrast under bust seam band and its ribbon through
+       c3) and trim (a bound square neckline, puff sleeve bands and an ankle hem band), plus
+       structural detail in the gathers dropping off the seam and the long fall lines. -->
+  <defs>
+    <linearGradient id="elder-female-onepiece-empire-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7D3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #9DAB89)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-empire-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7D3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #9DAB89)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-onepiece-empire-gown__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7D3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #9DAB89)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short puffed cap sleeves, standing off the shoulder -->
+    <path d="M156 180 q-28-6 -42 12 q-13 18 -2 34 q11 14 34 10 q10-2 12-12 Z"
+          fill="url(#elder-female-onepiece-empire-gown__puff)"/>
+    <path d="M244 180 q28-6 42 12 q13 18 2 34 q-11 14 -34 10 q-10-2 -12-12 Z"
+          fill="url(#elder-female-onepiece-empire-gown__puff)"/>
+    <!-- narrow gathered skirt, falling straight from the under bust seam to the ankle -->
+    <path d="M138 228 H262 q4 42 -8 84 l1 234 q-54 16 -108 0 l-1 -234 q-12-42 -8-84 Z"
+          fill="url(#elder-female-onepiece-empire-gown__skirt)"/>
+    <!-- very short bodice, only bust deep -->
+    <path d="M152 176 q48 18 96 0 q14 4 14 18 v42 q-62 18 -124 0 v-42 q0-14 14-18 Z"
+          fill="url(#elder-female-onepiece-empire-gown__bodice)"/>
+  </g>
+
+  <!-- the horizontal seam sitting directly under the bust at y228 -->
+  <rect x="136" y="226" width="128" height="16" rx="7" fill="var(--c3, #A8577A)"/>
+  <!-- ribbon tie at the centre of that seam -->
+  <rect x="190" y="221" width="20" height="26" rx="7" fill="var(--c2, #9DAB89)"/>
+  <path d="M204 245 q14 22 12 44 M212 243 q16 20 18 42" stroke="var(--c3, #A8577A)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- bound square neckline -->
+  <path d="M154 182 q46 16 92 0" stroke="var(--c3, #A8577A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- puff sleeve bands where the balloon gathers back in -->
+  <path d="M120 226 q22 12 38 4 M280 226 q-22 12 -38 4" stroke="var(--c3, #A8577A)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- gathers dropping off the under bust seam -->
+  <path d="M160 248 l-6 84 M178 250 l-3 86 M200 250 v88 M222 250 l3 86 M240 248 l6 84"
+        stroke="#3B2A22" stroke-opacity="0.15" stroke-width="3.4" fill="none"
+        stroke-linecap="round"/>
+  <!-- long fall lines down the narrow column -->
+  <path d="M172 356 l-4 178 M228 356 l4 178" stroke="#3B2A22" stroke-opacity="0.1"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ankle hem band -->
+  <path d="M150 524 q50 16 100 0" stroke="var(--c3, #A8577A)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M160 200 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 198 q10 -8 20 -6 M274 198 q-10 -8 -20 -6" stroke="#FFFFFF"
+        stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M158 402 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>
