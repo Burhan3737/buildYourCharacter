@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger Jerkin" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The hood is drawn WORN DOWN, as a thick roll at the nape starting at y164, so nothing
+       crosses the face. -->
+  <!-- axes vs the slot: a sleeveless jerkin hanging open over a long-sleeved under-layer
+       (closure) + a hem split into two long tails at mid-thigh (hem).
+       Measured on THIS body: mid-thigh is y415 and the jerkin tails end at y424, so the split
+       hem lands where the family requires it.
+       TRADEMARK: butter and ink, not the banned all-green-with-a-hood archer pairing, and there
+       is no chevron anywhere. No bow: there is no prop or hand anchor in this project. -->
+  <defs>
+    <linearGradient id="midage-female-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A24E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2BE62)"/>
+      <stop offset="1" stop-color="var(--c1, #CE9440)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C3B31)"/>
+      <stop offset="1" stop-color="var(--c2, #2F231B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-ranger__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #48937F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M158 348 Q182 358 202 348 L200 452 L198 536 Q180 544 160 536 L158 452 Z"
+          fill="url(#midage-female-costume-ranger__under)"/>
+    <path d="M198 348 Q220 358 242 348 L242 452 L240 536 Q222 544 202 536 L200 452 Z"
+          fill="url(#midage-female-costume-ranger__under)"/>
+    <!-- long-sleeved under-layer -->
+    <path d="M112 170 Q112 160 126 160 H142 Q152 160 152 172 L150 260 L148 348
+             Q132 358 116 348 L114 260 Z"
+          fill="url(#midage-female-costume-ranger__under)"/>
+    <path d="M288 170 Q288 160 274 160 H258 Q248 160 248 172 L250 260 L252 348
+             Q268 358 284 348 L286 260 Z"
+          fill="url(#midage-female-costume-ranger__under)"/>
+    <path d="M170 160 H230 Q254 166 256 192 L260 252 Q262 296 256 324 Q200 342 144 324
+             Q138 296 140 252 L144 192 Q146 166 170 160 Z"
+          fill="url(#midage-female-costume-ranger__under)"/>
+    <!-- open jerkin, left panel, tail at mid-thigh; the under-sleeve stays clear outboard -->
+    <path d="M164 160 Q152 168 148 198 L143 264 L141 342 L147 424 Q162 432 174 420
+             L178 334 L182 252 L186 182 Q178 162 164 160 Z"
+          fill="url(#midage-female-costume-ranger__jerkin)"/>
+    <!-- open jerkin, right panel, tail at mid-thigh -->
+    <path d="M236 160 Q248 168 252 198 L257 264 L259 342 L253 424 Q238 432 226 420
+             L222 334 L218 252 L214 182 Q222 162 236 160 Z"
+          fill="url(#midage-female-costume-ranger__jerkin)"/>
+    <!-- the hood, pooled in a thick roll at the nape -->
+    <path d="M168 164 Q200 160 232 164 Q248 184 236 204 Q200 216 164 204 Q152 184 168 164 Z"
+          fill="url(#midage-female-costume-ranger__hood)"/>
+  </g>
+
+  <!-- hood roll fold -->
+  <path d="M172 186 q28 12 56 0" stroke="var(--c1, #C08D3B)" stroke-opacity="0.7"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- diagonal quiver strap across the chest -->
+  <path d="M152 212 L250 306 L238 320 L140 226 Z"
+        fill="url(#midage-female-costume-ranger__strap)"/>
+  <!-- wide bracer on one forearm -->
+  <path d="M248 284 H288 V336 Q268 346 248 336 Z"
+        fill="url(#midage-female-costume-ranger__strap)"/>
+  <path d="M252 298 h32 M252 312 h32 M252 326 h32" stroke="var(--c2, #2F231B)"
+        stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- narrow waist belt under the jerkin -->
+  <path d="M182 302 H218 Q222 316 218 330 H182 Q178 316 182 302 Z" fill="var(--c3, #6BBFAD)"/>
+  <!-- jerkin front edge binding -->
+  <path d="M184 186 L180 332 M216 186 L220 332" stroke="var(--c1, #C08D3B)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- trouser lacing at the shin -->
+  <g stroke="var(--c3, #6BBFAD)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M164 464 L196 478 M164 478 L196 464"/>
+    <path d="M164 496 L196 510 M164 510 L196 496"/>
+    <path d="M204 464 L236 478 M204 478 L236 464"/>
+    <path d="M204 496 L236 510 M204 510 L236 496"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M150 216 q18 26 26 44" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

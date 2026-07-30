@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Handlebar Moustache" data-family="handlebar" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162), drawn ears at x137 to x159 and x241 to x263, y93 to y119. Mouth corners at
+       x 180 and x 220 off this bundle's own mouth art.
+       Silhouette axes vs moustache: UPPER LIP (flared and extended ends, swept outward and
+       upward, against a clipped trimmed bar) and LENGTH (79px across and 28px deep, the tips
+       reaching x 160 and x 240, twenty pixels past the mouth corners and 1.5px clear of the
+       drawn ears, against a 58 by 16 bar that stops level with the corners).
+       Chin, jaw and cheeks bare, so no cheek line.
+       hair1 lights the swept top of each wing; hair2 draws the philtrum groove, the shaded
+       underside of both sweeps and the waxed curl at each tip. -->
+  <defs>
+    <linearGradient id="midage-female-beard-handlebar__sweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one continuous moustache whose ends grow long and curl up past the mouth corners -->
+  <g class="sp-shadow">
+    <path d="M200 118 C195 113, 186 112, 178 115 C173 118, 168 115, 165 107
+             C163 103, 158 105, 162 112 C167 125, 173 130, 183 130
+             C190 130, 195 126, 200 126 C205 126, 210 130, 217 130
+             C227 130, 233 125, 238 112 C242 105, 237 103, 235 107
+             C232 115, 227 118, 222 115 C214 112, 205 113, 200 118 Z"
+          fill="url(#midage-female-beard-handlebar__sweep)"/>
+  </g>
+
+  <!-- hair2: the philtrum groove where the two wings part -->
+  <path d="M197.6 118.4 C199.4 121, 199.4 123.4, 198.2 125.9 L201.8 125.9
+           C200.6 123.4, 200.6 121, 202.4 118.4 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the shaded underside of each sweep -->
+  <path d="M163 113 C168 124, 174 129, 184 129 C191 129, 196 125.8, 200 125.8
+           C198 128.8, 191 131.4, 183 131 C172 130.6, 165 123, 163 113 Z"
+        fill="var(--hair2, #352017)"/>
+  <path d="M237 113 C232 124, 226 129, 216 129 C209 129, 204 125.8, 200 125.8
+           C202 128.8, 209 131.4, 217 131 C228 130.6, 235 123, 237 113 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: the waxed curl at each tip -->
+  <path d="M162.4 111 C160.4 107.4, 162.6 104.4, 165.2 106.4
+           C163.2 107.2, 162.2 108.8, 163.2 111.4 Z" fill="var(--hair2, #352017)"/>
+  <path d="M237.6 111 C239.6 107.4, 237.4 104.4, 234.8 106.4
+           C236.8 107.2, 237.8 108.8, 236.8 111.4 Z" fill="var(--hair2, #352017)"/>
+
+  <path d="M170 114 C178 118.5, 189 116.5, 197 118.5" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M230 114 C222 118.5, 211 116.5, 203 118.5" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker Pelt" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The bear's head is NOT drawn. It would sit over the face, which costume draws above, so the
+       identity lives in the shaggy lobed hem of the pelt jerkin instead. No horned and no winged
+       helmet exists for this family in any slot. -->
+  <!-- Refit to the midage/female drawn body: torso top y162, shoulder corners y188, hips
+       y316 to y374, legs y370 to y552, knee at y461, ground y570. -->
+  <!-- axes vs satyr: the shag stops at mid-thigh over close trousers instead of running to the
+       ankle (hem) + a full sleeveless jerkin over a sleeved under-tunic, against satyr's single
+       knotted skin over a bare chest (shoulder/sleeve).
+       axes vs frost-giant: soft irregular lobes, all curves, against frost-giant's hard angular
+       spikes (volume) + a lobed thigh hem against icicle teeth at the knee (hem).
+       Measured here: the lobed pelt edge falls to y428, which is 33 units above the knee. -->
+  <defs>
+    <linearGradient id="midage-female-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A7A66)"/>
+      <stop offset="1" stop-color="var(--c1, #665847)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B3A30)"/>
+      <stop offset="1" stop-color="var(--c2, #2D211A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-berserker__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #453529)"/>
+      <stop offset="1" stop-color="var(--c2, #281D16)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-berserker__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E0AC58)"/>
+      <stop offset="1" stop-color="var(--c3, #B98430)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M158 356 Q180 366 200 358 L198 456 L196 548 Q178 556 160 548 L158 456 Z"
+          fill="url(#midage-female-costume-berserker__leg)"/>
+    <path d="M200 358 Q220 366 242 356 L242 456 L240 548 Q222 556 204 548 L202 456 Z"
+          fill="url(#midage-female-costume-berserker__leg)"/>
+    <!-- long-sleeved under-tunic -->
+    <path d="M110 182 Q110 160 130 160 H146 Q164 160 164 182 L160 264 L156 348
+             Q134 358 112 348 L111 264 Z"
+          fill="url(#midage-female-costume-berserker__tunic)"/>
+    <path d="M290 182 Q290 160 270 160 H254 Q236 160 236 182 L240 264 L244 348
+             Q266 358 288 348 L289 264 Z"
+          fill="url(#midage-female-costume-berserker__tunic)"/>
+    <path d="M170 160 H230 Q252 166 254 190 L258 252 Q260 300 254 336
+             Q200 352 146 336 Q140 300 142 252 L146 190 Q148 166 170 160 Z"
+          fill="url(#midage-female-costume-berserker__tunic)"/>
+    <!-- shaggy pelt jerkin, left panel, worn open; the lobes are built into the contour -->
+    <path d="M180 160 H148 q-18 24 -4 44 q-18 22 0 44 q-16 24 4 46 q-18 22 0 46
+             q-14 24 6 48 q-12 22 4 40 q7 18 14 -6 q6 20 14 4 q4 16 8 -6 Z"
+          fill="url(#midage-female-costume-berserker__pelt)"/>
+    <!-- shaggy pelt jerkin, right panel, worn open -->
+    <path d="M220 160 H252 q18 24 4 44 q18 22 0 44 q16 24 -4 46 q18 22 0 46
+             q14 24 -6 48 q12 22 -4 40 q-7 18 -14 -6 q-6 20 -14 4 q-4 16 -8 -6 Z"
+          fill="url(#midage-female-costume-berserker__pelt)"/>
+  </g>
+
+  <!-- shag texture built along the jerkin contour -->
+  <g stroke="var(--c1, #5E5142)" stroke-opacity="0.5" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M156 208 q-10 20 0 42 q10 20 0 42"/>
+    <path d="M172 222 q-8 24 0 46 q8 22 0 46"/>
+    <path d="M244 208 q10 20 0 42 q-10 20 0 42"/>
+    <path d="M228 222 q8 24 0 46 q-8 22 0 46"/>
+    <path d="M158 344 q-8 24 2 46"/>
+    <path d="M242 344 q8 24 -2 46"/>
+  </g>
+  <!-- wide leather belt, one plain plate instead of the adult draft's stacked hardware -->
+  <path d="M144 300 Q200 318 256 300 L257 330 Q200 348 143 330 Z"
+        fill="url(#midage-female-costume-berserker__belt)"/>
+  <path d="M188 296 H212 Q216 316 212 334 H188 Q184 316 188 296 Z" fill="var(--c2, #2D211A)"/>
+  <!-- pouch hanging from the belt -->
+  <path d="M152 330 H186 Q190 358 186 382 Q169 390 152 382 Q148 358 152 330 Z"
+        fill="url(#midage-female-costume-berserker__pelt)"/>
+  <path d="M154 342 h30" stroke="var(--c3, #E0AC58)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- sheathed knife hanging from the belt -->
+  <path d="M228 328 H246 L242 392 Q236 400 231 392 Z"
+        fill="url(#midage-female-costume-berserker__belt)"/>
+  <path d="M228 338 h17" stroke="var(--c2, #2D211A)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- leg wraps, cross-bound knee to ankle -->
+  <g stroke="var(--c3, #E0AC58)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M162 462 L196 478 M162 478 L196 462"/>
+    <path d="M162 490 L196 506 M162 506 L196 490"/>
+    <path d="M163 518 L195 534 M163 534 L195 518"/>
+    <path d="M204 462 L238 478 M204 478 L238 462"/>
+    <path d="M204 490 L238 506 M204 506 L238 490"/>
+    <path d="M205 518 L237 534 M205 534 L237 518"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M180 188 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

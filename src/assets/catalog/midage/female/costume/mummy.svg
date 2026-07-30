@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandage Wrap" data-family="mummy" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. THE HEAD IS NOT WRAPPED. There are no face
+       bandages: the wrapped collar stops at y162 and the character's own face stays fully
+       visible above it. Costume draws above the face, so a wrapped head would erase it. -->
+  <!-- CULTURAL NOTE. The family key stays `mummy` because that is the retail category name the
+       picker has to be findable under, but the display name is "Bandage Wrap" and the art is
+       cloth and nothing else: no exposed remains, no skull, no decay, no green pallor. -->
+  <!-- axes vs the slot: every limb bound separately in its own sleeve of cloth, with no closure
+       or fastening anywhere on the garment (closure) + five loose ends trailing free of the
+       outline at forearm, hip and calf (volume). -->
+  <defs>
+    <linearGradient id="midage-female-costume-mummy__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0E5CE)"/>
+      <stop offset="1" stop-color="var(--c1, #D2C3A2)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mummy__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EADEC4)"/>
+      <stop offset="1" stop-color="var(--c1, #C8B896)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mummy__end" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B9A47C)"/>
+      <stop offset="1" stop-color="var(--c3, #93805C)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-mummy__stripA" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="22" patternTransform="rotate(19)">
+      <path d="M0 0 h24 v10 h-24 Z" fill="var(--c2, #D8C9A8)"/>
+      <path d="M0 10 h24 v2 h-24 Z" fill="var(--c3, #93805C)" fill-opacity="0.35"/>
+    </pattern>
+    <pattern id="midage-female-costume-mummy__stripB" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="20" patternTransform="rotate(-22)">
+      <path d="M0 0 h24 v9 h-24 Z" fill="var(--c2, #D8C9A8)"/>
+      <path d="M0 9 h24 v2 h-24 Z" fill="var(--c3, #93805C)" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="midage-female-costume-mummy__clipA">
+      <path d="M168 160 H232 Q254 166 256 192 L260 250 Q262 296 256 328
+               Q200 346 144 328 Q138 296 140 250 L144 192 Q146 166 168 160 Z"/>
+      <path d="M156 356 Q180 366 200 358 L198 456 L196 552 Q178 560 158 552 L156 456 Z"/>
+      <path d="M200 358 Q220 366 244 356 L244 456 L242 552 Q224 560 204 552 L202 456 Z"/>
+    </clipPath>
+    <clipPath id="midage-female-costume-mummy__clipB">
+      <path d="M110 180 Q110 160 128 160 H146 Q162 160 162 180 L158 264 L156 350
+               Q134 360 110 350 L109 264 Z"/>
+      <path d="M290 180 Q290 160 272 160 H254 Q238 160 238 180 L242 264 L244 350
+               Q266 360 290 350 L291 264 Z"/>
+      <path d="M142 306 Q200 324 258 306 Q264 336 258 366 Q200 384 142 366
+               Q136 336 142 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- legs, each bound separately to the ankle -->
+    <path d="M156 356 Q180 366 200 358 L198 456 L196 552 Q178 560 158 552 L156 456 Z"
+          fill="url(#midage-female-costume-mummy__limb)"/>
+    <path d="M200 358 Q220 366 244 356 L244 456 L242 552 Q224 560 204 552 L202 456 Z"
+          fill="url(#midage-female-costume-mummy__limb)"/>
+    <!-- arms, each bound separately to the wrist -->
+    <path d="M110 180 Q110 160 128 160 H146 Q162 160 162 180 L158 264 L156 350
+             Q134 360 110 350 L109 264 Z"
+          fill="url(#midage-female-costume-mummy__limb)"/>
+    <path d="M290 180 Q290 160 272 160 H254 Q238 160 238 180 L242 264 L244 350
+             Q266 360 290 350 L291 264 Z"
+          fill="url(#midage-female-costume-mummy__limb)"/>
+    <!-- hip wrap -->
+    <path d="M142 306 Q200 324 258 306 Q264 336 258 366 Q200 384 142 366 Q136 336 142 306 Z"
+          fill="url(#midage-female-costume-mummy__cloth)"/>
+    <!-- torso wrap, no closure and no fastening -->
+    <path d="M168 160 H232 Q254 166 256 192 L260 250 Q262 296 256 328
+             Q200 346 144 328 Q138 296 140 250 L144 192 Q146 166 168 160 Z"
+          fill="url(#midage-female-costume-mummy__cloth)"/>
+    <!-- overlapping strips, running one way on the body and legs -->
+    <g clip-path="url(#midage-female-costume-mummy__clipA)">
+      <rect x="128" y="160" width="144" height="404"
+            fill="url(#midage-female-costume-mummy__stripA)" opacity="0.85"/>
+    </g>
+    <!-- and the other way on the arms and hips -->
+    <g clip-path="url(#midage-female-costume-mummy__clipB)">
+      <rect x="100" y="160" width="204" height="228"
+            fill="url(#midage-female-costume-mummy__stripB)" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- ragged loose ends, trailing free of the outline -->
+  <path d="M116 328 Q104 372 94 412 Q90 430 100 432 L110 416 L114 430 L124 412
+           Q124 366 132 330 Z"
+        fill="url(#midage-female-costume-mummy__end)"/>
+  <path d="M252 336 Q276 372 294 412 Q302 428 292 432 L280 418 L278 434 L266 418
+           Q258 374 242 344 Z"
+        fill="url(#midage-female-costume-mummy__end)"/>
+  <path d="M250 346 Q270 388 274 436 Q276 458 264 458 L256 442 L250 456 L242 440
+           Q246 392 234 356 Z"
+        fill="url(#midage-female-costume-mummy__end)" fill-opacity="0.85"/>
+  <path d="M158 482 Q140 518 134 552 Q132 568 142 568 L150 554 L156 566 L164 550
+           Q162 514 172 488 Z"
+        fill="url(#midage-female-costume-mummy__end)"/>
+  <path d="M240 494 Q258 524 262 556 Q264 570 254 570 L248 558 L242 568 L234 554
+           Q236 524 226 500 Z"
+        fill="url(#midage-female-costume-mummy__end)"/>
+  <!-- wrapped collar, stopping well clear of the jaw -->
+  <path d="M170 162 H230 Q234 178 230 192 Q200 204 170 192 Q166 178 170 162 Z"
+        fill="url(#midage-female-costume-mummy__end)" fill-opacity="0.7"/>
+  <!-- strip edges picked out over the body so the wrapping reads at thumbnail size -->
+  <g stroke="var(--c3, #93805C)" stroke-opacity="0.45" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M144 214 L258 188"/>
+    <path d="M142 254 L260 226"/>
+    <path d="M142 292 L259 264"/>
+    <path d="M148 328 L254 304"/>
+    <path d="M158 392 L198 384 M204 384 L244 392"/>
+    <path d="M158 440 L198 432 M204 432 L244 440"/>
+    <path d="M160 488 L197 480 M203 480 L242 488"/>
+    <path d="M160 534 L197 526 M203 526 L242 534"/>
+    <path d="M112 222 L156 234 M112 272 L155 284 M111 322 L154 334"/>
+    <path d="M288 222 L244 234 M288 272 L245 284 M289 322 L246 334"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M164 190 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

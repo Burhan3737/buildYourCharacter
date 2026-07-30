@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Taper Fade" data-family="taper-fade" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, ears at (148,106)
+       and (252,106).
+       axes vs the slot: CROWN - faded sides under a slightly longer flat top, with a ruler
+       straight front hairline seam at y 68 and squared temple corners, and no part anywhere.
+       VOLUME of the outline - skull close all round, nothing clears the temples, and the side
+       panels thin to nothing at the skin line, where the flat topped column already in this
+       slot stands 18u proud of the skull with vertical sheared sides.
+       The fade is a value ramp built into the hair itself: hair2 sits at the skin line and
+       climbs to hair1 at the crop. A soft top edge or a fuzzy hairline would read as a mistake,
+       so both are cut hard. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-taper-fade__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3F2E22)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #201610)"/>
+        <stop offset="1" stop-color="var(--hair2, #201610)" stop-opacity="0.28"/>
+      </linearGradient>
+    </defs>
+    <!-- the nape taper: the same value ramp wrapping round the back of the head -->
+    <g class="sp-shadow">
+      <path d="M169 130 C163 146 171 163 185 169 C194 172 206 172 215 169 C229 163 237 146 231 130
+               C223 145 209 151 200 151 C191 151 177 145 169 130 Z"
+            fill="url(#midage-female-hair-taper-fade__back-f)"/>
+    </g>
+    <path d="M175 138 C185 148 215 148 225 138 C221 154 179 154 175 138 Z"
+          fill="var(--hair2, #201610)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-taper-fade__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3F2E22)"/>
+        <stop offset="1" stop-color="var(--hair2, #201610)"/>
+      </linearGradient>
+      <!-- the fade: lit hair at the top of the panel, bare shadow at the skin line -->
+      <linearGradient id="midage-female-hair-taper-fade__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #3F2E22)"/>
+        <stop offset="0.42" stop-color="var(--hair2, #201610)"/>
+        <stop offset="1" stop-color="var(--hair2, #201610)" stop-opacity="0.25"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the slightly longer flat top, cut off square at the front hairline -->
+      <path d="M150 74 C149 55 157 42 176 39 C193 36 207 36 224 39 C243 42 251 55 250 74 Z"
+            fill="url(#midage-female-hair-taper-fade__front-g)"/>
+      <!-- faded temple panels, thinning away at the skin line -->
+      <path d="M149 72 C142 85 139 103 140 120 C141 128 151 128 152 120 C152 103 155 87 161 76 Z"
+            fill="url(#midage-female-hair-taper-fade__front-f)"/>
+      <path d="M251 72 C258 85 261 103 260 120 C259 128 249 128 248 120 C248 103 245 87 239 76 Z"
+            fill="url(#midage-female-hair-taper-fade__front-f)"/>
+    </g>
+    <!-- the line-up: a razor straight hairline seam with squared temple corners -->
+    <rect x="151" y="68" width="98" height="6" fill="var(--hair2, #201610)"/>
+    <path d="M151 74 L151 56 C151 49 157 45 165 43 C157 46 154 50 154 57 L154 74 Z"
+          fill="var(--hair2, #201610)"/>
+    <path d="M249 74 L249 56 C249 49 243 45 235 43 C243 46 246 50 246 57 L246 74 Z"
+          fill="var(--hair2, #201610)"/>
+    <!-- the taper over the ear: the last of the shadow before bare skin -->
+    <path d="M143 96 C141 106 141 114 142 121 C145 112 146 104 148 96 Z"
+          fill="var(--hair2, #201610)"/>
+    <path d="M257 96 C259 106 259 114 258 121 C255 112 254 104 252 96 Z"
+          fill="var(--hair2, #201610)"/>
+    <path d="M170 48 C184 43 216 43 230 48" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M155 82 C153 94 152 106 153 117" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M245 82 C247 94 248 106 247 117" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

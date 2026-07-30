@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60, chin (200,162),
+       jaw corners (157,134)/(243,134), jaw contour through (151,134) (160,145)
+       (173,155) (200,162), ear anchors (148,106)/(252,106).
+       Axes chosen: CHIN AND JAW = chin plus jaw band, an even 14 unit strap that
+       traces the drawn jawline ear to ear and covers nothing else. CHEEK LINE = jaw
+       only, so the band never climbs the cheek and the lip is bare. Against
+       chin-curtain the separator is depth: 14 units of band against 46 of hang. -->
+  <defs>
+    <linearGradient id="midage-male-beard-chin-strap__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the strap: outer contour riding 6 units proud of the drawn jaw, inner contour
+       14 units inboard, plus a root at each ear so the band reaches the sideburn -->
+  <g class="sp-shadow">
+    <path d="M148 111 Q150 145 200 170 Q250 145 252 111
+             L238 111 Q236 140 200 157 Q164 140 162 111 Z"
+          fill="url(#midage-male-beard-chin-strap__grad)"/>
+    <path d="M145 102 C140 107 142 116 148 118 C155 120 160 115 159 108
+             C158 101 150 98 145 102 Z"
+          fill="url(#midage-male-beard-chin-strap__grad)"/>
+    <path d="M255 102 C260 107 258 116 252 118 C245 120 240 115 241 108
+             C242 101 250 98 255 102 Z"
+          fill="url(#midage-male-beard-chin-strap__grad)"/>
+  </g>
+
+  <!-- inner edge of the strap, kept crisp in hair2 -->
+  <path d="M163 118 Q167 142 200 158 Q233 142 237 118" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- grain running across the band, denser round the two corners where it turns -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="2.4" fill="none" stroke-linecap="round"
+     opacity="0.55">
+    <path d="M150 124 L163 123"/>
+    <path d="M154 138 L166 135"/>
+    <path d="M163 150 L173 144"/>
+    <path d="M176 160 L183 152"/>
+    <path d="M190 166 L192 157"/>
+    <path d="M210 166 L208 157"/>
+    <path d="M224 160 L217 152"/>
+    <path d="M237 150 L227 144"/>
+    <path d="M246 138 L234 135"/>
+    <path d="M250 124 L237 123"/>
+  </g>
+
+  <!-- lit outer edge along the jaw run -->
+  <path d="M154 134 C164 150 180 162 196 167" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M246 134 C236 150 220 162 204 167" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

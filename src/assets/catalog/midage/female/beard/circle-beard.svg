@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Circle Beard" data-family="circle-beard" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162). Mouth box measured off this bundle's own mouth art: x167 to x233, y113 to
+       y144, corners at x 180 and x 220.
+       Silhouette axes vs goatee: UPPER LIP (a joined moustache carried right round both mouth
+       corners, against a completely bare lip) and CHIN AND JAW COVERAGE (a closed ring
+       enclosing the mouth, against a disconnected chin-only tuft).
+       The outline is ONE path with an evenodd mouth window at x 182..218, y 120..145, so the
+       ring really is closed rather than two shapes pretending to be one. Jaw and cheeks bare,
+       so no cheek line.
+       hair1 lights the crown of the ring; hair2 draws the inner rim shadow around the mouth,
+       the philtrum groove and the underside of the chin arc. -->
+  <defs>
+    <linearGradient id="midage-female-beard-circle-beard__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the closed ring: moustache over the lip, round both corners, into a rounded chin beard -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M200 110 C213 110, 226 117, 229 130 C232 143, 228 158, 219 167
+             C213 174, 187 174, 181 167 C172 158, 168 143, 171 130
+             C174 117, 187 110, 200 110 Z
+             M200 120 C210 120, 218 125, 218 132 C218 140, 210 145, 200 145
+             C190 145, 182 140, 182 132 C182 125, 190 120, 200 120 Z"
+          fill="url(#midage-female-beard-circle-beard__ring)"/>
+  </g>
+
+  <!-- hair2: the inner rim, shading the ring inward toward the mouth -->
+  <path fill-rule="evenodd"
+        d="M200 117 C212 117, 221 123, 221 132 C221 142, 212 148, 200 148
+           C188 148, 179 142, 179 132 C179 123, 188 117, 200 117 Z
+           M200 120 C210 120, 218 125, 218 132 C218 140, 210 145, 200 145
+           C190 145, 182 140, 182 132 C182 125, 190 120, 200 120 Z"
+        fill="var(--hair2, #352017)" opacity="0.75"/>
+  <!-- hair2: the philtrum groove above the ring -->
+  <path d="M197.6 112 C199.4 115, 199.4 118, 198.4 121.5 L201.6 121.5
+           C200.6 118, 200.6 115, 202.4 112 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the shaded underside of the chin arc -->
+  <path d="M176 153 C179 163, 186 171, 200 172 C214 171, 221 163, 224 153
+           C224 164, 215 173.5, 200 174 C185 173.5, 176 164, 176 153 Z"
+        fill="var(--hair2, #352017)"/>
+
+  <path d="M184 117 C192 112.5, 208 112.5, 216 117" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M175 142 C178 152, 185 159, 191 162" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+</svg>

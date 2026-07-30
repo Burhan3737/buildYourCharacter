@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Line-Up" data-family="line-up" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- The Black barbering edge-up, the natural partner to taper-fade and waves-360. Every edge
+       is razor-straight by definition, so the outline is drawn with L commands only and this is
+       the one family in the slot exempt from the softly irregular hem rule.
+       Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162), ear anchors at (148,106) and (252,106), jaw corners at (157,134) and
+       (243,134). The jaw to ear span is 28px.
+       Silhouette axes vs full-beard: CHEEK LINE (joined at 100 percent, a hard straight edge
+       running from the sideburn at the ear anchor y 106 down to the moustache, against a soft
+       natural mid-cheek line at 55 percent) and LENGTH (clipped short, a hard neck line at
+       y 170 sitting on the top of the neck, against a beard falling to y 191).
+       The neck side is cut low and clipped at 25 percent of the jaw to ear span, y 127.
+       Upper lip: a hard-edged moustache joined continuously to the sideburn.
+       hair1 lights the mass; hair2 draws the philtrum groove, the hard shadow along the inside
+       of the cheek line and the crisp shadow under the neck edge. -->
+  <defs>
+    <linearGradient id="midage-female-beard-line-up__mass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- razor edges only: straight cheek line, straight neck line, hard moustache, mouth window -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M143 106 L147 136 L161 157 L183 170 L217 170 L239 157 L253 136 L257 106
+             L245 106 L222 124 L200 120 L178 124 L155 106 Z
+             M179 128 L221 128 L222 143 L200 148 L178 143 Z"
+          fill="url(#midage-female-beard-line-up__mass)"/>
+  </g>
+
+  <!-- hair2: the hard shadow sitting just inside the razor cheek line -->
+  <path d="M155 106 L178 124 L200 120 L222 124 L245 106 L245 112 L222 128 L200 124 L178 128
+           L156.5 112 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the philtrum groove, cut square to match the edge-up -->
+  <path d="M197.4 122 L202.6 122 L202.6 127.6 L197.4 127.6 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the crisp shadow above the neck line -->
+  <path d="M161 157 L183 170 L217 170 L239 157 L239 162 L217 174.5 L183 174.5 L161 162 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: straight edge grooves through the cheek mass -->
+  <path d="M166 130 L171 154" stroke="var(--hair2, #352017)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M234 130 L229 154" stroke="var(--hair2, #352017)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M190 152 L190 167" stroke="var(--hair2, #352017)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M210 152 L210 167" stroke="var(--hair2, #352017)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+
+  <path d="M149 114 L153 136" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="butt"/>
+  <path d="M251 114 L247 136" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="butt"/>
+</svg>

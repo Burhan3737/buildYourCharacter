@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite Cuirass" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. NO HELMET AT ALL is drawn here: costume draws above
+       the face, so the attic helm is a companion headwear family. The identity is the moulded
+       cuirass and the strip skirt, which is exactly why this silhouette was chosen. This is the
+       same garment at this stage as at any other, drawn with the same authority. -->
+  <!-- TRADEMARK: bronze with ink and undyed linen. No red, and no circular chest disc: the
+       cuirass carries only its own moulded pectoral and abdominal ridges. -->
+  <!-- axes vs pharaonic: a moulded three-dimensional cuirass narrowing sharply at the waist,
+       against a flat drape with a hard triangular projection (volume) + two stiff shoulder flaps
+       folded forward and laced down, against a wide flat disc collar (shoulder/sleeve).
+       Measured on THIS body: nine strips hang from y300 to a longest point of y388, 88 units,
+       and the gaps between them are 2 units at a 13 unit pitch. -->
+  <defs>
+    <linearGradient id="midage-female-costume-hoplite__bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9AE5C)"/>
+      <stop offset="1" stop-color="var(--c1, #9C7328)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-hoplite__flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4BC6C)"/>
+      <stop offset="1" stop-color="var(--c1, #A87E2E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-hoplite__greave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D3A755)"/>
+      <stop offset="1" stop-color="var(--c1, #8F6822)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-hoplite__strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC3A8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-hoplite__lace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c3, #2A211B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the strip skirt: nine separate overlapping strips with visible gaps between them -->
+    <g fill="url(#midage-female-costume-hoplite__strip)">
+      <path d="M142 300 h11 v76 q-5 8 -11 0 Z"/>
+      <path d="M155 300 h11 v80 q-5 8 -11 0 Z"/>
+      <path d="M168 300 h11 v83 q-5 8 -11 0 Z"/>
+      <path d="M181 300 h11 v86 q-5 8 -11 0 Z"/>
+      <path d="M194 300 h11 v88 q-5 8 -11 0 Z"/>
+      <path d="M207 300 h11 v86 q-5 8 -11 0 Z"/>
+      <path d="M220 300 h11 v83 q-5 8 -11 0 Z"/>
+      <path d="M233 300 h11 v80 q-5 8 -11 0 Z"/>
+      <path d="M246 300 h11 v76 q-5 8 -11 0 Z"/>
+    </g>
+    <!-- hard greave plate down each shin -->
+    <path d="M156 462 Q178 472 200 462 Q204 514 200 556 Q178 566 156 556 Q152 514 156 462 Z"
+          fill="url(#midage-female-costume-hoplite__greave)"/>
+    <path d="M200 462 Q222 472 244 462 Q248 514 244 556 Q222 566 200 556 Q196 514 200 462 Z"
+          fill="url(#midage-female-costume-hoplite__greave)"/>
+    <!-- sleeveless moulded cuirass, narrowing sharply at the waist -->
+    <path d="M164 160 H236 Q256 166 260 194 Q266 226 260 258 Q254 284 248 308
+             Q200 322 152 308 Q146 284 140 258 Q134 226 140 194 Q144 166 164 160 Z"
+          fill="url(#midage-female-costume-hoplite__bronze)"/>
+    <!-- two stiff shoulder flaps folded forward from the back -->
+    <path d="M146 160 H188 L190 190 Q188 214 172 220 Q154 224 146 212 Q139 186 146 160 Z"
+          fill="url(#midage-female-costume-hoplite__flap)"/>
+    <path d="M254 160 H212 L210 190 Q212 214 228 220 Q246 224 254 212 Q261 186 254 160 Z"
+          fill="url(#midage-female-costume-hoplite__flap)"/>
+  </g>
+
+  <!-- the folded edge of each shoulder flap, shaded so the fold reads as a separate plate -->
+  <path d="M145 206 Q159 222 175 218 Q187 212 190 192" stroke="var(--c1, #7E5A16)"
+        stroke-opacity="0.7" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M255 206 Q241 222 225 218 Q213 212 210 192" stroke="var(--c1, #7E5A16)"
+        stroke-opacity="0.7" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M150 172 q18 -6 36 0 M250 172 q-18 -6 -36 0" stroke="#FFFFFF"
+        stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- flap laces, running down to the chest -->
+  <g stroke="url(#midage-female-costume-hoplite__lace)" stroke-width="6"
+     fill="none" stroke-linecap="round">
+    <path d="M171 218 L183 258"/>
+    <path d="M229 218 L217 258"/>
+  </g>
+  <g fill="var(--c3, #2A211B)">
+    <circle cx="183" cy="262" r="7"/><circle cx="217" cy="262" r="7"/>
+  </g>
+  <!-- moulded pectoral and abdominal ridges: no disc, no device, no emblem -->
+  <g stroke="var(--c1, #8A6420)" stroke-opacity="0.6" stroke-width="6"
+     fill="none" stroke-linecap="round">
+    <path d="M154 208 Q175 230 194 228"/>
+    <path d="M246 208 Q225 230 206 228"/>
+    <path d="M162 258 Q181 268 196 264"/>
+    <path d="M238 258 Q219 268 204 264"/>
+    <path d="M164 284 Q183 294 196 290"/>
+    <path d="M236 284 Q217 294 204 290"/>
+  </g>
+  <path d="M200 228 L200 308" stroke="var(--c1, #8A6420)" stroke-opacity="0.5"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cuirass waist band, where the strips hang from -->
+  <path d="M142 292 Q200 308 258 292 L259 308 Q200 324 141 308 Z"
+        fill="url(#midage-female-costume-hoplite__lace)"/>
+  <!-- greave straps -->
+  <path d="M158 496 q20 8 40 0 M202 496 q20 8 40 0" stroke="var(--c3, #2A211B)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- sandals on the ground line -->
+  <g class="sp-shadow">
+    <path d="M156 546 Q180 556 204 546 Q208 560 203 570 H158 Q152 560 156 546 Z"
+          fill="url(#midage-female-costume-hoplite__lace)"/>
+    <path d="M196 546 Q220 556 244 546 Q248 560 243 570 H198 Q192 560 196 546 Z"
+          fill="url(#midage-female-costume-hoplite__lace)"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M164 190 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

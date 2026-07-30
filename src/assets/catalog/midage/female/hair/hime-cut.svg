@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, eye line y110,
+       shoulder line y168.
+       axes vs the slot: PARTING and hem - three separate blunt cut lines in one head, a fringe
+       level across the brow at y 100, two sidelocks squared off at the cheek at y 130, and a
+       flat hem on the long fall, all of them ruler straight.
+       LENGTH - the fall carries past the shoulder line to y 252 while the two front masses stop
+       at the cheek, so the outline steps twice on the way down. The long fall is drawn in the
+       FRONT group either side of the sidelocks; kept in the back group it would draw under the
+       torso and vanish. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-hime-cut__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A2229)"/>
+        <stop offset="1" stop-color="var(--hair2, #130F16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M200 34 C154 34 126 68 124 122 C120 184 122 252 126 310 L274 310
+               C278 252 280 184 276 122 C274 68 246 34 200 34 Z"
+            fill="url(#midage-female-hair-hime-cut__back-g)"/>
+    </g>
+    <!-- straight fall lines, and the blunt hem edge -->
+    <path d="M140 142 C132 202 132 256 138 308 L148 308 C144 256 144 202 150 144 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M260 142 C268 202 268 256 262 308 L252 308 C256 256 256 202 250 144 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M194 180 C190 236 191 278 195 308 L203 308 C201 278 200 236 200 180 Z"
+          fill="var(--hair2, #130F16)"/>
+    <rect x="126" y="302" width="148" height="8" fill="var(--hair2, #130F16)"/>
+    <path d="M152 68 C174 52 226 52 248 68" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M156 232 C178 244 222 244 244 232" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-hime-cut__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A2229)"/>
+        <stop offset="1" stop-color="var(--hair2, #130F16)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-hime-cut__front-f" x1="0" y1="0" x2="0.2" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #2A2229)"/>
+        <stop offset="1" stop-color="var(--hair2, #130F16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the long fall, drawn first so the sidelock reads as the mass in front of it -->
+      <path d="M144 90 C130 140 124 196 126 252 L156 252 C154 196 152 140 156 92 Z"
+            fill="url(#midage-female-hair-hime-cut__front-f)"/>
+      <path d="M256 90 C270 140 276 196 274 252 L244 252 C246 196 248 140 244 92 Z"
+            fill="url(#midage-female-hair-hime-cut__front-f)"/>
+      <!-- the fringe, cut dead level at the brow -->
+      <path d="M200 26 C165 26 147 48 149 78 L149 100 L251 100 L251 78 C253 48 235 26 200 26 Z"
+            fill="url(#midage-female-hair-hime-cut__front-g)"/>
+      <!-- two sidelocks, squared off at the cheek -->
+      <path d="M151 72 C141 76 133 85 132 97 L132 130 L158 130 L158 96
+               C158 86 155 78 151 72 Z"
+            fill="url(#midage-female-hair-hime-cut__front-g)"/>
+      <path d="M249 72 C259 76 267 85 268 97 L268 130 L242 130 L242 96
+               C242 86 245 78 249 72 Z"
+            fill="url(#midage-female-hair-hime-cut__front-g)"/>
+    </g>
+    <!-- the four blunt cut edges: fringe, both sidelocks, and the hem of the fall -->
+    <rect x="149" y="92" width="102" height="8" fill="var(--hair2, #130F16)"/>
+    <rect x="132" y="122" width="26" height="8" fill="var(--hair2, #130F16)"/>
+    <rect x="242" y="122" width="26" height="8" fill="var(--hair2, #130F16)"/>
+    <rect x="126" y="244" width="30" height="8" fill="var(--hair2, #130F16)"/>
+    <rect x="244" y="244" width="30" height="8" fill="var(--hair2, #130F16)"/>
+    <!-- the gap between fringe and sidelock, and the straight grain of each mass -->
+    <path d="M151 74 L155 100 L149 100 L147 76 Z" fill="var(--hair2, #130F16)"/>
+    <path d="M249 74 L245 100 L251 100 L253 76 Z" fill="var(--hair2, #130F16)"/>
+    <path d="M172 52 C170 70 170 86 171 98 L177 98 C176 84 176 68 178 52 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M228 52 C230 70 230 86 229 98 L223 98 C224 84 224 68 222 52 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M136 98 C134 108 134 116 135 124 L140 124 C139 116 139 108 141 98 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M264 98 C266 108 266 116 265 124 L260 124 C261 116 261 108 259 98 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M134 140 C128 186 127 220 129 248 L136 248 C134 220 134 186 139 142 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M266 140 C272 186 273 220 271 248 L264 248 C266 220 266 186 261 142 Z"
+          fill="var(--hair2, #130F16)"/>
+    <path d="M168 46 C186 34 214 34 232 46" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M162 76 C180 70 220 70 238 76" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

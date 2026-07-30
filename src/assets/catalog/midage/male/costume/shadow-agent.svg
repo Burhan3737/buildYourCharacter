@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       hangs its half cape and its wrap body from y 150, which breaches this bundle, so both were
+       redrawn to start at y 162 on this body's drawn torso line. There is no cowl and no mask:
+       costume draws above the face, and the asymmetry carries the whole family instead.
+
+       silhouette axes: shoulder=one long sleeve and one entirely bare arm, and closure=an
+       asymmetric wrap front crossing right over left to a low fastening at one hip.
+       Recomputed on this body: the half cape runs from the single covered shoulder at y 162 to
+       a straight cut hem at y 510, a drop of 348 units, and it hangs 34 units outboard of the
+       drawn arm at x 104. The bare right arm is left to the body's own skin ramp.
+       Trademark: there is NO scalloped or bat winged cape hem, NO pointed ear shape and NO
+       chest emblem. The half cape hem is cut straight, deliberately. -->
+  <defs>
+    <linearGradient id="midage-male-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241A15)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #241A15)"/>
+      <stop offset="1" stop-color="var(--c1, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-shadow-agent__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241A15)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow half cape from the single covered shoulder, hem cut straight at the calf -->
+  <g class="sp-shadow">
+    <path d="M148 162 H182 L172 332 L156 510 H104 Q96 510 98 500 L124 312 Z"
+          fill="url(#midage-male-costume-shadow-agent__cape)"/>
+  </g>
+
+  <!-- asymmetric wrap body: one sleeve on the left, right arm bare -->
+  <g class="sp-shadow">
+    <path d="M160 162 H242 Q254 166 256 186 L252 250 Q264 284 252 322 Q244 342 218 344
+             L164 338 Q148 328 148 302 L146 204 Q146 170 160 162 Z"
+          fill="url(#midage-male-costume-shadow-agent__suit)"/>
+    <path d="M102 174 H134 Q138 186 136 210 L134 332 Q134 344 118 344 Q104 344 102 332
+             L100 210 Q98 186 102 174 Z" fill="url(#midage-male-costume-shadow-agent__suit)"/>
+    <path d="M150 338 H250 Q254 354 252 372 H148 Q144 354 150 338 Z"
+          fill="url(#midage-male-costume-shadow-agent__suit)"/>
+    <path d="M156 366 H196 Q198 458 194 546 Q194 554 186 554 H164 Q156 554 156 546
+             Q154 458 156 366 Z" fill="url(#midage-male-costume-shadow-agent__leg)"/>
+    <path d="M244 366 H204 Q202 458 206 546 Q206 554 214 554 H236 Q244 554 244 546
+             Q246 458 244 366 Z" fill="url(#midage-male-costume-shadow-agent__leg)"/>
+  </g>
+
+  <!-- the wrap edge, right over left, running down to a low fastening at one hip -->
+  <path d="M172 164 Q206 230 248 332" stroke="var(--c3, #6BBFAD)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 328 h14 q6 8 2 16 h-16 q-6 -8 0 -16 Z" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- wide wrist wrap on the bare right arm -->
+  <path d="M266 308 H300 Q304 324 300 342 H266 Q262 324 266 308 Z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M268 318 H298" stroke="var(--c2, #241A15)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- cuff on the single sleeve, and integral soft boots -->
+  <path d="M100 324 H136 V342 H100 Z" fill="var(--c3, #6BBFAD)" opacity="0.85"/>
+  <path d="M154 544 H200 Q204 556 202 570 H156 Q150 556 154 544 Z" fill="var(--c2, #241A15)"/>
+  <path d="M200 544 H246 Q250 556 248 570 H202 Q194 556 200 544 Z" fill="var(--c2, #241A15)"/>
+
+  <!-- cape hem, cut straight, and the house highlight -->
+  <path d="M104 506 H154" stroke="var(--c3, #6BBFAD)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+  <path d="M170 190 q36 12 70 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

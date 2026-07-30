@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant Coat" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The fallback is MINT, deliberately, and must stay mint. Defaulting a frost giant to blue is
+       what makes it read as one studio's version of the character; if the family only works in
+       blue then it is not a silhouette. Do not "fix" the palette to blue. -->
+  <!-- axes vs berserker: hard angular rime spikes jutting from the outline instead of soft lobes
+       (volume) + a closed knee-length overcoat cut into uneven icicle teeth, against an open
+       thigh-length jerkin with a lobed edge (hem and closure).
+       Measured on THIS body: the knee sits at y461 and the icicle teeth run from y470 to y520,
+       so the hem straddles the knee exactly as the family calls for. -->
+  <defs>
+    <linearGradient id="midage-female-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7BCBB9)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-frost-giant__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #45907F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F2FAF6)"/>
+      <stop offset="1" stop-color="var(--c2, #CEE6DC)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-frost-giant__shag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4C7F74)"/>
+      <stop offset="1" stop-color="var(--c3, #2F5A51)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thickly wrapped legs below the coat hem -->
+    <path d="M152 458 H200 L198 512 L196 554 Q176 562 154 554 L153 512 Z"
+          fill="url(#midage-female-costume-frost-giant__shag)"/>
+    <path d="M200 458 H248 L248 512 L246 554 Q226 562 204 554 L202 512 Z"
+          fill="url(#midage-female-costume-frost-giant__shag)"/>
+    <!-- bulky sleeves, forearms crusted with angular rime -->
+    <path d="M108 188 Q108 160 134 160 H150 Q168 160 168 188 L164 226 L180 240 L162 258
+             L174 284 L158 306 L170 330 L154 354 Q132 364 108 354 L112 316 L98 292
+             L114 268 L100 244 L116 222 L106 200 Z"
+          fill="url(#midage-female-costume-frost-giant__sleeve)"/>
+    <path d="M292 188 Q292 160 266 160 H250 Q232 160 232 188 L236 226 L220 240 L238 258
+             L226 284 L242 306 L230 330 L246 354 Q268 364 292 354 L288 316 L302 292
+             L286 268 L300 244 L284 222 L294 200 Z"
+          fill="url(#midage-female-costume-frost-giant__sleeve)"/>
+    <!-- closed knee-length overcoat, angular rime spikes on the outline, icicle-tooth hem -->
+    <path d="M170 162 H230
+             L252 174 L242 196 L270 210 L246 230 L268 252 L244 274
+             L270 300 L244 326 L268 358 L244 390 L266 424 L246 454 L254 470
+             L248 516 L240 476 L230 496 L222 472 L212 520 L204 478 L194 490 L186 470
+             L176 508 L168 474 L158 498 L150 472
+             L158 454 L136 424 L158 390 L134 358 L158 326 L132 300
+             L158 274 L134 252 L156 230 L132 210 L160 196 L150 174 Z"
+          fill="url(#midage-female-costume-frost-giant__coat)"/>
+    <!-- thick shaggy shoulder collar, lobed along its lower edge -->
+    <path d="M136 162 Q200 170 264 162 Q270 190 260 208 Q246 222 236 206 Q224 224 208 210
+             Q196 226 182 208 Q168 222 156 204 Q144 218 136 200 Q128 178 136 162 Z"
+          fill="url(#midage-female-costume-frost-giant__shag)"/>
+  </g>
+
+  <!-- rime plates crusting the chest, scattered and asymmetric: not a chest emblem -->
+  <g fill="url(#midage-female-costume-frost-giant__rime)">
+    <path d="M162 232 L188 226 L196 250 L176 264 L158 252 Z"/>
+    <path d="M206 244 L234 238 L246 258 L226 274 L208 264 Z"/>
+    <path d="M168 282 L192 278 L200 302 L178 312 L164 298 Z"/>
+    <path d="M214 298 L242 294 L250 318 L226 330 L212 316 Z"/>
+    <path d="M170 336 L196 332 L204 358 L180 368 L166 352 Z"/>
+    <path d="M116 266 L138 262 L144 286 L124 296 L112 282 Z"/>
+    <path d="M256 266 L278 262 L286 286 L266 296 L254 282 Z"/>
+  </g>
+  <!-- hard facet lines on the plates -->
+  <g stroke="var(--c1, #45907F)" stroke-opacity="0.4" stroke-width="3"
+     fill="none" stroke-linejoin="round">
+    <path d="M162 232 L176 264 M206 244 L226 274 M168 282 L178 312 M214 298 L226 330"/>
+    <path d="M170 336 L180 368 M116 266 L124 296 M256 266 L266 296"/>
+  </g>
+  <!-- collar shag strokes, built along the lobes -->
+  <g stroke="var(--c3, #244B43)" stroke-opacity="0.5" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M152 172 q-6 16 2 32"/>
+    <path d="M180 170 q-6 18 0 36"/>
+    <path d="M220 170 q6 18 0 36"/>
+    <path d="M248 172 q6 16 -2 32"/>
+  </g>
+  <!-- leg wrap bindings -->
+  <g stroke="var(--c2, #CEE6DC)" stroke-opacity="0.7" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M154 478 h44 M154 502 h44 M155 524 h42 M156 544 h40"/>
+    <path d="M202 478 h44 M202 502 h44 M203 524 h42 M204 544 h40"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M170 180 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

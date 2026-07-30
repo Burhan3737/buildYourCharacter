@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Critter Onesie" data-family="critter-onesie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The hood is drawn WORN DOWN, lying flat across
+       the shoulders. It is never up: costume draws above the face and a raised hood would erase
+       it. The adult reference draws the hood from y150, which breaches this ceiling, so the hood
+       here starts at y162 and all of its depth runs downward. -->
+  <!-- axes vs dino, the other plush suit: a full-length centre zip splitting the front from throat
+       to hip (closure) + bulky turned plush cuffs at every limb end and a hood pooled flat on the
+       shoulders, against dino's smooth unbroken suit with a dorsal crest (shoulder/volume). -->
+  <defs>
+    <linearGradient id="midage-female-costume-critter-onesie__plush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D2857A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-critter-onesie__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EF9D90)"/>
+      <stop offset="1" stop-color="var(--c1, #C87C70)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-critter-onesie__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c2, #DDD3BC)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-critter-onesie__zip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c3, #2A211B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- plush legs -->
+    <path d="M150 358 Q178 372 204 358 L202 456 L200 522 Q176 534 152 522 L150 456 Z"
+          fill="url(#midage-female-costume-critter-onesie__limb)"/>
+    <path d="M196 358 Q222 372 250 358 L250 456 L248 522 Q224 534 198 522 L196 456 Z"
+          fill="url(#midage-female-costume-critter-onesie__limb)"/>
+    <!-- plush sleeves -->
+    <path d="M110 190 Q110 164 134 164 H150 Q170 164 170 190 L166 258 L164 314
+             Q136 324 110 314 L108 258 Z"
+          fill="url(#midage-female-costume-critter-onesie__limb)"/>
+    <path d="M290 190 Q290 164 266 164 H250 Q230 164 230 190 L234 258 L236 314
+             Q264 324 290 314 L292 258 Z"
+          fill="url(#midage-female-costume-critter-onesie__limb)"/>
+    <!-- short round tail at the hip, standing clear of the sleeve -->
+    <circle cx="302" cy="356" r="28" fill="url(#midage-female-costume-critter-onesie__limb)"/>
+    <!-- thick plush body -->
+    <path d="M166 160 H234 Q260 168 264 198 Q272 252 268 306 Q270 332 260 348
+             Q200 366 140 348 Q130 332 132 306 Q128 252 136 198 Q140 168 166 160 Z"
+          fill="url(#midage-female-costume-critter-onesie__plush)"/>
+    <!-- bulky cuffed wrists and ankles, turned back over the limb -->
+    <path d="M104 306 Q136 320 170 306 Q176 332 170 356 Q136 370 104 356 Q98 332 104 306 Z"
+          fill="url(#midage-female-costume-critter-onesie__belly)"/>
+    <path d="M296 306 Q264 320 230 306 Q224 332 230 356 Q264 370 296 356 Q302 332 296 306 Z"
+          fill="url(#midage-female-costume-critter-onesie__belly)"/>
+    <path d="M144 512 Q176 526 210 512 Q216 538 210 562 Q176 574 144 562 Q138 538 144 512 Z"
+          fill="url(#midage-female-costume-critter-onesie__belly)"/>
+    <path d="M190 512 Q222 526 256 512 Q262 538 256 562 Q222 574 190 562 Q184 538 190 512 Z"
+          fill="url(#midage-female-costume-critter-onesie__belly)"/>
+    <!-- the hood, lying flat down across the shoulders -->
+    <path d="M150 164 Q200 160 250 164 Q262 188 254 212 Q236 224 222 212 Q210 224 196 214
+             Q182 224 168 212 Q152 222 146 202 Q140 180 150 164 Z"
+          fill="url(#midage-female-costume-critter-onesie__plush)"/>
+  </g>
+
+  <!-- contrast belly panel -->
+  <path d="M172 220 Q200 212 228 220 Q234 274 230 322 Q200 336 170 322 Q166 274 172 220 Z"
+        fill="url(#midage-female-costume-critter-onesie__belly)"/>
+  <!-- full-length centre zip, throat to hip -->
+  <path d="M196 170 H204 L203 350 H197 Z" fill="url(#midage-female-costume-critter-onesie__zip)"/>
+  <g stroke="var(--c3, #2A211B)" stroke-opacity="0.6" stroke-width="2.5"
+     fill="none" stroke-linecap="round">
+    <path d="M192 186 h16 M192 210 h16 M192 234 h16 M192 258 h16
+             M192 282 h16 M192 306 h16 M192 330 h16"/>
+  </g>
+  <!-- zip pull -->
+  <path d="M193 170 H207 Q210 180 207 188 H193 Q190 180 193 170 Z"
+        fill="url(#midage-female-costume-critter-onesie__zip)"/>
+  <path d="M200 188 v14" stroke="var(--c3, #2A211B)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- hood fold -->
+  <path d="M158 186 q42 14 84 0" stroke="var(--c1, #BE7267)" stroke-opacity="0.7"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cuff stitching -->
+  <g stroke="var(--c1, #BE7267)" stroke-opacity="0.5" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M108 330 q30 12 60 0 M292 330 q-30 12 -60 0"/>
+    <path d="M148 536 q30 12 60 0 M252 536 q-30 12 -60 0"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M164 200 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

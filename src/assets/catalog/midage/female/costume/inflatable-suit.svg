@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The suit gathers into a neck ring whose top edge
+       is y160 and stops there: nothing rises past the jaw, which on this bundle is y162. -->
+  <!-- axes vs the slot: a near-spherical body from armpit to knee, the widest mass in the whole
+       slot (volume) + narrow ribbed tube arms held out and away from the body instead of hanging
+       along it (shoulder/sleeve).
+       Measured on THIS body: the knee is y461 and the sphere runs y186 to y478, so it spans the
+       armpit to just past the knee, and its width of 188 units clears the 112 unit hip block by
+       38 units on each side. -->
+  <defs>
+    <linearGradient id="midage-female-costume-inflatable-suit__ball" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D19A44)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-inflatable-suit__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2BE62)"/>
+      <stop offset="1" stop-color="var(--c1, #C68F3B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-inflatable-suit__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c3, #29221C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow ribbed tube legs -->
+    <path d="M164 452 H198 L196 508 L194 552 Q180 560 166 552 L164 508 Z"
+          fill="url(#midage-female-costume-inflatable-suit__tube)"/>
+    <path d="M202 452 H236 L236 508 L234 552 Q220 560 206 552 L204 508 Z"
+          fill="url(#midage-female-costume-inflatable-suit__tube)"/>
+    <!-- the near-spherical body, armpit to knee -->
+    <path d="M200 186 Q294 206 294 344 Q294 444 246 466 Q200 478 154 466
+             Q106 444 106 344 Q106 206 200 186 Z"
+          fill="url(#midage-female-costume-inflatable-suit__ball)"/>
+    <!-- narrow ribbed tube arms, carried in front and held out away from the body,
+         ending clear of the sphere so the outline reads as arms, not as a ball -->
+    <path d="M182 202 Q150 254 126 330 Q112 376 104 414 Q100 428 88 424 Q76 420 80 406
+             Q90 362 106 314 Q130 238 158 194 Z"
+          fill="url(#midage-female-costume-inflatable-suit__tube)"/>
+    <path d="M218 202 Q250 254 274 330 Q288 376 296 414 Q300 428 312 424 Q324 420 320 406
+             Q310 362 294 314 Q270 238 242 194 Z"
+          fill="url(#midage-female-costume-inflatable-suit__tube)"/>
+    <!-- tight neck ring, the top of the piece -->
+    <path d="M176 160 H224 Q232 174 224 188 Q200 198 176 188 Q168 174 176 160 Z"
+          fill="url(#midage-female-costume-inflatable-suit__ring)"/>
+  </g>
+
+  <!-- gathering pleats radiating out of the neck ring -->
+  <g stroke="var(--c1, #C68F3B)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M180 194 Q158 222 142 258"/>
+    <path d="M192 198 Q184 230 178 264"/>
+    <path d="M208 198 Q216 230 222 264"/>
+    <path d="M220 194 Q242 222 258 258"/>
+  </g>
+  <!-- inflation seam around the equator -->
+  <path d="M110 316 Q200 344 290 316" stroke="var(--c2, #C88C2C)" stroke-opacity="0.5"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M116 382 Q200 408 284 382" stroke="var(--c2, #C88C2C)" stroke-opacity="0.4"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- arm ribbing -->
+  <g stroke="var(--c2, #C88C2C)" stroke-opacity="0.55" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M172 232 L148 222 M156 268 L132 258 M142 306 L118 296
+             M128 346 L104 336 M116 386 L92 376"/>
+    <path d="M228 232 L252 222 M244 268 L268 258 M258 306 L282 296
+             M272 346 L296 336 M284 386 L308 376"/>
+  </g>
+  <!-- leg ribbing -->
+  <g stroke="var(--c2, #C88C2C)" stroke-opacity="0.5" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M165 476 h32 M165 500 h31 M166 524 h29"/>
+    <path d="M203 476 h32 M204 500 h31 M205 524 h29"/>
+  </g>
+  <!-- small round fan pod at the waist -->
+  <circle cx="254" cy="400" r="19" fill="url(#midage-female-costume-inflatable-suit__ring)"/>
+  <circle cx="254" cy="400" r="10" fill="var(--c2, #C88C2C)"/>
+  <path d="M246 400 h16 M254 392 v16" stroke="var(--c3, #29221C)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M144 240 q28 -22 62 -26" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="12"
+        fill="none" stroke-linecap="round"/>
+</svg>

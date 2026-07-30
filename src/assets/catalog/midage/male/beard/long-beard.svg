@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Beard" data-family="long-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: chin (200,162), jaw corners (157,134)/(243,134), ear
+       anchors (148,106)/(252,106), mouth band x170-230 y118-148, torso x128-272 with
+       its top at y162 and its bottom at y340, so mid-torso, the beard floor, is y251.
+       Axes chosen: LENGTH = to mid-chest, hem at y238, thirteen units inside that
+       floor, and the mass widens as it falls to x136 and x264, wider than the head
+       itself. UPPER LIP = overhanging and untrimmed: the moustache carries down to
+       y136 and covers the top of the mouth, which is what separates it from
+       full-beard. Cheek line natural at y118, the same fraction as full-beard, so the
+       two stay siblings rather than strangers. -->
+  <defs>
+    <linearGradient id="midage-male-beard-long-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.38" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mass: narrow at the cheek line, swelling past the jaw into a broad lobed hem -->
+  <g class="sp-shadow">
+    <path d="M145 110 C142 127 141 146 144 165
+             C138 182 136 199 138 214
+             C141 229 157 238 176 240
+             C186 242 197 240 201 237
+             C207 241 218 242 228 239
+             C247 235 262 224 264 210
+             C266 195 264 179 258 165
+             C261 146 260 127 257 110
+             C253 115 247 118 240 119
+             C233 120 228 118 224 113
+             C216 109 207 110 200 111
+             C193 110 184 109 176 113
+             C172 118 167 120 160 119
+             C153 118 148 115 145 110 Z
+             M200 138 C191 138 183 139 180 144
+             C178 149 184 155 195 155
+             C202 156 211 155 216 153
+             C222 151 222 143 217 140
+             C212 137 206 138 200 138 Z"
+          fill-rule="evenodd" fill="url(#midage-male-beard-long-beard__grad)"/>
+  </g>
+
+  <!-- the overhanging moustache edge, hanging over the top of the mouth -->
+  <path d="M176 134 C185 141 215 141 224 134" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M197 110 C198 116 202 116 203 110
+           C206 121 204 133 200 133 C196 133 194 121 197 110 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- shadow where the beard meets the throat -->
+  <path d="M157 160 C174 179 226 179 243 160" stroke="var(--hair2, #331E16)"
+        stroke-width="7" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- long divisions running the length of the fall, none of them equal -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3.4" fill="none" stroke-linecap="round"
+     opacity="0.6">
+    <path d="M164 166 C156 189 152 210 158 229"/>
+    <path d="M184 170 C178 193 177 214 181 233"/>
+    <path d="M214 170 C220 193 221 214 217 233"/>
+    <path d="M236 166 C244 189 248 210 242 229"/>
+  </g>
+  <path d="M200 172 C199 195 199 216 200 235" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.45"/>
+  <!-- the hem lobes, restated so the bottom edge is not one smooth curve -->
+  <path d="M150 224 C160 238 176 244 192 240 C176 246 156 240 148 226 Z"
+        fill="var(--hair2, #331E16)" opacity="0.5"/>
+  <path d="M252 222 C243 236 227 243 210 239 C227 245 246 238 254 224 Z"
+        fill="var(--hair2, #331E16)" opacity="0.5"/>
+
+  <!-- lit cheek line and the lit shoulder of the fall -->
+  <path d="M154 121 C161 124 169 124 176 119" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M148 144 C144 168 142 192 146 212" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

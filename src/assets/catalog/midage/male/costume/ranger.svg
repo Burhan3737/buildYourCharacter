@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its hood roll at y 150 and its under layer at y 154, both of which breach this
+       bundle, so the hood roll and the whole jerkin were redrawn to start at y 162 on this
+       body's drawn torso line.
+
+       The hood is drawn WORN DOWN as a thick fabric roll behind the neck, which is the
+       sanctioned hood pattern for this catalogue and is what keeps the face clear. A hood up
+       would erase the character, because costume draws above face and above hair-front.
+
+       silhouette axes: hem=split into two tails at mid thigh with a real gap between them, and
+       closure=an open sleeveless jerkin over a sleeved under layer.
+       Recomputed on this body: the two tails end at y 412 and the gap between them runs from
+       x 196 to x 204 down the centreline, so the split is a genuine void and not a drawn line.
+       The hood roll is 34 units deep, from y 162 to y 196.
+       Trademark: the fallback is brown dominant with a sage accent, deliberately NOT all green
+       with a hood. There is no bow, no prop of any kind, and no chest emblem. -->
+  <defs>
+    <linearGradient id="midage-male-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7A8B6F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hood pooled in a thick roll at the nape, top edge at the ceiling and no higher -->
+  <g class="sp-shadow">
+    <path d="M154 162 H246 Q250 180 242 196 Q200 208 158 196 Q150 180 154 162 Z"
+          fill="url(#midage-male-costume-ranger__hood)"/>
+  </g>
+
+  <!-- long sleeved under layer, then the open jerkin over it, then close trousers -->
+  <g class="sp-shadow">
+    <path d="M156 166 H244 Q254 186 252 214 L250 314 Q248 328 236 328 H164 Q152 328 150 314
+             L148 214 Q146 186 156 166 Z" fill="url(#midage-male-costume-ranger__under)"/>
+    <path d="M102 176 H134 Q138 190 136 214 L134 332 Q134 344 118 344 Q104 344 102 332
+             L100 214 Q98 190 102 176 Z" fill="url(#midage-male-costume-ranger__under)"/>
+    <path d="M298 176 H266 Q262 190 264 214 L266 332 Q266 344 282 344 Q296 344 298 332
+             L300 214 Q302 190 298 176 Z" fill="url(#midage-male-costume-ranger__under)"/>
+    <path d="M152 170 H190 L186 332 L196 412 H138 Q132 412 132 402 L136 312 Q130 226 152 170 Z"
+          fill="url(#midage-male-costume-ranger__jerkin)"/>
+    <path d="M248 170 H210 L214 332 L204 412 H262 Q268 412 268 402 L264 312 Q270 226 248 170 Z"
+          fill="url(#midage-male-costume-ranger__jerkin)"/>
+    <path d="M158 344 H196 Q198 448 194 534 Q194 542 186 542 H166 Q158 542 158 534
+             Q154 448 158 344 Z" fill="url(#midage-male-costume-ranger__jerkin)"/>
+    <path d="M242 344 H204 Q202 448 206 534 Q206 542 214 542 H234 Q242 542 242 534
+             Q246 448 242 344 Z" fill="url(#midage-male-costume-ranger__jerkin)"/>
+  </g>
+
+  <!-- diagonal quiver strap across the chest, a worn item and not a prop -->
+  <path d="M150 176 L256 316" stroke="var(--c2, #5C4636)" stroke-width="17"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 176 L256 316" stroke="var(--c3, #7A8B6F)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- a quiver body carried on the back, showing past the shoulder -->
+  <path d="M256 190 H282 Q286 210 282 232 H256 Q252 210 256 190 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- wide bracer on one forearm only -->
+  <path d="M100 300 H136 Q140 320 136 342 H100 Q96 320 100 300 Z" fill="var(--c2, #5C4636)"/>
+  <g stroke="var(--c3, #7A8B6F)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M104 308 H132"/><path d="M104 320 H132"/><path d="M104 332 H132"/>
+  </g>
+
+  <!-- belt at the waist, and integral boots -->
+  <path d="M142 306 H258 Q262 316 260 330 H140 Q138 316 142 306 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M152 534 H200 Q206 552 204 570 H154 Q146 552 152 534 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M200 534 H248 Q254 552 252 570 H202 Q194 552 200 534 Z" fill="var(--c2, #5C4636)"/>
+
+  <path d="M164 190 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

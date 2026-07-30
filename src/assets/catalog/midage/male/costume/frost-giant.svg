@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its coat and its shaggy collar at y 150 and pushes one chest rime spike up to
+       y 162 while its collar sits at y 150; on this bundle that whole cluster breaches, so the
+       coat, the collar and every rime plate were redrawn with y 162 as their highest point.
+
+       TRADEMARK NOTE, binding: this family's fallback is MINT, deliberately. Blue is what makes
+       a frost giant read as a specific studio's version, so blue is banned as a default here.
+       If it only works in blue, it is not a silhouette. Do not change the fallback to blue.
+
+       silhouette axes: volume=hard angular rime plates jutting outward and BREAKING the coat
+       outline in irregular spikes, and hem=uneven downward pointing icicle teeth at the knee.
+       Recomputed on this body: the forearm plates reach x 66 and x 334 against a coat edge at
+       x 120 and x 280, so each plate breaks the outline by 54 units, over the 40 unit floor.
+       Against berserker, whose lobes are soft and rounded and whose hem is at mid thigh.
+       Midage read: one rime cluster fewer at the chest and a slightly longer coat. -->
+  <defs>
+    <linearGradient id="midage-male-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3D7A70)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7F2EE)"/>
+      <stop offset="1" stop-color="var(--c3, #E7F2EE)" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-frost-giant__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3D7A70)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bulky closed knee length overcoat with an icicle toothed hem, plus wrapped legs -->
+  <g class="sp-shadow">
+    <path d="M152 470 H198 Q200 508 196 546 H154 Q150 508 152 470 Z"
+          fill="url(#midage-male-costume-frost-giant__collar)"/>
+    <path d="M248 470 H202 Q200 508 204 546 H246 Q250 508 248 470 Z"
+          fill="url(#midage-male-costume-frost-giant__collar)"/>
+    <path d="M148 162 H252 Q274 182 282 228 Q292 314 288 398 L288 458
+             L274 496 L264 458 L252 490 L242 458 L230 484 L220 458 L210 492 L200 458
+             L190 488 L180 458 L168 494 L158 458 L144 482 L134 456
+             Q114 314 124 228 Q132 182 148 162 Z"
+          fill="url(#midage-male-costume-frost-giant__coat)"/>
+  </g>
+
+  <!-- angular rime plates jutting outward, breaking the outline at the chest and the forearms -->
+  <g class="sp-shadow">
+    <path d="M124 218 L78 198 L100 238 L66 264 L118 266 L122 244 Z"
+          fill="url(#midage-male-costume-frost-giant__rime)"/>
+    <path d="M276 218 L322 198 L300 238 L334 264 L282 266 L278 244 Z"
+          fill="url(#midage-male-costume-frost-giant__rime)"/>
+    <path d="M170 206 L156 178 L192 194 L214 174 L214 208 L242 202 L228 228 L172 228 Z"
+          fill="url(#midage-male-costume-frost-giant__rime)"/>
+    <path d="M126 300 L80 302 L110 326 L84 354 L132 350 L130 320 Z"
+          fill="url(#midage-male-costume-frost-giant__rime)"/>
+    <path d="M274 300 L320 302 L290 326 L316 354 L268 350 L270 320 Z"
+          fill="url(#midage-male-costume-frost-giant__rime)"/>
+  </g>
+
+  <!-- thick shaggy shoulder collar, top edge at the ceiling and no higher -->
+  <path d="M148 162 Q160 188 146 202 Q166 206 176 190 Q190 208 200 188 Q210 208 224 190
+           Q236 206 254 202 Q240 188 252 162 Z" fill="url(#midage-male-costume-frost-giant__collar)"/>
+
+  <!-- rime facet lines, and the icicle hem highlight -->
+  <g stroke="var(--c3, #E7F2EE)" stroke-opacity="0.75" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M172 212 L192 190"/><path d="M200 212 L214 184"/><path d="M226 214 L236 198"/>
+    <path d="M112 230 L98 214"/><path d="M288 230 L302 214"/>
+    <path d="M114 316 L100 312"/><path d="M286 316 L300 312"/>
+  </g>
+  <path d="M136 456 Q200 468 264 456" stroke="var(--c3, #E7F2EE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- thick leg wraps below the coat, and integral boots -->
+  <g stroke="var(--c2, #3D7A70)" stroke-opacity="0.7" stroke-width="5" fill="none"
+     stroke-linecap="round">
+    <path d="M154 484 H196"/><path d="M154 502 H196"/><path d="M154 520 H196"/>
+    <path d="M204 484 H246"/><path d="M204 502 H246"/><path d="M204 520 H246"/>
+  </g>
+  <path d="M150 542 H200 Q206 556 204 570 H152 Q144 556 150 542 Z" fill="var(--c2, #3D7A70)"/>
+  <path d="M200 542 H250 Q256 556 254 570 H202 Q194 556 200 542 Z" fill="var(--c2, #3D7A70)"/>
+
+  <path d="M162 216 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

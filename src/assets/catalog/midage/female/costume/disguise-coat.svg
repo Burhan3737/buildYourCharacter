@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The turned-up collar frames the jaw FROM BELOW:
+       its top edge is y160 and it is notched open at the centre front, dipping to y190 at the
+       centreline, so it never crosses the chin. The adult reference collar starts at y150 and
+       would breach this ceiling, so it is redrawn 10 units lower rather than transcribed. -->
+  <!-- axes vs oversized-suit: buttoned to the throat and belted at the waist, against an open
+       lapelled front (closure) + a straight narrow column, against a wide sagging boxy mass
+       (volume). -->
+  <defs>
+    <linearGradient id="midage-female-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D2B084)"/>
+      <stop offset="1" stop-color="var(--c1, #A98354)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-disguise-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A67A)"/>
+      <stop offset="1" stop-color="var(--c1, #9E7849)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-disguise-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCBD94)"/>
+      <stop offset="1" stop-color="var(--c1, #B08B5C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-disguise-coat__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c2, #29221C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-disguise-coat__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6B5540)"/>
+      <stop offset="1" stop-color="var(--c3, #453423)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow trousers and low shoes under the coat -->
+    <path d="M164 486 H200 L199 520 L198 546 Q182 554 166 546 L165 520 Z"
+          fill="url(#midage-female-costume-disguise-coat__leg)"/>
+    <path d="M200 486 H236 L235 520 L234 546 Q218 554 202 546 L201 520 Z"
+          fill="url(#midage-female-costume-disguise-coat__leg)"/>
+    <path d="M156 540 Q182 550 208 540 Q212 558 206 570 H158 Q152 558 156 540 Z"
+          fill="url(#midage-female-costume-disguise-coat__leg)"/>
+    <path d="M192 540 Q218 550 244 540 Q248 558 242 570 H194 Q188 558 192 540 Z"
+          fill="url(#midage-female-costume-disguise-coat__leg)"/>
+    <!-- long sleeves ending in pocket openings, no hands visible -->
+    <path d="M110 186 Q110 160 132 160 H150 Q170 160 170 186 L166 264 L162 362
+             Q136 374 112 362 L110 264 Z"
+          fill="url(#midage-female-costume-disguise-coat__sleeve)"/>
+    <path d="M290 186 Q290 160 268 160 H250 Q230 160 230 186 L234 264 L238 362
+             Q264 374 288 362 L290 264 Z"
+          fill="url(#midage-female-costume-disguise-coat__sleeve)"/>
+    <!-- long straight over-wide coat, closed to the throat, hem at mid-calf -->
+    <path d="M170 160 H230 Q258 166 262 194 L268 276 Q272 380 270 478 Q272 504 266 518
+             Q200 538 134 518 Q128 504 130 478 Q128 380 132 276 L138 194 Q142 166 170 160 Z"
+          fill="url(#midage-female-costume-disguise-coat__coat)"/>
+    <!-- wide collar turned up around the jaw, notched open at the front -->
+    <path d="M156 210 Q154 164 180 160 L200 190 L220 160 Q246 164 244 210
+             Q200 228 156 210 Z"
+          fill="url(#midage-female-costume-disguise-coat__collar)"/>
+  </g>
+
+  <!-- collar roll -->
+  <path d="M164 204 Q181 189 196 199 M236 204 Q219 189 204 199" stroke="#FFFFFF"
+        stroke-opacity="0.28" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- button line running to the throat; fewer and larger than the adult draft -->
+  <g fill="var(--c3, #453423)">
+    <circle cx="200" cy="218" r="6.5"/><circle cx="200" cy="256" r="6.5"/>
+    <circle cx="200" cy="294" r="6.5"/><circle cx="200" cy="404" r="6.5"/>
+    <circle cx="200" cy="442" r="6.5"/>
+  </g>
+  <!-- closed front edge -->
+  <path d="M186 210 L184 512" stroke="var(--c1, #99733F)" stroke-opacity="0.55"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- tie belt, knotted at the front -->
+  <path d="M132 302 Q200 322 268 302 L269 328 Q200 348 131 328 Z"
+        fill="url(#midage-female-costume-disguise-coat__belt)"/>
+  <path d="M182 300 Q200 290 218 300 Q226 316 218 332 Q200 342 182 332 Q174 316 182 300 Z"
+        fill="url(#midage-female-costume-disguise-coat__belt)"/>
+  <path d="M216 326 Q238 344 240 378 M226 322 Q248 336 254 368" stroke="var(--c3, #453423)"
+        stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- pocket openings, where the hands would be -->
+  <path d="M114 348 q24 12 48 0" stroke="var(--c3, #453423)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M286 348 q-24 12 -48 0" stroke="var(--c3, #453423)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- welt pockets on the coat -->
+  <path d="M146 390 h40 M214 390 h40" stroke="var(--c1, #99733F)" stroke-opacity="0.6"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 242 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Curtain Long" data-family="curtain-long" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60 (x142-258, y42-162),
+       ears (148,106)/(252,106), drawn shoulder line y162, torso x128-272.
+       hair-back is z10 and the body is z20, so length drawn down the centre back is
+       invisible. The read is carried FORWARD: both curtains are in the front group and
+       fall past the jaw, over the shoulder line at y162 and down the chest to y238.
+       Axes: CROWN - a hard centre part at x200, cut as real negative space in skin
+       from the crown to the hairline, feeding two mirrored curtain sweeps.
+       LENGTH - the longest hair in this bundle; the back mass runs to y316 and the two
+       front sweeps to y238, well past the shoulder. Differs from long-waves (no part,
+       one continuous fall that stops at the shoulder) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-curtain-long__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.52" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the back mass, softly tapered at the hem -->
+      <path d="M200 40 C157 40 139 71 137 117
+               C133 173 137 235 145 283
+               C151 307 167 316 200 316
+               C233 316 249 307 255 283
+               C263 235 267 173 263 117
+               C261 71 243 40 200 40 Z"
+            fill="url(#midage-male-hair-curtain-long__back-grad)"/>
+    </g>
+    <path d="M149 130 C141 184 143 244 151 294 C157 242 151 186 157 132 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M251 130 C259 184 257 244 249 294 C243 242 249 186 243 132 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M187 212 C181 256 183 290 191 310 C203 288 201 254 197 212 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M155 73 C177 57 223 57 245 73" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-curtain-long__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-curtain-long__sweep-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- crown, left of the part -->
+      <path d="M197 36 C167 38 145 59 139 104
+               C147 89 164 78 180 72 C186 58 192 44 197 36 Z"
+            fill="url(#midage-male-hair-curtain-long__front-grad)"/>
+      <!-- crown, right of the part -->
+      <path d="M203 36 C233 38 255 59 261 104
+               C253 89 236 78 220 72 C214 58 208 44 203 36 Z"
+            fill="url(#midage-male-hair-curtain-long__front-grad)"/>
+      <!-- left curtain: inner edge curves away from the cheek, then the whole sweep
+           carries over the shoulder and down the chest to y238 -->
+      <path d="M139 99 C129 140 128 190 136 238
+               C150 250 172 246 179 231
+               C169 189 167 141 175 95
+               C161 86 147 90 139 99 Z"
+            fill="url(#midage-male-hair-curtain-long__sweep-grad)"/>
+      <!-- right curtain -->
+      <path d="M261 99 C271 140 272 190 264 238
+               C250 250 228 246 221 231
+               C231 189 233 141 225 95
+               C239 86 253 90 261 99 Z"
+            fill="url(#midage-male-hair-curtain-long__sweep-grad)"/>
+    </g>
+    <!-- the part itself: bare scalp, 6 units wide, crown to hairline -->
+    <path d="M197 36 H203 V78 H197 Z" fill="var(--skin1, #F7D2B0)"/>
+    <path d="M200 38 V76" stroke="var(--skin2, #E7B892)" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- weight lines down the two curtains -->
+    <path d="M142 121 C136 156 137 194 144 231 C148 200 145 158 149 121 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M258 121 C264 156 263 194 256 231 C252 200 255 158 251 121 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M167 108 C163 146 163 188 169 226 C175 190 173 148 175 108 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <path d="M233 108 C237 146 237 188 231 226 C225 190 227 148 225 108 Z"
+          fill="var(--hair2, #331E16)" opacity="0.7"/>
+    <!-- the soft hem of each sweep, so it does not end on a hard line -->
+    <path d="M137 224 C147 240 168 242 178 230 C170 246 145 246 136 232 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <path d="M263 224 C253 240 232 242 222 230 C230 246 255 246 264 232 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <path d="M192 42 C177 51 163 65 155 84" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M208 42 C223 51 237 65 245 84" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

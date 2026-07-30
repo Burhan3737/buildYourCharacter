@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jarl" data-family="jarl" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       hangs its cloak from y 152 and its tunic from y 150, both of which breach this bundle, so
+       both were redrawn to start at y 162 on this body's drawn torso line.
+
+       No horned and no winged helmet appears here and neither is ever permitted on this project,
+       in costume or in headwear: both are 19th century Romantic invention rather than Norse
+       archaeology, and the winged version is a trademark tell besides.
+       The trim bands are a GENERIC geometric border. No specific community's woven design.
+
+       silhouette axes: shoulder=a rectangular cloak worn offset over the LEFT shoulder only,
+       leaving the right arm entirely free, and hem=a knee length tunic over narrow trousers.
+       Recomputed on this body: the cloak spans x 98 to x 176 and the body centreline is x 200,
+       so the cloak covers 102 units of the 144 unit shoulder span and stops 24 units short of
+       centre. That asymmetry is the family, and it is 78 units wide, over the 40 unit floor.
+       Midage read: the sleeves ruck in three folds rather than four. -->
+  <defs>
+    <linearGradient id="midage-male-costume-jarl__cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E6070)"/>
+      <stop offset="1" stop-color="var(--c1, #7A5C46)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-jarl__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5C46)"/>
+      <stop offset="1" stop-color="var(--c2, #4E6070)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-jarl__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E6070)"/>
+      <stop offset="1" stop-color="var(--c1, #7A5C46)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-jarl__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 9 L9 2 L18 9 L9 16 Z" fill="none" stroke="var(--c3, #E0C88C)"
+            stroke-width="2.4"/>
+    </pattern>
+  </defs>
+
+  <!-- rectangular cloak, offset over the left shoulder only -->
+  <g class="sp-shadow">
+    <path d="M98 162 H176 Q182 314 178 470 Q138 480 98 470 Q92 314 98 162 Z"
+          fill="url(#midage-male-costume-jarl__cloak)"/>
+  </g>
+
+  <!-- fitted knee length wool tunic over narrow trousers, right arm entirely free of the cloak -->
+  <g class="sp-shadow">
+    <path d="M156 330 H196 Q198 434 194 542 Q194 550 186 550 H164 Q156 550 156 542
+             Q152 434 156 330 Z" fill="url(#midage-male-costume-jarl__trouser)"/>
+    <path d="M244 330 H204 Q202 434 206 542 Q206 550 214 550 H236 Q244 550 244 542
+             Q248 434 244 330 Z" fill="url(#midage-male-costume-jarl__trouser)"/>
+    <path d="M154 162 H246 Q258 186 256 216 L254 302 Q260 382 256 458 Q200 470 144 458
+             Q140 382 146 302 L144 216 Q142 186 154 162 Z"
+          fill="url(#midage-male-costume-jarl__tunic)"/>
+    <path d="M100 174 H136 Q140 194 138 218 L136 344 Q136 358 118 358 Q102 358 100 344
+             L98 218 Q96 194 100 174 Z" fill="url(#midage-male-costume-jarl__tunic)"/>
+    <path d="M300 174 H264 Q260 194 262 218 L264 344 Q264 358 282 358 Q298 358 300 344
+             L302 218 Q304 194 300 174 Z" fill="url(#midage-male-costume-jarl__tunic)"/>
+  </g>
+
+  <!-- one ring brooch pinning the cloak at the right shoulder -->
+  <circle cx="250" cy="182" r="12" fill="none" stroke="var(--c3, #E0C88C)" stroke-width="5"/>
+  <path d="M240 190 L260 174" stroke="var(--c3, #E0C88C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- keyhole neck -->
+  <path d="M194 162 H206 V198 Q200 204 194 198 Z" fill="var(--skin2, #E7B892)"/>
+  <path d="M190 162 H210 V170 H190 Z" fill="var(--c3, #E0C88C)"/>
+
+  <!-- deep woven trim bands at neck, both cuffs and the hem, a generic geometric border -->
+  <rect x="150" y="170" width="100" height="16" fill="url(#midage-male-costume-jarl__weave)"/>
+  <rect x="100" y="338" width="36" height="16" fill="url(#midage-male-costume-jarl__weave)"/>
+  <rect x="264" y="338" width="36" height="16" fill="url(#midage-male-costume-jarl__weave)"/>
+  <rect x="148" y="440" width="104" height="16" fill="url(#midage-male-costume-jarl__weave)"/>
+
+  <!-- sleeves rucked past the wrist in three folds -->
+  <g stroke="var(--c2, #4E6070)" stroke-opacity="0.65" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M102 314 H136"/><path d="M101 324 H137"/><path d="M101 334 H137"/>
+    <path d="M264 314 H298"/><path d="M263 324 H299"/><path d="M263 334 H299"/>
+  </g>
+
+  <!-- belt and integral shoes -->
+  <path d="M146 304 H254 Q258 316 256 330 H144 Q142 316 146 304 Z" fill="var(--c2, #4E6070)"/>
+  <path d="M150 542 H198 Q204 556 202 570 H152 Q146 556 150 542 Z" fill="var(--c2, #4E6070)"/>
+  <path d="M202 542 H250 Q254 556 252 570 H204 Q198 556 202 542 Z" fill="var(--c2, #4E6070)"/>
+  <path d="M180 200 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Handlebar Moustache" data-family="handlebar"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: mouth band x170-230 y118-148, ear anchors
+       (148,106)/(252,106), chin (200,162). Cheek line here: low y127, natural y118,
+       joined y106.
+       Axes chosen: UPPER LIP = flared, extended ends. The bar itself is ordinary but
+       the two tips are grown out to x146 and x254 and hooked up to y101, level with
+       the ear anchors, so the outline is 108 units across against the mouth's 60.
+       CHEEK LINE = none; chin and jaw stay bare, which is what separates it from
+       every joined family in this slot. -->
+  <defs>
+    <linearGradient id="midage-male-beard-handlebar__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- centre bar with two long tapering hooks; each tip is a real point -->
+  <g class="sp-shadow">
+    <path d="M146 106 Q152 99 158 108
+             C163 114 169 117 178 115
+             C186 113 194 112 200 112
+             C206 112 214 113 222 115
+             C231 117 237 114 242 108
+             Q248 99 254 106
+             C256 115 250 123 239 125
+             C231 127 224 124 217 124
+             C209 124 205 126 200 126
+             C195 126 191 124 183 124
+             C176 124 169 127 161 125
+             C150 123 144 115 146 106 Z"
+          fill="url(#midage-male-beard-handlebar__grad)"/>
+  </g>
+
+  <!-- philtrum split, shallow: most of this family's mass is out at the tips -->
+  <path d="M197 112 C198 116 202 116 203 112
+           C205 118 203 123 200 123 C197 123 195 118 197 112 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- wax lines running out into each hook, and the shadow under the bar -->
+  <path d="M185 120 C174 121 163 120 154 114" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M215 120 C226 121 237 120 246 114" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M182 124 C191 127 209 127 218 124" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M150 110 C151 116 154 120 159 122" stroke="var(--hair2, #331E16)"
+        stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M250 110 C249 116 246 120 241 122" stroke="var(--hair2, #331E16)"
+        stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- lit crest along the top of the bar and up into both hooks -->
+  <path d="M156 110 C174 116 226 116 244 110" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

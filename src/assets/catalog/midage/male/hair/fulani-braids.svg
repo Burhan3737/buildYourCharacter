@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fulani Braids" data-family="fulani-braids" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60 (x142-258, y42-162),
+       ears (148,106)/(252,106), drawn shoulder line y162, torso x128-272.
+       hair-back is z10 and the body is z20, so free braids drawn down the back below
+       y162 are hidden. Three released braids on EACH side are therefore carried
+       forward in the front group, falling over the shoulder and down the chest to
+       y252, and they are the ones that carry the length.
+       Axes: CROWN - scalp rows. A hard centre part at x200 cut as real scalp in
+       skin1/skin2, with four raised rows either side of it and 4 to 5 units of bare
+       scalp left as visible negative space between every pair. This is never a hatch
+       pattern laid over a cap.
+       PARTING/HEM - only the outer sections are released, so the hem is six free
+       braids finished with beaded cuffs while everything near the part stays flat on
+       the head. Differs from cornrows (all scalp, one small gathered tail) and from
+       box-braids (a square grid with every section free) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-fulani-braids__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.58" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- five free plaits behind the head; the outline of each undulates side to
+           side, which is the plait rather than a decoration on it -->
+      <path d="M158 98 C155 112 161 120 157 134 C154 148 160 156 156 170
+               C153 184 160 192 157 202 L161 214 L167 214
+               C171 202 168 192 172 170 C175 156 168 148 172 134
+               C175 120 167 112 170 98 Z"
+            fill="url(#midage-male-hair-fulani-braids__back-grad)"/>
+      <path d="M176 98 C173 112 179 120 175 134 C172 148 178 156 174 170
+               C171 184 178 192 175 202 L179 200 L185 200
+               C189 190 186 184 190 170 C193 156 186 148 190 134
+               C193 120 185 112 188 98 Z"
+            fill="url(#midage-male-hair-fulani-braids__back-grad)"/>
+      <path d="M194 98 C191 112 197 120 193 134 C190 148 196 156 192 170
+               C189 184 196 192 193 202 L197 210 L203 210
+               C207 200 204 192 208 170 C211 156 204 148 208 134
+               C211 120 203 112 206 98 Z"
+            fill="url(#midage-male-hair-fulani-braids__back-grad)"/>
+      <path d="M212 98 C209 112 215 120 211 134 C208 148 214 156 210 170
+               C207 184 214 192 211 202 L215 198 L221 198
+               C225 190 222 184 226 170 C229 156 222 148 226 134
+               C229 120 221 112 224 98 Z"
+            fill="url(#midage-male-hair-fulani-braids__back-grad)"/>
+      <path d="M230 98 C227 112 233 120 229 134 C226 148 232 156 228 170
+               C225 184 232 192 229 202 L233 212 L239 212
+               C243 200 240 192 244 170 C247 156 240 148 244 134
+               C247 120 239 112 242 98 Z"
+            fill="url(#midage-male-hair-fulani-braids__back-grad)"/>
+    </g>
+    <!-- beaded cuffs, two to a braid -->
+    <rect x="158" y="192" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="158" y="202" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="176" y="178" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="176" y="188" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="194" y="188" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="194" y="198" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="212" y="176" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="212" y="186" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="230" y="190" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="230" y="200" width="11" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <path d="M155 88 C176 76 224 76 245 88" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-fulani-braids__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+      <linearGradient id="midage-male-hair-fulani-braids__plait-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <!-- REAL SCALP. Every gap between the rows below is this showing through -->
+    <path d="M140 106 C140 60 167 32 200 32 C233 32 260 60 260 106
+             C243 88 222 78 200 78 C178 78 157 88 140 106 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <path d="M173 84 C181 60 190 42 200 34 C210 42 219 60 227 84
+             C218 80 209 78 200 78 C191 78 182 80 173 84 Z"
+          fill="var(--skin1, #F7D2B0)" opacity="0.5"/>
+    <g class="sp-shadow">
+      <!-- four raised rows left of the part -->
+      <path d="M190 38 C184 57 180 77 179 97 L188 97 C189 77 192 57 198 40 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M180 44 C172 61 166 79 164 99 L173 100 C175 79 181 62 188 47 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M169 53 C159 67 151 83 148 101 L157 103 C160 85 168 70 177 57 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M158 63 C148 74 141 89 139 105 L147 108 C150 92 157 79 166 68 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <!-- four raised rows right of the part -->
+      <path d="M210 38 C216 57 220 77 221 97 L212 97 C211 77 208 57 202 40 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M220 44 C228 61 234 79 236 99 L227 100 C225 79 219 62 212 47 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M231 53 C241 67 249 83 252 101 L243 103 C240 85 232 70 223 57 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <path d="M242 63 C252 74 259 89 261 105 L253 108 C250 92 243 79 234 68 Z"
+            fill="url(#midage-male-hair-fulani-braids__front-grad)"/>
+      <!-- three released braids on each side, carried forward past the jaw, over the
+           shoulder line at y162 and down the chest; these carry the length -->
+      <path d="M139 106 C133 122 137 134 132 152 C127 170 133 182 130 198
+               C127 214 132 226 130 240 L136 250 L142 248
+               C145 232 140 222 145 200 C150 180 144 168 149 150
+               C154 132 148 122 151 106 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+      <path d="M152 112 C147 128 151 140 147 158 C143 176 148 188 146 204
+               C144 220 148 230 147 242 L153 238 L159 236
+               C161 222 157 212 162 192 C166 174 161 162 165 144
+               C169 128 163 120 165 112 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+      <path d="M167 120 C163 136 167 146 164 162 C160 180 165 190 164 206
+               C163 220 166 230 166 244 L172 252 L178 248
+               C180 232 176 222 180 202 C184 184 179 172 183 156
+               C187 140 181 132 183 120 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+      <path d="M261 106 C267 122 263 134 268 152 C273 170 267 182 270 198
+               C273 214 268 226 270 240 L264 250 L258 248
+               C255 232 260 222 255 200 C250 180 256 168 251 150
+               C246 132 252 122 249 106 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+      <path d="M248 112 C253 128 249 140 253 158 C257 176 252 188 254 204
+               C256 220 252 230 253 242 L247 238 L241 236
+               C239 222 243 212 238 192 C234 174 239 162 235 144
+               C231 128 237 120 235 112 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+      <path d="M233 120 C237 136 233 146 236 162 C240 180 235 190 236 206
+               C237 220 234 230 234 244 L228 252 L222 248
+               C220 232 224 222 220 202 C216 184 221 172 217 156
+               C213 140 219 132 217 120 Z"
+            fill="url(#midage-male-hair-fulani-braids__plait-grad)"/>
+    </g>
+    <!-- the centre part: bare scalp, 4 units wide, hairline to crown. This is the
+         family's defining piece of negative space -->
+    <path d="M198 34 H202 V100 H198 Z" fill="var(--skin1, #F7D2B0)"/>
+    <path d="M200 36 V98" stroke="var(--skin2, #E7B892)" stroke-width="2"
+          fill="none" stroke-linecap="round"/>
+    <!-- the plait chevrons on each raised row -->
+    <path d="M182 58 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M180 81 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M170 67 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M166 87 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M155 73 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M150 91 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M144 83 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M210 58 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M212 81 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M222 67 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M226 87 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M237 73 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M242 91 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M248 83 q5 4 8 -1" stroke="var(--hair2, #331E16)" stroke-width="2.2"
+          fill="none" stroke-linecap="round" opacity="0.75"/>
+    <!-- cuffs at the end of each released braid -->
+    <rect x="130" y="228" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="130" y="238" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="147" y="222" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="164" y="230" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="164" y="240" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="258" y="228" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="258" y="238" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="241" y="222" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="224" y="230" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <rect x="224" y="240" width="12" height="6" rx="2" fill="var(--hair2, #331E16)"/>
+    <path d="M186 42 q28 -8 28 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fruit Slab" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The chin on this bundle is y162, so the stalk
+       finial is set at y166 and the leaf at y166: the highest geometry in the file is 6 units
+       below the ceiling and 4 units clear of the chin. The slab itself begins at y190. The adult
+       reference finial sits at y156 and would breach this ceiling. -->
+  <!-- axes vs the slot: one large convex slab hung free from two narrow straps, with the arms and
+       legs entirely outside it and the whole thing detached from the body outline (volume)
+       + no closure at all, the slab simply hangs (closure). -->
+  <defs>
+    <linearGradient id="midage-female-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #CB7A6C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-food-costume__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B98A3)"/>
+      <stop offset="1" stop-color="var(--c2, #5C6773)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #46907F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- plain under-layer: the arms and legs stay outside the slab entirely -->
+    <path d="M114 178 Q114 160 130 160 H144 Q160 160 160 178 L157 258 L154 340
+             Q134 352 114 340 L113 258 Z"
+          fill="url(#midage-female-costume-food-costume__under)"/>
+    <path d="M286 178 Q286 160 270 160 H256 Q240 160 240 178 L243 258 L246 340
+             Q266 352 286 340 L287 258 Z"
+          fill="url(#midage-female-costume-food-costume__under)"/>
+    <path d="M162 330 H200 L199 440 L198 542 Q182 550 166 542 L165 440 Z"
+          fill="url(#midage-female-costume-food-costume__under)"/>
+    <path d="M200 330 H238 L237 440 L236 542 Q220 550 204 542 L203 440 Z"
+          fill="url(#midage-female-costume-food-costume__under)"/>
+    <path d="M170 160 H230 Q248 166 250 190 L254 262 Q256 300 250 326
+             Q200 344 152 326 Q146 300 148 262 L152 190 Q154 166 170 160 Z"
+          fill="url(#midage-female-costume-food-costume__under)"/>
+    <!-- two narrow shoulder straps carrying the slab -->
+    <path d="M174 166 H190 L188 204 H176 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+    <path d="M226 166 H210 L212 204 H224 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+    <!-- the slab: one large convex mass, torso to mid-thigh, hanging free -->
+    <path d="M200 190 Q266 202 266 284 Q266 372 238 422 Q200 446 162 422
+             Q134 372 134 284 Q134 202 200 190 Z"
+          fill="url(#midage-female-costume-food-costume__slab)"/>
+    <!-- stalk and leaf finial standing at the top edge -->
+    <path d="M194 170 H206 Q210 182 206 196 H194 Q190 182 194 170 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+    <path d="M206 170 Q244 166 258 188 Q232 206 206 194 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+  </g>
+
+  <!-- leaf vein -->
+  <path d="M212 182 q22 -4 38 2" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- slab bloom highlight -->
+  <path d="M164 234 q16 -20 40 -22" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <!-- soft dimple seams so the slab reads as one convex body -->
+  <g stroke="var(--c1, #B46A5D)" stroke-opacity="0.35" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M166 232 Q154 318 174 412"/>
+    <path d="M234 232 Q246 318 226 412"/>
+  </g>
+  <!-- flat shoes so the ground line reads -->
+  <g class="sp-shadow">
+    <path d="M156 540 Q182 550 208 540 Q212 558 206 570 H158 Q152 558 156 540 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+    <path d="M192 540 Q218 550 244 540 Q248 558 242 570 H194 Q188 558 192 540 Z"
+          fill="url(#midage-female-costume-food-costume__leaf)"/>
+  </g>
+  <!-- strap buckles -->
+  <g fill="var(--c2, #2A231D)">
+    <rect x="174" y="190" width="16" height="7" rx="3"/>
+    <rect x="210" y="190" width="16" height="7" rx="3"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M116 192 q18 6 34 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

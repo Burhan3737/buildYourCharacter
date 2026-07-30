@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime Stripes" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. Nothing is drawn on the face: the whiteface is
+       face mark art that does not exist in this project yet, and costume draws above the face
+       so it could not be drawn here in any case. -->
+  <!-- axes vs the slot: two narrow braces over a close banded body, breaking the torso into a
+       strapped upper and a plain lower (closure) + high-waisted trousers cropped clear above the
+       ankle, so a band of bare shin shows above the ground (hem).
+       Measured on THIS body: the ankle is y540 and the trouser hem is y512, leaving 28 units of
+       shin between the hem and the foot.
+       TRADEMARK: cream, ink and coral. Never default this family to purple with green or purple
+       with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="midage-female-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5F0E2)"/>
+      <stop offset="1" stop-color="var(--c1, #DDD5C0)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mime__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0EADC)"/>
+      <stop offset="1" stop-color="var(--c1, #D4CBB6)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c2, #2A231D)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CE7C6E)"/>
+    </linearGradient>
+    <clipPath id="midage-female-costume-mime__clip">
+      <path d="M168 160 H232 Q252 164 254 186 L258 246 Q260 274 254 296
+               Q200 312 146 296 Q140 274 142 246 L146 186 Q148 164 168 160 Z"/>
+      <path d="M112 178 Q112 160 130 160 H146 Q162 160 162 178 L159 258 L156 330
+               Q134 340 114 330 L113 258 Z"/>
+      <path d="M288 178 Q288 160 270 160 H254 Q238 160 238 178 L241 258 L244 330
+               Q266 340 286 330 L287 258 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close boat-neck long-sleeve body -->
+    <path d="M112 178 Q112 160 130 160 H146 Q162 160 162 178 L159 258 L156 330
+             Q134 340 114 330 L113 258 Z"
+          fill="url(#midage-female-costume-mime__sleeve)"/>
+    <path d="M288 178 Q288 160 270 160 H254 Q238 160 238 178 L241 258 L244 330
+             Q266 340 286 330 L287 258 Z"
+          fill="url(#midage-female-costume-mime__sleeve)"/>
+    <path d="M168 160 H232 Q252 164 254 186 L258 246 Q260 274 254 296
+             Q200 312 146 296 Q140 274 142 246 L146 186 Q148 164 168 160 Z"
+          fill="url(#midage-female-costume-mime__body)"/>
+    <!-- the bands, drawn as real blocking clipped to the body and sleeves -->
+    <g clip-path="url(#midage-female-costume-mime__clip)">
+      <g fill="url(#midage-female-costume-mime__trouser)">
+        <path d="M106 180 H294 V202 H106 Z"/>
+        <path d="M106 224 H294 V246 H106 Z"/>
+        <path d="M106 268 H294 V290 H106 Z"/>
+        <path d="M106 312 H294 V334 H106 Z"/>
+      </g>
+    </g>
+    <!-- high-waisted straight trousers, cropped clear above the ankle -->
+    <path d="M152 286 H200 L199 398 L198 512 Q176 520 153 512 L152 398 Z"
+          fill="url(#midage-female-costume-mime__trouser)"/>
+    <path d="M200 286 H248 L247 398 L246 512 Q224 520 201 512 L200 398 Z"
+          fill="url(#midage-female-costume-mime__trouser)"/>
+  </g>
+
+  <!-- two narrow braces over the shoulders -->
+  <path d="M172 164 H186 L184 244 L182 300 H170 L170 244 Z"
+        fill="url(#midage-female-costume-mime__brace)"/>
+  <path d="M228 164 H214 L216 244 L218 300 H230 L230 244 Z"
+        fill="url(#midage-female-costume-mime__brace)"/>
+  <!-- brace buttons at the waistband -->
+  <g fill="var(--c1, #F5F0E2)">
+    <circle cx="176" cy="298" r="5"/><circle cx="224" cy="298" r="5"/>
+  </g>
+  <!-- high waistband -->
+  <path d="M150 280 H250 Q254 292 250 304 H150 Q146 292 150 280 Z" fill="var(--c2, #2A231D)"/>
+  <!-- wrist cuff bands, reading as glove edges -->
+  <path d="M112 316 Q134 326 157 316 L158 338 Q134 348 111 338 Z"
+        fill="url(#midage-female-costume-mime__brace)"/>
+  <path d="M288 316 Q266 326 243 316 L242 338 Q266 348 289 338 Z"
+        fill="url(#midage-female-costume-mime__brace)"/>
+  <!-- cropped trouser hem edges -->
+  <path d="M154 504 q22 8 44 0 M202 504 q22 8 44 0" stroke="var(--c1, #F5F0E2)"
+        stroke-opacity="0.6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- boat neckline bind -->
+  <path d="M168 164 q32 10 64 0" stroke="var(--c2, #2A231D)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M166 214 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

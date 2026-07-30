@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162), ear anchors at (148,106) and (252,106), jaw corners at (157,134) and
+       (243,134).
+       Silhouette axes vs chin-curtain: CHIN AND JAW COVERAGE (a narrow even 13px band that
+       follows the jawline and nothing else, against a broad under-jaw curtain up to 50px deep)
+       and LENGTH (clipped short, the band's lowest point is y 164, two pixels past the drawn
+       chin at y 162, against a curtain hanging to y 190).
+       Upper lip bare, cheeks bare. Cheek line: jaw-only, the band rises to the ear anchors at
+       y 106 and never crosses the cheek.
+       hair1 lights the outer edge of the band; hair2 draws the inner shaded edge, the notch
+       under the chin and the sideburn roots. -->
+  <defs>
+    <linearGradient id="midage-female-beard-chin-strap__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one even band, ear to ear, round under the chin -->
+  <g class="sp-shadow">
+    <path d="M142 106 C143.5 116, 147 127, 152.5 136
+             C158 145, 165.5 152, 174 157
+             C182 161.5, 191 164, 200 164
+             C209 164, 218 161.5, 226 157
+             C234.5 152, 242 145, 247.5 136
+             C253 127, 256.5 116, 258 106
+             L246.5 106 C245 114.5, 242 123, 237.5 130.5
+             C233 138, 227 143.5, 220.5 147
+             C214 150.5, 207 152, 200 152
+             C193 152, 186 150.5, 179.5 147
+             C173 143.5, 167 138, 162.5 130.5
+             C158 123, 155 114.5, 153.5 106 Z"
+          fill="url(#midage-female-beard-chin-strap__band)"/>
+  </g>
+
+  <!-- hair2: the shaded inner edge that keeps the band reading as a band, not as a beard -->
+  <path d="M153.5 106 C155 114.5, 158 123, 162.5 130.5
+           C167 138, 173 143.5, 179.5 147
+           C186 150.5, 193 152, 200 152
+           C207 152, 214 150.5, 220.5 147
+           C227 143.5, 233 138, 237.5 130.5
+           C242 123, 245 114.5, 246.5 106
+           L243.3 106 C241.9 113.9, 239 121.7, 234.8 128.6
+           C230.6 135.5, 225 140.7, 218.7 144
+           C212.4 147.3, 206 149, 200 149
+           C194 149, 187.6 147.3, 181.3 144
+           C175 140.7, 169.4 135.5, 165.2 128.6
+           C161 121.7, 158.1 113.9, 156.7 106 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: the chin notch, where the two sides of the strap meet under the chin -->
+  <path d="M195 162.6 C197 157.6, 203 157.6, 205 162.6 C203 160.3, 197 160.3, 195 162.6 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: the sideburn roots at the ear anchors -->
+  <path d="M142 106 L153.5 106 L152.9 110.6 L142.7 110.6 Z" fill="var(--hair2, #352017)"/>
+  <path d="M258 106 L246.5 106 L247.1 110.6 L257.3 110.6 Z" fill="var(--hair2, #352017)"/>
+
+  <path d="M146 114 C150 127, 157 140, 168 150" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M254 114 C250 127, 243 140, 232 150" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

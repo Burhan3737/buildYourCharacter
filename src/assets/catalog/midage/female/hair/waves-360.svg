@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="360 Waves" data-family="waves-360" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, ears at (148,106)
+       and (252,106).
+       axes vs the slot: VOLUME of the outline - a near shaved veil that hugs the skull exactly,
+       with the ripple built INTO the contour so both the outer edge and the hairline read as a
+       wave rather than as a smooth arc with squiggles laid inside it.
+       LENGTH - the coat carries right round past the ear line to the nape, so the head reads
+       brushed all the way round, unlike the crescent crops in this slot that stop above the ear.
+       hair2 draws the trough of every ripple and the hairline crest; hair1 is only the lit
+       ridge between them. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-waves-360__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #34251C)"/>
+        <stop offset="1" stop-color="var(--hair2, #18110D)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M145 118 C141 133 149 148 163 154 C175 159 225 159 237 154 C251 148 259 133 255 118
+               C249 133 232 141 200 141 C168 141 151 133 145 118 Z"
+            fill="url(#midage-female-hair-waves-360__back-g)"/>
+    </g>
+    <!-- the ripple carrying round the back of the head -->
+    <path d="M151 132 C167 145 233 145 249 132 C241 151 159 151 151 132 Z"
+          fill="var(--hair2, #18110D)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-waves-360__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #34251C)"/>
+        <stop offset="1" stop-color="var(--hair2, #18110D)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- outer contour ripples, and the hairline itself cut as a wave crest line -->
+      <path d="M146 124 C139 107 137 86 142 71 C144 58 152 48 165 42 C177 35 190 34 200 34
+               C210 34 224 37 236 42 C248 48 256 58 258 71 C263 86 261 107 254 124
+               C252 130 245 130 245 123 C244 111 242 101 237 93 C233 99 226 89 219 85
+               C213 89 206 81 199 83 C192 81 186 89 180 87 C174 91 168 97 163 93
+               C158 101 156 111 156 123 C156 130 148 130 146 124 Z"
+            fill="url(#midage-female-hair-waves-360__front-g)"/>
+    </g>
+    <!-- concentric ripples radiating out from the crown -->
+    <path d="M180 52 C190 46 210 46 220 52" stroke="var(--hair2, #18110D)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M170 63 C186 53 214 53 230 63" stroke="var(--hair2, #18110D)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M162 76 C180 62 220 62 238 76" stroke="var(--hair2, #18110D)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M154 90 C176 70 224 70 246 90" stroke="var(--hair2, #18110D)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M148 107 C172 81 228 81 252 107" stroke="var(--hair2, #18110D)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the wave crests catching the light -->
+    <path d="M176 46 C188 41 212 41 224 46" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M164 70 C182 58 218 58 236 70" stroke="#FFFFFF" stroke-opacity="0.11"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M174 40 C186 36 208 36 218 39" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

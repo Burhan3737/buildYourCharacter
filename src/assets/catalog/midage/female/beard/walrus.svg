@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162). Mouth box measured off this bundle's own mouth art: x167 to x233, y113 to
+       y144, so the lower lip is at y 144 at its deepest.
+       Silhouette axes vs moustache and handlebar: LENGTH (50px deep, drooping past the lower
+       lip to y 158, against a 16px bar and a 27px sweep) and UPPER LIP (overhanging the lip and
+       covering the whole mouth, against a bar that stops clear of it and a pair of wings that
+       lift away from it).
+       Chin, jaw and cheeks bare: the droop stops at y 158, four pixels clear of the chin.
+       hair1 lights the crown of the droop; hair2 draws the centre parting, the heavy shaded
+       underside of both lobes and the hanging strand grooves. -->
+  <defs>
+    <linearGradient id="midage-female-beard-walrus__droop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a thick untrimmed mass drooping over the whole mouth -->
+  <g class="sp-shadow">
+    <path d="M168 117 C174 111, 189 108, 200 112 C211 108, 226 111, 232 117
+             C237 128, 235 143, 227 151 C219 158, 209 156, 206 148
+             C204 143, 202 141, 200 141 C198 141, 196 143, 194 148
+             C191 156, 181 158, 173 151 C165 143, 163 128, 168 117 Z"
+          fill="url(#midage-female-beard-walrus__droop)"/>
+  </g>
+
+  <!-- hair2: the centre parting running down from the philtrum -->
+  <path d="M197.4 113 C199.4 120, 199.4 130, 198.4 140 L201.6 140
+           C200.6 130, 200.6 120, 202.6 113 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the shaded underside of each drooping lobe -->
+  <path d="M171 139 C173 148, 178 154, 186 154 C191 154, 194 151, 196 146
+           C194 154, 189 157, 182 156 C175 155, 171 148, 171 139 Z"
+        fill="var(--hair2, #352017)"/>
+  <path d="M229 139 C227 148, 222 154, 214 154 C209 154, 206 151, 204 146
+           C206 154, 211 157, 218 156 C225 155, 229 148, 229 139 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: hanging strand grooves -->
+  <path d="M180 122 C180 132, 181 142, 185 150" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M189 120 C188 131, 189 139, 191 146" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M220 122 C220 132, 219 142, 215 150" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M211 120 C212 131, 211 139, 209 146" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <path d="M175 116 C185 111, 194 112, 198 114" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M225 116 C215 111, 206 112, 202 114" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

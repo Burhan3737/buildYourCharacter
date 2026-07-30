@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Beard" data-family="long-beard" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162), ear anchors at (148,106) and (252,106). Torso y162 to y324, so the mid-torso
+       floor is y 243 and nothing in this file falls below y 241.
+       Silhouette axes vs full-beard: LENGTH (to mid-chest, the hem reaching y 240, against a
+       beard ending at the throat at y 191) and UPPER LIP (untrimmed and overhanging the lip,
+       the moustache mass running down to y 139 across the mouth, against a moustache cut clear
+       at y 120).
+       Cheek line: natural, 55 percent of the 28px jaw to ear span, so y 118.5 measured at the
+       jaw corner, matching full-beard so the two read as the same growth at two lengths.
+       The mass follows the jaw down to 82px across at y 164, then widens as it falls to 100px
+       across at y 214, before rounding into a broad hem. The hem is irregular in the outline
+       itself, not squiggles drawn inside a smooth edge.
+       hair1 lights the cheeks and the crown of the fall; hair2 draws the philtrum groove, the
+       hanging strand channels and the shaded underside of the hem. -->
+  <defs>
+    <linearGradient id="midage-female-beard-long-beard__fall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a full beard falling to mid-chest, widening as it goes, with a small lower-lip window -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M143 106
+             C143 126, 149 148, 159 164
+             C153 180, 149 198, 150 214
+             C151 226, 161 234, 177 237
+             C190 240, 210 240, 223 237
+             C239 234, 249 226, 250 214
+             C251 198, 247 180, 241 164
+             C251 148, 257 126, 257 106
+             C250 111, 242 118, 233 119
+             C221 120, 211 112, 200 110
+             C189 112, 179 119, 167 119
+             C158 118, 150 111, 143 106 Z
+             M186 139 C193 137, 207 137, 214 139
+             C216 143, 213 148, 206 149
+             C201 150, 199 150, 194 149
+             C187 148, 184 143, 186 139 Z"
+          fill="url(#midage-female-beard-long-beard__fall)"/>
+  </g>
+
+  <!-- hair2: the philtrum groove, running down into the overhanging moustache -->
+  <path d="M197.4 111 C199.4 118, 199.4 129, 198.4 138 L201.6 138
+           C200.6 129, 200.6 118, 202.6 111 Z" fill="var(--hair2, #352017)"/>
+  <!-- hair2: the overhanging lower edge of the moustache, drooping across the lip -->
+  <path d="M177 126 C186 132, 194 135, 200 135 C206 135, 214 132, 223 126
+           C221 134, 211 140, 200 140 C189 140, 179 134, 177 126 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: hanging strand channels through the fall -->
+  <path d="M166 162 C161 182, 160 204, 166 226" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M183 160 C180 182, 180 206, 184 232" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M200 158 C200 182, 200 206, 200 234" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M217 160 C220 182, 220 206, 216 232" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M234 162 C239 182, 240 204, 234 226" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- hair2: the shaded underside of the broad rounded hem -->
+  <path d="M151 214 C153 226, 162 233, 178 236 C190 239, 210 239, 222 236
+           C238 233, 247 226, 249 214 C249 226, 240 234, 224 238
+           C210 241, 190 241, 176 238 C160 234, 151 226, 151 214 Z"
+        fill="var(--hair2, #352017)"/>
+
+  <path d="M150 118 C156 136, 154 160, 149 182" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M250 118 C244 136, 246 160, 251 182" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

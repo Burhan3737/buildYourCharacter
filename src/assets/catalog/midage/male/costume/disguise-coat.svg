@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Disguise Coat" data-family="disguise-coat" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       sets its turned up collar tip at y 148 exactly, which is 12 units above this bundle's
+       ceiling, so the collar was rebuilt with its tip at y 160 and the coat body at y 162. -->
+  <!-- Axes: closure (buttoned to the throat and belted with a knotted tie) and volume (a
+       straight narrow column, against the oversized suit's wide sagging box). -->
+  <!-- The turned up collar frames the jaw FROM BELOW. Its top edge is y 160, which is the
+       ceiling, and the drawn jaw of this body sits at y 162, so the collar meets the jaw and
+       stops. It never reaches the mouth and it never covers the face. -->
+  <defs>
+    <linearGradient id="midage-male-costume-disguise-coat__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A99B7E)"/>
+      <stop offset="1" stop-color="var(--c1, #8B7E63)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-disguise-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3A588)"/>
+      <stop offset="1" stop-color="var(--c1, #93866B)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-disguise-coat__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7C6E56)"/>
+      <stop offset="1" stop-color="var(--c2, #625745)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-disguise-coat__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4E4A42)"/>
+      <stop offset="1" stop-color="var(--c3, #3B3830)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow trousers and shoes below the coat hem -->
+  <g class="sp-shadow">
+    <rect x="164" y="500" width="34" height="50" rx="6" fill="url(#midage-male-costume-disguise-coat__trouser)"/>
+    <rect x="202" y="500" width="34" height="50" rx="6" fill="url(#midage-male-costume-disguise-coat__trouser)"/>
+    <path d="M156 544 H200 V566 Q200 570 195 570 H148 Q140 570 140 562 Q141 550 156 544 Z"
+          fill="url(#midage-male-costume-disguise-coat__trouser)"/>
+    <path d="M244 544 H200 V566 Q200 570 205 570 H252 Q260 570 260 562 Q259 550 244 544 Z"
+          fill="url(#midage-male-costume-disguise-coat__trouser)"/>
+  </g>
+
+  <!-- straight narrow sleeves -->
+  <g class="sp-shadow">
+    <path d="M100 170 H136 Q140 202 138 230 L136 322 H100 L98 230 Q96 202 100 170 Z"
+          fill="url(#midage-male-costume-disguise-coat__coat)"/>
+    <path d="M300 170 H264 Q260 202 262 230 L264 322 H300 L302 230 Q304 202 300 170 Z"
+          fill="url(#midage-male-costume-disguise-coat__coat)"/>
+  </g>
+
+  <!-- the coat: one straight column from the shoulder to a mid calf hem -->
+  <g class="sp-shadow">
+    <path d="M132 162 H268 Q272 190 270 222 L268 512 H132 L130 222 Q128 190 132 162 Z"
+          fill="url(#midage-male-costume-disguise-coat__coat)"/>
+  </g>
+
+  <!-- sleeve ends disappear into pocket openings: NO hands drawn -->
+  <g class="sp-shadow">
+    <path d="M96 310 H144 Q148 340 142 358 Q120 368 98 358 Q92 340 96 310 Z"
+          fill="url(#midage-male-costume-disguise-coat__belt)"/>
+    <path d="M304 310 H256 Q252 340 258 358 Q280 368 302 358 Q308 340 304 310 Z"
+          fill="url(#midage-male-costume-disguise-coat__belt)"/>
+  </g>
+  <path d="M98 316 h44 M258 316 h44" stroke="#000000" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- wide collar TURNED UP around the jaw line, stopping at the ceiling -->
+  <g class="sp-shadow">
+    <path d="M158 206 L150 164 Q149 160 155 160 H192 L194 206 Z"
+          fill="url(#midage-male-costume-disguise-coat__collar)"/>
+    <path d="M242 206 L250 164 Q251 160 245 160 H208 L206 206 Z"
+          fill="url(#midage-male-costume-disguise-coat__collar)"/>
+  </g>
+  <path d="M156 178 L192 180 M244 178 L208 180" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- button line, closed all the way to the throat -->
+  <path d="M200 164 V508" stroke="var(--c2, #625745)" stroke-width="7"
+        stroke-opacity="0.5" fill="none" stroke-linecap="round"/>
+  <g fill="var(--c4, #D9B36A)">
+    <circle cx="200" cy="182" r="7"/>
+    <circle cx="200" cy="216" r="7"/>
+    <circle cx="200" cy="250" r="7"/>
+    <circle cx="200" cy="284" r="7"/>
+    <circle cx="200" cy="356" r="7"/>
+  </g>
+
+  <!-- tie belt, knotted at the front, ends hanging to y 364 -->
+  <rect x="130" y="304" width="140" height="20" rx="8" fill="url(#midage-male-costume-disguise-coat__belt)"/>
+  <path d="M188 326 q-6 22 -10 38 q10 4 16 -2 q2 -20 4 -36 Z" fill="url(#midage-male-costume-disguise-coat__belt)"/>
+  <path d="M212 326 q6 22 10 38 q-10 4 -16 -2 q-2 -20 -4 -36 Z" fill="url(#midage-male-costume-disguise-coat__belt)"/>
+  <rect x="184" y="300" width="32" height="28" rx="11" fill="url(#midage-male-costume-disguise-coat__belt)"/>
+  <path d="M190 308 q10 6 20 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M144 224 q56 18 112 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

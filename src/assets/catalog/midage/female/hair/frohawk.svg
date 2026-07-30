@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, skull top y42,
+       ears at (148,106) and (252,106).
+       axes vs the slot: VOLUME and texture of the outline - one narrow ridge of dense coils
+       standing 22u clear above the skull, its edge built from seven unequal overlapping coil
+       lobes so the contour itself is bumpy, widest above the forehead and tapering to a point
+       at the nape.
+       CROWN - faded skin close sides with a hard front hairline and a bare temple either side
+       of the ridge, so the head reads narrow and tall rather than capped. The fade is a value
+       ramp in the hair itself, hair2 at the skin line climbing to hair1 at the crop. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-frohawk__back-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4E3426)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #241611)"/>
+        <stop offset="1" stop-color="var(--hair2, #241611)" stop-opacity="0.3"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-frohawk__back-r" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4E3426)"/>
+        <stop offset="1" stop-color="var(--hair2, #241611)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded occipital, wrapping just past the skull edge -->
+      <path d="M144 84 C140 104 146 125 158 137 C171 146 229 146 242 137 C254 125 260 104 256 84
+               C248 109 229 121 200 121 C171 121 152 109 144 84 Z"
+            fill="url(#midage-female-hair-frohawk__back-f)"/>
+      <!-- the ridge running on behind the crown and tapering to a point at the nape -->
+      <path d="M187 36 C179 47 175 63 177 81 C179 110 187 137 200 158
+               C213 137 221 110 223 81 C225 63 221 47 213 36 C206 42 194 42 187 36 Z"
+            fill="url(#midage-female-hair-frohawk__back-r)"/>
+    </g>
+    <path d="M189 72 C193 105 195 126 200 145 C205 126 207 105 211 72 C207 87 193 87 189 72 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M158 111 C175 126 225 126 242 111 C234 134 166 134 158 111 Z"
+          fill="var(--hair2, #241611)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-frohawk__front-r" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4E3426)"/>
+        <stop offset="1" stop-color="var(--hair2, #241611)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-frohawk__front-f" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #4E3426)"/>
+        <stop offset="0.45" stop-color="var(--hair2, #241611)"/>
+        <stop offset="1" stop-color="var(--hair2, #241611)" stop-opacity="0.35"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the ridge: seven unequal coil lobes cut into the contour, widest over the forehead -->
+      <path d="M169 79 C160 68 158 50 162 36 C164 27 170 24 174 29 C176 19 183 17 187 24
+               C190 15 197 14 200 21 C203 14 210 15 213 22 C217 16 224 18 225 27
+               C230 25 234 32 232 41 C236 53 234 68 228 79 C221 73 215 77 209 73
+               C204 79 196 79 191 73 C185 77 178 73 169 79 Z"
+            fill="url(#midage-female-hair-frohawk__front-r)"/>
+      <!-- faded sides, thinning to nothing under the ear -->
+      <path d="M164 72 C150 81 141 99 141 119 C141 130 153 132 155 121 C156 103 162 90 172 82 Z"
+            fill="url(#midage-female-hair-frohawk__front-f)"/>
+      <path d="M236 72 C250 81 259 99 259 119 C259 130 247 132 245 121 C244 103 238 90 228 82 Z"
+            fill="url(#midage-female-hair-frohawk__front-f)"/>
+    </g>
+    <!-- coil channels running up the crest, so the ridge reads as a strip of dense coils -->
+    <path d="M180 32 C174 50 172 66 173 79 C168 65 170 46 176 30 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M200 21 C199 41 199 60 200 79 C195 60 195 39 196 21 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M220 32 C226 50 228 66 227 79 C232 65 230 46 224 30 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M189 26 C187 46 186 64 187 79 C183 63 184 43 186 24 Z"
+          fill="var(--hair2, #241611)" fill-opacity="0.6"/>
+    <path d="M211 26 C213 46 214 64 213 79 C217 63 216 43 214 24 Z"
+          fill="var(--hair2, #241611)" fill-opacity="0.6"/>
+    <!-- the hard hairline where each faded side meets bare temple skin -->
+    <path d="M166 72 C154 81 146 95 144 111 C148 95 156 84 170 78 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M234 72 C246 81 254 95 256 111 C252 95 244 84 230 78 Z"
+          fill="var(--hair2, #241611)"/>
+    <path d="M183 27 C193 21 207 21 216 27" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M146 95 C145 105 144 113 145 121" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M254 95 C255 105 256 113 255 121" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

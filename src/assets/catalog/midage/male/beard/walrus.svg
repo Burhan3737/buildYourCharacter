@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: mouth band x170-230 y118-148, chin (200,162), jaw
+       corners (157,134)/(243,134). Cheek line here: low y127, natural y118, joined y106.
+       Axes chosen: UPPER LIP = overhanging. The mass grows down off the lip and
+       swallows the mouth whole, hem at y156, which is 8 units clear of the chin so the
+       chin still reads bare. LENGTH = past the mouth: the only moustache in this slot
+       that falls below the lower lip at y148. Jaw and cheeks bare. -->
+  <defs>
+    <linearGradient id="midage-male-beard-walrus__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.46" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the droop: two heavy unequal lobes, the left carrying a little further than the
+       right, with a shallow centre part cut between them -->
+  <g class="sp-shadow">
+    <path d="M162 113 C161 105 169 102 179 105
+             C188 108 195 109 200 109
+             C205 109 212 108 221 105
+             C231 102 239 105 238 113
+             C237 128 232 143 219 152
+             C211 157 203 152 200 143
+             C197 152 188 157 180 152
+             C167 143 163 128 162 113 Z"
+          fill="url(#midage-male-beard-walrus__grad)"/>
+  </g>
+
+  <!-- centre part, cut down through the whole mass in hair2 -->
+  <path d="M198 111 C202 111 203 126 201 142
+           C200 147 199 147 198 142 C196 126 195 111 198 111 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- sweep of the droop on each lobe, four unequal runs so the fall is not symmetric -->
+  <path d="M174 118 C174 132 179 143 190 150" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M226 118 C226 131 221 142 211 149" stroke="var(--hair2, #331E16)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M166 122 C170 136 177 147 186 153" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M234 122 C230 135 224 145 215 151" stroke="var(--hair2, #331E16)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- weight in the two hanging tips -->
+  <path d="M177 146 C182 152 189 154 194 151" stroke="var(--hair2, #331E16)"
+        stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M223 145 C218 151 211 153 206 150" stroke="var(--hair2, #331E16)"
+        stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- lit upper surface, just under the nose -->
+  <path d="M172 111 C185 106 215 106 228 111" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

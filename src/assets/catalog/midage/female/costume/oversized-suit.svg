@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The jacket is exaggerated OUTWARD, to x94 and
+       x306, while its top edge stays flat on the shoulder line at y160. Nothing rises. -->
+  <!-- The open front resolves as an integral shirt drawn in this same file through c2. It is
+       never a hole and never a hard-coded shell colour. -->
+  <!-- axes vs disguise-coat: an open front with lapels and one button, against a coat buttoned
+       to the throat and belted (closure) + a wide sagging boxy mass with sleeves swallowing the
+       hands, against a straight narrow column (volume).
+       Measured on THIS body: the torso is 124 units wide and the jacket shoulder spans 212, so
+       it projects 44 units past the body on each side. -->
+  <defs>
+    <linearGradient id="midage-female-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6AB2)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-oversized-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8395DE)"/>
+      <stop offset="1" stop-color="var(--c1, #4F5FA6)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c2, #DAD0B9)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c3, #2A231D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- trousers, puddling in folds on the ground line -->
+    <path d="M152 320 H202 L200 434 L198 516 Q198 546 190 558 Q176 570 158 564
+             Q150 554 156 542 Q160 502 158 434 Z"
+          fill="url(#midage-female-costume-oversized-suit__trouser)"/>
+    <path d="M248 320 H198 L200 434 L202 516 Q202 546 210 558 Q224 570 242 564
+             Q250 554 244 542 Q240 502 242 434 Z"
+          fill="url(#midage-female-costume-oversized-suit__trouser)"/>
+    <!-- the integral shirt, which is what the open front resolves to -->
+    <path d="M172 160 H228 Q246 166 248 190 L252 254 Q254 302 248 330
+             Q200 346 152 330 Q146 302 148 254 L152 190 Q154 166 172 160 Z"
+          fill="url(#midage-female-costume-oversized-suit__shirt)"/>
+    <!-- enormous sleeves, swallowing the hands entirely -->
+    <path d="M152 164 Q112 168 100 212 L94 282 Q90 344 102 388 Q128 402 158 388
+             Q160 334 160 276 L162 202 Z"
+          fill="url(#midage-female-costume-oversized-suit__sleeve)"/>
+    <path d="M248 164 Q288 168 300 212 L306 282 Q310 344 298 388 Q272 402 242 388
+             Q240 334 240 276 L238 202 Z"
+          fill="url(#midage-female-costume-oversized-suit__sleeve)"/>
+    <!-- open jacket fronts, hem at mid-calf -->
+    <path d="M170 160 L198 228 L190 314 L186 488 Q166 498 144 488 Q142 396 148 294
+             L154 202 Q156 166 170 160 Z"
+          fill="url(#midage-female-costume-oversized-suit__jacket)"/>
+    <path d="M230 160 L202 228 L210 314 L214 488 Q234 498 256 488 Q258 396 252 294
+             L246 202 Q244 166 230 160 Z"
+          fill="url(#midage-female-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- lapels, folded back off the front edges -->
+  <path d="M172 162 L198 230 L184 238 L162 186 Z" fill="var(--c1, #6F7FC8)"/>
+  <path d="M228 162 L202 230 L216 238 L238 186 Z" fill="var(--c1, #6F7FC8)"/>
+  <!-- shirt placket and collar -->
+  <path d="M180 164 L200 206 L220 164" stroke="var(--c2, #C7BB9F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M198 212 H202 L203 328 H197 Z" fill="var(--c2, #C7BB9F)"/>
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="316" r="19" fill="url(#midage-female-costume-oversized-suit__trouser)"/>
+  <g fill="var(--c1, #8B9CE2)">
+    <circle cx="194" cy="310" r="3.2"/><circle cx="206" cy="310" r="3.2"/>
+    <circle cx="194" cy="322" r="3.2"/><circle cx="206" cy="322" r="3.2"/>
+  </g>
+  <!-- sleeve fold rucks, the sleeve is far too long -->
+  <g stroke="var(--c1, #43539A)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M98 336 q28 12 58 0 M98 362 q28 12 58 0"/>
+    <path d="M302 336 q-28 12 -58 0 M302 362 q-28 12 -58 0"/>
+  </g>
+  <!-- jacket hem and pocket flaps -->
+  <path d="M148 440 q20 8 34 2 M252 440 q-20 8 -34 2" stroke="var(--c1, #43539A)"
+        stroke-opacity="0.5" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trouser puddle folds -->
+  <g stroke="var(--c3, #17120E)" stroke-opacity="0.3" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M158 534 q16 8 34 2 M242 534 q-16 8 -34 2"/>
+    <path d="M156 552 q18 8 36 2 M244 552 q-18 8 -36 2"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M164 188 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

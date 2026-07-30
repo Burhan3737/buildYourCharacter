@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       spreads its broad collar from y 150, which breaches this bundle by 10 units, so the
+       collar and all three of its concentric bands were rebuilt with y 162 as their top edge.
+
+       CULTURAL NOTE. In scope because pharaonic Egypt is a historical period with no living
+       community whose religious identity is at stake, and reconstructing its everyday dress is
+       scholarship rather than caricature. This file deliberately does NOT draw a specific
+       identifiable ruler: no cartouche, no crook and flail, no uraeus, no headdress of any
+       kind, and no glamour version. It is a knee length pleated linen kilt and a broad collar,
+       drawn with the same matter of factness as the chef.
+
+       silhouette axes: shoulder=a wide flat semicircular disc collar covering both shoulders,
+       and volume=a flat drape with a hard triangular apron standing proud of the body.
+       Recomputed on this body: the collar spans x 130 to x 270 and drops to y 224, so it is
+       140 units wide and 62 deep, and the apron is 70 units across its base at y 462. Both are
+       over the 40 unit tray floor.
+       Against hoplite, which is a moulded three dimensional cuirass with forward folded flaps
+       and a strip skirt: two axes. -->
+  <defs>
+    <linearGradient id="midage-male-costume-pharaonic__kilt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFEADB)"/>
+      <stop offset="1" stop-color="var(--c2, #C4BBA0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F2E7)"/>
+      <stop offset="1" stop-color="var(--c2, #C4BBA0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-pharaonic__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E7C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #C4BBA0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- pleated linen kilt to the knee, and the hard triangular front apron standing proud of it -->
+  <g class="sp-shadow">
+    <path d="M138 314 H262 Q268 388 264 462 Q200 474 136 462 Q132 388 138 314 Z"
+          fill="url(#midage-male-costume-pharaonic__kilt)"/>
+    <path d="M200 316 L235 464 H165 Z" fill="url(#midage-male-costume-pharaonic__apron)"/>
+  </g>
+
+  <!-- broad flat semicircular collar over both shoulders, top edge at the ceiling -->
+  <g class="sp-shadow">
+    <path d="M130 162 H270 Q270 208 237 224 Q200 236 163 224 Q130 208 130 162 Z"
+          fill="url(#midage-male-costume-pharaonic__collar)"/>
+  </g>
+
+  <!-- concentric collar bands -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M142 164 Q144 200 171 214 Q200 224 229 214 Q256 200 258 164"
+          stroke="var(--c1, #EFEADB)" stroke-width="6"/>
+    <path d="M154 164 Q156 194 177 205 Q200 213 223 205 Q244 194 246 164"
+          stroke="var(--c3, #3E7C8C)" stroke-width="6"/>
+    <path d="M167 164 Q169 188 184 196 Q200 202 216 196 Q231 188 233 164"
+          stroke="var(--c1, #EFEADB)" stroke-width="5"/>
+  </g>
+
+  <!-- fine vertical pleats across the kilt, and the apron's hard bound edges -->
+  <g stroke="var(--c2, #C4BBA0)" stroke-opacity="0.6" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M148 324 Q146 396 146 456"/><path d="M160 322 Q159 396 158 458"/>
+    <path d="M172 320 Q171 396 170 460"/><path d="M185 320 Q184 396 183 462"/>
+    <path d="M215 320 Q216 396 217 462"/><path d="M228 320 Q229 396 230 460"/>
+    <path d="M240 322 Q241 396 242 458"/><path d="M252 324 Q254 396 254 456"/>
+  </g>
+  <path d="M200 320 L233 460" stroke="var(--c3, #3E7C8C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 320 L167 460" stroke="var(--c3, #3E7C8C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 460 H233" stroke="var(--c3, #3E7C8C)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- narrow beaded belt -->
+  <path d="M136 308 H264 Q266 316 264 324 H136 Q134 316 136 308 Z" fill="var(--c3, #3E7C8C)"/>
+  <g fill="var(--c1, #EFEADB)">
+    <circle cx="151" cy="316" r="3"/><circle cx="169" cy="316" r="3"/>
+    <circle cx="187" cy="316" r="3"/><circle cx="213" cy="316" r="3"/>
+    <circle cx="231" cy="316" r="3"/><circle cx="249" cy="316" r="3"/>
+  </g>
+
+  <!-- wide plain armlets above each elbow -->
+  <path d="M100 244 H136 Q138 254 136 264 H100 Q98 254 100 244 Z" fill="var(--c3, #3E7C8C)"/>
+  <path d="M300 244 H264 Q262 254 264 264 H300 Q302 254 300 244 Z" fill="var(--c3, #3E7C8C)"/>
+
+  <!-- integral sandals; the torso, arms and lower legs are bare -->
+  <path d="M154 550 H202 Q206 560 204 570 H156 Q150 560 154 550 Z" fill="var(--c3, #3E7C8C)"/>
+  <path d="M198 550 H246 Q250 560 248 570 H200 Q192 560 198 550 Z" fill="var(--c3, #3E7C8C)"/>
+  <path d="M152 176 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

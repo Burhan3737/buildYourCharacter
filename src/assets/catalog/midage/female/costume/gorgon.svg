@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Gorgon Column" data-family="gorgon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. NO HAIR AND NO HEAD ART IS DRAWN HERE. The snake
+       hair is a companion headwear family; costume draws above the face and would erase it. -->
+  <!-- axes vs the slot: the hem breaks at mid-calf into four thick serpent coils that curl out and
+       rest splayed on the ground line, throwing the outline out to x96 and x304 (hem)
+       + a sleeveless close column with a high plain neckline above it (volume).
+       Measured on THIS body: mid-calf is y505, the column hem breaks at y500 and the coils reach
+       the ground line at y570. Each coil is over 90 units long, well clear of the 40 unit floor. -->
+  <defs>
+    <linearGradient id="midage-female-costume-gorgon__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #4E5CA0)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-gorgon__coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8877)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-gorgon__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #C9913C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- four thick tapering serpent coils, curling out and resting on the ground -->
+    <path d="M152 486 Q116 504 104 538 Q96 562 112 570 Q130 576 142 564
+             Q126 560 130 548 Q136 528 162 520 Z"
+          fill="url(#midage-female-costume-gorgon__coil)"/>
+    <path d="M181 494 Q154 520 152 552 Q152 570 170 574 Q186 574 188 560
+             Q174 556 176 546 Q180 524 197 508 Z"
+          fill="url(#midage-female-costume-gorgon__coil)"/>
+    <path d="M219 494 Q246 520 248 552 Q248 570 230 574 Q214 574 212 560
+             Q226 556 224 546 Q220 524 203 508 Z"
+          fill="url(#midage-female-costume-gorgon__coil)"/>
+    <path d="M248 486 Q284 504 296 538 Q304 562 288 570 Q270 576 258 564
+             Q274 560 270 548 Q264 528 238 520 Z"
+          fill="url(#midage-female-costume-gorgon__coil)"/>
+    <!-- sleeveless close column dress with a high plain neckline -->
+    <path d="M174 160 H226 Q250 168 252 194 L256 262 Q260 352 260 434
+             Q260 476 256 500 Q200 518 144 500 Q140 476 140 434 Q140 352 144 262
+             L148 194 Q150 168 174 160 Z"
+          fill="url(#midage-female-costume-gorgon__dress)"/>
+  </g>
+
+  <!-- coil scale banding, built along each coil -->
+  <g stroke="var(--c2, #2F6C5D)" stroke-opacity="0.45" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M138 506 q-10 12 -14 26 M120 532 q-10 12 -10 26 M112 556 q8 10 20 8"/>
+    <path d="M171 514 q-10 14 -12 28 M161 546 q-4 14 2 26"/>
+    <path d="M229 514 q10 14 12 28 M239 546 q4 14 -2 26"/>
+    <path d="M262 506 q10 12 14 26 M280 532 q10 12 10 26 M288 556 q-8 10 -20 8"/>
+  </g>
+  <!-- wide belt of interlaced snakes at the waist -->
+  <path d="M140 292 Q200 310 260 292 L261 324 Q200 342 139 324 Z"
+        fill="url(#midage-female-costume-gorgon__belt)"/>
+  <path d="M144 302 Q165 322 186 302 Q207 322 228 302 Q249 322 260 308"
+        stroke="var(--c1, #3F4C8C)" stroke-opacity="0.6" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 318 Q165 298 186 318 Q207 298 228 318 Q249 298 260 312"
+        stroke="var(--c1, #3F4C8C)" stroke-opacity="0.45" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- high plain neckline bind -->
+  <path d="M176 166 q24 8 48 0" stroke="var(--c2, #3F8877)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- column folds -->
+  <g stroke="var(--c1, #3F4C8C)" stroke-opacity="0.3" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M164 342 Q160 424 158 492"/>
+    <path d="M200 344 L200 500"/>
+    <path d="M236 342 Q240 424 242 492"/>
+  </g>
+  <!-- hem band where the coils break away -->
+  <path d="M144 488 Q200 506 256 488" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M170 194 q30 12 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

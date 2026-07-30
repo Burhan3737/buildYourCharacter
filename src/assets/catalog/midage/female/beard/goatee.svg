@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162). Mouth box measured off this bundle's own mouth art: the deepest lower lip in
+       the set sits at y 144.
+       Silhouette axes vs circle-beard: UPPER LIP (completely bare, no bar of any kind, against
+       circle-beard's joined moustache) and CHIN AND JAW COVERAGE (chin only, a closed rounded
+       mass with no ring and no connection to the mouth corners).
+       There is a deliberate 2px clear gap between the deepest lower lip at y 144 and the top of
+       the tuft at y 146, so the mass reads as disconnected from the lip. Jaw and cheeks bare,
+       so no cheek line.
+       hair1 lights the top of the tuft; hair2 draws the chin whorl, the shaded hanging
+       underside below the chin point and the separated strand ends. -->
+  <defs>
+    <linearGradient id="midage-female-beard-goatee__tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a rounded chin mass, hugging the chin at y 158 and hanging free below y 162 -->
+  <g class="sp-shadow">
+    <path d="M200 146 C211 146, 219 150, 221 158 C223 167, 219 180, 200 182
+             C181 180, 177 167, 179 158 C181 150, 189 146, 200 146 Z"
+          fill="url(#midage-female-beard-goatee__tuft)"/>
+  </g>
+
+  <!-- hair2: the chin whorl, the growth pattern that centres the tuft -->
+  <path d="M200 152 C205 152, 208 156, 206 160 C204 163, 199 163, 197 160
+           C196 158, 197 156, 199 156 C198 158, 199 160, 201 160
+           C203 160, 205 158, 203 155 C202 153.5, 201 153, 200 152 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: the hanging underside, below the drawn chin point at y 162 -->
+  <path d="M180 165 C183 175, 190 180, 200 180.5 C210 180, 217 175, 220 165
+           C220 174, 213 181.5, 200 182 C187 181.5, 180 174, 180 165 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: separated strand ends -->
+  <path d="M190 168 C191 173, 193 177, 195 179.5" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M210 168 C209 173, 207 177, 205 179.5" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <path d="M188 151 C194 147.5, 206 147.5, 212 151" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

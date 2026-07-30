@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its mail shirt, its underdress and every one of its nine plumes at y 150, which
+       breaches this bundle, so all three were redrawn to start at y 162 on this body's drawn
+       torso line.
+
+       NO horned and NO winged helm, ever, in costume or in headwear on this project. The shield
+       is a worn item slung behind the hip, not a prop.
+       Authored on this body because there are no aisles: a family missing from one body type is
+       silently cleared by remapSlots when the player switches, which reads as a bug and is one.
+
+       Axes: hem (a knee length mail shirt genuinely split at the centre front for riding, over
+       an ankle length underdress) and shoulder (a flat cape of overlapping leaf plumes lying
+       across the shoulders, not standing up).
+       Recomputed on this body: the riding split is a real 16 unit void from x 192 to x 208
+       running y 352 to y 456, and the shield disc breaks the hip outline out to x 302 against a
+       hem at x 256, which is 46 units, over the 40 unit tray floor. -->
+  <defs>
+    <linearGradient id="midage-male-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #AEB6C2)"/>
+      <stop offset="1" stop-color="var(--c1, #8B94A3)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-valkyrie__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6D7CA6)"/>
+      <stop offset="1" stop-color="var(--c3, #56638A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-valkyrie__plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #C58F4E)"/>
+      <stop offset="1" stop-color="var(--c4, #9E6E36)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-valkyrie__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #74829A)"/>
+      <stop offset="1" stop-color="var(--c2, #58657C)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-valkyrie__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="5" fill="none" stroke="var(--c2, #58657C)"
+              stroke-width="1.6" stroke-opacity="0.6"/>
+    </pattern>
+    <clipPath id="midage-male-costume-valkyrie__mailclip">
+      <path d="M144 162 H256 Q260 206 258 248 L256 324 Q258 394 256 456 H208 L208 352 H192 L192 456 H144 Q142 394 144 324 L142 248 Q140 206 144 162 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- long sleeved underdress, ankle length -->
+  <g class="sp-shadow">
+    <path d="M142 164 H258 Q264 214 262 274 L264 414 Q266 490 262 548 Q200 560 138 548
+             Q134 490 136 414 L138 274 Q136 214 142 164 Z"
+          fill="url(#midage-male-costume-valkyrie__under)"/>
+    <path d="M102 176 H136 Q140 204 138 230 L136 336 Q136 348 119 348 Q102 348 100 336 Z"
+          fill="url(#midage-male-costume-valkyrie__under)"/>
+    <path d="M298 176 H264 Q260 204 262 230 L264 336 Q264 348 281 348 Q298 348 300 336 Z"
+          fill="url(#midage-male-costume-valkyrie__under)"/>
+  </g>
+
+  <!-- round shield slung behind, only a disc edge showing past the right hip -->
+  <g class="sp-shadow">
+    <path d="M258 292 Q300 314 302 344 Q300 374 258 394 Q270 344 258 292 Z"
+          fill="url(#midage-male-costume-valkyrie__shield)"/>
+  </g>
+  <path d="M272 308 q18 14 18 36 q0 20 -18 34" stroke="var(--c4, #9E6E36)"
+        stroke-width="5" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- sleeveless knee length mail shirt, split front for riding -->
+  <g class="sp-shadow">
+    <path d="M144 162 H256 Q260 206 258 248 L256 324 Q258 394 256 456 H208 L208 352 H192 L192 456 H144 Q142 394 144 324 L142 248 Q140 206 144 162 Z"
+          fill="url(#midage-male-costume-valkyrie__mail)"/>
+  </g>
+  <g clip-path="url(#midage-male-costume-valkyrie__mailclip)">
+    <rect x="138" y="160" width="124" height="300" fill="url(#midage-male-costume-valkyrie__rings)"/>
+  </g>
+
+  <!-- broad belt -->
+  <rect x="138" y="304" width="124" height="24" rx="9" fill="url(#midage-male-costume-valkyrie__plume)"/>
+  <rect x="187" y="302" width="26" height="28" rx="9" fill="var(--c2, #58657C)"/>
+
+  <!-- short shoulder cape of overlapping leaf plumes, lying FLAT across the shoulders -->
+  <g class="sp-shadow">
+    <path d="M143 162 Q130 164 130 184 Q130 202 143 210 Q156 202 156 184 Q156 164 143 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M157 162 Q144 164 144 184 Q144 202 157 210 Q170 202 170 184 Q170 164 157 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M171 162 Q158 164 158 184 Q158 202 171 210 Q184 202 184 184 Q184 164 171 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M186 162 Q173 164 173 184 Q173 202 186 210 Q199 202 199 184 Q199 164 186 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M200 162 Q187 164 187 184 Q187 202 200 210 Q213 202 213 184 Q213 164 200 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M214 162 Q201 164 201 184 Q201 202 214 210 Q227 202 227 184 Q227 164 214 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M229 162 Q216 164 216 184 Q216 202 229 210 Q242 202 242 184 Q242 164 229 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M243 162 Q230 164 230 184 Q230 202 243 210 Q256 202 256 184 Q256 164 243 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+    <path d="M257 162 Q244 164 244 184 Q244 202 257 210 Q270 202 270 184 Q270 164 257 162 Z" fill="url(#midage-male-costume-valkyrie__plume)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M143 168 v38 M157 168 v38 M171 168 v38 M186 168 v38 M200 168 v38
+             M214 168 v38 M229 168 v38 M243 168 v38 M257 168 v38"/>
+  </g>
+
+  <!-- integral boots -->
+  <g class="sp-shadow">
+    <path d="M154 474 H198 V562 Q198 570 191 570 H148 Q140 570 140 562 V500 Q142 482 154 474 Z"
+          fill="url(#midage-male-costume-valkyrie__under)"/>
+    <path d="M246 474 H202 V562 Q202 570 209 570 H252 Q260 570 260 562 V500 Q258 482 246 474 Z"
+          fill="url(#midage-male-costume-valkyrie__under)"/>
+  </g>
+  <g stroke="var(--c4, #9E6E36)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M144 494 h50 M206 494 h50"/>
+    <path d="M144 530 h50 M206 530 h50"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 226 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       runs its under layer and shoulder caps up to y 150, which breaches this ceiling, so the
+       shoulder ring caps were rebuilt from y 162 down onto this body. There is no helmet in
+       this file and there cannot be one: costume draws above the face. -->
+  <!-- Axes: closure (segmented shells with a visible dark joint band between every pair) and
+       volume (hard shell plates riding over a continuous dark under layer). -->
+  <!-- The chest plate is a PLAIN BEVELLED PANEL. No reactor disc, no emblem, no crest, no
+       applied chest graphic of any kind. -->
+  <!-- Palette note: deliberately NOT a seamless silver or chrome monochrome, which is a banned
+       fallback. House mint shells over a dark under layer with a butter accent. -->
+  <!-- Joint band arithmetic recomputed on this body: each band is 8 units of exposed under
+       layer, and there are ten of them, which is why this family is Older tier rather than
+       Growing. Eight units is roughly 0.9 screen pixels in the tray, so the bands are stage
+       detail; the identity in the tray is the stack of separated hard shells. -->
+  <defs>
+    <linearGradient id="midage-male-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ECBB8)"/>
+      <stop offset="1" stop-color="var(--c1, #5FA895)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-exo-frame__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #78C4B1)"/>
+      <stop offset="1" stop-color="var(--c1, #58A08D)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-exo-frame__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #45464F)"/>
+      <stop offset="1" stop-color="var(--c3, #2F3038)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark under layer: it is what shows through at every joint -->
+  <g class="sp-shadow">
+    <path d="M130 162 H270 Q274 194 272 226 L270 314 Q270 346 252 358 H148 Q130 346 130 314
+             L128 226 Q126 194 130 162 Z" fill="url(#midage-male-costume-exo-frame__under)"/>
+    <rect x="100" y="172" width="36" height="182" rx="14" fill="url(#midage-male-costume-exo-frame__under)"/>
+    <rect x="264" y="172" width="36" height="182" rx="14" fill="url(#midage-male-costume-exo-frame__under)"/>
+    <rect x="156" y="352" width="44" height="196" rx="14" fill="url(#midage-male-costume-exo-frame__under)"/>
+    <rect x="200" y="352" width="44" height="196" rx="14" fill="url(#midage-male-costume-exo-frame__under)"/>
+  </g>
+
+  <!-- ring jointed shoulder caps -->
+  <g class="sp-shadow">
+    <path d="M100 184 Q100 162 124 162 H148 Q154 178 154 198 H100 Z" fill="url(#midage-male-costume-exo-frame__shell)"/>
+    <path d="M300 184 Q300 162 276 162 H252 Q246 178 246 198 H300 Z" fill="url(#midage-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M106 176 q22 -6 44 0 M294 176 q-22 -6 -44 0" stroke="var(--c2, #E8E2CE)"
+        stroke-width="4" stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- ONE moulded chest plate: a plain bevelled panel -->
+  <g class="sp-shadow">
+    <path d="M134 202 H266 Q270 234 268 264 L266 306 H134 L132 264 Q130 234 134 202 Z"
+          fill="url(#midage-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M142 212 H258 Q261 236 259 260 L257 296 H143 L141 260 Q139 236 142 212 Z"
+        fill="none" stroke="var(--c2, #E8E2CE)" stroke-width="4" stroke-opacity="0.55"/>
+  <path d="M200 212 V296" stroke="var(--c3, #2F3038)" stroke-width="4"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+
+  <!-- abdomen shell -->
+  <g class="sp-shadow">
+    <path d="M138 316 H262 Q266 332 262 348 H138 Q134 332 138 316 Z" fill="url(#midage-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- upper arm shells and forearm gauntlets -->
+  <g class="sp-shadow">
+    <rect x="102" y="206" width="32" height="52" rx="10" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <rect x="266" y="206" width="32" height="52" rx="10" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <rect x="98" y="270" width="40" height="76" rx="14" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <rect x="262" y="270" width="40" height="76" rx="14" fill="url(#midage-male-costume-exo-frame__limb)"/>
+  </g>
+
+  <!-- separate thigh plates and shin plates -->
+  <g class="sp-shadow">
+    <path d="M156 360 H198 Q202 408 200 444 H156 Q152 408 156 360 Z" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <path d="M244 360 H202 Q198 408 200 444 H244 Q248 408 244 360 Z" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <path d="M158 458 H198 Q202 496 200 522 H158 Q154 496 158 458 Z" fill="url(#midage-male-costume-exo-frame__limb)"/>
+    <path d="M242 458 H202 Q198 496 200 522 H242 Q246 496 242 458 Z" fill="url(#midage-male-costume-exo-frame__limb)"/>
+  </g>
+
+  <!-- THE JOINT BANDS: a genuine 8 unit strip of the dark under layer at every joint -->
+  <g fill="url(#midage-male-costume-exo-frame__under)">
+    <rect x="98" y="196" width="40" height="8" rx="4"/>
+    <rect x="262" y="196" width="40" height="8" rx="4"/>
+    <rect x="98" y="260" width="40" height="8" rx="4"/>
+    <rect x="262" y="260" width="40" height="8" rx="4"/>
+    <rect x="132" y="306" width="136" height="8" rx="4"/>
+    <rect x="136" y="350" width="128" height="8" rx="4"/>
+    <rect x="154" y="448" width="46" height="8" rx="4"/>
+    <rect x="200" y="448" width="46" height="8" rx="4"/>
+    <rect x="154" y="526" width="46" height="8" rx="4"/>
+    <rect x="200" y="526" width="46" height="8" rx="4"/>
+  </g>
+
+  <!-- butter accent striping across the shells -->
+  <g fill="var(--c4, #F7C873)">
+    <rect x="104" y="280" width="28" height="7" rx="3.5"/>
+    <rect x="268" y="280" width="28" height="7" rx="3.5"/>
+    <rect x="160" y="372" width="34" height="7" rx="3.5"/>
+    <rect x="206" y="372" width="34" height="7" rx="3.5"/>
+    <rect x="162" y="468" width="32" height="7" rx="3.5"/>
+    <rect x="206" y="468" width="32" height="7" rx="3.5"/>
+    <rect x="146" y="326" width="108" height="7" rx="3.5"/>
+  </g>
+
+  <!-- armoured boots -->
+  <g class="sp-shadow">
+    <path d="M152 536 H200 V562 Q200 570 192 570 H146 Q138 570 138 560 Q138 546 152 536 Z"
+          fill="url(#midage-male-costume-exo-frame__shell)"/>
+    <path d="M248 536 H200 V562 Q200 570 208 570 H254 Q262 570 262 560 Q262 546 248 536 Z"
+          fill="url(#midage-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M142 558 h52 M258 558 h-52" stroke="var(--c3, #2F3038)" stroke-width="5"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M144 220 q56 18 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

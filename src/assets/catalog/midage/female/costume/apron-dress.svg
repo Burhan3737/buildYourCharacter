@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- Refit to the midage/female drawn body, not offset from the adult file: torso top y162,
+       shoulder corners y188, hips y316 to y374, legs y370 to y552, ground y570. The adult
+       reference tops out at y152, which breaches this ceiling, so every top edge here is
+       redrawn at y160. -->
+  <!-- axes vs the slot: two layers, the sleeveless overdress hem stopping at mid-calf with a
+       clear band of sleeved underdress below it (hem) + the overdress hangs from two short
+       front straps meeting a pair of oval brooches at the collarbone, leaving the whole upper
+       chest as underdress (shoulder/sleeve).
+       Measured on THIS body: overdress hem drops to y516 at centre, underdress hem to y560,
+       so the visible band of underdress is 44 units deep. -->
+  <defs>
+    <linearGradient id="midage-female-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #5566AF)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c2, #D3C8AF)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE7D6)"/>
+      <stop offset="1" stop-color="var(--c2, #CCC0A6)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-apron-dress__brooch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B9862F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length underdress -->
+    <path d="M164 160 H236 Q254 168 256 194 L264 316 Q274 430 280 548
+             Q200 568 120 548 Q126 430 136 316 L144 194 Q146 168 164 160 Z"
+          fill="url(#midage-female-costume-apron-dress__under)"/>
+    <!-- long underdress sleeves, softened through the upper arm for this stage -->
+    <path d="M110 184 Q110 160 132 160 H146 Q166 160 166 184 L164 262 L162 348
+             Q138 360 114 348 L113 262 Z"
+          fill="url(#midage-female-costume-apron-dress__sleeve)"/>
+    <path d="M290 184 Q290 160 268 160 H254 Q234 160 234 184 L236 262 L238 348
+             Q262 360 286 348 L287 262 Z"
+          fill="url(#midage-female-costume-apron-dress__sleeve)"/>
+    <!-- two short front straps -->
+    <path d="M172 164 H188 V200 H172 Z" fill="url(#midage-female-costume-apron-dress__over)"/>
+    <path d="M212 164 H228 V200 H212 Z" fill="url(#midage-female-costume-apron-dress__over)"/>
+    <!-- sleeveless woollen overdress, hem at mid-calf -->
+    <path d="M166 190 H234 Q250 216 252 256 L258 358 Q264 444 266 510
+             Q200 526 134 510 Q136 444 142 358 L148 256 Q150 216 166 190 Z"
+          fill="url(#midage-female-costume-apron-dress__over)"/>
+  </g>
+
+  <!-- the pair of domed oval brooches at the collarbone -->
+  <ellipse cx="180" cy="194" rx="15" ry="11"
+           fill="url(#midage-female-costume-apron-dress__brooch)"/>
+  <ellipse cx="220" cy="194" rx="15" ry="11"
+           fill="url(#midage-female-costume-apron-dress__brooch)"/>
+  <path d="M172 190 q8 -6 16 0 M212 190 q8 -6 16 0" stroke="#FFFFFF" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- swag of beads strung between the brooches -->
+  <path d="M182 202 Q200 236 218 202" stroke="var(--c3, #E4B15F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="188" cy="212" r="4.5"/><circle cx="195" cy="220" r="4.5"/>
+    <circle cx="205" cy="220" r="4.5"/><circle cx="212" cy="212" r="4.5"/>
+    <circle cx="200" cy="223" r="4.5"/>
+  </g>
+  <!-- tool cluster on a chain at one hip; quieter than the adult draft, two tools not three -->
+  <path d="M178 202 Q168 256 158 310" stroke="var(--c3, #E4B15F)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 308 H168 Q172 316 168 322 H150 Q146 316 150 308 Z"
+        fill="url(#midage-female-costume-apron-dress__brooch)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <path d="M152 322 h7 l-1 34 q-3 5 -6 0 Z"/>
+    <path d="M162 322 h7 l2 28 q-3 6 -7 1 Z"/>
+  </g>
+  <!-- overdress hem band, the strong horizontal that marks mid-calf -->
+  <path d="M136 494 Q200 512 264 494 L265 510 Q200 528 135 510 Z" fill="var(--c3, #E4B15F)"/>
+  <!-- underdress hem band, 44 units below it -->
+  <path d="M122 538 Q200 558 278 538" stroke="var(--c3, #E4B15F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- woven trim at the underdress cuffs -->
+  <path d="M114 332 q24 10 48 0 M286 332 q-24 10 -48 0" stroke="var(--c3, #E4B15F)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- wool folds on the overdress -->
+  <g stroke="var(--c1, #4E5EA5)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M168 250 Q158 372 154 494"/>
+    <path d="M200 254 Q200 376 200 502"/>
+    <path d="M232 250 Q242 372 246 494"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M168 212 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60 (x142-258, y42-162),
+       ears (148,106)/(252,106), neck x186-214 y146-176.
+       Axes: CROWN - bare. There is no cap, no dome and no hairline; the skull and both
+       ears are entirely exposed and the scalp is the body's own skin.
+       PARTING/HEM - none. The only forms in the file are two low-opacity shadows
+       describing where the skull turns away from the light: a crescent at the nape and
+       a short arc at each temple. The asset therefore has no silhouette of its own,
+       which is exactly what separates it from buzz, a filled cap with a drawn
+       hairline, and from bald-fuzz, which carries a halo of down. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-smooth-scalp__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- soft shadow where the base of the skull meets the neck; no cap, no edge -->
+      <path d="M156 133 C160 150 177 161 200 161
+               C223 161 240 150 244 133
+               C227 144 173 144 156 133 Z"
+            fill="url(#midage-male-hair-smooth-scalp__back-grad)" opacity="0.26"/>
+    </g>
+    <path d="M170 145 C181 153 219 153 230 145" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.18"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-smooth-scalp__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faintest suggestion of where a hairline would sit at each temple -->
+      <path d="M145 85 C142 97 142 110 146 120 C150 110 150 97 151 87 Z"
+            fill="url(#midage-male-hair-smooth-scalp__front-grad)" opacity="0.2"/>
+      <path d="M255 85 C258 97 258 110 254 120 C250 110 250 97 249 87 Z"
+            fill="url(#midage-male-hair-smooth-scalp__front-grad)" opacity="0.2"/>
+    </g>
+    <!-- the crown highlight; the scalp is the body's own skin and takes the light -->
+    <path d="M157 59 C178 45 222 45 243 59" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M175 74 C186 68 214 68 225 74" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

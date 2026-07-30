@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Stubble" data-family="stubble" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body, not to the spec: head ellipse cx200 cy102
+       rx58 ry60, chin at (200,162), ears at (148,106) and (252,106), jaw corners at (157,134)
+       and (243,134). The jaw to ear span is 28px, so the cheek line fractions for this bundle
+       are low y127, natural y118.5, joined y106. Mouth box measured off this bundle's own
+       mouth art: x167 to x233, y113 to y144.
+       Silhouette axes vs the rest of the slot: LENGTH (shadow, the shortest reading in the slot,
+       nothing stands off the face) and UPPER LIP (shadow only, never a drawn bar).
+       Cheek line: low and clipped, 25 percent, so y 127.
+       The vermilion is cut out with an evenodd window so the growth sits on the upper lip and
+       the chin rather than over the lips, which is where stubble actually grows.
+       hair1 is the lit wash; hair2 is the grit scatter, the philtrum groove and the darker band
+       under the jaw, so both colours carry real drawing. -->
+  <defs>
+    <linearGradient id="midage-female-beard-stubble__wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+    <pattern id="midage-female-beard-stubble__grit" width="13" height="13"
+             patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="3" r="1.5" fill="var(--hair2, #352017)"/>
+      <circle cx="9.5" cy="5.5" r="1.2" fill="var(--hair2, #352017)"/>
+      <circle cx="5.5" cy="10" r="1.4" fill="var(--hair2, #352017)"/>
+      <circle cx="11.5" cy="11.5" r="1" fill="var(--hair2, #352017)"/>
+      <circle cx="1.5" cy="8" r="0.9" fill="var(--hair2, #352017)"/>
+    </pattern>
+    <clipPath id="midage-female-beard-stubble__area">
+      <path fill-rule="evenodd"
+            d="M145 127 C149 139, 156 149, 165 156
+               C176 164, 188 166, 200 166
+               C212 166, 224 164, 235 156
+               C244 149, 251 139, 255 127
+               C246 132, 236 133, 227 130
+               C218 127, 210 112, 200 112
+               C190 112, 182 127, 173 130
+               C164 133, 154 132, 145 127 Z
+               M179 119 C186 117, 214 117, 221 119
+               C224 126, 224 135, 221 141
+               C214 143, 186 143, 179 141
+               C176 135, 176 126, 179 119 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the soft major form: an edgeless wash over lip, chin, jaw and lower cheeks -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M145 127 C149 139, 156 149, 165 156
+             C176 164, 188 166, 200 166
+             C212 166, 224 164, 235 156
+             C244 149, 251 139, 255 127
+             C246 132, 236 133, 227 130
+             C218 127, 210 112, 200 112
+             C190 112, 182 127, 173 130
+             C164 133, 154 132, 145 127 Z
+             M179 119 C186 117, 214 117, 221 119
+             C224 126, 224 135, 221 141
+             C214 143, 186 143, 179 141
+             C176 135, 176 126, 179 119 Z"
+          fill="url(#midage-female-beard-stubble__wash)" opacity="0.42"/>
+  </g>
+
+  <!-- grit scatter, painted through the hair2 variable -->
+  <g clip-path="url(#midage-female-beard-stubble__area)">
+    <rect x="140" y="106" width="122" height="64"
+          fill="url(#midage-female-beard-stubble__grit)" opacity="0.6"/>
+    <!-- denser growth along the underside of the jaw -->
+    <path d="M152 142 C158 154, 173 163, 200 165 C227 163, 242 154, 248 142
+             C246 158, 227 167, 200 167 C173 167, 154 158, 152 142 Z"
+          fill="var(--hair2, #352017)" opacity="0.3"/>
+    <!-- philtrum groove: the centre parting the growth never fills -->
+    <path d="M197 112 C199 115, 199 118, 197.5 121 L202.5 121 C201 118, 201 115, 203 112 Z"
+          fill="var(--hair2, #352017)" opacity="0.4"/>
+    <!-- chin whorl, sitting below the mouth window -->
+    <path d="M191 150 C195 155, 205 155, 209 150 C207 158, 193 158, 191 150 Z"
+          fill="var(--hair2, #352017)" opacity="0.34"/>
+  </g>
+
+  <path d="M159 136 C171 148, 186 154, 200 154" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

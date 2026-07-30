@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its bodice and its standing collar at y 150, which breaches this bundle by 10
+       units, so the collar was rebuilt to rise to y 160 and stop there, exactly at the drawn
+       jaw line of this body. -->
+  <!-- Axes: closure (a 12 unit waist seam plus a throat ruff break the suit into THREE regions)
+       and volume (skin close, with wrists and ankles visibly tapered). -->
+  <!-- THE IDENTITY IN THE TRAY IS THE OUTLINE, not the diamonds. The lozenge motif is 22 units,
+       which at roughly 0.107 screen pixels per canvas unit is about 2.4 pixels in the picker:
+       undifferentiated texture. What separates this family at 64 pixels is the skin close
+       continuous one piece, the horizontal waist seam and the small ruff. The diamonds are a
+       bonus visible only on the stage. -->
+  <!-- Checked against the existing midage web-runner and caped-hero: both are a single rounded
+       torso block with rectangular limbs; this is a three region suit built from tapered paths,
+       so no major form is shared. -->
+  <!-- The throat ruff is deliberately SMALL and shallow because a separate ruff family ships in
+       the necklace slot and necklace draws ABOVE costume: a worn ruff must layer over this one
+       and read as a single bigger ruff, not two colliding ones. -->
+  <!-- Trademark: muted mauve body with a cream ruff and a periwinkle waist band, deliberately
+       clear of the green hair plus purple tailcoat plus orange or green waistcoat plus white
+       face plus red grin register. -->
+  <defs>
+    <linearGradient id="midage-male-costume-harlequin__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c1, #A886A4)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BE99BA)"/>
+      <stop offset="1" stop-color="var(--c1, #9E7C9A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-harlequin__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6C7CA6)"/>
+      <stop offset="1" stop-color="var(--c3, #55648B)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-harlequin__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #4A4038)"/>
+      <stop offset="1" stop-color="var(--c4, #362E28)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-harlequin__lozenge" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 0 L22 11 L11 22 L0 11 Z" fill="var(--c2, #EFE7D6)" fill-opacity="0.5"/>
+    </pattern>
+    <clipPath id="midage-male-costume-harlequin__upperclip">
+      <path d="M136 188 Q138 164 166 162 H234 Q262 164 264 188 V308 H136 Z"/>
+    </clipPath>
+    <clipPath id="midage-male-costume-harlequin__lowerclip">
+      <path d="M136 320 H264 Q270 350 260 370 H140 Q130 350 136 320 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- REGION ONE: the bodice, from the standing collar to the waist seam -->
+  <g class="sp-shadow">
+    <path d="M136 188 Q138 164 166 162 H234 Q262 164 264 188 V308 H136 Z"
+          fill="url(#midage-male-costume-harlequin__suit)"/>
+  </g>
+  <g clip-path="url(#midage-male-costume-harlequin__upperclip)">
+    <rect x="130" y="162" width="144" height="152" fill="url(#midage-male-costume-harlequin__lozenge)"/>
+  </g>
+
+  <!-- tapered sleeves, narrowing visibly to the wrist -->
+  <g class="sp-shadow">
+    <path d="M100 172 H136 Q140 206 136 232 L128 328 Q126 340 115 340 Q104 340 103 328 L100 232
+             Q96 206 100 172 Z" fill="url(#midage-male-costume-harlequin__suit)"/>
+    <path d="M300 172 H264 Q260 206 264 232 L272 328 Q274 340 285 340 Q296 340 297 328 L300 232
+             Q304 206 300 172 Z" fill="url(#midage-male-costume-harlequin__suit)"/>
+  </g>
+
+  <!-- REGION TWO: hip yoke below the seam -->
+  <g class="sp-shadow">
+    <path d="M136 320 H264 Q270 350 260 370 H140 Q130 350 136 320 Z"
+          fill="url(#midage-male-costume-harlequin__lower)"/>
+  </g>
+  <g clip-path="url(#midage-male-costume-harlequin__lowerclip)">
+    <rect x="130" y="316" width="144" height="60" fill="url(#midage-male-costume-harlequin__lozenge)"/>
+  </g>
+
+  <!-- REGION THREE: tapered legs to a narrow ankle -->
+  <g class="sp-shadow">
+    <path d="M146 360 H197 Q199 452 195 528 Q194 542 186 542 H170 Q162 542 161 528
+             Q152 452 146 360 Z" fill="url(#midage-male-costume-harlequin__lower)"/>
+    <path d="M254 360 H203 Q201 452 205 528 Q206 542 214 542 H230 Q238 542 239 528
+             Q248 452 254 360 Z" fill="url(#midage-male-costume-harlequin__lower)"/>
+  </g>
+
+  <!-- the waist seam: a clear 12 unit band across the full 134 unit width -->
+  <rect x="133" y="308" width="134" height="12" rx="4" fill="url(#midage-male-costume-harlequin__band)"/>
+
+  <!-- narrow standing collar: rises to the ceiling line and stops -->
+  <path d="M174 160 H226 Q228 170 226 182 H174 Q172 170 174 160 Z"
+        fill="url(#midage-male-costume-harlequin__band)"/>
+
+  <!-- small soft gathered ruff, shallow so a necklace ruff layers over it -->
+  <g class="sp-shadow">
+    <path d="M164 170 Q200 162 236 170 Q240 182 232 190 Q200 198 168 190 Q160 182 164 170 Z"
+          fill="var(--c2, #EFE7D6)"/>
+  </g>
+  <g fill="var(--c2, #EFE7D6)">
+    <circle cx="170" cy="188" r="7"/>
+    <circle cx="185" cy="192" r="7"/>
+    <circle cx="200" cy="194" r="7"/>
+    <circle cx="215" cy="192" r="7"/>
+    <circle cx="230" cy="188" r="7"/>
+  </g>
+
+  <!-- tapered wrist and ankle bindings -->
+  <g fill="url(#midage-male-costume-harlequin__band)">
+    <rect x="102" y="328" width="24" height="12" rx="6"/>
+    <rect x="274" y="328" width="24" height="12" rx="6"/>
+    <rect x="162" y="528" width="32" height="12" rx="6"/>
+    <rect x="206" y="528" width="32" height="12" rx="6"/>
+  </g>
+
+  <!-- integral soft slippers -->
+  <g class="sp-shadow">
+    <path d="M158 534 H198 V566 Q198 570 192 570 H150 Q138 570 136 560 Q136 544 152 544 Z"
+          fill="url(#midage-male-costume-harlequin__slipper)"/>
+    <path d="M242 534 H202 V566 Q202 570 208 570 H250 Q262 570 264 560 Q264 544 248 544 Z"
+          fill="url(#midage-male-costume-harlequin__slipper)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 208 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

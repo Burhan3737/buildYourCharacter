@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. There is no helmet: the topmost shell is the
+       shoulder cap at y162, and the neck band of dark under-layer runs from y160 to y194. -->
+  <!-- TRADEMARK: the chest plate is a plain bevelled panel. NO glowing circular chest reactor,
+       no chest emblem, and no red-plus-gold fallback. Cool grey-blue plates over a dark
+       under-layer with mint bevels. -->
+  <!-- axes vs the slot: the body is broken into seven separate hard shells with a visible band of
+       dark under-layer at every joint (volume) + ring-jointed shoulder caps standing as their own
+       segment above the chest plate (shoulder/sleeve).
+       Measured on THIS body: chest plate ends y300 and the abdomen shell starts y334, a 34 unit
+       joint band; abdomen ends y384 and the thigh plate starts y412, 28 units; the thigh ends
+       y496 and the shin plate starts y524, 28 units. All clear of the 3 device pixel floor. -->
+  <defs>
+    <linearGradient id="midage-female-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8B7DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7286BA)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-exo-frame__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3C1E3)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7EB4)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-exo-frame__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A3540)"/>
+      <stop offset="1" stop-color="var(--c2, #1F1C25)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-exo-frame__bevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #44907F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dark under-layer, which is what shows at every joint band -->
+    <path d="M110 176 Q110 160 128 160 H148 Q166 160 166 176 L162 264 L160 356
+             Q135 366 110 356 L108 264 Z"
+          fill="url(#midage-female-costume-exo-frame__under)"/>
+    <path d="M290 176 Q290 160 272 160 H252 Q234 160 234 176 L238 264 L240 356
+             Q265 366 290 356 L292 264 Z"
+          fill="url(#midage-female-costume-exo-frame__under)"/>
+    <path d="M156 344 H202 L200 458 L198 562 Q178 570 158 562 L156 458 Z"
+          fill="url(#midage-female-costume-exo-frame__under)"/>
+    <path d="M198 344 H244 L244 458 L242 562 Q224 570 202 562 L200 458 Z"
+          fill="url(#midage-female-costume-exo-frame__under)"/>
+    <path d="M168 160 H232 Q256 166 258 192 L262 262 Q264 304 258 330
+             Q200 348 142 330 Q136 304 138 262 L142 192 Q144 166 168 160 Z"
+          fill="url(#midage-female-costume-exo-frame__under)"/>
+    <!-- ring-jointed shoulder caps -->
+    <path d="M102 190 Q104 164 132 162 Q154 162 158 184 L160 224 Q132 236 104 224 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <path d="M298 190 Q296 164 268 162 Q246 162 242 184 L240 224 Q268 236 296 224 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <!-- moulded chest plate, a plain bevelled panel -->
+    <path d="M172 194 H228 Q242 200 244 220 L246 256 Q246 284 240 300
+             Q200 314 160 300 Q154 284 154 256 L156 220 Q158 200 172 194 Z"
+          fill="url(#midage-female-costume-exo-frame__plate)"/>
+    <!-- forearm gauntlets -->
+    <path d="M104 260 Q132 270 160 260 L158 322 Q156 348 146 362 Q126 370 112 358
+             Q104 340 104 316 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <path d="M296 260 Q268 270 240 260 L242 322 Q244 348 254 362 Q274 370 288 358
+             Q296 340 296 316 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <!-- abdomen shell -->
+    <path d="M146 334 Q200 352 254 334 Q260 358 256 384 Q200 402 144 384 Q140 358 146 334 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <!-- thigh plates -->
+    <path d="M152 412 H204 L202 460 L200 496 Q178 504 154 496 L152 460 Z"
+          fill="url(#midage-female-costume-exo-frame__plate)"/>
+    <path d="M196 412 H248 L248 460 L246 496 Q222 504 198 496 L198 460 Z"
+          fill="url(#midage-female-costume-exo-frame__plate)"/>
+    <!-- shin plates -->
+    <path d="M154 524 H202 L200 552 L199 570 H156 L155 552 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+    <path d="M198 524 H246 L246 552 L245 570 H202 L201 552 Z"
+          fill="url(#midage-female-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- bevel lines: every shell reads as a hard panel, and the chest carries no device -->
+  <g stroke="url(#midage-female-costume-exo-frame__bevel)" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M172 206 H228"/>
+    <path d="M160 290 Q200 304 240 290"/>
+    <path d="M110 204 Q131 192 152 200 M290 204 Q269 192 248 200"/>
+    <path d="M108 274 Q132 284 154 274 M292 274 Q268 284 246 274"/>
+    <path d="M150 348 Q200 364 250 348"/>
+    <path d="M156 424 H200 M200 424 H244"/>
+    <path d="M158 534 H198 M202 534 H242"/>
+  </g>
+  <!-- vent slots on the chest plate, deliberately off centre -->
+  <g fill="var(--c2, #1F1C25)" opacity="0.65">
+    <rect x="212" y="230" width="24" height="6" rx="3"/>
+    <rect x="212" y="244" width="24" height="6" rx="3"/>
+    <rect x="212" y="258" width="24" height="6" rx="3"/>
+  </g>
+  <!-- ring joint rivets -->
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="128" cy="222" r="5"/><circle cx="272" cy="222" r="5"/>
+    <circle cx="126" cy="268" r="5"/><circle cx="274" cy="268" r="5"/>
+    <circle cx="170" cy="420" r="5"/><circle cx="230" cy="420" r="5"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M176 210 q24 8 48 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

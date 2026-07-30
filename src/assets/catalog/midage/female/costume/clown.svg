@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown Romper" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- Nothing is drawn on the face: the whiteface belongs to face mark art that does not exist
+       yet, and costume draws above the face in any case. -->
+  <!-- Measured on THIS body: the neck block is x186 to x214, and the ruff runs x136 to x264, so
+       it projects 50 units past the neck on each side, clear of the 45 unit floor. Its vertical
+       depth is only y162 to y188, 26 units, so a ruff necklace layered over it reads as one
+       bigger ruff rather than two colliding ones. -->
+  <!-- axes vs pierrot: a gathered barrel widest at the hip with everything cinched into tight
+       cuffs (volume) + dropped shoulders with ballooning sleeves, against pierrot's straight
+       column and draped bell sleeve (shoulder/sleeve).
+       TRADEMARK: periwinkle, cream and butter. Never default this family to purple with green
+       or purple with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="midage-female-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c1, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-clown__balloon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93A3E6)"/>
+      <stop offset="1" stop-color="var(--c1, #5666AE)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-clown__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c2, #D9CFB8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-clown__pom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D19A44)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ballooning legs, gathered to tight ankle cuffs -->
+    <path d="M146 366 Q118 428 124 492 Q128 530 150 542 Q176 550 198 540
+             Q204 476 200 408 Q198 380 190 366 Z"
+          fill="url(#midage-female-costume-clown__balloon)"/>
+    <path d="M254 366 Q282 428 276 492 Q272 530 250 542 Q224 550 202 540
+             Q196 476 200 408 Q202 380 210 366 Z"
+          fill="url(#midage-female-costume-clown__balloon)"/>
+    <!-- ballooning sleeves off a dropped shoulder, gathered to tight wrist cuffs -->
+    <path d="M134 184 Q108 188 96 228 Q82 274 88 314 Q100 336 126 332
+             Q144 318 146 276 Q148 222 150 188 Z"
+          fill="url(#midage-female-costume-clown__balloon)"/>
+    <path d="M266 184 Q292 188 304 228 Q318 274 312 314 Q300 336 274 332
+             Q256 318 254 276 Q252 222 250 188 Z"
+          fill="url(#midage-female-costume-clown__balloon)"/>
+    <!-- the closed romper, hugely oversized and widest at the hip -->
+    <path d="M164 160 H236 Q264 166 270 200 Q282 262 286 334 Q288 388 264 408
+             Q200 426 136 408 Q112 388 114 334 Q118 262 130 200 Q136 166 164 160 Z"
+          fill="url(#midage-female-costume-clown__romper)"/>
+  </g>
+
+  <!-- gathered cuffs -->
+  <path d="M86 310 Q110 328 132 320 L134 340 Q110 350 86 332 Z"
+        fill="url(#midage-female-costume-clown__ruff)"/>
+  <path d="M314 310 Q290 328 268 320 L266 340 Q290 350 314 332 Z"
+        fill="url(#midage-female-costume-clown__ruff)"/>
+  <path d="M126 518 Q162 534 198 524 L198 548 Q162 558 126 542 Z"
+        fill="url(#midage-female-costume-clown__ruff)"/>
+  <path d="M274 518 Q238 534 202 524 L202 548 Q238 558 274 542 Z"
+        fill="url(#midage-female-costume-clown__ruff)"/>
+  <!-- gathering stitches -->
+  <g stroke="var(--c1, #4C5C9E)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M92 316 q20 14 38 8 M308 316 q-20 14 -38 8"/>
+    <path d="M130 524 q32 14 62 6 M270 524 q-32 14 -62 6"/>
+  </g>
+  <!-- three oversized pom-pom buttons, a vertical line down the centre front -->
+  <g fill="url(#midage-female-costume-clown__pom)">
+    <circle cx="200" cy="232" r="16"/>
+    <circle cx="200" cy="284" r="16"/>
+    <circle cx="200" cy="336" r="16"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M192 224 q8 -6 16 0 M192 276 q8 -6 16 0 M192 328 q8 -6 16 0"/>
+  </g>
+  <!-- deep gathered neck ruff: wide across, deliberately shallow down -->
+  <path d="M136 168 Q168 162 200 164 Q232 162 264 168 Q269 176 260 182 Q248 188 238 181
+           Q223 188 210 182 Q200 186 190 182 Q177 188 162 181 Q152 187 140 182
+           Q131 176 136 168 Z"
+        fill="url(#midage-female-costume-clown__ruff)"/>
+  <path d="M150 175 q24 8 50 4 q26 4 50 -4" stroke="var(--c1, #4C5C9E)" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M158 206 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60 (x142-258, y42-162),
+       ears (148,106)/(252,106).
+       Axes: CROWN - the hairline has receded into two deep temple bays and the whole
+       crown between them, 52 units across, is genuine negative space in the path. It
+       is not a lighter patch laid over a solid cap; there is no path there at all.
+       VOLUME/TEXTURE OF THE OUTLINE - what remains is a dense horseshoe, thick at the
+       temples and heavy round the nape, absent above y108 in the middle, so the
+       outline is a broken ring. Drawn matter of factly and at full density: this is
+       real hair, not a joke about losing it. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-crown-thinning__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the rear arm of the horseshoe, densest round the nape -->
+      <path d="M140 108 C138 132 145 152 157 165
+               C175 173 225 173 243 165
+               C255 152 262 132 260 108
+               C241 125 159 125 140 108 Z"
+            fill="url(#midage-male-hair-crown-thinning__back-grad)"/>
+    </g>
+    <path d="M148 154 C171 167 229 167 252 154 C246 171 154 171 148 154 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M151 119 C174 132 226 132 249 119" stroke="var(--hair2, #331E16)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M162 137 C180 146 220 146 238 137" stroke="var(--hair2, #331E16)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-crown-thinning__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.62" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left front arm; its inner edge is the bay, running back to y62 -->
+      <path d="M137 130 C134 95 138 69 150 61
+               C161 68 169 87 175 109
+               L175 125
+               C161 119 146 121 137 130 Z"
+            fill="url(#midage-male-hair-crown-thinning__front-grad)"/>
+      <!-- right front arm -->
+      <path d="M263 130 C266 95 262 69 250 61
+               C239 68 231 87 225 109
+               L225 125
+               C239 119 254 121 263 130 Z"
+            fill="url(#midage-male-hair-crown-thinning__front-grad)"/>
+    </g>
+    <!-- the two bays, painted in skin so the recession reads at thumbnail size -->
+    <path d="M175 109 C169 87 161 68 150 61 C165 65 175 82 181 105 Z"
+          fill="var(--skin1, #F7D2B0)"/>
+    <path d="M225 109 C231 87 239 68 250 61 C235 65 225 82 219 105 Z"
+          fill="var(--skin1, #F7D2B0)"/>
+    <!-- the fringe of remaining hair along each bay edge, kept dense -->
+    <path d="M148 65 C157 74 165 90 171 109 C169 90 161 73 151 63 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M252 65 C243 74 235 90 229 109 C231 90 239 73 249 63 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M139 116 C140 122 142 126 145 128 C142 124 140 120 140 114 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M261 116 C260 122 258 126 255 128 C258 124 260 120 260 114 Z"
+          fill="var(--hair2, #331E16)"/>
+    <!-- combing lines inside each arm, so the arms read as hair and not as blocks -->
+    <path d="M146 118 C149 100 154 84 161 72" stroke="var(--hair2, #331E16)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M254 118 C251 100 246 84 239 72" stroke="var(--hair2, #331E16)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M142 108 C145 89 149 75 155 66" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M258 108 C255 89 251 75 245 66" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

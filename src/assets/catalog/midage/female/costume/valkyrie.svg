@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie Mail" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- NO HORNED AND NO WINGED HELMET, and no helmet of any kind. Both are nineteenth century
+       Romantic invention rather than anything worn, the winged version is a trademark tell, and
+       costume draws above the face in any case. Fallback is undyed wool, ink and brass, never
+       white with pale blue armour. -->
+  <!-- axes vs knight: a knee-length mail shirt split front for riding over an ankle-length
+       underdress, against a straight tabard panel over mail leggings (hem) + a flat shoulder cape
+       of overlapping plumes, against rounded pauldrons standing proud (shoulder/sleeve).
+       Measured on THIS body: the knee is y461 and the mail hem lands y456; the shield disc is
+       r58 centred at (258,358) so 44 units of disc edge shows past the x256 hip line. -->
+  <defs>
+    <linearGradient id="midage-female-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E574C)"/>
+      <stop offset="1" stop-color="var(--c1, #38332C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-valkyrie__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DDD2B8)"/>
+      <stop offset="1" stop-color="var(--c2, #B3A88C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-valkyrie__plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E8DEC6)"/>
+      <stop offset="1" stop-color="var(--c2, #ADA184)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-valkyrie__brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #B4832D)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-valkyrie__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="14" height="14">
+      <circle cx="7" cy="7" r="3.8" fill="none" stroke="var(--c3, #E4B15F)"
+              stroke-width="1.6" stroke-opacity="0.5"/>
+    </pattern>
+    <clipPath id="midage-female-costume-valkyrie__clip">
+      <path d="M162 160 H238 Q258 168 260 194 L264 272 Q266 366 262 456
+               Q234 468 212 462 L210 356 Q200 346 190 356 L188 462 Q166 468 138 456
+               Q134 366 136 272 L140 194 Q142 168 162 160 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- round shield slung behind, a disc edge showing past one hip -->
+    <circle cx="258" cy="358" r="58" fill="url(#midage-female-costume-valkyrie__wool)"/>
+    <!-- long-sleeved underdress to the ankle -->
+    <path d="M112 184 Q112 160 132 160 H148 Q168 160 168 184 L164 262 L162 346
+             Q138 356 114 346 L113 262 Z"
+          fill="url(#midage-female-costume-valkyrie__wool)"/>
+    <path d="M288 184 Q288 160 268 160 H252 Q232 160 232 184 L236 262 L238 346
+             Q262 356 286 346 L287 262 Z"
+          fill="url(#midage-female-costume-valkyrie__wool)"/>
+    <path d="M168 160 H232 Q250 166 252 190 L258 272 Q268 394 274 550
+             Q200 568 126 550 Q132 394 142 272 L148 190 Q150 166 168 160 Z"
+          fill="url(#midage-female-costume-valkyrie__wool)"/>
+    <!-- knee-length sleeveless mail shirt, split front and back for riding -->
+    <path d="M162 160 H238 Q258 168 260 194 L264 272 Q266 366 262 456
+             Q234 468 212 462 L210 356 Q200 346 190 356 L188 462 Q166 468 138 456
+             Q134 366 136 272 L140 194 Q142 168 162 160 Z"
+          fill="url(#midage-female-costume-valkyrie__mail)"/>
+    <!-- mail rings over the shirt -->
+    <g clip-path="url(#midage-female-costume-valkyrie__clip)">
+      <rect x="132" y="160" width="136" height="310"
+            fill="url(#midage-female-costume-valkyrie__rings)"/>
+    </g>
+    <!-- short shoulder cape of overlapping leaf-shaped plumes, lying flat -->
+    <path d="M130 162 H270 Q276 198 264 222 Q200 240 136 222 Q124 198 130 162 Z"
+          fill="url(#midage-female-costume-valkyrie__plume)"/>
+  </g>
+
+  <!-- the individual plumes, cut into the cape so the edge reads as overlapping leaves -->
+  <g fill="var(--c2, #C6BA9E)">
+    <path d="M134 168 Q146 188 142 220 Q130 214 128 190 Z"/>
+    <path d="M157 166 Q171 190 167 226 Q153 220 151 190 Z"/>
+    <path d="M181 164 Q195 190 191 232 Q177 226 175 190 Z"/>
+    <path d="M219 164 Q205 190 209 232 Q223 226 225 190 Z"/>
+    <path d="M243 166 Q229 190 233 226 Q247 220 249 190 Z"/>
+    <path d="M266 168 Q254 188 258 220 Q270 214 272 190 Z"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M136 176 Q144 198 141 216"/>
+    <path d="M183 174 Q193 200 189 226"/>
+    <path d="M217 174 Q207 200 211 226"/>
+    <path d="M264 176 Q256 198 259 216"/>
+  </g>
+  <!-- broad belt, carrying the shield behind -->
+  <path d="M136 302 Q200 320 264 302 L265 334 Q200 352 135 334 Z"
+        fill="url(#midage-female-costume-valkyrie__brass)"/>
+  <path d="M188 298 H212 Q216 318 212 338 H188 Q184 318 188 298 Z" fill="var(--c1, #38332C)"/>
+  <!-- shield rim and boss edge, showing past the hip -->
+  <path d="M294 328 Q302 358 294 390" stroke="var(--c3, #E4B15F)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M288 342 Q294 358 288 376" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- the riding split, banded so it reads at thumbnail size -->
+  <path d="M192 360 L190 458 M208 360 L210 458" stroke="var(--c3, #B4832D)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- mail shirt hem band -->
+  <path d="M138 448 Q164 462 190 456 M210 456 Q236 462 262 448" stroke="var(--c3, #B4832D)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- underdress hem band -->
+  <path d="M128 532 Q200 552 272 532" stroke="var(--c3, #E4B15F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M168 194 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Braided Crown" data-family="braided-crown" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60 (x142-258, y42-162),
+       ears (148,106)/(252,106), shoulder line y162.
+       Axes: VOLUME/TEXTURE OF THE OUTLINE - the band is nine overlapping plait
+       segments laid round the hairline, each one a separate lobe, so the outline of
+       the band is scalloped and countable rather than a smooth hoop. The seam where
+       each segment crosses under the next is cut in hair2.
+       PARTING/HEM - nothing hangs at all: the whole remainder is pinned flat to the
+       skull and the ends are rolled under at the nape at y162, so the hem is a roll
+       and not an edge. Both ears stay exposed. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-male-hair-braided-crown__back-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the tucked remainder: low and smooth, showing only as a narrow rim round the
+           skull because every strand of it is pinned flat under the band -->
+      <path d="M200 36 C161 36 141 59 139 93
+               C137 123 143 149 154 163
+               C172 171 228 171 246 163
+               C257 149 263 123 261 93
+               C259 59 239 36 200 36 Z"
+            fill="url(#midage-male-hair-braided-crown__back-grad)"/>
+    </g>
+    <!-- the roll where the tucked ends are pinned under at the nape -->
+    <path d="M155 143 C176 158 224 158 245 143 C241 166 159 166 155 143 Z"
+          fill="var(--hair2, #331E16)"/>
+    <path d="M167 152 C184 161 216 161 233 152" stroke="var(--hair2, #331E16)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M162 118 C180 128 220 128 238 118" stroke="var(--hair2, #331E16)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M159 71 C179 57 221 57 241 71" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-male-hair-braided-crown__front-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="0.68" stop-color="var(--hair1, #43291F)"/>
+        <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the flat tucked hair lying over the top of the skull, under the band -->
+      <path d="M148 106 C146 62 170 38 200 38 C230 38 254 62 252 106
+               C242 88 226 78 200 78 C174 78 158 88 148 106 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <!-- nine plait segments arcing from the left temple over the brow to the right
+           temple; no two the same size and each leans against its neighbour -->
+      <path d="M139 98 C152 96 161 106 158 118 C154 128 142 128 137 118
+               C133 110 134 102 139 98 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M143 74 C156 71 165 81 161 93 C157 103 145 104 140 95
+               C136 87 138 78 143 74 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M154 55 C167 49 179 57 177 69 C175 80 163 84 156 76
+               C150 69 149 59 154 55 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M170 44 C182 36 195 42 195 54 C195 65 184 71 176 65
+               C168 59 165 49 170 44 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M189 41 C199 33 212 36 215 47 C217 58 207 66 197 62
+               C188 58 184 47 189 41 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M209 42 C220 35 233 41 234 53 C235 64 224 71 216 65
+               C208 59 205 47 209 42 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M226 55 C238 48 250 56 249 68 C248 80 236 85 229 77
+               C222 69 221 59 226 55 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M239 73 C252 70 261 80 258 92 C255 103 243 105 238 96
+               C234 88 235 77 239 73 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+      <path d="M243 97 C256 95 265 105 262 117 C259 128 247 129 242 119
+               C238 111 239 101 243 97 Z"
+            fill="url(#midage-male-hair-braided-crown__front-grad)"/>
+    </g>
+    <!-- the seam where each segment crosses under the next: eight cuts in hair2 -->
+    <path d="M144 96 Q152 100 147 108" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M150 76 Q159 80 154 88" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M161 58 Q170 63 164 71" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M178 47 Q187 53 180 60" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M198 43 Q206 50 199 57" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M218 47 Q210 53 217 60" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M235 58 Q226 63 232 71" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M246 76 Q237 80 242 88" stroke="var(--hair2, #331E16)" stroke-width="2.8"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <!-- shadow along the inner side of the band, where the plait sits proud of the
+         flat hair it is pinned over -->
+    <path d="M156 106 C164 74 180 57 200 57 C220 57 236 74 244 106
+             C233 82 218 69 200 69 C182 69 167 82 156 106 Z"
+          fill="var(--hair2, #331E16)" opacity="0.55"/>
+    <path d="M172 43 C184 32 216 32 228 43" stroke="#FFFFFF" stroke-opacity="0.3"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

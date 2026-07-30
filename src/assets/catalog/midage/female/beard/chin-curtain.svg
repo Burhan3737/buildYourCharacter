@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Curtain" data-family="chin-curtain" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Anchored to the DRAWN midage female body: head ellipse cx200 cy102 rx58 ry60, chin
+       (200,162), ear anchors at (148,106) and (252,106). Mouth box measured off this bundle's
+       own mouth art: the deepest lower lip in the set sits at y 144.
+       Silhouette axes vs chin-strap: CHIN AND JAW COVERAGE (a broad under-jaw curtain, up to
+       50px deep front to back, against a narrow even 13px band) and LENGTH (past the jaw, the
+       hem falls to y 191, against a strap that stops at y 164).
+       UPPER LIP: completely bare, and drawn CLEAN rather than merely thin. The curtain's top
+       boundary crosses the centre of the face at y 150, six clear pixels below the deepest
+       lower lip at y 144, so no hair touches the mouth at all. Cheeks bare; the cheek line is
+       jaw-only, rising to the ear anchors at y 106.
+       hair1 lights the jaw front; hair2 draws the clean top edge under the lip, the shaded
+       underside of the hem and the hanging strand separations. -->
+  <defs>
+    <linearGradient id="midage-female-beard-chin-curtain__curtain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #472C21)"/>
+      <stop offset="1" stop-color="var(--hair2, #352017)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the curtain: the top boundary clears the lip entirely, the hem hangs below the jaw -->
+  <g class="sp-shadow">
+    <path d="M145 106 C146.5 114, 150 122, 155 129
+             C160 136, 167 142, 175 146
+             C183 150, 191 152, 200 152
+             C209 152, 217 150, 225 146
+             C233 142, 240 136, 245 129
+             C250 122, 253.5 114, 255 106
+             C258 125, 253 147, 241 163
+             C235 177, 225 187, 214 185
+             C207 191, 193 191, 186 185
+             C175 187, 165 177, 159 163
+             C147 147, 142 125, 145 106 Z"
+          fill="url(#midage-female-beard-chin-curtain__curtain)"/>
+  </g>
+
+  <!-- hair2: the clean cut top edge, the thing that keeps the bare lip reading as deliberate -->
+  <path d="M145 106 C146.5 114, 150 122, 155 129
+           C160 136, 167 142, 175 146
+           C183 150, 191 152, 200 152
+           C209 152, 217 150, 225 146
+           C233 142, 240 136, 245 129
+           C250 122, 253.5 114, 255 106
+           C254.4 112, 252 118.5, 248 124.6
+           C243.2 131, 236.6 136, 229 139.6
+           C221.4 143.2, 210.5 145, 200 145
+           C189.5 145, 178.6 143.2, 171 139.6
+           C163.4 136, 156.8 131, 152 124.6
+           C148 118.5, 145.6 112, 145 106 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: the shaded underside of the hem, three soft lobes -->
+  <path d="M161 165 C167 177, 176 185, 186 184 C192 190, 208 190, 214 184
+           C224 185, 233 177, 239 165 C235 179, 225 188, 214 186.5
+           C207 192, 193 192, 186 186.5 C175 188, 165 179, 161 165 Z"
+        fill="var(--hair2, #352017)"/>
+  <!-- hair2: hanging strand separations across the curtain -->
+  <path d="M171 153 C172 165, 175 176, 181 185" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M200 156 C200 168, 200 178, 200 189" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M229 153 C228 165, 225 176, 219 185" stroke="var(--hair2, #352017)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 116 C155 134, 165 150, 180 160" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M250 116 C245 134, 235 150, 220 160" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Full Beard" data-family="full-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: head ellipse cx200 cy102 rx58 ry60, chin (200,162),
+       jaw corners (157,134)/(243,134), ear anchors (148,106)/(252,106), mouth band
+       x170-230 y118-148, mid-torso floor y251.
+       Axes chosen: CHIN AND JAW = full jaw and cheeks, one continuous mass from ear to
+       ear ending at the throat, hem about y190. CHEEK LINE = natural, y118, which is
+       55% of the way from the jaw corner up to the ear anchor on this bundle and the
+       same fraction the adult/male reference uses, so the family reads identically at
+       both stages. The hem is built from six unequal lobes rather than a smooth arc.
+       The moustache is trimmed clear of the lip, bottom edge y122, which is what keeps
+       this out of long-beard territory. -->
+  <defs>
+    <linearGradient id="midage-male-beard-full-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.44" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mass: cheek line down each side, six-lobed hem at the throat, mouth open -->
+  <g class="sp-shadow">
+    <path d="M145 110 C143 123 144 136 148 149
+             C152 164 159 177 169 186
+             C175 192 182 196 190 194
+             C194 197 199 196 202 192
+             C206 197 212 197 218 192
+             C226 195 233 189 240 181
+             C249 170 256 155 258 138
+             C259 125 259 116 257 108
+             C253 114 247 118 239 119
+             C233 119 228 116 224 112
+             C215 108 206 109 200 109
+             C194 109 185 108 176 112
+             C172 116 167 119 161 119
+             C153 118 148 115 145 110 Z
+             M200 124 C189 124 179 126 175 133
+             C172 140 177 148 188 150
+             C196 151 204 151 213 150
+             C223 148 228 140 225 133
+             C221 126 211 124 200 124 Z"
+          fill-rule="evenodd" fill="url(#midage-male-beard-full-beard__grad)"/>
+  </g>
+
+  <!-- moustache underside, trimmed level and clear above the mouth -->
+  <path d="M176 126 C185 121 215 121 224 126" stroke="var(--hair2, #331E16)"
+        stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- philtrum -->
+  <path d="M197 109 C198 114 202 114 203 109
+           C205 117 203 123 200 123 C197 123 195 117 197 109 Z"
+        fill="var(--hair2, #331E16)"/>
+  <!-- under-jaw shadow where the mass turns beneath the chin -->
+  <path d="M161 154 C175 174 225 174 239 154" stroke="var(--hair2, #331E16)"
+        stroke-width="5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- grain, following the fall of each lobe -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"
+     opacity="0.55">
+    <path d="M156 130 C156 151 162 170 174 184"/>
+    <path d="M178 154 C178 169 181 181 187 191"/>
+    <path d="M200 156 C200 171 200 182 201 190"/>
+    <path d="M222 154 C222 169 219 181 213 191"/>
+    <path d="M244 130 C244 151 238 170 226 184"/>
+  </g>
+
+  <!-- lit cheek line -->
+  <path d="M154 121 C161 124 169 124 176 119" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M246 121 C239 124 231 124 224 119" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

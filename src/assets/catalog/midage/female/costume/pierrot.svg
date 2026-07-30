@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot Blouse" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The frilled collaret is a FLAT disc spreading outward across the shoulders. Its top edge is
+       y162 and it never rises toward the face; all of its reach is horizontal.
+       Measured on THIS body: the neck block is x186 to x214 and the collaret runs x126 to x274,
+       so it projects 60 units past the neck on each side while being only 58 units deep, y162 to
+       y220. A separate ruff necklace layered over it therefore reads as one collar. -->
+  <!-- axes vs clown: a straight column widest at the shoulder and falling dead vertical to the
+       ankle (volume) + draped three-quarter bell sleeves ending above the wrist, against clown's
+       dropped ballooning sleeve gathered into a cuff (shoulder/sleeve).
+       TRADEMARK: cream, periwinkle and ink. Never default this family to purple with green or
+       purple with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="midage-female-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBF6EA)"/>
+      <stop offset="1" stop-color="var(--c1, #DCD2BA)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-pierrot__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F5EFE0)"/>
+      <stop offset="1" stop-color="var(--c1, #D3C8AF)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-pierrot__pant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c1, #CEC3A8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-pierrot__frill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A6B4E9)"/>
+      <stop offset="1" stop-color="var(--c2, #7183CC)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- very wide gathered pantaloons, a straight column to the ankle -->
+    <path d="M138 316 L198 316 L196 434 L194 548 Q168 556 142 548 L138 434 Z"
+          fill="url(#midage-female-costume-pierrot__pant)"/>
+    <path d="M202 316 L262 316 L262 434 L258 548 Q232 556 206 548 L204 434 Z"
+          fill="url(#midage-female-costume-pierrot__pant)"/>
+    <!-- three-quarter bell sleeves, flaring away and stopping above the wrist -->
+    <path d="M138 182 Q122 184 116 208 L102 254 Q92 280 104 292 Q126 302 150 290
+             Q153 254 154 218 L154 186 Z"
+          fill="url(#midage-female-costume-pierrot__bell)"/>
+    <path d="M262 182 Q278 184 284 208 L298 254 Q308 280 296 292 Q274 302 250 290
+             Q247 254 246 218 L246 186 Z"
+          fill="url(#midage-female-costume-pierrot__bell)"/>
+    <!-- loose straight blouse to the hip -->
+    <path d="M158 160 H242 Q258 166 260 192 L264 258 L266 322 Q200 338 134 322
+             L136 258 L140 192 Q142 166 158 160 Z"
+          fill="url(#midage-female-costume-pierrot__blouse)"/>
+    <!-- large flat frilled disc collaret, lying on the shoulders and spreading outward -->
+    <path d="M126 162 Q138 198 150 186 Q162 216 174 202 Q186 228 200 208
+             Q214 228 226 202 Q238 216 250 186 Q262 198 274 162 Z"
+          fill="url(#midage-female-costume-pierrot__frill)"/>
+  </g>
+
+  <!-- collaret scallop shading -->
+  <path d="M138 176 Q150 202 162 192 Q174 212 186 200 Q200 218 214 200
+           Q226 212 238 192 Q250 202 262 176" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- big soft pom-poms down the blouse front -->
+  <g fill="url(#midage-female-costume-pierrot__frill)">
+    <circle cx="200" cy="240" r="13"/>
+    <circle cx="200" cy="286" r="13"/>
+  </g>
+  <!-- gathered pantaloon waist -->
+  <path d="M136 310 Q200 328 264 310 L265 324 Q200 342 135 324 Z" fill="var(--c3, #4A3B33)"/>
+  <!-- pantaloon gathering folds, a straight column -->
+  <g stroke="var(--c3, #4A3B33)" stroke-opacity="0.22" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M152 334 L150 542"/>
+    <path d="M170 334 L168 544"/>
+    <path d="M230 334 L232 544"/>
+    <path d="M248 334 L250 542"/>
+  </g>
+  <!-- bell sleeve edge bands -->
+  <path d="M104 286 q24 12 48 2 M296 286 q-24 12 -48 2" stroke="var(--c3, #4A3B33)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- pantaloon hem bands -->
+  <path d="M140 536 q28 12 54 2 M260 536 q-28 12 -54 2" stroke="var(--c3, #4A3B33)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M166 226 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

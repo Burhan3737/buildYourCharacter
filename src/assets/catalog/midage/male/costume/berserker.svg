@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160.
+       The adult/male reference tops out at y 150 and would breach this ceiling, so the jerkin
+       shoulders, the under tunic neck and the pelt were all redrawn down onto this body, whose
+       torso is drawn from y 162 with the shoulder curve running x 128 to x 272 at y 200.
+
+       There is NO bear's head in this file. The berserker is not the head, it is the shaggy
+       lobed hem of the pelt jerkin. No horned and no winged helmet is ever permitted on this
+       project, in costume or in headwear.
+
+       silhouette axes: shoulder=a sleeveless pelt jerkin worn open over a sleeved under tunic,
+       and hem=deeply lobed. Recomputed on this body: the lobes run from y 366 to y 392, which
+       is 26 units of lobe depth sitting 38 units below the hip line at y 328.
+       Against satyr, which is bare above the waist and shaggy all the way to the ankle. Against
+       frost-giant, whose lobes are hard angular spikes where these are soft and rounded.
+       The lobes are built INTO the silhouette path, never drawn inside a smooth edge.
+       Midage read: one lobe fewer per side and a slightly longer jerkin. -->
+  <defs>
+    <linearGradient id="midage-male-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #55402E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A8B0A0)"/>
+      <stop offset="1" stop-color="var(--c2, #55402E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-berserker__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402E)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6B4F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long sleeved under tunic and close trousers -->
+  <g class="sp-shadow">
+    <path d="M154 162 H246 Q256 184 254 212 L252 320 Q250 334 238 334 H162 Q150 334 148 320
+             L146 212 Q144 184 154 162 Z" fill="url(#midage-male-costume-berserker__tunic)"/>
+    <path d="M100 174 H136 Q140 192 138 216 L136 336 Q136 350 118 350 Q102 350 100 336
+             L98 216 Q96 192 100 174 Z" fill="url(#midage-male-costume-berserker__tunic)"/>
+    <path d="M300 174 H264 Q260 192 262 216 L264 336 Q264 350 282 350 Q298 350 300 336
+             L302 216 Q304 192 300 174 Z" fill="url(#midage-male-costume-berserker__tunic)"/>
+    <path d="M150 330 H198 Q200 444 196 540 Q196 550 186 550 H162 Q154 550 154 540
+             Q150 444 150 330 Z" fill="url(#midage-male-costume-berserker__trouser)"/>
+    <path d="M250 330 H202 Q200 444 204 540 Q204 550 214 550 H238 Q246 550 246 540
+             Q250 444 250 330 Z" fill="url(#midage-male-costume-berserker__trouser)"/>
+  </g>
+
+  <!-- sleeveless shaggy pelt jerkin, open down the front, hem in soft unequal lobes -->
+  <g class="sp-shadow">
+    <path d="M130 162 H188 L184 232 L190 312 L192 388 Q180 404 168 390 Q154 408 142 392
+             Q130 404 124 386 Q118 312 122 246 Q122 196 130 162 Z"
+          fill="url(#midage-male-costume-berserker__pelt)"/>
+    <path d="M270 162 H212 L216 232 L210 312 L208 388 Q220 404 232 390 Q246 408 258 392
+             Q270 404 276 386 Q282 312 278 246 Q278 196 270 162 Z"
+          fill="url(#midage-male-costume-berserker__pelt)"/>
+  </g>
+
+  <!-- wide leather belt with a pouch and a sheathed knife hanging from it -->
+  <path d="M138 306 H262 Q266 318 264 332 H136 Q134 318 138 306 Z" fill="var(--c2, #55402E)"/>
+  <path d="M186 302 H214 Q218 318 216 336 H184 Q180 318 186 302 Z" fill="var(--c3, #A8B0A0)"/>
+  <path d="M234 330 H258 Q262 350 258 368 H234 Q230 350 234 330 Z" fill="var(--c2, #55402E)"/>
+  <path d="M146 328 h14 q4 26 -2 46 h-10 q-6 -22 -2 -46 Z" fill="var(--c2, #55402E)"/>
+
+  <!-- cross bound leg wraps from knee to ankle -->
+  <g stroke="var(--c3, #A8B0A0)" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M152 462 L198 478"/><path d="M152 480 L198 496"/>
+    <path d="M152 498 L198 514"/><path d="M152 516 L198 532"/>
+    <path d="M248 462 L202 478"/><path d="M248 480 L202 496"/>
+    <path d="M248 498 L202 514"/><path d="M248 516 L202 532"/>
+  </g>
+
+  <!-- shag value only: the outline already carries the identity -->
+  <g stroke="var(--c2, #55402E)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M138 194 Q132 264 136 352"/>
+    <path d="M166 190 Q162 264 168 360"/>
+    <path d="M262 194 Q268 264 264 352"/>
+    <path d="M234 190 Q238 264 232 360"/>
+  </g>
+
+  <!-- integral shoes -->
+  <path d="M152 542 H200 Q206 556 204 570 H154 Q148 556 152 542 Z" fill="var(--c2, #55402E)"/>
+  <path d="M200 542 H248 Q252 556 250 570 H202 Q194 556 200 542 Z" fill="var(--c2, #55402E)"/>
+  <path d="M172 188 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

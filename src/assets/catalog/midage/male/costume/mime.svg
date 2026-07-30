@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       sets its boat neck at y 156 and its brace tops at y 158, both of which breach this
+       bundle, so the neckline and both braces were redrawn to start at y 168 on this body.
+       There is no painted face here and there cannot be: costume draws above the face. The
+       mime is the banded body, the braces and the cropped trouser. -->
+  <!-- Axes: closure (two narrow braces worn over a high waist) and hem (a straight trouser
+       cropped clear above the ankle). -->
+  <!-- Recomputed on this body, whose feet are drawn y 544 to y 570: the trouser hem stops at
+       y 518 and the shoe begins at y 546, so 28 units of bare leg show between them. -->
+  <defs>
+    <linearGradient id="midage-male-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6580)"/>
+      <stop offset="1" stop-color="var(--c1, #444E66)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6E6152)"/>
+      <stop offset="1" stop-color="var(--c4, #564B3F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B0743C)"/>
+      <stop offset="1" stop-color="var(--c3, #8E5B2C)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-mime__bands" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="8" fill="var(--c2, #E4E0D2)" fill-opacity="0.85"/>
+    </pattern>
+    <clipPath id="midage-male-costume-mime__bodyclip">
+      <path d="M158 168 Q134 170 132 194 L130 300 H270 L268 194 Q266 170 242 168 Z"/>
+      <path d="M103 178 H135 Q139 206 137 232 L135 336 Q134 350 119 350 Q104 350 103 336 Z"/>
+      <path d="M297 178 H265 Q261 206 263 232 L265 336 Q266 350 281 350 Q296 350 297 336 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- high waisted straight trousers, cropped clear above the ankle -->
+  <g class="sp-shadow">
+    <rect x="132" y="300" width="136" height="58" rx="16" fill="url(#midage-male-costume-mime__trouser)"/>
+    <rect x="158" y="352" width="40" height="166" rx="8" fill="url(#midage-male-costume-mime__trouser)"/>
+    <rect x="202" y="352" width="40" height="166" rx="8" fill="url(#midage-male-costume-mime__trouser)"/>
+  </g>
+  <path d="M162 512 h32 M206 512 h32" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- close boat neck long sleeve banded body -->
+  <g class="sp-shadow">
+    <path d="M158 168 Q134 170 132 194 L130 300 H270 L268 194 Q266 170 242 168 Z"
+          fill="url(#midage-male-costume-mime__body)"/>
+    <path d="M103 178 H135 Q139 206 137 232 L135 336 Q134 350 119 350 Q104 350 103 336 Z"
+          fill="url(#midage-male-costume-mime__body)"/>
+    <path d="M297 178 H265 Q261 206 263 232 L265 336 Q266 350 281 350 Q296 350 297 336 Z"
+          fill="url(#midage-male-costume-mime__body)"/>
+  </g>
+  <!-- the banding: a 16 unit rhythm read through c2 -->
+  <g clip-path="url(#midage-male-costume-mime__bodyclip)">
+    <rect x="100" y="168" width="200" height="188" fill="url(#midage-male-costume-mime__bands)"/>
+  </g>
+  <!-- boat neck bind -->
+  <path d="M158 169 H242" stroke="var(--c2, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- two narrow braces, over the shoulders and down to the high waist -->
+  <g class="sp-shadow">
+    <path d="M164 302 H178 V208 Q178 182 170 170 L156 174 Q164 188 164 212 Z"
+          fill="url(#midage-male-costume-mime__brace)"/>
+    <path d="M236 302 H222 V208 Q222 182 230 170 L244 174 Q236 188 236 212 Z"
+          fill="url(#midage-male-costume-mime__brace)"/>
+  </g>
+  <g fill="var(--c3, #8E5B2C)">
+    <rect x="162" y="292" width="18" height="14" rx="4"/>
+    <rect x="220" y="292" width="18" height="14" rx="4"/>
+  </g>
+
+  <!-- wrist cuff bands, reading as a glove edge -->
+  <g fill="var(--c3, #B0743C)">
+    <rect x="101" y="336" width="36" height="14" rx="7"/>
+    <rect x="263" y="336" width="36" height="14" rx="7"/>
+  </g>
+
+  <!-- integral flat shoes -->
+  <g class="sp-shadow">
+    <path d="M152 546 H200 V566 Q200 570 195 570 H144 Q136 570 136 562 Q136 552 152 546 Z"
+          fill="url(#midage-male-costume-mime__trouser)"/>
+    <path d="M248 546 H200 V566 Q200 570 205 570 H256 Q264 570 264 562 Q264 552 248 546 Z"
+          fill="url(#midage-male-costume-mime__trouser)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M150 198 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

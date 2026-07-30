@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       squares its doublet off at y 150 and its neck band at y 150, both of which breach this
+       bundle, so the doublet and the band were redrawn to y 162 on this body. There is no
+       cap and no bells at the head: costume draws above the face, so the bells live on the hem
+       tabs and the cuffs where they can be seen without erasing the character. -->
+  <!-- Axes: hem (five deep pointed bell tabs cut into the doublet hem) and volume (a boxy
+       square doublet sitting over close hose, not a fitted bodysuit). -->
+  <!-- Tab arithmetic recomputed on this body: the tabs run from the hip hem at y 328 to their
+       points at y 366, so each tab is 38 units deep against the 30 unit floor for this feature,
+       and the bells hang below at y 372. -->
+  <!-- Palette note: house periwinkle, butter and mint. Deliberately clear of the green hair
+       plus purple tailcoat plus orange or green waistcoat plus white face plus red grin
+       register that jester, harlequin, pierrot, clown and mime must all stay clear of. -->
+  <defs>
+    <linearGradient id="midage-male-costume-jester__doublet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E9FE4)"/>
+      <stop offset="1" stop-color="var(--c1, #6C7DC4)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-jester__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DCA847)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-jester__hose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6A79A6)"/>
+      <stop offset="1" stop-color="var(--c4, #515F87)"/>
+    </linearGradient>
+    <clipPath id="midage-male-costume-jester__doubletclip">
+      <path d="M130 162 H270 Q274 162 274 170 V320 Q274 330 264 330 H136 Q126 330 126 320 V170 Q126 162 130 162 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- close hose: hips and both legs, hugging the body -->
+  <g class="sp-shadow">
+    <rect x="142" y="312" width="116" height="50" rx="20" fill="url(#midage-male-costume-jester__hose)"/>
+    <rect x="160" y="344" width="36" height="200" rx="12" fill="url(#midage-male-costume-jester__hose)"/>
+    <rect x="204" y="344" width="36" height="200" rx="12" fill="url(#midage-male-costume-jester__hose)"/>
+  </g>
+
+  <!-- long pointed shoes, integral to the hose -->
+  <g class="sp-shadow">
+    <path d="M160 534 H198 Q200 552 198 570 H138 Q126 570 124 560 Q122 548 134 546 Q148 544 156 540 Z"
+          fill="url(#midage-male-costume-jester__hose)"/>
+    <path d="M240 534 H202 Q200 552 202 570 H262 Q274 570 276 560 Q278 548 266 546 Q252 544 244 540 Z"
+          fill="url(#midage-male-costume-jester__hose)"/>
+  </g>
+
+  <!-- boxy doublet, square shouldered, straight sided -->
+  <g class="sp-shadow">
+    <path d="M130 162 H270 Q274 162 274 170 V320 Q274 330 264 330 H136 Q126 330 126 320 V170 Q126 162 130 162 Z"
+          fill="url(#midage-male-costume-jester__doublet)"/>
+  </g>
+  <!-- contrast half panel, party coloured down the centre seam -->
+  <g clip-path="url(#midage-male-costume-jester__doubletclip)">
+    <rect x="124" y="160" width="76" height="176" fill="url(#midage-male-costume-jester__panel)"/>
+    <rect x="200" y="246" width="76" height="90" fill="url(#midage-male-costume-jester__panel)" fill-opacity="0.55"/>
+  </g>
+
+  <!-- boxy sleeves -->
+  <g class="sp-shadow">
+    <rect x="102" y="170" width="30" height="164" rx="12" fill="url(#midage-male-costume-jester__doublet)"/>
+    <rect x="268" y="170" width="30" height="164" rx="12" fill="url(#midage-male-costume-jester__panel)"/>
+  </g>
+
+  <!-- FIVE deep pointed hem tabs, 38 units from the hip hem, a bell on every point -->
+  <g class="sp-shadow">
+    <path d="M129 328 H157 L143 366 Z" fill="url(#midage-male-costume-jester__panel)"/>
+    <path d="M158 328 H186 L172 366 Z" fill="url(#midage-male-costume-jester__doublet)"/>
+    <path d="M187 328 H215 L201 366 Z" fill="url(#midage-male-costume-jester__panel)"/>
+    <path d="M216 328 H244 L230 366 Z" fill="url(#midage-male-costume-jester__doublet)"/>
+    <path d="M245 328 H273 L259 366 Z" fill="url(#midage-male-costume-jester__panel)"/>
+  </g>
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="143" cy="372" r="8"/>
+    <circle cx="172" cy="372" r="8"/>
+    <circle cx="201" cy="372" r="8"/>
+    <circle cx="230" cy="372" r="8"/>
+    <circle cx="259" cy="372" r="8"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <circle cx="140" cy="369" r="2.6"/>
+    <circle cx="169" cy="369" r="2.6"/>
+    <circle cx="198" cy="369" r="2.6"/>
+    <circle cx="227" cy="369" r="2.6"/>
+    <circle cx="256" cy="369" r="2.6"/>
+  </g>
+
+  <!-- sleeve cuffs cut into the same three points, a bell on each -->
+  <g class="sp-shadow">
+    <path d="M103 332 H113 L108 362 Z" fill="url(#midage-male-costume-jester__panel)"/>
+    <path d="M113 332 H123 L118 362 Z" fill="url(#midage-male-costume-jester__doublet)"/>
+    <path d="M123 332 H133 L128 362 Z" fill="url(#midage-male-costume-jester__panel)"/>
+    <path d="M267 332 H277 L272 362 Z" fill="url(#midage-male-costume-jester__doublet)"/>
+    <path d="M277 332 H287 L282 362 Z" fill="url(#midage-male-costume-jester__panel)"/>
+    <path d="M287 332 H297 L292 362 Z" fill="url(#midage-male-costume-jester__doublet)"/>
+  </g>
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="108" cy="367" r="5"/>
+    <circle cx="118" cy="367" r="5"/>
+    <circle cx="128" cy="367" r="5"/>
+    <circle cx="272" cy="367" r="5"/>
+    <circle cx="282" cy="367" r="5"/>
+    <circle cx="292" cy="367" r="5"/>
+  </g>
+
+  <!-- low neck band, stopping short of the jaw -->
+  <path d="M170 162 H230 Q232 174 226 182 Q200 188 174 182 Q168 174 170 162 Z"
+        fill="var(--c3, #6BBFAD)"/>
+
+  <!-- waist lacing -->
+  <path d="M150 310 h100" stroke="var(--c3, #6BBFAD)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- house highlight -->
+  <path d="M144 196 q56 20 112 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

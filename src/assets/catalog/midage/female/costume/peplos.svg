@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The shoulder pins are 11 unit discs centred at
+       y176, so their topmost point is y165, five units clear of the ceiling. The adult reference
+       pins them at y164, whose top edge is y153 and would breach this bundle's ceiling. -->
+  <!-- axes vs chiton and winged-messenger: the fastening IS the axis in this group. The peplos is
+       pinned by ONE large pin at each shoulder and the arms are entirely bare (shoulder/sleeve)
+       + the deep overfold hangs to the waist and reads as a second horizontal hem, and one whole
+       side is open in a vertical slit from hem to hip (closure).
+       The bare arms are the character's own skin: no phantom garment is painted there. -->
+  <defs>
+    <linearGradient id="midage-female-costume-peplos__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E9C8B)"/>
+      <stop offset="1" stop-color="var(--c2, #367264)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-peplos__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the rectangle, ankle hem, cut away down one whole side from hip to hem -->
+    <path d="M154 160 H246 Q256 218 254 280 Q254 300 252 314 L228 438 L216 550
+             Q182 560 150 550 Q144 448 144 346 Q144 244 154 160 Z"
+          fill="url(#midage-female-costume-peplos__wool)"/>
+    <!-- deep overfold, hanging to the waist -->
+    <path d="M152 160 H248 Q254 214 254 260 Q256 276 254 292 Q200 310 146 292
+             Q144 276 146 260 Q146 214 152 160 Z"
+          fill="url(#midage-female-costume-peplos__fold)"/>
+  </g>
+
+  <!-- one large pin at each shoulder -->
+  <circle cx="170" cy="176" r="11" fill="url(#midage-female-costume-peplos__belt)"/>
+  <circle cx="170" cy="176" r="4" fill="var(--c2, #367264)"/>
+  <circle cx="230" cy="176" r="11" fill="url(#midage-female-costume-peplos__belt)"/>
+  <circle cx="230" cy="176" r="4" fill="var(--c2, #367264)"/>
+  <!-- belt over the fold -->
+  <path d="M146 276 Q200 294 254 276 L255 296 Q200 314 145 296 Z"
+        fill="url(#midage-female-costume-peplos__belt)"/>
+  <!-- the second hem: the overfold edge, banded so it reads at thumbnail size -->
+  <path d="M150 290 Q200 308 250 290" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- open side: binding down the slit edge from the hip to the hem -->
+  <path d="M252 314 L228 438 L216 548" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- vertical drape folds -->
+  <g stroke="var(--c2, #367264)" stroke-opacity="0.32" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M164 314 Q158 430 154 538"/>
+    <path d="M186 316 Q184 430 182 546"/>
+    <path d="M208 316 Q206 430 200 548"/>
+    <path d="M170 182 Q168 230 168 274"/>
+    <path d="M200 184 Q200 232 200 278"/>
+    <path d="M230 182 Q232 230 232 274"/>
+  </g>
+  <!-- hem band -->
+  <path d="M150 540 Q182 552 216 542" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M168 194 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

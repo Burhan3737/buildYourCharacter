@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mutton Chops" data-family="mutton-chops"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: ear anchors (148,106)/(252,106) with the ear ellipse
+       spanning y92-120, jaw corners (157,134)/(243,134), chin (200,162), mouth band
+       x170-230 y118-148. Cheek line here: low y127, natural y118, joined y106.
+       Axes chosen: CHIN AND JAW = cheeks only, chin bare. Two entirely separate
+       masses with 34 units of open skin between them across the chin, which no other
+       family in this slot has. CHEEK LINE = natural but flaring: each chop is rooted
+       at the ear and broadens downward into a lobe over the jaw corner instead of
+       tapering. Upper lip bare. -->
+  <defs>
+    <linearGradient id="midage-male-beard-mutton-chops__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two chops, each rooted above the ear and flaring wider as it falls to the jaw -->
+  <g class="sp-shadow">
+    <path d="M145 96 C139 110 140 126 146 138
+             C152 149 163 156 175 152
+             C186 148 190 139 186 128
+             C182 116 172 107 163 100
+             C155 94 148 89 145 96 Z"
+          fill="url(#midage-male-beard-mutton-chops__grad)"/>
+    <path d="M255 96 C261 110 260 126 254 138
+             C248 149 237 156 225 152
+             C214 148 210 139 214 128
+             C218 116 228 107 237 100
+             C245 94 252 89 255 96 Z"
+          fill="url(#midage-male-beard-mutton-chops__grad)"/>
+  </g>
+
+  <!-- forward edge of each chop, kept soft, and the grain running into the lobe -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"
+     opacity="0.65">
+    <path d="M164 104 C168 117 175 131 179 145"/>
+    <path d="M152 101 C153 116 157 132 163 146"/>
+    <path d="M236 104 C232 117 225 131 221 145"/>
+    <path d="M248 101 C247 116 243 132 237 146"/>
+  </g>
+  <!-- weight along each lobe -->
+  <path d="M150 137 C156 149 167 155 179 150" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M250 137 C244 149 233 155 221 150" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- the chin gap restated: a soft skin wash between the two lobes so the break reads -->
+  <path d="M186 148 C193 152 207 152 214 148 C207 154 193 154 186 148 Z"
+        fill="var(--skin2, #E7B892)" opacity="0.3"/>
+
+  <!-- lit outer face of each chop -->
+  <path d="M148 101 C146 114 147 128 152 140" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M252 101 C254 114 253 128 248 140" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

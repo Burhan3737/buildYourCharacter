@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fine Thinning" data-family="fine-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, ears at (148,106)
+       and (252,106), shoulder line y168.
+       axes vs the slot: VOLUME and texture of the outline - the mass is cut into separated
+       veils with real air between them, so the scalp is negative space in the silhouette path
+       itself rather than a texture laid over a solid shape. The hairline survives as one
+       unbroken band, so there are no temple bays.
+       LENGTH - kept full, but each veil stops at its own height so the hem is a stagger rather
+       than a line.
+       Length is carried FORWARD: two sparse veils spill past the shoulder line and down the
+       chest to y 240 in the front group, because the back group draws under the torso and any
+       drop down the centre back would render as nothing. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-fine-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #A2968C)"/>
+        <stop offset="1" stop-color="var(--hair2, #675C53)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M130 104 C120 154 118 204 124 246 L150 248 C144 204 144 156 148 106 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+      <path d="M156 96 C148 152 147 208 153 254 L178 252 C172 208 171 152 176 98 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+      <path d="M180 92 C175 146 175 206 180 258 L194 256 C191 206 190 146 192 94 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+      <path d="M208 94 C211 146 212 206 207 258 L221 260 C226 206 226 146 220 96 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+      <path d="M224 98 C230 152 231 208 225 254 L250 250 C256 208 255 152 244 100 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+      <path d="M252 104 C262 154 264 204 258 246 L280 244 C286 204 284 156 272 106 Z"
+            fill="url(#midage-female-hair-fine-thinning__back-g)"/>
+    </g>
+    <!-- the shaded inner edge of each veil: what weight is left reads as depth, not as bulk -->
+    <path d="M142 126 C135 172 135 214 140 248 C142 214 140 172 146 128 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M164 120 C159 168 159 216 164 252 C166 216 164 168 168 122 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M236 120 C241 168 241 216 236 252 C234 216 236 168 232 122 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M258 126 C265 172 265 214 260 246 C258 214 260 172 254 128 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M158 76 C178 64 222 64 242 76" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-fine-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #A2968C)"/>
+        <stop offset="1" stop-color="var(--hair2, #675C53)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-fine-thinning__front-v" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #A2968C)"/>
+        <stop offset="1" stop-color="var(--hair2, #675C53)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the hairline survives as one unbroken band: no bays, no recession -->
+      <path d="M140 108 C142 95 151 86 166 82 C181 78 219 78 234 82 C249 86 258 95 260 108
+               C253 97 242 91 228 88 C213 85 187 85 172 88 C158 91 147 97 140 108 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-g)"/>
+      <!-- four broad crown veils; the scalp shows through in the gaps cut between them -->
+      <path d="M193 42 C174 51 156 63 146 78 C142 86 140 93 140 99 L165 99
+               C166 90 171 80 180 69 C189 58 197 48 199 44 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-g)"/>
+      <path d="M196 36 C189 49 181 63 175 76 C170 86 169 93 169 99 L196 99
+               C196 88 197 74 198 59 C199 47 199 38 199 36 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-g)"/>
+      <path d="M204 36 C211 49 219 63 225 76 C230 86 231 93 231 99 L204 99
+               C204 88 203 74 202 59 C201 47 201 38 201 36 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-g)"/>
+      <path d="M207 42 C226 51 244 63 254 78 C258 86 260 93 260 99 L235 99
+               C234 90 229 80 220 69 C211 58 203 48 201 44 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-g)"/>
+      <!-- the two forward veils, carrying the real length past the shoulder onto the chest -->
+      <path d="M140 104 C132 146 130 190 134 226 L141 242 L148 224
+               C144 190 145 148 150 106 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-v)"/>
+      <path d="M260 104 C268 142 270 182 266 214 L259 230 L252 212
+               C256 182 255 144 250 106 Z"
+            fill="url(#midage-female-hair-fine-thinning__front-v)"/>
+    </g>
+    <!-- the parting: bare scalp on the centre line, widening across the crown -->
+    <path d="M200 40 C199 58 199 78 200 96" stroke="var(--skin1, #F7D2B0)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M188 52 C182 63 178 76 176 94" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M212 52 C218 63 222 76 224 94" stroke="var(--skin2, #E7B892)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- the sparse hairline casts only a thin shadow on the forehead -->
+    <path d="M146 102 C166 92 234 92 254 102 C234 96 166 96 146 102 Z"
+          fill="var(--hair2, #675C53)"/>
+    <!-- shaded inner edge of each forward veil, so both stay separate strands -->
+    <path d="M144 124 C138 164 138 202 142 234 C144 202 142 164 148 126 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M256 124 C262 160 262 194 258 222 C256 194 258 160 252 126 Z"
+          fill="var(--hair2, #675C53)"/>
+    <path d="M172 42 C186 36 214 36 228 42" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

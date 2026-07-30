@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Motley" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The cap-and-bells is a companion headwear family, never drawn here: costume draws above the
+       face. The identity lives in the dagged hem and cuffs instead, and the dagged collar points
+       DOWN from y160 so nothing reaches the jaw. -->
+  <!-- axes vs the slot: a hip hem cut into four deep pointed tabs, each ending in a bell (hem)
+       + cuffs cut into the same points, so the sleeve ends in bells too (shoulder/sleeve).
+       Measured on THIS body: the tabs run from y306 to a longest point of y358, so each tab is
+       52 units deep against the 30 unit floor.
+       TRADEMARK: deliberately coral, periwinkle and butter. Never default this family to
+       purple with green or purple with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="midage-female-costume-jester__a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D98A7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-jester__b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-jester__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D19A44)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close hose, carried up under the tabs so the dag valleys show hose and never bare hip -->
+    <path d="M144 304 H202 L200 450 L198 548 Q180 556 160 548 L158 450 Z"
+          fill="url(#midage-female-costume-jester__b)"/>
+    <path d="M198 304 H256 L242 450 L240 548 Q222 556 204 548 L202 450 Z"
+          fill="url(#midage-female-costume-jester__a)"/>
+    <!-- pointed sleeve dags with bells -->
+    <path d="M110 310 L122 350 L134 310 L146 352 L158 310 Z"
+          fill="url(#midage-female-costume-jester__b)"/>
+    <path d="M290 310 L278 350 L266 310 L254 352 L242 310 Z"
+          fill="url(#midage-female-costume-jester__a)"/>
+    <!-- sleeves -->
+    <path d="M110 180 Q110 160 128 160 H148 Q168 160 168 180 L164 246 L162 314
+             Q136 324 110 314 L109 246 Z"
+          fill="url(#midage-female-costume-jester__b)"/>
+    <path d="M290 180 Q290 160 272 160 H252 Q232 160 232 180 L236 246 L238 314
+             Q264 324 290 314 L291 246 Z"
+          fill="url(#midage-female-costume-jester__a)"/>
+    <!-- four deep pointed hip tabs, 52 units each -->
+    <path d="M144 306 L158 356 L172 306 L186 358 L200 306 L214 355 L228 306 L242 357 L256 306 Z"
+          fill="url(#midage-female-costume-jester__a)"/>
+    <!-- boxy doublet -->
+    <path d="M162 160 H238 Q254 160 254 182 L256 248 L256 310 H144 L144 248 L146 182
+             Q146 160 162 160 Z"
+          fill="url(#midage-female-costume-jester__a)"/>
+  </g>
+
+  <!-- panel blocking: the doublet and tabs split left and right, the way motley is cut -->
+  <path d="M162 160 H200 V310 H144 L144 248 L146 182 Q146 160 162 160 Z"
+        fill="url(#midage-female-costume-jester__b)"/>
+  <path d="M144 306 L158 356 L172 306 L186 358 L200 306 Z"
+        fill="url(#midage-female-costume-jester__b)"/>
+  <!-- dagged collar, points down, well clear of the jaw -->
+  <path d="M164 160 H236 L228 192 L216 168 L208 194 L194 168 L186 194 L174 168 Z"
+        fill="url(#midage-female-costume-jester__bell)"/>
+  <!-- the bells -->
+  <g fill="url(#midage-female-costume-jester__bell)">
+    <circle cx="158" cy="364" r="9"/><circle cx="186" cy="366" r="9"/>
+    <circle cx="214" cy="363" r="9"/><circle cx="242" cy="365" r="9"/>
+    <circle cx="122" cy="358" r="8"/><circle cx="146" cy="360" r="8"/>
+    <circle cx="278" cy="358" r="8"/><circle cx="254" cy="360" r="8"/>
+    <circle cx="228" cy="200" r="7"/><circle cx="208" cy="202" r="7"/>
+    <circle cx="186" cy="202" r="7"/><circle cx="174" cy="176" r="7"/>
+  </g>
+  <!-- waist cord -->
+  <path d="M144 280 Q200 296 256 280 L257 296 Q200 312 143 296 Z"
+        fill="url(#midage-female-costume-jester__bell)"/>
+  <!-- doublet seam -->
+  <path d="M200 166 V306" stroke="var(--c3, #D19A44)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 190 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

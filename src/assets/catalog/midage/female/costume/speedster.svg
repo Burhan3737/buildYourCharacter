@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speed Runner Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- TRADEMARK: NO lightning bolt on the chest, and no chest mark of any kind. The identity is
+       the calf vanes and ONE raked diagonal seam running corner to corner across the torso, which
+       is tailoring rather than a badge. Fallback is mint with ink and butter. -->
+  <!-- axes vs web-runner (the other skin-close suit): sleeveless with deep-scooped armholes and
+       bare arms (shoulder/sleeve) + swept fin vanes standing off the outer calf so the lower
+       outline is a wide dart rather than a smooth sheath (volume).
+       Measured on THIS body: the knee is y461 and each vane spans from (108,410) to (160,522),
+       a blade of about 123 units, three times the 40 unit floor. The bare arms are skin. -->
+  <defs>
+    <linearGradient id="midage-female-costume-speedster__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-speedster__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B5A3)"/>
+      <stop offset="1" stop-color="var(--c1, #46907F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-speedster__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #46362C)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- calf vanes: the identity, swept blades standing off each outer calf -->
+    <path d="M164 440 L160 522 L102 418 Q96 407 108 410 Z"
+          fill="url(#midage-female-costume-speedster__vane)"/>
+    <path d="M236 440 L240 522 L298 418 Q304 407 292 410 Z"
+          fill="url(#midage-female-costume-speedster__vane)"/>
+    <!-- skin-close legs to an ankle hem -->
+    <path d="M160 352 L202 352 L200 458 L198 544 Q182 552 164 544 L162 458 Z"
+          fill="url(#midage-female-costume-speedster__leg)"/>
+    <path d="M198 352 L240 352 L238 458 L236 544 Q220 552 202 544 L200 458 Z"
+          fill="url(#midage-female-costume-speedster__leg)"/>
+    <!-- hip block -->
+    <path d="M144 306 Q200 322 256 306 Q262 332 256 358 Q200 374 144 358 Q138 332 144 306 Z"
+          fill="url(#midage-female-costume-speedster__suit)"/>
+    <!-- sleeveless torso, deep-scooped armholes, high closed neck -->
+    <path d="M180 160 H220 Q229 161 233 178 Q247 210 262 242 Q266 284 258 322
+             Q200 342 142 322 Q134 284 138 242 Q153 210 167 178 Q171 161 180 160 Z"
+          fill="url(#midage-female-costume-speedster__suit)"/>
+  </g>
+
+  <!-- one raked diagonal seam across the torso, corner to corner -->
+  <path d="M139 270 L261 216 L264 234 L141 288 Z"
+        fill="url(#midage-female-costume-speedster__band)"/>
+  <!-- high closed neck band -->
+  <path d="M178 160 H222 L224 180 Q200 190 176 180 Z"
+        fill="url(#midage-female-costume-speedster__band)"/>
+  <!-- armhole binding -->
+  <path d="M233 178 Q247 210 260 240" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 178 Q153 210 140 240" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- ankle cuffs -->
+  <path d="M162 524 Q181 532 200 524 L200 542 Q181 550 162 542 Z"
+        fill="url(#midage-female-costume-speedster__band)"/>
+  <path d="M200 524 Q219 532 238 524 L238 542 Q219 550 200 542 Z"
+        fill="url(#midage-female-costume-speedster__band)"/>
+  <!-- vane ribs -->
+  <g stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M160 498 L116 420"/>
+    <path d="M161 470 L132 430"/>
+    <path d="M240 498 L284 420"/>
+    <path d="M239 470 L268 430"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M162 194 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

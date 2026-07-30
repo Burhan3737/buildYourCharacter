@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Gorgon" data-family="gorgon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       sets the dress neckline at y 150 and its neck bind at y 152, which breach this bundle, so
+       the whole column was redrawn from y 162, the drawn torso line of this body. -->
+  <!-- Axes: hem (four thick serpent coils springing from the hem and resting splayed on the
+       ground line, the only hem of its kind in the slot) and shoulder (a sleeveless close
+       column with a high plain neckline). -->
+  <!-- No snakes on the head: that is a separate headwear family, not this file, and anything
+       head mounted here would erase the character's face. -->
+  <!-- Recomputed on this body: the coils reach x 98 and x 302 against a hem at x 148 and
+       x 252, so each outer coil breaks the outline by 50 units, over the 40 unit tray floor.
+       Authored on this body because there are no aisles: a family drawn on one body type and
+       not the other is silently cleared by remapSlots on a body switch. -->
+  <defs>
+    <linearGradient id="midage-male-costume-gorgon__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8CA3B8)"/>
+      <stop offset="1" stop-color="var(--c1, #6C8296)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-gorgon__coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A8BC85)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9463)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-gorgon__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9EB37C)"/>
+      <stop offset="1" stop-color="var(--c2, #758A5B)"/>
+    </linearGradient>
+    <pattern id="midage-male-costume-gorgon__scale" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="14">
+      <path d="M0 7 Q4 0 8 7 Q4 14 0 7 Z" fill="var(--c4, #5E7048)" fill-opacity="0.45"/>
+      <path d="M8 7 Q12 0 16 7 Q12 14 8 7 Z" fill="var(--c4, #5E7048)" fill-opacity="0.28"/>
+    </pattern>
+    <clipPath id="midage-male-costume-gorgon__coilclip">
+      <path d="M154 500 Q118 508 98 532 Q86 552 98 562 Q112 570 122 558 Q128 546 144 538 Q160 530 164 514 L162 500 Z"/>
+      <path d="M175 502 Q157 520 147 544 Q141 560 151 566 Q165 570 169 558 Q173 542 185 532 Q195 520 193 502 Z"/>
+      <path d="M225 502 Q243 520 253 544 Q259 560 249 566 Q235 570 231 558 Q227 542 215 532 Q205 520 207 502 Z"/>
+      <path d="M246 500 Q282 508 302 532 Q314 552 302 562 Q288 570 278 558 Q272 546 256 538 Q240 530 236 514 L238 500 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- FOUR thick tapering serpent coils, splayed out along the ground line -->
+  <g class="sp-shadow">
+    <path d="M154 500 Q118 508 98 532 Q86 552 98 562 Q112 570 122 558 Q128 546 144 538 Q160 530 164 514 L162 500 Z"
+          fill="url(#midage-male-costume-gorgon__coil)"/>
+    <path d="M175 502 Q157 520 147 544 Q141 560 151 566 Q165 570 169 558 Q173 542 185 532 Q195 520 193 502 Z"
+          fill="url(#midage-male-costume-gorgon__coil)"/>
+    <path d="M225 502 Q243 520 253 544 Q259 560 249 566 Q235 570 231 558 Q227 542 215 532 Q205 520 207 502 Z"
+          fill="url(#midage-male-costume-gorgon__coil)"/>
+    <path d="M246 500 Q282 508 302 532 Q314 552 302 562 Q288 570 278 558 Q272 546 256 538 Q240 530 236 514 L238 500 Z"
+          fill="url(#midage-male-costume-gorgon__coil)"/>
+  </g>
+  <g clip-path="url(#midage-male-costume-gorgon__coilclip)">
+    <rect x="84" y="498" width="232" height="76" fill="url(#midage-male-costume-gorgon__scale)"/>
+  </g>
+  <g fill="var(--c3, #E9E3D2)">
+    <circle cx="108" cy="558" r="4"/>
+    <circle cx="157" cy="562" r="4"/>
+    <circle cx="243" cy="562" r="4"/>
+    <circle cx="292" cy="558" r="4"/>
+  </g>
+
+  <!-- sleeveless close column dress, high plain neckline -->
+  <g class="sp-shadow">
+    <path d="M170 162 H230 Q250 172 252 204 L254 274 L256 354 Q258 432 254 496 Q200 508 146 496
+             Q142 432 144 354 L146 274 L148 204 Q150 172 170 162 Z"
+          fill="url(#midage-male-costume-gorgon__dress)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M172 214 q-2 132 0 260"/>
+    <path d="M228 214 q2 132 0 260"/>
+  </g>
+  <path d="M174 164 H226" stroke="var(--c3, #E9E3D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide belt of interlaced snakes -->
+  <rect x="140" y="304" width="120" height="24" rx="10" fill="url(#midage-male-costume-gorgon__belt)"/>
+  <g stroke="var(--c3, #E9E3D2)" stroke-width="4" fill="none" stroke-opacity="0.85" stroke-linecap="round">
+    <path d="M144 316 q14 -10 29 0 q15 10 29 0 q14 -10 29 0 q15 10 29 0"/>
+    <path d="M144 316 q14 10 29 0 q15 -10 29 0 q14 10 29 0 q15 -10 29 0"/>
+  </g>
+  <g fill="var(--c3, #E9E3D2)">
+    <circle cx="144" cy="316" r="4.5"/>
+    <circle cx="256" cy="316" r="4.5"/>
+  </g>
+
+  <!-- narrow serpent trim following the hem -->
+  <path d="M148 494 q52 12 104 0" stroke="url(#midage-male-costume-gorgon__belt)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M166 204 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

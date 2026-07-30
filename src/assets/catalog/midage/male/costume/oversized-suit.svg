@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       tops its shoulder pads and its jacket at y 150 and its shirt at y 154, all of which
+       breach this bundle, so the pads, the jacket and the shirt were redrawn from y 162. -->
+  <!-- Axes: closure (open front, one enormous button at the waist) and volume (wide sagging and
+       boxy, with trouser hems puddling in folds at the ground line). -->
+  <!-- The shoulder pads exaggerate OUTWARD, never up. Recomputed on this body, whose shoulder
+       curve runs x 128 to x 272: the pads reach x 94 and x 306, so each projects 34 units
+       outboard, and their top edge is y 162, which is 2 units below the ceiling. No cane and no
+       prop: there is no prop anchor in this project. -->
+  <defs>
+    <linearGradient id="midage-male-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C7E5E)"/>
+      <stop offset="1" stop-color="var(--c1, #7E6547)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-oversized-suit__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A6886A)"/>
+      <stop offset="1" stop-color="var(--c1, #856C4E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-oversized-suit__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A9869F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFEADC)"/>
+      <stop offset="1" stop-color="var(--c3, #D5CFBE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shoes, sitting deep inside the puddled hems -->
+  <g class="sp-shadow">
+    <path d="M158 554 H196 V566 Q196 570 191 570 H154 Q148 570 148 565 Q149 558 158 554 Z"
+          fill="var(--c4, #3F362C)"/>
+    <path d="M242 554 H204 V566 Q204 570 209 570 H246 Q252 570 252 565 Q251 558 242 554 Z"
+          fill="var(--c4, #3F362C)"/>
+  </g>
+
+  <!-- trousers, hems puddling into soft folds at the ground line -->
+  <g class="sp-shadow">
+    <path d="M154 352 H198 Q200 468 198 524 Q204 548 194 566 Q166 570 144 564 Q138 552 146 530
+             Q150 448 154 352 Z" fill="url(#midage-male-costume-oversized-suit__lapel)"/>
+    <path d="M246 352 H202 Q200 468 202 524 Q196 548 206 566 Q234 570 256 564 Q262 552 254 530
+             Q250 448 246 352 Z" fill="url(#midage-male-costume-oversized-suit__lapel)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M146 546 q22 8 44 2"/>
+    <path d="M148 558 q20 8 42 2"/>
+    <path d="M254 546 q-22 8 -44 2"/>
+    <path d="M252 558 q-20 8 -42 2"/>
+  </g>
+
+  <!-- shirt showing in the open front -->
+  <rect x="174" y="166" width="52" height="200" rx="10" fill="url(#midage-male-costume-oversized-suit__shirt)"/>
+  <path d="M200 180 v170" stroke="var(--c1, #7E6547)" stroke-width="2.5"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder pads: projecting OUTWARD to x 94 and x 306, never upward -->
+  <g class="sp-shadow">
+    <path d="M94 186 Q94 162 118 162 H148 Q154 182 152 202 Q124 204 100 200 Q94 194 94 186 Z"
+          fill="url(#midage-male-costume-oversized-suit__pad)"/>
+    <path d="M306 186 Q306 162 282 162 H252 Q246 182 248 202 Q276 204 300 200 Q306 194 306 186 Z"
+          fill="url(#midage-male-costume-oversized-suit__pad)"/>
+  </g>
+
+  <!-- sleeves swallowing the hands: wide open mouths at y 384, no hand visible -->
+  <g class="sp-shadow">
+    <path d="M100 200 H152 Q156 264 154 324 L152 368 Q150 384 126 384 Q98 384 96 368 L96 324
+             Q94 264 100 200 Z" fill="url(#midage-male-costume-oversized-suit__jacket)"/>
+    <path d="M300 200 H248 Q244 264 246 324 L248 368 Q250 384 274 384 Q302 384 304 368 L304 324
+             Q306 264 300 200 Z" fill="url(#midage-male-costume-oversized-suit__jacket)"/>
+  </g>
+  <path d="M100 368 q26 10 52 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M300 368 q-26 10 -52 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- the jacket body: open fronted, hem at mid calf -->
+  <g class="sp-shadow">
+    <path d="M114 164 H286 Q292 190 290 224 L288 512 H222 L220 220 Q200 204 180 220 L178 512
+             H112 L110 224 Q108 190 114 164 Z" fill="url(#midage-male-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- wide lapels -->
+  <g fill="url(#midage-male-costume-oversized-suit__lapel)">
+    <path d="M118 170 L180 220 L172 288 L138 248 Q122 208 118 170 Z"/>
+    <path d="M282 170 L220 220 L228 288 L262 248 Q278 208 282 170 Z"/>
+  </g>
+
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="314" r="17" fill="var(--c4, #3F362C)"/>
+  <circle cx="200" cy="314" r="9" fill="#FFFFFF" fill-opacity="0.22"/>
+  <g fill="var(--c3, #D5CFBE)">
+    <circle cx="195" cy="310" r="2.4"/>
+    <circle cx="205" cy="310" r="2.4"/>
+    <circle cx="195" cy="319" r="2.4"/>
+    <circle cx="205" cy="319" r="2.4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M134 214 q66 20 132 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

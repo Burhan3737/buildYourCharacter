@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Seeress Mantle" data-family="seeress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160. The fur collar lies flat across the shoulders with
+       its top edge at y162; nothing rises toward the jaw, and no hood is drawn. -->
+  <!-- NO STAFF. There is no prop or hand anchor in this project, so a staff would not align with
+       the hand on any bundle. The open mantle front resolves as the underdress drawn in this same
+       file through c2, never as a hole and never as a hard-coded shell colour. -->
+  <!-- axes vs the slot: a full-length open-fronted mantle closed by a single chest strap, so the
+       outline is two hanging panels either side of a centre column (closure) + tall laced boots
+       finishing in heavy round knobs below a mid-calf underdress hem (hem).
+       Measured on THIS body: the knee is y461, the boots begin at y456 and the underdress hem is
+       y500, so the boot shaft reads for 44 units above the hem line. -->
+  <defs>
+    <linearGradient id="midage-female-costume-seeress__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7181C9)"/>
+      <stop offset="1" stop-color="var(--c1, #464F8E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-seeress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DDD2B8)"/>
+      <stop offset="1" stop-color="var(--c2, #ADA184)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-seeress__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE7D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B8AB8C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-seeress__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B68AA)"/>
+      <stop offset="1" stop-color="var(--c1, #333A6C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-seeress__charm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #A97C29)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- tall laced boots, ending in heavy round knobs -->
+    <path d="M152 456 Q178 468 204 456 Q210 514 206 570 H154 Q148 514 152 456 Z"
+          fill="url(#midage-female-costume-seeress__boot)"/>
+    <path d="M196 456 Q222 468 248 456 Q252 514 246 570 H194 Q190 514 196 456 Z"
+          fill="url(#midage-female-costume-seeress__boot)"/>
+    <!-- long straight underdress, which is what the open front resolves to -->
+    <path d="M170 160 H230 Q248 166 250 190 L256 272 Q264 396 266 500
+             Q200 518 134 500 Q136 396 144 272 L150 190 Q152 166 170 160 Z"
+          fill="url(#midage-female-costume-seeress__under)"/>
+    <!-- long sleeves under deep fur-turned cuffs -->
+    <path d="M112 184 Q112 160 132 160 H150 Q170 160 170 184 L166 262 L164 314
+             Q138 324 114 314 L113 262 Z"
+          fill="url(#midage-female-costume-seeress__under)"/>
+    <path d="M288 184 Q288 160 268 160 H250 Q230 160 230 184 L234 262 L236 314
+             Q262 324 286 314 L287 262 Z"
+          fill="url(#midage-female-costume-seeress__under)"/>
+    <!-- open-fronted mantle, left panel -->
+    <path d="M186 162 H148 Q122 170 116 206 L104 314 Q94 434 90 552
+             Q118 564 148 554 Q150 434 160 314 L174 208 Z"
+          fill="url(#midage-female-costume-seeress__mantle)"/>
+    <!-- open-fronted mantle, right panel -->
+    <path d="M214 162 H252 Q278 170 284 206 L296 314 Q306 434 310 552
+             Q282 564 252 554 Q250 434 240 314 L226 208 Z"
+          fill="url(#midage-female-costume-seeress__mantle)"/>
+    <!-- deep fur-turned cuffs -->
+    <path d="M104 306 Q134 322 166 306 Q174 336 166 364 Q134 378 104 364 Q96 336 104 306 Z"
+          fill="url(#midage-female-costume-seeress__fur)"/>
+    <path d="M296 306 Q266 322 234 306 Q226 336 234 364 Q266 378 296 364 Q304 336 296 306 Z"
+          fill="url(#midage-female-costume-seeress__fur)"/>
+    <!-- flat fur collar, lying across both shoulders -->
+    <path d="M138 162 H262 Q272 188 260 208 Q242 220 228 206 Q214 220 200 208
+             Q186 220 172 206 Q156 220 140 208 Q128 188 138 162 Z"
+          fill="url(#midage-female-costume-seeress__fur)"/>
+  </g>
+
+  <!-- fur texture, built along the collar and cuff lobes -->
+  <g stroke="var(--c2, #9C8F70)" stroke-opacity="0.5" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M152 172 q-6 16 2 30 M182 170 q-6 18 0 34 M218 170 q6 18 0 34 M248 172 q6 16 -2 30"/>
+    <path d="M116 314 q-6 20 2 40 M142 320 q-4 20 2 38 M258 320 q4 20 -2 38 M284 314 q6 20 -2 40"/>
+  </g>
+  <!-- single strap closing the mantle across the chest -->
+  <path d="M172 214 H228 Q232 228 228 242 H172 Q168 228 172 214 Z"
+        fill="url(#midage-female-costume-seeress__charm)"/>
+  <circle cx="200" cy="228" r="9" fill="var(--c1, #333A6C)"/>
+  <!-- linked charm belt at the waist -->
+  <path d="M146 306 Q200 324 254 306 L255 324 Q200 342 145 324 Z"
+        fill="url(#midage-female-costume-seeress__charm)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="166" cy="334" r="5"/><circle cx="182" cy="340" r="5"/>
+    <circle cx="218" cy="340" r="5"/><circle cx="234" cy="334" r="5"/>
+  </g>
+  <!-- one large pouch hanging from the belt -->
+  <path d="M162 328 H204 Q210 362 204 394 Q183 404 162 394 Q156 362 162 328 Z"
+        fill="url(#midage-female-costume-seeress__mantle)"/>
+  <path d="M160 344 h46" stroke="var(--c3, #E4B15F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- mantle hems weighted by a band of small set stones -->
+  <g fill="url(#midage-female-costume-seeress__charm)">
+    <circle cx="98" cy="540" r="6"/><circle cx="114" cy="546" r="6"/>
+    <circle cx="130" cy="549" r="6"/><circle cx="145" cy="546" r="6"/>
+    <circle cx="302" cy="540" r="6"/><circle cx="286" cy="546" r="6"/>
+    <circle cx="270" cy="549" r="6"/><circle cx="255" cy="546" r="6"/>
+  </g>
+  <path d="M92 530 Q118 544 148 540 M308 530 Q282 544 252 540" stroke="var(--c3, #A97C29)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- boot lacing and the heavy round knobs at the top -->
+  <g stroke="var(--c3, #E4B15F)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M158 486 L198 500 M158 500 L198 486"/>
+    <path d="M158 520 L198 534 M158 534 L198 520"/>
+    <path d="M202 486 L242 500 M202 500 L242 486"/>
+    <path d="M202 520 L242 534 M202 534 L242 520"/>
+  </g>
+  <g fill="url(#midage-female-costume-seeress__charm)">
+    <circle cx="162" cy="466" r="10"/><circle cx="196" cy="466" r="10"/>
+    <circle cx="204" cy="466" r="10"/><circle cx="238" cy="466" r="10"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M174 186 q26 10 52 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

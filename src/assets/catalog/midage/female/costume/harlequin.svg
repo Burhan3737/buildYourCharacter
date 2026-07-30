@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin Suit" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- The identity in the TRAY is the OUTLINE: a skin-close continuous one-piece, one horizontal
+       waist seam, tapered wrists and ankles, small ruff. The diamonds are a 20 unit pattern motif,
+       which is about 2.1 screen pixels at tray size, so they are a bonus visible only on the
+       stage and are never what tells this family from another. -->
+  <!-- axes vs web-runner, the closest pair in this slot: web-runner is one unbroken skin-close
+       lattice from collar to boot. This is broken into three regions by a single horizontal waist
+       seam and a soft neck ruff (closure) and its limbs taper visibly to narrow wrists and ankles
+       rather than running at one width (volume).
+       The neck ruff is drawn LOW and SHALLOW, y162 to y188, 26 units of vertical projection, so a
+       separate ruff necklace layered over it reads as one bigger ruff, not two colliding ones.
+       TRADEMARK: mint, butter and ink. Never default this family to purple with green or purple
+       with orange, which is the clown-villain character. -->
+  <defs>
+    <linearGradient id="midage-female-costume-harlequin__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5FB6A3)"/>
+      <stop offset="1" stop-color="var(--c1, #438F7E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-harlequin__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c3, #2C221C)"/>
+    </linearGradient>
+    <pattern id="midage-female-costume-harlequin__diamonds" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="var(--c2, #F7C873)" fill-opacity="0.9"/>
+    </pattern>
+    <clipPath id="midage-female-costume-harlequin__clip">
+      <path d="M176 160 H224 Q246 168 252 190 Q260 226 258 262 Q260 278 256 292
+               Q200 308 144 292 Q140 278 142 262 Q140 226 148 190 Q154 168 176 160 Z"/>
+      <path d="M144 290 Q200 308 256 290 Q261 324 255 356 Q200 374 145 356 Q139 324 144 290 Z"/>
+      <path d="M153 352 L202 352 L199 456 L192 548 Q178 556 165 548 L160 456 Z"/>
+      <path d="M198 352 L247 352 L242 456 L235 548 Q222 556 208 548 L201 456 Z"/>
+      <path d="M108 184 Q108 160 128 160 H150 Q170 160 170 184 L162 264 L154 348
+               Q133 356 114 348 L111 264 Z"/>
+      <path d="M292 184 Q292 160 272 160 H250 Q230 160 230 184 L238 264 L246 348
+               Q267 356 286 348 L289 264 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- lower region: tapered legs -->
+    <path d="M153 352 L202 352 L199 456 L192 548 Q178 556 165 548 L160 456 Z"
+          fill="url(#midage-female-costume-harlequin__lower)"/>
+    <path d="M198 352 L247 352 L242 456 L235 548 Q222 556 208 548 L201 456 Z"
+          fill="url(#midage-female-costume-harlequin__lower)"/>
+    <!-- tapered sleeves, wide at the shoulder and narrow at the wrist -->
+    <path d="M108 184 Q108 160 128 160 H150 Q170 160 170 184 L162 264 L154 348
+             Q133 356 114 348 L111 264 Z"
+          fill="url(#midage-female-costume-harlequin__upper)"/>
+    <path d="M292 184 Q292 160 272 160 H250 Q230 160 230 184 L238 264 L246 348
+             Q267 356 286 348 L289 264 Z"
+          fill="url(#midage-female-costume-harlequin__upper)"/>
+    <!-- middle region: the hip, between the waist seam and the legs -->
+    <path d="M144 290 Q200 308 256 290 Q261 324 255 356 Q200 374 145 356 Q139 324 144 290 Z"
+          fill="url(#midage-female-costume-harlequin__lower)"/>
+    <!-- upper region: collar to waist seam -->
+    <path d="M176 160 H224 Q246 168 252 190 Q260 226 258 262 Q260 278 256 292
+             Q200 308 144 292 Q140 278 142 262 Q140 226 148 190 Q154 168 176 160 Z"
+          fill="url(#midage-female-costume-harlequin__upper)"/>
+    <!-- diamonds, clipped to the suit -->
+    <g clip-path="url(#midage-female-costume-harlequin__clip)">
+      <rect x="106" y="160" width="188" height="400"
+            fill="url(#midage-female-costume-harlequin__diamonds)" opacity="0.72"/>
+    </g>
+  </g>
+
+  <!-- the single horizontal waist seam that breaks the suit in two -->
+  <path d="M144 286 Q200 304 256 286 L257 302 Q200 320 143 302 Z" fill="var(--c3, #4A3B33)"/>
+  <!-- narrow standing collar -->
+  <path d="M180 160 H220 L222 176 Q200 184 178 176 Z" fill="var(--c3, #2C221C)"/>
+  <!-- small soft gathered ruff at the throat, low and shallow -->
+  <path d="M156 168 Q200 162 244 168 Q250 178 242 186 Q230 192 220 184 Q210 192 200 184
+           Q190 192 180 184 Q170 192 158 186 Q150 178 156 168 Z"
+        fill="url(#midage-female-costume-harlequin__ruff)"/>
+  <!-- tapered wrist and ankle bands -->
+  <path d="M114 332 q19 8 38 0 l1 16 q-20 8 -40 0 Z" fill="var(--c3, #2C221C)"/>
+  <path d="M286 332 q-19 8 -38 0 l-1 16 q20 8 40 0 Z" fill="var(--c3, #2C221C)"/>
+  <path d="M162 528 q16 8 32 0 l-1 16 q-15 8 -32 0 Z" fill="var(--c3, #2C221C)"/>
+  <path d="M206 528 q16 8 32 0 l-1 16 q-16 8 -32 0 Z" fill="var(--c3, #2C221C)"/>
+  <!-- house highlight -->
+  <path d="M168 192 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

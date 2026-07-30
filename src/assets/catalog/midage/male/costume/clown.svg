@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       hangs its ruff and barrel from y 152, which breaches this ceiling by 8 units, so both were
+       redrawn to start at y 162 on this body. There is no whiteface here and there cannot be:
+       the costume layer draws above the face, so a clown is the ballooning romper and the ruff. -->
+  <!-- Axes: volume (a hugely oversized gathered barrel, widest at the hip, the biggest mass in
+       the slot) and shoulder (dropped, with sleeves ballooning to a gathered wrist cuff). -->
+  <!-- Ruff arithmetic recomputed on this body. The neck is drawn x 186 to x 214, and the ruff
+       spans x 110 to x 290, so it projects 186 minus 110 = 76 units past the neck on the left
+       and 290 minus 214 = 76 on the right, both well over the 45 unit floor. It stays only
+       162 to 190, that is 28 units deep, hugging the collarbone rather than standing up. A ruff
+       family also ships in the necklace slot and necklace draws ABOVE costume, so a worn ruff
+       must layer over this one and read as one bigger ruff. -->
+  <!-- Trademark: house mint body with a cream ruff and a coral pom pom. Deliberately clear of
+       the green hair plus purple tailcoat plus orange or green waistcoat plus white face plus
+       red grin register that jester, harlequin, pierrot and mime must all stay clear of. -->
+  <defs>
+    <linearGradient id="midage-male-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ACCBA)"/>
+      <stop offset="1" stop-color="var(--c1, #5FAB9A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-clown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #74C6B4)"/>
+      <stop offset="1" stop-color="var(--c1, #59A494)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-clown__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F1E5)"/>
+      <stop offset="1" stop-color="var(--c2, #DED6C3)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-clown__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #A2825E)"/>
+      <stop offset="1" stop-color="var(--c4, #7E6547)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ballooning legs, gathered hard at the ankle -->
+  <g class="sp-shadow">
+    <path d="M144 344 Q128 412 132 482 Q134 520 150 538 H194 Q198 504 196 466 Q194 400 200 344 Z"
+          fill="url(#midage-male-costume-clown__romper)"/>
+    <path d="M256 344 Q272 412 268 482 Q266 520 250 538 H206 Q202 504 204 466 Q206 400 200 344 Z"
+          fill="url(#midage-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- ballooning sleeves, dropped from the shoulder -->
+  <g class="sp-shadow">
+    <path d="M126 184 Q92 212 86 272 Q82 316 98 346 H138 Q130 312 134 268 Q138 216 148 192 Z"
+          fill="url(#midage-male-costume-clown__sleeve)"/>
+    <path d="M274 184 Q308 212 314 272 Q318 316 302 346 H262 Q270 312 266 268 Q262 216 252 192 Z"
+          fill="url(#midage-male-costume-clown__sleeve)"/>
+  </g>
+
+  <!-- the barrel body: the widest mass in the slot, x 100 to x 300 at the hip -->
+  <g class="sp-shadow">
+    <path d="M152 164 Q110 178 100 236 Q94 296 106 346 Q200 372 294 346 Q306 296 300 236
+             Q290 178 248 164 Z" fill="url(#midage-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- gathered wrist cuffs -->
+  <g fill="url(#midage-male-costume-clown__trim)">
+    <rect x="94" y="330" width="46" height="20" rx="10"/>
+    <rect x="260" y="330" width="46" height="20" rx="10"/>
+  </g>
+  <path d="M100 334 v12 M111 333 v14 M122 333 v14 M133 334 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <path d="M267 334 v12 M278 333 v14 M289 333 v14 M300 334 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <circle cx="117" cy="356" r="16" fill="var(--skin1, #F7D2B0)"/>
+  <circle cx="283" cy="356" r="16" fill="var(--skin1, #F7D2B0)"/>
+
+  <!-- gathered ankle cuffs -->
+  <g fill="url(#midage-male-costume-clown__trim)">
+    <rect x="146" y="526" width="50" height="22" rx="11"/>
+    <rect x="204" y="526" width="50" height="22" rx="11"/>
+  </g>
+
+  <!-- big rounded shoes -->
+  <g class="sp-shadow">
+    <path d="M148 544 H198 V566 Q198 570 192 570 H128 Q116 570 116 558 Q118 546 134 546 Z"
+          fill="url(#midage-male-costume-clown__shoe)"/>
+    <path d="M252 544 H202 V566 Q202 570 208 570 H272 Q284 570 284 558 Q282 546 266 546 Z"
+          fill="url(#midage-male-costume-clown__shoe)"/>
+  </g>
+
+  <!-- deep gathered ruff: wide along the shoulder line, shallow in depth -->
+  <g class="sp-shadow">
+    <path d="M110 162 H290 Q291 176 282 182 Q243 188 200 188 Q157 188 118 182 Q109 176 110 162 Z"
+          fill="url(#midage-male-costume-clown__trim)"/>
+  </g>
+  <g fill="url(#midage-male-costume-clown__trim)">
+    <circle cx="116" cy="180" r="10"/>
+    <circle cx="139" cy="184" r="10"/>
+    <circle cx="162" cy="187" r="10"/>
+    <circle cx="185" cy="189" r="10"/>
+    <circle cx="208" cy="189" r="10"/>
+    <circle cx="231" cy="187" r="10"/>
+    <circle cx="254" cy="184" r="10"/>
+    <circle cx="277" cy="180" r="10"/>
+  </g>
+  <path d="M124 172 q37 12 76 13 q39 -1 76 -13" stroke="var(--c1, #59A494)" stroke-width="2.6"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- three oversized pom pom buttons in a vertical line down the centre front -->
+  <g fill="var(--c3, #F4A79B)">
+    <circle cx="200" cy="224" r="13"/>
+    <circle cx="200" cy="270" r="13"/>
+    <circle cx="200" cy="316" r="13"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <circle cx="196" cy="219" r="4"/>
+    <circle cx="196" cy="265" r="4"/>
+    <circle cx="196" cy="311" r="4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M138 208 q62 22 124 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- TRADEMARK: this is NOT green and purple with a torn hem. Fallback is tanned hide with ink
+       and brass, the trouser hem is a clean turned cuff, and the vest front is plain: no chest
+       graphic, because the lacing is at the sides where it belongs. -->
+  <!-- axes vs the slot: broad flat plate yokes standing square across each shoulder with the
+       whole side of the body open (shoulder/sleeve) + cross-laced side opening from armpit to
+       waist instead of a front closure (closure).
+       Measured on THIS body: each yoke is 64 units across and the open flank between the yoke
+       edge and the vest is where the character's own skin shows. -->
+  <defs>
+    <linearGradient id="midage-female-costume-strongarm__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9784E)"/>
+      <stop offset="1" stop-color="var(--c1, #865D3B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-strongarm__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFC178)"/>
+      <stop offset="1" stop-color="var(--c3, #C08D3B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A30)"/>
+      <stop offset="1" stop-color="var(--c2, #2E231C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-strongarm__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E0AC58)"/>
+      <stop offset="1" stop-color="var(--c3, #BC8735)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- full-length straight trousers -->
+    <path d="M152 348 H202 V524 Q202 542 184 542 H170 Q152 542 152 524 Z"
+          fill="url(#midage-female-costume-strongarm__trouser)"/>
+    <path d="M198 348 H248 V524 Q248 542 230 542 H216 Q198 542 198 524 Z"
+          fill="url(#midage-female-costume-strongarm__trouser)"/>
+    <!-- hip block under the belt -->
+    <path d="M144 306 H256 Q261 334 256 362 H144 Q139 334 144 306 Z"
+          fill="url(#midage-female-costume-strongarm__trouser)"/>
+    <!-- vest front, open down both sides so the flank reads as skin -->
+    <path d="M166 160 H234 Q243 190 241 226 Q239 272 235 316 Q200 330 165 316
+             Q161 272 159 226 Q157 190 166 160 Z"
+          fill="url(#midage-female-costume-strongarm__hide)"/>
+    <!-- broad flat plate yokes, squared across each shoulder -->
+    <path d="M132 168 Q136 160 148 160 H190 Q196 160 196 172 V198 Q162 206 130 196
+             Q125 180 132 168 Z"
+          fill="url(#midage-female-costume-strongarm__yoke)"/>
+    <path d="M268 168 Q264 160 252 160 H210 Q204 160 204 172 V198 Q238 206 270 196
+             Q275 180 268 168 Z"
+          fill="url(#midage-female-costume-strongarm__yoke)"/>
+  </g>
+
+  <!-- yoke plate ridges -->
+  <path d="M138 184 q26 -12 52 -6 M262 184 q-26 -12 -52 -6" stroke="#FFFFFF"
+        stroke-opacity="0.32" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cross lacing, armpit to waist, both sides -->
+  <g stroke="var(--c3, #E0AC58)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M158 212 L142 240 M142 212 L158 240"/>
+    <path d="M159 250 L143 278 M143 250 L159 278"/>
+    <path d="M160 288 L144 312 M144 288 L160 312"/>
+    <path d="M242 212 L258 240 M258 212 L242 240"/>
+    <path d="M241 250 L257 278 M257 250 L241 278"/>
+    <path d="M240 288 L256 312 M256 288 L240 312"/>
+  </g>
+  <!-- wide buckled belt over the vest hem -->
+  <path d="M138 304 H262 Q266 320 262 336 H138 Q134 320 138 304 Z"
+        fill="url(#midage-female-costume-strongarm__belt)"/>
+  <path d="M186 300 H214 Q218 320 214 340 H186 Q182 320 186 300 Z"
+        fill="var(--c2, #2E231C)"/>
+  <path d="M192 312 h16 v16 h-16 Z" fill="url(#midage-female-costume-strongarm__belt)"/>
+  <!-- turned trouser cuffs, in the harness hide -->
+  <path d="M150 508 H204 V530 Q204 540 194 540 H160 Q150 540 150 530 Z"
+        fill="url(#midage-female-costume-strongarm__hide)"/>
+  <path d="M196 508 H250 V530 Q250 540 240 540 H206 Q196 540 196 530 Z"
+        fill="url(#midage-female-costume-strongarm__hide)"/>
+  <!-- vest hem stitch -->
+  <path d="M168 310 q32 10 64 0" stroke="var(--c2, #2E231C)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M172 180 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

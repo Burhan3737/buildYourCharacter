@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, ears at (148,106)
+       and (252,106), eye line y110.
+       axes vs the slot: CROWN - a horseshoe. The whole top of the head is bare scalp and the
+       hair survives only as two dense arms round the temples joined by a band across the nape,
+       with the hairline pulled back into two clear temple bays.
+       VOLUME of the outline - a ring rather than a cap: nothing at all on the centre line above
+       y 74, and the widest point of the silhouette sits down at the ear line rather than over
+       the crown.
+       Midage handling: the arms are carried a touch heavier and lower than the adult draft, so
+       the horseshoe reads as kept hair rather than as loss. hair2 draws the receded front edge
+       of each arm, the shaded underside and the nape band. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-crown-thinning__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #837768)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E4238)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the back of the horseshoe: a band across the nape joining the two arms -->
+      <path d="M148 104 C145 124 153 142 168 151 C184 160 216 160 232 151 C247 142 255 124 252 104
+               C245 127 228 138 200 138 C172 138 155 127 148 104 Z"
+            fill="url(#midage-female-hair-crown-thinning__back-g)"/>
+    </g>
+    <path d="M158 122 C173 135 227 135 242 122 C236 146 164 146 158 122 Z"
+          fill="var(--hair2, #4E4238)"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-crown-thinning__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #837768)"/>
+        <stop offset="1" stop-color="var(--hair2, #4E4238)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the two arms: the high inner corner of each one is the temple bay -->
+      <path d="M168 58 C152 68 141 88 139 110 C137 132 147 150 163 158 C176 165 187 157 181 146
+               C166 137 156 121 156 103 C156 85 162 70 174 60 Z"
+            fill="url(#midage-female-hair-crown-thinning__front-g)"/>
+      <path d="M232 58 C248 68 259 88 261 110 C263 132 253 150 237 158 C224 165 213 157 219 146
+               C234 137 244 121 244 103 C244 85 238 70 226 60 Z"
+            fill="url(#midage-female-hair-crown-thinning__front-g)"/>
+    </g>
+    <!-- the receded front edge of each arm: this line IS the temple bay -->
+    <path d="M172 62 C161 73 155 88 155 105 C151 88 158 71 167 60 Z"
+          fill="var(--hair2, #4E4238)"/>
+    <path d="M228 62 C239 73 245 88 245 105 C249 88 242 71 233 60 Z"
+          fill="var(--hair2, #4E4238)"/>
+    <path d="M157 128 C163 141 170 150 179 155 C166 158 155 146 153 130 Z"
+          fill="var(--hair2, #4E4238)"/>
+    <path d="M243 128 C237 141 230 150 221 155 C234 158 245 146 247 130 Z"
+          fill="var(--hair2, #4E4238)"/>
+    <!-- the two temple bays: bare scalp cut back behind each arm -->
+    <path d="M172 60 C183 51 196 47 205 47 C188 51 177 60 170 74 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <path d="M228 60 C217 51 204 47 195 47 C212 51 223 60 230 74 Z"
+          fill="var(--skin2, #E7B892)"/>
+    <path d="M148 78 C143 96 143 118 149 138" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M252 78 C257 96 257 118 251 138" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

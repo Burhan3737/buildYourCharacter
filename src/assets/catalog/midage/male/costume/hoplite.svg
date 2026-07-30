@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its cuirass and both shoulder flaps at y 150, which breaches this bundle, so all
+       three were redrawn from y 162, the drawn torso line of this body. -->
+  <!-- The hoplite is NOT the helmet. There is no helmet in this file, ever, and no companion
+       helmet drawn here would be legal: costume draws above the face. The identity is pushed
+       down into the body, into the moulded cuirass and the strip skirt. -->
+  <!-- Axes: hem (a skirt of nine separate overlapping strips with genuine visible gaps) and
+       volume (a moulded cuirass narrowing sharply at the waist). -->
+  <!-- Strip arithmetic recomputed on this body, whose hips are drawn x 140 to x 260. Nine
+       strips are laid on a 19 unit pitch from x 115, each 15 units wide, so the gap between
+       neighbours is 19 minus 15 = 4 units and the run ends at 115 plus 8 times 19 plus 15
+       = 282. The skirt is 58 units deep, from y 330 to y 388.
+       Midage read: the same garment, with the pectoral modelling one line quieter. -->
+  <defs>
+    <linearGradient id="midage-male-costume-hoplite__cuirass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C68B4A)"/>
+      <stop offset="1" stop-color="var(--c1, #A26B33)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-hoplite__strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9B7A56)"/>
+      <stop offset="1" stop-color="var(--c2, #7A5D3F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-hoplite__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EAE4D2)"/>
+      <stop offset="1" stop-color="var(--c3, #CFC7B0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-hoplite__greave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9455)"/>
+      <stop offset="1" stop-color="var(--c1, #A77037)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short under tunic beneath the cuirass -->
+  <g class="sp-shadow">
+    <path d="M140 302 H260 Q264 326 262 348 H138 Q136 326 140 302 Z"
+          fill="url(#midage-male-costume-hoplite__tunic)"/>
+  </g>
+
+  <!-- NINE separate overlapping strips with genuine gaps between them -->
+  <g class="sp-shadow">
+    <path d="M115 330 H130 Q132 360 130 388 H115 Q113 360 115 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M134 330 H149 Q151 360 149 388 H134 Q132 360 134 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M153 330 H168 Q170 360 168 388 H153 Q151 360 153 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M172 330 H187 Q189 360 187 388 H172 Q170 360 172 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M191 330 H206 Q208 360 206 388 H191 Q189 360 191 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M210 330 H225 Q227 360 225 388 H210 Q208 360 210 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M229 330 H244 Q246 360 244 388 H229 Q227 360 229 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M248 330 H263 Q265 360 263 388 H248 Q246 360 248 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+    <path d="M267 330 H282 Q284 360 282 388 H267 Q265 360 267 330 Z" fill="url(#midage-male-costume-hoplite__strip)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M117 378 h11 M136 378 h11 M155 378 h11 M174 378 h11 M193 378 h11
+             M212 378 h11 M231 378 h11 M250 378 h11 M269 378 h11"/>
+  </g>
+
+  <!-- sleeveless moulded cuirass, narrowing sharply to the waist -->
+  <g class="sp-shadow">
+    <path d="M130 162 H270 Q274 192 272 220 L264 284 Q258 308 254 318 H146 Q142 308 136 284
+             L128 220 Q126 192 130 162 Z" fill="url(#midage-male-costume-hoplite__cuirass)"/>
+  </g>
+  <!-- moulded pectoral and abdominal modelling, no emblem -->
+  <g fill="none" stroke="var(--c2, #7A5D3F)" stroke-width="4" stroke-opacity="0.5" stroke-linecap="round">
+    <path d="M156 224 q22 18 44 0 q22 18 44 0"/>
+    <path d="M166 256 q34 12 68 0"/>
+    <path d="M200 230 v76"/>
+  </g>
+
+  <!-- two stiff shoulder flaps folded forward from the back, laced down to the chest -->
+  <g class="sp-shadow">
+    <path d="M132 162 H184 Q186 190 182 212 Q158 214 134 210 Q128 188 132 162 Z"
+          fill="url(#midage-male-costume-hoplite__cuirass)"/>
+    <path d="M268 162 H216 Q214 190 218 212 Q242 214 266 210 Q272 188 268 162 Z"
+          fill="url(#midage-male-costume-hoplite__cuirass)"/>
+  </g>
+  <g stroke="var(--c3, #CFC7B0)" stroke-width="4.5" fill="none" stroke-linecap="round">
+    <path d="M148 212 q4 16 2 30"/>
+    <path d="M170 214 q4 16 2 30"/>
+    <path d="M252 212 q-4 16 -2 30"/>
+    <path d="M230 214 q-4 16 -2 30"/>
+  </g>
+  <g fill="var(--c3, #EAE4D2)">
+    <circle cx="150" cy="244" r="5"/>
+    <circle cx="172" cy="246" r="5"/>
+    <circle cx="250" cy="244" r="5"/>
+    <circle cx="228" cy="246" r="5"/>
+  </g>
+
+  <!-- hard greave plates down each shin -->
+  <g class="sp-shadow">
+    <path d="M154 460 H198 Q200 502 198 530 Q196 544 178 544 Q160 544 158 530 Q152 502 154 460 Z"
+          fill="url(#midage-male-costume-hoplite__greave)"/>
+    <path d="M246 460 H202 Q200 502 202 530 Q204 544 222 544 Q240 544 242 530 Q248 502 246 460 Z"
+          fill="url(#midage-male-costume-hoplite__greave)"/>
+  </g>
+  <path d="M178 472 v62 M222 472 v62" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- integral sandals -->
+  <g class="sp-shadow">
+    <path d="M156 548 H200 V562 Q200 570 192 570 H150 Q142 570 142 562 Q144 556 156 548 Z"
+          fill="var(--c4, #6E5C46)"/>
+    <path d="M244 548 H200 V562 Q200 570 208 570 H250 Q258 570 258 562 Q256 556 244 548 Z"
+          fill="var(--c4, #6E5C46)"/>
+  </g>
+  <g stroke="var(--c4, #6E5C46)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M160 544 q16 6 34 0"/>
+    <path d="M240 544 q-16 6 -34 0"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 198 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

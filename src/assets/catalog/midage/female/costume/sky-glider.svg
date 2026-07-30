@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sky Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- TRADEMARK: the membrane is plain cloth with drawn rib seams. NO mechanical parts, NO
+       feathers, no metal wings, no chest mark. -->
+  <!-- axes vs the slot: the whole standing figure resolves into one wide triangle from shoulder
+       to ankle (volume) + cloth membranes spanning wrist to hip and knee to knee so there is no
+       free arm or leg outline at all (shoulder/sleeve).
+       Measured on THIS body: the shoulder edge is 96 units across at y160 and the membrane hem
+       is 200 units across at y548, so the outline opens by 52 units on each side. -->
+  <defs>
+    <linearGradient id="midage-female-costume-sky-glider__membrane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D98A7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-sky-glider__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EF9D90)"/>
+      <stop offset="1" stop-color="var(--c1, #CE7F71)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-sky-glider__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c3, #2C221C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the membrane: one continuous triangle, shoulder to ankle, reaching x98 and x302 -->
+    <path d="M152 160 H248 Q286 224 296 312 Q306 424 302 514 Q300 540 288 548
+             L112 548 Q100 540 98 514 Q94 424 104 312 Q114 224 152 160 Z"
+          fill="url(#midage-female-costume-sky-glider__membrane)"/>
+    <!-- fitted legs inside the membrane -->
+    <path d="M164 356 Q182 366 202 356 L200 456 L197 546 Q181 554 165 546 L164 456 Z"
+          fill="url(#midage-female-costume-sky-glider__limb)"/>
+    <path d="M198 356 Q218 366 236 356 L235 456 L233 546 Q217 554 201 546 L200 456 Z"
+          fill="url(#midage-female-costume-sky-glider__limb)"/>
+    <!-- hip block -->
+    <path d="M146 308 Q200 322 254 308 Q258 334 253 358 Q200 372 147 358 Q142 334 146 308 Z"
+          fill="url(#midage-female-costume-sky-glider__suit)"/>
+    <!-- fitted torso -->
+    <path d="M174 160 H226 Q250 164 254 190 Q262 228 260 266 Q258 302 252 328
+             Q200 346 148 328 Q142 302 140 266 Q138 228 146 190 Q150 164 174 160 Z"
+          fill="url(#midage-female-costume-sky-glider__suit)"/>
+    <!-- fitted sleeves -->
+    <path d="M112 182 Q112 160 130 160 H146 Q162 160 162 182 L158 264 L156 348
+             Q135 358 112 348 L111 264 Z"
+          fill="url(#midage-female-costume-sky-glider__limb)"/>
+    <path d="M288 182 Q288 160 270 160 H254 Q238 160 238 182 L242 264 L244 348
+             Q265 358 288 348 L289 264 Z"
+          fill="url(#midage-female-costume-sky-glider__limb)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane -->
+  <g stroke="var(--c3, #4A3B33)" stroke-opacity="0.55" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M158 188 Q124 292 110 412"/>
+    <path d="M156 190 Q118 332 104 462"/>
+    <path d="M154 194 Q114 372 102 508"/>
+    <path d="M152 200 Q112 412 106 538"/>
+    <path d="M242 188 Q276 292 290 412"/>
+    <path d="M244 190 Q282 332 296 462"/>
+    <path d="M246 194 Q286 372 298 508"/>
+    <path d="M248 200 Q288 412 294 538"/>
+    <path d="M200 376 L200 542"/>
+    <path d="M182 384 Q176 466 174 540"/>
+    <path d="M218 384 Q224 466 226 540"/>
+  </g>
+  <!-- membrane edge band -->
+  <path d="M110 548 H290" stroke="var(--c3, #4A3B33)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- wrist cuffs, where the membrane meets the arm -->
+  <path d="M112 324 Q134 334 157 324 L158 346 Q134 356 111 346 Z"
+        fill="url(#midage-female-costume-sky-glider__cuff)"/>
+  <path d="M288 324 Q266 334 243 324 L242 346 Q266 356 289 346 Z"
+        fill="url(#midage-female-costume-sky-glider__cuff)"/>
+  <!-- closed neck band -->
+  <path d="M176 160 H224 L226 178 Q200 188 174 178 Z"
+        fill="url(#midage-female-costume-sky-glider__cuff)"/>
+  <!-- house highlight -->
+  <path d="M166 194 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

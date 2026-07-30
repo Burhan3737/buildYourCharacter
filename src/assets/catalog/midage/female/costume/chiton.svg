@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- Refit to the midage/female drawn body: torso top y162, shoulder corners y188, arms
+       y176 to y356 with the elbow near y266, ground y570. The adult reference pins sit at
+       y157 with r6, whose topmost point is y151 and would breach this ceiling, so the pin
+       row here is set at cy 172 to cy 178, topmost geometry y166. -->
+  <!-- axes vs peplos and winged-messenger: the fastening IS the axis in this group. The chiton is
+       pinned by a ROW of six small pins along the top of BOTH arms, so the cloth falls in a
+       scalloped pseudo-sleeve to the elbow (shoulder/sleeve) + it is belted twice, under the bust
+       and at the waist, with a bloused fold spilling over the upper belt (volume). -->
+  <defs>
+    <linearGradient id="midage-female-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c1, #D9CFB8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE7D6)"/>
+      <stop offset="1" stop-color="var(--c1, #D2C7AE)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chiton__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE4D0)"/>
+      <stop offset="1" stop-color="var(--c1, #CBBFA5)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-chiton__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle-length draped tube -->
+    <path d="M154 160 H246 Q258 212 260 272 Q264 374 270 462 Q274 514 276 548
+             Q200 568 124 548 Q126 514 130 462 Q136 374 140 272 Q142 212 154 160 Z"
+          fill="url(#midage-female-costume-chiton__cloth)"/>
+    <!-- pseudo-sleeves: pinned cloth falling to the elbow in scallops -->
+    <path d="M104 160 H168 V228 q-9 28 -19 28 q-10 0 -12 -22 q-8 26 -18 26
+             q-10 0 -12 -22 q-1 -6 -1 -10 Z"
+          fill="url(#midage-female-costume-chiton__sleeve)"/>
+    <path d="M296 160 H232 V228 q9 28 19 28 q10 0 12 -22 q8 26 18 26
+             q10 0 12 -22 q1 -6 1 -10 Z"
+          fill="url(#midage-female-costume-chiton__sleeve)"/>
+    <!-- upper belt, under the bust, drawn before the fold that spills over it -->
+    <path d="M146 216 Q200 232 254 216 L255 236 Q200 252 145 236 Z"
+          fill="url(#midage-female-costume-chiton__belt)"/>
+    <!-- bloused fold spilling over the upper belt -->
+    <path d="M144 224 Q200 242 256 224 q2 28 -4 48 q-12 8 -20 -6 q-10 18 -22 10
+             q-8 14 -18 4 q-10 14 -20 2 q-12 10 -20 -4 q-6 -20 -4 -54 Z"
+          fill="url(#midage-female-costume-chiton__blouse)"/>
+  </g>
+
+  <!-- the row of six small round pins along the top of each arm -->
+  <g fill="var(--c3, #D9A24E)">
+    <circle cx="112" cy="178" r="6"/><circle cx="124" cy="176" r="6"/>
+    <circle cx="136" cy="175" r="6"/><circle cx="148" cy="174" r="6"/>
+    <circle cx="160" cy="173" r="6"/><circle cx="172" cy="172" r="6"/>
+    <circle cx="288" cy="178" r="6"/><circle cx="276" cy="176" r="6"/>
+    <circle cx="264" cy="175" r="6"/><circle cx="252" cy="174" r="6"/>
+    <circle cx="240" cy="173" r="6"/><circle cx="228" cy="172" r="6"/>
+  </g>
+  <!-- lower belt, at the natural waist -->
+  <path d="M140 288 Q200 306 260 288 L261 308 Q200 326 139 308 Z"
+        fill="url(#midage-female-costume-chiton__belt)"/>
+  <path d="M190 286 H210 Q214 308 210 328 H190 Q186 308 190 286 Z" fill="var(--c3, #D9A24E)"/>
+  <!-- drape folds down the skirt -->
+  <g stroke="var(--c2, #5F6FB8)" stroke-opacity="0.28" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M162 326 Q156 424 150 532"/>
+    <path d="M186 328 Q184 426 182 540"/>
+    <path d="M214 328 Q216 426 218 540"/>
+    <path d="M238 326 Q244 424 250 532"/>
+  </g>
+  <!-- hem border band -->
+  <path d="M128 532 Q200 552 272 532" stroke="var(--c3, #D9A24E)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- sleeve scallop shading -->
+  <path d="M110 234 q24 16 54 -6 M290 234 q-24 16 -54 -6" stroke="var(--c2, #5F6FB8)"
+        stroke-opacity="0.25" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M164 190 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

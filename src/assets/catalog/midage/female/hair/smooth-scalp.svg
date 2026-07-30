@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, ears at (148,106)
+       and (252,106).
+       axes vs the slot: CROWN - bare. There is no cap, no dome and no mass of any kind; the
+       skull and both ears are fully exposed and the only drawn forms are a soft shadow where
+       the nape would sit and a faint trace at each temple where the hairline used to run.
+       VOLUME of the outline - none. Nothing in this file rises above the skull or clears its
+       edge, which is exactly what separates it from the shortest crop in the slot, whose cap
+       stands 2u proud of the head at y 40.
+       It is a haircut and it is also what alopecia areata looks like. Drawn plainly. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-smooth-scalp__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #756256)"/>
+        <stop offset="1" stop-color="var(--hair2, #40332B)"/>
+      </linearGradient>
+    </defs>
+    <!-- a soft shadow sitting where the nape would be, not a skull cap -->
+    <g class="sp-shadow">
+      <path d="M158 130 C154 147 163 161 180 167 C193 172 207 172 220 167 C237 161 246 147 242 130
+               C233 145 217 153 200 153 C183 153 167 145 158 130 Z"
+            fill="url(#midage-female-hair-smooth-scalp__back-g)" fill-opacity="0.72"/>
+    </g>
+    <path d="M168 142 C181 153 219 153 232 142 C226 161 174 161 168 142 Z"
+          fill="var(--hair2, #40332B)" fill-opacity="0.5"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-smooth-scalp__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair2, #40332B)" stop-opacity="0.55"/>
+        <stop offset="1" stop-color="var(--hair2, #40332B)" stop-opacity="0.05"/>
+      </linearGradient>
+    </defs>
+    <!-- the faint trace of a hairline at each temple, and nothing else -->
+    <g class="sp-shadow">
+      <path d="M147 73 C142 83 140 95 142 106 C146 96 150 84 158 77 Z"
+            fill="url(#midage-female-hair-smooth-scalp__front-g)"/>
+      <path d="M253 73 C258 83 260 95 258 106 C254 96 250 84 242 77 Z"
+            fill="url(#midage-female-hair-smooth-scalp__front-g)"/>
+    </g>
+    <!-- where the hairline would have run, read as a whisper rather than an edge -->
+    <path d="M151 88 C168 69 232 69 249 88" stroke="var(--hair2, #40332B)"
+          stroke-opacity="0.28" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M163 98 C178 86 222 86 237 98" stroke="var(--hair1, #756256)"
+          stroke-opacity="0.16" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- the bare crown catching the light -->
+    <path d="M165 57 C184 42 216 42 235 57" stroke="#FFFFFF" stroke-opacity="0.32"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M176 71 C188 63 212 63 224 71" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

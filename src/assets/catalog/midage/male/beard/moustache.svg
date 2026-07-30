@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Moustache" data-family="moustache"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: mouth band x170-230 y118-148, chin (200,162), ear
+       anchors (148,106)/(252,106). Cheek line fractions here: low y127, natural y118,
+       joined y106.
+       Axes chosen: UPPER LIP = trimmed bar. One clipped block on the lip, 60 units
+       wide by 20 tall, its ends landing on the mouth corners at x170 and x230 and so
+       far outside any nose width. CHIN AND JAW = bare, and there is no cheek line at
+       all. Reads against handlebar on the extents of the ends and against walrus on
+       depth. The bar is wide and low on purpose: a narrow tall bar is the banned
+       toothbrush shape and this is the family that could drift into it. -->
+  <defs>
+    <linearGradient id="midage-male-beard-moustache__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.58" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bar: full width, the two outer ends squared off and dropped to the corners -->
+  <g class="sp-shadow">
+    <path d="M170 111 C168 104 175 100 184 101
+             C191 102 196 104 200 104
+             C204 104 209 102 216 101
+             C225 100 232 104 230 111
+             C229 119 224 124 216 122
+             C209 120 204 117 200 117
+             C196 117 191 120 184 122
+             C176 124 171 119 170 111 Z"
+          fill="url(#midage-male-beard-moustache__grad)"/>
+  </g>
+
+  <!-- philtrum notch, cut into the bar through hair2 -->
+  <path d="M196 101 C197 105 203 105 204 101
+           C206 108 204 114 200 114 C196 114 194 108 196 101 Z"
+        fill="var(--hair2, #331E16)"/>
+
+  <!-- the trimmed underside and the comb-out at each end -->
+  <path d="M175 118 C186 123 214 123 225 118" stroke="var(--hair2, #331E16)"
+        stroke-width="3.2" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M178 108 C173 111 171 115 172 119" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M222 108 C227 111 229 115 228 119" stroke="var(--hair2, #331E16)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M188 110 C192 113 208 113 212 110" stroke="var(--hair2, #331E16)"
+        stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- lit top edge -->
+  <path d="M178 105 C189 102 211 102 222 105" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160.
+       The adult/male reference starts at y 150 and its pin row sits at y 158, both of which
+       breach this ceiling, so the shoulder line and the whole pin row were moved down onto this
+       body: torso top y 162, shoulder curve x 128 to x 272 at y 200, arms from y 168.
+
+       silhouette axes: shoulder=a row of six small round pins along the top of each arm, so the
+       cloth falls in a scalloped pseudo sleeve to the elbow, and closure=belted TWICE with a
+       bloused fold spilling over the upper belt.
+       In this Greek group the fastening point IS the axis: chiton has a row of six pins per
+       arm, peplos has one large pin per shoulder, winged-messenger has one pin on one shoulder
+       only. Do not blur that distinction.
+       Midage read: a deeper blouse over the upper belt and an ankle hem two units longer. -->
+  <defs>
+    <linearGradient id="midage-male-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the draped tube, ankle length, and the two scalloped pseudo sleeves hanging to the elbow -->
+  <g class="sp-shadow">
+    <path d="M152 162 H248 Q258 204 256 254 L260 352 Q266 456 264 546 Q200 558 136 546
+             Q134 456 140 352 L144 254 Q142 204 152 162 Z"
+          fill="url(#midage-male-costume-chiton__cloth)"/>
+    <path d="M148 168 H96 Q90 214 92 250 Q100 264 108 252 Q116 264 124 252 Q132 264 140 252
+             Q146 260 148 246 Q144 206 148 168 Z"
+          fill="url(#midage-male-costume-chiton__sleeve)"/>
+    <path d="M252 168 H304 Q310 214 308 250 Q300 264 292 252 Q284 264 276 252 Q268 264 260 252
+             Q254 260 252 246 Q256 206 252 168 Z"
+          fill="url(#midage-male-costume-chiton__sleeve)"/>
+  </g>
+
+  <!-- the row of six small round pins along the top of each arm -->
+  <g fill="var(--c3, #C4A46A)">
+    <circle cx="172" cy="166" r="6"/><circle cx="158" cy="167" r="6"/>
+    <circle cx="144" cy="169" r="6"/><circle cx="130" cy="171" r="6"/>
+    <circle cx="116" cy="173" r="6"/><circle cx="102" cy="175" r="6"/>
+    <circle cx="228" cy="166" r="6"/><circle cx="242" cy="167" r="6"/>
+    <circle cx="256" cy="169" r="6"/><circle cx="270" cy="171" r="6"/>
+    <circle cx="284" cy="173" r="6"/><circle cx="298" cy="175" r="6"/>
+  </g>
+
+  <!-- upper belt with the bloused fold spilling over it -->
+  <path d="M142 246 Q200 260 258 246 Q260 264 256 280 Q200 292 144 280 Q140 264 142 246 Z"
+        fill="var(--c2, #C3B99F)"/>
+  <path d="M140 250 H260" stroke="var(--c3, #C4A46A)" stroke-width="8" stroke-linecap="round"
+        fill="none"/>
+  <!-- lower belt at the waist -->
+  <path d="M140 312 H260" stroke="var(--c3, #C4A46A)" stroke-width="10" stroke-linecap="round"
+        fill="none"/>
+  <path d="M142 322 H258" stroke="var(--c2, #C3B99F)" stroke-width="4" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- vertical drape folds, running from the lower belt to the ankle hem -->
+  <g stroke="var(--c2, #C3B99F)" stroke-opacity="0.55" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M160 332 Q154 440 150 540"/>
+    <path d="M181 332 Q179 440 177 546"/>
+    <path d="M219 332 Q221 440 223 546"/>
+    <path d="M240 332 Q246 440 250 540"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M154 546 H202 Q206 558 204 570 H156 Q150 558 154 546 Z" fill="var(--c3, #C4A46A)"/>
+  <path d="M198 546 H246 Q250 558 248 570 H200 Q192 558 198 546 Z" fill="var(--c3, #C4A46A)"/>
+  <path d="M160 192 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

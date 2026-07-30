@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       starts its tunic at y 150 and runs its baldric from y 158, both of which breach this
+       bundle, so the tunic, the sleeves and the baldric were redrawn to start at y 162 on this
+       body's drawn torso line.
+
+       DO NOT DRAW LIST, binding, and the reason this family was renamed away from an older key.
+       Not drawn here, and never to be added: a strapless bustier; a star motif anywhere at any
+       size; a tiara; wide matching metal bracers on both wrists; a coiled rope or lasso at the
+       hip; a red plus blue plus gold fallback palette. Any two of those together is a specific
+       character. The silhouette that ships is the opposite of that costume on every axis, which
+       is exactly why it was chosen. KEEP THE TROUSERS AND KEEP THE SLEEVES.
+       Fallback is house mint over a muted natural, with an ink toned baldric.
+
+       silhouette axes: closure=a closed long sleeved tunic over full length trousers, and
+       volume=a crescent shield slung flat across the back so a curved edge breaks the outline
+       past each hip. Recomputed on this body, whose hips are drawn x 140 to x 260: the crescent
+       rims reach x 100 and x 300, so each breaks the outline by 40 units, exactly at the tray
+       floor, and each rim is 104 units of arc from y 258 to y 362. -->
+  <defs>
+    <linearGradient id="midage-male-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E7C6E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-shield-warrior__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E7C6E)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #9C8C6F)"/>
+      <stop offset="1" stop-color="var(--c2, #3E7C6E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the crescent shield behind the body: only its curved rim shows past each hip -->
+  <g class="sp-shadow">
+    <path d="M142 258 Q110 274 102 316 Q100 348 114 362 Q126 354 124 330
+             Q124 294 146 274 Z" fill="url(#midage-male-costume-shield-warrior__shield)"/>
+    <path d="M258 258 Q290 274 298 316 Q300 348 286 362 Q274 354 276 330
+             Q276 294 254 274 Z" fill="url(#midage-male-costume-shield-warrior__shield)"/>
+  </g>
+
+  <!-- close long sleeved tunic to mid thigh, over narrow full length trousers -->
+  <g class="sp-shadow">
+    <path d="M154 330 H197 Q199 440 195 534 Q195 542 187 542 H163 Q155 542 155 534
+             Q152 440 154 330 Z" fill="url(#midage-male-costume-shield-warrior__trouser)"/>
+    <path d="M246 330 H203 Q201 440 205 534 Q205 542 213 542 H237 Q245 542 245 534
+             Q248 440 246 330 Z" fill="url(#midage-male-costume-shield-warrior__trouser)"/>
+    <path d="M154 162 H246 Q258 182 256 212 L258 300 Q260 372 254 416 Q200 428 146 416
+             Q140 372 142 300 L144 212 Q142 182 154 162 Z"
+          fill="url(#midage-male-costume-shield-warrior__tunic)"/>
+    <path d="M100 174 H136 Q140 192 138 216 L136 336 Q136 348 120 348 Q104 348 102 336
+             L98 216 Q96 192 100 174 Z"
+          fill="url(#midage-male-costume-shield-warrior__tunic)"/>
+    <path d="M300 174 H264 Q260 192 262 216 L264 336 Q264 348 280 348 Q296 348 298 336
+             L302 216 Q304 192 300 174 Z"
+          fill="url(#midage-male-costume-shield-warrior__tunic)"/>
+  </g>
+
+  <!-- wide diagonal baldric, the shield's carrying strap -->
+  <path d="M150 170 L252 320" stroke="var(--c3, #9C8C6F)" stroke-width="20"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 170 L252 320" stroke="var(--c2, #3E7C6E)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- belt, tunic hem bind and cuff bands. No emblem, no star, no chest motif. -->
+  <path d="M144 306 Q200 316 256 306" stroke="var(--c2, #3E7C6E)" stroke-width="12"
+        fill="none" stroke-linecap="round"/>
+  <path d="M147 412 Q200 424 253 412" stroke="var(--c3, #9C8C6F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M100 328 H136" stroke="var(--c3, #9C8C6F)" stroke-width="7" stroke-linecap="round"
+        fill="none"/>
+  <path d="M264 328 H300" stroke="var(--c3, #9C8C6F)" stroke-width="7" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- shield rim highlights, and soft ankle boots -->
+  <path d="M108 298 Q102 330 112 356" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M292 298 Q298 330 288 356" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 528 H198 Q204 550 202 570 H154 Q146 550 152 528 Z" fill="var(--c2, #3E7C6E)"/>
+  <path d="M202 528 H248 Q254 550 252 570 H204 Q196 550 202 528 Z" fill="var(--c2, #3E7C6E)"/>
+  <path d="M164 190 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

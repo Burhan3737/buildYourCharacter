@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Curtain" data-family="chin-curtain"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- midage/male drawn body: chin (200,162), jaw corners (157,134)/(243,134), mouth
+       band x170-230 y118-148, ear anchors (148,106)/(252,106), mid-torso floor y251.
+       Cheek line here: low y127, natural y118, joined y106.
+       Axes chosen: UPPER LIP = bare, and bare on purpose. There is no hair anywhere
+       in the band y104 to y150 between x168 and x232, which is this family's entire
+       point; the lip is drawn clean, not merely thin. CHIN AND JAW = an under-jaw
+       curtain hanging 46 units below its inner edge, ear to ear, hem in unequal lobes,
+       bottom at y196 and well clear of the torso floor. -->
+  <defs>
+    <linearGradient id="midage-male-beard-chin-curtain__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="0.46" stop-color="var(--hair1, #43291F)"/>
+      <stop offset="1" stop-color="var(--hair2, #331E16)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the curtain: sideburn root at each ear, down and round under the jaw, hem cut
+       into four unequal lobes. The inner edge stays below the mouth so the lip is clean -->
+  <g class="sp-shadow">
+    <path d="M145 109 C142 132 146 156 156 172
+             C163 183 172 191 182 194
+             C189 197 195 198 200 195
+             C205 198 212 197 219 194
+             C229 190 238 182 244 171
+             C255 155 258 132 255 109
+             C253 124 247 134 237 141
+             C226 148 214 152 200 152
+             C186 152 174 148 163 141
+             C153 134 147 124 145 109 Z"
+          fill="url(#midage-male-beard-chin-curtain__grad)"/>
+  </g>
+
+  <!-- the inner edge, shaded so the bare lip and the bare chin pad read above it -->
+  <path d="M150 126 C161 139 178 148 200 148 C222 148 239 139 250 126"
+        stroke="var(--hair2, #331E16)" stroke-width="4" fill="none" stroke-linecap="round"
+        opacity="0.8"/>
+
+  <!-- fall of the curtain: five runs, none of them the same length -->
+  <g stroke="var(--hair2, #331E16)" stroke-width="3" fill="none" stroke-linecap="round"
+     opacity="0.6">
+    <path d="M158 142 C158 160 165 178 176 190"/>
+    <path d="M178 150 C177 166 179 181 184 193"/>
+    <path d="M200 152 C199 168 200 182 200 194"/>
+    <path d="M222 150 C223 166 221 181 216 193"/>
+    <path d="M242 142 C242 160 235 178 224 190"/>
+  </g>
+  <!-- weight in the hem -->
+  <path d="M168 186 C181 197 219 197 232 186" stroke="var(--hair2, #331E16)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- lit shoulder of the curtain, high on each side -->
+  <path d="M150 124 C154 142 162 158 175 169" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M250 124 C246 142 238 158 225 169" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent Suit" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- TRADEMARK: deliberately NOT cowled. No scalloped or bat-winged cape hem, no points, no
+       pointed ear shapes anywhere, no chest mark of any kind. The half cape hem is a straight
+       horizontal edge, and the fallback is periwinkle with bark brown and mint, never black with
+       yellow and never black with grey. -->
+  <!-- axes vs caped-hero (the other cape in the slot): asymmetric, one long sleeve and one bare
+       arm (shoulder/sleeve) + a wrap front crossing right over left to a low hip fastening
+       instead of a closed front (closure). caped-hero is symmetric with a full-width cape.
+       The bare arm is the character's own skin below the shoulder line. -->
+  <defs>
+    <linearGradient id="midage-female-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6F7FC8)"/>
+      <stop offset="1" stop-color="var(--c1, #4E5C9C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shadow-agent__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6676C0)"/>
+      <stop offset="1" stop-color="var(--c1, #45538F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #453529)"/>
+      <stop offset="1" stop-color="var(--c2, #2A1E16)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shadow-agent__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #4A9382)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow half cape, one shoulder only, straight hem at the calf -->
+    <path d="M146 160 Q170 162 176 172 L164 266 L148 390 L136 512 Q120 520 104 510
+             L118 388 L130 264 L136 188 Q138 166 146 160 Z"
+          fill="url(#midage-female-costume-shadow-agent__cape)"/>
+    <!-- ankle-length legs -->
+    <path d="M156 350 L200 350 L198 456 L196 546 Q178 554 158 546 L156 456 Z"
+          fill="url(#midage-female-costume-shadow-agent__limb)"/>
+    <path d="M200 350 L244 350 L244 456 L242 546 Q224 554 204 546 L202 456 Z"
+          fill="url(#midage-female-costume-shadow-agent__limb)"/>
+    <!-- hip block, fastening low on the right -->
+    <path d="M144 306 Q200 322 256 306 Q261 332 255 358 Q200 374 145 358 Q139 332 144 306 Z"
+          fill="url(#midage-female-costume-shadow-agent__suit)"/>
+    <!-- wrap-front torso: the deep V is the crossing edge, right over left -->
+    <path d="M166 160 Q152 164 146 190 L138 252 Q136 294 142 328 Q200 348 258 328
+             Q264 294 262 252 L254 190 Q248 164 234 160 L206 208 Z"
+          fill="url(#midage-female-costume-shadow-agent__suit)"/>
+    <!-- one long sleeve; the other arm stays bare -->
+    <path d="M148 166 Q148 160 136 160 Q114 160 112 180 L108 264 L110 344
+             Q129 354 147 344 L148 264 Z"
+          fill="url(#midage-female-costume-shadow-agent__limb)"/>
+  </g>
+
+  <!-- the crossing edge, shoulder to the low hip fastening -->
+  <path d="M232 162 L206 210 L216 222 L244 172 Z" fill="var(--c2, #453529)"/>
+  <path d="M212 218 Q236 260 244 308 L228 312 Q220 264 200 226 Z" fill="var(--c2, #453529)"/>
+  <!-- low hip fastening: a single flat disc, no buckle prongs -->
+  <circle cx="240" cy="318" r="13" fill="url(#midage-female-costume-shadow-agent__wrap)"/>
+  <circle cx="240" cy="318" r="5" fill="var(--c2, #2A1E16)"/>
+  <!-- wide wrist wrap on the bare arm -->
+  <path d="M252 318 H290 V346 Q271 356 252 346 Z"
+        fill="url(#midage-female-costume-shadow-agent__wrap)"/>
+  <path d="M254 328 h34 M254 338 h34" stroke="var(--c2, #2A1E16)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- covered-side cuff -->
+  <path d="M110 322 Q129 330 148 322 L148 344 Q129 354 110 344 Z"
+        fill="url(#midage-female-costume-shadow-agent__wrap)"/>
+  <!-- ankle bindings -->
+  <path d="M156 524 q21 8 42 0 l0 16 q-21 8 -42 0 Z" fill="var(--c2, #453529)"/>
+  <path d="M202 524 q21 8 42 0 l0 16 q-21 8 -42 0 Z" fill="var(--c2, #453529)"/>
+  <!-- house highlight -->
+  <path d="M172 192 q22 22 44 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

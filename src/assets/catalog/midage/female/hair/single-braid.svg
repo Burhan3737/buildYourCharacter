@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Single Braid" data-family="single-braid" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Drawn to the midage female body: head ellipse cx200 cy102 rx58 ry60, shoulder line y168,
+       torso x138 to x262.
+       axes vs the slot: PARTING and hem - everything drawn smooth off the face, no fringe and
+       no part, into one thick three strand plait whose edge is scalloped left and right by the
+       crossings themselves and which finishes on a tie and a tassel point.
+       LENGTH - the plait runs to y 300, well past the waist.
+       The plait is carried over the shoulder in the FRONT group and falls down the chest rather
+       than down the centre back: the back group is z10, under the body at z20, so a plait drawn
+       down the spine renders as literally nothing. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="midage-female-hair-single-braid__back-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #63401F)"/>
+        <stop offset="1" stop-color="var(--hair2, #341F0F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M200 34 C156 34 130 66 128 116 C126 148 134 172 152 184 C172 194 228 194 248 184
+               C266 172 274 148 272 116 C270 66 244 34 200 34 Z"
+            fill="url(#midage-female-hair-single-braid__back-g)"/>
+      <!-- the gathered root the plait is drawn from, sitting low at the nape -->
+      <path d="M176 160 C170 174 176 186 190 190 C197 192 203 192 210 190
+               C224 186 230 174 224 160 C214 168 186 168 176 160 Z"
+            fill="url(#midage-female-hair-single-braid__back-g)"/>
+    </g>
+    <path d="M152 160 C170 176 230 176 248 160 C242 186 158 186 152 160 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M178 168 C188 176 212 176 222 168 C218 184 182 184 178 168 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M152 68 C174 52 226 52 248 68" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="midage-female-hair-single-braid__front-g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #63401F)"/>
+        <stop offset="1" stop-color="var(--hair2, #341F0F)"/>
+      </linearGradient>
+      <linearGradient id="midage-female-hair-single-braid__front-p" x1="0" y1="0" x2="0.5" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #63401F)"/>
+        <stop offset="1" stop-color="var(--hair2, #341F0F)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- drawn smooth off the face: no fringe, no part, a clean rounded hairline -->
+      <path d="M200 28 C158 28 133 58 136 110 C144 100 152 90 164 82 C176 72 188 66 200 66
+               C212 66 224 72 236 82 C248 90 256 100 264 110 C267 58 242 28 200 28 Z"
+            fill="url(#midage-female-hair-single-braid__front-g)"/>
+      <!-- the plait, swung over the shoulder and down the chest; the crossings are cut into
+           the outline, not painted on it -->
+      <path d="M180 148 C170 164 182 176 172 192 C162 208 174 220 164 236
+               C154 252 166 264 156 280 L166 300 L180 288 C174 272 188 262 182 246
+               C176 230 190 218 186 202 C182 186 196 174 192 152 Z"
+            fill="url(#midage-female-hair-single-braid__front-p)"/>
+    </g>
+    <!-- the sweep grain running back off the temples -->
+    <path d="M150 94 C160 78 174 66 190 60 C174 68 160 82 152 100 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M250 94 C240 78 226 66 210 60 C226 68 240 82 248 100 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M176 68 C188 62 212 62 224 68 C210 64 190 64 176 68 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M138 98 C138 106 139 112 141 106 C142 102 140 98 139 94 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M262 98 C262 106 261 112 259 106 C258 102 260 98 261 94 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <!-- the strand that crosses over on each turn of the plait -->
+    <path d="M178 162 C186 155 202 155 209 161 C200 170 185 171 178 162 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M171 190 C179 183 195 183 202 189 C193 198 178 199 171 190 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M164 220 C172 213 188 213 195 219 C186 228 171 229 164 220 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M158 250 C166 243 182 243 189 249 C180 258 165 259 158 250 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <!-- the tie, and the tassel point below it -->
+    <path d="M155 272 C160 266 178 268 184 274 C186 280 182 286 176 286
+             C168 286 157 282 155 276 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M162 286 C164 292 168 297 173 300 C175 294 176 289 176 285 Z"
+          fill="var(--hair2, #341F0F)"/>
+    <path d="M160 275 h18" stroke="#FFFFFF" stroke-opacity="0.28"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M162 84 C174 72 186 64 196 61" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M238 84 C226 72 214 64 204 61" stroke="#FFFFFF" stroke-opacity="0.14"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M168 46 C184 36 216 36 232 46" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

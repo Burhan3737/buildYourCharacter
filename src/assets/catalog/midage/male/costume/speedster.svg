@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Speedster Suit" data-family="speedster" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       takes its high closed neck to y 148, the ceiling of that bundle, which is 12 units above
+       this one, so the neck was rebuilt to stop at y 162 on this body, level with the drawn jaw
+       and the drawn torso line. The name avoids the phrase that two publishers jointly hold.
+
+       silhouette axes: shoulder=sleeveless with a deep scooped armhole, and volume=skin close
+       with a pair of swept fin vanes standing clear of each calf.
+       Recomputed on this body, whose legs are drawn x 166 to 196 and x 204 to 234: the suit is
+       cut skin close at x 164 and x 236, and the outer vane tips reach x 132 and x 268, so each
+       pair of vanes stands 236 minus 268, that is 32 units, clear of the leg. The two vanes
+       together occupy 534 minus 474, that is 60 units of calf height.
+       Trademark: the chest is PLAIN. No lightning bolt, no emblem, no chest motif of any kind.
+       Fallback is house periwinkle and butter, deliberately clear of the banned pairings. -->
+  <defs>
+    <linearGradient id="midage-male-costume-speedster__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-speedster__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-speedster__vane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C9E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- skin close bodysuit: a high closed neck stopping at the ceiling, deep armholes, ankle hem -->
+  <g class="sp-shadow">
+    <path d="M186 162 H214 Q236 162 246 176 Q254 190 252 212 L254 284 Q256 316 248 328 H152
+             Q144 316 146 284 L148 212 Q146 190 154 176 Q164 162 186 162 Z"
+          fill="url(#midage-male-costume-speedster__suit)"/>
+    <path d="M146 322 H254 Q258 340 256 360 H144 Q142 340 146 322 Z"
+          fill="url(#midage-male-costume-speedster__suit)"/>
+    <path d="M164 352 H194 Q196 446 193 536 Q193 546 184 546 H172 Q164 546 164 536
+             Q162 446 164 352 Z" fill="url(#midage-male-costume-speedster__leg)"/>
+    <path d="M236 352 H206 Q204 446 207 536 Q207 546 216 546 H228 Q236 546 236 536
+             Q238 446 236 352 Z" fill="url(#midage-male-costume-speedster__leg)"/>
+    <path d="M164 474 Q146 482 132 500 Q144 506 156 508 Q160 494 166 484 Z"
+          fill="url(#midage-male-costume-speedster__vane)"/>
+    <path d="M164 508 Q148 514 136 528 Q148 534 160 534 Q161 522 165 512 Z"
+          fill="url(#midage-male-costume-speedster__vane)"/>
+    <path d="M236 474 Q254 482 268 500 Q256 506 244 508 Q240 494 234 484 Z"
+          fill="url(#midage-male-costume-speedster__vane)"/>
+    <path d="M236 508 Q252 514 264 528 Q252 534 240 534 Q239 522 235 512 Z"
+          fill="url(#midage-male-costume-speedster__vane)"/>
+  </g>
+
+  <!-- one raked diagonal seam across the torso, and NOT an emblem -->
+  <path d="M152 258 L248 210" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 272 L248 224" stroke="var(--c2, #4E5C9E)" stroke-width="4"
+        fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- deep armhole bind and the high neck bind -->
+  <path d="M154 178 Q146 208 148 230" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 178 Q254 208 252 230" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 165 H214" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ankle cuff bands and integral soles -->
+  <path d="M166 538 H192" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M208 538 H234" stroke="var(--c3, #F7C873)" stroke-width="6" fill="none"
+        stroke-linecap="round"/>
+  <path d="M154 550 H202 Q206 560 204 570 H156 Q150 560 154 550 Z" fill="var(--c2, #4E5C9E)"/>
+  <path d="M198 550 H246 Q250 560 248 570 H200 Q192 560 198 550 Z" fill="var(--c2, #4E5C9E)"/>
+
+  <path d="M162 190 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

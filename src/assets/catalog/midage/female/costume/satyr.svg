@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr Pelt" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- CORRECTNESS NOTE, please do not "correct" this back. A Greek satyr has a HORSE tail and
+       horse ears, not goat ones. Goat legs and horns belong to the Roman faun, which is a
+       different creature. The ears are a companion headwear family, never drawn here, because
+       costume draws above the face.
+       Second note: classical satyrs are nude with exaggerated genitalia. This is a children's
+       dress-up satyr: pelt from the waist down, a skin over one shoulder, and nothing else. The
+       bare chest is the character's own skin and no phantom garment is painted over it. -->
+  <!-- axes vs berserker (the other shaggy family): the shag starts at the waist and runs all the
+       way to the ankle over both legs (hem) + the upper body is bare but for one knotted skin,
+       against berserker's full sleeveless jerkin over a sleeved tunic (shoulder/sleeve).
+       Measured on THIS body: the hip block starts y316 and the ankle is y540, so the lobed pelt
+       runs y312 to y562, a 250 unit shaggy mass. -->
+  <defs>
+    <linearGradient id="midage-female-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B0824F)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6339)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-satyr__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5238)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3524)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5238)"/>
+      <stop offset="1" stop-color="var(--c2, #3E2C1D)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-satyr__cord" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D19A44)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- long HORSE tail, broad at the root and switching to a taper behind the hip -->
+    <path d="M226 318 Q252 300 274 318 Q302 360 306 424 Q310 486 296 532
+             Q288 558 270 562 Q254 564 254 546 Q268 500 268 448 Q268 388 252 358
+             Q240 334 226 318 Z"
+          fill="url(#midage-female-costume-satyr__tail)"/>
+    <!-- the pelt: deeply lobed at the waist, bumpy outline all the way to the ankle -->
+    <path d="M138 312
+             q12 -14 24 -2 q12 12 24 -4 q11 -14 22 4 q12 12 23 -6 q13 -12 27 8
+             q22 24 6 54 q-20 26 8 52 q10 30 -12 54 q-16 26 2 48 q8 24 -14 42
+             q-22 12 -46 0
+             q-4 -88 2 -172
+             q-6 -12 -12 0
+             q6 88 2 172
+             q-22 12 -46 0
+             q-22 -18 -8 -44 q16 -24 -6 -50 q-18 -26 6 -50 q18 -26 -8 -50 q-12 -28 6 -56 Z"
+          fill="url(#midage-female-costume-satyr__pelt)"/>
+    <!-- animal skin knotted over one shoulder, hanging to the opposite hip.
+         The hip end is cut into the ragged paw flaps of a whole skin. -->
+    <path d="M144 160 H208 L258 282 q8 18 -8 26 l-10 -14 l-6 18 l-12 -16 l-8 16
+             q-14 -4 -18 -18 L144 206 Z"
+          fill="url(#midage-female-costume-satyr__hide)"/>
+  </g>
+
+  <!-- shag texture inside the pelt, following the lobes -->
+  <g stroke="var(--c1, #7A5730)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M148 342 q10 22 -2 44 q-10 22 2 44"/>
+    <path d="M168 352 q8 26 -2 52 q-8 26 2 50"/>
+    <path d="M234 350 q-8 26 2 52 q8 26 -2 50"/>
+    <path d="M252 340 q-10 22 2 44 q10 22 -2 44"/>
+    <path d="M150 458 q10 24 -2 48"/>
+    <path d="M250 456 q-10 24 2 48"/>
+  </g>
+  <!-- lobed waist edge shading -->
+  <path d="M142 316 q22 -12 44 -2 q22 10 44 -4" stroke="var(--c2, #4A3524)"
+        stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cord belt, low over the pelt so the lobed waist edge stays clear above it -->
+  <path d="M142 338 Q200 358 258 338 L258 352 Q200 372 142 352 Z"
+        fill="url(#midage-female-costume-satyr__cord)"/>
+  <path d="M198 346 q16 10 16 32 M214 348 q10 14 8 32" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- cord knotting the skin at the shoulder -->
+  <path d="M148 176 q28 10 44 -4 M152 194 q28 10 44 -4" stroke="var(--c3, #F7C873)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M172 170 q-6 16 2 32" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- tail hair strokes -->
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M258 334 q24 48 24 114 q0 54 -8 90"/>
+    <path d="M284 358 q14 48 12 104 q-2 42 -8 62"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M156 338 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

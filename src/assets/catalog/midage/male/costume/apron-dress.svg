@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160.
+
+       The adult/male reference is drawn to a y 148 ceiling and every top edge in it would
+       breach this bundle by 12 units, so nothing is transcribed. Redrawn onto the DRAWN midage
+       body: torso top y 162, shoulder curve x 128 to x 272 at y 200, torso bottom y 340, hips
+       x 140 to 260 y 316 to 374, arms x 104 to 132 and x 268 to 296 from y 168, legs from
+       y 352, feet y 544 to the ground line at y 570.
+
+       There are no aisles. This family is authored on this body because remapSlots clears a
+       slot when the family key is missing from the target bundle, so a family drawn on one
+       body and not the other is silently lost on a body switch. Drape and fit change here;
+       availability does not.
+
+       silhouette axes: shoulder=two short front straps meeting a pair of domed oval brooches at
+       the collarbone, and hem=layered. Recomputed on this body: the overdress hem sits at
+       y 502 and the underdress hem at y 546, so the exposed band of the second colour measures
+       546 minus 502 = 44 units, clear of the 40 unit tray floor.
+       Midage read: the overdress is cut a little longer and the waist shaping is softer than
+       the adult cut. The garment is the same garment. -->
+  <defs>
+    <linearGradient id="midage-male-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9C2AE)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C5F4E)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9C2AE)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ankle length long sleeved underdress -->
+  <g class="sp-shadow">
+    <path d="M152 162 H248 Q258 192 256 228 L262 352 Q270 452 266 546 Q200 558 134 546
+             Q130 452 138 352 L144 228 Q142 192 152 162 Z"
+          fill="url(#midage-male-costume-apron-dress__under)"/>
+    <path d="M100 172 H136 Q140 194 138 218 L136 334 Q136 348 118 348 Q102 348 100 334
+             L98 218 Q96 194 100 172 Z" fill="url(#midage-male-costume-apron-dress__sleeve)"/>
+    <path d="M300 172 H264 Q260 194 262 218 L264 334 Q264 348 282 348 Q298 348 300 334
+             L302 218 Q304 194 300 172 Z" fill="url(#midage-male-costume-apron-dress__sleeve)"/>
+  </g>
+
+  <!-- shorter sleeveless woollen overdress, hem well clear of the underdress hem -->
+  <g class="sp-shadow">
+    <path d="M162 200 H238 Q248 262 246 322 Q252 414 250 502 Q200 512 150 502
+             Q148 414 154 322 Q152 262 162 200 Z"
+          fill="url(#midage-male-costume-apron-dress__over)"/>
+  </g>
+
+  <!-- two short front straps rising to the brooches -->
+  <path d="M168 200 V184" stroke="var(--c1, #9C5F4E)" stroke-width="13" stroke-linecap="round"
+        fill="none"/>
+  <path d="M232 200 V184" stroke="var(--c1, #9C5F4E)" stroke-width="13" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- a pair of domed oval brooches, with a swag of beads strung between them -->
+  <path d="M164 190 Q182 186 190 198 Q186 212 174 212 Q162 208 164 190 Z"
+        fill="var(--c3, #C9C2AE)"/>
+  <path d="M236 190 Q218 186 210 198 Q214 212 226 212 Q238 208 236 190 Z"
+        fill="var(--c3, #C9C2AE)"/>
+  <path d="M172 208 Q200 236 228 208" stroke="var(--c3, #C9C2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #C9C2AE)">
+    <circle cx="181" cy="219" r="4"/><circle cx="190" cy="225" r="4"/>
+    <circle cx="200" cy="227" r="4"/><circle cx="210" cy="225" r="4"/>
+    <circle cx="219" cy="219" r="4"/>
+  </g>
+
+  <!-- small cluster of tools on a chain at one hip -->
+  <path d="M242 306 Q250 328 248 346" stroke="var(--c3, #C9C2AE)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 346 h16 q3 12 -2 20 h-12 q-5 -8 -2 -20 Z" fill="var(--c3, #C9C2AE)"/>
+  <path d="M254 348 q8 10 4 20" stroke="var(--c3, #C9C2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- woven trim band at the overdress hem, a generic geometric border only -->
+  <path d="M151 492 Q200 502 249 492" stroke="var(--c3, #C9C2AE)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <g stroke="var(--c2, #7D6A50)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M176 232 Q172 366 170 490"/>
+    <path d="M224 232 Q228 366 230 490"/>
+  </g>
+
+  <!-- integral soft shoes -->
+  <path d="M154 546 H202 Q206 558 204 570 H156 Q150 558 154 546 Z" fill="var(--c2, #7D6A50)"/>
+  <path d="M198 546 H246 Q250 558 248 570 H200 Q192 558 198 546 Z" fill="var(--c2, #7D6A50)"/>
+  <path d="M164 188 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

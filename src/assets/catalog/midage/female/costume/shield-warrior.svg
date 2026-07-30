@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- midage/female costume ceiling: y >= 160 -->
+  <!-- TRADEMARK NOTE, do not "improve" this file back toward the thing it avoids. Deliberately
+       absent, and each one must stay absent: no strapless bustier (this is a long-sleeved closed
+       tunic), no star motif at any size anywhere, no tiara, no matching metal bracers on the
+       wrists, no coiled rope or lasso at the hip, and no red, blue or gold in the fallback.
+       KEEP THE TROUSERS AND KEEP THE SLEEVES: the fully covered trousered rider is the opposite
+       of that character on every axis, which is why this silhouette was chosen.
+       Fallback is mint + ink + butter. -->
+  <!-- axes vs the slot: a crescent shield slung flat across the back so a curved edge shows well
+       past each hip (volume) + narrow trousers tucked into soft ankle boots under a mid-thigh
+       tunic (hem).
+       Measured on THIS body: the hip block spans x144 to x256 and the shield horns reach x98 and
+       x302, so 46 units of crescent show past each hip, clear of the 40 unit floor. Mid-thigh is
+       y415 and the tunic hem band lands y396 to y418. -->
+  <defs>
+    <linearGradient id="midage-female-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #4A9382)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shield-warrior__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B7A5)"/>
+      <stop offset="1" stop-color="var(--c1, #428A79)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shield-warrior__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A3A30)"/>
+      <stop offset="1" stop-color="var(--c2, #2C211A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #543F33)"/>
+      <stop offset="1" stop-color="var(--c2, #302319)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-costume-shield-warrior__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- crescent shield, slung flat across the back, horns showing past each hip -->
+    <path d="M98 352 Q104 254 200 246 Q296 254 302 352 Q304 398 294 422
+             Q284 434 280 418 Q278 370 270 346 Q260 286 200 282 Q140 286 130 346
+             Q122 370 120 418 Q116 434 106 422 Q96 398 98 352 Z"
+          fill="url(#midage-female-costume-shield-warrior__shield)"/>
+    <!-- narrow trousers -->
+    <path d="M160 350 Q182 360 200 352 L198 442 L196 518 Q180 524 162 518 L161 442 Z"
+          fill="url(#midage-female-costume-shield-warrior__dark)"/>
+    <path d="M200 352 Q218 360 240 350 L239 442 L238 518 Q222 524 204 518 L202 442 Z"
+          fill="url(#midage-female-costume-shield-warrior__dark)"/>
+    <!-- soft ankle boots, the trousers tuck into them -->
+    <path d="M152 510 Q178 522 204 510 Q210 540 205 570 Q178 578 151 570 Q146 540 152 510 Z"
+          fill="url(#midage-female-costume-shield-warrior__dark)"/>
+    <path d="M196 510 Q222 522 248 510 Q254 540 249 570 Q222 578 195 570 Q190 540 196 510 Z"
+          fill="url(#midage-female-costume-shield-warrior__dark)"/>
+    <!-- long sleeves, close to the arm; keep the sleeves -->
+    <path d="M110 180 Q112 160 130 160 H144 Q160 160 160 182 L156 264 L152 348
+             Q132 358 112 348 L110 264 Z"
+          fill="url(#midage-female-costume-shield-warrior__sleeve)"/>
+    <path d="M290 180 Q288 160 270 160 H256 Q240 160 240 182 L244 264 L248 348
+             Q268 358 288 348 L290 264 Z"
+          fill="url(#midage-female-costume-shield-warrior__sleeve)"/>
+    <!-- closed tunic to mid-thigh -->
+    <path d="M170 160 H230 Q254 164 258 192 Q266 254 262 316 Q266 368 258 418
+             Q200 434 142 418 Q134 368 138 316 Q134 254 142 192 Q146 164 170 160 Z"
+          fill="url(#midage-female-costume-shield-warrior__tunic)"/>
+  </g>
+
+  <!-- shield rim highlight along the visible horns, plain: no device, no boss, no motif -->
+  <path d="M103 364 Q102 398 108 414" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M297 364 Q298 398 292 414" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M112 336 Q134 266 200 262 Q266 266 288 336" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- wide diagonal baldric -->
+  <path d="M150 182 L254 318 L238 332 L134 196 Z"
+        fill="url(#midage-female-costume-shield-warrior__dark)"/>
+  <path d="M228 310 H254 Q258 324 254 338 H228 Q224 324 228 310 Z"
+        fill="url(#midage-female-costume-shield-warrior__trim)"/>
+  <!-- neck bind, woven trim -->
+  <path d="M172 160 H228 L230 178 Q200 188 170 178 Z"
+        fill="url(#midage-female-costume-shield-warrior__trim)"/>
+  <!-- tunic hem band, woven trim -->
+  <path d="M138 396 Q200 414 262 396 L263 418 Q200 436 137 418 Z"
+        fill="url(#midage-female-costume-shield-warrior__trim)"/>
+  <path d="M146 405 l10 10 l10 -10 l10 10 l10 -10 l10 10 l10 -10 l10 10 l10 -10
+           l10 10 l10 -10 l10 10 l10 -10" stroke="var(--c2, #2C211A)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- boot top binding -->
+  <path d="M154 516 q24 10 48 0 M198 516 q24 10 48 0" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M162 192 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

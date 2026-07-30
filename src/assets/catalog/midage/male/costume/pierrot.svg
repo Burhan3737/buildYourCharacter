@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for midage/male: no geometry above y 160. The adult/male reference
+       lays its collaret on the shoulders from y 150 and its blouse from y 152, both of which
+       breach this bundle, so the disc and the blouse were redrawn to start at y 162.
+       There is no skullcap and no painted face: costume draws above the face, so this family
+       is the blouse, the bell sleeves, the disc collaret and the pantaloons. -->
+  <!-- Axes: shoulder (a draped three quarter bell sleeve, flaring to an open mouth) and volume
+       (a straight column widest at the SHOULDER, against the clown's gathered barrel widest at
+       the hip). -->
+  <!-- The collaret is a FLAT frilled disc lying ON the shoulders, spreading outward from the
+       ceiling rather than standing up. Recomputed on this body: it spans x 126 to x 274 and
+       drops from y 162 to y 202, so it is 148 units across and only 40 deep, and the neck it
+       surrounds is drawn x 186 to x 214. A ruff family also ships in the necklace slot and
+       necklace draws ABOVE costume, so a worn ruff has to layer over this disc and read as one
+       piece. -->
+  <!-- Trademark: cream body with a periwinkle collaret and mauve slippers, deliberately clear
+       of the green hair plus purple tailcoat plus orange or green waistcoat plus white face
+       plus red grin register. -->
+  <defs>
+    <linearGradient id="midage-male-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE0)"/>
+      <stop offset="1" stop-color="var(--c1, #D9D1C0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-pierrot__pantaloon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D8)"/>
+      <stop offset="1" stop-color="var(--c1, #CFC6B3)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-pierrot__collaret" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C3CDEA)"/>
+      <stop offset="1" stop-color="var(--c2, #9FADD4)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-costume-pierrot__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #C2A2BE)"/>
+      <stop offset="1" stop-color="var(--c4, #A183A0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- very wide gathered pantaloons: a straight column to the ankle -->
+  <g class="sp-shadow">
+    <path d="M122 316 H278 Q282 412 280 490 L278 546 Q242 556 206 546 Q200 534 194 546
+             Q158 556 122 546 L120 490 Q118 412 122 316 Z"
+          fill="url(#midage-male-costume-pierrot__pantaloon)"/>
+  </g>
+  <!-- eight gather folds -->
+  <g stroke="var(--c3, #9C8C6F)" stroke-width="3" stroke-opacity="0.45" fill="none" stroke-linecap="round">
+    <path d="M136 332 q-4 106 0 208"/>
+    <path d="M155 332 q-4 106 0 210"/>
+    <path d="M174 332 q-3 106 0 212"/>
+    <path d="M192 332 q-2 106 0 212"/>
+    <path d="M208 332 q2 106 0 212"/>
+    <path d="M226 332 q3 106 0 212"/>
+    <path d="M245 332 q4 106 0 210"/>
+    <path d="M264 332 q4 106 0 208"/>
+  </g>
+
+  <!-- loose straight blouse to the hip, widest at the shoulder -->
+  <g class="sp-shadow">
+    <path d="M132 164 H268 Q270 192 266 226 L260 344 H140 L134 226 Q130 192 132 164 Z"
+          fill="url(#midage-male-costume-pierrot__blouse)"/>
+  </g>
+
+  <!-- wide three quarter bell sleeves, forearms left bare -->
+  <g class="sp-shadow">
+    <path d="M136 172 Q116 212 104 252 Q96 278 94 298 Q122 308 150 298 Q150 256 154 218
+             Q156 190 162 172 Z" fill="url(#midage-male-costume-pierrot__blouse)"/>
+    <path d="M264 172 Q284 212 296 252 Q304 278 306 298 Q278 308 250 298 Q250 256 246 218
+             Q244 190 238 172 Z" fill="url(#midage-male-costume-pierrot__blouse)"/>
+  </g>
+  <path d="M96 296 q28 8 52 0" stroke="var(--c2, #9FADD4)" stroke-width="5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+  <path d="M304 296 q-28 8 -52 0" stroke="var(--c2, #9FADD4)" stroke-width="5"
+        stroke-opacity="0.75" fill="none" stroke-linecap="round"/>
+
+  <!-- soft sash at the low waist -->
+  <path d="M138 310 q62 16 124 0 q2 12 0 20 q-62 16 -124 0 Z" fill="var(--c3, #9C8C6F)" fill-opacity="0.85"/>
+
+  <!-- the large FLAT frilled disc collaret, lying on the shoulders -->
+  <g class="sp-shadow">
+    <path d="M126 178 Q126 163 144 162 H256 Q274 163 274 178 Q274 194 254 200 Q200 204 146 198
+             Q126 194 126 178 Z" fill="url(#midage-male-costume-pierrot__collaret)"/>
+  </g>
+  <g fill="url(#midage-male-costume-pierrot__collaret)">
+    <circle cx="130" cy="188" r="10"/>
+    <circle cx="151" cy="198" r="10"/>
+    <circle cx="176" cy="202" r="10"/>
+    <circle cx="200" cy="204" r="10"/>
+    <circle cx="224" cy="202" r="10"/>
+    <circle cx="249" cy="198" r="10"/>
+    <circle cx="270" cy="188" r="10"/>
+  </g>
+  <path d="M136 180 q64 14 128 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- integral soft slippers -->
+  <g class="sp-shadow">
+    <path d="M148 542 H198 V564 Q198 570 192 570 H142 Q132 570 131 561 Q132 550 146 548 Z"
+          fill="url(#midage-male-costume-pierrot__slipper)"/>
+    <path d="M252 542 H202 V564 Q202 570 208 570 H258 Q268 570 269 561 Q268 550 254 548 Z"
+          fill="url(#midage-male-costume-pierrot__slipper)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M148 222 q52 18 104 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>
