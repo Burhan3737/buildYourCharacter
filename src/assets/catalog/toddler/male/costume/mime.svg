@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The painted face cannot be drawn from
+       this slot at all, so the identity is carried entirely by the garment: the braces, the wide
+       boat neck, the cropped high waist trousers and the glove cuffs. -->
+  <!-- axes: closure=SEPARATE banded body TUCKED IN under two narrow braces · hem=trousers
+       cropped clear above the ankle, with bare ankle showing above the flat shoe.
+       Recomputed for this body: the trouser hem lands at y524 and the shoe top at y546, so 22
+       units of bare ankle show between them. The banding is a 20 unit pattern and is texture,
+       not identity. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FCF5E8)"/>
+      <stop offset="1" stop-color="var(--c1, #E0D5C0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mime__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #E0D5C0)"/>
+      <stop offset="0.45" stop-color="var(--c1, #FCF5E8)"/>
+      <stop offset="1" stop-color="var(--c1, #E0D5C0)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8B9CE2)"/>
+      <stop offset="1" stop-color="var(--c3, #5A6BBC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mime__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E4238)"/>
+      <stop offset="1" stop-color="var(--c2, #322922)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-mime__band" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="9" fill="var(--c2, #3B2A22)" fill-opacity="0.82"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-mime__bodyclip">
+      <path d="M152 346 q48 20 96 0 q6 2 6 16 v60 q-54 16 -108 0 v-60 q0-14 6-16 z"/>
+      <rect x="114" y="350" width="42" height="96" rx="19"/>
+      <rect x="244" y="350" width="42" height="96" rx="19"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close boat neck banded body -->
+    <path d="M152 346 q48 20 96 0 q6 2 6 16 v60 q-54 16 -108 0 v-60 q0-14 6-16 z"
+          fill="url(#toddler-male-costume-mime__body)"/>
+    <rect x="114" y="350" width="42" height="96" rx="19" fill="url(#toddler-male-costume-mime__sleeve)"/>
+    <rect x="244" y="350" width="42" height="96" rx="19" fill="url(#toddler-male-costume-mime__sleeve)"/>
+
+    <!-- high waisted straight trousers, cropped clear above the ankle -->
+    <path d="M150 412 H198 v104 q0 8 -8 8 h-24 q-8 0 -8-8 l-8-104 z" fill="url(#toddler-male-costume-mime__trouser)"/>
+    <path d="M250 412 H202 v104 q0 8 8 8 h24 q8 0 8-8 l8-104 z" fill="url(#toddler-male-costume-mime__trouser)"/>
+
+    <!-- flat slip on shoes -->
+    <path d="M158 546 h44 v12 q0 12 -14 12 h-16 q-14 0 -14-12 z" fill="url(#toddler-male-costume-mime__shoe)"/>
+    <path d="M242 546 h-44 v12 q0 12 14 12 h16 q14 0 14-12 z" fill="url(#toddler-male-costume-mime__shoe)"/>
+  </g>
+
+  <!-- even horizontal banding across the body and the sleeves -->
+  <g clip-path="url(#toddler-male-costume-mime__bodyclip)">
+    <rect x="112" y="346" width="176" height="106" fill="url(#toddler-male-costume-mime__band)"/>
+  </g>
+
+  <!-- two narrow braces over the shoulders, into the trouser waist -->
+  <g fill="var(--c2, #3B2A22)">
+    <path d="M162 346 h15 l11 70 h-17 z"/>
+    <path d="M238 346 h-15 l-11 70 h17 z"/>
+    <rect x="166" y="408" width="22" height="13" rx="4"/>
+    <rect x="212" y="408" width="22" height="13" rx="4"/>
+  </g>
+
+  <!-- glove cuff bands at each wrist -->
+  <g fill="var(--c2, #3B2A22)">
+    <rect x="112" y="426" width="46" height="15" rx="7"/>
+    <rect x="242" y="426" width="46" height="15" rx="7"/>
+  </g>
+  <g fill="var(--c1, #FCF5E8)">
+    <circle cx="134" cy="452" r="18"/>
+    <circle cx="266" cy="452" r="18"/>
+  </g>
+
+  <!-- high waistband, sitting above the natural waist -->
+  <path d="M148 404 h104 v15 h-104 z" fill="var(--c3, #45559F)"/>
+
+  <!-- boat neckline binding, wide and shallow -->
+  <path d="M152 348 q48 20 96 0" stroke="var(--c2, #3B2A22)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cropped trouser hem turn ups -->
+  <g fill="var(--c3, #45559F)">
+    <rect x="154" y="506" width="46" height="14" rx="4"/>
+    <rect x="200" y="506" width="46" height="14" rx="4"/>
+  </g>
+
+  <path d="M164 372 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

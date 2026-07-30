@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. No helmet, no circlet, no headband and no
+       tiara: the head is out of slot entirely. -->
+  <!-- axes: shoulder=LONG SLEEVED close tunic, fully covered · hem=mid thigh over narrow full
+       length TROUSERS tucked into soft ankle boots, with a crescent shield slung flat across the
+       back so a curved horn shows past each hip.
+       Recomputed for this body: the shield spans x112 to x288 against 76 unit hips at x162 to
+       x238, so each horn projects 50 units past the hip and clears the 40 unit floor. The tunic
+       hem lands at y502, which is level with the mid thigh mark of y502.
+       Drawn deliberately as the opposite of the warrior princess on every axis: trousered, long
+       sleeved, fully covered. No strapless bustier, no star motif at any size, no tiara, no wide
+       matching metal bracers on both wrists, no coiled rope or lasso, and no red with blue and
+       gold. The fallback is mint over ink with a butter shield. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c1, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-shield-warrior__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #4FA694)"/>
+      <stop offset="0.45" stop-color="var(--c1, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c1, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-shield-warrior__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C382D)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #CE9A3E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- crescent shield slung flat across the back, horns showing past both hips -->
+    <path d="M112 434 Q200 376 288 434 Q280 498 260 512 Q252 438 200 432 Q148 438 140 512 Q120 498 112 434 Z"
+          fill="url(#toddler-male-costume-shield-warrior__shield)"/>
+    <!-- narrow full length trousers and soft ankle boots -->
+    <rect x="168" y="468" width="30" height="72" rx="11" fill="url(#toddler-male-costume-shield-warrior__trouser)"/>
+    <rect x="202" y="468" width="30" height="72" rx="11" fill="url(#toddler-male-costume-shield-warrior__trouser)"/>
+    <rect x="158" y="528" width="46" height="42" rx="13" fill="url(#toddler-male-costume-shield-warrior__trouser)"/>
+    <rect x="196" y="528" width="46" height="42" rx="13" fill="url(#toddler-male-costume-shield-warrior__trouser)"/>
+    <!-- close long sleeved tunic to mid thigh -->
+    <path d="M152 372 q2-28 28-28 h40 q26 0 28 28 l6 130 q-54 18 -108 0 z"
+          fill="url(#toddler-male-costume-shield-warrior__tunic)"/>
+    <rect x="115" y="350" width="40" height="116" rx="18" fill="url(#toddler-male-costume-shield-warrior__sleeve)"/>
+    <rect x="245" y="350" width="40" height="116" rx="18" fill="url(#toddler-male-costume-shield-warrior__sleeve)"/>
+  </g>
+
+  <!-- shield rim and boss ribs, structural only, with no device of any kind on the face -->
+  <g stroke="var(--c2, #2E211A)" stroke-opacity="0.4" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M120 436 Q200 386 280 436"/>
+    <path d="M148 502 Q150 452 200 442"/>
+    <path d="M252 502 Q250 452 200 442"/>
+  </g>
+
+  <!-- wide diagonal baldric across the chest -->
+  <path d="M252 358 L152 456 L136 438 L236 344 Z" fill="var(--c3, #CE9A3E)"/>
+  <path d="M246 360 L154 450" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- tunic hem band and boot cuffs -->
+  <path d="M148 482 Q200 500 252 482 L254 496 Q200 514 146 496 Z" fill="var(--c3, #CE9A3E)"/>
+  <g fill="var(--c3, #CE9A3E)">
+    <rect x="156" y="522" width="50" height="13" rx="6"/>
+    <rect x="194" y="522" width="50" height="13" rx="6"/>
+  </g>
+
+  <!-- keyhole neck slit -->
+  <path d="M194 346 h12 v19 q-6 6 -12 0 z" fill="var(--c2, #2E211A)"/>
+
+  <path d="M164 376 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

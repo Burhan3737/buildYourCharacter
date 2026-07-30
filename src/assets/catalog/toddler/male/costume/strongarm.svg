@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The shoulder plates spread OUTWARD and
+       never upward, so nothing reaches the jaw. -->
+  <!-- axes: shoulder=BROAD FLAT PLATE YOKE reaching well past the arm on each side ·
+       closure=open down both sides, cross laced armpit to waist, over full length trousers.
+       Recomputed for this body: the arm blocks sit at x118 to x150 and x250 to x282, and the yoke
+       runs to x104 and x296, so each plate stands 14 units past the outer arm and is 76 units
+       wide, well over the 40 unit floor. The trousers run the full length to the boot at y546.
+       Tan over mint with ink plates, and the trouser hem is turned and clean. This family is
+       never green with purple, and it never has a torn hem. No emblem, no chest disc. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-strongarm__vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE9A6C)"/>
+      <stop offset="1" stop-color="var(--c1, #9A6A44)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #55402F)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7FD0BD)"/>
+      <stop offset="1" stop-color="var(--c2, #4FA694)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-strongarm__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3629)"/>
+      <stop offset="1" stop-color="var(--c3, #2C1F19)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- straight full length trousers -->
+    <rect x="158" y="438" width="42" height="114" rx="9" fill="url(#toddler-male-costume-strongarm__trouser)"/>
+    <rect x="200" y="438" width="42" height="114" rx="9" fill="url(#toddler-male-costume-strongarm__trouser)"/>
+    <!-- narrow harness vest front, open down both sides -->
+    <path d="M174 346 H226 Q236 358 234 378 V430 Q234 456 200 464 Q166 456 166 430 V378 Q164 358 174 346 Z"
+          fill="url(#toddler-male-costume-strongarm__vest)"/>
+    <!-- broad flat plate yokes, spread outward past the arms -->
+    <path d="M104 374 Q104 348 130 346 H172 Q180 348 180 360 V378 Q140 390 108 382 Z"
+          fill="url(#toddler-male-costume-strongarm__plate)"/>
+    <path d="M296 374 Q296 348 270 346 H228 Q220 348 220 360 V378 Q260 390 292 382 Z"
+          fill="url(#toddler-male-costume-strongarm__plate)"/>
+    <!-- heavy flat boots -->
+    <rect x="152" y="546" width="50" height="24" rx="9" fill="url(#toddler-male-costume-strongarm__boot)"/>
+    <rect x="198" y="546" width="50" height="24" rx="9" fill="url(#toddler-male-costume-strongarm__boot)"/>
+  </g>
+
+  <!-- chunky cross lacing closing the open sides from armpit to waist -->
+  <g stroke="var(--c3, #3B2A22)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M152 384 L168 402 M168 384 L152 402"/>
+    <path d="M152 404 L168 422 M168 404 L152 422"/>
+    <path d="M152 424 L168 442 M168 424 L152 442"/>
+    <path d="M248 384 L232 402 M232 384 L248 402"/>
+    <path d="M248 404 L232 422 M232 404 L248 422"/>
+    <path d="M248 424 L232 442 M232 424 L248 442"/>
+  </g>
+
+  <!-- wide belt with one oversized buckle plate -->
+  <path d="M148 442 q52 16 104 0 v27 q-52 16 -104 0 z" fill="var(--c1, #9A6A44)"/>
+  <rect x="183" y="440" width="34" height="33" rx="8" fill="var(--c2, #4FA694)"/>
+  <rect x="192" y="449" width="16" height="16" rx="5" fill="var(--c1, #CE9A6C)"/>
+
+  <!-- plate rivet rows across each yoke, structural and not decorative -->
+  <g fill="var(--c1, #CE9A6C)">
+    <circle cx="119" cy="362" r="4.4"/>
+    <circle cx="138" cy="359" r="4.4"/>
+    <circle cx="157" cy="358" r="4.4"/>
+    <circle cx="281" cy="362" r="4.4"/>
+    <circle cx="262" cy="359" r="4.4"/>
+    <circle cx="243" cy="358" r="4.4"/>
+  </g>
+
+  <!-- turned trouser cuffs -->
+  <g fill="var(--c2, #7FD0BD)">
+    <rect x="154" y="524" width="50" height="21" rx="8"/>
+    <rect x="196" y="524" width="50" height="21" rx="8"/>
+  </g>
+
+  <!-- vest centre seam and edge binding -->
+  <path d="M200 356 V452" stroke="var(--c1, #9A6A44)" stroke-width="5" fill="none"
+        stroke-linecap="round"/>
+  <path d="M176 386 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

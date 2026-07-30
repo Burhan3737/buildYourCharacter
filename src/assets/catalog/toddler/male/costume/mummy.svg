@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandage Wrap" data-family="mummy" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The head is NEVER wrapped: the wrapped
+       collar stops at the ceiling and the face stays completely visible. -->
+  <!-- axes: closure=NONE AT ALL, no fastening anywhere, only overlapping strip ends ·
+       volume=every limb bound separately, alternating diagonal strips, ragged ends trailing free.
+       Recomputed for this body: the bound torso mass runs x146 to x254 and y344 to y488, which
+       bridges the torso and the 76 unit hips as one block, and each arm is bound alone inside
+       x116 to x156 so the gap between limb and body reads at thumbnail size.
+       Cloth only. No remains, no skull, no decay, no pallor. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-mummy__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F1E7D3)"/>
+      <stop offset="1" stop-color="var(--c1, #D2C3A4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mummy__limb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #D2C3A4)"/>
+      <stop offset="0.45" stop-color="var(--c1, #F1E7D3)"/>
+      <stop offset="1" stop-color="var(--c1, #D2C3A4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-mummy__loose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E6D8BC)"/>
+      <stop offset="1" stop-color="var(--c3, #BFAC88)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-costume-mummy__torsoclip">
+      <path d="M146 374 q0-30 28-30 h52 q28 0 28 30 v72 q0 42 -28 42 h-52 q-28 0 -28-42 z"/>
+    </clipPath>
+    <clipPath id="toddler-male-costume-mummy__armclip">
+      <rect x="116" y="348" width="40" height="108" rx="19"/>
+      <rect x="244" y="348" width="40" height="108" rx="19"/>
+    </clipPath>
+    <clipPath id="toddler-male-costume-mummy__legclip">
+      <rect x="158" y="474" width="44" height="84" rx="19"/>
+      <rect x="198" y="474" width="44" height="84" rx="19"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ragged strip ends trailing free from forearm, hip and calf -->
+    <g fill="url(#toddler-male-costume-mummy__loose)">
+      <path d="M122 430 q-15 19 -21 42 q-2 8 4 9 q5 1 7-6 q4-21 17-36 z"/>
+      <path d="M252 464 q23 6 38 21 q6 6 1 11 q-6 5 -11-1 q-11-13 -30-17 z"/>
+      <path d="M242 480 q19 19 22 44 q1 8 -6 9 q-7 1 -8-7 q-3-21 -16-34 z"/>
+      <path d="M162 508 q-17 15 -22 38 q-1 8 5 9 q6 1 7-6 q4-19 16-29 z"/>
+      <path d="M198 490 q-4 27 -20 44 q-6 6 -11 1 q-5-5 1-10 q14-14 18-36 z"/>
+    </g>
+
+    <!-- torso and hip, bound as one mass -->
+    <path d="M146 374 q0-30 28-30 h52 q28 0 28 30 v72 q0 42 -28 42 h-52 q-28 0 -28-42 z"
+          fill="url(#toddler-male-costume-mummy__linen)"/>
+
+    <!-- arms bound separately, down past the wrist -->
+    <rect x="116" y="348" width="40" height="108" rx="19" fill="url(#toddler-male-costume-mummy__limb)"/>
+    <rect x="244" y="348" width="40" height="108" rx="19" fill="url(#toddler-male-costume-mummy__limb)"/>
+
+    <!-- legs bound separately, down to the ankle -->
+    <rect x="158" y="474" width="44" height="84" rx="19" fill="url(#toddler-male-costume-mummy__limb)"/>
+    <rect x="198" y="474" width="44" height="84" rx="19" fill="url(#toddler-male-costume-mummy__limb)"/>
+
+    <!-- wrapped collar sitting low, framing the jaw from below -->
+    <path d="M166 344 q34 22 68 0 q4 20 -8 26 q-26 10 -52 0 q-12-6 -8-26 z"
+          fill="url(#toddler-male-costume-mummy__loose)"/>
+  </g>
+
+  <!-- torso strips: the upper run takes one diagonal, the lower run the other -->
+  <g clip-path="url(#toddler-male-costume-mummy__torsoclip)" fill="var(--c2, #B5A176)" fill-opacity="0.82">
+    <path d="M142 366 L258 346 L258 360 L142 380 z"/>
+    <path d="M142 388 L258 368 L258 382 L142 402 z"/>
+    <path d="M142 410 L258 390 L258 404 L142 424 z"/>
+    <path d="M142 434 L258 454 L258 468 L142 448 z"/>
+    <path d="M142 456 L258 476 L258 490 L142 470 z"/>
+    <path d="M142 478 L258 498 L258 512 L142 492 z"/>
+  </g>
+
+  <!-- arm strips -->
+  <g clip-path="url(#toddler-male-costume-mummy__armclip)" fill="var(--c2, #B5A176)" fill-opacity="0.82">
+    <path d="M112 362 L160 350 L160 362 L112 374 z"/>
+    <path d="M112 386 L160 374 L160 386 L112 398 z"/>
+    <path d="M112 410 L160 398 L160 410 L112 422 z"/>
+    <path d="M112 434 L160 422 L160 434 L112 446 z"/>
+    <path d="M240 350 L288 362 L288 374 L240 362 z"/>
+    <path d="M240 374 L288 386 L288 398 L240 386 z"/>
+    <path d="M240 398 L288 410 L288 422 L240 410 z"/>
+    <path d="M240 422 L288 434 L288 446 L240 434 z"/>
+  </g>
+
+  <!-- leg strips -->
+  <g clip-path="url(#toddler-male-costume-mummy__legclip)" fill="var(--c2, #B5A176)" fill-opacity="0.82">
+    <path d="M154 494 L206 480 L206 494 L154 508 z"/>
+    <path d="M154 518 L206 504 L206 518 L154 532 z"/>
+    <path d="M154 542 L206 528 L206 542 L154 556 z"/>
+    <path d="M194 480 L246 494 L246 508 L194 494 z"/>
+    <path d="M194 504 L246 518 L246 532 L194 518 z"/>
+    <path d="M194 528 L246 542 L246 556 L194 542 z"/>
+  </g>
+
+  <!-- overlap edges: the raw upper edge of each strip run -->
+  <g stroke="var(--c1, #B8A784)" stroke-width="2.6" fill="none" stroke-opacity="0.55" stroke-linecap="round">
+    <path d="M150 378 L252 361"/>
+    <path d="M150 446 L252 464"/>
+    <path d="M120 372 L154 364"/>
+    <path d="M246 364 L280 372"/>
+    <path d="M162 500 L198 490"/>
+    <path d="M202 490 L238 500"/>
+  </g>
+
+  <path d="M168 366 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

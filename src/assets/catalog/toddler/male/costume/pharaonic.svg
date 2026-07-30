@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pharaonic Kilt" data-family="pharaonic" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The broad collar is a flat disc that
+       spreads outward along the ceiling and never rises toward the mouth. There is no headcloth
+       and no uraeus: both would be head coverings and both are out of slot. -->
+  <!-- axes: shoulder=NONE, a bare torso with only a flat broad collar lying on it ·
+       hem=knee length pleated linen kilt with a stiff triangular apron standing out in front.
+       Recomputed for this body: the kilt hem lands at y510, six units below the knee anchor at
+       y513 measured to its deepest point, and the apron runs from y430 to y530 so it hangs 20
+       units past the kilt hem and reads as a separate stiff plane.
+       Pharaonic Egypt, a historical period, drawn as everyday dress. No cartouche, no crook,
+       no flail, no ruler. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-pharaonic__linen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EFDF)"/>
+      <stop offset="1" stop-color="var(--c1, #DBCFB4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-pharaonic__apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A248)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-pharaonic__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7FCFBE)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9F8E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-pharaonic__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FAD68F)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A248)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-costume-pharaonic__kiltclip">
+      <path d="M152 426 h96 q10 0 11 12 l8 72 q-67 18 -134 0 l8-72 q1-12 11-12 z"/>
+    </clipPath>
+    <clipPath id="toddler-male-costume-pharaonic__collarclip">
+      <path d="M142 346 q0 68 58 68 q58 0 58-68 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- finely pleated linen kilt, waist to knee -->
+    <path d="M152 426 h96 q10 0 11 12 l8 72 q-67 18 -134 0 l8-72 q1-12 11-12 z"
+          fill="url(#toddler-male-costume-pharaonic__linen)"/>
+
+    <!-- stiff triangular front apron standing out flat from the body, clear of the kilt hem -->
+    <path d="M186 430 h28 l28 100 q-42 14 -84 0 z" fill="url(#toddler-male-costume-pharaonic__apron)"/>
+
+    <!-- broad flat semicircular collar over both shoulders and the upper chest -->
+    <path d="M142 346 q0 68 58 68 q58 0 58-68 z" fill="url(#toddler-male-costume-pharaonic__collar)"/>
+
+    <!-- wide plain armlets above each elbow -->
+    <rect x="114" y="376" width="40" height="25" rx="9" fill="url(#toddler-male-costume-pharaonic__band)"/>
+    <rect x="246" y="376" width="40" height="25" rx="9" fill="url(#toddler-male-costume-pharaonic__band)"/>
+
+    <!-- flat sandal soles; the legs and feet stay bare -->
+    <rect x="162" y="558" width="42" height="12" rx="6" fill="url(#toddler-male-costume-pharaonic__band)"/>
+    <rect x="196" y="558" width="42" height="12" rx="6" fill="url(#toddler-male-costume-pharaonic__band)"/>
+  </g>
+
+  <!-- fine knife pleats down the kilt -->
+  <g clip-path="url(#toddler-male-costume-pharaonic__kiltclip)">
+    <g stroke="var(--c1, #C6B896)" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M150 428 L142 518"/>
+      <path d="M162 428 L157 520"/>
+      <path d="M174 428 L171 522"/>
+      <path d="M187 428 L186 524"/>
+      <path d="M200 428 L200 524"/>
+      <path d="M213 428 L214 524"/>
+      <path d="M226 428 L229 522"/>
+      <path d="M238 428 L243 520"/>
+      <path d="M250 428 L258 518"/>
+    </g>
+  </g>
+
+  <!-- concentric collar rows, alternating -->
+  <g clip-path="url(#toddler-male-costume-pharaonic__collarclip)">
+    <path d="M155 346 q0 45 45 45 q45 0 45-45 z" fill="var(--c3, #F7C873)" fill-opacity="0.95"/>
+    <path d="M167 346 q0 29 33 29 q33 0 33-29 z" fill="var(--c2, #4E9F8E)" fill-opacity="0.9"/>
+    <g stroke="var(--c1, #F6EFDF)" stroke-width="3.5" fill="none" stroke-opacity="0.75">
+      <path d="M149 346 q0 61 51 61 q51 0 51-61"/>
+      <path d="M161 346 q0 39 39 39 q39 0 39-39"/>
+    </g>
+  </g>
+
+  <!-- narrow beaded belt at the kilt waist -->
+  <path d="M149 420 q51 12 102 0 v15 q-51 12 -102 0 z" fill="url(#toddler-male-costume-pharaonic__band)"/>
+  <g fill="var(--c2, #4E9F8E)">
+    <circle cx="161" cy="428" r="4"/>
+    <circle cx="177" cy="430" r="4"/>
+    <circle cx="193" cy="431" r="4"/>
+    <circle cx="209" cy="431" r="4"/>
+    <circle cx="225" cy="430" r="4"/>
+    <circle cx="241" cy="428" r="4"/>
+  </g>
+
+  <!-- apron edge binding -->
+  <path d="M188 434 l-25 94 M212 434 l25 94" stroke="var(--c2, #4E9F8E)" stroke-width="5"
+        fill="none" stroke-linecap="round" stroke-opacity="0.85"/>
+
+  <path d="M170 358 q30 14 60 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

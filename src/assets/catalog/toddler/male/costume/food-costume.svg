@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Food Costume" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The stalk finial tops out at y348 and so
+       stops below the ceiling. -->
+  <!-- axes: shoulder=TWO NARROW STRAPS ONLY, the garment hangs free off them and touches nothing
+       else · volume=one large convex slab with the arms and legs entirely OUTSIDE it.
+       Recomputed for this body: the slab spans x126 to x274, which is 148 units across against a
+       100 unit torso and 76 unit hips, so it stands 24 units clear of the torso and 36 units
+       clear of the hip on each side. Generic fruit shape only: no brand, no character, no face. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F9B4A6)"/>
+      <stop offset="1" stop-color="var(--c1, #D06E5B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #85D3C1)"/>
+      <stop offset="1" stop-color="var(--c2, #4A9683)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-food-costume__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FDF3DF)"/>
+      <stop offset="1" stop-color="var(--c3, #DECFAF)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-food-costume__skin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--skin2, #E7B892)"/>
+      <stop offset="0.45" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-costume-food-costume__slabclip">
+      <path d="M200 364 q58 0 74 46 q14 46 -8 78 q-24 32 -66 32 q-42 0 -66-32 q-22-32 -8-78 q16-46 74-46 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two narrow shoulder straps -->
+    <rect x="168" y="344" width="16" height="46" rx="8" fill="url(#toddler-male-costume-food-costume__strap)"/>
+    <rect x="216" y="344" width="16" height="46" rx="8" fill="url(#toddler-male-costume-food-costume__strap)"/>
+
+    <!-- one large convex slab hung free, upper chest to mid thigh -->
+    <path d="M200 364 q58 0 74 46 q14 46 -8 78 q-24 32 -66 32 q-42 0 -66-32 q-22-32 -8-78 q16-46 74-46 z"
+          fill="url(#toddler-male-costume-food-costume__slab)"/>
+
+    <!-- stalk and leaf finial standing at the top edge of the slab -->
+    <path d="M195 386 h10 v-32 q0-6 -5-6 q-5 0 -5 6 z" fill="url(#toddler-male-costume-food-costume__leaf)"/>
+    <path d="M203 354 q22-10 34 -2 q-13 15 -34 4 z" fill="url(#toddler-male-costume-food-costume__leaf)"/>
+  </g>
+
+  <!-- rind seams following the convex face of the slab -->
+  <g clip-path="url(#toddler-male-costume-food-costume__slabclip)">
+    <g stroke="var(--c1, #B85C4A)" stroke-width="4" fill="none" stroke-opacity="0.4" stroke-linecap="round">
+      <path d="M200 370 q-36 70 -6 148"/>
+      <path d="M200 370 q36 70 6 148"/>
+      <path d="M200 370 q-66 64 -54 136"/>
+      <path d="M200 370 q66 64 54 136"/>
+    </g>
+    <path d="M158 400 q36-26 78-24" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="12"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- strap buckle tabs where the straps meet the slab -->
+  <g fill="var(--c3, #C8B892)">
+    <rect x="165" y="374" width="22" height="12" rx="5"/>
+    <rect x="213" y="374" width="22" height="12" rx="5"/>
+  </g>
+
+  <!-- the arms and the legs are OUTSIDE the slab: they are repainted over it in skin so that
+       the board hung round the neck read survives at thumbnail size -->
+  <g fill="url(#toddler-male-costume-food-costume__skin)">
+    <rect x="118" y="352" width="32" height="90" rx="16"/>
+    <rect x="250" y="352" width="32" height="90" rx="16"/>
+    <circle cx="134" cy="440" r="19"/>
+    <circle cx="266" cy="440" r="19"/>
+    <rect x="170" y="498" width="28" height="48" rx="14"/>
+    <rect x="202" y="498" width="28" height="48" rx="14"/>
+    <rect x="166" y="544" width="34" height="26" rx="13"/>
+    <rect x="200" y="544" width="34" height="26" rx="13"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="3" fill="none" stroke-opacity="0.36" stroke-linecap="round">
+    <path d="M172 548 h22 M206 548 h22"/>
+  </g>
+</svg>

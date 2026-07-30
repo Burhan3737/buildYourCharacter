@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The shoulders exaggerate OUTWARD and
+       never upward, and the lapels lie flat and stop at the ceiling. -->
+  <!-- axes: closure=OPEN FRONT, two lapels falling away from a bare centre panel · volume=wide
+       and sagging, hem at mid calf over trousers that puddle in folds on the ground line.
+       Recomputed for this body: the jacket shoulder line reaches x124 and x276 against a torso at
+       x150 to x250, so it projects 26 units outside the body on each side, and the hem opens to
+       x110 and x290. The sleeves run to y480, which is 40 units past the hand centre at y440, so
+       they swallow the hands completely. No cane and no prop. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #5B6CBC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-oversized-suit__sleeve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #5B6CBC)"/>
+      <stop offset="0.45" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #5B6CBC)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6D7ECD)"/>
+      <stop offset="1" stop-color="var(--c1, #46559C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #FCF5E8)"/>
+      <stop offset="1" stop-color="var(--c2, #DED2BB)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-oversized-suit__button" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBDD9C)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A94F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- trousers puddling in folds at the ground line -->
+    <path d="M150 458 H200 v104 q0 8 -10 8 h-44 q-10 0 -9-11 q9-40 13-101 z"
+          fill="url(#toddler-male-costume-oversized-suit__trouser)"/>
+    <path d="M250 458 H200 v104 q0 8 10 8 h44 q10 0 9-11 q-9-40 -13-101 z"
+          fill="url(#toddler-male-costume-oversized-suit__trouser)"/>
+
+    <!-- jacket several sizes too large: shoulders well outside the body, hem at mid calf -->
+    <path d="M124 366 q6-22 32-22 h88 q26 0 32 22 l14 168 q-90 22 -180 0 z"
+          fill="url(#toddler-male-costume-oversized-suit__jacket)"/>
+
+    <!-- sleeves swallowing the hands entirely -->
+    <rect x="104" y="350" width="48" height="130" rx="22" fill="url(#toddler-male-costume-oversized-suit__sleeve)"/>
+    <rect x="248" y="350" width="48" height="130" rx="22" fill="url(#toddler-male-costume-oversized-suit__sleeve)"/>
+  </g>
+
+  <!-- bare centre panel: the open front -->
+  <path d="M186 344 h28 l8 98 q-22 8 -44 0 z" fill="url(#toddler-male-costume-oversized-suit__shirt)"/>
+
+  <!-- wide notched lapels falling away from the centre -->
+  <g fill="var(--c1, #A3B2EC)">
+    <path d="M148 344 h36 l-8 90 q-24-6 -34-28 z"/>
+    <path d="M252 344 h-36 l8 90 q24-6 34-28 z"/>
+  </g>
+  <g stroke="var(--c1, #45549C)" stroke-width="3" fill="none" stroke-opacity="0.45" stroke-linecap="round">
+    <path d="M182 348 l-8 84"/>
+    <path d="M218 348 l8 84"/>
+  </g>
+
+  <!-- a single enormous button at the waist -->
+  <circle cx="200" cy="456" r="18" fill="url(#toddler-male-costume-oversized-suit__button)"/>
+  <g fill="var(--c1, #45549C)" fill-opacity="0.6">
+    <circle cx="194" cy="453" r="3"/>
+    <circle cx="206" cy="453" r="3"/>
+    <circle cx="194" cy="462" r="3"/>
+    <circle cx="206" cy="462" r="3"/>
+  </g>
+
+  <!-- oversized flap pockets low on the jacket -->
+  <g fill="var(--c1, #45549C)" fill-opacity="0.5">
+    <path d="M140 480 h46 v17 q-23 6 -46 0 z"/>
+    <path d="M214 480 h46 v17 q-23 6 -46 0 z"/>
+  </g>
+
+  <!-- pocket square -->
+  <path d="M156 400 h27 l-4 15 h-21 z" fill="var(--c2, #FCF5E8)"/>
+
+  <!-- sleeves turned back at the very end, still past the hand -->
+  <g fill="var(--c1, #45549C)" fill-opacity="0.55">
+    <rect x="104" y="454" width="48" height="17" rx="7"/>
+    <rect x="248" y="454" width="48" height="17" rx="7"/>
+  </g>
+
+  <!-- puddled folds where the trousers hit the ground -->
+  <g stroke="var(--c1, #3A4788)" stroke-width="4" fill="none" stroke-opacity="0.45" stroke-linecap="round">
+    <path d="M146 548 q26 8 50 2"/>
+    <path d="M141 560 q29 8 55 2"/>
+    <path d="M254 548 q-26 8 -50 2"/>
+    <path d="M259 560 q-29 8 -55 2"/>
+  </g>
+
+  <path d="M156 372 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

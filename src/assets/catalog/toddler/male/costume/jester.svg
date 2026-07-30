@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The belled hood is a separate headwear
+       family and is deliberately not drawn here. -->
+  <!-- axes: hem=DEEP POINTED TABS, five of them, each ending in a round bell · volume=boxy
+       doublet standing clear of the body over close party coloured hose.
+       Recomputed for this body: the tabs run from the hem line at y454 down to their points at
+       y500, so each tab is 46 units deep, well past the 30 unit floor for this feature. The
+       doublet is 120 units across at x140 to x260 against a 100 unit torso, so it stands 10
+       units clear on each side and reads boxy.
+       Periwinkle and coral. Never green with purple, and there is no waistcoat. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-jester__doublet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6072C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__half" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7B6AA)"/>
+      <stop offset="1" stop-color="var(--c2, #DE8271)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__sleeveL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #6072C4)"/>
+      <stop offset="0.5" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6072C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__sleeveR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c2, #DE8271)"/>
+      <stop offset="0.5" stop-color="var(--c2, #F7B6AA)"/>
+      <stop offset="1" stop-color="var(--c2, #DE8271)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__hoseL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7B6AA)"/>
+      <stop offset="1" stop-color="var(--c2, #D97C6B)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__hoseR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #5A6CBE)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-jester__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBDD9C)"/>
+      <stop offset="1" stop-color="var(--c3, #DFA945)"/>
+    </linearGradient>
+    <clipPath id="toddler-male-costume-jester__doubletclip">
+      <path d="M160 344 h80 q20 0 20 22 v88 L248 500 L236 454 L224 500 L212 454 L200 500 L188 454 L176 500 L164 454 L152 500 L140 454 v-88 q0-22 20-22 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close party coloured hose -->
+    <rect x="164" y="470" width="38" height="88" rx="16" fill="url(#toddler-male-costume-jester__hoseL)"/>
+    <rect x="198" y="470" width="38" height="88" rx="16" fill="url(#toddler-male-costume-jester__hoseR)"/>
+    <path d="M156 546 h46 v12 q0 12 -14 12 h-20 q-12 0 -12-12 z" fill="url(#toddler-male-costume-jester__bell)"/>
+    <path d="M244 546 h-46 v12 q0 12 14 12 h20 q12 0 12-12 z" fill="url(#toddler-male-costume-jester__bell)"/>
+
+    <!-- boxy doublet, hip hem cut into five deep pointed tabs -->
+    <path d="M160 344 h80 q20 0 20 22 v88 L248 500 L236 454 L224 500 L212 454 L200 500 L188 454 L176 500 L164 454 L152 500 L140 454 v-88 q0-22 20-22 z"
+          fill="url(#toddler-male-costume-jester__doublet)"/>
+
+    <!-- sleeves, cuffs cut into the same points -->
+    <path d="M114 362 q0-12 12-12 h20 q10 0 10 12 v64 L144 458 L136 426 L128 458 L120 426 L114 454 z"
+          fill="url(#toddler-male-costume-jester__sleeveL)"/>
+    <path d="M286 362 q0-12 -12-12 h-20 q-10 0 -10 12 v64 L256 458 L264 426 L272 458 L280 426 L286 454 z"
+          fill="url(#toddler-male-costume-jester__sleeveR)"/>
+  </g>
+
+  <!-- party per pale: the right half of the doublet in the second colour -->
+  <g clip-path="url(#toddler-male-costume-jester__doubletclip)">
+    <rect x="200" y="344" width="62" height="160" fill="url(#toddler-male-costume-jester__half)"/>
+  </g>
+
+  <!-- pointed neck trim, hanging DOWN from the ceiling -->
+  <path d="M166 344 h68 l-8 18 -9-12 -8 16 -9-14 -8 16 -9-12 -8 16 z" fill="var(--c3, #F7C873)"/>
+
+  <!-- waist band splitting the doublet -->
+  <path d="M140 426 q60 16 120 0 v15 q-60 16 -120 0 z" fill="var(--c3, #DFA945)"/>
+
+  <!-- bells at every hem tab point -->
+  <g fill="url(#toddler-male-costume-jester__bell)">
+    <circle cx="152" cy="508" r="9"/>
+    <circle cx="176" cy="508" r="9"/>
+    <circle cx="200" cy="508" r="9"/>
+    <circle cx="224" cy="508" r="9"/>
+    <circle cx="248" cy="508" r="9"/>
+  </g>
+  <!-- bells at every cuff point -->
+  <g fill="url(#toddler-male-costume-jester__bell)">
+    <circle cx="144" cy="465" r="8"/>
+    <circle cx="128" cy="465" r="8"/>
+    <circle cx="256" cy="465" r="8"/>
+    <circle cx="272" cy="465" r="8"/>
+  </g>
+  <g stroke="var(--c3, #A87C22)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-opacity="0.7">
+    <path d="M146 510 h12 M170 510 h12 M194 510 h12 M218 510 h12 M242 510 h12"/>
+  </g>
+
+  <path d="M160 364 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

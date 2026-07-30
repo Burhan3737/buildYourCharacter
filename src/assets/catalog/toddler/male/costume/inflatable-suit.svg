@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Inflatable Suit" data-family="inflatable-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. The neck ring gathers AT the ceiling and
+       stops there; no part of it rises past the jaw, and there is no inflated head. -->
+  <!-- axes: shoulder=NARROW RIBBED TUBE ARMS HELD OUT AT 45 DEGREES, clear of the body on both
+       sides · volume=one near spherical mass gathered to a tight neck ring.
+       Recomputed for this body: the ball is 156 units across at x122 to x278 against 76 unit
+       hips at x162 to x238, so it clears the hip by 40 units per side, while the arm tubes are
+       only 24 units thick. That contrast, fat body against thin splayed limbs, is the family. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-inflatable-suit__ball" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBDD9C)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A94F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-inflatable-suit__tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #D9A94F)"/>
+      <stop offset="0.45" stop-color="var(--c1, #FBDD9C)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A94F)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-inflatable-suit__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F9BCB0)"/>
+      <stop offset="1" stop-color="var(--c2, #D0705E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-inflatable-suit__pod" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7D8898)"/>
+      <stop offset="1" stop-color="var(--c3, #4C5560)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow ribbed tube legs -->
+    <rect x="164" y="500" width="34" height="70" rx="17" fill="url(#toddler-male-costume-inflatable-suit__tube)"/>
+    <rect x="202" y="500" width="34" height="70" rx="17" fill="url(#toddler-male-costume-inflatable-suit__tube)"/>
+
+    <!-- gathered funnel running from the neck ring down onto the ball -->
+    <path d="M176 350 h48 l32 48 q-56 -14 -112 0 z" fill="url(#toddler-male-costume-inflatable-suit__ball)"/>
+
+    <!-- the near spherical body, armpit to knee -->
+    <ellipse cx="200" cy="454" rx="78" ry="78" fill="url(#toddler-male-costume-inflatable-suit__ball)"/>
+
+    <!-- narrow ribbed tube arms running out and DOWN from the shoulder at 45 degrees, drawn OVER
+         the ball so they stay clearly separated from it -->
+    <path d="M157.5 348.5 Q166 345 172 351 Q178 357 174.5 365.5 L102.5 437.5 Q94 441 88 435 Q82 429 85.5 420.5 z"
+          fill="url(#toddler-male-costume-inflatable-suit__tube)"/>
+    <path d="M242.5 348.5 Q234 345 228 351 Q222 357 225.5 365.5 L297.5 437.5 Q306 441 312 435 Q318 429 314.5 420.5 z"
+          fill="url(#toddler-male-costume-inflatable-suit__tube)"/>
+
+    <!-- tight neck ring at the ceiling -->
+    <ellipse cx="200" cy="356" rx="28" ry="12" fill="url(#toddler-male-costume-inflatable-suit__ring)"/>
+
+    <!-- small round fan pod at the waist -->
+    <circle cx="274" cy="438" r="19" fill="url(#toddler-male-costume-inflatable-suit__pod)"/>
+  </g>
+
+  <!-- seam rings around the inflated ball -->
+  <g stroke="var(--c1, #B98C36)" stroke-width="4" fill="none" stroke-opacity="0.45" stroke-linecap="round">
+    <path d="M131 412 q69 24 138 0"/>
+    <path d="M122 454 q78 24 156 0"/>
+    <path d="M132 496 q68 22 136 0"/>
+  </g>
+
+  <!-- ribbing across the splayed arm tubes -->
+  <g stroke="var(--c2, #D0705E)" stroke-width="4" fill="none" stroke-opacity="0.75" stroke-linecap="round">
+    <path d="M148 361 L162 375"/>
+    <path d="M134 375 L148 389"/>
+    <path d="M119 390 L133 404"/>
+    <path d="M105 404 L119 418"/>
+    <path d="M252 361 L238 375"/>
+    <path d="M266 375 L252 389"/>
+    <path d="M281 390 L267 404"/>
+    <path d="M295 404 L281 418"/>
+  </g>
+
+  <!-- ribbing across the leg tubes -->
+  <g stroke="var(--c2, #D0705E)" stroke-width="4" fill="none" stroke-opacity="0.7" stroke-linecap="round">
+    <path d="M167 518 h28 M167 534 h28 M167 550 h28"/>
+    <path d="M205 518 h28 M205 534 h28 M205 550 h28"/>
+  </g>
+
+  <!-- fan pod grille -->
+  <g stroke="var(--c2, #F9BCB0)" stroke-width="3" fill="none" stroke-linecap="round" stroke-opacity="0.85">
+    <path d="M266 432 h16 M264 438 h20 M266 444 h16"/>
+  </g>
+
+  <!-- ring binding where the funnel gathers -->
+  <path d="M178 358 q22 10 44 0" stroke="var(--c2, #D0705E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M156 408 q44 -20 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="14"
+        fill="none" stroke-linecap="round"/>
+</svg>

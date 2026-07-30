@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c2,c1,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has geometry above y = 344. No helmet, no goggles, no hood. -->
+  <!-- axes: shoulder=CLOTH MEMBRANE stretched wrist to hip, swallowing the whole arm ·
+       volume=one wide triangle from shoulder to ankle, with a third membrane bridging the knees.
+       The membranes are PLAIN CLOTH with drawn rib seams. No mechanical wing, no feather, no
+       metal plate, no strut of any kind.
+       Recomputed for this body: the side membranes reach x104 and x296 at y490, which is 58 units
+       outside the 76 unit hips at x162 to x238, and the knee membrane spans x166 to x234 at the
+       ground, so the outline is one unbroken triangle rather than two limbs and a body. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-sky-glider__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F8B4A8)"/>
+      <stop offset="1" stop-color="var(--c2, #DA7F6E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-sky-glider__leg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #6274C4)"/>
+      <stop offset="0.45" stop-color="var(--c1, #8FA0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #6274C4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wrist to hip membranes: the arms live inside them -->
+    <path d="M150 350 Q96 426 104 490 L122 558 Q148 564 162 550 L168 484 Q156 414 156 356 Z"
+          fill="url(#toddler-male-costume-sky-glider__wing)"/>
+    <path d="M250 350 Q304 426 296 490 L278 558 Q252 564 238 550 L232 484 Q244 414 244 356 Z"
+          fill="url(#toddler-male-costume-sky-glider__wing)"/>
+    <!-- fitted bodysuit through the middle -->
+    <path d="M170 344 h60 q22 2 22 26 v86 q0 28 -28 28 h-48 q-28 0 -28-28 v-86 q0-24 22-26 z"
+          fill="url(#toddler-male-costume-sky-glider__suit)"/>
+    <rect x="168" y="478" width="30" height="80" rx="14" fill="url(#toddler-male-costume-sky-glider__leg)"/>
+    <rect x="202" y="478" width="30" height="80" rx="14" fill="url(#toddler-male-costume-sky-glider__leg)"/>
+    <!-- the third membrane, bridging knee to knee -->
+    <path d="M170 510 Q200 488 230 510 L234 558 Q200 568 166 558 Z"
+          fill="url(#toddler-male-costume-sky-glider__wing)"/>
+    <rect x="158" y="548" width="46" height="22" rx="10" fill="url(#toddler-male-costume-sky-glider__suit)"/>
+    <rect x="196" y="548" width="46" height="22" rx="10" fill="url(#toddler-male-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane: drawn cloth seams, never a wing bone -->
+  <g stroke="var(--c3, #E6A94A)" stroke-width="4" fill="none" stroke-linecap="round"
+     stroke-opacity="0.9">
+    <path d="M154 366 Q122 422 114 482"/>
+    <path d="M154 404 Q130 452 124 506"/>
+    <path d="M156 442 Q138 486 134 534"/>
+    <path d="M246 366 Q278 422 286 482"/>
+    <path d="M246 404 Q270 452 276 506"/>
+    <path d="M244 442 Q262 486 266 534"/>
+    <path d="M186 514 Q184 538 182 558"/>
+    <path d="M214 514 Q216 538 218 558"/>
+  </g>
+
+  <!-- suit trim: closed neck band, waist band, ankle binding -->
+  <path d="M172 344 h56 v12 q-28 8 -56 0 z" fill="var(--c3, #E6A94A)"/>
+  <path d="M150 426 q50 14 100 0 v13 q-50 14 -100 0 z" fill="var(--c3, #E6A94A)"/>
+  <g fill="var(--c3, #E6A94A)">
+    <rect x="120" y="550" width="44" height="10" rx="5"/>
+    <rect x="236" y="550" width="44" height="10" rx="5"/>
+  </g>
+
+  <path d="M168 372 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

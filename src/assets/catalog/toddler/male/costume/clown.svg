@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown Romper" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- FACE CEILING: toddler/male costume art must stay at y >= 344. The jaw is at y 346.
+       Nothing in this file has any geometry above y = 344. Whiteface cannot be drawn from this
+       slot at all, so the clown identity is carried entirely by the ballooning romper and the
+       ruff. No painted grin, no nose: the red nose ships separately in the glasses slot. -->
+  <!-- axes: shoulder=DROPPED, the sleeve balloons straight out of the body with no seam at the
+       point of the shoulder · volume=hugely oversized gathered romper, WIDEST AT THE HIP,
+       gathered to tight cuffs at wrist and ankle.
+       Recomputed for this body: the romper reaches x108 and x292 at y468, and these hips are
+       76 units wide at x162 to x238, so the balloon clears the hip by 54 units per side.
+       The ruff runs from x127 to x273 against the neck block at x184 to x216, so it projects
+       57 units beyond the neck on each side, well clear of the 45 unit floor.
+       Mint body, coral ruff, butter trim. Never green hair with a purple tailcoat, and there is
+       no waistcoat anywhere in this file. -->
+  <defs>
+    <linearGradient id="toddler-male-costume-clown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #85D3C1)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9F8E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-clown__balloon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--c1, #4E9F8E)"/>
+      <stop offset="0.42" stop-color="var(--c1, #85D3C1)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9F8E)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-clown__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F9BCB0)"/>
+      <stop offset="1" stop-color="var(--c2, #DD8271)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-clown__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EE9C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #C96D5C)"/>
+    </linearGradient>
+    <linearGradient id="toddler-male-costume-clown__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBDD9C)"/>
+      <stop offset="1" stop-color="var(--c3, #DFA945)"/>
+    </linearGradient>
+    <pattern id="toddler-male-costume-clown__dot" patternUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+      <circle cx="6" cy="8" r="4.8" fill="var(--c3, #FBDD9C)" fill-opacity="0.55"/>
+      <circle cx="18" cy="19" r="4.8" fill="var(--c3, #FBDD9C)" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="toddler-male-costume-clown__bodyclip">
+      <path d="M152 344 H248 q28 0 34 32 Q300 424 292 468 q-10 46 -92 46 q-82 0 -92-46 Q100 424 118 376 q6-32 34-32 z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ballooning sleeves and legs, every one gathered to a tight cuff -->
+    <ellipse cx="122" cy="400" rx="34" ry="56" fill="url(#toddler-male-costume-clown__balloon)"/>
+    <ellipse cx="278" cy="400" rx="34" ry="56" fill="url(#toddler-male-costume-clown__balloon)"/>
+    <ellipse cx="176" cy="514" rx="35" ry="46" fill="url(#toddler-male-costume-clown__balloon)"/>
+    <ellipse cx="224" cy="514" rx="35" ry="46" fill="url(#toddler-male-costume-clown__balloon)"/>
+
+    <!-- the closed romper: a gathered barrel taken to its widest across the hip -->
+    <path d="M152 344 H248 q28 0 34 32 Q300 424 292 468 q-10 46 -92 46 q-82 0 -92-46 Q100 424 118 376 q6-32 34-32 z"
+          fill="url(#toddler-male-costume-clown__body)"/>
+
+    <!-- mitten gloves below the gathered wrist -->
+    <circle cx="130" cy="462" r="19" fill="url(#toddler-male-costume-clown__cuff)"/>
+    <circle cx="270" cy="462" r="19" fill="url(#toddler-male-costume-clown__cuff)"/>
+
+    <!-- broad flat shoes -->
+    <ellipse cx="168" cy="558" rx="43" ry="12" fill="url(#toddler-male-costume-clown__shoe)"/>
+    <ellipse cx="232" cy="558" rx="43" ry="12" fill="url(#toddler-male-costume-clown__shoe)"/>
+  </g>
+
+  <!-- polka surface across the romper -->
+  <g clip-path="url(#toddler-male-costume-clown__bodyclip)">
+    <rect x="106" y="344" width="188" height="172" fill="url(#toddler-male-costume-clown__dot)"/>
+  </g>
+
+  <!-- gathered cuffs at every opening -->
+  <g fill="url(#toddler-male-costume-clown__cuff)">
+    <path d="M98 436 h48 v15 q-24 8 -48 0 z"/>
+    <path d="M254 436 h48 v15 q-24 8 -48 0 z"/>
+    <path d="M146 536 h56 v15 q-28 8 -56 0 z"/>
+    <path d="M198 536 h56 v15 q-28 8 -56 0 z"/>
+  </g>
+  <g stroke="var(--c3, #A87C22)" stroke-width="2.4" fill="none" stroke-opacity="0.6" stroke-linecap="round">
+    <path d="M106 438 v11 M117 438 v11 M128 438 v11 M139 438 v11"/>
+    <path d="M261 438 v11 M272 438 v11 M283 438 v11 M294 438 v11"/>
+  </g>
+
+  <!-- three oversized pom-pom buttons in a line down the centre front -->
+  <g fill="url(#toddler-male-costume-clown__ruff)">
+    <circle cx="200" cy="398" r="16"/>
+    <circle cx="200" cy="436" r="16"/>
+    <circle cx="200" cy="474" r="16"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.3">
+    <circle cx="194" cy="393" r="5"/>
+    <circle cx="194" cy="431" r="5"/>
+    <circle cx="194" cy="469" r="5"/>
+  </g>
+
+  <!-- deep gathered ruff, flat and only 26 units deep so a ruff necklace can layer on top -->
+  <ellipse cx="200" cy="357" rx="66" ry="13" fill="url(#toddler-male-costume-clown__ruff)"/>
+  <g fill="url(#toddler-male-costume-clown__ruff)">
+    <circle cx="140" cy="357" r="13"/>
+    <circle cx="160" cy="357" r="13"/>
+    <circle cx="180" cy="357" r="13"/>
+    <circle cx="200" cy="357" r="13"/>
+    <circle cx="220" cy="357" r="13"/>
+    <circle cx="240" cy="357" r="13"/>
+    <circle cx="260" cy="357" r="13"/>
+  </g>
+  <path d="M140 352 q60 -6 120 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M154 392 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>
