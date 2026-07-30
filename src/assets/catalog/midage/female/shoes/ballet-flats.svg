@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ballet Flats" data-family="ballet-flats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: foot rects x160 to x202 and x198 to x240,
+       y544 to y570, ground y570. The ankle above them is x168 to x198 and x202 to x232, so the
+       centre channel on this body is only 4u wide and the two shoes are kept apart across it.
+       AXES: shaft height, a topline scooped so low that the whole instep is left bare and the
+       upper covers barely the bottom 22 units of the foot, plus fastening, none at all, no strap
+       and no buckle, which is what parts it from mary-janes.
+       surface tools: panel blocking (contrast toe cap against the quarters) plus trim
+       (topline binding and a sole barely thicker than the upper). -->
+  <defs>
+    <linearGradient id="midage-female-shoes-ballet-flats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E28F7B)"/>
+      <stop offset="1" stop-color="var(--c2, #C0705E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two very low scooped uppers, heel counter at the outer edge and a rounded
+       toe box toward the centre -->
+  <g class="sp-shadow">
+    <path d="M152 556 C152 548 156 545 162 546 C169 547 171 558 180 561
+             C190 565 198 558 206 560 C211 561 213 566 210 569
+             C208 570 203 570 199 570 L159 570 C154 570 152 566 152 561 Z"
+          fill="url(#midage-female-shoes-ballet-flats__upper)"/>
+    <path d="M248 556 C248 548 244 545 238 546 C231 547 229 558 220 561
+             C210 565 202 558 194 560 C189 561 187 566 190 569
+             C192 570 197 570 201 570 L241 570 C246 570 248 566 248 561 Z"
+          fill="url(#midage-female-shoes-ballet-flats__upper)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast toe caps -->
+  <path d="M187 562 C194 564 200 559 206 561 C211 562 213 566 210 569
+           C208 570 203 570 199 570 L187 570 Z" fill="var(--c3, #FDF0DC)"/>
+  <path d="M213 562 C206 564 200 559 194 561 C189 562 187 566 190 569
+           C192 570 197 570 201 570 L213 570 Z" fill="var(--c3, #FDF0DC)"/>
+
+  <!-- TRIM: topline binding along the scoop -->
+  <path d="M154 555 C156 547 166 550 180 559 C190 565 199 559 207 561"
+        stroke="var(--c3, #FDF0DC)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M246 555 C244 547 234 550 220 559 C210 565 201 559 193 561"
+        stroke="var(--c3, #FDF0DC)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soles barely thicker than the upper -->
+  <rect x="151" y="566" width="60" height="4" rx="2" fill="var(--c2, #C0705E)"/>
+  <rect x="189" y="566" width="60" height="4" rx="2" fill="var(--c2, #C0705E)"/>
+
+  <!-- vamp seams -->
+  <path d="M184 564 q6 3 11 1" stroke="var(--c2, #C0705E)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 564 q-6 3 -11 1" stroke="var(--c2, #C0705E)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- satin sheen -->
+  <path d="M159 564 q12 4 22 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M241 564 q-12 4 -22 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

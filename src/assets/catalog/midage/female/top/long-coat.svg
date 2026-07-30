@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; leg rect y370 to
+       y552, so MID CALF is y507 and the hem is set just past it at y512.
+       axes vs the slot: a full button placket under a notched collar, the coat fastened all the
+       way down (closure) + a straight 130u column falling to MID CALF at y512 (hem + volume).
+       Nothing else in this slot except duster-cardigan reaches past y440, and raincoat, the
+       nearest read, is an A-line snap shell stopping at mid thigh y440. Duster-cardigan shares
+       the length but has no fastening at all and a dropped shoulder.
+       Long set-in sleeves; one back vent, drawn as the centre-back release at the hem.
+       Midage read: five buttons rather than a double-breasted rank, no belt, no epaulettes.
+       Tools: panel blocking (notched collar and placket band painted through c3)
+       + structural (five buttons, two welt pockets, back vent, sleeve cuff seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-long-coat__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B99C6E)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B99C6E)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-long-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3E7CE)"/>
+      <stop offset="1" stop-color="var(--c2, #8B7145)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long set-in sleeves -->
+    <path d="M152 166 C129 174 120 193 120 216 L118 332 C120 348 129 355 142 354
+             C155 353 159 344 159 330 L158 212 Z"
+          fill="url(#midage-female-top-long-coat__sleeve)"/>
+    <path d="M248 166 C271 174 280 193 280 216 L282 332 C280 348 271 355 258 354
+             C245 353 241 344 241 330 L242 212 Z"
+          fill="url(#midage-female-top-long-coat__sleeve)"/>
+    <!-- left front, a straight column to mid calf -->
+    <path d="M206 162 H172 C149 166 141 182 140 204 L136 316 L135 416 L137 512 H206 Z"
+          fill="url(#midage-female-top-long-coat__panel)"/>
+    <!-- right front, overlapping the left down the centre so the placket never opens -->
+    <path d="M196 162 H228 C251 166 259 182 260 204 L264 316 L265 416 L263 512 H196 Z"
+          fill="url(#midage-female-top-long-coat__panel)"/>
+  </g>
+  <!-- notched collar, rolling back from the neck -->
+  <path d="M176 158 L200 166 L196 214 L182 189 L163 185 Z" fill="url(#midage-female-top-long-coat__collar)"/>
+  <path d="M224 158 L200 166 L204 214 L218 189 L237 185 Z" fill="url(#midage-female-top-long-coat__collar)"/>
+  <!-- collar notches -->
+  <path d="M182 189 L163 185 L178 177 Z" fill="var(--c2, #8B7145)"/>
+  <path d="M218 189 L237 185 L222 177 Z" fill="var(--c2, #8B7145)"/>
+  <!-- neck opening above the collar roll -->
+  <path d="M186 157 q14 10 28 0 q-5 11 -14 11 q-9 0 -14-11 z" fill="var(--skin2, #E7B892)"/>
+  <!-- full button placket -->
+  <path d="M188 208 h24 v298 h-24 z" fill="url(#midage-female-top-long-coat__collar)" opacity="0.85"/>
+  <circle cx="200" cy="230" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="286" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="342" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="398" r="5" fill="var(--c2, #8B7145)"/>
+  <circle cx="200" cy="454" r="5" fill="var(--c2, #8B7145)"/>
+  <!-- welt pockets at the hip -->
+  <path d="M148 346 h40 v11 h-40 z" fill="var(--c2, #8B7145)"/>
+  <path d="M212 346 h40 v11 h-40 z" fill="var(--c2, #8B7145)"/>
+  <!-- single back vent, releasing at the hem -->
+  <path d="M200 446 v64" stroke="var(--c2, #8B7145)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 450 v56" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- column seams -->
+  <path d="M157 228 L153 506 M243 228 L247 506"
+        stroke="var(--c2, #8B7145)" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuff seams -->
+  <path d="M120 328 q20 9 39 0 M280 328 q-20 9 -39 0"
+        stroke="var(--c2, #8B7145)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 216 q20 12 38 6 M210 222 q20 6 38-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

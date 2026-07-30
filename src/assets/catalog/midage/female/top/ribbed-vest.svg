@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ribbed Vest" data-family="ribbed-vest" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324.
+       axes vs the slot: 30u wide straps over an armhole cut DEEP AND LOW into the ribs, the
+       scoop biting in to x168 and x232 at the chest and not reaching the side seam until y282
+       (shoulder/sleeve) + a boxy body hanging straight to a flat hip hem at y336 (volume).
+       That is the whole separation from tank, which sets narrow straps on a scooped neck over a
+       fitted hip body, and from camisole, which is a widening bias column on spaghetti straps
+       falling to y344. The armhole depth is the outline change; the rib is only surface.
+       Tools: pattern (14u vertical rib painted through c2) + trim (contrast armhole binding,
+       neck bind and a flat hem band through c3). -->
+  <defs>
+    <linearGradient id="midage-female-top-ribbed-vest__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8676)"/>
+    </linearGradient>
+    <pattern id="midage-female-top-ribbed-vest__rib" patternUnits="userSpaceOnUse"
+             x="0" y="152" width="14" height="14">
+      <rect x="4" y="0" width="4" height="14" fill="var(--c2, #3E8676)"/>
+    </pattern>
+    <clipPath id="midage-female-top-ribbed-vest__clip">
+      <path d="M156 156 H186 C190 176 194 192 200 196 C206 192 210 176 214 156 H244
+               C240 192 234 226 238 254 C248 266 256 270 258 282 L259 336
+               C218 348 182 348 141 336 L142 282 C144 270 152 266 162 254
+               C166 226 160 192 156 156 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- one piece: wide straps, a deep low-cut armhole scoop on each side, boxy body -->
+    <path d="M156 156 H186 C190 176 194 192 200 196 C206 192 210 176 214 156 H244
+             C240 192 234 226 238 254 C248 266 256 270 258 282 L259 336
+             C218 348 182 348 141 336 L142 282 C144 270 152 266 162 254
+             C166 226 160 192 156 156 Z"
+          fill="url(#midage-female-top-ribbed-vest__body)"/>
+  </g>
+  <!-- vertical rib, clipped to the vest -->
+  <g clip-path="url(#midage-female-top-ribbed-vest__clip)">
+    <rect x="140" y="154" width="126" height="200" fill="url(#midage-female-top-ribbed-vest__rib)" opacity="0.5"/>
+  </g>
+  <!-- neck bind across the scoop between the straps -->
+  <path d="M186 156 C190 176 194 192 200 196 C206 192 210 176 214 156 L222 158
+           C218 182 212 202 200 207 C188 202 182 182 178 158 Z"
+        fill="var(--c3, #F7F0DA)"/>
+  <!-- contrast binding running the full length of the deep armhole -->
+  <path d="M156 158 C160 194 166 228 162 256 C152 268 145 272 143 286 L151 288
+           C154 276 160 272 170 258 C174 228 168 194 164 158 Z"
+        fill="var(--c3, #F7F0DA)" opacity="0.92"/>
+  <path d="M244 158 C240 194 234 228 238 256 C248 268 255 272 257 286 L249 288
+           C246 276 240 272 230 258 C226 228 232 194 236 158 Z"
+        fill="var(--c3, #F7F0DA)" opacity="0.92"/>
+  <!-- flat hem band -->
+  <path d="M141 314 q59 13 118 0 l0 22 q-59 12 -118 0 z" fill="var(--c3, #F7F0DA)" opacity="0.88"/>
+  <!-- side seams reading the boxy body -->
+  <path d="M161 292 q-2 22 -1 42 M239 292 q2 22 1 42"
+        stroke="var(--c2, #3E8676)" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M180 222 q20 10 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M157 288 q43 13 86 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

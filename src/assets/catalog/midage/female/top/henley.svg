@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Henley" data-family="henley" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356, so the elbow sits at about y266 and a pushed-up
+       sleeve bunches just below it.
+       axes vs the slot: long sleeves PUSHED UP and bunched at the forearm, ending at y282 with
+       a rolled band (shoulder/sleeve) + a collarless three-button placket cut into a round
+       neckline (closure). Straight body, hip hem at y336. Reads apart from polo, a short sleeve
+       under a flat knit collar with a curved hem, and from tee, which has no placket at all.
+       Tools: panel blocking (placket band painted through c3) + structural (three buttons,
+       pushed-up sleeve rolls, shoulder seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-henley__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-henley__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B7C4A0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-henley__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6F1E0)"/>
+      <stop offset="1" stop-color="var(--c2, #8D9C77)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- sleeves pushed up: slim to the elbow, then swelling into a bunched roll at y254 to y282 -->
+    <path d="M152 167 C129 173 120 191 119 214 L118 252 C112 261 110 272 115 280
+             C126 289 142 288 149 278 C153 267 152 259 149 250 L151 212 Z"
+          fill="url(#midage-female-top-henley__sleeve)"/>
+    <path d="M248 167 C271 173 280 191 281 214 L282 252 C288 261 290 272 285 280
+             C274 289 258 288 251 278 C247 267 248 259 251 250 L249 212 Z"
+          fill="url(#midage-female-top-henley__sleeve)"/>
+    <!-- straight body under a round collarless neckline, hip hem at y336 -->
+    <path d="M177 160 C188 170 212 170 223 160 C245 163 257 177 259 202 L261 256
+             C259 292 257 314 255 336 C212 348 188 348 145 336 C143 314 141 292 139 256
+             L141 202 C143 177 155 163 177 160 Z"
+          fill="url(#midage-female-top-henley__body)"/>
+  </g>
+  <!-- three-button placket, cut straight down from the neckline -->
+  <path d="M188 164 h24 q3 0 3 5 v58 q0 5 -3 5 h-24 q-3 0 -3-5 v-58 q0-5 3-5 z"
+        fill="url(#midage-female-top-henley__placket)"/>
+  <path d="M200 168 v64" stroke="var(--c2, #8D9C77)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="183" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="203" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <circle cx="200" cy="223" r="4.5" fill="var(--c3, #F6F1E0)"/>
+  <!-- round neck bind -->
+  <path d="M177 158 C188 170 212 170 223 158 L227 164 C214 178 186 178 173 164 Z" fill="var(--c3, #F6F1E0)"/>
+  <path d="M184 172 q16 9 32 0 q-6 12 -16 12 q-10 0 -16-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- rolled cuff bands where the sleeve is pushed up -->
+  <path d="M112 256 q19 10 38 -2 l1 14 q-19 12 -40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <path d="M288 256 q-19 10 -38 -2 l-1 14 q19 12 40 2 z" fill="var(--c3, #F6F1E0)" opacity="0.9"/>
+  <!-- push-up creases -->
+  <path d="M121 230 q14 6 26 0 M279 230 q-14 6 -26 0"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- set-in shoulder seams -->
+  <path d="M154 174 q4 18 2 36 M246 174 q-4 18 -2 36"
+        stroke="var(--c2, #8D9C77)" stroke-opacity="0.5" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 210 q46 17 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

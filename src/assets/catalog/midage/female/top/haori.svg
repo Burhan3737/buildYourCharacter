@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Japanese everyday dress: the short open jacket worn over other clothes. Drawn plainly,
+       with no crest, no family mon and no ceremonial marking of any kind.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356.
+       axes vs the slot: wide SQUARE sleeve panels hanging free below the arm as their own 56u
+       by 152u forms, so the outline is a pair of hanging rectangles rather than a tube
+       (shoulder/sleeve) + an open front with straight parallel edges and no button anywhere,
+       closed only by a short cord across the chest (closure). Hem at the hip, y344.
+       The 24u opening is NOT a hole: the layer worn underneath is drawn in this same file and
+       painted through c3, so the player controls it and no colour is hard-coded.
+       Tools: panel blocking (front panels over an under layer through c3) + trim (wide flat
+       collar bands down both front edges) + structural (chest cord, sleeve seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6274)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-haori__sode" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6274)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-haori__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EADCC2)"/>
+      <stop offset="1" stop-color="var(--c2, #303F4C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- the layer worn underneath, seen through the open front -->
+    <path d="M176 162 H224 C232 170 236 184 236 202 L235 276 L233 344 H167 L165 276
+             L164 202 C164 184 168 170 176 162 Z"
+          fill="url(#midage-female-top-haori__under)"/>
+    <!-- wide square sleeve panels, hanging free below the arm -->
+    <path d="M100 174 H156 L157 306 C155 316 148 321 139 321 H117 C108 321 101 316 100 306 Z"
+          fill="url(#midage-female-top-haori__sode)"/>
+    <path d="M300 174 H244 L243 306 C245 316 252 321 261 321 H283 C292 321 299 316 300 306 Z"
+          fill="url(#midage-female-top-haori__sode)"/>
+    <!-- left front, straight edge, no fastening -->
+    <path d="M188 164 H166 C145 168 137 184 137 208 L135 276 L136 344 H186 L188 276 Z"
+          fill="url(#midage-female-top-haori__panel)"/>
+    <!-- right front -->
+    <path d="M212 164 H234 C255 168 263 184 263 208 L265 276 L264 344 H214 L212 276 Z"
+          fill="url(#midage-female-top-haori__panel)"/>
+  </g>
+  <!-- wide flat collar bands down both front edges -->
+  <path d="M188 164 L186 344 H172 L174 164 Z" fill="var(--c2, #303F4C)"/>
+  <path d="M212 164 L214 344 H228 L226 164 Z" fill="var(--c2, #303F4C)"/>
+  <path d="M180 168 L179 338 M220 168 L221 338"
+        stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening above the under layer -->
+  <path d="M188 162 q12 12 24 0 q-4 14 -12 14 q-8 0 -12-14 z" fill="var(--skin2, #E7B892)"/>
+  <!-- short chest cord holding the fronts together -->
+  <path d="M186 226 h28" stroke="var(--c3, #EADCC2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="226" r="6" fill="var(--c3, #EADCC2)"/>
+  <circle cx="214" cy="226" r="6" fill="var(--c3, #EADCC2)"/>
+  <!-- sleeve seams and the free hanging edge of each panel -->
+  <path d="M102 304 h52 M298 304 h-52"
+        stroke="var(--c2, #303F4C)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 180 v132 M272 180 v132"
+        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- hem line -->
+  <path d="M137 332 h49 M214 332 h49"
+        stroke="var(--c2, #303F4C)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M143 204 q20 12 38 6 M219 210 q20 6 38-6"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

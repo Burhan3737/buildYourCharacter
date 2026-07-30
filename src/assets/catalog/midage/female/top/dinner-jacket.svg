@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms
+       x116 to x142 and x258 to x284, y176 to y356; natural waist y316.
+       axes vs the slot: CLOSED, a single unbroken body fastened by one button at the natural
+       waist under a rounded shawl collar that rolls in one piece from the back of the neck all
+       the way down to that button, with no notch, no step and no lapel point (closure)
+       + a hem just past the hip at y354 with no vent (hem). Against blazer, the nearest read in
+       this bundle: that one hangs open in two panels with notched lapels to y352. Against
+       tailcoat: that one is cut away at the waist over two knee-length tails.
+       Formalwear lives in top, never in costume: costume hides the shoes and for formalwear the
+       shoes are the look. Fallback is a slate jacket over a cream shirt from the house palette.
+       Tools: panel blocking (shawl collar through c2 over a shirt front through c3)
+       + structural (single waist button, jetted pockets, square shoulders, straight sleeves). -->
+  <defs>
+    <linearGradient id="midage-female-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #38445C)"/>
+      <stop offset="1" stop-color="var(--c2, #212936)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #38445C)"/>
+      <stop offset="1" stop-color="var(--c2, #212936)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-dinner-jacket__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #212936)"/>
+      <stop offset="1" stop-color="var(--c1, #38445C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-dinner-jacket__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F5EFE1)"/>
+      <stop offset="1" stop-color="var(--c2, #212936)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- straight sleeves under a square shoulder, cuff at the wrist y346 -->
+    <path d="M150 162 L124 172 L117 208 L119 320 L124 346 L157 346 L160 320 L158 204 Z"
+          fill="url(#midage-female-top-dinner-jacket__sleeve)"/>
+    <path d="M250 162 L276 172 L283 208 L281 320 L276 346 L243 346 L240 320 L242 204 Z"
+          fill="url(#midage-female-top-dinner-jacket__sleeve)"/>
+    <!-- one closed body, square shoulders, hem just past the hip -->
+    <path d="M166 160 H234 L258 170 L263 202 L264 276 L262 318 L259 354
+             C214 366 186 366 141 354 L138 318 L136 276 L137 202 L142 170 Z"
+          fill="url(#midage-female-top-dinner-jacket__body)"/>
+    <!-- shirt front inside the collar roll -->
+    <path d="M190 164 C173 210 175 256 194 290 L200 297 L206 290
+             C225 256 227 210 210 164 Z"
+          fill="url(#midage-female-top-dinner-jacket__shirt)"/>
+    <!-- unbroken rounded shawl collar, neck to waist button in one piece -->
+    <path d="M176 158 C159 179 151 217 154 261 C157 286 168 301 182 309 L194 290
+             C175 256 173 210 190 164 H210 C227 210 225 256 206 290 L218 309
+             C232 301 243 286 246 261 C249 217 241 179 224 158 Z"
+          fill="url(#midage-female-top-dinner-jacket__collar)"/>
+  </g>
+  <!-- satin roll highlight following the collar, the mark of a shawl -->
+  <path d="M172 170 C160 200 158 240 164 273 M228 170 C240 200 242 240 236 273"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- neck opening at the top of the roll -->
+  <path d="M190 158 q10 9 20 0 q-3 10 -10 10 q-7 0 -10-10 z" fill="var(--skin2, #E7B892)"/>
+  <!-- single closed button at the natural waist -->
+  <circle cx="200" cy="303" r="6" fill="var(--c3, #F5EFE1)"/>
+  <!-- shirt placket and two studs -->
+  <path d="M200 172 v110" stroke="var(--c2, #212936)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="214" r="3.5" fill="var(--c2, #212936)"/>
+  <circle cx="200" cy="248" r="3.5" fill="var(--c2, #212936)"/>
+  <!-- jetted hip pockets -->
+  <path d="M148 320 h40 v10 h-40 z" fill="var(--c2, #212936)"/>
+  <path d="M212 320 h40 v10 h-40 z" fill="var(--c2, #212936)"/>
+  <!-- breast welt -->
+  <path d="M152 238 h26 v8 h-26 z" fill="var(--c2, #212936)"/>
+  <!-- cuff seams -->
+  <path d="M119 330 h39 M281 330 h-39"
+        stroke="var(--c2, #212936)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- square shoulder highlight -->
+  <path d="M148 176 q16-6 32 0 M220 176 q16-6 32 0"
+        stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

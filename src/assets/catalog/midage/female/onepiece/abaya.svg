@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Everyday dress across the Gulf and North Africa. Plain cloth with a generic edging band;
+       no community-specific woven design, and no face covering of any kind is drawn here.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; ankle y540.
+       axes vs the slot: an open front whose two edges simply meet, with no fastening at all,
+       resolved onto an integral under layer drawn in this file through the c2 variable (closure)
+       + falling straight off the shoulder to the ankle with no waist anywhere (volume).
+       Against kaftan, which keeps a mid calf hem and wide draped sleeves, and thobe, which is a
+       closed ankle column under a band collar. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2B2F3E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5266)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A5266)"/>
+      <stop offset="1" stop-color="var(--c1, #2B2F3E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2B2F3E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5266)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under layer: the open front resolves onto this, never onto a hole -->
+    <path d="M170 162 H230 q14 0 14 16 l6 372 q-50 14 -100 0 l6-372 q0-16 14-16 Z"
+          fill="url(#midage-female-onepiece-abaya__under)"/>
+    <!-- long straight sleeves -->
+    <path d="M110 186 q0-18 19-18 h16 q19 0 19 18 v166 q0 14 -19 14 h-16 q-19 0 -19-14 Z"
+          fill="url(#midage-female-onepiece-abaya__sleeve)"/>
+    <path d="M290 186 q0-18 -19-18 h-16 q-19 0 -19 18 v166 q0 14 19 14 h16 q19 0 19-14 Z"
+          fill="url(#midage-female-onepiece-abaya__sleeve)"/>
+    <!-- the two open fronts, meeting down the centre without a fastening -->
+    <path d="M186 162 H157 q-24 0 -26 24 L126 548 q26 10 51 8 L200 312 L200 256 Z"
+          fill="url(#midage-female-onepiece-abaya__panel)"/>
+    <path d="M214 162 H243 q24 0 26 24 L274 548 q-26 10 -51 8 L200 312 L200 256 Z"
+          fill="url(#midage-female-onepiece-abaya__panel)"/>
+  </g>
+
+  <!-- TRIM: edging running the whole length of both open fronts -->
+  <path d="M187 164 L200 258 L200 312 L178 550" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 164 L200 258 L200 312 L222 550" stroke="var(--c3, #C8A55E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- shoulder yoke seams -->
+  <path d="M150 178 q22 8 36 4 M250 178 q-22 8 -36 4" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- cuff bands -->
+  <rect x="110" y="342" width="54" height="20" rx="9" fill="var(--c2, #4A5266)"/>
+  <rect x="236" y="342" width="54" height="20" rx="9" fill="var(--c2, #4A5266)"/>
+  <path d="M116 348 q26 8 42 0 M284 348 q-26 8 -42 0" stroke="var(--c3, #C8A55E)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- the straight fall of the panels -->
+  <path d="M155 214 l-14 326 M245 214 l14 326" stroke="#3B2A22" stroke-opacity="0.14"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- ankle hem edging -->
+  <path d="M130 516 q34 12 60 12 M270 516 q-34 12 -60 12" stroke="var(--c3, #C8A55E)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M152 192 q28 10 40 6 M248 192 q-28 10 -40 6" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M149 392 q22 8 34 6 M251 392 q-22 8 -34 6" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

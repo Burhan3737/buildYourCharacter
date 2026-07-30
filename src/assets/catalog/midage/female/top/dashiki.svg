@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- West African everyday dress, drawn as clothes someone wore to the shops. The wide V neck
+       panel is the identity, so it is drawn 100u across the shoulders. Its border is deliberately
+       GENERIC geometry, a plain run of even squares between two straight rules. No named kente
+       pattern and no Adinkra symbol is drawn here, and none may be added.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; mid thigh
+       (a quarter of the way down the y370 to y552 leg rect) y416.
+       axes vs the slot: short WIDE sleeves cut straight out of the body in one piece, so the
+       garment reads as a T with no armhole seam and a 204u span at y168 (shoulder/sleeve)
+       + a boxy square body falling to mid thigh at y420 with short side vents (volume).
+       Against oversized-long-sleeve, the nearest boxy read: that has a long dropped sleeve
+       hanging to y372 and a wide crew neckband.
+       Midage read: identical garment. This family is not softened or shortened with age.
+       Tools: panel blocking (the wide V panel painted through c3) + pattern (16u square border
+       run through c2) + structural (side vents, sleeve hem bands). -->
+  <defs>
+    <linearGradient id="midage-female-top-dashiki__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C6E9F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-dashiki__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3C6E9F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-dashiki__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3B94F)"/>
+      <stop offset="1" stop-color="var(--c2, #274F76)"/>
+    </linearGradient>
+    <pattern id="midage-female-top-dashiki__border" patternUnits="userSpaceOnUse"
+             x="0" y="156" width="16" height="16">
+      <rect x="3" y="4" width="8" height="8" fill="var(--c2, #274F76)"/>
+    </pattern>
+    <clipPath id="midage-female-top-dashiki__panelclip">
+      <path d="M148 158 L177 158 L200 206 L223 158 L252 158 L200 274 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short wide sleeves cut straight out of the body, no armhole seam -->
+    <path d="M152 160 L98 168 L94 230 L102 252 L148 250 L154 228 Z"
+          fill="url(#midage-female-top-dashiki__sleeve)"/>
+    <path d="M248 160 L302 168 L306 230 L298 252 L252 250 L246 228 Z"
+          fill="url(#midage-female-top-dashiki__sleeve)"/>
+    <!-- boxy square body to mid thigh -->
+    <path d="M156 158 H244 C258 162 266 176 266 198 L267 278 L266 350 L264 420
+             C222 432 178 432 136 420 L134 350 L133 278 L134 198 C134 176 142 162 156 158 Z"
+          fill="url(#midage-female-top-dashiki__body)"/>
+    <!-- wide V neck panel, 104u across the shoulders -->
+    <path d="M148 158 L177 158 L200 206 L223 158 L252 158 L200 274 Z"
+          fill="url(#midage-female-top-dashiki__panel)"/>
+  </g>
+  <!-- generic square border run inside the V panel -->
+  <g clip-path="url(#midage-female-top-dashiki__panelclip)">
+    <rect x="130" y="156" width="140" height="124" fill="url(#midage-female-top-dashiki__border)" opacity="0.7"/>
+  </g>
+  <!-- plain rules bounding the panel -->
+  <path d="M152 162 L200 270 L248 162" stroke="var(--c2, #274F76)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M180 162 L200 204 L220 162" stroke="var(--c2, #274F76)" stroke-opacity="0.7"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening inside the panel, painted through the body's own skin -->
+  <path d="M177 158 L200 206 L223 158 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- sleeve hem bands -->
+  <path d="M96 236 L150 235 L149 249 L98 250 Z" fill="var(--c3, #E3B94F)" opacity="0.85"/>
+  <path d="M304 236 L250 235 L251 249 L302 250 Z" fill="var(--c3, #E3B94F)" opacity="0.85"/>
+  <!-- short side vents at the hem -->
+  <path d="M147 380 L148 424 M253 380 L252 424"
+        stroke="var(--c2, #274F76)" stroke-opacity="0.7" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem band -->
+  <path d="M136 406 C178 418 222 418 264 406 L264 420 C222 432 178 432 136 420 Z"
+        fill="var(--c3, #E3B94F)" opacity="0.82"/>
+  <!-- highlight -->
+  <path d="M148 320 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 190 q16 8 30 4 M254 194 q16 4 30-4"
+        stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

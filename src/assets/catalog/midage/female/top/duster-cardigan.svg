@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms
+       x116 to x142 and x258 to x284, y176 to y356; leg rect y370 to y552, so MID CALF
+       (three quarters down that rect) is y507 and the hem is set just past it at y512.
+       axes vs the slot: unfastened OPEN front with no collar and no buttons, the two knit
+       fronts hanging free either side of a 38u gap (closure) + a dropped shoulder on a soft
+       158u drape falling to MID CALF at y512 (shoulder + volume).
+       Against long-coat, the other mid-calf family: that one is a set-in sleeve buttoned shut
+       under a notched collar in a 130u straight column; this one has no fastening at all, a
+       dropped armhole out at x124 and x276 and a wider, softer line.
+       The opening is NOT a hole: the cardigan's own back panel is drawn in this same file behind
+       the gap and painted through c3, so the player controls it and no colour is hard-coded.
+       Tools: panel blocking (back panel through c3) + structural (two low patch pockets,
+       knit rows, drape folds). -->
+  <defs>
+    <linearGradient id="midage-female-top-duster-cardigan__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C3B4D4)"/>
+      <stop offset="1" stop-color="var(--c2, #9686B0)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C3B4D4)"/>
+      <stop offset="1" stop-color="var(--c2, #9686B0)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-duster-cardigan__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0E8DB)"/>
+      <stop offset="1" stop-color="var(--c2, #9686B0)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- the cardigan's own back panel, seen through the open front -->
+    <path d="M166 164 H234 C241 172 244 188 244 208 L243 316 L242 418 L239 510 H161
+             L158 418 L157 316 L156 208 C156 188 159 172 166 164 Z"
+          fill="url(#midage-female-top-duster-cardigan__back)"/>
+    <!-- dropped soft sleeves -->
+    <path d="M138 184 C113 194 104 214 104 240 L106 346 C108 364 119 371 133 369
+             C147 367 153 357 153 341 L152 222 Z"
+          fill="url(#midage-female-top-duster-cardigan__sleeve)"/>
+    <path d="M262 184 C287 194 296 214 296 240 L294 346 C292 364 281 371 267 369
+             C253 367 247 357 247 341 L248 222 Z"
+          fill="url(#midage-female-top-duster-cardigan__sleeve)"/>
+    <!-- left front, hanging unfastened to mid calf -->
+    <path d="M182 164 H164 C139 170 127 188 125 212 L122 316 L120 418 L124 512 H180
+             C178 418 178 316 180 212 Z"
+          fill="url(#midage-female-top-duster-cardigan__panel)"/>
+    <!-- right front -->
+    <path d="M218 164 H236 C261 170 273 188 275 212 L278 316 L280 418 L276 512 H220
+             C222 418 222 316 220 212 Z"
+          fill="url(#midage-female-top-duster-cardigan__panel)"/>
+  </g>
+  <!-- soft front bands down each open edge, no buttons anywhere -->
+  <path d="M182 164 C179 276 178 396 180 512 H170 C168 396 169 276 172 164 Z"
+        fill="var(--c2, #9686B0)" opacity="0.55"/>
+  <path d="M218 164 C221 276 222 396 220 512 H230 C232 396 231 276 228 164 Z"
+        fill="var(--c2, #9686B0)" opacity="0.55"/>
+  <!-- two low patch pockets -->
+  <path d="M134 392 h44 v52 q0 7 -7 7 h-30 q-7 0 -7-7 z" fill="var(--c2, #9686B0)"/>
+  <path d="M222 392 h44 v52 q0 7 -7 7 h-30 q-7 0 -7-7 z" fill="var(--c2, #9686B0)"/>
+  <path d="M137 402 h38 M225 402 h38" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- knit rows across the fronts -->
+  <path d="M131 228 q22 8 46 4 M223 232 q22 4 46-4 M128 264 q24 8 48 4 M224 268 q24 4 48-4"
+        stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- soft drape folds -->
+  <path d="M145 316 L141 504 M255 316 L259 504"
+        stroke="var(--c2, #9686B0)" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- cuff folds -->
+  <path d="M107 348 q23 9 45 0 M293 348 q-23 9 -45 0"
+        stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening above the back panel -->
+  <path d="M186 164 q14 12 28 0 q-5 13 -14 13 q-9 0 -14-13 z" fill="var(--skin2, #E7B892)"/>
+  <!-- highlight -->
+  <path d="M135 210 q20 12 38 6 M227 216 q20 6 38-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

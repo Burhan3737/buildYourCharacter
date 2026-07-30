@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday South Asian dress, the lower half of shalwar kameez. Drawn plainly, with no
+       woven motif of any kind.
+       Refit to the DRAWN midage/female body. RECOMPUTED CLEARANCE: the thigh is the pair of leg
+       rects x168 to x198 and x202 to x232, so the outer edge of the thigh is x168 on the left
+       and x232 on the right. The fullness is taken out to x116 and x284 at its widest, around
+       y445, which is 168 minus 116 = 52 UNITS OF THIGH CLEARANCE PER SIDE, well over the
+       40-unit practical floor. Recompute this before moving the outer curve.
+       AXES: leg width, an enormous triangular fullness through hip and thigh, plus hem
+       treatment, that fullness pulled sharply in to a plain 32 unit ankle band at y540.
+       Midage read: a drawstring casing, not a buckle, and no side pockets. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="0.6" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-shalwar__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E9C8B)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two hugely full legs, widest at the thigh and narrowing to the ankle, each
+       finished by its own close ankle band -->
+  <g class="sp-shadow">
+    <path d="M145 306 H200 V508 Q200 530 193 542 H167 Q160 530 158 508
+             C140 482 116 458 116 420 C116 360 129 331 145 306 Z"
+          fill="url(#midage-female-bottom-shalwar__cloth)"/>
+    <path d="M255 306 H200 V508 Q200 530 207 542 H233 Q240 530 242 508
+             C260 482 284 458 284 420 C284 360 271 331 255 306 Z"
+          fill="url(#midage-female-bottom-shalwar__cloth)"/>
+    <path d="M168 536 H192 Q196 536 196 542 V550 Q196 556 190 556 H170 Q164 556 164 550
+             V542 Q164 536 168 536 Z"
+          fill="url(#midage-female-bottom-shalwar__band)"/>
+    <path d="M232 536 H208 Q204 536 204 542 V550 Q204 556 210 556 H230 Q236 556 236 550
+             V542 Q236 536 232 536 Z"
+          fill="url(#midage-female-bottom-shalwar__band)"/>
+  </g>
+
+  <!-- TRIM: drawstring waist casing -->
+  <path d="M145 306 H255 L256 330 H144 Z" fill="var(--c2, #4E9C8B)"/>
+  <path d="M147 322 H253" stroke="var(--c3, #F3FBF7)" stroke-opacity="0.6" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- drawstring with two aglets -->
+  <path d="M192 330 q-7 16 -14 26" stroke="var(--c3, #F3FBF7)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 330 q7 16 14 26" stroke="var(--c3, #F3FBF7)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="172" y="352" width="8" height="15" rx="3" fill="var(--c3, #F3FBF7)"/>
+  <rect x="220" y="352" width="8" height="15" rx="3" fill="var(--c3, #F3FBF7)"/>
+  <circle cx="200" cy="328" r="6" fill="var(--c3, #F3FBF7)"/>
+
+  <!-- STRUCTURE: deep pleats falling out of the casing and collapsing into the ankle -->
+  <path d="M164 334 C147 386 130 428 156 508" stroke="var(--c2, #4E9C8B)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M181 336 C164 392 152 440 171 520" stroke="var(--c2, #4E9C8B)" stroke-opacity="0.38"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M236 334 C253 386 270 428 244 508" stroke="var(--c2, #4E9C8B)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M219 336 C236 392 248 440 229 520" stroke="var(--c2, #4E9C8B)" stroke-opacity="0.38"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- gathers where the fullness meets the ankle band -->
+  <path d="M170 522 L168 536" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 524 V538" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 522 L192 536" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 522 L232 536" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 524 V538" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 522 L208 536" stroke="var(--c2, #4E9C8B)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- band edge stitching -->
+  <path d="M166 543 H194" stroke="var(--c3, #F3FBF7)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 543 H234" stroke="var(--c3, #F3FBF7)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the light on the widest part of the drape -->
+  <path d="M162 342 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M143 372 C127 416 123 450 138 490" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M257 372 C273 416 277 450 262 490" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

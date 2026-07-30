@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, y316 to y374; leg rects x168 to x198 and x202 to x232, y370 to y552, so the
+       centre channel between the legs is only 4u wide on this body and the garment keeps it
+       open; ankle y540.
+       axes vs the slot: no fastening anywhere and no waist seam, one skin-close skin (closure)
+       + skin-close legs running to the ankle with an open centre gap (volume).
+       Against swimsuit, which has no leg at all, and against jumpsuit, which is belted with
+       straight loose legs. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-unitard__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-unitard__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A6F4A)"/>
+      <stop offset="1" stop-color="var(--c1, #4C8C5E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4C8C5E)"/>
+      <stop offset="1" stop-color="var(--c2, #3A6F4A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in sleeves, cut close to the arm -->
+    <path d="M112 184 q0-18 17-18 h14 q17 0 17 18 v48 q0 10 -17 10 h-14 q-17 0 -17-10 Z"
+          fill="url(#midage-female-onepiece-unitard__sleeve)"/>
+    <path d="M288 184 q0-18 -17-18 h-14 q-17 0 -17 18 v48 q0 10 17 10 h14 q17 0 17-10 Z"
+          fill="url(#midage-female-onepiece-unitard__sleeve)"/>
+    <!-- skin-close legs, straight to the ankle, with a real gap down the centre -->
+    <path d="M165 322 H198 V536 q0 12 -10 12 h-14 q-9 0 -9-12 Z"
+          fill="url(#midage-female-onepiece-unitard__legL)"/>
+    <path d="M235 322 H202 V536 q0 12 9 12 h14 q10 0 10-12 Z"
+          fill="url(#midage-female-onepiece-unitard__legR)"/>
+    <!-- one skin from the shoulder over the hip, scoop neck, no waist seam -->
+    <path d="M148 190 q52 22 104 0 q12 4 12 18 v90 q0 20 -6 30 l-4 34 q0 10 -12 10 h-84
+             q-12 0 -12-10 l-4-34 q-6-10 -6-30 v-90 q0-14 12-18 Z"
+          fill="url(#midage-female-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast side panels, hip to ankle, through the c2 variable -->
+  <path d="M165 328 h9 l-4 220 h-5 q-9 0 -9-12 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M235 328 h-9 l4 220 h5 q9 0 9-12 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M138 214 l6 132 h-8 v-132 Z" fill="var(--c2, #3A6F4A)"/>
+  <path d="M262 214 l-6 132 h8 v-132 Z" fill="var(--c2, #3A6F4A)"/>
+  <!-- TRIM: bound scoop neck and sleeve edges -->
+  <path d="M150 192 q50 22 100 0" stroke="var(--c3, #E7D9A8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 234 q26 10 50 0 M286 234 q-26 10 -50 0" stroke="var(--c3, #E7D9A8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- ankle binding -->
+  <path d="M166 528 q16 6 32 0 M234 528 q-16 6 -32 0" stroke="var(--c3, #E7D9A8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- the centre gap read as a shadow, plus the inner leg seams -->
+  <path d="M200 376 V548" stroke="#3B2A22" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 338 v198 M218 338 v198" stroke="#3B2A22" stroke-opacity="0.11" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M156 212 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 400 v112 M224 400 v112" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

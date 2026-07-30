@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Slides" data-family="slides" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: foot rects x160 to x202 and x198 to x240,
+       y544 to y570, ground y570. The back of each foot is left visibly bare skin above the
+       footbed, which is the whole point of the family.
+       AXES: fastening, one broad band straight across the instep and nothing whatever behind
+       the heel, plus sole depth, a thick contoured footbed with a raised arch that no other open
+       shoe here has (flip-flops keep a flat plate, sandals gain a closed heel counter).
+       surface tools: panel blocking (contrast band against the footbed) plus trim
+       (footbed inset and sole edge stripe) plus structural detail (arch contour line). -->
+  <defs>
+    <linearGradient id="midage-female-shoes-slides__bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4B6FB5)"/>
+      <stop offset="1" stop-color="var(--c2, #365490)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-shoes-slides__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2F2F2)"/>
+      <stop offset="1" stop-color="var(--c3, #F2F2F2)" stop-opacity="0.74"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two thick contoured footbeds and the single broad band over each instep -->
+  <g class="sp-shadow">
+    <path d="M151 565 C150 559 153 553 161 553 C170 553 179 550 188 552
+             C196 554 204 556 208 560 C212 566 209 570 202 570
+             L158 570 C153 570 152 567 151 565 Z"
+          fill="url(#midage-female-shoes-slides__bed)"/>
+    <path d="M249 565 C250 559 247 553 239 553 C230 553 221 550 212 552
+             C204 554 196 556 192 560 C188 566 191 570 198 570
+             L242 570 C247 570 248 567 249 565 Z"
+          fill="url(#midage-female-shoes-slides__bed)"/>
+    <path d="M165 551 C165 542 171 538 180 538 L198 538 C205 538 209 542 209 549
+             L209 556 C209 559 206 560 202 560 L171 560 C167 560 165 556 165 551 Z"
+          fill="url(#midage-female-shoes-slides__band)"/>
+    <path d="M235 551 C235 542 229 538 220 538 L202 538 C195 538 191 542 191 549
+             L191 556 C191 559 194 560 198 560 L229 560 C233 560 235 556 235 551 Z"
+          fill="url(#midage-female-shoes-slides__band)"/>
+  </g>
+
+  <!-- footbed insets, contoured to the arch -->
+  <path d="M158 562 C164 557 174 556 184 558 C192 560 199 561 204 564"
+        stroke="var(--c2, #365490)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M242 562 C236 557 226 556 216 558 C208 560 201 561 196 564"
+        stroke="var(--c2, #365490)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: sole edge stripes -->
+  <rect x="153" y="566" width="54" height="3" rx="1.5" fill="var(--c3, #F2F2F2)"/>
+  <rect x="193" y="566" width="54" height="3" rx="1.5" fill="var(--c3, #F2F2F2)"/>
+
+  <!-- moulded band grooves -->
+  <path d="M171 545 H203" stroke="var(--c2, #365490)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M171 554 H203" stroke="var(--c2, #365490)" stroke-opacity="0.35" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M197 545 H229" stroke="var(--c2, #365490)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M197 554 H229" stroke="var(--c2, #365490)" stroke-opacity="0.35" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- foam sheen -->
+  <path d="M169 542 q18 -4 34 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M231 542 q-18 -4 -34 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

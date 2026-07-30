@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flannel Overshirt" data-family="flannel-overshirt" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms
+       x116 to x142 and x258 to x284, y176 to y356.
+       axes vs the slot: dropped shoulder on a deliberately oversized boxy shell (shoulder +
+       volume), worn OPEN with a squared straight hem at y356 (closure + hem). Reads apart from
+       cardigan, a soft set-in knit with a rounded thigh hem at y372, and from blazer, which is
+       structured with notched lapels.
+       The open front is NOT a hole: the tee worn underneath is drawn in this same file and
+       painted through c3, so the player controls it and no shell colour is hard-coded.
+       Midage read: buttons left undone, no double chest tabs, one quiet pocket pair.
+       Tools: pattern (20u plaid check painted through c2) + structural (two chest pockets with
+       flaps, squared hem, camp collar). -->
+  <defs>
+    <linearGradient id="midage-female-top-flannel-overshirt__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574E)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-flannel-overshirt__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C4574E)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-flannel-overshirt__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE4D2)"/>
+      <stop offset="1" stop-color="var(--c2, #8E3A38)"/>
+    </linearGradient>
+    <pattern id="midage-female-top-flannel-overshirt__check" patternUnits="userSpaceOnUse"
+             x="2" y="158" width="20" height="20">
+      <rect x="0" y="0" width="20" height="6" fill="var(--c2, #8E3A38)"/>
+      <rect x="0" y="0" width="6" height="20" fill="var(--c2, #8E3A38)"/>
+      <rect x="12" y="12" width="3" height="8" fill="var(--c2, #8E3A38)"/>
+    </pattern>
+    <clipPath id="midage-female-top-flannel-overshirt__clip">
+      <path d="M190 162 H166 C139 166 129 182 129 208 L127 286 C129 328 131 344 135 356 L192 356 Z"/>
+      <path d="M210 162 H234 C261 166 271 182 271 208 L273 286 C271 328 269 344 265 356 L208 356 Z"/>
+      <path d="M143 180 C116 190 106 208 106 234 L108 332 C110 350 120 356 134 354 C148 352 153 342 153 326 L152 216 Z"/>
+      <path d="M257 180 C284 190 294 208 294 234 L292 332 C290 350 280 356 266 354 C252 352 247 342 247 326 L248 216 Z"/>
+    </clipPath>
+  </defs>
+  <g class="sp-shadow">
+    <!-- the tee worn underneath, drawn in this file and painted through c3 -->
+    <path d="M180 164 H220 C234 168 240 180 240 198 L241 264 C240 306 238 334 236 364
+             C212 372 188 372 164 364 C162 334 160 306 159 264 L160 198
+             C160 180 166 168 180 164 Z"
+          fill="url(#midage-female-top-flannel-overshirt__shell)"/>
+    <!-- dropped, oversized sleeves -->
+    <path d="M143 180 C116 190 106 208 106 234 L108 332 C110 350 120 356 134 354
+             C148 352 153 342 153 326 L152 216 Z"
+          fill="url(#midage-female-top-flannel-overshirt__sleeve)"/>
+    <path d="M257 180 C284 190 294 208 294 234 L292 332 C290 350 280 356 266 354
+             C252 352 247 342 247 326 L248 216 Z"
+          fill="url(#midage-female-top-flannel-overshirt__sleeve)"/>
+    <!-- left front, hanging open, squared hem -->
+    <path d="M190 162 H166 C139 166 129 182 129 208 L127 286 C129 328 131 344 135 356 L192 356 Z"
+          fill="url(#midage-female-top-flannel-overshirt__panel)"/>
+    <!-- right front -->
+    <path d="M210 162 H234 C261 166 271 182 271 208 L273 286 C271 328 269 344 265 356 L208 356 Z"
+          fill="url(#midage-female-top-flannel-overshirt__panel)"/>
+  </g>
+  <!-- plaid check, clipped to the overshirt only -->
+  <g clip-path="url(#midage-female-top-flannel-overshirt__clip)">
+    <rect x="102" y="158" width="196" height="204" fill="url(#midage-female-top-flannel-overshirt__check)" opacity="0.72"/>
+  </g>
+  <!-- camp collar sitting flat over the shoulders -->
+  <path d="M178 160 L200 168 L192 198 L161 174 Z" fill="var(--c2, #8E3A38)"/>
+  <path d="M222 160 L200 168 L208 198 L239 174 Z" fill="var(--c2, #8E3A38)"/>
+  <!-- neck opening above the shell -->
+  <path d="M186 160 q14 11 28 0 q-5 12 -14 12 q-9 0 -14-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- chest pockets with flaps -->
+  <path d="M143 228 h36 v34 q0 6 -6 6 h-24 q-6 0 -6-6 z" fill="var(--c2, #8E3A38)"/>
+  <path d="M141 226 h40 v11 h-40 z" fill="var(--c1, #C4574E)"/>
+  <path d="M221 228 h36 v34 q0 6 -6 6 h-24 q-6 0 -6-6 z" fill="var(--c2, #8E3A38)"/>
+  <path d="M219 226 h40 v11 h-40 z" fill="var(--c1, #C4574E)"/>
+  <!-- front edge bands with unfastened buttons -->
+  <path d="M186 164 h8 v190 h-8 z" fill="var(--c2, #8E3A38)" opacity="0.8"/>
+  <path d="M206 164 h8 v190 h-8 z" fill="var(--c2, #8E3A38)" opacity="0.8"/>
+  <circle cx="190" cy="244" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <circle cx="190" cy="286" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <circle cx="190" cy="328" r="3.5" fill="var(--c3, #EDE4D2)"/>
+  <!-- cuff folds -->
+  <path d="M110 334 q21 9 42 0 M290 334 q-21 9 -42 0"
+        stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M137 204 q22 12 42 6 M221 210 q22 6 42-6"
+        stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

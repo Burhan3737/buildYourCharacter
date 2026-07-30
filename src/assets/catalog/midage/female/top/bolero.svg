@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero Jacket" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms
+       x116 to x142 and x258 to x284, y176 to y356; natural waist (top of the hips block) y316.
+       axes vs the slot: worn open with no fastening at all, the two fronts curving away from
+       each other down a bowed edge (closure) + cut off above the natural waist at y272, the
+       shortest jacket hem in the slot, over three-quarter sleeves ending at y296
+       (hem + shoulder/sleeve). Against crop-top, the other short family here: that one is a
+       closed fitted body with a ribbed scoop neckband and a ribbed hem band at y268.
+       The open front resolves onto SKIN: the chest and the whole midriff below y272 are the
+       body's own skin1/skin2, never a hole and never a hard-coded shell.
+       Midage read: the same jacket, quieter. No frogging, no buttons, one soft turn-back cuff.
+       Tools: trim (contrast binding running the full curved front edge and round the hem)
+       + structural (turn-back sleeve cuffs, curved princess seams, shoulder seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAECB)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FAECB)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-bolero__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F6EEE0)"/>
+      <stop offset="1" stop-color="var(--c2, #63849F)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- three-quarter sleeves, cuff mouth at y296 -->
+    <path d="M152 164 C130 170 121 186 120 208 L118 276 C120 292 130 299 143 296
+             C156 293 160 284 160 270 L159 204 Z"
+          fill="url(#midage-female-top-bolero__sleeve)"/>
+    <path d="M248 164 C270 170 279 186 280 208 L282 276 C280 292 270 299 257 296
+             C244 293 240 284 240 270 L241 204 Z"
+          fill="url(#midage-female-top-bolero__sleeve)"/>
+    <!-- left front, curving away from the centre -->
+    <path d="M188 162 H162 C140 166 134 180 134 202 L136 240 C138 256 144 266 152 272
+             C164 270 174 266 182 260 C177 226 180 190 188 162 Z"
+          fill="url(#midage-female-top-bolero__panel)"/>
+    <!-- right front -->
+    <path d="M212 162 H238 C260 166 266 180 266 202 L264 240 C262 256 256 266 248 272
+             C236 270 226 266 218 260 C223 226 220 190 212 162 Z"
+          fill="url(#midage-female-top-bolero__panel)"/>
+  </g>
+  <!-- contrast binding running the curved front edge and round the hem -->
+  <path d="M188 162 C180 190 177 226 182 260 C174 266 164 270 152 272 L149 264
+           C158 260 167 256 173 252 C169 220 173 188 180 161 Z"
+        fill="url(#midage-female-top-bolero__bind)"/>
+  <path d="M212 162 C220 190 223 226 218 260 C226 266 236 270 248 272 L251 264
+           C242 260 233 256 227 252 C231 220 227 188 220 161 Z"
+        fill="url(#midage-female-top-bolero__bind)"/>
+  <!-- turn-back sleeve cuffs -->
+  <path d="M119 272 q20 10 40 0 v18 q-20 10 -40 0 z" fill="var(--c3, #F6EEE0)" opacity="0.9"/>
+  <path d="M241 272 q20 10 40 0 v18 q-20 10 -40 0 z" fill="var(--c3, #F6EEE0)" opacity="0.9"/>
+  <!-- shoulder seams -->
+  <path d="M159 170 q-4 18 -3 36 M241 170 q4 18 3 36"
+        stroke="var(--c2, #63849F)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- curved princess seams following the front edge -->
+  <path d="M162 192 C158 222 158 248 162 266 M238 192 C242 222 242 248 238 266"
+        stroke="var(--c2, #63849F)" stroke-opacity="0.34" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M143 200 q18 12 34 4 M223 204 q18 8 34-4"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

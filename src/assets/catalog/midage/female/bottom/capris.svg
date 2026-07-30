@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: hips block x144 to x256, y316 to y374; leg rects
+       x168 to x198 and x202 to x232, y370 to y552; feet from y544. Derived off that leg rect:
+       mid thigh y416, knee y461, mid calf y507.
+       AXES: leg length, a straight narrow leg stopped clean just above the mid calf so that
+       52 units of bare shin stand between the hem at y492 and the foot at y544, plus hem
+       treatment, one deep single turn-up cuff that steps proud of the leg it finishes.
+       Against wide-leg (full length, wide column) and bike-shorts (mid thigh, skin close). -->
+  <defs>
+    <linearGradient id="midage-female-bottom-capris__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A96D)"/>
+      <stop offset="0.6" stop-color="var(--c1, #E0A96D)"/>
+      <stop offset="1" stop-color="var(--c2, #BE8551)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-capris__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0A96D)"/>
+      <stop offset="1" stop-color="var(--c2, #BE8551)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-capris__turnup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #BE8551)"/>
+      <stop offset="1" stop-color="var(--c1, #E0A96D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: a natural rise seat block over the hips, two narrow straight legs cropped at
+       y492, and two turn-up cuffs standing wider than the leg above them -->
+  <g class="sp-shadow">
+    <path d="M150 304 Q141 304 141 313 L140 372 H260 L259 313 Q259 304 250 304 Z"
+          fill="url(#midage-female-bottom-capris__seat)"/>
+    <path d="M161 366 H199 V462 L197 492 H165 L163 462 Z"
+          fill="url(#midage-female-bottom-capris__cloth)"/>
+    <path d="M239 366 H201 V462 L203 492 H235 L237 462 Z"
+          fill="url(#midage-female-bottom-capris__cloth)"/>
+    <path d="M156 458 H200 V488 Q200 492 196 492 H160 Q156 492 156 488 Z"
+          fill="url(#midage-female-bottom-capris__turnup)"/>
+    <path d="M244 458 H200 V488 Q200 492 204 492 H240 Q244 492 244 488 Z"
+          fill="url(#midage-female-bottom-capris__turnup)"/>
+  </g>
+
+  <!-- TRIM: natural rise waistband sitting 12u above the hip block -->
+  <path d="M150 304 Q141 304 141 313 L141 328 H259 L259 313 Q259 304 250 304 Z"
+        fill="var(--c2, #BE8551)"/>
+  <path d="M143 322 H257" stroke="var(--c3, #FFF2DF)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURE: slanted side pockets -->
+  <path d="M141 334 H173 Q166 360 142 358 Z" fill="var(--c2, #BE8551)"/>
+  <path d="M259 334 H227 Q234 360 258 358 Z" fill="var(--c2, #BE8551)"/>
+  <path d="M173 335 Q166 358 144 356" stroke="var(--c3, #FFF2DF)" stroke-opacity="0.6"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M227 335 Q234 358 256 356" stroke="var(--c3, #FFF2DF)" stroke-opacity="0.6"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- centre front seam -->
+  <path d="M200 332 v36" stroke="var(--c2, #BE8551)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- outer leg seams running to the cuff -->
+  <path d="M166 376 V456" stroke="var(--c2, #BE8551)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 376 V456" stroke="var(--c2, #BE8551)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turn-up fold edge and its stitch line -->
+  <path d="M158 463 H198" stroke="var(--c3, #FFF2DF)" stroke-opacity="0.65" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 463 H242" stroke="var(--c3, #FFF2DF)" stroke-opacity="0.65" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 484 H197" stroke="var(--c2, #BE8551)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 484 H241" stroke="var(--c2, #BE8551)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the straight fall of each cropped leg -->
+  <path d="M160 342 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.27" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 384 V450" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 384 V450" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: hips block x144 to x256, y316 to y374; leg rects
+       x168 to x198 and x202 to x232, y370 to y552, so the KNEE is y461 and the ankle x168 to
+       x232.
+       AXES: rise, a low band sitting on the hip line at y322, well under every other trouser
+       here (jeans and capris sit at y304, leggings and culottes higher again), plus leg width,
+       close through thigh and knee and then a hard change of direction at the knee y461 into a
+       floor-brushing hem at x126 and x274 that clears the ankle by 42 units a side.
+       Midage read: this is the same garment as at every other stage. Not shortened, not tamed. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-flares__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="0.55" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-flares__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C46A78)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-flares__kick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFE3E8)"/>
+      <stop offset="1" stop-color="var(--c2, #A2505F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: a low hip block and two legs that run close to the knee and then break
+       sharply outward to a wide hem -->
+  <g class="sp-shadow">
+    <path d="M162 366 H199 V461 L188 566 H126 L158 461 Z"
+          fill="url(#midage-female-bottom-flares__cloth)"/>
+    <path d="M238 366 H201 V461 L212 566 H274 L242 461 Z"
+          fill="url(#midage-female-bottom-flares__cloth)"/>
+    <path d="M150 322 Q143 322 143 328 L141 372 H259 L257 328 Q257 322 250 322 Z"
+          fill="url(#midage-female-bottom-flares__hip)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: colour-blocked kick panels below the knee break -->
+  <path d="M158 463 L128 562 H186 L197 463 Z" fill="url(#midage-female-bottom-flares__kick)"/>
+  <path d="M242 463 L272 562 H214 L203 463 Z" fill="url(#midage-female-bottom-flares__kick)"/>
+
+  <!-- TRIM: low waistband with two quiet belt loops -->
+  <path d="M150 322 Q143 322 143 328 L143 342 H257 L257 328 Q257 322 250 322 Z"
+        fill="var(--c2, #A2505F)"/>
+  <path d="M145 336 H255" stroke="var(--c3, #FFE3E8)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="167" y="320" width="8" height="24" rx="3" fill="var(--c2, #A2505F)"/>
+  <rect x="225" y="320" width="8" height="24" rx="3" fill="var(--c2, #A2505F)"/>
+
+  <!-- STRUCTURE: the knee break, called out with a contrast seam across each leg -->
+  <path d="M159 462 H197" stroke="var(--c2, #A2505F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 462 H241" stroke="var(--c2, #A2505F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- outer seams following the close thigh and the flare -->
+  <path d="M164 378 L160 456" stroke="var(--c2, #A2505F)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 378 L240 456" stroke="var(--c2, #A2505F)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M154 470 L133 556" stroke="var(--c2, #A2505F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 470 L267 556" stroke="var(--c2, #A2505F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 338 v32" stroke="var(--c2, #A2505F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wide hem facing -->
+  <path d="M133 556 H184" stroke="var(--c2, #A2505F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 556 H267" stroke="var(--c2, #A2505F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the fall of the flare -->
+  <path d="M162 352 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 386 V452" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M175 474 L159 552" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M225 474 L241 552" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

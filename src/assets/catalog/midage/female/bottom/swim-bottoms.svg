@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: hips block x144 to x256, y316 to y374; the leg
+       rects begin at y370, so the crotch of a brief sits just below that at y388.
+       AXES: leg length, none at all, the garment stops at the crotch around y388 with a leg
+       opening cut high onto the hip, plus hem treatment, a plain bound edge instead of a band
+       or a cuff. Against bike-shorts (a mid thigh leg) and leggings (a full ankle leg).
+       High rise: the waist edge is at y290, which is 26u above the natural waist at y316.
+       Worn with swim-top the midriff is meant to stay bare. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="0.6" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D98A7C)"/>
+    </linearGradient>
+    <pattern id="midage-female-bottom-swim-bottoms__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M-2 12 a8 8 0 0 1 8 -8 a8 8 0 0 1 8 8" stroke="var(--c3, #FBF1E6)"
+            stroke-opacity="0.55" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-female-bottom-swim-bottoms__clip">
+      <path d="M150 290 Q144 290 144 296 L142 342 Q162 358 176 380 Q185 390 200 390
+               Q215 390 224 380 Q238 358 258 342 L256 296 Q256 290 250 290 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORM: one high rise brief, the leg openings scooped away up onto the hip -->
+  <g class="sp-shadow">
+    <path d="M150 290 Q144 290 144 296 L142 342 Q162 358 176 380 Q185 390 200 390
+             Q215 390 224 380 Q238 358 258 342 L256 296 Q256 290 250 290 Z"
+          fill="url(#midage-female-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- PATTERN: scallop clipped inside the brief -->
+  <g clip-path="url(#midage-female-bottom-swim-bottoms__clip)">
+    <rect x="138" y="286" width="124" height="110"
+          fill="url(#midage-female-bottom-swim-bottoms__scallop)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast side panels, cut on the same high line as the leg opening -->
+  <path d="M150 290 Q144 290 144 296 L142 342 Q153 351 162 362 L166 310 Q166 292 158 290 Z"
+        fill="var(--c2, #D98A7C)" opacity="0.75"/>
+  <path d="M250 290 Q256 290 256 296 L258 342 Q247 351 238 362 L234 310 Q234 292 242 290 Z"
+        fill="var(--c2, #D98A7C)" opacity="0.75"/>
+
+  <!-- TRIM: plain bound edge along the waist and both leg openings -->
+  <path d="M144 296 H256" stroke="var(--c3, #FBF1E6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M143 340 Q163 357 177 379 Q186 388 200 388" stroke="var(--c3, #FBF1E6)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M257 340 Q237 357 223 379 Q214 388 200 388" stroke="var(--c3, #FBF1E6)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- small centre knot at the waist -->
+  <path d="M190 302 q-8 8 -14 12" stroke="var(--c3, #FBF1E6)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 302 q8 8 14 12" stroke="var(--c3, #FBF1E6)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="301" r="6" fill="var(--c3, #FBF1E6)"/>
+
+  <!-- soft upper highlight -->
+  <path d="M162 318 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 346 q14 14 28 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

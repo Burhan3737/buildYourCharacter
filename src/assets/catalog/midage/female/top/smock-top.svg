@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256 starting at y316.
+       axes vs the slot: the whole body GATHERED onto a shallow chest yoke and swinging out to a
+       182u hem, the widest hem in the slot (volume) + short cap sleeves cut level with the yoke
+       (shoulder/sleeve). Hem at the high hip, y322.
+       Against raincoat, the other flared family here: that one is a long-sleeved A-line snap
+       shell to mid thigh y440 whose flare starts at the shoulder; here the flare starts at a
+       hard yoke seam at y204 and the sleeve is a cap.
+       Tools: panel blocking (yoke painted through c3) + structural (gather lines fanning off the
+       yoke seam, hem frill, waist ties). -->
+  <defs>
+    <linearGradient id="midage-female-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93C7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBF3E2)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #93C7B4)"/>
+      <stop offset="1" stop-color="var(--c2, #64A08C)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- short cap sleeves -->
+    <path d="M150 166 C131 170 118 183 115 202 C113 213 115 221 120 226
+             C131 230 143 227 148 219 C146 200 147 181 150 166 Z"
+          fill="url(#midage-female-top-smock-top__cap)"/>
+    <path d="M250 166 C269 170 282 183 285 202 C287 213 285 221 280 226
+             C269 230 257 227 252 219 C254 200 253 181 250 166 Z"
+          fill="url(#midage-female-top-smock-top__cap)"/>
+    <!-- gathered body, swinging from the yoke seam out to a 182u hem -->
+    <path d="M154 202 C137 236 122 280 110 322 C170 338 230 338 290 322
+             C278 280 263 236 246 202 C214 213 186 213 154 202 Z"
+          fill="url(#midage-female-top-smock-top__body)"/>
+    <!-- shallow chest yoke the body is gathered onto -->
+    <path d="M170 158 C182 170 218 170 230 158 C242 162 250 175 251 192 L249 208
+             C214 219 186 219 151 208 L149 192 C150 175 158 162 170 158 Z"
+          fill="url(#midage-female-top-smock-top__yoke)"/>
+  </g>
+  <!-- yoke seam, where the gathers are set -->
+  <path d="M152 204 C186 215 214 215 248 204"
+        stroke="var(--c2, #64A08C)" stroke-opacity="0.55" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- gathers fanning off the yoke -->
+  <path d="M164 210 L148 314 M182 214 L171 320 M200 216 L200 324 M218 214 L229 320 M236 210 L252 314"
+        stroke="var(--c2, #64A08C)" stroke-opacity="0.34" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck frill along the yoke edge -->
+  <path d="M170 158 C182 170 218 170 230 158 L235 165 C220 180 180 180 165 165 Z" fill="var(--c3, #FBF3E2)"/>
+  <path d="M182 176 q18 10 36 0 q-7 12 -18 12 q-11 0 -18-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- hem frill -->
+  <path d="M110 306 C170 322 230 322 290 306 L291 322 C230 338 170 338 109 322 Z"
+        fill="var(--c3, #FBF3E2)" opacity="0.85"/>
+  <!-- narrow ties falling from the yoke seam -->
+  <path d="M178 210 C174 230 176 250 182 268 M222 210 C226 230 224 250 218 268"
+        stroke="var(--c3, #FBF3E2)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M162 178 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 248 q54 16 108 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

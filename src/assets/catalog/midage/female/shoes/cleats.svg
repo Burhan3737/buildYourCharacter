@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cleats" data-family="cleats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: foot rects x160 to x202 and x198 to x240,
+       y544 to y570, ground y570; ankle x168 to x198 and x202 to x232, so the centre channel
+       is 4u and the two plates meet across it without fusing.
+       AXES: sole depth, a rigid stud plate that holds the shoe off the ground on seven separate
+       studs so only the studs meet the ground line, plus fastening, a lace panel pulled off
+       centre toward the outer edge rather than a symmetric ladder (sneakers keep the ladder).
+       surface tools: panel blocking (stud plate against a close-fitting upper) plus
+       structural detail (studs, off-centre lace bars) plus trim (heel pull tab). -->
+  <defs>
+    <linearGradient id="midage-female-shoes-cleats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2FA36B)"/>
+      <stop offset="1" stop-color="var(--c2, #1C7A4F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-shoes-cleats__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7F3E4)"/>
+      <stop offset="1" stop-color="var(--c3, #F7F3E4)" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two close-fitting uppers, each bolted to a rigid stud plate -->
+  <g class="sp-shadow">
+    <path d="M153 544 C153 538 158 534 166 534 L198 535 C204 536 208 540 208 546
+             L208 552 C208 555 205 556 201 556 L159 556 C155 556 153 552 153 548 Z"
+          fill="url(#midage-female-shoes-cleats__upper)"/>
+    <path d="M150 555 C150 552 153 550 158 550 L204 551 C209 551 212 554 212 558
+             L212 561 C212 563 210 564 206 564 L156 564 C151 564 150 561 150 558 Z"
+          fill="url(#midage-female-shoes-cleats__plate)"/>
+    <path d="M247 544 C247 538 242 534 234 534 L202 535 C196 536 192 540 192 546
+             L192 552 C192 555 195 556 199 556 L241 556 C245 556 247 552 247 548 Z"
+          fill="url(#midage-female-shoes-cleats__upper)"/>
+    <path d="M250 555 C250 552 247 550 242 550 L196 551 C191 551 188 554 188 558
+             L188 561 C188 563 190 564 194 564 L244 564 C249 564 250 561 250 558 Z"
+          fill="url(#midage-female-shoes-cleats__plate)"/>
+  </g>
+
+  <!-- dark outsole shadow the studs are moulded onto, so no skin shows between them -->
+  <rect x="152" y="561" width="58" height="9" rx="3" fill="#2A2320"/>
+  <rect x="190" y="561" width="58" height="9" rx="3" fill="#2A2320"/>
+
+  <!-- STRUCTURE: studs standing below the plate, only these meet the ground line -->
+  <path d="M154 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+  <path d="M170 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+  <path d="M186 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+  <path d="M202 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+  <path d="M218 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+  <path d="M234 562 h12 l-3 8 h-6 z" fill="var(--c2, #1C7A4F)"/>
+
+  <!-- plate edge rib -->
+  <rect x="153" y="559" width="56" height="3" rx="1.5" fill="var(--c2, #1C7A4F)"/>
+  <rect x="191" y="559" width="56" height="3" rx="1.5" fill="var(--c2, #1C7A4F)"/>
+
+  <!-- lace panel pulled off centre toward the outer edge -->
+  <path d="M157 540 L177 544" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M157 546 L177 550" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 552 L178 555" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 538 L171 556" stroke="var(--c2, #1C7A4F)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M243 540 L223 544" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M243 546 L223 550" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 552 L222 555" stroke="var(--c3, #F7F3E4)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 538 L229 556" stroke="var(--c2, #1C7A4F)" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: heel pull tabs -->
+  <rect x="151" y="530" width="10" height="12" rx="4" fill="var(--c3, #F7F3E4)"/>
+  <rect x="239" y="530" width="10" height="12" rx="4" fill="var(--c3, #F7F3E4)"/>
+
+  <!-- synthetic sheen over the close upper -->
+  <path d="M183 540 q14 1 22 5" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 540 q-14 1 -22 5" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

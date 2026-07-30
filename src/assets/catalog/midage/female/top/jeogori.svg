@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- Korean everyday dress, the upper half of hanbok. Drawn respectfully and plainly: the
+       collar band (git) with its pale edging strip, the crossover front, and one long ribbon tie
+       (goreum). No ceremonial or ritual detail.
+       WRAP DIRECTION: this jeogori is wrapped LEFT OVER RIGHT. The wearer's left front is the
+       one drawn on top, which on a front view is the panel entering from the viewer's RIGHT and
+       crossing down to the viewer's LEFT. Right over left is how the dead are dressed and must
+       never be drawn.
+       BINDING SHARED LINE WITH chima, recomputed for this body. The midage/female torso runs
+       y162 to y324, so the point 41 per cent down it, where the chima band's top edge sits, is
+       y228. This jeogori's hem is therefore set at y254, which is 26u clear of and lapping over
+       that band, so the pair never reads as a jacket tucked into a strapless dress.
+       The two locked values for this bundle are: chima band top edge y228, jeogori hem y254.
+       axes vs the slot: a crossover wrap front held only by a ribbon, no button and no zip
+       (closure) + a hem at y254, just below the bust, which is the shortest jacket body in the
+       slot (hem). Against wrap-top, the other crossover here: that one wraps to a tie belt at
+       the natural waist over a hip-length body at y334.
+       Tools: trim (collar band and its pale edging, contrasting cuff bands) + structural
+       (curved sleeve line, ribbon tie with two hanging ends, wrap seam). -->
+  <defs>
+    <linearGradient id="midage-female-top-jeogori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE0CE)"/>
+      <stop offset="1" stop-color="var(--c2, #CBB49A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-jeogori__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE0CE)"/>
+      <stop offset="1" stop-color="var(--c2, #CBB49A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE0CE)"/>
+      <stop offset="1" stop-color="var(--c2, #CBB49A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-jeogori__git" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B8455C)"/>
+      <stop offset="1" stop-color="var(--c2, #CBB49A)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- sleeves on a gently curved underarm line -->
+    <path d="M158 162 C133 168 119 187 115 214 L113 260 C115 284 130 301 152 305
+             C166 305 171 294 169 282 C160 267 158 246 160 214 Z"
+          fill="url(#midage-female-top-jeogori__sleeve)"/>
+    <path d="M242 162 C267 168 281 187 285 214 L287 260 C285 284 270 301 248 305
+             C234 305 229 294 231 282 C240 267 242 246 240 214 Z"
+          fill="url(#midage-female-top-jeogori__sleeve)"/>
+    <!-- the wearer's RIGHT front, laid UNDER, entering from the viewer's left -->
+    <path d="M186 160 H171 C153 164 145 181 143 206 L142 246 C169 259 200 261 227 254 L233 219 Z"
+          fill="url(#midage-female-top-jeogori__body)"/>
+    <!-- the wearer's LEFT front, laid OVER: left over right, crossing to the viewer's left -->
+    <path d="M214 160 H229 C247 164 255 181 257 206 L258 246 C231 259 200 261 173 254 L167 219 Z"
+          fill="url(#midage-female-top-jeogori__over)"/>
+  </g>
+  <!-- collar band on the under front, disappearing beneath the over front -->
+  <path d="M186 160 L200 187 L192 195 L176 162 Z" fill="url(#midage-female-top-jeogori__git)"/>
+  <!-- collar band on the over front, running the full crossover edge -->
+  <path d="M214 160 L167 219 L173 254 L185 252 L181 223 L224 164 Z"
+        fill="url(#midage-female-top-jeogori__git)"/>
+  <!-- pale edging strip along the over collar -->
+  <path d="M216 164 L173 221 L177 248" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- neck opening between the two collar bands -->
+  <path d="M188 160 L200 185 L212 160 Z" fill="var(--skin2, #E7B892)"/>
+  <!-- the ribbon tie, knotted where the fronts cross and hanging long -->
+  <path d="M175 224 h27 q6 0 6 8 v12 q0 8 -6 8 h-27 q-6 0 -6-8 v-12 q0-8 6-8 z"
+        fill="var(--c3, #B8455C)"/>
+  <path d="M177 252 C171 288 169 324 173 356 L189 354 C185 322 187 288 193 254 Z"
+        fill="var(--c3, #B8455C)"/>
+  <path d="M197 252 C201 284 205 314 213 340 L227 334 C219 310 213 282 211 254 Z"
+        fill="var(--c3, #B8455C)" opacity="0.88"/>
+  <!-- contrasting cuff bands -->
+  <path d="M115 268 C123 291 135 301 152 305 C142 311 127 307 117 294 C113 286 112 276 115 268 Z"
+        fill="var(--c3, #B8455C)" opacity="0.9"/>
+  <path d="M285 268 C277 291 265 301 248 305 C258 311 273 307 283 294 C287 286 288 276 285 268 Z"
+        fill="var(--c3, #B8455C)" opacity="0.9"/>
+  <!-- wrap seam under the over front -->
+  <path d="M185 250 C204 254 221 254 237 250"
+        stroke="var(--c2, #CBB49A)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M158 200 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

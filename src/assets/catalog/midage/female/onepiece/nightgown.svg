@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; leg rect y370 to y552, so MID CALF is y507 and the
+       hem is set just past it at y516.
+       axes vs the slot: short set-in cap sleeves hung off a seamed shoulder yoke at y206
+       (shoulder/sleeve) + one loose fall from that yoke to mid calf with no waist anywhere
+       (volume). Against robe, which has a shawl collar, a tie belt and a wrap front, and
+       against kaftan, which is a T-shape with wide draped sleeves and a slit neckline. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-nightgown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FD2C4)"/>
+      <stop offset="1" stop-color="var(--c2, #6BB3A4)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BB3A4)"/>
+      <stop offset="1" stop-color="var(--c1, #8FD2C4)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-nightgown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8FD2C4)"/>
+      <stop offset="1" stop-color="var(--c2, #6BB3A4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in cap sleeves -->
+    <path d="M106 186 q0-20 22-20 h16 q22 0 22 20 v32 q0 12 -22 12 h-16 q-22 0 -22-12 Z"
+          fill="url(#midage-female-onepiece-nightgown__sleeve)"/>
+    <path d="M294 186 q0-20 -22-20 h-16 q-22 0 -22 20 v32 q0 12 22 12 h16 q22 0 22-12 Z"
+          fill="url(#midage-female-onepiece-nightgown__sleeve)"/>
+    <!-- loose body falling straight from the yoke seam to mid calf -->
+    <path d="M144 192 H256 q12 0 12 14 l4 310 q-68 18 -136 0 l-4 -310 q0-14 12-14 Z"
+          fill="url(#midage-female-onepiece-nightgown__body)"/>
+    <!-- shoulder yoke with a plain round neck opening -->
+    <path d="M158 162 h20 q0 18 22 18 q22 0 22-18 h20 q24 0 24 20 v24 q-66 18 -132 0 v-24
+             q0-20 24-20 Z"
+          fill="url(#midage-female-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- TRIM: bound round neckline -->
+  <path d="M177 164 q4 20 23 20 q19 0 23-20" stroke="var(--c3, #F2E5C8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- yoke seam, and the gathers the body hangs on -->
+  <path d="M138 206 q62 18 124 0" stroke="var(--c3, #F2E5C8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 214 v22 M182 216 v20 M200 217 v20 M218 216 v20 M236 214 v22"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- sleeve edge binding -->
+  <path d="M108 220 q26 12 56 0 M292 220 q-26 12 -56 0" stroke="var(--c3, #F2E5C8)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- soft fall folds and the mid calf hem band -->
+  <path d="M170 228 l-6 276 M200 230 v274 M230 228 l6 276" stroke="#3B2A22" stroke-opacity="0.1"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M136 508 q64 18 128 0" stroke="var(--c3, #F2E5C8)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M158 186 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 356 q48 16 96 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Japanese everyday dress. Plain cloth with a generic scattered speck weave; no crest, no
+       family mon, no ceremonial marking.
+       WRAP DIRECTION: closed LEFT OVER RIGHT. The wearer's left panel lies on top, so on this
+       front view the band entering from the VIEWER'S RIGHT crosses down over the other. Right
+       over left is how the dead are dressed and must never be drawn.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; natural waist y316; ankle y540.
+       axes vs the slot: wrapped left over right, so the flat band collar runs from the neck down
+       to the viewer's left waist (closure)
+       + wide rectangular sleeve panels hanging 56 units below the arm with a straight lower
+       edge at y418, over a full length hem (shoulder/sleeve).
+       Against robe, which keeps a shawl collar, a soft tie belt and a calf hem. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-yukata__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #364A78)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-yukata__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #26355A)"/>
+      <stop offset="1" stop-color="var(--c1, #364A78)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-yukata__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #364A78)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3D7BE)"/>
+      <stop offset="1" stop-color="var(--c2, #26355A)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-yukata__specks" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M4 14 l6-8 M14 18 l4-6" stroke="var(--c3, #E3D7BE)" stroke-width="2.2"
+            stroke-linecap="round" fill="none"/>
+    </pattern>
+    <clipPath id="midage-female-onepiece-yukata__clip">
+      <path d="M212 164 H244 q22 0 24 22 l16 374 q-70 20 -142 2 L144 306 Z"/>
+      <path d="M98 184 q0-16 18-16 H160 V418 H114 q-16 0 -16-16 Z"/>
+      <path d="M302 184 q0-16 -18-16 H240 V418 H286 q16 0 16-16 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide rectangular sleeve panels, straight lower edge at y418 -->
+    <path d="M98 184 q0-16 18-16 H160 V418 H114 q-16 0 -16-16 Z"
+          fill="url(#midage-female-onepiece-yukata__panel)"/>
+    <path d="M302 184 q0-16 -18-16 H240 V418 H286 q16 0 16-16 Z"
+          fill="url(#midage-female-onepiece-yukata__panel)"/>
+    <!-- the wearer's RIGHT panel goes in first, underneath -->
+    <path d="M204 164 H160 q-20 0 -22 20 l-2 378 q42 14 86 6 Z"
+          fill="url(#midage-female-onepiece-yukata__under)"/>
+    <!-- the wearer's LEFT panel crosses over it, its band running down to the viewer's left -->
+    <path d="M212 164 H244 q22 0 24 22 l16 374 q-70 20 -142 2 L144 306 Z"
+          fill="url(#midage-female-onepiece-yukata__over)"/>
+    <!-- scattered speck weave over the panels -->
+    <g clip-path="url(#midage-female-onepiece-yukata__clip)">
+      <rect x="94" y="162" width="212" height="416"
+            fill="url(#midage-female-onepiece-yukata__specks)" opacity="0.34"/>
+    </g>
+  </g>
+
+  <!-- TRIM: flat overlapping band collar, neck to waist. The pale band is the wearer's LEFT
+       front and it lies ON TOP, crossing from the viewer's right down to the viewer's left. -->
+  <path d="M182 158 L196 162 L206 230 L192 234 Z" fill="var(--c2, #26355A)"/>
+  <path d="M204 158 L218 164 L156 312 L140 304 Z" fill="var(--c3, #E3D7BE)"/>
+  <!-- broad flat sash at the natural waist -->
+  <rect x="126" y="296" width="148" height="36" rx="8"
+        fill="url(#midage-female-onepiece-yukata__sash)"/>
+  <rect x="184" y="290" width="32" height="48" rx="8" fill="var(--c2, #26355A)"/>
+  <path d="M130 306 h140" stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- straight sleeve hems -->
+  <path d="M102 410 h54 M298 410 h-54" stroke="var(--c3, #E3D7BE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- hem band sweeping the floor -->
+  <path d="M140 542 q70 22 142 0" stroke="var(--c3, #E3D7BE)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M110 190 q22 -8 42 -4 M290 190 q-22 -8 -42 -4" stroke="#FFFFFF"
+        stroke-opacity="0.26" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M156 418 q46 16 94 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

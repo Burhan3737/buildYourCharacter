@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- South Asian everyday dress. Drawn as clothes someone wore to the shops: a plain cotton
+       kurta, no community-specific woven motif of any kind, no borrowed embroidery.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, y316 to y374; mid thigh y416 and knee y461 off the y370 to y552 leg rect.
+       axes vs the slot: a straight tunic column falling between mid thigh and knee at y440 with
+       the side slits stepping the outline in by 12u a side from the hip at y322 (hem + volume)
+       + a standing band collar over a short front placket, so the neck opening is a closed band
+       and not a crew, a V or a lapel (closure). Long straight sleeves to the wrist at y346.
+       Against long-coat, the other long family: that coat is a buttoned column to mid calf under
+       a notched collar; against oversized-long-sleeve: that is a dropped boxy shoulder with a
+       wide crew neckband and no placket.
+       Tools: trim (band collar, placket band, cuff bands and a hem piping through c3)
+       + structural (side slits, three placket buttons, straight side seams). -->
+  <defs>
+    <linearGradient id="midage-female-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D5)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D5)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-kurta__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3F5C6B)"/>
+      <stop offset="1" stop-color="var(--c2, #C6BB9E)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- long straight sleeves -->
+    <path d="M154 166 C133 172 125 189 124 212 L123 328 C125 344 133 351 145 350
+             C157 349 161 341 161 327 L160 210 Z"
+          fill="url(#midage-female-top-kurta__sleeve)"/>
+    <path d="M246 166 C267 172 275 189 276 212 L277 328 C275 344 267 351 255 350
+             C243 349 239 341 239 327 L240 210 Z"
+          fill="url(#midage-female-top-kurta__sleeve)"/>
+    <!-- straight tunic column, stepped in at the hip where the side slits open -->
+    <path d="M172 162 H228 C248 166 258 182 259 206 L262 278 L263 322 L251 324 L249 440
+             C232 450 168 450 151 440 L149 324 L137 322 L138 278 L141 206
+             C142 182 152 166 172 162 Z"
+          fill="url(#midage-female-top-kurta__body)"/>
+  </g>
+  <!-- deep side slits, running from the hip to the hem -->
+  <path d="M153 328 L155 438 M247 328 L245 438"
+        stroke="var(--c2, #C6BB9E)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- standing band collar -->
+  <path d="M180 154 H220 C223 160 224 170 222 180 H178 C176 170 177 160 180 154 Z"
+        fill="url(#midage-female-top-kurta__trim)"/>
+  <path d="M186 158 q14 8 28 0 q-3 12 -14 12 q-11 0 -14-12 z" fill="var(--skin2, #E7B892)"/>
+  <!-- short front placket under the band -->
+  <path d="M191 178 h18 q3 0 3 5 v52 q0 5 -3 5 h-18 q-3 0 -3-5 v-52 q0-5 3-5 z"
+        fill="url(#midage-female-top-kurta__trim)"/>
+  <circle cx="200" cy="193" r="4" fill="var(--c1, #EDE6D5)"/>
+  <circle cx="200" cy="211" r="4" fill="var(--c1, #EDE6D5)"/>
+  <circle cx="200" cy="229" r="4" fill="var(--c1, #EDE6D5)"/>
+  <!-- cuff bands -->
+  <path d="M123 328 q19 10 38 0 v14 q-19 10 -38 0 z" fill="var(--c3, #3F5C6B)" opacity="0.85"/>
+  <path d="M239 328 q19 10 38 0 v14 q-19 10 -38 0 z" fill="var(--c3, #3F5C6B)" opacity="0.85"/>
+  <!-- hem piping -->
+  <path d="M151 430 C168 440 232 440 249 430 L249 440 C232 450 168 450 151 440 Z"
+        fill="var(--c3, #3F5C6B)" opacity="0.8"/>
+  <!-- straight side seams -->
+  <path d="M158 224 L156 316 M242 224 L244 316"
+        stroke="var(--c2, #C6BB9E)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M154 214 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

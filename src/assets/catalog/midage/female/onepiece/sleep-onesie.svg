@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Onesie" data-family="sleep-onesie" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; leg rects x168 to x198 and x202 to x232, y370 to
+       y552; feet x160 to x202 and x198 to x240, y544 to y570.
+       axes vs the slot: a full length front zip from the throat to the crotch (closure)
+       + closed feet, so the hem runs past the ankle and over the drawn foot itself (hem).
+       Against boiler-suit, the other zipped all-in-one: that has a collar, a tie waist and open
+       straight legs stopping at the ankle. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-sleep-onesie__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sleep-onesie__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sleep-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6A83C4)"/>
+      <stop offset="1" stop-color="var(--c1, #8AA4E8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sleep-onesie__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8AA4E8)"/>
+      <stop offset="1" stop-color="var(--c2, #6A83C4)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hood, WORN DOWN as a thick fabric roll behind and across the neck. This is the
+         sanctioned hood pattern for the whole catalogue: a hood drawn up would cover the
+         skull, and hair-front draws above onepiece, so a raised hood renders with the
+         character's hair sitting on top of it. Do not raise it. -->
+    <path d="M148 212 C146 170 168 154 200 154 C232 154 254 170 252 212
+             C220 198 180 198 148 212 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__hood)"/>
+    <path d="M154 194 C178 184 222 184 246 194 C250 206 246 216 238 218
+             C214 210 186 210 162 218 C154 216 150 206 154 194 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__hood)"/>
+    <!-- long sleeves -->
+    <path d="M106 188 q0-22 20-22 h19 q20 0 20 22 v156 q0 14 -20 14 h-19 q-20 0 -20-14 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__sleeve)"/>
+    <path d="M294 188 q0-22 -20-22 h-19 q-20 0 -20 22 v156 q0 14 20 14 h19 q20 0 20-14 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__sleeve)"/>
+    <!-- closed foot legs: the hem runs on over the drawn foot and rounds off at the sole -->
+    <path d="M148 328 H200 V546 q0 18 -12 22 h-34 q-14 -2 -14 -18 l6-108 q4-58 4-134 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__leg)"/>
+    <path d="M252 328 H200 V546 q0 18 12 22 h34 q14 -2 14 -18 l-6-108 q-4-58 -4-134 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__leg)"/>
+    <!-- softly bloused body from the throat to the crotch -->
+    <path d="M148 190 q52 20 104 0 q16 4 16 24 l6 84 q2 26 -14 32 q-60 16 -120 0
+             q-16-6 -14-32 l6-84 q0-20 16-24 Z"
+          fill="url(#midage-female-onepiece-sleep-onesie__body)"/>
+  </g>
+
+  <!-- TRIM: closed feet, contrast soles -->
+  <path d="M142 542 q0-10 12-10 h36 q10 0 10 12 v12 q0 14 -14 14 h-32 q-12 0 -12-14 Z"
+        fill="var(--c3, #F7DCA8)"/>
+  <path d="M258 542 q0-10 -12-10 h-36 q-10 0 -10 12 v12 q0 14 14 14 h32 q12 0 12-14 Z"
+        fill="var(--c3, #F7DCA8)"/>
+  <!-- STRUCTURE: full length centre zip, throat to crotch, with a pull tab -->
+  <path d="M200 182 V352" stroke="var(--c3, #F7DCA8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 184 V350" stroke="#3B2A22" stroke-opacity="0.28" stroke-width="2.4"
+        stroke-dasharray="5 5" fill="none"/>
+  <rect x="193" y="312" width="14" height="22" rx="5" fill="var(--c3, #F7DCA8)"/>
+  <!-- ribbed cuffs at the wrist and the hood edge -->
+  <rect x="106" y="332" width="41" height="20" rx="9" fill="var(--c2, #6A83C4)"/>
+  <rect x="253" y="332" width="41" height="20" rx="9" fill="var(--c2, #6A83C4)"/>
+  <path d="M110 338 v8 M118 336 v10 M126 336 v10 M134 336 v10 M142 338 v8
+           M257 338 v8 M265 336 v10 M273 336 v10 M281 336 v10 M289 338 v8"
+        stroke="#3B2A22" stroke-opacity="0.2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- drawcord and aglets along the down-hood edge -->
+  <path d="M158 200 C180 190 220 190 242 200" stroke="var(--c3, #F7DCA8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="176" y="210" width="8" height="16" rx="4" fill="var(--c3, #F7DCA8)"/>
+  <rect x="216" y="210" width="8" height="16" rx="4" fill="var(--c3, #F7DCA8)"/>
+  <!-- blousing at the hip -->
+  <path d="M146 314 q54 18 108 0" stroke="#3B2A22" stroke-opacity="0.14" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M162 170 q34 -14 70 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 222 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 400 v116 M230 400 v116" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

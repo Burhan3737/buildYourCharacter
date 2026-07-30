@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thobe" data-family="thobe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Everyday dress across the Arabian peninsula and the Levant. Plain cloth, generic trim.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; ankle y540.
+       axes vs the slot: a band collar over a short buttoned placket, closed below it (closure)
+       + a straight ankle length column on narrow long set-in sleeves (hem).
+       Against kaftan, which keeps a mid calf hem, wide draped sleeves and a slit neckline, and
+       against abaya, which is open down the whole front. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-thobe__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCD3BE)"/>
+      <stop offset="1" stop-color="var(--c2, #BFB49B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-thobe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCD3BE)"/>
+      <stop offset="1" stop-color="var(--c2, #BFB49B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-thobe__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6E7C8C)"/>
+      <stop offset="1" stop-color="var(--c2, #BFB49B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow long set-in sleeves -->
+    <path d="M112 178 q0-14 16-14 h15 q16 0 16 14 v172 q0 12 -16 12 h-15 q-16 0 -16-12 Z"
+          fill="url(#midage-female-onepiece-thobe__sleeve)"/>
+    <path d="M288 178 q0-14 -16-14 h-15 q-16 0 -16 14 v172 q0 12 16 12 h15 q16 0 16-12 Z"
+          fill="url(#midage-female-onepiece-thobe__sleeve)"/>
+    <!-- straight ankle length column, no waist at all -->
+    <path d="M150 162 H250 q20 0 22 20 l2 96 l-6 270 q-68 20 -136 0 l-2 -270 l2-96
+             q2-20 22-20 Z"
+          fill="url(#midage-female-onepiece-thobe__column)"/>
+  </g>
+
+  <!-- TRIM: band collar standing at the neck -->
+  <rect x="176" y="148" width="48" height="24" rx="9"
+        fill="url(#midage-female-onepiece-thobe__collar)"/>
+  <!-- STRUCTURE: short buttoned placket below it -->
+  <rect x="191" y="170" width="18" height="82" rx="5" fill="var(--c2, #BFB49B)"/>
+  <circle cx="200" cy="189" r="4.6" fill="var(--c3, #6E7C8C)"/>
+  <circle cx="200" cy="214" r="4.6" fill="var(--c3, #6E7C8C)"/>
+  <circle cx="200" cy="239" r="4.6" fill="var(--c3, #6E7C8C)"/>
+  <!-- narrow sleeve cuffs -->
+  <rect x="112" y="340" width="47" height="20" rx="9" fill="var(--c2, #BFB49B)"/>
+  <rect x="241" y="340" width="47" height="20" rx="9" fill="var(--c2, #BFB49B)"/>
+  <path d="M116 346 q22 8 38 0 M284 346 q-22 8 -38 0" stroke="var(--c3, #6E7C8C)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- welt pocket in the middle third of the torso -->
+  <path d="M226 262 h32 q5 0 5 6 v8 q0 6 -5 6 h-32 q-5 0 -5-6 v-8 q0-6 5-6 Z"
+        fill="var(--c2, #BFB49B)"/>
+  <!-- side seams and the ankle hem band -->
+  <path d="M142 280 l-5 260 M258 280 l5 260" stroke="#3B2A22" stroke-opacity="0.11"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M132 526 q68 20 136 0" stroke="var(--c3, #6E7C8C)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M156 190 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 382 q54 16 108 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

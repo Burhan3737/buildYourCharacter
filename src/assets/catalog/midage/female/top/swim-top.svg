@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324, so the underbust
+       sits 55 per cent of the way down that box, at y252, and the top of the bust at y196.
+       axes vs the slot: a hem at the UNDERBUST, y252, the highest hem in the slot, so the whole
+       midriff is deliberately bare (hem) + a banded body with a straight upper edge at y196 on
+       10u shoulder ties, no sleeve and no neckline shaping at all (volume + shoulder/sleeve).
+       Against crop-top, the next shortest: that one is a closed short-sleeve body with a ribbed
+       scoop neckband stopping at y268. Against camisole: that is a widening column on spaghetti
+       straps falling past the hip.
+       This is a finished garment worn alone, not underwear. It pairs with swim-bottoms, which
+       sits at the natural waist and does not close the gap.
+       Tools: trim (contrast binding along the straight top edge and the underbust hem)
+       + structural (centre gather knot, underbust seam, tie shoulder straps). -->
+  <defs>
+    <linearGradient id="midage-female-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8697C)"/>
+      <stop offset="1" stop-color="var(--c2, #B84759)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8697C)"/>
+      <stop offset="1" stop-color="var(--c2, #B84759)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- narrow shoulder ties -->
+    <path d="M160 156 H171 L177 200 H166 Z" fill="url(#midage-female-top-swim-top__tie)"/>
+    <path d="M240 156 H229 L223 200 H234 Z" fill="url(#midage-female-top-swim-top__tie)"/>
+    <!-- banded body: straight upper edge, hem at the underbust -->
+    <path d="M136 196 H264 L263 224 C262 238 257 246 250 252 C214 262 186 262 150 252
+             C143 246 138 238 137 224 Z"
+          fill="url(#midage-female-top-swim-top__band)"/>
+  </g>
+  <!-- contrast binding along the straight upper edge -->
+  <path d="M136 194 H264 L264 206 H136 Z" fill="var(--c3, #FBEFDC)"/>
+  <!-- contrast binding along the underbust hem -->
+  <path d="M139 236 C186 248 214 248 261 236 L259 250 C214 262 186 262 141 250 Z"
+        fill="var(--c3, #FBEFDC)" opacity="0.92"/>
+  <!-- centre gather knot -->
+  <path d="M190 202 h20 q5 0 5 7 v14 q0 7 -5 7 h-20 q-5 0 -5-7 v-14 q0-7 5-7 z" fill="var(--c3, #FBEFDC)"/>
+  <path d="M192 208 q8 10 16 0 M192 220 q8-10 16 0"
+        stroke="var(--c2, #B84759)" stroke-opacity="0.45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- gathers running out of the knot -->
+  <path d="M182 212 q-15 6 -28 2 M218 212 q15 6 28 2 M184 226 q-15 8 -28 6 M216 226 q15 8 28 6"
+        stroke="var(--c2, #B84759)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- underbust seam -->
+  <path d="M150 238 q50 12 100 0" stroke="var(--c2, #B84759)" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- tie ends knotted at the shoulder -->
+  <path d="M159 160 q6-8 13-2 M241 160 q-6-8 -13-2"
+        stroke="var(--c3, #FBEFDC)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- highlight -->
+  <path d="M152 212 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

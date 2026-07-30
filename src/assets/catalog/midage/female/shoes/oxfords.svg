@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oxfords" data-family="oxfords" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: foot rects x160 to x202 and x198 to x240,
+       y544 to y570, ground y570; the welted sole steps out past the upper all the way round and
+       lands on the ground line.
+       AXES: fastening, closed lacing where the quarters meet over the vamp and three lace bars
+       run straight across, not a crossed ladder, plus toe shape, a squared toe carrying a
+       straight cap seam rather than the round or tapered box that dress-shoes and sneakers use.
+       Midage read: the lacing is drawn crisply but quietly, no contrast speed hooks.
+       surface tools: panel blocking (squared toe cap against the quarters) plus trim
+       (projecting welted sole edge, lace bars) plus structural detail (cap seam, eyelets). -->
+  <defs>
+    <linearGradient id="midage-female-shoes-oxfords__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A3327)"/>
+      <stop offset="1" stop-color="var(--c2, #33231A)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-shoes-oxfords__welt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #33231A)"/>
+      <stop offset="1" stop-color="var(--c2, #33231A)" stop-opacity="0.76"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two low squared uppers, each on its own welted sole -->
+  <g class="sp-shadow">
+    <path d="M151 548 C151 540 155 536 163 536 L199 536 C205 536 209 540 209 548
+             L209 558 C209 562 206 563 201 563 L158 563 C153 563 151 560 151 555 Z"
+          fill="url(#midage-female-shoes-oxfords__upper)"/>
+    <path d="M148 562 L212 562 C215 562 216 564 216 566 C216 569 214 570 211 570
+             L155 570 C150 570 146 568 146 566 C146 563 146 562 148 562 Z"
+          fill="url(#midage-female-shoes-oxfords__welt)"/>
+    <path d="M249 548 C249 540 245 536 237 536 L201 536 C195 536 191 540 191 548
+             L191 558 C191 562 194 563 199 563 L242 563 C247 563 249 560 249 555 Z"
+          fill="url(#midage-female-shoes-oxfords__upper)"/>
+    <path d="M252 562 L188 562 C185 562 184 564 184 566 C184 569 186 570 189 570
+             L245 570 C250 570 254 568 254 566 C254 563 254 562 252 562 Z"
+          fill="url(#midage-female-shoes-oxfords__welt)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: squared toe caps, seamed straight across -->
+  <path d="M189 536 H199 C205 536 209 540 209 548 L209 558 C209 562 206 563 201 563
+           L189 563 Z" fill="var(--c2, #33231A)"/>
+  <path d="M211 536 H201 C195 536 191 540 191 548 L191 558 C191 562 194 563 199 563
+           L211 563 Z" fill="var(--c2, #33231A)"/>
+  <path d="M189 538 V562" stroke="var(--c3, #E5D2AE)" stroke-opacity="0.8" stroke-width="2.6"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+  <path d="M211 538 V562" stroke="var(--c3, #E5D2AE)" stroke-opacity="0.8" stroke-width="2.6"
+        stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: welt stitching along the projecting sole edge -->
+  <path d="M150 566 H211" stroke="var(--c3, #E5D2AE)" stroke-opacity="0.75" stroke-width="2.4"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M250 566 H189" stroke="var(--c3, #E5D2AE)" stroke-opacity="0.75" stroke-width="2.4"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+
+  <!-- closed lacing: the two quarters meet and three bars run straight across -->
+  <path d="M159 541 H183" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 548 H183" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 555 H183" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M171 539 V557" stroke="var(--c2, #33231A)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 541 H241" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 548 H241" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 555 H241" stroke="var(--c3, #E5D2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M229 539 V557" stroke="var(--c2, #33231A)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- eyelets -->
+  <circle cx="159" cy="541" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="183" cy="541" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="159" cy="555" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="183" cy="555" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="217" cy="541" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="241" cy="541" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="217" cy="555" r="2.4" fill="var(--c3, #E5D2AE)"/>
+  <circle cx="241" cy="555" r="2.4" fill="var(--c3, #E5D2AE)"/>
+
+  <!-- polished leather sheen -->
+  <path d="M155 540 q16 -4 28 -1" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M245 540 q-16 -4 -28 -1" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Southeast Asian and Pacific everyday dress: a length of cloth wrapped at the waist and
+       knotted at one hip. Drawn plainly, with a generic scattered dot and dash so no particular
+       community's woven design is reproduced.
+       Refit to the DRAWN midage/female body: hips block x144 to x256, y316 to y374; leg rect
+       y370 to y552, so MID CALF is y507 and the hem is set just past it at y516.
+       AXES: hem treatment, an asymmetric wrap closed by a knot standing proud of the right hip
+       with the overlap edge running diagonally from (250, 316) to (176, 513), 74 units of
+       horizontal travel, plus leg length, a mid calf hem at y516 that sits well above the ankle
+       skirts and well below the knee ones. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-sarong__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A5B)"/>
+      <stop offset="0.6" stop-color="var(--c1, #E08A5B)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A42)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-sarong__overlap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B96A42)"/>
+      <stop offset="1" stop-color="var(--c1, #E08A5B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-sarong__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A5B)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A42)"/>
+    </linearGradient>
+    <pattern id="midage-female-bottom-sarong__dots" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="5" cy="5" r="2.6" fill="var(--c3, #FDEBD2)" fill-opacity="0.5"/>
+      <circle cx="15" cy="15" r="2.6" fill="var(--c3, #FDEBD2)" fill-opacity="0.5"/>
+      <path d="M13 4 h4" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.35" stroke-width="2"
+            stroke-linecap="round"/>
+      <path d="M3 14 h4" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.35" stroke-width="2"
+            stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-female-bottom-sarong__clip">
+      <path d="M142 310 H258 L262 502 Q262 516 248 516 H152 Q138 516 138 502 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: the wrapped length of cloth, the overlap panel laid over it, and the knot
+       tied off at the right hip -->
+  <g class="sp-shadow">
+    <path d="M142 310 H258 L262 502 Q262 516 248 516 H152 Q138 516 138 502 Z"
+          fill="url(#midage-female-bottom-sarong__cloth)"/>
+    <path d="M250 316 L176 513 Q175 516 180 516 H248 Q262 516 262 502 L258 320 Z"
+          fill="url(#midage-female-bottom-sarong__overlap)"/>
+    <path d="M232 302 Q252 293 266 304 Q279 313 270 325 Q257 337 241 329 Q226 319 232 302 Z"
+          fill="url(#midage-female-bottom-sarong__knot)"/>
+  </g>
+
+  <!-- PATTERN: printed dots clipped to the cloth -->
+  <g clip-path="url(#midage-female-bottom-sarong__clip)">
+    <rect x="136" y="308" width="128" height="212" fill="url(#midage-female-bottom-sarong__dots)"/>
+  </g>
+
+  <!-- the overlap edge, the identity of the wrap -->
+  <path d="M250 320 L178 512" stroke="var(--c2, #B96A42)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M255 322 L184 513" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- knot tails falling away from the hip -->
+  <path d="M264 322 q10 20 4 44" stroke="var(--c1, #E08A5B)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 328 q6 22 -2 40" stroke="var(--c2, #B96A42)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M239 309 q12 -5 20 3" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: folded top edge of the wrap -->
+  <path d="M146 316 H234" stroke="var(--c2, #B96A42)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 326 H230" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- mid calf hem band -->
+  <path d="M147 508 H253" stroke="var(--c2, #B96A42)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M145 498 H253" stroke="var(--c3, #FDEBD2)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and one long drape fold -->
+  <path d="M156 336 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 356 L151 494" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

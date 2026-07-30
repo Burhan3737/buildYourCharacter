@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, y316 to y374; leg rects y370 to y552, so the KNEE is y461 and the flare
+       breaks there. Feet begin at y544, so the bell hem stops above the sole at y546.
+       axes vs the slot: a halter neck that leaves both shoulders and the upper back bare
+       (shoulder/sleeve)
+       + fitted through torso and thigh and then flaring 50 units per side out of the knee into
+       a bell that stops at y546, above the sole, so the shoe still reads under it (volume).
+       Against jumpsuit, the core family: that has covered shoulders, a centre front closure and
+       a straight leg. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-flare-jumpsuit__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F6E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #22536B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-flare-jumpsuit__legL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F6E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #22536B)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-flare-jumpsuit__legR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F6E8C)"/>
+      <stop offset="1" stop-color="var(--c2, #22536B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- fitted thigh breaking into a wide bell out of the KNEE at y461, hem above the sole -->
+    <path d="M146 318 H200 V546 h-86 l-6 -46 C122 476, 148 472, 156 461 L152 380 L146 318 Z"
+          fill="url(#midage-female-onepiece-flare-jumpsuit__legL)"/>
+    <path d="M254 318 H200 V546 h86 l6 -46 C278 476, 252 472, 244 461 L248 380 L254 318 Z"
+          fill="url(#midage-female-onepiece-flare-jumpsuit__legR)"/>
+    <!-- halter bodice rising to a narrow band at the throat, shoulders left bare -->
+    <path d="M164 220 L190 166 q10-6 20 0 L236 220 q26 0 26 18 l-2 66 q0 16 -8 22 h-104
+             q-8-6 -8-22 l-2-66 q0-18 26-18 Z"
+          fill="url(#midage-female-onepiece-flare-jumpsuit__bodice)"/>
+  </g>
+
+  <!-- TRIM: halter neck band running up around the neck -->
+  <path d="M186 168 q14-14 28 0" stroke="var(--c3, #E9C98A)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 168 L168 220 M210 168 L232 220" stroke="var(--c3, #E9C98A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- PANEL BLOCKING: contrast waist band at the natural waist -->
+  <rect x="140" y="298" width="120" height="20" rx="8" fill="var(--c3, #E9C98A)"/>
+  <rect x="189" y="294" width="22" height="28" rx="7" fill="var(--c2, #22536B)"/>
+  <!-- front hip pockets -->
+  <path d="M154 324 h28 l-6 26 q-2 6 -8 6 h-16 q-6 0 -6-6 Z" fill="var(--c2, #22536B)"/>
+  <path d="M246 324 h-28 l6 26 q2 6 8 6 h16 q6 0 6-6 Z" fill="var(--c2, #22536B)"/>
+  <!-- the knee break, called out on both legs -->
+  <path d="M158 463 q22 8 40 2 M242 463 q-22 8 -40 2" stroke="var(--c3, #E9C98A)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- bell hems, stopping above the sole -->
+  <path d="M114 534 h84 M286 534 h-84" stroke="var(--c3, #E9C98A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- centre and side seams down the flares -->
+  <path d="M200 328 V546" stroke="#3B2A22" stroke-opacity="0.22" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 390 l-32 148 M236 390 l32 148" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M172 220 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 398 l-20 130 M230 398 l20 130" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>

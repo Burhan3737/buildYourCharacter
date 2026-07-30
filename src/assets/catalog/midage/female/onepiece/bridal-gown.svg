@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body. RECOMPUTED KNEE ANCHOR: the leg rects run y370 to
+       y552, so the knee is their midpoint, y461, fifteen units lower than the adult bundle's
+       y446. THE TRUMPET BREAK IS PINNED TO THAT KNEE and is therefore drawn at y462, not at the
+       adult value. Everything below it, the flare and the train, is measured from there.
+       Other landmarks: torso x138 to x262, y162 to y324; hips x144 to x256; ankle y540.
+       axes vs the slot: long sheer set-in sleeves under a high round neckline (shoulder/sleeve)
+       + fitted from hip to the knee at y462 and then breaking hard into a trumpet 48 units wider
+       per side, with a train that sweeps past the ground line (volume).
+       It must read as a wedding gown recoloured black, so the trumpet line and the train carry
+       it, both drawn to measure. The veil is head art and lives in headwear: not drawn here. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-bridal-gown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE4)"/>
+      <stop offset="1" stop-color="var(--c2, #DCD2C6)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-bridal-gown__train" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DCD2C6)"/>
+      <stop offset="1" stop-color="var(--c3, #B9A98F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-bridal-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2ECE4)"/>
+      <stop offset="1" stop-color="var(--c2, #DCD2C6)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-bridal-gown__lace" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <circle cx="11" cy="11" r="5.4" fill="none" stroke="var(--c3, #B9A98F)" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="3" fill="none" stroke="var(--c3, #B9A98F)" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="3" fill="none" stroke="var(--c3, #B9A98F)" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="midage-female-onepiece-bridal-gown__clip">
+      <path d="M154 178 Q200 200 246 178 C256 182, 260 188, 260 200 L254 290 L252 336 L240 462
+               C264 484, 280 522, 286 556 Q200 590 114 556 C120 522, 136 484, 160 462
+               L148 336 L146 290 L140 200 C140 188, 144 182, 154 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- train, sweeping back and behind the ground line -->
+    <path d="M172 414 C142 472, 106 528, 94 568 Q110 592 162 586 C180 546, 198 492, 202 442 Z"
+          fill="url(#midage-female-onepiece-bridal-gown__train)"/>
+    <!-- long sheer set-in sleeves -->
+    <path d="M112 184 q0-16 17-16 h14 q17 0 17 16 v168 q0 12 -17 12 h-14 q-17 0 -17-12 Z"
+          fill="url(#midage-female-onepiece-bridal-gown__sleeve)" opacity="0.62"/>
+    <path d="M288 184 q0-16 -17-16 h-14 q-17 0 -17 16 v168 q0 12 17 12 h14 q17 0 17-12 Z"
+          fill="url(#midage-female-onepiece-bridal-gown__sleeve)" opacity="0.62"/>
+    <!-- fitted through the hip to the KNEE at y462, then a hard trumpet flare -->
+    <path d="M154 178 Q200 200 246 178 C256 182, 260 188, 260 200 L254 290 L252 336 L240 462
+             C264 484, 280 522, 286 556 Q200 590 114 556 C120 522, 136 484, 160 462
+             L148 336 L146 290 L140 200 C140 188, 144 182, 154 178 Z"
+          fill="url(#midage-female-onepiece-bridal-gown__body)"/>
+    <!-- lace over the gown -->
+    <g clip-path="url(#midage-female-onepiece-bridal-gown__clip)">
+      <rect x="110" y="172" width="180" height="210"
+            fill="url(#midage-female-onepiece-bridal-gown__lace)" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- TRIM: high round neckline, standing to the jaw -->
+  <path d="M170 162 q30 20 60 0 q6 6 4 16 q-34 18 -68 0 q-2-10 4-16 Z" fill="var(--c3, #B9A98F)"/>
+  <!-- princess seams running from the bust to the trumpet break -->
+  <path d="M176 210 q-6 132 -12 250 M224 210 q6 132 12 250" stroke="#3B2A22"
+        stroke-opacity="0.12" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- the trumpet break at the knee, called out as a seam -->
+  <path d="M162 460 q38 14 76 0" stroke="var(--c3, #B9A98F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- sheer sleeve cuffs -->
+  <rect x="112" y="340" width="47" height="18" rx="8" fill="var(--c3, #B9A98F)"/>
+  <rect x="241" y="340" width="47" height="18" rx="8" fill="var(--c3, #B9A98F)"/>
+  <!-- covered button line down the fitted body -->
+  <circle cx="200" cy="228" r="4" fill="var(--c3, #B9A98F)"/>
+  <circle cx="200" cy="256" r="4" fill="var(--c3, #B9A98F)"/>
+  <circle cx="200" cy="284" r="4" fill="var(--c3, #B9A98F)"/>
+  <circle cx="200" cy="312" r="4" fill="var(--c3, #B9A98F)"/>
+  <!-- train fold -->
+  <path d="M180 442 q-32 68 -56 134" stroke="#3B2A22" stroke-opacity="0.12" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M162 198 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M138 518 q62 26 124 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

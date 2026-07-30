@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, so the panniers stand 50u clear of x144 and x256 at the ground; elbow y266.
+       axes vs the slot: the robe front hangs open over a triangular stomacher and a petticoat
+       wedge, so there is no fastening down the centre (closure)
+       + a skirt held out wide side to side and flat front to back, near vertical sides from
+       x94 to x306 at the ground, on elbow-length pagoda sleeves (volume).
+       No powdered wig: that is hair and out of scope for this slot. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-sack-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sack-gown__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sack-gown__pleat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7F9970)"/>
+      <stop offset="1" stop-color="var(--c1, #9FB98C)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sack-gown__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2E6CE)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sack-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB98C)"/>
+      <stop offset="1" stop-color="var(--c2, #7F9970)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- two box pleats falling loose from the shoulders at the back -->
+    <path d="M158 162 q-22 2 -28 20 l-8 154 q16 10 42 6 l-2 -180 Z"
+          fill="url(#midage-female-onepiece-sack-gown__pleat)"/>
+    <path d="M242 162 q22 2 28 20 l8 154 q-16 10 -42 6 l2 -180 Z"
+          fill="url(#midage-female-onepiece-sack-gown__pleat)"/>
+    <!-- the skirt: wide side to side, flat front to back, reaching the ground -->
+    <path d="M152 294 L248 294 C282 320, 300 350, 302 390 L306 552 Q200 588 94 552 L98 390
+             C100 350, 118 320, 152 294 Z"
+          fill="url(#midage-female-onepiece-sack-gown__skirt)"/>
+    <!-- petticoat wedge revealed by the open robe front -->
+    <path d="M200 304 L246 552 q-46 12 -92 0 Z"
+          fill="url(#midage-female-onepiece-sack-gown__wedge)"/>
+    <!-- triangular stomacher -->
+    <path d="M186 162 H214 L230 186 L200 312 L170 186 Z"
+          fill="url(#midage-female-onepiece-sack-gown__wedge)"/>
+    <!-- robe fronts hanging open on either side of it -->
+    <path d="M188 162 H158 q-22 0 -24 22 L126 304 q26 16 63 14 L200 308 L172 184 Z"
+          fill="url(#midage-female-onepiece-sack-gown__panel)"/>
+    <path d="M212 162 H242 q22 0 24 22 L274 304 q-26 16 -63 14 L200 308 L228 184 Z"
+          fill="url(#midage-female-onepiece-sack-gown__panel)"/>
+    <!-- elbow-length pagoda sleeves -->
+    <path d="M156 168 q-20-4 -33 10 l-25 62 q17 17 48 11 l14-42 Z"
+          fill="url(#midage-female-onepiece-sack-gown__sleeve)"/>
+    <path d="M244 168 q20-4 33 10 l25 62 q-17 17 -48 11 l-14-42 Z"
+          fill="url(#midage-female-onepiece-sack-gown__sleeve)"/>
+  </g>
+
+  <!-- TRIM: stacked ruffle cuffs at the pagoda openings -->
+  <path d="M100 238 q25 18 47 8 l3 15 q-28 12 -55 -8 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M97 257 q28 19 52 8 l3 16 q-31 13 -61 -9 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M300 238 q-25 18 -47 8 l-3 15 q28 12 55 -8 Z" fill="var(--c3, #F2E6CE)"/>
+  <path d="M303 257 q-28 19 -52 8 l-3 16 q31 13 61 -9 Z" fill="var(--c3, #F2E6CE)"/>
+  <!-- STRUCTURE: stomacher lacing bars -->
+  <path d="M180 198 h40 M177 224 h46 M180 250 h40 M186 276 h28"
+        stroke="var(--c2, #7F9970)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- robe front edges, bound -->
+  <path d="M172 182 L200 308 M228 182 L200 308" stroke="var(--c3, #F2E6CE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- skirt pleat channels over the panniers -->
+  <path d="M130 338 l-24 200 M162 318 l-14 222 M238 318 l14 222 M270 338 l24 200"
+        stroke="#3B2A22" stroke-opacity="0.12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- flounced hem band riding the ground sweep -->
+  <path d="M100 532 Q200 566 300 532" stroke="var(--c3, #F2E6CE)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M148 192 q22 8 42 2 M252 192 q-22 8 -42 2" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M116 412 q84 30 168 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

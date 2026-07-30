@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Vietnamese everyday dress. Plain cloth with a bound edge; no borrowed motif.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, y316 to y374; knee y461, ankle y540.
+       axes vs the slot: a fitted tunic split to the waist at BOTH sides, showing 46 units of
+       trouser from the split head at y306 down to the tunic hem at y508 (volume)
+       + the trousers are drawn into the same file and painted through c3, so the hem is a wide
+       ankle leg under a below-knee tunic panel (hem). -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-ao-dai__trouserL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-ao-dai__trouserR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-ao-dai__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A3C)"/>
+      <stop offset="1" stop-color="var(--c2, #BC6B26)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide trousers, drawn into the same file and painted through the c3 variable -->
+    <path d="M140 300 H200 V550 h-84 l-4 -80 C120 430, 132 372, 140 300 Z"
+          fill="url(#midage-female-onepiece-ao-dai__trouserL)"/>
+    <path d="M260 300 H200 V550 h84 l4 -80 C280 430, 268 372, 260 300 Z"
+          fill="url(#midage-female-onepiece-ao-dai__trouserR)"/>
+    <!-- long narrow sleeves -->
+    <path d="M114 180 q0-16 17-16 h13 q17 0 17 16 v166 q0 12 -17 12 h-13 q-17 0 -17-12 Z"
+          fill="url(#midage-female-onepiece-ao-dai__sleeve)"/>
+    <path d="M286 180 q0-16 -17-16 h-13 q-17 0 -17 16 v166 q0 12 17 12 h13 q17 0 17-12 Z"
+          fill="url(#midage-female-onepiece-ao-dai__sleeve)"/>
+    <!-- fitted tunic, split away at both sides from y306 to the hem -->
+    <path d="M152 164 H248 q19 0 20 18 l5 90 q0 10 -4 18 L244 310 V508 q-44 12 -88 0 V310
+             L131 290 q-4-8 -4-18 l5-90 q1-18 20-18 Z"
+          fill="url(#midage-female-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- TRIM: mandarin collar -->
+  <path d="M178 148 h44 q7 0 7 7 v16 q-29 8 -58 0 v-16 q0-7 7-7 Z" fill="var(--c2, #BC6B26)"/>
+  <path d="M200 152 v22" stroke="var(--c3, #F4EDE2)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <!-- diagonal front seam from the collar to the right underarm -->
+  <path d="M204 174 q30 12 58 32" stroke="var(--c3, #F4EDE2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound edges around both side splits, the identity of the family -->
+  <path d="M156 306 V504 M244 306 V504" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound tunic hem and narrow cuffs -->
+  <path d="M158 498 q42 12 84 0" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <rect x="114" y="336" width="47" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <rect x="239" y="336" width="47" height="18" rx="8" fill="var(--c2, #BC6B26)"/>
+  <!-- trouser fall lines -->
+  <path d="M142 372 l-16 172 M258 372 l16 172" stroke="#3B2A22" stroke-opacity="0.12"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M160 194 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 382 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M130 470 q10 4 18 2 M270 470 q-10 4 -18 2" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

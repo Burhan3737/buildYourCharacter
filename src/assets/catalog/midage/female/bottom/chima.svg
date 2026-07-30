@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Korean everyday dress, the skirt of hanbok. Plain cloth with a generic band and tie only.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       x144 to x256, y316 to y374; ankle y540.
+       AXES: rise, the wrapped band sits above the bust with its top edge at y228 and runs 30
+       units deep to y258, the only bottom in the slot that starts above the waist, plus leg
+       width, one gathered full column with no slit and no tiers falling from that band to the
+       ankle at y546.
+       BINDING SHARED LINE, recomputed for this body: the midage/female torso runs y162 to y324,
+       and 41 per cent down it is y228, so the band TOP EDGE is y228. The jeogori jacket hem in
+       the top slot sits at y254 and falls clear of it, lapping over the band by 26u. The two
+       locked values for this bundle are: chima band top edge y228, jeogori hem y254. Do not
+       move one without the other or the pair stops reading. -->
+  <defs>
+    <linearGradient id="midage-female-bottom-chima__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A64C74)"/>
+      <stop offset="0.55" stop-color="var(--c1, #A64C74)"/>
+      <stop offset="1" stop-color="var(--c2, #7F3859)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7F3859)"/>
+      <stop offset="1" stop-color="var(--c1, #A64C74)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: the chest band and the single gathered column that hangs from it -->
+  <g class="sp-shadow">
+    <path d="M136 253 H264 L280 540 Q200 556 120 540 Z"
+          fill="url(#midage-female-bottom-chima__column)"/>
+    <path d="M140 228 H260 Q264 228 264 234 V252 Q264 258 258 258 H142 Q136 258 136 252
+             V234 Q136 228 140 228 Z"
+          fill="url(#midage-female-bottom-chima__band)"/>
+  </g>
+
+  <!-- TRIM: band edge lines -->
+  <path d="M138 235 H262" stroke="var(--c3, #F7DCA9)" stroke-opacity="0.75" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M138 253 H262" stroke="var(--c3, #F7DCA9)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURE: the long tie, knotted at the band and falling down the wrap -->
+  <path d="M223 249 q10 -6 18 2 q6 8 -4 12 q-12 4 -18 -4 Z" fill="var(--c3, #F7DCA9)"/>
+  <path d="M233 263 L227 460" stroke="var(--c3, #F7DCA9)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M245 263 L253 440" stroke="var(--c3, #F7DCA9)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gathers pulled out of the band down the length of the column -->
+  <path d="M157 263 L132 522" stroke="var(--c2, #7F3859)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M175 263 L161 530" stroke="var(--c2, #7F3859)" stroke-opacity="0.35" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M193 263 L189 534" stroke="var(--c2, #7F3859)" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 263 L217 534" stroke="var(--c2, #7F3859)" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M245 276 L268 522" stroke="var(--c2, #7F3859)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ankle hem band -->
+  <path d="M124 536 Q200 551 276 536" stroke="var(--c2, #7F3859)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 526 Q200 541 272 526" stroke="var(--c3, #F7DCA9)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight on the band and down the column -->
+  <path d="M156 235 q44 10 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M167 276 L144 508" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

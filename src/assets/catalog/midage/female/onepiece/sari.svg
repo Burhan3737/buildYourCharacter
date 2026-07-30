@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari (Nivi Drape)" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- South Asian everyday dress. Plain cloth with a generic woven border only: no community
+       specific motif, no borrowed embroidery.
+       Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; arms x116 to
+       x142 and x258 to x284, y176 to y356; hips x144 to x256, y316 to y374; ankle y540.
+       axes vs the slot: one uncut length wrapped at the waist, with the pallu carried diagonally
+       over the wearer's LEFT shoulder as a 70 unit band, so one shoulder is draped and the other
+       carries only the short blouse (shoulder/sleeve)
+       + hand gathered waist pleats over a petticoat, no fastening anywhere (closure).
+       Nivi is the common everyday drape; over eighty regional drapes exist, so the family is
+       named for the one it draws. The choli and the petticoat are drawn into this file and
+       painted through c2 and c3 so the player still controls them. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4E9E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4E9E)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3C579)"/>
+      <stop offset="1" stop-color="var(--c2, #4A356F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A356F)"/>
+      <stop offset="1" stop-color="var(--c1, #6B4E9E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-sari__pleats" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4A356F)"/>
+      <stop offset="1" stop-color="var(--c1, #6B4E9E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- petticoat, drawn into the same file and painted through the c3 variable -->
+    <path d="M150 306 H250 q8 0 9 12 l7 236 q-60 16 -120 0 l-5 -236 q1-12 9-12 Z"
+          fill="url(#midage-female-onepiece-sari__petticoat)"/>
+    <!-- the wrapped lower drape, tucked at the waist -->
+    <path d="M146 286 H254 q12 0 13 14 l9 206 q-72 20 -144 0 l1 -206 q1-14 12-14 Z"
+          fill="url(#midage-female-onepiece-sari__cloth)"/>
+    <!-- hand gathered pleat fan at the centre front -->
+    <path d="M175 310 H225 l10 210 q-35 8 -70 0 Z"
+          fill="url(#midage-female-onepiece-sari__pleats)"/>
+    <!-- fitted short blouse -->
+    <path d="M146 162 q54 20 108 0 q10 4 10 16 v42 q-64 20 -128 0 v-42 q0-12 10-16 Z"
+          fill="url(#midage-female-onepiece-sari__choli)"/>
+    <path d="M112 178 q0-14 16-14 h13 q16 0 16 14 v30 q0 10 -16 10 h-13 q-16 0 -16-10 Z"
+          fill="url(#midage-female-onepiece-sari__choli)"/>
+    <path d="M288 178 q0-14 -16-14 h-13 q-16 0 -16 14 v30 q0 10 16 10 h13 q16 0 16-10 Z"
+          fill="url(#midage-female-onepiece-sari__choli)"/>
+    <!-- the pallu: carried from the wearer's right hip diagonally over the LEFT shoulder -->
+    <path d="M212 160 H274 q12 0 10 14 L173 366 q-4 12 -18 6 L128 342 q-10-6 -4-16 Z"
+          fill="url(#midage-female-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- TRIM: plain woven border on the pallu edges, no community motif -->
+  <path d="M212 162 L124 328" stroke="var(--c3, #E3C579)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M282 174 L171 366" stroke="var(--c3, #E3C579)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- STRUCTURE: pleat folds in the fan -->
+  <path d="M186 318 l4 198 M200 318 v200 M214 318 l-4 198" stroke="#3B2A22"
+        stroke-opacity="0.2" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <!-- the waist tuck the pleats are set into -->
+  <path d="M140 306 q60 16 120 0" stroke="var(--c3, #E3C579)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- choli hem and sleeve edges -->
+  <path d="M140 216 q60 16 120 0" stroke="var(--c3, #E3C579)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 210 q22 8 38 0 M284 210 q-22 8 -38 0" stroke="var(--c3, #E3C579)"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- border on the drape hem, with the petticoat showing below it -->
+  <path d="M136 500 q64 18 130 0" stroke="var(--c3, #E3C579)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M156 180 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 400 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 192 L184 290" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

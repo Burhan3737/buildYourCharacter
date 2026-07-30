@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flapper Dress" data-family="flapper-dress" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262, y162 to y324; hips block
+       y316 to y374, so the dropped hip seam sits at y327; leg rect y370 to y552, so MID CALF
+       is y507 and the fringe strands stop just past it at y514.
+       axes vs the slot: a boxy straight tube with no waist shaping anywhere, seamed across at
+       the hip at y327 (volume)
+       + below that seam a separate 187 unit fringe band whose strands are cut into the
+       silhouette itself and stop at mid calf (hem).
+       Formalwear lives here and never in costume, because costume hides the shoes. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-flapper-dress__tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-flapper-dress__fringe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #241F2E)"/>
+      <stop offset="1" stop-color="var(--c1, #3A3346)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-flapper-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3A3346)"/>
+      <stop offset="1" stop-color="var(--c2, #241F2E)"/>
+    </linearGradient>
+    <pattern id="midage-female-onepiece-flapper-dress__beads" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="4" cy="4" r="2.2" fill="var(--c3, #D9B85C)"/>
+      <circle cx="12" cy="12" r="2.2" fill="var(--c3, #D9B85C)"/>
+    </pattern>
+    <clipPath id="midage-female-onepiece-flapper-dress__clip">
+      <path d="M142 202 q58 18 116 0 q6 4 6 12 v112 q0 6 -6 6 h-116 q-6 0 -6-6 v-112
+               q0-8 6-12 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow straps over bare shoulders -->
+    <path d="M176 204 L178 158 q0-4 5-4 h6 q5 0 5 4 L192 204 Z"
+          fill="url(#midage-female-onepiece-flapper-dress__strap)"/>
+    <path d="M224 204 L222 158 q0-4 -5-4 h-6 q-5 0 -5 4 L208 204 Z"
+          fill="url(#midage-female-onepiece-flapper-dress__strap)"/>
+    <!-- straight boxy tube, no waist shaping at all, seamed at the dropped hip -->
+    <path d="M142 202 q58 18 116 0 q6 4 6 12 v112 q0 6 -6 6 h-116 q-6 0 -6-6 v-112 q0-8 6-12 Z"
+          fill="url(#midage-female-onepiece-flapper-dress__tube)"/>
+    <!-- separate fringe band: real strands cut into the lower edge -->
+    <path d="M138 324 H262 L264 448
+             v66 h-13 v-66 h-4 v66 h-13 v-66 h-4 v66 h-13 v-66 h-4
+             v66 h-14 v-66 h-4 v66 h-13 v-66 h-4 v66 h-13 v-66 h-4
+             v66 h-13 v-66 h-4 L136 324 Z"
+          fill="url(#midage-female-onepiece-flapper-dress__fringe)"/>
+    <!-- beadwork over the tube -->
+    <g clip-path="url(#midage-female-onepiece-flapper-dress__clip)">
+      <rect x="134" y="200" width="132" height="134"
+            fill="url(#midage-female-onepiece-flapper-dress__beads)" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- TRIM: the dropped hip seam the fringe band hangs from -->
+  <rect x="134" y="320" width="132" height="14" rx="6" fill="var(--c3, #D9B85C)"/>
+  <!-- a second bead row marking the top of the strands -->
+  <path d="M138 440 h126" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- bound straight neckline -->
+  <path d="M142 204 q58 18 116 0" stroke="var(--c3, #D9B85C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- chevron beading down the tube -->
+  <path d="M150 250 L200 268 L250 250 M150 284 L200 302 L250 284" stroke="var(--c3, #D9B85C)"
+        stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- strand shadows so the fringe reads as separate threads -->
+  <path d="M148 342 v104 M180 342 v104 M220 342 v104 M252 342 v104" stroke="#3B2A22"
+        stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M150 224 q50 14 100 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M146 380 q54 12 108 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

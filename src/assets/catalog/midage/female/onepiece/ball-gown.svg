@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Refit to the DRAWN midage/female body. RECOMPUTED CLEARANCE: the widest point of this
+       body is the hips block, x144 to x256, 112u across against the adult bundle's 100u. The
+       dome is taken out to x94 and x306, giving 144 minus 94 = 50 UNITS OF CLEARANCE PER SIDE
+       past the widest point of the body, well over the 40-unit practical floor. Do not narrow
+       the dome without redoing this arithmetic.
+       Other landmarks used: torso y162 to y324, so the top of the bust is y188 and the natural
+       waist, where the bodice comes to its point, is y316.
+       axes vs the slot: bare shoulders under a straight strapless band (shoulder/sleeve)
+       + a bouffant dome standing 50 units clear of the hip and sweeping the ground (volume).
+       Fallback is house-palette violet: NOT pale blue, NOT yellow, NOT pink with a gold bodice.
+       Formalwear lives here and never in costume, because costume hides the shoes. -->
+  <defs>
+    <linearGradient id="midage-female-onepiece-ball-gown__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E5AA8)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3C7E)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C3C7E)"/>
+      <stop offset="1" stop-color="var(--c1, #6E5AA8)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C4EE)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3C7E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dome skirt: out to x94 and x306, sweeping the ground line at y568 -->
+    <path d="M150 272 C100 334, 82 448, 95 550 Q200 590 305 550 C318 448, 300 334, 250 272 Z"
+          fill="url(#midage-female-onepiece-ball-gown__dome)"/>
+    <!-- strapless bodice coming to a point at the natural waist -->
+    <path d="M136 194 H264 q7 4 6 16 l-4 66 q-6 25 -66 44 q-60 -19 -66 -44 l-4-66 q-1-12 6-16 Z"
+          fill="url(#midage-female-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- TRIM: the straight strapless band across the top of the bust -->
+  <rect x="134" y="188" width="132" height="15" rx="7"
+        fill="url(#midage-female-onepiece-ball-gown__band)"/>
+  <!-- STRUCTURE: boned seams running down to the waist point -->
+  <path d="M170 206 q6 62 30 110 M230 206 q-6 62 -30 110 M200 208 v108"
+        stroke="#3B2A22" stroke-opacity="0.16" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- piped waist point -->
+  <path d="M154 282 q46 35 92 0" stroke="var(--c3, #D9C4EE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- skirt gathers radiating off the waist -->
+  <path d="M176 316 C148 388, 124 470, 119 540
+           M200 322 C198 400, 198 476, 200 550
+           M224 316 C252 388, 276 470, 281 540"
+        stroke="#3B2A22" stroke-opacity="0.13" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- hem band riding the ground sweep -->
+  <path d="M99 530 Q200 568 301 530" stroke="var(--c3, #D9C4EE)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <!-- highlights -->
+  <path d="M150 210 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 404 q72 34 144 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

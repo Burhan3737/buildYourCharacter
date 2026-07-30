@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: torso x138 to x262 (124u wide), y162 to y324.
+       axes vs the slot: no sleeve and no side seam, two flat panels joined ONLY over the
+       shoulders and completely open down both sides (shoulder/sleeve + closure). The panels are
+       88u wide against a 124u torso, so the body's own skin1/skin2 reads down both flanks from
+       the underarm to the hip; the darker back panel shows in the gap behind the front one.
+       That is drawn, not left as a hole, and no shell colour is hard-coded.
+       Hip hem at y334, flat and square. Against waistcoat, the other sleeveless family: that one
+       is buttoned shut down a deep V with a pointed hem at y344 and covered shoulders.
+       Tools: panel blocking (front panel through c1 over a back panel through c2) + trim
+       (contrast binding round every edge of the front panel through c3). -->
+  <defs>
+    <linearGradient id="midage-female-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4B248)"/>
+      <stop offset="1" stop-color="var(--c2, #9B6F22)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9B6F22)"/>
+      <stop offset="1" stop-color="var(--c1, #E4B248)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-top-tabard__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E3529)"/>
+      <stop offset="1" stop-color="var(--c2, #9B6F22)"/>
+    </linearGradient>
+  </defs>
+  <g class="sp-shadow">
+    <!-- back panel, hanging free behind, seen past the edges of the front one -->
+    <path d="M156 160 H184 C182 175 187 189 200 192 C213 189 218 175 216 160 H244
+             L246 214 L247 276 L245 340 H155 L153 276 L154 214 Z"
+          fill="url(#midage-female-top-tabard__back)"/>
+    <!-- front panel, joined to the back only across the shoulders -->
+    <path d="M168 158 H186 C185 178 190 195 200 200 C210 195 215 178 214 158 H232
+             L234 214 L235 276 L233 334 H167 L165 276 L166 214 Z"
+          fill="url(#midage-female-top-tabard__front)"/>
+  </g>
+  <!-- neck opening between the two shoulder joins -->
+  <path d="M184 160 C182 175 187 189 200 192 C213 189 218 175 216 160 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <!-- contrast binding round every edge of the front panel -->
+  <path d="M168 158 H176 L174 214 L173 276 L175 334 H167 L165 276 L166 214 Z" fill="url(#midage-female-top-tabard__bind)"/>
+  <path d="M232 158 H224 L226 214 L227 276 L225 334 H233 L235 276 L234 214 Z" fill="url(#midage-female-top-tabard__bind)"/>
+  <path d="M167 322 H233 L233 334 H167 Z" fill="url(#midage-female-top-tabard__bind)"/>
+  <path d="M168 158 H186 L185 168 H167 Z" fill="var(--c3, #3E3529)"/>
+  <path d="M232 158 H214 L215 168 H233 Z" fill="var(--c3, #3E3529)"/>
+  <!-- shoulder join seams, the only place the two panels are attached -->
+  <path d="M172 166 h11 M217 166 h11"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- open side shading, so the flanks read as a gap and not as fabric -->
+  <path d="M156 202 C153 248 153 294 155 332 M244 202 C247 248 247 294 245 332"
+        stroke="var(--c2, #9B6F22)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- flat waist band across the front panel -->
+  <path d="M168 260 h64 v13 h-64 z" fill="var(--c3, #3E3529)" opacity="0.55"/>
+  <!-- highlight -->
+  <path d="M180 214 q20 9 40 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

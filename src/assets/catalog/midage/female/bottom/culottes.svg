@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Refit to the DRAWN midage/female body: hips block x144 to x256, y316 to y374; leg rects
+       y370 to y552, so the KNEE is y461 and the hem is set just past it at y470.
+       AXES: leg width, a pair of panels so wide and flat that the outline reads as a short
+       skirt out to x128 and x272, plus leg length, cut off at the knee at y470.
+       The centre split runs 58 units up from the hem to give the pair away. Against pleated
+       (no leg division at all) and wide-leg (full length to the floor). -->
+  <defs>
+    <linearGradient id="midage-female-bottom-culottes__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E7F8E)"/>
+      <stop offset="0.55" stop-color="var(--c1, #6E7F8E)"/>
+      <stop offset="1" stop-color="var(--c2, #55636F)"/>
+    </linearGradient>
+    <linearGradient id="midage-female-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55636F)"/>
+      <stop offset="1" stop-color="var(--c1, #6E7F8E)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: two very wide flat panels hung from a high yoke, split at the centre from
+       y412 down to the knee hem -->
+  <g class="sp-shadow">
+    <path d="M146 292 H200 V412 L189 470 H134 Q127 471 128 460 L140 302 Q141 292 146 292 Z"
+          fill="url(#midage-female-bottom-culottes__panel)"/>
+    <path d="M254 292 H200 V412 L211 470 H266 Q273 471 272 460 L260 302 Q259 292 254 292 Z"
+          fill="url(#midage-female-bottom-culottes__panel)"/>
+  </g>
+
+  <!-- the split reads as a shadowed notch between the two panels -->
+  <path d="M192 414 L189 466 H211 L208 414 Z" fill="#3B2A22" opacity="0.22"/>
+
+  <!-- TRIM: deep high rise waistband, sitting 24u above the hip block -->
+  <path d="M146 292 H254 Q259 292 260 302 L261 322 H139 L140 302 Q141 292 146 292 Z"
+        fill="url(#midage-female-bottom-culottes__band)"/>
+  <path d="M141 314 H259" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 302 H258" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURE: knife pleats falling from the yoke to the hem -->
+  <path d="M165 326 L151 464" stroke="var(--c2, #55636F)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M183 326 L172 466" stroke="var(--c2, #55636F)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 326 L249 464" stroke="var(--c2, #55636F)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M217 326 L228 466" stroke="var(--c2, #55636F)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat hem facing across each panel -->
+  <path d="M132 460 H188" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 460 H268" stroke="var(--c3, #EFF3F6)" stroke-opacity="0.75" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- split edges -->
+  <path d="M192 416 L190 466" stroke="var(--c2, #55636F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 416 L210 466" stroke="var(--c2, #55636F)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the flat fall of the outer edges -->
+  <path d="M160 336 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 346 L134 452" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 346 L266 452" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>
