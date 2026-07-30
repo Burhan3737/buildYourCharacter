@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = a diagonal crossover front tied at the waist with a real
+       knot and two hanging ends, no buttons and no zip, and SHOULDER = three quarter sleeve
+       finishing at the cuff band y300 to y318.
+       Separated from button up, which has a straight centre placket and a long cuff at y366,
+       and from cardigan, which hangs open with parallel fronts.
+       Refitted to the elder male body: shoulder top y184 (panel top y180), natural waist
+       y302 where the tie sits, hip hem y346 to y348, sleeve columns x110 to x144 and x256 to
+       x290 over arms at x114 to x140 and x260 to x286. The elder sleeve head is rounded, not
+       squared, so the sleeve caps carry a 16 unit corner radius.
+       The two crossing edges meet at about y270, so the deep V above that is bare chest and
+       is painted as skin, never as a phantom shirt.
+       Wrap direction is the wearer's left over right, so on canvas the panel coming from the
+       viewer's RIGHT lies on top and the knot falls at the viewer's LEFT waist. The adult
+       male reference draws the opposite hand (wearer's right over left) and is not followed
+       here. -->
+  <defs>
+    <linearGradient id="elder-male-top-wrap-top__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0A091)"/>
+      <stop offset="1" stop-color="var(--c2, #B96A61)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0A091)"/>
+      <stop offset="1" stop-color="var(--c2, #AF6058)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the deep V is resolved as skin: bare chest between the two crossing edges -->
+  <path d="M166 180 C178 226 190 258 200 288 C210 258 222 226 234 180 Z"
+        fill="var(--skin1, #F7D2B0)"/>
+  <path d="M180 216 C186 242 194 264 200 286 C206 264 214 242 220 216 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.55"/>
+
+  <!-- major forms: two three quarter sleeves and two crossing front panels -->
+  <g class="sp-shadow">
+    <rect x="110" y="192" width="34" height="126" rx="16" fill="url(#elder-male-top-wrap-top__sleeve)"/>
+    <rect x="256" y="192" width="34" height="126" rx="16" fill="url(#elder-male-top-wrap-top__sleeve)"/>
+    <!-- under panel: hangs from the wearer's right shoulder (viewer's left), tucked beneath -->
+    <path d="M166 180 C178 226 192 258 218 316 L224 332 Q224 348 210 348 L148 346 Q134 346 134 328 L136 214 Q140 180 166 180 Z"
+          fill="url(#elder-male-top-wrap-top__panel)"/>
+    <path d="M166 180 C178 226 192 258 218 316 L224 332 Q224 348 210 348 L148 346 Q134 346 134 328 L136 214 Q140 180 166 180 Z"
+          fill="#3B2A22" fill-opacity="0.2"/>
+    <path d="M166 180 C178 226 192 258 218 316 L206 320 C180 262 166 230 154 182 Z"
+          fill="var(--c3, #FBE8DE)" fill-opacity="0.6"/>
+    <!-- outer panel: the wearer's left front, crossing over on top and carrying the knot -->
+    <path d="M234 180 C222 226 208 258 182 316 L176 332 Q176 348 190 348 L252 346 Q266 346 266 328 L264 214 Q260 180 234 180 Z"
+          fill="url(#elder-male-top-wrap-top__panel)"/>
+  </g>
+
+  <!-- surface tool 1, trim: the bound edge running the whole crossover, and the cuff bands
+       that mark the three quarter sleeve -->
+  <path d="M234 180 C222 226 208 258 182 316 L194 320 C220 262 234 230 246 182 Z"
+        fill="var(--c3, #FBE8DE)"/>
+  <rect x="108" y="300" width="38" height="16" rx="8" fill="var(--c3, #FBE8DE)"/>
+  <rect x="254" y="300" width="38" height="16" rx="8" fill="var(--c3, #FBE8DE)"/>
+
+  <!-- surface tool 2, structural: a real knot at the side of the waist with two hanging ends -->
+  <path d="M180 320 Q168 342 170 362 Q157 356 157 340 Q159 326 172 316 Z"
+        fill="var(--c2, #B96A61)"/>
+  <path d="M192 320 Q202 340 200 358 Q212 352 210 338 Q208 324 196 316 Z"
+        fill="var(--c2, #B96A61)"/>
+  <ellipse cx="186" cy="312" rx="15" ry="11" fill="var(--c3, #FBE8DE)"/>
+  <path d="M177 306 Q186 316 195 306" stroke="var(--c2, #B96A61)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: gather lines pulling away from the knot across the waist -->
+  <g stroke="var(--c2, #B96A61)" stroke-opacity="0.4" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M198 308 Q226 300 254 304"/>
+    <path d="M196 320 Q224 316 252 322"/>
+    <path d="M174 306 Q158 300 142 302"/>
+  </g>
+
+  <!-- upper surface highlight, broken by the open V -->
+  <path d="M148 210 Q162 224 176 222" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 210 Q238 224 224 222" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

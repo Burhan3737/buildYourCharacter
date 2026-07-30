@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr Pelt" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- CORRECTNESS NOTE, preserve it. Please do not "correct" this file back toward the source.
+       A classical Greek satyr has a HORSE tail and HORSE ears, not goat ones. Goat legs and goat
+       horns belong to the Roman faun, which is a different creature and is wrong here. The ears
+       are out of slot anyway: costume draws above the face, so the ceiling forbids them, and they
+       would be a companion headwear family if they were ever drawn at all. The horse tail IS
+       drawn, falling behind from the small of the back.
+       Second half of the note: classical satyrs are nude. This is a children's dress up satyr.
+       What ships is a bare chest painted through the skin variables, a shaggy pelt from the waist
+       to the ankle, and an animal skin knotted over ONE shoulder hanging to the opposite hip.
+       Nothing else. No hooves, no horns, no belt, no props. -->
+  <!-- Silhouette axes this family owns: HEM = the shag begins at the waist in a deeply lobed
+       irregular horizontal edge and runs all the way to the ankle over both legs.
+       SHOULDER/SLEEVE = the upper body is bare but for one knotted skin over a single shoulder.
+       Both axes are what separate this from berserker, which is a thigh length jerkin over
+       trousers and a full sleeveless jerkin across both shoulders.
+       DRAWING THE SHAG: the texture is BUILT INTO THE SILHOUETTE PATH. The pelt outline is a run
+       of small overlapping lobes of unequal size along both outer contours, along the waist edge
+       and along each ankle hem. A smooth leg with squiggles drawn inside it is a failed satyr.
+       CEILING RESOLUTION: the adult reference tops out at y150 on the knotted shoulder skin. The
+       skin was re struck so its shoulder edge is a flat band at y182 and the whole diagonal runs
+       downward from there to the opposite hip at y320. The bare chest form starts at y182 too.
+       The pelt never approached the ceiling, it starts at the waist near y292.
+       Elder read: a longer pelt hem, a broader shoulder skin, softer lobes.
+       Surface tools: pattern fill (the fur lobes clipped inside the pelt) and structural detail
+       (the lobed contour itself, the leg split and the ragged paw flaps on the skin). -->
+  <defs>
+    <linearGradient id="elder-female-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9B482)"/>
+      <stop offset="1" stop-color="var(--c1, #A98351)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-satyr__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402F)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C3A2C)"/>
+      <stop offset="1" stop-color="var(--c2, #291E17)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-satyr__fur" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="15">
+      <path d="M-1 11 q4 -11 9 0 q5 -11 10 0" fill="none" stroke="var(--c2, #3B2A22)"
+            stroke-width="2.2" stroke-opacity="0.3" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-female-costume-satyr__peltclip">
+      <path d="M138 300 q13 -16 26 -2 q12 14 25 -6 q11 -16 23 4 q13 14 25 -8 q14 -12 27 10
+               q14 20 4 42 q-14 22 6 46 q10 24 -12 44 q-12 22 4 44 q10 22 -14 40
+               q-8 18 -18 26 q-8 8 -16 0 q-6 8 -14 0
+               q4 -84 -2 -164 q-6 -10 -12 0 q2 80 -2 164
+               q-8 8 -16 0 q-6 8 -14 0
+               q-18 -8 -6 -26 q-14 -18 4 -40 q-16 -22 -4 -44 q12 -20 -6 -44 q-14 -22 -2 -46
+               q-10 -20 -4 -40 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- MAJOR FORMS: the horse tail behind, the bare chest painted through the skin variables, the
+       lobed pelt, the knotted shoulder skin, and two bare feet. -->
+  <g class="sp-shadow">
+    <path d="M232 300 Q258 284 276 302 Q302 344 306 404 Q310 464 296 510
+             Q288 538 270 542 Q254 544 254 528 Q268 484 268 432 Q268 374 252 344
+             Q242 320 232 300 Z"
+          fill="url(#elder-female-costume-satyr__tail)"/>
+    <path d="M144 208 q0 -26 28 -26 h56 q28 0 28 26 v78 q0 24 -22 28 h-68 q-22 -4 -22 -28 z"
+          fill="url(#elder-female-costume-satyr__skin)"/>
+    <path d="M138 300 q13 -16 26 -2 q12 14 25 -6 q11 -16 23 4 q13 14 25 -8 q14 -12 27 10
+             q14 20 4 42 q-14 22 6 46 q10 24 -12 44 q-12 22 4 44 q10 22 -14 40
+             q-8 18 -18 26 q-8 8 -16 0 q-6 8 -14 0
+             q4 -84 -2 -164 q-6 -10 -12 0 q2 80 -2 164
+             q-8 8 -16 0 q-6 8 -14 0
+             q-18 -8 -6 -26 q-14 -18 4 -40 q-16 -22 -4 -44 q12 -20 -6 -44 q-14 -22 -2 -46
+             q-10 -20 -4 -40 Z"
+          fill="url(#elder-female-costume-satyr__pelt)"/>
+    <path d="M146 182 H208 L260 288 q10 18 -6 28 l-12 -14 l-7 18 l-14 -16 l-8 16
+             q-16 -4 -20 -18 L146 232 Z"
+          fill="url(#elder-female-costume-satyr__hide)"/>
+    <rect x="160" y="544" width="42" height="26" rx="13" fill="var(--skin2, #E7B892)"/>
+    <rect x="198" y="544" width="42" height="26" rx="13" fill="var(--skin2, #E7B892)"/>
+  </g>
+
+  <!-- PATTERN: fur lobes, clipped so they stay inside the pelt and never soften its outline -->
+  <g clip-path="url(#elder-female-costume-satyr__peltclip)">
+    <rect x="130" y="286" width="150" height="260" fill="url(#elder-female-costume-satyr__fur)"/>
+  </g>
+
+  <!-- STRUCTURAL: tufts following the lobes of each outer contour, and the shading in the
+       throat of the lobed waist edge -->
+  <g stroke="var(--c1, #8F6C41)" stroke-opacity="0.45" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M152 336 q10 22 -2 44 q-10 22 2 44"/>
+    <path d="M172 348 q8 26 -2 52 q-8 26 2 50"/>
+    <path d="M230 346 q-8 26 2 52 q8 26 -2 50"/>
+    <path d="M250 334 q-10 22 2 44 q10 22 -2 44"/>
+    <path d="M154 452 q10 24 -2 48"/>
+    <path d="M246 450 q-10 24 2 48"/>
+  </g>
+  <path d="M144 306 q22 -12 44 -2 q22 10 44 -6" stroke="var(--c2, #2E211A)"
+        stroke-opacity="0.34" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: the ankle hems, lobe by lobe, so the shag reads all the way down -->
+  <path d="M158 532 q7 10 14 0 q7 10 14 0 M204 532 q7 10 14 0 q7 10 14 0"
+        stroke="var(--c2, #2E211A)" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: the cord that knots the skin at the shoulder. This is the knot, and it is the only
+       fastening in the file. -->
+  <g stroke="var(--c3, #F7C873)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M150 196 q28 10 44 -4"/>
+    <path d="M154 214 q28 10 44 -4"/>
+    <path d="M176 190 q-6 16 2 32"/>
+  </g>
+
+  <!-- STRUCTURAL: hair strokes down the horse tail -->
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M258 318 q26 48 26 114 q0 54 -8 90"/>
+    <path d="M284 344 q14 48 12 104 q-2 42 -8 62"/>
+  </g>
+
+  <!-- STRUCTURAL: bare toe line on each foot -->
+  <path d="M170 558 q14 6 28 0 M208 558 q14 6 28 0" stroke="var(--skin3, #EC9A8D)"
+        stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M160 208 q40 14 78 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 330 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

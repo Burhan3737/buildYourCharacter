@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Seeress" data-family="seeress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the underdress and the flat fur collar both topped
+       at y150 and the mantle panels at y152. The fur collar is rebuilt with its top edge at
+       y182 and now runs 50 units deep to y232, so it still lies across both shoulders.
+       SECOND DEFECT INHERITED FROM THE REFERENCE AND FIXED HERE: that file's boot toe knobs are
+       circles at cy558 with r14, which reach y572, two units BELOW the ground line at y570.
+       Here the knobs are at cy552 with r14 and bottom out at y566.
+
+       Axes: closure (an open fronted mantle held by a single strap across the chest) and
+       volume (a layered mantle over an underdress, finished with a flat fur collar).
+       The fur collar spreads outward and downward and does not stand up around the face.
+       NO STAFF: there is no prop anchor in this project.
+       Authored on this body because there are no aisles. -->
+  <defs>
+    <linearGradient id="elder-male-costume-seeress__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A07E5B)"/>
+      <stop offset="1" stop-color="var(--c1, #806340)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-seeress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6D7CA6)"/>
+      <stop offset="1" stop-color="var(--c3, #55628A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-seeress__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE9D8)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC7B0)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-seeress__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8C6D4C)"/>
+      <stop offset="1" stop-color="var(--c1, #6D5436)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- tall laced boots with heavy round toe knobs, kept clear of the ground line -->
+  <g class="sp-shadow">
+    <path d="M142 470 H198 V550 Q198 560 188 560 H150 Q140 560 140 550 V500 Q140 482 142 470 Z"
+          fill="url(#elder-male-costume-seeress__boot)"/>
+    <path d="M258 470 H202 V550 Q202 560 212 560 H250 Q260 560 260 550 V500 Q260 482 258 470 Z"
+          fill="url(#elder-male-costume-seeress__boot)"/>
+    <circle cx="150" cy="552" r="14" fill="url(#elder-male-costume-seeress__boot)"/>
+    <circle cx="250" cy="552" r="14" fill="url(#elder-male-costume-seeress__boot)"/>
+  </g>
+  <g stroke="var(--c4, #C9A05A)" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M148 484 L190 500 M190 484 L148 500"/>
+    <path d="M148 514 L190 530 M190 514 L148 530"/>
+    <path d="M252 484 L210 500 M210 484 L252 500"/>
+    <path d="M252 514 L210 530 M210 514 L252 530"/>
+  </g>
+
+  <!-- long straight underdress -->
+  <g class="sp-shadow">
+    <path d="M148 184 H252 Q258 232 256 292 L258 418 Q260 486 256 548 Q200 560 144 548
+             Q140 486 142 418 L144 292 Q142 232 148 184 Z"
+          fill="url(#elder-male-costume-seeress__under)"/>
+    <path d="M110 196 H144 Q148 224 146 250 L144 344 Q144 356 128 356 Q112 356 110 344 Z"
+          fill="url(#elder-male-costume-seeress__under)"/>
+    <path d="M290 196 H256 Q252 224 254 250 L256 344 Q256 356 272 356 Q288 356 290 344 Z"
+          fill="url(#elder-male-costume-seeress__under)"/>
+  </g>
+
+  <!-- the mantle: two open front panels with a genuine gap showing the underdress -->
+  <g class="sp-shadow">
+    <path d="M118 186 H186 L184 322 L186 452 L188 536 H122 Q114 452 116 356 L114 264
+             Q112 216 118 186 Z" fill="url(#elder-male-costume-seeress__mantle)"/>
+    <path d="M282 186 H214 L216 322 L214 452 L212 536 H278 Q286 452 284 356 L286 264
+             Q288 216 282 186 Z" fill="url(#elder-male-costume-seeress__mantle)"/>
+  </g>
+  <path d="M186 210 L186 526 M214 210 L214 526" stroke="#000000" stroke-opacity="0.18"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- hem stone band: eleven small set stones weighting the mantle hem -->
+  <rect x="116" y="518" width="74" height="16" rx="6" fill="var(--c4, #C9A05A)" fill-opacity="0.55"/>
+  <rect x="210" y="518" width="74" height="16" rx="6" fill="var(--c4, #C9A05A)" fill-opacity="0.55"/>
+  <g fill="var(--c4, #C9A05A)">
+    <circle cx="124" cy="526" r="5"/>
+    <circle cx="138" cy="526" r="5"/>
+    <circle cx="152" cy="526" r="5"/>
+    <circle cx="166" cy="526" r="5"/>
+    <circle cx="180" cy="526" r="5"/>
+    <circle cx="220" cy="526" r="5"/>
+    <circle cx="234" cy="526" r="5"/>
+    <circle cx="248" cy="526" r="5"/>
+    <circle cx="262" cy="526" r="5"/>
+    <circle cx="276" cy="526" r="5"/>
+    <circle cx="200" cy="542" r="5"/>
+  </g>
+
+  <!-- one strap across the chest, the mantle's only closure -->
+  <rect x="132" y="244" width="136" height="20" rx="9" fill="var(--c4, #C9A05A)"/>
+  <circle cx="200" cy="254" r="11" fill="url(#elder-male-costume-seeress__mantle)"/>
+  <circle cx="200" cy="254" r="5" fill="var(--c4, #C9A05A)"/>
+
+  <!-- linked charm belt with ONE large pouch -->
+  <rect x="140" y="322" width="120" height="16" rx="7" fill="var(--c4, #C9A05A)" fill-opacity="0.5"/>
+  <g fill="var(--c4, #C9A05A)">
+    <circle cx="150" cy="330" r="5"/>
+    <circle cx="166" cy="330" r="5"/>
+    <circle cx="182" cy="330" r="5"/>
+    <circle cx="198" cy="330" r="5"/>
+    <circle cx="214" cy="330" r="5"/>
+    <circle cx="230" cy="330" r="5"/>
+    <circle cx="246" cy="330" r="5"/>
+  </g>
+  <g class="sp-shadow">
+    <path d="M228 346 H264 Q270 366 266 382 Q246 390 226 382 Q222 366 228 346 Z"
+          fill="url(#elder-male-costume-seeress__mantle)"/>
+  </g>
+  <path d="M228 356 q18 8 36 0" stroke="var(--c4, #C9A05A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- flat lobed fur collar, lying across BOTH shoulders, top edge at the ceiling -->
+  <g class="sp-shadow">
+    <path d="M138 200 Q138 183 152 182 H248 Q262 183 262 200 Q262 220 246 228 Q200 234 154 226
+             Q138 218 138 200 Z" fill="url(#elder-male-costume-seeress__fur)"/>
+  </g>
+  <g fill="url(#elder-male-costume-seeress__fur)">
+    <circle cx="142" cy="214" r="11"/>
+    <circle cx="164" cy="224" r="11"/>
+    <circle cx="188" cy="230" r="11"/>
+    <circle cx="212" cy="230" r="11"/>
+    <circle cx="236" cy="224" r="11"/>
+    <circle cx="258" cy="214" r="11"/>
+  </g>
+  <path d="M148 200 q52 14 104 0" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- deep fur turned cuffs at both wrists -->
+  <g fill="url(#elder-male-costume-seeress__fur)">
+    <path d="M106 330 H148 Q152 350 148 364 Q126 372 106 364 Q102 350 106 330 Z"/>
+    <path d="M294 330 H252 Q248 350 252 364 Q274 372 294 364 Q298 350 294 330 Z"/>
+  </g>
+  <g fill="var(--c2, #CFC7B0)" fill-opacity="0.8">
+    <circle cx="112" cy="364" r="7"/>
+    <circle cx="127" cy="368" r="7"/>
+    <circle cx="142" cy="364" r="7"/>
+    <circle cx="288" cy="364" r="7"/>
+    <circle cx="273" cy="368" r="7"/>
+    <circle cx="258" cy="364" r="7"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M156 272 q44 16 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

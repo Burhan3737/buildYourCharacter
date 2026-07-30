@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the rectangle and the overfold both topped at y158,
+       and the two shoulder pins sat at cy162 with r13, putting their rims at y149. The cloth is
+       rebuilt at y186, and the SHOULDER PINS HAVE MOVED DOWN ONTO THE CLOTH at cy204, where
+       they still read as the single fastening at each shoulder without touching the ceiling.
+
+       silhouette axes: shoulder=ONE large pin per shoulder over completely bare arms, and
+       closure=open down one whole side, a real vertical slit from the hem to the hip.
+       SIZE, recomputed from this file's own geometry: the deep overfold reads as a second
+       horizontal hem at y332 and is 128 units wide, which is the feature that separates this
+       from chiton at tray size.
+       In this Greek group the fastening point IS the axis: chiton has a row of six pins per
+       arm, peplos has one large pin per shoulder, winged messenger has one pin on one shoulder
+       only. Do not blur that distinction.
+       Authored on this body because there are no aisles. -->
+  <defs>
+    <linearGradient id="elder-male-costume-peplos__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A9B8)"/>
+      <stop offset="1" stop-color="var(--c2, #96788A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D4B7C4)"/>
+      <stop offset="1" stop-color="var(--c2, #96788A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the ankle length rectangle, open down the right side from the hip to the hem -->
+  <g class="sp-shadow">
+    <path d="M150 186 H250 Q258 232 256 292 L260 356 L260 546 Q230 554 200 554
+             Q170 554 140 546 L138 356 L144 292 Q142 232 150 186 Z"
+          fill="url(#elder-male-costume-peplos__cloth)"/>
+    <path d="M146 186 H254 Q264 242 262 294 Q268 316 266 334 Q200 346 134 334
+             Q132 316 138 294 Q136 242 146 186 Z"
+          fill="url(#elder-male-costume-peplos__fold)"/>
+  </g>
+
+  <!-- ONE large pin per shoulder, moved down onto the cloth to clear the ceiling -->
+  <g fill="var(--c3, #E3C98E)">
+    <circle cx="156" cy="204" r="13"/>
+    <circle cx="244" cy="204" r="13"/>
+  </g>
+  <circle cx="156" cy="204" r="5" fill="var(--c2, #96788A)"/>
+  <circle cx="244" cy="204" r="5" fill="var(--c2, #96788A)"/>
+  <path d="M150 197 q6 -4 12 0 M238 197 q6 -4 12 0" stroke="#FFFFFF" stroke-opacity="0.35"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the overfold hem, the second horizontal line, bound so it reads at tray size -->
+  <path d="M135 332 Q200 344 265 332" stroke="var(--c3, #E3C98E)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- belt worn OVER the fold -->
+  <path d="M138 312 Q200 324 262 312" stroke="var(--c2, #96788A)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 312 Q200 323 260 312" stroke="var(--c3, #E3C98E)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the open right side: a genuine vertical slit from the hip to the hem -->
+  <path d="M261 356 V546" stroke="var(--c3, #E3C98E)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M249 360 V548" stroke="var(--c2, #96788A)" stroke-width="4"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- drape folds -->
+  <g stroke="var(--c2, #96788A)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M160 348 Q154 448 150 540"/>
+    <path d="M186 348 Q184 448 182 548"/>
+    <path d="M214 348 Q216 448 218 548"/>
+    <path d="M162 216 Q160 264 158 304"/>
+    <path d="M238 216 Q240 264 242 304"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M156 548 H202 Q206 558 204 568 H158 Q152 558 156 548 Z" fill="var(--c3, #E3C98E)"/>
+  <path d="M198 548 H244 Q248 558 246 568 H200 Q194 558 198 548 Z" fill="var(--c3, #E3C98E)"/>
+
+  <!-- house highlight -->
+  <path d="M166 216 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

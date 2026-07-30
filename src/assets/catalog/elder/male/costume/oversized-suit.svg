@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the shoulder pads at y150, the jacket body at y152
+       and the shirt panel at y154. The pads are rebuilt with their top edge at y182 and they
+       exaggerate further OUTWARD to compensate, reaching x94 and x306 rather than x98 and x302.
+       That keeps the too big read without putting a single unit above the ceiling.
+
+       Axes: closure (open front, one enormous button at the waist) and volume (wide sagging
+       and boxy, with trouser hems puddling in folds at the ground line).
+       No cane and no prop of any kind: there is no hand anchor in this project.
+       Nothing renders below the ground line at y570; the puddled hems bottom out at y566. -->
+  <defs>
+    <linearGradient id="elder-male-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C7E5E)"/>
+      <stop offset="1" stop-color="var(--c1, #7E6547)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-oversized-suit__pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A6886A)"/>
+      <stop offset="1" stop-color="var(--c1, #856C4E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-oversized-suit__lapel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c2, #A9869F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFEADC)"/>
+      <stop offset="1" stop-color="var(--c3, #D5CFBE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shoes, sitting deep inside the puddled hems -->
+  <g class="sp-shadow">
+    <path d="M158 552 H196 V564 Q196 568 191 568 H154 Q148 568 148 563 Q149 557 158 552 Z"
+          fill="var(--c4, #3F362C)"/>
+    <path d="M242 552 H204 V564 Q204 568 209 568 H246 Q252 568 252 563 Q251 557 242 552 Z"
+          fill="var(--c4, #3F362C)"/>
+  </g>
+
+  <!-- trousers, hems puddling into soft folds at the ground line -->
+  <g class="sp-shadow">
+    <path d="M156 360 H198 Q200 472 198 524 Q204 548 194 564 Q168 568 146 562
+             Q140 548 148 528 Q152 452 156 360 Z"
+          fill="url(#elder-male-costume-oversized-suit__lapel)"/>
+    <path d="M244 360 H202 Q200 472 202 524 Q196 548 206 564 Q232 568 254 562
+             Q260 548 252 528 Q248 452 244 360 Z"
+          fill="url(#elder-male-costume-oversized-suit__lapel)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M148 544 q22 8 44 2"/>
+    <path d="M150 556 q20 8 42 2"/>
+    <path d="M252 544 q-22 8 -44 2"/>
+    <path d="M250 556 q-20 8 -42 2"/>
+  </g>
+
+  <!-- shirt showing in the open front -->
+  <rect x="174" y="188" width="52" height="192" rx="10" fill="url(#elder-male-costume-oversized-suit__shirt)"/>
+  <path d="M200 202 v162" stroke="var(--c1, #7E6547)" stroke-width="2.5"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder pads: projecting OUTWARD to x94 and x306, never upward -->
+  <g class="sp-shadow">
+    <path d="M94 206 Q94 182 118 182 H148 Q154 202 152 222 Q124 224 100 220 Q94 214 94 206 Z"
+          fill="url(#elder-male-costume-oversized-suit__pad)"/>
+    <path d="M306 206 Q306 182 282 182 H252 Q246 202 248 222 Q276 224 300 220 Q306 214 306 206 Z"
+          fill="url(#elder-male-costume-oversized-suit__pad)"/>
+  </g>
+
+  <!-- sleeves swallowing the hands: wide open mouths at y 392, no hand visible -->
+  <g class="sp-shadow">
+    <path d="M100 220 H152 Q156 282 154 340 L152 376 Q150 392 126 392 Q98 392 96 376
+             L96 340 Q94 282 100 220 Z" fill="url(#elder-male-costume-oversized-suit__jacket)"/>
+    <path d="M300 220 H248 Q244 282 246 340 L248 376 Q250 392 274 392 Q302 392 304 376
+             L304 340 Q306 282 300 220 Z" fill="url(#elder-male-costume-oversized-suit__jacket)"/>
+  </g>
+  <path d="M100 376 q26 10 52 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+  <path d="M300 376 q-26 10 -52 0" stroke="var(--c2, #A9869F)" stroke-width="5"
+        stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- the jacket body: open fronted, hem at mid calf -->
+  <g class="sp-shadow">
+    <path d="M114 184 H286 Q292 210 290 244 L288 512 H222 L220 240 Q200 224 180 240 L178 512
+             H112 L110 244 Q108 210 114 184 Z"
+          fill="url(#elder-male-costume-oversized-suit__jacket)"/>
+  </g>
+
+  <!-- wide lapels -->
+  <g fill="url(#elder-male-costume-oversized-suit__lapel)">
+    <path d="M118 192 L180 240 L172 306 L138 268 Q122 228 118 192 Z"/>
+    <path d="M282 192 L220 240 L228 306 L262 268 Q278 228 282 192 Z"/>
+  </g>
+
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="330" r="17" fill="var(--c4, #3F362C)"/>
+  <circle cx="200" cy="330" r="9" fill="#FFFFFF" fill-opacity="0.22"/>
+  <g fill="var(--c3, #D5CFBE)">
+    <circle cx="195" cy="326" r="2.4"/>
+    <circle cx="205" cy="326" r="2.4"/>
+    <circle cx="195" cy="335" r="2.4"/>
+    <circle cx="205" cy="335" r="2.4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M136 234 q64 20 128 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

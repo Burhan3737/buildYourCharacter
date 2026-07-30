@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Gorgon Column" data-family="gorgon" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182.
+       NO HAIR AND NO HEAD ART IS DRAWN HERE. The snake hair is the serpent locks headwear family;
+       costume draws above the face and would erase it. The adult/female reference tops out at
+       y150, so the high neckline was re struck at y182 and the column lengthened downward instead
+       of the whole dress being dropped. -->
+  <!-- Silhouette axes this family owns: HEM = the hem breaks at mid calf into four thick tapering
+       serpent coils that curl outward and rest splayed on the ground line, throwing the outline
+       out to x100 and x300, which is 44 units clear of the dress edge on each side; VOLUME = a
+       sleeveless close column above it with a high plain neckline and no waist shaping except the
+       belt. Surface tools: trim (interlaced snake belt, neckline bind, hem band) and structural
+       (column folds, coil scale banding built along each coil).
+       Elder read: the column is cut a little easier through the chest and the hem break drops to
+       y494, a lower mid calf, so the coils are longer and the dress is not shortened. -->
+  <defs>
+    <linearGradient id="elder-female-costume-gorgon__dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c1, #4E5CA0)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-gorgon__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C6BB0)"/>
+      <stop offset="1" stop-color="var(--c1, #3C4783)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-gorgon__coil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3F8877)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-gorgon__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #C9913C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft flat foot wraps under the coils, so no bare foot shows through the splay -->
+    <path d="M158 542 H202 Q206 554 202 564 Q200 568 194 568 H162 Q156 568 155 560 Z"
+          fill="url(#elder-female-costume-gorgon__foot)"/>
+    <path d="M242 542 H198 Q194 554 198 564 Q200 568 206 568 H238 Q244 568 245 560 Z"
+          fill="url(#elder-female-costume-gorgon__foot)"/>
+    <!-- four thick tapering serpent coils, curling out and resting splayed on the ground -->
+    <path d="M156 486 Q120 504 108 534 Q100 556 116 564 Q133 568 144 556
+             Q128 552 132 540 Q138 522 164 512 Z"
+          fill="url(#elder-female-costume-gorgon__coil)"/>
+    <path d="M184 496 Q158 520 156 548 Q156 566 173 568 Q188 566 190 554
+             Q177 550 179 540 Q183 522 198 508 Z"
+          fill="url(#elder-female-costume-gorgon__coil)"/>
+    <path d="M216 496 Q242 520 244 548 Q244 566 227 568 Q212 566 210 554
+             Q223 550 221 540 Q217 522 202 508 Z"
+          fill="url(#elder-female-costume-gorgon__coil)"/>
+    <path d="M244 486 Q280 504 292 534 Q300 556 284 564 Q267 568 256 556
+             Q272 552 268 540 Q262 522 236 512 Z"
+          fill="url(#elder-female-costume-gorgon__coil)"/>
+    <!-- sleeveless close column dress with a high plain neckline; the arms stay bare -->
+    <path d="M176 182 H224 Q246 188 248 208 L252 272 Q256 350 256 424
+             Q256 466 252 494 Q200 510 148 494 Q144 466 144 424 Q144 350 148 272
+             L152 208 Q154 188 176 182 Z"
+          fill="url(#elder-female-costume-gorgon__dress)"/>
+  </g>
+
+  <!-- coil scale banding, built along each coil -->
+  <g stroke="var(--c2, #2F6C5D)" stroke-opacity="0.45" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M142 506 q-10 12 -14 26 M124 532 q-10 12 -10 24 M116 550 q8 10 20 8"/>
+    <path d="M174 516 q-10 14 -12 26 M164 546 q-4 12 2 20"/>
+    <path d="M226 516 q10 14 12 26 M236 546 q4 12 -2 20"/>
+    <path d="M258 506 q10 12 14 26 M276 532 q10 12 10 24 M284 550 q-8 10 -20 8"/>
+  </g>
+  <!-- wide belt of interlaced snakes at the waist -->
+  <path d="M146 300 Q200 318 254 300 L255 332 Q200 350 145 332 Z"
+        fill="url(#elder-female-costume-gorgon__belt)"/>
+  <path d="M150 310 Q170 330 190 310 Q210 330 230 310 Q248 328 254 316"
+        stroke="var(--c1, #3F4C8C)" stroke-opacity="0.6" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 326 Q170 306 190 326 Q210 306 230 326 Q248 308 254 322"
+        stroke="var(--c1, #3F4C8C)" stroke-opacity="0.45" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- high plain neckline bind, sitting on the ceiling and reading from below the jaw -->
+  <path d="M180 190 q20 8 40 0" stroke="var(--c2, #3F8877)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- column folds -->
+  <g stroke="var(--c1, #3F4C8C)" stroke-opacity="0.3" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M168 352 Q164 424 162 486"/>
+    <path d="M200 354 L200 494"/>
+    <path d="M232 352 Q236 424 238 486"/>
+  </g>
+  <!-- hem band where the coils break away -->
+  <path d="M148 488 Q200 506 252 488" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight -->
+  <path d="M172 212 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

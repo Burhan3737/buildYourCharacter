@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: draped tube top y150 and, worse, its whole pin row
+       sat at y158 to y164. The pins are the family's identity, so they were not lowered as a
+       block: the row has been rebuilt so it runs along the TOP OF THE SLEEVE, starting at the
+       shoulder point and stepping outward and down, entirely below the ceiling.
+
+       CORRECTNESS, drawn from FAMILIES 2.9 and not from the reference file: the spec calls for
+       a row of FIVE OR SIX small round pins per arm. The adult/male reference draws only FOUR.
+       SIX are drawn here per arm, which is the spec.
+
+       silhouette axes: shoulder=a row of six small round pins along the top of each arm so the
+       cloth falls in a scalloped pseudo sleeve to above the elbow, and closure=belted TWICE
+       with a bloused fold spilling over the upper belt.
+       In this Greek group the fastening point IS the axis: chiton has a row of six pins per
+       arm, peplos has one large pin per shoulder, winged messenger has one pin on one shoulder
+       only. Do not blur that distinction. -->
+  <defs>
+    <linearGradient id="elder-male-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #C3B99F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the draped tube, ankle length, and the two scalloped pseudo sleeves -->
+  <g class="sp-shadow">
+    <path d="M152 182 H248 Q258 222 256 268 L260 348 Q266 452 264 546 Q200 558 136 546
+             Q134 452 140 348 L144 268 Q142 222 152 182 Z"
+          fill="url(#elder-male-costume-chiton__cloth)"/>
+    <path d="M150 190 H100 Q94 236 96 272 Q104 288 112 274 Q120 288 128 274 Q136 288 144 274
+             Q150 282 152 268 Q148 226 150 190 Z"
+          fill="url(#elder-male-costume-chiton__sleeve)"/>
+    <path d="M250 190 H300 Q306 236 304 272 Q296 288 288 274 Q280 288 272 274 Q264 288 256 274
+             Q250 282 248 268 Q252 226 250 190 Z"
+          fill="url(#elder-male-costume-chiton__sleeve)"/>
+  </g>
+
+  <!-- SIX small round pins along the top of each arm, stepping outward and down the sleeve -->
+  <g fill="var(--c3, #C4A46A)">
+    <circle cx="152" cy="192" r="6"/><circle cx="142" cy="195" r="6"/>
+    <circle cx="132" cy="198" r="6"/><circle cx="122" cy="201" r="6"/>
+    <circle cx="112" cy="204" r="6"/><circle cx="102" cy="207" r="6"/>
+    <circle cx="248" cy="192" r="6"/><circle cx="258" cy="195" r="6"/>
+    <circle cx="268" cy="198" r="6"/><circle cx="278" cy="201" r="6"/>
+    <circle cx="288" cy="204" r="6"/><circle cx="298" cy="207" r="6"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.3">
+    <circle cx="150" cy="190" r="2"/><circle cx="140" cy="193" r="2"/>
+    <circle cx="130" cy="196" r="2"/><circle cx="120" cy="199" r="2"/>
+    <circle cx="110" cy="202" r="2"/><circle cx="100" cy="205" r="2"/>
+    <circle cx="246" cy="190" r="2"/><circle cx="256" cy="193" r="2"/>
+    <circle cx="266" cy="196" r="2"/><circle cx="276" cy="199" r="2"/>
+    <circle cx="286" cy="202" r="2"/><circle cx="296" cy="205" r="2"/>
+  </g>
+
+  <!-- upper belt, high on the ribs, with the bloused fold spilling over it -->
+  <path d="M142 262 Q200 276 258 262 Q260 278 256 292 Q200 304 144 292 Q140 278 142 262 Z"
+        fill="var(--c2, #C3B99F)"/>
+  <path d="M140 266 H260" stroke="var(--c3, #C4A46A)" stroke-width="8" stroke-linecap="round"
+        fill="none"/>
+  <!-- lower belt at the waist -->
+  <path d="M140 322 H260" stroke="var(--c3, #C4A46A)" stroke-width="10" stroke-linecap="round"
+        fill="none"/>
+  <path d="M142 332 H258" stroke="var(--c2, #C3B99F)" stroke-width="4" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- vertical drape folds, running from the lower belt to the ankle hem -->
+  <g stroke="var(--c2, #C3B99F)" stroke-opacity="0.55" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M162 342 Q156 444 152 538"/>
+    <path d="M182 342 Q180 444 178 544"/>
+    <path d="M218 342 Q220 444 222 544"/>
+    <path d="M238 342 Q244 444 248 538"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M156 546 H202 Q206 556 204 568 H158 Q152 556 156 546 Z" fill="var(--c3, #C4A46A)"/>
+  <path d="M198 546 H244 Q248 556 246 568 H200 Q194 556 198 546 Z" fill="var(--c3, #C4A46A)"/>
+
+  <!-- house highlight -->
+  <path d="M162 212 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

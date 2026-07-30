@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandage Wrap" data-family="mummy" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- THE HEAD IS NOT WRAPPED AND THERE ARE NO FACE BANDAGES. The wrapped collar stops at y182
+       and the character's own face stays fully visible above it. Costume draws above the face, so
+       a wrapped head would erase it. -->
+  <!-- CULTURAL NOTE. The family key stays mummy because that is the retail category name the
+       picker has to be findable under, but the display name is "Bandage Wrap" and the art is cloth
+       and nothing else: no exposed remains, no skull, no decay, no green pallor. -->
+  <!-- GROUND LINE. The adult/male version of this family trails to y578, below the ground line at
+       y570. That is NOT inherited here: every trailing bandage end terminates at or above y568. -->
+  <!-- axes vs the slot: closure, every limb bound separately in its own sleeve of cloth with no
+       closure and no fastening anywhere on the garment; volume, five ragged ends trailing free of
+       the outline at both forearms, the hip and both calves. -->
+  <defs>
+    <linearGradient id="elder-female-costume-mummy__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EEDD)"/>
+      <stop offset="1" stop-color="var(--c1, #D6C7A8)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-mummy__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F1E7D4)"/>
+      <stop offset="1" stop-color="var(--c1, #CEBE9D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-mummy__end" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #D5B285)"/>
+      <stop offset="1" stop-color="var(--c2, #A5824F)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-mummy__stripA" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="22" patternTransform="rotate(19)">
+      <path d="M0 0 h24 v10 h-24 Z" fill="var(--c2, #C8A06A)" fill-opacity="0.45"/>
+      <path d="M0 10 h24 v2 h-24 Z" fill="var(--c3, #3B2A22)" fill-opacity="0.3"/>
+    </pattern>
+    <pattern id="elder-female-costume-mummy__stripB" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="24" height="20" patternTransform="rotate(-22)">
+      <path d="M0 0 h24 v9 h-24 Z" fill="var(--c2, #C8A06A)" fill-opacity="0.45"/>
+      <path d="M0 9 h24 v2 h-24 Z" fill="var(--c3, #3B2A22)" fill-opacity="0.3"/>
+    </pattern>
+    <clipPath id="elder-female-costume-mummy__clipA">
+      <path d="M170 182 H230 Q252 190 254 212 L258 268 Q260 316 254 348
+               Q200 366 146 348 Q140 316 142 268 L146 212 Q148 190 170 182 Z"/>
+      <path d="M158 336 Q180 348 200 340 L198 444 L196 540 Q178 550 160 540 L158 444 Z"/>
+      <path d="M200 340 Q220 348 242 336 L242 444 L240 540 Q222 550 204 540 L202 444 Z"/>
+    </clipPath>
+    <clipPath id="elder-female-costume-mummy__clipB">
+      <path d="M112 202 Q112 182 130 182 H146 Q164 182 164 202 L160 260 L158 340
+               Q136 352 112 340 L111 260 Z"/>
+      <path d="M288 202 Q288 182 270 182 H254 Q236 182 236 202 L240 260 L242 340
+               Q264 352 288 340 L289 260 Z"/>
+      <path d="M144 320 Q200 340 256 320 Q262 352 256 384 Q200 402 144 384
+               Q138 352 144 320 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- legs, each bound separately to the ankle -->
+    <path d="M158 336 Q180 348 200 340 L198 444 L196 540 Q178 550 160 540 L158 444 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <path d="M200 340 Q220 348 242 336 L242 444 L240 540 Q222 550 204 540 L202 444 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <!-- arms, each bound separately to the wrist -->
+    <path d="M112 202 Q112 182 130 182 H146 Q164 182 164 202 L160 260 L158 340
+             Q136 352 112 340 L111 260 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <path d="M288 202 Q288 182 270 182 H254 Q236 182 236 202 L240 260 L242 340
+             Q264 352 288 340 L289 260 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <!-- hip wrap -->
+    <path d="M144 320 Q200 340 256 320 Q262 352 256 384 Q200 402 144 384 Q138 352 144 320 Z"
+          fill="url(#elder-female-costume-mummy__cloth)"/>
+    <!-- torso wrap, no closure and no fastening -->
+    <path d="M170 182 H230 Q252 190 254 212 L258 268 Q260 316 254 348
+             Q200 366 146 348 Q140 316 142 268 L146 212 Q148 190 170 182 Z"
+          fill="url(#elder-female-costume-mummy__cloth)"/>
+    <!-- overlapping strips, running one way over the body and legs -->
+    <g clip-path="url(#elder-female-costume-mummy__clipA)">
+      <rect x="130" y="182" width="140" height="376"
+            fill="url(#elder-female-costume-mummy__stripA)"/>
+    </g>
+    <!-- and the other way over the arms and hips -->
+    <g clip-path="url(#elder-female-costume-mummy__clipB)">
+      <rect x="100" y="182" width="200" height="226"
+            fill="url(#elder-female-costume-mummy__stripB)"/>
+    </g>
+    <!-- house highlight across the chest wrap -->
+    <path d="M164 206 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- wrapped feet, bound like the rest. Costume hides the shoes slot. -->
+  <g class="sp-shadow">
+    <path d="M158 532 q22 8 44 0 q6 14 2 26 q-24 8 -48 0 q-4 -14 2 -26 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <path d="M242 532 q-22 8 -44 0 q-6 14 -2 26 q24 8 48 0 q4 -14 -2 -26 Z"
+          fill="url(#elder-female-costume-mummy__limb)"/>
+    <g stroke="var(--c2, #A5824F)" stroke-opacity="0.5" stroke-width="4"
+       fill="none" stroke-linecap="round">
+      <path d="M161 546 L200 540 M162 556 L200 550"/>
+      <path d="M200 540 L239 546 M200 550 L238 556"/>
+    </g>
+  </g>
+
+  <!-- five ragged loose ends trailing free of the outline. Deepest point is y568. -->
+  <g class="sp-shadow">
+    <path d="M118 344 Q104 386 96 426 Q92 444 102 446 L112 430 L116 444 L126 426
+             Q126 382 134 346 Z"
+          fill="url(#elder-female-costume-mummy__end)"/>
+    <path d="M250 352 Q274 388 292 428 Q300 444 290 448 L278 434 L276 450 L264 434
+             Q256 390 240 360 Z"
+          fill="url(#elder-female-costume-mummy__end)"/>
+    <path d="M248 362 Q268 404 272 452 Q274 474 262 474 L254 458 L248 472 L240 456
+             Q244 408 232 372 Z"
+          fill="url(#elder-female-costume-mummy__end)" fill-opacity="0.88"/>
+    <path d="M160 480 Q142 518 136 552 Q134 568 144 568 L152 552 L158 566 L166 548
+             Q164 512 174 486 Z"
+          fill="url(#elder-female-costume-mummy__end)"/>
+    <path d="M238 492 Q256 524 260 552 Q262 566 252 566 L246 552 L240 564 L232 550
+             Q234 520 224 498 Z"
+          fill="url(#elder-female-costume-mummy__end)"/>
+  </g>
+
+  <!-- wrapped collar, stopping at the ceiling. The face is fully visible above it. -->
+  <path d="M172 182 H228 Q232 198 228 212 Q200 224 172 212 Q168 198 172 182 Z"
+        fill="url(#elder-female-costume-mummy__end)" fill-opacity="0.7"/>
+
+  <!-- strip edges picked out so the alternating diagonals read at thumbnail size -->
+  <g stroke="var(--c3, #3B2A22)" stroke-opacity="0.32" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M146 236 L256 210"/>
+    <path d="M144 274 L258 246"/>
+    <path d="M146 312 L257 284"/>
+    <path d="M152 348 L252 324"/>
+    <path d="M160 386 L198 378 M204 378 L242 386"/>
+    <path d="M160 432 L198 424 M204 424 L242 432"/>
+    <path d="M162 478 L197 470 M203 470 L240 478"/>
+    <path d="M162 522 L197 514 M203 514 L240 522"/>
+    <path d="M114 232 L160 244 M114 282 L159 294 M113 328 L158 340"/>
+    <path d="M286 232 L240 244 M286 282 L241 294 M287 328 L242 340"/>
+  </g>
+</svg>

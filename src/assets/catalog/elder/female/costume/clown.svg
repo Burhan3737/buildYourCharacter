@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown Romper" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Nothing is drawn on the face. There is no face marking slot in this project and this layer
+       draws above the face, so a whiteface, a painted grin, a mask or a nose would erase the
+       character's features. The red nose is the clown nose family and it lives in glasses, not
+       here. The whole identity is the ballooning romper, the ruff and the oversized shoes.
+       RUFF MEASUREMENT, recomputed against this geometry rather than trusted from a note: the
+       elder female neck is x182 to x210. This ruff spans x126 to x274 at its path nodes, so it
+       projects 56u past the neck on the left and 64u on the right, both clear of the 45u floor.
+       Its top edge sits at y182 and all of its depth runs DOWNWARD to y222. -->
+  <!-- Silhouette axes for this file, and the deliberate separation from pierrot, which I also
+       own: VOLUME (a gathered barrel at its widest across the hip, with every opening cinched
+       into a tight gathered cuff, against pierrot's straight column at its widest across the
+       shoulder) and SHOULDER/SLEEVE (a dropped shoulder with the sleeve head set low on the arm
+       and the sleeve ballooning outward, against pierrot's draped three quarter bell).
+       TRADEMARK: butter, cream and coral. Never default this family to green hair with a
+       purple tailcoat, nor an orange or green waistcoat, nor purple beside orange or green,
+       which is the clown villain character. -->
+  <defs>
+    <linearGradient id="elder-female-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D6A855)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-clown__balloon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBD98F)"/>
+      <stop offset="1" stop-color="var(--c1, #CE9C48)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-clown__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #D5CBB7)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-clown__pom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c3, #CD8177)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-clown__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EE9C90)"/>
+      <stop offset="1" stop-color="var(--c3, #C0776D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ballooning legs, gathered into tight ankle cuffs -->
+    <path d="M148 398 Q118 452 124 496 Q128 522 152 530 Q176 536 196 528
+             Q202 470 200 436 Q198 412 190 398 Z"
+          fill="url(#elder-female-costume-clown__balloon)"/>
+    <path d="M252 398 Q282 452 276 496 Q272 522 248 530 Q224 536 204 528
+             Q198 470 200 436 Q202 412 210 398 Z"
+          fill="url(#elder-female-costume-clown__balloon)"/>
+    <!-- ballooning sleeves hung off a DROPPED shoulder, gathered into tight wrist cuffs -->
+    <path d="M140 200 Q114 206 102 242 Q88 284 94 316 Q106 334 130 330
+             Q148 316 150 280 Q152 234 154 202 Z"
+          fill="url(#elder-female-costume-clown__balloon)"/>
+    <path d="M260 200 Q286 206 298 242 Q312 284 306 316 Q294 334 270 330
+             Q252 316 250 280 Q248 234 246 202 Z"
+          fill="url(#elder-female-costume-clown__balloon)"/>
+    <!-- the closed romper: hugely oversized and at its widest across the hip -->
+    <path d="M164 182 H236 Q262 190 268 220 Q280 276 284 342 Q286 392 262 412
+             Q200 430 138 412 Q114 392 116 342 Q120 276 132 220 Q138 190 164 182 Z"
+          fill="url(#elder-female-costume-clown__romper)"/>
+  </g>
+
+  <!-- oversized shoes, drawn into the costume because costume hides the shoes slot.
+       They splay outward and stop at y566, clear of the y570 ground line. -->
+  <g class="sp-shadow">
+    <path d="M198 536 H152 Q122 538 114 552 Q111 564 124 566 H198 Z"
+          fill="url(#elder-female-costume-clown__shoe)"/>
+    <path d="M202 536 H248 Q278 538 286 552 Q289 564 276 566 H202 Z"
+          fill="url(#elder-female-costume-clown__shoe)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M126 550 q22 -8 46 -6 M274 550 q-22 -8 -46 -6"/>
+  </g>
+
+  <!-- gathered cuffs at both wrists and both ankles -->
+  <path d="M92 300 Q114 320 138 312 L140 332 Q114 340 90 320 Z"
+        fill="url(#elder-female-costume-clown__ruff)"/>
+  <path d="M308 300 Q286 320 262 312 L260 332 Q286 340 310 320 Z"
+        fill="url(#elder-female-costume-clown__ruff)"/>
+  <path d="M126 500 Q160 520 196 512 L196 538 Q160 546 124 524 Z"
+        fill="url(#elder-female-costume-clown__ruff)"/>
+  <path d="M274 500 Q240 520 204 512 L204 538 Q240 546 276 524 Z"
+        fill="url(#elder-female-costume-clown__ruff)"/>
+  <g stroke="var(--c1, #B98A38)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M98 308 q20 12 38 6 M302 308 q-20 12 -38 6"/>
+    <path d="M132 508 q30 14 60 6 M268 508 q-30 14 -60 6"/>
+  </g>
+
+  <!-- house highlight on the upper surface of the barrel -->
+  <path d="M154 230 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- three oversized pom pom buttons, a vertical line down the centre front -->
+  <g fill="url(#elder-female-costume-clown__pom)">
+    <circle cx="200" cy="244" r="17"/>
+    <circle cx="200" cy="300" r="17"/>
+    <circle cx="200" cy="356" r="17"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.33" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M191 236 q9 -6 18 0 M191 292 q9 -6 18 0 M191 348 q9 -6 18 0"/>
+  </g>
+
+  <!-- deep gathered neck ruff: top edge on the ceiling, all of its depth running downward -->
+  <path d="M126 190 Q200 182 274 190 Q280 202 270 210 Q256 220 244 210 Q230 222 216 211
+           Q200 220 184 211 Q170 222 156 210 Q144 220 130 210 Q120 202 126 190 Z"
+        fill="url(#elder-female-costume-clown__ruff)"/>
+  <path d="M138 196 q30 10 62 6 q32 4 62 -6" stroke="var(--c1, #B98A38)" stroke-opacity="0.3"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

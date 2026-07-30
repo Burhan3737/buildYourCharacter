@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oversized Suit" data-family="oversized-suit" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Ceiling resolution: the jacket's whole top edge, shoulder yokes and sleeve heads and lapel
+       tops, sits flat on y182. The exaggeration is entirely OUTWARD, to x96 and x304, never
+       upward. The lapels begin at y182 and open DOWNWARD into a deep V that closes at y246. -->
+  <!-- The open front resolves to an integral shirt drawn in this same file through c2. It is
+       never a hole and never a hard coded shell colour. There is no cane: this project has no
+       prop or hand anchor. -->
+  <!-- Ground line y570: the puddled trouser folds terminate at y562, above it. -->
+  <!-- axes vs disguise-coat: closure, an open lapelled front with a single enormous button
+       against a coat buttoned to the throat and belted + volume, a wide sagging boxy mass 212
+       units across against a straight narrow column. -->
+  <defs>
+    <linearGradient id="elder-female-costume-oversized-suit__jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55949C)"/>
+      <stop offset="1" stop-color="var(--c1, #427880)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-oversized-suit__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5C9EA6)"/>
+      <stop offset="1" stop-color="var(--c1, #3D6F77)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-oversized-suit__shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #DBD3C0)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-oversized-suit__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C8A06A)"/>
+      <stop offset="1" stop-color="var(--c3, #A5824F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-oversized-suit__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8A6A3E)"/>
+      <stop offset="1" stop-color="var(--c3, #5E441F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shoes first, so the puddled trouser hem falls over them -->
+  <g class="sp-shadow">
+    <path d="M150 538 Q174 548 198 538 Q202 552 197 566 H152 Q146 552 150 538 Z"
+          fill="url(#elder-female-costume-oversized-suit__shoe)"/>
+    <path d="M202 538 Q226 548 250 538 Q254 552 249 566 H204 Q198 552 202 538 Z"
+          fill="url(#elder-female-costume-oversized-suit__shoe)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- trousers, puddling in folds at the ground line and terminating above y570 -->
+    <path d="M152 300 H202 L200 420 L198 508 Q198 542 190 554 Q174 566 154 560
+             Q146 550 152 538 Q158 500 156 420 Z"
+          fill="url(#elder-female-costume-oversized-suit__trouser)"/>
+    <path d="M248 300 H198 L200 420 L202 508 Q202 542 210 554 Q226 566 246 560
+             Q254 550 248 538 Q242 500 244 420 Z"
+          fill="url(#elder-female-costume-oversized-suit__trouser)"/>
+    <!-- trouser puddle folds -->
+    <g stroke="var(--c3, #7A5B2E)" stroke-opacity="0.35" stroke-width="5"
+       fill="none" stroke-linecap="round">
+      <path d="M158 522 q16 8 34 2 M242 522 q-16 8 -34 2"/>
+      <path d="M155 544 q18 8 36 2 M245 544 q-18 8 -36 2"/>
+    </g>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- the integral shirt, which is what the open front resolves to -->
+    <path d="M172 182 H228 Q246 188 250 210 L254 250 Q256 298 250 326
+             Q200 342 150 326 Q144 298 146 250 L150 210 Q154 188 172 182 Z"
+          fill="url(#elder-female-costume-oversized-suit__shirt)"/>
+    <!-- shirt placket and collar V -->
+    <path d="M181 187 L200 226 L219 187" stroke="var(--c2, #BDB29A)" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M198 230 H202 L203 322 H197 Z" fill="var(--c2, #BDB29A)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- enormous sleeves, several sizes too large, swallowing the hands entirely -->
+    <path d="M152 182 Q110 184 98 214 L94 272 Q90 338 102 382 Q130 396 158 382
+             Q160 330 160 268 L162 200 Z"
+          fill="url(#elder-female-costume-oversized-suit__sleeve)"/>
+    <path d="M248 182 Q290 184 302 214 L306 272 Q310 338 298 382 Q270 396 242 382
+             Q240 330 240 268 L238 200 Z"
+          fill="url(#elder-female-costume-oversized-suit__sleeve)"/>
+    <!-- sleeve fold rucks: the sleeve is far too long -->
+    <g stroke="var(--c1, #2F5B62)" stroke-opacity="0.45" stroke-width="5"
+       fill="none" stroke-linecap="round">
+      <path d="M98 330 q30 12 60 0 M98 356 q30 12 60 0"/>
+      <path d="M302 330 q-30 12 -60 0 M302 356 q-30 12 -60 0"/>
+    </g>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- open jacket fronts, hem at mid calf -->
+    <path d="M170 182 L198 240 L190 320 L186 500 Q166 512 144 500
+             Q142 400 148 300 L154 210 Q156 188 170 182 Z"
+          fill="url(#elder-female-costume-oversized-suit__jacket)"/>
+    <path d="M230 182 L202 240 L210 320 L214 500 Q234 512 256 500
+             Q258 400 252 300 L246 210 Q244 188 230 182 Z"
+          fill="url(#elder-female-costume-oversized-suit__jacket)"/>
+    <!-- padded shoulder yokes projecting well OUTSIDE the body, flat on y182 -->
+    <path d="M170 182 Q120 182 100 212 L96 240 Q114 250 132 240 Q142 216 168 210 Z"
+          fill="url(#elder-female-costume-oversized-suit__jacket)"/>
+    <path d="M230 182 Q280 182 300 212 L304 240 Q286 250 268 240 Q258 216 232 210 Z"
+          fill="url(#elder-female-costume-oversized-suit__jacket)"/>
+    <!-- jacket hem and pocket flaps -->
+    <path d="M148 430 q22 8 38 2 M252 430 q-22 8 -38 2" stroke="var(--c1, #2F5B62)"
+          stroke-opacity="0.5" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- house highlight on the shoulder yoke -->
+    <path d="M118 206 q28 -18 56 -18" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+          fill="none" stroke-linecap="round"/>
+    <path d="M282 206 q-28 -18 -56 -18" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- lapels: they begin at y182 and open downward into a deep V -->
+  <path d="M173 182 L199 246 L183 254 L161 202 Z" fill="var(--c1, #3E747C)"/>
+  <path d="M227 182 L201 246 L217 254 L239 202 Z" fill="var(--c1, #3E747C)"/>
+
+  <!-- one enormous button at the waist -->
+  <circle cx="200" cy="308" r="21" fill="url(#elder-female-costume-oversized-suit__trouser)"/>
+  <g fill="var(--c1, #55949C)">
+    <circle cx="193" cy="301" r="3.4"/><circle cx="207" cy="301" r="3.4"/>
+    <circle cx="193" cy="315" r="3.4"/><circle cx="207" cy="315" r="3.4"/>
+  </g>
+</svg>

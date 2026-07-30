@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG LENGTH = mid calf, the leg stopped clean at y501,
+       and HEM TREATMENT = one single turn up cuff 14 units deep (y487 to y501) that steps
+       proud of the narrow leg it finishes. Natural rise, band top edge y316 running 20 deep
+       to y336; leg straight and narrow, 38 units at the thigh closing to 34 at the calf.
+       Refit arithmetic for the elder body, re derived and not copied from adult/female:
+       the elder leg rect is y374 to y544, so mid calf is y501 (adult y499 on a 212 long leg).
+       Bare shin left standing between the cuff hem y501 and the foot top y544 is 43 units
+       (544 minus 501 = 43); the adult file leaves 60 on its longer shin.
+       Surface tools: trim (elastic waistband and the turn up cuffs, each its own shape with
+       its own gradient) and structural (slanted side pockets, outer leg seams, cuff stitch). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-capris__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97E5C)"/>
+      <stop offset="1" stop-color="var(--c2, #A56245)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-capris__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97E5C)"/>
+      <stop offset="0.6" stop-color="var(--c1, #C97E5C)"/>
+      <stop offset="1" stop-color="var(--c2, #A56245)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-capris__turnup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A56245)"/>
+      <stop offset="1" stop-color="var(--c1, #C97E5C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-capris__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A56245)"/>
+      <stop offset="1" stop-color="var(--c2, #A56245)" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the seat block over the elder hip (x146 to x254, y316 to y382), two narrow
+       straight legs cropped at y501, and the two turn up cuffs standing wider than them -->
+  <g class="sp-shadow">
+    <path d="M152 316 Q146 316 146 324 L146 356 Q146 382 172 382 H228 Q254 382 254 356
+             L254 324 Q254 316 248 316 Z"
+          fill="url(#elder-female-bottom-capris__seat)"/>
+    <path d="M162 374 H200 V501 H166 L164 440 Z"
+          fill="url(#elder-female-bottom-capris__leg)"/>
+    <path d="M238 374 H200 V501 H234 L236 440 Z"
+          fill="url(#elder-female-bottom-capris__leg)"/>
+    <path d="M159 487 H200 V497 Q200 501 196 501 H163 Q159 501 159 497 Z"
+          fill="url(#elder-female-bottom-capris__turnup)"/>
+    <path d="M241 487 H200 V497 Q200 501 204 501 H237 Q241 501 241 497 Z"
+          fill="url(#elder-female-bottom-capris__turnup)"/>
+  </g>
+
+  <!-- elastic waistband, no fly: the elder preference is a pull on elastic waist -->
+  <path d="M152 316 Q146 316 146 324 L146 336 H254 L254 324 Q254 316 248 316 Z"
+        fill="url(#elder-female-bottom-capris__band)"/>
+  <path d="M148 330 H252" stroke="var(--c3, #FBE7D6)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- elastic ruche ticks across the band -->
+  <path d="M162 320 v13 M180 320 v13 M200 320 v13 M220 320 v13 M238 320 v13"
+        stroke="var(--c2, #A56245)" stroke-opacity="0.55" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- slanted side pockets -->
+  <path d="M147 342 H178 Q171 368 148 366 Z" fill="var(--c2, #A56245)"/>
+  <path d="M253 342 H222 Q229 368 252 366 Z" fill="var(--c2, #A56245)"/>
+  <path d="M178 343 Q171 366 150 364" stroke="var(--c3, #FBE7D6)" stroke-opacity="0.6"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M222 343 Q229 366 250 364" stroke="var(--c3, #FBE7D6)" stroke-opacity="0.6"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- outer leg seams running down to the cuff -->
+  <path d="M167 388 L169 480" stroke="var(--c2, #A56245)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 388 L231 480" stroke="var(--c2, #A56245)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- inseam so the two legs read apart -->
+  <path d="M200 380 V498" stroke="var(--c2, #A56245)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turn up fold edge and the stitch line that holds it -->
+  <path d="M161 490 H197" stroke="var(--c3, #FBE7D6)" stroke-opacity="0.65" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 490 H239" stroke="var(--c3, #FBE7D6)" stroke-opacity="0.65" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 497 H196" stroke="var(--c2, #A56245)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 497 H238" stroke="var(--c2, #A56245)" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the straight fall of each cropped leg -->
+  <path d="M162 356 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.27" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 394 V474" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M220 394 V474" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

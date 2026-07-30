@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester Motley" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The cap and bells is a companion headwear family and is never drawn here: costume draws
+       above the face, so no hood, no cap, no bell hood. The whole identity lives in the dagged
+       hip hem and the dagged cuffs. No face art of any kind: there is no face marking slot and
+       this layer would erase the features. -->
+  <!-- Silhouette axes for this file: HEM (a hip hem cut into five deep pointed tabs, each tab
+       45u to 48u deep and ending in a round bell) and SHOULDER/SLEEVE (the cuffs cut into the
+       same points, so each sleeve ends in two dags and two bells).
+       Measured tab depth: valley line y298, tips y343 to y346, so 45u to 48u deep against the
+       30u floor. Sleeve dags run y296 to y336, 38u to 40u deep.
+       TRADEMARK: deliberately coral, periwinkle and butter. Never default this family to green
+       hair with a purple tailcoat, nor purple beside orange or green, which is the clown villain
+       character. No whiteface, no painted grin, no nose. -->
+  <defs>
+    <linearGradient id="elder-female-costume-jester__c1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #D0857A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-jester__c2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5A6BB6)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-jester__c1b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EE9C90)"/>
+      <stop offset="1" stop-color="var(--c1, #C87C70)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-jester__c2b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7788D6)"/>
+      <stop offset="1" stop-color="var(--c2, #5364AE)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-jester__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c3, #D2A049)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close hose, split left and right the way motley is cut -->
+    <path d="M160 324 H200 L198 436 L196 538 Q178 546 162 538 L161 436 Z"
+          fill="url(#elder-female-costume-jester__c2b)"/>
+    <path d="M200 324 H240 L239 436 L238 538 Q222 546 204 538 L202 436 Z"
+          fill="url(#elder-female-costume-jester__c1b)"/>
+    <!-- hose seat, bridging the doublet hem to the legs so no gap opens at the hip -->
+    <path d="M150 316 H250 Q256 316 256 340 L254 378 Q200 392 146 378 L144 340 Q144 316 150 316 Z"
+          fill="url(#elder-female-costume-jester__c2b)"/>
+    <!-- sleeves, set inboard and softened at the head for the elder read -->
+    <path d="M110 202 Q110 182 128 182 H146 Q162 182 161 202 L158 250 L156 300
+             Q132 310 110 300 L109 250 Z"
+          fill="url(#elder-female-costume-jester__c2)"/>
+    <path d="M290 202 Q290 182 272 182 H254 Q238 182 239 202 L242 250 L244 300
+             Q268 310 290 300 L291 250 Z"
+          fill="url(#elder-female-costume-jester__c1)"/>
+    <!-- boxy doublet -->
+    <path d="M166 182 H234 Q252 184 253 206 L255 250 L255 300 H145 L145 250 L147 206
+             Q148 184 166 182 Z"
+          fill="url(#elder-female-costume-jester__c1)"/>
+    <!-- panel blocking: the doublet split down the centre front -->
+    <path d="M166 182 H200 V300 H145 L145 250 L147 206 Q148 184 166 182 Z"
+          fill="url(#elder-female-costume-jester__c2)"/>
+    <!-- five deep pointed hip tabs, 45u to 48u each -->
+    <path d="M145 298 L156 344 L167 298 L178 346 L189 298 L200 343 L211 298 L222 345
+             L233 298 L244 344 L255 298 Z"
+          fill="url(#elder-female-costume-jester__c1)"/>
+    <path d="M145 298 L156 344 L167 298 L178 346 L189 298 L200 343 L200 298 Z"
+          fill="url(#elder-female-costume-jester__c2)"/>
+    <!-- the cuffs cut into the same points -->
+    <path d="M110 296 L122 334 L134 296 L146 336 L157 298 Z"
+          fill="url(#elder-female-costume-jester__c2)"/>
+    <path d="M290 296 L278 334 L266 296 L254 336 L243 298 Z"
+          fill="url(#elder-female-costume-jester__c1)"/>
+  </g>
+
+  <!-- soft shoes, drawn into the costume because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="156" y="530" width="48" height="34" rx="15"
+          fill="url(#elder-female-costume-jester__c2b)"/>
+    <rect x="196" y="530" width="48" height="34" rx="15"
+          fill="url(#elder-female-costume-jester__c1b)"/>
+  </g>
+
+  <!-- dagged collar, points hanging DOWN off the shoulder line, well clear of the jaw -->
+  <path d="M166 182 H234 L226 212 L214 190 L206 214 L194 190 L186 214 L174 190 Z"
+        fill="url(#elder-female-costume-jester__bell)"/>
+
+  <!-- the bells: one at every tab tip and every cuff point -->
+  <g fill="url(#elder-female-costume-jester__bell)">
+    <circle cx="156" cy="352" r="9"/><circle cx="178" cy="354" r="9"/>
+    <circle cx="200" cy="351" r="9"/><circle cx="222" cy="353" r="9"/>
+    <circle cx="244" cy="352" r="9"/>
+    <circle cx="122" cy="342" r="8"/><circle cx="146" cy="344" r="8"/>
+    <circle cx="278" cy="342" r="8"/><circle cx="254" cy="344" r="8"/>
+    <circle cx="226" cy="220" r="7"/><circle cx="206" cy="222" r="7"/>
+    <circle cx="186" cy="222" r="7"/><circle cx="174" cy="198" r="7"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M151 348 q5 -5 10 0 M173 350 q5 -5 10 0 M195 347 q5 -5 10 0
+             M217 349 q5 -5 10 0 M239 348 q5 -5 10 0"/>
+  </g>
+
+  <!-- waist cord -->
+  <path d="M145 268 Q200 284 255 268 L256 284 Q200 300 144 284 Z"
+        fill="url(#elder-female-costume-jester__bell)"/>
+  <!-- doublet centre seam -->
+  <path d="M200 190 V296" stroke="var(--c3, #D2A049)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- house highlight on the upper surface of the doublet -->
+  <path d="M164 208 q36 14 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

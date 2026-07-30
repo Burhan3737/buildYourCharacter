@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = a short wide sleeve cut straight from the body with no
+       set-in armhole seam anywhere, and HEM = mid-thigh with short side vents.
+       Arithmetic against the drawn elder male body: the shoulder line is y184, so the cloth
+       tops out at y180; the sleeve is cut in one straight across to x104 and x296, which is 10u
+       past each arm at x114 and x286, and drops to a sleeve hem at y258. The body is boxy at
+       x130 to x270, 140u across a 128u torso and 18u past each side of the 104u hip block. The
+       hem lands on the mid-thigh anchor at y420, with the vent step at y392 giving a 28u vent.
+       Every other family in this slot is either set-in sleeved or hems at the hip, so both axes
+       separate cleanly.
+       Elder character: this is a grandparent in the same confident garment, so the colour and
+       the scale are unchanged; the age reads in the extra ease through the body and the deeper
+       sleeve, never in dulled colour.
+       Cultural note: this is ordinary everyday clothing, not costume. The trim is plain generic
+       geometry only, a bordered V panel of repeated diamonds and a hem band of repeated
+       zigzags. It is not any particular kente pattern, carries no Adinkra symbol, and is not any
+       named community's design. -->
+  <defs>
+    <linearGradient id="elder-male-top-dashiki__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E09A46)"/>
+      <stop offset="1" stop-color="var(--c2, #A8631F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-dashiki__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #2E7A6C)"/>
+      <stop offset="0.7" stop-color="var(--c3, #2E7A6C)"/>
+      <stop offset="1" stop-color="var(--c2, #A8631F)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-dashiki__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 4 L16 10 L10 16 L4 10 Z" fill="none" stroke="var(--c2, #6B3A18)"
+            stroke-opacity="0.7" stroke-width="2.6" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="elder-male-top-dashiki__vclip">
+      <path d="M158 180 H242 L200 268 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one boxy tunic, sleeve and body cut as a single piece -->
+  <g class="sp-shadow">
+    <path d="M104 192 Q104 180 116 180 H284 Q296 180 296 192 V246 Q296 258 284 258 H270 V392 H262 V412 Q262 420 252 420 H148 Q138 420 138 412 V392 H130 V258 H116 Q104 258 104 246 Z"
+          fill="url(#elder-male-top-dashiki__cloth)"/>
+  </g>
+
+  <!-- the wide V panel: a broad bordered field of plain repeated diamonds, 108u across and
+       running 108u down the chest, so it identifies the family at tray size -->
+  <path d="M146 180 H254 L200 288 Z" fill="var(--c2, #A8631F)"/>
+  <path d="M158 180 H242 L200 268 Z" fill="url(#elder-male-top-dashiki__panel)"/>
+  <g clip-path="url(#elder-male-top-dashiki__vclip)">
+    <rect x="156" y="180" width="88" height="90" fill="url(#elder-male-top-dashiki__motif)"/>
+  </g>
+  <!-- inner border line of the panel -->
+  <path d="M164 188 L236 188 L200 258" stroke="var(--c2, #A8631F)" stroke-opacity="0.75"
+        stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+
+  <!-- pull-on neck opening cut through the panel, resolved through the skin variables -->
+  <path d="M176 178 Q200 202 224 178 Q220 196 200 199 Q180 196 176 178 Z"
+        fill="var(--c2, #A8631F)"/>
+  <path d="M178 179 Q200 201 222 179 Z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- trim: matching border band at each cut-in-one sleeve opening -->
+  <path d="M104 242 H134 V258 H116 Q104 258 104 246 Z" fill="var(--c2, #A8631F)"/>
+  <path d="M296 242 H266 V258 H284 Q296 258 296 246 Z" fill="var(--c2, #A8631F)"/>
+  <path d="M110 250 h20" stroke="var(--c3, #2E7A6C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 250 h20" stroke="var(--c3, #2E7A6C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: hem band of plain repeating zigzags, sitting above the vent step -->
+  <rect x="134" y="372" width="132" height="18" fill="var(--c2, #A8631F)"/>
+  <path d="M138 386 L147 374 L156 386 L165 374 L174 386 L183 374 L192 386 L201 374 L210 386 L219 374 L228 386 L237 374 L246 386 L255 374 L262 384"
+        stroke="var(--c3, #2E7A6C)" stroke-width="3.5" fill="none"
+        stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- structural: the short side vents, drawn inboard of the stepped hem edge -->
+  <path d="M142 396 V415" stroke="var(--c2, #A8631F)" stroke-opacity="0.85" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 396 V415" stroke="var(--c2, #A8631F)" stroke-opacity="0.85" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: a single fold line where a set-in armhole would be, and the underarm line -->
+  <path d="M136 264 V366" stroke="var(--c2, #A8631F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 264 V366" stroke="var(--c2, #A8631F)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 258 H268" stroke="var(--c2, #A8631F)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight across each cut-in-one shoulder -->
+  <path d="M118 202 q34 12 34 -12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M282 202 q-34 12 -34 -12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Clown" data-family="clown" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: barrel body and ruff both topped at y152, sleeve
+       heads at y172. Rebuilt at the ceiling; the barrel's mass runs downward instead, so the
+       widest point is now at the hip at y 366 rather than being squashed up under the chin.
+
+       Axes: volume (a hugely oversized gathered barrel, widest at the hip, the biggest mass
+       in the slot) and shoulder (dropped, with sleeves ballooning to a gathered wrist cuff).
+       SIZE, recomputed off this file's own geometry and not copied from the reference, whose
+       stated 45 units did not match its drawing: the neck is x186 to x214 and the ruff runs
+       x120 to x280, so it projects 66 units past the neck on each side. The floor is 45.
+       The ruff stays only 30 units deep (y182 to y212) so it hugs the collarbone rather than
+       standing up. A separate ruff family ships in the necklace slot, and necklace draws ABOVE
+       costume, so a worn ruff layers over this one and must read as one bigger ruff, not two.
+
+       Trademark: this family sits near the clown villain character. The fallback is house mint
+       with a bone ruff and coral poms, deliberately clear of green hair plus purple tailcoat
+       plus orange or green waistcoat plus white face plus red grin in any combination. There is
+       no whiteface here in any case, because face paint has no slot in this project. -->
+  <defs>
+    <linearGradient id="elder-male-costume-clown__romper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ACCBA)"/>
+      <stop offset="1" stop-color="var(--c1, #5FAB9A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-clown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #74C6B4)"/>
+      <stop offset="1" stop-color="var(--c1, #59A494)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-clown__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F1E5)"/>
+      <stop offset="1" stop-color="var(--c2, #DED6C3)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-clown__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #A2825E)"/>
+      <stop offset="1" stop-color="var(--c4, #7E6547)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ballooning legs, gathered hard at the ankle -->
+  <g class="sp-shadow">
+    <path d="M146 348 Q130 414 134 480 Q136 516 152 538 H194 Q198 506 196 472
+             Q194 410 200 348 Z" fill="url(#elder-male-costume-clown__romper)"/>
+    <path d="M254 348 Q270 414 266 480 Q264 516 248 538 H206 Q202 506 204 472
+             Q206 410 200 348 Z" fill="url(#elder-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- ballooning sleeves, dropped from the shoulder -->
+  <g class="sp-shadow">
+    <path d="M130 200 Q98 228 92 286 Q88 328 104 356 H142 Q134 324 138 282 Q142 232 152 208 Z"
+          fill="url(#elder-male-costume-clown__sleeve)"/>
+    <path d="M270 200 Q302 228 308 286 Q312 328 296 356 H258 Q266 324 262 282 Q258 232 248 208 Z"
+          fill="url(#elder-male-costume-clown__sleeve)"/>
+  </g>
+
+  <!-- the barrel body: the widest mass in the slot, x 96 to x 304 at the hip -->
+  <g class="sp-shadow">
+    <path d="M156 184 Q114 200 104 254 Q96 314 108 366 Q200 392 292 366 Q304 314 296 254
+             Q286 200 244 184 Z" fill="url(#elder-male-costume-clown__romper)"/>
+  </g>
+
+  <!-- gathered wrist cuffs -->
+  <g fill="url(#elder-male-costume-clown__trim)">
+    <rect x="100" y="340" width="44" height="20" rx="10"/>
+    <rect x="256" y="340" width="44" height="20" rx="10"/>
+  </g>
+  <path d="M106 344 v12 M116 343 v14 M126 343 v14 M136 344 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <path d="M262 344 v12 M272 343 v14 M282 343 v14 M292 344 v12"
+        stroke="var(--c1, #59A494)" stroke-width="2.4" stroke-opacity="0.5" stroke-linecap="round"/>
+  <circle cx="122" cy="368" r="14" fill="var(--skin1, #E7B892)"/>
+  <circle cx="278" cy="368" r="14" fill="var(--skin1, #E7B892)"/>
+
+  <!-- gathered ankle cuffs -->
+  <g fill="url(#elder-male-costume-clown__trim)">
+    <rect x="148" y="526" width="48" height="22" rx="11"/>
+    <rect x="204" y="526" width="48" height="22" rx="11"/>
+  </g>
+
+  <!-- big rounded shoes -->
+  <g class="sp-shadow">
+    <path d="M150 544 H198 V566 Q198 570 192 570 H130 Q118 570 118 558 Q120 548 136 546 Z"
+          fill="url(#elder-male-costume-clown__shoe)"/>
+    <path d="M250 544 H202 V566 Q202 570 208 570 H270 Q282 570 282 558 Q280 548 264 546 Z"
+          fill="url(#elder-male-costume-clown__shoe)"/>
+  </g>
+
+  <!-- deep gathered ruff: wide along the shoulder line, shallow in depth -->
+  <g class="sp-shadow">
+    <path d="M120 182 H280 Q282 196 272 204 Q238 212 200 212 Q162 212 128 204
+             Q118 196 120 182 Z" fill="url(#elder-male-costume-clown__trim)"/>
+  </g>
+  <g fill="url(#elder-male-costume-clown__trim)">
+    <circle cx="126" cy="202" r="10"/>
+    <circle cx="147" cy="206" r="10"/>
+    <circle cx="168" cy="209" r="10"/>
+    <circle cx="189" cy="211" r="10"/>
+    <circle cx="211" cy="211" r="10"/>
+    <circle cx="232" cy="209" r="10"/>
+    <circle cx="253" cy="206" r="10"/>
+    <circle cx="274" cy="202" r="10"/>
+  </g>
+  <path d="M132 192 q34 12 68 13 q34 -1 68 -13" stroke="var(--c1, #59A494)" stroke-width="2.6"
+        stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+
+  <!-- three oversized pom pom buttons in a vertical line down the centre front -->
+  <g fill="var(--c3, #F4A79B)">
+    <circle cx="200" cy="248" r="13"/>
+    <circle cx="200" cy="292" r="13"/>
+    <circle cx="200" cy="336" r="13"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <circle cx="196" cy="243" r="4"/>
+    <circle cx="196" cy="287" r="4"/>
+    <circle cx="196" cy="331" r="4"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M140 232 q60 22 120 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

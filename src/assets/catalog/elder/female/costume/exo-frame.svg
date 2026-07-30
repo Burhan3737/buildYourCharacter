@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182.
+       There is no helmet and no neck ring rising toward the jaw: the topmost shells are the two
+       ring shoulder caps, whose crest sits at y182 exactly, and the dark under layer shows as a
+       plain collar band from y182 down to y212 between them. The adult/female reference tops out
+       at y150, so that whole assembly was rebuilt at the new ceiling rather than nudged down. -->
+  <!-- TRADEMARK: the chest plate is a plain bevelled panel. NO glowing circular chest reactor, no
+       chest emblem, no crest, no monogram. The only chest surface is three off centre vent slots
+       and two bevel lines. Fallback is cool grey blue plate over a dark under layer with mint
+       bevels, chosen to stay clear of red plus gold and of seamless chrome. -->
+  <!-- Silhouette axes this family owns: VOLUME = the body is broken into seven separate hard
+       shells with a 28 unit band of dark under layer visible at every joint, so the outline steps
+       in and out down its whole length; SHOULDER = ring jointed shoulder caps standing as their
+       own segment outboard of the arm and above the chest plate. Surface tools: panel blocking
+       (shell against under layer) and trim (bevel lines, ring rivets, vent slots).
+       Elder read: the shoulder caps sit lower and further inboard than the adult draft and the
+       shells are a touch deeper, so the frame looks worn rather than sprayed on. -->
+  <defs>
+    <linearGradient id="elder-female-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A8B7DC)"/>
+      <stop offset="1" stop-color="var(--c1, #7286BA)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-exo-frame__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3C1E3)"/>
+      <stop offset="1" stop-color="var(--c1, #6A7EB4)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-exo-frame__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3A3540)"/>
+      <stop offset="1" stop-color="var(--c2, #1F1C25)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-exo-frame__bevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c3, #44907F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- dark under layer: this is the thing that shows at every joint band -->
+    <path d="M110 196 Q110 182 126 182 H146 Q162 182 162 196 L158 268 L156 344
+             Q133 354 110 344 L108 268 Z"
+          fill="url(#elder-female-costume-exo-frame__under)"/>
+    <path d="M290 196 Q290 182 274 182 H254 Q238 182 238 196 L242 268 L244 344
+             Q267 354 290 344 L292 268 Z"
+          fill="url(#elder-female-costume-exo-frame__under)"/>
+    <path d="M156 346 H202 L200 460 L199 562 Q178 568 158 562 L156 460 Z"
+          fill="url(#elder-female-costume-exo-frame__under)"/>
+    <path d="M198 346 H244 L244 460 L242 562 Q222 570 202 562 L200 460 Z"
+          fill="url(#elder-female-costume-exo-frame__under)"/>
+    <path d="M170 182 H230 Q250 188 252 210 L256 272 Q258 314 252 340
+             Q200 358 148 340 Q142 314 144 272 L148 210 Q150 188 170 182 Z"
+          fill="url(#elder-female-costume-exo-frame__under)"/>
+    <!-- ring jointed shoulder caps, the topmost shells, crest at y182 -->
+    <path d="M104 212 Q106 186 132 182 Q154 182 158 204 L160 240 Q133 252 106 240 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <path d="M296 212 Q294 186 268 182 Q246 182 242 204 L240 240 Q267 252 294 240 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <!-- moulded chest plate: a plain bevelled panel, nothing on it -->
+    <path d="M174 212 H226 Q238 218 240 236 L242 266 Q242 292 236 306
+             Q200 320 164 306 Q158 292 158 266 L160 236 Q162 218 174 212 Z"
+          fill="url(#elder-female-costume-exo-frame__plate)"/>
+    <!-- forearm gauntlets, closing over the hands -->
+    <path d="M108 266 Q134 276 160 266 L158 318 Q156 340 146 350 Q128 358 112 348
+             Q106 330 106 306 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <path d="M292 266 Q266 276 240 266 L242 318 Q244 340 254 350 Q272 358 288 348
+             Q294 330 294 306 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <!-- abdomen shell -->
+    <path d="M148 334 Q200 352 252 334 Q258 362 254 392 Q200 410 146 392 Q142 362 148 334 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <!-- thigh plates -->
+    <path d="M156 420 H204 L203 456 L201 482 Q178 490 158 482 L157 456 Z"
+          fill="url(#elder-female-costume-exo-frame__plate)"/>
+    <path d="M196 420 H244 L243 456 L241 482 Q220 490 199 482 L197 456 Z"
+          fill="url(#elder-female-costume-exo-frame__plate)"/>
+    <!-- shin plates -->
+    <path d="M156 510 H202 L200 528 L199 542 H158 L157 528 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <path d="M198 510 H244 L243 528 L242 542 H202 L201 528 Z"
+          fill="url(#elder-female-costume-exo-frame__shell)"/>
+    <!-- armoured boot shells, standing on the ground line -->
+    <path d="M156 538 H204 Q210 550 206 562 Q204 568 196 568 H162 Q154 568 153 560
+             Q152 548 156 538 Z"
+          fill="url(#elder-female-costume-exo-frame__plate)"/>
+    <path d="M244 538 H196 Q190 550 194 562 Q196 568 204 568 H238 Q246 568 247 560
+             Q248 548 244 538 Z"
+          fill="url(#elder-female-costume-exo-frame__plate)"/>
+  </g>
+
+  <!-- bevel lines: every shell reads as a hard panel, and the chest carries no device -->
+  <g stroke="url(#elder-female-costume-exo-frame__bevel)" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M176 224 H224"/>
+    <path d="M164 296 Q200 310 236 296"/>
+    <path d="M112 218 Q132 206 152 214 M288 218 Q268 206 248 214"/>
+    <path d="M112 282 Q134 292 154 282 M288 282 Q266 292 246 282"/>
+    <path d="M152 348 Q200 366 248 348"/>
+    <path d="M160 432 H200 M200 432 H240"/>
+    <path d="M160 522 H198 M202 522 H240"/>
+  </g>
+  <!-- vent slots on the chest plate, deliberately off centre so they can never read as a disc -->
+  <g fill="var(--c2, #1F1C25)" opacity="0.65">
+    <rect x="212" y="240" width="24" height="6" rx="3"/>
+    <rect x="212" y="254" width="24" height="6" rx="3"/>
+    <rect x="212" y="268" width="24" height="6" rx="3"/>
+  </g>
+  <!-- ring joint rivets -->
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="130" cy="236" r="5"/><circle cx="270" cy="236" r="5"/>
+    <circle cx="128" cy="278" r="5"/><circle cx="272" cy="278" r="5"/>
+    <circle cx="170" cy="428" r="5"/><circle cx="230" cy="428" r="5"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M178 226 q22 8 44 0" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Circle Beard" data-family="circle-beard" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs goatee: UPPER LIP (a joined moustache carried right round both mouth
+       corners, against a completely bare lip) and CHIN AND JAW COVERAGE (a closed ring
+       enclosing the mouth, against a disconnected chin only tuft).
+       The outline is ONE path with an evenodd window at x181..219, y153..172, so the ring
+       really is closed rather than two shapes pretending to be one. Jaw and cheeks bare, so
+       no cheek line.
+       The window is sized to this bundle's own drawn neutral mouth, x182..218 y154..167,
+       measured off elder/female/mouth. Elder mouth sits 38px below adult while the elder skull
+       sits 34px below it, so no edge here is a translation.
+       The ring bottom at y200 hangs 16px below the drawn chin point at y184.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y202.
+       hair1 lights the crown of the ring; hair2 draws the inner rim shadow around the mouth,
+       the philtrum groove and the underside of the chin arc. -->
+  <defs>
+    <linearGradient id="elder-female-beard-circle-beard__ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the closed ring: moustache over the lip, round both corners, into a rounded chin beard -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M200 140 C213 140, 226 147, 229 160 C232 174, 228 190, 219 198
+             C212 205, 188 205, 181 198 C172 190, 168 174, 171 160
+             C174 147, 187 140, 200 140 Z
+             M200 153 C210 153, 219 157.5, 219 162.5 C219 168, 210 172, 200 172
+             C190 172, 181 168, 181 162.5 C181 157.5, 190 153, 200 153 Z"
+          fill="url(#elder-female-beard-circle-beard__ring)"/>
+  </g>
+
+  <!-- hair2: the inner rim, shading the ring inward toward the mouth -->
+  <path fill-rule="evenodd"
+        d="M200 150 C211 150, 222 155, 222 162.5 C222 171, 211 175.5, 200 175.5
+           C189 175.5, 178 171, 178 162.5 C178 155, 189 150, 200 150 Z
+           M200 153 C210 153, 219 157.5, 219 162.5 C219 168, 210 172, 200 172
+           C190 172, 181 168, 181 162.5 C181 157.5, 190 153, 200 153 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.75"/>
+  <!-- hair2: the philtrum groove above the ring -->
+  <path d="M197.6 142 C199.4 145.5, 199.4 148.5, 198.4 152 L201.6 152
+           C200.6 148.5, 200.6 145.5, 202.4 142 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the shaded underside of the chin arc, below the drawn chin at y184 -->
+  <path d="M175 181 C178 191, 186 198, 200 199 C214 198, 222 191, 225 181
+           C225 192, 215 200.5, 200 201 C185 200.5, 175 192, 175 181 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the two corner joins, the reason the ring reads closed and not as two shapes -->
+  <path d="M177 158 C176 165, 176 172, 178 178 C173 172, 173 164, 175 157 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <path d="M223 158 C224 165, 224 172, 222 178 C227 172, 227 164, 225 157 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+
+  <path d="M182 147 C191 142.5, 209 142.5, 218 147" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M175 170 C178 180, 184 187, 191 190" stroke="#FFFFFF" stroke-opacity="0.18"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+</svg>

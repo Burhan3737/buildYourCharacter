@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Pierrot Blouse" data-family="pierrot" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The frilled collaret is a FLAT disc lying on the shoulders. Its top edge is a straight line
+       at y182 and every scallop radiates OUTWARD and DOWNWARD from there, never up toward the
+       face. It spans x104 to x296, so it is 192u wide and 68u deep. Nothing is drawn on the
+       face: there is no face marking slot and this layer would erase the features. The cream and
+       soft pompoms are classic pierrot and are not the banned clown villain palette, which needs
+       green hair with a purple tailcoat and an orange or green waistcoat. -->
+  <!-- Silhouette axes for this file, and the deliberate separation from clown, which I also own:
+       VOLUME (a straight column at its widest across the shoulder, falling dead vertical to the
+       ankle, against clown's gathered barrel widest at the hip) and SHOULDER/SLEEVE (a draped
+       three quarter bell sleeve that flares open and stops above the wrist, leaving the hand
+       clear, against clown's dropped ballooning sleeve cinched into a gathered cuff). -->
+  <defs>
+    <linearGradient id="elder-female-costume-pierrot__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6F0E4)"/>
+      <stop offset="1" stop-color="var(--c1, #D6CDBB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-pierrot__bell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F1EBDE)"/>
+      <stop offset="1" stop-color="var(--c1, #CEC5B2)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-pierrot__pant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE9DA)"/>
+      <stop offset="1" stop-color="var(--c1, #CAC0AC)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-pierrot__frill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c2, #4E3558)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-pierrot__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #63446F)"/>
+      <stop offset="1" stop-color="var(--c2, #452F4E)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- very wide gathered pantaloons, falling in a straight column to the ankle -->
+    <path d="M136 326 L204 326 L202 440 L198 540 Q166 548 140 540 L136 440 Z"
+          fill="url(#elder-female-costume-pierrot__pant)"/>
+    <path d="M196 326 L264 326 L264 440 L260 540 Q234 548 202 540 L200 440 Z"
+          fill="url(#elder-female-costume-pierrot__pant)"/>
+    <!-- draped three quarter bell sleeves, flaring away and stopping above the wrist -->
+    <path d="M134 196 Q118 200 112 224 L100 268 Q90 292 102 304 Q126 314 150 302
+             Q153 268 154 232 L154 198 Z"
+          fill="url(#elder-female-costume-pierrot__bell)"/>
+    <path d="M266 196 Q282 200 288 224 L300 268 Q310 292 298 304 Q274 314 250 302
+             Q247 268 246 232 L246 198 Z"
+          fill="url(#elder-female-costume-pierrot__bell)"/>
+    <!-- loose straight blouse to the hip, sides running dead vertical -->
+    <path d="M158 182 H242 Q258 188 259 212 L260 276 L260 338 H140 L140 276 L141 212
+             Q142 188 158 182 Z"
+          fill="url(#elder-female-costume-pierrot__blouse)"/>
+    <!-- large flat frilled disc collaret, lying on the shoulders and spreading outward -->
+    <path d="M104 182 Q124 222 144 208 Q164 240 182 224 Q192 250 200 230
+             Q208 250 218 224 Q236 240 256 208 Q276 222 296 182 Z"
+          fill="url(#elder-female-costume-pierrot__frill)"/>
+  </g>
+
+  <!-- soft flat shoes, drawn into the costume because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="150" y="534" width="50" height="32" rx="15"
+          fill="url(#elder-female-costume-pierrot__shoe)"/>
+    <rect x="200" y="534" width="50" height="32" rx="15"
+          fill="url(#elder-female-costume-pierrot__shoe)"/>
+  </g>
+  <g fill="url(#elder-female-costume-pierrot__blouse)">
+    <circle cx="158" cy="546" r="8"/><circle cx="242" cy="546" r="8"/>
+  </g>
+
+  <!-- collaret scallop shading, following the frill edge -->
+  <path d="M118 198 Q134 226 150 214 Q168 244 184 230 Q193 252 200 236
+           Q207 252 216 230 Q232 244 250 214 Q266 226 282 198"
+        stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- big soft pompoms down the blouse front -->
+  <g fill="url(#elder-female-costume-pierrot__frill)">
+    <circle cx="200" cy="252" r="14"/>
+    <circle cx="200" cy="300" r="14"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M193 245 q7 -5 14 0 M193 293 q7 -5 14 0"/>
+  </g>
+
+  <!-- pantaloon gathering folds, holding the straight column read -->
+  <g stroke="var(--c3, #55949C)" stroke-opacity="0.3" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M154 350 L152 534"/>
+    <path d="M174 350 L172 536"/>
+    <path d="M226 350 L228 536"/>
+    <path d="M246 350 L248 534"/>
+  </g>
+  <!-- bell sleeve edge bands -->
+  <path d="M102 298 q24 12 48 2 M298 298 q-24 12 -48 2" stroke="var(--c3, #55949C)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- pantaloon hem bands -->
+  <path d="M140 528 q28 12 56 2 M260 528 q-28 12 -56 2" stroke="var(--c3, #55949C)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- house highlight on the upper surface of the blouse -->
+  <path d="M166 268 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

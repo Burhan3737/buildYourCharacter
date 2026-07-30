@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger Jerkin" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The hood is drawn WORN DOWN, pooled in a thick roll at the nape. This is the sanctioned
+       hood pattern for the whole catalogue: the roll's top edge is y182 and all of its bulk runs
+       downward and outward behind the neck, so nothing crosses the face. -->
+  <!-- Silhouette axes this family owns: CLOSURE = a sleeveless jerkin hanging open in two
+       separate front panels over a long sleeved under layer, so the centre front is a standing
+       gap rather than a closure; HEM = the jerkin hem splits into two long tails ending at mid
+       thigh over close trousers, so the lower outline is broken into a pair of points while the
+       under layer continues to the ankle. -->
+  <!-- TRADEMARK, deliberately absent, do not add: no chest emblem, crest, monogram or applied
+       chest graphic; no drawn lettering; no chevron of any kind anywhere in the file; and NO
+       BOW or any other prop, because this project has no prop or hand anchor. The fallback
+       triple is butter, ink and teal, deliberately NOT the banned all green with a hood archer
+       pairing and NOT purple plus black. -->
+  <defs>
+    <linearGradient id="elder-female-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D2AA62)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F3C069)"/>
+      <stop offset="1" stop-color="var(--c1, #CBA35C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #32241D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-ranger__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #372720)"/>
+      <stop offset="1" stop-color="var(--c2, #2D211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-ranger__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #55949C)"/>
+      <stop offset="1" stop-color="var(--c3, #487E85)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M162 330 H202 L200 460 L198 536 Q180 544 162 536 L162 460 Z"
+          fill="url(#elder-female-costume-ranger__limb)"/>
+    <path d="M198 330 H238 L238 460 L236 536 Q218 544 200 536 L200 460 Z"
+          fill="url(#elder-female-costume-ranger__limb)"/>
+    <!-- hip block -->
+    <rect x="146" y="326" width="108" height="58" rx="22"
+          fill="url(#elder-female-costume-ranger__under)"/>
+    <!-- long sleeved under layer, both arms -->
+    <path d="M114 182 H146 Q150 186 150 200 L148 254 L150 330 Q130 342 110 330 L112 254 Z"
+          fill="url(#elder-female-costume-ranger__limb)"/>
+    <path d="M286 182 H254 Q250 186 250 200 L252 254 L250 330 Q270 342 290 330 L288 254 Z"
+          fill="url(#elder-female-costume-ranger__limb)"/>
+    <!-- under layer body -->
+    <path d="M170 182 H230 Q250 188 254 212 L258 258 Q260 302 254 338
+             Q200 356 146 338 Q140 302 142 258 L146 212 Q150 188 170 182 Z"
+          fill="url(#elder-female-costume-ranger__under)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- open jerkin, left panel, tail ending at mid thigh -->
+    <path d="M168 182 Q156 190 152 216 L146 258 L144 340 L150 418
+             Q164 430 176 416 L180 336 L184 256 L188 202 Q180 184 168 182 Z"
+          fill="url(#elder-female-costume-ranger__jerkin)"/>
+    <!-- open jerkin, right panel, tail ending at mid thigh -->
+    <path d="M232 182 Q244 190 248 216 L254 258 L256 340 L250 418
+             Q236 430 224 416 L220 336 L216 256 L212 202 Q220 184 232 182 Z"
+          fill="url(#elder-female-costume-ranger__jerkin)"/>
+    <!-- jerkin front edge binding, inside the jerkin form -->
+    <path d="M186 206 L180 330 M214 206 L220 330" stroke="var(--c1, #C09547)"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- the hood, worn down, pooled in a thick roll at the nape: 92 wide by 44 deep -->
+    <path d="M166 182 H234 Q246 184 244 200 Q240 220 200 226 Q160 220 156 200
+             Q154 184 166 182 Z"
+          fill="url(#elder-female-costume-ranger__hood)"/>
+    <!-- roll fold, inside the hood form -->
+    <path d="M170 202 q30 14 60 0" stroke="var(--c1, #B98D42)" stroke-opacity="0.75"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- diagonal quiver strap across the chest -->
+  <path d="M160 212 L250 300 L238 314 L148 226 Z"
+        fill="url(#elder-female-costume-ranger__strap)"/>
+  <!-- wide bracer on ONE forearm only -->
+  <path d="M250 270 H290 V316 Q270 328 250 316 Z"
+        fill="url(#elder-female-costume-ranger__strap)"/>
+  <path d="M254 282 h32 M254 294 h32 M254 306 h32" stroke="var(--c2, #2D211A)"
+        stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- narrow waist belt under the jerkin -->
+  <path d="M182 300 H218 Q222 314 218 328 H182 Q178 314 182 300 Z"
+        fill="url(#elder-female-costume-ranger__strap)"/>
+
+  <!-- trouser lacing at the shin -->
+  <g stroke="var(--c3, #55949C)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M166 468 L196 482 M166 482 L196 468"/>
+    <path d="M166 500 L196 514 M166 514 L196 500"/>
+    <path d="M204 468 L234 482 M204 482 L234 468"/>
+    <path d="M204 500 L234 514 M204 514 L234 500"/>
+  </g>
+
+  <!-- footwear, drawn into the costume because costume hides shoes -->
+  <g class="sp-shadow">
+    <rect x="158" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-ranger__under)"/>
+    <rect x="196" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-ranger__under)"/>
+  </g>
+  <g fill="var(--c3, #487E85)">
+    <rect x="156" y="522" width="50" height="10" rx="5"/>
+    <rect x="194" y="522" width="50" height="10" rx="5"/>
+  </g>
+
+  <!-- house highlight along the quiver strap shoulder -->
+  <path d="M158 232 q16 24 24 40" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

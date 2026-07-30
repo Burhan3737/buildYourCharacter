@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs chin-curtain: CHIN AND JAW COVERAGE (a narrow even 11px band that
+       follows the jawline and nothing else, against a broad under jaw curtain) and LENGTH
+       (clipped short, the band's lowest point is y187, barely past the drawn chin at y184,
+       against a curtain hanging to y216).
+       Upper lip bare, cheeks bare. Cheek line: jaw only, the band rises to the drawn ear
+       anchors at (149, 129) and (251, 129) and never crosses the cheek.
+       Measured off THIS bundle's drawn body: head cx200 cy125 rx57 ry59, so the skull edge runs
+       (143,129) (146,143) (151,155) (160,166) (171,176) (183,181) (200,184). The band's outer
+       edge sits 3px proud of that so no sliver of skin is left along the jaw.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y187.
+       hair1 lights the outer edge of the band; hair2 draws the inner shaded edge, the notch
+       under the chin and the sideburn roots. -->
+  <defs>
+    <linearGradient id="elder-female-beard-chin-strap__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one even band, ear to ear, round under the chin -->
+  <g class="sp-shadow">
+    <path d="M140 128 C141 137, 142 145, 145 152
+             C148 160, 152 167, 158 173
+             C164 179, 171 183, 179 185.5
+             C186 187.5, 214 187.5, 221 185.5
+             C229 183, 236 179, 242 173
+             C248 167, 252 160, 255 152
+             C258 145, 259 137, 260 128
+             L248.5 128 C247.6 135.6, 246.8 142.4, 244.3 148.4
+             C241.7 155.2, 238.3 161.2, 233.2 166.3
+             C228.1 171.4, 222.1 174.8, 215.2 176.9
+             C209.2 178.7, 190.8 178.7, 184.8 176.9
+             C177.9 174.8, 171.9 171.4, 166.8 166.3
+             C161.7 161.2, 158.3 155.2, 155.7 148.4
+             C153.2 142.4, 152.4 135.6, 151.5 128 Z"
+          fill="url(#elder-female-beard-chin-strap__band)"/>
+  </g>
+
+  <!-- hair2: the shaded inner edge that keeps the band reading as a band, not a beard -->
+  <path d="M151.5 128 C152.4 135.6, 153.2 142.4, 155.7 148.4
+           C158.3 155.2, 161.7 161.2, 166.8 166.3
+           C171.9 171.4, 177.9 174.8, 184.8 176.9
+           C190.8 178.7, 209.2 178.7, 215.2 176.9
+           C222.1 174.8, 228.1 171.4, 233.2 166.3
+           C238.3 161.2, 241.7 155.2, 244.3 148.4
+           C246.8 142.4, 247.6 135.6, 248.5 128
+           L245.3 128 C244.4 135.2, 243.6 141.6, 241.3 147.2
+           C238.9 153.6, 235.7 159.2, 231 164
+           C226.3 168.8, 220.7 172, 214.3 173.9
+           C208.7 175.6, 191.3 175.6, 185.7 173.9
+           C179.3 172, 173.7 168.8, 169 164
+           C164.3 159.2, 161.1 153.6, 158.7 147.2
+           C156.4 141.6, 155.6 135.2, 154.7 128 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the chin notch, where the two sides of the strap meet under the chin -->
+  <path d="M194 186.2 C196.5 181, 203.5 181, 206 186.2 C203.5 183.6, 196.5 183.6, 194 186.2 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the sideburn roots, tucked in at the ear anchors -->
+  <path d="M140 128 L151.5 128 L151.9 132.6 L140.6 132.6 Z" fill="var(--hair2, #9AA3B2)"/>
+  <path d="M260 128 L248.5 128 L248.1 132.6 L259.4 132.6 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: two clipper breaks across the band, so it does not read as one flat ribbon -->
+  <path d="M162 158 L172 152" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.55"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M238 158 L228 152" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.55"
+        stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <path d="M145 137 C148 150, 155 163, 166 173" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M255 137 C252 150, 245 163, 234 173" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

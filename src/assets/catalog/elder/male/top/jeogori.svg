@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- LIVING CULTURAL DRESS, not costume. Ordinary everyday clothing under its own endonym:
+       plain cloth, a contrast collar band and contrast cuff bands, drawn with the same
+       restraint as a button up. No named community weave, no emblem.
+       Silhouette axes:
+       HEM = cropped very short, just below the bust, at y270.
+       CLOSURE = a wide crossover front held by one single long ribbon, the goreum. No
+       buttons, no ties at the side, one ribbon only.
+       Secondary: shoulder gently curved, volume soft.
+       LOCKED PAIR NUMBERS, stated in both files of the pair:
+       this jeogori hem sits at y270, and the companion bottom/chima chest band top edge
+       sits at y246 (band y246 to y282).
+       270 is greater than 246, so the jacket hem falls 24 units BELOW the top edge of the
+       chima band. That means the band's top edge is covered by the jacket, and the pair
+       reads as a short jacket worn over a high banded skirt rather than as two garments
+       that meet at a visible seam or leave a gap of bare torso between them.
+       These numbers were rescaled to this body: adult/male used 214 for the band top and
+       238 for the hem against a torso of y150 to y310; the elder torso is y184 to y336, so
+       the pair moves down to 246 and 270 and the 24 unit overlap is preserved.
+       WRAP DIRECTION, never to be flipped: the wearer's LEFT panel lies over the right. On
+       canvas that mirrors, so the panel coming from the VIEWER'S RIGHT (starting near x234)
+       lies on top and crosses down to the viewer's left, finishing near x156 at the hem, and
+       the goreum ribbon hangs on the VIEWER'S LEFT around x166. Right over left is how the
+       dead are dressed. The outer panel is therefore painted last inside the form group so
+       it is unambiguously the upper layer.
+       Refit off the drawn elder body (NOT copied from adult/male):
+       shoulder top y176 against the drawn shoulder y184; panels reach x130 and x270 against
+       the torso x136 to x264; sleeves swing out to x98 and x302 because the elder arms moved
+       6 inboard and narrowed; the crossover git band runs 100 units from y182 to y267, well
+       over the 40 unit floor, at 18 units wide so it holds value at 64px.
+       Elder character: the sleeve line is softened into a rounded wing rather than a squared
+       cap, and it is cut fuller through the upper arm.
+       The neck opening is resolved as bare skin between the two collar bands. -->
+  <defs>
+    <linearGradient id="elder-male-top-jeogori__outer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFDCC9)"/>
+      <stop offset="1" stop-color="var(--c2, #6C9E83)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C7E2D0)"/>
+      <stop offset="1" stop-color="var(--c2, #649578)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two gently curved sleeves, the under panel, then the outer crossover.
+       The under panel is painted with the same ramp and then knocked back with a c2 wash so
+       the two panels stay separated in value however the player recolours them. -->
+  <g class="sp-shadow">
+    <path d="M140 178 Q102 184 98 226 Q97 256 108 276 Q122 285 136 274 Q143 240 142 206 Z"
+          fill="url(#elder-male-top-jeogori__sleeve)"/>
+    <path d="M260 178 Q298 184 302 226 Q303 256 292 276 Q278 285 264 274 Q257 240 258 206 Z"
+          fill="url(#elder-male-top-jeogori__sleeve)"/>
+    <path d="M166 178 Q132 180 132 214 L130 250 Q130 270 144 270 L238 270 Q246 268 244 254 L174 182 Z"
+          fill="url(#elder-male-top-jeogori__outer)"/>
+    <path d="M166 178 Q132 180 132 214 L130 250 Q130 270 144 270 L238 270 Q246 268 244 254 L174 182 Z"
+          fill="var(--c2, #6C9E83)" fill-opacity="0.45"/>
+    <path d="M234 178 Q268 180 268 214 L270 250 Q270 270 256 270 L162 270 Q154 268 156 254 L226 182 Z"
+          fill="url(#elder-male-top-jeogori__outer)"/>
+  </g>
+
+  <!-- the neck opening left by the crossover, resolved as bare skin -->
+  <path d="M172 176 L228 176 L200 212 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- git: the contrast collar band, carried unbroken along the whole crossover edge -->
+  <path d="M187 178 L200 189 L206 199 L193 210 L174 182 Z" fill="var(--c3, #F7F4EC)" fill-opacity="0.85"/>
+  <path d="M172 172 Q200 163 230 172 L228 185 Q200 176 174 185 Z" fill="var(--c3, #F7F4EC)"/>
+  <path d="M226 182 L239 195 L169 267 L156 254 Z" fill="var(--c3, #F7F4EC)"/>
+
+  <!-- kkeutdong: contrast cuff band at the end of each curved sleeve -->
+  <path d="M103 248 Q107 264 118 272 Q129 277 137 266" stroke="var(--c3, #F7F4EC)"
+        stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M297 248 Q293 264 282 272 Q271 277 263 266" stroke="var(--c3, #F7F4EC)"
+        stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- hem binding, held entirely above the locked hem at y270 -->
+  <path d="M138 258 H262 Q266 258 266 263 V270 H134 V263 Q134 258 138 258 Z"
+        fill="var(--c2, #6C9E83)" fill-opacity="0.5"/>
+
+  <!-- goreum: one long ribbon, knotted at the closure and hanging on the VIEWER'S LEFT -->
+  <ellipse cx="166" cy="262" rx="15" ry="11" fill="var(--c2, #6C9E83)"/>
+  <path d="M158 268 Q150 316 155 352 Q164 362 173 352 Q177 314 175 268 Z"
+        fill="url(#elder-male-top-jeogori__outer)"/>
+  <path d="M177 266 Q188 300 186 328 Q178 336 171 328 Q169 298 167 268 Z"
+        fill="var(--c2, #6C9E83)"/>
+  <path d="M158 280 Q155 316 159 346" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the gently curved sleeve seams -->
+  <path d="M140 196 Q118 208 110 240" stroke="var(--c2, #6C9E83)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 196 Q282 208 290 240" stroke="var(--c2, #6C9E83)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlights -->
+  <path d="M148 198 q28 14 50 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 198 q-16 10 -28 12" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M110 202 q10 -10 24 -14" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M290 202 q-10 -10 -24 -14" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

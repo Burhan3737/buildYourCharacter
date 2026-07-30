@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The oval brooches do NOT sit on the shoulder crest. They sit on the short front straps at
+       y191 to y213, where each strap meets the top edge of the overdress, so the pair stays well
+       under the ceiling and still reads as a collarbone fastening. -->
+  <!-- axes vs the slot: hem, two layers with the sleeveless overdress stopping at mid calf and a
+       clear 44 unit band of the sleeved underdress showing below it; shoulder and sleeve, the
+       overdress hangs from two short front straps meeting a pair of domed oval brooches, leaving
+       the whole upper chest as underdress. -->
+  <defs>
+    <linearGradient id="elder-female-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C57F6A)"/>
+      <stop offset="1" stop-color="var(--c1, #9A5B49)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-apron-dress__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CE8974)"/>
+      <stop offset="1" stop-color="var(--c1, #A96552)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E9DFCB)"/>
+      <stop offset="1" stop-color="var(--c2, #C6B79B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #E4D8C2)"/>
+      <stop offset="1" stop-color="var(--c2, #BFAF92)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-apron-dress__brooch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBD695)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A445)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-apron-dress__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E5344)"/>
+      <stop offset="1" stop-color="var(--c1, #663A30)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- ankle length underdress -->
+    <path d="M172 182 H228 Q246 188 250 212 L256 300 Q264 418 268 526
+             Q200 542 132 526 Q136 418 144 300 L150 212 Q154 188 172 182 Z"
+          fill="url(#elder-female-costume-apron-dress__under)"/>
+    <!-- long underdress sleeves, set in a little inboard for the elder shoulder -->
+    <path d="M112 202 Q112 182 132 182 H148 Q166 182 166 202 L163 264 L160 336
+             Q136 348 112 336 L111 264 Z"
+          fill="url(#elder-female-costume-apron-dress__sleeve)"/>
+    <path d="M288 202 Q288 182 268 182 H252 Q234 182 234 202 L237 264 L240 336
+             Q264 348 288 336 L289 264 Z"
+          fill="url(#elder-female-costume-apron-dress__sleeve)"/>
+    <!-- two short front straps, running from the ceiling down to the brooch line -->
+    <path d="M172 182 H190 V210 H172 Z" fill="url(#elder-female-costume-apron-dress__strap)"/>
+    <path d="M210 182 H228 V210 H210 Z" fill="url(#elder-female-costume-apron-dress__strap)"/>
+    <!-- sleeveless woollen overdress, top edge at the brooch line, hem at mid calf -->
+    <path d="M168 206 H232 Q248 226 250 254 L256 342 Q262 428 264 482
+             Q200 498 136 482 Q138 428 144 342 L150 254 Q152 226 168 206 Z"
+          fill="url(#elder-female-costume-apron-dress__over)"/>
+    <!-- wool folds blocked into the overdress -->
+    <g stroke="var(--c1, #8B5040)" stroke-opacity="0.35" stroke-width="4"
+       fill="none" stroke-linecap="round">
+      <path d="M170 246 Q162 364 158 470"/>
+      <path d="M200 250 Q200 368 200 480"/>
+      <path d="M230 246 Q238 364 242 470"/>
+    </g>
+    <!-- overdress hem band, the strong horizontal that marks mid calf -->
+    <path d="M140 462 Q200 480 260 462 L261 478 Q200 496 139 478 Z"
+          fill="url(#elder-female-costume-apron-dress__brooch)"/>
+    <!-- house highlight on the overdress -->
+    <path d="M172 226 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- the pair of domed oval brooches, on the straps at the collarbone -->
+  <g class="sp-shadow">
+    <ellipse cx="181" cy="202" rx="15" ry="11"
+             fill="url(#elder-female-costume-apron-dress__brooch)"/>
+    <ellipse cx="219" cy="202" rx="15" ry="11"
+             fill="url(#elder-female-costume-apron-dress__brooch)"/>
+    <path d="M173 199 q8 -6 16 0 M211 199 q8 -6 16 0" stroke="#FFFFFF" stroke-opacity="0.45"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- swag of beads strung between the brooches -->
+  <path d="M184 212 Q200 248 216 212" stroke="var(--c3, #E4B15F)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="188" cy="224" r="4.5"/><circle cx="194" cy="232" r="4.5"/>
+    <circle cx="206" cy="232" r="4.5"/><circle cx="212" cy="224" r="4.5"/>
+    <circle cx="200" cy="236" r="4.5"/>
+  </g>
+
+  <!-- small cluster of tools on a chain at one hip -->
+  <path d="M177 212 Q167 266 160 316" stroke="var(--c3, #E4B15F)" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 314 H172 Q176 322 172 330 H152 Q148 322 152 314 Z"
+        fill="url(#elder-female-costume-apron-dress__brooch)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <path d="M155 330 h7 l-1 32 q-3 5 -6 0 Z"/>
+    <path d="M166 330 h7 l2 26 q-3 6 -7 1 Z"/>
+    <path d="M159 362 q6 -4 10 2 q3 8 -4 10 q-8 1 -8 -6 Z"/>
+  </g>
+
+  <!-- underdress hem band, 44 units below the overdress hem -->
+  <path d="M136 514 Q200 534 264 514" stroke="var(--c3, #E4B15F)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <!-- woven trim at the underdress cuffs -->
+  <path d="M114 320 q24 12 48 0 M286 320 q-24 12 -48 0" stroke="var(--c3, #E4B15F)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- soft leather turnshoes, drawn in because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="158" y="538" width="46" height="28" rx="13"
+          fill="url(#elder-female-costume-apron-dress__shoe)"/>
+    <rect x="196" y="538" width="46" height="28" rx="13"
+          fill="url(#elder-female-costume-apron-dress__shoe)"/>
+    <path d="M164 546 q16 -5 32 0 M202 546 q16 -5 32 0" stroke="#FFFFFF" stroke-opacity="0.25"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

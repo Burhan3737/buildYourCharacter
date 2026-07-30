@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Seeress Mantle" data-family="seeress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182.
+       The flat fur collar lies across the shoulders with its top edge at y182 exactly; nothing
+       rises toward the jaw and no hood is drawn. The adult/female reference sets that collar at
+       y152 and both sleeve heads at y152, so the collar was re struck at the new ceiling and its
+       lobed lower edge re cut downward, which keeps the collar deep rather than shaving it. -->
+  <!-- NO STAFF. There is no prop or hand anchor in this project, so a staff would not align with
+       the hand on any bundle. The open mantle front resolves as the underdress drawn in this same
+       file through c2, never as a hole and never as a hard coded shell colour. -->
+  <!-- Silhouette axes this family owns: CLOSURE = a full length open fronted mantle closed by a
+       single strap across the chest, so the outline is two hanging panels either side of a centre
+       column; HEM = tall laced boots finishing in heavy round knobs below a mid calf underdress
+       hem, with the mantle running on past both to the ground. Surface tools: panel blocking
+       (mantle panels against the underdress column), trim (charm belt, chest strap, stone weighted
+       mantle hems) and structural (fur collar and cuff lobes, one large hanging pouch, lacing).
+       Elder read: the mantle panels are cut wider and hang straighter, the sleeves are looser and
+       the fur cuffs deeper, and hems are lengthened, not shortened. -->
+  <defs>
+    <linearGradient id="elder-female-costume-seeress__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7181C9)"/>
+      <stop offset="1" stop-color="var(--c1, #464F8E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-seeress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DDD2B8)"/>
+      <stop offset="1" stop-color="var(--c2, #ADA184)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-seeress__fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #EFE7D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B8AB8C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-seeress__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5B68AA)"/>
+      <stop offset="1" stop-color="var(--c1, #333A6C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-seeress__charm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4B15F)"/>
+      <stop offset="1" stop-color="var(--c3, #A97C29)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- tall laced boots -->
+    <path d="M152 444 Q178 456 204 444 Q210 508 206 566 H154 Q148 508 152 444 Z"
+          fill="url(#elder-female-costume-seeress__boot)"/>
+    <path d="M196 444 Q222 456 248 444 Q252 508 246 566 H194 Q190 508 196 444 Z"
+          fill="url(#elder-female-costume-seeress__boot)"/>
+    <!-- long straight underdress, which is what the open front resolves to -->
+    <path d="M172 182 H228 Q246 188 248 208 L254 280 Q262 400 264 492
+             Q200 510 136 492 Q138 400 146 280 L152 208 Q154 188 172 182 Z"
+          fill="url(#elder-female-costume-seeress__under)"/>
+    <!-- long sleeves under deep fur turned cuffs -->
+    <path d="M110 196 Q110 182 128 182 H146 Q164 182 164 196 L160 268 L158 312
+             Q134 322 110 312 L109 268 Z"
+          fill="url(#elder-female-costume-seeress__under)"/>
+    <path d="M290 196 Q290 182 272 182 H254 Q236 182 236 196 L240 268 L242 312
+             Q266 322 290 312 L291 268 Z"
+          fill="url(#elder-female-costume-seeress__under)"/>
+    <!-- open fronted mantle, left panel -->
+    <path d="M186 182 H152 Q128 190 122 222 L110 320 Q100 430 96 546
+             Q124 558 152 548 Q154 430 164 320 L176 226 Z"
+          fill="url(#elder-female-costume-seeress__mantle)"/>
+    <!-- open fronted mantle, right panel -->
+    <path d="M214 182 H248 Q272 190 278 222 L290 320 Q300 430 304 546
+             Q276 558 248 548 Q246 430 236 320 L224 226 Z"
+          fill="url(#elder-female-costume-seeress__mantle)"/>
+    <!-- deep fur turned cuffs -->
+    <path d="M104 306 Q132 322 162 306 Q170 334 162 362 Q132 376 104 362 Q96 334 104 306 Z"
+          fill="url(#elder-female-costume-seeress__fur)"/>
+    <path d="M296 306 Q268 322 238 306 Q230 334 238 362 Q268 376 296 362 Q304 334 296 306 Z"
+          fill="url(#elder-female-costume-seeress__fur)"/>
+    <!-- flat fur collar, lying across both shoulders, top edge on the ceiling -->
+    <path d="M142 182 H258 Q268 206 256 226 Q238 238 224 224 Q210 238 198 226
+             Q186 238 172 224 Q156 238 140 226 Q128 206 142 182 Z"
+          fill="url(#elder-female-costume-seeress__fur)"/>
+  </g>
+
+  <!-- fur texture, built along the collar and cuff lobes -->
+  <g stroke="var(--c2, #9C8F70)" stroke-opacity="0.5" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M156 190 q-6 16 2 30 M182 188 q-6 18 0 34 M218 188 q6 18 0 34 M244 190 q6 16 -2 30"/>
+    <path d="M116 314 q-6 20 2 40 M140 320 q-4 20 2 38 M260 320 q4 20 -2 38 M284 314 q6 20 -2 40"/>
+  </g>
+  <!-- single strap closing the mantle across the chest -->
+  <path d="M172 232 H228 Q232 246 228 258 H172 Q168 246 172 232 Z"
+        fill="url(#elder-female-costume-seeress__charm)"/>
+  <circle cx="200" cy="245" r="9" fill="var(--c1, #333A6C)"/>
+  <!-- linked charm belt at the waist -->
+  <path d="M148 302 Q200 320 252 302 L253 320 Q200 338 147 320 Z"
+        fill="url(#elder-female-costume-seeress__charm)"/>
+  <g fill="var(--c3, #E4B15F)">
+    <circle cx="166" cy="330" r="5"/><circle cx="182" cy="336" r="5"/>
+    <circle cx="218" cy="336" r="5"/><circle cx="234" cy="330" r="5"/>
+  </g>
+  <!-- one large pouch hanging from the belt -->
+  <path d="M164 324 H204 Q210 358 204 390 Q184 400 164 390 Q158 358 164 324 Z"
+        fill="url(#elder-female-costume-seeress__mantle)"/>
+  <path d="M162 340 h44" stroke="var(--c3, #E4B15F)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- mantle hems weighted by a band of small set stones -->
+  <g fill="url(#elder-female-costume-seeress__charm)">
+    <circle cx="104" cy="534" r="6"/><circle cx="120" cy="540" r="6"/>
+    <circle cx="136" cy="543" r="6"/><circle cx="151" cy="540" r="6"/>
+    <circle cx="296" cy="534" r="6"/><circle cx="280" cy="540" r="6"/>
+    <circle cx="264" cy="543" r="6"/><circle cx="249" cy="540" r="6"/>
+  </g>
+  <path d="M98 524 Q124 538 154 534 M302 524 Q276 538 246 534" stroke="var(--c3, #A97C29)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- boot lacing and the heavy round knobs at the boot top, below the underdress hem -->
+  <g stroke="var(--c3, #E4B15F)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M158 522 L198 534 M158 534 L198 522"/>
+    <path d="M158 546 L198 558 M158 558 L198 546"/>
+    <path d="M202 522 L242 534 M202 534 L242 522"/>
+    <path d="M202 546 L242 558 M202 558 L242 546"/>
+  </g>
+  <g fill="url(#elder-female-costume-seeress__charm)">
+    <circle cx="162" cy="504" r="10"/><circle cx="196" cy="504" r="10"/>
+    <circle cx="204" cy="504" r="10"/><circle cx="238" cy="504" r="10"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M176 206 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

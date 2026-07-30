@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Living cultural dress, not costume. This is ordinary everyday clothing under its own
+       endonym: a plain length of cloth with a fine generic geometric check and a bound edge,
+       drawn with the same restraint as a button up. No community specific woven design.
+       silhouette axes: closure=wrapped at the waist and knotted at one hip, with a visible
+       overlap edge running down one leg + leg length=mid calf, no leg division.
+       Against maxi-skirt (pull on ankle column with a single side slit) that is closure and
+       leg length. Against pencil-skirt (high rise, knee hem with a short back vent) it is
+       closure and leg length again.
+       Fitted to the elder male drawn body: the wrap tops out at y328, the hips run x148 to
+       x252, so cloth at x140 to x260 keeps an 8 unit ease per side, and the hem lands on the
+       elder mid calf at y508.
+       The knot is the identity, so it is drawn 44 units across and 43 tall, centred near
+       x234 y336 at the hip, over the 40 unit floor for an identifying feature. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-sarong__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #74A6B0)"/>
+      <stop offset="1" stop-color="var(--c2, #4A7581)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-sarong__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E3D6BC)"/>
+      <stop offset="1" stop-color="var(--c2, #4A7581)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-sarong__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #86B7C1)"/>
+      <stop offset="1" stop-color="var(--c2, #4A7581)"/>
+    </linearGradient>
+    <pattern id="elder-male-bottom-sarong__check" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <rect x="0" y="0" width="20" height="3" fill="var(--c3, #E3D6BC)"/>
+      <rect x="0" y="0" width="3" height="20" fill="var(--c3, #E3D6BC)"/>
+    </pattern>
+    <clipPath id="elder-male-bottom-sarong__clip">
+      <path d="M140 328 H260 Q266 420 264 502 Q200 512 136 502 Q134 420 140 328 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the wrapped underlayer, the overlapping panel lying proud of it down one
+       leg, and the gathered hip knot that closes the whole thing -->
+  <g class="sp-shadow">
+    <path d="M140 328 H260 Q266 420 264 502 Q200 512 136 502 Q134 420 140 328 Z"
+          fill="url(#elder-male-bottom-sarong__under)"/>
+    <path d="M240 326 H264 Q270 420 268 506 Q244 513 220 507 Q230 420 240 326 Z"
+          fill="url(#elder-male-bottom-sarong__over)"/>
+    <path d="M212 334 Q219 315 238 317 Q258 319 256 338 Q254 358 234 357 Q212 354 212 334 Z"
+          fill="url(#elder-male-bottom-sarong__knot)"/>
+    <path d="M248 348 Q262 362 258 380" fill="none" stroke="var(--c2, #4A7581)"
+          stroke-width="9" stroke-linecap="round"/>
+    <path d="M224 352 Q222 370 232 384" fill="none" stroke="var(--c2, #4A7581)"
+          stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- pattern: a fine tonal check, stopped short of the overlap edge so that edge stays
+       legible as a real edge and the overlapping panel reads plain against it -->
+  <g clip-path="url(#elder-male-bottom-sarong__clip)">
+    <rect x="132" y="326" width="98" height="188" fill="url(#elder-male-bottom-sarong__check)"
+          opacity="0.42"/>
+  </g>
+
+  <!-- trim: the overlap edge, bound so it reads as a real edge in the outline -->
+  <path d="M240 332 Q231 420 223 504" stroke="var(--c3, #E3D6BC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: bound mid calf hem, stepped where the overlapping corner hangs lower -->
+  <path d="M138 500 Q180 510 221 505" stroke="var(--c3, #E3D6BC)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M225 507 Q246 512 267 504" stroke="var(--c3, #E3D6BC)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- structural: the wrap fold along the waist and the gathers running into the knot -->
+  <path d="M138 336 H236" stroke="var(--c2, #4A7581)" stroke-width="6" stroke-linecap="round"
+        fill="none" opacity="0.65"/>
+  <g stroke="var(--c2, #4A7581)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M164 350 Q160 428 156 494"/>
+    <path d="M194 350 Q192 428 190 500"/>
+    <path d="M210 334 Q216 336 214 344"/>
+  </g>
+  <g stroke="var(--c2, #4A7581)" stroke-opacity="0.55" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M222 326 Q230 336 226 348"/>
+    <path d="M244 322 Q240 336 246 350"/>
+  </g>
+
+  <path d="M156 342 q40 10 72 -4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M218 324 q16 -4 30 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

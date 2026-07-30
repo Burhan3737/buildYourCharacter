@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg length=none at all, a skin close brief whose leg opening is cut high
+       up the hip + rise=high, the waist edge running straight across at y318 to y326, above the
+       elder hip line which only starts at y328.
+       Against bike-shorts (natural rise, short leg cut straight across mid thigh at y440) that
+       is leg length and rise. Against leggings (natural rise, full length to the ankle) it is
+       leg length and rise again. Against swim-trunks it is leg length and hem treatment.
+       Fitted to the elder male drawn body: the leg line runs steeply from the crotch at y381
+       up to the hip at y332, so the whole opening climbs 49 units of rise across 54 units of
+       run, which is what makes it read as high cut and not as a boy short.
+       Pairs with top/swim-top: that hem sits at the underbust and this sits at the natural
+       waist, so the midriff between them is deliberately bare. Do not close the gap. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C4756A)"/>
+    </linearGradient>
+    <pattern id="elder-male-bottom-swim-bottoms__dot" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="3.4" fill="var(--c3, #2F5D66)"/>
+      <circle cx="0" cy="0" r="1.6" fill="var(--c3, #2F5D66)"/>
+      <circle cx="18" cy="18" r="1.6" fill="var(--c3, #2F5D66)"/>
+    </pattern>
+    <clipPath id="elder-male-bottom-swim-bottoms__clip">
+      <path d="M146 318 H254 L255 334 Q248 354 227 361 Q209 367 201 381 Q200 385 199 381
+               Q191 367 173 361 Q152 354 145 334 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: a skin close brief, the leg opening swept high off the hip -->
+  <g class="sp-shadow">
+    <path d="M146 318 H254 L255 334 Q248 354 227 361 Q209 367 201 381 Q200 385 199 381
+             Q191 367 173 361 Q152 354 145 334 Z"
+          fill="url(#elder-male-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- pattern: a scattered dot surface, clipped to the brief and sitting over the gradient -->
+  <g clip-path="url(#elder-male-bottom-swim-bottoms__clip)">
+    <rect x="144" y="316" width="112" height="72" fill="url(#elder-male-bottom-swim-bottoms__dot)"
+          opacity="0.5"/>
+  </g>
+
+  <!-- trim: a plain bound edge at the waist and around both high cut leg openings -->
+  <path d="M148 321 H252" stroke="var(--c3, #2F5D66)" stroke-width="7" stroke-linecap="round"
+        fill="none"/>
+  <path d="M146 332 Q150 352 172 359 Q190 365 199 379" stroke="var(--c3, #2F5D66)"
+        stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M254 332 Q250 352 228 359 Q210 365 201 379" stroke="var(--c3, #2F5D66)"
+        stroke-width="5.5" stroke-linecap="round" fill="none"/>
+
+  <!-- structural: flat side seams and a soft front seam, no fly and no drawstring -->
+  <path d="M156 324 V340" stroke="var(--c2, #C4756A)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 324 V340" stroke="var(--c2, #C4756A)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M200 336 V372" stroke="var(--c2, #C4756A)" stroke-opacity="0.45" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M160 330 q40 10 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

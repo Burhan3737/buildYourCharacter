@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: RISE = above the bust, the wrapped band top edge at
+       y244 running 30 units deep to y274, the only bottom in this slot that starts above the
+       waist, and LEG WIDTH = one gathered full column with no leg division, no slit and no
+       tiers, x138 to x262 at the band widening to x122 to x278 at the hem. Plain ankle hem
+       at y546 with a long tie falling down the wrap.
+       BINDING LOCKED PAIR, do not change either value on its own:
+         chima band TOP EDGE y244, band BOTTOM EDGE y274 (30 deep)
+         jeogori hem y269, which falls inside that band depth
+       so the pair never reads as a jacket tucked into a strapless dress.
+       Re derived for the elder body, not copied: adult/female puts the band top at y215 on a
+       torso running y150 to y310, that is 65 of 160, or 40.6 percent down the torso. The elder
+       torso runs y180 to y336, 156 long, so 40.6 percent of 156 is 63.4 and 180 plus 63.4
+       gives y244 (rounded to the whole unit).
+       Korean, the skirt of hanbok. Drawn as ordinary plain cloth with generic band edges only,
+       no woven motif and no ceremonial detail.
+       Surface tools: trim (the chest band with its own gradient and edge lines, plus the hem
+       band) and structural (gathers pulled out of the band the whole length of the column). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-chima__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E5EA8)"/>
+      <stop offset="0.55" stop-color="var(--c1, #8E5EA8)"/>
+      <stop offset="1" stop-color="var(--c2, #6D467F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6D467F)"/>
+      <stop offset="1" stop-color="var(--c1, #8E5EA8)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the chest band and the single gathered column hanging from it.
+       Hem quadratic check: from (278,538) with control (200,554) to (122,538) the curve peaks
+       at 0.25 times 538 plus 0.5 times 554 plus 0.25 times 538, which is y546. Legal. -->
+  <g class="sp-shadow">
+    <path d="M138 270 H262 L278 538 Q200 554 122 538 Z"
+          fill="url(#elder-female-bottom-chima__column)"/>
+    <path d="M144 244 H256 Q262 244 262 250 V268 Q262 274 256 274 H144 Q138 274 138 268
+             V250 Q138 244 144 244 Z"
+          fill="url(#elder-female-bottom-chima__band)"/>
+  </g>
+
+  <!-- band edge lines, generic geometric trim -->
+  <path d="M141 251 H259" stroke="var(--c3, #F5E4C8)" stroke-opacity="0.75" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M141 269 H259" stroke="var(--c3, #F5E4C8)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the long tie, knotted at the band and falling down the wrap -->
+  <path d="M220 264 q10 -6 18 2 q6 8 -4 12 q-12 4 -18 -4 Z" fill="var(--c3, #F5E4C8)"/>
+  <path d="M230 278 L224 462" stroke="var(--c3, #F5E4C8)" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 278 L250 436" stroke="var(--c3, #F5E4C8)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- gathers pulled out of the band down the length of the column -->
+  <path d="M158 278 L134 520" stroke="var(--c2, #6D467F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 278 L162 528" stroke="var(--c2, #6D467F)" stroke-opacity="0.35" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M194 278 L190 532" stroke="var(--c2, #6D467F)" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 278 L216 532" stroke="var(--c2, #6D467F)" stroke-opacity="0.3" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M244 288 L266 520" stroke="var(--c2, #6D467F)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- plain ankle hem band, following the y546 hem -->
+  <path d="M126 532 Q200 548 274 532" stroke="var(--c2, #6D467F)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M130 522 Q200 538 270 522" stroke="var(--c3, #F5E4C8)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight on the band and the light down the front of the column -->
+  <path d="M156 252 q44 10 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 290 L146 506" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

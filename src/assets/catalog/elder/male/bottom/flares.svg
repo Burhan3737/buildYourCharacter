@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg width = CLOSE through the thigh and knee, then a hard flare from the KNEE out
+       to a floor brushing hem + rise = LOW, the waistband top at y336, which is 8 units BELOW
+       the drawn hip top at y328 and 34 below the natural waist at y302.
+       The break is at the KNEE, not the thigh. The knee anchor on this body is y464 (adult male
+       used y446; the elder leg rect is y376 to y552, so its mid point moved down 18 units), and
+       both outseams change direction exactly there. At y464 each leg is only 31 units across
+       (x166 to x197); by the hem at y558 to y564 the left hem runs x120 to x197 and the right
+       x203 to x280, so each leg gains 46 units of width in the 94 units below the knee.
+       Against jeans, a natural rise tapered straight leg, that is leg width and rise; against
+       wide leg, which falls in one width straight from the hip, it is the knee inflection plus
+       rise.
+       Elder note: this is the SAME garment on a grandparent. The flare is not shrunk, the hem
+       still reaches x120 and x280, and the rust stays saturated. The only concession is the
+       elastic backed low waistband in place of a fly. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-flares__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B87A4E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A5535)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-flares__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #8A5535)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a low seat block and two legs that stay close to the knee at y464 then flare -->
+  <g class="sp-shadow">
+    <path d="M162 376 H200 L197 464 V558 Q197 564 191 564 H126 Q119 564 120 556 L166 464 Z"
+          fill="url(#elder-male-bottom-flares__cloth)"/>
+    <path d="M238 376 H200 L203 464 V558 Q203 564 209 564 H274 Q281 564 280 556 L234 464 Z"
+          fill="url(#elder-male-bottom-flares__cloth)"/>
+    <path d="M140 336 H260 Q260 380 244 380 H156 Q140 380 140 336 Z"
+          fill="url(#elder-male-bottom-flares__cloth)"/>
+  </g>
+
+  <!-- trim: low slim waistband, elastic backed, no fly -->
+  <rect x="140" y="336" width="120" height="14" rx="7" fill="url(#elder-male-bottom-flares__band)"/>
+  <g stroke="var(--c2, #8A5535)" stroke-opacity="0.5" stroke-width="2" fill="none"
+     stroke-linecap="round">
+    <path d="M148 340 V346"/>
+    <path d="M156 340 V346"/>
+    <path d="M244 340 V346"/>
+    <path d="M252 340 V346"/>
+  </g>
+  <!-- structural: a small coin pocket on the low seat -->
+  <path d="M238 354 H256 V368 H240 Z" fill="var(--c2, #8A5535)"/>
+
+  <!-- trim: topstitched outseams, the line that shows the knee break at y464 -->
+  <path d="M164 380 L168 464 L133 554" stroke="var(--c3, #F7C873)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M236 380 L232 464 L267 554" stroke="var(--c3, #F7C873)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M200 352 v26" stroke="var(--c3, #F7C873)" stroke-width="2.6" stroke-dasharray="6 5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: contrast bound hem across both bells -->
+  <path d="M126 558 H192" stroke="var(--c3, #F7C873)" stroke-width="7" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+  <path d="M208 558 H274" stroke="var(--c3, #F7C873)" stroke-width="7" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+
+  <!-- structural: drape folds opening out inside each bell, all starting at the knee -->
+  <g stroke="var(--c2, #8A5535)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M180 470 L156 548"/>
+    <path d="M220 470 L244 548"/>
+    <path d="M192 470 L176 550"/>
+    <path d="M208 470 L224 550"/>
+  </g>
+
+  <path d="M160 358 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

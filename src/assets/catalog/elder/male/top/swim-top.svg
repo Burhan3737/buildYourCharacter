@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = a straight band finishing at the underbust (hem edge y257 to
+       y260, the highest hem anywhere in this slot), and SHOULDER = two narrow ties, roughly
+       10 units across, running diagonally over the shoulder line.
+       Separated from tank, which hangs to the hip at y348 on 16 unit vertical straps, and
+       from camisole, which is a full length shell. Hem: 348 minus 258 = 90 units higher.
+       Refitted to the elder male body: drawn shoulder top y184 (ties finish y180, 4 units
+       of overlap), torso x136 to x264 (band x134 to x266, 2 units of overlap each side).
+       The midriff below the band is deliberately bare and the body draws through it. No
+       phantom band, no shell, nothing painted over the abdomen. -->
+  <defs>
+    <linearGradient id="elder-male-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #45AEDC)"/>
+      <stop offset="1" stop-color="var(--c2, #276C93)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5CBFE7)"/>
+      <stop offset="1" stop-color="var(--c2, #276C93)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-swim-top__wave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="16">
+      <path d="M0 11 Q5 4 10 11 Q15 18 20 11" fill="none" stroke="var(--c3, #F7F3E8)"
+            stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-male-top-swim-top__clip">
+      <path d="M134 220 Q136 210 148 210 H252 Q264 210 266 220 L266 246 Q266 254 254 257 Q200 264 146 257 Q134 254 134 246 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: one horizontal band and two narrow shoulder ties -->
+  <g class="sp-shadow">
+    <path d="M148 216 L160 219 L180 186 Q181 180 174 180 Q168 180 167 185 Z"
+          fill="url(#elder-male-top-swim-top__tie)"/>
+    <path d="M252 216 L240 219 L220 186 Q219 180 226 180 Q232 180 233 185 Z"
+          fill="url(#elder-male-top-swim-top__tie)"/>
+    <path d="M134 220 Q136 210 148 210 H252 Q264 210 266 220 L266 246 Q266 254 254 257 Q200 264 146 257 Q134 254 134 246 Z"
+          fill="url(#elder-male-top-swim-top__band)"/>
+  </g>
+
+  <!-- surface tool 1, pattern: wave motif clipped to the band -->
+  <g clip-path="url(#elder-male-top-swim-top__clip)">
+    <rect x="130" y="212" width="140" height="48" fill="url(#elder-male-top-swim-top__wave)"/>
+  </g>
+
+  <!-- surface tool 2, trim: contrast bound edge along the straight top and the underbust hem -->
+  <path d="M134 220 Q136 210 148 210 H252 Q264 210 266 220 L266 224 Q200 216 134 224 Z"
+        fill="var(--c3, #F7F3E8)"/>
+  <path d="M134 248 Q200 260 266 248 L266 252 Q266 256 254 258 Q200 265 146 258 Q134 256 134 252 Z"
+        fill="var(--c3, #F7F3E8)"/>
+
+  <!-- trim: the tie ends bound where they meet the band, and a loop over each shoulder -->
+  <path d="M148 214 L160 218 L158 226 L146 222 Z" fill="var(--c3, #F7F3E8)"/>
+  <path d="M252 214 L240 218 L242 226 L254 222 Z" fill="var(--c3, #F7F3E8)"/>
+  <path d="M167 186 Q174 178 181 186" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M233 186 Q226 178 219 186" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- surface tool 3, structural: shaped seams across the band -->
+  <path d="M200 212 V258" stroke="var(--c2, #276C93)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 212 Q168 236 172 256" stroke="var(--c2, #276C93)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230 212 Q232 236 228 256" stroke="var(--c2, #276C93)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight along the straight top edge -->
+  <path d="M156 226 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

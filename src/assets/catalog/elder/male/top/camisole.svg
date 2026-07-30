@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = narrow spaghetti straps set wide, and HEM = falling well
+       below the hip on a skimming bias cut.
+       Arithmetic against the drawn elder male body: straps are 8u wide with centres at x162 and
+       x238, so they stand 76u apart; tank in this bundle uses 16u straps with centres at x176
+       and x224, only 48u apart, so this is both a narrower strap and a 28u wider set. Hem drops
+       to y366 at the centre front, past the hip block that ends at y378 and 18u below tank's
+       hem at y348. Ribbed vest is a boxy 76u wide slab hemming at y311 on wide straps with a
+       dropped armhole, so camisole separates from it on shoulder and hem as well.
+       The strap tops start at y188 because the drawn torso only spans x148 to x252 at that
+       height; set any wider and the strap floats off the shoulder.
+       Nothing is cut away that the body does not already draw, so no skin is repainted here:
+       the chest above the straight upper edge at y212 is the character's own torso. -->
+  <defs>
+    <linearGradient id="elder-male-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9D3E6)"/>
+      <stop offset="1" stop-color="var(--c2, #A79DBE)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9D3E6)"/>
+      <stop offset="1" stop-color="var(--c2, #9E93B7)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-camisole__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 12 Q9 2 18 12" fill="none" stroke="var(--c3, #6E6480)"
+            stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-male-top-camisole__clip">
+      <path d="M146 212 H254 Q267 214 267 228 L266 330 Q264 352 252 362 Q200 374 148 356 Q136 350 134 330 L133 228 Q133 214 146 212 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two spaghetti straps set wide, and one skimming bias-cut body -->
+  <g class="sp-shadow">
+    <rect x="158" y="188" width="8" height="28" rx="4" fill="url(#elder-male-top-camisole__strap)"/>
+    <rect x="234" y="188" width="8" height="28" rx="4" fill="url(#elder-male-top-camisole__strap)"/>
+    <path d="M146 212 H254 Q267 214 267 228 L266 330 Q264 352 252 362 Q200 374 148 356 Q136 350 134 330 L133 228 Q133 214 146 212 Z"
+          fill="url(#elder-male-top-camisole__body)"/>
+  </g>
+
+  <!-- pattern: scallop lace bands at the upper edge and at the deep hem, clipped to the body -->
+  <g clip-path="url(#elder-male-top-camisole__clip)">
+    <rect x="130" y="212" width="140" height="24" fill="url(#elder-male-top-camisole__scallop)"/>
+    <rect x="130" y="316" width="140" height="52" fill="url(#elder-male-top-camisole__scallop)"/>
+  </g>
+
+  <!-- trim: the scalloped bound upper edge, the detail that reads across the chest -->
+  <path d="M146 216 Q158 206 170 216 Q182 206 194 216 Q206 206 218 216 Q230 206 242 216 Q250 210 256 218 L256 224 Q200 216 144 224 Z"
+        fill="var(--c3, #6E6480)"/>
+  <!-- trim: strap bindings, at the shoulder and where each strap meets the edge -->
+  <rect x="156" y="208" width="12" height="9" rx="4" fill="var(--c3, #6E6480)"/>
+  <rect x="232" y="208" width="12" height="9" rx="4" fill="var(--c3, #6E6480)"/>
+  <rect x="156" y="188" width="12" height="7" rx="3" fill="var(--c3, #6E6480)"/>
+  <rect x="232" y="188" width="12" height="7" rx="3" fill="var(--c3, #6E6480)"/>
+
+  <!-- trim: bound hem, cut on the shallow diagonal that gives the bias its fall -->
+  <path d="M142 344 Q200 368 258 338" stroke="var(--c3, #6E6480)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: bias seams, the fall of the cloth rather than a fitted side seam -->
+  <g stroke="var(--c2, #A79DBE)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M168 226 Q159 292 151 348"/>
+    <path d="M232 224 Q244 288 254 340"/>
+    <path d="M200 228 Q198 296 196 362"/>
+  </g>
+
+  <!-- upper-surface highlight along the straight edge -->
+  <path d="M156 232 q44 12 88 -2" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

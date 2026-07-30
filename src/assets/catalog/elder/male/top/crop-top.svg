@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = cropped well above the natural waist, and VOLUME = fitted.
+       Arithmetic against the drawn elder male body: natural waist y302, hem y282, so the crop
+       stops 302 minus 282 = 20u above the waist, and the hip block does not begin until y328,
+       leaving 46u of bare midriff from y282 to y328. That midriff is deliberately left empty so
+       the drawn body reads straight through it; there is no band and no phantom cloth there.
+       Fitted volume: the body narrows from 132u across at y214 to 128u at the hem, against the
+       boxy slabs elsewhere in the slot, and tee holds a straight 126u tube down to y336.
+       Elder character: crop top IS its cropped hem, so the hem stays exactly where the axis puts
+       it and the age is paid in the sleeve instead. The sleeve cap is a soft dome, the armhole
+       seam is carried inboard to x154 on the shoulder rather than sitting at the arm, and the
+       upper arm is cut loose at 46u across an arm only 26u wide. -->
+  <defs>
+    <linearGradient id="elder-male-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFD46E)"/>
+      <stop offset="1" stop-color="var(--c2, #93A84C)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFD46E)"/>
+      <stop offset="1" stop-color="var(--c2, #8A9E45)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3E4A24)"/>
+      <stop offset="0.75" stop-color="var(--c3, #3E4A24)"/>
+      <stop offset="1" stop-color="var(--c2, #93A84C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one short fitted body, a contrast yoke across it, and two short set-in
+       sleeves whose caps ride over the yoke on the inboard elder shoulder line -->
+  <g class="sp-shadow">
+    <path d="M134 214 Q134 182 166 182 H234 Q266 182 266 214 L264 264 Q264 282 248 282 H152 Q136 282 136 264 Z"
+          fill="url(#elder-male-top-crop-top__body)"/>
+    <path d="M134 214 Q134 182 166 182 H234 Q266 182 266 214 L266 226 Q200 240 134 226 Z"
+          fill="url(#elder-male-top-crop-top__band)"/>
+    <path d="M108 232 Q108 196 132 190 Q152 186 154 214 L152 250 Q152 268 130 268 Q108 268 108 250 Z"
+          fill="url(#elder-male-top-crop-top__sleeve)"/>
+    <path d="M292 232 Q292 196 268 190 Q248 186 246 214 L248 250 Q248 268 270 268 Q292 268 292 250 Z"
+          fill="url(#elder-male-top-crop-top__sleeve)"/>
+  </g>
+
+  <!-- trim: the deep contrast hem band that marks exactly where the crop stops -->
+  <path d="M136 258 Q200 272 264 258 L264 264 Q264 282 248 282 H152 Q136 282 136 264 Z"
+        fill="url(#elder-male-top-crop-top__band)"/>
+  <path d="M136 258 Q200 272 264 258" stroke="var(--c1, #BFD46E)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- trim: the same accent tipping the yoke seam -->
+  <path d="M136 226 Q200 240 264 226" stroke="var(--c1, #BFD46E)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- trim: sleeve tipping in the accent -->
+  <path d="M108 248 Q130 258 152 248 L152 250 Q152 268 130 268 Q108 268 108 250 Z"
+        fill="var(--c3, #3E4A24)"/>
+  <path d="M292 248 Q270 258 248 248 L248 250 Q248 268 270 268 Q292 268 292 250 Z"
+        fill="var(--c3, #3E4A24)"/>
+
+  <!-- trim: crew neckband, with the opening painted through the skin variables -->
+  <path d="M174 180 Q200 203 226 180 Q222 195 200 198 Q178 195 174 180 Z" fill="var(--c3, #3E4A24)"/>
+  <path d="M176 181 Q200 202 224 181 Z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- structural: the softened set-in armhole seam, sitting inboard on the elder shoulder -->
+  <path d="M136 194 Q154 202 155 226 L153 256" stroke="var(--c2, #93A84C)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M264 194 Q246 202 245 226 L247 256" stroke="var(--c2, #93A84C)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- structural: front shaping darts, the tell that the volume is fitted and not boxy -->
+  <path d="M170 232 Q168 246 170 256" stroke="var(--c2, #93A84C)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230 232 Q232 246 230 256" stroke="var(--c2, #93A84C)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper-surface highlight across the yoke -->
+  <path d="M160 206 Q200 222 240 206" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

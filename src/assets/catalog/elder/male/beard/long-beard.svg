@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Beard" data-family="long-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156),
+       ear anchors (149,129), drawn torso x136 to 264, y184 to 336.
+       BEARD FLOOR: torso.y 184 + 0.5 * torso.h 152 = y260. This is the longest beard in
+       the bundle and it is the one that has to prove the number: its hem is y250, so it
+       clears the floor by 10 units. Nothing on this asset passes y250.
+       Mouth measured off elder/male/mouth: resting neutral y148 to 157, deepest drawn
+       lip y167. The skull sits 34 units below adult/male but the drawn mouths only 30,
+       so the overhanging moustache is set from the measured lip, not translated.
+       Cheek line: natural, y141 to y143, the same 55% as full-beard.
+
+       Axes chosen: LENGTH = to mid chest, hem at y250, and the mass widens as it falls
+       to x138 and x262, which is 124 units across and wider than the head itself
+       (rx57, so 114). UPPER LIP = overhanging and untrimmed: the moustache carries down
+       to y158, ten units past the resting lip top, and covers the top of the mouth. -->
+  <defs>
+    <linearGradient id="elder-male-beard-long-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.4" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mass: narrow at the cheek line, swelling past the jaw to a broad lobed hem -->
+  <g class="sp-shadow">
+    <path d="M147 134 C144 150 143 168 146 186
+             C140 200 138 216 140 230
+             C143 242 158 246 176 248
+             C186 250 196 248 200 245
+             C206 249 216 250 226 247
+             C244 243 258 233 260 220
+             C262 206 260 192 254 184
+             C257 166 256 150 253 134
+             C249 139 244 142 237 143 C230 144 226 142 222 138
+             C214 134 206 135 200 136 C194 135 186 134 178 138
+             C174 142 170 144 163 143 C156 142 151 139 147 134 Z
+             M200 158 C192 158 184 159 181 163 C179 168 185 173 195 173
+             C202 174 210 173 215 171 C221 169 221 162 216 159
+             C211 157 205 158 200 158 Z"
+          fill-rule="evenodd" fill="url(#elder-male-beard-long-beard__grad)"/>
+  </g>
+
+  <!-- the overhanging moustache edge, hanging over the top of the mouth -->
+  <path d="M178 154 C186 160 214 160 222 154" stroke="var(--hair2, #8A8E97)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M197 135 C198 141 202 141 203 135 C206 145 204 155 200 155
+           C196 155 194 145 197 135 Z"
+        fill="var(--hair2, #8A8E97)"/>
+
+  <!-- shadow where the beard meets the throat -->
+  <path d="M160 180 C176 198 224 198 240 180" stroke="var(--hair2, #8A8E97)"
+        stroke-width="7" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- long divisions running the length of the fall -->
+  <g stroke="var(--hair2, #8A8E97)" stroke-width="3.4" fill="none" stroke-linecap="round"
+     opacity="0.6">
+    <path d="M165 186 C157 206 153 224 159 240"/>
+    <path d="M186 190 C180 210 179 228 183 244"/>
+    <path d="M214 190 C220 210 221 228 217 244"/>
+    <path d="M235 186 C243 206 247 224 241 240"/>
+  </g>
+  <path d="M200 192 C199 212 199 230 200 246" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- lit cheek line and the lit shoulder of the fall -->
+  <path d="M156 145 C162 147 170 147 176 143" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M150 164 C145 186 143 208 148 226" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

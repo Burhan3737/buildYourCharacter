@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jarl" data-family="jarl" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: cloak top y152, tunic top y150, sleeve heads y164,
+       and the ring brooch at cy168 which put its rim at y156. The cloak's top edge is rebuilt
+       at y182, the tunic at y184, and the brooch has moved DOWN the shoulder to cy204.
+
+       No horned and no winged helmet appears here, and none is ever permitted on this project;
+       both are 19th century Romantic invention rather than Norse archaeology, and the winged
+       version is a trademark tell besides.
+       The trim bands are a GENERIC geometric border. They are not any specific community's
+       woven design, named sett or pattern.
+       silhouette axes: shoulder=a rectangular cloak worn offset over the LEFT shoulder only,
+       leaving the right arm entirely free, and hem=a knee length tunic over narrow trousers.
+       Elder read: the tunic sits a little looser and the sleeve is rucked further past the
+       wrist, and the hem falls at the knee rather than above it. -->
+  <defs>
+    <linearGradient id="elder-male-costume-jarl__cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E6070)"/>
+      <stop offset="1" stop-color="var(--c1, #7A5C46)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-jarl__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5C46)"/>
+      <stop offset="1" stop-color="var(--c2, #4E6070)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-jarl__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4E6070)"/>
+      <stop offset="1" stop-color="var(--c1, #7A5C46)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-jarl__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M0 9 L9 2 L18 9 L9 16 Z" fill="none" stroke="var(--c3, #E0C88C)"
+            stroke-width="2.4"/>
+    </pattern>
+  </defs>
+
+  <!-- rectangular cloak, offset over the left shoulder only -->
+  <g class="sp-shadow">
+    <path d="M102 182 H178 Q184 328 180 486 Q140 496 102 486 Q96 328 102 182 Z"
+          fill="url(#elder-male-costume-jarl__cloak)"/>
+  </g>
+
+  <!-- knee length wool tunic over narrow trousers, right arm entirely free of the cloak -->
+  <g class="sp-shadow">
+    <path d="M152 336 H198 Q200 440 196 540 Q196 548 188 548 H164 Q156 548 156 540
+             Q152 440 152 336 Z" fill="url(#elder-male-costume-jarl__trouser)"/>
+    <path d="M248 336 H202 Q200 440 204 540 Q204 548 212 548 H236 Q244 548 244 540
+             Q248 440 248 336 Z" fill="url(#elder-male-costume-jarl__trouser)"/>
+    <path d="M152 184 H248 Q260 208 258 238 L256 316 Q262 394 258 470 Q200 482 142 470
+             Q138 394 144 316 L142 238 Q140 208 152 184 Z"
+          fill="url(#elder-male-costume-jarl__tunic)"/>
+    <path d="M110 196 H146 Q150 218 148 244 L146 358 Q146 372 128 372 Q110 372 108 358
+             L106 244 Q104 218 110 196 Z" fill="url(#elder-male-costume-jarl__tunic)"/>
+    <path d="M290 196 H254 Q250 218 252 244 L254 358 Q254 372 272 372 Q290 372 292 358
+             L294 244 Q296 218 290 196 Z" fill="url(#elder-male-costume-jarl__tunic)"/>
+  </g>
+
+  <!-- one ring brooch pinning the cloak, moved down the shoulder to clear the ceiling -->
+  <circle cx="248" cy="204" r="12" fill="none" stroke="var(--c3, #E0C88C)" stroke-width="5"/>
+  <path d="M238 212 L258 196" stroke="var(--c3, #E0C88C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- keyhole neck, opening onto the character's own skin, never a phantom garment -->
+  <path d="M194 184 H206 V218 Q200 224 194 218 Z" fill="var(--skin2, #C99A72)"/>
+  <path d="M190 184 H210 V192 H190 Z" fill="var(--c3, #E0C88C)"/>
+
+  <!-- deep woven trim bands at neck, both cuffs and the hem, a generic geometric border -->
+  <rect x="150" y="192" width="100" height="16" fill="url(#elder-male-costume-jarl__weave)"/>
+  <rect x="108" y="340" width="36" height="16" fill="url(#elder-male-costume-jarl__weave)"/>
+  <rect x="256" y="340" width="36" height="16" fill="url(#elder-male-costume-jarl__weave)"/>
+  <rect x="148" y="452" width="104" height="16" fill="url(#elder-male-costume-jarl__weave)"/>
+
+  <!-- sleeves rucked past the wrist in three folds -->
+  <g stroke="var(--c2, #4E6070)" stroke-opacity="0.65" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M110 318 H144"/><path d="M109 328 H145"/><path d="M109 338 H145"/>
+    <path d="M256 318 H290"/><path d="M255 328 H291"/><path d="M255 338 H291"/>
+  </g>
+
+  <!-- belt and integral shoes -->
+  <path d="M146 314 H254 Q258 326 256 338 H144 Q142 326 146 314 Z" fill="var(--c2, #4E6070)"/>
+  <path d="M152 540 H198 Q204 556 202 568 H154 Q148 556 152 540 Z" fill="var(--c2, #4E6070)"/>
+  <path d="M202 540 H248 Q252 556 250 568 H204 Q196 556 202 540 Z" fill="var(--c2, #4E6070)"/>
+
+  <!-- house highlight -->
+  <path d="M180 220 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

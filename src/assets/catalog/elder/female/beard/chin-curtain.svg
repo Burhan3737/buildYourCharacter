@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Curtain" data-family="chin-curtain" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs chin-strap: CHIN AND JAW COVERAGE (a broad under jaw curtain, up to
+       48px deep front to back, against a narrow even 11px band) and LENGTH (past the jaw, the
+       hem falls to y216, against a strap that stops at y187).
+       UPPER LIP: completely bare, and drawn clean. This is the only beard in the slot with a
+       deliberately bare lip, so the boundary is measured rather than guessed. The drawn elder
+       mouths (elder/female/mouth) bottom out at y173 for the smile and y174..178 for the
+       fuller pout and grin; the curtain's top boundary crosses the centre of the face at y177,
+       four clear pixels below the smile, exactly as the adult reference does. No hair touches
+       the vermilion.
+       Cheeks bare; cheek line is jaw only, rising to the drawn ear anchors at (149, 129).
+       The elder mouth sits 38px below the adult one while the elder skull sits 34px below it,
+       so this boundary is NOT the adult boundary moved down.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y216.
+       hair1 lights the jaw front; hair2 draws the clean top edge under the lip, the shaded
+       underside of the hem and the hanging strand separations. -->
+  <defs>
+    <linearGradient id="elder-female-beard-chin-curtain__curtain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the curtain: top boundary clears the lip entirely, hem hangs well below the jaw -->
+  <g class="sp-shadow">
+    <path d="M143 129
+             C144 139, 146.5 148, 151 156
+             C155.5 164, 161.5 170.5, 169 174.5
+             C176.5 178.5, 188 177, 200 177
+             C212 177, 223.5 178.5, 231 174.5
+             C238.5 170.5, 244.5 164, 249 156
+             C253.5 148, 256 139, 257 129
+             C260 148, 255 172, 243 188
+             C237 202, 227 212, 216 210
+             C209 216, 191 216, 184 210
+             C173 212, 163 202, 157 188
+             C145 172, 140 148, 143 129 Z"
+          fill="url(#elder-female-beard-chin-curtain__curtain)"/>
+  </g>
+
+  <!-- hair2: the clean cut top edge, the thing that keeps the bare lip reading as deliberate -->
+  <path d="M143 129
+           C144 139, 146.5 148, 151 156
+           C155.5 164, 161.5 170.5, 169 174.5
+           C176.5 178.5, 188 177, 200 177
+           C212 177, 223.5 178.5, 231 174.5
+           C238.5 170.5, 244.5 164, 249 156
+           C253.5 148, 256 139, 257 129
+           C256.4 136, 254 143.5, 250 150.5
+           C245.5 158, 239.5 164, 232 168
+           C224.5 172, 213 174.5, 200 174.5
+           C187 174.5, 175.5 172, 168 168
+           C160.5 164, 154.5 158, 150 150.5
+           C146 143.5, 143.6 136, 143 129 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the shaded underside of the hem, three soft lobes of unequal size -->
+  <path d="M159 190 C165 202, 175 210, 185 209 C191 214, 209 214, 215 209
+           C225 210, 235 202, 241 190 C237 204, 227 213, 216 211.5
+           C209 217, 191 217, 184 211.5 C173 213, 163 204, 159 190 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: hanging strand separations across the curtain, none the same length -->
+  <path d="M170 180 C171 191, 174 201, 180 209" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M186 182 C186 193, 186 202, 187 212" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M200 181 C200 193, 200 203, 200 213" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M214 182 C214 193, 214 202, 213 212" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M230 180 C229 191, 226 201, 220 209" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <path d="M148 140 C153 158, 163 174, 178 185" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M252 140 C247 158, 237 174, 222 185" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

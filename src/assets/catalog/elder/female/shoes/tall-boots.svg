@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: TOE SHAPE = a tapered almond box drawn narrow and long
+       toward the centreline, and SOLE DEPTH = a thin 8 unit stacked leather sole with a welt
+       line, y562 to y570.
+       WHY NOT SHAFT HEIGHT, which is what this family usually owns. On the elder female body
+       the drawn leg rect is y374 to y544, so the knee sits at y459 and a shaft "just below the
+       knee" lands at y462. This bundle's wellies already carry their shaft to y470, so the two
+       are only 8 units apart, which is 0.9 screen pixels in a 64px tray thumbnail and far under
+       the 40 unit floor. Shaft height therefore CANNOT separate this pair on this body, and the
+       separation is carried by the other two axes instead: tapered almond toe against wellies'
+       bulbous round toe, and a thin 8 unit stacked sole against wellies' 12 unit chunky rubber.
+       Fastening is none at all, only a side pull tab, which suits the stage.
+       Other shafts already in this bundle for reference: wellies y470, snow-boots y496,
+       platform-boots y500, high-tops y508, boots y522.
+       Surface tools: trim (topline binding, stacked sole welt, pull tab) and structural detail
+       (a moulded shin seam and a heel counter seam down each shaft).
+       The centre channel between the two shafts is kept open at x198 to x202 so the pair does
+       not fuse into one slab at tray size. Do not close it. -->
+  <defs>
+    <linearGradient id="elder-female-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5A86)"/>
+      <stop offset="1" stop-color="var(--c2, #563E61)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-shoes-tall-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5A86)"/>
+      <stop offset="1" stop-color="var(--c2, #563E61)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two smooth shafts from just below the knee at y462, each tapering into an
+       almond-toed boot foot -->
+  <g class="sp-shadow">
+    <path d="M158 476 C158 466 166 462 178 462 C190 462 198 466 198 476
+             L196 540 L162 540 Z"
+          fill="url(#elder-female-shoes-tall-boots__shaft)"/>
+    <path d="M162 536 H196 C202 537 206 542 206 550 L206 558
+             C206 563 202 565 195 565 L157 565 C151 565 148 561 148 555
+             L148 546 C148 540 153 536 162 536 Z"
+          fill="url(#elder-female-shoes-tall-boots__foot)"/>
+    <path d="M242 476 C242 466 234 462 222 462 C210 462 202 466 202 476
+             L204 540 L238 540 Z"
+          fill="url(#elder-female-shoes-tall-boots__shaft)"/>
+    <path d="M238 536 H204 C198 537 194 542 194 550 L194 558
+             C194 563 198 565 205 565 L243 565 C249 565 252 561 252 555
+             L252 546 C252 540 247 536 238 536 Z"
+          fill="url(#elder-female-shoes-tall-boots__foot)"/>
+  </g>
+
+  <!-- thin stacked soles, only 8 units deep, with a pale welt line -->
+  <rect x="147" y="562" width="59" height="8" rx="4" fill="var(--c2, #563E61)"/>
+  <rect x="194" y="562" width="59" height="8" rx="4" fill="var(--c2, #563E61)"/>
+  <rect x="149" y="563" width="55" height="3" rx="1.5" fill="var(--c3, #E9D3A8)"/>
+  <rect x="196" y="563" width="55" height="3" rx="1.5" fill="var(--c3, #E9D3A8)"/>
+
+  <!-- topline binding at each shaft mouth -->
+  <path d="M160 470 C167 462 189 462 196 470" stroke="var(--c3, #E9D3A8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 470 C233 462 211 462 204 470" stroke="var(--c3, #E9D3A8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- side pull tabs, the only fastening detail -->
+  <rect x="151" y="468" width="9" height="20" rx="4.5" fill="var(--c3, #E9D3A8)"/>
+  <rect x="240" y="468" width="9" height="20" rx="4.5" fill="var(--c3, #E9D3A8)"/>
+
+  <!-- moulded shin seams down each smooth shaft -->
+  <path d="M169 488 V536" stroke="var(--c2, #563E61)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M231 488 V536" stroke="var(--c2, #563E61)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- heel counter seams at the outer edge of each foot -->
+  <path d="M155 544 V561" stroke="var(--c2, #563E61)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M245 544 V561" stroke="var(--c2, #563E61)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- almond toe seam, the tapered box called out at the centre end -->
+  <path d="M192 543 q6 8 6 18" stroke="var(--c2, #563E61)" stroke-opacity="0.7"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M208 543 q-6 8 -6 18" stroke="var(--c2, #563E61)" stroke-opacity="0.7"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+
+  <!-- leather sheen down each shaft and over each instep -->
+  <path d="M179 484 V530" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M221 484 V530" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 549 q20 6 36 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 549 q-20 6 -36 2" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

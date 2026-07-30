@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mutton Chops" data-family="mutton-chops" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs every full coverage family: CHIN AND JAW COVERAGE (two separate cheek
+       wedges with a wide bare gap between them, the chin never reached) and CHEEK LINE (joined
+       at 100 percent, each chop starting flush at this bundle's drawn ear anchor y129 and
+       running the full depth of the cheek).
+       Upper lip bare, chin bare. Each chop is 42px wide and 47px deep, comfortably over the
+       40 unit tray floor, so the pair still reads at thumbnail size.
+       Measured off THIS bundle: ear anchors (149, 129) and (251, 129); jaw corners
+       (157.8, 156.3) and (242.2, 156.3); drawn chin y184. The chops stop at y176, eight clear
+       pixels short of the chin.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y177.
+       hair1 lights the outer sweep of each chop; hair2 draws the shaded inner edge, the
+       broadened flare at the jaw corner and the sideburn root at the ear. -->
+  <defs>
+    <linearGradient id="elder-female-beard-mutton-chops__chop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- two wedges, narrow at the ear, broadening toward the jaw corner, stopping short of the chin -->
+  <g class="sp-shadow">
+    <path d="M141 129 C139 145, 143 159, 152 168 C158 175, 172 177, 179 170
+             C183 166, 180 160, 173 157 C163 153, 158 143, 156 129
+             C151 130, 145 129, 141 129 Z"
+          fill="url(#elder-female-beard-mutton-chops__chop)"/>
+    <path d="M259 129 C261 145, 257 159, 248 168 C242 175, 228 177, 221 170
+             C217 166, 220 160, 227 157 C237 153, 242 143, 244 129
+             C249 130, 255 129, 259 129 Z"
+          fill="url(#elder-female-beard-mutton-chops__chop)"/>
+  </g>
+
+  <!-- hair2: the shaded inner edge of each chop, facing the bare cheek -->
+  <path d="M156 129 C158 143, 163 153, 173 157 C180 160, 183 166, 179 170
+           C180 165, 177 162, 170 159 C160 155, 155 144, 153 129 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <path d="M244 129 C242 143, 237 153, 227 157 C220 160, 217 166, 221 170
+           C220 165, 223 162, 230 159 C240 155, 245 144, 247 129 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the broadened flare where each chop reaches the jaw corner at y156 -->
+  <path d="M149 164 C155 172, 169 176, 178 169 C174 176, 158 176, 152 169
+           C150.5 167.4, 149.6 165.8, 149 164 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <path d="M251 164 C245 172, 231 176, 222 169 C226 176, 242 176, 248 169
+           C249.5 167.4, 250.4 165.8, 251 164 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the sideburn root, tucked in front of the drawn ear at x138..160 -->
+  <path d="M141 129 C146 129.4, 152 129.4, 156 129 L155.7 132.8
+           C151.6 131.5, 145.6 131.5, 141.3 132.8 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <path d="M259 129 C254 129.4, 248 129.4, 244 129 L244.3 132.8
+           C248.4 131.5, 254.4 131.5, 258.7 132.8 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: growth grain running down the length of each chop -->
+  <path d="M147 141 C148 153, 152 163, 160 170" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.6" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M253 141 C252 153, 248 163, 240 170" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.6" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <path d="M144 136 C144 148, 147 159, 155 166" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M256 136 C256 148, 253 159, 245 166" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

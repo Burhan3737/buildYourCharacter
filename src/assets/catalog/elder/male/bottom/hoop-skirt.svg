@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: leg width=a rigid dome standing well clear of the leg on all sides, no
+       leg division + hem treatment=a ground sweeping firm arc carrying four horizontal hoop
+       channel seams. Against maxi-skirt (narrow ankle column, single side slit) that is leg
+       width and hem treatment; against tiered-skirt (gathered tiers, ruffled mid calf hem) it
+       is leg width and hem treatment again.
+       Clearance arithmetic, recomputed on the elder male drawn body: the dome hem spans x84 to
+       x316. The widest point of this body is the hips at x148 to x252, 104 units wide.
+       Clearance = 148 minus 84 = 64 units per side, well over the 40 unit practical floor.
+       The right side checks out the same way, 316 minus 252 = 64.
+       High rise: the band sits y308 to y328 and the dome springs from y310, just under the
+       elder natural waist at y302 and well above the hips, which only begin at y328.
+       Hem sweeps y562 to y568, never past y570.
+       Trademark note: the fallback is house mint with a deep warm neutral trim. No pale blue,
+       no yellow, no pink with a gold bodice. Those are named animated princess palettes. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #428274)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-hoop-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D9C9B4)"/>
+      <stop offset="1" stop-color="var(--c2, #428274)"/>
+    </linearGradient>
+    <clipPath id="elder-male-bottom-hoop-skirt__clip">
+      <path d="M152 310 H248 Q290 368 302 430 Q316 500 316 556 Q316 568 306 568 H94
+               Q84 568 84 556 Q84 500 98 430 Q110 368 152 310 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the rigid dome, springing from a high waist to the ground line -->
+  <g class="sp-shadow">
+    <path d="M152 310 H248 Q290 368 302 430 Q316 500 316 556 Q316 568 306 568 H94
+             Q84 568 84 556 Q84 500 98 430 Q110 368 152 310 Z"
+          fill="url(#elder-male-bottom-hoop-skirt__dome)"/>
+  </g>
+
+  <!-- structural detail: four horizontal hoop channel seams, each following the dome curve,
+       each with a bound highlight above it so the channel reads as a real casing -->
+  <g clip-path="url(#elder-male-bottom-hoop-skirt__clip)">
+    <path d="M74 384 Q200 370 326 384 L326 394 Q200 380 74 394 Z" fill="var(--c2, #428274)"/>
+    <path d="M74 442 Q200 426 326 442 L326 452 Q200 436 74 452 Z" fill="var(--c2, #428274)"/>
+    <path d="M74 500 Q200 484 326 500 L326 510 Q200 494 74 510 Z" fill="var(--c2, #428274)"/>
+    <path d="M74 556 Q200 540 326 556 L326 566 Q200 550 74 566 Z" fill="var(--c2, #428274)"/>
+    <path d="M74 380 Q200 366 326 380" stroke="var(--c3, #D9C9B4)" stroke-opacity="0.7"
+          stroke-width="3.4" fill="none"/>
+    <path d="M74 438 Q200 422 326 438" stroke="var(--c3, #D9C9B4)" stroke-opacity="0.62"
+          stroke-width="3.4" fill="none"/>
+    <path d="M74 496 Q200 480 326 496" stroke="var(--c3, #D9C9B4)" stroke-opacity="0.54"
+          stroke-width="3.4" fill="none"/>
+    <path d="M74 552 Q200 536 326 552" stroke="var(--c3, #D9C9B4)" stroke-opacity="0.46"
+          stroke-width="3.4" fill="none"/>
+    <!-- structural detail: vertical stay tapes carrying the hoops, clipped to the dome -->
+    <g stroke="var(--c3, #D9C9B4)" stroke-opacity="0.4" stroke-width="3.4" fill="none"
+       stroke-linecap="round">
+      <path d="M168 322 Q126 430 104 562"/>
+      <path d="M232 322 Q274 430 296 562"/>
+      <path d="M200 322 V564"/>
+    </g>
+  </g>
+
+  <!-- trim: high waistband with a bound top edge, elder friendly and elasticated -->
+  <rect x="150" y="308" width="100" height="20" rx="9" fill="url(#elder-male-bottom-hoop-skirt__band)"/>
+  <path d="M156 314 H244" stroke="var(--c3, #D9C9B4)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+
+  <path d="M158 322 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 358 q68 -12 136 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

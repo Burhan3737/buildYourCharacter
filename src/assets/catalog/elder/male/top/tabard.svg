@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: CLOSURE = completely open down both sides, the front and back panels
+       joined only across the two shoulder bridges, and SHOULDER = none at all, a flat panel
+       hung from the shoulder line with no armhole and no sleeve.
+       Separated from waistcoat, which has a full button front and a fitted side seam, and
+       from poncho, which closes all the way round.
+       Refitted to the elder male body: shoulder top y184 (panel top y182), torso x136 to
+       x264 which is 128 units wide, panel x152 to x248 which is 96 units wide. 152 minus
+       136 = 16 units of bare torso on each side, and the contrast lining behind the panel
+       peeks 4 units of that, leaving a clear 12 unit strip of skin either side plus the
+       whole arm at x114 to x140 and x260 to x286 uncovered. Hem y348, the hip.
+       No shirt is implied underneath: the open sides are painted as skin. -->
+  <defs>
+    <linearGradient id="elder-male-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5E9E86)"/>
+      <stop offset="1" stop-color="var(--c2, #3B6A5A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-tabard__lining" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #3B6A5A)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-tabard__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M2 15 L11 6 L20 15" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.55" stroke-width="2.8" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="elder-male-top-tabard__clip">
+      <path d="M166 182 H182 Q186 206 200 208 Q214 206 218 182 H234 Q244 184 248 208 L246 334 Q246 348 234 348 H166 Q154 348 154 334 L152 208 Q156 184 166 182 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the open sides stay bare: torso skin shaded along each panel edge, arms left free -->
+  <path d="M150 196 Q146 262 150 332 L140 332 Q136 262 140 196 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+  <path d="M250 196 Q254 262 250 332 L260 332 Q264 262 260 196 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+  <path d="M139 204 V304" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 204 V304" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- major forms: the flat front panel, with the contrast lined back panel showing at the
+       open sides. Surface tool 1, panel blocking. -->
+  <g class="sp-shadow">
+    <rect x="148" y="210" width="12" height="124" rx="5" fill="url(#elder-male-top-tabard__lining)"/>
+    <rect x="240" y="210" width="12" height="124" rx="5" fill="url(#elder-male-top-tabard__lining)"/>
+    <path d="M166 182 H182 Q186 206 200 208 Q214 206 218 182 H234 Q244 184 248 208 L246 334 Q246 348 234 348 H166 Q154 348 154 334 L152 208 Q156 184 166 182 Z"
+          fill="url(#elder-male-top-tabard__front)"/>
+  </g>
+
+  <!-- surface tool 2, pattern: woven chevron field clipped to the front panel, sitting in
+       the middle third of the torso where long hair cannot cover it -->
+  <g clip-path="url(#elder-male-top-tabard__clip)">
+    <rect x="150" y="216" width="100" height="94" fill="url(#elder-male-top-tabard__chevron)"/>
+    <rect x="150" y="206" width="100" height="8" fill="var(--c3, #F7C873)"/>
+    <rect x="150" y="314" width="100" height="8" fill="var(--c3, #F7C873)"/>
+    <rect x="150" y="326" width="100" height="4" fill="var(--c3, #F7C873)" fill-opacity="0.6"/>
+  </g>
+
+  <!-- surface tool 3, trim: bound edges down both open sides, the treatment that says
+       "no side seam", plus a bound neck scoop and hem -->
+  <path d="M154 214 V336" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 214 V336" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 182 Q186 208 200 210 Q214 208 218 182" stroke="var(--c3, #F7C873)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M158 338 Q200 348 242 338" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight across the two shoulder bridges and the chest -->
+  <path d="M168 192 q8 6 14 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 192 q-8 6 -14 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M174 234 q26 10 52 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

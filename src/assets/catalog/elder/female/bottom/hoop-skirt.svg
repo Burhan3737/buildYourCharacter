@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = a rigid dome with no leg division at all,
+       reaching x104 and x296, and HEM TREATMENT = a stiffened sweep along the ground at y566
+       over four horizontal hoop channel seams. High rise, band top edge y298 running 20 deep
+       to y318.
+       Clearance, re derived for the elder body and not copied from adult/female: the widest
+       point of the body at skirt level is the hip block, x150 to x250. The dome reaches x104
+       and x296, so clearance is 46 units per side (150 minus 104 = 46; 296 minus 250 = 46),
+       comfortably past the 40 unit floor.
+       Hem quadratic check: from (262,564) with control (200,568) to (138,564) the curve peaks
+       at 0.25 times 564 plus 0.5 times 568 plus 0.25 times 564, which is y566. Legal, nothing
+       renders below y570.
+       Formalwear palette: house deep plum. Deliberately not a named animated princess pairing,
+       so no pale blue, no yellow and no pink with a gold band.
+       Surface tools: trim (a high waistband on its own gradient, and the stiffened hem sweep)
+       and structural (four hoop channel seams plus two vertical panel seams over the dome). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7D4A72)"/>
+      <stop offset="0.55" stop-color="var(--c1, #7D4A72)"/>
+      <stop offset="1" stop-color="var(--c2, #5E3556)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-hoop-skirt__waist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5E3556)"/>
+      <stop offset="1" stop-color="var(--c1, #7D4A72)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one rigid dome standing clear of the leg on every side, plus the high waist
+       block it is hung from -->
+  <g class="sp-shadow">
+    <path d="M150 296 H250 C276 350 296 462 296 522 Q296 554 262 564 Q200 568 138 564
+             Q104 554 104 522 C104 462 124 350 150 296 Z"
+          fill="url(#elder-female-bottom-hoop-skirt__dome)"/>
+    <path d="M156 298 Q150 298 150 304 L148 330 H252 L250 304 Q250 298 244 298 Z"
+          fill="url(#elder-female-bottom-hoop-skirt__waist)"/>
+  </g>
+
+  <!-- stiffened hem sweep along the ground -->
+  <path d="M105 526 Q105 554 138 564 Q200 568 262 564 Q295 554 295 526 Q293 548 262 554
+           Q200 559 138 554 Q107 548 105 526 Z" fill="var(--c2, #5E3556)"/>
+
+  <!-- four horizontal hoop channel seams, each spanning the full width of the dome at its
+       own height. Dome edge sampled at y348 x136, y406 x119, y466 x110, y516 x105. -->
+  <path d="M140 348 Q200 358 260 348" stroke="var(--c2, #5E3556)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M123 406 Q200 418 277 406" stroke="var(--c2, #5E3556)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 466 Q200 480 286 466" stroke="var(--c2, #5E3556)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M110 516 Q200 532 290 516" stroke="var(--c2, #5E3556)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M142 341 Q200 351 258 341" stroke="var(--c3, #EFDCEA)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M126 399 Q200 411 274 399" stroke="var(--c3, #EFDCEA)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M117 459 Q200 473 283 459" stroke="var(--c3, #EFDCEA)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M113 509 Q200 525 287 509" stroke="var(--c3, #EFDCEA)" stroke-opacity="0.5"
+        stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- high waistband trim -->
+  <path d="M156 298 Q150 298 150 304 L149 318 H251 L250 304 Q250 298 244 298 Z"
+        fill="var(--c2, #5E3556)"/>
+  <path d="M151 311 H249" stroke="var(--c3, #EFDCEA)" stroke-opacity="0.75" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- vertical panel seams over the dome -->
+  <path d="M172 334 L130 552" stroke="var(--c2, #5E3556)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 334 L270 552" stroke="var(--c2, #5E3556)" stroke-opacity="0.35" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the light down the front of the dome -->
+  <path d="M164 316 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 340 L162 528" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

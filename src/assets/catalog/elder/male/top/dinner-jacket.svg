@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- FORMALWEAR. Lives in top, never in costume, because the shoes are part of the look.
+       Silhouette axes:
+       CLOSURE = one unbroken ROUNDED SHAWL ROLL running from the neck to a single closed
+       button at the natural waist y302. No notch, no peak, no step, no second button.
+       SHOULDER = built up square, the shoulder line carried straight out to x132 and x268
+       above the drawn elder shoulder at y184.
+       Secondary: hem just past the hip at y368, volume straight, no vent.
+       Separation from blazer in this same bundle: blazer is an OPEN front split into two
+       panels with NOTCHED lapels and a soft unbuilt shoulder, so the two differ on both
+       named axes, not just one.
+       Identifying feature size: the shawl roll runs y178 at the neck to y306 at the button,
+       so 306 minus 178 = 128 units of continuous roll, far over the 40 unit floor at 64px.
+       The roll is drawn 20 units wide at its broadest so it holds value at tray size.
+       Refit off the drawn elder body (NOT copied from adult/male):
+       shoulder top y178, which is 184 minus 6, inside the y180 to y182 band with 2 of lift;
+       body block x132 to x268 against the torso x136 to x264, so 4 of overlap each side;
+       waist y302; hem y368, which is 368 minus 336 = 32 below the torso bottom and inside
+       the past hip band y362 to y370;
+       sleeve columns x110 to x144 and x256 to x290 against arms x114 to x140 and x260 to
+       x286, so 4 of overlap on each edge; cuff ends y366 at the wrist.
+       Elder character: the sleeve head is a soft rounded cap of radius 17 rather than a
+       squared cap, and the armhole seam is drawn inboard at x150 and x250 rather than out
+       on the shoulder point, so the sleeve sits further in on a narrower dropped shoulder. -->
+  <defs>
+    <linearGradient id="elder-male-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2A3145)"/>
+      <stop offset="1" stop-color="var(--c2, #171C29)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #303851)"/>
+      <stop offset="1" stop-color="var(--c2, #141926)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-dinner-jacket__shawl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #5E688A)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3143)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two straight sleeves with softened caps, one closed square shouldered body -->
+  <g class="sp-shadow">
+    <rect x="110" y="196" width="34" height="172" rx="17"
+          fill="url(#elder-male-top-dinner-jacket__sleeve)"/>
+    <rect x="256" y="196" width="34" height="172" rx="17"
+          fill="url(#elder-male-top-dinner-jacket__sleeve)"/>
+    <path d="M132 196 Q132 178 150 178 H250 Q268 178 268 196 V352 Q268 368 252 368 H148 Q132 368 132 352 Z"
+          fill="url(#elder-male-top-dinner-jacket__body)"/>
+  </g>
+
+  <!-- the shawl collar: one continuous rounded band, neck to button, never broken -->
+  <path d="M200 178 Q170 178 161 208 Q153 246 163 286 Q173 300 200 306 Q227 300 237 286 Q247 246 239 208 Q230 178 200 178 Z"
+        fill="url(#elder-male-top-dinner-jacket__shawl)"/>
+  <path d="M200 200 Q186 200 181 222 Q175 252 184 282 Q191 293 200 297 Q209 293 216 282 Q225 252 219 222 Q214 200 200 200 Z"
+        fill="url(#elder-male-top-dinner-jacket__body)"/>
+  <path d="M200 182 Q174 182 166 210 Q159 246 168 282" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M200 182 Q226 182 234 210 Q241 246 232 282" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- a small throat opening so the collar reads as cloth rolling off the neck -->
+  <path d="M190 182 Q200 194 210 182 Q200 201 190 182 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- the single closed button at the natural waist, where the roll ends -->
+  <circle cx="200" cy="302" r="6.5" fill="var(--c3, #5E688A)"/>
+  <circle cx="200" cy="302" r="2.5" fill="var(--c2, #171C29)"/>
+
+  <!-- closed centre front below the button, and no vent at the hem -->
+  <path d="M200 311 V360" stroke="var(--c2, #171C29)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: jetted hip pockets bound in the same satin as the shawl -->
+  <rect x="142" y="318" width="42" height="10" rx="5" fill="var(--c3, #5E688A)"/>
+  <rect x="216" y="318" width="42" height="10" rx="5" fill="var(--c3, #5E688A)"/>
+
+  <!-- structural: built up square shoulder line and straight side seams -->
+  <path d="M140 184 H166" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 184 H234" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M133 214 V352" stroke="var(--c2, #171C29)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 214 V352" stroke="var(--c2, #171C29)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- armhole seams set inboard for the elder shoulder -->
+  <path d="M150 208 Q146 192 152 182" stroke="var(--c2, #171C29)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M250 208 Q254 192 248 182" stroke="var(--c2, #171C29)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: cuff buttons -->
+  <g fill="var(--c3, #5E688A)">
+    <circle cx="127" cy="342" r="3.5"/>
+    <circle cx="127" cy="354" r="3.5"/>
+    <circle cx="273" cy="342" r="3.5"/>
+    <circle cx="273" cy="354" r="3.5"/>
+  </g>
+
+  <!-- upper surface highlights, kept clear of the shawl roll -->
+  <path d="M139 200 q14 -14 34 -18" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 200 q-14 -14 -34 -18" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M120 216 V252" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M280 216 V252" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

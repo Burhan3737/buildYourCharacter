@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: RISE = low, the band top edge sitting at y332 on the
+       hip line, lower than every other trouser in this slot, and LEG WIDTH = close through
+       thigh and knee at x162 to x200 and x200 to x238, then a hard change of direction at the
+       knee out to a floor brushing hem at x126 and x274. Full length to y552, plain raw hem
+       breaking over the shoe. No foot is drawn here; shoes draw over this hem.
+       Refit arithmetic for the elder body, re derived and not copied from adult/female: the
+       elder leg rect runs y374 to y544, so the knee break sits at y459 (adult y446 on a 212
+       long leg) and the break is 93 units above the hem at y552. The hem clears the elder leg
+       rect, whose outer edges are x168 and x232, by 42 units a side (168 minus 126 = 42;
+       274 minus 232 = 42), comfortably past the 40 unit practical floor.
+       Surface tools: panel blocking (contrast kick panels below the knee break, on their own
+       gradient) and trim (an elastic low band) plus structural (outer seams and the knee
+       break seam). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-flares__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="0.55" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F72)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-flares__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F72)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-flares__kick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FFEFE7)"/>
+      <stop offset="1" stop-color="var(--c2, #D07F72)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two legs running close to the knee at y459 and then breaking sharply
+       outward to a wide hem, and the low hip block laid over their tops -->
+  <g class="sp-shadow">
+    <path d="M162 374 H200 V459 L188 552 H126 L162 459 Z"
+          fill="url(#elder-female-bottom-flares__cloth)"/>
+    <path d="M238 374 H200 V459 L212 552 H274 L238 459 Z"
+          fill="url(#elder-female-bottom-flares__cloth)"/>
+    <path d="M154 332 Q148 332 148 340 L148 364 Q148 382 168 382 H232 Q252 382 252 364
+             L252 340 Q252 332 246 332 Z"
+          fill="url(#elder-female-bottom-flares__hip)"/>
+  </g>
+
+  <!-- colour blocked kick panels below the knee break -->
+  <path d="M163 462 L131 548 H186 L197 462 Z" fill="url(#elder-female-bottom-flares__kick)"/>
+  <path d="M237 462 L269 548 H214 L203 462 Z" fill="url(#elder-female-bottom-flares__kick)"/>
+
+  <!-- low elastic waistband, the elder preference over a fly -->
+  <path d="M154 332 Q148 332 148 340 L148 352 H252 L252 340 Q252 332 246 332 Z"
+        fill="var(--c2, #D07F72)"/>
+  <path d="M150 346 H250" stroke="var(--c3, #FFEFE7)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 335 v14 M182 335 v14 M200 335 v14 M218 335 v14 M236 335 v14"
+        stroke="var(--c2, #D07F72)" stroke-opacity="0.5" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the knee break, called out with a contrast seam across each leg -->
+  <path d="M164 460 H197" stroke="var(--c2, #D07F72)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 460 H236" stroke="var(--c2, #D07F72)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- outer seams following the close thigh and then the flare -->
+  <path d="M165 388 L164 452" stroke="var(--c2, #D07F72)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M235 388 L236 452" stroke="var(--c2, #D07F72)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 466 L134 542" stroke="var(--c2, #D07F72)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 466 L266 542" stroke="var(--c2, #D07F72)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- inseam so the two legs read apart -->
+  <path d="M200 384 V456" stroke="var(--c2, #D07F72)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- plain raw hem, self fabric fold across each wide leg -->
+  <path d="M132 546 H184" stroke="var(--c2, #D07F72)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 546 H268" stroke="var(--c2, #D07F72)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the fall of the flare -->
+  <path d="M162 362 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M180 392 V448" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M174 470 L158 540" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 470 L242 540" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the half cape and the wrap body both topped at
+       y150 and the single sleeve at y164. The cape shoulder is rebuilt at y182 and the wrap
+       body at y184, and the cape's length runs downward so its straight hem still lands at
+       the calf.
+
+       silhouette axes: shoulder=one long sleeve and one entirely bare arm, and closure=an
+       asymmetric wrap front crossing right over left to a low fastening at one hip.
+       Trademark: the asymmetry carries the whole family. There is NO scalloped and NO bat
+       winged cape hem, NO pointed ear shape anywhere, and NO chest emblem. The half cape hem
+       is cut dead straight. The bare arm is the character's own skin drawn by the body. -->
+  <defs>
+    <linearGradient id="elder-male-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241A15)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #241A15)"/>
+      <stop offset="1" stop-color="var(--c1, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-shadow-agent__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #241A15)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow half cape from the single covered shoulder, hem cut STRAIGHT at the calf -->
+  <g class="sp-shadow">
+    <path d="M150 182 H184 L174 344 L160 512 H110 Q102 512 104 502 L130 328 Z"
+          fill="url(#elder-male-costume-shadow-agent__cape)"/>
+  </g>
+
+  <!-- asymmetric wrap body: one sleeve on the left, right arm bare -->
+  <g class="sp-shadow">
+    <path d="M162 184 H240 Q252 190 254 208 L250 268 Q262 300 250 334 Q242 352 216 354
+             L166 348 Q150 338 150 314 L148 222 Q148 192 162 184 Z"
+          fill="url(#elder-male-costume-shadow-agent__suit)"/>
+    <path d="M110 196 H144 Q148 210 146 234 L144 346 Q144 358 128 358 Q112 358 110 346
+             L108 234 Q106 210 110 196 Z" fill="url(#elder-male-costume-shadow-agent__suit)"/>
+    <path d="M152 350 H248 Q252 366 250 382 H150 Q146 366 152 350 Z"
+          fill="url(#elder-male-costume-shadow-agent__suit)"/>
+    <path d="M158 378 H198 Q200 462 196 546 Q196 554 188 554 H166 Q158 554 158 546
+             Q156 462 158 378 Z" fill="url(#elder-male-costume-shadow-agent__leg)"/>
+    <path d="M242 378 H202 Q200 462 204 546 Q204 554 212 554 H234 Q242 554 242 546
+             Q244 462 242 378 Z" fill="url(#elder-male-costume-shadow-agent__leg)"/>
+  </g>
+
+  <!-- the wrap edge, right over left, running down to a low fastening at one hip -->
+  <path d="M174 186 Q206 250 246 342" stroke="var(--c3, #6BBFAD)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 338 h14 q6 8 2 16 h-16 q-6 -8 0 -16 Z" fill="var(--c3, #6BBFAD)"/>
+
+  <!-- wide wrist wrap on the bare right arm -->
+  <path d="M258 322 H292 Q296 338 292 356 H258 Q254 338 258 322 Z" fill="var(--c3, #6BBFAD)"/>
+  <path d="M260 332 H290" stroke="var(--c2, #241A15)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- cuff on the single sleeve, and integral soft boots -->
+  <path d="M110 340 H146 V358 H110 Z" fill="var(--c3, #6BBFAD)" opacity="0.85"/>
+  <path d="M156 546 H200 Q204 556 202 568 H158 Q152 556 156 546 Z" fill="var(--c2, #241A15)"/>
+  <path d="M200 546 H244 Q248 556 246 568 H202 Q196 556 200 546 Z" fill="var(--c2, #241A15)"/>
+
+  <!-- cape hem, cut straight, and the house highlight -->
+  <path d="M110 508 H158" stroke="var(--c3, #6BBFAD)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+  <path d="M170 210 q36 12 70 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

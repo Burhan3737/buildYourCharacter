@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: pelt jerkin top y150, under tunic y152, sleeve
+       heads y166. Rebuilt at the ceiling rather than squashed, and the pelt's depth runs
+       downward instead: the lobed hem now falls to y 434.
+
+       There is NO bear's head in this file. The berserker is not the head, it is the shaggy
+       lobed hem of the pelt jerkin. No horned and no winged helmet is ever permitted on this
+       project, in costume or in headwear.
+       silhouette axes: shoulder=a sleeveless pelt jerkin worn open over a sleeved under tunic,
+       and hem=deeply lobed at mid thigh over cross bound legs.
+       Against satyr: satyr is bare above the waist and shaggy to the ankle. Against frost giant:
+       these lobes are SOFT and rounded where frost giant's are hard angular spikes.
+       The lobes are built INTO the silhouette path, never drawn inside a smooth edge. -->
+  <defs>
+    <linearGradient id="elder-male-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #55402E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A8B0A0)"/>
+      <stop offset="1" stop-color="var(--c2, #55402E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-berserker__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402E)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6B4F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- long sleeved under tunic and close trousers -->
+  <g class="sp-shadow">
+    <path d="M152 184 H248 Q258 208 256 236 L254 328 Q252 344 238 344 H162 Q148 344 146 328
+             L144 236 Q142 208 152 184 Z" fill="url(#elder-male-costume-berserker__tunic)"/>
+    <path d="M110 196 H146 Q150 216 148 242 L146 350 Q146 364 128 364 Q110 364 108 350
+             L106 242 Q104 216 110 196 Z" fill="url(#elder-male-costume-berserker__tunic)"/>
+    <path d="M290 196 H254 Q250 216 252 242 L254 350 Q254 364 272 364 Q290 364 292 350
+             L294 242 Q296 216 290 196 Z" fill="url(#elder-male-costume-berserker__tunic)"/>
+    <path d="M152 340 H198 Q200 444 196 540 Q196 548 188 548 H164 Q156 548 156 540
+             Q152 444 152 340 Z" fill="url(#elder-male-costume-berserker__trouser)"/>
+    <path d="M248 340 H202 Q200 444 204 540 Q204 548 212 548 H236 Q244 548 244 540
+             Q248 444 248 340 Z" fill="url(#elder-male-costume-berserker__trouser)"/>
+  </g>
+
+  <!-- sleeveless shaggy pelt jerkin, open down the front, hem in soft unequal lobes -->
+  <g class="sp-shadow">
+    <path d="M132 182 H188 L184 254 L190 340 L192 434 Q182 450 172 436 Q160 454 150 438
+             Q140 452 132 436 Q124 448 126 428 Q120 340 124 270 Q124 216 132 182 Z"
+          fill="url(#elder-male-costume-berserker__pelt)"/>
+    <path d="M268 182 H212 L216 254 L210 340 L208 434 Q218 450 228 436 Q240 454 250 438
+             Q260 452 268 436 Q276 448 274 428 Q280 340 276 270 Q276 216 268 182 Z"
+          fill="url(#elder-male-costume-berserker__pelt)"/>
+  </g>
+
+  <!-- wide leather belt with a pouch and a sheathed knife hanging from it -->
+  <path d="M138 312 H262 Q266 324 264 338 H136 Q134 324 138 312 Z" fill="var(--c2, #55402E)"/>
+  <path d="M188 308 H212 Q216 324 214 342 H186 Q182 324 188 308 Z" fill="var(--c3, #A8B0A0)"/>
+  <path d="M234 338 H258 Q262 358 258 376 H234 Q230 358 234 338 Z" fill="var(--c2, #55402E)"/>
+  <path d="M146 336 h14 q4 26 -2 46 h-10 q-6 -22 -2 -46 Z" fill="var(--c2, #55402E)"/>
+
+  <!-- cross bound leg wraps from knee to ankle -->
+  <g stroke="var(--c3, #A8B0A0)" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M154 464 L198 480"/><path d="M154 482 L198 498"/>
+    <path d="M154 500 L198 516"/><path d="M154 518 L198 534"/>
+    <path d="M246 464 L202 480"/><path d="M246 482 L202 498"/>
+    <path d="M246 500 L202 516"/><path d="M246 518 L202 534"/>
+  </g>
+
+  <!-- shag value, the outline already carries the identity -->
+  <g stroke="var(--c2, #55402E)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M140 214 Q134 292 138 396"/>
+    <path d="M168 210 Q164 292 170 404"/>
+    <path d="M260 214 Q266 292 262 396"/>
+    <path d="M232 210 Q236 292 230 404"/>
+  </g>
+
+  <!-- integral shoes -->
+  <path d="M154 540 H200 Q204 554 202 568 H156 Q150 554 154 540 Z" fill="var(--c2, #55402E)"/>
+  <path d="M200 540 H246 Q250 554 248 568 H202 Q196 554 200 540 Z" fill="var(--c2, #55402E)"/>
+
+  <!-- house highlight -->
+  <path d="M172 208 q28 12 56 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

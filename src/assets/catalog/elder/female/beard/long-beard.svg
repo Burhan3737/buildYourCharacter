@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Beard" data-family="long-beard" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs full-beard: LENGTH (to mid chest, the hem reaching y250, against a
+       beard ending at the throat at y211) and UPPER LIP (untrimmed and overhanging the lip,
+       the moustache mass running down to y166 across the drawn upper lip band, against a
+       moustache cut clear at y153).
+       Cheek line: natural, 55 percent of the 27.3px jaw to ear span, so y141 on this bundle,
+       matching full-beard so the two read as the same growth at two lengths, and matching the
+       adult/female reference's 55 percent so the family reads the same at both stages.
+       The mass follows the jaw down to 84px across at y186, then WIDENS as it falls to 102px
+       across at y230, before rounding into a broad hem.
+       The hem is irregular in the outline itself, not squiggles drawn inside a smooth edge.
+       FLOOR, computed for this bundle: the drawn torso is x144..256, y180..336, so mid torso is
+       y180 + 78 = y258. The spec json would give y260; the drawn body is the truth and the
+       lower figure is used. Nothing here falls below y250, so there is 8px of clearance.
+       Anchoring note: the moustache overhang is set from this bundle's drawn mouth art
+       (elder/female/mouth), whose lower lip averages y174.6, sitting 38px below the adult
+       mouth while the skull sits 34px below the adult skull.
+       hair1 lights the cheeks and the crown of the fall; hair2 draws the philtrum groove, the
+       hanging strand channels and the shaded underside of the hem. -->
+  <defs>
+    <linearGradient id="elder-female-beard-long-beard__fall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a full beard falling to mid chest, widening as it goes, with a small lower lip window -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M141 129
+             C141 150, 147 172, 158 186
+             C152 200, 148 216, 149 230
+             C150 242, 160 245, 176 248
+             C189 250, 211 250, 224 248
+             C240 245, 250 242, 251 230
+             C252 216, 248 200, 242 186
+             C253 172, 259 150, 259 129
+             C252 135, 244 141, 235 141
+             C223 142, 212 138, 200 136
+             C188 138, 177 142, 165 141
+             C156 141, 148 135, 141 129 Z
+             M182 166 C190 163, 210 163, 218 166
+             C221 171, 217 177, 208 178
+             C202 179, 198 179, 192 178
+             C183 177, 179 171, 182 166 Z"
+          fill="url(#elder-female-beard-long-beard__fall)"/>
+  </g>
+
+  <!-- hair2: the philtrum groove, running down into the overhanging moustache -->
+  <path d="M197.4 138 C199.4 145, 199.4 156, 198.4 165 L201.6 165
+           C200.6 156, 200.6 145, 202.6 138 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the overhanging lower edge of the moustache, drooping across the drawn lip -->
+  <path d="M174 153 C184 159, 193 162, 200 162 C207 162, 216 159, 226 153
+           C224 162, 213 168, 200 168 C187 168, 176 162, 174 153 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: hanging strand channels through the fall, five of them, unequal -->
+  <path d="M164 184 C158 202, 157 224, 163 242" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M182 182 C179 202, 179 226, 183 246" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M200 184 C200 204, 200 228, 200 248" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M218 182 C221 202, 221 226, 217 246" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M236 184 C242 202, 243 224, 237 242" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.72" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- hair2: the shaded underside of the broad rounded hem -->
+  <path d="M150 232 C151 241, 160 246, 176 249 C189 251, 211 251, 224 249
+           C240 246, 249 241, 250 232 C250 243, 240 248, 225 251
+           C211 253, 189 253, 175 251 C160 248, 150 243, 150 232 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the natural cheek line at y141, the same fraction as full-beard -->
+  <path d="M148 137 C158 143, 172 145, 186 142 C172 147, 156 145, 147 139 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.7"/>
+  <path d="M252 137 C242 143, 228 145, 214 142 C228 147, 244 145, 253 139 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.7"/>
+
+  <path d="M148 140 C154 158, 152 184, 147 208" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M252 140 C246 158, 248 184, 253 208" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

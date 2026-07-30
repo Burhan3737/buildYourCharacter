@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Satyr" data-family="satyr" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the animal skin over the shoulder started at y150
+       and its knot topped at y149. The skin's shoulder edge is rebuilt at y182 and the knot
+       now sits at y184 to y212, on the shoulder rather than over it.
+
+       CORRECTNESS NOTE, so the next agent does not "correct" this back toward the source.
+       HORSE tail and horse ears, not goat. Goat legs and goat horns are the Roman faun, not the
+       Greek satyr. The ears are not in this file at all, because the costume layer draws above
+       the face and nothing may sit above the ceiling; the horse tail is here and it is a horse
+       tail. And this is a CHILDREN'S DRESS UP satyr: pelt from the waist down, an animal skin
+       over one shoulder, nothing else. Classical satyrs are nude with exaggerated genitalia;
+       we are not drawing that and never will.
+
+       silhouette axes: hem=shag all the way to the ankle in a bumpy uneven outline, and
+       shoulder=one knotted skin over an otherwise bare chest.
+       Against berserker: berserker is a thigh length jerkin over trousers with a sleeved under
+       tunic. This is bare above the waist and shaggy to the ankle. Two axes.
+       The shag lobes are built INTO the silhouette path, never drawn as squiggles inside a
+       smooth leg. The bare chest is the character's own skin, drawn by the body underneath. -->
+  <defs>
+    <linearGradient id="elder-male-costume-satyr__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A98356)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5335)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-satyr__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9A277)"/>
+      <stop offset="1" stop-color="var(--c2, #6E5335)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-satyr__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6E5335)"/>
+      <stop offset="1" stop-color="var(--c1, #A98356)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the long HORSE tail, falling behind from the small of the back -->
+  <g class="sp-shadow">
+    <path d="M254 336 Q276 350 288 390 Q300 438 302 490 Q294 498 284 492
+             Q280 440 268 404 Q258 368 246 352 Z" fill="url(#elder-male-costume-satyr__tail)"/>
+  </g>
+
+  <!-- the pelt: a deeply lobed waist edge, then both legs to the ankle in a bumpy contour -->
+  <g class="sp-shadow">
+    <path d="M136 326 Q150 340 164 324 Q178 342 192 326 Q204 344 216 326 Q230 342 244 324
+             Q256 340 266 328 Q274 376 268 420 Q278 456 266 490 Q276 524 262 548
+             Q238 558 212 550 Q208 480 206 420 Q200 412 192 420 Q190 480 186 550
+             Q160 558 134 548 Q122 524 130 490 Q118 456 128 420 Q122 376 136 326 Z"
+          fill="url(#elder-male-costume-satyr__pelt)"/>
+  </g>
+
+  <!-- animal skin knotted over one shoulder, hanging to the opposite hip -->
+  <g class="sp-shadow">
+    <path d="M146 182 H180 Q202 240 246 320 Q250 338 234 344 Q216 346 210 330
+             Q178 254 144 208 Z" fill="url(#elder-male-costume-satyr__skin)"/>
+  </g>
+
+  <!-- the knot at the shoulder -->
+  <path d="M148 184 Q170 182 180 194 Q170 210 152 208 Q140 196 148 184 Z"
+        fill="var(--c2, #6E5335)"/>
+
+  <!-- shag texture: value only, the OUTLINE is already lobed and does the identifying -->
+  <g stroke="var(--c2, #6E5335)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M148 356 Q142 404 146 452"/>
+    <path d="M170 362 Q166 412 170 468"/>
+    <path d="M232 362 Q236 412 232 468"/>
+    <path d="M254 356 Q260 404 256 452"/>
+    <path d="M152 492 Q148 524 152 542"/>
+    <path d="M248 492 Q252 524 248 542"/>
+  </g>
+  <path d="M154 238 Q184 286 216 326" stroke="var(--c2, #6E5335)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- small hooves reading as integral footwear -->
+  <path d="M150 546 H198 Q202 558 200 568 H152 Q146 558 150 546 Z" fill="var(--c2, #6E5335)"/>
+  <path d="M202 546 H250 Q254 558 252 568 H204 Q198 558 202 546 Z" fill="var(--c2, #6E5335)"/>
+
+  <!-- house highlight -->
+  <path d="M162 348 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

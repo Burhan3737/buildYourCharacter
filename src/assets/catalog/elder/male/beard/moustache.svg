@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Moustache" data-family="moustache"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156),
+       ear anchors (149,129). Mouth measured off elder/male/mouth: resting neutral
+       x181 to 219 y148 to 157, mouth corners at x181 and x219; widest drawn mouth
+       x165 to 235. Skull is 34 units below adult/male, drawn mouths only 30, so this
+       bar is anchored to the measured lip, not translated.
+       Beard floor torso.y 184 + 76 = y260; this file stops at y149.
+
+       Axes chosen: UPPER LIP = trimmed bar. One clipped block on the lip, 60 units wide
+       and 22 tall, ends at x170 and x230, which is 11 units OUTSIDE each mouth corner
+       and far wider than any nose. CHIN AND JAW = bare, and there is no cheek line at all.
+       The 60 by 22 proportion is deliberate: the banned toothbrush shape is narrow and
+       tall, this is nearly three times wider than it is deep.
+       Against handlebar the separator is the ends (squared and dropped here, hooked and
+       raised there); against walrus it is depth (22 units against 46). -->
+  <defs>
+    <linearGradient id="elder-male-beard-moustache__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.6" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the bar: flat combed top, three shallow lobes along the trimmed underside,
+       ends squared and dropped a little toward the mouth corners -->
+  <g class="sp-shadow">
+    <path d="M170 134 Q170 128 178 127 L192 129 Q200 130 208 129 L222 127
+             Q230 128 230 134 L229 142 Q227 149 219 149 Q212 148 206 145
+             Q200 143 194 145 Q188 148 181 149 Q173 149 171 142 Z"
+          fill="url(#elder-male-beard-moustache__grad)"/>
+  </g>
+
+  <!-- philtrum notch, cut down through the bar in hair2 -->
+  <path d="M196 128 C198 132 202 132 204 128 C206 134 204 143 200 143
+           C196 143 194 134 196 128 Z"
+        fill="var(--hair2, #8A8E97)"/>
+
+  <!-- the trimmed underside restated, and the comb direction at each squared end -->
+  <path d="M176 145 C185 149 215 149 224 145" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M178 132 C174 136 173 141 174 146" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M222 132 C226 136 227 141 226 146" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M188 134 C186 139 186 143 188 147" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M212 134 C214 139 214 143 212 147" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- lit top edge -->
+  <path d="M178 131 C190 128 210 128 222 131" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

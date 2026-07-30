@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: SHOULDER = puff (a balloon of cloth hung high on each arm, collapsing
+       on a hard gather line into a tight cuff), VOLUME = narrow fitted body read against it.
+       Also hem = hip, closure = closed bound round neck.
+       Against smock top it differs on shoulder (balloon against cap) and volume (narrow
+       fitted against gathered and swinging wide); against oversized long sleeve on shoulder
+       and volume; against tee on shoulder and closure.
+       Refit arithmetic against the drawn elder body, no adult value reused:
+       the left balloon runs from x81 at its widest to x150 where it meets the shoulder, 69u
+       of cloth against a 26u arm column (arms x114 to x140 and x260 to x286). That is 43u
+       wider than the arm column and puts the outer edge 33u outboard of the arm at x114.
+       The right balloon mirrors it, x250 to x319. The puff is the family, so it is drawn at
+       full size and nothing is trimmed off it for this stage.
+       balloon top y188, widest about y230, hard gather line y260, cuff y266 to y288. The
+       cuff sits 39 percent down the arm run y198 to y374, so the puff stays high on the arm.
+       body x133 to x267 through the chest and waist, which is only 2u of ease past the drawn
+       torso at x136 to x264, then in to a hip hem at y350. Nothing about the body flares, so
+       every bit of width in the silhouette comes from the balloons.
+       Elder note: the sleeve head is set inboard at x150 and the shoulder gather softens into
+       a rounded cap rather than a hard pleated ring, but the balloon keeps its full width. -->
+  <defs>
+    <linearGradient id="elder-male-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #D2BCA6)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #C6AA90)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-puff-sleeve-blouse__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C6907F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one narrow fitted body and two large gathered sleeve balloons -->
+  <g class="sp-shadow">
+    <path d="M133 214 Q132 180 168 178 H232 Q268 180 267 214 V306 Q266 336 258 344 Q254 350 244 350 H156 Q146 350 142 344 Q134 336 133 306 Z"
+          fill="url(#elder-male-top-puff-sleeve-blouse__body)"/>
+    <path d="M144 188 Q96 182 82 226 Q76 258 106 272 H142 Q150 262 150 232 V200 Q150 190 144 188 Z"
+          fill="url(#elder-male-top-puff-sleeve-blouse__puff)"/>
+    <path d="M256 188 Q304 182 318 226 Q324 258 294 272 H258 Q250 262 250 232 V200 Q250 190 256 188 Z"
+          fill="url(#elder-male-top-puff-sleeve-blouse__puff)"/>
+  </g>
+
+  <!-- surface tool one: structural. Gathers radiating from the softened shoulder head out
+       into the balloon -->
+  <g stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M143 196 Q108 206 94 240"/>
+    <path d="M145 218 Q118 228 106 254"/>
+    <path d="M257 196 Q292 206 306 240"/>
+    <path d="M255 218 Q282 228 294 254"/>
+  </g>
+  <!-- the hard gather line, where the balloon is pulled down into the cuff -->
+  <path d="M92 256 Q118 272 146 260" stroke="var(--c2, #C6AA90)" stroke-opacity="0.75"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M308 256 Q282 272 254 260" stroke="var(--c2, #C6AA90)" stroke-opacity="0.75"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g stroke="var(--c2, #D2BCA6)" stroke-opacity="0.45" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M98 258 Q106 264 112 268"/>
+    <path d="M124 262 Q124 266 124 268"/>
+    <path d="M302 258 Q294 264 288 268"/>
+    <path d="M276 262 Q276 266 276 268"/>
+  </g>
+
+  <!-- surface tool two: trim. The tight cuff bands the balloons collapse into -->
+  <rect x="108" y="266" width="36" height="22" rx="10" fill="url(#elder-male-top-puff-sleeve-blouse__cuff)"/>
+  <rect x="256" y="266" width="36" height="22" rx="10" fill="url(#elder-male-top-puff-sleeve-blouse__cuff)"/>
+
+  <!-- bound round neck -->
+  <path d="M178 176 Q200 200 222 176 Q220 192 200 196 Q180 192 178 176 Z" fill="var(--c3, #F4A79B)"/>
+  <path d="M186 178 Q200 192 214 178 Z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- surface tool three: panel blocking. A narrow front panel keeps the body reading slim -->
+  <path d="M187 194 H213 L211 344 H189 Z" fill="var(--c2, #D2BCA6)" fill-opacity="0.45"/>
+  <path d="M187 194 H213" stroke="var(--c3, #F4A79B)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- narrow waist seams, straight down with no flare -->
+  <path d="M158 282 Q160 316 162 340" stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M242 282 Q240 316 238 340" stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M156 344 H244" stroke="var(--c2, #D2BCA6)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight -->
+  <path d="M160 212 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M98 210 q-12 16 -8 34" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M302 210 q12 16 8 34" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

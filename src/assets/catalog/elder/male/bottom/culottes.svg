@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg width = EXTREMELY WIDE AND FLAT, two panels 78 units across each at the hem
+       (x118 to x196 and x204 to x282, 164 units of cloth over a 104 unit hip), so the shape
+       reads as a skirt until the centre split shows + rise = HIGH, the waistband top at y306,
+       which is 22 units above the drawn hip top at y328 and sits on the natural waist at y302.
+       Leg length is KNEE: the hem is flat at y464, the derived knee of this body.
+       Against pleated, which is a true skirt with no leg division at all, the separator is the
+       real 8 unit centre split running 46 units up from the hem, plus leg width.
+       Against wide leg, which is full length to y552 and hangs as two narrow columns, it is
+       leg length and leg width.
+       The split runs y418 to y464, so it is 46 units long and stays over the 40 unit floor for
+       a feature that identifies a family.
+       Elder note: a soft side gathered waistband instead of a zip, and the hem is held at the
+       knee rather than cropped shorter. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-culottes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9FB58B)"/>
+      <stop offset="1" stop-color="var(--c2, #6F8C67)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F3EAD8)"/>
+      <stop offset="1" stop-color="var(--c2, #6F8C67)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one major form: a high waisted flat culotte, its two panels nearly meeting at the centre,
+       with a real vertical split notched up from the knee length hem -->
+  <g class="sp-shadow">
+    <path d="M146 306 H254 Q266 344 274 400 Q281 436 282 464 H204 V418 H196 V464 H118
+             Q119 436 126 400 Q134 344 146 306 Z"
+          fill="url(#elder-male-bottom-culottes__cloth)"/>
+  </g>
+
+  <!-- trim: deep high rise waistband -->
+  <rect x="144" y="304" width="112" height="24" rx="12" fill="url(#elder-male-bottom-culottes__band)"/>
+  <!-- structural: side gathers at the elasticated ends of the band -->
+  <g stroke="var(--c2, #6F8C67)" stroke-opacity="0.55" stroke-width="2.4" fill="none"
+     stroke-linecap="round">
+    <path d="M150 310 V322"/>
+    <path d="M158 310 V322"/>
+    <path d="M166 310 V322"/>
+    <path d="M234 310 V322"/>
+    <path d="M242 310 V322"/>
+    <path d="M250 310 V322"/>
+  </g>
+
+  <!-- structural: knife pleats falling from the band and fanning into the flat panels -->
+  <g stroke="var(--c2, #6F8C67)" stroke-opacity="0.55" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M160 332 L134 458"/>
+    <path d="M174 330 L156 460"/>
+    <path d="M187 330 L179 460"/>
+    <path d="M240 332 L266 458"/>
+    <path d="M226 330 L244 460"/>
+    <path d="M213 330 L221 460"/>
+  </g>
+
+  <!-- trim: the split edges bound in the accent so the gap still reads at tray size -->
+  <path d="M196 420 V462" stroke="var(--c3, #F3EAD8)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M204 420 V462" stroke="var(--c3, #F3EAD8)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M200 418 V444" stroke="var(--c2, #6F8C67)" stroke-width="6" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <!-- trim: bound flat hem across both wide panels -->
+  <path d="M122 462 H194" stroke="var(--c3, #F3EAD8)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M206 462 H278" stroke="var(--c3, #F3EAD8)" stroke-width="5" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+
+  <path d="M156 342 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

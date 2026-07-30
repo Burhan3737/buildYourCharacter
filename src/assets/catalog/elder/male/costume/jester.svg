@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jester" data-family="jester" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the boxy doublet and its low neck band both topped
+       at y150. Rebuilt at y184 for the doublet and y182 for the neck band, and the doublet's
+       body extended downward so the hip hem now sits at y336 and the tab points get their
+       full depth below it.
+
+       Axes: hem (five deep pointed bell tabs cut into the doublet hem) and volume (a boxy
+       square doublet sitting over close hose, not a fitted bodysuit).
+       SIZE, recomputed from this file's own geometry: each hem tab runs y336 to y378, so it is
+       42 units deep against the 30 unit floor for this feature.
+       Palette note: house periwinkle, butter and mint. Deliberately clear of the clown villain
+       register, which is green hair plus purple tailcoat plus orange or green waistcoat plus
+       white face plus red grin in any combination. -->
+  <defs>
+    <linearGradient id="elder-male-costume-jester__doublet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E9FE4)"/>
+      <stop offset="1" stop-color="var(--c1, #6C7DC4)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-jester__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #DCA847)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-jester__hose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6A79A6)"/>
+      <stop offset="1" stop-color="var(--c4, #515F87)"/>
+    </linearGradient>
+    <clipPath id="elder-male-costume-jester__doubletclip">
+      <path d="M132 184 H268 Q272 184 272 192 V326 Q272 336 262 336 H138 Q128 336 128 326
+               V192 Q128 184 132 184 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- close hose: hips and both legs, hugging the body -->
+  <g class="sp-shadow">
+    <rect x="144" y="322" width="112" height="48" rx="20" fill="url(#elder-male-costume-jester__hose)"/>
+    <rect x="160" y="354" width="36" height="182" rx="12" fill="url(#elder-male-costume-jester__hose)"/>
+    <rect x="204" y="354" width="36" height="182" rx="12" fill="url(#elder-male-costume-jester__hose)"/>
+  </g>
+
+  <!-- long pointed shoes, integral to the hose -->
+  <g class="sp-shadow">
+    <path d="M160 528 H198 Q200 552 198 568 H140 Q128 568 126 558 Q124 548 136 546
+             Q150 544 156 536 Z" fill="url(#elder-male-costume-jester__hose)"/>
+    <path d="M240 528 H202 Q200 552 202 568 H260 Q272 568 274 558 Q276 548 264 546
+             Q250 544 244 536 Z" fill="url(#elder-male-costume-jester__hose)"/>
+  </g>
+
+  <!-- boxy doublet, square shouldered, straight sided -->
+  <g class="sp-shadow">
+    <path d="M132 184 H268 Q272 184 272 192 V326 Q272 336 262 336 H138 Q128 336 128 326
+             V192 Q128 184 132 184 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+  </g>
+  <!-- contrast half panel, party coloured down the centre seam -->
+  <g clip-path="url(#elder-male-costume-jester__doubletclip)">
+    <rect x="126" y="182" width="74" height="158" fill="url(#elder-male-costume-jester__panel)"/>
+    <rect x="200" y="258" width="74" height="82" fill="url(#elder-male-costume-jester__panel)" fill-opacity="0.55"/>
+  </g>
+
+  <!-- boxy sleeves -->
+  <g class="sp-shadow">
+    <rect x="110" y="192" width="30" height="150" rx="12" fill="url(#elder-male-costume-jester__doublet)"/>
+    <rect x="260" y="192" width="30" height="150" rx="12" fill="url(#elder-male-costume-jester__panel)"/>
+  </g>
+
+  <!-- FIVE deep pointed hem tabs, 42 units from the hip hem, a bell on every point -->
+  <g class="sp-shadow">
+    <path d="M131 334 H157 L144 378 Z" fill="url(#elder-male-costume-jester__panel)"/>
+    <path d="M159 334 H185 L172 378 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+    <path d="M187 334 H213 L200 378 Z" fill="url(#elder-male-costume-jester__panel)"/>
+    <path d="M215 334 H241 L228 378 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+    <path d="M243 334 H269 L256 378 Z" fill="url(#elder-male-costume-jester__panel)"/>
+  </g>
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="144" cy="384" r="8"/>
+    <circle cx="172" cy="384" r="8"/>
+    <circle cx="200" cy="384" r="8"/>
+    <circle cx="228" cy="384" r="8"/>
+    <circle cx="256" cy="384" r="8"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <circle cx="141" cy="381" r="2.6"/>
+    <circle cx="169" cy="381" r="2.6"/>
+    <circle cx="197" cy="381" r="2.6"/>
+    <circle cx="225" cy="381" r="2.6"/>
+    <circle cx="253" cy="381" r="2.6"/>
+  </g>
+
+  <!-- sleeve cuffs cut into the same points, a bell on each -->
+  <g class="sp-shadow">
+    <path d="M111 340 H120 L115.5 372 Z" fill="url(#elder-male-costume-jester__panel)"/>
+    <path d="M120 340 H129 L124.5 372 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+    <path d="M129 340 H138 L133.5 372 Z" fill="url(#elder-male-costume-jester__panel)"/>
+    <path d="M262 340 H271 L266.5 372 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+    <path d="M271 340 H280 L275.5 372 Z" fill="url(#elder-male-costume-jester__panel)"/>
+    <path d="M280 340 H289 L284.5 372 Z" fill="url(#elder-male-costume-jester__doublet)"/>
+  </g>
+  <g fill="var(--c3, #6BBFAD)">
+    <circle cx="115.5" cy="377" r="5"/>
+    <circle cx="124.5" cy="377" r="5"/>
+    <circle cx="133.5" cy="377" r="5"/>
+    <circle cx="266.5" cy="377" r="5"/>
+    <circle cx="275.5" cy="377" r="5"/>
+    <circle cx="284.5" cy="377" r="5"/>
+  </g>
+
+  <!-- low neck band, stopping well short of the jaw -->
+  <path d="M170 182 H230 Q232 196 226 204 Q200 210 174 204 Q168 196 170 182 Z"
+        fill="var(--c3, #6BBFAD)"/>
+
+  <!-- waist lacing -->
+  <path d="M150 316 h100" stroke="var(--c3, #6BBFAD)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- house highlight -->
+  <path d="M146 216 q54 20 108 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

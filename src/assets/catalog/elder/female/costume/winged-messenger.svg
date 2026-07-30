@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = pinned at ONE shoulder only, so the
+       right shoulder carries the whole garment and the left shoulder and left arm are entirely
+       bare. HEM = the tunic stops at mid thigh, against the ankle hems of chiton and peplos.
+       A rectangular mantle is pinned at the same right shoulder by a single round fibula and
+       swings back and out behind the body. Winged cuffs sit at BOTH ankles.
+       The wings in this family are ANKLE CUFFS. They are small feathered fins standing out from
+       the ankle at about y490 to y540, far below the face and well above the ground line at y570.
+       Nothing is drawn on the head: there is no winged helm anywhere in this file, and the
+       fallback is butter, periwinkle and ink rather than the white and pale blue armour of the
+       character that guardrail names.
+       CEILING RESOLUTION: the adult reference tops out at y150 on the tunic neckline and sets its
+       fibula at cy168. The tunic top edge was re struck at y182 across the pinned shoulder only,
+       the neckline then runs downward and outward to the bare shoulder, and the fibula moved down
+       onto the cloth at cy200 so its outer ring edge sits at y183. Depth runs downward from there.
+       The bare left arm is left undrawn so the body's own skin shows.
+       Elder read: the mantle is longer and heavier, the neckline binding is a broad strap, and the
+       shoulder line is softened rather than cut square.
+       Surface tools: panel blocking (mantle against tunic) and trim (neckline binding, waist cord,
+       hem band, ankle cuffs). -->
+  <defs>
+    <linearGradient id="elder-female-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #FBD98F)"/>
+      <stop offset="1" stop-color="var(--c1, #D9A94F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #93A2E4)"/>
+      <stop offset="1" stop-color="var(--c2, #5F70BB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-winged-messenger__wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #55402F)"/>
+      <stop offset="1" stop-color="var(--c3, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-winged-messenger__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4C3A2C)"/>
+      <stop offset="1" stop-color="var(--c3, #291E17)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: the mantle swinging back and out, the single shoulder tunic to mid thigh, a
+       winged cuff at each ankle, and a sandal on each foot. -->
+  <g class="sp-shadow">
+    <path d="M238 182 Q268 186 282 214 L306 320 Q318 388 310 440 Q290 454 272 440
+             Q280 380 270 320 L252 226 Q246 196 238 182 Z"
+          fill="url(#elder-female-costume-winged-messenger__mantle)"/>
+    <path d="M206 182 H246 Q258 190 260 214 L264 260 Q268 340 262 412 Q200 428 138 412
+             Q132 340 136 260 L140 214 Q160 206 180 194 Q194 186 206 182 Z"
+          fill="url(#elder-female-costume-winged-messenger__tunic)"/>
+    <path d="M162 526 Q134 522 108 500 Q100 492 110 490 Q140 498 164 512 Z"
+          fill="url(#elder-female-costume-winged-messenger__wing)"/>
+    <path d="M238 526 Q266 522 292 500 Q300 492 290 490 Q260 498 236 512 Z"
+          fill="url(#elder-female-costume-winged-messenger__wing)"/>
+    <path d="M160 512 H204 v22 q-22 10 -44 0 Z"
+          fill="url(#elder-female-costume-winged-messenger__cuff)"/>
+    <path d="M240 512 H196 v22 q22 10 44 0 Z"
+          fill="url(#elder-female-costume-winged-messenger__cuff)"/>
+    <rect x="158" y="552" width="46" height="13" rx="6"
+          fill="url(#elder-female-costume-winged-messenger__cuff)"/>
+    <rect x="196" y="552" width="46" height="13" rx="6"
+          fill="url(#elder-female-costume-winged-messenger__cuff)"/>
+  </g>
+
+  <!-- TRIM: the single round fibula, at the pinned shoulder ONLY. Disc plus ring measures 34
+       units, and the bare shoulder opposite carries nothing at all. -->
+  <circle cx="240" cy="200" r="13" fill="url(#elder-female-costume-winged-messenger__wing)"/>
+  <circle cx="240" cy="200" r="15" fill="none" stroke="var(--c3, #3B2A22)" stroke-width="4"/>
+  <circle cx="240" cy="200" r="5" fill="var(--c1, #F7C873)"/>
+
+  <!-- TRIM: neckline binding running from the bare left shoulder up to the pin -->
+  <path d="M143 220 Q163 212 183 200 Q196 193 207 190" stroke="var(--c3, #3B2A22)"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: narrow waist cord -->
+  <path d="M138 284 Q200 302 262 284 L263 300 Q200 318 137 300 Z"
+        fill="var(--c3, #3B2A22)"/>
+
+  <!-- TRIM: tunic hem band at mid thigh -->
+  <path d="M136 396 Q200 414 264 396" stroke="var(--c3, #3B2A22)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: feather ribs on the ankle fins, each fin measuring 56 units from the cuff to
+       its tip so it clears the practical floor -->
+  <g stroke="var(--c1, #F7C873)" stroke-opacity="0.65" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M158 516 L126 498"/>
+    <path d="M156 506 L132 492"/>
+    <path d="M242 516 L274 498"/>
+    <path d="M244 506 L268 492"/>
+  </g>
+
+  <!-- STRUCTURAL: mantle folds -->
+  <g stroke="var(--c1, #F7C873)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M258 230 Q280 318 284 412"/>
+    <path d="M276 244 Q296 326 300 408"/>
+  </g>
+
+  <!-- STRUCTURAL: drape folds on the tunic -->
+  <g stroke="var(--c2, #5F70BB)" stroke-opacity="0.28" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M166 234 Q160 318 158 396"/>
+    <path d="M200 226 Q200 314 200 404"/>
+    <path d="M232 224 Q238 312 240 396"/>
+  </g>
+
+  <!-- TRIM: sandal straps, drawn into the costume because costume hides the shoes slot -->
+  <g stroke="var(--c3, #3B2A22)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M166 554 L184 544 M196 554 L182 544"/>
+    <path d="M234 554 L216 544 M204 554 L218 544"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M172 216 q32 12 60 -6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 232 q14 8 20 22" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 340 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fruit Slab" data-family="food-costume" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Ceiling resolution: the slab's top edge was lowered to y200 and the stalk and leaf finial
+       occupies y182 to y200, so the finial still stands proud above the slab while nothing rises
+       past the ceiling. The finial is not clipped and the slab does not swallow it. -->
+  <!-- The arms and legs are entirely OUTSIDE the slab and are painted through skin1 and skin2 on
+       the body's own geometry, never a phantom garment colour. -->
+  <!-- axes: volume, one large convex slab hung free and detached from the body outline with the
+       limbs left outside it + closure, no closure at all, the slab simply hangs from two straps. -->
+  <defs>
+    <linearGradient id="elder-female-costume-food-costume__skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--skin1, #F7D2B0)"/>
+      <stop offset="1" stop-color="var(--skin2, #E7B892)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-food-costume__slab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c1, #D6A855)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-food-costume__leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5E9E63)"/>
+      <stop offset="1" stop-color="var(--c2, #4A8250)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-food-costume__shoe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C8A06A)"/>
+      <stop offset="1" stop-color="var(--c3, #A5824F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- bare arms and legs, on the body's own geometry so no seam shows -->
+  <g class="sp-shadow">
+    <rect x="116" y="182" width="28" height="150" rx="14"
+          fill="url(#elder-female-costume-food-costume__skin)"/>
+    <rect x="256" y="182" width="28" height="150" rx="14"
+          fill="url(#elder-female-costume-food-costume__skin)"/>
+    <rect x="168" y="374" width="28" height="170" rx="14"
+          fill="url(#elder-female-costume-food-costume__skin)"/>
+    <rect x="204" y="374" width="28" height="170" rx="14"
+          fill="url(#elder-female-costume-food-costume__skin)"/>
+    <!-- the hands are left to the body's own art: nothing in this slot occludes them, and
+         redrawing them here would repeat a major form that four other costumes already use. -->
+  </g>
+
+  <g class="sp-shadow">
+    <!-- two narrow shoulder straps, top edge on the ceiling at y182 -->
+    <path d="M172 182 H190 L188 220 H174 Z"
+          fill="url(#elder-female-costume-food-costume__leaf)"/>
+    <path d="M228 182 H210 L212 220 H226 Z"
+          fill="url(#elder-female-costume-food-costume__leaf)"/>
+    <!-- stalk and leaf finial, standing between y182 and the slab's top edge -->
+    <path d="M193 182 H207 Q211 192 208 208 H192 Q189 192 193 182 Z"
+          fill="url(#elder-female-costume-food-costume__leaf)"/>
+    <path d="M207 186 Q238 184 250 196 Q228 210 206 200 Z"
+          fill="url(#elder-female-costume-food-costume__leaf)"/>
+    <!-- the slab: one large convex mass, torso to mid thigh, hanging free of the body -->
+    <path d="M200 200 Q264 212 268 288 Q270 358 242 406 Q200 426 158 406
+             Q130 358 132 288 Q136 212 200 200 Z"
+          fill="url(#elder-female-costume-food-costume__slab)"/>
+    <!-- soft dimple seams so the slab reads as one convex body -->
+    <g stroke="var(--c1, #B98A38)" stroke-opacity="0.35" stroke-width="6"
+       fill="none" stroke-linecap="round">
+      <path d="M164 244 Q152 310 172 380"/>
+      <path d="M236 244 Q248 310 228 380"/>
+    </g>
+    <!-- slab bloom highlight -->
+    <path d="M162 244 q16 -20 40 -24" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="11"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- flat shoes, drawn into the costume because costume hides shoes -->
+  <g class="sp-shadow">
+    <path d="M156 534 Q182 544 208 534 Q212 552 207 566 H158 Q152 552 156 534 Z"
+          fill="url(#elder-female-costume-food-costume__shoe)"/>
+    <path d="M192 534 Q218 544 244 534 Q248 552 243 566 H194 Q188 552 192 534 Z"
+          fill="url(#elder-female-costume-food-costume__shoe)"/>
+  </g>
+
+  <!-- leaf vein -->
+  <path d="M212 192 q20 -2 32 4" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- strap buckles -->
+  <g fill="var(--c3, #A5824F)">
+    <rect x="172" y="188" width="18" height="7" rx="3"/>
+    <rect x="210" y="188" width="18" height="7" rx="3"/>
+  </g>
+  <!-- shoe toe seams -->
+  <g stroke="var(--c3, #7E6033)" stroke-opacity="0.5" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M158 552 h44 M198 552 h44"/>
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bandage Wrap" data-family="mummy" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the bound torso topped at y150 and the wrapped
+       collar at y150. Both are rebuilt at y182 to y184 here.
+       SECOND DEFECT INHERITED FROM THE REFERENCE AND FIXED HERE: that file's fifth trailing end
+       runs to y578, eight units BELOW the ground line at y570. Every trailing end in this file
+       bottoms out at y564 or above, and nothing renders below y570.
+
+       CULTURAL NOTE. The family key stays `mummy` because that is the retail category name the
+       picker needs to be findable under, but the display name is "Bandage Wrap" and this file
+       draws CLOTH ONLY. No exposed remains, no skull, no decay, no green pallor. There is no
+       wrapped head and there are no face bandages: the neckline stops at the ceiling and the
+       character's face is fully visible above a wrapped collar.
+
+       silhouette axes: closure=none anywhere, the wrap has no fastening at all, and
+       volume=alternating diagonal bands with five ragged ends trailing free of the body
+       outline. Each trailing end is 40 units or longer so it survives a tray thumbnail. -->
+  <defs>
+    <linearGradient id="elder-male-costume-mummy__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B4AC93)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-mummy__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #B4AC93)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-mummy__trail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B4AC93)"/>
+      <stop offset="1" stop-color="var(--c1, #E4E0D2)"/>
+    </linearGradient>
+    <clipPath id="elder-male-costume-mummy__clip">
+      <path d="M150 184 H250 Q262 208 260 238 L262 326 Q264 354 252 368 H148 Q136 354 138 326
+               L140 238 Q138 208 150 184 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- five ragged ends trailing free, drawn first so they read behind the wrapped limbs -->
+  <g class="sp-shadow">
+    <path d="M108 322 Q86 340 74 374 Q84 382 94 376 Q102 348 118 332 Z"
+          fill="url(#elder-male-costume-mummy__trail)"/>
+    <path d="M292 342 Q314 358 326 394 Q316 402 306 396 Q298 370 282 354 Z"
+          fill="url(#elder-male-costume-mummy__trail)"/>
+    <path d="M148 420 Q124 440 112 476 Q122 484 132 478 Q140 448 158 430 Z"
+          fill="url(#elder-male-costume-mummy__trail)"/>
+    <path d="M250 476 Q274 494 288 528 Q278 536 268 530 Q260 502 242 486 Z"
+          fill="url(#elder-male-costume-mummy__trail)"/>
+    <path d="M182 516 Q172 540 176 562 Q188 566 194 558 Q190 536 196 518 Z"
+          fill="url(#elder-male-costume-mummy__trail)"/>
+  </g>
+
+  <!-- torso, arms and legs each bound separately, no closure anywhere -->
+  <g class="sp-shadow">
+    <path d="M150 184 H250 Q262 208 260 238 L262 326 Q264 354 252 368 H148 Q136 354 138 326
+             L140 238 Q138 208 150 184 Z" fill="url(#elder-male-costume-mummy__cloth)"/>
+    <path d="M108 196 H146 Q150 220 148 246 L146 350 Q146 368 128 368 Q110 368 108 350
+             L106 246 Q104 220 108 196 Z" fill="url(#elder-male-costume-mummy__limb)"/>
+    <path d="M292 196 H254 Q250 220 252 246 L254 350 Q254 368 272 368 Q290 368 292 350
+             L294 246 Q296 220 292 196 Z" fill="url(#elder-male-costume-mummy__limb)"/>
+    <path d="M156 362 H198 Q200 462 196 550 Q196 560 186 560 H166 Q156 560 156 550
+             Q152 462 156 362 Z" fill="url(#elder-male-costume-mummy__limb)"/>
+    <path d="M244 362 H202 Q200 462 204 550 Q204 560 214 560 H234 Q244 560 244 550
+             Q248 462 244 362 Z" fill="url(#elder-male-costume-mummy__limb)"/>
+  </g>
+
+  <!-- overlapping strips across the torso, alternating diagonal every three or four bands -->
+  <g clip-path="url(#elder-male-costume-mummy__clip)" stroke="var(--c2, #B4AC93)"
+     stroke-width="13" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M130 200 L272 222"/>
+    <path d="M130 224 L272 246"/>
+    <path d="M130 248 L272 270"/>
+    <path d="M130 272 L272 294"/>
+    <path d="M130 316 L272 294"/>
+    <path d="M130 340 L272 318"/>
+    <path d="M130 364 L272 342"/>
+  </g>
+  <g clip-path="url(#elder-male-costume-mummy__clip)" stroke="var(--c3, #FBF7EA)"
+     stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M130 212 L272 234"/>
+    <path d="M130 260 L272 282"/>
+    <path d="M130 328 L272 306"/>
+  </g>
+
+  <!-- limb bands, running the other way on each limb so the wrap reads as continuous -->
+  <g stroke="var(--c2, #B4AC93)" stroke-width="10" stroke-linecap="round" fill="none"
+     opacity="0.85">
+    <path d="M106 216 L146 228"/><path d="M106 248 L146 260"/>
+    <path d="M106 280 L146 292"/><path d="M106 312 L146 324"/><path d="M106 344 L146 356"/>
+    <path d="M294 216 L254 228"/><path d="M294 248 L254 260"/>
+    <path d="M294 280 L254 292"/><path d="M294 312 L254 324"/><path d="M294 344 L254 356"/>
+    <path d="M154 382 L200 394"/><path d="M154 418 L200 430"/>
+    <path d="M154 454 L200 466"/><path d="M154 490 L200 502"/><path d="M154 526 L200 538"/>
+    <path d="M246 382 L200 394"/><path d="M246 418 L200 430"/>
+    <path d="M246 454 L200 466"/><path d="M246 490 L200 502"/><path d="M246 526 L200 538"/>
+  </g>
+
+  <!-- wrapped collar, top edge at the ceiling; the face stays fully visible above it -->
+  <path d="M154 182 H246 Q250 198 244 210 Q200 220 156 210 Q150 198 154 182 Z"
+        fill="var(--c2, #B4AC93)"/>
+  <path d="M158 192 Q200 202 242 192" stroke="var(--c3, #FBF7EA)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wrapped feet, no shoe underneath -->
+  <path d="M156 552 H202 Q208 560 206 568 H158 Q150 560 156 552 Z" fill="var(--c2, #B4AC93)"/>
+  <path d="M198 552 H244 Q250 560 248 568 H200 Q192 560 198 552 Z" fill="var(--c2, #B4AC93)"/>
+
+  <!-- house highlight -->
+  <path d="M162 214 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

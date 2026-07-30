@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156),
+       ear anchors (149,129). Mouth measured off elder/male/mouth: the widest drawn
+       mouth is open-laugh at x165 to 235, y139 to 167; resting neutral y148 to 157.
+       The skull sits 34 units below adult/male but the drawn mouths only 30, so the
+       droop is set from the measured lower lip, not translated.
+       Beard floor torso.y 184 + 76 = y260; the hem here is y178, which is 6 units
+       ABOVE the chin, so the chin stays bare as the family requires.
+
+       Axes chosen: UPPER LIP = overhanging. The mass grows down off the lip and
+       swallows the whole mouth, hem at y178, clearing the lower lip of every drawn
+       mouth by at least 11 units. LENGTH = past the mouth, the only moustache in this
+       bundle that falls below the lower lip. Chin, jaw and cheeks stay bare. -->
+  <defs>
+    <linearGradient id="elder-male-beard-walrus__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the droop: two heavy unequal lobes with a shallow centre part between them,
+       the left hanging 7 units lower than the right -->
+  <g class="sp-shadow">
+    <path d="M161 137 C160 129 169 126 180 129 C188 131 195 132 200 132
+             C205 132 212 131 220 129 C230 126 239 129 238 136
+             C237 150 232 163 220 171 C211 176 203 170 201 161
+             C199 172 189 178 179 172 C166 164 162 151 161 137 Z"
+          fill="url(#elder-male-beard-walrus__grad)"/>
+  </g>
+
+  <!-- centre part, cut down through the mass in hair2 -->
+  <path d="M198 133 C202 133 204 148 202 162 C201 167 200 167 199 162
+           C196 148 195 133 198 133 Z"
+        fill="var(--hair2, #8A8E97)"/>
+
+  <!-- sweep of the droop on each lobe -->
+  <path d="M174 140 C173 153 178 165 188 170" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M226 140 C227 152 222 163 213 168" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M166 144 C169 157 174 167 182 173" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M234 144 C231 156 226 165 218 170" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- weight along the two hems, the lower one heavier -->
+  <path d="M172 165 C177 173 184 176 190 173" stroke="var(--hair2, #8A8E97)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M228 163 C223 170 217 173 211 170" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- lit upper surface, just under the nose -->
+  <path d="M172 136 C185 131 215 131 228 136" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

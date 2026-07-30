@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = an enormously full triangle through hip and
+       thigh, widest at x116 and x284 around y430, and HEM TREATMENT = that fullness pulled
+       sharply in to a plain close ankle band 32 units wide, y530 to y552. Natural drawstring
+       rise, the casing running y316 to y338. Full length to the ankle at y552.
+       Clearance, re derived for the elder body and not copied from adult/female: the fullness
+       reaches x116 and x284 at its widest, at y430. The thigh at that height is the elder leg
+       rects, whose outer edges are x168 and x232. Clearance is therefore 52 units per side
+       (168 minus 116 = 52; 284 minus 232 = 52), well past the 40 unit floor.
+       Ankle band arithmetic: left band x166 to x198 and right band x202 to x234, each 32 wide
+       over a 28 wide leg rect (x168 to x196 and x204 to x232), so 2 units proud a side.
+       Everyday South Asian dress, the lower half of shalwar kameez. Drawn plainly, generic
+       geometric band stitching only and no woven motif.
+       Surface tools: trim (the drawstring casing and the two ankle bands, each its own shape
+       with its own gradient) and structural (deep pleats out of the casing, the gathers where
+       the fullness meets the band, and the drawstring with its aglets). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="0.6" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #5F6FB8)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-shalwar__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5F6FB8)"/>
+      <stop offset="1" stop-color="var(--c1, #7E90DC)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two hugely full legs, widest at x116 and x284 at y430, each collapsing into
+       its own close ankle band -->
+  <g class="sp-shadow">
+    <path d="M152 316 H200 V498 Q200 520 194 530 H168 Q162 520 160 498
+             C142 476 116 456 116 430 C116 380 134 340 152 316 Z"
+          fill="url(#elder-female-bottom-shalwar__cloth)"/>
+    <path d="M248 316 H200 V498 Q200 520 206 530 H232 Q238 520 240 498
+             C258 476 284 456 284 430 C284 380 266 340 248 316 Z"
+          fill="url(#elder-female-bottom-shalwar__cloth)"/>
+    <path d="M170 530 H194 Q198 530 198 536 V546 Q198 552 192 552 H172 Q166 552 166 546
+             V536 Q166 530 170 530 Z"
+          fill="url(#elder-female-bottom-shalwar__band)"/>
+    <path d="M230 530 H206 Q202 530 202 536 V546 Q202 552 208 552 H228 Q234 552 234 546
+             V536 Q234 530 230 530 Z"
+          fill="url(#elder-female-bottom-shalwar__band)"/>
+  </g>
+
+  <!-- drawstring waist casing, y316 to y338 -->
+  <path d="M152 316 H248 L249 338 H151 Z" fill="var(--c2, #5F6FB8)"/>
+  <path d="M153 330 H247" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.6" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- drawstring with two aglets -->
+  <path d="M192 338 q-7 16 -14 26" stroke="var(--c3, #F0F3FF)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 338 q7 16 14 26" stroke="var(--c3, #F0F3FF)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <rect x="172" y="360" width="8" height="15" rx="3" fill="var(--c3, #F0F3FF)"/>
+  <rect x="220" y="360" width="8" height="15" rx="3" fill="var(--c3, #F0F3FF)"/>
+  <circle cx="200" cy="336" r="6" fill="var(--c3, #F0F3FF)"/>
+
+  <!-- deep pleats falling out of the casing and collapsing into the ankle -->
+  <path d="M166 342 C150 388 134 422 158 498" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M182 344 C166 392 154 432 172 512" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.38"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M234 342 C250 388 266 422 242 498" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M218 344 C234 392 246 432 228 512" stroke="var(--c2, #5F6FB8)" stroke-opacity="0.38"
+        stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- gathers where the fullness is pulled into the ankle band -->
+  <path d="M172 516 L170 530" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M181 518 V532" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 516 L192 530" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 516 L230 530" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M219 518 V532" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 516 L208 530" stroke="var(--c2, #5F6FB8)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- band edge stitching -->
+  <path d="M169 538 H195" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M205 538 H231" stroke="var(--c3, #F0F3FF)" stroke-opacity="0.65" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the light on the widest part of the drape -->
+  <path d="M164 350 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 372 C128 408 124 438 138 482" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M256 372 C272 408 276 438 262 482" stroke="#FFFFFF" stroke-opacity="0.16"
+        stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

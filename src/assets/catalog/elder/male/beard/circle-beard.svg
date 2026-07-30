@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Circle Beard" data-family="circle-beard"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156),
+       ear anchors (149,129). Mouth measured off elder/male/mouth: neutral x181 to 219
+       y148 to 157, smile x176 to 224 y142 to 163, grin x168 to 232 y138 to 166. The
+       aperture is cut to x178 to 222, y144 to 167 so the ring encircles every drawn
+       mouth without painting over the vermilion.
+       Skull is 34 units below adult/male, drawn mouths only 30, so the ring's lip bar
+       is set from the measured mouth rather than translated.
+       Beard floor torso.y 184 + 76 = y260; the ring bottom is y203.
+
+       Axes chosen: CHIN AND JAW = chin plus a closed ring; the mouth sits in a genuine
+       hole in the mass with skin showing through it, and that loop is the whole read at
+       thumbnail size. UPPER LIP = a trimmed bar carried round both mouth corners, which
+       is exactly what goatee does not do. Jaw and cheeks bare, cheek line none. -->
+  <defs>
+    <linearGradient id="elder-male-beard-circle-beard__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer contour plus a counter contour for the mouth aperture -->
+  <g class="sp-shadow">
+    <path d="M166 140 C166 132 174 128 184 131 C191 133 196 134 200 134
+             C204 134 209 133 216 131 C226 128 234 132 234 140
+             C234 156 232 171 227 183 C221 196 212 203 200 203
+             C188 203 179 196 173 183 C168 171 166 156 166 140 Z
+             M200 144 C208 144 216 147 219 153 C222 159 219 165 211 166
+             C204 167 196 167 189 166 C181 165 178 159 181 153
+             C184 147 192 144 200 144 Z"
+          fill-rule="evenodd" fill="url(#elder-male-beard-circle-beard__grad)"/>
+  </g>
+
+  <!-- inner edge of the ring, shaded so the hole reads as a hole -->
+  <path d="M181 152 C186 146 214 146 219 152" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M182 164 C190 169 210 169 218 164" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- philtrum notch on the bar, and the whorl on the chin -->
+  <path d="M197 131 C198 135 202 135 203 131 C205 137 203 143 200 143
+           C197 143 195 137 197 131 Z"
+        fill="var(--hair2, #8A8E97)"/>
+  <path d="M202 178 C209 179 210 186 204 189 C198 192 191 189 191 184"
+        stroke="var(--hair2, #8A8E97)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- the two corner joins, where the bar wraps down into the chin -->
+  <path d="M173 143 C170 155 172 168 179 177" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M227 143 C230 155 228 168 221 177" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- weight at the bottom of the ring -->
+  <path d="M184 191 C192 199 208 199 216 191" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3.6" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- lit top of the ring -->
+  <path d="M176 136 C186 132 214 132 224 136" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

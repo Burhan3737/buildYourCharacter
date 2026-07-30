@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Line-Up" data-family="line-up" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- The Black barbering edge-up, the natural partner to taper-fade and waves-360 in this
+       bundle's hair slot. Every edge is razor straight by definition, so the outline is drawn
+       with L commands only, and this is the one family in the slot exempt from the softly
+       irregular hem rule.
+       Silhouette axes vs full-beard: CHEEK LINE (joined at 100 percent, a hard straight edge
+       running from the sideburn at this bundle's drawn ear anchor y129 down to the moustache,
+       against a soft natural mid cheek line at 55 percent) and LENGTH (clipped short, a hard
+       neck line at y190 sitting 6px past the drawn chin at y184, against a beard falling to
+       y211).
+       The neck side is cut low and clipped at 25 percent of the 27.3px jaw to ear span, y149.5.
+       Upper lip: a hard edged moustache joined continuously to the sideburn.
+       Anchoring note: jaw, ear and cheek edges are set from the drawn skull (cx200 cy125 rx57
+       ry59, jaw corners at y156.3, ear anchors at y129). The moustache and mouth window are set
+       from THIS bundle's drawn mouth art (x176..224, y146..178), which sits 38px below the
+       adult mouth while the skull sits 34px below the adult skull. Nothing here is translated.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y190.
+       hair1 lights the mass; hair2 draws the philtrum groove, the hard shadow along the inside
+       of the cheek line and the crisp shadow under the neck edge. -->
+  <defs>
+    <linearGradient id="elder-female-beard-line-up__mass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- razor edges only: straight cheek line, straight neck line, hard moustache, mouth window -->
+  <g class="sp-shadow">
+    <path fill-rule="evenodd"
+          d="M142 128 L146 158 L160 178 L182 190 L218 190 L240 178 L254 158 L258 128
+             L246 128 L222 151 L200 147 L178 151 L154 128 Z
+             M177 155 L223 155 L224 170 L200 176 L176 170 Z"
+          fill="url(#elder-female-beard-line-up__mass)"/>
+  </g>
+
+  <!-- hair2: the hard shadow sitting just inside the razor cheek line -->
+  <path d="M154 128 L178 151 L200 147 L222 151 L246 128 L246 133.5 L222 156 L200 152
+           L178 156 L155.5 133.5 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the philtrum groove, cut square to match the edge-up -->
+  <path d="M197.6 145 L202.4 145 L202.4 154.6 L197.6 154.6 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the crisp shadow above the hard neck line -->
+  <path d="M160 178 L182 190 L218 190 L240 178 L240 182.5 L218 194 L182 194 L160 182.5 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: straight edge grooves through the cheek mass and the chin block -->
+  <path d="M165 154 L170 175" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M235 154 L230 175" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M189 178 L189 188" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <path d="M211 178 L211 188" stroke="var(--hair2, #9AA3B2)" stroke-opacity="0.7"
+        stroke-width="2" fill="none" stroke-linecap="butt"/>
+  <!-- hair2: the sideburn corner, squared where the temple line meets the ear anchor -->
+  <path d="M142 128 L154 128 L156 134 L143 134 Z" fill="var(--hair2, #9AA3B2)"/>
+  <path d="M258 128 L246 128 L244 134 L257 134 Z" fill="var(--hair2, #9AA3B2)"/>
+
+  <path d="M148 137 L152 158" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="butt"/>
+  <path d="M252 137 L248 158" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="butt"/>
+</svg>

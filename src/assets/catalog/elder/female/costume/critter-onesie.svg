@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Critter Onesie" data-family="critter-onesie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The hood is drawn WORN DOWN, a soft fabric roll lying flat across the shoulders. Its top
+       edge is y182 exactly and all of its volume runs OUTWARD to x124 and x276 and DOWNWARD to
+       y238. No animal face, no muzzle, no ear cones: costume draws above the face and anything
+       standing over the head would erase it. This is the sanctioned hood pattern. -->
+  <!-- axes: closure, a full length centre zip splitting the front from throat to hip
+       + volume, thick plush bulk with turned contrast cuffs at every limb end, a round tail at
+       the hip and a hood roll pooled flat on the shoulders. -->
+  <defs>
+    <linearGradient id="elder-female-costume-critter-onesie__plush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c1, #563A61)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-critter-onesie__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #77547F)"/>
+      <stop offset="1" stop-color="var(--c1, #503567)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-critter-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E5A87)"/>
+      <stop offset="1" stop-color="var(--c1, #543A63)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-critter-onesie__belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #DBD3C0)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-critter-onesie__zip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4B372C)"/>
+      <stop offset="1" stop-color="var(--c3, #2A1E18)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- short round tail at the hip, drawn first so it sits behind the body -->
+  <g class="sp-shadow">
+    <circle cx="282" cy="388" r="27" fill="url(#elder-female-costume-critter-onesie__limb)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- plush legs -->
+    <path d="M160 372 H202 Q206 372 206 386 L204 460 L202 528 Q182 538 162 528
+             L160 460 Q158 386 160 372 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <path d="M198 372 H240 Q242 386 240 460 L238 528 Q218 538 198 528 L196 460
+             L194 386 Q194 372 198 372 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <!-- hip block, bridging torso to legs -->
+    <path d="M144 326 H256 Q258 352 256 376 Q200 396 144 376 Q142 352 144 326 Z"
+          fill="url(#elder-female-costume-critter-onesie__plush)"/>
+    <!-- thick plush body -->
+    <path d="M170 182 H230 Q256 190 260 216 Q266 268 262 314 Q262 330 252 340
+             Q200 358 148 340 Q138 330 138 314 Q134 268 140 216 Q144 190 170 182 Z"
+          fill="url(#elder-female-costume-critter-onesie__plush)"/>
+    <!-- contrast belly panel, blocked onto the plush body -->
+    <path d="M172 246 Q200 238 228 246 Q234 288 230 322 Q200 336 170 322
+             Q166 288 172 246 Z"
+          fill="url(#elder-female-costume-critter-onesie__belly)"/>
+    <!-- plush sleeves -->
+    <path d="M110 182 H148 Q150 200 148 250 L146 300 L144 334 Q126 344 108 334
+             L106 300 L108 250 Q108 200 110 182 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <path d="M290 182 H252 Q250 200 252 250 L254 300 L256 334 Q274 344 292 334
+             L294 300 L292 250 Q292 200 290 182 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <!-- the hood, worn DOWN: top edge y182, spreading outward and down over the shoulders -->
+    <path d="M150 182 Q200 186 250 182 Q272 196 276 224 Q252 238 228 226
+             Q214 240 200 228 Q186 240 172 226 Q148 238 124 224 Q128 196 150 182 Z"
+          fill="url(#elder-female-costume-critter-onesie__hood)"/>
+  </g>
+
+  <!-- bulky turned cuffs at wrist and ankle, and the plush paws -->
+  <g class="sp-shadow">
+    <path d="M104 294 Q130 306 156 294 Q162 318 156 342 Q130 354 104 342
+             Q98 318 104 294 Z"
+          fill="url(#elder-female-costume-critter-onesie__belly)"/>
+    <path d="M296 294 Q270 306 244 294 Q238 318 244 342 Q270 354 296 342
+             Q302 318 296 294 Z"
+          fill="url(#elder-female-costume-critter-onesie__belly)"/>
+    <path d="M156 498 Q180 510 206 498 Q212 522 206 546 Q180 558 156 546
+             Q150 522 156 498 Z"
+          fill="url(#elder-female-costume-critter-onesie__belly)"/>
+    <path d="M194 498 Q218 510 244 498 Q250 522 244 546 Q218 558 194 546
+             Q188 522 194 498 Z"
+          fill="url(#elder-female-costume-critter-onesie__belly)"/>
+    <circle cx="130" cy="344" r="19" fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <circle cx="270" cy="344" r="19" fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <!-- plush paw boots, drawn into the costume because costume hides shoes -->
+    <path d="M154 532 Q180 542 206 532 Q212 550 206 566 H156 Q148 550 154 532 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+    <path d="M194 532 Q220 542 246 532 Q252 550 246 566 H196 Q188 550 194 532 Z"
+          fill="url(#elder-female-costume-critter-onesie__limb)"/>
+  </g>
+
+  <!-- full length centre zip, throat to hip -->
+  <path d="M196 230 H204 L203 340 H197 Z"
+        fill="url(#elder-female-costume-critter-onesie__zip)"/>
+  <g stroke="var(--c3, #2A1E18)" stroke-opacity="0.6" stroke-width="2.5"
+     fill="none" stroke-linecap="round">
+    <path d="M192 244 h16 M192 266 h16 M192 288 h16 M192 310 h16 M192 332 h16"/>
+  </g>
+  <!-- zip pull, sitting at the throat under the hood roll -->
+  <path d="M193 228 H207 Q210 238 207 248 H193 Q190 238 193 228 Z"
+        fill="url(#elder-female-costume-critter-onesie__zip)"/>
+  <path d="M200 248 v14" stroke="var(--c3, #2A1E18)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- hood fold, so the roll reads as folded cloth rather than a yoke -->
+  <path d="M144 202 q56 20 112 0" stroke="var(--c1, #4B3358)" stroke-opacity="0.6"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cuff and tail stitching -->
+  <g stroke="var(--c1, #4B3358)" stroke-opacity="0.5" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M108 318 q24 12 48 0 M292 318 q-24 12 -48 0"/>
+    <path d="M160 522 q22 12 44 0 M240 522 q-22 12 -44 0"/>
+    <path d="M268 380 q16 -12 30 2"/>
+  </g>
+  <!-- house highlight on the upper plush surface -->
+  <path d="M160 250 q40 14 80 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

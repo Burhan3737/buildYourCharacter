@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shield Warrior" data-family="shield-warrior" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- TRADEMARK NOTE, binding. Do not "improve" this file back toward the thing it avoids. Each of
+       these is deliberately absent and must stay absent:
+         no strapless bustier, this is a closed long sleeved tunic;
+         no star motif, anywhere, at any size;
+         no tiara, and nothing head mounted at all;
+         no wide matching metal bracers on both wrists, there are no bracers in this file;
+         no coiled rope and no lasso at the hip;
+         no red, no blue and no gold in the fallback. The fallback is warm sand, ink and terracotta.
+       KEEP THE TROUSERS AND KEEP THE SLEEVES. The fully covered trousered rider is the opposite of
+       that character on every axis, which is exactly why this silhouette was chosen. -->
+  <!-- Silhouette axes this family owns: VOLUME = a crescent shield slung flat across the back so a
+       curved crescent edge shows well past EACH hip, the visible band 40 units wide on each side.
+       HEM = a close tunic stopping at mid thigh over narrow full length trousers tucked into soft
+       ankle boots, so the leg reads as a covered column rather than bare.
+       A wide diagonal baldric crosses the chest from the left shoulder to the right hip.
+       CEILING RESOLUTION: the adult reference tops out at y150 on the tunic and y152 on the
+       sleeve heads. All three top edges were re struck at y182: the tunic shoulder now starts at
+       y182 across x168 to x232, each sleeve head starts at y182 across the arm top, and the neck
+       bind was rebuilt as a flat band from y182 downward instead of a collar rising above it. The
+       shield hangs behind at y220 and below, so it never approached the ceiling. Nothing was
+       translated wholesale, the depth runs downward from the new top edges.
+       Elder read: the sleeve heads sit inboard and soft, the tunic is looser through the upper
+       arm and body, the baldric is a broad strap, and the boots are soft rather than laced.
+       Surface tools: panel blocking (sand tunic against ink trousers and shield) and trim (neck
+       bind, woven hem band, baldric fitting, boot binding). -->
+  <defs>
+    <linearGradient id="elder-female-costume-shield-warrior__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DCCBA8)"/>
+      <stop offset="1" stop-color="var(--c1, #B3A07C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shield-warrior__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D4C29E)"/>
+      <stop offset="1" stop-color="var(--c1, #A89473)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shield-warrior__dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402F)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shield-warrior__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4B382A)"/>
+      <stop offset="1" stop-color="var(--c2, #261C15)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shield-warrior__trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DB9078)"/>
+      <stop offset="1" stop-color="var(--c3, #B2664C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: the crescent shield behind, two trousers, two soft ankle boots, two long
+       sleeves and the closed tunic over the top of them. -->
+  <g class="sp-shadow">
+    <path d="M88 342 Q94 230 200 218 Q306 230 312 342 Q314 388 300 410 Q285 420 281 400
+             Q285 356 272 342 Q266 272 200 264 Q134 272 128 342 Q115 356 119 400
+             Q115 420 100 410 Q86 388 88 342 Z"
+          fill="url(#elder-female-costume-shield-warrior__shield)"/>
+    <path d="M162 326 Q182 336 200 328 L198 424 L196 504 Q180 510 164 504 L163 424 Z"
+          fill="url(#elder-female-costume-shield-warrior__dark)"/>
+    <path d="M200 328 Q218 336 238 326 L237 424 L236 504 Q220 510 204 504 L202 424 Z"
+          fill="url(#elder-female-costume-shield-warrior__dark)"/>
+    <path d="M152 500 Q178 512 204 500 Q210 532 206 562 Q178 570 150 562 Q145 532 152 500 Z"
+          fill="url(#elder-female-costume-shield-warrior__dark)"/>
+    <path d="M196 500 Q222 512 248 500 Q254 532 250 562 Q222 570 194 562 Q189 532 196 500 Z"
+          fill="url(#elder-female-costume-shield-warrior__dark)"/>
+    <path d="M110 200 q0 -18 17 -18 h10 q17 0 17 18 l-3 66 l-3 78 q-19 10 -38 0 l-1 -78 z"
+          fill="url(#elder-female-costume-shield-warrior__sleeve)"/>
+    <path d="M290 200 q0 -18 -17 -18 h-10 q-17 0 -17 18 l3 66 l3 78 q19 10 38 0 l1 -78 z"
+          fill="url(#elder-female-costume-shield-warrior__sleeve)"/>
+    <path d="M168 182 H232 Q256 188 259 212 Q266 268 262 320 Q267 372 259 414
+             Q200 430 141 414 Q133 372 138 320 Q134 268 141 212 Q144 188 168 182 Z"
+          fill="url(#elder-female-costume-shield-warrior__tunic)"/>
+  </g>
+
+  <!-- TRIM: rim highlight along the two visible crescent horns and over the crown of the shield.
+       Plain rim only: no device, no boss, no motif, no star. -->
+  <g stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M97 356 Q96 388 104 402"/>
+    <path d="M303 356 Q304 388 296 402"/>
+    <path d="M104 306 Q126 244 200 238 Q274 244 296 306"/>
+  </g>
+
+  <!-- MAJOR FORM: the wide diagonal baldric, a broad strap from the left shoulder to the right
+       hip, with a plain rectangular fitting where it meets the hip -->
+  <path d="M146 190 L258 314 L236 334 L124 210 Z"
+        fill="url(#elder-female-costume-shield-warrior__dark)"/>
+  <path d="M232 306 H258 Q262 320 258 336 H232 Q228 320 232 306 Z"
+        fill="url(#elder-female-costume-shield-warrior__trim)"/>
+
+  <!-- TRIM: neck bind, a flat woven band struck at the ceiling and running downward -->
+  <path d="M170 182 H230 L232 200 Q200 210 168 200 Z"
+        fill="url(#elder-female-costume-shield-warrior__trim)"/>
+
+  <!-- TRIM: woven hem band at mid thigh, with a chevron stitch inside it -->
+  <path d="M139 394 Q200 412 261 394 L262 414 Q200 432 138 414 Z"
+        fill="url(#elder-female-costume-shield-warrior__trim)"/>
+  <path d="M148 404 l10 9 l10 -9 l10 9 l10 -9 l10 9 l10 -9 l10 9 l10 -9 l10 9 l10 -9 l10 9 l10 -9"
+        stroke="var(--c2, #2E211A)" stroke-opacity="0.42" stroke-width="3" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- TRIM: sleeve cuff bands. Cloth bands on both cuffs, not metal bracers. -->
+  <g fill="url(#elder-female-costume-shield-warrior__trim)">
+    <path d="M110 316 q19 8 38 0 v14 q-19 8 -38 0 z"/>
+    <path d="M290 316 q-19 8 -38 0 v14 q19 8 38 0 z"/>
+  </g>
+
+  <!-- STRUCTURAL: trouser seams and boot top binding -->
+  <g stroke="var(--c1, #B3A07C)" stroke-opacity="0.3" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M180 340 L178 496"/>
+    <path d="M220 340 L222 496"/>
+  </g>
+  <path d="M154 508 q24 10 48 0 M198 508 q24 10 48 0" stroke="var(--c3, #C97B5F)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlights -->
+  <path d="M164 206 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M116 204 q16 8 32 0 M284 204 q-16 8 -32 0" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M158 522 q22 8 42 0 M200 522 q22 8 42 0" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

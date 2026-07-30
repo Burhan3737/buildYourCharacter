@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: both flat shoulder plates topped at y152 and the
+       vest panel at y150. The plates are rebuilt with their top edge at y182 and deepened to
+       y230 rather than thinned, and the vest at y184, so the yoke still reads as a slab.
+
+       silhouette axes: shoulder=a broad flat plate yoke slab over each shoulder, and
+       closure=open down both sides and cross laced from armpit to waist, so bare skin shows
+       through the lacing on both flanks. That bare skin is the character's own, drawn by the
+       body underneath, and is never painted here as a phantom garment.
+       Trademark: the chest carries NO emblem and NO applied graphic. The fallback is a warm
+       tan over a deep brown with bone lacing, deliberately NOT green plus purple, and the
+       trouser hem is a clean turned cuff and never a torn one. -->
+  <defs>
+    <linearGradient id="elder-male-costume-strongarm__vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C7B5C)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #5C4636)"/>
+      <stop offset="1" stop-color="var(--c1, #8A6B4F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two flat shoulder plates, a narrow front vest panel, and straight trousers -->
+  <g class="sp-shadow">
+    <path d="M124 182 H176 Q182 182 182 190 V222 Q182 230 174 230 H126 Q118 230 118 220
+             L118 192 Q118 182 124 182 Z" fill="url(#elder-male-costume-strongarm__plate)"/>
+    <path d="M276 182 H224 Q218 182 218 190 V222 Q218 230 226 230 H274 Q282 230 282 220
+             L282 192 Q282 182 276 182 Z" fill="url(#elder-male-costume-strongarm__plate)"/>
+    <path d="M152 184 H248 Q254 212 252 244 L250 316 Q248 326 238 326 H162 Q152 326 150 316
+             L148 244 Q146 212 152 184 Z" fill="url(#elder-male-costume-strongarm__vest)"/>
+    <path d="M152 340 H198 Q200 440 196 534 Q196 542 188 542 H164 Q156 542 156 534
+             Q152 440 152 340 Z" fill="url(#elder-male-costume-strongarm__trouser)"/>
+    <path d="M248 340 H202 Q200 440 204 534 Q204 542 212 542 H236 Q244 542 244 534
+             Q248 440 248 340 Z" fill="url(#elder-male-costume-strongarm__trouser)"/>
+  </g>
+
+  <!-- the open sides: five cross lacing bars over bare skin on each flank -->
+  <g stroke="var(--c3, #E4E0D2)" stroke-width="4.4" stroke-linecap="round" fill="none">
+    <path d="M130 238 L150 248 M150 238 L130 248"/>
+    <path d="M130 258 L150 268 M150 258 L130 268"/>
+    <path d="M130 278 L150 288 M150 278 L130 288"/>
+    <path d="M130 298 L150 308 M150 298 L130 308"/>
+    <path d="M130 314 L150 322 M150 314 L130 322"/>
+    <path d="M270 238 L250 248 M250 238 L270 248"/>
+    <path d="M270 258 L250 268 M250 258 L270 268"/>
+    <path d="M270 278 L250 288 M250 278 L270 288"/>
+    <path d="M270 298 L250 308 M250 298 L270 308"/>
+    <path d="M270 314 L250 322 M250 314 L270 322"/>
+  </g>
+
+  <!-- wide buckled belt -->
+  <path d="M136 314 H264 Q268 326 266 342 H134 Q132 326 136 314 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M186 310 H214 Q218 326 216 346 H184 Q182 326 186 310 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M192 322 H208" stroke="var(--c2, #5C4636)" stroke-width="4" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- turned trouser cuffs and integral boots -->
+  <path d="M150 528 H198 V544 H150 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M202 528 H250 V544 H202 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M154 540 H202 Q208 556 206 568 H156 Q148 556 154 540 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M198 540 H246 Q252 556 250 568 H200 Q192 556 198 540 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- plate rivets and the yoke bevel -->
+  <g fill="var(--c3, #E4E0D2)">
+    <circle cx="130" cy="194" r="3.4"/><circle cx="130" cy="218" r="3.4"/>
+    <circle cx="170" cy="194" r="3.4"/><circle cx="170" cy="218" r="3.4"/>
+    <circle cx="270" cy="194" r="3.4"/><circle cx="270" cy="218" r="3.4"/>
+    <circle cx="230" cy="194" r="3.4"/><circle cx="230" cy="218" r="3.4"/>
+  </g>
+  <path d="M124 190 H176" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M224 190 H276" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M164 212 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

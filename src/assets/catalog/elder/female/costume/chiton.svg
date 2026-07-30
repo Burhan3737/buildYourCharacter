@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chiton" data-family="chiton" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = a row of six small round pins running
+       out along the top of BOTH arms, from which the cloth falls in a scalloped pseudo sleeve to
+       the elbow. VOLUME = belted twice, once under the bust and once at the waist, with a bloused
+       fold spilling over the upper belt. The hem is at the ankle.
+       The fastening is the separating axis in the Greek group: peplos takes ONE large pin at each
+       shoulder with bare arms, winged messenger is pinned at ONE shoulder only with a mid thigh
+       hem, and this one takes the full row along both arms.
+       CEILING RESOLUTION: the adult reference pins the row across the shoulder crest at y157 to
+       y163. That crest is above this bundle's ceiling, so the row was moved off the crest and out
+       onto the sleeve top. The innermost pin now sits at cy189 r5.5, topmost edge y183.5, and the
+       pseudo sleeve hangs from the y182 sleeve top downward instead of the garment being shifted.
+       Elder read: the pin row sits further inboard, the sleeve head is soft rather than set, the
+       hem is long, and both belts are broad straps.
+       Surface tools: trim (two belts, the pin row, the hem band) and structural detail (the
+       scalloped sleeve edge and the bloused fold). -->
+  <defs>
+    <linearGradient id="elder-female-costume-chiton__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F2E9D6)"/>
+      <stop offset="1" stop-color="var(--c1, #CFC2A6)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-chiton__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE3CE)"/>
+      <stop offset="1" stop-color="var(--c1, #C9BB9E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-chiton__blouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8DCC6)"/>
+      <stop offset="1" stop-color="var(--c1, #C2B394)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-chiton__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #93A2E4)"/>
+      <stop offset="1" stop-color="var(--c2, #6273BE)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-chiton__pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DCB988)"/>
+      <stop offset="1" stop-color="var(--c3, #A8814C)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-chiton__sandal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D6B183)"/>
+      <stop offset="1" stop-color="var(--c3, #A07A47)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: the draped tube to the ankle, two scalloped pseudo sleeves, the under bust
+       belt and the bloused fold that spills over it, and a sandal on each foot. -->
+  <g class="sp-shadow">
+    <path d="M152 182 H248 Q258 216 260 260 Q262 330 266 420 Q270 484 272 534
+             Q200 552 128 534 Q130 484 134 420 Q138 330 140 260 Q142 216 152 182 Z"
+          fill="url(#elder-female-costume-chiton__cloth)"/>
+    <path d="M160 182 H106 V240 q5 26 17 26 q12 0 16 -26 q5 24 16 24 q4 -12 5 -30 Z"
+          fill="url(#elder-female-costume-chiton__sleeve)"/>
+    <path d="M240 182 H294 V240 q-5 26 -17 26 q-12 0 -16 -26 q-5 24 -16 24 q-4 -12 -5 -30 Z"
+          fill="url(#elder-female-costume-chiton__sleeve)"/>
+    <path d="M142 246 Q200 264 258 246 L259 266 Q200 284 141 266 Z"
+          fill="url(#elder-female-costume-chiton__belt)"/>
+    <path d="M140 252 Q200 270 260 252 q2 20 -4 34 q-12 8 -20 -6 q-11 16 -22 8
+             q-9 12 -18 2 q-10 12 -20 0 q-12 8 -20 -6 q-8 -14 -16 -32 Z"
+          fill="url(#elder-female-costume-chiton__blouse)"/>
+    <rect x="158" y="554" width="46" height="13" rx="6"
+          fill="url(#elder-female-costume-chiton__sandal)"/>
+    <rect x="196" y="554" width="46" height="13" rx="6"
+          fill="url(#elder-female-costume-chiton__sandal)"/>
+  </g>
+
+  <!-- TRIM: the row of six small round pins along the top of each arm. The row spans 55 units
+       on each side, comfortably over the practical floor. -->
+  <g fill="url(#elder-female-costume-chiton__pin)">
+    <circle cx="112" cy="198" r="5.5"/><circle cx="123" cy="196" r="5.5"/>
+    <circle cx="134" cy="194" r="5.5"/><circle cx="145" cy="192" r="5.5"/>
+    <circle cx="156" cy="190" r="5.5"/><circle cx="167" cy="189" r="5.5"/>
+    <circle cx="288" cy="198" r="5.5"/><circle cx="277" cy="196" r="5.5"/>
+    <circle cx="266" cy="194" r="5.5"/><circle cx="255" cy="192" r="5.5"/>
+    <circle cx="244" cy="190" r="5.5"/><circle cx="233" cy="189" r="5.5"/>
+  </g>
+  <g fill="var(--c2, #6273BE)" opacity="0.5">
+    <circle cx="112" cy="198" r="2"/><circle cx="123" cy="196" r="2"/>
+    <circle cx="134" cy="194" r="2"/><circle cx="145" cy="192" r="2"/>
+    <circle cx="156" cy="190" r="2"/><circle cx="167" cy="189" r="2"/>
+    <circle cx="288" cy="198" r="2"/><circle cx="277" cy="196" r="2"/>
+    <circle cx="266" cy="194" r="2"/><circle cx="255" cy="192" r="2"/>
+    <circle cx="244" cy="190" r="2"/><circle cx="233" cy="189" r="2"/>
+  </g>
+
+  <!-- TRIM: the second belt, a broad strap at the natural waist, with a plain slide -->
+  <path d="M138 292 Q200 308 262 292 L263 312 Q200 328 137 312 Z"
+        fill="url(#elder-female-costume-chiton__belt)"/>
+  <path d="M188 290 H212 Q216 310 212 330 H188 Q184 310 188 290 Z"
+        fill="url(#elder-female-costume-chiton__pin)"/>
+
+  <!-- STRUCTURAL: drape folds falling from the waist belt to the hem -->
+  <g stroke="var(--c2, #6273BE)" stroke-opacity="0.26" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M164 322 Q158 420 152 520"/>
+    <path d="M186 324 Q184 424 182 528"/>
+    <path d="M214 324 Q216 424 218 528"/>
+    <path d="M236 322 Q242 420 248 520"/>
+  </g>
+
+  <!-- TRIM: ankle hem band -->
+  <path d="M132 520 Q200 540 268 520" stroke="var(--c3, #C8A06A)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- STRUCTURAL: shading in the throat of each sleeve scallop -->
+  <path d="M110 226 q24 18 48 -6 M290 226 q-24 18 -48 -6" stroke="var(--c2, #6273BE)"
+        stroke-opacity="0.24" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: sandal straps, drawn into the costume because costume hides the shoes slot -->
+  <g stroke="var(--c3, #C8A06A)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M166 556 L184 544 M196 556 L182 544 M162 546 q20 8 40 0"/>
+    <path d="M234 556 L216 544 M204 556 L218 544 M198 546 q20 8 40 0"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M166 200 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M114 212 q20 8 40 0 M286 212 q-20 8 -40 0" stroke="#FFFFFF" stroke-opacity="0.24"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M156 348 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Peplos" data-family="peplos" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = ONE large pin at each shoulder and both
+       arms entirely bare, so the outline is a plain rectangle with nothing on the arms at all.
+       CLOSURE = one whole side open in a vertical slit from hem to hip, so the right leg is bare
+       from the knee down while the left side stays closed to the ankle.
+       The deep overfold hangs to the waist and reads as a second horizontal hem, and the belt goes
+       on over the fold. Hem is at the ankle.
+       The fastening is the separating axis in the Greek group: chiton takes a ROW of six small
+       pins along both arms, winged messenger is pinned at ONE shoulder only.
+       CEILING RESOLUTION: the adult reference sets its two pins on the garment top edge at cy164,
+       which is above this bundle's ceiling. The pins were moved DOWN onto the cloth instead: the
+       garment top edge is struck at y182 and each pin now sits at cy204, its outer ring edge at
+       y183. Nothing was translated wholesale, the depth runs downward from the new top edge.
+       Bare arms are left undrawn so the body's own skin shows. No phantom garment colour is
+       painted over them anywhere in this file.
+       Elder read: a long hem, a broad belt strap in place of a cord, and a fold that softens the
+       shoulder line rather than a fitted seam.
+       Surface tools: panel blocking (the ink overfold against the terracotta ground) and trim (the
+       two pins, the belt, the slit binding and the hem band). -->
+  <defs>
+    <linearGradient id="elder-female-costume-peplos__wool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D89273)"/>
+      <stop offset="1" stop-color="var(--c1, #AE6349)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-peplos__fold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402F)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-peplos__gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBD98F)"/>
+      <stop offset="1" stop-color="var(--c3, #D9A24E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-peplos__sandal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55402F)"/>
+      <stop offset="1" stop-color="var(--c2, #2E211A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAJOR FORMS: the rectangle with its ankle hem and its open side, the deep overfold, and a
+       sandal on each foot. The arms are deliberately absent. -->
+  <g class="sp-shadow">
+    <path d="M154 182 H246 Q254 222 254 270 Q254 302 252 330 L226 430 L202 538
+             Q176 550 152 538 Q147 440 146 340 Q146 250 154 182 Z"
+          fill="url(#elder-female-costume-peplos__wool)"/>
+    <path d="M152 182 H248 Q256 230 256 272 Q258 288 256 302 Q200 320 148 302
+             Q146 288 148 272 Q148 230 152 182 Z"
+          fill="url(#elder-female-costume-peplos__fold)"/>
+    <path d="M160 552 h42 q6 5 4 12 q-24 5 -48 0 q-2 -8 2 -12 Z"
+          fill="url(#elder-female-costume-peplos__sandal)"/>
+    <path d="M240 552 h-42 q-6 5 -4 12 q24 5 48 0 q2 -8 -2 -12 Z"
+          fill="url(#elder-female-costume-peplos__sandal)"/>
+  </g>
+
+  <!-- TRIM: the belt, a broad strap worn on over the fold and sitting above the fold hem so the
+       fold still reads as a second horizontal hem below it -->
+  <path d="M146 262 Q200 280 254 262 L255 284 Q200 302 145 284 Z"
+        fill="url(#elder-female-costume-peplos__gold)"/>
+
+  <!-- TRIM: the fold hem, banded so the second horizontal hem reads at thumbnail size -->
+  <path d="M150 300 Q200 318 250 300" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: the open side, bound down the slit edge from the hip to the hem -->
+  <path d="M252 330 L226 430 L203 536" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: ONE large pin at each shoulder, set down on the cloth. Disc plus ring measures 42
+       units across, over the practical floor, and its top edge sits at y183. -->
+  <g>
+    <circle cx="168" cy="204" r="17" fill="url(#elder-female-costume-peplos__gold)"/>
+    <circle cx="168" cy="204" r="19" fill="none" stroke="var(--c3, #D9A24E)" stroke-width="4"/>
+    <circle cx="168" cy="204" r="6" fill="var(--c2, #2E211A)"/>
+    <circle cx="232" cy="204" r="17" fill="url(#elder-female-costume-peplos__gold)"/>
+    <circle cx="232" cy="204" r="19" fill="none" stroke="var(--c3, #D9A24E)" stroke-width="4"/>
+    <circle cx="232" cy="204" r="6" fill="var(--c2, #2E211A)"/>
+  </g>
+
+  <!-- STRUCTURAL: vertical drape folds, on the fold above and on the skirt below -->
+  <g stroke="var(--c1, #AE6349)" stroke-opacity="0.4" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M170 226 Q168 264 168 292"/>
+    <path d="M200 230 Q200 266 200 296"/>
+    <path d="M230 226 Q232 264 232 292"/>
+  </g>
+  <g stroke="var(--c2, #2E211A)" stroke-opacity="0.3" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M164 330 Q158 430 154 528"/>
+    <path d="M186 332 Q184 430 182 534"/>
+    <path d="M210 332 Q206 428 196 528"/>
+  </g>
+
+  <!-- TRIM: ankle hem band on the closed side -->
+  <path d="M152 528 Q178 540 202 528" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- TRIM: sandal straps, drawn into the costume because costume hides the shoes slot -->
+  <g stroke="var(--c3, #D9A24E)" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M166 556 L184 544 M196 556 L182 544 M162 546 q20 8 40 0"/>
+    <path d="M234 556 L216 544 M204 556 L218 544 M198 546 q20 8 40 0"/>
+  </g>
+
+  <!-- house highlights -->
+  <path d="M172 220 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 348 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = mid calf (a straight column to y508), CLOSURE = full button
+       placket under a notched collar. Also shoulder = long set in sleeve, volume = straight
+       with no waist shaping.
+       Against raincoat, the other long top in this bundle, it differs on hem (mid calf y508
+       against raincoat's mid thigh y406) and on volume (a straight column of constant width
+       against raincoat's A line flare), plus closure (buttons under a notched collar against
+       a snap placket) and shoulder (no hood).
+       Against blazer it differs on closure and hem; against button up on hem and volume.
+       Refit arithmetic against the drawn elder body, no adult value reused:
+       hem y508 = the elder mid calf (adult male was y499).
+       column x128 to x272, a roomy 8u of overlap on the drawn torso x136 to x264 each side.
+       sleeve columns x106 to x146 and x254 to x294, 40u wide over the 26u arms at x114 to
+       x140 and x260 to x286, so the coat sits loose through the upper arm.
+       sleeve head y198 with a 16u corner radius, softened and set inboard for this stage.
+       turned cuff y340 to y366, meeting the hand centre at y366.
+       back vent y462 to the hem, 46u long. Elder note: the button line is broad, 28u of
+       placket carrying 7u buttons at a 50u pitch, easy to find and easy to work. -->
+  <defs>
+    <linearGradient id="elder-male-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C39463)"/>
+      <stop offset="1" stop-color="var(--c2, #8E6538)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C39463)"/>
+      <stop offset="1" stop-color="var(--c2, #825A2F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-long-coat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #8E6538)"/>
+      <stop offset="1" stop-color="var(--c3, #3B2A22)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-long-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3529)"/>
+      <stop offset="1" stop-color="var(--c2, #8E6538)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two long set in sleeves and one straight column to mid calf -->
+  <g class="sp-shadow">
+    <rect x="106" y="198" width="40" height="168" rx="16" fill="url(#elder-male-top-long-coat__sleeve)"/>
+    <rect x="254" y="198" width="40" height="168" rx="16" fill="url(#elder-male-top-long-coat__sleeve)"/>
+    <path d="M128 214 Q128 180 164 178 H236 Q272 180 272 214 V492 Q272 508 256 508 H144 Q128 508 128 492 Z"
+          fill="url(#elder-male-top-long-coat__body)"/>
+  </g>
+
+  <!-- surface tool one: panel blocking. A broad contrast placket the full length of the closure -->
+  <rect x="186" y="184" width="28" height="266" rx="7" fill="url(#elder-male-top-long-coat__placket)"/>
+  <path d="M200 190 V444" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- surface tool two: structural. Five broad buttons at an easy 50u pitch -->
+  <g fill="var(--c3, #3B2A22)">
+    <circle cx="200" cy="212" r="7"/>
+    <circle cx="200" cy="262" r="7"/>
+    <circle cx="200" cy="312" r="7"/>
+    <circle cx="200" cy="362" r="7"/>
+    <circle cx="200" cy="412" r="7"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.22">
+    <circle cx="198" cy="210" r="2.6"/>
+    <circle cx="198" cy="260" r="2.6"/>
+    <circle cx="198" cy="310" r="2.6"/>
+    <circle cx="198" cy="360" r="2.6"/>
+    <circle cx="198" cy="410" r="2.6"/>
+  </g>
+
+  <!-- notched collar: an upper leaf and a lower lapel with the notch between them -->
+  <path d="M170 176 L200 188 L196 212 L162 198 Z" fill="url(#elder-male-top-long-coat__collar)"/>
+  <path d="M230 176 L200 188 L204 212 L238 198 Z" fill="url(#elder-male-top-long-coat__collar)"/>
+  <path d="M162 202 L196 218 L192 258 L156 232 Z" fill="var(--c3, #3B2A22)" fill-opacity="0.82"/>
+  <path d="M238 202 L204 218 L208 258 L244 232 Z" fill="var(--c3, #3B2A22)" fill-opacity="0.82"/>
+  <path d="M182 180 Q200 196 218 180 Z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- two welt pockets set low on the column -->
+  <rect x="142" y="396" width="48" height="14" rx="7" fill="var(--c3, #3B2A22)"/>
+  <rect x="210" y="396" width="48" height="14" rx="7" fill="var(--c3, #3B2A22)"/>
+  <path d="M142 410 h48 v6 h-48 z" fill="var(--c2, #8E6538)" fill-opacity="0.5"/>
+  <path d="M210 410 h48 v6 h-48 z" fill="var(--c2, #8E6538)" fill-opacity="0.5"/>
+
+  <!-- single back vent, opening from the hem -->
+  <path d="M193 462 H207 V500 Q207 508 200 508 Q193 508 193 500 Z"
+        fill="var(--c3, #3B2A22)" fill-opacity="0.55"/>
+  <path d="M200 464 V504" stroke="var(--c3, #3B2A22)" stroke-opacity="0.85" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- turned cuffs -->
+  <rect x="106" y="340" width="40" height="26" rx="11" fill="var(--c3, #3B2A22)"/>
+  <rect x="254" y="340" width="40" height="26" rx="11" fill="var(--c3, #3B2A22)"/>
+
+  <!-- straight side seams, no waist shaping -->
+  <path d="M133 220 V494" stroke="var(--c2, #8E6538)" stroke-opacity="0.42" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M267 220 V494" stroke="var(--c2, #8E6538)" stroke-opacity="0.42" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 498 H252" stroke="var(--c2, #8E6538)" stroke-opacity="0.45" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight -->
+  <path d="M150 206 Q168 220 186 212" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 206 Q232 220 214 212" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

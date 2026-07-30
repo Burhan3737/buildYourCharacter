@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Handlebar Moustache" data-family="handlebar"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184); ear ellipses cx149 and cx251, cy129,
+       rx11 ry13, so each ear spans x138 to 160 and x240 to 262, y116 to 142. Mouth
+       measured off elder/male/mouth: resting corners x181 and x219, lip top y148.
+       Beard floor torso.y 184 + 76 = y260; this file stops at y150.
+
+       EAR CLEARANCE, RE-MEASURED ON THIS BUNDLE rather than inherited. The outer
+       envelope of the hooks reaches x164 at y131; the left ear ellipse is at its widest
+       (x160) at y129, so the hook clears the ear by 4 units, and by 7 at the tip height
+       y120 where the ear only reaches x157. This was checked because the adult/male
+       counterpart's tips at x148 to 150 and y92 to 97 sit INSIDE the adult ear ellipse
+       (x138 to 160, y82 to 108) and do not in fact clear it.
+
+       Axes chosen: UPPER LIP = flared, extended ends. The bar is ordinary but each end
+       is grown out and waxed into a hook rising 14 units above the bar's own top edge,
+       so the outline is 72 units across against the moustache family's 60 and against
+       the 38 unit resting mouth. CHEEK LINE = none; chin and jaw stay bare, which is
+       what separates it from every joined family. -->
+  <defs>
+    <linearGradient id="elder-male-beard-handlebar__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.62" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- centre bar with two waxed hooks; each tip is a real point, thick where it leaves
+       the lip and closing as it rises -->
+  <g class="sp-shadow">
+    <path d="M170 120 C164 122 163 130 166 138 C171 146 178 139 185 137
+             C191 135 196 134 200 134 C204 134 209 135 215 137
+             C222 139 229 146 234 138 C237 130 236 122 230 120
+             C234 129 231 139 224 145 C217 150 210 149 200 149
+             C190 149 183 150 176 145 C169 139 166 129 170 120 Z"
+          fill="url(#elder-male-beard-handlebar__grad)"/>
+  </g>
+
+  <!-- philtrum split -->
+  <path d="M197 135 C198 138 202 138 203 135 C205 140 203 146 200 146
+           C197 146 195 140 197 135 Z"
+        fill="var(--hair2, #8A8E97)"/>
+
+  <!-- wax lines running out into each hook -->
+  <path d="M187 142 C178 143 171 140 168 132" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M213 142 C222 143 229 140 232 132" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M182 127 C177 130 174 135 174 140" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M218 127 C223 130 226 135 226 140" stroke="var(--hair2, #8A8E97)"
+        stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- shadow under the bar where it sits on the lip -->
+  <path d="M182 147 C190 150 210 150 218 147" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- lit crest along the top of the bar and up into both hooks -->
+  <path d="M168 128 C182 138 218 138 232 128" stroke="#FFFFFF" stroke-opacity="0.3"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

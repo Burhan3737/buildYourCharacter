@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Apron Dress" data-family="apron-dress" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it badly: its underdress topped at y150, its straps
+       rose to y172 and the pair of domed brooches sat at y174. All of that is above this
+       bundle's ceiling. Rebuilt rather than lowered: the underdress top edge is rebuilt at
+       y184, the overdress top at y214, and the brooches have moved DOWN onto the cloth at
+       cy 202 where they still read as the collarbone pair.
+
+       silhouette axes: shoulder=two short front straps meeting a pair of domed oval brooches,
+       and hem=layered, the overdress ending at y 498 and the underdress at y 546, so a
+       48 unit band of a second colour shows beneath it. Recomputed, not inherited: 546 minus
+       498 is 48, over the 40 unit tray floor, and it is what identifies the family at thumbnail.
+       Elder read: looser through the upper arm and body, hems a touch longer, softer sleeve head.
+       Authored on this body because there are no aisles. Body type changes drape and fit; it
+       never changes availability. -->
+  <defs>
+    <linearGradient id="elder-male-costume-apron-dress__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9C2AE)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-apron-dress__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9C5F4E)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-apron-dress__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C9C2AE)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-apron-dress__brooch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #DDD6C2)"/>
+      <stop offset="1" stop-color="var(--c2, #7D6A50)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ankle length long sleeved underdress, top edge rebuilt at the ceiling -->
+  <g class="sp-shadow">
+    <path d="M150 184 H250 Q260 214 258 250 L262 348 Q268 452 264 546 Q200 558 136 546
+             Q132 452 138 348 L142 250 Q140 214 150 184 Z"
+          fill="url(#elder-male-costume-apron-dress__under)"/>
+    <path d="M110 196 H146 Q150 220 148 246 L146 348 Q146 360 128 360 Q110 360 108 348
+             L106 246 Q104 220 110 196 Z" fill="url(#elder-male-costume-apron-dress__sleeve)"/>
+    <path d="M290 196 H254 Q250 220 252 246 L254 348 Q254 360 272 360 Q290 360 292 348
+             L294 246 Q296 220 290 196 Z" fill="url(#elder-male-costume-apron-dress__sleeve)"/>
+  </g>
+
+  <!-- shorter sleeveless woollen overdress, hem well clear of the underdress hem -->
+  <g class="sp-shadow">
+    <path d="M162 214 H238 Q248 270 246 324 Q252 414 250 498 Q200 508 150 498
+             Q148 414 154 324 Q152 270 162 214 Z"
+          fill="url(#elder-male-costume-apron-dress__over)"/>
+  </g>
+
+  <!-- two short front straps rising from the overdress toward the collarbone -->
+  <path d="M168 216 V200" stroke="var(--c1, #9C5F4E)" stroke-width="14" stroke-linecap="round"
+        fill="none"/>
+  <path d="M232 216 V200" stroke="var(--c1, #9C5F4E)" stroke-width="14" stroke-linecap="round"
+        fill="none"/>
+
+  <!-- the pair of domed oval brooches, moved down onto the cloth to clear the ceiling -->
+  <ellipse cx="167" cy="202" rx="15" ry="11" fill="url(#elder-male-costume-apron-dress__brooch)"/>
+  <ellipse cx="233" cy="202" rx="15" ry="11" fill="url(#elder-male-costume-apron-dress__brooch)"/>
+  <path d="M158 199 q9 -5 18 0 M224 199 q9 -5 18 0" stroke="#FFFFFF" stroke-opacity="0.32"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- swag of beads strung between the brooches -->
+  <path d="M174 212 Q200 240 226 212" stroke="var(--c3, #C9C2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c3, #C9C2AE)">
+    <circle cx="182" cy="223" r="4"/><circle cx="191" cy="229" r="4"/>
+    <circle cx="200" cy="231" r="4"/><circle cx="209" cy="229" r="4"/>
+    <circle cx="218" cy="223" r="4"/>
+  </g>
+
+  <!-- small cluster of tools on a chain at one hip -->
+  <path d="M242 306 Q250 328 248 346" stroke="var(--c3, #C9C2AE)" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 346 h16 q3 12 -2 20 h-12 q-5 -8 -2 -20 Z" fill="var(--c3, #C9C2AE)"/>
+  <path d="M254 348 q8 10 4 20" stroke="var(--c3, #C9C2AE)" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- woven trim band at the overdress hem, a generic geometric border only -->
+  <path d="M151 488 Q200 498 249 488" stroke="var(--c3, #C9C2AE)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <g stroke="var(--c2, #7D6A50)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M176 246 Q172 372 170 486"/>
+    <path d="M224 246 Q228 372 230 486"/>
+  </g>
+
+  <!-- integral soft shoes -->
+  <path d="M156 546 H202 Q206 556 204 568 H158 Q152 556 156 546 Z" fill="var(--c2, #7D6A50)"/>
+  <path d="M198 546 H244 Q248 556 246 568 H200 Q194 556 198 546 Z" fill="var(--c2, #7D6A50)"/>
+
+  <!-- house highlight -->
+  <path d="M162 244 q38 14 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

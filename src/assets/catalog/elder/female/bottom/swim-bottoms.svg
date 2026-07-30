@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG LENGTH = none at all, there is no leg on this
+       garment, and HEM TREATMENT = a plain bound edge 6 units wide around the waist and both
+       leg openings, no band and no cuff. High rise, top edge y302; a skin close brief with the
+       leg opening cut high, rising to y360 at the side seam.
+       Refit arithmetic for the elder body, re derived and not copied from adult/female: the
+       elder hip block is y328 to y382 and the leg rects begin at y374, so the crotch point of
+       the brief sits at y390 and the side of the leg opening at y360, leaving a 30 unit rise
+       of high cut opening (390 minus 360 = 30). The brief spans x152 to x248 at the waist and
+       x149 to x251 over the hip, so it laps the hip block (x150 to x250) by 1 unit a side and
+       stays skin close rather than standing off the body.
+       Worn with a swim top, the midriff is meant to stay bare; the skin either side is the
+       body layer showing through and is never painted here.
+       Surface tools: pattern (a scallop repeat clipped inside the brief), panel blocking
+       (contrast side panels cut on the same high line as the leg opening) and trim (the plain
+       bound edge and the small centre knot). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="0.6" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4E9C8B)"/>
+    </linearGradient>
+    <pattern id="elder-female-bottom-swim-bottoms__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M-2 12 a8 8 0 0 1 8 -8 a8 8 0 0 1 8 8" stroke="var(--c3, #FDF3E3)"
+            stroke-opacity="0.55" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-female-bottom-swim-bottoms__clip">
+      <path d="M158 302 Q152 302 152 308 L149 360 Q170 371 182 382 Q190 390 200 390
+               Q210 390 218 382 Q230 371 251 360 L248 308 Q248 302 242 302 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one high rise brief, the leg openings scooped away up onto the hip -->
+  <g class="sp-shadow">
+    <path d="M158 302 Q152 302 152 308 L149 360 Q170 371 182 382 Q190 390 200 390
+             Q210 390 218 382 Q230 371 251 360 L248 308 Q248 302 242 302 Z"
+          fill="url(#elder-female-bottom-swim-bottoms__brief)"/>
+  </g>
+
+  <!-- scallop pattern clipped inside the brief -->
+  <g clip-path="url(#elder-female-bottom-swim-bottoms__clip)">
+    <rect x="146" y="298" width="110" height="96"
+          fill="url(#elder-female-bottom-swim-bottoms__scallop)"/>
+  </g>
+
+  <!-- contrast side panels, cut on the same high line as the leg opening -->
+  <path d="M158 302 Q152 302 152 308 L149 360 Q160 366 168 375 L172 320 Q172 304 164 302 Z"
+        fill="var(--c2, #4E9C8B)" opacity="0.75"/>
+  <path d="M242 302 Q248 302 248 308 L251 360 Q240 366 232 375 L228 320 Q228 304 236 302 Z"
+        fill="var(--c2, #4E9C8B)" opacity="0.75"/>
+
+  <!-- plain bound edge, 6 units, along the waist and both leg openings -->
+  <path d="M152 306 H248" stroke="var(--c3, #FDF3E3)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 358 Q171 369 183 380 Q191 388 200 388" stroke="var(--c3, #FDF3E3)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M250 358 Q229 369 217 380 Q209 388 200 388" stroke="var(--c3, #FDF3E3)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- small centre knot at the waist -->
+  <path d="M190 316 q-8 8 -14 12" stroke="var(--c3, #FDF3E3)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 316 q8 8 14 12" stroke="var(--c3, #FDF3E3)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="315" r="6" fill="var(--c3, #FDF3E3)"/>
+
+  <!-- soft upper highlight -->
+  <path d="M164 328 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 352 q14 14 28 0" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

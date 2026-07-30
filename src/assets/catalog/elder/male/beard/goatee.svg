@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156).
+       Mouth measured off elder/male/mouth: resting neutral lower edge y157, deepest
+       drawn mouth (grin / open-laugh) y167. The island top sits at y162, which is a
+       clear 5 units of skin below the resting lip.
+       Beard floor torso.y 184 + 76 = y260; this file stops at y207, so it hangs 23
+       units past the chin and still clears the floor by 53.
+
+       Axes chosen: CHIN AND JAW = chin only. One rounded island on the chin pad,
+       48 wide by 45 tall, with clear skin all the way round it and both jaw corners
+       bare. UPPER LIP = bare, so it never closes into a ring the way circle-beard
+       does. Cheek line: none. -->
+  <defs>
+    <linearGradient id="elder-male-beard-goatee__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.58" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the chin island, widest at the chin pad and tapering as it drops past it -->
+  <g class="sp-shadow">
+    <path d="M176 166 C183 162 217 162 224 166
+             C229 178 227 194 215 202 C207 208 193 208 185 202
+             C173 194 171 178 176 166 Z"
+          fill="url(#elder-male-beard-goatee__grad)"/>
+  </g>
+
+  <!-- soft-edged top: reads as a small gap of skin under the lower lip -->
+  <path d="M179 167 C187 163 213 163 221 167 C213 171 187 171 179 167 Z"
+        fill="var(--skin2, #C99A72)" opacity="0.35"/>
+
+  <!-- the whorl at the centre of the chin, drawn in hair2 -->
+  <path d="M202 176 C209 176 211 182 206 187 C201 191 193 189 192 183"
+        stroke="var(--hair2, #8A8E97)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M185 176 C182 184 184 193 190 199" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M215 176 C218 184 216 193 210 199" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- weight at the hanging tip -->
+  <path d="M187 197 C193 203 207 203 213 197" stroke="var(--hair2, #8A8E97)"
+        stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- lit upper surface -->
+  <path d="M183 171 C192 167 208 167 217 171" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

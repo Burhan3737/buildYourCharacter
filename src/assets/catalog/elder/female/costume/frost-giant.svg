@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant Coat" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The fallback is MINT, deliberately, and must stay mint. Defaulting a frost giant to blue is
+       what makes it read as one studio's version of the character, and if the family only works in
+       blue then it is not a silhouette. Do not "fix" this palette to blue. -->
+  <!-- The thick shaggy shoulder collar has its TOP EDGE AT y182 and spreads OUTWARD to x126 and
+       x274, not upward. All the volume that would have gone up the neck goes sideways and down. -->
+  <!-- axes vs berserker: volume, hard angular rime spikes jutting from the outline against soft
+       lobes; hem, a closed knee length overcoat cut into uneven icicle teeth at y462 to y504
+       against an open thigh length jerkin with a lobed edge. -->
+  <defs>
+    <linearGradient id="elder-female-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ED2BF)"/>
+      <stop offset="1" stop-color="var(--c1, #4E9C8B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-frost-giant__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c1, #44907F)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F4FBF8)"/>
+      <stop offset="1" stop-color="var(--c2, #CFE7DE)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-frost-giant__shag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3F7A6E)"/>
+      <stop offset="1" stop-color="var(--c3, #275048)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-frost-giant__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #356A60)"/>
+      <stop offset="1" stop-color="var(--c3, #1E403A)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- thickly wrapped legs below the coat hem -->
+    <path d="M150 442 H202 L200 490 L198 540 Q176 550 152 540 L151 490 Z"
+          fill="url(#elder-female-costume-frost-giant__shag)"/>
+    <path d="M198 442 H250 L249 490 L247 540 Q224 550 200 540 L200 490 Z"
+          fill="url(#elder-female-costume-frost-giant__shag)"/>
+    <!-- bulky sleeves, forearms crusted with angular rime jutting off the outline -->
+    <path d="M110 202 Q110 182 134 182 H150 Q166 182 166 202 L162 232 L180 244 L160 264
+             L174 290 L156 310 L170 336 L152 356 Q130 366 110 356 L114 320 L98 298
+             L116 272 L100 248 L118 224 L108 202 Z"
+          fill="url(#elder-female-costume-frost-giant__sleeve)"/>
+    <path d="M290 202 Q290 182 266 182 H250 Q234 182 234 202 L238 232 L220 244 L240 264
+             L226 290 L244 310 L230 336 L248 356 Q270 366 290 356 L286 320 L302 298
+             L284 272 L300 248 L282 224 L292 202 Z"
+          fill="url(#elder-female-costume-frost-giant__sleeve)"/>
+    <!-- closed knee length overcoat: angular rime spikes on the outline, icicle tooth hem -->
+    <path d="M168 182 H232
+             L252 196 L242 218 L270 230 L246 250 L268 270 L244 292
+             L270 318 L244 342 L268 372 L244 404 L266 436 L246 462
+             L240 500 L232 464 L224 486 L216 462 L208 504 L200 466
+             L192 484 L184 462 L176 500 L168 464 L160 482 L154 462
+             L134 436 L156 404 L132 372 L156 342 L130 318 L156 292
+             L132 270 L154 250 L130 230 L158 218 L148 196 Z"
+          fill="url(#elder-female-costume-frost-giant__coat)"/>
+    <!-- thick shaggy shoulder collar: top edge at y182, spreading outward and down -->
+    <path d="M130 182 H270 Q280 204 270 224 Q256 242 244 220 Q232 244 216 224
+             Q204 244 188 224 Q174 242 160 220 Q148 240 136 218 Q124 202 130 182 Z"
+          fill="url(#elder-female-costume-frost-giant__shag)"/>
+    <!-- collar shag, drawn along lobes the collar edge already carries -->
+    <g stroke="var(--c3, #1E403A)" stroke-opacity="0.5" stroke-width="5"
+       fill="none" stroke-linecap="round">
+      <path d="M150 194 q-6 16 2 30"/>
+      <path d="M180 192 q-6 18 0 34"/>
+      <path d="M220 192 q6 18 0 34"/>
+      <path d="M250 194 q6 16 -2 30"/>
+    </g>
+    <!-- house highlight along the collar crest -->
+    <path d="M168 194 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- rime plates crusting the chest and forearms: scattered and asymmetric, never a chest emblem -->
+  <g class="sp-shadow">
+    <g fill="url(#elder-female-costume-frost-giant__rime)">
+      <path d="M162 244 L188 238 L196 262 L176 276 L158 264 Z"/>
+      <path d="M206 254 L234 248 L246 270 L226 284 L208 274 Z"/>
+      <path d="M168 292 L192 288 L200 312 L178 322 L164 308 Z"/>
+      <path d="M214 308 L242 304 L250 330 L226 340 L212 326 Z"/>
+      <path d="M170 348 L196 344 L204 370 L180 380 L166 364 Z"/>
+      <path d="M118 268 L140 264 L146 288 L126 298 L114 282 Z"/>
+      <path d="M254 268 L276 264 L284 288 L264 298 L252 282 Z"/>
+      <path d="M216 384 L242 380 L248 404 L226 414 L214 400 Z"/>
+    </g>
+    <!-- hard facet lines, so each plate reads as a faceted crust rather than a blob -->
+    <g stroke="var(--c1, #44907F)" stroke-opacity="0.42" stroke-width="3"
+       fill="none" stroke-linejoin="round">
+      <path d="M162 244 L176 276 M206 254 L226 284 M168 292 L178 322 M214 308 L226 340"/>
+      <path d="M170 348 L180 380 M118 268 L126 298 M254 268 L264 298 M216 384 L226 414"/>
+    </g>
+  </g>
+
+  <!-- leg wrap bindings -->
+  <g stroke="var(--c2, #CFE7DE)" stroke-opacity="0.72" stroke-width="5"
+     fill="none" stroke-linecap="round">
+    <path d="M154 462 h44 M154 486 h44 M155 508 h42 M156 528 h40"/>
+    <path d="M202 462 h44 M202 486 h44 M203 508 h42 M204 528 h40"/>
+  </g>
+
+  <!-- heavy wrapped overboots, drawn in because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="146" y="530" width="56" height="34" rx="16"
+          fill="url(#elder-female-costume-frost-giant__boot)"/>
+    <rect x="198" y="530" width="56" height="34" rx="16"
+          fill="url(#elder-female-costume-frost-giant__boot)"/>
+    <path d="M154 540 q20 -6 40 0 M206 540 q20 -6 40 0" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

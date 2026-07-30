@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mime" data-family="mime" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the banded body at y156, its boat neck bind at y157
+       and both brace heads at y158. All are rebuilt at y184 to y186 here, and the braces now
+       run from the shoulder at y188 down to a high waist at y336.
+
+       Axes: closure (two narrow braces worn over a high waist) and hem (a straight trouser
+       cropped clear above the ankle).
+       SIZE, recomputed from this file's own geometry: the trouser hem is y506 and the shoe top
+       is y546, so 40 units of the character's own leg show between them. That is exactly the
+       practical floor, and it is what makes the crop read at tray size. The bare band is the
+       character's own skin drawn by the body, never a phantom garment painted here.
+       There is no white face in this file: face paint has no slot in this project and the
+       costume layer draws above the face. -->
+  <defs>
+    <linearGradient id="elder-male-costume-mime__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6580)"/>
+      <stop offset="1" stop-color="var(--c1, #444E66)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-mime__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #6E6152)"/>
+      <stop offset="1" stop-color="var(--c4, #564B3F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-mime__brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B0743C)"/>
+      <stop offset="1" stop-color="var(--c3, #8E5B2C)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-mime__bands" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="16" height="8" fill="var(--c2, #E4E0D2)" fill-opacity="0.85"/>
+    </pattern>
+    <clipPath id="elder-male-costume-mime__bodyclip">
+      <path d="M158 184 Q136 188 134 210 L132 322 H268 L266 210 Q264 188 242 184 Z"/>
+      <path d="M109 196 H141 Q145 226 143 252 L141 348 Q140 360 126 360 Q112 360 111 348 Z"/>
+      <path d="M291 196 H259 Q255 226 257 252 L259 348 Q260 360 274 360 Q288 360 289 348 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- high waisted straight trousers, cropped clear above the ankle -->
+  <g class="sp-shadow">
+    <rect x="134" y="318" width="132" height="58" rx="16" fill="url(#elder-male-costume-mime__trouser)"/>
+    <rect x="158" y="368" width="40" height="138" rx="8" fill="url(#elder-male-costume-mime__trouser)"/>
+    <rect x="202" y="368" width="40" height="138" rx="8" fill="url(#elder-male-costume-mime__trouser)"/>
+  </g>
+  <path d="M162 498 h32 M206 498 h32" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- close boat neck long sleeve banded body -->
+  <g class="sp-shadow">
+    <path d="M158 184 Q136 188 134 210 L132 322 H268 L266 210 Q264 188 242 184 Z"
+          fill="url(#elder-male-costume-mime__body)"/>
+    <path d="M109 196 H141 Q145 226 143 252 L141 348 Q140 360 126 360 Q112 360 111 348 Z"
+          fill="url(#elder-male-costume-mime__body)"/>
+    <path d="M291 196 H259 Q255 226 257 252 L259 348 Q260 360 274 360 Q288 360 289 348 Z"
+          fill="url(#elder-male-costume-mime__body)"/>
+  </g>
+  <!-- the banding: a 16 unit rhythm read through c2 -->
+  <g clip-path="url(#elder-male-costume-mime__bodyclip)">
+    <rect x="106" y="184" width="188" height="180" fill="url(#elder-male-costume-mime__bands)"/>
+  </g>
+  <!-- boat neck bind -->
+  <path d="M158 186 H242" stroke="var(--c2, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- two narrow braces, over the shoulders and down to the high waist -->
+  <g class="sp-shadow">
+    <path d="M164 322 H178 V228 Q178 202 170 190 L156 194 Q164 208 164 232 Z"
+          fill="url(#elder-male-costume-mime__brace)"/>
+    <path d="M236 322 H222 V228 Q222 202 230 190 L244 194 Q236 208 236 232 Z"
+          fill="url(#elder-male-costume-mime__brace)"/>
+  </g>
+  <g fill="var(--c3, #8E5B2C)">
+    <rect x="162" y="312" width="18" height="14" rx="4"/>
+    <rect x="220" y="312" width="18" height="14" rx="4"/>
+  </g>
+
+  <!-- wrist cuff bands, reading as a glove edge -->
+  <g fill="var(--c3, #B0743C)">
+    <rect x="109" y="346" width="34" height="14" rx="7"/>
+    <rect x="257" y="346" width="34" height="14" rx="7"/>
+  </g>
+
+  <!-- integral flat shoes -->
+  <g class="sp-shadow">
+    <path d="M154 546 H200 V566 Q200 570 195 570 H146 Q138 570 138 562 Q138 552 154 546 Z"
+          fill="url(#elder-male-costume-mime__trouser)"/>
+    <path d="M246 546 H200 V566 Q200 570 205 570 H254 Q262 570 262 562 Q262 552 246 546 Z"
+          fill="url(#elder-male-costume-mime__trouser)"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M150 214 q50 16 100 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

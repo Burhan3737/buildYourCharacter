@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tailcoat" data-family="tailcoat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = the front cuts away horizontally at the natural waist y302 and
+       two separate tails hang to the back of the knee at y460, and CLOSURE = worn open with
+       no fastening under wide peaked lapels. Also shoulder = square and built up.
+       Separated from blazer, which closes at the front and stops at the hip, and from
+       waistcoat, which has no sleeve and a pointed waist hem.
+       Refitted to the elder male body: shoulder top y184 (coat shoulder y180), natural waist
+       y302, derived knee y464 (adult male was y446, so this hem moved down 14 units to y460).
+       The tails are TWO separate panels: left x146 to x193 and right x207 to x254, each 47
+       units wide, with a 207 minus 193 = 14 unit gap between them. That gap is what reads as
+       tails rather than long coat at tray size.
+       Formalwear, so it lives in top and never in costume. Fallback is a sober deep
+       periwinkle over an ivory shell: no purple, no green, no white face, no red grin. -->
+  <defs>
+    <linearGradient id="elder-male-top-tailcoat__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6BAE)"/>
+      <stop offset="1" stop-color="var(--c2, #333C6B)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-tailcoat__tail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #53639F)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3360)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-tailcoat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6BAE)"/>
+      <stop offset="1" stop-color="var(--c2, #2E3663)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-tailcoat__shellshade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A6BAE)" stop-opacity="0"/>
+      <stop offset="1" stop-color="var(--c2, #333C6B)" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two tails, the integral shell front the cutaway exposes, two sleeves and
+       two square shouldered coat fronts. Surface tool 1, panel blocking. -->
+  <g class="sp-shadow">
+    <path d="M146 300 H193 V444 Q193 460 178 460 H161 Q146 460 146 444 Z"
+          fill="url(#elder-male-top-tailcoat__tail)"/>
+    <path d="M207 300 H254 V444 Q254 460 239 460 H222 Q207 460 207 444 Z"
+          fill="url(#elder-male-top-tailcoat__tail)"/>
+    <!-- the cutaway front exposes the chest and abdomen: resolved as an integral shell in
+         the c3 accent, flat fill plus a graded shadow so it never goes flat on recolour -->
+    <path d="M182 180 Q200 200 218 180 L232 296 Q200 308 168 296 Z"
+          fill="var(--c3, #F2ECDD)"/>
+    <path d="M182 180 Q200 200 218 180 L232 296 Q200 308 168 296 Z"
+          fill="url(#elder-male-top-tailcoat__shellshade)"/>
+    <rect x="110" y="192" width="34" height="174" rx="15" fill="url(#elder-male-top-tailcoat__sleeve)"/>
+    <rect x="256" y="192" width="34" height="174" rx="15" fill="url(#elder-male-top-tailcoat__sleeve)"/>
+    <path d="M124 202 Q124 182 146 180 H178 L190 194 Q182 236 176 284 L172 302 L136 302 Q124 302 124 288 Z"
+          fill="url(#elder-male-top-tailcoat__cloth)"/>
+    <path d="M276 202 Q276 182 254 180 H222 L210 194 Q218 236 224 284 L228 302 L264 302 Q276 302 276 288 Z"
+          fill="url(#elder-male-top-tailcoat__cloth)"/>
+  </g>
+
+  <!-- the 14 unit gap between the tails, drawn dark so it reads at thumbnail size -->
+  <path d="M193 302 H207 V448 H193 Z" fill="var(--c2, #333C6B)"/>
+
+  <!-- wide peaked lapels, 40 units across from point to break -->
+  <path d="M190 182 L177 248 L150 228 L172 184 Z" fill="var(--c2, #333C6B)"/>
+  <path d="M210 182 L223 248 L250 228 L228 184 Z" fill="var(--c2, #333C6B)"/>
+  <path d="M190 182 L177 248" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 182 L223 248" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M184 180 Q200 198 216 180 Z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- surface tool 2, structural: the shell button line, and the bound shell neck edge -->
+  <path d="M182 180 Q200 200 218 180" stroke="var(--c3, #F2ECDD)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c2, #333C6B)">
+    <circle cx="200" cy="236" r="4.5"/>
+    <circle cx="200" cy="262" r="4.5"/>
+    <circle cx="200" cy="288" r="4.5"/>
+  </g>
+  <path d="M170 290 Q200 300 230 290" stroke="var(--c2, #333C6B)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- surface tool 3, trim: the horizontal cutaway line across the front waist, tail seams,
+       covered buttons at the tail heads and a pair of cuff buttons -->
+  <path d="M128 300 H174" stroke="var(--c2, #333C6B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 300 H272" stroke="var(--c2, #333C6B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 310 V446" stroke="var(--c2, #333C6B)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 310 V446" stroke="var(--c2, #333C6B)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="180" cy="310" r="5" fill="var(--c3, #F2ECDD)"/>
+  <circle cx="220" cy="310" r="5" fill="var(--c3, #F2ECDD)"/>
+  <g fill="var(--c2, #333C6B)">
+    <circle cx="124" cy="336" r="3.5"/>
+    <circle cx="124" cy="348" r="3.5"/>
+    <circle cx="276" cy="336" r="3.5"/>
+    <circle cx="276" cy="348" r="3.5"/>
+  </g>
+
+  <!-- square built up shoulder line and an upper surface highlight on each front -->
+  <path d="M128 188 H174" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 188 H272" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M134 210 q18 10 34 4" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M266 210 q-18 10 -34 4" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

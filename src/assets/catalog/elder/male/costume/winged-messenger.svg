@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Winged Messenger" data-family="winged-messenger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the single shoulder tunic at y150, the mantle at
+       y152, and the round fibula at cy160 with r12, which put its rim at y148. THE FIBULA HAS
+       MOVED DOWN to cy206, onto the shoulder cloth, where it is still the only fastening in
+       the file and still reads as the one pin that holds the whole garment.
+
+       silhouette axes: shoulder=pinned at ONE shoulder only, leaving the other shoulder and arm
+       entirely bare, and hem=mid thigh, the shortest garment in the Greek group.
+       In this Greek group the fastening point IS the axis: chiton has a row of six pins per
+       arm, peplos has one large pin per shoulder, winged messenger has one pin on one shoulder
+       only. Do not blur that distinction.
+       The winged cuffs are CLOTH, at the ANKLE. There is no winged helm anywhere in this file
+       and none is ever permitted in this slot or in headwear.
+       The bare shoulder and arm are the character's own skin, drawn by the body underneath. -->
+  <defs>
+    <linearGradient id="elder-male-costume-winged-messenger__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9E2CE)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AF92)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-winged-messenger__mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #B0743C)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AF92)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the mantle, swinging back and out from the right shoulder -->
+  <g class="sp-shadow">
+    <path d="M242 186 H266 Q298 212 314 276 Q328 358 320 448 Q302 456 286 448
+             Q292 356 278 282 Q266 226 242 202 Z"
+          fill="url(#elder-male-costume-winged-messenger__mantle)"/>
+  </g>
+
+  <!-- short single shoulder tunic: right shoulder covered, left shoulder and arm entirely bare -->
+  <g class="sp-shadow">
+    <path d="M232 184 H248 Q260 204 258 236 L260 330 Q262 388 256 426 Q200 438 144 426
+             Q138 388 140 248 Q146 224 168 216 Q200 206 214 192 Z"
+          fill="url(#elder-male-costume-winged-messenger__tunic)"/>
+  </g>
+
+  <!-- ONE round fibula, moved down onto the shoulder cloth to clear the ceiling -->
+  <circle cx="244" cy="206" r="12" fill="var(--c3, #B0743C)"/>
+  <circle cx="244" cy="206" r="5" fill="var(--c2, #B9AF92)"/>
+  <path d="M237 198 q7 -4 14 0" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- belt at the waist and a bound mid thigh hem -->
+  <path d="M140 320 Q200 332 260 320" stroke="var(--c3, #B0743C)" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+  <path d="M141 422 Q200 434 259 422" stroke="var(--c3, #B0743C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- diagonal drape folds falling from the single covered shoulder -->
+  <g stroke="var(--c2, #B9AF92)" stroke-opacity="0.55" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M230 206 Q194 250 158 302"/>
+    <path d="M242 230 Q212 270 176 318"/>
+    <path d="M166 344 Q164 384 162 418"/>
+    <path d="M200 344 Q200 384 200 424"/>
+    <path d="M234 344 Q236 384 238 418"/>
+  </g>
+
+  <!-- winged cloth cuffs at BOTH ankles, plain cloth and not feathered metal -->
+  <g fill="var(--c3, #B0743C)">
+    <path d="M160 522 H198 Q200 536 196 546 H162 Q158 536 160 522 Z"/>
+    <path d="M204 522 H242 Q244 536 240 546 H206 Q202 536 204 522 Z"/>
+    <path d="M160 526 Q142 518 126 522 Q140 534 158 540 Z"/>
+    <path d="M198 526 Q214 518 226 522 Q214 534 200 540 Z"/>
+    <path d="M242 526 Q260 518 276 522 Q262 534 244 540 Z"/>
+    <path d="M204 526 Q188 518 176 522 Q188 534 202 540 Z"/>
+  </g>
+  <g stroke="var(--c2, #B9AF92)" stroke-width="2.4" stroke-linecap="round" fill="none"
+     opacity="0.7">
+    <path d="M156 528 L134 526"/><path d="M156 534 L140 534"/>
+    <path d="M244 528 L266 526"/><path d="M244 534 L260 534"/>
+  </g>
+
+  <!-- integral sandals -->
+  <path d="M156 546 H202 Q206 558 204 568 H158 Q152 558 156 546 Z" fill="var(--c3, #B0743C)"/>
+  <path d="M198 546 H244 Q248 558 246 568 H200 Q194 558 198 546 Z" fill="var(--c3, #B0743C)"/>
+
+  <!-- house highlight -->
+  <path d="M170 226 q34 12 66 -6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

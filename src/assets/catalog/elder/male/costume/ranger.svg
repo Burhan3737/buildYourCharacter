@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ranger" data-family="ranger" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the hood roll at y150, the under layer at y154 and
+       the jerkin at y158. The hood roll is rebuilt at y182 and deepened to y220 so it still
+       reads as a hood from the silhouette rather than becoming a thin band, and the jerkin's
+       two hem tails have moved down with the body to keep their split.
+
+       The hood is drawn WORN DOWN as a thick fabric roll behind the neck, which is the
+       sanctioned hood pattern for this catalogue and keeps the face clear. A hood worn up
+       would erase the character's features, because costume draws above the face.
+       silhouette axes: hem=split into two tails at mid thigh with a real gap between them, and
+       closure=an open sleeveless jerkin over a sleeved under layer.
+       Trademark: the fallback is brown dominant with a sage accent, deliberately NOT all green
+       with a hood. There is no bow, no prop of any kind, and no chest emblem. -->
+  <defs>
+    <linearGradient id="elder-male-costume-ranger__jerkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-ranger__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #7A8B6F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-ranger__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6B4F)"/>
+      <stop offset="1" stop-color="var(--c2, #5C4636)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- hood pooled in a thick roll at the nape, top edge at the ceiling and no higher -->
+  <g class="sp-shadow">
+    <path d="M154 182 H246 Q250 204 242 220 Q200 234 158 220 Q150 204 154 182 Z"
+          fill="url(#elder-male-costume-ranger__hood)"/>
+  </g>
+
+  <!-- long sleeved under layer, then the open jerkin over it, then close trousers -->
+  <g class="sp-shadow">
+    <path d="M154 186 H246 Q256 208 254 238 L252 330 Q250 346 238 346 H162 Q150 346 148 330
+             L146 238 Q144 208 154 186 Z" fill="url(#elder-male-costume-ranger__under)"/>
+    <path d="M110 198 H142 Q146 214 144 240 L142 346 Q142 360 126 360 Q112 360 110 346
+             L108 240 Q106 214 110 198 Z" fill="url(#elder-male-costume-ranger__under)"/>
+    <path d="M290 198 H258 Q254 214 256 240 L258 346 Q258 360 274 360 Q288 360 290 346
+             L292 240 Q294 214 290 198 Z" fill="url(#elder-male-costume-ranger__under)"/>
+    <path d="M152 190 H190 L186 348 L194 426 H138 Q132 426 132 416 L136 330 Q130 250 152 190 Z"
+          fill="url(#elder-male-costume-ranger__jerkin)"/>
+    <path d="M248 190 H210 L214 348 L206 426 H262 Q268 426 268 416 L264 330 Q270 250 248 190 Z"
+          fill="url(#elder-male-costume-ranger__jerkin)"/>
+    <path d="M156 350 H198 Q200 452 196 540 Q196 548 188 548 H166 Q158 548 158 540
+             Q154 452 156 350 Z" fill="url(#elder-male-costume-ranger__jerkin)"/>
+    <path d="M244 350 H202 Q200 452 204 540 Q204 548 212 548 H234 Q242 548 242 540
+             Q246 452 244 350 Z" fill="url(#elder-male-costume-ranger__jerkin)"/>
+  </g>
+
+  <!-- diagonal quiver strap across the chest, a worn item and not a prop -->
+  <path d="M152 198 L254 334" stroke="var(--c2, #5C4636)" stroke-width="17"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 198 L254 334" stroke="var(--c3, #7A8B6F)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- a quiver body carried on the back, showing past the shoulder -->
+  <path d="M254 210 H278 Q282 230 278 250 H254 Q250 230 254 210 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- wide bracer on one forearm only -->
+  <path d="M108 314 H144 Q148 334 144 356 H108 Q104 334 108 314 Z" fill="var(--c2, #5C4636)"/>
+  <g stroke="var(--c3, #7A8B6F)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M112 322 H140"/><path d="M112 334 H140"/><path d="M112 346 H140"/>
+  </g>
+
+  <!-- belt at the waist, and integral boots -->
+  <path d="M144 318 H256 Q260 328 258 342 H142 Q140 328 144 318 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M154 540 H200 Q206 556 204 568 H156 Q148 556 154 540 Z" fill="var(--c2, #5C4636)"/>
+  <path d="M200 540 H246 Q252 556 250 568 H202 Q194 556 200 540 Z" fill="var(--c2, #5C4636)"/>
+
+  <!-- house highlight -->
+  <path d="M164 240 q36 12 72 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

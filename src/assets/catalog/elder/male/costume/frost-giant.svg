@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frost Giant" data-family="frost-giant" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: overcoat top y150, shaggy shoulder collar y150, and
+       its chest rime plate rose to y162. The collar is rebuilt at y182 running 42 units deep to
+       y224, and the chest rime cluster has been rebuilt below the collar rather than shaved off
+       the top, so it still juts outward and breaks the outline.
+
+       TRADEMARK NOTE, binding: this family's fallback is MINT, deliberately. Blue is what makes
+       a frost giant read as a specific studio's version, so blue is banned as a default here.
+       If it only works in blue, it is not a silhouette. Do not "fix" the fallback to blue.
+
+       silhouette axes: volume=hard angular rime plates jutting outward and BREAKING the coat
+       outline in irregular spikes, and hem=uneven downward pointing icicle teeth at the knee.
+       Against berserker, whose lobes are soft and rounded and whose hem is at mid thigh. -->
+  <defs>
+    <linearGradient id="elder-male-costume-frost-giant__coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3D7A70)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-frost-giant__rime" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7F2EE)"/>
+      <stop offset="1" stop-color="var(--c3, #E7F2EE)" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-frost-giant__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3D7A70)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- thick leg wraps below the coat -->
+  <g class="sp-shadow">
+    <path d="M154 476 H198 Q200 514 196 546 H156 Q152 514 154 476 Z"
+          fill="url(#elder-male-costume-frost-giant__collar)"/>
+    <path d="M246 476 H202 Q200 514 204 546 H244 Q248 514 246 476 Z"
+          fill="url(#elder-male-costume-frost-giant__collar)"/>
+  </g>
+
+  <!-- bulky closed knee length overcoat with an icicle toothed hem -->
+  <g class="sp-shadow">
+    <path d="M150 184 H250 Q272 202 280 248 Q290 330 286 408 L286 464
+             L272 502 L262 464 L250 496 L240 464 L228 490 L218 464 L208 498 L198 464
+             L188 494 L178 464 L166 500 L156 464 L142 488 L132 462
+             Q112 330 122 248 Q130 202 150 184 Z"
+          fill="url(#elder-male-costume-frost-giant__coat)"/>
+  </g>
+
+  <!-- angular rime plates jutting outward, breaking the outline at the chest and the forearms -->
+  <g class="sp-shadow">
+    <path d="M126 240 L80 220 L102 260 L68 286 L120 288 L124 266 Z"
+          fill="url(#elder-male-costume-frost-giant__rime)"/>
+    <path d="M274 240 L320 220 L298 260 L332 286 L280 288 L276 266 Z"
+          fill="url(#elder-male-costume-frost-giant__rime)"/>
+    <path d="M170 250 L156 222 L192 238 L214 218 L214 252 L242 246 L228 272 L172 272 Z"
+          fill="url(#elder-male-costume-frost-giant__rime)"/>
+    <path d="M128 318 L82 320 L112 344 L86 372 L134 368 L132 338 Z"
+          fill="url(#elder-male-costume-frost-giant__rime)"/>
+    <path d="M272 318 L318 320 L288 344 L314 372 L266 368 L268 338 Z"
+          fill="url(#elder-male-costume-frost-giant__rime)"/>
+  </g>
+
+  <!-- thick shaggy shoulder collar, top edge at the ceiling and no higher -->
+  <path d="M150 182 Q162 208 148 224 Q168 228 178 212 Q192 230 200 210 Q210 230 222 212
+           Q234 228 252 224 Q238 208 250 182 Z"
+        fill="url(#elder-male-costume-frost-giant__collar)"/>
+
+  <!-- rime facet lines, and the icicle hem highlight -->
+  <g stroke="var(--c3, #E7F2EE)" stroke-opacity="0.75" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M172 256 L192 234"/><path d="M200 256 L214 228"/><path d="M226 258 L236 242"/>
+    <path d="M114 252 L100 236"/><path d="M286 252 L300 236"/>
+    <path d="M116 334 L102 330"/><path d="M284 334 L298 330"/>
+  </g>
+  <path d="M134 462 Q200 474 266 462" stroke="var(--c3, #E7F2EE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- wrap bindings and integral boots -->
+  <g stroke="var(--c2, #3D7A70)" stroke-opacity="0.7" stroke-width="5" fill="none"
+     stroke-linecap="round">
+    <path d="M156 490 H196"/><path d="M156 508 H196"/><path d="M156 526 H196"/>
+    <path d="M204 490 H244"/><path d="M204 508 H244"/><path d="M204 526 H244"/>
+  </g>
+  <path d="M152 542 H200 Q206 556 204 568 H154 Q146 556 152 542 Z" fill="var(--c2, #3D7A70)"/>
+  <path d="M200 542 H248 Q254 556 252 568 H202 Q194 556 200 542 Z" fill="var(--c2, #3D7A70)"/>
+
+  <!-- house highlight -->
+  <path d="M162 240 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

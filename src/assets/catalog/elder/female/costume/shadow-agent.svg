@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shadow Agent Suit" data-family="shadow-agent" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = fully asymmetric, one long sleeve on
+       the left and one entirely bare arm on the right finished with a wide wrist wrap, plus a
+       narrow half cape hanging from the single covered shoulder only; CLOSURE = a wrap front
+       crossing right over left to a single low fastening at one hip rather than a centred
+       closure. The asymmetry is the whole identity and must stay obvious at 64px, so nothing in
+       this file is mirrored except the legs. Separated from caped-hero, which is symmetric with
+       a full width cape. -->
+  <!-- TRADEMARK, deliberately absent, do not add: no chest emblem, crest, monogram or applied
+       chest graphic; no drawn lettering; the half cape hem is a single plain softly curved edge
+       with NO scallops and NO points of any kind; no pointed ear shapes anywhere; no cowl. The
+       fallback triple is ink, heather plum and sand, chosen away from black plus yellow and
+       away from black plus grey, and there is no chevron anywhere in the file. -->
+  <defs>
+    <linearGradient id="elder-female-costume-shadow-agent__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c1, #32241D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shadow-agent__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #372720)"/>
+      <stop offset="1" stop-color="var(--c1, #2D211A)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shadow-agent__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #392820)"/>
+      <stop offset="1" stop-color="var(--c1, #2F221B)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shadow-agent__cape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6B4A78)"/>
+      <stop offset="1" stop-color="var(--c2, #5B3F66)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-shadow-agent__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #CBB893)"/>
+      <stop offset="1" stop-color="var(--c3, #AD9C7D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- narrow half cape, one shoulder only, falling to the calf on a plain curved hem -->
+  <g class="sp-shadow">
+    <path d="M156 182 H196 L186 260 L170 380 L158 496 Q132 506 106 494
+             L118 380 L132 260 L142 200 Q146 186 156 182 Z"
+          fill="url(#elder-female-costume-shadow-agent__cape)"/>
+    <!-- drape folds, inside the cape form -->
+    <path d="M172 226 L152 480 M148 232 L128 476" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- ankle length legs -->
+    <path d="M164 374 H202 L200 460 L198 542 Q182 550 166 542 L164 460 Z"
+          fill="url(#elder-female-costume-shadow-agent__limb)"/>
+    <path d="M198 374 H236 L236 460 L234 542 Q218 550 202 542 L200 460 Z"
+          fill="url(#elder-female-costume-shadow-agent__limb)"/>
+    <!-- hip block, carrying the low fastening on one side -->
+    <rect x="146" y="326" width="108" height="58" rx="22"
+          fill="url(#elder-female-costume-shadow-agent__hip)"/>
+    <!-- wrap front torso: the neckline is an off centre V, right over left -->
+    <path d="M172 182 Q154 188 150 210 L142 254 Q140 300 146 338
+             Q200 356 254 338 Q260 300 258 254 L250 210 Q246 188 228 182 L208 234 Z"
+          fill="url(#elder-female-costume-shadow-agent__suit)"/>
+    <!-- one long sleeve; the other arm stays bare and the base body skin shows through -->
+    <path d="M114 182 H148 Q152 186 152 200 L150 254 L152 330 Q131 342 110 330 L112 254 Z"
+          fill="url(#elder-female-costume-shadow-agent__limb)"/>
+  </g>
+
+  <!-- the crossing edge, one shoulder down to the low hip fastening -->
+  <path d="M226 184 L206 236 L217 246 L236 200 Z"
+        fill="url(#elder-female-costume-shadow-agent__wrap)"/>
+  <path d="M213 242 Q236 284 243 330 L227 334 Q220 288 201 250 Z"
+        fill="url(#elder-female-costume-shadow-agent__wrap)"/>
+  <!-- low hip fastening: one flat disc, no prongs -->
+  <circle cx="238" cy="348" r="13" fill="url(#elder-female-costume-shadow-agent__wrap)"/>
+  <circle cx="238" cy="348" r="5" fill="var(--c1, #32241D)"/>
+
+  <!-- wide wrist wrap on the bare arm -->
+  <path d="M250 296 H288 V320 Q269 330 250 320 Z"
+        fill="url(#elder-female-costume-shadow-agent__wrap)"/>
+  <path d="M254 306 h30 M254 314 h30" stroke="var(--c1, #32241D)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- covered side cuff -->
+  <path d="M112 302 Q131 312 150 302 L151 324 Q131 334 111 324 Z"
+        fill="url(#elder-female-costume-shadow-agent__wrap)"/>
+
+  <!-- ankle bindings -->
+  <path d="M164 516 q18 8 36 0 l0 16 q-18 8 -36 0 Z" fill="var(--c2, #5B3F66)"/>
+  <path d="M200 516 q18 8 36 0 l0 16 q-18 8 -36 0 Z" fill="var(--c2, #5B3F66)"/>
+
+  <!-- footwear, drawn into the costume because costume hides shoes -->
+  <g class="sp-shadow">
+    <rect x="158" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-shadow-agent__cape)"/>
+    <rect x="196" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-shadow-agent__cape)"/>
+  </g>
+
+  <!-- house highlight, following the wrap across the covered shoulder -->
+  <path d="M176 206 q22 20 44 -6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

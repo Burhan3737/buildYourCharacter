@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Harlequin Suit" data-family="harlequin" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- The identity in the tray is the OUTLINE, not the diamonds. A 20u diamond is about 2.1
+       screen pixels at the 64px picker size, so it is texture that only pays off on the stage.
+       The read is built from the outline, the waist seam and the throat ruff. The standing
+       collar rises to y182 and stops there. No mask, no face art, no nose. -->
+  <!-- Silhouette axes for this file, and the deliberate separation from web runner, which is the
+       closest pair in this whole slot: CLOSURE (a narrow standing collar plus a soft gathered
+       throat ruff plus one horizontal waist seam break the suit into three distinct regions,
+       against web runner's single unbroken lattice from collar to boot) and VOLUME (the limbs
+       taper softly to narrow wrists and narrow ankles instead of running at one constant width,
+       and the hip swells gently between the seam and the legs).
+       The ruff here is deliberately SMALL: 22u past the neck on the left, 30u on the right. That
+       is the opposite of the clown in this same bundle, whose ruff clears 56u and 64u.
+       TRADEMARK: coral, cream and ink. Deliberately NOT teal, so the fallback can never be mistaken for web runner, which is the closest pair in this slot. Never default this family to green hair with a purple
+       tailcoat, nor purple beside orange or green, which is the clown villain character. -->
+  <defs>
+    <linearGradient id="elder-female-costume-harlequin__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c1, #CD8177)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-harlequin__lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EE9C90)"/>
+      <stop offset="1" stop-color="var(--c1, #C87C70)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-harlequin__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F6B0A4)"/>
+      <stop offset="1" stop-color="var(--c1, #D18A80)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-harlequin__ruff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F6F0E4)"/>
+      <stop offset="1" stop-color="var(--c2, #D6CDBB)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-harlequin__slipper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A362C)"/>
+      <stop offset="1" stop-color="var(--c3, #2B1E18)"/>
+    </linearGradient>
+    <pattern id="elder-female-costume-harlequin__diamonds" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="var(--c2, #F6F0E4)" fill-opacity="0.9"/>
+    </pattern>
+    <clipPath id="elder-female-costume-harlequin__clip">
+      <path d="M178 182 H222 Q244 188 250 210 Q258 244 256 266 Q258 280 254 292
+               Q200 308 146 292 Q142 280 144 266 Q142 244 150 210 Q156 188 178 182 Z"/>
+      <path d="M146 290 Q200 308 254 290 Q259 320 253 350 Q200 368 147 350 Q141 320 146 290 Z"/>
+      <path d="M148 348 L202 348 L200 446 L196 536 Q180 544 166 536 L161 446 Z"/>
+      <path d="M198 348 L252 348 L239 446 L234 536 Q220 544 204 536 L200 446 Z"/>
+      <path d="M110 202 Q110 182 130 182 H150 Q168 182 168 202 L160 250 L152 320
+               Q133 328 116 320 L113 250 Z"/>
+      <path d="M290 202 Q290 182 270 182 H250 Q232 182 232 202 L240 250 L248 320
+               Q267 328 284 320 L287 250 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- lower region: legs tapering softly from the hip to a narrow ankle -->
+    <path d="M148 348 L202 348 L200 446 L196 536 Q180 544 166 536 L161 446 Z"
+          fill="url(#elder-female-costume-harlequin__lower)"/>
+    <path d="M198 348 L252 348 L239 446 L234 536 Q220 544 204 536 L200 446 Z"
+          fill="url(#elder-female-costume-harlequin__lower)"/>
+    <!-- sleeves, wide at the softened elder sleeve head and narrow at the wrist -->
+    <path d="M110 202 Q110 182 130 182 H150 Q168 182 168 202 L160 250 L152 320
+             Q133 328 116 320 L113 250 Z"
+          fill="url(#elder-female-costume-harlequin__sleeve)"/>
+    <path d="M290 202 Q290 182 270 182 H250 Q232 182 232 202 L240 250 L248 320
+             Q267 328 284 320 L287 250 Z"
+          fill="url(#elder-female-costume-harlequin__sleeve)"/>
+    <!-- middle region: the hip, between the waist seam and the legs -->
+    <path d="M146 290 Q200 308 254 290 Q259 320 253 350 Q200 368 147 350 Q141 320 146 290 Z"
+          fill="url(#elder-female-costume-harlequin__lower)"/>
+    <!-- upper region: collar to waist seam -->
+    <path d="M178 182 H222 Q244 188 250 210 Q258 244 256 266 Q258 280 254 292
+             Q200 308 146 292 Q142 280 144 266 Q142 244 150 210 Q156 188 178 182 Z"
+          fill="url(#elder-female-costume-harlequin__upper)"/>
+    <!-- the diamonds, clipped to the suit: surface only, never the silhouette -->
+    <g clip-path="url(#elder-female-costume-harlequin__clip)">
+      <rect x="100" y="182" width="200" height="380"
+            fill="url(#elder-female-costume-harlequin__diamonds)" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- soft slippers, drawn into the costume because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="156" y="532" width="46" height="32" rx="15"
+          fill="url(#elder-female-costume-harlequin__slipper)"/>
+    <rect x="198" y="532" width="46" height="32" rx="15"
+          fill="url(#elder-female-costume-harlequin__slipper)"/>
+  </g>
+
+  <!-- the single horizontal waist seam that breaks the suit in two -->
+  <path d="M146 286 Q200 304 254 286 L255 300 Q200 318 145 300 Z" fill="var(--c3, #3B2A22)"/>
+  <!-- narrow standing collar: it rises to y182 and stops -->
+  <path d="M180 182 H220 L222 196 Q200 204 178 196 Z" fill="var(--c3, #2B1E18)"/>
+  <!-- small soft gathered ruff at the throat, low and shallow -->
+  <path d="M160 190 Q200 184 240 190 Q246 200 238 208 Q226 214 218 206 Q209 214 200 206
+           Q191 214 182 206 Q174 214 162 208 Q154 200 160 190 Z"
+        fill="url(#elder-female-costume-harlequin__ruff)"/>
+  <path d="M168 194 q32 6 64 0" stroke="var(--c3, #3B2A22)" stroke-opacity="0.28"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- tapered wrist and ankle bands -->
+  <path d="M116 306 q18 8 36 0 l1 16 q-19 8 -38 0 Z" fill="var(--c3, #2B1E18)"/>
+  <path d="M284 306 q-18 8 -36 0 l-1 16 q19 8 38 0 Z" fill="var(--c3, #2B1E18)"/>
+  <path d="M164 518 q16 8 32 0 l-1 16 q-15 8 -32 0 Z" fill="var(--c3, #2B1E18)"/>
+  <path d="M204 518 q16 8 32 0 l-1 16 q-16 8 -32 0 Z" fill="var(--c3, #2B1E18)"/>
+  <!-- house highlight on the upper surface -->
+  <path d="M168 214 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

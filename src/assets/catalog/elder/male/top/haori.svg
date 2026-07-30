@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- LIVING CULTURAL DRESS, not costume. This is ordinary outerwear worn over ordinary
+       clothes: plain cloth, a broad flat collar band, and generic geometric texture only.
+       No named community weave, no crest, no emblem.
+       Silhouette axes:
+       SHOULDER = a WIDE SQUARE SLEEVE PANEL hanging free below the arm, read as separate
+       cloth from the body by a hard vertical seam at x140 and x260.
+       CLOSURE = straight open front, two vertical front edges dropping parallel to the hem,
+       held only by one short chest cord. No buttons anywhere.
+       Secondary: hem at the hip y348, volume straight.
+       Identifying feature size: each sleeve panel spans x92 to x140 (48 wide) and y182 to
+       y336 (154 deep). The elder elbow is the midpoint of the arm rect y198 to y374, so
+       y286; the panel therefore hangs 336 minus 286 = 50 units below the elbow, over the 40
+       unit floor, and it is the shape that survives at 64px.
+       Refit off the drawn elder body (NOT copied from adult/male):
+       shoulder top y176 against the drawn shoulder y184; body block x132 to x268 against the
+       torso x136 to x264, so 4 of overlap each side; hem y348, inside the at the hip band
+       y344 to y350 and 12 below the torso bottom y336; the panels are pushed out to x92 and
+       x308 because the elder arms moved 6 inboard, so a copied adult panel would have left a
+       sliver of bare arm.
+       Elder character: the panel top is softened onto the shoulder rather than squared into
+       it, and the front edges hang loose and roomy through the upper body.
+       The centre opening is resolved by an integral shell drawn through c3 and c2 plus a
+       skin patch at the neck, so nothing is left as a hole. -->
+  <defs>
+    <linearGradient id="elder-male-top-haori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #46578A)"/>
+      <stop offset="1" stop-color="var(--c2, #2A3555)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4E6099)"/>
+      <stop offset="1" stop-color="var(--c2, #232E4A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-haori__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E7DCC4)"/>
+      <stop offset="1" stop-color="var(--c2, #6C77A0)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-haori__weave" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 L15 9 L9 15 L3 9 Z" fill="var(--c3, #E7DCC4)" fill-opacity="0.18"/>
+    </pattern>
+    <clipPath id="elder-male-top-haori__clipPanelL">
+      <path d="M92 182 H140 V336 H104 Q92 336 92 324 Z"/>
+    </clipPath>
+    <clipPath id="elder-male-top-haori__clipPanelR">
+      <path d="M308 182 H260 V336 H296 Q308 336 308 324 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the shell, two straight front panels, two hanging square sleeve panels -->
+  <g class="sp-shadow">
+    <path d="M164 182 Q200 206 236 182 Q262 188 262 216 V334 Q262 346 250 346 H150 Q138 346 138 334 V216 Q138 188 164 182 Z"
+          fill="url(#elder-male-top-haori__shell)"/>
+    <path d="M132 200 Q132 178 156 176 L186 176 L186 348 L146 348 Q132 348 132 334 Z"
+          fill="url(#elder-male-top-haori__body)"/>
+    <path d="M268 200 Q268 178 244 176 L214 176 L214 348 L254 348 Q268 348 268 334 Z"
+          fill="url(#elder-male-top-haori__body)"/>
+    <path d="M92 182 H140 V336 H104 Q92 336 92 324 Z"
+          fill="url(#elder-male-top-haori__panel)"/>
+    <path d="M308 182 H260 V336 H296 Q308 336 308 324 Z"
+          fill="url(#elder-male-top-haori__panel)"/>
+  </g>
+
+  <!-- surface tool: plain geometric lozenge weave, clipped inside the hanging panels -->
+  <g clip-path="url(#elder-male-top-haori__clipPanelL)">
+    <rect x="90" y="180" width="52" height="158" fill="url(#elder-male-top-haori__weave)"/>
+  </g>
+  <g clip-path="url(#elder-male-top-haori__clipPanelR)">
+    <rect x="258" y="180" width="52" height="158" fill="url(#elder-male-top-haori__weave)"/>
+  </g>
+
+  <!-- trim: broad flat collar band running the whole of each straight front edge -->
+  <path d="M168 174 L186 176 L186 348 L170 348 Z" fill="var(--c2, #2A3555)"/>
+  <path d="M232 174 L214 176 L214 348 L230 348 Z" fill="var(--c2, #2A3555)"/>
+  <path d="M168 174 Q200 166 232 174 L232 187 Q200 179 168 187 Z" fill="var(--c2, #2A3555)"/>
+  <path d="M180 174 Q200 190 220 174 Q214 206 200 208 Q186 206 180 174 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M178 190 V342" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M222 190 V342" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the short chest cord, the only fastening on the garment -->
+  <path d="M186 248 Q200 258 214 248" stroke="var(--c3, #E7DCC4)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="248" r="5" fill="var(--c3, #E7DCC4)"/>
+  <circle cx="214" cy="248" r="5" fill="var(--c3, #E7DCC4)"/>
+  <path d="M200 255 Q197 271 202 285" stroke="var(--c3, #E7DCC4)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the panels read as free hanging cloth, a fold line, a weighted lower edge
+       and a hard seam where the panel leaves the body -->
+  <path d="M106 192 V326" stroke="var(--c2, #2A3555)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M294 192 V326" stroke="var(--c2, #2A3555)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <rect x="92" y="320" width="48" height="16" rx="6" fill="var(--c3, #E7DCC4)" fill-opacity="0.7"/>
+  <rect x="260" y="320" width="48" height="16" rx="6" fill="var(--c3, #E7DCC4)" fill-opacity="0.7"/>
+  <path d="M139 184 V334" stroke="var(--c2, #2A3555)" stroke-opacity="0.75" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 184 V334" stroke="var(--c2, #2A3555)" stroke-opacity="0.75" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- plain hem edge across both fronts -->
+  <path d="M137 342 H186" stroke="var(--c2, #2A3555)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 342 H263" stroke="var(--c2, #2A3555)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlights on the fronts and on the hanging panels -->
+  <path d="M142 196 q16 -14 34 -18" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 196 q-16 -14 -34 -18" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M100 196 h32" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M268 196 h32" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

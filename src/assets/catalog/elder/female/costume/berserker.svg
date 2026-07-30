@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Berserker Pelt" data-family="berserker" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- NO bear head, NO horned helmet, NO winged helmet. Costume draws above the face, and the
+       horned and winged helms are banned outright on this project in any case. The identity is
+       the shaggy lobed hem of the pelt jerkin, pushed down into the body. -->
+  <!-- The shag is BUILT INTO THE SILHOUETTE PATH: the jerkin outline itself is a chain of small
+       overlapping lobes of unequal size. The interior strokes only follow lobes that already
+       exist on the contour; they never stand in for an edge. -->
+  <!-- axes vs satyr: hem, the shag stops at mid thigh over close trousers instead of running to
+       the ankle; shoulder and sleeve, a full sleeveless jerkin over a sleeved under tunic against
+       satyr's single knotted skin over a bare chest.
+       axes vs frost giant: volume, soft irregular lobes and all curves against frost giant's hard
+       angular spikes; hem, a lobed thigh edge at y400 against icicle teeth at the knee. -->
+  <defs>
+    <linearGradient id="elder-female-costume-berserker__pelt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D6AF7B)"/>
+      <stop offset="1" stop-color="var(--c1, #A87F4E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-berserker__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4C382E)"/>
+      <stop offset="1" stop-color="var(--c2, #2B1E18)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-berserker__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #453227)"/>
+      <stop offset="1" stop-color="var(--c2, #261A14)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-berserker__belt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C88370)"/>
+      <stop offset="1" stop-color="var(--c3, #9A5646)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-berserker__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #A96552)"/>
+      <stop offset="1" stop-color="var(--c3, #7B4335)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- close trousers -->
+    <path d="M156 374 Q180 386 202 376 L200 456 L198 540 Q178 550 158 540 L157 456 Z"
+          fill="url(#elder-female-costume-berserker__leg)"/>
+    <path d="M198 376 Q220 386 244 374 L244 456 L242 540 Q222 550 202 540 L200 456 Z"
+          fill="url(#elder-female-costume-berserker__leg)"/>
+    <!-- long sleeved under tunic -->
+    <path d="M112 202 Q112 182 132 182 H146 Q164 182 164 202 L160 262 L156 338
+             Q134 350 112 338 L111 262 Z"
+          fill="url(#elder-female-costume-berserker__tunic)"/>
+    <path d="M288 202 Q288 182 268 182 H254 Q236 182 236 202 L240 262 L244 338
+             Q266 350 288 338 L289 262 Z"
+          fill="url(#elder-female-costume-berserker__tunic)"/>
+    <path d="M170 182 H230 Q250 190 252 214 L256 290 Q260 340 256 384
+             Q200 400 144 384 Q140 340 144 290 L148 214 Q150 190 170 182 Z"
+          fill="url(#elder-female-costume-berserker__tunic)"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- shaggy pelt jerkin, left panel, worn open. Every lobe is a segment of the outline. -->
+    <path d="M180 182 H152
+             q-14 14 -2 30 q-16 14 -4 32 q-14 16 -2 32 q-16 14 -4 32
+             q-14 16 -2 32 q-12 16 -2 30 q-10 14 0 32
+             q9 24 16 2 q8 26 15 -2 q7 22 13 0
+             L176 330 L182 250 L180 200 Z"
+          fill="url(#elder-female-costume-berserker__pelt)"/>
+    <!-- shaggy pelt jerkin, right panel, worn open -->
+    <path d="M220 182 H248
+             q14 14 2 30 q16 14 4 32 q14 16 2 32 q16 14 4 32
+             q14 16 2 32 q12 16 2 30 q10 14 0 32
+             q-9 24 -16 2 q-8 26 -15 -2 q-7 22 -13 0
+             L224 330 L218 250 L220 200 Z"
+          fill="url(#elder-female-costume-berserker__pelt)"/>
+    <!-- fur direction, drawn only along lobes the contour already carries -->
+    <g stroke="var(--c1, #8F6A40)" stroke-opacity="0.45" stroke-width="5"
+       fill="none" stroke-linecap="round">
+      <path d="M152 214 q-10 18 0 34 q10 18 0 34"/>
+      <path d="M166 232 q-8 20 0 40 q8 20 0 40"/>
+      <path d="M248 214 q10 18 0 34 q-10 18 0 34"/>
+      <path d="M234 232 q8 20 0 40 q-8 20 0 40"/>
+      <path d="M148 330 q-8 22 2 46"/>
+      <path d="M252 330 q8 22 -2 46"/>
+    </g>
+    <!-- house highlight across the jerkin shoulders -->
+    <path d="M156 200 q14 10 24 0 M244 200 q-14 10 -24 0" stroke="#FFFFFF"
+          stroke-opacity="0.26" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- wide leather belt, crossing the open front of the jerkin -->
+  <g class="sp-shadow">
+    <path d="M144 294 Q200 310 256 294 L257 322 Q200 338 143 322 Z"
+          fill="url(#elder-female-costume-berserker__belt)"/>
+    <path d="M188 290 H212 Q216 308 212 326 H188 Q184 308 188 290 Z"
+          fill="var(--c2, #2B1E18)"/>
+  </g>
+  <!-- pouch hanging from the belt -->
+  <g class="sp-shadow">
+    <path d="M152 318 H186 Q190 346 186 368 Q169 376 152 368 Q148 346 152 318 Z"
+          fill="url(#elder-female-costume-berserker__pelt)"/>
+    <path d="M155 330 h28" stroke="var(--c3, #9A5646)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- sheathed knife hanging from the belt -->
+  <g class="sp-shadow">
+    <path d="M224 316 H246 L242 380 Q234 388 228 380 Z"
+          fill="url(#elder-female-costume-berserker__belt)"/>
+    <path d="M225 328 h20" stroke="var(--c2, #2B1E18)" stroke-opacity="0.55" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- leg wraps, cross bound from the knee to the ankle -->
+  <g stroke="var(--c3, #C88370)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M162 448 L196 466 M162 466 L196 448"/>
+    <path d="M162 476 L196 494 M162 494 L196 476"/>
+    <path d="M163 504 L195 522 M163 522 L195 504"/>
+    <path d="M204 448 L238 466 M204 466 L238 448"/>
+    <path d="M204 476 L238 494 M204 494 L238 476"/>
+    <path d="M205 504 L237 522 M205 522 L237 504"/>
+  </g>
+
+  <!-- low hide shoes, drawn in because costume hides the shoes slot -->
+  <g class="sp-shadow">
+    <rect x="157" y="534" width="47" height="30" rx="14"
+          fill="url(#elder-female-costume-berserker__boot)"/>
+    <rect x="196" y="534" width="47" height="30" rx="14"
+          fill="url(#elder-female-costume-berserker__boot)"/>
+    <path d="M163 543 q17 -5 34 0 M202 543 q17 -5 34 0" stroke="#FFFFFF" stroke-opacity="0.24"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

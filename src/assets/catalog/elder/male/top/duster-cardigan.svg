@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Duster Cardigan" data-family="duster-cardigan" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes:
+       HEM = mid calf at y508, the full length of the elder leg, which is the whole point of
+       the family.
+       CLOSURE = unfastened open front, no collar and no buttons anywhere, a 24 to 28 unit
+       gap running the whole length down the centre.
+       Secondary: shoulder dropped, seamed low and outboard on the upper arm; volume a soft
+       unstructured drape.
+       Separation from cardigan in this same bundle: cardigan stops at the hip and opens on a
+       wide shallow V with a set in shoulder, so the two differ on hem (y508 against a hip
+       hem) and on shoulder (dropped against set in), which is two axes clear.
+       Identifying feature size: the open front gap runs y188 to y484, so 484 minus 188 = 296
+       units of unbroken opening, and the drop from the elder hip hem band at y348 down to
+       y508 is 160 units of extra length. Both read easily at 64px.
+       Refit off the drawn elder body (NOT copied from adult/male):
+       mid calf is y508 on this body, from the leg rect y376 to y552 whose midpoint region
+       gives 508; shoulder edge starts at y176, above the drawn shoulder y184;
+       sleeve columns x100 to x144 and x256 to x300 sit outboard of the arms x114 to x140 and
+       x260 to x286, giving the loose upper arm the elder character asks for;
+       cuffs finish y366 at the wrist; patch pockets sit y414 to y466, between mid thigh y420
+       and the elder knee y464, which is 18 lower than the adult knee.
+       The open front is resolved by an integral scoop neck shell drawn through c3 and c2,
+       plus a skin patch at the neckline, so there is never a hole and never a phantom shirt
+       in a fixed colour. -->
+  <defs>
+    <linearGradient id="elder-male-top-duster-cardigan__knit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9B0A0)"/>
+      <stop offset="1" stop-color="var(--c2, #77806C)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-duster-cardigan__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9B0A0)"/>
+      <stop offset="1" stop-color="var(--c2, #6C7562)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-duster-cardigan__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE4D4)"/>
+      <stop offset="1" stop-color="var(--c2, #8A9280)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-duster-cardigan__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="5" height="16" fill="var(--c2, #77806C)" fill-opacity="0.3"/>
+      <rect x="9" y="0" width="2" height="16" fill="var(--c2, #77806C)" fill-opacity="0.16"/>
+    </pattern>
+    <clipPath id="elder-male-top-duster-cardigan__clipL">
+      <path d="M126 212 Q128 176 164 176 L186 188 L188 484 Q188 504 174 506 L134 508 Q116 506 116 486 Q114 340 126 212 Z"/>
+    </clipPath>
+    <clipPath id="elder-male-top-duster-cardigan__clipR">
+      <path d="M274 212 Q272 176 236 176 L214 188 L212 484 Q212 504 226 506 L266 508 Q284 506 284 486 Q286 340 274 212 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the integral shell, two dropped sleeves, two long unfastened fronts -->
+  <g class="sp-shadow">
+    <path d="M162 184 Q200 210 238 184 Q264 190 264 220 V336 Q264 350 250 350 H150 Q136 350 136 336 V220 Q136 190 162 184 Z"
+          fill="url(#elder-male-top-duster-cardigan__shell)"/>
+    <rect x="100" y="192" width="44" height="174" rx="22"
+          fill="url(#elder-male-top-duster-cardigan__sleeve)"/>
+    <rect x="256" y="192" width="44" height="174" rx="22"
+          fill="url(#elder-male-top-duster-cardigan__sleeve)"/>
+    <path d="M126 212 Q128 176 164 176 L186 188 L188 484 Q188 504 174 506 L134 508 Q116 506 116 486 Q114 340 126 212 Z"
+          fill="url(#elder-male-top-duster-cardigan__knit)"/>
+    <path d="M274 212 Q272 176 236 176 L214 188 L212 484 Q212 504 226 506 L266 508 Q284 506 284 486 Q286 340 274 212 Z"
+          fill="url(#elder-male-top-duster-cardigan__knit)"/>
+  </g>
+
+  <!-- surface tool: knit rib texture, clipped inside each front, sitting on the gradient -->
+  <g clip-path="url(#elder-male-top-duster-cardigan__clipL)">
+    <rect x="110" y="172" width="82" height="338" fill="url(#elder-male-top-duster-cardigan__rib)"/>
+  </g>
+  <g clip-path="url(#elder-male-top-duster-cardigan__clipR)">
+    <rect x="208" y="172" width="82" height="338" fill="url(#elder-male-top-duster-cardigan__rib)"/>
+  </g>
+
+  <!-- shell neckline, bound, and the bare skin it exposes -->
+  <path d="M162 184 Q200 210 238 184" stroke="var(--c2, #77806C)" stroke-opacity="0.45"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M176 174 Q200 196 224 174 Q218 210 200 212 Q182 210 176 174 Z"
+        fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: two low patch pockets, sitting between mid thigh and the elder knee -->
+  <rect x="132" y="414" width="52" height="52" rx="10" fill="var(--c2, #77806C)" fill-opacity="0.45"/>
+  <rect x="216" y="414" width="52" height="52" rx="10" fill="var(--c2, #77806C)" fill-opacity="0.45"/>
+  <path d="M132 425 h52" stroke="var(--c1, #A9B0A0)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 425 h52" stroke="var(--c1, #A9B0A0)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: ribbed cuffs at the dropped sleeve ends -->
+  <rect x="100" y="342" width="44" height="24" rx="12" fill="var(--c2, #77806C)"/>
+  <rect x="256" y="342" width="44" height="24" rx="12" fill="var(--c2, #77806C)"/>
+
+  <!-- structural: dropped shoulder seams, falling low and outboard onto the upper arm -->
+  <path d="M128 208 Q132 182 162 178" stroke="var(--c2, #77806C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M272 208 Q268 182 238 178" stroke="var(--c2, #77806C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: soft drape folds swinging out towards the mid calf hem -->
+  <g stroke="var(--c2, #77806C)" stroke-opacity="0.35" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M152 252 Q142 372 138 488"/>
+    <path d="M248 252 Q258 372 262 488"/>
+  </g>
+
+  <!-- open front edges, left unbound because there is no placket and no buttons -->
+  <path d="M187 200 V480" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M213 200 V480" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlights on the shell and both fronts -->
+  <path d="M164 224 q36 16 72 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M134 214 q10 -20 30 -30" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M266 214 q-10 -20 -30 -30" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M110 214 V250" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M290 214 V250" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

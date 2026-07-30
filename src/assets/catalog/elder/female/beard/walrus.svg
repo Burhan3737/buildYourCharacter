@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Walrus Moustache" data-family="walrus" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs moustache and handlebar: LENGTH (45px deep, drooping past the drawn
+       lower lip at y174 down to y181, against a 17px bar and a 31px sweep) and UPPER LIP
+       (overhanging the lip and covering the whole mouth, against a bar that stops clear of it
+       and a pair of wings that lift away from it). Chin, jaw and cheeks bare, so no cheek line.
+       Anchored to THIS bundle's drawn mouth (x176..224, y146..178) measured off
+       elder/female/mouth, not translated: elder mouth sits 38px below adult, elder skull 34px.
+       The hem at y181 stays 3px clear of the drawn chin point at y184.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y181.
+       hair1 lights the crown of the droop; hair2 draws the centre parting, the heavy shaded
+       underside of both lobes and the hanging strand grooves. -->
+  <defs>
+    <linearGradient id="elder-female-beard-walrus__droop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="0.55" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a thick untrimmed mass drooping over the whole mouth, hem in two heavy lobes -->
+  <g class="sp-shadow">
+    <path d="M165 146 C172 139, 188 136, 200 140 C212 136, 228 139, 235 146
+             C240 157, 238 168, 229 175 C221 181, 211 179, 208 172
+             C206 168, 203 166, 200 166 C197 166, 194 168, 192 172
+             C189 179, 179 181, 171 175 C162 168, 160 157, 165 146 Z"
+          fill="url(#elder-female-beard-walrus__droop)"/>
+  </g>
+
+  <!-- hair2: the centre parting running down from the philtrum through the whole mass -->
+  <path d="M197.4 141 C199.4 148, 199.4 158, 198.4 165.5 L201.6 165.5
+           C200.6 158, 200.6 148, 202.6 141 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the shaded underside of each drooping lobe -->
+  <path d="M168 163 C170 172, 175 178, 183 178 C188 178, 191 175, 193 170
+           C191 178, 186 181, 179 180 C172 179, 168 172, 168 163 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <path d="M232 163 C230 172, 225 178, 217 178 C212 178, 209 175, 207 170
+           C209 178, 214 181, 221 180 C228 179, 232 172, 232 163 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: hanging strand grooves, each a different length so the hem is not a line -->
+  <path d="M177 151 C177 161, 178 169, 182 176" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M187 148 C186 159, 187 166, 189 172" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M223 151 C223 161, 222 169, 218 176" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M213 148 C214 159, 213 166, 211 172" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- hair2: the shaded root band under the nose, where the mass is combed apart -->
+  <path d="M172 145 C182 140, 218 140, 228 145 C216 143, 184 143, 172 145 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.65"/>
+
+  <path d="M173 145 C184 139, 193 140, 198 142" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M227 145 C216 139, 207 140, 202 142" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Goatee" data-family="goatee" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs circle-beard: UPPER LIP (completely bare, no bar of any kind, against
+       circle-beard's joined moustache) and CHIN AND JAW COVERAGE (chin only, a closed rounded
+       mass with no ring and no connection to the mouth corners).
+       Anchored to THIS bundle's drawn art. The elder mouth measured off elder/female/mouth is
+       x176..224, y146..178, its lower lip bottom averaging y174.6; the top of this tuft is at
+       y177, so there is a deliberate clear gap of about 2px and the mass reads as disconnected
+       from the lip. Jaw and cheeks bare, so no cheek line.
+       The drawn chin point is y184, so the tuft hangs 23px free below it, to y207.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y208.
+       hair1 lights the top of the tuft; hair2 draws the chin whorl, the shaded hanging
+       underside below the chin point and the separated strand ends. -->
+  <defs>
+    <linearGradient id="elder-female-beard-goatee__tuft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- a rounded chin mass, hugging the chin at y184 and hanging free below it -->
+  <g class="sp-shadow">
+    <path d="M200 177 C210 177, 218 181, 220.5 188 C223 196, 219 205, 208 207.5
+             C204 208.4, 196 208.4, 192 207.5 C181 205, 177 196, 179.5 188
+             C182 181, 190 177, 200 177 Z"
+          fill="url(#elder-female-beard-goatee__tuft)"/>
+  </g>
+
+  <!-- hair2: the chin whorl, the growth pattern that centres the tuft -->
+  <path d="M200 183 C205 183, 208 187, 206 191 C204 194, 199 194, 197 191
+           C196 189, 197 187, 199 187 C198 189, 199 191, 201 191
+           C203 191, 205 189, 203 186 C202 184.5, 201 184, 200 183 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the hanging underside, entirely below the drawn chin point at y184 -->
+  <path d="M180 191 C183 201, 190 206.5, 200 207 C210 206.5, 217 201, 220 191
+           C220 200.5, 213 208, 200 208.5 C187 208, 180 200.5, 180 191 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: separated strand ends, none the same length -->
+  <path d="M190 194 C191 199, 193 203, 195 206" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M200 196 C200 201, 200 204, 200 207.5" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M210 194 C209 199, 207 203, 205 206" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.85" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- hair2: the clean cut top edge, which is what keeps the bare lip reading as deliberate -->
+  <path d="M183 182 C189 178, 211 178, 217 182 C209 179.5, 191 179.5, 183 182 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+
+  <path d="M187 183 C193 179, 205 179, 211 183" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

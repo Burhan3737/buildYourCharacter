@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Exo Frame" data-family="exo-frame" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: dark under layer y150 and the ring jointed shoulder
+       caps y150. Both are rebuilt at y182 to y184 here, and the shell stack below them has been
+       respaced downward so the joint bands keep their real width instead of being crushed.
+
+       Axes: closure (segmented shells with a visible dark joint band between every pair) and
+       volume (hard shell plates riding over a continuous dark under layer).
+       The chest plate is a PLAIN BEVELLED PANEL. No reactor disc, no glowing circle, no emblem,
+       no crest, no applied chest graphic of any kind.
+       Palette note: deliberately NOT a seamless silver or chrome monochrome. House mint shells
+       over a dark under layer with a butter accent. -->
+  <defs>
+    <linearGradient id="elder-male-costume-exo-frame__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7ECBB8)"/>
+      <stop offset="1" stop-color="var(--c1, #5FA895)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-exo-frame__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #78C4B1)"/>
+      <stop offset="1" stop-color="var(--c1, #58A08D)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-exo-frame__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #45464F)"/>
+      <stop offset="1" stop-color="var(--c3, #2F3038)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark under layer: it is what shows through at every joint -->
+  <g class="sp-shadow">
+    <path d="M132 184 H268 Q272 212 270 244 L268 324 Q268 352 250 366 H150 Q132 352 132 324
+             L130 244 Q128 212 132 184 Z" fill="url(#elder-male-costume-exo-frame__under)"/>
+    <rect x="108" y="194" width="38" height="180" rx="15" fill="url(#elder-male-costume-exo-frame__under)"/>
+    <rect x="254" y="194" width="38" height="180" rx="15" fill="url(#elder-male-costume-exo-frame__under)"/>
+    <rect x="156" y="360" width="44" height="186" rx="14" fill="url(#elder-male-costume-exo-frame__under)"/>
+    <rect x="200" y="360" width="44" height="186" rx="14" fill="url(#elder-male-costume-exo-frame__under)"/>
+  </g>
+
+  <!-- ring jointed shoulder caps, top edge at the ceiling -->
+  <g class="sp-shadow">
+    <path d="M108 206 Q108 182 132 182 H152 Q158 200 158 220 H108 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+    <path d="M292 206 Q292 182 268 182 H248 Q242 200 242 220 H292 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M114 198 q22 -6 42 0 M286 198 q-22 -6 -42 0" stroke="var(--c2, #E8E2CE)"
+        stroke-width="4" stroke-opacity="0.7" fill="none" stroke-linecap="round"/>
+
+  <!-- ONE moulded chest plate: a plain bevelled panel, nothing applied to it -->
+  <g class="sp-shadow">
+    <path d="M136 224 H264 Q268 254 266 284 L264 316 H136 L134 284 Q132 254 136 224 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M144 234 H256 Q259 256 257 280 L255 306 H145 L143 280 Q141 256 144 234 Z"
+        fill="none" stroke="var(--c2, #E8E2CE)" stroke-width="4" stroke-opacity="0.55"/>
+  <path d="M200 234 V306" stroke="var(--c3, #2F3038)" stroke-width="4"
+        stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+
+  <!-- abdomen shell -->
+  <g class="sp-shadow">
+    <path d="M140 326 H260 Q264 342 260 358 H140 Q136 342 140 326 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+  </g>
+
+  <!-- upper arm shells and forearm gauntlets -->
+  <g class="sp-shadow">
+    <rect x="110" y="228" width="34" height="50" rx="10" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <rect x="256" y="228" width="34" height="50" rx="10" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <rect x="106" y="290" width="42" height="76" rx="14" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <rect x="252" y="290" width="42" height="76" rx="14" fill="url(#elder-male-costume-exo-frame__limb)"/>
+  </g>
+
+  <!-- separate thigh plates and shin plates -->
+  <g class="sp-shadow">
+    <path d="M156 368 H198 Q202 412 200 444 H156 Q152 412 156 368 Z" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <path d="M244 368 H202 Q198 412 200 444 H244 Q248 412 244 368 Z" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <path d="M158 458 H198 Q202 496 200 522 H158 Q154 496 158 458 Z" fill="url(#elder-male-costume-exo-frame__limb)"/>
+    <path d="M242 458 H202 Q198 496 200 522 H242 Q246 496 242 458 Z" fill="url(#elder-male-costume-exo-frame__limb)"/>
+  </g>
+
+  <!-- THE JOINT BANDS: a genuine 8 unit strip of the dark under layer at every joint -->
+  <g fill="url(#elder-male-costume-exo-frame__under)">
+    <rect x="106" y="218" width="42" height="8" rx="4"/>
+    <rect x="252" y="218" width="42" height="8" rx="4"/>
+    <rect x="106" y="280" width="42" height="8" rx="4"/>
+    <rect x="252" y="280" width="42" height="8" rx="4"/>
+    <rect x="134" y="316" width="132" height="8" rx="4"/>
+    <rect x="138" y="358" width="124" height="8" rx="4"/>
+    <rect x="154" y="448" width="46" height="8" rx="4"/>
+    <rect x="200" y="448" width="46" height="8" rx="4"/>
+    <rect x="154" y="526" width="46" height="8" rx="4"/>
+    <rect x="200" y="526" width="46" height="8" rx="4"/>
+  </g>
+
+  <!-- butter accent striping across the shells -->
+  <g fill="var(--c4, #F7C873)">
+    <rect x="112" y="300" width="30" height="7" rx="3.5"/>
+    <rect x="258" y="300" width="30" height="7" rx="3.5"/>
+    <rect x="160" y="378" width="34" height="7" rx="3.5"/>
+    <rect x="206" y="378" width="34" height="7" rx="3.5"/>
+    <rect x="162" y="468" width="32" height="7" rx="3.5"/>
+    <rect x="206" y="468" width="32" height="7" rx="3.5"/>
+    <rect x="146" y="336" width="108" height="7" rx="3.5"/>
+  </g>
+
+  <!-- armoured boots -->
+  <g class="sp-shadow">
+    <path d="M154 536 H200 V562 Q200 570 192 570 H148 Q140 570 140 560 Q140 546 154 536 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+    <path d="M246 536 H200 V562 Q200 570 208 570 H252 Q260 570 260 560 Q260 546 246 536 Z"
+          fill="url(#elder-male-costume-exo-frame__shell)"/>
+  </g>
+  <path d="M144 558 h50 M256 558 h-50" stroke="var(--c3, #2F3038)" stroke-width="5"
+        stroke-opacity="0.55" fill="none" stroke-linecap="round"/>
+
+  <!-- house highlight -->
+  <path d="M146 242 q54 18 108 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

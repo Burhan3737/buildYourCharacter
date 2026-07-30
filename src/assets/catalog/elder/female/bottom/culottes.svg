@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes this family owns: LEG WIDTH = two panels so wide and flat that the
+       outline reads as a skirt out to x128 and x272 until the 10 unit centre split gives the
+       pair away, and LEG LENGTH = cut off at the knee, y459. High rise, band top edge y298
+       running 20 deep to y318. Plain raw hem, no facing band and no cuff.
+       Refit arithmetic for the elder body, re derived and not copied from adult/female: the
+       elder leg rect runs y374 to y544, so the knee sits at y459 (adult y446 on a 212 long
+       leg). The split opens at y400 and runs 59 units down to that hem (459 minus 400 = 59).
+       Panel width at the hem is 272 minus 128 = 144 units across the pair, which is 44 units
+       wider than the elder hip block (x150 to x250, 100 wide) and so clears the practical
+       40 unit floor as a silhouette read on its own.
+       Surface tools: trim (a deep high rise waistband with its own gradient and two edge
+       lines) and structural (knife pleats falling from the yoke, the split edges, and a
+       self fabric raw hem fold). -->
+  <defs>
+    <linearGradient id="elder-female-bottom-culottes__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E8B57)"/>
+      <stop offset="0.55" stop-color="var(--c1, #7E8B57)"/>
+      <stop offset="1" stop-color="var(--c2, #626D42)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #626D42)"/>
+      <stop offset="1" stop-color="var(--c1, #7E8B57)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two very wide flat panels hung from a high yoke, meeting on the centre line
+       down to y398 and then splitting to x195 and x205 for the last 59 units -->
+  <g class="sp-shadow">
+    <path d="M148 298 H200 V398 L195 406 V459 H134 Q128 459 128 450 L142 308 Q143 298 148 298 Z"
+          fill="url(#elder-female-bottom-culottes__panel)"/>
+    <path d="M252 298 H200 V398 L205 406 V459 H266 Q272 459 272 450 L258 308 Q257 298 252 298 Z"
+          fill="url(#elder-female-bottom-culottes__panel)"/>
+  </g>
+
+  <!-- the split reads as a shadowed notch between the two panels -->
+  <path d="M195 402 V457 H205 V402 L200 396 Z" fill="var(--c2, #626D42)" opacity="0.55"/>
+
+  <!-- deep high rise waistband -->
+  <path d="M148 298 H252 Q257 298 258 308 L259 318 H141 L142 308 Q143 298 148 298 Z"
+        fill="url(#elder-female-bottom-culottes__band)"/>
+  <path d="M143 313 H257" stroke="var(--c3, #F1F3E0)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 304 H256" stroke="var(--c3, #F1F3E0)" stroke-opacity="0.4" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <!-- side entry elastic ruche, the elder preference over a fly -->
+  <path d="M150 302 v13 M158 302 v13 M242 302 v13 M250 302 v13"
+        stroke="var(--c2, #626D42)" stroke-opacity="0.55" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- knife pleats falling from the yoke to the hem -->
+  <path d="M166 324 L150 452" stroke="var(--c2, #626D42)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M184 324 L174 454" stroke="var(--c2, #626D42)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 324 L250 452" stroke="var(--c2, #626D42)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M216 324 L226 454" stroke="var(--c2, #626D42)" stroke-opacity="0.45" stroke-width="3.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- plain raw hem, self fabric fold only -->
+  <path d="M132 452 H192" stroke="var(--c2, #626D42)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 452 H268" stroke="var(--c2, #626D42)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- split edges, called out so the pair reads at tray size -->
+  <path d="M196 404 V456" stroke="var(--c3, #F1F3E0)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 404 V456" stroke="var(--c3, #F1F3E0)" stroke-opacity="0.45" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- soft upper highlight and the flat fall of the outer edges -->
+  <path d="M160 330 q40 12 80 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M143 340 L134 442" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M257 340 L266 442" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

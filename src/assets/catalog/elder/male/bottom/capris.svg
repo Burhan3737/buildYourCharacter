@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg length = CROPPED AT MID CALF (hem y508, the only bottom in this slot that stops
+       there; ankle is y544, so 36 units of bare shin show below the hem) + leg width = NARROW and
+       straight (35 units at the thigh closing to 31 at the hem, over a 28 unit leg block).
+       Against tailored trousers, which is full length to y548 and a constant 36 wide, that is
+       leg length plus leg width; against jeans, leg length plus hem treatment.
+       Rise is natural: waist at y324, on the drawn hip top of y328.
+       Elder notes: an ELASTIC waistband replaces the fly entirely, so there is no zip and no
+       button, and the back rise runs LONGER, drawn as the two back waistband tabs that peek up
+       to y318 at the sides while the front band tops out at y324. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-capris__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E39C86)"/>
+      <stop offset="1" stop-color="var(--c2, #B8705B)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-capris__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBEEDD)"/>
+      <stop offset="1" stop-color="var(--c2, #B8705B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a natural rise seat and two narrow straight legs cut off at mid calf -->
+  <g class="sp-shadow">
+    <path d="M165 376 H200 L198 508 H167 Z" fill="url(#elder-male-bottom-capris__cloth)"/>
+    <path d="M235 376 H200 L202 508 H233 Z" fill="url(#elder-male-bottom-capris__cloth)"/>
+    <rect x="148" y="324" width="104" height="54" rx="20"
+          fill="url(#elder-male-bottom-capris__cloth)"/>
+  </g>
+
+  <!-- trim: the single turn up, a real folded back band standing proud of each narrow leg -->
+  <rect x="161" y="484" width="39" height="24" rx="6" fill="url(#elder-male-bottom-capris__cuff)"/>
+  <rect x="200" y="484" width="39" height="24" rx="6" fill="url(#elder-male-bottom-capris__cuff)"/>
+  <path d="M165 490 H196" stroke="var(--c2, #B8705B)" stroke-opacity="0.6" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 490 H235" stroke="var(--c2, #B8705B)" stroke-opacity="0.6" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the longer back rise, showing at the sides above the front waistband -->
+  <path d="M150 326 V324 Q150 318 158 318 H166 V326 Z" fill="var(--c2, #B8705B)"/>
+  <path d="M250 326 V324 Q250 318 242 318 H234 V326 Z" fill="var(--c2, #B8705B)"/>
+
+  <!-- trim: flat elastic waistband, no fly and no belt loops -->
+  <rect x="148" y="324" width="104" height="20" rx="10" fill="var(--c2, #B8705B)"/>
+  <!-- structural: the gather ticks that say the band is elasticated all the way round -->
+  <g stroke="var(--c3, #FBEEDD)" stroke-opacity="0.5" stroke-width="2.2" fill="none"
+     stroke-linecap="round">
+    <path d="M158 329 V339"/>
+    <path d="M170 329 V339"/>
+    <path d="M182 329 V339"/>
+    <path d="M194 329 V339"/>
+    <path d="M206 329 V339"/>
+    <path d="M218 329 V339"/>
+    <path d="M230 329 V339"/>
+    <path d="M242 329 V339"/>
+  </g>
+
+  <!-- structural: slanted side pocket seams -->
+  <path d="M149 348 H172 Q166 372 149 368 Z" fill="var(--c2, #B8705B)"/>
+  <path d="M251 348 H228 Q234 372 251 368 Z" fill="var(--c2, #B8705B)"/>
+  <path d="M172 350 Q166 371 151 367" stroke="var(--c3, #FBEEDD)" stroke-opacity="0.75"
+        stroke-width="2.4" stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M228 350 Q234 371 249 367" stroke="var(--c3, #FBEEDD)" stroke-opacity="0.75"
+        stroke-width="2.4" stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: pressed centre crease down each narrow leg -->
+  <path d="M181 388 V480" stroke="var(--c3, #FBEEDD)" stroke-opacity="0.5" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M219 388 V480" stroke="var(--c3, #FBEEDD)" stroke-opacity="0.5" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: inner leg shadow either side of the centre division -->
+  <path d="M197 386 V478" stroke="var(--c2, #B8705B)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 386 V478" stroke="var(--c2, #B8705B)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M162 358 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

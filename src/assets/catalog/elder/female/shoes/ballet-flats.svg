@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ballet Flats" data-family="ballet-flats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c3,c2" data-hides="">
+  <!-- Silhouette axes this family owns: SHAFT HEIGHT = the lowest topline in the slot, scooped
+       to y562 across the instep so the whole top of the foot is left bare and the upper covers
+       barely the bottom 26 units, and FASTENING = none at all, no strap and no buckle, which is
+       what parts it from mary-janes (chunky round toe, small heel, buckled instep strap).
+       Sole depth is 4 units, barely thicker than the upper; toe shape is a soft round box.
+       Surface tools: panel blocking (a contrast toe cap set against the quarters) and trim
+       (a soft elasticated topline binding and a paper-thin sole edge).
+       Elder fit: the toe box is drawn a little deeper and rounder than the reference so the
+       shoe reads roomy, and the topline binding is a soft stretch band, not a stiff edge.
+       Feet are x160-202 and x198-240 on y544-570; ground line y570. -->
+  <defs>
+    <linearGradient id="elder-female-shoes-ballet-flats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B4708C)"/>
+      <stop offset="1" stop-color="var(--c2, #8A4E66)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two very low scooped uppers, a raised heel counter at the outer edge falling
+       away to a deep instep scoop, then rising into a rounded toe box toward the centre -->
+  <g class="sp-shadow">
+    <path d="M150 553 C150 544 156 541 163 543 C170 545 173 559 183 562
+             C193 565 201 554 210 557 C216 559 217 566 213 569
+             C210 570 205 570 200 570 L158 570 C152 570 150 566 150 560 Z"
+          fill="url(#elder-female-shoes-ballet-flats__upper)"/>
+    <path d="M250 553 C250 544 244 541 237 543 C230 545 227 559 217 562
+             C207 565 199 554 190 557 C184 559 183 566 187 569
+             C190 570 195 570 200 570 L242 570 C248 570 250 566 250 560 Z"
+          fill="url(#elder-female-shoes-ballet-flats__upper)"/>
+  </g>
+
+  <!-- PANEL BLOCKING: contrast toe caps over the rounded box -->
+  <path d="M188 563 C194 565 202 555 210 557 C216 559 217 566 213 569
+           C210 570 205 570 200 570 L188 570 Z" fill="var(--c3, #F7E4E9)"/>
+  <path d="M212 563 C206 565 198 555 190 557 C184 559 183 566 187 569
+           C190 570 195 570 200 570 L212 570 Z" fill="var(--c3, #F7E4E9)"/>
+
+  <!-- TRIM: soft stretch topline binding following the whole scoop -->
+  <path d="M152 552 C156 543 167 549 182 560 C193 567 202 556 211 559"
+        stroke="var(--c3, #F7E4E9)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M248 552 C244 543 233 549 218 560 C207 567 198 556 189 559"
+        stroke="var(--c3, #F7E4E9)" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- soles barely thicker than the upper, 4 units -->
+  <rect x="150" y="566" width="62" height="4" rx="2" fill="var(--c2, #8A4E66)"/>
+  <rect x="188" y="566" width="62" height="4" rx="2" fill="var(--c2, #8A4E66)"/>
+
+  <!-- vamp seam across the toe box -->
+  <path d="M186 566 q7 3 12 1" stroke="var(--c2, #8A4E66)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 566 q-7 3 -12 1" stroke="var(--c2, #8A4E66)" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- satin sheen over each quarter -->
+  <path d="M158 564 q12 4 22 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 564 q-12 4 -22 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

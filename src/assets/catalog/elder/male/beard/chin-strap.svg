@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chin Strap" data-family="chin-strap"
+     data-slot="beard" data-layer="beard"
+     data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn anchors: chin (200,184), jaw corners (158,156) and (242,156),
+       ear anchors (149,129) with the ear ellipses spanning x138 to 160 / x240 to 262,
+       y116 to 142. Mouth measured off elder/male/mouth: the deepest drawn lower lip is
+       y167, and the band's inner edge crosses the centreline at y179, so 12 units of
+       bare skin sit between the lip and the strap on every mouth.
+       Beard floor torso.y 184 + 76 = y260; the strap's outer edge bottoms at y192,
+       8 units past the chin so there is no sliver of skin at the jaw.
+
+       Axes chosen: CHIN AND JAW = chin plus jaw band, an even 13 unit strap tracing the
+       drawn jawline ear to ear and nothing else. CHEEK LINE = jaw only; the band never
+       climbs the cheek and the lip stays bare. Against chin-curtain the separator is
+       depth: 13 units of band against 43 units of hang. -->
+  <defs>
+    <linearGradient id="elder-male-beard-chin-strap__grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="0.5" stop-color="var(--hair1, #CFC9BC)"/>
+      <stop offset="1" stop-color="var(--hair2, #8A8E97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the strap: outer contour on the drawn jaw, inner contour 13 units inboard,
+       with a root at each ear so the band reaches the sideburn -->
+  <g class="sp-shadow">
+    <path d="M150 134 Q152 166 200 192 Q248 166 250 134
+             L237 134 Q235 161 200 179 Q165 161 163 134 Z"
+          fill="url(#elder-male-beard-chin-strap__grad)"/>
+    <path d="M147 126 C143 130 144 138 150 140 C156 142 161 138 160 132
+             C159 126 152 122 147 126 Z"
+          fill="url(#elder-male-beard-chin-strap__grad)"/>
+    <path d="M253 126 C257 130 256 138 250 140 C244 142 239 138 240 132
+             C241 126 248 122 253 126 Z"
+          fill="url(#elder-male-beard-chin-strap__grad)"/>
+  </g>
+
+  <!-- inner edge of the strap, kept crisp in hair2 -->
+  <path d="M164 140 Q168 164 200 180 Q232 164 236 140" stroke="var(--hair2, #8A8E97)"
+        stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- grain running across the width of the band -->
+  <g stroke="var(--hair2, #8A8E97)" stroke-width="2.4" fill="none" stroke-linecap="round"
+     opacity="0.55">
+    <path d="M152 146 L164 145"/>
+    <path d="M156 160 L167 157"/>
+    <path d="M166 172 L175 166"/>
+    <path d="M181 183 L187 175"/>
+    <path d="M200 188 L200 179"/>
+    <path d="M219 183 L213 175"/>
+    <path d="M234 172 L225 166"/>
+    <path d="M244 160 L233 157"/>
+    <path d="M248 146 L236 145"/>
+  </g>
+
+  <!-- lit outer edge running down the jaw -->
+  <path d="M156 156 C166 172 182 184 197 189" stroke="#FFFFFF" stroke-opacity="0.26"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M244 156 C234 172 218 184 203 189" stroke="#FFFFFF" stroke-opacity="0.22"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

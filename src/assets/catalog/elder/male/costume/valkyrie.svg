@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Valkyrie" data-family="valkyrie" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3,c4" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the mail shirt at y150, the underdress at y152 and
+       every one of the nine leaf plumes at y150. The plume cape is rebuilt so its top edge IS
+       the ceiling and each plume runs 52 units down to y234, which keeps them countable at tray
+       size instead of shortening them into scales.
+
+       NO horned and NO winged helm, ever, in costume or in headwear, anywhere on this project.
+       The shield is a worn item slung behind the hip, not a prop.
+       Axes: hem (a knee length mail shirt genuinely split at the centre front for riding, over
+       an ankle length underdress) and shoulder (a flat cape of overlapping leaf plumes lying
+       across the shoulders, not standing up).
+       Authored on this body because there are no aisles. -->
+  <defs>
+    <linearGradient id="elder-male-costume-valkyrie__mail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #AEB6C2)"/>
+      <stop offset="1" stop-color="var(--c1, #8B94A3)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-valkyrie__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6D7CA6)"/>
+      <stop offset="1" stop-color="var(--c3, #56638A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-valkyrie__plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c4, #C58F4E)"/>
+      <stop offset="1" stop-color="var(--c4, #9E6E36)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-valkyrie__shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #74829A)"/>
+      <stop offset="1" stop-color="var(--c2, #58657C)"/>
+    </linearGradient>
+    <pattern id="elder-male-costume-valkyrie__rings" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <circle cx="8" cy="8" r="5" fill="none" stroke="var(--c2, #58657C)"
+              stroke-width="1.6" stroke-opacity="0.6"/>
+    </pattern>
+    <clipPath id="elder-male-costume-valkyrie__mailclip">
+      <path d="M146 186 H254 Q258 226 256 266 L254 336 Q256 406 254 468 H207 L207 366 H193
+               L193 468 H146 Q144 406 146 336 L144 266 Q142 226 146 186 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- long sleeved underdress, ankle length -->
+  <g class="sp-shadow">
+    <path d="M144 184 H256 Q262 232 260 292 L262 420 Q264 490 260 548 Q200 560 140 548
+             Q136 490 138 420 L140 292 Q138 232 144 184 Z"
+          fill="url(#elder-male-costume-valkyrie__under)"/>
+    <path d="M110 196 H144 Q148 226 146 252 L144 352 Q144 364 128 364 Q112 364 110 352 Z"
+          fill="url(#elder-male-costume-valkyrie__under)"/>
+    <path d="M290 196 H256 Q252 226 254 252 L256 352 Q256 364 272 364 Q288 364 290 352 Z"
+          fill="url(#elder-male-costume-valkyrie__under)"/>
+  </g>
+
+  <!-- round shield slung behind, only a disc edge showing past the right hip -->
+  <g class="sp-shadow">
+    <path d="M258 312 Q298 334 300 362 Q298 392 258 412 Q270 362 258 312 Z"
+          fill="url(#elder-male-costume-valkyrie__shield)"/>
+  </g>
+  <path d="M272 328 q18 14 18 34 q0 20 -18 34" stroke="var(--c4, #9E6E36)"
+        stroke-width="5" stroke-opacity="0.8" fill="none" stroke-linecap="round"/>
+
+  <!-- sleeveless knee length mail shirt, split front for riding -->
+  <g class="sp-shadow">
+    <path d="M146 186 H254 Q258 226 256 266 L254 336 Q256 406 254 468 H207 L207 366 H193
+             L193 468 H146 Q144 406 146 336 L144 266 Q142 226 146 186 Z"
+          fill="url(#elder-male-costume-valkyrie__mail)"/>
+  </g>
+  <g clip-path="url(#elder-male-costume-valkyrie__mailclip)">
+    <rect x="140" y="184" width="120" height="288" fill="url(#elder-male-costume-valkyrie__rings)"/>
+  </g>
+
+  <!-- broad belt -->
+  <rect x="140" y="322" width="120" height="24" rx="9" fill="url(#elder-male-costume-valkyrie__plume)"/>
+  <rect x="188" y="320" width="26" height="28" rx="9" fill="var(--c2, #58657C)"/>
+
+  <!-- short shoulder cape of overlapping leaf plumes, lying FLAT across the shoulders -->
+  <g class="sp-shadow">
+    <path d="M145 182 Q132 184 132 206 Q132 226 145 234 Q158 226 158 206 Q158 184 145 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M159 182 Q146 184 146 206 Q146 226 159 234 Q172 226 172 206 Q172 184 159 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M173 182 Q160 184 160 206 Q160 226 173 234 Q186 226 186 206 Q186 184 173 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M187 182 Q174 184 174 206 Q174 226 187 234 Q200 226 200 206 Q200 184 187 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M200 182 Q187 184 187 206 Q187 226 200 234 Q213 226 213 206 Q213 184 200 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M214 182 Q201 184 201 206 Q201 226 214 234 Q227 226 227 206 Q227 184 214 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M228 182 Q215 184 215 206 Q215 226 228 234 Q241 226 241 206 Q241 184 228 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M242 182 Q229 184 229 206 Q229 226 242 234 Q255 226 255 206 Q255 184 242 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+    <path d="M255 182 Q242 184 242 206 Q242 226 255 234 Q268 226 268 206 Q268 184 255 182 Z" fill="url(#elder-male-costume-valkyrie__plume)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M145 190 v40 M159 190 v40 M173 190 v40 M187 190 v40 M200 190 v40
+             M214 190 v40 M228 190 v40 M242 190 v40 M255 190 v40"/>
+  </g>
+
+  <!-- integral boots -->
+  <g class="sp-shadow">
+    <path d="M156 484 H198 V562 Q198 570 191 570 H150 Q142 570 142 562 V508 Q144 492 156 484 Z"
+          fill="url(#elder-male-costume-valkyrie__under)"/>
+    <path d="M244 484 H202 V562 Q202 570 209 570 H250 Q258 570 258 562 V508 Q256 492 244 484 Z"
+          fill="url(#elder-male-costume-valkyrie__under)"/>
+  </g>
+  <g stroke="var(--c4, #9E6E36)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M146 502 h48 M206 502 h48"/>
+    <path d="M146 534 h48 M206 534 h48"/>
+  </g>
+
+  <!-- house highlight -->
+  <path d="M152 250 q48 18 96 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

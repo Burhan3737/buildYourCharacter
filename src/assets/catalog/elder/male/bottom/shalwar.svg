@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Living cultural dress, not costume. Ordinary everyday clothing under its own endonym:
+       plain cloth with a fine tonal self stripe and a plain band, no community specific woven
+       design, drawn with the same restraint as a pair of trousers.
+       silhouette axes: leg width=enormously full through hip and thigh, then collapsing
+       sharply to a close ankle + hem treatment=a gathered plain ankle band with the crotch
+       notched up between the two bands. It is a triangle, not a tube.
+       Fullness arithmetic, recomputed on the elder male drawn body: the cloth is widest at
+       y440, spanning x112 to x288, which is 176 units across against a 104 unit hip
+       (x148 to x252). The thigh block outer edges on this body are x168 and x232, so the
+       thigh clearance = 168 minus 112 = 56 units per side, and 288 minus 232 = 56 on the
+       right. That fullness then collapses into ankle bands only 42 units wide at y512 to y536.
+       Elder note: the drawstring waist is exactly right for this stage, so there is no fly and
+       no belt, just a soft casing at the natural rise y326 to y348 with two hanging aglets. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6D4)"/>
+      <stop offset="1" stop-color="var(--c2, #B0A585)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-shalwar__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B0A585)"/>
+      <stop offset="1" stop-color="var(--c3, #7E90DC)"/>
+    </linearGradient>
+    <pattern id="elder-male-bottom-shalwar__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <rect x="0" y="0" width="3" height="16" fill="var(--c2, #B0A585)"/>
+    </pattern>
+    <clipPath id="elder-male-bottom-shalwar__clip">
+      <path d="M148 326 H252 Q286 380 288 440 Q250 470 244 536 H206 L208 440 L200 392 L192 440
+               L194 536 H156 Q150 470 112 440 Q114 380 148 326 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the triangle of cloth, with the crotch notched up between the ankles -->
+  <g class="sp-shadow">
+    <path d="M148 326 H252 Q286 380 288 440 Q250 470 244 536 H206 L208 440 L200 392 L192 440
+             L194 536 H156 Q150 470 112 440 Q114 380 148 326 Z"
+          fill="url(#elder-male-bottom-shalwar__cloth)"/>
+  </g>
+
+  <!-- pattern: a fine tonal self stripe over the gradient, clipped to the cloth -->
+  <g clip-path="url(#elder-male-bottom-shalwar__clip)">
+    <rect x="110" y="324" width="180" height="214" fill="url(#elder-male-bottom-shalwar__stripe)"
+          opacity="0.38"/>
+  </g>
+
+  <!-- structural: the deep pleats, radiating from the drawstring casing out into the fullness -->
+  <g clip-path="url(#elder-male-bottom-shalwar__clip)"
+     stroke="var(--c2, #B0A585)" stroke-opacity="0.7" stroke-width="4.4" fill="none"
+     stroke-linecap="round">
+    <path d="M156 350 Q130 404 122 462"/>
+    <path d="M170 350 Q150 410 144 482"/>
+    <path d="M184 350 Q176 414 172 508"/>
+    <path d="M244 350 Q270 404 278 462"/>
+    <path d="M230 350 Q250 410 256 482"/>
+    <path d="M216 350 Q224 414 228 508"/>
+  </g>
+
+  <!-- trim: the drawstring casing at the natural rise, with two hanging aglets -->
+  <rect x="146" y="326" width="108" height="22" rx="10" fill="url(#elder-male-bottom-shalwar__band)"/>
+  <path d="M186 346 Q192 364 182 378" stroke="var(--c3, #7E90DC)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 346 Q208 364 218 378" stroke="var(--c3, #7E90DC)" stroke-width="4.4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="177" y="374" width="9" height="16" rx="4" fill="var(--c3, #7E90DC)"/>
+  <rect x="214" y="374" width="9" height="16" rx="4" fill="var(--c3, #7E90DC)"/>
+
+  <!-- trim: the plain close ankle bands the whole triangle collapses into -->
+  <rect x="156" y="512" width="42" height="24" rx="10" fill="var(--c2, #B0A585)"/>
+  <rect x="202" y="512" width="42" height="24" rx="10" fill="var(--c2, #B0A585)"/>
+  <path d="M161 519 H193" stroke="var(--c3, #7E90DC)" stroke-width="2.8" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+  <path d="M207 519 H239" stroke="var(--c3, #7E90DC)" stroke-width="2.8" stroke-linecap="round"
+        fill="none" opacity="0.85"/>
+  <!-- structural: the gathers where the fullness is bundled into each band -->
+  <g stroke="var(--c2, #B0A585)" stroke-opacity="0.6" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M166 496 v14"/><path d="M178 494 v16"/><path d="M190 496 v14"/>
+    <path d="M210 496 v14"/><path d="M222 494 v16"/><path d="M234 496 v14"/>
+  </g>
+
+  <path d="M158 344 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 372 q60 -10 120 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

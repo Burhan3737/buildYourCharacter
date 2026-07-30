@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Living everyday clothing under its own name, drawn in an ordinary garment slot with the
+       same restraint as a button up: plain cloth, a plain band and a plain tie, and no community
+       specific woven design anywhere on it.
+       axes: rise = the band starts ON THE TORSO, ABOVE THE BUST, the only bottom in this slot
+       that does (band spans y246 to y282, while every other bottom here starts at the hip,
+       y308 to y330) + leg width = ONE GATHERED COLUMN with no leg division, 128 units across
+       under the band and widening to 176 units at the ankle hem (x112 to x288).
+       Against maxi skirt, which is a natural rise narrow straight column, that is rise and leg
+       width; against tiered skirt, rise and hem treatment.
+       LOCKED PAIR with the jeogori top. The chima chest band TOP EDGE is at y246 (band y246 to
+       y282) and the companion top/jeogori HEM is at y270. 270 is greater than 246, so the
+       jacket hem hangs BELOW the top edge of the band and covers it. That is what makes the
+       pair read as a jacket worn over a high banded skirt, rather than as a jacket tucked into
+       a strapless dress. Adult male used 214 and 238; rescaled from that torso (y150 to y310)
+       onto this one (y184 to y336) those become 246 and 270.
+       Elder note: this is a grandparent in the same confident garment. The colour is the same
+       mauve the adult wears and the drape is the same full gathered column. Nothing shortened,
+       nothing greyed. -->
+  <defs>
+    <linearGradient id="elder-male-bottom-chima__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9A5C4)"/>
+      <stop offset="1" stop-color="var(--c2, #96769B)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EDE2)"/>
+      <stop offset="1" stop-color="var(--c2, #96769B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the band above the bust, and one gathered column falling from it to the ankle -->
+  <g class="sp-shadow">
+    <path d="M136 278 H264 L272 322 Q286 432 288 536 Q200 550 112 536 Q114 432 128 322 Z"
+          fill="url(#elder-male-bottom-chima__column)"/>
+    <path d="M142 246 H258 Q268 246 268 256 V272 Q268 282 258 282 H142 Q132 282 132 272 V256
+             Q132 246 142 246 Z" fill="url(#elder-male-bottom-chima__band)"/>
+  </g>
+
+  <!-- structural: the long tie, knotted at the band and falling on the viewer left -->
+  <path d="M158 280 Q176 268 194 282 Q182 294 168 292 Q158 290 158 280 Z"
+        fill="var(--c3, #F4EDE2)"/>
+  <path d="M164 290 Q157 366 152 420 Q163 426 170 419 Q173 356 177 290 Z"
+        fill="var(--c3, #F4EDE2)"/>
+  <path d="M180 290 Q186 356 192 419 Q184 426 174 420 Q172 366 172 290 Z"
+        fill="var(--c2, #96769B)" opacity="0.55"/>
+
+  <!-- structural: vertical gather folds running the whole length of the column -->
+  <g stroke="var(--c2, #96769B)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M142 290 Q131 412 122 526"/>
+    <path d="M160 290 Q152 412 147 532"/>
+    <path d="M200 290 Q200 412 200 540"/>
+    <path d="M240 290 Q248 412 253 532"/>
+    <path d="M258 290 Q269 412 278 526"/>
+  </g>
+
+  <!-- trim: plain bound hem, and a plain flat braid along the lower edge of the band -->
+  <path d="M118 532 Q200 546 282 532" stroke="var(--c3, #F4EDE2)" stroke-width="6"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M138 277 H262" stroke="var(--c2, #96769B)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M152 258 q48 10 96 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

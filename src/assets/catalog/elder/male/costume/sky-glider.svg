@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sky Glider" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- costume face ceiling for elder/male: no geometry above y 182.
+       The adult/male reference breached it: the bodysuit at y150, both sleeves at y166 and both
+       arm membranes springing from y168. The suit is rebuilt at y184, the sleeves at y196, and
+       the membranes now spring from y200 and are widened at the bottom instead, so the standing
+       figure still reads as ONE WIDE TRIANGLE from shoulder to ankle.
+
+       silhouette axes: volume=the standing figure reads as one wide triangle from shoulder to
+       ankle, and shoulder=a broad membrane stretched from each wrist to the hip.
+       Trademark: the membranes are PLAIN CLOTH with drawn rib seams. No mechanical wings, no
+       feathers, no metal, and no chest emblem. -->
+  <defs>
+    <linearGradient id="elder-male-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E7C6E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-costume-sky-glider__membrane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #3E7C6E)"/>
+      <stop offset="1" stop-color="var(--c1, #6BBFAD)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the three membranes first, so the triangle reads behind the fitted body -->
+  <g class="sp-shadow">
+    <path d="M150 200 Q116 234 100 300 Q92 344 96 376 Q112 384 126 376 Q140 286 152 232 Z"
+          fill="url(#elder-male-costume-sky-glider__membrane)"/>
+    <path d="M250 200 Q284 234 300 300 Q308 344 304 376 Q288 384 274 376 Q260 286 248 232 Z"
+          fill="url(#elder-male-costume-sky-glider__membrane)"/>
+    <path d="M170 428 Q200 420 230 428 Q236 484 232 532 Q200 540 168 532 Q164 484 170 428 Z"
+          fill="url(#elder-male-costume-sky-glider__membrane)"/>
+  </g>
+
+  <!-- fitted ankle length bodysuit over them -->
+  <g class="sp-shadow">
+    <path d="M162 184 H238 Q252 200 252 226 L250 300 Q252 328 242 340 H158 Q148 328 150 300
+             L148 226 Q148 200 162 184 Z" fill="url(#elder-male-costume-sky-glider__suit)"/>
+    <path d="M110 196 H144 Q148 212 146 236 L144 348 Q144 360 128 360 Q112 360 110 348
+             L108 236 Q106 212 110 196 Z" fill="url(#elder-male-costume-sky-glider__suit)"/>
+    <path d="M290 196 H256 Q252 212 254 236 L256 348 Q256 360 272 360 Q288 360 290 348
+             L292 236 Q294 212 290 196 Z" fill="url(#elder-male-costume-sky-glider__suit)"/>
+    <path d="M152 336 H248 Q252 354 250 372 H150 Q148 354 152 336 Z"
+          fill="url(#elder-male-costume-sky-glider__suit)"/>
+    <path d="M160 368 H198 Q200 456 196 544 Q196 552 188 552 H168 Q160 552 160 544
+             Q158 456 160 368 Z" fill="url(#elder-male-costume-sky-glider__suit)"/>
+    <path d="M240 368 H202 Q200 456 204 544 Q204 552 212 552 H232 Q240 552 240 544
+             Q242 456 240 368 Z" fill="url(#elder-male-costume-sky-glider__suit)"/>
+  </g>
+
+  <!-- rib seams fanning across each membrane -->
+  <g stroke="var(--c3, #E4E0D2)" stroke-opacity="0.7" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M150 212 Q122 250 102 310"/>
+    <path d="M148 248 Q124 284 98 340"/>
+    <path d="M144 286 Q126 318 97 368"/>
+    <path d="M138 326 Q124 344 104 374"/>
+    <path d="M250 212 Q278 250 298 310"/>
+    <path d="M252 248 Q276 284 302 340"/>
+    <path d="M256 286 Q274 318 303 368"/>
+    <path d="M262 326 Q276 344 296 374"/>
+    <path d="M200 424 V534"/>
+    <path d="M183 428 Q179 480 177 530"/>
+    <path d="M217 428 Q221 480 223 530"/>
+  </g>
+
+  <!-- membrane bound edges, the outline the identity lives in -->
+  <path d="M100 298 Q93 342 97 374" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M300 298 Q307 342 303 374" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M168 530 Q200 538 232 530" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- integral soles -->
+  <path d="M156 548 H202 Q206 558 204 568 H158 Q152 558 156 548 Z" fill="var(--c2, #3E7C6E)"/>
+  <path d="M198 548 H244 Q248 558 246 568 H200 Q194 558 198 548 Z" fill="var(--c2, #3E7C6E)"/>
+
+  <!-- house highlight -->
+  <path d="M166 212 q34 12 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Strongarm Harness" data-family="strongarm" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: SHOULDER/SLEEVE = a broad flat plate yoke lying square
+       across each shoulder, top edge y182, projecting outward over the arm rather than upward,
+       with the arms themselves left entirely bare; CLOSURE = the vest is open down both whole
+       sides and cross laced from armpit to waist, so the fastening is at the flanks and the
+       front is uninterrupted. The open sides show the character's own skin from the base body,
+       which draws beneath this layer, so no phantom garment colour is painted there. -->
+  <!-- TRADEMARK, deliberately absent, do not add: no chest emblem, crest, monogram or applied
+       chest graphic; no drawn lettering; no torn or ragged hem anywhere, the trouser hem is a
+       clean turned cuff. The fallback triple is sand, teal and ink, deliberately not the banned
+       green plus purple strongman pairing and not black plus yellow. -->
+  <defs>
+    <linearGradient id="elder-female-costume-strongarm__hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CBB893)"/>
+      <stop offset="1" stop-color="var(--c1, #AD9C7D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-strongarm__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C6B28B)"/>
+      <stop offset="1" stop-color="var(--c1, #A69574)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-strongarm__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55949C)"/>
+      <stop offset="1" stop-color="var(--c2, #487E85)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-strongarm__hip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4F8B93)"/>
+      <stop offset="1" stop-color="var(--c2, #43767D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-strongarm__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #32241D)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- full length straight trousers -->
+    <path d="M156 328 H202 V520 Q202 540 184 540 H174 Q156 540 156 520 Z"
+          fill="url(#elder-female-costume-strongarm__trouser)"/>
+    <path d="M198 328 H244 V520 Q244 540 226 540 H216 Q198 540 198 520 Z"
+          fill="url(#elder-female-costume-strongarm__trouser)"/>
+    <!-- hip block bridging under the belt -->
+    <rect x="146" y="326" width="108" height="58" rx="20"
+          fill="url(#elder-female-costume-strongarm__hip)"/>
+    <!-- harness vest, narrow across the body so a clear band of flank stays open each side -->
+    <path d="M176 182 H224 Q232 184 234 202 L236 250 L233 302
+             Q200 318 167 302 L164 250 L166 202 Q168 184 176 182 Z"
+          fill="url(#elder-female-costume-strongarm__hide)"/>
+    <!-- vest hem stitching, inside the vest form -->
+    <path d="M172 294 q28 10 56 0" stroke="var(--c3, #3B2A22)" stroke-opacity="0.5"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- broad flat plate yokes: top edge y182 exactly, bulk running outward and down -->
+    <path d="M118 182 H194 Q198 184 198 194 V210 Q158 220 118 208
+             Q110 202 110 194 Q110 184 118 182 Z"
+          fill="url(#elder-female-costume-strongarm__plate)"/>
+    <path d="M282 182 H206 Q202 184 202 194 V210 Q242 220 282 208
+             Q290 202 290 194 Q290 184 282 182 Z"
+          fill="url(#elder-female-costume-strongarm__plate)"/>
+    <!-- plate ridge highlights, inside the yoke form -->
+    <path d="M120 196 q36 -8 70 -2 M280 196 q-36 -8 -70 -2" stroke="#FFFFFF"
+          stroke-opacity="0.32" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- cross lacing, armpit to waist, spanning the open flank on both sides -->
+  <g stroke="var(--c3, #3B2A22)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M164 200 L142 226 M142 200 L164 226"/>
+    <path d="M164 234 L142 260 M142 234 L164 260"/>
+    <path d="M164 268 L142 294 M142 268 L164 294"/>
+    <path d="M236 200 L258 226 M258 200 L236 226"/>
+    <path d="M236 234 L258 260 M258 234 L236 260"/>
+    <path d="M236 268 L258 294 M258 268 L236 294"/>
+  </g>
+
+  <!-- wide buckled belt over the vest hem -->
+  <path d="M142 296 H258 Q262 312 258 328 H142 Q138 312 142 296 Z"
+        fill="url(#elder-female-costume-strongarm__plate)"/>
+  <rect x="186" y="292" width="28" height="38" rx="7"
+        fill="url(#elder-female-costume-strongarm__hide)"/>
+  <rect x="193" y="303" width="14" height="16" rx="3" fill="var(--c3, #32241D)"/>
+
+  <!-- turned trouser cuffs, in the harness hide -->
+  <path d="M154 498 H204 V520 Q204 532 192 532 H166 Q154 532 154 520 Z"
+        fill="url(#elder-female-costume-strongarm__cuff)"/>
+  <path d="M196 498 H246 V520 Q246 532 234 532 H208 Q196 532 196 520 Z"
+        fill="url(#elder-female-costume-strongarm__cuff)"/>
+
+  <!-- footwear, drawn into the costume because costume hides shoes -->
+  <g class="sp-shadow">
+    <rect x="158" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-strongarm__plate)"/>
+    <rect x="196" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-strongarm__plate)"/>
+  </g>
+
+  <!-- house highlight on the upper surface of the vest -->
+  <path d="M176 200 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

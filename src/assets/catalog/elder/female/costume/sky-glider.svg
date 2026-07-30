@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sky Glider Suit" data-family="sky-glider" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182. -->
+  <!-- Silhouette axes this family owns: VOLUME = the whole standing figure resolves into one
+       wide continuous envelope, narrow across the shoulders at y182 and spreading to roughly
+       230 units across at the hip and 164 across at the knee, so there is no free limb outline
+       anywhere; SHOULDER/SLEEVE = three cloth membranes, one from each wrist inward and down to
+       the hip and a third spanning between the knees, so the arms are joined to the body instead
+       of hanging clear of it. The wrist to hip membranes attach at the wrists, which sit at
+       cx130 and cx270 cy328, and run in to the hip block at x150 to 250, y328 to 382; the third
+       membrane spans between the legs around y460. -->
+  <!-- TRADEMARK, deliberately absent, do not add: no chest emblem, crest, monogram or applied
+       chest graphic; no drawn lettering; the membranes are PLAIN CLOTH with drawn rib seams and
+       are NOT mechanical, NOT feathered and NOT metal, so no struts, no hinges, no plumes and
+       no plate edges. The fallback triple is steel, teal and ink: three separate values with
+       visible rib seams throughout, deliberately not a seamless silver or chrome monochrome. -->
+  <defs>
+    <linearGradient id="elder-female-costume-sky-glider__membrane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A9B2BC)"/>
+      <stop offset="1" stop-color="var(--c1, #9097A0)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-sky-glider__web" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A2ABB6)"/>
+      <stop offset="1" stop-color="var(--c1, #888F98)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-sky-glider__suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #55949C)"/>
+      <stop offset="1" stop-color="var(--c2, #487E85)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-sky-glider__limb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #4F8B93)"/>
+      <stop offset="1" stop-color="var(--c2, #43767D)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-sky-glider__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c3, #32241D)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the three membranes, drawn first so the body forms sit on top of them -->
+  <g class="sp-shadow">
+    <!-- wrist to hip membrane, left: leading edge from the shoulder, trailing edge running
+         from the wrist inward and down to the hip -->
+    <path d="M152 182 Q104 214 84 292 Q76 330 82 348 Q92 360 118 352 L152 388
+             Q158 286 156 182 Z"
+          fill="url(#elder-female-costume-sky-glider__membrane)"/>
+    <!-- wrist to hip membrane, right -->
+    <path d="M248 182 Q296 214 316 292 Q324 330 318 348 Q308 360 282 352 L248 388
+             Q242 286 244 182 Z"
+          fill="url(#elder-female-costume-sky-glider__membrane)"/>
+    <!-- third membrane, spanning between the knees, hem hollowed up to about y476 -->
+    <path d="M152 384 H248 L282 490 Q272 508 256 504 Q200 476 144 504
+             Q128 508 118 490 Z"
+          fill="url(#elder-female-costume-sky-glider__web)"/>
+    <!-- rib seams fanning across each membrane, inside the membrane form -->
+    <g stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+       fill="none" stroke-linecap="round">
+      <path d="M150 198 Q112 244 88 320"/>
+      <path d="M150 216 Q116 274 96 344"/>
+      <path d="M152 236 Q124 300 112 350"/>
+      <path d="M154 256 Q138 316 130 362"/>
+      <path d="M250 198 Q288 244 312 320"/>
+      <path d="M250 216 Q284 274 304 344"/>
+      <path d="M248 236 Q276 300 288 350"/>
+      <path d="M246 256 Q262 316 270 362"/>
+      <path d="M168 392 Q142 440 126 486"/>
+      <path d="M184 392 Q166 446 152 496"/>
+      <path d="M200 390 V494"/>
+      <path d="M216 392 Q234 446 248 496"/>
+      <path d="M232 392 Q258 440 274 486"/>
+    </g>
+  </g>
+
+  <g class="sp-shadow">
+    <!-- fitted legs to an ankle hem -->
+    <path d="M164 374 H202 L200 460 L198 542 Q182 550 166 542 L164 460 Z"
+          fill="url(#elder-female-costume-sky-glider__limb)"/>
+    <path d="M198 374 H236 L236 460 L234 542 Q218 550 202 542 L200 460 Z"
+          fill="url(#elder-female-costume-sky-glider__limb)"/>
+    <!-- hip block, where the two wrist membranes land -->
+    <rect x="146" y="326" width="108" height="58" rx="22"
+          fill="url(#elder-female-costume-sky-glider__suit)"/>
+    <!-- fitted torso -->
+    <path d="M172 182 H228 Q248 188 252 210 L258 256 Q260 302 254 338
+             Q200 356 146 338 Q140 302 142 256 L148 210 Q152 188 172 182 Z"
+          fill="url(#elder-female-costume-sky-glider__suit)"/>
+    <!-- fitted sleeves -->
+    <path d="M114 182 H146 Q150 186 150 200 L148 254 L150 330 Q130 342 110 330 L112 254 Z"
+          fill="url(#elder-female-costume-sky-glider__limb)"/>
+    <path d="M286 182 H254 Q250 186 250 200 L252 254 L250 330 Q270 342 290 330 L288 254 Z"
+          fill="url(#elder-female-costume-sky-glider__limb)"/>
+  </g>
+
+  <!-- membrane hem band along the knee web -->
+  <path d="M120 488 Q140 506 156 500 Q200 476 244 500 Q260 506 280 488"
+        stroke="var(--c3, #3B2A22)" stroke-width="7" stroke-opacity="0.8"
+        fill="none" stroke-linecap="round"/>
+  <!-- wrist cuffs, where each membrane attaches to the arm -->
+  <path d="M110 302 Q130 312 150 302 L151 324 Q130 334 109 324 Z"
+        fill="url(#elder-female-costume-sky-glider__cuff)"/>
+  <path d="M290 302 Q270 312 250 302 L249 324 Q270 334 291 324 Z"
+        fill="url(#elder-female-costume-sky-glider__cuff)"/>
+  <!-- closed neck band, rising to y182 and stopping -->
+  <path d="M174 182 H226 L224 202 Q200 212 176 202 Z"
+        fill="url(#elder-female-costume-sky-glider__cuff)"/>
+
+  <!-- footwear, drawn into the costume because costume hides shoes -->
+  <g class="sp-shadow">
+    <rect x="158" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-sky-glider__cuff)"/>
+    <rect x="196" y="530" width="46" height="38" rx="15"
+          fill="url(#elder-female-costume-sky-glider__cuff)"/>
+  </g>
+
+  <!-- house highlight on the upper surface of the torso -->
+  <path d="M166 202 q34 14 68 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoplite Cuirass" data-family="hoplite" data-slot="costume"
+     data-layer="costume" data-colors="c1,c2,c3" data-hides="top,bottom,shoes">
+  <!-- elder/female costume ceiling: y >= 182. Nothing in this file has geometry above y182.
+       NO HELMET AT ALL is drawn here: costume draws above the face, so the attic helm is a
+       companion headwear family. The identity is the moulded cuirass and the strip skirt, which is
+       exactly why this silhouette was chosen. The adult/female reference sets the cuirass neck and
+       both shoulder flaps at y152; here the neck line and the top of both flaps were re struck flat
+       at y182 and the flap depth re cut downward to y238, so the flaps still fold forward and lace
+       to the chest instead of being trimmed away. -->
+  <!-- TRADEMARK: bronze with ink and undyed linen. No red, and no circular chest disc: the cuirass
+       carries only its own moulded pectoral and abdominal ridges. No emblem of any kind. -->
+  <!-- Silhouette axes this family owns, measured against pharaonic: VOLUME = a moulded three
+       dimensional cuirass narrowing sharply at the waist, against pharaonic's flat drape with a
+       hard triangular projection; SHOULDER = two stiff shoulder flaps folded forward from the back
+       and laced down to the chest, against pharaonic's wide flat disc collar. Surface tools: panel
+       blocking (linen strip skirt against bronze plate), trim (waist band, greave straps) and
+       structural (moulded ridges, flap laces, nine separate overlapping strips).
+       Elder read, per FAMILIES 3.0: this is the SAME GARMENT on a grandparent. The cuirass is not
+       softened and the strip skirt is not shortened - the skirt is a little longer, reaching y407
+       at the centre, and the shoulder line sits inboard at x150 and x250. -->
+  <defs>
+    <linearGradient id="elder-female-costume-hoplite__bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9AE5C)"/>
+      <stop offset="1" stop-color="var(--c1, #9C7328)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-hoplite__flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4BC6C)"/>
+      <stop offset="1" stop-color="var(--c1, #A87E2E)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-hoplite__greave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D3A755)"/>
+      <stop offset="1" stop-color="var(--c1, #8F6822)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-hoplite__strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #F3ECDC)"/>
+      <stop offset="1" stop-color="var(--c2, #CFC3A8)"/>
+    </linearGradient>
+    <linearGradient id="elder-female-costume-hoplite__lace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3B33)"/>
+      <stop offset="1" stop-color="var(--c3, #2A211B)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the strip skirt: nine separate overlapping strips with visible gaps between them -->
+    <g fill="url(#elder-female-costume-hoplite__strip)">
+      <path d="M146 316 h11 v78 q-5 8 -11 0 Z"/>
+      <path d="M158 316 h11 v82 q-5 8 -11 0 Z"/>
+      <path d="M170 316 h11 v85 q-5 8 -11 0 Z"/>
+      <path d="M182 316 h11 v87 q-5 8 -11 0 Z"/>
+      <path d="M194 316 h11 v88 q-5 8 -11 0 Z"/>
+      <path d="M206 316 h11 v87 q-5 8 -11 0 Z"/>
+      <path d="M218 316 h11 v85 q-5 8 -11 0 Z"/>
+      <path d="M230 316 h11 v82 q-5 8 -11 0 Z"/>
+      <path d="M242 316 h11 v78 q-5 8 -11 0 Z"/>
+    </g>
+    <!-- hard greave plate down each shin -->
+    <path d="M158 466 Q178 476 200 466 Q204 512 200 556 Q178 566 158 556 Q154 512 158 466 Z"
+          fill="url(#elder-female-costume-hoplite__greave)"/>
+    <path d="M200 466 Q222 476 242 466 Q246 512 242 556 Q222 566 200 556 Q196 512 200 466 Z"
+          fill="url(#elder-female-costume-hoplite__greave)"/>
+    <!-- sleeveless moulded cuirass, narrowing sharply at the waist -->
+    <path d="M168 182 H232 Q252 188 256 214 Q262 244 256 274 Q250 298 244 322
+             Q200 336 156 322 Q150 298 144 274 Q138 244 144 214 Q148 188 168 182 Z"
+          fill="url(#elder-female-costume-hoplite__bronze)"/>
+    <!-- two stiff shoulder flaps folded forward from the back, tops on the ceiling -->
+    <path d="M150 182 H190 L192 208 Q190 232 175 238 Q158 242 150 230 Q143 206 150 182 Z"
+          fill="url(#elder-female-costume-hoplite__flap)"/>
+    <path d="M250 182 H210 L208 208 Q210 232 225 238 Q242 242 250 230 Q257 206 250 182 Z"
+          fill="url(#elder-female-costume-hoplite__flap)"/>
+  </g>
+
+  <!-- the folded edge of each shoulder flap, shaded so the fold reads as a separate plate -->
+  <path d="M149 224 Q162 240 178 236 Q190 230 192 210" stroke="var(--c1, #7E5A16)"
+        stroke-opacity="0.7" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M251 224 Q238 240 222 236 Q210 230 208 210" stroke="var(--c1, #7E5A16)"
+        stroke-opacity="0.7" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M154 192 q18 -6 34 0 M246 192 q-18 -6 -34 0" stroke="#FFFFFF"
+        stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- flap laces, running down to the chest -->
+  <g stroke="url(#elder-female-costume-hoplite__lace)" stroke-width="6"
+     fill="none" stroke-linecap="round">
+    <path d="M174 236 L186 274"/>
+    <path d="M226 236 L214 274"/>
+  </g>
+  <g fill="var(--c3, #2A211B)">
+    <circle cx="186" cy="278" r="7"/><circle cx="214" cy="278" r="7"/>
+  </g>
+  <!-- moulded pectoral and abdominal ridges: no disc, no device, no emblem -->
+  <g stroke="var(--c1, #8A6420)" stroke-opacity="0.6" stroke-width="6"
+     fill="none" stroke-linecap="round">
+    <path d="M156 226 Q176 246 194 244"/>
+    <path d="M244 226 Q224 246 206 244"/>
+    <path d="M162 274 Q180 284 194 280"/>
+    <path d="M238 274 Q220 284 206 280"/>
+    <path d="M164 298 Q182 308 194 304"/>
+    <path d="M236 298 Q218 308 206 304"/>
+  </g>
+  <path d="M200 244 L200 322" stroke="var(--c1, #8A6420)" stroke-opacity="0.5"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- cuirass waist band, where the strips hang from -->
+  <path d="M146 308 Q200 324 254 308 L255 324 Q200 340 145 324 Z"
+        fill="url(#elder-female-costume-hoplite__lace)"/>
+  <!-- greave straps -->
+  <path d="M160 498 q20 8 38 0 M202 498 q20 8 38 0" stroke="var(--c3, #2A211B)"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- sandals on the ground line -->
+  <g class="sp-shadow">
+    <path d="M156 548 Q180 558 204 548 Q208 562 203 568 H158 Q152 562 156 548 Z"
+          fill="url(#elder-female-costume-hoplite__lace)"/>
+    <path d="M196 548 Q220 558 244 548 Q248 562 243 568 H198 Q192 562 196 548 Z"
+          fill="url(#elder-female-costume-hoplite__lace)"/>
+  </g>
+  <!-- house highlight -->
+  <path d="M168 208 q32 12 64 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

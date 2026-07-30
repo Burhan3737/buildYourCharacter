@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: HEM = knee (a straight column falling to the elder knee anchor y464),
+       VOLUME = straight column opened by deep side slits from the hip. Also shoulder = long
+       straight sleeve, closure = band collar over a short front placket.
+       Against button up (hip hem, straight, full placket) it differs on hem and volume;
+       against long coat (mid calf, full button placket, notched collar) on hem and closure.
+       Refit arithmetic against the drawn elder body, no adult value reused:
+       hem y464 = the elder knee (adult male was y446, so the hem moved down 18u).
+       slits start y348 = the hip hem band, and run 116u to the hem, well over the 40u floor.
+       column x132 to x268 = 4u of overlap on the drawn torso x136 to x264 each side.
+       below the slit the front panel steps in to x148 to x252 while the under panel stays
+       x136 to x264, so a 12u strip of the darker under cloth reads as the open slit per side.
+       sleeve columns x110 to x144 and x256 to x290 over arms x114 to x140 and x260 to x286.
+       sleeve head y196 with a 15u corner radius, softened and set inboard for this stage.
+       cuff y346 to y366, meeting the hand centre at y366.
+       Living cultural dress: plain cloth, a generic tonal self stripe, no community specific
+       woven design of any kind. Elder note: the front placket opening is exactly right here,
+       and the band collar sits low and soft on a dropped shoulder line. -->
+  <defs>
+    <linearGradient id="elder-male-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #A9B79A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4E9DA)"/>
+      <stop offset="1" stop-color="var(--c2, #9FAE8F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-kurta__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #A9B79A)"/>
+      <stop offset="1" stop-color="var(--c3, #5C6A4E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-top-kurta__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6D7C5D)"/>
+      <stop offset="1" stop-color="var(--c2, #A9B79A)"/>
+    </linearGradient>
+    <pattern id="elder-male-top-kurta__selfstripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="3" height="18" fill="var(--c2, #A9B79A)" fill-opacity="0.34"/>
+    </pattern>
+    <clipPath id="elder-male-top-kurta__clip">
+      <path d="M132 212 Q132 180 166 180 H234 Q268 180 268 212 V348 H252 V456 Q252 464 244 464 H156 Q148 464 148 456 V348 H132 Z"/>
+      <rect x="110" y="196" width="34" height="170" rx="15"/>
+      <rect x="256" y="196" width="34" height="170" rx="15"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two long straight sleeves, the under panel that shows through the slits,
+       and one knee length column -->
+  <g class="sp-shadow">
+    <rect x="110" y="196" width="34" height="170" rx="15" fill="url(#elder-male-top-kurta__sleeve)"/>
+    <rect x="256" y="196" width="34" height="170" rx="15" fill="url(#elder-male-top-kurta__sleeve)"/>
+    <path d="M136 340 H264 V456 Q264 464 256 464 H144 Q136 464 136 456 Z"
+          fill="url(#elder-male-top-kurta__under)"/>
+    <path d="M132 212 Q132 180 166 180 H234 Q268 180 268 212 V348 H252 V456 Q252 464 244 464 H156 Q148 464 148 456 V348 H132 Z"
+          fill="url(#elder-male-top-kurta__body)"/>
+  </g>
+
+  <!-- surface tool one: a fine tonal self stripe, clipped to the cloth -->
+  <g clip-path="url(#elder-male-top-kurta__clip)">
+    <rect x="100" y="176" width="220" height="300" fill="url(#elder-male-top-kurta__selfstripe)"/>
+  </g>
+
+  <!-- surface tool two: trim. Band collar, kept low and soft -->
+  <path d="M176 174 Q200 166 224 174 L224 194 Q200 203 176 194 Z"
+        fill="url(#elder-male-top-kurta__collar)"/>
+  <path d="M184 178 Q200 186 216 178 L216 192 Q200 198 184 192 Z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- surface tool three: structural. Short front placket with three buttons -->
+  <rect x="188" y="190" width="24" height="68" rx="6" fill="var(--c3, #5C6A4E)"/>
+  <path d="M200 196 V252" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="204" r="4.5" fill="var(--c1, #E4E9DA)"/>
+  <circle cx="200" cy="224" r="4.5" fill="var(--c1, #E4E9DA)"/>
+  <circle cx="200" cy="244" r="4.5" fill="var(--c1, #E4E9DA)"/>
+
+  <!-- narrow cuffs -->
+  <rect x="110" y="346" width="34" height="20" rx="9" fill="var(--c3, #5C6A4E)"/>
+  <rect x="256" y="346" width="34" height="20" rx="9" fill="var(--c3, #5C6A4E)"/>
+
+  <!-- the deep side slits, bound so the split reads at tray size -->
+  <path d="M142 354 V456" stroke="var(--c3, #5C6A4E)" stroke-opacity="0.8" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 354 V456" stroke="var(--c3, #5C6A4E)" stroke-opacity="0.8" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 352 V458" stroke="var(--c2, #A9B79A)" stroke-opacity="0.65" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 352 V458" stroke="var(--c2, #A9B79A)" stroke-opacity="0.65" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- straight side seams above the slits, and a plain bound hem -->
+  <path d="M137 216 V344" stroke="var(--c2, #A9B79A)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M263 216 V344" stroke="var(--c2, #A9B79A)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M156 456 H244" stroke="var(--c3, #5C6A4E)" stroke-opacity="0.6" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight -->
+  <path d="M158 196 q42 16 84 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

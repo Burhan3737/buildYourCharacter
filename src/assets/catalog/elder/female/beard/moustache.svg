@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Moustache" data-family="moustache" data-slot="beard"
+     data-layer="beard" data-colors="hair1,hair2" data-hides="">
+  <!-- Silhouette axes vs handlebar: UPPER LIP (a trimmed bar with clipped ends, not flared or
+       extended) and LENGTH (clipped short, 60px wide by 17px deep, against handlebar's 96px
+       sweep). Chin, jaw and cheeks bare, so there is no cheek line at all.
+       Anchored to THIS bundle's drawn mouth, not translated from adult. The elder mouth box
+       measured off elder/female/mouth is x176..224, y146..178, its corners at (176, 155) and
+       (224, 155). The bar's ends sit at x169 and x231, seven pixels OUTSIDE those corners and
+       far outside the nose width of roughly x188..212, so it can never read as the banned
+       narrow tall block. Depth 17px against a 60px span is a ratio of 1 to 3.5.
+       Beard floor is y258 (torso y180, h156); nothing here falls below y160.
+       hair1 lights the top of the bar; hair2 draws the philtrum groove and the clipped
+       under hem that gives the bar its trimmed edge. -->
+  <defs>
+    <linearGradient id="elder-female-beard-moustache__bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+      <stop offset="1" stop-color="var(--hair2, #9AA3B2)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the trimmed bar: wide, shallow, ends clipped square outside the mouth corners -->
+  <g class="sp-shadow">
+    <path d="M169 150 C173 144, 182 142, 190 145 C193.5 146.2, 196 148, 200 149.2
+             C204 148, 206.5 146.2, 210 145 C218 142, 227 144, 231 150
+             C232.2 155.5, 228 159, 219.5 159 C212 159, 207 156.4, 200 156.4
+             C193 156.4, 188 159, 180.5 159 C172 159, 167.8 155.5, 169 150 Z"
+          fill="url(#elder-female-beard-moustache__bar)"/>
+  </g>
+
+  <!-- hair2: the philtrum groove, the notch the two halves grow away from -->
+  <path d="M197 147.5 C199 150.5, 199 153, 197.7 156.2 L202.3 156.2
+           C201 153, 201 150.5, 203 147.5 Z" fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the clipped under hem, the reason this reads as trimmed rather than grown out -->
+  <path d="M171 155.4 C178 159.6, 191 157.4, 200 157.4 C209 157.4, 222 159.6, 229 155.4
+           C228.4 159.2, 223.6 160.8, 216 160.8 C209 160.8, 204 158.6, 200 158.6
+           C196 158.6, 191 160.8, 184 160.8 C176.4 160.8, 171.6 159.2, 171 155.4 Z"
+        fill="var(--hair2, #9AA3B2)"/>
+  <!-- hair2: the squared end of each half, cut flat with the clippers -->
+  <path d="M169.6 148.8 L173.4 147.4 L174.6 156.6 L170.6 157.4 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.7"/>
+  <path d="M230.4 148.8 L226.6 147.4 L225.4 156.6 L229.4 157.4 Z"
+        fill="var(--hair2, #9AA3B2)" opacity="0.7"/>
+  <!-- combed strand grooves, also hair2 -->
+  <path d="M179 149.5 C184 153, 189 154.5, 195 155" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M221 149.5 C216 153, 211 154.5, 205 155" stroke="var(--hair2, #9AA3B2)"
+        stroke-opacity="0.8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <path d="M177 147.5 C186 144, 193 145, 197 147" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M223 147.5 C214 144, 207 145, 203 147" stroke="#FFFFFF" stroke-opacity="0.28"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
