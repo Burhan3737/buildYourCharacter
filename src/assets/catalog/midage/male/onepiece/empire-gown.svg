@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Empire Gown" data-family="empire-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: SHOULDER = short puffed cap sleeves, gathered at the head and stopping at y216;
+       CLOSURE = one horizontal seam sitting directly under the bust at y252 and no other waist
+       anywhere, with the whole skirt gathered off it. On this bundle the natural waist is
+       y300 to y316, so that seam sits 50 units above it: the bodice really is very short.
+       Against ball-gown it differs on shoulder and volume; against maxi-dress on shoulder and
+       closure; against sundress on closure and hem. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-empire-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A79BC0)"/>
+      <stop offset="1" stop-color="var(--c2, #756A92)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-empire-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3A8C9)"/>
+      <stop offset="1" stop-color="var(--c2, #756A92)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-empire-gown__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B3A8C9)"/>
+      <stop offset="1" stop-color="var(--c2, #6C6288)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-empire-gown__seam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2EADB)"/>
+      <stop offset="1" stop-color="var(--c2, #756A92)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow skirt, gathered straight off the under bust seam and falling to the ankle -->
+    <path d="M134 248 Q136 400 134 528 Q132 546 150 552 Q200 563 250 552 Q268 546 266 528
+             Q264 400 266 248 Z"
+          fill="url(#midage-male-onepiece-empire-gown__skirt)"/>
+    <!-- short puffed cap sleeves, ballooning off the shoulder line at y162 -->
+    <path d="M150 158 Q112 154 104 184 Q98 212 124 218 Q148 218 154 202 Z"
+          fill="url(#midage-male-onepiece-empire-gown__puff)"/>
+    <path d="M250 158 Q288 154 296 184 Q302 212 276 218 Q252 218 246 202 Z"
+          fill="url(#midage-male-onepiece-empire-gown__puff)"/>
+    <!-- very short fitted bodice, scoop neck, stopping dead under the bust -->
+    <path d="M148 178 Q148 156 170 154 Q200 186 230 154 Q252 156 252 178 Q268 212 270 252
+             H130 Q132 212 148 178 Z"
+          fill="url(#midage-male-onepiece-empire-gown__bodice)"/>
+    <!-- panel blocking: THE seam, a clear horizontal band directly under the bust -->
+    <rect x="130" y="250" width="140" height="14" rx="6"
+          fill="url(#midage-male-onepiece-empire-gown__seam)"/>
+    <!-- trim: bound scoop neckline and a bound band on each puff -->
+    <path d="M170 156 Q200 190 230 156" stroke="var(--c3, #F2EADB)" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+    <path d="M104 208 Q128 222 152 208" stroke="var(--c3, #F2EADB)" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+    <path d="M296 208 Q272 222 248 208" stroke="var(--c3, #F2EADB)" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+    <!-- trim: ankle hem band -->
+    <path d="M138 540 Q200 558 262 540" stroke="var(--c3, #F2EADB)" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <path d="M130 250 H270" stroke="var(--c3, #F2EADB)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M130 264 H270" stroke="var(--c2, #756A92)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: eleven fine vertical gathers falling from the seam to the hem -->
+  <g fill="none" stroke="var(--c2, #756A92)" stroke-opacity="0.42" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M140 268 L138 534"/>
+    <path d="M152 268 L150 538"/>
+    <path d="M164 268 L163 542"/>
+    <path d="M176 268 L175 546"/>
+    <path d="M188 268 L188 549"/>
+    <path d="M200 268 V550"/>
+    <path d="M212 268 L212 549"/>
+    <path d="M224 268 L225 546"/>
+    <path d="M236 268 L237 542"/>
+    <path d="M248 268 L250 538"/>
+    <path d="M260 268 L262 534"/>
+  </g>
+
+  <!-- structural: gathered puff heads at the sleeve caps -->
+  <g fill="none" stroke="var(--c2, #756A92)" stroke-opacity="0.5" stroke-width="3.2"
+     stroke-linecap="round">
+    <path d="M118 166 Q110 188 116 210"/>
+    <path d="M134 160 Q128 188 134 212"/>
+    <path d="M282 166 Q290 188 284 210"/>
+    <path d="M266 160 Q272 188 266 212"/>
+  </g>
+
+  <!-- upper chest highlight -->
+  <path d="M156 208 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

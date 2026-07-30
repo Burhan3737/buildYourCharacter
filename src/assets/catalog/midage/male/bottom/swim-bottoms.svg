@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Bottoms" data-family="swim-bottoms" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: leg length = NONE AT ALL, a skin close brief with the leg opening swept
+       high off the hip, the outer edge leaving the body at y336 and running to the
+       crotch point at y402 · rise = HIGH, the bound waist edge straight across at
+       y296, fourteen units above this bundle's natural rise line of y310.
+       It is a finished garment worn alone: it pairs with swim-top, which ends at the
+       underbust, and the bare midriff between them is deliberate, so no shell and no
+       phantom shirt is drawn here.
+       Against bike-shorts (high rise, mid thigh leg, 30 unit skin close leg) it
+       differs on leg length and leg width. Against swim-trunks (natural elasticated
+       rise, mid thigh relaxed leg, side split hem) it differs on leg length and hem
+       treatment. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-swim-bottoms__brief" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08A78)"/>
+      <stop offset="1" stop-color="var(--c2, #B05F50)"/>
+    </linearGradient>
+    <pattern id="midage-male-bottom-swim-bottoms__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M0 11 L8 4 L16 11" stroke="var(--c3, #F2E3C4)" stroke-width="2.6"
+            fill="none" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-male-bottom-swim-bottoms__clip">
+      <path d="M142 296 H258 Q262 296 262 306 L259 336 Q254 356 232 350 Q212 358 203 398
+               Q200 406 197 398 Q188 358 168 350 Q146 356 141 336 L138 306 Q138 296 142 296 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the brief, with the chevron texture and the bound edges inside
+       the form group -->
+  <g class="sp-shadow">
+    <path d="M142 296 H258 Q262 296 262 306 L259 336 Q254 356 232 350 Q212 358 203 398
+             Q200 406 197 398 Q188 358 168 350 Q146 356 141 336 L138 306 Q138 296 142 296 Z"
+          fill="url(#midage-male-bottom-swim-bottoms__brief)"/>
+
+    <!-- pattern: small chevron texture over the gradient, clipped to the brief -->
+    <g clip-path="url(#midage-male-bottom-swim-bottoms__clip)">
+      <rect x="134" y="292" width="132" height="118"
+            fill="url(#midage-male-bottom-swim-bottoms__chevron)" opacity="0.5"/>
+    </g>
+
+    <!-- trim: the plain bound waist edge -->
+    <path d="M138 296 H262 V304 H138 Z" fill="var(--c3, #F2E3C4)" opacity="0.95"/>
+  </g>
+
+  <!-- trim: plain bound edge round both high cut leg openings -->
+  <path d="M140 334 Q149 354 169 348 Q190 356 199 396" stroke="var(--c3, #F2E3C4)"
+        stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M260 334 Q251 354 231 348 Q210 356 201 396" stroke="var(--c3, #F2E3C4)"
+        stroke-width="5.5" stroke-linecap="round" fill="none"/>
+
+  <!-- structural: the two side seams -->
+  <path d="M152 304 V332" stroke="var(--c2, #B05F50)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M248 304 V332" stroke="var(--c2, #B05F50)" stroke-opacity="0.6" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M158 312 q42 10 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

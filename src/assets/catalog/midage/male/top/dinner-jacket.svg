@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dinner Jacket" data-family="dinner-jacket" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: CLOSURE = closed on a SINGLE button at the natural waist (y308, and the natural
+       waist on this bundle is y300 to y316) under one unbroken rounded shawl roll that has
+       no notch and no peak anywhere along it, and HEM = just past the hip at y356, no vent.
+       Also shoulder = square, volume = straight.
+       Against blazer, which is the sibling it must read apart from, it differs on exactly
+       these two: blazer is open-fronted with notched lapels and hems at y336. FORMALWEAR. -->
+  <defs>
+    <linearGradient id="midage-male-top-dinner-jacket__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2A2E3E)"/>
+      <stop offset="1" stop-color="var(--c2, #171A26)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-dinner-jacket__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #333849)"/>
+      <stop offset="1" stop-color="var(--c2, #141723)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-dinner-jacket__shawl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6E7796)"/>
+      <stop offset="1" stop-color="var(--c3, #4B5370)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two straight sleeves and one closed square-shouldered body -->
+  <g class="sp-shadow">
+    <path d="M100 182 q0-18 18-18 h24 v184 h-24 q-18 0-18-18 z"
+          fill="url(#midage-male-top-dinner-jacket__sleeve)"/>
+    <path d="M300 182 q0-18 -18-18 h-24 v184 h24 q18 0 18-18 z"
+          fill="url(#midage-male-top-dinner-jacket__sleeve)"/>
+    <path d="M124 176 q0-20 22-20 h108 q22 0 22 20 v164 q0 16 -18 16 h-116 q-18 0-18-16 z"
+          fill="url(#midage-male-top-dinner-jacket__body)"/>
+  </g>
+
+  <!-- panel blocking: the shawl collar, one continuous rounded roll from neck to button -->
+  <path d="M200 156 q-36 0 -46 32 q-10 40 2 84 q12 30 44 38 q32-8 44-38 q12-44 2-84
+           q-10-32 -46-32 z" fill="url(#midage-male-top-dinner-jacket__shawl)"/>
+  <path d="M200 178 q-18 0 -24 24 q-10 34 -1 68 q9 22 25 28 q16-6 25-28 q9-34 -1-68
+           q-6-24 -24-24 z" fill="url(#midage-male-top-dinner-jacket__body)"/>
+  <path d="M200 160 q-28 0 -37 28 q-8 36 1 72" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M200 160 q28 0 37 28 q8 36 -1 72" stroke="#FFFFFF" stroke-opacity="0.2"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M184 160 q16 14 32 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: the single closed button at the natural waist -->
+  <circle cx="200" cy="308" r="6.5" fill="var(--c3, #6E7796)"/>
+  <circle cx="200" cy="308" r="2.5" fill="var(--c2, #171A26)"/>
+  <!-- structural: the front is closed above the button, parting only slightly below it -->
+  <path d="M200 316 l6 34 l-6 6 l-6-6 z" fill="var(--c2, #171A26)"/>
+
+  <!-- trim: jetted hip pockets, bound in the same satin as the collar roll -->
+  <path d="M134 320 h44 q2 6 0 11 h-44 q-2-6 0-11 z" fill="var(--c3, #6E7796)"/>
+  <path d="M222 320 h44 q2 6 0 11 h-44 q-2-6 0-11 z" fill="var(--c3, #6E7796)"/>
+
+  <!-- structural: square shoulder line and dead-straight side seams, and no vent at the hem -->
+  <path d="M128 166 h34" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 166 h-34" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 200 v142" stroke="var(--c2, #171A26)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 200 v142" stroke="var(--c2, #171A26)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: cuff buttons -->
+  <g fill="var(--c3, #6E7796)">
+    <circle cx="116" cy="322" r="3.5"/>
+    <circle cx="116" cy="334" r="3.5"/>
+    <circle cx="284" cy="322" r="3.5"/>
+    <circle cx="284" cy="334" r="3.5"/>
+  </g>
+
+  <path d="M136 188 q16 14 30 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 188 q-16 14 -30 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

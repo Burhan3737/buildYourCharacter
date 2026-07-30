@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Long Coat" data-family="long-coat" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HEM = mid calf (a straight column to y499, this bundle's mid calf anchor) and
+       CLOSURE = a full button placket running the whole 272 units of the front under a
+       notched collar. Against kurta it differs on hem (mid calf vs knee y450) and closure
+       (full placket vs a short placket over a band collar); against blazer on hem and
+       closure again (past hip and worn open there).
+       One single back vent breaks the hem, the only opening in the column. -->
+  <defs>
+    <linearGradient id="midage-male-top-long-coat__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A87551)"/>
+      <stop offset="1" stop-color="var(--c2, #7A5236)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-long-coat__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A87551)"/>
+      <stop offset="1" stop-color="var(--c2, #6F4A2F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-long-coat__placket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7A5236)"/>
+      <stop offset="1" stop-color="var(--c2, #5F3F27)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-long-coat__collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8DCC6)"/>
+      <stop offset="1" stop-color="var(--c3, #CFC0A4)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two long set-in sleeves and one straight column to mid calf -->
+  <g class="sp-shadow">
+    <rect x="100" y="162" width="40" height="190" rx="14" fill="url(#midage-male-top-long-coat__sleeve)"/>
+    <rect x="260" y="162" width="40" height="190" rx="14" fill="url(#midage-male-top-long-coat__sleeve)"/>
+    <path d="M124 198 Q124 158 164 158 H236 Q276 158 276 198 L282 482 Q283 499 266 499 H134 Q117 499 118 482 Z"
+          fill="url(#midage-male-top-long-coat__body)"/>
+
+    <!-- panel: the full centre placket, a contrast band the whole length of the closure -->
+    <rect x="186" y="170" width="28" height="272" rx="8" fill="url(#midage-male-top-long-coat__placket)"/>
+
+    <!-- trim: notched collar, an upper leaf and a lower lapel with the notch between -->
+    <path d="M172 154 L200 166 L196 190 L162 176 Z" fill="url(#midage-male-top-long-coat__collar)"/>
+    <path d="M228 154 L200 166 L204 190 L238 176 Z" fill="url(#midage-male-top-long-coat__collar)"/>
+    <path d="M162 180 L196 196 L192 236 L156 210 Z" fill="var(--c3, #E8DCC6)" fill-opacity="0.8"/>
+    <path d="M238 180 L204 196 L208 236 L244 210 Z" fill="var(--c3, #E8DCC6)" fill-opacity="0.8"/>
+    <path d="M184 158 Q200 174 216 158 Z" fill="var(--skin2, #E7B892)"/>
+
+    <!-- trim: turned cuffs at the wrist -->
+    <rect x="100" y="324" width="40" height="28" rx="12" fill="var(--c2, #7A5236)"/>
+    <rect x="260" y="324" width="40" height="28" rx="12" fill="var(--c2, #7A5236)"/>
+  </g>
+
+  <!-- structural: four buttons only, the quieter midage hardware count -->
+  <g fill="var(--c3, #E8DCC6)">
+    <circle cx="200" cy="212" r="5.6"/>
+    <circle cx="200" cy="268" r="5.6"/>
+    <circle cx="200" cy="324" r="5.6"/>
+    <circle cx="200" cy="380" r="5.6"/>
+  </g>
+  <path d="M200 178 V436" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: two welt pockets set low on the column -->
+  <path d="M136 370 h48 l-4 14 h-48 z" fill="var(--c2, #7A5236)"/>
+  <path d="M264 370 h-48 l4 14 h48 z" fill="var(--c2, #7A5236)"/>
+
+  <!-- structural: the single back vent, opening from the hem -->
+  <path d="M192 442 H208 V492 Q208 499 200 499 Q192 499 192 492 Z" fill="var(--c2, #7A5236)"/>
+  <path d="M200 446 V496" stroke="var(--c2, #5F3F27)" stroke-opacity="0.85" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- straight side seams, no waist shaping -->
+  <path d="M127 216 Q129 350 121 476" stroke="var(--c2, #7A5236)" stroke-opacity="0.42"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M273 216 Q271 350 279 476" stroke="var(--c2, #7A5236)" stroke-opacity="0.42"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight on each front -->
+  <path d="M146 184 q20 14 38 6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 184 q-20 14 -38 6" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

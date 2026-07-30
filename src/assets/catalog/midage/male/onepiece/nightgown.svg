@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: closed shoulder YOKE with short set-in cap sleeves · no closure at all ·
+       MID-CALF hem, the hem centre landing on this bundle's mid-calf anchor at y499 ·
+       one waistless straight column, no seam anywhere between the yoke and the hem.
+       Against sundress it differs on hem and volume; against maxi-dress on shoulder
+       and volume. Refitted to the midage male body: shoulder line y162, torso
+       x128 to x272, arms x104 to x132 and x268 to x296. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-nightgown__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9E4DD)"/>
+      <stop offset="1" stop-color="var(--c2, #A6BCB0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E88F80)"/>
+      <stop offset="1" stop-color="var(--c2, #A6BCB0)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-nightgown__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9E4DD)"/>
+      <stop offset="1" stop-color="var(--c2, #AFC3B8)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-nightgown__sprig" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <circle cx="10" cy="4" r="2.2" fill="var(--c3, #E88F80)" opacity="0.42"/>
+      <circle cx="4" cy="10" r="2.2" fill="var(--c3, #E88F80)" opacity="0.42"/>
+      <circle cx="16" cy="10" r="2.2" fill="var(--c3, #E88F80)" opacity="0.42"/>
+      <circle cx="10" cy="16" r="2.2" fill="var(--c3, #E88F80)" opacity="0.42"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-nightgown__clip">
+      <path d="M140 178 H262 Q274 336 284 486 Q200 512 116 486 Q126 336 140 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- short set-in cap sleeves, rounded lobes stopping well above the elbow at y257 -->
+    <path d="M140 160 Q102 164 98 194 Q96 218 118 218 H146 Q142 188 140 160 Z"
+          fill="url(#midage-male-onepiece-nightgown__cap)"/>
+    <path d="M260 160 Q298 164 302 194 Q304 218 282 218 H254 Q258 188 260 160 Z"
+          fill="url(#midage-male-onepiece-nightgown__cap)"/>
+    <!-- one waistless column, easing out only slightly all the way to the mid-calf hem -->
+    <path d="M140 178 H262 Q274 336 284 486 Q200 512 116 486 Q126 336 140 178 Z"
+          fill="url(#midage-male-onepiece-nightgown__column)"/>
+    <!-- panel blocking: the flat shoulder yoke the whole gown hangs from -->
+    <path d="M156 156 H244 Q254 156 254 166 V198 H146 V166 Q146 156 156 156 Z"
+          fill="url(#midage-male-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- pattern: sprigged cloth over the column only, so the yoke stays a clean flat panel -->
+  <g clip-path="url(#midage-male-onepiece-nightgown__clip)">
+    <rect x="112" y="198" width="176" height="316"
+          fill="url(#midage-male-onepiece-nightgown__sprig)"/>
+  </g>
+
+  <!-- plain round neck, cut into the yoke and bound -->
+  <path d="M176 156 Q200 182 224 156 Q222 188 200 190 Q178 188 176 156 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M174 156 Q200 186 226 156" stroke="var(--c3, #E88F80)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the yoke seam, with the gathers of the column hanging off it -->
+  <path d="M148 196 H252" stroke="var(--c3, #E88F80)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #A6BCB0)" stroke-opacity="0.55" stroke-width="3.2"
+     stroke-linecap="round">
+    <path d="M158 202 q6 12 0 24"/>
+    <path d="M178 202 q6 12 0 24"/>
+    <path d="M198 202 q6 12 0 24"/>
+    <path d="M218 202 q6 12 0 24"/>
+    <path d="M238 202 q6 12 0 24"/>
+  </g>
+
+  <!-- structural: long quiet drape folds, and no waist anywhere along them -->
+  <g fill="none" stroke="var(--c2, #A6BCB0)" stroke-opacity="0.42" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M164 240 L150 478"/>
+    <path d="M200 244 V494"/>
+    <path d="M236 240 L250 478"/>
+  </g>
+
+  <!-- trim: bound cap sleeve edges and the hem band -->
+  <path d="M100 212 H144" stroke="var(--c3, #E88F80)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 212 H300" stroke="var(--c3, #E88F80)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M120 480 Q200 506 280 480" stroke="var(--c3, #E88F80)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M158 214 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

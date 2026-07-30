@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Camisole" data-family="camisole" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: SHOULDER = narrow spaghetti strap set wide (straps 8 units across, at x150 and
+       x242, well outboard of the neck at x186 to x214) and HEM = past the hip, the cloth
+       swinging to y362 at centre, below the hip block that starts at y316.
+       Also volume = skimming bias cut, closure = none.
+       Against tank it differs on shoulder (spaghetti strap vs wide strap) and hem
+       (past hip vs hip); against ribbed-vest on shoulder and volume.
+       Cut for THIS chest: the straight upper edge runs the full torso width at y198. -->
+  <defs>
+    <linearGradient id="midage-male-top-camisole__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFE0D6)"/>
+      <stop offset="1" stop-color="var(--c2, #8CBDAE)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-camisole__strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #BFE0D6)"/>
+      <stop offset="1" stop-color="var(--c2, #8CBDAE)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-camisole__scallop" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M0 13 Q10 3 20 13" fill="none" stroke="var(--c3, #45705F)"
+            stroke-opacity="0.5" stroke-width="2.8" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="midage-male-top-camisole__clip">
+      <path d="M124 198 h152 l1 112 q2 30 -17 42 q-60 16 -119-4 q-19-10 -17-38 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two narrow straps set wide, and one skimming bias-cut body -->
+  <g class="sp-shadow">
+    <rect x="150" y="156" width="8" height="44" rx="4" fill="url(#midage-male-top-camisole__strap)"/>
+    <rect x="242" y="156" width="8" height="44" rx="4" fill="url(#midage-male-top-camisole__strap)"/>
+    <path d="M124 198 h152 l1 112 q2 30 -17 42 q-60 16 -119-4 q-19-10 -17-38 z"
+          fill="url(#midage-male-top-camisole__body)"/>
+  </g>
+
+  <!-- pattern: lace scallop banding at the upper edge and down at the swing of the hem -->
+  <g clip-path="url(#midage-male-top-camisole__clip)">
+    <rect x="118" y="198" width="164" height="22" fill="url(#midage-male-top-camisole__scallop)"/>
+    <rect x="118" y="306" width="164" height="48" fill="url(#midage-male-top-camisole__scallop)"/>
+  </g>
+
+  <!-- trim: the scalloped bound upper edge, the thing that reads at the chest -->
+  <path d="M124 202 q12-10 25 0 q12-10 25 0 q13-10 26 0 q13-10 26 0 q13-10 25 0 q11-9 25 0
+           l0 8 q-76-12 -152 0 z" fill="var(--c3, #45705F)"/>
+  <!-- trim: bindings where the straps land, top and bottom -->
+  <path d="M148 192 h12 q2 5 0 10 h-12 q-2-5 0-10 z" fill="var(--c3, #45705F)"/>
+  <path d="M240 192 h12 q2 5 0 10 h-12 q-2-5 0-10 z" fill="var(--c3, #45705F)"/>
+  <path d="M148 156 h12 q1 4 0 8 h-12 q-1-4 0-8 z" fill="var(--c3, #45705F)"/>
+  <path d="M240 156 h12 q1 4 0 8 h-12 q-1-4 0-8 z" fill="var(--c3, #45705F)"/>
+  <!-- trim: bound hem, cut on the shallow bias diagonal -->
+  <path d="M124 330 q60 26 152 -6 l1 11 q-92 34 -152 6 z" fill="var(--c3, #45705F)"/>
+
+  <!-- structural: bias seams, the fall of the cloth rather than a fitted side seam -->
+  <g stroke="var(--c2, #8CBDAE)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M164 214 q-10 66 -20 124"/>
+    <path d="M236 212 q14 68 24 118"/>
+    <path d="M200 216 q-3 70 -5 140"/>
+  </g>
+
+  <path d="M150 218 q50 14 100 -4" stroke="#FFFFFF" stroke-opacity="0.33" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

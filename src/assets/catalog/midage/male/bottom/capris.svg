@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Capris" data-family="capris" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg length = CROPPED, the leg cut clean off at this bundle's mid calf
+       anchor y499, so the shin is bare from the cuff edge at y503 down to the foot
+       at y544 (41 units of skin, well over the 40 unit legibility floor) ·
+       hem treatment = one deep turn up cuff standing proud of the leg on both sides.
+       Against jeans (natural rise, FULL length to y552, plain raw hem) it differs on
+       leg length and hem treatment. Against tailored-trousers (full length, straight
+       34 unit column, turn up hem) it differs on leg length and leg width: this leg
+       tapers 36 units at the thigh to 28 at the crop, the trouser does not taper.
+       Shoes draw over trouser hems, so nothing here goes below y503. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-capris__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9A78)"/>
+      <stop offset="1" stop-color="var(--c2, #66755A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-capris__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A9A78)"/>
+      <stop offset="1" stop-color="var(--c2, #66755A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-capris__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #66755A)"/>
+      <stop offset="1" stop-color="var(--c1, #8A9A78)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a natural rise seat block and two narrow tapered legs stopped at
+       the mid calf, with the turn up cuffs and the waistband trim inside the form -->
+  <g class="sp-shadow">
+    <path d="M162 350 H198 L194 497 H166 Z" fill="url(#midage-male-bottom-capris__leg)"/>
+    <path d="M238 350 H202 L206 497 H234 Z" fill="url(#midage-male-bottom-capris__leg)"/>
+    <path d="M150 310 H250 Q262 310 262 322 V348 Q262 376 236 376 H164 Q138 376 138 348
+             V322 Q138 310 150 310 Z" fill="url(#midage-male-bottom-capris__seat)"/>
+
+    <!-- trim: the deep turn up cuffs, the hem identity -->
+    <rect x="160" y="481" width="38" height="22" rx="8" fill="url(#midage-male-bottom-capris__cuff)"/>
+    <rect x="202" y="481" width="38" height="22" rx="8" fill="url(#midage-male-bottom-capris__cuff)"/>
+    <!-- trim: flat waistband and three belt loops -->
+    <rect x="138" y="310" width="124" height="18" rx="9" fill="var(--c2, #66755A)"/>
+    <rect x="158" y="308" width="7" height="24" rx="3" fill="var(--c3, #EDE2C8)" opacity="0.6"/>
+    <rect x="196" y="308" width="8" height="24" rx="3" fill="var(--c3, #EDE2C8)" opacity="0.6"/>
+    <rect x="235" y="308" width="7" height="24" rx="3" fill="var(--c3, #EDE2C8)" opacity="0.6"/>
+    <!-- structural: slanted side pockets cut into the seat -->
+    <path d="M140 332 H170 Q161 358 140 353 Z" fill="var(--c2, #66755A)"/>
+    <path d="M260 332 H230 Q239 358 260 353 Z" fill="var(--c2, #66755A)"/>
+  </g>
+
+  <!-- cuff fold lines, sitting on top of the band -->
+  <path d="M164 487 H194" stroke="var(--c3, #EDE2C8)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M206 487 H236" stroke="var(--c3, #EDE2C8)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <!-- pressed centre crease down each cropped leg -->
+  <path d="M179 366 V478" stroke="var(--c3, #EDE2C8)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M221 366 V478" stroke="var(--c3, #EDE2C8)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <!-- inner leg shadow -->
+  <path d="M196 364 V476" stroke="var(--c2, #66755A)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 364 V476" stroke="var(--c2, #66755A)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M156 344 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

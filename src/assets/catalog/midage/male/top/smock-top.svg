@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smock Top" data-family="smock-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: VOLUME = gathered (a narrow 120 unit chest yoke with the whole body gathered
+       onto its lower edge and swinging out to 176 units of cloth by the hem) and
+       SHOULDER = cap sleeve hung off the flat yoke rather than set into an armhole.
+       Against tee it differs on volume (gathered vs straight) and hem (high hip y318 over
+       a swinging hem vs a plain hip hem); against puff-sleeve-blouse on shoulder and volume.
+       The gathers are drawn folds off the yoke seam, not a printed texture. -->
+  <defs>
+    <linearGradient id="midage-male-top-smock-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A98BB8)"/>
+      <stop offset="1" stop-color="var(--c2, #82679A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-smock-top__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9077A6)"/>
+      <stop offset="1" stop-color="var(--c2, #6F5687)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-smock-top__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9077A6)"/>
+      <stop offset="1" stop-color="var(--c2, #755C8C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the gathered swinging body, the flat chest yoke and two cap sleeves -->
+  <g class="sp-shadow">
+    <path d="M144 194 H256 Q272 200 278 240 L288 302 Q292 318 274 318 H126 Q108 318 112 302 L122 240 Q128 200 144 194 Z"
+          fill="url(#midage-male-top-smock-top__body)"/>
+    <rect x="140" y="158" width="120" height="42" rx="15" fill="url(#midage-male-top-smock-top__yoke)"/>
+    <path d="M148 164 H114 Q98 168 98 192 Q98 216 118 222 H148 Z"
+          fill="url(#midage-male-top-smock-top__cap)"/>
+    <path d="M252 164 H286 Q302 168 302 192 Q302 216 282 222 H252 Z"
+          fill="url(#midage-male-top-smock-top__cap)"/>
+
+    <!-- trim: the swinging hem, bound in the accent -->
+    <path d="M114 300 Q200 316 286 300 L288 310 Q200 328 112 310 Z" fill="var(--c3, #F2E8DC)"/>
+
+    <!-- trim: bound round neck cut into the yoke -->
+    <path d="M175 156 Q200 184 225 156 Q223 174 200 178 Q177 174 175 156 Z"
+          fill="var(--c3, #F2E8DC)"/>
+    <path d="M183 158 Q200 174 217 158 Z" fill="var(--skin2, #E7B892)"/>
+  </g>
+
+  <!-- structural: eight gather folds radiating out of the yoke seam -->
+  <g stroke="var(--c2, #82679A)" stroke-opacity="0.45" stroke-width="3.5"
+     fill="none" stroke-linecap="round">
+    <path d="M150 204 Q134 250 124 308"/>
+    <path d="M163 204 Q152 252 144 310"/>
+    <path d="M176 204 Q170 252 165 312"/>
+    <path d="M189 204 Q187 252 185 312"/>
+    <path d="M211 204 Q213 252 215 312"/>
+    <path d="M224 204 Q230 252 235 312"/>
+    <path d="M237 204 Q248 252 256 310"/>
+    <path d="M250 204 Q266 250 276 308"/>
+  </g>
+  <!-- structural: puckers right under the yoke seam, where the cloth is drawn in -->
+  <g stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"
+     fill="none" stroke-linecap="round">
+    <path d="M152 206 q6 8 4 16"/>
+    <path d="M178 206 q6 8 4 16"/>
+    <path d="M222 206 q-6 8 -4 16"/>
+    <path d="M248 206 q-6 8 -4 16"/>
+  </g>
+
+  <!-- trim: yoke seam piping and the binding along each cap sleeve edge -->
+  <path d="M142 200 H258" stroke="var(--c3, #F2E8DC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M102 216 Q126 226 148 218" stroke="var(--c3, #F2E8DC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M298 216 Q274 226 252 218" stroke="var(--c3, #F2E8DC)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight across the flat yoke -->
+  <path d="M154 172 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

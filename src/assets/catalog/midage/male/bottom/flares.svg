@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flares" data-family="flares" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: rise = LOW, the waistband top edge at y324, fourteen units below this
+       bundle's natural rise line of y310 · leg width = close through the thigh and
+       knee then FLARING SHARPLY FROM THE KNEE, the outer edge breaking at the knee
+       anchor y450 at x160 and sweeping out to x113 at the hem, 47 units of flare per
+       leg, each bell 88 units across against a 36 unit thigh.
+       A midage character wears the same flares as an adult, so the bell is not tamed:
+       the hem sits at y550 to y558, floor brushing but above the ground line y570,
+       and shoes draw over it as they should.
+       Against jeans (natural rise, straight leg, plain hem) it differs on rise and
+       leg width. Against wide-leg (high rise, straight column with no inflection) it
+       differs on rise and on the knee break, which a straight column does not have. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-flares__seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E5F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #6B4459)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-flares__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E5F7A)"/>
+      <stop offset="1" stop-color="var(--c2, #6B4459)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: a low seat block and two legs that hold close to the knee and then
+       flare hard, with the low waistband and the contrast bound hem inside the form -->
+  <g class="sp-shadow">
+    <path d="M156 366 H198 V450 L201 550 Q201 558 193 558 H120 Q111 558 113 548 L160 450 Z"
+          fill="url(#midage-male-bottom-flares__leg)"/>
+    <path d="M244 366 H202 V450 L199 550 Q199 558 207 558 H280 Q289 558 287 548 L240 450 Z"
+          fill="url(#midage-male-bottom-flares__leg)"/>
+    <path d="M144 324 H256 Q262 324 262 332 V360 Q262 380 242 380 H158 Q138 380 138 360
+             V332 Q138 324 144 324 Z" fill="url(#midage-male-bottom-flares__seat)"/>
+
+    <!-- trim: slim low waistband, no belt loops, quieter than the jeans -->
+    <rect x="138" y="324" width="124" height="14" rx="7" fill="var(--c2, #6B4459)"/>
+    <!-- trim: contrast bound hem across both bells -->
+    <path d="M116 546 H198 V556 H116 Z" fill="var(--c3, #F0D9B8)" opacity="0.9"/>
+    <path d="M202 546 H284 V556 H202 Z" fill="var(--c3, #F0D9B8)" opacity="0.9"/>
+    <!-- structural: a small coin pocket at the low waist -->
+    <path d="M238 340 H256 V354 H240 Z" fill="var(--c2, #6B4459)"/>
+  </g>
+
+  <!-- topstitched outseam, the line that shows where the knee break happens -->
+  <path d="M158 372 L160 450 L124 542" stroke="var(--c3, #F0D9B8)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M242 372 L240 450 L276 542" stroke="var(--c3, #F0D9B8)" stroke-width="2.6"
+        stroke-dasharray="6 5" fill="none" stroke-linecap="round"/>
+  <path d="M200 340 v38" stroke="var(--c3, #F0D9B8)" stroke-width="2.6" stroke-dasharray="6 5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: drape folds opening inside each bell below the knee -->
+  <g stroke="var(--c2, #6B4459)" stroke-opacity="0.5" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M176 462 L154 540"/>
+    <path d="M224 462 L246 540"/>
+  </g>
+
+  <path d="M158 336 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

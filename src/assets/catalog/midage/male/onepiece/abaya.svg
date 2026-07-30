@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: CLOSURE = open front, the two panel edges simply meeting down the centre with no
+       button, tie or belt anywhere; HEM = ankle, falling dead straight from the shoulder line
+       at y156 with no waist at all.
+       Against kaftan it differs on closure and sleeve: kaftan is closed with a slit neck and
+       has a wide draped T sleeve stopping at the calf. Against thobe it differs on closure and
+       volume: thobe is closed with a band collar over narrow set in sleeves. Against robe it
+       differs on closure and volume: robe crosses over, is belted and flares.
+       Everyday clothing. Plain cloth with a generic geometric border only. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F3A4A)"/>
+      <stop offset="1" stop-color="var(--c2, #26222F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C8B48E)"/>
+      <stop offset="1" stop-color="var(--c2, #8E7F63)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #474154)"/>
+      <stop offset="1" stop-color="var(--c2, #26222F)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-abaya__border" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 L17 10 L10 17 L3 10 Z" fill="none" stroke="var(--c3, #C8B48E)"
+            stroke-opacity="0.85" stroke-width="2.4"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-abaya__panelclip">
+      <path d="M124 190 Q124 156 156 156 H196 L198 552 Q158 560 118 550 Z
+               M276 190 Q276 156 244 156 H204 L202 552 Q242 560 282 550 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under layer, so the meeting front edges never open onto a hole -->
+    <path d="M142 176 H258 L264 548 Q200 560 136 548 Z"
+          fill="url(#midage-male-onepiece-abaya__under)"/>
+    <!-- long straight sleeves, square cut, running past the wrist at y346 -->
+    <path d="M138 160 H108 Q94 160 94 176 L96 340 Q96 356 112 356 H124 Q138 356 138 340 Z"
+          fill="url(#midage-male-onepiece-abaya__sleeve)"/>
+    <path d="M262 160 H292 Q306 160 306 176 L304 340 Q304 356 288 356 H276 Q262 356 262 340 Z"
+          fill="url(#midage-male-onepiece-abaya__sleeve)"/>
+    <!-- the two front panels, falling straight from the shoulder to the ankle -->
+    <path d="M124 190 Q124 156 156 156 H196 L198 552 Q158 560 118 550 Z"
+          fill="url(#midage-male-onepiece-abaya__panel)"/>
+    <path d="M276 190 Q276 156 244 156 H204 L202 552 Q242 560 282 550 Z"
+          fill="url(#midage-male-onepiece-abaya__panel)"/>
+    <!-- pattern: a generic geometric border band worked into the hem of both panels -->
+    <g clip-path="url(#midage-male-onepiece-abaya__panelclip)">
+      <rect x="112" y="508" width="180" height="44"
+            fill="url(#midage-male-onepiece-abaya__border)"/>
+    </g>
+    <!-- trim: a plain contrast band down each front edge and round each cuff -->
+    <path d="M189 158 L191 546" stroke="var(--c3, #C8B48E)" stroke-width="10"
+          fill="none" stroke-linecap="round"/>
+    <path d="M211 158 L209 546" stroke="var(--c3, #C8B48E)" stroke-width="10"
+          fill="none" stroke-linecap="round"/>
+    <path d="M96 336 H138" stroke="var(--c3, #C8B48E)" stroke-width="10"
+          fill="none" stroke-linecap="round"/>
+    <path d="M262 336 H304" stroke="var(--c3, #C8B48E)" stroke-width="10"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- the two edges simply meeting: no button, no tie, no belt anywhere on this garment -->
+  <path d="M200 162 V544" stroke="var(--c2, #26222F)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M189 164 L191 542" stroke="var(--c2, #26222F)" stroke-opacity="0.3"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M211 164 L209 542" stroke="var(--c2, #26222F)" stroke-opacity="0.3"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder line and the plain round neck opening the whole robe hangs from -->
+  <path d="M162 156 Q200 172 238 156" stroke="var(--c3, #C8B48E)" stroke-opacity="0.8"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M178 154 q22 16 44 0 v7 q-22 18 -44 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: long unbroken drape folds; there is no waist anywhere on this outline -->
+  <g fill="none" stroke="var(--c2, #26222F)" stroke-opacity="0.42" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M150 216 L144 538"/>
+    <path d="M170 238 L166 542"/>
+    <path d="M230 238 L234 542"/>
+    <path d="M250 216 L256 538"/>
+  </g>
+
+  <!-- upper chest highlight, left and right of the open edge -->
+  <path d="M148 200 q22 12 40 8" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M212 208 q22 2 40 -8" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

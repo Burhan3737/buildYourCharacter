@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Kurta" data-family="kurta" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HEM = knee (a straight column to y450, this bundle's knee anchor, midage hems
+       running the longer of the two options) and CLOSURE = band collar over a short front
+       placket. Against long-coat it differs on hem (knee y450 vs mid calf y499) and closure
+       (a 72 unit placket vs a full button placket to the hem); against button-up on hem and
+       volume (a straight unshaped column vs a shaped shirt).
+       Deep side slits open at the hip line y320 and run 130 units to the hem, so the column
+       is 152 wide above them and 124 wide below.
+       Plain cloth with a generic vertical self stripe and a plain band trim only. -->
+  <defs>
+    <linearGradient id="midage-male-top-kurta__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3CE)"/>
+      <stop offset="1" stop-color="var(--c2, #CFBD9C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-kurta__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EFE3CE)"/>
+      <stop offset="1" stop-color="var(--c2, #C7B492)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-kurta__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #35496B)"/>
+      <stop offset="1" stop-color="var(--c3, #273853)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-kurta__selfstripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="4" height="18" fill="var(--c2, #CFBD9C)" fill-opacity="0.36"/>
+    </pattern>
+    <clipPath id="midage-male-top-kurta__clip">
+      <path d="M124 200 Q124 158 166 158 H234 Q276 158 276 200 V320 H262 V440 Q262 450 250 450 H150 Q138 450 138 440 V320 H124 Z"/>
+    </clipPath>
+    <clipPath id="midage-male-top-kurta__sleeveclip">
+      <path d="M138 164 H110 Q98 166 98 180 V338 Q98 352 112 352 H138 Z"/>
+      <path d="M262 164 H290 Q302 166 302 180 V338 Q302 352 288 352 H262 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: two long straight sleeves and one knee length column split by side slits -->
+  <g class="sp-shadow">
+    <path d="M138 164 H110 Q98 166 98 180 V338 Q98 352 112 352 H138 Z"
+          fill="url(#midage-male-top-kurta__sleeve)"/>
+    <path d="M262 164 H290 Q302 166 302 180 V338 Q302 352 288 352 H262 Z"
+          fill="url(#midage-male-top-kurta__sleeve)"/>
+    <path d="M124 200 Q124 158 166 158 H234 Q276 158 276 200 V320 H262 V440 Q262 450 250 450 H150 Q138 450 138 440 V320 H124 Z"
+          fill="url(#midage-male-top-kurta__body)"/>
+
+    <!-- pattern: a fine tonal self stripe woven into the cloth, clipped to the column -->
+    <g clip-path="url(#midage-male-top-kurta__clip)">
+      <rect x="132" y="190" width="136" height="250" fill="url(#midage-male-top-kurta__selfstripe)"/>
+    </g>
+    <g clip-path="url(#midage-male-top-kurta__sleeveclip)">
+      <rect x="100" y="180" width="200" height="160" fill="url(#midage-male-top-kurta__selfstripe)"/>
+    </g>
+
+    <!-- trim: band collar, its skin opening, narrow cuffs and a plain hem band -->
+    <path d="M176 152 Q200 145 224 152 V178 Q200 188 176 178 Z"
+          fill="url(#midage-male-top-kurta__band)"/>
+    <path d="M184 157 Q200 164 216 157 V176 Q200 183 184 176 Z" fill="var(--skin2, #E7B892)"/>
+    <rect x="98" y="332" width="40" height="20" rx="9" fill="var(--c3, #35496B)"/>
+    <rect x="262" y="332" width="40" height="20" rx="9" fill="var(--c3, #35496B)"/>
+    <path d="M140 432 H260 V440 H140 Z" fill="var(--c3, #35496B)" fill-opacity="0.55"/>
+  </g>
+
+  <!-- structural: the short front placket, quietly buttoned as midage prefers -->
+  <rect x="188" y="176" width="24" height="70" rx="6" fill="var(--c3, #35496B)"/>
+  <path d="M200 182 V242" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="192" r="4.2" fill="var(--c1, #EFE3CE)"/>
+  <circle cx="200" cy="214" r="4.2" fill="var(--c1, #EFE3CE)"/>
+  <circle cx="200" cy="236" r="4.2" fill="var(--c1, #EFE3CE)"/>
+
+  <!-- the side slits, bound so the split reads at tray size -->
+  <path d="M141 324 V444" stroke="var(--c3, #35496B)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M259 324 V444" stroke="var(--c3, #35496B)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M127 214 V316" stroke="var(--c2, #CFBD9C)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M273 214 V316" stroke="var(--c2, #CFBD9C)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight -->
+  <path d="M150 186 q50 18 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

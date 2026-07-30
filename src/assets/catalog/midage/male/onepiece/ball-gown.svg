@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: SHOULDER = none, a straight strapless band across the top of the bust at y196 with
+       the shoulders and the whole upper chest left as bare skin; VOLUME = a hugely bouffant
+       dome springing off a pointed waist and standing away from the leg.
+       MEASURED CLEARANCE: the dome hem spans x72 to x328. The widest point of the body below
+       the waist is the 120 unit hip at x140 to x260, so the dome stands 68 units clear on each
+       side (140 minus 72 is 68; 328 minus 260 is 68), far over the 40 unit practical floor.
+       Against empire-gown it differs on shoulder and volume; against bridal-gown on shoulder
+       and volume; against party-dress on shoulder and hem. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-ball-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A46A82)"/>
+      <stop offset="1" stop-color="var(--c2, #6E4159)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B27690)"/>
+      <stop offset="1" stop-color="var(--c2, #6E4159)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFE3CB)"/>
+      <stop offset="1" stop-color="var(--c2, #6E4159)"/>
+    </linearGradient>
+    <clipPath id="midage-male-onepiece-ball-gown__domeclip">
+      <path d="M150 296 H250 Q296 380 314 476 Q328 540 328 568 H72 Q72 540 86 476
+               Q104 380 150 296 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the dome: off the pointed waist and straight out over the ground line at y570 -->
+    <path d="M150 296 H250 Q296 380 314 476 Q328 540 328 568 H72 Q72 540 86 476
+             Q104 380 150 296 Z"
+          fill="url(#midage-male-onepiece-ball-gown__skirt)"/>
+    <!-- fitted strapless bodice, coming to a point at the waist. Nothing is drawn above y196,
+         so the bare shoulders and upper chest stay as the character's own skin -->
+    <path d="M132 198 Q128 222 128 252 Q128 292 160 308 L200 324 L240 308 Q272 292 272 252
+             Q272 222 268 198 Z"
+          fill="url(#midage-male-onepiece-ball-gown__bodice)"/>
+    <!-- panel blocking: a straight strapless band across the top of the bust -->
+    <rect x="128" y="196" width="144" height="20" rx="8"
+          fill="url(#midage-male-onepiece-ball-gown__band)"/>
+    <!-- trim: the pointed waist edge, bound in the accent -->
+    <path d="M130 268 Q164 302 200 324 Q236 302 270 268" stroke="var(--c3, #EFE3CB)"
+          stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- trim: deep hem band riding the floor -->
+    <path d="M76 538 Q200 566 324 538" stroke="var(--c3, #EFE3CB)" stroke-width="9"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <path d="M130 216 H270" stroke="var(--c3, #EFE3CB)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: eight radiating skirt gathers fanning off the waist point -->
+  <g clip-path="url(#midage-male-onepiece-ball-gown__domeclip)" fill="none"
+     stroke="var(--c2, #6E4159)" stroke-opacity="0.36" stroke-width="4.4" stroke-linecap="round">
+    <path d="M198 326 Q154 404 96 560"/>
+    <path d="M199 326 Q164 404 128 560"/>
+    <path d="M200 326 Q180 404 162 562"/>
+    <path d="M200 326 Q194 404 190 562"/>
+    <path d="M200 326 Q206 404 210 562"/>
+    <path d="M200 326 Q220 404 238 562"/>
+    <path d="M201 326 Q236 404 272 560"/>
+    <path d="M202 326 Q246 404 304 560"/>
+  </g>
+
+  <!-- structural: long bodice seaming, echoing the gathers up into the band -->
+  <g fill="none" stroke="var(--c2, #6E4159)" stroke-opacity="0.34" stroke-width="3.6"
+     stroke-linecap="round">
+    <path d="M164 220 Q158 268 180 310"/>
+    <path d="M236 220 Q242 268 220 310"/>
+  </g>
+
+  <!-- upper surface highlights -->
+  <path d="M150 228 q50 14 100 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 406 q74 28 148 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+</svg>

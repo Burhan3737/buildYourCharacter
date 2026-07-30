@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hoop Skirt" data-family="hoop-skirt" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg width = a RIGID DOME with no leg division, standing well clear of the
+       leg on every side · hem treatment = a ground sweeping firm arc carrying four
+       horizontal hoop channel seams.
+       MEASURED CLEARANCE: the dome hem spans x76 to x324, that is 248 units across.
+       The widest point of the body below the waist is the 120 unit hip at x140 to
+       x260. So the dome stands 140 minus 76 = 64 units clear on the left and 324
+       minus 260 = 64 units clear on the right, far over the 40 unit practical floor.
+       The hem sweeps the ground line, sides at y556 and the centre dipping to y563,
+       clear of y570.
+       Against maxi-skirt (natural rise, narrow straight column, bound ankle hem) it
+       differs on volume and hem treatment. Against tiered-skirt (natural rise,
+       gathered tiers, ruffled mid calf hem) it differs on volume and hem treatment.
+       Formalwear palette note: pale blue, yellow, and pink with a gold bodice are
+       named animated princess palettes and are banned here. The fallback is a deep
+       muted derivative of the house periwinkle, deliberately. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-hoop-skirt__dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A62A8)"/>
+      <stop offset="1" stop-color="var(--c2, #4A4380)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-hoop-skirt__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A62A8)"/>
+      <stop offset="1" stop-color="var(--c2, #4A4380)"/>
+    </linearGradient>
+    <clipPath id="midage-male-bottom-hoop-skirt__clip">
+      <path d="M158 294 H242 Q268 328 288 382 Q314 462 324 544 L324 556 Q200 570 76 556
+               L76 544 Q86 462 112 382 Q132 328 158 294 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the rigid dome, springing from a high waist to the ground line,
+       with the hoop channel seams and the waistband inside the form group -->
+  <g class="sp-shadow">
+    <path d="M158 294 H242 Q268 328 288 382 Q314 462 324 544 L324 556 Q200 570 76 556
+             L76 544 Q86 462 112 382 Q132 328 158 294 Z"
+          fill="url(#midage-male-bottom-hoop-skirt__dome)"/>
+
+    <!-- structural: four horizontal hoop channel seams, each following the dome curve -->
+    <g clip-path="url(#midage-male-bottom-hoop-skirt__clip)">
+      <path d="M60 384 Q200 368 340 384 L340 394 Q200 378 60 394 Z" fill="var(--c2, #4A4380)"/>
+      <path d="M60 442 Q200 424 340 442 L340 452 Q200 434 60 452 Z" fill="var(--c2, #4A4380)"/>
+      <path d="M60 500 Q200 482 340 500 L340 510 Q200 492 60 510 Z" fill="var(--c2, #4A4380)"/>
+      <path d="M60 548 Q200 530 340 548 L340 558 Q200 540 60 558 Z" fill="var(--c2, #4A4380)"/>
+    </g>
+
+    <!-- trim: high rise waistband with a bound top edge -->
+    <rect x="154" y="292" width="92" height="22" rx="10" fill="url(#midage-male-bottom-hoop-skirt__band)"/>
+    <rect x="154" y="292" width="92" height="8" rx="4" fill="var(--c3, #E9E2D2)" opacity="0.75"/>
+  </g>
+
+  <!-- highlights riding the top of each hoop channel -->
+  <g clip-path="url(#midage-male-bottom-hoop-skirt__clip)" fill="none">
+    <path d="M60 380 Q200 364 340 380" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"/>
+    <path d="M60 438 Q200 420 340 438" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="4"/>
+    <path d="M60 496 Q200 478 340 496" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4"/>
+    <path d="M60 544 Q200 526 340 544" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="4"/>
+  </g>
+
+  <!-- vertical stay tapes running from the waist to the hem -->
+  <g stroke="var(--c3, #E9E2D2)" stroke-opacity="0.42" stroke-width="3.4" fill="none"
+     stroke-linecap="round">
+    <path d="M168 316 Q124 424 100 550"/>
+    <path d="M232 316 Q276 424 300 550"/>
+    <path d="M200 316 V560"/>
+  </g>
+
+  <path d="M162 306 q38 12 76 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

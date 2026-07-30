@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wrap Top" data-family="wrap-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: CLOSURE = crossover, two front panels crossing on the diagonal and tied at the
+       waist under a V that opens 56 units across the chest, and SHOULDER = three quarter
+       sleeve, ending at y306 well short of the wrist at y346. Against button-up it differs
+       on closure (a wrap and knot vs a buttoned placket) and shoulder (three quarter vs
+       long); against tee on closure and sleeve length.
+       Drawn on the male torso, x128 to x272, and wrapped with the panel from the viewer's
+       left on top, so the knot sits on the wearer's left hip. -->
+  <defs>
+    <linearGradient id="midage-male-top-wrap-top__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E4A57)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3541)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-wrap-top__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #7A3E4A)"/>
+      <stop offset="1" stop-color="var(--c2, #5C2C37)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-wrap-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8E4A57)"/>
+      <stop offset="1" stop-color="var(--c2, #63303B)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the deep V resolves as bare chest, painted through the body's own skin ramp -->
+  <path d="M168 156 C180 208 192 244 200 266 C208 244 220 208 232 156 Z"
+        fill="var(--skin1, #F7D2B0)"/>
+  <path d="M182 198 C188 224 195 242 200 260 C205 242 212 224 218 198 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.5"/>
+
+  <!-- major forms: two three quarter sleeves and two crossing front panels -->
+  <g class="sp-shadow">
+    <rect x="100" y="164" width="38" height="142" rx="19" fill="url(#midage-male-top-wrap-top__sleeve)"/>
+    <rect x="262" y="164" width="38" height="142" rx="19" fill="url(#midage-male-top-wrap-top__sleeve)"/>
+    <path d="M238 158 C226 210 212 248 186 306 L180 326 Q180 338 196 338 L258 336 Q276 336 276 312 L274 196 Q272 158 238 158 Z"
+          fill="url(#midage-male-top-wrap-top__under)"/>
+    <path d="M162 158 C174 210 188 248 214 306 L220 326 Q220 338 204 338 L140 336 Q122 336 122 312 L124 196 Q126 158 162 158 Z"
+          fill="url(#midage-male-top-wrap-top__panel)"/>
+
+    <!-- trim: the bound edge running the whole crossover, the trim that names the garment -->
+    <path d="M162 158 C174 210 188 248 214 306 L202 310 C176 250 162 212 152 160 Z"
+          fill="var(--c3, #EFD9DC)"/>
+    <path d="M238 158 C228 208 216 240 194 288 L184 282 C206 232 218 204 228 158 Z"
+          fill="var(--c3, #EFD9DC)" fill-opacity="0.7"/>
+
+    <!-- trim: three quarter sleeve bands -->
+    <rect x="98" y="288" width="42" height="18" rx="9" fill="var(--c3, #EFD9DC)"/>
+    <rect x="260" y="288" width="42" height="18" rx="9" fill="var(--c3, #EFD9DC)"/>
+  </g>
+
+  <!-- structural: the knot at the waist with two short tie ends -->
+  <ellipse cx="214" cy="310" rx="15" ry="11" fill="var(--c3, #EFD9DC)"/>
+  <path d="M221 314 Q246 320 256 340 Q243 344 233 333 Q223 325 217 318 Z" fill="var(--c2, #6B3541)"/>
+  <path d="M210 317 Q202 334 206 350 Q193 346 191 331 Q191 321 202 315 Z" fill="var(--c2, #6B3541)"/>
+  <path d="M208 306 Q214 312 220 306" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: gather lines pulling out of the knot across the waist -->
+  <g stroke="var(--c2, #6B3541)" stroke-opacity="0.4" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M200 306 Q170 298 142 302"/>
+    <path d="M202 318 Q172 314 144 320"/>
+    <path d="M226 304 Q248 298 266 300"/>
+  </g>
+
+  <!-- upper surface highlight, broken by the open V -->
+  <path d="M142 186 Q156 202 172 200" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 186 Q244 202 228 200" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

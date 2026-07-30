@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ice Skates" data-family="ice-skates" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: SOLE DEPTH = a thin blade held 10 units clear of the sole plate on two narrow
+       posts per skate, with real open air between them. Nothing else in this bundle has a
+       hole under the foot, and that gap is the identity: plate y550 to y558, posts y558 to
+       y568, blade y568 to y573 · FASTENING = a long hooked lace ladder climbing the whole
+       shaft, five bars and a pair of top hooks. The padded boot tops out above the ankle at
+       y512. Note that shaft height is NOT the separating axis against high-tops, which sits
+       at y500: 12 units is far under the 40 unit practical floor, so this pair is carried on
+       sole depth and on fastening. Shaft covers the midage leg rects x166 to 196 and x204 to
+       234; feet x158 to 202 and x198 to 242, y544 to 570. -->
+  <defs>
+    <linearGradient id="midage-male-shoes-ice-skates__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D9B892)"/>
+      <stop offset="1" stop-color="var(--c2, #A6825C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-shoes-ice-skates__steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #90A6B8)"/>
+      <stop offset="1" stop-color="var(--c2, #A6825C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- padded boots above the ankle -->
+    <path d="M160 518 Q160 512 167 512 H199 Q206 512 206 519 V544 Q206 552 198 552 H154
+             Q147 552 147 545 Q147 538 155 535 Q160 532 160 524 Z"
+          fill="url(#midage-male-shoes-ice-skates__boot)"/>
+    <path d="M240 518 Q240 512 233 512 H201 Q194 512 194 519 V544 Q194 552 202 552 H246
+             Q253 552 253 545 Q253 538 245 535 Q240 532 240 524 Z"
+          fill="url(#midage-male-shoes-ice-skates__boot)"/>
+    <!-- sole plates -->
+    <rect x="148" y="550" width="58" height="8" rx="3" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <rect x="194" y="550" width="58" height="8" rx="3" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <!-- the two mounting posts per skate, with open air between them -->
+    <rect x="157" y="558" width="11" height="10" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <rect x="186" y="558" width="11" height="10" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <rect x="203" y="558" width="11" height="10" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <rect x="232" y="558" width="11" height="10" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <!-- the blades -->
+    <rect x="147" y="568" width="60" height="5" rx="2.5" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+    <rect x="193" y="568" width="60" height="5" rx="2.5" fill="url(#midage-male-shoes-ice-skates__steel)"/>
+
+    <!-- trim: padded collar roll at the shaft mouth -->
+    <path d="M158 508 Q182 502 206 508 V515 Q182 521 158 515 Z" fill="var(--c2, #A6825C)"/>
+    <path d="M242 508 Q218 502 194 508 V515 Q218 521 242 515 Z" fill="var(--c2, #A6825C)"/>
+  </g>
+
+  <!-- structural: the long hooked lace ladder, five bars and two hooks per skate -->
+  <g stroke="var(--c3, #90A6B8)" stroke-width="2.8" stroke-linecap="round" fill="none">
+    <path d="M167 522 H198"/>
+    <path d="M166 530 H199"/>
+    <path d="M165 538 H200"/>
+    <path d="M165 545 H200"/>
+    <path d="M207 522 H238"/>
+    <path d="M206 530 H239"/>
+    <path d="M205 538 H240"/>
+    <path d="M205 545 H240"/>
+    <path d="M166 517 q-5 1 -4 5"/>
+    <path d="M199 517 q5 1 4 5"/>
+    <path d="M234 517 q5 1 4 5"/>
+    <path d="M201 517 q-5 1 -4 5"/>
+  </g>
+  <!-- structural: the toe pick notch at the front of each blade -->
+  <path d="M150 564 v6" stroke="var(--c3, #90A6B8)" stroke-width="3.2" fill="none"
+        stroke-linecap="round"/>
+  <path d="M250 564 v6" stroke="var(--c3, #90A6B8)" stroke-width="3.2" fill="none"
+        stroke-linecap="round"/>
+
+  <path d="M166 520 q18 7 33 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M234 520 q-18 7 -33 1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+</svg>

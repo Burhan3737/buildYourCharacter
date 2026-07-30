@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: short set-in sleeve over a scoop neck · NO closure of any kind, it pulls on ·
+       ANKLE hem on both legs · SKIN-CLOSE, one unbroken surface with no waist seam.
+       The legs follow this bundle's leg rects at x166 to x196 and x204 to x234, y352 to y548:
+       drawn at x160 to x200 and x200 to x240 so there is a four to six unit overlap on every
+       edge and no sliver of skin. Against swimsuit it differs on shoulder and hem; against
+       jumpsuit on closure and volume. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8C7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-unitard__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B4A3)"/>
+      <stop offset="1" stop-color="var(--c2, #32786A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3B8C7C)"/>
+    </linearGradient>
+    <clipPath id="midage-male-onepiece-unitard__torsoclip">
+      <path d="M126 200 Q126 158 162 158 H172 Q178 196 200 196 Q222 196 228 158 H238
+               Q274 158 274 200 V308 Q274 340 262 356 Q252 372 238 374 H162
+               Q148 372 138 356 Q126 340 126 308 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- skin-close legs, hugging the leg rects all the way to the ankle -->
+    <path d="M160 344 H200 V524 Q200 546 186 546 H174 Q160 546 160 524 Z"
+          fill="url(#midage-male-onepiece-unitard__leg)"/>
+    <path d="M240 344 H200 V524 Q200 546 214 546 H226 Q240 546 240 524 Z"
+          fill="url(#midage-male-onepiece-unitard__leg)"/>
+    <!-- short set-in sleeves, stopping on the upper arm above the elbow at y257 -->
+    <path d="M138 158 Q100 162 98 192 L100 240 Q100 252 116 252 H134 Q142 250 140 238 L138 196 Z"
+          fill="url(#midage-male-onepiece-unitard__sleeve)"/>
+    <path d="M262 158 Q300 162 302 192 L300 240 Q300 252 284 252 H266 Q258 250 260 238 L262 196 Z"
+          fill="url(#midage-male-onepiece-unitard__sleeve)"/>
+    <!-- one unbroken body with a scoop neck cut into it, following the hip curve down -->
+    <path d="M126 200 Q126 158 162 158 H172 Q178 196 200 196 Q222 196 228 158 H238
+             Q274 158 274 200 V308 Q274 340 262 356 Q252 372 238 374 H162
+             Q148 372 138 356 Q126 340 126 308 Z"
+          fill="url(#midage-male-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- panel blocking: a broad contrast panel down each flank, the only break in the surface -->
+  <g clip-path="url(#midage-male-onepiece-unitard__torsoclip)">
+    <path d="M126 166 Q144 172 150 206 L148 380 H122 Z" fill="var(--c2, #3B8C7C)"/>
+    <path d="M274 166 Q256 172 250 206 L252 380 H278 Z" fill="var(--c2, #3B8C7C)"/>
+  </g>
+  <path d="M162 348 Q157 448 163 542" stroke="var(--c2, #3B8C7C)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M238 348 Q243 448 237 542" stroke="var(--c2, #3B8C7C)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: bound scoop neckline -->
+  <path d="M170 160 Q176 200 200 200 Q224 200 230 160" stroke="var(--c3, #2C3E4A)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- trim: bound sleeve edges and bound ankles -->
+  <path d="M101 244 H138" stroke="var(--c3, #2C3E4A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M262 244 H299" stroke="var(--c3, #2C3E4A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M162 532 H198" stroke="var(--c3, #2C3E4A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 532 H238" stroke="var(--c3, #2C3E4A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- body sheen, following the one unbroken column -->
+  <path d="M158 212 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 262 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M174 390 V512" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M226 390 V512" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

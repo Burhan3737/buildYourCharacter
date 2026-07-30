@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oxfords" data-family="oxfords" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: FASTENING = closed lacing. The quarters are stitched down UNDER the vamp rather
+       than lapping over it, so only a narrow throat slot shows and the seam where the
+       quarter vanishes beneath the vamp is drawn as a stitch line · SOLE DEPTH = a welted
+       edge standing proud of the upper by 6 units on every side, y558 to y565, with the
+       outsole below it to the ground line at y570. Nearest sibling here is dress-shoes,
+       which is a slip-on with a plain 10 unit sole flush to the upper: this pair differs on
+       fastening and on sole depth. Against sneakers it differs on toe shape, squared with a
+       toe cap seam against rounded, and on sole depth. Feet x158 to 202 and x198 to 242. -->
+  <defs>
+    <linearGradient id="midage-male-shoes-oxfords__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #3F4E70)"/>
+      <stop offset="1" stop-color="var(--c2, #26314C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-shoes-oxfords__welt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #26314C)"/>
+      <stop offset="1" stop-color="var(--c1, #3F4E70)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- low cut uppers with a squared toe box, then the welt and outsole standing proud -->
+    <path d="M152 547 Q152 541 159 541 H196 Q204 541 204 550 V556 Q204 562 198 562 H159
+             Q152 562 152 556 Z" fill="url(#midage-male-shoes-oxfords__upper)"/>
+    <path d="M149 558 H207 Q210 561 210 565 H146 Q146 561 149 558 Z"
+          fill="url(#midage-male-shoes-oxfords__welt)"/>
+    <path d="M146 565 H210 Q210 570 204 570 H152 Q146 570 146 565 Z"
+          fill="url(#midage-male-shoes-oxfords__welt)"/>
+    <path d="M248 547 Q248 541 241 541 H204 Q196 541 196 550 V556 Q196 562 202 562 H241
+             Q248 562 248 556 Z" fill="url(#midage-male-shoes-oxfords__upper)"/>
+    <path d="M251 558 H193 Q190 561 190 565 H254 Q254 561 251 558 Z"
+          fill="url(#midage-male-shoes-oxfords__welt)"/>
+    <path d="M254 565 H190 Q190 570 196 570 H248 Q254 570 254 565 Z"
+          fill="url(#midage-male-shoes-oxfords__welt)"/>
+
+    <!-- structural: the narrow throat slot of a closed lacing -->
+    <path d="M184 544 H200 Q203 546 203 551 V558 Q203 561 199 561 H184 Z"
+          fill="var(--c2, #26314C)"/>
+    <path d="M216 544 H200 Q197 546 197 551 V558 Q197 561 201 561 H216 Z"
+          fill="var(--c2, #26314C)"/>
+  </g>
+
+  <!-- trim: the squared toe cap seam -->
+  <path d="M173 542 V561" stroke="var(--c2, #26314C)" stroke-width="3.4"
+        stroke-linecap="round" fill="none"/>
+  <path d="M227 542 V561" stroke="var(--c2, #26314C)" stroke-width="3.4"
+        stroke-linecap="round" fill="none"/>
+  <!-- the short lace bars in the throat, and the seam where the quarter tucks under the vamp -->
+  <g stroke="var(--c3, #E3D2A8)" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <path d="M187 548 H200"/>
+    <path d="M186 553 H200"/>
+    <path d="M186 558 H200"/>
+    <path d="M213 548 H200"/>
+    <path d="M214 553 H200"/>
+    <path d="M214 558 H200"/>
+  </g>
+  <path d="M182 543 V561" stroke="var(--c3, #E3D2A8)" stroke-width="2" stroke-dasharray="4 3"
+        stroke-linecap="round" fill="none"/>
+  <path d="M218 543 V561" stroke="var(--c3, #E3D2A8)" stroke-width="2" stroke-dasharray="4 3"
+        stroke-linecap="round" fill="none"/>
+  <!-- trim: welt stitching running the length of the proud sole edge -->
+  <path d="M150 562 H208" stroke="var(--c3, #E3D2A8)" stroke-width="2.2" stroke-dasharray="5 4"
+        stroke-linecap="round" fill="none"/>
+  <path d="M250 562 H192" stroke="var(--c3, #E3D2A8)" stroke-width="2.2" stroke-dasharray="5 4"
+        stroke-linecap="round" fill="none"/>
+
+  <path d="M158 548 q16 6 30 1" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 548 q-16 6 -30 1" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

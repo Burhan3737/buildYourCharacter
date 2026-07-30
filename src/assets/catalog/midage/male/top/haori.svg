@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Haori" data-family="haori" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: SHOULDER = a wide square sleeve panel, x82 to x136 and x264 to x318, hanging free
+       below the arm as its own slab of cloth rather than a tube on the arm, and CLOSURE =
+       open front with dead-straight vertical edges at x186 and x214 meeting only at a short
+       chest cord. Also hem = hip at y344, volume = straight.
+       Against cardigan it differs on shoulder (hanging square panel vs fitted knit sleeve)
+       and closure (cord vs button band); against poncho on shoulder and volume.
+       LIVING CULTURAL DRESS. Plain cloth, and the only ornament is a generic band of plain
+       squares along the collar. No community's woven design appears in this file. -->
+  <defs>
+    <linearGradient id="midage-male-top-haori__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #55659F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-haori__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B9CE3)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5990)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-haori__shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EFE7D2)"/>
+      <stop offset="1" stop-color="var(--c3, #D2C8AE)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the shell, two straight front panels and two hanging square sleeve slabs -->
+  <g class="sp-shadow">
+    <path d="M166 158 q34 28 68 0 q28 8 28 38 v134 q0 12 -12 12 h-100 q-12 0-12-12 v-134
+             q0-30 28-38 z" fill="url(#midage-male-top-haori__shell)"/>
+    <path d="M126 184 q0-26 30-28 h30 v188 h-44 q-16 0-16-16 z"
+          fill="url(#midage-male-top-haori__body)"/>
+    <path d="M274 184 q0-26 -30-28 h-30 v188 h44 q16 0 16-16 z"
+          fill="url(#midage-male-top-haori__body)"/>
+    <path d="M82 158 h54 v154 h-42 q-12 0-12-12 z" fill="url(#midage-male-top-haori__panel)"/>
+    <path d="M318 158 h-54 v154 h42 q12 0 12-12 z" fill="url(#midage-male-top-haori__panel)"/>
+  </g>
+
+  <!-- trim: broad flat collar band down each straight front edge, and across the nape -->
+  <path d="M168 156 l18 2 v186 h-16 z" fill="var(--c2, #55659F)"/>
+  <path d="M232 156 l-18 2 v186 h16 z" fill="var(--c2, #55659F)"/>
+  <path d="M168 156 q32-10 64 0 l0 11 q-32-9 -64 0 z" fill="var(--c2, #55659F)"/>
+  <path d="M178 158 q22 10 44 0 z" fill="var(--skin2, #E7B892)"/>
+  <!-- trim: a generic band of plain squares set into the collar, purely geometric -->
+  <g fill="var(--c3, #EFE7D2)" fill-opacity="0.7">
+    <rect x="175" y="240" width="7" height="7"/><rect x="175" y="258" width="7" height="7"/>
+    <rect x="175" y="276" width="7" height="7"/><rect x="175" y="294" width="7" height="7"/>
+    <rect x="218" y="240" width="7" height="7"/><rect x="218" y="258" width="7" height="7"/>
+    <rect x="218" y="276" width="7" height="7"/><rect x="218" y="294" width="7" height="7"/>
+  </g>
+
+  <!-- structural: the short chest cord, which is the only fastening a haori has -->
+  <path d="M186 214 q14 10 28 0" stroke="var(--c3, #EFE7D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="186" cy="214" r="5" fill="var(--c3, #EFE7D2)"/>
+  <circle cx="214" cy="214" r="5" fill="var(--c3, #EFE7D2)"/>
+  <path d="M200 220 q-3 14 2 26" stroke="var(--c3, #EFE7D2)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the sleeve slabs read as separate cloth, on a fold line and a weighted edge -->
+  <path d="M97 170 v134" stroke="var(--c2, #55659F)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M303 170 v134" stroke="var(--c2, #55659F)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M82 296 h54 v14 h-42 q-12 0-12-12 z" fill="var(--c3, #EFE7D2)" fill-opacity="0.7"/>
+  <path d="M318 296 h-54 v14 h42 q12 0 12-12 z" fill="var(--c3, #EFE7D2)" fill-opacity="0.7"/>
+  <path d="M136 158 v154" stroke="var(--c2, #55659F)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 158 v154" stroke="var(--c2, #55659F)" stroke-opacity="0.7" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: plain hem edge across both fronts -->
+  <path d="M132 336 h54" stroke="var(--c2, #55659F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M268 336 h-54" stroke="var(--c2, #55659F)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M140 180 q18-14 38-16" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 180 q-18-14 -38-16" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M92 174 h36" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 174 h36" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

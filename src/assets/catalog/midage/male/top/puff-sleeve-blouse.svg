@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Puff Sleeve Blouse" data-family="puff-sleeve-blouse" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: SHOULDER = puff (a balloon of cloth 72 units across springing off each shoulder
+       and collapsing into a 40 unit cuff band at y246) and VOLUME = fitted, a body cut in
+       to 100 units at the shoulder and skimming the torso below it. Against tee it differs on
+       shoulder (puff vs short set-in) and volume (fitted vs straight); against smock-top
+       on shoulder and volume again (cap sleeve and gathered there).
+       The balloon is outline geometry, not decoration: the widest cloth is x78 and x322
+       against arms that sit at x104 and x296. Drawn on the male torso, x128 to x272. -->
+  <defs>
+    <linearGradient id="midage-male-top-puff-sleeve-blouse__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #D4816F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-puff-sleeve-blouse__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F8B6AB)"/>
+      <stop offset="1" stop-color="var(--c2, #CE7765)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-puff-sleeve-blouse__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #FBEFE6)"/>
+      <stop offset="1" stop-color="var(--c3, #E4D2C6)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: one fitted body with narrowed shoulders and two gathered sleeve balloons -->
+  <g class="sp-shadow">
+    <path d="M150 158 H250 Q272 162 274 196 V300 Q274 314 256 314 H144 Q126 314 126 300 L126 196 Q128 162 150 158 Z"
+          fill="url(#midage-male-top-puff-sleeve-blouse__body)"/>
+    <path d="M150 160 Q100 150 84 198 Q74 234 102 254 L132 256 Q150 248 150 214 Z"
+          fill="url(#midage-male-top-puff-sleeve-blouse__puff)"/>
+    <path d="M250 160 Q300 150 316 198 Q326 234 298 254 L268 256 Q250 248 250 214 Z"
+          fill="url(#midage-male-top-puff-sleeve-blouse__puff)"/>
+
+    <!-- panel: a narrow pintucked centre front, which is what keeps the body reading slim -->
+    <rect x="186" y="180" width="28" height="126" rx="9" fill="var(--c2, #D4816F)" fill-opacity="0.4"/>
+
+    <!-- trim: the tight cuff bands the balloons collapse into -->
+    <rect x="96" y="244" width="40" height="24" rx="11" fill="url(#midage-male-top-puff-sleeve-blouse__cuff)"/>
+    <rect x="264" y="244" width="40" height="24" rx="11" fill="url(#midage-male-top-puff-sleeve-blouse__cuff)"/>
+
+    <!-- trim: round neck bound in the accent, over the bare notch of the throat -->
+    <path d="M174 158 Q200 184 226 158 Q224 176 200 180 Q176 176 174 158 Z"
+          fill="var(--c3, #FBEFE6)"/>
+    <path d="M182 160 Q200 176 218 160 Z" fill="var(--skin2, #E7B892)"/>
+  </g>
+
+  <!-- structural: gathers radiating from the shoulder head into the balloon -->
+  <g stroke="var(--c2, #D4816F)" stroke-opacity="0.5" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M146 168 Q108 182 96 218"/>
+    <path d="M148 190 Q124 202 114 236"/>
+    <path d="M254 168 Q292 182 304 218"/>
+    <path d="M252 190 Q276 202 286 236"/>
+  </g>
+  <!-- structural: gathers pulling into the cuff band -->
+  <g stroke="var(--c2, #D4816F)" stroke-opacity="0.45" stroke-width="3"
+     fill="none" stroke-linecap="round">
+    <path d="M100 234 Q106 242 110 250"/>
+    <path d="M122 236 Q122 244 122 250"/>
+    <path d="M300 234 Q294 242 290 250"/>
+    <path d="M278 236 Q278 244 278 250"/>
+  </g>
+
+  <!-- structural: pintuck seams and the narrow waist seams either side -->
+  <path d="M192 188 V298" stroke="var(--c3, #FBEFE6)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 188 V298" stroke="var(--c3, #FBEFE6)" stroke-opacity="0.7" stroke-width="2.5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 248 Q136 284 142 308" stroke="var(--c2, #D4816F)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 248 Q264 284 258 308" stroke="var(--c2, #D4816F)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight, across the chest and over each balloon -->
+  <path d="M160 190 q40 16 80 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M96 190 q-12 18 -8 38" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M304 190 q12 18 8 38" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

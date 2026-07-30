@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari (Nivi Drape)" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: the PALLU carried diagonally across the body and over the shoulder is the whole
+       shoulder line · CLOSURE is nothing but an unstitched wrap tucked at the waist and
+       hand-gathered into pleats · ankle hem · draped, not cut. Against wrap-dress it differs
+       on shoulder and closure; against maxi-dress on shoulder and closure.
+       Nivi drape: the pallu goes over the WEARER'S LEFT shoulder, which on this canvas is the
+       VIEWER'S RIGHT, then falls free behind. The fitted choli is painted through c2 and the
+       petticoat through c3, both drawn into this file so the player can contrast the three.
+       Everyday clothing. Plain cloth, generic geometric border only. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F8074)"/>
+      <stop offset="1" stop-color="var(--c2, #1D5B52)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #379186)"/>
+      <stop offset="1" stop-color="var(--c2, #1D5B52)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2A7568)"/>
+      <stop offset="1" stop-color="var(--c2, #164740)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C09456)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-sari__border" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 L15 9 L9 15 L3 9 Z" fill="none" stroke="var(--c2, #1D5B52)"
+            stroke-opacity="0.55" stroke-width="2.2"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-sari__clip">
+      <path d="M138 302 H262 L276 526 Q200 546 124 526 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the pallu falling free behind the wearer's left shoulder, past the hip -->
+    <path d="M252 190 L294 416 Q297 436 278 438 H254 Q243 436 242 420 L206 188 Z"
+          fill="url(#midage-male-onepiece-sari__pallu)"/>
+    <!-- the petticoat, drawn into this file and showing below the draped cloth -->
+    <path d="M150 306 H250 L258 548 Q200 562 142 548 Z"
+          fill="url(#midage-male-onepiece-sari__petticoat)"/>
+    <!-- the draped cloth, wrapped over the petticoat and tucked at the waist -->
+    <path d="M138 302 H262 L276 526 Q200 546 124 526 Z"
+          fill="url(#midage-male-onepiece-sari__cloth)"/>
+    <!-- short choli sleeves -->
+    <path d="M142 164 Q110 168 108 192 Q107 214 124 216 H148 Q146 192 142 164 Z"
+          fill="url(#midage-male-onepiece-sari__choli)"/>
+    <path d="M258 164 Q290 168 292 192 Q293 214 276 216 H252 Q254 192 258 164 Z"
+          fill="url(#midage-male-onepiece-sari__choli)"/>
+    <!-- the short fitted choli, ending above the waist -->
+    <path d="M136 188 Q136 158 168 156 H232 Q264 158 264 188 V234 Q200 252 136 234 Z"
+          fill="url(#midage-male-onepiece-sari__choli)"/>
+    <!-- the pallu crossing the body diagonally, up over the wearer's left shoulder -->
+    <path d="M124 314 Q118 346 150 360 L258 198 Q268 172 242 158 Z"
+          fill="url(#midage-male-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- pattern: a generic geometric border woven into the lower band of the cloth -->
+  <g clip-path="url(#midage-male-onepiece-sari__clip)">
+    <rect x="118" y="480" width="166" height="68" fill="var(--c3, #F7C873)" opacity="0.9"/>
+    <rect x="118" y="480" width="166" height="68"
+          fill="url(#midage-male-onepiece-sari__border)"/>
+  </g>
+
+  <!-- soft shading where the bare midriff meets the choli hem -->
+  <path d="M144 238 Q200 258 256 238 Q200 270 144 238 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.7"/>
+
+  <!-- trim: the same generic border run along the long edges of the pallu -->
+  <path d="M242 160 L256 200 L150 356" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M250 194 L292 418" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 430 Q268 440 290 428" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: hand-gathered centre-front pleats fanning down from the tuck -->
+  <g fill="none" stroke="var(--c2, #1D5B52)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M200 312 L158 520"/>
+    <path d="M200 312 L170 522"/>
+    <path d="M200 312 L182 524"/>
+    <path d="M200 312 L193 526"/>
+    <path d="M200 312 L207 526"/>
+    <path d="M200 312 L219 524"/>
+    <path d="M200 312 L231 522"/>
+    <path d="M200 312 L243 520"/>
+  </g>
+
+  <!-- trim: the waist tuck, and the border along the very hem -->
+  <path d="M140 304 Q200 322 260 304" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M128 518 Q200 540 272 518" stroke="var(--c2, #1D5B52)" stroke-opacity="0.5"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M148 540 Q200 554 252 540" stroke="var(--c3, #F7C873)" stroke-opacity="0.75"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: choli neckline and bound sleeve edges -->
+  <path d="M178 156 Q200 180 222 156 Q220 186 200 188 Q180 186 178 156 Z"
+        fill="var(--skin2, #E7B892)"/>
+  <path d="M176 156 Q200 184 224 156" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M112 210 H144" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 210 H288" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M150 198 q26 10 44 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

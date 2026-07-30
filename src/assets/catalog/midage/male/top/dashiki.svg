@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Dashiki" data-family="dashiki" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: SHOULDER = a short wide sleeve cut straight from the body, one T with no armhole
+       seam anywhere, and VOLUME = boxy to mid-thigh (hem y402, mid-thigh on this bundle is
+       y401) with short side vents opening at y376.
+       Also closure = pull-on over a wide V panel, hem = mid-thigh.
+       Against poncho it differs on shoulder (cut-in-one sleeve vs no sleeve division) and
+       volume (boxy vs flared); against tee on hem and volume.
+       LIVING CULTURAL DRESS. Plain cloth. The V panel border is a generic geometric band of
+       plain diamonds, not any particular community's woven design, and there is no
+       Adinkra symbol anywhere in this file. -->
+  <defs>
+    <linearGradient id="midage-male-top-dashiki__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #2F7D74)"/>
+      <stop offset="1" stop-color="var(--c2, #1E5A53)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-dashiki__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8A05C)"/>
+      <stop offset="1" stop-color="var(--c3, #C97E3C)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-dashiki__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 L18 11 L11 18 L4 11 Z" fill="none" stroke="var(--c2, #1E5A53)"
+            stroke-opacity="0.7" stroke-width="2.8" stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="midage-male-top-dashiki__vclip">
+      <path d="M158 164 h84 l-42 90 z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major form: one boxy T-shaped tunic, the sleeve cut straight from the body -->
+  <g class="sp-shadow">
+    <path d="M96 176 q0-12 14-12 h180 q14 0 14 12 v56 q0 12 -14 12 h-16 v132 h-8 v18
+             q0 8 -10 8 h-112 q-10 0-10-8 v-18 h-8 v-132 h-16 q-14 0-14-12 z"
+          fill="url(#midage-male-top-dashiki__cloth)"/>
+  </g>
+
+  <!-- panel blocking: the wide V panel at the neck, the identity of the garment -->
+  <path d="M146 164 h108 l-54 106 z" fill="var(--c2, #1E5A53)"/>
+  <path d="M158 164 h84 l-42 90 z" fill="url(#midage-male-top-dashiki__panel)"/>
+  <!-- pattern: plain diamond lattice inside the panel -->
+  <g clip-path="url(#midage-male-top-dashiki__vclip)">
+    <rect x="156" y="164" width="88" height="92" fill="url(#midage-male-top-dashiki__motif)"/>
+  </g>
+  <!-- trim: inner border line of the panel -->
+  <path d="M163 170 h74 l-37 74" stroke="var(--c2, #1E5A53)" stroke-opacity="0.75"
+        stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+
+  <!-- neck opening cut through the panel -->
+  <path d="M177 164 q23 24 46 0 q-4 18 -23 22 q-19-4 -23-22 z" fill="var(--c2, #1E5A53)"/>
+  <path d="M184 165 q16 18 32 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- trim: matching border band at each cut-in-one sleeve opening -->
+  <path d="M96 226 h36 q1 9 0 18 h-36 q-1-9 0-18 z" fill="var(--c2, #1E5A53)"/>
+  <path d="M304 226 h-36 q-1 9 0 18 h36 q1-9 0-18 z" fill="var(--c2, #1E5A53)"/>
+  <path d="M100 235 h28" stroke="var(--c3, #E8A05C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M272 235 h28" stroke="var(--c3, #E8A05C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: matching border band above the hem -->
+  <path d="M126 352 h148 v18 h-148 z" fill="var(--c2, #1E5A53)"/>
+  <path d="M130 361 h140" stroke="var(--c3, #E8A05C)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the short side vents -->
+  <path d="M138 380 v18" stroke="var(--c2, #1E5A53)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M262 380 v18" stroke="var(--c2, #1E5A53)" stroke-opacity="0.8" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- structural: the single fold line where a set-in armhole would have been -->
+  <path d="M130 248 v98" stroke="var(--c2, #1E5A53)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 248 v98" stroke="var(--c2, #1E5A53)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 246 h152" stroke="var(--c2, #1E5A53)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M112 190 q36 12 34-14" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M288 190 q-36 12 -34-14" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

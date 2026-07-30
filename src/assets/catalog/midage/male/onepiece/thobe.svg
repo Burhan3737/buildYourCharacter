@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Thobe" data-family="thobe" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: NARROW LONG SET-IN sleeve hung on a real armhole seam · band collar over a short
+       buttoned placket · ANKLE hem, the column ending y546 to y552 · straight, with no waist
+       at all. Against kaftan it differs on shoulder and hem, kaftan being a wide draped
+       T-sleeve cut in one with the body and stopping at the calf; against robe on closure
+       and hem; against an open-fronted abaya on closure and volume.
+       Everyday clothing. Plain cloth, a tonal self-stripe and generic geometric trim only. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-thobe__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6DCC6)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AB8C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-thobe__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E6DCC6)"/>
+      <stop offset="1" stop-color="var(--c2, #B3A483)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-thobe__selfstripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="16">
+      <path d="M4 0 V16" fill="none" stroke="var(--c2, #B9AB8C)" stroke-opacity="0.45"
+            stroke-width="2.2"/>
+      <path d="M11 0 V16" fill="none" stroke="var(--c2, #B9AB8C)" stroke-opacity="0.22"
+            stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-thobe__clip">
+      <path d="M136 200 Q136 160 176 158 H224 Q264 160 264 200 L284 546 Q200 558 116 546 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow long set-in sleeves, hung from an armhole seam at x140 and x260 -->
+    <path d="M144 162 Q104 166 100 190 L104 336 Q104 352 120 352 Q138 352 138 336 L140 198 Z"
+          fill="url(#midage-male-onepiece-thobe__sleeve)"/>
+    <path d="M256 162 Q296 166 300 190 L296 336 Q296 352 280 352 Q262 352 262 336 L260 198 Z"
+          fill="url(#midage-male-onepiece-thobe__sleeve)"/>
+    <!-- one straight ankle-length column, no waist anywhere down it -->
+    <path d="M136 200 Q136 160 176 158 H224 Q264 160 264 200 L284 546 Q200 558 116 546 Z"
+          fill="url(#midage-male-onepiece-thobe__column)"/>
+  </g>
+
+  <!-- pattern: a very fine tonal self-stripe woven into the cloth -->
+  <g clip-path="url(#midage-male-onepiece-thobe__clip)">
+    <rect x="112" y="154" width="176" height="404"
+          fill="url(#midage-male-onepiece-thobe__selfstripe)"/>
+  </g>
+
+  <!-- structural: the armhole seams that make this a set-in sleeve -->
+  <path d="M140 168 Q134 258 138 344" stroke="var(--c2, #B9AB8C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 168 Q266 258 262 344" stroke="var(--c2, #B9AB8C)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: band collar standing at the base of the neck, eighteen units deep -->
+  <path d="M172 152 Q200 166 228 152 V170 Q200 184 172 170 Z" fill="var(--c3, #6B5E44)"/>
+  <path d="M180 158 q20 10 40 0 v8 q-20 10 -40 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: short buttoned placket, y168 to y234, in the readable middle third -->
+  <rect x="188" y="168" width="24" height="66" rx="5" fill="var(--c3, #6B5E44)"/>
+  <rect x="192" y="168" width="16" height="66" rx="4" fill="var(--c1, #E6DCC6)"/>
+  <g fill="var(--c3, #6B5E44)">
+    <circle cx="200" cy="181" r="3.6"/>
+    <circle cx="200" cy="198" r="3.6"/>
+    <circle cx="200" cy="215" r="3.6"/>
+    <circle cx="200" cy="230" r="3.6"/>
+  </g>
+
+  <!-- trim: plain cuffs, the quiet fastening this stage asks for -->
+  <path d="M104 334 H138" stroke="var(--c3, #6B5E44)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M262 334 H296" stroke="var(--c3, #6B5E44)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the one chest pocket these are actually made with -->
+  <rect x="226" y="240" width="34" height="30" rx="4" fill="var(--c2, #B9AB8C)" fill-opacity="0.5"/>
+  <path d="M226 244 H260" stroke="var(--c3, #6B5E44)" stroke-opacity="0.7" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: long straight drape folds, uninterrupted by any waist -->
+  <g fill="none" stroke="var(--c2, #B9AB8C)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M164 282 L154 534"/>
+    <path d="M200 282 V548"/>
+    <path d="M236 282 L246 534"/>
+  </g>
+
+  <path d="M122 534 Q200 552 278 534" stroke="var(--c3, #6B5E44)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M154 212 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

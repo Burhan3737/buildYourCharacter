@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Onesie" data-family="sleep-onesie" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: long sleeve with a hood pooled flat behind the neck · full-length centre ZIP from
+       the throat to the crotch · FOOTED hem, the legs closing right over the foot and meeting
+       the ground line at y568 · softly bloused. It is a onepiece, not a bottom, so the closed
+       feet are drawn over this bundle's foot rects at x158 to x202 and x198 to x242.
+       Against boiler-suit it differs on hem and volume; against jumpsuit on hem and closure. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-sleep-onesie__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98C6A)"/>
+      <stop offset="1" stop-color="var(--c2, #A9613F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sleep-onesie__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D2825F)"/>
+      <stop offset="1" stop-color="var(--c2, #9B5637)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sleep-onesie__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D98C6A)"/>
+      <stop offset="1" stop-color="var(--c2, #A9613F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sleep-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E39B7A)"/>
+      <stop offset="1" stop-color="var(--c2, #9B5637)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-sleep-onesie__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <path d="M3 0 V12 M9 0 V12" fill="none" stroke="var(--c2, #A9613F)"
+            stroke-opacity="0.5" stroke-width="2.4"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the hood, worn down and lying flat as a roll of cloth behind the neck -->
+    <path d="M162 152 Q200 138 238 152 Q248 170 240 192 Q200 176 160 192 Q152 170 162 152 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__hood)"/>
+    <!-- footed legs: the suit closes over the whole foot and lands on the ground line -->
+    <path d="M144 316 H198 V518 Q206 526 206 546 Q206 568 188 568 H160 Q146 568 146 548 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__leg)"/>
+    <path d="M256 316 H202 V518 Q194 526 194 546 Q194 568 212 568 H240 Q254 568 254 548 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__leg)"/>
+    <!-- long sleeves, easy over the upper arm the way this stage is cut -->
+    <path d="M142 158 Q104 162 100 188 L102 332 Q102 350 120 350 H132 Q150 350 148 332 L146 194 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__sleeve)"/>
+    <path d="M258 158 Q296 162 300 188 L298 332 Q298 350 280 350 H268 Q250 350 252 332 L254 194 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__sleeve)"/>
+    <!-- softly bloused body, easing out over the hip before the leg seam -->
+    <path d="M130 196 Q130 158 166 158 H234 Q270 158 270 196 V290
+             Q276 322 246 328 H154 Q124 322 130 290 Z"
+          fill="url(#midage-male-onepiece-sleep-onesie__body)"/>
+  </g>
+
+  <!-- structural: the full-length centre zip, throat to crotch, with one quiet pull -->
+  <rect x="194" y="158" width="12" height="196" rx="5" fill="var(--c3, #FAF0DE)"/>
+  <path d="M200 162 V352" stroke="var(--c2, #A9613F)" stroke-opacity="0.65" stroke-width="2.6"
+        fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <rect x="193" y="248" width="14" height="22" rx="6" fill="var(--c2, #A9613F)"/>
+  <circle cx="200" cy="276" r="5" fill="var(--c3, #FAF0DE)"/>
+
+  <!-- trim: ribbed cuffs at the wrist, ribbed joins at the ankle -->
+  <rect x="99" y="330" width="50" height="22" rx="11" fill="var(--c3, #FAF0DE)"/>
+  <rect x="251" y="330" width="50" height="22" rx="11" fill="var(--c3, #FAF0DE)"/>
+  <rect x="99" y="330" width="50" height="22" rx="11"
+        fill="url(#midage-male-onepiece-sleep-onesie__rib)"/>
+  <rect x="251" y="330" width="50" height="22" rx="11"
+        fill="url(#midage-male-onepiece-sleep-onesie__rib)"/>
+  <path d="M148 516 H198" stroke="var(--c3, #FAF0DE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 516 H252" stroke="var(--c3, #FAF0DE)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: closed sole lines, so the foot pods read as part of the suit -->
+  <path d="M152 560 Q178 568 202 560" stroke="var(--c2, #A9613F)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M198 560 Q222 568 248 560" stroke="var(--c2, #A9613F)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: bound hood edge -->
+  <path d="M162 154 Q200 140 238 154" stroke="var(--c3, #FAF0DE)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the gathers that make the blouse over the hip -->
+  <g fill="none" stroke="var(--c2, #A9613F)" stroke-opacity="0.4" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M152 292 q8 14 2 28"/>
+    <path d="M174 294 q8 14 2 28"/>
+    <path d="M226 294 q-8 14 -2 28"/>
+    <path d="M248 292 q-8 14 -2 28"/>
+  </g>
+
+  <path d="M154 206 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

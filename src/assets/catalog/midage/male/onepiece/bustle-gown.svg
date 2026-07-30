@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bustle Gown" data-family="bustle-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: VOLUME = front to back asymmetric, a large draped mass thrown out sharply behind
+       the hip; HEM = a narrow flat front skirt straight to the ground at y568 with the bustle
+       falling past it into a short train.
+       MEASURED PROJECTION: the hip on this bundle is the 120 unit block at x140 to x260. The
+       bustle's drawn outer edge reaches x318 at y368, so the mass projects 58 units behind the
+       hip line (318 minus 260), over the 50 unit floor; the swagged belly of the drape carries
+       it a further four units out at its widest.
+       This is the only front to back asymmetric outline in the slot. Against bridal-gown it
+       differs on hem and volume; against ball-gown on shoulder and volume. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-bustle-gown__bustle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6272B0)"/>
+      <stop offset="1" stop-color="var(--c2, #3E4A7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-bustle-gown__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6F7FBB)"/>
+      <stop offset="1" stop-color="var(--c2, #455285)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-bustle-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6F7FBB)"/>
+      <stop offset="1" stop-color="var(--c2, #3E4A7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-bustle-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6272B0)"/>
+      <stop offset="1" stop-color="var(--c2, #3E4A7C)"/>
+    </linearGradient>
+    <clipPath id="midage-male-onepiece-bustle-gown__bustleclip">
+      <path d="M234 294 Q298 310 318 368 Q332 448 312 514 Q300 550 280 566 Q272 570 288 570
+               H326 Q338 570 334 554 Q346 460 336 386 Q320 314 262 290 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the bustle: a big draped mass thrown out behind the hip, falling to a short train -->
+    <path d="M234 294 Q298 310 318 368 Q332 448 312 514 Q300 550 280 566 Q272 570 288 570
+             H326 Q338 570 334 554 Q346 460 336 386 Q320 314 262 290 Z"
+          fill="url(#midage-male-onepiece-bustle-gown__bustle)"/>
+    <!-- narrow flat front skirt, straight off the waist to the ground -->
+    <path d="M152 300 H246 Q252 434 248 568 H150 Q146 434 152 300 Z"
+          fill="url(#midage-male-onepiece-bustle-gown__front)"/>
+    <!-- long fitted sleeves, a little full over the upper arm and close at the wrist -->
+    <path d="M140 154 Q96 158 92 194 Q90 222 100 234 L100 336 Q100 356 118 358
+             Q136 356 136 336 L136 238 Q144 222 140 194 Z"
+          fill="url(#midage-male-onepiece-bustle-gown__sleeve)"/>
+    <path d="M260 154 Q304 158 308 194 Q310 222 300 234 L300 336 Q300 356 282 358
+             Q264 356 264 336 L264 238 Q256 222 260 194 Z"
+          fill="url(#midage-male-onepiece-bustle-gown__sleeve)"/>
+    <!-- high closed neckline over a tightly fitted bodice dipping to a point at the waist -->
+    <path d="M134 196 Q136 158 168 152 H232 Q264 158 266 196 Q272 246 264 282
+             Q258 306 240 312 L200 320 L160 312 Q142 306 136 282 Q128 246 134 196 Z"
+          fill="url(#midage-male-onepiece-bustle-gown__bodice)"/>
+    <!-- trim: pointed waist band, narrow across the flat front -->
+    <path d="M132 292 Q200 312 268 292 L270 306 Q200 326 130 306 Z" fill="var(--c3, #E4E0D2)"/>
+    <!-- trim: the bustle's leading edge, bound in the accent -->
+    <path d="M236 296 Q304 318 324 390 Q340 474 326 558" stroke="var(--c3, #E4E0D2)"
+          stroke-opacity="0.75" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- structural: five swagged drape folds across the bustle mass -->
+  <g clip-path="url(#midage-male-onepiece-bustle-gown__bustleclip)" fill="none"
+     stroke="var(--c2, #3E4A7C)" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round">
+    <path d="M238 308 Q292 326 326 362"/>
+    <path d="M240 348 Q298 370 332 408"/>
+    <path d="M242 398 Q302 422 334 460"/>
+    <path d="M244 452 Q298 478 328 514"/>
+    <path d="M246 506 Q292 530 318 558"/>
+  </g>
+
+  <!-- high closed collar at the base of the neck -->
+  <path d="M172 134 Q200 148 228 134 L232 160 Q200 174 168 160 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M180 141 q20 10 40 0 v9 q-20 10 -40 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: a quiet centre front button line up the closed bodice -->
+  <g fill="var(--c3, #E4E0D2)">
+    <circle cx="200" cy="188" r="4.2"/>
+    <circle cx="200" cy="216" r="4.2"/>
+    <circle cx="200" cy="244" r="4.2"/>
+    <circle cx="200" cy="272" r="4.2"/>
+  </g>
+
+  <!-- flat front skirt panelling, deliberately plain against the bustle -->
+  <g fill="none" stroke="var(--c2, #3E4A7C)" stroke-opacity="0.35" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M176 322 L174 558"/>
+    <path d="M216 322 L218 558"/>
+  </g>
+  <path d="M152 550 H244" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.7" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuffs and the upper chest highlight -->
+  <path d="M100 340 H136" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 340 H300" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M150 206 q34 12 66 4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

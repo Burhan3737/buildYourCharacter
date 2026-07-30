@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bolero" data-family="bolero" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HEM = cropped high above the natural waist (front hem y254, waist is y300 to y316)
+       and CLOSURE = open front with curved sweeping edges and no fastening at all.
+       Also shoulder = three-quarter sleeve ending y300, volume = fitted.
+       Against cardigan it differs on hem (cropped vs past hip) and shoulder (three-quarter
+       vs long); against crop-top on closure (open vs closed) and shoulder.
+       The bare chest and midriff are resolved as skin, painted through the body ramp. -->
+  <defs>
+    <linearGradient id="midage-male-top-bolero__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A85E72)"/>
+      <stop offset="1" stop-color="var(--c2, #7C4053)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-bolero__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #A85E72)"/>
+      <stop offset="1" stop-color="var(--c2, #6B3646)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-bolero__bind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F2D9A8)"/>
+      <stop offset="1" stop-color="var(--c3, #D8BC85)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the open chest and midriff, resolved as skin so the opening is never a hole -->
+  <path d="M170 156 h60 q-3 52 0 104 h-60 q3-52 0-104 z" fill="var(--skin1, #F7D2B0)"/>
+  <path d="M180 200 q20 14 40 0 q-4 38 -20 48 q-16-10 -20-48 z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.55"/>
+
+  <!-- major forms: two curved cropped fronts and two three-quarter sleeves -->
+  <g class="sp-shadow">
+    <path d="M100 164 h40 q4 70 -2 136 l-38 0 q-8-2 -8-14 z"
+          fill="url(#midage-male-top-bolero__sleeve)"/>
+    <path d="M300 164 h-40 q-4 70 2 136 l38 0 q8-2 8-14 z"
+          fill="url(#midage-male-top-bolero__sleeve)"/>
+    <path d="M124 212 q2-56 46-56 q20 4 24 24 q-24 32 -26 82 l-26 2 q-20-4 -18-26 z"
+          fill="url(#midage-male-top-bolero__panel)"/>
+    <path d="M276 212 q-2-56 -46-56 q-20 4 -24 24 q24 32 26 82 l26 2 q20-4 18-26 z"
+          fill="url(#midage-male-top-bolero__panel)"/>
+  </g>
+
+  <!-- trim: contrast binding chasing the curved front edges the whole way round -->
+  <path d="M194 180 q-24 32 -26 82 l-13 1 q3-54 27-92 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <path d="M206 180 q24 32 26 82 l13 1 q-3-54 -27-92 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <path d="M170 156 q20 4 24 24 l-11-6 q-4-9 -15-11 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <path d="M230 156 q-20 4 -24 24 l11-6 q4-9 15-11 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <!-- trim: the cropped hem binding, which is where the eye reads the crop -->
+  <path d="M124 244 q22 12 44 10 l0 9 q-24 3 -46-7 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <path d="M276 244 q-22 12 -44 10 l0 9 q24 3 46-7 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <!-- trim: three-quarter sleeve cuffs, the length marker -->
+  <path d="M94 282 h46 q1 10 0 18 h-46 q-2-9 0-18 z" fill="url(#midage-male-top-bolero__bind)"/>
+  <path d="M306 282 h-46 q-1 10 0 18 h46 q2-9 0-18 z" fill="url(#midage-male-top-bolero__bind)"/>
+
+  <!-- structural: princess seams giving the short fronts their curve -->
+  <path d="M148 178 q-6 40 -4 74" stroke="var(--c2, #7C4053)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M252 178 q6 40 4 74" stroke="var(--c2, #7C4053)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- structural: set-in shoulder seams over the sleeve heads -->
+  <path d="M140 186 q10-22 32-28" stroke="var(--c2, #7C4053)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M260 186 q-10-22 -32-28" stroke="var(--c2, #7C4053)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M136 186 q20 16 40 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 186 q-20 16 -40 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

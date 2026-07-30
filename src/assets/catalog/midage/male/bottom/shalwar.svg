@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Shalwar" data-family="shalwar" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot: plain cloth with a fine
+       tonal self stripe, generic geometric trim only, no community specific woven
+       design.
+       axes: leg width = ENORMOUSLY FULL through the hip and thigh and then narrowing
+       sharply to a close ankle band, a triangle rather than a tube · hem treatment =
+       a plain gathered ankle band that the whole fullness collapses into.
+       MEASURED FULLNESS: the cloth spans 184 units across at y428, from x108 to x292.
+       Against the 120 unit hip at x140 to x260 that is 140 minus 108 = 32 units clear
+       on the left and 292 minus 260 = 32 on the right. Against the outer thigh, the
+       leg rects' outer edges at x166 and x234, it is 166 minus 108 = 58 units clear
+       on the left and 292 minus 234 = 58 on the right.
+       The upper flare is held in to x138 and x262 at y370, which clears the hands
+       (circles r17 at (118,346) and (282,346), occupying x101 to x135 and x265 to
+       x299 between y329 and y363) by 3 units on each side. The cloth hugs in above
+       y370 and only opens out below it.
+       Against joggers (natural rise, tapered leg, ribbed cuff) it differs on leg
+       width and on the deeply pleated drawstring rise. Against wide-leg (high rise,
+       straight column, hem breaking over the shoe) it differs on leg width and hem. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-shalwar__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E0CFA4)"/>
+      <stop offset="1" stop-color="var(--c2, #B3A075)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-shalwar__cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B3A075)"/>
+      <stop offset="1" stop-color="var(--c1, #E0CFA4)"/>
+    </linearGradient>
+    <pattern id="midage-male-bottom-shalwar__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="3.2" height="18" fill="var(--c2, #B3A075)"/>
+      <rect x="9" y="0" width="1.4" height="18" fill="var(--c2, #B3A075)" opacity="0.6"/>
+    </pattern>
+    <clipPath id="midage-male-bottom-shalwar__clip">
+      <path d="M148 306 H252 Q262 336 262 370 Q292 396 292 428 Q292 486 250 522 H208
+               L210 430 L200 396 L190 430 L192 522 H150 Q108 486 108 428 Q108 396 138 370
+               Q138 336 148 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- one major form: the triangle of cloth, crotch notched up between the ankles,
+       with the self stripe, the drawstring waistband and the ankle bands inside it -->
+  <g class="sp-shadow">
+    <path d="M148 306 H252 Q262 336 262 370 Q292 396 292 428 Q292 486 250 522 H208
+             L210 430 L200 396 L190 430 L192 522 H150 Q108 486 108 428 Q108 396 138 370
+             Q138 336 148 306 Z"
+          fill="url(#midage-male-bottom-shalwar__cloth)"/>
+
+    <!-- pattern: fine tonal self stripe over the gradient, clipped to the cloth -->
+    <g clip-path="url(#midage-male-bottom-shalwar__clip)">
+      <rect x="106" y="304" width="188" height="222" fill="url(#midage-male-bottom-shalwar__stripe)"
+            opacity="0.38"/>
+    </g>
+
+    <!-- trim: the drawstring waistband -->
+    <rect x="146" y="304" width="108" height="20" rx="9" fill="var(--c2, #B3A075)"/>
+    <!-- trim: plain close ankle bands, the hem the fullness collapses into -->
+    <rect x="149" y="510" width="45" height="26" rx="11" fill="url(#midage-male-bottom-shalwar__cuff)"/>
+    <rect x="206" y="510" width="45" height="26" rx="11" fill="url(#midage-male-bottom-shalwar__cuff)"/>
+  </g>
+
+  <!-- structural: deep pleats radiating from the drawstring waist into the fullness -->
+  <g stroke="var(--c2, #B3A075)" stroke-opacity="0.62" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M156 328 Q130 380 122 434"/>
+    <path d="M170 328 Q150 386 144 456"/>
+    <path d="M184 328 Q176 392 172 486"/>
+    <path d="M244 328 Q270 380 278 434"/>
+    <path d="M230 328 Q250 386 256 456"/>
+    <path d="M216 328 Q224 392 228 486"/>
+  </g>
+
+  <!-- structural: the drawstring itself, two ends and two aglets -->
+  <path d="M186 322 Q192 342 181 356" stroke="var(--c3, #5A4030)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 322 Q208 342 219 356" stroke="var(--c3, #5A4030)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <rect x="176" y="352" width="9" height="16" rx="4" fill="var(--c3, #5A4030)"/>
+  <rect x="215" y="352" width="9" height="16" rx="4" fill="var(--c3, #5A4030)"/>
+
+  <!-- trim: a plain bound line across each ankle band -->
+  <path d="M154 517 H190" stroke="var(--c3, #5A4030)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+  <path d="M210 517 H246" stroke="var(--c3, #5A4030)" stroke-width="2.6" stroke-linecap="round"
+        fill="none" opacity="0.7"/>
+
+  <path d="M158 320 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

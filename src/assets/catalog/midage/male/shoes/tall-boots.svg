@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: TOE SHAPE = a tapered toe, the foot mass narrowing to a low point at x146 and
+       x254 rather than staying round and full · SOLE DEPTH = a thin stacked sole, 9 units
+       from y561 to the ground line at y570, with a single stack line across it.
+       On shaft height, say it plainly: this shaft tops out at y456, just below this
+       bundle's knee anchor at y450, but midage wellies is already drawn at y448. That is
+       8 units between them, far under the 40 unit practical floor, so SHAFT HEIGHT CANNOT
+       SEPARATE THIS PAIR ON THIS BUNDLE and the two axes above carry it instead: tapered
+       toe against the rounded rubber toe of wellies, and a thin stacked sole against its
+       thick moulded rubber one. The other tall shafts in this bundle sit lower still,
+       boots at y478 and high-tops at y500. Fastening is none at all, just a small pull
+       tab. Shafts cover the midage leg rects x166 to 196 and x204 to 234; feet x158 to 202
+       and x198 to 242, y544 to 570. -->
+  <defs>
+    <linearGradient id="midage-male-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #574055)"/>
+      <stop offset="1" stop-color="var(--c2, #382636)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-shoes-tall-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #574055)"/>
+      <stop offset="1" stop-color="var(--c2, #382636)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: smooth shaft to just below the knee, then the tapered foot and stacked sole -->
+    <path d="M158 464 Q158 456 167 456 H197 Q204 456 204 464 L202 522 Q201 534 199 544 H165
+             Q162 534 161 522 Z" fill="url(#midage-male-shoes-tall-boots__shaft)"/>
+    <path d="M162 540 H202 Q205 546 205 554 V560 Q205 566 198 566 H158 Q149 566 147 559
+             Q146 553 152 550 Q158 547 162 540 Z" fill="url(#midage-male-shoes-tall-boots__foot)"/>
+    <path d="M147 561 H206 Q207 566 204 570 H153 Q146 566 147 561 Z" fill="var(--c2, #382636)"/>
+    <!-- right -->
+    <path d="M242 464 Q242 456 233 456 H203 Q196 456 196 464 L198 522 Q199 534 201 544 H235
+             Q238 534 239 522 Z" fill="url(#midage-male-shoes-tall-boots__shaft)"/>
+    <path d="M238 540 H198 Q195 546 195 554 V560 Q195 566 202 566 H242 Q251 566 253 559
+             Q254 553 248 550 Q242 547 238 540 Z" fill="url(#midage-male-shoes-tall-boots__foot)"/>
+    <path d="M253 561 H194 Q193 566 196 570 H247 Q254 566 253 561 Z" fill="var(--c2, #382636)"/>
+
+    <!-- trim: the stack line across the thin sole -->
+    <path d="M150 565 H203" stroke="var(--c3, #D8C4A2)" stroke-width="2.8"
+          stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M250 565 H197" stroke="var(--c3, #D8C4A2)" stroke-width="2.8"
+          stroke-linecap="round" fill="none" opacity="0.6"/>
+    <!-- structural: one small pull tab per boot, the only hardware anywhere on it -->
+    <path d="M162 446 h12 q4 0 4 5 v10 h-16 Z" fill="var(--c3, #D8C4A2)"/>
+    <path d="M238 446 h-12 q-4 0 -4 5 v10 h16 Z" fill="var(--c3, #D8C4A2)"/>
+  </g>
+
+  <!-- a soft ankle crease and a long shaft highlight, no lacing and no seams -->
+  <path d="M164 512 Q181 518 199 512" stroke="var(--c2, #382636)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M236 512 Q219 518 201 512" stroke="var(--c2, #382636)" stroke-opacity="0.55"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M170 474 V530" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 474 V530" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M160 550 q19 6 36 1" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 550 q-19 6 -36 1" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

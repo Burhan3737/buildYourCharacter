@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crop Top" data-family="crop-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HEM = cropped well above the natural waist (hem y260, and the waist on this
+       bundle is y300 to y316, so the midriff is bare from y260 down to the hip at y316)
+       and VOLUME = fitted, the sides drawing in from x124 at the chest to x128 at the hem.
+       Also shoulder = short set-in, closure = closed crew.
+       Against tee it differs on hem (cropped vs hip) and volume (fitted vs straight);
+       against bolero on closure (closed vs open) and shoulder. -->
+  <defs>
+    <linearGradient id="midage-male-top-crop-top__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #D19E44)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-crop-top__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #C79238)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-crop-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4A3C24)"/>
+      <stop offset="1" stop-color="var(--c3, #302517)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two short set-in sleeves and one short fitted body -->
+  <g class="sp-shadow">
+    <path d="M136 164 h-28 q-10 0 -11 12 l-2 50 q-1 12 10 14 l26 6 q11 1 11-11 z"
+          fill="url(#midage-male-top-crop-top__sleeve)"/>
+    <path d="M264 164 h28 q10 0 11 12 l2 50 q1 12 -10 14 l-26 6 q-11 1 -11-11 z"
+          fill="url(#midage-male-top-crop-top__sleeve)"/>
+    <path d="M124 200 q0-42 42-42 h68 q42 0 42 42 l-4 44 q0 16 -16 16 h-112 q-16 0-16-16 z"
+          fill="url(#midage-male-top-crop-top__body)"/>
+  </g>
+
+  <!-- panel blocking: the contrast shoulder yoke, the upper block of the two-part split -->
+  <path d="M124 200 q0-42 42-42 h68 q42 0 42 42 l0 14 q-76 18 -152 0 z"
+        fill="url(#midage-male-top-crop-top__band)"/>
+  <path d="M124 214 q76 18 152 0" stroke="var(--c1, #F7C873)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the deep hem band, which is where the crop announces itself -->
+  <path d="M128 236 q72 16 144 0 l-1 8 q0 16 -16 16 h-110 q-16 0-16-16 z"
+        fill="url(#midage-male-top-crop-top__band)"/>
+  <path d="M128 236 q72 16 144 0" stroke="var(--c1, #F7C873)" stroke-opacity="0.45"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- trim: matching sleeve tipping -->
+  <path d="M95 216 l40 6 l-1 15 l-40-7 z" fill="var(--c3, #4A3C24)"/>
+  <path d="M305 216 l-40 6 l1 15 l40-7 z" fill="var(--c3, #4A3C24)"/>
+  <!-- trim: crew neckband, with the opening cut back to skin -->
+  <path d="M172 158 q28 24 56 0 q-4 26 -28 26 q-24 0-28-26 z" fill="var(--c3, #4A3C24)"/>
+  <path d="M181 159 q19 16 38 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: the fitted side seams that pull the hem in -->
+  <path d="M129 206 q-3 22 0 40" stroke="var(--c2, #D19E44)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M271 206 q3 22 0 40" stroke="var(--c2, #D19E44)" stroke-opacity="0.55"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M148 190 q52 20 104 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

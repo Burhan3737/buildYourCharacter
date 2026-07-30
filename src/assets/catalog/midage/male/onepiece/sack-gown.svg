@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sack Gown" data-family="sack-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: elbow-length PAGODA sleeve ending in three stacked ruffle cuffs · robe front
+       hanging OPEN over a triangular stomacher · ground hem at y568 · held out WIDE side to
+       side and flat front to back, with two box pleats falling loose from the shoulders
+       at the back. The skirt hem spans x78 to x322; the widest point below the waist on
+       this bundle is the 120 unit hip at x140 to x260, so the skirt stands 62 units clear
+       per side, well over the 40 unit floor. Against party-dress it differs on shoulder
+       and volume; against robe on shoulder and hem. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-sack-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #5E5479)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sack-gown__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #978BB3)"/>
+      <stop offset="1" stop-color="var(--c2, #5E5479)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sack-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8B7FA8)"/>
+      <stop offset="1" stop-color="var(--c2, #564C6E)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-sack-gown__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #EDE6D6)"/>
+      <stop offset="1" stop-color="var(--c2, #B3A9BE)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the robe skirt, held wide side to side and kept flat front to back -->
+    <path d="M150 262 H250 Q298 388 314 502 Q322 552 322 568 H78 Q78 552 86 502
+             Q102 388 150 262 Z"
+          fill="url(#midage-male-onepiece-sack-gown__skirt)"/>
+    <!-- elbow-length pagoda sleeves, belling from a close top to a wide mouth past y257 -->
+    <path d="M140 160 Q108 164 104 190 L86 246 Q80 270 102 272 H148 Q166 270 158 246 L144 194 Z"
+          fill="url(#midage-male-onepiece-sack-gown__sleeve)"/>
+    <path d="M260 160 Q292 164 296 190 L314 246 Q320 270 298 272 H252 Q234 270 242 246 L256 194 Z"
+          fill="url(#midage-male-onepiece-sack-gown__sleeve)"/>
+    <!-- panel blocking: the robe front, hanging open on each side of the stomacher -->
+    <path d="M132 192 Q132 158 166 158 H196 L186 276 H136 Z"
+          fill="url(#midage-male-onepiece-sack-gown__front)"/>
+    <path d="M268 192 Q268 158 234 158 H204 L214 276 H264 Z"
+          fill="url(#midage-male-onepiece-sack-gown__front)"/>
+  </g>
+
+  <!-- structural: two box pleats falling loose from the shoulders at the back -->
+  <g fill="var(--c2, #5E5479)" fill-opacity="0.55">
+    <path d="M174 160 H186 L194 562 H166 Z"/>
+    <path d="M226 160 H214 L206 562 H234 Z"/>
+  </g>
+
+  <!-- panel blocking: the petticoat wedge showing through the open robe front -->
+  <path d="M188 300 H212 Q240 448 256 568 H144 Q160 448 188 300 Z"
+        fill="url(#midage-male-onepiece-sack-gown__wedge)"/>
+  <g fill="none" stroke="var(--c2, #5E5479)" stroke-opacity="0.3" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M192 328 L170 558"/>
+    <path d="M208 328 L230 558"/>
+  </g>
+
+  <!-- the triangular stomacher, pinned in across the chest and down to a point -->
+  <path d="M178 164 H222 L206 300 Q200 310 194 300 Z" fill="var(--c3, #EDE6D6)"/>
+  <g fill="none" stroke="var(--c2, #5E5479)" stroke-opacity="0.5" stroke-width="3"
+     stroke-linecap="round">
+    <path d="M182 186 H218"/>
+    <path d="M184 212 H216"/>
+    <path d="M187 238 H213"/>
+    <path d="M190 264 H210"/>
+  </g>
+  <path d="M178 164 H222" stroke="var(--c3, #EDE6D6)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M182 158 q18 12 36 0 v7 q-18 12 -36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- trim: three stacked ruffle cuffs at each pagoda mouth -->
+  <g fill="var(--c3, #EDE6D6)">
+    <path d="M88 250 H156 q-11 16 -23 0 q-11 16 -23 0 q-11 16 -22 0 Z"/>
+    <path d="M90 262 H154 q-10 16 -21 0 q-10 16 -21 0 q-11 16 -22 0 Z"/>
+    <path d="M94 274 H152 q-10 16 -20 0 q-10 16 -19 0 q-9 16 -19 0 Z"/>
+    <path d="M244 250 H312 q-11 16 -23 0 q-11 16 -23 0 q-11 16 -22 0 Z"/>
+    <path d="M246 262 H310 q-10 16 -21 0 q-10 16 -21 0 q-11 16 -22 0 Z"/>
+    <path d="M248 274 H308 q-10 16 -20 0 q-10 16 -19 0 q-9 16 -19 0 Z"/>
+  </g>
+
+  <!-- trim: the open robe edges, bound down each side of the stomacher -->
+  <path d="M194 158 L186 278" stroke="var(--c3, #EDE6D6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M206 158 L214 278" stroke="var(--c3, #EDE6D6)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: hem band across the wide flat skirt -->
+  <path d="M82 542 Q200 570 318 542" stroke="var(--c3, #EDE6D6)" stroke-opacity="0.85"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <g fill="none" stroke="var(--c2, #5E5479)" stroke-opacity="0.35" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M142 312 L104 550"/>
+    <path d="M258 312 L296 550"/>
+  </g>
+  <path d="M148 186 q24 10 42 2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 188 q24 8 42 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sarong" data-family="sarong" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot: plain cloth with a fine
+       tonal self stripe and a plain bound edge, generic geometric trim only, no
+       community specific woven design.
+       axes: hem treatment = ASYMMETRIC, a length of cloth knotted at one hip with a
+       visible overlap edge running the full drop of the viewer left leg and the
+       overlapping corner hanging 10 units lower than the rest of the hem · leg length
+       = MID CALF, the hem sitting on this bundle's mid calf anchor y499 (sides y496,
+       centre dipping to y502), 42 units of bare shin above the foot at y544.
+       Against maxi-skirt (ankle hem, symmetric bound edge) it differs on leg length
+       and hem treatment. Against skirt (knee length, symmetric flared panel) it
+       differs on leg length and on the asymmetric wrap.
+       The hip knot is kept inboard of x132 so it does not sit over the hand circles
+       at (118,346) and (282,346), which occupy x101 to x135 and x265 to x299. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-sarong__wrap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C48A5A)"/>
+      <stop offset="1" stop-color="var(--c2, #96603A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-sarong__over" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D69C6C)"/>
+      <stop offset="1" stop-color="var(--c2, #96603A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-sarong__knot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D69C6C)"/>
+      <stop offset="1" stop-color="var(--c2, #96603A)"/>
+    </linearGradient>
+    <pattern id="midage-male-bottom-sarong__stripe" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <rect x="0" y="0" width="18" height="3" fill="var(--c3, #F4E7C9)"/>
+      <rect x="0" y="9" width="18" height="1.4" fill="var(--c3, #F4E7C9)" opacity="0.6"/>
+    </pattern>
+    <clipPath id="midage-male-bottom-sarong__clip">
+      <path d="M140 310 H260 Q272 402 274 496 Q200 508 126 496 Q128 402 140 310 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- major forms: the wrapped underlayer, the overlapping panel proud of it down the
+       viewer left leg, and the hip knot; the stripe texture sits inside the form -->
+  <g class="sp-shadow">
+    <path d="M140 310 H260 Q272 402 274 496 Q200 508 126 496 Q128 402 140 310 Z"
+          fill="url(#midage-male-bottom-sarong__wrap)"/>
+
+    <!-- pattern: fine tonal self stripe over the gradient, clipped to the wrap only,
+         so the overlap edge stays the strongest line in the outline -->
+    <g clip-path="url(#midage-male-bottom-sarong__clip)">
+      <rect x="120" y="306" width="160" height="208" fill="url(#midage-male-bottom-sarong__stripe)"
+            opacity="0.4"/>
+    </g>
+
+    <path d="M128 306 Q124 400 126 508 Q150 515 174 508 Q162 400 150 306 Z"
+          fill="url(#midage-male-bottom-sarong__over)"/>
+    <path d="M140 294 Q158 284 176 294 Q188 306 177 320 Q158 330 143 320 Q132 308 140 294 Z"
+          fill="url(#midage-male-bottom-sarong__knot)"/>
+  </g>
+
+  <!-- trim: the overlap edge, bound so it reads as a real edge -->
+  <path d="M150 312 Q162 402 174 504" stroke="var(--c3, #F4E7C9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: plain bound hem, stepped where the overlapping corner hangs lower -->
+  <path d="M176 504 Q220 508 268 496" stroke="var(--c3, #F4E7C9)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M128 506 Q150 513 172 507" stroke="var(--c3, #F4E7C9)" stroke-width="5"
+        fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- structural: the wrap fold at the waist and two long drape folds -->
+  <path d="M138 318 H260" stroke="var(--c2, #96603A)" stroke-width="6" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+  <g stroke="var(--c2, #96603A)" stroke-opacity="0.42" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M212 332 Q216 408 220 492"/>
+    <path d="M242 332 Q248 408 254 490"/>
+  </g>
+  <path d="M142 300 Q156 294 168 302" stroke="var(--c2, #96603A)" stroke-width="3"
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <path d="M182 318 q38 10 74 -2" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

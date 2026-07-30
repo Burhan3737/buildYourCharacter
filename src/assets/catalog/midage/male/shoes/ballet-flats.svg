@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ballet Flats" data-family="ballet-flats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: FASTENING = none at all, no strap, no buckle, no bow, nothing crossing the
+       instep · SOLE DEPTH = a 7 unit band under a 26 unit upper, barely thicker than the
+       upper itself. The very low scooped topline drops to y558 at midfoot and leaves the
+       whole instep bare from y544 down. Nearest sibling in this bundle is mary-janes,
+       which has an instep strap with a buckle over a 12 unit sole and a chunky round toe:
+       this pair differs on fastening and on sole depth. Against heels it differs on
+       fastening and sole depth again. Feet are x158 to 202 and x198 to 242, y544 to 570,
+       ground line y570. -->
+  <defs>
+    <linearGradient id="midage-male-shoes-ballet-flats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E9C6B5)"/>
+      <stop offset="1" stop-color="var(--c2, #B4877A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-shoes-ballet-flats__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B4877A)"/>
+      <stop offset="1" stop-color="var(--c3, #5C4048)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: the barely there sole, then the scooped upper over it -->
+    <path d="M152 563 H208 Q208 570 202 570 H158 Q152 570 152 563 Z"
+          fill="url(#midage-male-shoes-ballet-flats__sole)"/>
+    <path d="M154 560 Q154 547 166 544 Q179 541 185 554 Q190 564 199 559 Q206 556 206 563
+             Q206 570 200 570 H160 Q154 570 154 560 Z"
+          fill="url(#midage-male-shoes-ballet-flats__upper)"/>
+    <!-- right -->
+    <path d="M248 563 H192 Q192 570 198 570 H242 Q248 570 248 563 Z"
+          fill="url(#midage-male-shoes-ballet-flats__sole)"/>
+    <path d="M246 560 Q246 547 234 544 Q221 541 215 554 Q210 564 201 559 Q194 556 194 563
+             Q194 570 200 570 H240 Q246 570 246 560 Z"
+          fill="url(#midage-male-shoes-ballet-flats__upper)"/>
+
+    <!-- trim: the bound topline, tracing the scoop so the low edge reads at tray size -->
+    <path d="M156 556 Q158 547 167 546 Q178 543 185 555 Q190 563 198 559 Q204 557 205 562"
+          stroke="var(--c3, #5C4048)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <path d="M244 556 Q242 547 233 546 Q222 543 215 555 Q210 563 202 559 Q196 557 195 562"
+          stroke="var(--c3, #5C4048)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    <!-- structural: the rounded toe seam, the only construction line on the shoe -->
+    <path d="M159 562 q10 5 19 2" stroke="var(--c2, #B4877A)" stroke-width="2.8"
+          fill="none" stroke-linecap="round"/>
+    <path d="M241 562 q-10 5 -19 2" stroke="var(--c2, #B4877A)" stroke-width="2.8"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <path d="M160 552 q15 7 28 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 552 q-15 7 -28 2" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

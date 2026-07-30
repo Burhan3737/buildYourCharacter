@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wedges" data-family="wedges" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: SOLE DEPTH = one continuous solid wedge, 14 units deep at the toe and 40 at the
+       heel, filled right down to a flat underside on the ground line at y570 with NO GAP
+       BENEATH THE ARCH anywhere along it · FASTENING = an ankle strap with a small buckle
+       crossing above the open instep. Nearest sibling here is heels, which lifts on a
+       narrow heel column with clear air under the arch and has no visible fastening: this
+       pair differs on sole depth and on fastening. Against platform-boots, which is a flat
+       slab under a shaft rising above the ankle, it differs on sole depth, raked against
+       flat, and on shaft height. Feet x158 to 202 and x198 to 242, y544 to 570. -->
+  <defs>
+    <linearGradient id="midage-male-shoes-wedges__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D8A882)"/>
+      <stop offset="1" stop-color="var(--c2, #A07E4C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-shoes-wedges__vamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #43302A)"/>
+      <stop offset="1" stop-color="var(--c2, #A07E4C)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- left: the solid wedge, deepest at the heel, then the vamp band over the toes -->
+    <path d="M148 556 Q152 550 162 549 Q178 547 190 538 Q198 532 204 530 Q209 529 209 538
+             V564 Q209 570 202 570 H152 Q145 570 145 564 Z"
+          fill="url(#midage-male-shoes-wedges__wedge)"/>
+    <path d="M150 552 Q162 546 178 545 Q186 545 187 552 Q188 558 180 559 Q164 560 152 558
+             Q148 556 150 552 Z" fill="url(#midage-male-shoes-wedges__vamp)"/>
+    <!-- right -->
+    <path d="M252 556 Q248 550 238 549 Q222 547 210 538 Q202 532 196 530 Q191 529 191 538
+             V564 Q191 570 198 570 H248 Q255 570 255 564 Z"
+          fill="url(#midage-male-shoes-wedges__wedge)"/>
+    <path d="M250 552 Q238 546 222 545 Q214 545 213 552 Q212 558 220 559 Q236 560 248 558
+             Q252 556 250 552 Z" fill="url(#midage-male-shoes-wedges__vamp)"/>
+
+    <!-- structural: stacked cork layer seams following the rake, and no sole break anywhere -->
+    <g stroke="var(--c2, #A07E4C)" stroke-opacity="0.5" stroke-width="3" fill="none"
+       stroke-linecap="round">
+      <path d="M164 560 Q186 556 206 551"/>
+      <path d="M156 565 Q182 562 206 559"/>
+      <path d="M236 560 Q214 556 194 551"/>
+      <path d="M244 565 Q218 562 194 559"/>
+    </g>
+    <!-- trim: contrast rand along the unbroken underside -->
+    <path d="M149 567 H205" stroke="var(--c3, #43302A)" stroke-width="4"
+          stroke-linecap="round" fill="none" opacity="0.72"/>
+    <path d="M251 567 H195" stroke="var(--c3, #43302A)" stroke-width="4"
+          stroke-linecap="round" fill="none" opacity="0.72"/>
+  </g>
+
+  <!-- the ankle strap and its small buckle, over an open instep -->
+  <path d="M154 538 Q176 528 198 534" stroke="var(--c3, #43302A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 538 Q224 528 202 534" stroke="var(--c3, #43302A)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <rect x="185" y="527" width="10" height="11" rx="3" fill="var(--c3, #43302A)"/>
+  <rect x="205" y="527" width="10" height="11" rx="3" fill="var(--c3, #43302A)"/>
+
+  <path d="M154 550 q14 -2 26 -4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M246 550 q-14 -2 -26 -4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

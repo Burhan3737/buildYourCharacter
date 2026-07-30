@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tabard" data-family="tabard" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: SHOULDER = none, two flat panels joined only by a pair of narrow shoulder
+       bridges, and CLOSURE = completely open down both sides, no seam anywhere below the
+       shoulder. Against puffer-vest it differs on closure (open sides vs a zipped front)
+       and volume (two flat panels vs a quilted mass); against tank on shoulder and closure.
+       The open sides are the identity: 18 units of bare rib between the back panel edge at
+       x150 and the arm at x132, painted through the skin ramp on both sides. -->
+  <defs>
+    <linearGradient id="midage-male-top-tabard__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C97F3E)"/>
+      <stop offset="1" stop-color="var(--c2, #9E5C25)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-tabard__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9E5C25)"/>
+      <stop offset="1" stop-color="var(--c2, #7C461A)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-tabard__chevron" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M2 15 L10 6 L18 15" fill="none" stroke="var(--c3, #F2E4C9)"
+            stroke-opacity="0.55" stroke-width="2.8" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </pattern>
+    <clipPath id="midage-male-top-tabard__clip">
+      <path d="M170 156 H186 Q190 182 200 184 Q210 182 214 156 H230 Q240 158 240 178 L238 308 Q238 324 224 324 H176 Q162 324 162 308 L160 178 Q160 158 170 156 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the open sides are bare torso: a soft skin shadow beside each panel edge, nothing more -->
+  <path d="M148 184 Q144 244 148 300 L136 300 Q132 244 136 184 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.65"/>
+  <path d="M252 184 Q256 244 252 300 L264 300 Q268 244 264 184 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.65"/>
+  <path d="M139 196 V292" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 196 V292" stroke="var(--skin1, #F7D2B0)" stroke-opacity="0.85" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- major forms: the flat front panel with the back panel showing behind each open side -->
+  <g class="sp-shadow">
+    <rect x="150" y="170" width="12" height="140" rx="5" fill="url(#midage-male-top-tabard__back)"/>
+    <rect x="238" y="170" width="12" height="140" rx="5" fill="url(#midage-male-top-tabard__back)"/>
+    <path d="M170 156 H186 Q190 182 200 184 Q210 182 214 156 H230 Q240 158 240 178 L238 308 Q238 324 224 324 H176 Q162 324 162 308 L160 178 Q160 158 170 156 Z"
+          fill="url(#midage-male-top-tabard__front)"/>
+
+    <!-- pattern: a plain geometric chevron field, clipped to the front panel -->
+    <g clip-path="url(#midage-male-top-tabard__clip)">
+      <rect x="162" y="204" width="76" height="84" fill="url(#midage-male-top-tabard__chevron)"/>
+    </g>
+
+    <!-- trim: broad contrast bands closing the field top and bottom -->
+    <g clip-path="url(#midage-male-top-tabard__clip)">
+      <rect x="158" y="194" width="84" height="9" fill="var(--c3, #F2E4C9)"/>
+      <rect x="158" y="292" width="84" height="9" fill="var(--c3, #F2E4C9)"/>
+      <rect x="158" y="306" width="84" height="4" fill="var(--c3, #F2E4C9)" fill-opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- trim: bound edges down both open sides, the treatment that says "no side seam" -->
+  <path d="M163 172 V312" stroke="var(--c3, #F2E4C9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M237 172 V312" stroke="var(--c3, #F2E4C9)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <!-- trim: bound neck scoop between the two shoulder bridges, and a bound hem -->
+  <path d="M186 156 Q190 184 200 186 Q210 184 214 156" stroke="var(--c3, #F2E4C9)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M164 318 Q200 326 236 318" stroke="var(--c3, #F2E4C9)"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight across the two shoulder bridges and the chest -->
+  <path d="M172 166 q8 6 12 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 166 q-8 6 -12 6" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 212 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

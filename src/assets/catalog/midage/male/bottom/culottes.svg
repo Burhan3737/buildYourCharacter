@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Culottes" data-family="culottes" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: leg width = two panels so wide and flat they read as a skirt until the
+       centre split shows, the hem spanning x114 to x286 (172 units) against the 120
+       unit hip at x140 to x260, so 26 units of clear air per side · rise = HIGH, the
+       waistband top edge at y294, sixteen units above the natural rise line y310.
+       The split is real geometry, notched up from the hem at y454 to y348 (a 106 unit
+       notch) between x196 and x204, which is exactly the gap between this bundle's
+       leg rects (x166 to x196 and x204 to x234) so the notch never bares thigh.
+       Against wide-leg (high rise, FULL length, undivided wide column) it differs on
+       leg length and on carrying a real centre split. Against skirt (natural rise,
+       no leg division at all) it differs on rise and leg division.
+       Hem y454 sits on this bundle's knee anchor y450. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-culottes__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D99486)"/>
+      <stop offset="1" stop-color="var(--c2, #A96C60)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-culottes__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D99486)"/>
+      <stop offset="1" stop-color="var(--c2, #A96C60)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- one major form: the wide flat culotte with the centre split notched up from
+       the hem, plus the high waistband and the bound hem trim inside the form -->
+  <g class="sp-shadow">
+    <path d="M148 294 H252 Q264 318 272 352 Q284 404 286 454 H204 V348 H196 V454 H114
+             Q116 404 128 352 Q136 318 148 294 Z"
+          fill="url(#midage-male-bottom-culottes__cloth)"/>
+
+    <!-- trim: deep high rise waistband -->
+    <rect x="146" y="292" width="108" height="24" rx="11" fill="url(#midage-male-bottom-culottes__band)"/>
+    <rect x="146" y="292" width="108" height="9" rx="4" fill="var(--c1, #D99486)" opacity="0.55"/>
+    <!-- trim: bound flat hem on each panel, in ink so it reads at tray size -->
+    <path d="M116 448 H194 V456 H116 Z" fill="var(--c3, #3B2A22)" opacity="0.7"/>
+    <path d="M206 448 H284 V456 H206 Z" fill="var(--c3, #3B2A22)" opacity="0.7"/>
+  </g>
+
+  <!-- structural: knife pleats falling from the waistband into the flat hem -->
+  <g stroke="var(--c2, #A96C60)" stroke-opacity="0.55" stroke-width="3.6" fill="none"
+     stroke-linecap="round">
+    <path d="M160 320 L130 444"/>
+    <path d="M174 318 L152 448"/>
+    <path d="M188 318 L178 450"/>
+    <path d="M240 320 L270 444"/>
+    <path d="M226 318 L248 448"/>
+    <path d="M212 318 L222 450"/>
+  </g>
+
+  <!-- the split edges, bound so the gap is legible in the outline -->
+  <path d="M196 352 V450" stroke="var(--c3, #3B2A22)" stroke-width="3.2" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+  <path d="M204 352 V450" stroke="var(--c3, #3B2A22)" stroke-width="3.2" stroke-linecap="round"
+        fill="none" opacity="0.8"/>
+
+  <path d="M156 308 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

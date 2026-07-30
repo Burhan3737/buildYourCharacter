@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Chima" data-family="chima" data-slot="bottom"
+     data-layer="bottom" data-colors="c1,c2,c3" data-hides="">
+  <!-- Everyday clothing drawn in an ordinary garment slot: plain cloth with generic
+       geometric trim only, no community specific woven design.
+       axes: rise = the wrapped band sits ABOVE THE BUST, its TOP EDGE at y232, the
+       only bottom in this slot that starts on the torso · leg width = no leg division
+       at all, one gathered column falling from the band and widening to the ankle.
+       Against maxi-skirt (natural rise at y310, narrow straight column) it differs on
+       rise and volume. Against tiered-skirt (natural rise, ruffled mid calf hem) it
+       differs on rise and hem treatment.
+       LOCKED PAIR NOTE: this chima chest band top edge is y232. The jeogori top hem
+       is y256. The jeogori hem therefore falls 24 units below the band top edge, so
+       no skin shows between the two garments. Neither number may be changed. -->
+  <defs>
+    <linearGradient id="midage-male-bottom-chima__column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #B49BC4)"/>
+      <stop offset="1" stop-color="var(--c2, #85699A)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-bottom-chima__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4EEE2)"/>
+      <stop offset="1" stop-color="var(--c2, #85699A)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: the above the bust band and the single gathered column under it.
+       The column top edge x126 to x274 covers the torso sides (x128 to x272) with a
+       2 unit overlap, and the 120 unit hip at x140 to x260 sits well inside it. -->
+  <g class="sp-shadow">
+    <path d="M126 256 H274 Q286 320 292 400 Q298 480 296 540 Q200 556 104 540
+             Q102 480 108 400 Q114 320 126 256 Z"
+          fill="url(#midage-male-bottom-chima__column)"/>
+    <path d="M138 232 H262 Q274 232 274 244 V256 Q274 268 262 268 H138 Q126 268 126 256
+             V244 Q126 232 138 232 Z" fill="url(#midage-male-bottom-chima__band)"/>
+
+    <!-- trim: two plain parallel bands above the hem, generic geometric edging -->
+    <path d="M108 496 Q200 512 292 496 L292 505 Q200 521 108 505 Z"
+          fill="var(--c3, #F4EEE2)" opacity="0.85"/>
+    <path d="M107 514 Q200 530 293 514 L293 519 Q200 535 107 519 Z"
+          fill="var(--c3, #F4EEE2)" opacity="0.6"/>
+  </g>
+
+  <!-- the long tie: a soft knot at the band with two tails falling down the column -->
+  <path d="M158 262 Q176 252 192 264 Q181 275 168 273 Q158 271 158 262 Z"
+        fill="var(--c3, #F4EEE2)"/>
+  <path d="M164 271 Q157 350 152 404 Q163 409 170 402 Q173 340 176 271 Z"
+        fill="var(--c3, #F4EEE2)"/>
+  <path d="M179 271 Q186 350 193 402 Q184 409 175 404 Q173 340 172 271 Z"
+        fill="var(--c2, #85699A)" opacity="0.55"/>
+
+  <!-- structural: the vertical gathers running the whole length of the column -->
+  <g stroke="var(--c2, #85699A)" stroke-opacity="0.48" stroke-width="4" fill="none"
+     stroke-linecap="round">
+    <path d="M138 274 Q124 400 114 530"/>
+    <path d="M158 274 Q150 400 144 536"/>
+    <path d="M200 274 Q200 400 200 544"/>
+    <path d="M242 274 Q250 400 256 536"/>
+    <path d="M262 274 Q276 400 286 530"/>
+  </g>
+
+  <path d="M150 242 q50 12 100 0" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 300 q56 16 112 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- axes: SHOULDER = a halter tied up to the nape, leaving the shoulders and the upper back
+       bare with nothing drawn above y192; VOLUME = fitted through the torso and the thigh and
+       then flaring hard from the knee anchor at y450 into a wide bell.
+       MEASURED HEM: the feet on this bundle start at y544, so the bell must end above the sole
+       for platform-boots to still read underneath it. Both bell hems are drawn at y542, two
+       units clear, and spread to x118 and x282 so the cloth passes outside the shoe.
+       Against jumpsuit it differs on shoulder and volume; against boiler-suit on shoulder and
+       closure; against romper on shoulder and leg length. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-flare-jumpsuit__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08C7E)"/>
+      <stop offset="1" stop-color="var(--c2, #B0604F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-flare-jumpsuit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #DB8273)"/>
+      <stop offset="1" stop-color="var(--c2, #A65846)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-flare-jumpsuit__halter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E08C7E)"/>
+      <stop offset="1" stop-color="var(--c2, #B0604F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-flare-jumpsuit__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #B0604F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- legs: skin close to the knee at y450, then flaring hard into a bell ending at y542 -->
+    <path d="M148 306 Q152 384 156 450 Q132 502 118 532 Q114 542 128 542 H188
+             Q198 542 198 534 L200 450 Q201 384 200 306 Z"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__leg)"/>
+    <path d="M252 306 Q248 384 244 450 Q268 502 282 532 Q286 542 272 542 H212
+             Q202 542 202 534 L200 450 Q199 384 200 306 Z"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__leg)"/>
+    <!-- two narrow halter bands crossing up to the back of the neck -->
+    <path d="M168 194 H182 L206 150 Q209 141 200 140 Q193 140 190 147 Z"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__halter)"/>
+    <path d="M232 194 H218 L194 150 Q191 141 200 140 Q207 140 210 147 Z"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__halter)"/>
+    <!-- fitted bodice, top edge at y192 with the shoulders left as bare skin above it -->
+    <path d="M130 206 Q130 192 146 192 H254 Q270 192 270 206 V276 Q270 308 254 310 H146
+             Q130 308 130 276 Z"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__bodice)"/>
+    <!-- panel blocking: wide contrast waist band across the natural waist -->
+    <rect x="128" y="298" width="144" height="20" rx="8"
+          fill="url(#midage-male-onepiece-flare-jumpsuit__band)"/>
+    <!-- trim: bound top edge, so the bare shoulder line reads hard at tray size -->
+    <path d="M134 194 H266" stroke="var(--c3, #3B2A22)" stroke-width="6"
+          fill="none" stroke-linecap="round"/>
+  </g>
+
+  <rect x="188" y="294" width="24" height="28" rx="8" fill="var(--c1, #E08C7E)"/>
+  <path d="M130 308 H270" stroke="var(--c3, #3B2A22)" stroke-opacity="0.5" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- halter band edges running up to the nape -->
+  <path d="M178 192 L198 146" stroke="var(--c3, #3B2A22)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M222 192 L202 146" stroke="var(--c3, #3B2A22)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the flare break, sitting on this bundle's knee anchor at y450 -->
+  <path d="M156 450 H198" stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 450 H244" stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: long leg seams running out into the bell -->
+  <g fill="none" stroke="var(--c2, #B0604F)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M172 324 Q174 402 176 452 Q162 500 150 534"/>
+    <path d="M228 324 Q226 402 224 452 Q238 500 250 534"/>
+  </g>
+
+  <!-- bell hems, drawn at y542 so the sole from y544 still reads underneath -->
+  <path d="M120 530 Q156 542 194 536" stroke="var(--c3, #3B2A22)" stroke-opacity="0.65"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M280 530 Q244 542 206 536" stroke="var(--c3, #3B2A22)" stroke-opacity="0.65"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: bodice panel seaming -->
+  <g fill="none" stroke="var(--c2, #B0604F)" stroke-opacity="0.4" stroke-width="3.6"
+     stroke-linecap="round">
+    <path d="M160 202 Q156 250 162 304"/>
+    <path d="M240 202 Q244 250 238 304"/>
+  </g>
+
+  <!-- upper surface highlights, just under the bare shoulder line -->
+  <path d="M152 212 q48 12 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M144 486 q26 12 44 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M256 486 q-26 12 -44 6" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

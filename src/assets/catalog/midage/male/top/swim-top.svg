@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Swim Top" data-family="swim-top" data-slot="top"
+     data-layer="top" data-colors="c1,c2,c3" data-hides="">
+  <!-- axes: HEM = cropped, a band that stops at the underbust on y250 and leaves the whole
+       abdomen down to the hip line bare, and SHOULDER = two narrow ties, 14 units wide,
+       running up over the shoulders with no sleeve at all. Against tank it differs on hem
+       (y250 vs a hip hem) and shoulder (a tie vs a broad strap); against ribbed-vest on
+       hem and shoulder as well.
+       The midriff below y256 is deliberately bare and is painted through the skin ramp.
+       It is a finished garment worn alone, not a layer over anything. -->
+  <defs>
+    <linearGradient id="midage-male-top-swim-top__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8E7C)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-swim-top__tie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #82CDBC)"/>
+      <stop offset="1" stop-color="var(--c2, #3E8E7C)"/>
+    </linearGradient>
+    <pattern id="midage-male-top-swim-top__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="16" height="14">
+      <rect x="0" y="0" width="16" height="5" fill="var(--c2, #3E8E7C)" fill-opacity="0.34"/>
+    </pattern>
+    <clipPath id="midage-male-top-swim-top__clip">
+      <path d="M126 218 Q126 206 142 206 H258 Q274 206 274 218 V242 Q274 252 258 254 Q200 262 142 254 Q126 252 126 242 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- the bare midriff: the body's own skin ramp, shaded under the band edge -->
+  <path d="M144 256 Q200 266 256 256 Q200 280 144 256 Z"
+        fill="var(--skin2, #E7B892)" fill-opacity="0.55"/>
+  <path d="M200 272 V310" stroke="var(--skin2, #E7B892)" stroke-opacity="0.5" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- major forms: one horizontal band with a straight top edge and two narrow ties -->
+  <g class="sp-shadow">
+    <path d="M148 212 L162 214 L186 162 Q188 154 180 153 Q172 152 170 158 Z"
+          fill="url(#midage-male-top-swim-top__tie)"/>
+    <path d="M252 212 L238 214 L214 162 Q212 154 220 153 Q228 152 230 158 Z"
+          fill="url(#midage-male-top-swim-top__tie)"/>
+    <path d="M126 218 Q126 206 142 206 H258 Q274 206 274 218 V242 Q274 252 258 254 Q200 262 142 254 Q126 252 126 242 Z"
+          fill="url(#midage-male-top-swim-top__band)"/>
+
+    <!-- pattern: a fine horizontal rib in the knit, clipped to the band -->
+    <g clip-path="url(#midage-male-top-swim-top__clip)">
+      <rect x="132" y="212" width="136" height="42" fill="url(#midage-male-top-swim-top__rib)"/>
+    </g>
+
+    <!-- trim: contrast bound edge along the straight top and the shaped hem -->
+    <path d="M126 218 Q126 206 142 206 H258 Q274 206 274 218 V222 Q200 214 126 222 Z"
+          fill="var(--c3, #F7F3E8)"/>
+    <path d="M126 244 Q200 256 274 244 V248 Q274 252 258 254 Q200 262 142 254 Q126 252 126 248 Z"
+          fill="var(--c3, #F7F3E8)"/>
+  </g>
+
+  <!-- trim: the tie ends bound where they meet the band, and the shoulder loops -->
+  <path d="M148 210 L164 214 L162 222 L146 218 Z" fill="var(--c3, #F7F3E8)"/>
+  <path d="M252 210 L236 214 L238 222 L254 218 Z" fill="var(--c3, #F7F3E8)"/>
+  <path d="M170 160 Q180 150 188 160" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M230 160 Q220 150 212 160" stroke="var(--c3, #F7F3E8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: a centre seam and two shaped side seams on the band -->
+  <path d="M200 210 V258" stroke="var(--c2, #3E8E7C)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 210 Q163 234 168 256" stroke="var(--c2, #3E8E7C)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M234 210 Q237 234 232 256" stroke="var(--c2, #3E8E7C)" stroke-opacity="0.4"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- upper surface highlight along the straight top edge -->
+  <path d="M154 230 q46 12 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

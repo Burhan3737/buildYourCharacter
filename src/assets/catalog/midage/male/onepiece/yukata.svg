@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c3,c2" data-hides="top,bottom">
+  <!-- axes: WIDE RECTANGULAR sleeve panels hanging square well below the arm · a wrapped
+       CROSSOVER closure, flat overlapping band collar from the neck to the waist, held by a
+       broad flat sash · full-length hem at y566 · straight and unfitted.
+       WRAP DIRECTION: LEFT OVER RIGHT. The wearer's left front panel lies on top, which on
+       this canvas is the panel coming from the VIEWER'S RIGHT and crossing down over the
+       left. Right over left is how the dead are dressed and is never drawn.
+       Against robe it differs on shoulder and hem; against kaftan on closure and hem.
+       Everyday clothing. Plain cloth with a small generic geometric motif. -->
+  <defs>
+    <linearGradient id="midage-male-onepiece-yukata__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55658A)"/>
+      <stop offset="1" stop-color="var(--c2, #313A52)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-yukata__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #61729A)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3349)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-yukata__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #55658A)"/>
+      <stop offset="1" stop-color="var(--c2, #2B3349)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E8DFC8)"/>
+      <stop offset="1" stop-color="var(--c2, #313A52)"/>
+    </linearGradient>
+    <pattern id="midage-male-onepiece-yukata__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 L17 10 L10 17 L3 10 Z" fill="none" stroke="var(--c3, #E8DFC8)"
+            stroke-opacity="0.4" stroke-width="2.2"/>
+    </pattern>
+    <clipPath id="midage-male-onepiece-yukata__clip">
+      <path d="M136 158 H264 L274 552 Q200 566 126 552 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide rectangular sleeve panels, hanging square well below the arm -->
+    <path d="M74 158 H140 V340 H96 Q74 340 74 320 Z"
+          fill="url(#midage-male-onepiece-yukata__panel)"/>
+    <path d="M326 158 H260 V340 H304 Q326 340 326 320 Z"
+          fill="url(#midage-male-onepiece-yukata__panel)"/>
+    <!-- straight full-length body, sweeping to the ground line -->
+    <path d="M136 158 H264 L274 552 Q200 566 126 552 Z"
+          fill="url(#midage-male-onepiece-yukata__cloth)"/>
+    <!-- the wearer's LEFT front panel, coming from the viewer's right and lying ON TOP -->
+    <path d="M264 158 L204 296 L188 554 Q236 564 274 552 Z"
+          fill="url(#midage-male-onepiece-yukata__front)"/>
+  </g>
+
+  <!-- pattern: a small generic geometric motif on the cloth -->
+  <g clip-path="url(#midage-male-onepiece-yukata__clip)">
+    <rect x="124" y="156" width="152" height="402"
+          fill="url(#midage-male-onepiece-yukata__motif)"/>
+  </g>
+
+  <!-- flat band collar: the UNDER band first, from the viewer's left, then the OVER band -->
+  <path d="M170 156 L198 296 L218 296 L190 156 Z" fill="var(--c2, #313A52)"/>
+  <path d="M238 156 L208 296 L186 296 L216 156 Z" fill="var(--c3, #E8DFC8)"/>
+  <path d="M216 156 L186 296" stroke="var(--c2, #313A52)" stroke-opacity="0.45"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- the neck opening left between the two bands -->
+  <path d="M186 154 q14 12 28 0 v7 q-14 14 -28 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- trim: broad flat sash across the natural waist at y300 to y316, with a small knot -->
+  <rect x="134" y="298" width="134" height="42" rx="7"
+        fill="url(#midage-male-onepiece-yukata__sash)"/>
+  <path d="M136 304 H266" stroke="var(--c2, #313A52)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M136 332 H266" stroke="var(--c2, #313A52)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <rect x="222" y="292" width="36" height="54" rx="9" fill="var(--c3, #E8DFC8)"/>
+  <path d="M228 318 H252" stroke="var(--c2, #313A52)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the seam where each sleeve panel is joined, and its bound lower edge -->
+  <g fill="none" stroke="var(--c2, #313A52)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M140 164 V334"/>
+    <path d="M260 164 V334"/>
+  </g>
+  <path d="M78 332 H134" stroke="var(--c3, #E8DFC8)" stroke-opacity="0.75" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M266 332 H322" stroke="var(--c3, #E8DFC8)" stroke-opacity="0.75" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: long skirt folds falling below the sash -->
+  <g fill="none" stroke="var(--c2, #313A52)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M158 348 L146 544"/>
+    <path d="M246 348 L256 544"/>
+  </g>
+
+  <path d="M148 200 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

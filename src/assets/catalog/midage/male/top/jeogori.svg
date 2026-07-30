@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Jeogori" data-family="jeogori" data-slot="top"
+     data-layer="top" data-colors="c1,c3,c2" data-hides="">
+  <!-- axes: HEM = very short, ending just below the bust at y256, and CLOSURE = a wide
+       crossover wrap held by one long ribbon tie. Also shoulder = gently curved sleeve line,
+       volume = softly rounded.
+       Against blazer it differs on hem (y256 vs y336) and closure (wrap vs notched open
+       front); against tee on hem and closure.
+       THE LOCKED PAIR. The chima authored for this same bundle has its chest band TOP EDGE
+       at y232. This jeogori's HEM SITS AT y256. The hem therefore falls 24 units below the
+       top of that band, so no skin can show between the two garments. Neither number moves.
+       WRAP DIRECTION: LEFT OVER RIGHT. The wearer's left panel lies on top, which mirrors on
+       canvas to the panel coming from the viewer's RIGHT and crossing down to the LEFT, with
+       the goreum hanging on the viewer's left at x150 to x180. Right over left is how the
+       dead are dressed, so this is never to be flipped.
+       LIVING CULTURAL DRESS. Plain cloth; the git and kkeutdong are plain contrast bands. -->
+  <defs>
+    <linearGradient id="midage-male-top-jeogori__outer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C9705F)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-jeogori__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #DB8A7B)"/>
+      <stop offset="1" stop-color="var(--c2, #B25F50)"/>
+    </linearGradient>
+    <linearGradient id="midage-male-top-jeogori__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C9705F)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two gently curved sleeves, the under panel, and the outer crossover -->
+  <g class="sp-shadow">
+    <path d="M142 154 q-48 0 -50 54 q-4 36 12 56 q16 8 32-2 q6-32 4-74 z"
+          fill="url(#midage-male-top-jeogori__sleeve)"/>
+    <path d="M258 154 q48 0 50 54 q4 36 -12 56 q-16 8 -32-2 q-6-32 -4-74 z"
+          fill="url(#midage-male-top-jeogori__sleeve)"/>
+    <!-- under panel: the wearer's RIGHT side, tucked beneath, on the viewer's left -->
+    <path d="M168 150 q-42 4 -42 46 l-2 38 q0 22 20 22 h98 q12-2 10-16 z"
+          fill="url(#midage-male-top-jeogori__under)"/>
+    <!-- outer panel: the wearer's LEFT side, lying on top and closing across to the left -->
+    <path d="M232 150 q42 4 42 46 l2 38 q0 22 -20 22 h-100 q-12-4 -6-16 z"
+          fill="url(#midage-male-top-jeogori__outer)"/>
+  </g>
+
+  <!-- trim: git, the contrast collar band, running the whole crossover from right to left -->
+  <path d="M224 150 l17 10 l-73 94 l-16-10 z" fill="var(--c3, #FAF6EE)"/>
+  <path d="M176 152 l14-2 l28 32 l-13 11 z" fill="var(--c3, #FAF6EE)" fill-opacity="0.85"/>
+  <path d="M170 148 q30-10 62 0 l-2 12 q-30-9 -58 0 z" fill="var(--c3, #FAF6EE)"/>
+  <path d="M182 150 q18 10 36 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: goreum, one long ribbon knotted at the closure on the viewer's left -->
+  <ellipse cx="166" cy="252" rx="15" ry="11" fill="var(--c2, #C9705F)"/>
+  <path d="M157 260 q-9 48 -3 86 q10 10 21 0 q5-44 2-86 z" fill="var(--c2, #C9705F)"/>
+  <path d="M177 258 q13 34 10 62 q-9 8 -17 0 q-2-30 -5-62 z" fill="var(--c2, #B25F50)"/>
+  <path d="M158 268 q-4 40 0 72" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: kkeutdong, the contrast cuff band at each curved sleeve end -->
+  <path d="M93 236 q22 20 46 4 l1 14 q-24 17 -49-4 z" fill="var(--c3, #FAF6EE)"/>
+  <path d="M307 236 q-22 20 -46 4 l-1 14 q24 17 49-4 z" fill="var(--c3, #FAF6EE)"/>
+
+  <!-- trim: hem binding, holding the y256 hem that pairs with the chima band at y232 -->
+  <path d="M130 244 h140 l-8 12 h-124 z"
+        fill="var(--c2, #C9705F)" fill-opacity="0.6"/>
+
+  <!-- structural: the gently curved sleeve line, drawn as a soft seam -->
+  <path d="M142 174 q-26 16 -34 48" stroke="var(--c2, #C9705F)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M258 174 q26 16 34 48" stroke="var(--c2, #C9705F)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <path d="M150 178 q32 16 60 4" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M254 178 q-16 10 -28 14" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+</svg>
