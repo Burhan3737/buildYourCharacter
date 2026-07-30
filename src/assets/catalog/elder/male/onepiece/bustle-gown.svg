@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bustle Gown" data-family="bustle-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = front-to-back asymmetric, the only asymmetric outline in
+       the slot: a large draped mass thrown out behind the hip while the front stays flat;
+       HEM = a narrow front column dead to the ground with a short train pooling behind it.
+       REAR PROJECTION, RECOMPUTED ON THIS BODY. The elder hips are drawn x148 to x252, so
+       the hip line this must clear is x252. The bustle's outermost drawn point is on the
+       quadratic from (314,552) through the control (328,464) to (316,390), whose extreme
+       x is 0.25*314 + 0.5*328 + 0.25*316 = 78.5 + 164 + 79 = 321.5. Achieved projection
+       = 321.5 minus 252 = 69.5 units, comfortably over the 50 unit requirement, and it
+       stays 78 units inside the canvas edge.
+       Differs from `ball-gown` on bodice (high closed neck with long fitted sleeves vs a
+       bare strapless band) and skirt (flat front with a rear mass vs a symmetric dome),
+       and from `bridal-gown` on volume and hem.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), waist
+       band at the elder natural waist y302 with the pointed edge at y308, sleeve columns
+       x110 to x144 and x256 to x290 with the cuff at the elder wrist y352 to y366, hem
+       y566 and the train to y566, never past the ground line at y570.
+       Elder read: the bodice closes at the centre front with five large easy buttons in
+       place of a close-set row, the sleeve head is softened and set inboard on the
+       dropped shoulder, and the body is cut with more ease through the upper arm. This is
+       the same gown on a grandparent, not a quieter one. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-bustle-gown__bustle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A80A4)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4D6D)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-bustle-gown__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A91B6)"/>
+      <stop offset="1" stop-color="var(--c2, #435577)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-bustle-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A91B6)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4D6D)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-bustle-gown__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6A80A4)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4D6D)"/>
+    </linearGradient>
+    <clipPath id="elder-male-onepiece-bustle-gown__bustleclip">
+      <path d="M236 316 Q292 332 306 392 Q320 466 302 528 Q290 558 270 566
+               H306 Q318 566 314 552 Q328 464 316 390 Q302 330 260 312 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the bustle: a big draped mass thrown out behind the hip, to a short train -->
+    <path d="M236 316 Q292 332 306 392 Q320 466 302 528 Q290 558 270 566
+             H306 Q318 566 314 552 Q328 464 316 390 Q302 330 260 312 Z"
+          fill="url(#elder-male-onepiece-bustle-gown__bustle)"/>
+    <!-- narrow flat front skirt, straight from the waist to the ground -->
+    <path d="M152 322 H240 Q246 450 243 566 H150 Q147 450 152 322 Z"
+          fill="url(#elder-male-onepiece-bustle-gown__front)"/>
+    <!-- long fitted sleeves, softened elder sleeve cap set inboard -->
+    <path d="M138 186 Q110 191 110 212 L113 352 Q113 366 126 366 Q139 366 139 352 L141 218 Z"
+          fill="url(#elder-male-onepiece-bustle-gown__sleeve)"/>
+    <path d="M262 186 Q290 191 290 212 L287 352 Q287 366 274 366 Q261 366 261 352 L259 218 Z"
+          fill="url(#elder-male-onepiece-bustle-gown__sleeve)"/>
+    <!-- high closed neckline over a fitted bodice -->
+    <path d="M132 208 Q132 178 164 176 H236 Q268 178 268 208 V276 Q268 308 252 308 H148
+             Q132 308 132 276 Z"
+          fill="url(#elder-male-onepiece-bustle-gown__bodice)"/>
+  </g>
+
+  <!-- five swagged drape folds across the bustle -->
+  <g clip-path="url(#elder-male-onepiece-bustle-gown__bustleclip)" fill="none"
+     stroke="var(--c2, #3B4D6D)" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round">
+    <path d="M240 330 Q288 346 314 380"/>
+    <path d="M242 368 Q294 388 320 424"/>
+    <path d="M244 414 Q298 436 322 472"/>
+    <path d="M246 462 Q294 486 316 520"/>
+    <path d="M248 508 Q288 532 308 558"/>
+  </g>
+
+  <!-- the bustle's leading edge, bound in the accent -->
+  <path d="M238 318 Q296 340 312 400 Q326 486 310 556" stroke="var(--c3, #E4E0D2)"
+        stroke-opacity="0.75" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- high closed collar, standing at the base of the elder neck -->
+  <path d="M174 164 Q200 176 226 164 V180 Q200 192 174 180 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M182 169 q18 9 36 0 v8 q-18 9 -36 0 z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- centre-front closure: five large easy buttons up the closed bodice -->
+  <g fill="var(--c3, #E4E0D2)">
+    <circle cx="200" cy="200" r="5"/>
+    <circle cx="200" cy="224" r="5"/>
+    <circle cx="200" cy="248" r="5"/>
+    <circle cx="200" cy="272" r="5"/>
+    <circle cx="200" cy="294" r="5"/>
+  </g>
+
+  <!-- pointed waist band, narrow at the front -->
+  <path d="M140 294 Q200 312 260 294 L262 306 Q200 326 138 306 Z" fill="var(--c3, #E4E0D2)"/>
+
+  <!-- flat front skirt panelling, deliberately plain against the bustle -->
+  <g fill="none" stroke="var(--c2, #3B4D6D)" stroke-opacity="0.35" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M174 342 L172 556"/>
+    <path d="M212 342 L214 556"/>
+  </g>
+  <path d="M150 552 H240" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.7" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- cuffs and the upper-chest highlight -->
+  <path d="M113 352 H139" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 352 H287" stroke="var(--c3, #E4E0D2)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M152 228 q30 12 60 4" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M264 400 q22 40 24 96" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

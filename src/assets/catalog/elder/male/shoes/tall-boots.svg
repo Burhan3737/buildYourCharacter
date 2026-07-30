@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Tall Boots" data-family="tall-boots" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Silhouette axes: TOE SHAPE = a tapered toe, the vamp narrowing and dropping to a
+       low rounded tip 12 units deep at the outer end against a 30 unit deep heel end;
+       SOLE DEPTH = a thin 8 unit stacked sole with a visible welt line, carrying a
+       separate low 16 unit heel block, rather than one moulded plate or one chunky block.
+       SHAFT HEIGHT DELIBERATELY DOES NOT SEPARATE THIS FAMILY, and it is worth writing
+       down. Measured off the files already in this directory: wellies' shaft top is y448,
+       boots' is y470, platform-boots' is y478 and snow-boots' is y480. The elder knee
+       anchor this bundle uses is y464, so "just below the knee" puts this shaft top at
+       y466 - 18 units from wellies and 4 from boots, both far under the 40 unit practical
+       floor at tray size. Raising it to clear wellies by 40 would put it above the knee
+       and make it a thigh boot, which is a different family. So the pair is carried on
+       toe shape and sole depth instead, exactly as the midage bundle found.
+       Against wellies: a tapered low toe against a full round rubber toe, and a thin
+       stacked sole with a separate heel block against one flat 10 unit rubber plate.
+       Against boots: a tapered toe against a round one, and no fastening at all against
+       its buckled strap and cuff band. Against snow-boots and platform-boots: sole depth
+       and shaft height both.
+       Drawn against this bundle's real body: feet x158 to x202 and x198 to x242, y544 to
+       y570; legs x168 to x196 and x204 to x232; knee y464; ground line y570, which the
+       sole meets and never passes.
+       Elder read: the family permits no fastening, so instead of a strap this gets a wide
+       soft pull loop at each shaft top and a shaft cut 40 units across at the opening -
+       an easy boot to get a foot into. Nothing here is drabber or shapeless for it. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-tall-boots__shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4A34)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3223)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-tall-boots__foot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6B4A34)"/>
+      <stop offset="1" stop-color="var(--c2, #4A3223)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- smooth shafts to just below the knee, then tapered feet: left first, right in front -->
+  <g class="sp-shadow">
+    <path d="M160 472 Q160 466 166 466 H196 Q202 476 202 484 L200 534 Q200 542 192 542
+             H168 Q160 542 160 534 Z"
+          fill="url(#elder-male-shoes-tall-boots__shaft)"/>
+    <path d="M164 534 H200 Q204 540 204 548 V558 Q204 564 197 564 H160 Q150 564 147 558
+             Q145 551 152 546 Q159 541 164 534 Z"
+          fill="url(#elder-male-shoes-tall-boots__foot)"/>
+    <path d="M204 472 Q204 466 210 466 H240 Q246 476 246 484 L244 534 Q244 542 236 542
+             H212 Q204 542 204 534 Z"
+          fill="url(#elder-male-shoes-tall-boots__shaft)"/>
+    <path d="M236 534 H200 Q196 540 196 548 V558 Q196 564 203 564 H240 Q250 564 253 558
+             Q255 551 248 546 Q241 541 236 534 Z"
+          fill="url(#elder-male-shoes-tall-boots__foot)"/>
+  </g>
+
+  <!-- the separate low heel block under the back of each boot -->
+  <rect x="178" y="552" width="22" height="18" rx="5" fill="var(--c2, #4A3223)"/>
+  <rect x="202" y="552" width="22" height="18" rx="5" fill="var(--c2, #4A3223)"/>
+
+  <!-- thin stacked sole, 8 units deep, meeting the ground line at y570 -->
+  <path d="M147 562 H202 Q204 566 201 570 H152 Q145 566 147 562 Z" fill="var(--c2, #4A3223)"/>
+  <path d="M253 562 H198 Q196 566 199 570 H248 Q255 566 253 562 Z" fill="var(--c2, #4A3223)"/>
+  <path d="M150 566 H198" stroke="var(--c3, #E0C08A)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+  <path d="M202 566 H250" stroke="var(--c3, #E0C08A)" stroke-width="3" stroke-linecap="round"
+        fill="none" opacity="0.6"/>
+
+  <!-- the tapered toe edge, picked out so the taper reads at tray size -->
+  <path d="M148 556 Q156 546 168 542" stroke="var(--c2, #4A3223)" stroke-opacity="0.55"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M252 556 Q244 546 232 542" stroke="var(--c2, #4A3223)" stroke-opacity="0.55"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- wide soft pull loops at the shaft tops: no lacing, buckle or strap anywhere -->
+  <path d="M188 458 h14 q6 0 6 6 v12 q0 6 -6 6 h-14 Z" fill="var(--c3, #E0C08A)"/>
+  <path d="M232 458 h14 q6 0 6 6 v12 q0 6 -6 6 h-14 Z" fill="var(--c3, #E0C08A)"/>
+  <path d="M192 466 h10" stroke="var(--c2, #4A3223)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M236 466 h10" stroke="var(--c2, #4A3223)" stroke-opacity="0.45" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- a soft cuff crease and a long shaft highlight, no seams and no lacing -->
+  <path d="M163 492 Q180 498 199 492" stroke="var(--c2, #4A3223)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M207 492 Q224 498 243 492" stroke="var(--c2, #4A3223)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M170 504 V532" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M214 504 V532" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M158 548 q20 5 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 548 q20 5 40 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

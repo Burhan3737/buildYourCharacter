@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sleep Onesie" data-family="sleep-onesie" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: HEM = footed, the legs closing right over the whole foot down to
+       the ground line at y568; CLOSURE = one full-length centre zip from the throat to
+       the crotch, which is also exactly the front opening the elder brief asks for.
+       THE HOOD IS WORN DOWN. It is a thick roll of fabric lying behind the neck at y160
+       to y212 and it is never worn up - a hood over the head would sit above the face,
+       and this family reads as hooded from the roll alone.
+       Differs from `boiler-suit` on hem (closed feet vs open straight legs) and volume
+       (softly bloused vs utility straight), and from `jumpsuit` on hem and shoulder.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), neck
+       y166 to y200 so the hood roll sits behind it, sleeve columns x110 to x144 and x256
+       to x290 with the ribbed cuff at the elder wrist y348 to y368, legs springing from
+       the elder hips y328, ankle rib at y528, feet closing over the drawn feet
+       y544 to y570 and stopping on the ground line at y568.
+       Elder read: the zip carries a large easy ring pull, the body is cut looser through
+       the upper arm and blouses more softly over the hip, and the ribbed cuffs are wider
+       and easier to pull over a hand. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-sleep-onesie__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8CA2C9)"/>
+      <stop offset="1" stop-color="var(--c2, #5E76A2)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-sleep-onesie__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8CA2C9)"/>
+      <stop offset="1" stop-color="var(--c2, #556A94)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-sleep-onesie__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8CA2C9)"/>
+      <stop offset="1" stop-color="var(--c2, #5E76A2)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-sleep-onesie__hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #9CB0D4)"/>
+      <stop offset="1" stop-color="var(--c2, #556A94)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-sleep-onesie__rib" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="12" height="12">
+      <path d="M3 0 V12 M9 0 V12" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.55" stroke-width="2.4"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- hood, worn down as a thick roll of fabric lying behind the neck. Its upper edge
+         DIPS to y182 at the centre rather than bulging up, because onepiece is z45 and
+         draws OVER the head, and this bundle's chin is at y184 -->
+    <path d="M158 174 Q200 190 242 174 Q250 196 242 216 Q200 202 158 216 Q150 196 158 174 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__hood)"/>
+    <!-- footed legs: the suit closes right over the foot and meets the ground line -->
+    <path d="M144 328 H198 V528 Q207 532 207 550 Q207 568 190 568 H162 Q150 568 150 552 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__leg)"/>
+    <path d="M256 328 H202 V528 Q193 532 193 550 Q193 568 210 568 H238 Q250 568 250 552 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__leg)"/>
+    <!-- long sleeves, softened elder sleeve cap set inboard on the dropped shoulder -->
+    <path d="M138 186 Q110 190 108 212 L110 348 Q110 364 126 364 H132 Q148 364 147 348
+             L144 218 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__sleeve)"/>
+    <path d="M262 186 Q290 190 292 212 L290 348 Q290 364 274 364 H268 Q252 364 253 348
+             L256 218 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__sleeve)"/>
+    <!-- softly bloused body, easing out over the hip before the leg seam -->
+    <path d="M126 210 Q126 178 158 178 H242 Q274 178 274 210 V300
+             Q278 334 250 340 H150 Q122 334 126 300 Z"
+          fill="url(#elder-male-onepiece-sleep-onesie__body)"/>
+  </g>
+
+  <!-- full-length centre zip, throat to crotch, with a large easy ring pull -->
+  <rect x="194" y="178" width="12" height="168" rx="5" fill="var(--c3, #F7C873)"/>
+  <path d="M200 182 V342" stroke="var(--c2, #556A94)" stroke-opacity="0.65" stroke-width="2.6"
+        fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <rect x="192" y="256" width="16" height="24" rx="7" fill="var(--c2, #556A94)"/>
+  <circle cx="200" cy="288" r="7" fill="none" stroke="var(--c3, #F7C873)" stroke-width="4"/>
+
+  <!-- ribbed cuffs at the wrist and ribbed ankle joins -->
+  <rect x="106" y="344" width="43" height="22" rx="11" fill="var(--c3, #F7C873)"/>
+  <rect x="251" y="344" width="43" height="22" rx="11" fill="var(--c3, #F7C873)"/>
+  <rect x="106" y="344" width="43" height="22" rx="11"
+        fill="url(#elder-male-onepiece-sleep-onesie__rib)"/>
+  <rect x="251" y="344" width="43" height="22" rx="11"
+        fill="url(#elder-male-onepiece-sleep-onesie__rib)"/>
+  <path d="M150 526 H198" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 526 H250" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- closed sole line, so the foot pods read as part of the suit -->
+  <path d="M154 560 Q180 566 204 558" stroke="var(--c2, #556A94)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M196 558 Q220 566 246 560" stroke="var(--c2, #556A94)" stroke-opacity="0.5"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- hood edge binding, and the fold where the roll doubles back -->
+  <path d="M158 176 Q200 192 242 176" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M164 206 Q200 194 236 206" stroke="var(--c2, #556A94)" stroke-opacity="0.45"
+        stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+  <!-- bloused hip gathers -->
+  <g fill="none" stroke="var(--c2, #556A94)" stroke-opacity="0.4" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M148 306 q8 14 2 26"/>
+    <path d="M168 308 q8 14 2 26"/>
+    <path d="M232 308 q-8 14 -2 26"/>
+    <path d="M252 306 q-8 14 -2 26"/>
+  </g>
+
+  <!-- upper-chest highlight -->
+  <path d="M154 220 q46 16 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

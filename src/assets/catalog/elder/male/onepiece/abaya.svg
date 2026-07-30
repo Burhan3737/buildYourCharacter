@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Abaya" data-family="abaya" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = open front, two panels whose inner edges simply meet with no
+       button, tie, belt or any other fastening; HEM = ankle at y540 to y546, falling dead
+       straight from the dropped elder shoulder at y180 with no waist anywhere.
+       Everyday clothing under its own endonym: plain cloth, generic geometric trim only.
+       Differs from `kaftan` on hem (ankle vs the calf hem at y532) and sleeve (long straight
+       set-in sleeve vs a wide T sleeve cut in one with the body), and from `thobe` on closure
+       (edges merely meeting vs a closed band collar over a buttoned placket).
+       Refit to the elder body, not copied: shoulder y180 (adult y150), torso x136 to x264,
+       sleeve columns x110 to x144 and x256 to x290, cuff at the elder wrist y352 to y366.
+       The open front resolves onto an integral under shell painted through the c3 and c2
+       variables, because an abaya is worn over other clothing and a hole would read wrong. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-abaya__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #4A4356)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2A38)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-abaya__under" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C6B79A)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2A38)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-abaya__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #524A60)"/>
+      <stop offset="1" stop-color="var(--c2, #2E2A38)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-abaya__geo" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 2 L16 9 L9 16 L2 9 Z" fill="none" stroke="var(--c3, #C6B79A)"
+            stroke-opacity="0.85" stroke-width="2"/>
+      <circle cx="9" cy="9" r="2" fill="var(--c3, #C6B79A)" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- integral under shell, so the meeting front edges never open onto a hole -->
+    <path d="M146 196 H254 L260 540 Q200 552 140 540 Z"
+          fill="url(#elder-male-onepiece-abaya__under)"/>
+    <!-- long straight sleeves, softened elder sleeve cap set inboard on the dropped shoulder -->
+    <path d="M138 184 Q110 189 110 210 L112 352 Q112 366 126 366 H130 Q144 366 143 352 Z"
+          fill="url(#elder-male-onepiece-abaya__sleeve)"/>
+    <path d="M262 184 Q290 189 290 210 L288 352 Q288 366 274 366 H270 Q256 366 257 352 Z"
+          fill="url(#elder-male-onepiece-abaya__sleeve)"/>
+    <!-- the two front panels, falling straight from the shoulder to the ankle, no waist -->
+    <path d="M132 210 Q132 180 160 180 H196 L197 546 Q162 552 128 542 Z"
+          fill="url(#elder-male-onepiece-abaya__panel)"/>
+    <path d="M268 210 Q268 180 240 180 H204 L203 546 Q238 552 272 542 Z"
+          fill="url(#elder-male-onepiece-abaya__panel)"/>
+  </g>
+
+  <!-- generic geometric trim band running the whole length of each front edge -->
+  <rect x="178" y="200" width="18" height="336" fill="url(#elder-male-onepiece-abaya__geo)"/>
+  <rect x="204" y="200" width="18" height="336" fill="url(#elder-male-onepiece-abaya__geo)"/>
+  <path d="M197 196 V540" stroke="var(--c3, #C6B79A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M203 196 V540" stroke="var(--c3, #C6B79A)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <!-- the two edges simply meeting: no button, no tie, no belt anywhere on this garment -->
+  <path d="M200 196 V540" stroke="var(--c2, #2E2A38)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- the same geometric trim repeated at each cuff, with a bound cuff edge under it -->
+  <rect x="112" y="334" width="30" height="18" fill="url(#elder-male-onepiece-abaya__geo)"/>
+  <rect x="258" y="334" width="30" height="18" fill="url(#elder-male-onepiece-abaya__geo)"/>
+  <path d="M113 360 H142" stroke="var(--c3, #C6B79A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M258 360 H287" stroke="var(--c3, #C6B79A)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- shoulder line and the plain round neck opening the robe simply hangs from -->
+  <path d="M162 181 Q200 195 238 181" stroke="var(--c3, #C6B79A)" stroke-opacity="0.8"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M178 176 q22 14 44 0 v10 q-22 16 -44 0 z" fill="var(--skin2, #E7B892)"/>
+
+  <!-- structural: long unbroken drape folds, proving there is no waist seam anywhere -->
+  <g fill="none" stroke="var(--c2, #2E2A38)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M156 228 L150 530"/>
+    <path d="M172 248 L168 532"/>
+    <path d="M228 248 L232 532"/>
+    <path d="M244 228 L250 530"/>
+  </g>
+
+  <!-- ankle hem edge -->
+  <path d="M130 530 Q162 544 196 546" stroke="var(--c3, #C6B79A)" stroke-opacity="0.6"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M270 530 Q238 544 204 546" stroke="var(--c3, #C6B79A)" stroke-opacity="0.6"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- upper chest highlight -->
+  <path d="M150 226 q22 10 40 8" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 234 q22 2 40 -8" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

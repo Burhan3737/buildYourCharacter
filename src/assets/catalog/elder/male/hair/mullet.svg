@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Mullet" data-family="mullet" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Head art on this bundle sits 34 units below the adult reference (adult cy91).
+       LENGTH TRAP, FIXED HERE. hair-back is z10 and the body is z20, so the tail cannot
+       be drawn down the centre nape: on this body the nape sits at y160 to y184 and the
+       tail would disappear under the torso within twenty units. The adult/male reference
+       hangs its whole tail from data-part="back" to y206 and loses the bottom half of it.
+       Here the long section is carried FORWARD in data-part="front" as two narrow tails
+       emerging from behind the ears and falling over the collar to y242, which is what
+       the family's second length is actually for. The back group keeps the clipped cap.
+       Axes: LENGTH - two lengths in one outline, clipped tight everywhere above y156 and
+       then a narrow loose tail dropping to y242 over the collar, the change made abruptly
+       at a hard step rather than as a taper.
+       VOLUME/TEXTURE OF THE OUTLINE - both hems are razored into uneven points cut into
+       the path itself: a choppy nine-point fringe on the brow and four unequal spikes at
+       the bottom of each tail. Differs from mop-shag (one even chin-length lobed hem all
+       round, nothing longer) and from taper-fade (nothing hangs at all) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-mullet__capgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #B7A99A)"/>
+        <stop offset="1" stop-color="var(--hair2, #7C6E60)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- everything above the nape stays clipped short -->
+      <path d="M148 96 C144 124 148 146 156 158
+               C172 166 228 166 244 158
+               C252 146 256 124 252 96
+               C232 108 168 108 148 96 Z"
+            fill="url(#elder-male-hair-mullet__capgrad)"/>
+    </g>
+    <!-- the abrupt step where the crop stops and the long section starts -->
+    <path d="M158 150 C176 160 224 160 242 150 C236 162 164 162 158 150 Z"
+          fill="var(--hair2, #7C6E60)"/>
+    <path d="M178 132 C176 150 178 166 182 178" stroke="var(--hair2, #7C6E60)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M222 132 C224 150 222 166 218 178" stroke="var(--hair2, #7C6E60)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M156 100 C176 88 224 88 244 100" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-mullet__cropgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #B7A99A)"/>
+        <stop offset="1" stop-color="var(--hair2, #7C6E60)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-mullet__eargrad" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #7C6E60)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #7C6E60)"/>
+        <stop offset="1" stop-color="var(--hair1, #B7A99A)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-mullet__tailgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #B7A99A)"/>
+        <stop offset="0.62" stop-color="var(--hair1, #B7A99A)"/>
+        <stop offset="1" stop-color="var(--hair2, #7C6E60)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the two tails, carried forward over each shoulder and razored to points -->
+      <path d="M138 148 C132 178 134 208 138 238
+               L143 224 L148 242 L155 226 L160 240 L164 224
+               C166 196 164 172 160 150 Z"
+            fill="url(#elder-male-hair-mullet__tailgrad)"/>
+      <path d="M262 148 C268 178 266 208 262 238
+               L257 224 L252 242 L245 226 L240 240 L236 224
+               C234 196 236 172 240 150 Z"
+            fill="url(#elder-male-hair-mullet__tailgrad)"/>
+      <!-- short crop with a choppy fringe cut straight across the brow -->
+      <path d="M143 120 C141 82 167 58 200 58 C233 58 259 82 257 120
+               C250 106 242 98 233 94
+               L228 86 L222 96 L214 84 L206 94 L198 82 L190 94 L182 86 L174 96 L168 88
+               C158 96 149 106 143 120 Z"
+            fill="url(#elder-male-hair-mullet__cropgrad)"/>
+      <!-- clipped close over the ears, so the ears stay visible -->
+      <path d="M142 116 C139 132 140 146 145 156 C150 148 151 132 150 116 Z"
+            fill="url(#elder-male-hair-mullet__eargrad)"/>
+      <path d="M258 116 C261 132 260 146 255 156 C250 148 249 132 250 116 Z"
+            fill="url(#elder-male-hair-mullet__eargrad)"/>
+    </g>
+    <!-- the razored cut edge of the fringe -->
+    <path d="M172 92 L178 100 L186 90 L194 98 L202 88 L210 98 L218 90 L226 100 L232 92
+             C222 96 182 96 172 92 Z"
+          fill="var(--hair2, #7C6E60)"/>
+    <path d="M144 130 C147 140 149 148 152 154" stroke="var(--hair2, #7C6E60)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M256 130 C253 140 251 148 248 154" stroke="var(--hair2, #7C6E60)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M180 74 V90" stroke="var(--hair2, #7C6E60)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M200 70 V86" stroke="var(--hair2, #7C6E60)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M220 74 V90" stroke="var(--hair2, #7C6E60)" stroke-width="2.4"
+          fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- razored strand lines down each carried tail -->
+    <path d="M145 164 C142 190 143 212 146 230" stroke="var(--hair2, #7C6E60)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.65"/>
+    <path d="M156 166 C154 190 155 210 157 226" stroke="var(--hair2, #7C6E60)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M255 164 C258 190 257 212 254 230" stroke="var(--hair2, #7C6E60)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.65"/>
+    <path d="M244 166 C246 190 245 210 243 226" stroke="var(--hair2, #7C6E60)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M164 74 C182 62 218 62 236 74" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M141 176 C140 196 141 212 143 224" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M259 176 C260 196 259 212 257 224" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

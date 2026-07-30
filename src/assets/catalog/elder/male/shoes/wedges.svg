@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Wedges" data-family="wedges" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Formalwear, and it lives here rather than in costume because costume hides the shoes
+       and for formalwear the shoes are the look.
+       silhouette axes: SOLE DEPTH one continuous SOLID wedge rising from toe to heel with no
+       gap at all beneath the arch, and FASTENING an ankle strap closed by a small buckle.
+       Against heels that is the decisive pair: heels lift the back of the foot on a narrow
+       column and leave open air under the arch, while this sole is filled solid from ground
+       to upper across its whole length. Against platform-boots it is shaft height and sole
+       profile: that slab is a constant 24 units deep under a boot shaft, this one is raked.
+       Measured on this body: the wedge is 24 units deep at the heel (top edge y546, ground
+       y570) tapering to 10 units at the toe (top edge y560), over the elder male foot rects
+       x158 to x202 and x198 to x242. Ground line y570 and the wedge rests exactly on it.
+       Elder note: the ankle strap is broad and its buckle oversized, which is the elder
+       register, and the wedge itself is the stable low rise this stage prefers to a column. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-wedges__wedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C98F5E)"/>
+      <stop offset="1" stop-color="var(--c2, #8C5B36)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-wedges__vamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #4E3626)"/>
+      <stop offset="1" stop-color="var(--c2, #8C5B36)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two solid raked wedges filled right down to the ground with no arch
+       opening, each under a low vamp -->
+  <g class="sp-shadow">
+    <path d="M150 546 Q160 544 176 550 Q194 556 204 560 Q207 562 206 566 Q206 570 199 570
+             H154 Q147 570 147 564 Z" fill="url(#elder-male-shoes-wedges__wedge)"/>
+    <path d="M154 546 Q152 534 166 531 H188 Q201 533 202 545 Q204 551 196 553
+             Q175 557 158 552 Q152 551 154 546 Z" fill="url(#elder-male-shoes-wedges__vamp)"/>
+    <path d="M250 546 Q240 544 224 550 Q206 556 196 560 Q193 562 194 566 Q194 570 201 570
+             H246 Q253 570 253 564 Z" fill="url(#elder-male-shoes-wedges__wedge)"/>
+    <path d="M246 546 Q248 534 234 531 H212 Q199 533 198 545 Q196 551 204 553
+             Q225 557 242 552 Q248 551 246 546 Z" fill="url(#elder-male-shoes-wedges__vamp)"/>
+  </g>
+
+  <!-- structural: broad ankle straps with an oversized buckle, over an arch that is closed
+       by the wedge below and shows skin above -->
+  <path d="M152 527 Q170 520 190 527" stroke="var(--c3, #4E3626)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M210 527 Q230 520 248 527" stroke="var(--c3, #4E3626)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <rect x="178" y="521" width="13" height="14" rx="4" fill="var(--c3, #4E3626)"/>
+  <rect x="209" y="521" width="13" height="14" rx="4" fill="var(--c3, #4E3626)"/>
+  <path d="M184 525 v6" stroke="var(--c1, #C98F5E)" stroke-opacity="0.7" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M215 525 v6" stroke="var(--c1, #C98F5E)" stroke-opacity="0.7" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: rope wrap running the length of the wedge, with no sole break anywhere -->
+  <g stroke="var(--c2, #8C5B36)" stroke-opacity="0.55" stroke-width="3" fill="none"
+     stroke-linecap="round">
+    <path d="M149 552 Q176 558 203 563"/>
+    <path d="M148 560 Q176 564 203 567"/>
+    <path d="M251 552 Q224 558 197 563"/>
+    <path d="M252 560 Q224 564 197 567"/>
+  </g>
+
+  <!-- trim: the ground edge, a single continuous line because the wedge has no heel break -->
+  <path d="M150 568 H204" stroke="var(--c3, #4E3626)" stroke-opacity="0.7" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M250 568 H196" stroke="var(--c3, #4E3626)" stroke-opacity="0.7" stroke-width="3.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M158 538 q14 6 26 7" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 538 q-14 6 -26 7" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

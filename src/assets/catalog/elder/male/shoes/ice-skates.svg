@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ice Skates" data-family="ice-skates" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: SOLE DEPTH a thin blade held clear of the sole on two narrow posts,
+       with open air visible between them, the only shoe in this bundle whose sole is not in
+       contact with its upper, and SHAFT HEIGHT a padded boot rising well above the ankle.
+       Against high-tops (shaft top y498, banded cup sole sitting flush on the upper) that is
+       sole depth and toe; against boots (shaft top y470, chunky block sole) it is sole depth
+       and fastening; against snow-boots, sole and volume.
+       Drawn to the elder male foot rects x158 to x202 and x198 to x242, y544 to y570.
+       Ground line y570 and the blade rests exactly on it.
+       Note on the reference: adult/male/shoes/ice-skates.svg puts its blade at y578 to y584
+       and its mounting posts at y566 to y579, that is up to 14 units BELOW the ground line.
+       This version carries the same read entirely above y570: sole y548 to y556, posts y556
+       to y564, blade y564 to y570. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-ice-skates__boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F0EADD)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AF9C)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-ice-skates__blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #8FA3B4)"/>
+      <stop offset="1" stop-color="var(--c2, #B9AF9C)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two padded boots rising above the ankle, each on a blade held clear of
+       its sole. Left drawn first so the right skate reads in front. -->
+  <g class="sp-shadow">
+    <path d="M160 502 Q160 494 170 494 H194 Q204 494 204 504 L205 540 Q206 550 196 552 H164
+             Q154 552 154 542 L157 510 Q157 504 160 502 Z"
+          fill="url(#elder-male-shoes-ice-skates__boot)"/>
+    <!-- flat sole plate, wide enough to cover the whole foot block -->
+    <path d="M152 548 H208 Q212 551 212 556 H148 Q148 551 152 548 Z"
+          fill="var(--c2, #B9AF9C)"/>
+    <!-- shadowed recess between the posts, so the air gap reads without the bare foot
+         showing through it -->
+    <rect x="150" y="556" width="60" height="9" rx="3" fill="var(--c2, #B9AF9C)"
+          fill-opacity="0.5"/>
+    <rect x="162" y="555" width="13" height="10" rx="3" fill="var(--c3, #8FA3B4)"/>
+    <rect x="187" y="555" width="13" height="10" rx="3" fill="var(--c3, #8FA3B4)"/>
+    <path d="M146 564 H214 Q218 564 218 567 Q218 570 214 570 H146 Q142 570 142 567
+             Q142 564 146 564 Z" fill="url(#elder-male-shoes-ice-skates__blade)"/>
+
+    <path d="M200 502 Q200 494 210 494 H234 Q244 494 244 504 L245 540 Q246 550 236 552 H204
+             Q194 552 194 542 L197 510 Q197 504 200 502 Z"
+          fill="url(#elder-male-shoes-ice-skates__boot)"/>
+    <path d="M192 548 H248 Q252 551 252 556 H188 Q188 551 192 548 Z"
+          fill="var(--c2, #B9AF9C)"/>
+    <rect x="190" y="556" width="60" height="9" rx="3" fill="var(--c2, #B9AF9C)"
+          fill-opacity="0.5"/>
+    <rect x="202" y="555" width="13" height="10" rx="3" fill="var(--c3, #8FA3B4)"/>
+    <rect x="227" y="555" width="13" height="10" rx="3" fill="var(--c3, #8FA3B4)"/>
+    <path d="M186 564 H254 Q258 564 258 567 Q258 570 254 570 H186 Q182 570 182 567
+             Q182 564 186 564 Z" fill="url(#elder-male-shoes-ice-skates__blade)"/>
+  </g>
+
+  <!-- trim: padded collar roll at the top of each boot -->
+  <path d="M156 494 Q180 487 206 494 Q206 503 197 504 H166 Q156 503 156 494 Z"
+        fill="var(--c2, #B9AF9C)"/>
+  <path d="M196 494 Q220 487 246 494 Q246 503 237 504 H206 Q196 503 196 494 Z"
+        fill="var(--c2, #B9AF9C)"/>
+
+  <!-- structural: the long hooked lace ladder, five bars under two open hooks -->
+  <g stroke="var(--c3, #8FA3B4)" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M167 512 H196"/>
+    <path d="M166 521 H197"/>
+    <path d="M165 530 H198"/>
+    <path d="M165 539 H198"/>
+    <path d="M166 547 H197"/>
+    <path d="M207 512 H236"/>
+    <path d="M206 521 H237"/>
+    <path d="M205 530 H238"/>
+    <path d="M205 539 H238"/>
+    <path d="M206 547 H237"/>
+    <path d="M164 504 q-6 0 -6 5"/>
+    <path d="M199 504 q6 0 6 5"/>
+    <path d="M204 504 q-6 0 -6 5"/>
+    <path d="M239 504 q6 0 6 5"/>
+  </g>
+
+  <!-- trim: the blade edge, a bright line along the running surface -->
+  <path d="M146 568 H214" stroke="var(--c3, #8FA3B4)" stroke-opacity="0.85" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M186 568 H254" stroke="var(--c3, #8FA3B4)" stroke-opacity="0.85" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M167 514 q16 4 30 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M207 514 q16 4 30 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+</svg>

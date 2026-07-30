@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Crown Thinning" data-family="crown-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head measured off bodies/elder/male/base.svg: ellipse cx200 cy125
+       rx57 ry59 (crown y66, chin y184); ears x138 to 160 and x240 to 262, y116 to 142;
+       real drawn shoulder line y184, six units above the JSON's y190.
+       Axes: PARTING/HEM - the hairline has receded into two deep temple bays and the
+       whole crown between them, 48 units across, is genuine negative space in the path
+       rather than a lighter patch laid over a solid mass.
+       CROWN - what is left is a dense horseshoe, thick at the temples and round the
+       nape and absent above y120 in the middle, so the outline is a broken ring.
+       This is an Older-tier family and it is drawn as real hair: full weight in the
+       arms, a lit edge on each, and a proper nape roll. Matter of fact, not a joke. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-crown-thinning__bandgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the rear arm of the horseshoe, densest round the nape -->
+      <path d="M142 130 C140 152 146 172 158 184
+               C176 192 224 192 242 184
+               C254 172 260 152 258 130
+               C240 146 160 146 142 130 Z"
+            fill="url(#elder-male-hair-crown-thinning__bandgrad)"/>
+    </g>
+    <path d="M150 172 C172 184 228 184 250 172 C244 188 156 188 150 172 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M152 140 C174 152 226 152 248 140" stroke="var(--hair2, #6E7480)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-crown-thinning__armgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="0.65" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left front arm: its inner edge is the bay, running back to y84 -->
+      <path d="M139 152 C136 118 140 92 152 84
+               C162 90 170 108 176 130
+               L176 146
+               C162 140 148 142 139 152 Z"
+            fill="url(#elder-male-hair-crown-thinning__armgrad)"/>
+      <!-- right front arm -->
+      <path d="M261 152 C264 118 260 92 248 84
+               C238 90 230 108 224 130
+               L224 146
+               C238 140 252 142 261 152 Z"
+            fill="url(#elder-male-hair-crown-thinning__armgrad)"/>
+    </g>
+    <!-- the bays themselves, painted in the skin ramp so the recession reads at
+         thumbnail size instead of relying on a value change in the hair -->
+    <path d="M176 130 C170 108 162 90 152 84 C166 88 176 104 182 126 Z"
+          fill="var(--skin1, #E7B892)"/>
+    <path d="M224 130 C230 108 238 90 248 84 C234 88 224 104 218 126 Z"
+          fill="var(--skin1, #E7B892)"/>
+    <!-- the fringe of remaining hair along each bay edge -->
+    <path d="M150 88 C158 96 166 112 172 130 C170 112 162 96 152 86 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M250 88 C242 96 234 112 228 130 C230 112 238 96 248 86 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M141 138 C142 144 144 148 147 150 C144 146 142 142 142 136 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M259 138 C258 144 256 148 253 150 C256 146 258 142 258 136 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <!-- weight lines inside each arm, so the horseshoe reads as hair and not a band -->
+    <path d="M146 142 C147 124 150 106 156 94" stroke="var(--hair2, #6E7480)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M254 142 C253 124 250 106 244 94" stroke="var(--hair2, #6E7480)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M144 130 C147 112 151 98 156 90" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M256 130 C253 112 249 98 244 90" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

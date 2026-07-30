@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ballet Flats" data-family="ballet-flats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: FASTENING none at all, and SOLE DEPTH barely thicker than the upper.
+       The identity is the very low scooped topline, which leaves the whole instep bare.
+       Against mary-janes (chunky round toe, small heel, buckled instep strap) that is
+       fastening and sole; against dress-shoes (raised vamp, apron seam, stacked block heel)
+       it is both again; against slides it is the closed heel counter.
+       Drawn to the elder male foot rects x158 to x202 and x198 to x242, y544 to y570, with a
+       2 to 4 unit overlap on every edge. Ground line y570 and nothing crosses it.
+       The scooped instep shows the body's own foot; no phantom sock is painted in. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-ballet-flats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E4A398)"/>
+      <stop offset="1" stop-color="var(--c2, #B87466)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-ballet-flats__sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #B87466)"/>
+      <stop offset="1" stop-color="var(--c1, #E4A398)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two very low uppers, topline scooped away over the instep,
+       left drawn first so the right foot reads in front -->
+  <g class="sp-shadow">
+    <path d="M155 565 Q151 558 158 554 Q169 549 178 551 Q188 546 196 550 Q204 555 204 563
+             Q204 570 197 570 H160 Q155 570 155 565 Z"
+          fill="url(#elder-male-shoes-ballet-flats__upper)"/>
+    <path d="M156 563 H203 Q204 570 197 570 H160 Q155 570 156 563 Z"
+          fill="url(#elder-male-shoes-ballet-flats__sole)"/>
+    <path d="M195 565 Q191 558 198 554 Q209 549 218 551 Q228 546 236 550 Q244 555 244 563
+             Q244 570 237 570 H200 Q195 570 195 565 Z"
+          fill="url(#elder-male-shoes-ballet-flats__upper)"/>
+    <path d="M196 563 H243 Q244 570 237 570 H200 Q195 570 196 563 Z"
+          fill="url(#elder-male-shoes-ballet-flats__sole)"/>
+  </g>
+
+  <!-- trim: bound topline following the scoop, so the low edge reads at tray size -->
+  <path d="M158 556 Q169 551 178 553 Q188 548 196 552 Q203 556 204 562"
+        stroke="var(--c3, #F7EDE6)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+  <path d="M198 556 Q209 551 218 553 Q228 548 236 552 Q243 556 244 562"
+        stroke="var(--c3, #F7EDE6)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: a small flat bow at the throat, the only ornament. No strap, no buckle,
+       no lace, which is what carries the fastening axis -->
+  <path d="M170 553 Q176 547 180 553 Q184 547 190 553 Q180 558 170 553 Z"
+        fill="var(--c3, #F7EDE6)"/>
+  <path d="M210 553 Q216 547 220 553 Q224 547 230 553 Q220 558 210 553 Z"
+        fill="var(--c3, #F7EDE6)"/>
+  <path d="M179 550 q1 4 0 6" stroke="var(--c2, #B87466)" stroke-opacity="0.55"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M219 550 q1 4 0 6" stroke="var(--c2, #B87466)" stroke-opacity="0.55"
+        stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the sole edge, a single fine line rather than a stacked band -->
+  <path d="M157 565 H202" stroke="var(--c3, #F7EDE6)" stroke-opacity="0.55" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M197 565 H242" stroke="var(--c3, #F7EDE6)" stroke-opacity="0.55" stroke-width="2"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M162 561 q18 4 34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 561 q18 4 34 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3.6"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fulani Braids" data-family="fulani-braids" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; the REAL drawn shoulder line is
+       the top of the drawn torso at y184, six units above the y190 the JSON implies.
+       LENGTH TRAP, FIXED HERE. hair-back is z10 and the body is z20, so anything drawn
+       below y184 in the back group renders as literally nothing. The reference file
+       src/assets/catalog/adult/male/hair/fulani-braids.svg still has this defect: all
+       seven of its free plaits hang to y240 inside data-part="back" and none of them
+       are visible below the shoulder. In this file the released sections are carried
+       FORWARD in data-part="front", over each shoulder and down the chest to y272, so
+       the braids actually read; the back group keeps only the nape gather.
+       Axes: CROWN - scalp rows. A clean centre part of REAL SCALP in the skin ramp with
+       four raised rows running back on each side of it and 5 to 9 units of visible bare
+       scalp as a channel between every pair. Never a hatch pattern.
+       PARTING/HEM - beaded: the six released braids end in small cuff bands, two or
+       three to a braid, and the hem is six separated ends at six different heights.
+       Differs from cornrows (all scalp, one small gathered tail) and from box-braids
+       (a square grid with every section free) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-fulani-braids__napegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the rows gather at the nape; this is all the back group can usefully carry -->
+      <path d="M158 128 C154 150 158 170 168 182 C180 188 220 188 232 182
+               C242 170 246 150 242 128 C222 142 178 142 158 128 Z"
+            fill="url(#elder-male-hair-fulani-braids__napegrad)"/>
+    </g>
+    <path d="M166 156 C182 170 218 170 234 156 C228 176 172 176 166 156 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M176 138 Q190 150 198 164" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M224 138 Q210 150 202 164" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M162 112 C182 100 218 100 238 112" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-fulani-braids__rowgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-fulani-braids__plaitgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <!-- bare scalp; every channel between the rows below is this showing through -->
+    <path d="M141 130 C141 86 168 56 200 56 C232 56 259 86 259 130
+             C242 112 222 102 200 102 C178 102 158 112 141 130 Z"
+          fill="var(--skin2, #C99A72)"/>
+    <path d="M174 108 C181 84 190 66 200 58 C210 66 219 84 226 108
+             C217 104 209 102 200 102 C191 102 183 104 174 108 Z"
+          fill="var(--skin1, #E7B892)" opacity="0.5"/>
+    <g class="sp-shadow">
+      <!-- four raised rows left of the part, each ending at its own height -->
+      <path d="M191 60 C186 80 182 100 181 122 L189 123 C190 100 193 80 197 62 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M181 66 C173 84 168 104 166 126 L174 128 C177 104 182 86 189 70 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M171 76 C161 92 153 110 150 130 L158 133 C161 112 169 95 178 80 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M160 88 C150 100 143 116 141 134 L149 138 C152 120 159 106 168 93 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <!-- four raised rows right of the part -->
+      <path d="M209 60 C214 80 218 100 219 122 L211 123 C210 100 207 80 203 62 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M219 66 C227 84 232 104 234 126 L226 128 C223 104 218 86 211 70 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M229 76 C239 92 247 110 250 130 L242 133 C239 112 231 95 222 80 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+      <path d="M240 88 C250 100 257 116 259 134 L251 138 C248 120 241 106 232 93 Z"
+            fill="url(#elder-male-hair-fulani-braids__rowgrad)"/>
+
+      <!-- the released outer sections, carried forward over each shoulder and down the
+           chest; the undulating outline IS the plait -->
+      <path d="M134 130 C129 148 135 160 131 178 C127 196 133 208 129 226
+               C126 242 132 254 129 266 L134 272 L141 270
+               C145 254 140 244 144 226 C147 208 141 196 145 178
+               C148 160 142 148 146 130 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+      <path d="M150 136 C146 154 152 166 148 184 C144 202 150 214 147 230
+               C144 244 150 254 148 264 L153 268 L159 264
+               C163 250 158 240 162 224 C165 208 159 196 163 178
+               C166 160 160 150 162 136 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+      <path d="M166 142 C163 158 169 170 165 188 C162 204 168 216 165 230
+               L169 246 L175 242 C179 228 174 218 178 202
+               C181 186 175 174 179 158 C181 148 177 146 178 142 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+      <path d="M266 130 C271 148 265 160 269 178 C273 196 267 208 271 226
+               C274 242 268 254 271 266 L266 272 L259 270
+               C255 254 260 244 256 226 C253 208 259 196 255 178
+               C252 160 258 148 254 130 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+      <path d="M250 136 C254 154 248 166 252 184 C256 202 250 214 253 230
+               C256 244 250 254 252 264 L247 268 L241 264
+               C237 250 242 240 238 224 C235 208 241 196 237 178
+               C234 160 240 150 238 136 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+      <path d="M234 142 C237 158 231 170 235 188 C238 204 232 216 235 230
+               L231 246 L225 242 C221 228 226 218 222 202
+               C219 186 225 174 221 158 C219 148 223 146 222 142 Z"
+            fill="url(#elder-male-hair-fulani-braids__plaitgrad)"/>
+    </g>
+
+    <!-- the centre part: bare scalp, 4px wide, hairline back to the crown -->
+    <path d="M198 58 H202 V124 H198 Z" fill="var(--skin1, #E7B892)"/>
+    <path d="M200 60 V122" stroke="var(--skin2, #C99A72)" stroke-width="2"
+          fill="none" stroke-linecap="round"/>
+
+    <!-- the plait chevrons that make each raised row a row and not a stripe -->
+    <g stroke="var(--hair2, #6E7480)" stroke-width="2.2" fill="none" stroke-linecap="round"
+       opacity="0.75">
+      <path d="M183 82 q5 4 8 -1"/>
+      <path d="M181 104 q5 4 8 -1"/>
+      <path d="M171 90 q5 4 8 -1"/>
+      <path d="M167 110 q5 4 8 -1"/>
+      <path d="M157 96 q5 4 8 -1"/>
+      <path d="M152 114 q5 4 8 -1"/>
+      <path d="M146 106 q5 4 8 -1"/>
+      <path d="M209 82 q5 4 8 -1"/>
+      <path d="M211 104 q5 4 8 -1"/>
+      <path d="M221 90 q5 4 8 -1"/>
+      <path d="M225 110 q5 4 8 -1"/>
+      <path d="M235 96 q5 4 8 -1"/>
+      <path d="M240 114 q5 4 8 -1"/>
+      <path d="M246 106 q5 4 8 -1"/>
+    </g>
+    <!-- the crossings down each released braid -->
+    <g stroke="var(--hair2, #6E7480)" stroke-width="2.6" fill="none" stroke-linecap="round"
+       opacity="0.7">
+      <path d="M130 160 q7 5 13 -1"/>
+      <path d="M128 208 q7 5 13 -1"/>
+      <path d="M147 166 q7 5 13 -1"/>
+      <path d="M146 214 q7 5 13 -1"/>
+      <path d="M164 172 q7 5 13 -1"/>
+      <path d="M164 216 q7 5 13 -1"/>
+      <path d="M257 160 q7 5 13 -1"/>
+      <path d="M259 208 q7 5 13 -1"/>
+      <path d="M240 166 q7 5 13 -1"/>
+      <path d="M241 214 q7 5 13 -1"/>
+      <path d="M223 172 q7 5 13 -1"/>
+      <path d="M223 216 q7 5 13 -1"/>
+    </g>
+
+    <!-- beaded cuffs, two or three to a braid -->
+    <rect x="128" y="244" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="128" y="254" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="147" y="238" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="147" y="248" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="164" y="218" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="164" y="228" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="258" y="244" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="258" y="254" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="239" y="238" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="239" y="248" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="222" y="218" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+    <rect x="222" y="228" width="14" height="6" rx="2" fill="var(--hair2, #6E7480)"/>
+
+    <path d="M182 66 q30 -8 36 0" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="5"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

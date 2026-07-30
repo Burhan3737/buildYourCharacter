@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Nightgown" data-family="nightgown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = a closed flat shoulder yoke with a plain round neck and
+       no opening anywhere - this is the family's own axis value and it is not traded away
+       for age; VOLUME = one soft straight waistless column hanging from the yoke seam.
+       Differs from `maxi-dress` on shoulder (a flat yoke and cap sleeves vs straps) and
+       hem (mid-calf vs ankle), and from `kaftan` on shoulder (a set-in cap sleeve on a
+       real armhole vs a wide T sleeve cut in one with the body) and hem.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), yoke
+       y176 to y216, sleeve columns x110 to x144 and x256 to x290, mid-calf hem y514
+       measured on this bundle's own legs (y376 to y552, so mid-calf is y505 and the hem
+       clears it), hem drape never past y524 against the ground line at y570.
+       Elder read: the shoulder line drops and narrows so the yoke is set 4 units inboard
+       of the adult's and the cap sleeve head is softened, the body is cut looser through
+       the upper arm, and the hem is carried 20 units lower than the adult draft. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-nightgown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8E4F0)"/>
+      <stop offset="1" stop-color="var(--c2, #B0A7C8)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-nightgown__yoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #B0A7C8)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-nightgown__cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #E8E4F0)"/>
+      <stop offset="1" stop-color="var(--c2, #BDB5D2)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-nightgown__sprig" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="22" height="22">
+      <path d="M11 4 V18 M11 9 L5 6 M11 9 L17 6 M11 14 L6 12 M11 14 L16 12"
+            fill="none" stroke="var(--c3, #F4A79B)" stroke-opacity="0.5"
+            stroke-width="2.2" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-nightgown__clip">
+      <path d="M132 204 H268 L280 514 Q200 532 120 514 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- soft cap sleeves, the head eased and set inboard on the dropped elder shoulder -->
+    <path d="M138 190 Q110 196 107 218 Q105 236 122 236 H144 Q140 212 138 190 Z"
+          fill="url(#elder-male-onepiece-nightgown__cap)"/>
+    <path d="M262 190 Q290 196 293 218 Q295 236 278 236 H256 Q260 212 262 190 Z"
+          fill="url(#elder-male-onepiece-nightgown__cap)"/>
+    <!-- one straight waistless column, widening only gently to the mid-calf hem -->
+    <path d="M132 204 H268 L280 514 Q200 532 120 514 Z"
+          fill="url(#elder-male-onepiece-nightgown__body)"/>
+    <!-- flat shoulder yoke sitting across the top of the column -->
+    <path d="M162 176 H238 Q246 176 246 184 V216 H154 V184 Q154 176 162 176 Z"
+          fill="url(#elder-male-onepiece-nightgown__yoke)"/>
+  </g>
+
+  <!-- sprigged cloth over the column only; the yoke stays plain -->
+  <g clip-path="url(#elder-male-onepiece-nightgown__clip)">
+    <rect x="116" y="218" width="168" height="304"
+          fill="url(#elder-male-onepiece-nightgown__sprig)"/>
+  </g>
+
+  <!-- plain round neck opening, cut into the yoke -->
+  <path d="M176 176 Q200 200 224 176 Q222 206 200 208 Q178 206 176 176 Z"
+        fill="var(--skin2, #C99A72)"/>
+  <path d="M174 176 Q200 204 226 176" stroke="var(--c3, #F4A79B)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- yoke seam and the gather rows hanging from it -->
+  <path d="M152 214 H248" stroke="var(--c3, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <g fill="none" stroke="var(--c2, #B0A7C8)" stroke-opacity="0.55" stroke-width="3.2"
+     stroke-linecap="round">
+    <path d="M156 220 q6 12 0 24"/>
+    <path d="M174 220 q6 12 0 24"/>
+    <path d="M192 220 q6 12 0 24"/>
+    <path d="M210 220 q6 12 0 24"/>
+    <path d="M228 220 q6 12 0 24"/>
+    <path d="M244 220 q6 12 0 24"/>
+  </g>
+
+  <!-- long quiet drape folds, proving there is no waist anywhere -->
+  <g fill="none" stroke="var(--c2, #B0A7C8)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M162 254 L150 506"/>
+    <path d="M200 258 V520"/>
+    <path d="M238 254 L250 506"/>
+  </g>
+
+  <!-- softly bound cap sleeve edges and the hem band -->
+  <path d="M108 232 Q126 242 144 232" stroke="var(--c3, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M292 232 Q274 242 256 232" stroke="var(--c3, #F4A79B)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M124 506 Q200 524 276 506" stroke="var(--c3, #F4A79B)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M158 234 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

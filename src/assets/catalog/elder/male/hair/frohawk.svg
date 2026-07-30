@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Frohawk" data-family="frohawk" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Axes: CROWN - shaved and faded sides with one narrow ridge disconnected from them
+       by a hard temple line; the sides are a real VALUE GRADIENT, hair2 at the skin line
+       ramping up to hair1, and the front hairline is a hard clean edge, not a fuzz.
+       VOLUME/TEXTURE OF THE OUTLINE - the ridge contour is built from seven overlapping
+       coil lobes cut straight into the path, standing 23 units proud of the skull at
+       y43 and closing to a point at the nape at y174.
+       Differs from high-top-fade (a squared column with vertical walls at full head
+       width) and from taper-fade (no ridge at all) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-frohawk__ridgeback" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #B9BEC8)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #B9BEC8)"/>
+        <stop offset="1" stop-color="var(--hair2, #5F6470)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-frohawk__napefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #5F6470)"/>
+        <stop offset="0.55" stop-color="var(--hair2, #5F6470)"/>
+        <stop offset="1" stop-color="var(--hair1, #B9BEC8)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faded nape, close to the skin, darkest at the bottom edge -->
+      <path d="M156 142 C158 162 166 176 178 184 L222 184
+               C234 176 242 162 244 142 C228 154 172 154 156 142 Z"
+            fill="url(#elder-male-hair-frohawk__napefade)"/>
+      <!-- the ridge running back and down, closing to a point at the nape -->
+      <path d="M177 72 C166 86 172 104 176 118
+               C168 130 178 144 184 150
+               C182 162 192 175 200 174
+               C209 173 217 161 215 150
+               C224 144 230 130 222 118
+               C228 104 232 86 223 72
+               C212 66 187 66 177 72 Z"
+            fill="url(#elder-male-hair-frohawk__ridgeback)"/>
+    </g>
+    <path d="M186 94 C190 116 188 140 194 162" stroke="var(--hair2, #5F6470)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M214 94 C210 116 212 140 206 162" stroke="var(--hair2, #5F6470)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M164 172 C178 180 222 180 236 172" stroke="var(--hair2, #5F6470)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-frohawk__ridgefront" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #B9BEC8)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #B9BEC8)"/>
+        <stop offset="1" stop-color="var(--hair2, #5F6470)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-frohawk__sidefade" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="var(--hair2, #5F6470)"/>
+        <stop offset="0.5" stop-color="var(--hair2, #5F6470)"/>
+        <stop offset="1" stop-color="var(--hair1, #B9BEC8)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- left side, clipped to the skin all the way up to the disconnect -->
+      <path d="M174 78 C160 78 148 90 142 114
+               C138 134 144 150 152 162
+               C162 156 166 146 168 134
+               C165 112 166 92 174 78 Z"
+            fill="url(#elder-male-hair-frohawk__sidefade)"/>
+      <!-- right side -->
+      <path d="M226 78 C240 78 252 90 258 114
+               C262 134 256 150 248 162
+               C238 156 234 146 232 134
+               C235 112 234 92 226 78 Z"
+            fill="url(#elder-male-hair-frohawk__sidefade)"/>
+      <!-- the ridge front section: seven coil lobes cut into the rising contour -->
+      <path d="M175 108 C167 96 172 84 180 77
+               Q174 68 182 62
+               Q180 52 191 51
+               Q195 42 206 45
+               Q216 41 219 52
+               Q230 55 226 66
+               Q233 74 224 79
+               C231 88 230 100 224 110
+               C210 104 189 104 175 108 Z"
+            fill="url(#elder-male-hair-frohawk__ridgefront)"/>
+    </g>
+    <!-- the hard front hairline of the ridge, and of the clipped sides -->
+    <path d="M176 104 C190 99 212 99 224 104 C210 102 190 102 176 104 Z"
+          fill="var(--hair2, #5F6470)"/>
+    <path d="M143 112 C147 100 154 92 164 87 C155 94 149 103 146 116 Z"
+          fill="var(--hair2, #5F6470)"/>
+    <path d="M257 112 C253 100 246 92 236 87 C245 94 251 103 254 116 Z"
+          fill="var(--hair2, #5F6470)"/>
+    <!-- the disconnect: bare skin between the ridge and each clipped side -->
+    <path d="M170 108 C167 94 169 82 176 74 C172 84 171 96 173 110 Z"
+          fill="var(--skin2, #C99A72)"/>
+    <path d="M230 108 C233 94 231 82 224 74 C228 84 229 96 227 110 Z"
+          fill="var(--skin2, #C99A72)"/>
+    <!-- coil seams down the ridge, and the fade lines on each side -->
+    <path d="M188 60 C193 74 188 88 193 100" stroke="var(--hair2, #5F6470)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M212 60 C207 74 212 88 207 100" stroke="var(--hair2, #5F6470)"
+          stroke-width="3.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M200 52 C202 66 198 82 200 96" stroke="var(--hair2, #5F6470)"
+          stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M144 130 C147 142 151 152 156 160" stroke="var(--hair2, #5F6470)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M256 130 C253 142 249 152 244 160" stroke="var(--hair2, #5F6470)"
+          stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M186 56 C194 48 210 47 218 54" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

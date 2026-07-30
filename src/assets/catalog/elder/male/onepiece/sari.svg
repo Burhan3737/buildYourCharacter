@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Sari, Nivi Drape" data-family="sari" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = an unstitched draped wrap, pleated by hand at the waist
+       and held by nothing but the tuck; SHOULDER = one broad pallu carried diagonally
+       across the body and over a single shoulder, then falling free behind that arm.
+       DRAPE DIRECTION, CORRECTED HERE. The Nivi drape carries the pallu over the WEARER'S
+       LEFT shoulder, which on a figure facing us is the VIEWER'S RIGHT. The adult/male
+       reference file claims the left shoulder in its own comment and then draws the
+       mirror image of it: its diagonal band runs from x270 at the waist up to x164 at the
+       shoulder, i.e. up to the viewer's left, i.e. over the wearer's RIGHT shoulder, and
+       its free pallu falls on the viewer's left to match. Do not copy that direction. In
+       this file the diagonal runs from the tuck at x130 on the viewer's left UP to x236
+       on the viewer's RIGHT, and the free end falls behind the viewer's right arm.
+       Choli and petticoat are drawn into this same file and painted through c2 and c3 so
+       the player can still contrast them.
+       Living cultural dress under its own endonym, not costume: plain cloth with a generic
+       geometric border and no community's woven design.
+       Differs from `maxi-dress` on shoulder (a single diagonal pallu over one shoulder vs
+       two straps) and closure (a hand-tucked wrap vs a closed column), and from
+       `wrap-dress` on shoulder and hem.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), choli
+       hem y254 over a bare midriff, waist tuck at the elder natural waist y302 with the
+       cloth caught at y322, hips x148 to x252, petticoat to the elder ankle y546 with the
+       drape curve peaking at y553, never past the ground line at y570.
+       Elder read: the choli sleeve is a little longer and easier, the drape is carried
+       higher and quieter, the petticoat hem is longer, and the pallu is held at the
+       shoulder by one broad flat pin rather than left loose. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-sari__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C05A7A)"/>
+      <stop offset="1" stop-color="var(--c2, #85374F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-sari__pallu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #CB6786)"/>
+      <stop offset="1" stop-color="var(--c2, #85374F)"/>
+    </linearGradient>
+    <!-- the choli is painted through c2 alone so the player can contrast it against the
+         sari cloth, so its ramp is made with stop-opacity rather than with two different
+         hardcoded hexes on the same variable, which would go flat the moment c2 is
+         recoloured. The darkening at the hem is carried by the ink overlay below it. -->
+    <linearGradient id="elder-male-onepiece-sari__choli" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #9E4463)" stop-opacity="1"/>
+      <stop offset="1" stop-color="var(--c2, #9E4463)" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-sari__petticoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F7C873)"/>
+      <stop offset="1" stop-color="var(--c2, #B98C51)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-sari__border" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <path d="M9 3 L15 9 L9 15 L3 9 Z" fill="none" stroke="var(--c3, #F7C873)"
+            stroke-opacity="0.85" stroke-width="2"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-sari__palluclip">
+      <path d="M252 206 L292 432 Q295 450 278 452 H254 Q244 450 243 436 L208 204 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the free end of the pallu, falling behind the VIEWER'S RIGHT arm -->
+    <path d="M252 206 L292 432 Q295 450 278 452 H254 Q244 450 243 436 L208 204 Z"
+          fill="url(#elder-male-onepiece-sari__pallu)"/>
+    <!-- petticoat, showing below the draped cloth -->
+    <path d="M146 328 H254 L258 546 Q200 560 142 546 Z"
+          fill="url(#elder-male-onepiece-sari__petticoat)"/>
+    <!-- the draped sari cloth over the petticoat -->
+    <path d="M134 322 H266 L278 526 Q200 544 122 526 Z"
+          fill="url(#elder-male-onepiece-sari__cloth)"/>
+    <!-- short choli sleeves -->
+    <path d="M136 186 Q108 190 106 212 Q104 238 122 240 H142 Q140 212 136 186 Z"
+          fill="url(#elder-male-onepiece-sari__choli)"/>
+    <path d="M264 186 Q292 190 294 212 Q296 238 278 240 H258 Q260 212 264 186 Z"
+          fill="url(#elder-male-onepiece-sari__choli)"/>
+    <!-- short fitted choli, leaving the midriff bare -->
+    <path d="M132 208 Q132 178 162 176 H238 Q268 178 268 208 V254 Q200 272 132 254 Z"
+          fill="url(#elder-male-onepiece-sari__choli)"/>
+    <!-- the pallu crossing the body diagonally and going over the WEARER'S LEFT
+         shoulder, which is the viewer's right -->
+    <path d="M130 326 Q124 356 154 370 L250 218 Q258 194 236 178 Z"
+          fill="url(#elder-male-onepiece-sari__pallu)"/>
+  </g>
+
+  <!-- non-tunable ink overlay giving the choli its 14 percent darkening at the hem -->
+  <path d="M132 226 Q200 244 268 226 V254 Q200 272 132 254 Z"
+        fill="#3B2A22" fill-opacity="0.14"/>
+  <path d="M136 210 Q108 214 108 234 H140 Q138 220 136 210 Z"
+        fill="#3B2A22" fill-opacity="0.12"/>
+  <path d="M264 210 Q292 214 292 234 H260 Q262 220 264 210 Z"
+        fill="#3B2A22" fill-opacity="0.12"/>
+
+  <!-- bare midriff between the choli hem and the waist tuck, painted in the skin ramp -->
+  <path d="M140 258 Q200 278 260 258 Q200 290 140 258 Z"
+        fill="var(--skin2, #C99A72)" fill-opacity="0.7"/>
+
+  <!-- generic geometric border along the long edges of the pallu -->
+  <path d="M236 178 L250 218 L154 370" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M252 208 L290 434" stroke="var(--c3, #F7C873)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M290 446 Q268 456 246 444" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <g clip-path="url(#elder-male-onepiece-sari__palluclip)">
+    <rect x="206" y="200" width="92" height="256"
+          fill="url(#elder-male-onepiece-sari__border)"/>
+  </g>
+
+  <!-- hand-gathered centre-front pleats, fanning from the tuck at the waist -->
+  <g fill="none" stroke="var(--c2, #85374F)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M200 330 L156 520"/>
+    <path d="M200 330 L168 522"/>
+    <path d="M200 330 L180 524"/>
+    <path d="M200 330 L192 526"/>
+    <path d="M200 330 L206 526"/>
+    <path d="M200 330 L218 524"/>
+    <path d="M200 330 L230 522"/>
+    <path d="M200 330 L242 520"/>
+  </g>
+
+  <!-- the waist tuck, and the border along the sari hem -->
+  <path d="M136 326 Q200 342 264 326" stroke="var(--c3, #F7C873)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 516 Q200 536 274 516" stroke="var(--c3, #F7C873)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <!-- petticoat edge showing below -->
+  <path d="M144 538 Q200 552 256 538" stroke="var(--c3, #F7C873)" stroke-opacity="0.7"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- one broad flat pin holding the pallu at the shoulder, an elder-easy fastening -->
+  <rect x="222" y="188" width="34" height="12" rx="6" fill="var(--c3, #F7C873)"/>
+  <circle cx="248" cy="194" r="4" fill="var(--c2, #85374F)" opacity="0.6"/>
+
+  <!-- choli neckline and sleeve binding -->
+  <path d="M176 176 Q200 200 224 176 Q222 206 200 208 Q178 206 176 176 Z"
+        fill="var(--skin2, #C99A72)"/>
+  <path d="M174 176 Q200 204 226 176" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M108 234 H140" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M260 234 H292" stroke="var(--c3, #F7C873)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight, on the side the pallu leaves open -->
+  <path d="M148 220 q26 10 44 4" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

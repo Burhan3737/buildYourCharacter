@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Braided Crown" data-family="braided-crown" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head measured off bodies/elder/male/base.svg: ellipse cx200 cy125
+       rx57 ry59, so crown y66 and chin y184; ears x138 to 160 and x240 to 262, y116 to
+       142; drawn torso top (the real shoulder line) y184, which is 6 units above the
+       y190 the JSON implies.
+       Axes: VOLUME/TEXTURE OF THE OUTLINE - the band is nine overlapping plait lozenges
+       laid round the hairline, each leaning the opposite way to its neighbour, so the
+       outline of the band is scalloped and countable rather than a smooth hoop. The seam
+       where each pair crosses is cut in hair2.
+       PARTING/HEM - the whole remainder is tucked flat against the skull and rolled
+       under at the nape at y178; nothing hangs at all, and both ears stay clear below
+       the band, whose lowest point is y118. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-braided-crown__backgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #8C8578)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the tucked remainder: low, smooth, rolled under at the nape, showing only as a
+           narrow rim round the skull because all of it is pinned flat -->
+      <path d="M200 60 C162 60 144 82 142 116
+               C140 144 145 166 156 178
+               C174 186 226 186 244 178
+               C255 166 260 144 258 116
+               C256 82 238 60 200 60 Z"
+            fill="url(#elder-male-hair-braided-crown__backgrad)"/>
+    </g>
+    <!-- the roll where the tucked ends are pinned under at the nape -->
+    <path d="M156 160 C176 174 224 174 244 160 C240 180 160 180 156 160 Z"
+          fill="var(--hair2, #8C8578)"/>
+    <path d="M168 168 C184 177 216 177 232 168" stroke="var(--hair2, #8C8578)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M160 94 C180 80 220 80 240 94" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-braided-crown__frontgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #8C8578)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the tucked hair lying flat over the top of the skull, under the band -->
+      <path d="M149 129 C147 87 169 63 200 63 C231 63 253 87 251 129
+               C241 112 225 102 200 102 C175 102 159 112 149 129 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <!-- nine plait lozenges arcing from temple, over the brow, to temple; each leans
+           the opposite way to the one before it, the way a three strand plait does -->
+      <path d="M157 94 Q175 102 157 118 Q142 110 157 94 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M165 74 Q178 96 156 98 Q145 76 165 74 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M179 60 Q188 80 162 80 Q153 59 179 60 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M197 54 Q191 78 174 63 Q181 39 197 54 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M215 54 Q207 74 190 55 Q198 35 215 54 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M231 63 Q208 75 208 54 Q231 42 231 63 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M244 79 Q223 86 226 60 Q247 53 244 79 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M250 98 Q226 89 240 74 Q260 83 250 98 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+      <path d="M249 118 Q229 110 249 94 Q262 102 249 118 Z"
+            fill="url(#elder-male-hair-braided-crown__frontgrad)"/>
+    </g>
+    <!-- the shadow seam where each lozenge crosses under the next: eight cuts, so the
+         nine segments are individually countable -->
+    <path d="M155 103 Q163 107 157 115" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M159 86 Q168 90 162 97" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M170 69 Q179 74 172 81" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M185 58 Q193 64 186 70" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M203 54 Q210 61 203 67" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M220 58 Q212 64 219 70" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M235 69 Q226 74 233 81" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M246 86 Q237 90 243 97" stroke="var(--hair2, #8C8578)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.8"/>
+    <!-- band edge shadow along the inner side of the plait -->
+    <path d="M163 108 C171 80 185 64 200 64 C215 64 229 80 237 108
+             C228 88 215 77 200 77 C185 77 172 88 163 108 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.55"/>
+    <path d="M174 56 C185 45 215 45 226 56" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

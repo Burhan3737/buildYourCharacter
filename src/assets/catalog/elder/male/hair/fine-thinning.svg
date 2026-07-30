@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Fine Thinning" data-family="fine-thinning" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Axes: PARTING/HEM - a 20 unit corridor of bare scalp down the centre from the
+       hairline back to y126, with the hairline itself completely intact and no temple
+       bays anywhere. CROWN - the mass is separated swathes with 5 to 9 units of bare
+       scalp between them, so the sparseness is cut OUT of the silhouette rather than
+       dotted over a solid shape; the gaps widen toward the crown.
+       hair-back is z10 and the body is z20, so the long back swathes below y184 would
+       render as nothing. Two sparse face-framing swathes are therefore carried forward
+       in the front group, past the shoulder line to y246, so the family's "full length
+       kept all round" actually reads on the stage.
+       Differs from crown-thinning on both axes: an intact hairline against a receded
+       one, diffuse gaps against one large bare crown. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-fine-thinning__swathegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #8C8578)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <path d="M148 94 C138 134 133 182 137 226 L151 228 C149 184 151 136 158 94 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+      <path d="M167 90 C159 132 155 182 157 230 L171 232 C170 184 172 134 177 90 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+      <path d="M185 88 C181 132 178 182 179 234 L193 234 C193 184 192 134 195 88 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+      <path d="M205 88 C207 134 208 184 207 234 L221 234 C222 182 219 132 215 88 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+      <path d="M223 90 C228 134 230 184 229 232 L243 230 C245 182 241 132 233 90 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+      <path d="M242 94 C249 136 251 184 249 226 L263 224 C266 182 262 134 252 94 Z"
+            fill="url(#elder-male-hair-fine-thinning__swathegrad)"/>
+    </g>
+    <!-- soft ends: each swathe thins out rather than being cut -->
+    <path d="M137 206 C137 218 137 226 138 229 L150 230 C149 220 148 212 147 204 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M157 208 C157 220 157 228 158 231 L170 233 C169 224 168 214 167 206 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M179 210 C179 222 179 230 180 234 L192 234 C192 225 191 216 190 208 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M208 210 C208 222 208 230 208 234 L220 234 C220 225 220 216 220 208 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M229 208 C229 220 229 228 230 231 L242 229 C243 220 243 212 242 204 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M249 206 C249 218 249 225 250 227 L262 225 C263 216 263 208 262 200 Z"
+          fill="var(--hair2, #8C8578)" opacity="0.7"/>
+    <path d="M162 98 C180 86 220 86 238 98" stroke="#FFFFFF" stroke-opacity="0.20"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-fine-thinning__crowngrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #8C8578)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-fine-thinning__fallgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="0.55" stop-color="var(--hair1, #D9D2C5)"/>
+        <stop offset="1" stop-color="var(--hair2, #8C8578)"/>
+      </linearGradient>
+    </defs>
+    <!-- bare scalp under the perforated crown -->
+    <path d="M142 130 C142 84 168 56 200 56 C232 56 258 84 258 130
+             C242 112 222 102 200 102 C178 102 158 112 142 130 Z"
+          fill="var(--skin2, #C99A72)"/>
+    <path d="M176 108 C182 84 190 66 200 58 C210 66 218 84 224 108
+             C216 104 208 102 200 102 C192 102 184 104 176 108 Z"
+          fill="var(--skin1, #E7B892)" opacity="0.55"/>
+    <g class="sp-shadow">
+      <!-- six separated crown swathes; the hairline stays intact all the way round -->
+      <path d="M188 62 C184 80 180 102 178 126 L190 126 C192 102 194 80 197 62 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <path d="M174 64 C168 84 163 106 160 128 L172 128 C175 106 179 85 183 66 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <path d="M160 70 C153 90 147 110 144 132 L154 133 C158 112 164 93 169 73 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <path d="M212 62 C216 80 220 102 222 126 L210 126 C208 102 206 80 203 62 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <path d="M226 64 C232 84 237 106 240 128 L228 128 C225 106 221 85 217 66 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <path d="M240 70 C247 90 253 110 256 132 L246 133 C242 112 236 93 231 73 Z"
+            fill="url(#elder-male-hair-fine-thinning__crowngrad)"/>
+      <!-- carried forward past the shoulder line: two sparse face-framing swathes, each
+           split so the scalp side of the neck still shows between them -->
+      <path d="M143 126 C137 156 136 190 140 220 C142 234 145 242 148 246
+               L156 244 C152 232 150 218 150 200 C150 172 152 148 155 126 Z"
+            fill="url(#elder-male-hair-fine-thinning__fallgrad)"/>
+      <path d="M161 132 C157 160 156 190 159 216 C161 228 163 234 166 238
+               L173 234 C170 224 169 208 170 188 C171 166 173 148 175 132 Z"
+            fill="url(#elder-male-hair-fine-thinning__fallgrad)"/>
+      <path d="M257 126 C263 156 264 190 260 220 C258 234 255 242 252 246
+               L244 244 C248 232 250 218 250 200 C250 172 248 148 245 126 Z"
+            fill="url(#elder-male-hair-fine-thinning__fallgrad)"/>
+      <path d="M239 132 C243 160 244 190 241 216 C239 228 237 234 234 238
+               L227 234 C230 224 231 208 230 188 C229 166 227 148 225 132 Z"
+            fill="url(#elder-male-hair-fine-thinning__fallgrad)"/>
+    </g>
+    <!-- the wide centre parting: bare scalp, 20px across, hairline back to y126 -->
+    <path d="M190 64 H210 V126 H190 Z" fill="var(--skin1, #E7B892)"/>
+    <path d="M200 68 V122" stroke="var(--skin2, #C99A72)" stroke-width="3"
+          fill="none" stroke-linecap="round"/>
+    <!-- the hairline stays intact: an unbroken fringe of short hairs along it -->
+    <path d="M146 126 C160 112 176 104 190 102" stroke="var(--hair2, #8C8578)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M254 126 C240 112 224 104 210 102" stroke="var(--hair2, #8C8578)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M178 124 C182 108 186 90 190 74" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M222 124 C218 108 214 90 210 74" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- thin, separated weight lines down the carried-forward swathes -->
+    <path d="M146 140 C142 170 142 202 146 230" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M254 140 C258 170 258 202 254 230" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M166 146 C163 174 163 202 166 226" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M234 146 C237 174 237 202 234 226" stroke="var(--hair2, #8C8578)"
+          stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M170 76 C180 66 190 62 196 60" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M230 76 C220 66 210 62 204 60" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

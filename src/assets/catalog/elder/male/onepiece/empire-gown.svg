@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Empire Gown" data-family="empire-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = one horizontal seam sitting directly under the bust with
+       the whole skirt hanging off it and no other waist anywhere on the garment;
+       SHOULDER = short puffed cap sleeves gathered at the head.
+       SEAM HEIGHT, RECOMPUTED ON THIS BODY, not copied. The elder torso is drawn y184 to
+       y336 and the bundle's natural waist is y302, so the torso above the waist is 118
+       units deep against the adult's 144. The adult reference puts its seam at y240,
+       which is 60 units above its waist at y300; the same proportion of this body's
+       shorter torso is 118 * (60/144) = 49 units above y302, giving y253. Rounded to a
+       seam band at y250 to y262, which sits directly under the bust on this body.
+       Differs from `ball-gown` on bodice (a very short under-bust bodice with puffed caps
+       vs a strapless band coming to a point at the waist) and skirt (a narrow gathered
+       column vs a bouffant dome), and from `maxi-dress` on shoulder and closure.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), sleeve
+       caps hung on the elder arm top y198, hem at the elder ankle y546 with the drape
+       curve peaking at y554, never past the ground line at y570.
+       Elder read: the puffed cap is softened and set inboard on the dropped shoulder, the
+       skirt is cut with more ease, and the hem is carried to the ankle rather than above
+       it. The axis values are unchanged. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-empire-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #C9B6D8)"/>
+      <stop offset="1" stop-color="var(--c2, #8E77A6)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-empire-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D3C2E0)"/>
+      <stop offset="1" stop-color="var(--c2, #8E77A6)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-empire-gown__puff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #D3C2E0)"/>
+      <stop offset="1" stop-color="var(--c2, #866D9E)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-empire-gown__seam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #F0E7D8)"/>
+      <stop offset="1" stop-color="var(--c2, #8E77A6)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- narrow skirt, gathered straight off the under-bust seam to the ankle -->
+    <path d="M140 250 H260 L264 546 Q200 562 136 546 Z"
+          fill="url(#elder-male-onepiece-empire-gown__skirt)"/>
+    <!-- puffed cap sleeves -->
+    <path d="M148 190 Q114 187 108 212 Q103 234 124 239 Q145 239 151 226 Z"
+          fill="url(#elder-male-onepiece-empire-gown__puff)"/>
+    <path d="M252 190 Q286 187 292 212 Q297 234 276 239 Q255 239 249 226 Z"
+          fill="url(#elder-male-onepiece-empire-gown__puff)"/>
+    <!-- very short fitted bodice, scoop neck, stopping dead under the bust -->
+    <path d="M146 204 Q146 180 168 178 Q200 206 232 178 Q254 180 254 204 V260 H146 Z"
+          fill="url(#elder-male-onepiece-empire-gown__bodice)"/>
+  </g>
+
+  <!-- THE seam: a clear horizontal band directly under the bust, 120 units wide -->
+  <rect x="140" y="250" width="120" height="12" rx="5"
+        fill="url(#elder-male-onepiece-empire-gown__seam)"/>
+  <path d="M140 250 H260" stroke="var(--c3, #F0E7D8)" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M140 262 H260" stroke="var(--c2, #8E77A6)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ten fine vertical gathers falling from the seam, no waist anywhere below it -->
+  <g fill="none" stroke="var(--c2, #8E77A6)" stroke-opacity="0.42" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M150 266 L146 540"/>
+    <path d="M162 266 L159 542"/>
+    <path d="M174 266 L172 544"/>
+    <path d="M186 266 L185 546"/>
+    <path d="M198 266 V548"/>
+    <path d="M210 266 L211 548"/>
+    <path d="M222 266 L224 546"/>
+    <path d="M234 266 L237 544"/>
+    <path d="M246 266 L250 542"/>
+    <path d="M256 266 L259 540"/>
+  </g>
+
+  <!-- bound scoop neckline over the short bodice -->
+  <path d="M168 180 Q200 210 232 180" stroke="var(--c3, #F0E7D8)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 182 q24 22 48 0 v6 q-24 24 -48 0 z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- gathered puff heads at the sleeve caps -->
+  <g fill="none" stroke="var(--c2, #8E77A6)" stroke-opacity="0.5" stroke-width="3.2"
+     stroke-linecap="round">
+    <path d="M120 196 Q112 214 118 234"/>
+    <path d="M134 192 Q128 214 134 236"/>
+    <path d="M280 196 Q288 214 282 234"/>
+    <path d="M266 192 Q272 214 266 236"/>
+  </g>
+  <path d="M108 232 Q128 244 150 232" stroke="var(--c3, #F0E7D8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M292 232 Q272 244 250 232" stroke="var(--c3, #F0E7D8)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- ankle hem band -->
+  <path d="M142 536 Q200 554 258 536" stroke="var(--c3, #F0E7D8)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- upper-chest highlight -->
+  <path d="M158 224 q42 12 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 330 q28 10 56 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

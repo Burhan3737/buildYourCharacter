@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Flare Jumpsuit" data-family="flare-jumpsuit" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = a halter that leaves the shoulders and the upper back
+       completely bare, the bare shoulder being the identity and painted as nothing so the
+       body reads through; VOLUME = fitted through torso and thigh and then flaring hard
+       from the knee into a wide bell.
+       BREAK AND HEM, RECOMPUTED ON THIS BODY. The break is pinned to this bundle's knee
+       anchor at y464, the same landmark `bridal-gown` uses here, not to the adult's y445.
+       The bell must end above the sole so a boot still reads underneath it: the elder feet
+       are drawn y544 to y570 and the sole sits at about y560, so the bell hem is set at
+       y544 and never touches the sole or the ground line at y570.
+       Differs from `jumpsuit` on shoulder (a bare halter vs covered shoulders) and volume
+       (a knee-break bell vs straight legs), and from `boiler-suit` on shoulder and closure.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), bodice
+       top edge y214 with the shoulders bare above it, waist band at the elder natural
+       waist y302, legs springing from y304 over the elder hips x148 to x252.
+       Elder read: the halter closes at the nape with a broad flat hook-and-loop band
+       instead of a thin tie, and the bodice is cut with more ease. The axis values are
+       unchanged - the bare shoulder and the hard knee break both stay. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-flare-jumpsuit__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C06D5F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-flare-jumpsuit__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F09C90)"/>
+      <stop offset="1" stop-color="var(--c2, #B36255)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-flare-jumpsuit__halter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #F4A79B)"/>
+      <stop offset="1" stop-color="var(--c2, #C06D5F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-flare-jumpsuit__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #3B2A22)"/>
+      <stop offset="1" stop-color="var(--c2, #C06D5F)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- legs: fitted to the knee at y464, then flaring hard into a bell above the sole -->
+    <path d="M150 304 Q154 390 158 464 Q136 510 122 534 Q119 544 131 544 H186
+             Q196 544 196 536 L198 464 Q199 390 200 304 Z"
+          fill="url(#elder-male-onepiece-flare-jumpsuit__leg)"/>
+    <path d="M250 304 Q246 390 242 464 Q264 510 278 534 Q281 544 269 544 H214
+             Q204 544 204 536 L202 464 Q201 390 200 304 Z"
+          fill="url(#elder-male-onepiece-flare-jumpsuit__leg)"/>
+    <!-- two halter bands, meeting at the base of the neck and passing behind it; they stop
+         at y189, clear of this bundle's chin at y184, because onepiece is z45 and draws
+         OVER the head, so a band any higher would paint cloth across the jaw -->
+    <path d="M170 216 H184 L207 197 Q210 190 202 189 Q195 189 191 195 Z"
+          fill="url(#elder-male-onepiece-flare-jumpsuit__halter)"/>
+    <path d="M230 216 H216 L193 197 Q190 190 198 189 Q205 189 209 195 Z"
+          fill="url(#elder-male-onepiece-flare-jumpsuit__halter)"/>
+    <!-- fitted bodice, top edge at y214 with the shoulders left bare above it -->
+    <path d="M136 226 Q136 214 150 214 H250 Q264 214 264 226 V276 Q264 306 250 308 H150
+             Q136 306 136 276 Z"
+          fill="url(#elder-male-onepiece-flare-jumpsuit__bodice)"/>
+  </g>
+
+  <!-- wide contrast waist band at the elder natural waist -->
+  <rect x="134" y="294" width="132" height="22" rx="9"
+        fill="url(#elder-male-onepiece-flare-jumpsuit__band)"/>
+  <rect x="186" y="290" width="28" height="30" rx="9" fill="var(--c1, #F4A79B)"/>
+  <path d="M136 305 H264" stroke="var(--c3, #3B2A22)" stroke-opacity="0.5" stroke-width="2.6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound top edge of the bodice, so the bare shoulder line reads hard -->
+  <path d="M140 216 H260" stroke="var(--c3, #3B2A22)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <!-- halter band edges running up to the neck, and the broad flat hook-and-loop closure
+       band that replaces a thin tie here -->
+  <path d="M180 214 L200 193" stroke="var(--c3, #3B2A22)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M220 214 L200 193" stroke="var(--c3, #3B2A22)" stroke-opacity="0.6"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="182" y="188" width="36" height="14" rx="7" fill="var(--c3, #3B2A22)"/>
+  <path d="M188 195 H212" stroke="var(--c1, #F4A79B)" stroke-opacity="0.5" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- the flare break at the elder knee y464 -->
+  <path d="M156 462 H198" stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 462 H244" stroke="var(--c3, #3B2A22)" stroke-opacity="0.55" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long leg seams running out into the bell -->
+  <g fill="none" stroke="var(--c2, #C06D5F)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M174 326 Q176 410 178 466 Q166 506 154 536"/>
+    <path d="M226 326 Q224 410 222 466 Q234 506 246 536"/>
+  </g>
+
+  <!-- bell hems, clear of the sole so a boot still reads underneath -->
+  <path d="M124 532 Q158 544 194 538" stroke="var(--c3, #3B2A22)" stroke-opacity="0.65"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M276 532 Q242 544 206 538" stroke="var(--c3, #3B2A22)" stroke-opacity="0.65"
+        stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- bodice panel seaming -->
+  <g fill="none" stroke="var(--c2, #C06D5F)" stroke-opacity="0.4" stroke-width="3.6"
+     stroke-linecap="round">
+    <path d="M164 224 Q160 262 166 302"/>
+    <path d="M236 224 Q240 262 234 302"/>
+  </g>
+
+  <!-- upper-chest highlight, just under the bare shoulder line -->
+  <path d="M156 234 q44 12 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M148 490 q26 12 44 6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <path d="M252 490 q-26 12 -44 6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ao Dai" data-family="ao-dai" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: CLOSURE = the tunic is split open to the natural waist at BOTH sides,
+       the splits starting at y302, so the trousers show through the gap on each side;
+       VOLUME = a fitted tunic over two wide trouser columns drawn into the same file.
+       Everyday clothing under its own endonym: plain cloth, generic geometric trim only.
+       Differs from `maxi-dress` on closure (side split over trousers vs a closed column) and
+       volume, and from `kaftan` on closure and sleeve (long narrow set-in sleeve vs wide T).
+       Refit to the elder body, not copied: natural waist y302 (adult y270 to 300), tunic
+       panels to y500, trousers to the elder ankle y546, sleeve columns x110 to x144 and
+       x256 to x290 with the cuff at the elder wrist y352 to y366, shoulder line y178.
+       The trousers are painted through the c3 and c2 variables so the player can contrast
+       them against the tunic. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-ao-dai__tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5690)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ao-dai__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7686CE)"/>
+      <stop offset="1" stop-color="var(--c2, #424C80)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ao-dai__back" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c2, #6472B4)"/>
+      <stop offset="1" stop-color="var(--c1, #3A4372)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ao-dai__trouser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E6E2D4)"/>
+      <stop offset="1" stop-color="var(--c2, #B4AF9F)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ao-dai__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4A5690)"/>
+    </linearGradient>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the back panels of the tunic, seen past the body on each side below the split -->
+    <path d="M130 300 H160 L156 500 Q142 504 132 500 Z"
+          fill="url(#elder-male-onepiece-ao-dai__back)"/>
+    <path d="M270 300 H240 L244 500 Q258 504 268 500 Z"
+          fill="url(#elder-male-onepiece-ao-dai__back)"/>
+    <!-- wide trousers, drawn into the same file, ankle length -->
+    <path d="M142 322 H198 V534 Q198 546 185 546 H155 Q142 546 142 534 Z"
+          fill="url(#elder-male-onepiece-ao-dai__trouser)"/>
+    <path d="M258 322 H202 V534 Q202 546 215 546 H245 Q258 546 258 534 Z"
+          fill="url(#elder-male-onepiece-ao-dai__trouser)"/>
+    <!-- long narrow sleeves to the wrist, softened elder sleeve cap set inboard -->
+    <path d="M140 186 Q112 191 110 212 L113 352 Q113 366 126 366 Q139 366 139 352 L141 218 Z"
+          fill="url(#elder-male-onepiece-ao-dai__sleeve)"/>
+    <path d="M260 186 Q288 191 290 212 L287 352 Q287 366 274 366 Q261 366 261 352 L259 218 Z"
+          fill="url(#elder-male-onepiece-ao-dai__sleeve)"/>
+    <!-- narrow floating front panel, hanging free below the two side splits -->
+    <path d="M168 296 H232 L236 500 Q200 512 164 500 Z"
+          fill="url(#elder-male-onepiece-ao-dai__panel)"/>
+    <!-- fitted tunic body, dropped shoulder down to the natural waist at y302 -->
+    <path d="M134 208 Q134 180 164 178 H236 Q266 180 266 208 V272 Q266 302 256 302 H144
+             Q134 302 134 272 Z"
+          fill="url(#elder-male-onepiece-ao-dai__tunic)"/>
+  </g>
+
+  <!-- structural: the two open side splits, cut at the waist y302 and running down -->
+  <path d="M140 302 Q138 400 136 496" stroke="var(--c2, #4A5690)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M260 302 Q262 400 264 496" stroke="var(--c2, #4A5690)" stroke-opacity="0.6"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M168 300 V500" stroke="var(--c3, #E6E2D4)" stroke-opacity="0.85" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M232 300 V500" stroke="var(--c3, #E6E2D4)" stroke-opacity="0.85" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: mandarin collar, standing on the elder neck at y166 to y200 -->
+  <path d="M172 166 Q200 178 228 166 V184 Q200 196 172 184 Z" fill="var(--c3, #E6E2D4)"/>
+  <path d="M180 172 q20 9 40 0 v8 q-20 9 -40 0 z" fill="var(--skin2, #E7B892)"/>
+  <path d="M172 184 Q200 196 228 184" stroke="var(--c2, #4A5690)" stroke-opacity="0.5"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- structural: the broad side closure band this tunic actually fastens with, made wide
+       and easy rather than a row of small loops -->
+  <path d="M214 184 Q244 208 264 232" stroke="var(--c3, #E6E2D4)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+  <g fill="var(--c2, #4A5690)" opacity="0.55">
+    <circle cx="226" cy="194" r="3.2"/>
+    <circle cx="244" cy="210" r="3.2"/>
+    <circle cx="260" cy="227" r="3.2"/>
+  </g>
+
+  <!-- trim: narrow cuffs and a fine hem edge on the floating front panel -->
+  <path d="M114 354 H139" stroke="var(--c3, #E6E2D4)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M261 354 H286" stroke="var(--c3, #E6E2D4)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M166 492 Q200 504 234 492" stroke="var(--c3, #E6E2D4)" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: trouser drape, and the upper chest highlight -->
+  <g fill="none" stroke="var(--c2, #4A5690)" stroke-opacity="0.25" stroke-width="5"
+     stroke-linecap="round">
+    <path d="M158 380 V530"/>
+    <path d="M242 380 V530"/>
+  </g>
+  <path d="M156 224 q44 14 88 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

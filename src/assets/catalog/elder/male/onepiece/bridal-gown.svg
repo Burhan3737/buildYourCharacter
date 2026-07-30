@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Bridal Gown" data-family="bridal-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = fitted through the hip and on down to the knee, then flaring
+       hard into a trumpet; HEM = ground, with a train sweeping out behind the ground line.
+       RECOMPUTED TRUMPET BREAK: the break is pinned to this bundle's knee anchor, y464.
+       The adult/male file pinned it at y446; the elder knee is 18 units lower, 446 plus 18
+       equals 464, so the break moves down to y464. Everything above it is fitted, everything
+       below it flares.
+       The trumpet line and the train carry the identity, so the gown still reads as a wedding
+       gown recoloured black. The veil is head art and lives in headwear, so none is drawn.
+       Refit to the elder body, not copied: shoulder y178 (adult y150), waist band at the
+       elder natural waist y302, sleeve columns x110 to x144 and x256 to x290 with the cuff at
+       the elder wrist y352 to y366, hem y564 and the train to y564, never past y570.
+       Differs from `ball-gown` on shoulder (high round neck with long sleeves vs a bare
+       strapless band) and volume (fitted trumpet vs bouffant dome), and from `maxi-dress` on
+       shoulder and volume. Fallback palette is warm ivory over mocha, clear of the named
+       animated princess palettes. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-bridal-gown__body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #EDE6DA)"/>
+      <stop offset="1" stop-color="var(--c2, #A08E76)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-bridal-gown__train" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C0A98C)"/>
+      <stop offset="1" stop-color="var(--c2, #A08E76)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-bridal-gown__sheer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #C0A98C)"/>
+      <stop offset="1" stop-color="var(--c2, #A08E76)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-bridal-gown__lace" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="18" height="18">
+      <circle cx="9" cy="9" r="5" fill="none" stroke="var(--c3, #C0A98C)"
+              stroke-opacity="0.7" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="3" fill="none" stroke="var(--c3, #C0A98C)"
+              stroke-opacity="0.5" stroke-width="1.6"/>
+      <circle cx="18" cy="18" r="3" fill="none" stroke="var(--c3, #C0A98C)"
+              stroke-opacity="0.5" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-bridal-gown__bodyclip">
+      <path d="M136 210 Q136 180 166 178 H234 Q264 180 264 210 L264 340 Q242 402 240 464
+               Q272 516 288 564 H112 Q128 516 160 464 Q158 402 136 340 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- train, sweeping out behind the ground line and pooling on the floor -->
+    <path d="M162 396 Q114 476 94 528 Q86 556 86 564 H314 Q314 556 306 528 Q286 476 238 396 Z"
+          fill="url(#elder-male-onepiece-bridal-gown__train)"/>
+    <!-- long sheer set in sleeves, the skin reading through, softened elder sleeve cap -->
+    <path d="M140 186 Q112 191 110 212 L113 352 Q113 366 126 366 Q139 366 139 352 L141 218 Z"
+          fill="url(#elder-male-onepiece-bridal-gown__sheer)" fill-opacity="0.55"/>
+    <path d="M260 186 Q288 191 290 212 L287 352 Q287 366 274 366 Q261 366 261 352 L259 218 Z"
+          fill="url(#elder-male-onepiece-bridal-gown__sheer)" fill-opacity="0.55"/>
+    <!-- high round neck, fitted through the hip to the knee at y464, then hard into a trumpet -->
+    <path d="M136 210 Q136 180 166 178 H234 Q264 180 264 210 L264 340 Q242 402 240 464
+             Q272 516 288 564 H112 Q128 516 160 464 Q158 402 136 340 Z"
+          fill="url(#elder-male-onepiece-bridal-gown__body)"/>
+  </g>
+
+  <!-- pattern: fine lace over the bodice and down onto the sheer sleeves -->
+  <g clip-path="url(#elder-male-onepiece-bridal-gown__bodyclip)">
+    <rect x="130" y="178" width="140" height="144"
+          fill="url(#elder-male-onepiece-bridal-gown__lace)"/>
+  </g>
+  <path d="M114 196 Q112 280 114 350" stroke="var(--c3, #C0A98C)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M286 196 Q288 280 286 350" stroke="var(--c3, #C0A98C)" stroke-opacity="0.7"
+        stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the high round neckline, bound -->
+  <path d="M168 178 Q200 194 232 178" stroke="var(--c3, #C0A98C)" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- structural: long princess seams running through the fitted body into the flare -->
+  <g fill="none" stroke="var(--c2, #A08E76)" stroke-opacity="0.45" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M170 222 Q166 348 172 464 Q152 518 138 554"/>
+    <path d="M230 222 Q234 348 228 464 Q248 518 262 554"/>
+  </g>
+
+  <!-- trim: the flare seam, where the trumpet breaks away at the elder knee y464 -->
+  <path d="M160 462 Q200 476 240 462" stroke="var(--c3, #C0A98C)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: narrow waist band at the elder natural waist, and the train's own bound edge -->
+  <rect x="136" y="296" width="128" height="14" rx="6" fill="var(--c3, #C0A98C)"/>
+  <path d="M92 544 Q200 566 308 544" stroke="var(--c3, #C0A98C)" stroke-opacity="0.85"
+        stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M116 550 Q200 564 284 550" stroke="var(--c2, #A08E76)" stroke-opacity="0.4"
+        stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- highlight arcs on the chest and over the trumpet flare -->
+  <path d="M154 216 q46 14 92 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M170 502 q30 14 60 0" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+</svg>

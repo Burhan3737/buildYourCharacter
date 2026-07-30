@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Single Braid" data-family="single-braid" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Head art on this bundle sits 34 units below the adult reference (adult cy91).
+       LENGTH TRAP, FIXED HERE. hair-back is z10 and the body is z20, and the torso block
+       runs x136 to x264 from y184 to y336 with the hips x148 to x252 below it, so a plait
+       drawn down the centre back is entirely inside that block and renders as literally
+       nothing. The adult/male reference does exactly that - nine lozenges from y125 to
+       y292 inside data-part="back" - and only the top twenty units of it are ever seen.
+       Here the nape gather stays in the back group and the plait is swung diagonally
+       FORWARD in data-part="front", over the viewer's left shoulder and down across the
+       chest to a tie at y332, clear of the torso block and fully on screen. A single
+       plait worn forward over one shoulder is the same family, correctly drawn.
+       Axes: CROWN - no parting: everything is drawn smooth off the face into one gather
+       at the nape, forehead and both ears completely clear, hairline hard at y94.
+       VOLUME/TEXTURE OF THE OUTLINE - the plait is nine lozenges leaning alternately left
+       and right and tapering from 36 units wide to 20, so the chevron edge IS the outline.
+       Differs from braids (two plaits, one over each shoulder, no nape gather) and from
+       ponytail (one smooth untextured hank behind one shoulder) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-single-braid__napegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFC8BC)"/>
+        <stop offset="1" stop-color="var(--hair2, #85796B)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the smooth gathered mass the plait is taken from -->
+      <path d="M158 96 C154 126 158 150 168 164
+               C180 172 220 172 232 164
+               C242 150 246 126 242 96
+               C222 108 178 108 158 96 Z"
+            fill="url(#elder-male-hair-single-braid__napegrad)"/>
+    </g>
+    <path d="M164 154 C180 166 220 166 236 154 C230 172 170 172 164 154 Z"
+          fill="var(--hair2, #85796B)"/>
+    <path d="M182 118 C180 136 181 152 184 166" stroke="var(--hair2, #85796B)"
+          stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M218 118 C220 136 219 152 216 166" stroke="var(--hair2, #85796B)"
+          stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M160 100 C180 88 220 88 240 100" stroke="#FFFFFF" stroke-opacity="0.18"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-single-braid__sweepgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFC8BC)"/>
+        <stop offset="1" stop-color="var(--hair2, #85796B)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-single-braid__plaitgrad" x1="0.15" y1="0" x2="0.85" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #CFC8BC)"/>
+        <stop offset="0.65" stop-color="var(--hair1, #CFC8BC)"/>
+        <stop offset="1" stop-color="var(--hair2, #85796B)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- nine plait lozenges, leaning alternately, swung diagonally over the viewer's
+           left shoulder and tapering from 36 units wide down to 20 at the tie -->
+      <path d="M132 183 C133 173 140 167 148 167 C162 167 168 171 168 177
+               C167 187 160 193 152 193 C138 193 132 189 132 183 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M170 201 C169 191 162 185 154 185 C140 185 134 189 134 195
+               C135 205 142 211 150 211 C164 211 170 207 170 201 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M140 219 C141 210 148 204 156 204 C169 204 174 208 174 213
+               C173 222 166 228 158 228 C145 228 140 224 140 219 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M175 237 C174 228 167 222 159 222 C147 222 142 226 142 231
+               C143 240 150 246 157 246 C169 246 175 242 175 237 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M148 255 C149 246 155 240 162 240 C174 240 179 244 179 249
+               C178 257 172 263 165 263 C153 263 148 259 148 255 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M179 272 C178 264 172 258 165 258 C154 258 149 262 149 266
+               C150 274 156 280 163 280 C174 280 179 276 179 272 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M156 290 C157 282 162 277 168 277 C178 277 183 280 183 284
+               C182 292 177 297 171 297 C161 297 156 294 156 290 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M182 306 C181 299 176 294 171 294 C161 294 157 297 157 301
+               C158 308 163 313 169 313 C179 313 182 310 182 306 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <path d="M164 322 C165 316 170 311 175 311 C183 311 186 314 186 318
+               C185 324 181 329 176 329 C167 329 164 326 164 322 Z"
+            fill="url(#elder-male-hair-single-braid__plaitgrad)"/>
+      <!-- smooth swept scalp, hard hairline at y94, no fringe, both ears clear -->
+      <path d="M147 116 C145 78 170 58 200 58 C230 58 255 78 253 116
+               C246 102 232 94 200 94 C168 94 154 102 147 116 Z"
+            fill="url(#elder-male-hair-single-braid__sweepgrad)"/>
+    </g>
+    <!-- the crossings between lozenges -->
+    <g stroke="var(--hair2, #85796B)" stroke-width="3" fill="none" stroke-linecap="round"
+       opacity="0.75">
+      <path d="M136 190 q14 6 28 -2"/>
+      <path d="M138 208 q14 -6 28 2"/>
+      <path d="M144 226 q13 6 26 -2"/>
+      <path d="M146 244 q13 -6 26 2"/>
+      <path d="M151 261 q12 6 24 -2"/>
+      <path d="M153 278 q11 -6 22 2"/>
+      <path d="M159 295 q10 6 20 -2"/>
+      <path d="M161 311 q9 -5 18 2"/>
+    </g>
+    <!-- the tie, and the frayed tassel below it -->
+    <rect x="164" y="327" width="22" height="11" rx="5" fill="var(--hair2, #85796B)"/>
+    <path d="M167 338 C165 346 164 352 165 356 C169 350 170 344 171 338 Z"
+          fill="var(--hair2, #85796B)"/>
+    <path d="M174 338 C174 347 175 353 176 358 C178 352 178 345 178 338 Z"
+          fill="var(--hair2, #85796B)"/>
+    <path d="M181 338 C183 346 184 351 184 354 C180 349 179 343 178 338 Z"
+          fill="var(--hair2, #85796B)"/>
+    <!-- gather lines: everything combed back and down toward the nape gather -->
+    <path d="M154 108 C166 92 182 80 198 74" stroke="var(--hair2, #85796B)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M172 106 C182 92 194 82 204 76" stroke="var(--hair2, #85796B)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M246 108 C234 92 218 80 202 74" stroke="var(--hair2, #85796B)"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M228 106 C218 92 206 82 196 76" stroke="var(--hair2, #85796B)"
+          stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <!-- the hard hairline itself -->
+    <path d="M156 96 C176 86 224 86 244 96 C224 90 176 90 156 96 Z"
+          fill="var(--hair2, #85796B)"/>
+    <path d="M162 82 C182 66 218 64 238 76" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M142 200 C146 240 152 278 162 306" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

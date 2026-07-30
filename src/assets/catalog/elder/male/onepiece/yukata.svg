@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Yukata" data-family="yukata" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = two big square sleeve panels hanging free of the arm and
+       well below it, x82 to x134 and x266 to x318 down to y356; CLOSURE = a wrapped
+       crossover held by a broad flat sash, with a flat overlapping band collar running
+       from the neck to the waist.
+       WORN LEFT OVER RIGHT. The wearer's left front panel lies on top, so on canvas the
+       band that crosses over is the one running down from the VIEWER'S RIGHT at x214 to
+       x234 into x186 to x206 at the waist. Right over left is how the dead are dressed
+       and is never drawn here.
+       Living cultural dress under its own endonym, not costume: ordinary clothing, plain
+       cloth with a small generic geometric motif and no community's woven design.
+       Differs from `robe` on shoulder (square hanging sleeve panels vs a wide draped
+       sleeve) and closure (flat band collar under a broad flat sash vs a shawl collar
+       and a soft tie belt), and from `kaftan` on shoulder and hem.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), body
+       from y180, sash at the elder natural waist y302 so the band spans y296 to y332,
+       hem y550 with the drape curve peaking at y557 and never passing the ground line
+       at y570.
+       Elder read: the sash is cut wider and softer and closes with a broad flat tied
+       band at the side rather than a tight compressed knot, and the body is looser
+       through the upper arm. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-yukata__cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E86B4)"/>
+      <stop offset="1" stop-color="var(--c2, #43547A)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-yukata__front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A92BE)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4C70)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-yukata__panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6E86B4)"/>
+      <stop offset="1" stop-color="var(--c2, #3B4C70)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-yukata__sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #E4E0D2)"/>
+      <stop offset="1" stop-color="var(--c2, #43547A)"/>
+    </linearGradient>
+    <pattern id="elder-male-onepiece-yukata__motif" patternUnits="userSpaceOnUse"
+             x="0" y="0" width="20" height="20">
+      <path d="M10 3 L17 10 L10 17 L3 10 Z" fill="none" stroke="var(--c3, #E4E0D2)"
+            stroke-opacity="0.42" stroke-width="2.2"/>
+    </pattern>
+    <clipPath id="elder-male-onepiece-yukata__clip">
+      <path d="M132 180 H268 L272 550 Q200 564 128 550 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- wide rectangular sleeve panels, hanging square well below the arm -->
+    <path d="M82 182 H134 V356 H100 Q82 356 82 338 Z"
+          fill="url(#elder-male-onepiece-yukata__panel)"/>
+    <path d="M318 182 H266 V356 H300 Q318 356 318 338 Z"
+          fill="url(#elder-male-onepiece-yukata__panel)"/>
+    <!-- straight body to the ankle -->
+    <path d="M132 180 H268 L272 550 Q200 564 128 550 Z"
+          fill="url(#elder-male-onepiece-yukata__cloth)"/>
+    <!-- the WEARER'S LEFT front panel, lying ON TOP of the right one; it comes across
+         from the viewer's right, which is what left over right looks like on canvas -->
+    <path d="M268 180 L206 306 L192 550 Q238 558 272 550 L270 180 Z"
+          fill="url(#elder-male-onepiece-yukata__front)"/>
+  </g>
+
+  <!-- small generic geometric motif on the cloth -->
+  <g clip-path="url(#elder-male-onepiece-yukata__clip)">
+    <rect x="126" y="178" width="150" height="376"
+          fill="url(#elder-male-onepiece-yukata__motif)"/>
+  </g>
+
+  <!-- flat band collar: the UNDER band first, the wearer's right, running down from the
+       viewer's left; then the OVER band, the wearer's left, from the viewer's right -->
+  <path d="M166 178 L196 306 L216 306 L186 178 Z" fill="var(--c2, #43547A)"/>
+  <path d="M234 178 L206 306 L186 306 L214 178 Z" fill="var(--c3, #E4E0D2)"/>
+  <path d="M214 178 L186 306" stroke="var(--c2, #43547A)" stroke-opacity="0.45"
+        stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <!-- neck opening between the two bands -->
+  <path d="M186 176 q14 12 28 0 v6 q-14 14 -28 0 z" fill="var(--skin2, #C99A72)"/>
+
+  <!-- broad flat sash across the elder waist, tied in a wide flat band at the side -->
+  <rect x="132" y="296" width="136" height="36" rx="7"
+        fill="url(#elder-male-onepiece-yukata__sash)"/>
+  <path d="M132 302 H268" stroke="var(--c2, #43547A)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <path d="M132 326 H268" stroke="var(--c2, #43547A)" stroke-opacity="0.4" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+  <rect x="220" y="290" width="40" height="48" rx="11" fill="var(--c3, #E4E0D2)"/>
+  <path d="M226 314 H254" stroke="var(--c2, #43547A)" stroke-opacity="0.5" stroke-width="4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M240 292 V336" stroke="var(--c2, #43547A)" stroke-opacity="0.35" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- sleeve panel edges and the free hanging corner of each panel -->
+  <g fill="none" stroke="var(--c2, #43547A)" stroke-opacity="0.5" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M134 186 V352"/>
+    <path d="M266 186 V352"/>
+  </g>
+  <path d="M86 348 H130" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.75" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+  <path d="M270 348 H314" stroke="var(--c3, #E4E0D2)" stroke-opacity="0.75" stroke-width="5"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- long skirt folds below the sash -->
+  <g fill="none" stroke="var(--c2, #43547A)" stroke-opacity="0.4" stroke-width="4"
+     stroke-linecap="round">
+    <path d="M156 340 L146 540"/>
+    <path d="M244 340 L252 540"/>
+  </g>
+
+  <!-- upper-chest highlight -->
+  <path d="M148 218 q52 16 104 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

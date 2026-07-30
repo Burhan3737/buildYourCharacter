@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Ball Gown" data-family="ball-gown" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: SHOULDER = none, a straight strapless band across the top of the bust
+       with its top edge at y212 and the shoulders and upper chest left bare as body;
+       VOLUME = a hugely bouffant dome springing off a pointed waist, standing well away
+       from the leg and sweeping the ground line.
+       RECOMPUTED CLEARANCE, measured against the elder body: the dome hem spans x88 to x312.
+       The widest point of this body is the hips at x148 to x252, 104 units across.
+       Clearance = 148 minus 88 = 60 units per side, comfortably over the 40 unit practical
+       floor. Hem sits at y562 to y568 and never passes the ground line at y570.
+       Refit to the elder body, not copied: band top y212 (adult y196), bodice point y308 at
+       the elder natural waist y302 (adult y312), hips x148 to x252 (adult x142 to x258).
+       The bare shoulders and the chest above the band are the drawn body, so nothing is
+       painted there. Differs from every other gown in this bundle on bodice (strapless
+       pointed) and skirt (bouffant dome). Fallback palette is house deep plum with a mint
+       accent, deliberately clear of the named animated princess palettes. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-ball-gown__skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7A5480)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3355)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ball-gown__bodice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #8A6090)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3355)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-ball-gown__band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #4C3355)"/>
+    </linearGradient>
+    <clipPath id="elder-male-onepiece-ball-gown__domeclip">
+      <path d="M150 306 H250 Q294 388 308 476 Q312 536 312 568 H88 Q88 536 92 476
+               Q106 388 150 306 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- the dome: from the pointed waist straight out to x88 and x312 over the floor -->
+    <path d="M150 306 H250 Q294 388 308 476 Q312 536 312 568 H88 Q88 536 92 476
+             Q106 388 150 306 Z"
+          fill="url(#elder-male-onepiece-ball-gown__skirt)"/>
+    <!-- fitted strapless bodice, coming to a point at the waist at y308 -->
+    <path d="M134 212 H266 V264 Q266 296 242 302 L200 308 L158 302 Q134 296 134 264 Z"
+          fill="url(#elder-male-onepiece-ball-gown__bodice)"/>
+  </g>
+
+  <!-- trim: the straight strapless band across the top of the bust -->
+  <rect x="134" y="212" width="132" height="20" rx="8"
+        fill="url(#elder-male-onepiece-ball-gown__band)"/>
+  <path d="M137 232 H263" stroke="var(--c3, #6BBFAD)" stroke-opacity="0.55" stroke-width="3"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the pointed waist edge, bound in the accent -->
+  <path d="M135 284 Q166 297 200 308 Q234 297 265 284" stroke="var(--c3, #6BBFAD)"
+        stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- structural: eight radiating skirt gathers fanning from the waist point -->
+  <g clip-path="url(#elder-male-onepiece-ball-gown__domeclip)" fill="none"
+     stroke="var(--c2, #4C3355)" stroke-opacity="0.38" stroke-width="4" stroke-linecap="round">
+    <path d="M198 310 Q158 402 108 556"/>
+    <path d="M199 310 Q166 402 136 558"/>
+    <path d="M200 310 Q181 402 166 560"/>
+    <path d="M200 310 Q194 402 190 560"/>
+    <path d="M200 310 Q206 402 210 560"/>
+    <path d="M200 310 Q219 402 234 560"/>
+    <path d="M201 310 Q234 402 264 558"/>
+    <path d="M202 310 Q242 402 292 556"/>
+  </g>
+  <!-- structural: bodice seaming, echoing the line of the gathers -->
+  <g fill="none" stroke="var(--c2, #4C3355)" stroke-opacity="0.35" stroke-width="3.4"
+     stroke-linecap="round">
+    <path d="M166 234 Q162 274 184 300"/>
+    <path d="M234 234 Q238 274 216 300"/>
+  </g>
+
+  <!-- trim: deep hem band lying over the floor -->
+  <path d="M90 538 Q200 560 310 538" stroke="var(--c3, #6BBFAD)" stroke-width="8"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- highlight arcs on the bodice and on the upper dome -->
+  <path d="M152 242 q48 14 96 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M126 404 q74 26 148 0" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="10"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Smooth Scalp" data-family="smooth-scalp" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Head art on this bundle sits 34 units below the adult reference (adult cy91).
+       There is no length trap to fix here: nothing on this asset hangs.
+       This is a bare scalp, drawn plainly. It is a haircut, and it is also what alopecia
+       areata looks like. NO cap, NO dome, NO hairline mass of any kind - if a filled cap
+       appears in this file it has become buzz. Both ears and the whole skull stay exposed.
+       Axes: LENGTH - none at all, the shortest value in the slot; there is no hair mass,
+       so the asset contributes no outline of its own to the silhouette.
+       CROWN - bare: the only forms are two low-opacity shadows describing where the skull
+       turns away, a crescent at the nape and one short arc at each temple, plus a crown
+       highlight. Differs from buzz (a filled cap from y62 to y117 with a drawn hairline
+       and a visible parting) and from crown-thinning (a dense horseshoe of real hair
+       round the temples and nape) on both.
+       hair1 carries the lit turn of the skull and hair2 the deep shadow at the nape and
+       the temple hollow, so both do real work despite the asset having no mass. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-smooth-scalp__napegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- soft shadow where the base of the skull meets the neck; no cap, no edge -->
+      <path d="M158 156 C162 172 178 182 200 182
+               C222 182 238 172 242 156
+               C226 166 174 166 158 156 Z"
+            fill="url(#elder-male-hair-smooth-scalp__napegrad)" opacity="0.26"/>
+    </g>
+    <path d="M172 167 C182 175 218 175 228 167" stroke="var(--hair2, #6E7480)"
+          stroke-width="4" fill="none" stroke-linecap="round" opacity="0.18"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-smooth-scalp__templegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the faintest suggestion of where a hairline would sit at each temple -->
+      <path d="M146 108 C143 120 143 132 147 142 C151 132 151 120 152 110 Z"
+            fill="url(#elder-male-hair-smooth-scalp__templegrad)" opacity="0.2"/>
+      <path d="M254 108 C257 120 257 132 253 142 C249 132 249 120 248 110 Z"
+            fill="url(#elder-male-hair-smooth-scalp__templegrad)" opacity="0.2"/>
+    </g>
+    <path d="M158 82 C178 68 222 68 242 82" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M176 96 C186 90 214 90 224 96" stroke="#FFFFFF" stroke-opacity="0.16"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

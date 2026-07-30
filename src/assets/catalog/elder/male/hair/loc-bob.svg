@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Loc Bob" data-family="loc-bob" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; real drawn shoulder line y184.
+       Head art on this bundle sits 34 units below the adult reference (adult cy91).
+       LENGTH TRAP, FIXED HERE. hair-back is z10 and the body is z20, so anything in the
+       back group below y184 renders as nothing, and on this bundle the jaw-length weight
+       line lands at y186 - one unit past the shoulder. The adult/male reference hangs all
+       eleven of its locs from data-part="back", which on this body would put the whole hem
+       under the torso. Here every face-framing loc is carried in data-part="front", where
+       it hangs clear of the shoulder and reads; the back group carries only the two outer
+       locs per side that fall outside the skull ellipse (at y150 the head spans x154 to
+       x246, so a rope at x118 to x160 is genuinely visible) plus the nape shadow.
+       CRAFT: these are individual ropes of even thickness with SEPARATED roots, each its
+       own closed path with its own length and its own wound banding, not one mass with
+       grooves cut into it. Root separation is painted in the skin ramp between the ropes.
+       Axes: LENGTH - every loc is cut to one jaw-length weight line at about y186, so
+       nothing reaches past the shoulder.
+       PARTING/HEM - separated strand-ends: the hem is ten rope ends with 5 units of real
+       negative space between them, over a flat crown split by a hard side part at x178
+       cut in bare scalp. Differs from bob (one smooth continuous jaw-length hem, centre
+       mass) and from locs (ropes hanging to y307 at nine different heights) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-loc-bob__backrope" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- four outer ropes, placed clear of the skull ellipse so they actually show -->
+      <path d="M132 104 C124 132 119 158 118 182 L131 183 C132 158 136 132 141 104 Z"
+            fill="url(#elder-male-hair-loc-bob__backrope)"/>
+      <path d="M158 98 C152 126 148 152 147 183 L160 183 C161 152 163 126 166 98 Z"
+            fill="url(#elder-male-hair-loc-bob__backrope)"/>
+      <path d="M268 104 C276 132 281 158 282 182 L269 183 C268 158 264 132 259 104 Z"
+            fill="url(#elder-male-hair-loc-bob__backrope)"/>
+      <path d="M242 98 C248 126 252 152 253 183 L240 183 C239 152 237 126 234 98 Z"
+            fill="url(#elder-male-hair-loc-bob__backrope)"/>
+    </g>
+    <path d="M164 150 C178 162 222 162 236 150 C230 172 170 172 164 150 Z"
+          fill="var(--hair2, #6E7480)"/>
+    <path d="M122 132 q7 4 12 -1" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M150 128 q7 4 12 -1" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M266 132 q7 4 12 -1" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M238 128 q7 4 12 -1" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M156 96 C176 84 224 84 244 96" stroke="#FFFFFF" stroke-opacity="0.2"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-loc-bob__crowngrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-loc-bob__frontrope" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="0.72" stop-color="var(--hair1, #C2C6CE)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- flat crown, narrow side of the hard part at x178 -->
+      <path d="M143 120 C142 88 156 66 175 61
+               C172 78 169 96 168 112 C157 113 149 116 143 120 Z"
+            fill="url(#elder-male-hair-loc-bob__crowngrad)"/>
+      <!-- flat crown, wide side of the part -->
+      <path d="M181 61 C216 61 257 84 257 120
+               C246 107 228 99 200 97 C190 96 182 92 179 84
+               C177 75 178 66 181 61 Z"
+            fill="url(#elder-male-hair-loc-bob__crowngrad)"/>
+      <!-- three face-framing ropes on each side, each its own strand, own length -->
+      <path d="M137 114 C130 138 126 162 125 184 L138 186 C139 162 142 138 146 114 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+      <path d="M152 110 C147 134 144 158 143 190 L156 192 C157 158 158 134 161 110 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+      <path d="M167 108 C163 130 161 152 161 178 L174 180 C175 152 175 130 177 108 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+      <path d="M263 114 C270 138 274 162 275 184 L262 186 C261 162 258 138 254 114 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+      <path d="M248 110 C253 134 256 158 257 190 L244 192 C243 158 242 134 239 110 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+      <path d="M233 108 C237 130 239 152 239 178 L226 180 C225 152 225 130 223 108 Z"
+            fill="url(#elder-male-hair-loc-bob__frontrope)"/>
+    </g>
+    <!-- the hard side part at x178: bare scalp, 6 units wide -->
+    <path d="M175 61 L181 61 L179 84 L173 84 Z" fill="var(--skin1, #E7B892)"/>
+    <path d="M178 64 L176 82" stroke="var(--skin2, #C99A72)" stroke-width="2.4"
+          fill="none" stroke-linecap="round"/>
+    <!-- separated roots: bare scalp between each rope where it leaves the weight of the
+         crown, so the hem is a row of strands and not a cut edge -->
+    <path d="M148 112 Q147 122 146 132" stroke="var(--skin2, #C99A72)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M163 108 Q162 118 161 128" stroke="var(--skin2, #C99A72)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M252 112 Q253 122 254 132" stroke="var(--skin2, #C99A72)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <path d="M237 108 Q238 118 239 128" stroke="var(--skin2, #C99A72)" stroke-width="4"
+          fill="none" stroke-linecap="round"/>
+    <!-- the blunt cut end of every rope, at ten slightly different heights -->
+    <path d="M125 181 L138 183" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <path d="M143 187 L156 189" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <path d="M161 175 L174 177" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <path d="M275 181 L262 183" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <path d="M257 187 L244 189" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <path d="M239 175 L226 177" stroke="var(--hair2, #6E7480)" stroke-width="4" fill="none"/>
+    <!-- the wound banding that makes each strand a rope rather than a stripe -->
+    <g stroke="var(--hair2, #6E7480)" stroke-width="2.4" fill="none" stroke-linecap="round"
+       opacity="0.65">
+      <path d="M130 134 q6 4 10 -1"/>
+      <path d="M127 162 q6 4 10 -1"/>
+      <path d="M146 140 q6 4 10 -1"/>
+      <path d="M144 168 q6 4 10 -1"/>
+      <path d="M162 132 q6 4 10 -1"/>
+      <path d="M161 158 q6 4 10 -1"/>
+      <path d="M260 134 q6 4 10 -1"/>
+      <path d="M263 162 q6 4 10 -1"/>
+      <path d="M244 140 q6 4 10 -1"/>
+      <path d="M246 168 q6 4 10 -1"/>
+      <path d="M228 132 q6 4 10 -1"/>
+      <path d="M229 158 q6 4 10 -1"/>
+    </g>
+    <!-- the flat crown reads as ropes lying down, not as a smooth cap -->
+    <path d="M190 70 C204 74 222 84 236 98" stroke="var(--hair2, #6E7480)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M186 80 C200 86 218 96 230 108" stroke="var(--hair2, #6E7480)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M170 70 C164 82 160 96 158 110" stroke="var(--hair2, #6E7480)"
+          stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M188 68 C208 72 230 84 244 100" stroke="#FFFFFF" stroke-opacity="0.26"
+          stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

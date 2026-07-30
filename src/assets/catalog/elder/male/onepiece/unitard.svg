@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Unitard" data-family="unitard" data-slot="onepiece"
+     data-layer="onepiece" data-colors="c1,c2,c3" data-hides="top,bottom">
+  <!-- Silhouette axes: VOLUME = skin-close and unbroken, following the body from shoulder
+       to ankle with no waist seam anywhere; CLOSURE = none at all, no zip, no placket, no
+       button, no tie.
+       EASE, RECOMPUTED ON THIS BODY. The elder torso is drawn x136 to x264 and the legs
+       x168 to x196 and x204 to x232. This garment is cut with 10 units of ease per side
+       at the torso (x126 to x274) and 10 at the leg (x158 to x202 and x198 to x242), so
+       it still overlaps the body everywhere and still reads skin-close - the elder brief
+       asks for a looser upper arm and body, not for a shapeless one, and the axis value
+       stays skin-close.
+       Differs from `swimsuit` on hem (ankle vs high-cut leg at the hip) and volume, and
+       from `jumpsuit` on closure (none vs a centre front closure) and volume.
+       Refit to the elder body, not copied: drawn shoulder line y184 (adult y156), scoop
+       neck cut to y214, hips x148 to x252 crossed with no seam, sleeve columns x110 to
+       x144 and x256 to x290 with the bound cuff at the elder wrist y352 to y366, bound
+       ankle at y546 against the drawn foot top y544. -->
+  <defs>
+    <linearGradient id="elder-male-onepiece-unitard__torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3A8778)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-unitard__leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #62B2A1)"/>
+      <stop offset="1" stop-color="var(--c2, #2F7264)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-onepiece-unitard__sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #6BBFAD)"/>
+      <stop offset="1" stop-color="var(--c2, #3A8778)"/>
+    </linearGradient>
+    <clipPath id="elder-male-onepiece-unitard__torsoclip">
+      <path d="M126 210 Q126 178 160 176 H172 Q176 212 200 212 Q224 212 228 176 H240
+               Q274 178 274 210 V300 Q274 344 258 344 H142 Q126 344 126 300 Z"/>
+    </clipPath>
+  </defs>
+
+  <g class="sp-shadow">
+    <!-- skin-close legs running to the ankle -->
+    <path d="M158 328 H200 V528 Q200 546 187 546 H169 Q158 546 158 528 Z"
+          fill="url(#elder-male-onepiece-unitard__leg)"/>
+    <path d="M242 328 H200 V528 Q200 546 213 546 H231 Q242 546 242 528 Z"
+          fill="url(#elder-male-onepiece-unitard__leg)"/>
+    <!-- skin-close sleeves to the wrist -->
+    <path d="M138 186 Q110 190 109 212 L111 352 Q111 366 124 366 Q137 366 137 352
+             L139 218 Z"
+          fill="url(#elder-male-onepiece-unitard__sleeve)"/>
+    <path d="M262 186 Q290 190 291 212 L289 352 Q289 366 276 366 Q263 366 263 352
+             L261 218 Z"
+          fill="url(#elder-male-onepiece-unitard__sleeve)"/>
+    <!-- one unbroken torso with a deep scoop neck cut into it, no seam at the waist -->
+    <path d="M126 210 Q126 178 160 176 H172 Q176 212 200 212 Q224 212 228 176 H240
+             Q274 178 274 210 V300 Q274 344 258 344 H142 Q126 344 126 300 Z"
+          fill="url(#elder-male-onepiece-unitard__torso)"/>
+  </g>
+
+  <!-- broad contrast panel down each flank, the only break in the surface -->
+  <g clip-path="url(#elder-male-onepiece-unitard__torsoclip)">
+    <path d="M126 198 Q142 202 148 230 L146 346 H124 Z" fill="var(--c2, #3A8778)"/>
+    <path d="M274 198 Q258 202 252 230 L254 346 H276 Z" fill="var(--c2, #3A8778)"/>
+  </g>
+  <path d="M158 332 Q154 440 160 542" stroke="var(--c2, #3A8778)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+  <path d="M242 332 Q246 440 240 542" stroke="var(--c2, #3A8778)" stroke-width="9"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- bound scoop neckline -->
+  <path d="M170 178 Q176 216 200 216 Q224 216 230 178" stroke="var(--c3, #E4E0D2)"
+        stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- bound cuffs and bound ankles -->
+  <path d="M111 354 H137" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M263 354 H289" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M159 534 H199" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+  <path d="M201 534 H241" stroke="var(--c3, #E4E0D2)" stroke-width="6"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- body sheen, following the unbroken column -->
+  <path d="M158 230 q42 14 84 0" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M176 282 q24 10 48 0" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M172 380 V510" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+  <path d="M228 380 V510" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="7"
+        fill="none" stroke-linecap="round"/>
+</svg>

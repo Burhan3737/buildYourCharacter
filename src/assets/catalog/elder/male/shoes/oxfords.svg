@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Oxfords" data-family="oxfords" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- Formalwear, and it lives here rather than in costume because costume hides the shoes
+       and for formalwear the shoes are the look.
+       silhouette axes: TOE SHAPE a squared toe box carrying a straight toe cap seam right
+       across it, and SOLE DEPTH a welt standing proud of the upper on every side.
+       Against dress-shoes (slip-on loafer, raised vamp, apron seam, stacked block heel) that
+       is fastening and sole; against sneakers, toe and sole; against high-tops, shaft and
+       fastening; against ballet-flats, fastening and sole.
+       Drawn to the elder male foot rects x158 to x202 and x198 to x242, y544 to y570.
+       Ground line y570 and the welt stops exactly on it.
+       Elder note: the closed lacing is this family's canonical fastening so it stays, but the
+       ladder is short and the hardware quiet, which is the elder register. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-oxfords__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #5A483E)"/>
+      <stop offset="1" stop-color="var(--c2, #322721)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-oxfords__welt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #D8C39C)"/>
+      <stop offset="1" stop-color="var(--c2, #322721)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two low-cut uppers with a squared toe box, each on a welted sole -->
+  <g class="sp-shadow">
+    <path d="M156 546 Q164 539 177 539 H198 Q207 539 207 548 V558 Q207 564 199 564 H159
+             Q151 564 151 556 Q151 550 156 546 Z"
+          fill="url(#elder-male-shoes-oxfords__upper)"/>
+    <path d="M150 558 H208 Q213 561 213 566 Q213 570 207 570 H155 Q147 570 147 565
+             Q147 561 150 558 Z" fill="url(#elder-male-shoes-oxfords__welt)"/>
+    <path d="M196 546 Q204 539 217 539 H238 Q247 539 247 548 V558 Q247 564 239 564 H199
+             Q191 564 191 556 Q191 550 196 546 Z"
+          fill="url(#elder-male-shoes-oxfords__upper)"/>
+    <path d="M190 558 H248 Q253 561 253 566 Q253 570 247 570 H195 Q187 570 187 565
+             Q187 561 190 558 Z" fill="url(#elder-male-shoes-oxfords__welt)"/>
+  </g>
+
+  <!-- structural: the squared toe cap seam, straight across the toe box -->
+  <path d="M191 540 V562" stroke="var(--c2, #322721)" stroke-width="3.6"
+        stroke-linecap="round" fill="none"/>
+  <path d="M231 540 V562" stroke="var(--c2, #322721)" stroke-width="3.6"
+        stroke-linecap="round" fill="none"/>
+  <path d="M194 541 V561" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        stroke-linecap="round" fill="none"/>
+  <path d="M234 541 V561" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"
+        stroke-linecap="round" fill="none"/>
+
+  <!-- structural: closed lacing. The quarters are stitched down UNDER the vamp, so only a
+       short three bar ladder shows and the facing edges meet flush -->
+  <path d="M159 545 Q167 540 178 541 V560 Q166 560 157 556 Z" fill="var(--c2, #322721)"/>
+  <path d="M199 545 Q207 540 218 541 V560 Q206 560 197 556 Z" fill="var(--c2, #322721)"/>
+  <g stroke="var(--c3, #D8C39C)" stroke-width="2.8" stroke-linecap="round" fill="none">
+    <path d="M162 547 H176"/>
+    <path d="M161 553 H177"/>
+    <path d="M161 558 H177"/>
+    <path d="M202 547 H216"/>
+    <path d="M201 553 H217"/>
+    <path d="M201 558 H217"/>
+  </g>
+
+  <!-- trim: the welt stitch line running round the projecting sole edge -->
+  <path d="M152 563 H208" stroke="var(--c3, #D8C39C)" stroke-width="2.4"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M192 563 H248" stroke="var(--c3, #D8C39C)" stroke-width="2.4"
+        stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+  <path d="M150 568 H210" stroke="var(--c2, #322721)" stroke-opacity="0.6" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M190 568 H250" stroke="var(--c2, #322721)" stroke-opacity="0.6" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M164 548 q19 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M204 548 q19 5 36 0" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

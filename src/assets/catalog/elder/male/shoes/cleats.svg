@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Cleats" data-family="cleats" data-slot="shoes"
+     data-layer="shoes" data-colors="c1,c2,c3" data-hides="">
+  <!-- silhouette axes: SOLE DEPTH a rigid studded plate with four countable conical studs
+       hanging below it, the only broken sole edge in this bundle's shoe slot, and FASTENING
+       laces crossing OFF CENTRE down the outer side of each vamp.
+       Against sneakers (thick banded sole, centred lace ladder) that is sole and fastening;
+       against oxfords, toe and sole; against comfort-shoes, sole and toe.
+       Drawn to the elder male foot rects x158 to x202 and x198 to x242, y544 to y570.
+       Ground line y570: the plate stops at y564 and the studs bottom out exactly on y570.
+       Note on the reference: adult/male/shoes/cleats.svg hangs its studs to y574, four units
+       below the ground line, and draws two of its six studs overlapping at x188 and x192 so
+       only five are countable. Both are corrected here.
+       Elder note: a broad hook and loop midfoot strap is laid over the lacing, which is the
+       elder fastening preference and a real feature of the shoe, so the off centre lace
+       ladder still carries the axis. -->
+  <defs>
+    <linearGradient id="elder-male-shoes-cleats__upper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c1, #7E90DC)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C97)"/>
+    </linearGradient>
+    <linearGradient id="elder-male-shoes-cleats__plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--c3, #2E3448)"/>
+      <stop offset="1" stop-color="var(--c2, #4E5C97)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- major forms: two close fitting low uppers, each on a rigid plate sole -->
+  <g class="sp-shadow">
+    <path d="M155 544 Q162 536 176 535 H197 Q206 535 207 545 V556 Q207 562 199 562 H159
+             Q151 562 151 554 Q151 548 155 544 Z"
+          fill="url(#elder-male-shoes-cleats__upper)"/>
+    <path d="M152 556 H205 Q209 559 209 564 H150 Q150 559 152 556 Z"
+          fill="url(#elder-male-shoes-cleats__plate)"/>
+    <!-- structural: four conical studs per plate, evenly pitched at 14 units so none overlap,
+         countable at tray size, and bottoming out exactly on the ground line y570. They sit
+         inside this group and in paint order, so the right plate covers the left shoe's
+         innermost stud rather than the stud floating over the wrong foot. -->
+    <g fill="var(--c3, #2E3448)">
+      <path d="M152 563 h11 l-3 7 h-5 Z"/>
+      <path d="M166 563 h11 l-3 7 h-5 Z"/>
+      <path d="M180 563 h11 l-3 7 h-5 Z"/>
+      <path d="M194 563 h11 l-3 7 h-5 Z"/>
+    </g>
+    <path d="M195 544 Q202 536 216 535 H237 Q246 535 247 545 V556 Q247 562 239 562 H199
+             Q191 562 191 554 Q191 548 195 544 Z"
+          fill="url(#elder-male-shoes-cleats__upper)"/>
+    <path d="M192 556 H245 Q249 559 249 564 H190 Q190 559 192 556 Z"
+          fill="url(#elder-male-shoes-cleats__plate)"/>
+    <g fill="var(--c3, #2E3448)">
+      <path d="M192 563 h11 l-3 7 h-5 Z"/>
+      <path d="M206 563 h11 l-3 7 h-5 Z"/>
+      <path d="M220 563 h11 l-3 7 h-5 Z"/>
+      <path d="M234 563 h11 l-3 7 h-5 Z"/>
+    </g>
+  </g>
+
+  <!-- panel blocking: the off centre vamp panel that pushes the lacing to the outer side -->
+  <path d="M165 536 Q158 546 160 560 L188 560 Q186 546 190 536 Z"
+        fill="var(--c2, #4E5C97)" opacity="0.7"/>
+  <path d="M205 536 Q198 546 200 560 L228 560 Q226 546 230 536 Z"
+        fill="var(--c2, #4E5C97)" opacity="0.7"/>
+
+  <!-- structural: the off centre crossed lacing -->
+  <g stroke="var(--c3, #2E3448)" stroke-width="2.8" stroke-linecap="round" fill="none">
+    <path d="M164 540 L179 546 M179 540 L164 546"/>
+    <path d="M162 550 L179 556 M179 550 L162 556"/>
+    <path d="M204 540 L219 546 M219 540 L204 546"/>
+    <path d="M202 550 L219 556 M219 550 L202 556"/>
+  </g>
+
+  <!-- trim: the broad hook and loop midfoot strap laid over the lacing, with a turn back tab -->
+  <rect x="156" y="546" width="46" height="12" rx="5" fill="var(--c3, #2E3448)"/>
+  <rect x="196" y="546" width="46" height="12" rx="5" fill="var(--c3, #2E3448)"/>
+  <rect x="152" y="544" width="12" height="16" rx="5" fill="var(--c2, #4E5C97)"/>
+  <rect x="238" y="544" width="12" height="16" rx="5" fill="var(--c2, #4E5C97)"/>
+  <path d="M162 552 h34" stroke="var(--c2, #4E5C97)" stroke-opacity="0.55" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M202 552 h34" stroke="var(--c2, #4E5C97)" stroke-opacity="0.55" stroke-width="2.2"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- trim: the plate edge line, and the heel counter panel -->
+  <path d="M152 559 H207" stroke="var(--c3, #2E3448)" stroke-opacity="0.7" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+  <path d="M192 559 H247" stroke="var(--c3, #2E3448)" stroke-opacity="0.7" stroke-width="2.4"
+        fill="none" stroke-linecap="round"/>
+
+  <path d="M168 543 q17 4 32 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M208 543 q17 4 32 0" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"
+     data-name="Hime Cut" data-family="hime-cut" data-slot="hair"
+     data-layer="hair" data-colors="hair1,hair2" data-hides="">
+  <!-- Elder/male drawn head: ellipse cx200 cy125 rx57 ry59 (crown y66, chin y184);
+       ears x138 to 160 and x240 to 262, y116 to 142; the REAL drawn shoulder line is
+       the top of the drawn torso at y184, six units above the y190 the JSON implies.
+       Head art on this bundle sits 34 units below the adult reference (adult cy91).
+       LENGTH TRAP, FIXED HERE. hair-back is z10 and the body is z20, so anything drawn
+       below y184 in the back group renders as literally nothing. The reference file
+       src/assets/catalog/adult/male/hair/hime-cut.svg draws its long fall down the
+       centre back to y268 inside data-part="back", where 118 units of it are hidden
+       behind the torso; the mass that is one of this family's three declared masses
+       therefore does not read at all. In this file the fall is carried FORWARD in
+       data-part="front" as two straight panels over the shoulders and down the chest
+       to a hard level hem at y300, so all three masses read. The back group keeps only
+       the volume behind the skull, above the shoulder line.
+       Axes: PARTING/HEM - three stepped horizontal hems, every one dead level and hard
+       edged: the fringe at y90, the two square cut sidelocks at y152, and the long fall
+       at y300. Nothing on this asset is a curve at its hem.
+       LENGTH - three separate masses at three different lengths in one outline, which is
+       the whole identity. Differs from fringe-bowl (one even hem all the way round) and
+       from curtain-long (a soft rounded taper over a centre part) on both. -->
+  <g data-part="back">
+    <defs>
+      <linearGradient id="elder-male-hair-hime-cut__backgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="0.6" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- the volume behind the skull; everything it could carry below y184 is hidden,
+           so the fall itself lives in the front group -->
+      <path d="M200 56 C168 56 150 74 147 112
+               C143 142 142 164 142 200
+               L258 200
+               C258 164 257 142 253 112
+               C250 74 232 56 200 56 Z"
+            fill="url(#elder-male-hair-hime-cut__backgrad)"/>
+    </g>
+    <!-- straight weight lines, poker straight and vertical, no wave anywhere -->
+    <path d="M162 122 L159 198" stroke="var(--hair2, #6E7480)" stroke-width="4"
+          fill="none" stroke-linecap="butt" opacity="0.65"/>
+    <path d="M182 118 L181 198" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M218 118 L219 198" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M238 122 L241 198" stroke="var(--hair2, #6E7480)" stroke-width="4"
+          fill="none" stroke-linecap="butt" opacity="0.65"/>
+    <path d="M158 86 C178 72 222 72 242 86" stroke="#FFFFFF" stroke-opacity="0.22"
+          stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g data-part="front">
+    <defs>
+      <linearGradient id="elder-male-hair-hime-cut__fallgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="0.65" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-hime-cut__fringegrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+      <linearGradient id="elder-male-hair-hime-cut__lockgrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="0.7" stop-color="var(--hair1, #C9CBD2)"/>
+        <stop offset="1" stop-color="var(--hair2, #6E7480)"/>
+      </linearGradient>
+    </defs>
+    <g class="sp-shadow">
+      <!-- MASS 3: the long fall, brought forward over each shoulder and down the chest
+           so its length is actually on screen, hem dead level at y300 -->
+      <path d="M146 136 C136 158 128 186 127 212 L126 300 H170 L169 214
+               C169 186 168 158 168 138 Z"
+            fill="url(#elder-male-hair-hime-cut__fallgrad)"/>
+      <path d="M254 136 C264 158 272 186 273 212 L274 300 H230 L231 214
+               C231 186 232 158 232 138 Z"
+            fill="url(#elder-male-hair-hime-cut__fallgrad)"/>
+      <!-- MASS 2: left sidelock, cut square at the cheek at y152 -->
+      <path d="M138 152 L138 96 C139 80 148 68 162 62 L166 74 L166 152 Z"
+            fill="url(#elder-male-hair-hime-cut__lockgrad)"/>
+      <!-- MASS 2: right sidelock -->
+      <path d="M262 152 L262 96 C261 80 252 68 238 62 L234 74 L234 152 Z"
+            fill="url(#elder-male-hair-hime-cut__lockgrad)"/>
+      <!-- MASS 1: the blunt fringe, hem dead level at y90 -->
+      <path d="M160 90 L160 74 C164 60 180 52 200 52 C220 52 236 60 240 74 L240 90 Z"
+            fill="url(#elder-male-hair-hime-cut__fringegrad)"/>
+    </g>
+    <!-- the three hems, drawn as hard bands so they read at thumbnail size -->
+    <path d="M160 82 H240 V90 H160 Z" fill="var(--hair2, #6E7480)"/>
+    <path d="M138 144 H166 V152 H138 Z" fill="var(--hair2, #6E7480)"/>
+    <path d="M234 144 H262 V152 H234 Z" fill="var(--hair2, #6E7480)"/>
+    <path d="M126 290 H170 V300 H126 Z" fill="var(--hair2, #6E7480)"/>
+    <path d="M230 290 H274 V300 H230 Z" fill="var(--hair2, #6E7480)"/>
+    <!-- straight combed strands in the fringe and down the carried fall -->
+    <path d="M176 60 V84" stroke="var(--hair2, #6E7480)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M200 56 V84" stroke="var(--hair2, #6E7480)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M224 60 V84" stroke="var(--hair2, #6E7480)" stroke-width="2.4"
+          fill="none" stroke-linecap="butt" opacity="0.5"/>
+    <path d="M146 94 V142" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M254 94 V142" stroke="var(--hair2, #6E7480)" stroke-width="2.6"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M139 200 L138 288" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M156 194 L156 288" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M261 200 L262 288" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M244 194 L244 288" stroke="var(--hair2, #6E7480)" stroke-width="3"
+          fill="none" stroke-linecap="butt" opacity="0.45"/>
+    <path d="M168 64 C182 56 218 56 232 64" stroke="#FFFFFF" stroke-opacity="0.30"
+          stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M134 190 V240" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+    <path d="M266 190 V240" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="7"
+          fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
